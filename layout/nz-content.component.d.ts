@@ -6,11 +6,8 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzContentComponent {
     private elementRef;
     private renderer;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<NzContentComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzContentComponent, "nz-content", ["nzContent"], {}, {}, never>;
 }

@@ -159,7 +159,9 @@ function buildComponent(options, additionalFiles = {}) {
             path_1.dirname(context.schematic.description.path);
         const schematicFilesUrl = './files';
         const schematicFilesPath = path_1.resolve(schematicPath, schematicFilesUrl);
-        options.style = options.style || schema_1.Style.Css;
+        options.style = (options.style && options.style !== schema_1.Style.Css
+            ? options.style : options.styleext) || schema_1.Style.Css;
+        options.skipTests = options.skipTests || !options.spec;
         // Add the default component option values to the options if an option is not explicitly
         // specified but a default component option is available.
         Object.keys(options)
@@ -195,7 +197,7 @@ function buildComponent(options, additionalFiles = {}) {
             return `${modulePrefix}${core_1.strings.classify(name)}`;
         };
         // Object that will be used as context for the EJS templates.
-        const baseTemplateContext = Object.assign(Object.assign(Object.assign({}, core_1.strings), { 'if-flat': (s) => options.flat ? '' : s, classify: classifyCovered }), options);
+        const baseTemplateContext = Object.assign({}, core_1.strings, { 'if-flat': (s) => options.flat ? '' : s, classify: classifyCovered }, options);
         // Key-value object that includes the specified additional files with their loaded content.
         // The resolved contents can be used inside EJS templates.
         const resolvedFiles = {};

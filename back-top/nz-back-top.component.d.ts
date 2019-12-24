@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, EventEmitter, OnDestroy, OnInit, TemplateRef } from '@angular/core';
 import { NzConfigService, NzScrollService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzBackTopComponent implements OnInit, OnDestroy {
     nzConfigService: NzConfigService;
     private scrollSrv;
@@ -30,6 +29,4 @@ export declare class NzBackTopComponent implements OnInit, OnDestroy {
     private removeListen;
     private registerScrollEvent;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzBackTopComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzBackTopComponent, "nz-back-top", ["nzBackTop"], { 'nzTemplate': "nzTemplate", 'nzVisibilityHeight': "nzVisibilityHeight", 'nzTarget': "nzTarget" }, { 'nzClick': "nzClick" }, never>;
 }

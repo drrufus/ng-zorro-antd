@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, Renderer2, SimpleChanges } from '@angular/core';
 import { NzConfigService, NzShapeSCType, NzSizeLDSType, NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzAvatarComponent implements OnChanges {
     nzConfigService: NzConfigService;
     private elementRef;
@@ -40,6 +39,4 @@ export declare class NzAvatarComponent implements OnChanges {
     private calcStringSize;
     private notifyCalc;
     private setSizeStyle;
-    static ɵfac: i0.ɵɵFactoryDef<NzAvatarComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAvatarComponent, "nz-avatar", ["nzAvatar"], { 'nzShape': "nzShape", 'nzSize': "nzSize", 'nzText': "nzText", 'nzSrc': "nzSrc", 'nzSrcSet': "nzSrcSet", 'nzAlt': "nzAlt", 'nzIcon': "nzIcon" }, { 'nzError': "nzError" }, never>;
 }

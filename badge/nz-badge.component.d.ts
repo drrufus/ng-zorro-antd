@@ -8,7 +8,6 @@
 import { ContentObserver } from '@angular/cdk/observers';
 import { AfterViewInit, ChangeDetectorRef, ElementRef, NgZone, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzConfigService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare type NzBadgeStatusType = 'success' | 'processing' | 'default' | 'error' | 'warning';
 export declare class NzBadgeComponent implements OnInit, AfterViewInit, OnChanges, OnDestroy {
     nzConfigService: NzConfigService;
@@ -48,6 +47,4 @@ export declare class NzBadgeComponent implements OnInit, AfterViewInit, OnChange
     ngAfterViewInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzBadgeComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzBadgeComponent, "nz-badge", ["nzBadge"], { 'nzShowZero': "nzShowZero", 'nzShowDot': "nzShowDot", 'nzDot': "nzDot", 'nzOverflowCount': "nzOverflowCount", 'nzText': "nzText", 'nzColor': "nzColor", 'nzTitle': "nzTitle", 'nzStyle': "nzStyle", 'nzStatus': "nzStatus", 'nzCount': "nzCount", 'nzOffset': "nzOffset" }, {}, never>;
 }

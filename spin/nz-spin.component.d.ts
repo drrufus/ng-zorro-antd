@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzConfigService, NzSizeLDSType } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzSpinComponent implements OnChanges, OnDestroy, OnInit {
     nzConfigService: NzConfigService;
     private cdr;
@@ -28,6 +27,4 @@ export declare class NzSpinComponent implements OnChanges, OnDestroy, OnInit {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSpinComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSpinComponent, "nz-spin", ["nzSpin"], { 'nzIndicator': "nzIndicator", 'nzSize': "nzSize", 'nzTip': "nzTip", 'nzDelay': "nzDelay", 'nzSimple': "nzSimple", 'nzSpinning': "nzSpinning" }, {}, never>;
 }

@@ -9,7 +9,6 @@ import { EventEmitter, OnChanges, OnInit, SimpleChanges, TemplateRef } from '@an
 import { CandyDate, FunctionProp } from 'ng-zorro-antd/core';
 import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
 import { CompatibleValue, DisabledDateFn, DisabledTimeConfig, DisabledTimeFn, PanelMode, PresetRanges, SupportTimeOptions } from '../../standard-types';
-import * as i0 from "@angular/core";
 export declare class DateRangePopupComponent implements OnInit, OnChanges {
     isRange: boolean;
     showWeek: boolean;
@@ -86,7 +85,5 @@ export declare class DateRangePopupComponent implements OnInit, OnChanges {
     private setRangeValue;
     private cloneRangeDate;
     private initialArray;
-    static ɵfac: i0.ɵɵFactoryDef<DateRangePopupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateRangePopupComponent, "date-range-popup", ["dateRangePopup"], { 'isRange': "isRange", 'showWeek': "showWeek", 'locale': "locale", 'format': "format", 'placeholder': "placeholder", 'disabledDate': "disabledDate", 'disabledTime': "disabledTime", 'showToday': "showToday", 'showTime': "showTime", 'extraFooter': "extraFooter", 'ranges': "ranges", 'dateRender': "dateRender", 'popupStyle': "popupStyle", 'dropdownClassName': "dropdownClassName", 'panelMode': "panelMode", 'value': "value" }, { 'panelModeChange': "panelModeChange", 'calendarChange': "calendarChange", 'valueChange': "valueChange", 'inputChange': "inputChange", 'resultOk': "resultOk", 'closePicker': "closePicker" }, never>;
 }
 export declare type RangePartType = 'left' | 'right';

@@ -9,7 +9,6 @@ import { OnDestroy } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { NzTreeNode } from './nz-tree-base-node';
 import { NzFormatEmitEvent } from './nz-tree-base.definitions';
-import * as i0 from "@angular/core";
 export declare class NzTreeBaseService implements OnDestroy {
     DRAG_SIDE_RANGE: number;
     DRAG_MIN_GAP: number;
@@ -132,6 +131,4 @@ export declare class NzTreeBaseService implements OnDestroy {
      */
     formatEvent(eventName: string, node: NzTreeNode | null, event: MouseEvent | DragEvent | null): NzFormatEmitEvent;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTreeBaseService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzTreeBaseService>;
 }

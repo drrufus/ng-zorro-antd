@@ -1,27 +1,28 @@
 import { MediaMatcher, LayoutModule } from '@angular/cdk/layout';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
-import { NgClass, NgIf, CommonModule } from '@angular/common';
-import { ɵɵdirectiveInject, ElementRef, Renderer2, ɵɵdefineComponent, ɵɵprojectionDef, ɵɵelementStart, ɵɵprojection, ɵɵelementEnd, ɵɵproperty, ɵsetClassMetadata, Component, ViewEncapsulation, ChangeDetectionStrategy, NgZone, ChangeDetectorRef, ɵɵcontentQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵallocHostVars, ɵɵclassProp, ɵɵProvidersFeature, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, Input, ContentChildren, ɵɵelement, ɵɵnextContext, ɵɵelementContainerStart, ɵɵtext, ɵɵelementContainerEnd, ɵɵadvance, ɵɵtextInterpolate, ɵɵtemplate, ɵɵpureFunction1, Optional, Host, ContentChild, ɵɵattribute, ɵɵdefineDirective, Directive, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { CommonModule } from '@angular/common';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy, ElementRef, Renderer2, NgZone, ChangeDetectorRef, Input, ContentChildren, Optional, Host, ContentChild, Directive, NgModule } from '@angular/core';
 import { NzRowDirective, NzColDirective, NzGridModule } from 'ng-zorro-antd/grid';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
-import { warnDeprecation, helpMotion, NzUpdateHostClassService, NzDomEventService, InputBoolean, toBoolean, NzStringTemplateOutletDirective, NzConfigService, WithConfig, NzAddOnModule } from 'ng-zorro-antd/core';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { warnDeprecation, helpMotion, NzUpdateHostClassService, NzDomEventService, InputBoolean, toBoolean, NzConfigService, WithConfig, NzAddOnModule } from 'ng-zorro-antd/core';
 import { FormControl, NgModel, FormControlName, FormControlDirective, NgControl } from '@angular/forms';
 import { Subscription, Subject } from 'rxjs';
 import { startWith, takeUntil } from 'rxjs/operators';
 import { __decorate, __metadata } from 'tslib';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-explain.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0 = ["*"];
 /**
  * @deprecated Use `[nzSuccessTip] | [nzWarningTip] | [nzErrorTip] | [nzValidatingTip]` in `NzFormControlComponent` instead, will remove in 9.0.0.
  */
 class NzFormExplainComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
@@ -29,38 +30,56 @@ class NzFormExplainComponent {
         warnDeprecation(`'nz-form-explain' is going to be removed in 9.0.0. Use [nzSuccessTip] | [nzWarningTip] | [nzErrorTip] | [nzValidatingTip] in nz-form-control instead. Read https://ng.ant.design/components/form/en`);
     }
 }
-/** @nocollapse */ NzFormExplainComponent.ɵfac = function NzFormExplainComponent_Factory(t) { return new (t || NzFormExplainComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFormExplainComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormExplainComponent, selectors: [["nz-form-explain"]], exportAs: ["nzFormExplain"], ngContentSelectors: _c0, decls: 2, vars: 1, template: function NzFormExplainComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div");
-        ɵɵprojection(1);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵproperty("@helpMotion", undefined);
-    } }, styles: ["\n      nz-form-explain {\n        display: block;\n      }\n    "], encapsulation: 2, data: { animation: [helpMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormExplainComponent, [{
-        type: Component,
-        args: [{
+NzFormExplainComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-explain',
                 exportAs: 'nzFormExplain',
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 animations: [helpMotion],
-                templateUrl: './nz-form-explain.component.html',
-                styles: [
-                    `
+                template: "<div [@helpMotion]>\n  <ng-content></ng-content>\n</div>",
+                styles: [`
       nz-form-explain {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzFormExplainComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzFormExplainComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormExplainComponent.prototype.renderer;
+}
 
-const _c0$1 = ["*"];
-/** should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 **/
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-item.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 *
+ */
 class NzFormItemComponent extends NzRowDirective {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     * @param {?} nzUpdateHostClassService
+     * @param {?} mediaMatcher
+     * @param {?} ngZone
+     * @param {?} platform
+     * @param {?} nzDomEventService
+     * @param {?} cdr
+     */
     constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService, cdr) {
         super(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService);
         this.cdr = cdr;
@@ -69,6 +88,9 @@ class NzFormItemComponent extends NzRowDirective {
         this.tipsMode = false;
         renderer.addClass(elementRef.nativeElement, 'ant-form-item');
     }
+    /**
+     * @return {?}
+     */
     updateFlexStyle() {
         if (this.nzFlex) {
             this.renderer.setStyle(this.elementRef.nativeElement, 'display', 'flex');
@@ -77,26 +99,48 @@ class NzFormItemComponent extends NzRowDirective {
             this.renderer.removeStyle(this.elementRef.nativeElement, 'display');
         }
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     setWithHelpViaTips(value) {
         this.tipsMode = true;
         this.withHelpClass = value;
         this.cdr.markForCheck();
     }
+    /**
+     * @return {?}
+     */
     ngAfterContentInit() {
         if (!this.tipsMode) {
-            this.listOfNzFormExplainComponent.changes.pipe(startWith(true), takeUntil(this.destroy$)).subscribe(() => {
+            this.listOfNzFormExplainComponent.changes
+                .pipe(startWith(true), takeUntil(this.destroy$))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => {
                 this.withHelpClass = this.listOfNzFormExplainComponent && this.listOfNzFormExplainComponent.length > 0;
                 this.cdr.markForCheck();
-            });
+            }));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         super.ngOnInit();
         this.updateFlexStyle();
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         super.ngOnDestroy();
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         super.ngOnChanges(changes);
         if (changes.hasOwnProperty('nzFlex')) {
@@ -104,187 +148,74 @@ class NzFormItemComponent extends NzRowDirective {
         }
     }
 }
-/** @nocollapse */ NzFormItemComponent.ɵfac = function NzFormItemComponent_Factory(t) { return new (t || NzFormItemComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(MediaMatcher), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NzDomEventService), ɵɵdirectiveInject(ChangeDetectorRef)); };
-/** @nocollapse */ NzFormItemComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormItemComponent, selectors: [["nz-form-item"]], contentQueries: function NzFormItemComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, NzFormExplainComponent, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfNzFormExplainComponent = _t);
-    } }, hostBindings: function NzFormItemComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵallocHostVars(1);
-    } if (rf & 2) {
-        ɵɵclassProp("ant-form-item-with-help", ctx.withHelpClass);
-    } }, inputs: { nzFlex: "nzFlex" }, exportAs: ["nzFormItem"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature()], ngContentSelectors: _c0$1, decls: 1, vars: 0, template: function NzFormItemComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, styles: ["\n      nz-form-item {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-__decorate([
-    InputBoolean(),
-    __metadata("design:type", Boolean)
-], NzFormItemComponent.prototype, "nzFlex", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormItemComponent, [{
-        type: Component,
-        args: [{
+NzFormItemComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-item',
                 exportAs: 'nzFormItem',
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 providers: [NzUpdateHostClassService],
-                templateUrl: './nz-form-item.component.html',
+                template: "<ng-content></ng-content>",
                 host: {
                     '[class.ant-form-item-with-help]': 'withHelpClass'
                 },
-                styles: [
-                    `
+                styles: [`
       nz-form-item {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: NzUpdateHostClassService }, { type: MediaMatcher }, { type: NgZone }, { type: Platform }, { type: NzDomEventService }, { type: ChangeDetectorRef }]; }, { nzFlex: [{
-            type: Input
-        }], listOfNzFormExplainComponent: [{
-            type: ContentChildren,
-            args: [NzFormExplainComponent, { descendants: true }]
-        }] }); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzFormItemComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 },
+    { type: NzUpdateHostClassService },
+    { type: MediaMatcher },
+    { type: NgZone },
+    { type: Platform },
+    { type: NzDomEventService },
+    { type: ChangeDetectorRef }
+];
+NzFormItemComponent.propDecorators = {
+    nzFlex: [{ type: Input }],
+    listOfNzFormExplainComponent: [{ type: ContentChildren, args: [NzFormExplainComponent, { descendants: true },] }]
+};
+__decorate([
+    InputBoolean(),
+    __metadata("design:type", Boolean)
+], NzFormItemComponent.prototype, "nzFlex", void 0);
+if (false) {
+    /** @type {?} */
+    NzFormItemComponent.prototype.nzFlex;
+    /** @type {?} */
+    NzFormItemComponent.prototype.listOfNzFormExplainComponent;
+    /** @type {?} */
+    NzFormItemComponent.prototype.withHelpClass;
+    /** @type {?} */
+    NzFormItemComponent.prototype.tipsMode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormItemComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-control.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzFormControlComponent_i_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 7);
-} if (rf & 2) {
-    const ctx_r446 = ɵɵnextContext();
-    ɵɵproperty("nzType", ctx_r446.iconType);
-} }
-function NzFormControlComponent_div_5_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r455 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r455.nzSuccessTip);
-} }
-const _c0$2 = function (a0) { return { $implicit: a0 }; };
-function NzFormControlComponent_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_2_ng_container_1_Template, 2, 1, "ng-container", 9);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r451 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r451.nzSuccessTip)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$2, ctx_r451.validateControl));
-} }
-function NzFormControlComponent_div_5_ng_container_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r456 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r456.nzWarningTip);
-} }
-function NzFormControlComponent_div_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_3_ng_container_1_Template, 2, 1, "ng-container", 9);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r452 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r452.nzWarningTip)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$2, ctx_r452.validateControl));
-} }
-function NzFormControlComponent_div_5_ng_container_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r457 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r457.nzErrorTip);
-} }
-function NzFormControlComponent_div_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_4_ng_container_1_Template, 2, 1, "ng-container", 9);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r453 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r453.nzErrorTip)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$2, ctx_r453.validateControl));
-} }
-function NzFormControlComponent_div_5_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r458 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r458.nzValidatingTip);
-} }
-function NzFormControlComponent_div_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_5_ng_container_1_Template, 2, 1, "ng-container", 9);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r454 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r454.nzValidatingTip)("nzStringTemplateOutletContext", ɵɵpureFunction1(2, _c0$2, ctx_r454.validateControl));
-} }
-function NzFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 8);
-    ɵɵelementStart(1, "div");
-    ɵɵtemplate(2, NzFormControlComponent_div_5_ng_container_2_Template, 2, 4, "ng-container", 5);
-    ɵɵtemplate(3, NzFormControlComponent_div_5_ng_container_3_Template, 2, 4, "ng-container", 5);
-    ɵɵtemplate(4, NzFormControlComponent_div_5_ng_container_4_Template, 2, 4, "ng-container", 5);
-    ɵɵtemplate(5, NzFormControlComponent_div_5_ng_container_5_Template, 2, 4, "ng-container", 5);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r447 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("@helpMotion", undefined);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r447.showSuccessTip);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r447.showWarningTip);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r447.showErrorTip);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r447.showValidatingTip);
-} }
-function NzFormControlComponent_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵprojection(0, 1, ["*ngIf", "!hasTips"]);
-} }
-function NzFormControlComponent_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵprojection(0, 2, ["*ngIf", "!nzExtra"]);
-} }
-function NzFormControlComponent_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r459 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r459.nzExtra);
-} }
-function NzFormControlComponent_div_8_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 10);
-    ɵɵtemplate(1, NzFormControlComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 11);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r450 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r450.nzExtra);
-} }
-const _c1 = ["*", [["nz-form-explain"]], [["nz-form-extra"]]];
-const _c2 = ["*", "nz-form-explain", "nz-form-extra"];
 class NzFormControlComponent extends NzColDirective {
+    /**
+     * @param {?} nzUpdateHostClassService
+     * @param {?} elementRef
+     * @param {?} nzFormItemComponent
+     * @param {?} nzRowDirective
+     * @param {?} cdr
+     * @param {?} renderer
+     */
     constructor(nzUpdateHostClassService, elementRef, nzFormItemComponent, nzRowDirective, cdr, renderer) {
         super(nzUpdateHostClassService, elementRef, nzFormItemComponent || nzRowDirective, renderer);
         this.nzFormItemComponent = nzFormItemComponent;
@@ -295,13 +226,24 @@ class NzFormControlComponent extends NzColDirective {
         this.controlClassMap = {};
         renderer.addClass(elementRef.nativeElement, 'ant-form-item-control-wrapper');
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set nzHasFeedback(value) {
         this._hasFeedback = toBoolean(value);
         this.setControlClassMap();
     }
+    /**
+     * @return {?}
+     */
     get nzHasFeedback() {
         return this._hasFeedback;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set nzValidateStatus(value) {
         if (value instanceof FormControl || value instanceof NgModel) {
             this.validateControl = value;
@@ -319,30 +261,48 @@ class NzFormControlComponent extends NzColDirective {
             this.setControlClassMap();
         }
     }
+    /**
+     * @return {?}
+     */
     removeSubscribe() {
         this.validateChanges.unsubscribe();
     }
+    /**
+     * @return {?}
+     */
     watchControl() {
         this.removeSubscribe();
         /** miss detect https://github.com/angular/angular/issues/10887 **/
         if (this.validateControl && this.validateControl.statusChanges) {
-            this.validateChanges = this.validateControl.statusChanges.pipe(startWith(null)).subscribe(() => {
+            this.validateChanges = this.validateControl.statusChanges.pipe(startWith(null)).subscribe((/**
+             * @return {?}
+             */
+            () => {
                 this.setControlClassMap();
                 this.cdr.markForCheck();
-            });
+            }));
         }
     }
+    /**
+     * @param {?} status
+     * @return {?}
+     */
     validateControlStatus(status) {
-        return (!!this.validateControl &&
+        return (/** @type {?} */ ((!!this.validateControl &&
             (this.validateControl.dirty || this.validateControl.touched) &&
-            this.validateControl.status === status);
+            this.validateControl.status === status)));
     }
+    /**
+     * @return {?}
+     */
     setControlClassMap() {
         if (this.validateString === 'warning') {
             this.status = 'warning';
             this.iconType = 'exclamation-circle-fill';
         }
-        else if (this.validateString === 'validating' || this.validateString === 'pending' || this.validateControlStatus('PENDING')) {
+        else if (this.validateString === 'validating' ||
+            this.validateString === 'pending' ||
+            this.validateControlStatus('PENDING')) {
             this.status = 'validating';
             this.iconType = 'loading';
         }
@@ -369,32 +329,59 @@ class NzFormControlComponent extends NzColDirective {
             [`has-feedback`]: this.nzHasFeedback && this.status
         };
     }
+    /**
+     * @return {?}
+     */
     get hasTips() {
         return !!(this.nzSuccessTip || this.nzWarningTip || this.nzErrorTip || this.nzValidatingTip);
     }
+    /**
+     * @return {?}
+     */
     get showSuccessTip() {
         return this.status === 'success' && !!this.nzSuccessTip;
     }
+    /**
+     * @return {?}
+     */
     get showWarningTip() {
         return this.status === 'warning' && !!this.nzWarningTip;
     }
+    /**
+     * @return {?}
+     */
     get showErrorTip() {
         return this.status === 'error' && !!this.nzErrorTip;
     }
+    /**
+     * @return {?}
+     */
     get showValidatingTip() {
         return this.status === 'validating' && !!this.nzValidatingTip;
     }
+    /**
+     * @return {?}
+     */
     get showInnerTip() {
         return this.showSuccessTip || this.showWarningTip || this.showErrorTip || this.showValidatingTip;
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         super.ngOnInit();
         this.setControlClassMap();
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.removeSubscribe();
         super.ngOnDestroy();
     }
+    /**
+     * @return {?}
+     */
     ngAfterContentInit() {
         if (!this.validateControl && !this.validateString) {
             if (this.defaultValidateControl instanceof FormControlDirective) {
@@ -405,46 +392,15 @@ class NzFormControlComponent extends NzColDirective {
             }
         }
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         super.ngAfterViewInit();
     }
 }
-/** @nocollapse */ NzFormControlComponent.ɵfac = function NzFormControlComponent_Factory(t) { return new (t || NzFormControlComponent)(ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NzFormItemComponent, 9), ɵɵdirectiveInject(NzRowDirective, 9), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFormControlComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormControlComponent, selectors: [["nz-form-control"]], contentQueries: function NzFormControlComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, NgControl, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.defaultValidateControl = _t.first);
-    } }, inputs: { nzSuccessTip: "nzSuccessTip", nzWarningTip: "nzWarningTip", nzErrorTip: "nzErrorTip", nzValidatingTip: "nzValidatingTip", nzExtra: "nzExtra", nzHasFeedback: "nzHasFeedback", nzValidateStatus: "nzValidateStatus" }, exportAs: ["nzFormControl"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵInheritDefinitionFeature], ngContentSelectors: _c2, decls: 9, vars: 6, consts: [[1, "ant-form-item-control", 3, "ngClass"], [1, "ant-form-item-children"], [1, "ant-form-item-children-icon"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["class", "ant-form-explain", 4, "ngIf"], [4, "ngIf"], ["class", "ant-form-extra", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], [1, "ant-form-explain"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], [1, "ant-form-extra"], [4, "nzStringTemplateOutlet"]], template: function NzFormControlComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef(_c1);
-        ɵɵelementStart(0, "div", 0);
-        ɵɵelementStart(1, "span", 1);
-        ɵɵprojection(2);
-        ɵɵelementStart(3, "span", 2);
-        ɵɵtemplate(4, NzFormControlComponent_i_4_Template, 1, 1, "i", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵtemplate(5, NzFormControlComponent_div_5_Template, 6, 5, "div", 4);
-        ɵɵtemplate(6, NzFormControlComponent_6_Template, 1, 0, undefined, 5);
-        ɵɵtemplate(7, NzFormControlComponent_7_Template, 1, 0, undefined, 5);
-        ɵɵtemplate(8, NzFormControlComponent_div_8_Template, 2, 1, "div", 6);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵproperty("ngClass", ctx.controlClassMap);
-        ɵɵadvance(4);
-        ɵɵproperty("ngIf", ctx.nzHasFeedback && ctx.iconType);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.showSuccessTip || ctx.showWarningTip || ctx.showErrorTip || ctx.showValidatingTip);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", !ctx.hasTips);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", !ctx.nzExtra);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzExtra);
-    } }, directives: [NgClass, NgIf, NzIconDirective, NzStringTemplateOutletDirective], styles: ["\n      nz-form-control {\n        display: block;\n      }\n      form .has-feedback .ant-input-suffix i {\n        margin-right: 18px;\n      }\n    "], encapsulation: 2, data: { animation: [helpMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormControlComponent, [{
-        type: Component,
-        args: [{
+NzFormControlComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-control',
                 exportAs: 'nzFormControl',
                 preserveWhitespaces: false,
@@ -452,57 +408,97 @@ class NzFormControlComponent extends NzColDirective {
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [NzUpdateHostClassService],
-                templateUrl: './nz-form-control.component.html',
-                styles: [
-                    `
+                template: "<div class=\"ant-form-item-control\" [ngClass]=\"controlClassMap\">\n  <span class=\"ant-form-item-children\">\n    <ng-content></ng-content>\n    <span class=\"ant-form-item-children-icon\">\n      <i *ngIf=\"nzHasFeedback && iconType\" nz-icon [nzType]=\"iconType\"></i>\n    </span>\n  </span>\n  <div class=\"ant-form-explain\" *ngIf=\"showSuccessTip || showWarningTip || showErrorTip || showValidatingTip\">\n    <div @helpMotion>\n      <ng-container *ngIf=\"showSuccessTip\">\n        <ng-container *nzStringTemplateOutlet=\"nzSuccessTip;context:{$implicit:validateControl};\">{{ nzSuccessTip }}</ng-container>\n      </ng-container>\n      <ng-container *ngIf=\"showWarningTip\">\n        <ng-container *nzStringTemplateOutlet=\"nzWarningTip;context:{$implicit:validateControl};\">{{ nzWarningTip }}</ng-container>\n      </ng-container>\n      <ng-container *ngIf=\"showErrorTip\">\n        <ng-container *nzStringTemplateOutlet=\"nzErrorTip;context:{$implicit:validateControl};\">{{ nzErrorTip }}</ng-container>\n      </ng-container>\n      <ng-container *ngIf=\"showValidatingTip\">\n        <ng-container *nzStringTemplateOutlet=\"nzValidatingTip;context:{$implicit:validateControl};\">{{ nzValidatingTip }}</ng-container>\n      </ng-container>\n    </div>\n  </div>\n  <ng-content *ngIf=\"!hasTips\" select=\"nz-form-explain\"></ng-content>\n  <ng-content *ngIf=\"!nzExtra\" select=\"nz-form-extra\"></ng-content>\n  <div class=\"ant-form-extra\" *ngIf=\"nzExtra\">\n    <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\n  </div>\n</div>",
+                styles: [`
       nz-form-control {
         display: block;
       }
       form .has-feedback .ant-input-suffix i {
         margin-right: 18px;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: NzUpdateHostClassService }, { type: ElementRef }, { type: NzFormItemComponent, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: NzRowDirective, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: ChangeDetectorRef }, { type: Renderer2 }]; }, { defaultValidateControl: [{
-            type: ContentChild,
-            args: [NgControl, { static: false }]
-        }], nzSuccessTip: [{
-            type: Input
-        }], nzWarningTip: [{
-            type: Input
-        }], nzErrorTip: [{
-            type: Input
-        }], nzValidatingTip: [{
-            type: Input
-        }], nzExtra: [{
-            type: Input
-        }], nzHasFeedback: [{
-            type: Input
-        }], nzValidateStatus: [{
-            type: Input
-        }] }); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzFormControlComponent.ctorParameters = () => [
+    { type: NzUpdateHostClassService },
+    { type: ElementRef },
+    { type: NzFormItemComponent, decorators: [{ type: Optional }, { type: Host }] },
+    { type: NzRowDirective, decorators: [{ type: Optional }, { type: Host }] },
+    { type: ChangeDetectorRef },
+    { type: Renderer2 }
+];
+NzFormControlComponent.propDecorators = {
+    defaultValidateControl: [{ type: ContentChild, args: [NgControl, { static: false },] }],
+    nzSuccessTip: [{ type: Input }],
+    nzWarningTip: [{ type: Input }],
+    nzErrorTip: [{ type: Input }],
+    nzValidatingTip: [{ type: Input }],
+    nzExtra: [{ type: Input }],
+    nzHasFeedback: [{ type: Input }],
+    nzValidateStatus: [{ type: Input }]
+};
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormControlComponent.prototype._hasFeedback;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormControlComponent.prototype.validateChanges;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormControlComponent.prototype.validateString;
+    /** @type {?} */
+    NzFormControlComponent.prototype.validateControl;
+    /** @type {?} */
+    NzFormControlComponent.prototype.status;
+    /** @type {?} */
+    NzFormControlComponent.prototype.controlClassMap;
+    /** @type {?} */
+    NzFormControlComponent.prototype.iconType;
+    /** @type {?} */
+    NzFormControlComponent.prototype.defaultValidateControl;
+    /** @type {?} */
+    NzFormControlComponent.prototype.nzSuccessTip;
+    /** @type {?} */
+    NzFormControlComponent.prototype.nzWarningTip;
+    /** @type {?} */
+    NzFormControlComponent.prototype.nzErrorTip;
+    /** @type {?} */
+    NzFormControlComponent.prototype.nzValidatingTip;
+    /** @type {?} */
+    NzFormControlComponent.prototype.nzExtra;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormControlComponent.prototype.nzFormItemComponent;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormControlComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-extra.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$3 = ["*"];
 /**
  * @deprecated Use `[nzExtra]` in `NzFormControlComponent` instead, will remove in 9.0.0.
  */
 class NzFormExtraComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
@@ -510,32 +506,50 @@ class NzFormExtraComponent {
         warnDeprecation(`'nz-form-extra' is going to be removed in 9.0.0. Use [nzExtra] in nz-form-control instead. Read https://ng.ant.design/components/form/en`);
     }
 }
-/** @nocollapse */ NzFormExtraComponent.ɵfac = function NzFormExtraComponent_Factory(t) { return new (t || NzFormExtraComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFormExtraComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormExtraComponent, selectors: [["nz-form-extra"]], exportAs: ["nzFormExtra"], ngContentSelectors: _c0$3, decls: 1, vars: 0, template: function NzFormExtraComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, styles: ["\n      nz-form-extra {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormExtraComponent, [{
-        type: Component,
-        args: [{
+NzFormExtraComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-extra',
                 exportAs: 'nzFormExtra',
-                templateUrl: './nz-form-extra.component.html',
+                template: "<ng-content></ng-content>",
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                styles: [
-                    `
+                styles: [`
       nz-form-extra {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzFormExtraComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzFormExtraComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormExtraComponent.prototype.renderer;
+}
 
-const _c0$4 = ["*"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-label.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzFormLabelComponent extends NzColDirective {
+    /**
+     * @param {?} nzUpdateHostClassService
+     * @param {?} elementRef
+     * @param {?} nzFormItemComponent
+     * @param {?} nzRowDirective
+     * @param {?} renderer
+     * @param {?} cdr
+     */
     constructor(nzUpdateHostClassService, elementRef, nzFormItemComponent, nzRowDirective, renderer, cdr) {
         super(nzUpdateHostClassService, elementRef, nzFormItemComponent || nzRowDirective, renderer);
         this.cdr = cdr;
@@ -544,130 +558,181 @@ class NzFormLabelComponent extends NzColDirective {
         this.noColon = 'default';
         renderer.addClass(elementRef.nativeElement, 'ant-form-item-label');
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set nzNoColon(value) {
         this.noColon = toBoolean(value);
     }
+    /**
+     * @return {?}
+     */
     get nzNoColon() {
         return !!this.noColon;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     setDefaultNoColon(value) {
         this.defaultNoColon = toBoolean(value);
         this.cdr.markForCheck();
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         super.ngOnDestroy();
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         super.ngAfterViewInit();
     }
 }
-/** @nocollapse */ NzFormLabelComponent.ɵfac = function NzFormLabelComponent_Factory(t) { return new (t || NzFormLabelComponent)(ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NzFormItemComponent, 9), ɵɵdirectiveInject(NzRowDirective, 9), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef)); };
-/** @nocollapse */ NzFormLabelComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormLabelComponent, selectors: [["nz-form-label"]], inputs: { nzFor: "nzFor", nzRequired: "nzRequired", nzNoColon: "nzNoColon" }, exportAs: ["nzFormLabel"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵInheritDefinitionFeature], ngContentSelectors: _c0$4, decls: 2, vars: 3, template: function NzFormLabelComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "label");
-        ɵɵprojection(1);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵclassProp("ant-form-item-no-colon", ctx.noColon === "default" ? ctx.defaultNoColon : ctx.nzNoColon)("ant-form-item-required", ctx.nzRequired);
-        ɵɵattribute("for", ctx.nzFor);
-    } }, encapsulation: 2, changeDetection: 0 });
-__decorate([
-    InputBoolean(),
-    __metadata("design:type", Object)
-], NzFormLabelComponent.prototype, "nzRequired", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormLabelComponent, [{
-        type: Component,
-        args: [{
+NzFormLabelComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-label',
                 exportAs: 'nzFormLabel',
                 providers: [NzUpdateHostClassService],
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                templateUrl: './nz-form-label.component.html'
-            }]
-    }], function () { return [{ type: NzUpdateHostClassService }, { type: ElementRef }, { type: NzFormItemComponent, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: NzRowDirective, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: Renderer2 }, { type: ChangeDetectorRef }]; }, { nzFor: [{
-            type: Input
-        }], nzRequired: [{
-            type: Input
-        }], nzNoColon: [{
-            type: Input
-        }] }); })();
+                template: "<label [attr.for]=\"nzFor\"\n  [class.ant-form-item-no-colon]=\"noColon === 'default' ? defaultNoColon : nzNoColon\"\n  [class.ant-form-item-required]=\"nzRequired\">\n  <ng-content></ng-content>\n</label>"
+            }] }
+];
+/** @nocollapse */
+NzFormLabelComponent.ctorParameters = () => [
+    { type: NzUpdateHostClassService },
+    { type: ElementRef },
+    { type: NzFormItemComponent, decorators: [{ type: Optional }, { type: Host }] },
+    { type: NzRowDirective, decorators: [{ type: Optional }, { type: Host }] },
+    { type: Renderer2 },
+    { type: ChangeDetectorRef }
+];
+NzFormLabelComponent.propDecorators = {
+    nzFor: [{ type: Input }],
+    nzRequired: [{ type: Input }],
+    nzNoColon: [{ type: Input }]
+};
+__decorate([
+    InputBoolean(),
+    __metadata("design:type", Object)
+], NzFormLabelComponent.prototype, "nzRequired", void 0);
+if (false) {
+    /** @type {?} */
+    NzFormLabelComponent.prototype.nzFor;
+    /** @type {?} */
+    NzFormLabelComponent.prototype.nzRequired;
+    /** @type {?} */
+    NzFormLabelComponent.prototype.defaultNoColon;
+    /** @type {?} */
+    NzFormLabelComponent.prototype.noColon;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormLabelComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-split.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$5 = ["*"];
 class NzFormSplitComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-split');
     }
 }
-/** @nocollapse */ NzFormSplitComponent.ɵfac = function NzFormSplitComponent_Factory(t) { return new (t || NzFormSplitComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFormSplitComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormSplitComponent, selectors: [["nz-form-split"]], exportAs: ["nzFormSplit"], ngContentSelectors: _c0$5, decls: 1, vars: 0, template: function NzFormSplitComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormSplitComponent, [{
-        type: Component,
-        args: [{
+NzFormSplitComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-split',
                 exportAs: 'nzFormSplit',
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                templateUrl: './nz-form-split.component.html'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+                template: "<ng-content></ng-content>"
+            }] }
+];
+/** @nocollapse */
+NzFormSplitComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzFormSplitComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormSplitComponent.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form-text.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$6 = ["*"];
 class NzFormTextComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-text');
     }
 }
-/** @nocollapse */ NzFormTextComponent.ɵfac = function NzFormTextComponent_Factory(t) { return new (t || NzFormTextComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFormTextComponent.ɵcmp = ɵɵdefineComponent({ type: NzFormTextComponent, selectors: [["nz-form-text"]], exportAs: ["nzFormText"], ngContentSelectors: _c0$6, decls: 1, vars: 0, template: function NzFormTextComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormTextComponent, [{
-        type: Component,
-        args: [{
+NzFormTextComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-form-text',
                 exportAs: 'nzFormText',
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                templateUrl: './nz-form-text.component.html'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+                template: "<ng-content></ng-content>"
+            }] }
+];
+/** @nocollapse */
+NzFormTextComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzFormTextComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormTextComponent.prototype.renderer;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-form.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 const NZ_CONFIG_COMPONENT_NAME = 'form';
 class NzFormDirective {
+    /**
+     * @param {?} nzConfigService
+     * @param {?} elementRef
+     * @param {?} renderer
+     * @param {?} nzUpdateHostClassService
+     */
     constructor(nzConfigService, elementRef, renderer, nzUpdateHostClassService) {
         this.nzConfigService = nzConfigService;
         this.elementRef = elementRef;
@@ -677,91 +742,123 @@ class NzFormDirective {
         this.destroy$ = new Subject();
         this.renderer.addClass(elementRef.nativeElement, 'ant-form');
     }
+    /**
+     * @return {?}
+     */
     setClassMap() {
         this.nzUpdateHostClassService.updateHostClass(this.elementRef.nativeElement, {
             [`ant-form-${this.nzLayout}`]: this.nzLayout
         });
     }
+    /**
+     * @return {?}
+     */
     updateItemsDefaultColon() {
         if (this.nzFormLabelComponent) {
-            this.nzFormLabelComponent.forEach(item => item.setDefaultNoColon(this.nzNoColon));
+            this.nzFormLabelComponent.forEach((/**
+             * @param {?} item
+             * @return {?}
+             */
+            item => item.setDefaultNoColon(this.nzNoColon)));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         this.setClassMap();
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         this.setClassMap();
         if (changes.hasOwnProperty('nzNoColon')) {
             this.updateItemsDefaultColon();
         }
     }
+    /**
+     * @return {?}
+     */
     ngAfterContentInit() {
-        this.nzFormLabelComponent.changes.pipe(startWith(null), takeUntil(this.destroy$)).subscribe(() => {
+        this.nzFormLabelComponent.changes
+            .pipe(startWith(null), takeUntil(this.destroy$))
+            .subscribe((/**
+         * @return {?}
+         */
+        () => {
             this.updateItemsDefaultColon();
-        });
+        }));
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
 }
-/** @nocollapse */ NzFormDirective.ɵfac = function NzFormDirective_Factory(t) { return new (t || NzFormDirective)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzUpdateHostClassService)); };
-/** @nocollapse */ NzFormDirective.ɵdir = ɵɵdefineDirective({ type: NzFormDirective, selectors: [["", "nz-form", ""]], contentQueries: function NzFormDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, NzFormLabelComponent, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nzFormLabelComponent = _t);
-    } }, inputs: { nzLayout: "nzLayout", nzNoColon: "nzNoColon" }, exportAs: ["nzForm"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵNgOnChangesFeature()] });
+NzFormDirective.decorators = [
+    { type: Directive, args: [{
+                selector: '[nz-form]',
+                exportAs: 'nzForm',
+                providers: [NzUpdateHostClassService]
+            },] }
+];
+/** @nocollapse */
+NzFormDirective.ctorParameters = () => [
+    { type: NzConfigService },
+    { type: ElementRef },
+    { type: Renderer2 },
+    { type: NzUpdateHostClassService }
+];
+NzFormDirective.propDecorators = {
+    nzLayout: [{ type: Input }],
+    nzNoColon: [{ type: Input }],
+    nzFormLabelComponent: [{ type: ContentChildren, args: [NzFormLabelComponent, { descendants: true },] }]
+};
 __decorate([
     WithConfig(NZ_CONFIG_COMPONENT_NAME, false), InputBoolean(),
     __metadata("design:type", Boolean)
 ], NzFormDirective.prototype, "nzNoColon", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-form]',
-                exportAs: 'nzForm',
-                providers: [NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: ElementRef }, { type: Renderer2 }, { type: NzUpdateHostClassService }]; }, { nzLayout: [{
-            type: Input
-        }], nzNoColon: [{
-            type: Input
-        }], nzFormLabelComponent: [{
-            type: ContentChildren,
-            args: [NzFormLabelComponent, { descendants: true }]
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzFormDirective.prototype.nzLayout;
+    /** @type {?} */
+    NzFormDirective.prototype.nzNoColon;
+    /** @type {?} */
+    NzFormDirective.prototype.nzFormLabelComponent;
+    /** @type {?} */
+    NzFormDirective.prototype.destroy$;
+    /** @type {?} */
+    NzFormDirective.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormDirective.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormDirective.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFormDirective.prototype.nzUpdateHostClassService;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-form.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormModule {
 }
-/** @nocollapse */ NzFormModule.ɵmod = ɵɵdefineNgModule({ type: NzFormModule });
-/** @nocollapse */ NzFormModule.ɵinj = ɵɵdefineInjector({ factory: function NzFormModule_Factory(t) { return new (t || NzFormModule)(); }, imports: [[CommonModule, NzGridModule, NzIconModule, LayoutModule, PlatformModule, NzAddOnModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzFormModule, { declarations: [NzFormExtraComponent,
-        NzFormLabelComponent,
-        NzFormDirective,
-        NzFormItemComponent,
-        NzFormControlComponent,
-        NzFormExplainComponent,
-        NzFormTextComponent,
-        NzFormSplitComponent], imports: [CommonModule, NzGridModule, NzIconModule, LayoutModule, PlatformModule, NzAddOnModule], exports: [NzFormExtraComponent,
-        NzFormLabelComponent,
-        NzFormDirective,
-        NzFormItemComponent,
-        NzFormControlComponent,
-        NzFormExplainComponent,
-        NzFormTextComponent,
-        NzFormSplitComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFormModule, [{
-        type: NgModule,
-        args: [{
+NzFormModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [
                     NzFormExtraComponent,
                     NzFormLabelComponent,
@@ -783,19 +880,19 @@ class NzFormModule {
                     NzFormSplitComponent
                 ],
                 imports: [CommonModule, NzGridModule, NzIconModule, LayoutModule, PlatformModule, NzAddOnModule]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-form.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzFormControlComponent, NzFormDirective, NzFormExplainComponent, NzFormExtraComponent, NzFormItemComponent, NzFormLabelComponent, NzFormModule, NzFormSplitComponent, NzFormTextComponent };

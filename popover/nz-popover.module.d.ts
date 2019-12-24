@@ -1,11 +1,9 @@
-import * as i0 from "@angular/core";
-import * as i1 from "./nz-popover.directive";
-import * as i2 from "./nz-popover.component";
-import * as i3 from "@angular/common";
-import * as i4 from "@angular/cdk/overlay";
-import * as i5 from "ng-zorro-antd/core";
-import * as i6 from "ng-zorro-antd/tooltip";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzPopoverModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NzPopoverModule, [typeof i1.NzPopoverDirective, typeof i2.NzPopoverComponent], [typeof i3.CommonModule, typeof i4.OverlayModule, typeof i5.NzAddOnModule, typeof i5.NzOverlayModule, typeof i5.NzNoAnimationModule, typeof i6.NzToolTipModule], [typeof i1.NzPopoverDirective, typeof i2.NzPopoverComponent]>;
-    static ɵinj: i0.ɵɵInjectorDef<NzPopoverModule>;
 }

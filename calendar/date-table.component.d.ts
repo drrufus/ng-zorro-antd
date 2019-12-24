@@ -8,7 +8,6 @@
 import { EventEmitter, OnChanges, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { CandyDate, FunctionProp } from 'ng-zorro-antd/core';
 import { DateHelperService, NzCalendarI18nInterface, NzI18nService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class DateTableComponent implements OnChanges, OnInit {
     private i18n;
     private dateHelper;
@@ -39,8 +38,6 @@ export declare class DateTableComponent implements OnChanges, OnInit {
     private makeWeekRows;
     trackByDateFn(_index: number, item: DateCell): string;
     trackByWeekFn(_index: number, item: WeekRow): string;
-    static ɵfac: i0.ɵɵFactoryDef<DateTableComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateTableComponent, "date-table", ["dateTable"], { 'prefixCls': "prefixCls", 'locale': "locale", 'selectedValue': "selectedValue", 'hoverValue': "hoverValue", 'value': "value", 'activeDate': "activeDate", 'showWeek': "showWeek", 'disabledDate': "disabledDate", 'dateCellRender': "dateCellRender", 'dateFullCellRender': "dateFullCellRender" }, { 'dayHover': "dayHover", 'valueChange': "valueChange" }, never>;
 }
 export interface WeekDayLabel {
     short: string;

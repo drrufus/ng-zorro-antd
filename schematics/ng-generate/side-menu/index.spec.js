@@ -1,10 +1,9 @@
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -16,11 +15,11 @@ const test_app_1 = require("../../testing/test-app");
 describe('side-menu schematic', () => {
     let runner;
     let appTree;
-    beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
+    beforeEach(() => __awaiter(this, void 0, void 0, function* () {
         runner = new testing_1.SchematicTestRunner('schematics', require.resolve('../../collection.json'));
         appTree = yield test_app_1.createTestApp(runner);
     }));
-    it('should create side-menu files', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should create side-menu files', () => __awaiter(this, void 0, void 0, function* () {
         const tree = yield runner.runSchematicAsync('sidemenu', {}, appTree).toPromise();
         const files = tree.files;
         expect(files).toEqual(jasmine.arrayContaining([
@@ -36,7 +35,7 @@ describe('side-menu schematic', () => {
             '/projects/ng-zorro/src/app/pages/welcome/welcome.component.html'
         ]));
     }));
-    it('should set the style preprocessor correctly', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should set the style preprocessor correctly', () => __awaiter(this, void 0, void 0, function* () {
         const tree = yield runner.runSchematicAsync('sidemenu', { style: schema_1.Style.Less }, appTree).toPromise();
         const files = tree.files;
         const appContent = test_1.getFileContent(tree, '/projects/ng-zorro/src/app/app.component.ts');
@@ -48,7 +47,7 @@ describe('side-menu schematic', () => {
             '/projects/ng-zorro/src/app/pages/welcome/welcome.component.less'
         ]));
     }));
-    it('should fall back to the @schematics/angular:component option value', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should fall back to the @schematics/angular:component option value', () => __awaiter(this, void 0, void 0, function* () {
         appTree = yield test_app_1.createTestApp(runner, { style: schema_1.Style.Less });
         yield runner.runSchematicAsync('ng-add', { template: 'sidemenu' }, appTree).toPromise();
         // tslint:disable-next-line:no-any
@@ -60,7 +59,7 @@ describe('side-menu schematic', () => {
         expect(sideMenuSchematicOption.template).toBe('sidemenu');
         expect(sideMenuSchematicOption.style).toBe(schema_1.Style.Less);
     }));
-    it('should set the prefix correctly', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should set the prefix correctly', () => __awaiter(this, void 0, void 0, function* () {
         const tree = yield runner.runSchematicAsync('sidemenu', { prefix: 'nz' }, appTree).toPromise();
         const appContent = test_1.getFileContent(tree, '/projects/ng-zorro/src/app/app.component.ts');
         const welcomeContent = test_1.getFileContent(tree, '/projects/ng-zorro/src/app/pages/welcome/welcome.component.ts');

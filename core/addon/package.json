@@ -7,6 +7,7 @@
   "fesm5": "../../fesm5/ng-zorro-antd-core-addon.js",
   "fesm2015": "../../fesm2015/ng-zorro-antd-core-addon.js",
   "typings": "ng-zorro-antd-core-addon.d.ts",
+  "metadata": "ng-zorro-antd-core-addon.metadata.json",
   "sideEffects": false,
   "name": "ng-zorro-antd/core/addon"
 }

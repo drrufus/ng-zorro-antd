@@ -1,4 +1,9 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -6,16 +11,13 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { NgModule } from '@angular/core';
-import * as i0 from "@angular/core";
 var NzNotificationServiceModule = /** @class */ (function () {
     function NzNotificationServiceModule() {
     }
-    /** @nocollapse */ NzNotificationServiceModule.ɵmod = i0.ɵɵdefineNgModule({ type: NzNotificationServiceModule });
-    /** @nocollapse */ NzNotificationServiceModule.ɵinj = i0.ɵɵdefineInjector({ factory: function NzNotificationServiceModule_Factory(t) { return new (t || NzNotificationServiceModule)(); } });
+    NzNotificationServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzNotificationServiceModule;
 }());
 export { NzNotificationServiceModule };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NzNotificationServiceModule, [{
-        type: NgModule
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbm90aWZpY2F0aW9uLnNlcnZpY2UubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9ub3RpZmljYXRpb24vIiwic291cmNlcyI6WyJuei1ub3RpZmljYXRpb24uc2VydmljZS5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HO0FBRUgsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7QUFFekM7SUFBQTtLQUMyQzttRUFBOUIsMkJBQTJCO3lJQUEzQiwyQkFBMkI7c0NBWHhDO0NBVzJDLEFBRDNDLElBQzJDO1NBQTlCLDJCQUEyQjtrREFBM0IsMkJBQTJCO2NBRHZDLFFBQVEiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5ATmdNb2R1bGUoKVxyXG5leHBvcnQgY2xhc3MgTnpOb3RpZmljYXRpb25TZXJ2aWNlTW9kdWxlIHt9XHJcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbm90aWZpY2F0aW9uLnNlcnZpY2UubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9ub3RpZmljYXRpb24vIiwic291cmNlcyI6WyJuei1ub3RpZmljYXRpb24uc2VydmljZS5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBUUEsT0FBTyxFQUFFLFFBQVEsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUV6QztJQUFBO0lBQzBDLENBQUM7O2dCQUQxQyxRQUFROztJQUNpQyxrQ0FBQztDQUFBLEFBRDNDLElBQzJDO1NBQTlCLDJCQUEyQiIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQGxpY2Vuc2VcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcbiAqL1xuXG5pbXBvcnQgeyBOZ01vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5ATmdNb2R1bGUoKVxuZXhwb3J0IGNsYXNzIE56Tm90aWZpY2F0aW9uU2VydmljZU1vZHVsZSB7fVxuIl19

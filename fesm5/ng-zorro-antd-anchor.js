@@ -1,50 +1,33 @@
 import { Platform, PlatformModule } from '@angular/cdk/platform';
-import { ɵɵelementStart, ɵɵtemplate, ɵɵelementEnd, ɵɵnextContext, ɵɵreference, ɵɵproperty, ɵɵadvance, ɵɵelement, ɵɵprojection, ɵɵpureFunction1, ɵɵclassProp, EventEmitter, ɵɵdirectiveInject, ChangeDetectorRef, ɵɵdefineComponent, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵprojectionDef, ɵɵtemplateRefExtractor, ɵsetClassMetadata, Component, ViewEncapsulation, ChangeDetectionStrategy, Inject, ViewChild, Input, Output, ɵɵtext, ɵɵtextInterpolate, TemplateRef, ElementRef, Renderer2, ɵɵcontentQuery, ɵɵallocHostVars, ɵɵlistener, ɵɵpropertyInterpolate, ɵɵsanitizeUrl, ContentChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { EventEmitter, Component, ViewEncapsulation, ChangeDetectionStrategy, Inject, ChangeDetectorRef, ViewChild, Input, Output, TemplateRef, ElementRef, Renderer2, ContentChild, NgModule } from '@angular/core';
 import { __decorate, __metadata } from 'tslib';
-import { DOCUMENT, NgIf, NgTemplateOutlet, NgStyle, NgClass, CommonModule } from '@angular/common';
+import { DOCUMENT, CommonModule } from '@angular/common';
 import { fromEvent } from 'rxjs';
 import { throttleTime, distinctUntilChanged } from 'rxjs/operators';
 import { toNumber, NzConfigService, NzScrollService, InputBoolean, WithConfig, InputNumber, SCROLL_SERVICE_PROVIDER } from 'ng-zorro-antd/core';
-import { NzAffixComponent, NzAffixModule } from 'ng-zorro-antd/affix';
+import { NzAffixModule } from 'ng-zorro-antd/affix';
 
-var _c0 = ["ink"];
-function NzAnchorComponent_nz_affix_0_ng_template_1_Template(rf, ctx) { }
-function NzAnchorComponent_nz_affix_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "nz-affix", 2);
-    ɵɵtemplate(1, NzAnchorComponent_nz_affix_0_ng_template_1_Template, 0, 0, "ng-template", 3);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r360 = ɵɵnextContext();
-    var _r361 = ɵɵreference(2);
-    ɵɵproperty("nzOffsetTop", ctx_r360.nzOffsetTop);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", _r361);
-} }
-var _c1 = function (a0) { return { fixed: a0 }; };
-function NzAnchorComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 4);
-    ɵɵelementStart(1, "div", 5);
-    ɵɵelementStart(2, "div", 6);
-    ɵɵelement(3, "div", 7, 8);
-    ɵɵelementEnd();
-    ɵɵprojection(5);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r362 = ɵɵnextContext();
-    ɵɵproperty("ngStyle", ctx_r362.wrapperStyle);
-    ɵɵadvance(1);
-    ɵɵproperty("ngClass", ɵɵpureFunction1(3, _c1, !ctx_r362.nzAffix && !ctx_r362.nzShowInkInFixed));
-    ɵɵadvance(2);
-    ɵɵclassProp("visible", ctx_r362.visible);
-} }
-var _c2 = ["*"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-anchor.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function Section() { }
+if (false) {
+    /** @type {?} */
+    Section.prototype.comp;
+    /** @type {?} */
+    Section.prototype.top;
+}
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'anchor';
+/** @type {?} */
 var sharpMatcherRegx = /#([^#]+)$/;
 var NzAnchorComponent = /** @class */ (function () {
-    function NzAnchorComponent(nzConfigService, scrollSrv, 
-    /* tslint:disable-next-line:no-any */
-    doc, cdr, platform) {
+    function NzAnchorComponent(nzConfigService, scrollSrv, doc, cdr, platform) {
         this.nzConfigService = nzConfigService;
         this.scrollSrv = scrollSrv;
         this.doc = doc;
@@ -62,10 +45,17 @@ var NzAnchorComponent = /** @class */ (function () {
         this.destroyed = false;
     }
     Object.defineProperty(NzAnchorComponent.prototype, "nzOffsetTop", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._offsetTop;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._offsetTop = toNumber(value, 0);
             this.wrapperStyle = {
                 'max-height': "calc(100vh - " + this._offsetTop + "px)"
@@ -75,30 +65,78 @@ var NzAnchorComponent = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzAnchorComponent.prototype, "nzTarget", {
-        set: function (el) {
+        set: /**
+         * @param {?} el
+         * @return {?}
+         */
+        function (el) {
             this.target = typeof el === 'string' ? this.doc.querySelector(el) : el;
             this.registerScrollEvent();
         },
         enumerable: true,
         configurable: true
     });
-    NzAnchorComponent.prototype.registerLink = function (link) {
+    /**
+     * @param {?} link
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.registerLink = /**
+     * @param {?} link
+     * @return {?}
+     */
+    function (link) {
         this.links.push(link);
     };
-    NzAnchorComponent.prototype.unregisterLink = function (link) {
+    /**
+     * @param {?} link
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.unregisterLink = /**
+     * @param {?} link
+     * @return {?}
+     */
+    function (link) {
         this.links.splice(this.links.indexOf(link), 1);
     };
-    NzAnchorComponent.prototype.getTarget = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.getTarget = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         return this.target || window;
     };
-    NzAnchorComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         this.registerScrollEvent();
     };
-    NzAnchorComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.destroyed = true;
         this.removeListen();
     };
-    NzAnchorComponent.prototype.registerScrollEvent = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.registerScrollEvent = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (!this.platform.isBrowser) {
             return;
@@ -106,43 +144,83 @@ var NzAnchorComponent = /** @class */ (function () {
         this.removeListen();
         this.scroll$ = fromEvent(this.getTarget(), 'scroll')
             .pipe(throttleTime(50), distinctUntilChanged())
-            .subscribe(function () { return _this.handleScroll(); });
+            .subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.handleScroll(); }));
         // Browser would maintain the scrolling position when refreshing.
         // So we have to delay calculation in avoid of getting a incorrect result.
-        setTimeout(function () { return _this.handleScroll(); });
+        setTimeout((/**
+         * @return {?}
+         */
+        function () { return _this.handleScroll(); }));
     };
-    NzAnchorComponent.prototype.removeListen = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.removeListen = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this.scroll$) {
             this.scroll$.unsubscribe();
         }
     };
-    NzAnchorComponent.prototype.getOffsetTop = function (element) {
+    /**
+     * @private
+     * @param {?} element
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.getOffsetTop = /**
+     * @private
+     * @param {?} element
+     * @return {?}
+     */
+    function (element) {
         if (!element || !element.getClientRects().length) {
             return 0;
         }
+        /** @type {?} */
         var rect = element.getBoundingClientRect();
         if (rect.width || rect.height) {
             if (this.getTarget() === window) {
-                return rect.top - element.ownerDocument.documentElement.clientTop;
+                return rect.top - (/** @type {?} */ ((/** @type {?} */ (element.ownerDocument)).documentElement)).clientTop;
             }
-            return rect.top - this.getTarget().getBoundingClientRect().top;
+            return rect.top - ((/** @type {?} */ (this.getTarget()))).getBoundingClientRect().top;
         }
         return rect.top;
     };
-    NzAnchorComponent.prototype.handleScroll = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.handleScroll = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (typeof document === 'undefined' || this.destroyed || this.animating) {
             return;
         }
+        /** @type {?} */
         var sections = [];
+        /** @type {?} */
         var scope = (this.nzOffsetTop || 0) + this.nzBounds;
-        this.links.forEach(function (comp) {
+        this.links.forEach((/**
+         * @param {?} comp
+         * @return {?}
+         */
+        function (comp) {
+            /** @type {?} */
             var sharpLinkMatch = sharpMatcherRegx.exec(comp.nzHref.toString());
             if (!sharpLinkMatch) {
                 return;
             }
+            /** @type {?} */
             var target = _this.doc.getElementById(sharpLinkMatch[1]);
             if (target) {
+                /** @type {?} */
                 var top_1 = _this.getOffsetTop(target);
                 if (top_1 < scope) {
                     sections.push({
@@ -151,63 +229,121 @@ var NzAnchorComponent = /** @class */ (function () {
                     });
                 }
             }
-        });
+        }));
         this.visible = !!sections.length;
         if (!this.visible) {
             this.clearActive();
             this.cdr.detectChanges();
         }
         else {
-            var maxSection = sections.reduce(function (prev, curr) { return (curr.top > prev.top ? curr : prev); });
+            /** @type {?} */
+            var maxSection = sections.reduce((/**
+             * @param {?} prev
+             * @param {?} curr
+             * @return {?}
+             */
+            function (prev, curr) { return (curr.top > prev.top ? curr : prev); }));
             this.handleActive(maxSection.comp);
         }
     };
-    NzAnchorComponent.prototype.clearActive = function () {
-        this.links.forEach(function (i) {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.clearActive = /**
+     * @private
+     * @return {?}
+     */
+    function () {
+        this.links.forEach((/**
+         * @param {?} i
+         * @return {?}
+         */
+        function (i) {
             i.active = false;
             i.markForCheck();
-        });
+        }));
     };
-    NzAnchorComponent.prototype.handleActive = function (comp) {
+    /**
+     * @private
+     * @param {?} comp
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.handleActive = /**
+     * @private
+     * @param {?} comp
+     * @return {?}
+     */
+    function (comp) {
         this.clearActive();
         comp.active = true;
         comp.markForCheck();
-        var linkNode = comp.elementRef.nativeElement.querySelector('.ant-anchor-link-title');
+        /** @type {?} */
+        var linkNode = (/** @type {?} */ (((/** @type {?} */ (comp.elementRef.nativeElement))).querySelector('.ant-anchor-link-title')));
         this.ink.nativeElement.style.top = linkNode.offsetTop + linkNode.clientHeight / 2 - 4.5 + "px";
         this.visible = true;
         this.cdr.detectChanges();
         this.nzScroll.emit(comp);
     };
-    NzAnchorComponent.prototype.handleScrollTo = function (linkComp) {
+    /**
+     * @param {?} linkComp
+     * @return {?}
+     */
+    NzAnchorComponent.prototype.handleScrollTo = /**
+     * @param {?} linkComp
+     * @return {?}
+     */
+    function (linkComp) {
         var _this = this;
+        /** @type {?} */
         var el = this.doc.querySelector(linkComp.nzHref);
         if (!el) {
             return;
         }
         this.animating = true;
+        /** @type {?} */
         var containerScrollTop = this.scrollSrv.getScroll(this.getTarget());
+        /** @type {?} */
         var elOffsetTop = this.getOffsetTop(el);
+        /** @type {?} */
         var targetScrollTop = containerScrollTop + elOffsetTop - (this.nzOffsetTop || 0);
-        this.scrollSrv.scrollTo(this.getTarget(), targetScrollTop, undefined, function () {
+        this.scrollSrv.scrollTo(this.getTarget(), targetScrollTop, undefined, (/**
+         * @return {?}
+         */
+        function () {
             _this.animating = false;
             _this.handleActive(linkComp);
-        });
+        }));
         this.nzClick.emit(linkComp.nzHref);
     };
-    /** @nocollapse */ NzAnchorComponent.ɵfac = function NzAnchorComponent_Factory(t) { return new (t || NzAnchorComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NzScrollService), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Platform)); };
-    /** @nocollapse */ NzAnchorComponent.ɵcmp = ɵɵdefineComponent({ type: NzAnchorComponent, selectors: [["nz-anchor"]], viewQuery: function NzAnchorComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵviewQuery(_c0, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.ink = _t.first);
-        } }, inputs: { nzAffix: "nzAffix", nzShowInkInFixed: "nzShowInkInFixed", nzBounds: "nzBounds", nzOffsetTop: "nzOffsetTop", nzTarget: "nzTarget" }, outputs: { nzClick: "nzClick", nzScroll: "nzScroll" }, exportAs: ["nzAnchor"], ngContentSelectors: _c2, decls: 3, vars: 2, consts: [[3, "nzOffsetTop", 4, "ngIf", "ngIfElse"], ["content", ""], [3, "nzOffsetTop"], [3, "ngTemplateOutlet"], [1, "ant-anchor-wrapper", 3, "ngStyle"], [1, "ant-anchor", 3, "ngClass"], [1, "ant-anchor-ink"], [1, "ant-anchor-ink-ball"], ["ink", ""]], template: function NzAnchorComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵtemplate(0, NzAnchorComponent_nz_affix_0_Template, 2, 2, "nz-affix", 0);
-            ɵɵtemplate(1, NzAnchorComponent_ng_template_1_Template, 6, 5, "ng-template", null, 1, ɵɵtemplateRefExtractor);
-        } if (rf & 2) {
-            var _r361 = ɵɵreference(2);
-            ɵɵproperty("ngIf", ctx.nzAffix)("ngIfElse", _r361);
-        } }, directives: [NgIf, NzAffixComponent, NgTemplateOutlet, NgStyle, NgClass], encapsulation: 2, changeDetection: 0 });
+    NzAnchorComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-anchor',
+                    exportAs: 'nzAnchor',
+                    preserveWhitespaces: false,
+                    template: "<nz-affix *ngIf=\"nzAffix;else content\" [nzOffsetTop]=\"nzOffsetTop\">\n  <ng-template [ngTemplateOutlet]=\"content\"></ng-template>\n</nz-affix>\n<ng-template #content>\n  <div class=\"ant-anchor-wrapper\" [ngStyle]=\"wrapperStyle\">\n    <div class=\"ant-anchor\" [ngClass]=\"{'fixed': !nzAffix && !nzShowInkInFixed}\">\n      <div class=\"ant-anchor-ink\">\n        <div class=\"ant-anchor-ink-ball\" [class.visible]=\"visible\" #ink></div>\n      </div>\n      <ng-content></ng-content>\n    </div>\n  </div>\n</ng-template>",
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush
+                }] }
+    ];
+    /** @nocollapse */
+    NzAnchorComponent.ctorParameters = function () { return [
+        { type: NzConfigService },
+        { type: NzScrollService },
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] },
+        { type: ChangeDetectorRef },
+        { type: Platform }
+    ]; };
+    NzAnchorComponent.propDecorators = {
+        ink: [{ type: ViewChild, args: ['ink', { static: false },] }],
+        nzAffix: [{ type: Input }],
+        nzShowInkInFixed: [{ type: Input }],
+        nzBounds: [{ type: Input }],
+        nzOffsetTop: [{ type: Input }],
+        nzTarget: [{ type: Input }],
+        nzClick: [{ type: Output }],
+        nzScroll: [{ type: Output }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Object)
@@ -229,56 +365,85 @@ var NzAnchorComponent = /** @class */ (function () {
     ], NzAnchorComponent.prototype, "nzOffsetTop", null);
     return NzAnchorComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAnchorComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-anchor',
-                exportAs: 'nzAnchor',
-                preserveWhitespaces: false,
-                templateUrl: './nz-anchor.component.html',
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: NzScrollService }, { type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }, { type: ChangeDetectorRef }, { type: Platform }]; }, { ink: [{
-            type: ViewChild,
-            args: ['ink', { static: false }]
-        }], nzAffix: [{
-            type: Input
-        }], nzShowInkInFixed: [{
-            type: Input
-        }], nzBounds: [{
-            type: Input
-        }], nzOffsetTop: [{
-            type: Input
-        }], nzTarget: [{
-            type: Input
-        }], nzClick: [{
-            type: Output
-        }], nzScroll: [{
-            type: Output
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.ink;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzAffix;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzShowInkInFixed;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzBounds;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype._offsetTop;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzClick;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzScroll;
+    /** @type {?} */
+    NzAnchorComponent.prototype.visible;
+    /** @type {?} */
+    NzAnchorComponent.prototype.wrapperStyle;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.links;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.animating;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.target;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.scroll$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.destroyed;
+    /** @type {?} */
+    NzAnchorComponent.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.scrollSrv;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.doc;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorComponent.prototype.platform;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-anchor-link.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var _c0$1 = ["nzTemplate"];
-function NzAnchorLinkComponent_span_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "span");
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r365 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r365.titleStr);
-} }
-var _c1$1 = ["*"];
 var NzAnchorLinkComponent = /** @class */ (function () {
     function NzAnchorLinkComponent(elementRef, anchorComp, cdr, platform, renderer) {
         this.elementRef = elementRef;
@@ -291,7 +456,11 @@ var NzAnchorLinkComponent = /** @class */ (function () {
         renderer.addClass(elementRef.nativeElement, 'ant-anchor-link');
     }
     Object.defineProperty(NzAnchorLinkComponent.prototype, "nzTitle", {
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (value instanceof TemplateRef) {
                 this.titleStr = null;
                 this.titleTpl = value;
@@ -303,107 +472,136 @@ var NzAnchorLinkComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NzAnchorLinkComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorLinkComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.anchorComp.registerLink(this);
     };
-    NzAnchorLinkComponent.prototype.goToClick = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzAnchorLinkComponent.prototype.goToClick = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         e.preventDefault();
         e.stopPropagation();
         if (this.platform.isBrowser) {
             this.anchorComp.handleScrollTo(this);
         }
     };
-    NzAnchorLinkComponent.prototype.markForCheck = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorLinkComponent.prototype.markForCheck = /**
+     * @return {?}
+     */
+    function () {
         this.cdr.markForCheck();
     };
-    NzAnchorLinkComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzAnchorLinkComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.anchorComp.unregisterLink(this);
     };
-    /** @nocollapse */ NzAnchorLinkComponent.ɵfac = function NzAnchorLinkComponent_Factory(t) { return new (t || NzAnchorLinkComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NzAnchorComponent), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(Renderer2)); };
-    /** @nocollapse */ NzAnchorLinkComponent.ɵcmp = ɵɵdefineComponent({ type: NzAnchorLinkComponent, selectors: [["nz-link"]], contentQueries: function NzAnchorLinkComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-            ɵɵcontentQuery(dirIndex, _c0$1, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.nzTemplate = _t.first);
-        } }, hostBindings: function NzAnchorLinkComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            ɵɵallocHostVars(1);
-        } if (rf & 2) {
-            ɵɵclassProp("ant-anchor-link-active", ctx.active);
-        } }, inputs: { nzHref: "nzHref", nzTitle: "nzTitle" }, exportAs: ["nzLink"], ngContentSelectors: _c1$1, decls: 3, vars: 4, consts: [[1, "ant-anchor-link-title", 3, "href", "title", "click"], [4, "ngIf", "ngIfElse"]], template: function NzAnchorLinkComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵelementStart(0, "a", 0);
-            ɵɵlistener("click", function NzAnchorLinkComponent_Template_a_click_0_listener($event) { return ctx.goToClick($event); });
-            ɵɵtemplate(1, NzAnchorLinkComponent_span_1_Template, 2, 1, "span", 1);
-            ɵɵelementEnd();
-            ɵɵprojection(2);
-        } if (rf & 2) {
-            ɵɵpropertyInterpolate("href", ctx.nzHref, ɵɵsanitizeUrl);
-            ɵɵpropertyInterpolate("title", ctx.titleStr);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.titleStr)("ngIfElse", ctx.titleTpl || ctx.nzTemplate);
-        } }, directives: [NgIf], styles: ["\n      nz-link {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+    NzAnchorLinkComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-link',
+                    exportAs: 'nzLink',
+                    preserveWhitespaces: false,
+                    template: "<a (click)=\"goToClick($event)\" href=\"{{nzHref}}\" class=\"ant-anchor-link-title\" title=\"{{titleStr}}\">\n  <span *ngIf=\"titleStr; else (titleTpl || nzTemplate)\">{{ titleStr }}</span>\n</a>\n<ng-content></ng-content>",
+                    host: {
+                        '[class.ant-anchor-link-active]': 'active'
+                    },
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    styles: ["\n      nz-link {\n        display: block;\n      }\n    "]
+                }] }
+    ];
+    /** @nocollapse */
+    NzAnchorLinkComponent.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: NzAnchorComponent },
+        { type: ChangeDetectorRef },
+        { type: Platform },
+        { type: Renderer2 }
+    ]; };
+    NzAnchorLinkComponent.propDecorators = {
+        nzHref: [{ type: Input }],
+        nzTitle: [{ type: Input }],
+        nzTemplate: [{ type: ContentChild, args: ['nzTemplate', { static: false },] }]
+    };
     return NzAnchorLinkComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAnchorLinkComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-link',
-                exportAs: 'nzLink',
-                preserveWhitespaces: false,
-                templateUrl: './nz-anchor-link.component.html',
-                host: {
-                    '[class.ant-anchor-link-active]': 'active'
-                },
-                styles: [
-                    "\n      nz-link {\n        display: block;\n      }\n    "
-                ],
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush
-            }]
-    }], function () { return [{ type: ElementRef }, { type: NzAnchorComponent }, { type: ChangeDetectorRef }, { type: Platform }, { type: Renderer2 }]; }, { nzHref: [{
-            type: Input
-        }], nzTitle: [{
-            type: Input
-        }], nzTemplate: [{
-            type: ContentChild,
-            args: ['nzTemplate', { static: false }]
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.nzHref;
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.titleStr;
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.titleTpl;
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.active;
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.nzTemplate;
+    /** @type {?} */
+    NzAnchorLinkComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorLinkComponent.prototype.anchorComp;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorLinkComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAnchorLinkComponent.prototype.platform;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-anchor.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAnchorModule = /** @class */ (function () {
     function NzAnchorModule() {
     }
-    /** @nocollapse */ NzAnchorModule.ɵmod = ɵɵdefineNgModule({ type: NzAnchorModule });
-    /** @nocollapse */ NzAnchorModule.ɵinj = ɵɵdefineInjector({ factory: function NzAnchorModule_Factory(t) { return new (t || NzAnchorModule)(); }, providers: [SCROLL_SERVICE_PROVIDER], imports: [[CommonModule, NzAffixModule, PlatformModule]] });
+    NzAnchorModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzAnchorComponent, NzAnchorLinkComponent],
+                    exports: [NzAnchorComponent, NzAnchorLinkComponent],
+                    imports: [CommonModule, NzAffixModule, PlatformModule],
+                    providers: [SCROLL_SERVICE_PROVIDER]
+                },] }
+    ];
     return NzAnchorModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzAnchorModule, { declarations: [NzAnchorComponent, NzAnchorLinkComponent], imports: [CommonModule, NzAffixModule, PlatformModule], exports: [NzAnchorComponent, NzAnchorLinkComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAnchorModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzAnchorComponent, NzAnchorLinkComponent],
-                exports: [NzAnchorComponent, NzAnchorLinkComponent],
-                imports: [CommonModule, NzAffixModule, PlatformModule],
-                providers: [SCROLL_SERVICE_PROVIDER]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-anchor.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzAnchorComponent, NzAnchorLinkComponent, NzAnchorModule };

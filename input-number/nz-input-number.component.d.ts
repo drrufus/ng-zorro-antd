@@ -9,14 +9,13 @@ import { FocusMonitor } from '@angular/cdk/a11y';
 import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NzSizeLDSType } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzInputNumberComponent implements ControlValueAccessor, AfterViewInit, OnChanges, OnInit, OnDestroy {
     private elementRef;
     private renderer;
     private cdr;
     private focusMonitor;
     private autoStepTimer;
-    actualValue: string | number;
+    private actualValue;
     private value;
     displayValue: string | number;
     isFocused: boolean;
@@ -72,6 +71,4 @@ export declare class NzInputNumberComponent implements ControlValueAccessor, Aft
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzInputNumberComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzInputNumberComponent, "nz-input-number", ["nzInputNumber"], { 'nzSize': "nzSize", 'nzMin': "nzMin", 'nzMax': "nzMax", 'nzParser': "nzParser", 'nzPrecision': "nzPrecision", 'nzPlaceHolder': "nzPlaceHolder", 'nzStep': "nzStep", 'nzId': "nzId", 'nzDisabled': "nzDisabled", 'nzAutoFocus': "nzAutoFocus", 'nzFormatter': "nzFormatter" }, { 'nzBlur': "nzBlur", 'nzFocus': "nzFocus" }, never>;
 }

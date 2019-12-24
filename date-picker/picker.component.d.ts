@@ -9,7 +9,6 @@ import { CdkConnectedOverlay, CdkOverlayOrigin, ConnectedOverlayPositionChange, 
 import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { DateHelperService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class NzPickerComponent implements AfterViewInit, OnChanges {
     private dateHelper;
     private changeDetector;
@@ -58,7 +57,5 @@ export declare class NzPickerComponent implements AfterViewInit, OnChanges {
     isOpenHandledByUser(): boolean;
     animationStart(): void;
     animationDone(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzPickerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzPickerComponent, "nz-picker", ["nzPicker"], { 'noAnimation': "noAnimation", 'isRange': "isRange", 'open': "open", 'disabled': "disabled", 'placeholder': "placeholder", 'allowClear': "allowClear", 'autoFocus': "autoFocus", 'className': "className", 'format': "format", 'size': "size", 'style': "style", 'value': "value" }, { 'valueChange': "valueChange", 'openChange': "openChange" }, never>;
 }
 export declare type RangePartType = 'left' | 'right';

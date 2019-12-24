@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ChangeDetectorRef, ElementRef, EventEmitter } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzOptionSelectionChange {
     source: NzAutocompleteOptionComponent;
     isUserInput: boolean;
@@ -33,6 +32,4 @@ export declare class NzAutocompleteOptionComponent {
     scrollIntoViewIfNeeded(): void;
     selectViaInteraction(): void;
     private emitSelectionChangeEvent;
-    static ɵfac: i0.ɵɵFactoryDef<NzAutocompleteOptionComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAutocompleteOptionComponent, "nz-auto-option", ["nzAutoOption"], { 'nzValue': "nzValue", 'nzLabel': "nzLabel", 'nzDisabled': "nzDisabled" }, { 'selectionChange': "selectionChange" }, never>;
 }

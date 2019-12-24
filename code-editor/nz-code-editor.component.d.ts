@@ -9,7 +9,6 @@ import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, TemplateRef
 import { JoinedEditorOptions, NzEditorMode } from './nz-code-editor.definitions';
 import { NzCodeEditorService } from './nz-code-editor.service';
 import { editor } from 'monaco-editor';
-import * as i0 from "@angular/core";
 export declare class NzCodeEditorComponent implements OnDestroy, AfterViewInit {
     private nzCodeEditorService;
     private ngZone;
@@ -48,6 +47,4 @@ export declare class NzCodeEditorComponent implements OnDestroy, AfterViewInit {
     private setValueEmitter;
     private emitValue;
     private updateOptionToMonaco;
-    static ɵfac: i0.ɵɵFactoryDef<NzCodeEditorComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCodeEditorComponent, "nz-code-editor", ["nzCodeEditor"], { 'nzEditorMode': "nzEditorMode", 'nzOriginalText': "nzOriginalText", 'nzLoading': "nzLoading", 'nzFullControl': "nzFullControl", 'nzToolkit': "nzToolkit", 'nzEditorOption': "nzEditorOption" }, { 'nzEditorInitialized': "nzEditorInitialized" }, never>;
 }

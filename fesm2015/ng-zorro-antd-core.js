@@ -1,5 +1,5 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { ɵɵdirectiveInject, ElementRef, Renderer2, ɵɵdefineDirective, ɵsetClassMetadata, Directive, Input, TemplateRef, ViewContainerRef, ɵɵNgOnChangesFeature, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, isDevMode, Optional, Inject, ɵɵinject, ɵɵdefineInjectable, Injectable, SkipSelf, RendererFactory2, NgZone, Type, EventEmitter, InjectionToken, ɵɵallocHostVars, ɵɵstyleSanitizer, ɵɵdefaultStyleSanitizer, ɵɵstyleProp, ɵɵdefinePipe, Pipe } from '@angular/core';
+import { Directive, ElementRef, Renderer2, Input, TemplateRef, ViewContainerRef, NgModule, isDevMode, Optional, Inject, Injectable, SkipSelf, RendererFactory2, ɵɵdefineInjectable, ɵɵinject, NgZone, Type, EventEmitter, InjectionToken, Pipe } from '@angular/core';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { __decorate, __metadata } from 'tslib';
 import { coerceBooleanProperty, _isNumberValue, coerceCssPixelValue, coerceElement } from '@angular/cdk/coercion';
@@ -15,48 +15,81 @@ import { auditTime, map, filter, finalize, take, mapTo } from 'rxjs/operators';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/classlist_add.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzClassListAddDirective {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.classList = [];
     }
+    /**
+     * @param {?} list
+     * @return {?}
+     */
     set nzClassListAdd(list) {
-        this.classList.forEach(name => {
+        this.classList.forEach((/**
+         * @param {?} name
+         * @return {?}
+         */
+        name => {
             this.renderer.removeClass(this.elementRef.nativeElement, name);
-        });
-        list.forEach(name => {
+        }));
+        list.forEach((/**
+         * @param {?} name
+         * @return {?}
+         */
+        name => {
             this.renderer.addClass(this.elementRef.nativeElement, name);
-        });
+        }));
         this.classList = list;
     }
 }
-/** @nocollapse */ NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzClassListAddDirective.ɵdir = ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzClassListAddDirective, [{
-        type: Directive,
-        args: [{
+NzClassListAddDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nzClassListAdd]',
                 exportAs: 'nzClassListAdd'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, { nzClassListAdd: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzClassListAddDirective.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+NzClassListAddDirective.propDecorators = {
+    nzClassListAdd: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    NzClassListAddDirective.prototype.classList;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzClassListAddDirective.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzClassListAddDirective.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/string_template_outlet.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStringTemplateOutletDirective {
+    /**
+     * @param {?} viewContainer
+     * @param {?} defaultTemplate
+     */
     constructor(viewContainer, defaultTemplate) {
         this.viewContainer = viewContainer;
         this.defaultTemplate = defaultTemplate;
@@ -67,6 +100,10 @@ class NzStringTemplateOutletDirective {
         // tslint:disable-next-line:no-any
         this.nzStringTemplateOutletContext = null;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set nzStringTemplateOutlet(value) {
         if (value instanceof TemplateRef) {
             this.isTemplate = true;
@@ -76,6 +113,9 @@ class NzStringTemplateOutletDirective {
             this.isTemplate = false;
         }
     }
+    /**
+     * @return {?}
+     */
     recreateView() {
         if (!this.isTemplate) {
             /** use default template when input is string **/
@@ -95,6 +135,11 @@ class NzStringTemplateOutletDirective {
         }
     }
     // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
     getType(value) {
         if (value instanceof TemplateRef) {
             return 'template';
@@ -103,24 +148,40 @@ class NzStringTemplateOutletDirective {
             return 'string';
         }
     }
+    /**
+     * @private
+     * @param {?} changes
+     * @return {?}
+     */
     shouldRecreateView(changes) {
         const { nzStringTemplateOutletContext, nzStringTemplateOutlet } = changes;
+        /** @type {?} */
         let shouldOutletRecreate = false;
         if (nzStringTemplateOutlet) {
             if (nzStringTemplateOutlet.firstChange) {
                 shouldOutletRecreate = true;
             }
             else {
+                /** @type {?} */
                 const previousOutletType = this.getType(nzStringTemplateOutlet.previousValue);
+                /** @type {?} */
                 const currentOutletType = this.getType(nzStringTemplateOutlet.currentValue);
                 shouldOutletRecreate = !(previousOutletType === 'string' && currentOutletType === 'string');
             }
         }
+        /** @type {?} */
         const shouldContextRecreate = nzStringTemplateOutletContext && this.hasContextShapeChanged(nzStringTemplateOutletContext);
         return shouldContextRecreate || shouldOutletRecreate;
     }
+    /**
+     * @private
+     * @param {?} ctxChange
+     * @return {?}
+     */
     hasContextShapeChanged(ctxChange) {
+        /** @type {?} */
         const prevCtxKeys = Object.keys(ctxChange.previousValue || {});
+        /** @type {?} */
         const currCtxKeys = Object.keys(ctxChange.currentValue || {});
         if (prevCtxKeys.length === currCtxKeys.length) {
             for (const propName of currCtxKeys) {
@@ -135,13 +196,23 @@ class NzStringTemplateOutletDirective {
         }
     }
     // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} ctx
+     * @return {?}
+     */
     updateExistingContext(ctx) {
         for (const propName of Object.keys(ctx)) {
             // tslint:disable-next-line:no-any
-            this.inputViewRef.context[propName] = this.nzStringTemplateOutletContext[propName];
+            ((/** @type {?} */ ((/** @type {?} */ (this.inputViewRef)).context)))[propName] = this.nzStringTemplateOutletContext[propName];
         }
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
+        /** @type {?} */
         const recreateView = this.shouldRecreateView(changes);
         if (recreateView) {
             if (this.viewContainer) {
@@ -158,49 +229,82 @@ class NzStringTemplateOutletDirective {
         }
     }
 }
-/** @nocollapse */ NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(TemplateRef)); };
-/** @nocollapse */ NzStringTemplateOutletDirective.ɵdir = ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [ɵɵNgOnChangesFeature()] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
-        type: Directive,
-        args: [{
+NzStringTemplateOutletDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nzStringTemplateOutlet]',
                 exportAs: 'nzStringTemplateOutlet'
-            }]
-    }], function () { return [{ type: ViewContainerRef }, { type: TemplateRef }]; }, { nzStringTemplateOutletContext: [{
-            type: Input
-        }], nzStringTemplateOutlet: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzStringTemplateOutletDirective.ctorParameters = () => [
+    { type: ViewContainerRef },
+    { type: TemplateRef }
+];
+NzStringTemplateOutletDirective.propDecorators = {
+    nzStringTemplateOutletContext: [{ type: Input }],
+    nzStringTemplateOutlet: [{ type: Input }]
+};
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.isTemplate;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.inputTemplate;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.inputViewRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.defaultViewRef;
+    /** @type {?} */
+    NzStringTemplateOutletDirective.prototype.nzStringTemplateOutletContext;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.viewContainer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.defaultTemplate;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/addon.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAddOnModule {
 }
-/** @nocollapse */ NzAddOnModule.ɵmod = ɵɵdefineNgModule({ type: NzAddOnModule });
-/** @nocollapse */ NzAddOnModule.ɵinj = ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzAddOnModule, { declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective], imports: [CommonModule], exports: [NzStringTemplateOutletDirective, NzClassListAddDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAddOnModule, [{
-        type: NgModule,
-        args: [{
+NzAddOnModule.decorators = [
+    { type: NgModule, args: [{
                 imports: [CommonModule],
                 exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
                 declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: animation/animation-consts.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -211,8 +315,17 @@ class NzAddOnModule {
 class AnimationDuration {
 }
 AnimationDuration.SLOW = '0.3s'; // Modal
+// Modal
 AnimationDuration.BASE = '0.2s';
 AnimationDuration.FAST = '0.1s'; // Tooltip
+if (false) {
+    /** @type {?} */
+    AnimationDuration.SLOW;
+    /** @type {?} */
+    AnimationDuration.BASE;
+    /** @type {?} */
+    AnimationDuration.FAST;
+}
 class AnimationCurves {
 }
 AnimationCurves.EASE_BASE_OUT = 'cubic-bezier(0.7, 0.3, 0.1, 1)';
@@ -229,14 +342,43 @@ AnimationCurves.EASE_IN_OUT_CIRC = 'cubic-bezier(0.78, 0.14, 0.15, 0.86)';
 AnimationCurves.EASE_OUT_QUINT = 'cubic-bezier(0.23, 1, 0.32, 1)';
 AnimationCurves.EASE_IN_QUINT = 'cubic-bezier(0.755, 0.05, 0.855, 0.06)';
 AnimationCurves.EASE_IN_OUT_QUINT = 'cubic-bezier(0.86, 0, 0.07, 1)';
+if (false) {
+    /** @type {?} */
+    AnimationCurves.EASE_BASE_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_BASE_IN;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_QUINT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_QUINT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_QUINT;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/collapse.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const collapseMotion = trigger('collapseMotion', [
     state('expanded', style({ height: '*' })),
     state('collapsed', style({ height: 0, overflow: 'hidden' })),
@@ -246,8 +388,12 @@ const collapseMotion = trigger('collapseMotion', [
     transition('collapsed => expanded', animate(`150ms ${AnimationCurves.EASE_IN_OUT}`)),
     transition('hidden => expanded', animate(`150ms ${AnimationCurves.EASE_IN_OUT}`))
 ]);
+/** @type {?} */
 const treeCollapseMotion = trigger('treeCollapseMotion', [
-    transition(':leave', [style({ overflow: 'hidden' }), animate(`150ms ${AnimationCurves.EASE_IN_OUT}`, style({ height: 0 }))]),
+    transition(':leave', [
+        style({ overflow: 'hidden' }),
+        animate(`150ms ${AnimationCurves.EASE_IN_OUT}`, style({ height: 0 }))
+    ]),
     transition(':enter', [
         style({ overflow: 'hidden', height: 0 }),
         animate(`150ms ${AnimationCurves.EASE_IN_OUT}`, style({ overflow: 'hidden', height: '*' }))
@@ -255,24 +401,22 @@ const treeCollapseMotion = trigger('treeCollapseMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/fade.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const fadeMotion = trigger('fadeMotion', [
     transition(':enter', [style({ opacity: 0 }), animate(`${AnimationDuration.BASE}`, style({ opacity: 1 }))]),
     transition(':leave', [style({ opacity: 1 }), animate(`${AnimationDuration.BASE}`, style({ opacity: 0 }))])
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/help.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const helpMotion = trigger('helpMotion', [
     transition(':enter', [
         style({
@@ -297,12 +441,11 @@ const helpMotion = trigger('helpMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/move.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const moveUpMotion = trigger('moveUpMotion', [
     transition('* => enter', [
         style({
@@ -331,12 +474,11 @@ const moveUpMotion = trigger('moveUpMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/notification.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const notificationMotion = trigger('notificationMotion', [
     state('enterRight', style({ opacity: 1, transform: 'translateX(0)' })),
     transition('* => enterRight', [style({ opacity: 0, transform: 'translateX(5%)' }), animate('100ms linear')]),
@@ -358,14 +500,15 @@ const notificationMotion = trigger('notificationMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/slide.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const ANIMATION_TRANSITION_IN = `${AnimationDuration.BASE} ${AnimationCurves.EASE_OUT_QUINT}`;
+/** @type {?} */
 const ANIMATION_TRANSITION_OUT = `${AnimationDuration.BASE} ${AnimationCurves.EASE_IN_QUINT}`;
+/** @type {?} */
 const slideMotion = trigger('slideMotion', [
     state('bottom', style({
         opacity: 1,
@@ -408,6 +551,7 @@ const slideMotion = trigger('slideMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 const slideAlertMotion = trigger('slideAlertMotion', [
     transition(':leave', [
         style({ opacity: 1, transform: 'scaleY(1)', transformOrigin: '0% 0%' }),
@@ -420,12 +564,11 @@ const slideAlertMotion = trigger('slideAlertMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/zoom.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const zoomMotion = trigger('zoomMotion', [
     transition(':enter', [
         style({ opacity: 0, transform: 'scale(0.2)' }),
@@ -442,6 +585,7 @@ const zoomMotion = trigger('zoomMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 const zoomBigMotion = trigger('zoomBigMotion', [
     transition('void => active', [
         style({ opacity: 0, transform: 'scale(0.8)' }),
@@ -458,6 +602,7 @@ const zoomBigMotion = trigger('zoomBigMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 const zoomBadgeMotion = trigger('zoomBadgeMotion', [
     transition(':enter', [
         style({ opacity: 0, transform: 'scale(0) translate(50%, -50%)' }),
@@ -476,13 +621,16 @@ const zoomBadgeMotion = trigger('zoomBadgeMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: environments/environment.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -490,21 +638,32 @@ const zoomBadgeMotion = trigger('zoomBadgeMotion', [
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/** @type {?} */
 const environment = {
     isTestMode: false
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/logger.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const record = {};
+/** @type {?} */
 const PREFIX = '[NG-ZORRO]:';
+/**
+ * @param {...?} args
+ * @return {?}
+ */
 function notRecorded(...args) {
-    const asRecord = args.reduce((acc, c) => acc + c.toString(), '');
+    /** @type {?} */
+    const asRecord = args.reduce((/**
+     * @param {?} acc
+     * @param {?} c
+     * @return {?}
+     */
+    (acc, c) => acc + c.toString()), '');
     if (record[asRecord]) {
         return false;
     }
@@ -513,42 +672,85 @@ function notRecorded(...args) {
         return true;
     }
 }
+/**
+ * @param {?} consoleFunc
+ * @param {...?} args
+ * @return {?}
+ */
 function consoleCommonBehavior(consoleFunc, ...args) {
     if (environment.isTestMode || (isDevMode() && notRecorded(...args))) {
         consoleFunc(...args);
     }
 }
 // Warning should only be printed in dev mode and only once.
-const warn = (...args) => consoleCommonBehavior((...arg) => console.warn(PREFIX, ...arg), ...args);
-const warnDeprecation = (...args) => {
+/** @type {?} */
+const warn = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+(...args) => consoleCommonBehavior((/**
+ * @param {...?} arg
+ * @return {?}
+ */
+(...arg) => console.warn(PREFIX, ...arg)), ...args));
+/** @type {?} */
+const warnDeprecation = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+(...args) => {
     if (!environment.isTestMode) {
+        /** @type {?} */
         const stack = new Error().stack;
-        return consoleCommonBehavior((...arg) => console.warn(PREFIX, 'deprecated:', ...arg, stack), ...args);
+        return consoleCommonBehavior((/**
+         * @param {...?} arg
+         * @return {?}
+         */
+        (...arg) => console.warn(PREFIX, 'deprecated:', ...arg, stack)), ...args);
     }
     else {
-        return () => { };
+        return (/**
+         * @return {?}
+         */
+        () => { });
     }
-};
+});
 // Log should only be printed in dev mode.
-const log = (...args) => {
+/** @type {?} */
+const log = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+(...args) => {
     if (isDevMode()) {
         console.log(PREFIX, ...args);
     }
-};
+});
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/convert.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} value
+ * @return {?}
  */
 function toBoolean(value) {
     return coerceBooleanProperty(value);
 }
+/**
+ * @param {?} value
+ * @param {?=} fallbackValue
+ * @return {?}
+ */
 function toNumber(value, fallbackValue = 0) {
     return _isNumberValue(value) ? Number(value) : fallbackValue;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function toCssPixel(value) {
     return coerceCssPixelValue(value);
 }
@@ -556,12 +758,29 @@ function toCssPixel(value) {
 // tslint:disable no-invalid-this
 /**
  * Get the function-property type's value
+ * @template T
+ * @param {?} prop
+ * @param {...?} args
+ * @return {?}
  */
 function valueFunctionProp(prop, ...args) {
     return typeof prop === 'function' ? prop(...args) : prop;
 }
+/**
+ * @template T, D
+ * @param {?} name
+ * @param {?} fallback
+ * @return {?}
+ */
 function propDecoratorFactory(name, fallback) {
+    /**
+     * @param {?} target
+     * @param {?} propName
+     * @param {?=} originalDescriptor
+     * @return {?}
+     */
     function propDecorator(target, propName, originalDescriptor) {
+        /** @type {?} */
         const privatePropName = `$$__${propName}`;
         if (Object.prototype.hasOwnProperty.call(target, privatePropName)) {
             warn(`The prop "${privatePropName}" is already exist, it will be overrided by ${name} decorator.`);
@@ -571,9 +790,18 @@ function propDecoratorFactory(name, fallback) {
             writable: true
         });
         return {
+            /**
+             * @return {?}
+             */
             get() {
-                return originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
+                return originalDescriptor && originalDescriptor.get
+                    ? originalDescriptor.get.bind(this)()
+                    : this[privatePropName];
             },
+            /**
+             * @param {?} value
+             * @return {?}
+             */
             set(value) {
                 if (originalDescriptor && originalDescriptor.set) {
                     originalDescriptor.set.bind(this)(fallback(value));
@@ -587,45 +815,74 @@ function propDecoratorFactory(name, fallback) {
 /**
  * Input decorator that handle a prop to do get/set automatically with toBoolean
  *
- * Why not using @InputBoolean alone without @Input? AOT needs @Input to be visible
+ * Why not using \@InputBoolean alone without \@Input? AOT needs \@Input to be visible
  *
- * @howToUse
+ * \@howToUse
  * ```
- * @Input() @InputBoolean() visible: boolean = false;
+ * \@Input() \@InputBoolean() visible: boolean = false;
  *
  * // Act as below:
- * // @Input()
+ * // \@Input()
  * // get visible() { return this.__visible; }
  * // set visible(value) { this.__visible = value; }
  * // __visible = false;
  * ```
+ * @return {?}
  */
 function InputBoolean() {
     return propDecoratorFactory('InputBoolean', toBoolean);
 }
+/**
+ * @return {?}
+ */
 function InputCssPixel() {
     return propDecoratorFactory('InputCssPixel', toCssPixel);
 }
+/**
+ * @return {?}
+ */
 function InputNumber() {
     // tslint:disable-line: no-any
     return propDecoratorFactory('InputNumber', toNumber);
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/nz-no-animation.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 const DISABLED_CLASSNAME = 'nz-animate-disabled';
 class NzNoAnimationDirective {
+    /**
+     * @param {?} element
+     * @param {?} renderer
+     * @param {?} animationType
+     */
     constructor(element, renderer, animationType) {
         this.element = element;
         this.renderer = renderer;
         this.animationType = animationType;
         this.nzNoAnimation = false;
     }
+    /**
+     * @return {?}
+     */
     ngOnChanges() {
         this.updateClass();
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         this.updateClass();
     }
+    /**
+     * @private
+     * @return {?}
+     */
     updateClass() {
+        /** @type {?} */
         const element = coerceElement(this.element);
         if (!element) {
             return;
@@ -638,106 +895,118 @@ class NzNoAnimationDirective {
         }
     }
 }
-/** @nocollapse */ NzNoAnimationDirective.ɵfac = function NzNoAnimationDirective_Factory(t) { return new (t || NzNoAnimationDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
-/** @nocollapse */ NzNoAnimationDirective.ɵdir = ɵɵdefineDirective({ type: NzNoAnimationDirective, selectors: [["", "nzNoAnimation", ""]], inputs: { nzNoAnimation: "nzNoAnimation" }, exportAs: ["nzNoAnimation"], features: [ɵɵNgOnChangesFeature()] });
+NzNoAnimationDirective.decorators = [
+    { type: Directive, args: [{
+                selector: '[nzNoAnimation]',
+                exportAs: 'nzNoAnimation'
+            },] }
+];
+/** @nocollapse */
+NzNoAnimationDirective.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 },
+    { type: String, decorators: [{ type: Optional }, { type: Inject, args: [ANIMATION_MODULE_TYPE,] }] }
+];
+NzNoAnimationDirective.propDecorators = {
+    nzNoAnimation: [{ type: Input }]
+};
 __decorate([
     InputBoolean(),
     __metadata("design:type", Boolean)
 ], NzNoAnimationDirective.prototype, "nzNoAnimation", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNoAnimationDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzNoAnimation]',
-                exportAs: 'nzNoAnimation'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [ANIMATION_MODULE_TYPE]
-            }] }]; }, { nzNoAnimation: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzNoAnimationDirective.prototype.nzNoAnimation;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.element;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.animationType;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/nz-no-animation.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNoAnimationModule {
 }
-/** @nocollapse */ NzNoAnimationModule.ɵmod = ɵɵdefineNgModule({ type: NzNoAnimationModule });
-/** @nocollapse */ NzNoAnimationModule.ɵinj = ɵɵdefineInjector({ factory: function NzNoAnimationModule_Factory(t) { return new (t || NzNoAnimationModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzNoAnimationModule, { declarations: [NzNoAnimationDirective], imports: [CommonModule], exports: [NzNoAnimationDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNoAnimationModule, [{
-        type: NgModule,
-        args: [{
+NzNoAnimationModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [NzNoAnimationDirective],
                 exports: [NzNoAnimationDirective],
                 imports: [CommonModule]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/nz-connected-overlay.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzConnectedOverlayDirective {
+    /**
+     * @param {?} cdkConnectedOverlay
+     */
     constructor(cdkConnectedOverlay) {
         this.cdkConnectedOverlay = cdkConnectedOverlay;
         this.cdkConnectedOverlay.backdropClass = 'nz-overlay-transparent-backdrop';
     }
 }
-/** @nocollapse */ NzConnectedOverlayDirective.ɵfac = function NzConnectedOverlayDirective_Factory(t) { return new (t || NzConnectedOverlayDirective)(ɵɵdirectiveInject(CdkConnectedOverlay)); };
-/** @nocollapse */ NzConnectedOverlayDirective.ɵdir = ɵɵdefineDirective({ type: NzConnectedOverlayDirective, selectors: [["", "cdkConnectedOverlay", "", "nzConnectedOverlay", ""]], exportAs: ["nzConnectedOverlay"] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzConnectedOverlayDirective, [{
-        type: Directive,
-        args: [{
+NzConnectedOverlayDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
                 exportAs: 'nzConnectedOverlay'
-            }]
-    }], function () { return [{ type: CdkConnectedOverlay }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzConnectedOverlayDirective.ctorParameters = () => [
+    { type: CdkConnectedOverlay }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzConnectedOverlayDirective.prototype.cdkConnectedOverlay;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/nz-overlay.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOverlayModule {
 }
-/** @nocollapse */ NzOverlayModule.ɵmod = ɵɵdefineNgModule({ type: NzOverlayModule });
-/** @nocollapse */ NzOverlayModule.ɵinj = ɵɵdefineInjector({ factory: function NzOverlayModule_Factory(t) { return new (t || NzOverlayModule)(); } });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzOverlayModule, { declarations: [NzConnectedOverlayDirective], exports: [NzConnectedOverlayDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzOverlayModule, [{
-        type: NgModule,
-        args: [{
+NzOverlayModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [NzConnectedOverlayDirective],
                 exports: [NzConnectedOverlayDirective]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/overlay-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const POSITION_MAP = {
     top: new ConnectionPositionPair({ originX: 'center', originY: 'top' }, { overlayX: 'center', overlayY: 'bottom' }),
     topCenter: new ConnectionPositionPair({ originX: 'center', originY: 'top' }, { overlayX: 'center', overlayY: 'bottom' }),
@@ -754,58 +1023,72 @@ const POSITION_MAP = {
     leftTop: new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'end', overlayY: 'top' }),
     leftBottom: new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'bottom' })
 };
+/** @type {?} */
 const DEFAULT_TOOLTIP_POSITIONS = [POSITION_MAP.top, POSITION_MAP.right, POSITION_MAP.bottom, POSITION_MAP.left];
-const DEFAULT_DROPDOWN_POSITIONS = [POSITION_MAP.bottomLeft, POSITION_MAP.bottomRight, POSITION_MAP.topRight, POSITION_MAP.topLeft];
+/** @type {?} */
+const DEFAULT_DROPDOWN_POSITIONS = [
+    POSITION_MAP.bottomLeft,
+    POSITION_MAP.bottomRight,
+    POSITION_MAP.topRight,
+    POSITION_MAP.topLeft
+];
+/** @type {?} */
 const DEFAULT_SUBMENU_POSITIONS = [POSITION_MAP.rightTop, POSITION_MAP.leftTop];
+/** @type {?} */
 const DEFAULT_MENTION_TOP_POSITIONS = [
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'bottom' }),
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'bottom' })
 ];
+/** @type {?} */
 const DEFAULT_MENTION_BOTTOM_POSITIONS = [
     POSITION_MAP.bottomLeft,
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' })
 ];
+/**
+ * @param {?} position
+ * @return {?}
+ */
 function getPlacementName(position) {
+    /** @type {?} */
     const keyList = ['originX', 'originY', 'overlayX', 'overlayY'];
     for (const placement in POSITION_MAP) {
         // @ts-ignore
-        if (keyList.every(key => position.connectionPair[key] === POSITION_MAP[placement][key])) {
+        if (keyList.every((/**
+         * @param {?} key
+         * @return {?}
+         */
+        key => position.connectionPair[key] === POSITION_MAP[placement][key]))) {
             return placement;
         }
     }
-    return undefined;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/candy-date.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} rangeValue
+ * @return {?}
  */
 function sortRangeValue(rangeValue) {
     if (Array.isArray(rangeValue)) {
@@ -822,6 +1105,9 @@ function sortRangeValue(rangeValue) {
  */
 class CandyDate {
     // locale: string; // Custom specified locale ID
+    /**
+     * @param {?=} date
+     */
     constructor(date) {
         if (date) {
             if (date instanceof Date) {
@@ -846,74 +1132,153 @@ class CandyDate {
     //   this.locale = locale;
     //   return this;
     // }
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
     calendarStart(options) {
         return new CandyDate(startOfWeek(startOfMonth(this.nativeDate), options));
     }
     // ---------------------------------------------------------------------
     // | Native shortcuts
     // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
     getYear() {
         return this.nativeDate.getFullYear();
     }
+    /**
+     * @return {?}
+     */
     getMonth() {
         return this.nativeDate.getMonth();
     }
+    /**
+     * @return {?}
+     */
     getDay() {
         return this.nativeDate.getDay();
     }
+    /**
+     * @return {?}
+     */
     getTime() {
         return this.nativeDate.getTime();
     }
+    /**
+     * @return {?}
+     */
     getDate() {
         return this.nativeDate.getDate();
     }
+    /**
+     * @return {?}
+     */
     getHours() {
         return this.nativeDate.getHours();
     }
+    /**
+     * @return {?}
+     */
     getMinutes() {
         return this.nativeDate.getMinutes();
     }
+    /**
+     * @return {?}
+     */
     getSeconds() {
         return this.nativeDate.getSeconds();
     }
+    /**
+     * @return {?}
+     */
     getMilliseconds() {
         return this.nativeDate.getMilliseconds();
     }
     // ---------------------------------------------------------------------
     // | New implementing APIs
     // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
     clone() {
         return new CandyDate(new Date(this.nativeDate));
     }
+    /**
+     * @param {?} hour
+     * @param {?} minute
+     * @param {?} second
+     * @return {?}
+     */
     setHms(hour, minute, second) {
-        return new CandyDate(this.nativeDate.setHours(hour, minute, second));
+        /** @type {?} */
+        const date = new Date(this.nativeDate);
+        date.setHours(hour, minute, second);
+        return new CandyDate(date);
     }
+    /**
+     * @param {?} year
+     * @return {?}
+     */
     setYear(year) {
         return new CandyDate(setYear(this.nativeDate, year));
     }
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
     addYears(amount) {
         return new CandyDate(addYears(this.nativeDate, amount));
     }
     // NOTE: month starts from 0
     // NOTE: Don't use the native API for month manipulation as it not restrict the date when it overflows, eg. (new Date('2018-7-31')).setMonth(1) will be date of 2018-3-03 instead of 2018-2-28
+    /**
+     * @param {?} month
+     * @return {?}
+     */
     setMonth(month) {
         return new CandyDate(setMonth(this.nativeDate, month));
     }
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
     addMonths(amount) {
         return new CandyDate(addMonths(this.nativeDate, amount));
     }
+    /**
+     * @param {?} day
+     * @param {?=} options
+     * @return {?}
+     */
     setDay(day, options) {
         return new CandyDate(setDay(this.nativeDate, day, options));
     }
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
     setDate(amount) {
+        /** @type {?} */
         const date = new Date(this.nativeDate);
         date.setDate(amount);
         return new CandyDate(date);
     }
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
     addDays(amount) {
         return this.setDate(this.getDate() + amount);
     }
+    /**
+     * @param {?} date
+     * @param {?=} grain
+     * @return {?}
+     */
     isSame(date, grain = 'day') {
+        /** @type {?} */
         let fn;
         switch (grain) {
             case 'year':
@@ -940,28 +1305,59 @@ class CandyDate {
         }
         return fn(this.nativeDate, this.toNativeDate(date));
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameYear(date) {
         return this.isSame(date, 'year');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameMonth(date) {
         return this.isSame(date, 'month');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameDay(date) {
         return this.isSame(date, 'day');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameHour(date) {
         return this.isSame(date, 'hour');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameMinute(date) {
         return this.isSame(date, 'minute');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isSameSecond(date) {
         return this.isSame(date, 'second');
     }
+    /**
+     * @param {?} date
+     * @param {?=} grain
+     * @param {?=} isBefore
+     * @return {?}
+     */
     compare(date, grain = 'day', isBefore = true) {
         if (date === null) {
             return false;
         }
+        /** @type {?} */
         let fn;
         switch (grain) {
             case 'year':
@@ -986,58 +1382,128 @@ class CandyDate {
                 fn = differenceInCalendarDays;
                 break;
         }
-        return isBefore ? fn(this.nativeDate, this.toNativeDate(date)) < 0 : fn(this.nativeDate, this.toNativeDate(date)) > 0;
+        return isBefore
+            ? fn(this.nativeDate, this.toNativeDate(date)) < 0
+            : fn(this.nativeDate, this.toNativeDate(date)) > 0;
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeYear(date) {
         return this.compare(date, 'year');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeMonth(date) {
         return this.compare(date, 'month');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeDay(date) {
         return this.compare(date, 'day');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeHour(date) {
         return this.compare(date, 'hour');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeMinute(date) {
         return this.compare(date, 'minute');
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isBeforeSecond(date) {
         return this.compare(date, 'second');
     }
     // TODO: isBefore
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterYear(date) {
         return this.compare(date, 'year', false);
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterMonth(date) {
         return this.compare(date, 'month', false);
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterDay(date) {
         return this.compare(date, 'day', false);
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterHour(date) {
         return this.compare(date, 'hour', false);
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterMinute(date) {
         return this.compare(date, 'minute', false);
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     isAfterSecond(date) {
         return this.compare(date, 'second', false);
     }
     // Equal to today accurate to "day"
+    /**
+     * @return {?}
+     */
     isToday() {
         return isToday(this.nativeDate);
     }
+    /**
+     * @return {?}
+     */
     isValid() {
         return isValid(this.nativeDate);
     }
     // tslint:disable-next-line: no-any
+    /**
+     * @private
+     * @param {?} date
+     * @return {?}
+     */
     toNativeDate(date) {
         return date instanceof CandyDate ? date.nativeDate : date;
     }
 }
+if (false) {
+    /** @type {?} */
+    CandyDate.prototype.nativeDate;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: time/time.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -1045,6 +1511,7 @@ class CandyDate {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/** @type {?} */
 const timeUnits = [
     ['Y', 1000 * 60 * 60 * 24 * 365],
     ['M', 1000 * 60 * 60 * 24 * 30],
@@ -1056,13 +1523,16 @@ const timeUnits = [
 ];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: polyfill/request-animation.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -1071,30 +1541,60 @@ const timeUnits = [
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 // tslint:disable:no-any typedef no-invalid-this
+/** @type {?} */
 const availablePrefixes = ['moz', 'ms', 'webkit'];
+/**
+ * @return {?}
+ */
 function requestAnimationFramePolyfill() {
+    /** @type {?} */
     let lastTime = 0;
-    return function (callback) {
+    return (/**
+     * @param {?} callback
+     * @return {?}
+     */
+    function (callback) {
+        /** @type {?} */
         const currTime = new Date().getTime();
+        /** @type {?} */
         const timeToCall = Math.max(0, 16 - (currTime - lastTime));
-        const id = setTimeout(() => {
+        /** @type {?} */
+        const id = setTimeout((/**
+         * @return {?}
+         */
+        () => {
             callback(currTime + timeToCall);
-        }, timeToCall);
+        }), timeToCall);
         lastTime = currTime + timeToCall;
         return id;
-    };
+    });
 }
+/**
+ * @return {?}
+ */
 function getRequestAnimationFrame() {
     if (typeof window === 'undefined') {
-        return () => 0;
+        return (/**
+         * @return {?}
+         */
+        () => 0);
     }
     if (window.requestAnimationFrame) {
         // https://github.com/vuejs/vue/issues/4465
         return window.requestAnimationFrame.bind(window);
     }
-    const prefix = availablePrefixes.filter(key => `${key}RequestAnimationFrame` in window)[0];
-    return prefix ? window[`${prefix}RequestAnimationFrame`] : requestAnimationFramePolyfill();
+    /** @type {?} */
+    const prefix = availablePrefixes.filter((/**
+     * @param {?} key
+     * @return {?}
+     */
+    key => `${key}RequestAnimationFrame` in window))[0];
+    return prefix ? ((/** @type {?} */ (window)))[`${prefix}RequestAnimationFrame`] : requestAnimationFramePolyfill();
 }
+/**
+ * @param {?} id
+ * @return {?}
+ */
 function cancelRequestAnimationFrame(id) {
     if (typeof window === 'undefined') {
         return null;
@@ -1102,32 +1602,43 @@ function cancelRequestAnimationFrame(id) {
     if (window.cancelAnimationFrame) {
         return window.cancelAnimationFrame(id);
     }
-    const prefix = availablePrefixes.filter(key => `${key}CancelAnimationFrame` in window || `${key}CancelRequestAnimationFrame` in window)[0];
+    /** @type {?} */
+    const prefix = availablePrefixes.filter((/**
+     * @param {?} key
+     * @return {?}
+     */
+    key => `${key}CancelAnimationFrame` in window || `${key}CancelRequestAnimationFrame` in window))[0];
     return prefix
-        ? (window[`${prefix}CancelAnimationFrame`] || window[`${prefix}CancelRequestAnimationFrame`])
+        ? (((/** @type {?} */ (window)))[`${prefix}CancelAnimationFrame`] || ((/** @type {?} */ (window)))[`${prefix}CancelRequestAnimationFrame`])
             // @ts-ignore
             .call(this, id)
         : clearTimeout(id);
 }
+/** @type {?} */
 const reqAnimFrame = getRequestAnimationFrame();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: polyfill/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: scroll/nz-scroll.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} t
+ * @param {?} b
+ * @param {?} c
+ * @param {?} d
+ * @return {?}
  */
 function easeInOutCubic(t, b, c, d) {
+    /** @type {?} */
     const cc = c - b;
+    /** @type {?} */
     let tt = t / (d / 2);
     if (tt < 1) {
         return (cc / 2) * tt * tt * tt + b;
@@ -1138,21 +1649,34 @@ function easeInOutCubic(t, b, c, d) {
 }
 class NzScrollService {
     /* tslint:disable-next-line:no-any */
+    /**
+     * @param {?} doc
+     */
     constructor(doc) {
         this.doc = doc;
     }
-    /** Set the position of the scroll bar of `el`. */
+    /**
+     * Set the position of the scroll bar of `el`.
+     * @param {?} el
+     * @param {?=} topValue
+     * @return {?}
+     */
     setScrollTop(el, topValue = 0) {
         if (el === window) {
             this.doc.body.scrollTop = topValue;
-            this.doc.documentElement.scrollTop = topValue;
+            (/** @type {?} */ (this.doc.documentElement)).scrollTop = topValue;
         }
         else {
-            el.scrollTop = topValue;
+            ((/** @type {?} */ (el))).scrollTop = topValue;
         }
     }
-    /** Get position of `el` against window. */
+    /**
+     * Get position of `el` against window.
+     * @param {?} el
+     * @return {?}
+     */
     getOffset(el) {
+        /** @type {?} */
         const ret = {
             top: 0,
             left: 0
@@ -1160,11 +1684,13 @@ class NzScrollService {
         if (!el || !el.getClientRects().length) {
             return ret;
         }
+        /** @type {?} */
         const rect = el.getBoundingClientRect();
         if (rect.width || rect.height) {
-            const doc = el.ownerDocument.documentElement;
-            ret.top = rect.top - doc.clientTop;
-            ret.left = rect.left - doc.clientLeft;
+            /** @type {?} */
+            const doc = (/** @type {?} */ (el.ownerDocument)).documentElement;
+            ret.top = rect.top - (/** @type {?} */ (doc)).clientTop;
+            ret.left = rect.left - (/** @type {?} */ (doc)).clientLeft;
         }
         else {
             ret.top = rect.top;
@@ -1172,34 +1698,54 @@ class NzScrollService {
         }
         return ret;
     }
-    /** Get the position of the scoll bar of `el`. */
+    /**
+     * Get the position of the scoll bar of `el`.
+     * @param {?=} el
+     * @param {?=} top
+     * @return {?}
+     */
     // TODO: remove '| Window' as the fallback already happens here
     getScroll(el, top = true) {
+        /** @type {?} */
         const target = el ? el : window;
+        /** @type {?} */
         const prop = top ? 'pageYOffset' : 'pageXOffset';
+        /** @type {?} */
         const method = top ? 'scrollTop' : 'scrollLeft';
+        /** @type {?} */
         const isWindow = target === window;
         // @ts-ignore
+        /** @type {?} */
         let ret = isWindow ? target[prop] : target[method];
         if (isWindow && typeof ret !== 'number') {
-            ret = this.doc.documentElement[method];
+            ret = (/** @type {?} */ (this.doc.documentElement))[method];
         }
         return ret;
     }
     /**
      * Scroll `el` to some position with animation.
      *
-     * @param containerEl container, `window` by default
-     * @param targetTopValue Scroll to `top`, 0 by default
-     * @param easing Transition curve, `easeInOutCubic` by default
-     * @param callback callback invoked when transition is done
+     * @param {?} containerEl container, `window` by default
+     * @param {?=} targetTopValue Scroll to `top`, 0 by default
+     * @param {?=} easing Transition curve, `easeInOutCubic` by default
+     * @param {?=} callback callback invoked when transition is done
+     * @return {?}
      */
     scrollTo(containerEl, targetTopValue = 0, easing, callback) {
+        /** @type {?} */
         const target = containerEl ? containerEl : window;
+        /** @type {?} */
         const scrollTop = this.getScroll(target);
+        /** @type {?} */
         const startTime = Date.now();
-        const frameFunc = () => {
+        /** @type {?} */
+        const frameFunc = (/**
+         * @return {?}
+         */
+        () => {
+            /** @type {?} */
             const timestamp = Date.now();
+            /** @type {?} */
             const time = timestamp - startTime;
             this.setScrollTop(target, (easing || easeInOutCubic)(time, scrollTop, targetTopValue, 450));
             if (time < 450) {
@@ -1210,21 +1756,33 @@ class NzScrollService {
                     callback();
                 }
             }
-        };
+        });
         reqAnimFrame(frameFunc);
     }
 }
-/** @nocollapse */ NzScrollService.ɵfac = function NzScrollService_Factory(t) { return new (t || NzScrollService)(ɵɵinject(DOCUMENT)); };
-/** @nocollapse */ NzScrollService.ɵprov = ɵɵdefineInjectable({ token: NzScrollService, factory: NzScrollService.ɵfac });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzScrollService, [{
-        type: Injectable
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }]; }, null); })();
+NzScrollService.decorators = [
+    { type: Injectable }
+];
+/** @nocollapse */
+NzScrollService.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzScrollService.prototype.doc;
+}
+/**
+ * @param {?} doc
+ * @param {?} scrollService
+ * @return {?}
+ */
 function SCROLL_SERVICE_PROVIDER_FACTORY(doc, scrollService) {
     return scrollService || new NzScrollService(doc);
 }
+/** @type {?} */
 const SCROLL_SERVICE_PROVIDER = {
     provide: NzScrollService,
     useFactory: SCROLL_SERVICE_PROVIDER_FACTORY,
@@ -1232,30 +1790,41 @@ const SCROLL_SERVICE_PROVIDER = {
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: scroll/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/update-host-class.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUpdateHostClassService {
+    /**
+     * @param {?} rendererFactory2
+     */
     constructor(rendererFactory2) {
         this.classMap = {};
         this.renderer = rendererFactory2.createRenderer(null, null);
     }
+    /**
+     * @param {?} el
+     * @param {?} classMap
+     * @return {?}
+     */
     updateHostClass(el, classMap) {
         this.removeClass(el, this.classMap, this.renderer);
         this.classMap = Object.assign({}, classMap);
         this.addClass(el, this.classMap, this.renderer);
     }
+    /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
     removeClass(el, classMap, renderer) {
         for (const i in classMap) {
             if (classMap.hasOwnProperty(i)) {
@@ -1263,6 +1832,13 @@ class NzUpdateHostClassService {
             }
         }
     }
+    /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
     addClass(el, classMap, renderer) {
         for (const i in classMap) {
             if (classMap.hasOwnProperty(i) && classMap[i]) {
@@ -1271,57 +1847,76 @@ class NzUpdateHostClassService {
         }
     }
 }
-/** @nocollapse */ NzUpdateHostClassService.ɵfac = function NzUpdateHostClassService_Factory(t) { return new (t || NzUpdateHostClassService)(ɵɵinject(RendererFactory2)); };
-/** @nocollapse */ NzUpdateHostClassService.ɵprov = ɵɵdefineInjectable({ token: NzUpdateHostClassService, factory: NzUpdateHostClassService.ɵfac });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzUpdateHostClassService, [{
-        type: Injectable
-    }], function () { return [{ type: RendererFactory2 }]; }, null); })();
+NzUpdateHostClassService.decorators = [
+    { type: Injectable }
+];
+/** @nocollapse */
+NzUpdateHostClassService.ctorParameters = () => [
+    { type: RendererFactory2 }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzUpdateHostClassService.prototype.classMap;
+    /** @type {?} */
+    NzUpdateHostClassService.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-copy-to-clipboard.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCopyToClipboardServiceModule {
 }
-/** @nocollapse */ NzCopyToClipboardServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzCopyToClipboardServiceModule });
-/** @nocollapse */ NzCopyToClipboardServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzCopyToClipboardServiceModule_Factory(t) { return new (t || NzCopyToClipboardServiceModule)(); } });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCopyToClipboardServiceModule, [{
-        type: NgModule
-    }], null, null); })();
+NzCopyToClipboardServiceModule.decorators = [
+    { type: NgModule }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-copy-to-clipboard.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCopyToClipboardService {
     // tslint:disable-next-line:no-any
+    /**
+     * @param {?} document
+     */
     constructor(document) {
         this.document = document;
     }
+    /**
+     * @param {?} text
+     * @return {?}
+     */
     copy(text) {
-        return new Promise((resolve, reject) => {
+        return new Promise((/**
+         * @param {?} resolve
+         * @param {?} reject
+         * @return {?}
+         */
+        (resolve, reject) => {
+            /** @type {?} */
             let copyTextArea = null;
             try {
                 // tslint:disable-next-line no-any
-                copyTextArea = this.document.createElement('textarea');
-                copyTextArea.style.all = 'unset';
+                copyTextArea = (/** @type {?} */ (this.document.createElement('textarea')));
+                (/** @type {?} */ (copyTextArea.style)).all = 'unset';
                 copyTextArea.style.position = 'fixed';
                 copyTextArea.style.top = '0';
                 copyTextArea.style.clip = 'rect(0, 0, 0, 0)';
                 copyTextArea.style.whiteSpace = 'pre';
                 copyTextArea.style.webkitUserSelect = 'text';
-                copyTextArea.style.MozUserSelect = 'text';
+                (/** @type {?} */ (copyTextArea.style)).MozUserSelect = 'text';
                 copyTextArea.style.msUserSelect = 'text';
                 copyTextArea.style.userSelect = 'text';
                 this.document.body.appendChild(copyTextArea);
                 copyTextArea.value = text;
                 copyTextArea.select();
+                /** @type {?} */
                 const successful = this.document.execCommand('copy');
                 if (!successful) {
                     reject(text);
@@ -1333,29 +1928,54 @@ class NzCopyToClipboardService {
                     this.document.body.removeChild(copyTextArea);
                 }
             }
-        });
+        }));
     }
 }
-/** @nocollapse */ NzCopyToClipboardService.ɵfac = function NzCopyToClipboardService_Factory(t) { return new (t || NzCopyToClipboardService)(ɵɵinject(DOCUMENT)); };
-/** @nocollapse */ NzCopyToClipboardService.ɵprov = ɵɵdefineInjectable({ token: NzCopyToClipboardService, factory: NzCopyToClipboardService.ɵfac, providedIn: NzCopyToClipboardServiceModule });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCopyToClipboardService, [{
-        type: Injectable,
-        args: [{
+NzCopyToClipboardService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: NzCopyToClipboardServiceModule
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzCopyToClipboardService.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
+];
+/** @nocollapse */ NzCopyToClipboardService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzCopyToClipboardService_Factory() { return new NzCopyToClipboardService(ɵɵinject(DOCUMENT)); }, token: NzCopyToClipboardService, providedIn: NzCopyToClipboardServiceModule });
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCopyToClipboardService.prototype.document;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-dom-event.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function Listener() { }
+if (false) {
+    /** @type {?} */
+    Listener.prototype.countOfListeners;
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    Listener.prototype.handler = function (e) { };
+    /**
+     * @return {?}
+     */
+    Listener.prototype.unsubscribe = function () { };
+}
 class NzDomEventService {
+    /**
+     * @param {?} ngZone
+     * @param {?} rendererFactory2
+     */
     constructor(ngZone, rendererFactory2) {
         this.ngZone = ngZone;
         this.rendererFactory2 = rendererFactory2;
@@ -1363,61 +1983,123 @@ class NzDomEventService {
         this.domEventListeners = new Map();
         this.renderer = this.rendererFactory2.createRenderer(null, null);
     }
+    /**
+     * @return {?}
+     */
     registerResizeListener() {
         if (!this.domEventListeners.has('resize')) {
             this.domEventListeners.set('resize', {
-                handler: () => {
+                handler: (/**
+                 * @return {?}
+                 */
+                () => {
                     this.resizeSource.next();
-                },
+                }),
                 countOfListeners: 0
             });
         }
-        const listener = this.domEventListeners.get('resize');
+        /** @type {?} */
+        const listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
         this.tryToStartListener(listener, 'resize');
         return this.resizeSource.pipe(auditTime(16));
     }
+    /**
+     * @return {?}
+     */
     unregisterResizeListener() {
         if (!this.domEventListeners.has('resize')) {
             return;
         }
-        const listener = this.domEventListeners.get('resize');
+        /** @type {?} */
+        const listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
         this.tryToStopListener(listener);
     }
+    /**
+     * @private
+     * @param {?} l
+     * @param {?} name
+     * @return {?}
+     */
     tryToStartListener(l, name) {
         l.countOfListeners += 1;
-        this.ngZone.runOutsideAngular(() => {
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        () => {
             if (l.countOfListeners === 1) {
                 l.unsubscribe = this.renderer.listen('window', name, l.handler);
             }
-        });
+        }));
     }
+    /**
+     * @private
+     * @param {?} l
+     * @return {?}
+     */
     tryToStopListener(l) {
         l.countOfListeners -= 1;
         if (l.countOfListeners === 0) {
-            l.unsubscribe();
+            (/** @type {?} */ (l.unsubscribe))();
             l.unsubscribe = undefined;
         }
     }
 }
-/** @nocollapse */ NzDomEventService.ɵfac = function NzDomEventService_Factory(t) { return new (t || NzDomEventService)(ɵɵinject(NgZone), ɵɵinject(RendererFactory2)); };
-/** @nocollapse */ NzDomEventService.ɵprov = ɵɵdefineInjectable({ token: NzDomEventService, factory: NzDomEventService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzDomEventService, [{
-        type: Injectable,
-        args: [{
+NzDomEventService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: 'root'
-            }]
-    }], function () { return [{ type: NgZone }, { type: RendererFactory2 }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzDomEventService.ctorParameters = () => [
+    { type: NgZone },
+    { type: RendererFactory2 }
+];
+/** @nocollapse */ NzDomEventService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDomEventService_Factory() { return new NzDomEventService(ɵɵinject(NgZone), ɵɵinject(RendererFactory2)); }, token: NzDomEventService, providedIn: "root" });
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.resizeSource;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.domEventListeners;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.rendererFactory2;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-singleton.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function SingletonRegistryItem() { }
+if (false) {
+    /** @type {?} */
+    SingletonRegistryItem.prototype.target;
+}
 /**
  * When running in test, singletons should not be destroyed. So we keep references of singletons
  * in this global variable.
+ * @type {?}
  */
 const testSingleRegistry = new Map();
 /**
@@ -1434,49 +2116,89 @@ class NzSingletonService {
          */
         this._singletonRegistry = new Map();
     }
+    /**
+     * @private
+     * @return {?}
+     */
     get singletonRegistry() {
         return environment.isTestMode ? testSingleRegistry : this._singletonRegistry;
     }
+    /**
+     * @param {?} key
+     * @param {?} target
+     * @return {?}
+     */
     registerSingletonWithKey(key, target) {
+        /** @type {?} */
         const alreadyHave = this.singletonRegistry.has(key);
-        const item = alreadyHave ? this.singletonRegistry.get(key) : this.withNewTarget(target);
+        /** @type {?} */
+        const item = alreadyHave ? (/** @type {?} */ (this.singletonRegistry.get(key))) : this.withNewTarget(target);
         if (!alreadyHave) {
             this.singletonRegistry.set(key, item);
         }
     }
+    /**
+     * @template T
+     * @param {?} key
+     * @return {?}
+     */
     getSingletonWithKey(key) {
-        return this.singletonRegistry.has(key) ? this.singletonRegistry.get(key).target : null;
+        return this.singletonRegistry.has(key) ? ((/** @type {?} */ ((/** @type {?} */ (this.singletonRegistry.get(key))).target))) : null;
     }
+    /**
+     * @private
+     * @param {?} target
+     * @return {?}
+     */
     withNewTarget(target) {
         return {
             target
         };
     }
 }
-/** @nocollapse */ NzSingletonService.ɵfac = function NzSingletonService_Factory(t) { return new (t || NzSingletonService)(); };
-/** @nocollapse */ NzSingletonService.ɵprov = ɵɵdefineInjectable({ token: NzSingletonService, factory: NzSingletonService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSingletonService, [{
-        type: Injectable,
-        args: [{
+NzSingletonService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: 'root'
-            }]
-    }], null, null); })();
+            },] }
+];
+/** @nocollapse */ NzSingletonService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzSingletonService_Factory() { return new NzSingletonService(); }, token: NzSingletonService, providedIn: "root" });
+if (false) {
+    /**
+     * This registry is used to register singleton in dev mode.
+     * So that singletons get destroyed when hot module reload happens.
+     *
+     * This works in prod mode too but with no specific effect.
+     * @type {?}
+     * @private
+     */
+    NzSingletonService.prototype._singletonRegistry;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/check.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
  */
 function isNotNil(value) {
     return typeof value !== 'undefined' && value !== null;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isNil(value) {
     return typeof value === 'undefined' || value === null;
 }
 /**
  * Examine if two objects are shallowly equaled.
+ * @param {?=} objA
+ * @param {?=} objB
+ * @return {?}
  */
 function shallowEqual(objA, objB) {
     if (objA === objB) {
@@ -1485,14 +2207,18 @@ function shallowEqual(objA, objB) {
     if (typeof objA !== 'object' || !objA || typeof objB !== 'object' || !objB) {
         return false;
     }
+    /** @type {?} */
     const keysA = Object.keys(objA);
+    /** @type {?} */
     const keysB = Object.keys(objB);
     if (keysA.length !== keysB.length) {
         return false;
     }
+    /** @type {?} */
     const bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
     // tslint:disable-next-line:prefer-for-of
     for (let idx = 0; idx < keysA.length; idx++) {
+        /** @type {?} */
         const key = keysA[idx];
         if (!bHasOwnProperty(key)) {
             return false;
@@ -1503,10 +2229,19 @@ function shallowEqual(objA, objB) {
     }
     return true;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isInteger(value) {
     return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function isEmpty(element) {
+    /** @type {?} */
     const nodes = element.childNodes;
     for (let i = 0; i < nodes.length; i++) {
         if (filterNotEmptyNode(nodes.item(i))) {
@@ -1515,13 +2250,17 @@ function isEmpty(element) {
     }
     return true;
 }
+/**
+ * @param {?} node
+ * @return {?}
+ */
 function filterNotEmptyNode(node) {
     if (node) {
-        if (node.nodeType === 1 && node.outerHTML.toString().trim().length !== 0) {
+        if (node.nodeType === 1 && ((/** @type {?} */ (node))).outerHTML.toString().trim().length !== 0) {
             // ELEMENT_NODE
             return node;
         }
-        else if (node.nodeType === 3 && node.textContent.toString().trim().length !== 0) {
+        else if (node.nodeType === 3 && (/** @type {?} */ (node.textContent)).toString().trim().length !== 0) {
             // TEXT_NODE
             return node;
         }
@@ -1530,46 +2269,70 @@ function filterNotEmptyNode(node) {
     return null;
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isNonEmptyString(value) {
     return typeof value === 'string' && value !== '';
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isTemplateRef(value) {
     return value instanceof TemplateRef;
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isComponent(value) {
     return value instanceof Type;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/dom.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Silent an event by stopping and preventing it.
+ * @param {?} e
+ * @return {?}
  */
 function silentEvent(e) {
     e.stopPropagation();
     e.preventDefault();
 }
+/**
+ * @param {?} elem
+ * @return {?}
+ */
 function getElementOffset(elem) {
     if (!elem.getClientRects().length) {
         return { top: 0, left: 0 };
     }
+    /** @type {?} */
     const rect = elem.getBoundingClientRect();
-    const win = elem.ownerDocument.defaultView;
+    /** @type {?} */
+    const win = (/** @type {?} */ (elem.ownerDocument)).defaultView;
     return {
-        top: rect.top + win.pageYOffset,
-        left: rect.left + win.pageXOffset
+        top: rect.top + (/** @type {?} */ (win)).pageYOffset,
+        left: rect.left + (/** @type {?} */ (win)).pageXOffset
     };
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function findFirstNotEmptyNode(element) {
+    /** @type {?} */
     const children = element.childNodes;
     for (let i = 0; i < children.length; i++) {
+        /** @type {?} */
         const node = children.item(i);
         if (filterNotEmptyNode(node)) {
             return node;
@@ -1577,9 +2340,15 @@ function findFirstNotEmptyNode(element) {
     }
     return null;
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function findLastNotEmptyNode(element) {
+    /** @type {?} */
     const children = element.childNodes;
     for (let i = children.length - 1; i >= 0; i--) {
+        /** @type {?} */
         const node = children.item(i);
         if (filterNotEmptyNode(node)) {
             return node;
@@ -1587,12 +2356,24 @@ function findLastNotEmptyNode(element) {
     }
     return null;
 }
+/**
+ * @param {?} parent
+ * @return {?}
+ */
 function reverseChildNodes(parent) {
+    /** @type {?} */
     const children = parent.childNodes;
+    /** @type {?} */
     let length = children.length;
     if (length) {
+        /** @type {?} */
         const nodes = [];
-        children.forEach((node, i) => (nodes[i] = node));
+        children.forEach((/**
+         * @param {?} node
+         * @param {?} i
+         * @return {?}
+         */
+        (node, i) => (nodes[i] = node)));
         while (length--) {
             parent.appendChild(nodes[length]);
         }
@@ -1600,22 +2381,81 @@ function reverseChildNodes(parent) {
 }
 /**
  * Investigate if an event is a `TouchEvent`.
+ * @param {?} event
+ * @return {?}
  */
 function isTouchEvent(event) {
     return event.type.startsWith('touch');
 }
+/**
+ * @param {?} event
+ * @return {?}
+ */
 function getEventPosition(event) {
     return isTouchEvent(event) ? event.touches[0] || event.changedTouches[0] : event;
 }
+/**
+ * @record
+ */
+function MouseTouchObserverConfig() { }
+if (false) {
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.end;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.move;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.pluckKey;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.start;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.end$;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.moveResolved$;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.startPlucked$;
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    MouseTouchObserverConfig.prototype.filter = function (e) { };
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/drag/nz-drag.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function Point() { }
+if (false) {
+    /** @type {?} */
+    Point.prototype.x;
+    /** @type {?} */
+    Point.prototype.y;
+}
+/**
+ * @record
+ */
+function HandlerItem() { }
+if (false) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    HandlerItem.prototype.handler = function (e) { };
+    /**
+     * @return {?}
+     */
+    HandlerItem.prototype.teardown = function () { };
+}
+/**
+ * @param {?} event
+ * @return {?}
  */
 function getPagePosition(event) {
+    /** @type {?} */
     const e = getEventPosition(event);
     return {
         x: e.pageX,
@@ -1626,6 +2466,9 @@ function getPagePosition(event) {
  * This module provide a global dragging service to other components.
  */
 class NzDragService {
+    /**
+     * @param {?} rendererFactory2
+     */
     constructor(rendererFactory2) {
         this.draggingThreshold = 5;
         this.currentDraggingSequence = null;
@@ -1633,6 +2476,10 @@ class NzDragService {
         this.handleRegistry = new Set();
         this.renderer = rendererFactory2.createRenderer(null, null);
     }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
     requestDraggingSequence(event) {
         if (!this.handleRegistry.size) {
             this.registerDraggingHandler(isTouchEvent(event));
@@ -1643,76 +2490,140 @@ class NzDragService {
         }
         this.currentStartingPoint = getPagePosition(event);
         this.currentDraggingSequence = new Subject();
-        return this.currentDraggingSequence.pipe(map((e) => {
+        return this.currentDraggingSequence.pipe(map((/**
+         * @param {?} e
+         * @return {?}
+         */
+        (e) => {
             return {
-                x: e.pageX - this.currentStartingPoint.x,
-                y: e.pageY - this.currentStartingPoint.y
+                x: e.pageX - (/** @type {?} */ (this.currentStartingPoint)).x,
+                y: e.pageY - (/** @type {?} */ (this.currentStartingPoint)).y
             };
-        }), filter((e) => Math.abs(e.x) > this.draggingThreshold || Math.abs(e.y) > this.draggingThreshold), finalize(() => this.teardownDraggingSequence()));
+        })), filter((/**
+         * @param {?} e
+         * @return {?}
+         */
+        (e) => Math.abs(e.x) > this.draggingThreshold || Math.abs(e.y) > this.draggingThreshold)), finalize((/**
+         * @return {?}
+         */
+        () => this.teardownDraggingSequence())));
     }
+    /**
+     * @private
+     * @param {?} isTouch
+     * @return {?}
+     */
     registerDraggingHandler(isTouch) {
         if (isTouch) {
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'touchmove', (e) => {
+                teardown: this.renderer.listen('document', 'touchmove', (/**
+                 * @param {?} e
+                 * @return {?}
+                 */
+                (e) => {
                     if (this.currentDraggingSequence) {
                         this.currentDraggingSequence.next(e.touches[0] || e.changedTouches[0]);
                     }
-                })
+                }))
             });
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'touchend', () => {
+                teardown: this.renderer.listen('document', 'touchend', (/**
+                 * @return {?}
+                 */
+                () => {
                     if (this.currentDraggingSequence) {
                         this.currentDraggingSequence.complete();
                     }
-                })
+                }))
             });
         }
         else {
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'mousemove', e => {
+                teardown: this.renderer.listen('document', 'mousemove', (/**
+                 * @param {?} e
+                 * @return {?}
+                 */
+                e => {
                     if (this.currentDraggingSequence) {
                         this.currentDraggingSequence.next(e);
                     }
-                })
+                }))
             });
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'mouseup', () => {
+                teardown: this.renderer.listen('document', 'mouseup', (/**
+                 * @return {?}
+                 */
+                () => {
                     if (this.currentDraggingSequence) {
                         this.currentDraggingSequence.complete();
                     }
-                })
+                }))
             });
         }
     }
+    /**
+     * @private
+     * @return {?}
+     */
     teardownDraggingSequence() {
         this.currentDraggingSequence = null;
     }
 }
-/** @nocollapse */ NzDragService.ɵfac = function NzDragService_Factory(t) { return new (t || NzDragService)(ɵɵinject(RendererFactory2)); };
-/** @nocollapse */ NzDragService.ɵprov = ɵɵdefineInjectable({ token: NzDragService, factory: NzDragService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzDragService, [{
-        type: Injectable,
-        args: [{
+NzDragService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: 'root'
-            }]
-    }], function () { return [{ type: RendererFactory2 }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzDragService.ctorParameters = () => [
+    { type: RendererFactory2 }
+];
+/** @nocollapse */ NzDragService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDragService_Factory() { return new NzDragService(ɵɵinject(RendererFactory2)); }, token: NzDragService, providedIn: "root" });
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.draggingThreshold;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.currentDraggingSequence;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.currentStartingPoint;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.handleRegistry;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/drag/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/event-objects.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1720,21 +2631,41 @@ class NzDragService {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/** Creates a browser MouseEvent with the specified options. */
+/**
+ * Creates a browser MouseEvent with the specified options.
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @param {?=} button
+ * @return {?}
+ */
 function createMouseEvent(type, x = 0, y = 0, button = 0) {
+    /** @type {?} */
     const event = document.createEvent('MouseEvent');
     event.initMouseEvent(type, true /* canBubble */, false /* cancelable */, window /* view */, 0 /* detail */, x /* screenX */, y /* screenY */, x /* clientX */, y /* clientY */, false /* ctrlKey */, false /* altKey */, false /* shiftKey */, false /* metaKey */, button /* button */, null /* relatedTarget */);
     // `initMouseEvent` doesn't allow us to pass the `buttons` and
     // defaults it to 0 which looks like a fake event.
-    Object.defineProperty(event, 'buttons', { get: () => 1 });
+    Object.defineProperty(event, 'buttons', { get: (/**
+         * @return {?}
+         */
+        () => 1) });
     return event;
 }
-/** Creates a browser TouchEvent with the specified pointer coordinates. */
+/**
+ * Creates a browser TouchEvent with the specified pointer coordinates.
+ * @param {?} type
+ * @param {?=} pageX
+ * @param {?=} pageY
+ * @return {?}
+ */
 function createTouchEvent(type, pageX = 0, pageY = 0) {
     // In favor of creating events that work for most of the browsers, the event is created
     // as a basic UI Event. The necessary details for the event will be set manually.
-    const event = new UIEvent(type, { detail: 0, view: window });
+    /** @type {?} */
+    const event = document.createEvent('UIEvent');
+    /** @type {?} */
     const touchDetails = { pageX, pageY, clientX: pageX, clientY: pageY };
+    event.initUIEvent(type, true, true, window, 0);
     // Most of the browsers don't have a "initTouchEvent" method that can be used to define
     // the touch details.
     Object.defineProperties(event, {
@@ -1744,10 +2675,19 @@ function createTouchEvent(type, pageX = 0, pageY = 0) {
     });
     return event;
 }
-/** Dispatches a keydown event from an element. */
+/**
+ * Dispatches a keydown event from an element.
+ * @param {?} type
+ * @param {?} keyCode
+ * @param {?=} target
+ * @param {?=} key
+ * @return {?}
+ */
 function createKeyboardEvent(type, keyCode, target, key) {
     // tslint:disable-next-line:no-any
-    const event = document.createEvent('KeyboardEvent');
+    /** @type {?} */
+    const event = (/** @type {?} */ (document.createEvent('KeyboardEvent')));
+    /** @type {?} */
     const originalPreventDefault = event.preventDefault;
     // Firefox does not support `initKeyboardEvent`, but supports `initKeyEvent`.
     if (event.initKeyEvent) {
@@ -1759,67 +2699,119 @@ function createKeyboardEvent(type, keyCode, target, key) {
     // Webkit Browsers don't set the keyCode when calling the init function.
     // See related bug https://bugs.webkit.org/show_bug.cgi?id=16735
     Object.defineProperties(event, {
-        keyCode: { get: () => keyCode },
-        key: { get: () => key },
-        target: { get: () => target }
+        keyCode: { get: (/**
+             * @return {?}
+             */
+            () => keyCode) },
+        key: { get: (/**
+             * @return {?}
+             */
+            () => key) },
+        target: { get: (/**
+             * @return {?}
+             */
+            () => target) }
     });
     // IE won't set `defaultPrevented` on synthetic events so we need to do it manually.
     // tslint:disable-next-line:typedef
-    event.preventDefault = function () {
-        Object.defineProperty(event, 'defaultPrevented', { get: () => true, configurable: true });
+    event.preventDefault = (/**
+     * @return {?}
+     */
+    function () {
+        Object.defineProperty(event, 'defaultPrevented', { get: (/**
+             * @return {?}
+             */
+            () => true) });
         // tslint:disable-next-line:no-invalid-this
         return originalPreventDefault.apply(this, arguments);
-    };
+    });
     return event;
 }
-/** Creates a fake event object with any desired event type. */
+/**
+ * Creates a fake event object with any desired event type.
+ * @param {?} type
+ * @param {?=} canBubble
+ * @param {?=} cancelable
+ * @return {?}
+ */
 function createFakeEvent(type, canBubble = true, cancelable = true) {
+    /** @type {?} */
     const event = document.createEvent('Event');
     event.initEvent(type, canBubble, cancelable);
     return event;
 }
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/dispatch-events.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** Utility to dispatch any event on a Node. */
+/**
+ * Utility to dispatch any event on a Node.
+ * @param {?} node
+ * @param {?} event
+ * @return {?}
+ */
 function dispatchEvent(node, event) {
     node.dispatchEvent(event);
     return event;
 }
-/** Shorthand to dispatch a fake event on a specified node. */
+/**
+ * Shorthand to dispatch a fake event on a specified node.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} canBubble
+ * @return {?}
+ */
 function dispatchFakeEvent(node, type, canBubble) {
     return dispatchEvent(node, createFakeEvent(type, canBubble));
 }
-/** Shorthand to dispatch a keyboard event with a specified key code. */
+/**
+ * Shorthand to dispatch a keyboard event with a specified key code.
+ * @param {?} node
+ * @param {?} type
+ * @param {?} keyCode
+ * @param {?=} target
+ * @return {?}
+ */
 function dispatchKeyboardEvent(node, type, keyCode, target) {
-    return dispatchEvent(node, createKeyboardEvent(type, keyCode, target));
+    return (/** @type {?} */ (dispatchEvent(node, createKeyboardEvent(type, keyCode, target))));
 }
-/** Shorthand to dispatch a mouse event on the specified coordinates. */
+/**
+ * Shorthand to dispatch a mouse event on the specified coordinates.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @param {?=} event
+ * @return {?}
+ */
 function dispatchMouseEvent(node, type, x = 0, y = 0, event = createMouseEvent(type, x, y)) {
-    return dispatchEvent(node, event);
+    return (/** @type {?} */ (dispatchEvent(node, event)));
 }
-/** Shorthand to dispatch a touch event on the specified coordinates. */
+/**
+ * Shorthand to dispatch a touch event on the specified coordinates.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @return {?}
+ */
 function dispatchTouchEvent(node, type, x = 0, y = 0) {
-    return dispatchEvent(node, createTouchEvent(type, x, y));
+    return (/** @type {?} */ (dispatchEvent(node, createTouchEvent(type, x, y))));
 }
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/type-in-element.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Focuses an input, sets its value and dispatches
  * the `input` event, simulating the user typing.
- * @param value Value to be set on the input.
- * @param element Element onto which to set the value.
+ * @param {?} value Value to be set on the input.
+ * @param {?} element Element onto which to set the value.
+ * @return {?}
  */
 function typeInElement(value, element) {
     element.focus();
@@ -1827,6 +2819,11 @@ function typeInElement(value, element) {
     dispatchFakeEvent(element, 'input');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/wrapped-error-message.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1837,12 +2834,20 @@ function typeInElement(value, element) {
 /**
  * Gets a RegExp used to detect an angular wrapped error message.
  * See https://github.com/angular/angular/issues/8348
+ * @param {?} e
+ * @return {?}
  */
 function wrappedErrorMessage(e) {
+    /** @type {?} */
     const escapedMessage = e.message.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&');
     return new RegExp(escapedMessage);
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/fake-viewport-ruler.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1850,8 +2855,13 @@ function wrappedErrorMessage(e) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/** @docs-private */
+/**
+ * \@docs-private
+ */
 class FakeViewportRuler {
+    /**
+     * @return {?}
+     */
     getViewportRect() {
         return {
             left: 0,
@@ -1862,65 +2872,114 @@ class FakeViewportRuler {
             right: 1014
         };
     }
+    /**
+     * @return {?}
+     */
     getViewportSize() {
         return { width: 1014, height: 686 };
     }
+    /**
+     * @return {?}
+     */
     getViewportScrollPosition() {
         return { top: 0, left: 0 };
     }
 }
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/mock-ng-zone.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Mock synchronous NgZone implementation that can be used
  * to flush out `onStable` subscriptions in tests.
  *
  * via: https://github.com/angular/angular/blob/master/packages/core/testing/src/ng_zone_mock.ts
- * @docs-private
+ * \@docs-private
  */
 class MockNgZone extends NgZone {
     constructor() {
         super({ enableLongStackTrace: false });
         this.onStable = new EventEmitter(false);
     }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
     run(fn) {
         return fn();
     }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
     runOutsideAngular(fn) {
         return fn();
     }
+    /**
+     * @return {?}
+     */
     simulateZoneExit() {
         this.onStable.emit(null);
     }
 }
-/** @nocollapse */ MockNgZone.ɵfac = function MockNgZone_Factory(t) { return new (t || MockNgZone)(); };
-/** @nocollapse */ MockNgZone.ɵprov = ɵɵdefineInjectable({ token: MockNgZone, factory: MockNgZone.ɵfac });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(MockNgZone, [{
-        type: Injectable
-    }], function () { return []; }, null); })();
+MockNgZone.decorators = [
+    { type: Injectable }
+];
+/** @nocollapse */
+MockNgZone.ctorParameters = () => [];
+if (false) {
+    /** @type {?} */
+    MockNgZone.prototype.onStable;
+}
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base-node.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzTreeNodeOptions() { }
+if (false) {
+    /** @type {?} */
+    NzTreeNodeOptions.prototype.title;
+    /** @type {?} */
+    NzTreeNodeOptions.prototype.key;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.icon;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.isLeaf;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.checked;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.selected;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.selectable;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.disabled;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.disableCheckbox;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.expanded;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.children;
+    /* Skipping unhandled member: [key: string]: any;*/
+}
 class NzTreeNode {
+    /**
+     * @param {?} option
+     * @param {?=} parent
+     * @param {?=} service
+     */
     constructor(option, parent = null, service = null) {
         this.level = 0;
         if (option instanceof NzTreeNode) {
@@ -1954,15 +3013,28 @@ class NzTreeNode {
             this.level = 0;
         }
         if (typeof option.children !== 'undefined' && option.children !== null) {
-            option.children.forEach(nodeOptions => {
+            option.children.forEach((/**
+             * @param {?} nodeOptions
+             * @return {?}
+             */
+            nodeOptions => {
+                /** @type {?} */
                 const s = this.treeService;
-                if (s && !s.isCheckStrictly && option.checked && !option.disabled && !nodeOptions.disabled && !nodeOptions.disableCheckbox) {
+                if (s &&
+                    !s.isCheckStrictly &&
+                    option.checked &&
+                    !option.disabled &&
+                    !nodeOptions.disabled &&
+                    !nodeOptions.disableCheckbox) {
                     nodeOptions.checked = option.checked;
                 }
                 this._children.push(new NzTreeNode(nodeOptions, this));
-            });
+            }));
         }
     }
+    /**
+     * @return {?}
+     */
     get treeService() {
         return this.service || (this.parentNode && this.parentNode.treeService);
     }
@@ -1970,105 +3042,197 @@ class NzTreeNode {
      * auto generate
      * get
      * set
+     * @return {?}
      */
     get title() {
         return this._title;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set title(value) {
         this._title = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get icon() {
         return this._icon;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set icon(value) {
         this._icon = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get children() {
         return this._children;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set children(value) {
         this._children = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get isLeaf() {
         return this._isLeaf;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isLeaf(value) {
         this._isLeaf = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get isChecked() {
         return this._isChecked;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isChecked(value) {
         this._isChecked = value;
         this._isAllChecked = value;
         this.origin.checked = value;
         this.afterValueChange('isChecked');
     }
+    /**
+     * @return {?}
+     */
     get isAllChecked() {
         return this._isAllChecked;
     }
     /**
      * @deprecated Maybe removed in next major version, use `isChecked` instead.
+     * @param {?} value
+     * @return {?}
      */
     set isAllChecked(value) {
         warnDeprecation(`'isAllChecked' is going to be removed in 9.0.0. Please use 'isChecked' instead.`);
         this._isAllChecked = value;
     }
+    /**
+     * @return {?}
+     */
     get isHalfChecked() {
         return this._isHalfChecked;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isHalfChecked(value) {
         this._isHalfChecked = value;
         this.afterValueChange('isHalfChecked');
     }
+    /**
+     * @return {?}
+     */
     get isSelectable() {
         return this._isSelectable;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isSelectable(value) {
         this._isSelectable = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get isDisabled() {
         return this._isDisabled;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isDisabled(value) {
         this._isDisabled = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get isDisableCheckbox() {
         return this._isDisableCheckbox;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isDisableCheckbox(value) {
         this._isDisableCheckbox = value;
         this.update();
     }
+    /**
+     * @return {?}
+     */
     get isExpanded() {
         return this._isExpanded;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isExpanded(value) {
         this._isExpanded = value;
         this.origin.expanded = value;
         this.afterValueChange('isExpanded');
     }
+    /**
+     * @return {?}
+     */
     get isSelected() {
         return this._isSelected;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isSelected(value) {
         this._isSelected = value;
         this.origin.selected = value;
         this.afterValueChange('isSelected');
     }
+    /**
+     * @return {?}
+     */
     get isLoading() {
         return this._isLoading;
     }
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     set isLoading(value) {
         this._isLoading = value;
         this.update();
     }
+    /**
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
+     */
     setSyncChecked(checked = false, halfChecked = false) {
         this.setChecked(checked, halfChecked);
         if (this.treeService && !this.treeService.isCheckStrictly) {
@@ -2077,6 +3241,9 @@ class NzTreeNode {
     }
     /**
      * @deprecated Maybe removed in next major version, use `isChecked` instead.
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
      */
     setChecked(checked = false, halfChecked = false) {
         warnDeprecation(`'setChecked' is going to be removed in 9.0.0. Please use 'isChecked' instead.`);
@@ -2087,6 +3254,8 @@ class NzTreeNode {
     }
     /**
      * @deprecated Maybe removed in next major version, use `isExpanded` instead.
+     * @param {?} value
+     * @return {?}
      */
     setExpanded(value) {
         warnDeprecation(`'setExpanded' is going to be removed in 9.0.0. Please use 'isExpanded' instead.`);
@@ -2094,6 +3263,8 @@ class NzTreeNode {
     }
     /**
      * @deprecated Maybe removed in next major version, use `isSelected` instead.
+     * @param {?} value
+     * @return {?}
      */
     setSelected(value) {
         warnDeprecation(`'setSelected' is going to be removed in 9.0.0. Please use 'isExpanded' isSelected.`);
@@ -2102,27 +3273,50 @@ class NzTreeNode {
         }
         this.isSelected = value;
     }
+    /**
+     * @return {?}
+     */
     getParentNode() {
         return this.parentNode;
     }
+    /**
+     * @return {?}
+     */
     getChildren() {
         return this.children;
     }
     /**
      * Support appending child nodes by position. Leaf node cannot be appended.
+     * @param {?} children
+     * @param {?=} childPos
+     * @return {?}
      */
     // tslint:disable-next-line:no-any
     addChildren(children, childPos = -1) {
         if (!this.isLeaf) {
-            children.forEach(node => {
-                const refreshLevel = (n) => {
-                    n.getChildren().forEach(c => {
-                        c.level = c.getParentNode().level + 1;
+            children.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            node => {
+                /** @type {?} */
+                const refreshLevel = (/**
+                 * @param {?} n
+                 * @return {?}
+                 */
+                (n) => {
+                    n.getChildren().forEach((/**
+                     * @param {?} c
+                     * @return {?}
+                     */
+                    c => {
+                        c.level = (/** @type {?} */ (c.getParentNode())).level + 1;
                         // flush origin
                         c.origin.level = c.level;
                         refreshLevel(c);
-                    });
-                };
+                    }));
+                });
+                /** @type {?} */
                 let child = node;
                 if (child instanceof NzTreeNode) {
                     child.parentNode = this;
@@ -2138,26 +3332,49 @@ class NzTreeNode {
                     // flush origin
                 }
                 catch (e) { }
-            });
-            this.origin.children = this.getChildren().map(v => v.origin);
+            }));
+            this.origin.children = this.getChildren().map((/**
+             * @param {?} v
+             * @return {?}
+             */
+            v => v.origin));
             // remove loading state
             this.isLoading = false;
         }
     }
+    /**
+     * @return {?}
+     */
     clearChildren() {
         // refresh checked state
         this.afterValueChange('clearChildren');
         this.children = [];
         this.origin.children = [];
     }
+    /**
+     * @return {?}
+     */
     remove() {
+        /** @type {?} */
         const parentNode = this.getParentNode();
         if (parentNode) {
-            parentNode.children = parentNode.getChildren().filter(v => v.key !== this.key);
-            parentNode.origin.children = parentNode.origin.children.filter(v => v.key !== this.key);
+            parentNode.children = parentNode.getChildren().filter((/**
+             * @param {?} v
+             * @return {?}
+             */
+            v => v.key !== this.key));
+            parentNode.origin.children = (/** @type {?} */ (parentNode.origin.children)).filter((/**
+             * @param {?} v
+             * @return {?}
+             */
+            v => v.key !== this.key));
             this.afterValueChange('remove');
         }
     }
+    /**
+     * @param {?} key
+     * @return {?}
+     */
     afterValueChange(key) {
         if (this.treeService) {
             switch (key) {
@@ -2183,6 +3400,9 @@ class NzTreeNode {
         }
         this.update();
     }
+    /**
+     * @return {?}
+     */
     update() {
         if (this.component) {
             this.component.setClassMap();
@@ -2190,7 +3410,96 @@ class NzTreeNode {
         }
     }
 }
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._title;
+    /** @type {?} */
+    NzTreeNode.prototype.key;
+    /** @type {?} */
+    NzTreeNode.prototype.level;
+    /** @type {?} */
+    NzTreeNode.prototype.origin;
+    /** @type {?} */
+    NzTreeNode.prototype.parentNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._icon;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._children;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isLeaf;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isChecked;
+    /**
+     * @deprecated Maybe removed in next major version, use isChecked instead
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isAllChecked;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isSelectable;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isDisabled;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isDisableCheckbox;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isExpanded;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isHalfChecked;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isSelected;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isLoading;
+    /** @type {?} */
+    NzTreeNode.prototype.canHide;
+    /** @type {?} */
+    NzTreeNode.prototype.isMatched;
+    /** @type {?} */
+    NzTreeNode.prototype.service;
+    /** @type {?} */
+    NzTreeNode.prototype.component;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2198,7 +3507,76 @@ class NzTreeNode {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function NzFormatEmitEvent() { }
+if (false) {
+    /** @type {?} */
+    NzFormatEmitEvent.prototype.eventName;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.node;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.event;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.dragNode;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.selectedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.checkedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.matchedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.nodes;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.keys;
+}
+/**
+ * @record
+ */
+function NzFormatBeforeDropEvent() { }
+if (false) {
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.dragNode;
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.node;
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.pos;
+}
+/**
+ * @record
+ */
+function NzTreeNodeBaseComponent() { }
+if (false) {
+    /**
+     * @return {?}
+     */
+    NzTreeNodeBaseComponent.prototype.setClassMap = function () { };
+    /**
+     * @return {?}
+     */
+    NzTreeNodeBaseComponent.prototype.markForCheck = function () { };
+}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/array.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
+ */
 function toArray(value) {
+    /** @type {?} */
     let ret;
     if (value == null) {
         ret = [];
@@ -2211,10 +3589,17 @@ function toArray(value) {
     }
     return ret;
 }
+/**
+ * @template T
+ * @param {?} array1
+ * @param {?} array2
+ * @return {?}
+ */
 function arraysEqual(array1, array2) {
     if (!array1 || !array2 || array1.length !== array2.length) {
         return false;
     }
+    /** @type {?} */
     const len = array1.length;
     for (let i = 0; i < len; i++) {
         if (array1[i] !== array2[i]) {
@@ -2223,10 +3608,20 @@ function arraysEqual(array1, array2) {
     }
     return true;
 }
+/**
+ * @template T
+ * @param {?} source
+ * @return {?}
+ */
 function shallowCopyArray(source) {
     return source.slice();
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/getMentions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2234,23 +3629,45 @@ function shallowCopyArray(source) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} prefix
+ * @return {?}
+ */
 function getRegExp(prefix) {
+    /** @type {?} */
     const prefixArray = Array.isArray(prefix) ? prefix : [prefix];
+    /** @type {?} */
     let prefixToken = prefixArray.join('').replace(/(\$|\^)/g, '\\$1');
     if (prefixArray.length > 1) {
         prefixToken = `[${prefixToken}]`;
     }
     return new RegExp(`(\\s|^)(${prefixToken})[^\\s]*`, 'g');
 }
+/**
+ * @param {?} value
+ * @param {?=} prefix
+ * @return {?}
+ */
 function getMentions(value, prefix = '@') {
     if (typeof value !== 'string') {
         return [];
     }
+    /** @type {?} */
     const regex = getRegExp(prefix);
+    /** @type {?} */
     const mentions = value.match(regex);
-    return mentions !== null ? mentions.map(e => e.trim()) : [];
+    return mentions !== null ? mentions.map((/**
+     * @param {?} e
+     * @return {?}
+     */
+    e => e.trim())) : [];
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/string.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2260,24 +3677,46 @@ function getMentions(value, prefix = '@') {
  */
 /**
  * Much like lodash.
+ * @param {?} toPad
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
  */
 function padStart(toPad, length, element) {
     if (toPad.length > length) {
         return toPad;
     }
+    /** @type {?} */
     const joined = `${getRepeatedElement(length, element)}${toPad}`;
     return joined.slice(joined.length - length, joined.length);
 }
+/**
+ * @param {?} toPad
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
+ */
 function padEnd(toPad, length, element) {
+    /** @type {?} */
     const joined = `${toPad}${getRepeatedElement(length, element)}`;
     return joined.slice(0, length);
 }
+/**
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
+ */
 function getRepeatedElement(length, element) {
     return Array(length)
         .fill(element)
         .join('');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/is-promise.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2286,10 +3725,19 @@ function getRepeatedElement(length, element) {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} obj
+ * @return {?}
+ */
 function isPromise(obj) {
     return !!obj && typeof obj.then === 'function' && typeof obj.catch === 'function';
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/number.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2297,14 +3745,32 @@ function isPromise(obj) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} min
+ * @param {?} max
+ * @param {?} value
+ * @return {?}
+ */
 function getPercent(min, max, value) {
     return ((value - min) / (max - min)) * 100;
 }
+/**
+ * @param {?} num
+ * @return {?}
+ */
 function getPrecision(num) {
+    /** @type {?} */
     const numStr = num.toString();
+    /** @type {?} */
     const dotIndex = numStr.indexOf('.');
     return dotIndex >= 0 ? numStr.length - dotIndex - 1 : 0;
 }
+/**
+ * @param {?} num
+ * @param {?} min
+ * @param {?} max
+ * @return {?}
+ */
 function ensureNumberInRange(num, min, max) {
     if (isNaN(num) || num < min) {
         return min;
@@ -2318,14 +3784,24 @@ function ensureNumberInRange(num, min, max) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/scroll-into-view-if-needed.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} node
+ * @return {?}
+ */
 function scrollIntoView(node) {
-    const nodeAsAny = node; // tslint:disable-line:no-any
+    /** @type {?} */
+    const nodeAsAny = (/** @type {?} */ (node));
     if (nodeAsAny.scrollIntoViewIfNeeded) {
         /* tslint:disable-next-line:no-string-literal */
         nodeAsAny.scrollIntoViewIfNeeded(false);
@@ -2338,6 +3814,11 @@ function scrollIntoView(node) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/textarea-caret-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -2349,6 +3830,7 @@ function scrollIntoView(node) {
 // Note that some browsers, such as Firefox, do not concatenate properties
 // into their shorthand (e.g. padding-top, padding-bottom etc. -> padding),
 // so we have to list every single property explicitly.
+/** @type {?} */
 const properties = [
     'direction',
     'boxSizing',
@@ -2383,28 +3865,61 @@ const properties = [
     'tabSize',
     'MozTabSize'
 ];
+/** @type {?} */
 const isBrowser = typeof window !== 'undefined';
 // tslint:disable-next-line:no-any
-const isFirefox = isBrowser && window.mozInnerScreenX != null;
-const _parseInt = (str) => parseInt(str, 10);
+/** @type {?} */
+const isFirefox = isBrowser && ((/** @type {?} */ (window))).mozInnerScreenX != null;
+/** @type {?} */
+const _parseInt = (/**
+ * @param {?} str
+ * @return {?}
+ */
+(str) => parseInt(str, 10));
+const ɵ0 = _parseInt;
+/**
+ * @record
+ */
+function Coordinates() { }
+if (false) {
+    /** @type {?} */
+    Coordinates.prototype.top;
+    /** @type {?} */
+    Coordinates.prototype.left;
+    /** @type {?} */
+    Coordinates.prototype.height;
+}
+/**
+ * @param {?} element
+ * @param {?} position
+ * @param {?=} options
+ * @return {?}
+ */
 function getCaretCoordinates(element, position, options) {
     if (!isBrowser) {
         throw new Error('textarea-caret-position#getCaretCoordinates should only be called in a browser');
     }
+    /** @type {?} */
     const debug = (options && options.debug) || false;
     if (debug) {
+        /** @type {?} */
         const el = document.querySelector('#input-textarea-caret-position-mirror-div');
         if (el) {
-            el.parentNode.removeChild(el);
+            (/** @type {?} */ (el.parentNode)).removeChild(el);
         }
     }
     // The mirror div will replicate the textarea's style
+    /** @type {?} */
     const div = document.createElement('div');
     div.id = 'input-textarea-caret-position-mirror-div';
     document.body.appendChild(div);
+    /** @type {?} */
     const style = div.style;
     // tslint:disable-next-line:no-any
-    const computed = window.getComputedStyle ? window.getComputedStyle(element) : element.currentStyle; // currentStyle for IE < 9
+    /** @type {?} */
+    const computed = window.getComputedStyle ? window.getComputedStyle(element) : ((/** @type {?} */ (element))).currentStyle;
+    // currentStyle for IE < 9
+    /** @type {?} */
     const isInput = element.nodeName === 'INPUT';
     // Default textarea styles
     style.whiteSpace = 'pre-wrap';
@@ -2417,7 +3932,11 @@ function getCaretCoordinates(element, position, options) {
         style.visibility = 'hidden';
     } // not 'display: none' because we want rendering
     // Transfer the element's properties to the div
-    properties.forEach((prop) => {
+    properties.forEach((/**
+     * @param {?} prop
+     * @return {?}
+     */
+    (prop) => {
         if (isInput && prop === 'lineHeight') {
             // Special case for <input>s because text is rendered centered and line height may be != height
             style.lineHeight = computed.height;
@@ -2426,7 +3945,7 @@ function getCaretCoordinates(element, position, options) {
             // @ts-ignore
             style[prop] = computed[prop];
         }
-    });
+    }));
     if (isFirefox) {
         // Firefox lies about the overflow property for textareas: https://bugzilla.mozilla.org/show_bug.cgi?id=984275
         if (element.scrollHeight > _parseInt(computed.height)) {
@@ -2442,6 +3961,7 @@ function getCaretCoordinates(element, position, options) {
     if (isInput) {
         div.textContent = div.textContent.replace(/\s/g, '\u00a0');
     }
+    /** @type {?} */
     const span = document.createElement('span');
     // Wrapping must be replicated *exactly*, including when a long word gets
     // onto the next line, with whitespace at the end of the line before (#7).
@@ -2450,6 +3970,7 @@ function getCaretCoordinates(element, position, options) {
     // For inputs, just '.' would be enough, but no need to bother.
     span.textContent = element.value.substring(position) || '.'; // || because a completely empty faux span doesn't render at all
     div.appendChild(span);
+    /** @type {?} */
     const coordinates = {
         top: span.offsetTop + _parseInt(computed.borderTopWidth),
         left: span.offsetLeft + _parseInt(computed.borderLeftWidth),
@@ -2464,19 +3985,37 @@ function getCaretCoordinates(element, position, options) {
     }
     return coordinates;
 }
+/**
+ * @param {?} element
+ * @param {?} coordinates
+ * @return {?}
+ */
 function createDebugEle(element, coordinates) {
+    /** @type {?} */
     const fontSize = getComputedStyle(element).getPropertyValue('font-size');
-    const rect = document.querySelector('#DEBUG') || document.createElement('div');
+    /** @type {?} */
+    const rect = ((/** @type {?} */ (document.querySelector('#DEBUG')))) || document.createElement('div');
     document.body.appendChild(rect);
     rect.id = 'DEBUG';
     rect.style.position = 'absolute';
     rect.style.backgroundColor = 'red';
     rect.style.height = fontSize;
     rect.style.width = '1px';
-    rect.style.top = `${element.getBoundingClientRect().top - element.scrollTop + window.pageYOffset + coordinates.top}px`;
-    rect.style.left = `${element.getBoundingClientRect().left - element.scrollLeft + window.pageXOffset + coordinates.left}px`;
+    rect.style.top = `${element.getBoundingClientRect().top -
+        element.scrollTop +
+        window.pageYOffset +
+        coordinates.top}px`;
+    rect.style.left = `${element.getBoundingClientRect().left -
+        element.scrollLeft +
+        window.pageXOffset +
+        coordinates.left}px`;
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/style.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2484,26 +4023,49 @@ function createDebugEle(element, coordinates) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} styleName
+ * @return {?}
+ */
 function isStyleSupport(styleName) {
     if (typeof window !== 'undefined' && window.document && window.document.documentElement) {
+        /** @type {?} */
         const styleNameList = Array.isArray(styleName) ? styleName : [styleName];
         const { documentElement } = window.document;
-        return styleNameList.some(name => name in documentElement.style);
+        return styleNameList.some((/**
+         * @param {?} name
+         * @return {?}
+         */
+        name => name in documentElement.style));
     }
     return false;
 }
+/**
+ * @param {?=} styles
+ * @return {?}
+ */
 function getStyleAsText(styles) {
     if (!styles) {
         return '';
     }
     return Object.keys(styles)
-        .map(key => {
+        .map((/**
+     * @param {?} key
+     * @return {?}
+     */
+    key => {
+        /** @type {?} */
         const val = styles[key];
         return `${key}:${typeof val === 'string' ? val : val + 'px'}`;
-    })
+    }))
         .join(';');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/text-measure.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2511,43 +4073,90 @@ function getStyleAsText(styles) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function MeasureResult() { }
+if (false) {
+    /** @type {?} */
+    MeasureResult.prototype.finished;
+    /** @type {?} */
+    MeasureResult.prototype.node;
+}
 // We only handle element & text node.
+/** @type {?} */
 const ELEMENT_NODE = 1;
+/** @type {?} */
 const TEXT_NODE = 3;
+/** @type {?} */
 const COMMENT_NODE = 8;
+/** @type {?} */
 let ellipsisContainer;
+/** @type {?} */
 const wrapperStyle = {
     padding: '0',
     margin: '0',
     display: 'inline',
     lineHeight: 'inherit'
 };
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function pxToNumber(value) {
     if (!value) {
         return 0;
     }
+    /** @type {?} */
     const match = value.match(/^\d*(\.\d*)?/);
     return match ? Number(match[0]) : 0;
 }
+/**
+ * @param {?} style
+ * @return {?}
+ */
 function styleToString(style) {
     // There are some different behavior between Firefox & Chrome.
     // We have to handle this ourself.
+    /** @type {?} */
     const styleNames = Array.prototype.slice.apply(style);
-    return styleNames.map(name => `${name}: ${style.getPropertyValue(name)};`).join('');
+    return styleNames.map((/**
+     * @param {?} name
+     * @return {?}
+     */
+    name => `${name}: ${style.getPropertyValue(name)};`)).join('');
 }
+/**
+ * @param {?} children
+ * @return {?}
+ */
 function mergeChildren(children) {
+    /** @type {?} */
     const childList = [];
-    children.forEach((child) => {
+    children.forEach((/**
+     * @param {?} child
+     * @return {?}
+     */
+    (child) => {
+        /** @type {?} */
         const prevChild = childList[childList.length - 1];
         if (prevChild && child.nodeType === TEXT_NODE && prevChild.nodeType === TEXT_NODE) {
-            prevChild.data += child.data;
+            ((/** @type {?} */ (prevChild))).data += ((/** @type {?} */ (child))).data;
         }
         else {
             childList.push(child);
         }
-    });
+    }));
     return childList;
 }
+/**
+ * @param {?} originEle
+ * @param {?} rows
+ * @param {?} contentNodes
+ * @param {?} fixedContent
+ * @param {?} ellipsisStr
+ * @return {?}
+ */
 function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
     if (!ellipsisContainer) {
         ellipsisContainer = document.createElement('div');
@@ -2555,9 +4164,13 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
         document.body.appendChild(ellipsisContainer);
     }
     // Get origin style
+    /** @type {?} */
     const originStyle = window.getComputedStyle(originEle);
+    /** @type {?} */
     const originCSS = styleToString(originStyle);
+    /** @type {?} */
     const lineHeight = pxToNumber(originStyle.lineHeight);
+    /** @type {?} */
     const maxHeight = lineHeight * (rows + 1) + pxToNumber(originStyle.paddingTop) + pxToNumber(originStyle.paddingBottom);
     // Set shadow
     ellipsisContainer.setAttribute('style', originCSS);
@@ -2572,62 +4185,105 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
     ellipsisContainer.style.textOverflow = 'clip';
     ellipsisContainer.style.whiteSpace = 'normal';
     // tslint:disable-next-line no-any
-    ellipsisContainer.style.webkitLineClamp = 'none';
+    ((/** @type {?} */ (ellipsisContainer.style))).webkitLineClamp = 'none';
+    /** @type {?} */
     const contentList = mergeChildren(contentNodes);
+    /** @type {?} */
     const container = document.createElement('div');
+    /** @type {?} */
     const contentContainer = document.createElement('span');
+    /** @type {?} */
     const fixedContainer = document.createElement('span');
     // Add styles in container
     Object.assign(container.style, wrapperStyle);
     Object.assign(contentContainer.style, wrapperStyle);
     Object.assign(fixedContainer.style, wrapperStyle);
-    contentList.forEach(n => {
+    contentList.forEach((/**
+     * @param {?} n
+     * @return {?}
+     */
+    n => {
         contentContainer.appendChild(n);
-    });
-    fixedContent.forEach(node => {
+    }));
+    fixedContent.forEach((/**
+     * @param {?} node
+     * @return {?}
+     */
+    node => {
         fixedContainer.appendChild(node.cloneNode(true));
-    });
+    }));
     container.appendChild(contentContainer);
     container.appendChild(fixedContainer);
     // Render in the fake container
     ellipsisContainer.appendChild(container);
     // Check if ellipsis in measure div is height enough for content
+    /**
+     * @return {?}
+     */
     function inRange() {
         return ellipsisContainer.offsetHeight < maxHeight;
     }
     if (inRange()) {
+        /** @type {?} */
         const text = ellipsisContainer.innerHTML;
         ellipsisContainer.removeChild(container);
         return { contentNodes, text, ellipsis: false };
     }
     // We should clone the childNode since they're controlled by React and we can't reuse it without warning
+    /** @type {?} */
     const childNodes = Array.prototype.slice
         .apply(ellipsisContainer.childNodes[0].childNodes[0].cloneNode(true).childNodes)
-        .filter(({ nodeType }) => nodeType !== COMMENT_NODE);
+        .filter((/**
+     * @param {?} __0
+     * @return {?}
+     */
+    ({ nodeType }) => nodeType !== COMMENT_NODE));
+    /** @type {?} */
     const fixedNodes = Array.prototype.slice.apply(ellipsisContainer.childNodes[0].childNodes[1].cloneNode(true).childNodes);
     ellipsisContainer.removeChild(container);
     // ========================= Find match ellipsis content =========================
     ellipsisContainer.innerHTML = '';
     // Create origin content holder
+    /** @type {?} */
     const ellipsisContentHolder = document.createElement('span');
     ellipsisContainer.appendChild(ellipsisContentHolder);
+    /** @type {?} */
     const ellipsisTextNode = document.createTextNode(ellipsisStr);
     ellipsisContentHolder.appendChild(ellipsisTextNode);
-    fixedNodes.forEach(childNode => {
+    fixedNodes.forEach((/**
+     * @param {?} childNode
+     * @return {?}
+     */
+    childNode => {
         ellipsisContainer.appendChild(childNode);
-    });
+    }));
     // Append before fixed nodes
+    /**
+     * @param {?} node
+     * @return {?}
+     */
     function appendChildNode(node) {
         ellipsisContentHolder.insertBefore(node, ellipsisTextNode);
     }
     // Get maximum text
+    /**
+     * @param {?} textNode
+     * @param {?} fullText
+     * @param {?=} startLoc
+     * @param {?=} endLoc
+     * @param {?=} lastSuccessLoc
+     * @return {?}
+     */
     function measureText(textNode, fullText, startLoc = 0, endLoc = fullText.length, lastSuccessLoc = 0) {
+        /** @type {?} */
         const midLoc = Math.floor((startLoc + endLoc) / 2);
+        /** @type {?} */
         const currentText = fullText.slice(0, midLoc);
         textNode.textContent = currentText;
         if (startLoc >= endLoc - 1) {
             // Loop when step is small
             for (let step = endLoc; step >= startLoc; step -= 1) {
+                /** @type {?} */
                 const currentStepText = fullText.slice(0, step);
                 textNode.textContent = currentStepText;
                 if (inRange()) {
@@ -2650,7 +4306,13 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             return measureText(textNode, fullText, startLoc, midLoc, lastSuccessLoc);
         }
     }
+    /**
+     * @param {?} childNode
+     * @param {?} index
+     * @return {?}
+     */
     function measureNode(childNode, index) {
+        /** @type {?} */
         const type = childNode.nodeType;
         if (type === ELEMENT_NODE) {
             // We don't split element, it will keep if whole element can be displayed.
@@ -2669,7 +4331,9 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             };
         }
         else if (type === TEXT_NODE) {
+            /** @type {?} */
             const fullText = childNode.textContent || '';
+            /** @type {?} */
             const textNode = document.createTextNode(fullText);
             appendChildNode(textNode);
             return measureText(textNode, fullText);
@@ -2681,14 +4345,21 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             node: null
         };
     }
+    /** @type {?} */
     const ellipsisNodes = [];
-    childNodes.some((childNode, index) => {
+    childNodes.some((/**
+     * @param {?} childNode
+     * @param {?} index
+     * @return {?}
+     */
+    (childNode, index) => {
         const { finished, node } = measureNode(childNode, index);
         if (node) {
             ellipsisNodes.push(node);
         }
         return finished;
-    });
+    }));
+    /** @type {?} */
     const result = {
         contentNodes: ellipsisNodes,
         text: ellipsisContainer.innerHTML,
@@ -2701,25 +4372,39 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/measure-scrollbar.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @type {?}
  */
 let scrollbarVerticalSize;
+/** @type {?} */
 let scrollbarHorizontalSize;
 // Measure scrollbar width for padding body during modal show/hide
+/** @type {?} */
 const scrollbarMeasure = {
     position: 'absolute',
     top: '-9999px',
     width: '50px',
     height: '50px'
 };
+/**
+ * @param {?=} direction
+ * @param {?=} prefix
+ * @return {?}
+ */
 function measureScrollbar(direction = 'vertical', prefix = 'ant') {
     if (typeof document === 'undefined' || typeof window === 'undefined') {
         return 0;
     }
+    /** @type {?} */
     const isVertical = direction === 'vertical';
     if (isVertical && scrollbarVerticalSize) {
         return scrollbarVerticalSize;
@@ -2727,11 +4412,16 @@ function measureScrollbar(direction = 'vertical', prefix = 'ant') {
     else if (!isVertical && scrollbarHorizontalSize) {
         return scrollbarHorizontalSize;
     }
+    /** @type {?} */
     const scrollDiv = document.createElement('div');
-    Object.keys(scrollbarMeasure).forEach(scrollProp => {
+    Object.keys(scrollbarMeasure).forEach((/**
+     * @param {?} scrollProp
+     * @return {?}
+     */
+    scrollProp => {
         // @ts-ignore
         scrollDiv.style[scrollProp] = scrollbarMeasure[scrollProp];
-    });
+    }));
     // apply hide scrollbar className ahead
     scrollDiv.className = `${prefix}-hide-scrollbar scroll-div-append-to-body`;
     // Append related overflow style
@@ -2742,6 +4432,7 @@ function measureScrollbar(direction = 'vertical', prefix = 'ant') {
         scrollDiv.style.overflowX = 'scroll';
     }
     document.body.appendChild(scrollDiv);
+    /** @type {?} */
     let size = 0;
     if (isVertical) {
         size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
@@ -2756,37 +4447,61 @@ function measureScrollbar(direction = 'vertical', prefix = 'ant') {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/ensure-in-bounds.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @param {?} value
+ * @param {?} boundValue
+ * @return {?}
  */
 function ensureInBounds(value, boundValue) {
     return value ? (value < boundValue ? value : boundValue) : boundValue;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/tick.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @return {?}
  */
 function inNextTick() {
+    /** @type {?} */
     const timer = new Subject();
-    Promise.resolve().then(() => timer.next());
+    Promise.resolve().then((/**
+     * @return {?}
+     */
+    () => timer.next()));
     return timer.pipe(take(1));
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base-util.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2794,29 +4509,28 @@ function inNextTick() {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @param {?} node
+ * @return {?}
  */
 function isCheckDisabled(node) {
     const { isDisabled, isDisableCheckbox } = node;
     return !!(isDisabled || isDisableCheckbox);
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} needle
+ * @param {?} haystack
+ * @return {?}
+ */
 function isInArray(needle, haystack) {
     return haystack.length > 0 && haystack.indexOf(needle) > -1;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeBaseService {
     constructor() {
@@ -2834,12 +4548,15 @@ class NzTreeBaseService {
     }
     /**
      * trigger event
+     * @return {?}
      */
     eventTriggerChanged() {
         return this.triggerEventChange$.asObservable();
     }
     /**
      * reset tree nodes will clear default node list
+     * @param {?} nzNodes
+     * @return {?}
      */
     initTree(nzNodes) {
         this.rootNodes = nzNodes;
@@ -2849,50 +4566,84 @@ class NzTreeBaseService {
         this.checkedNodeList = [];
         this.matchedNodeList = [];
         // refresh node checked state
-        setTimeout(() => {
+        setTimeout((/**
+         * @return {?}
+         */
+        () => {
             this.refreshCheckState(this.isCheckStrictly);
-        });
+        }));
     }
+    /**
+     * @return {?}
+     */
     getSelectedNode() {
         return this.selectedNode;
     }
     /**
      * get some list
+     * @return {?}
      */
     getSelectedNodeList() {
         return this.conductNodeState('select');
     }
     /**
      * return checked nodes
+     * @return {?}
      */
     getCheckedNodeList() {
         return this.conductNodeState('check');
     }
+    /**
+     * @return {?}
+     */
     getHalfCheckedNodeList() {
         return this.conductNodeState('halfCheck');
     }
     /**
      * return expanded nodes
+     * @return {?}
      */
     getExpandedNodeList() {
         return this.conductNodeState('expand');
     }
     /**
      * return search matched nodes
+     * @return {?}
      */
     getMatchedNodeList() {
         return this.conductNodeState('match');
     }
     // tslint:disable-next-line:no-any
+    /**
+     * @param {?} value
+     * @return {?}
+     */
     isArrayOfNzTreeNode(value) {
-        return value.every(item => item instanceof NzTreeNode);
+        return value.every((/**
+         * @param {?} item
+         * @return {?}
+         */
+        item => item instanceof NzTreeNode));
     }
     /**
      * reset selectedNodeList
+     * @param {?} selectedKeys
+     * @param {?} nzNodes
+     * @param {?=} isMulti
+     * @return {?}
      */
     calcSelectedKeys(selectedKeys, nzNodes, isMulti = false) {
-        const calc = (nodes) => {
-            return nodes.every(node => {
+        /** @type {?} */
+        const calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        (nodes) => {
+            return nodes.every((/**
+             * @param {?} node
+             * @return {?}
+             */
+            node => {
                 if (isInArray(node.key, selectedKeys)) {
                     node.isSelected = true;
                     if (!isMulti) {
@@ -2908,33 +4659,58 @@ class NzTreeBaseService {
                     return calc(node.children);
                 }
                 return true;
-            });
-        };
+            }));
+        });
         calc(nzNodes);
     }
     /**
      * reset expandedNodeList
+     * @param {?} expandedKeys
+     * @param {?} nzNodes
+     * @return {?}
      */
     calcExpandedKeys(expandedKeys, nzNodes) {
         this.expandedNodeList = [];
-        const calc = (nodes) => {
-            nodes.forEach(node => {
+        /** @type {?} */
+        const calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        (nodes) => {
+            nodes.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            node => {
                 node.isExpanded = isInArray(node.key, expandedKeys);
                 if (node.children.length > 0) {
                     calc(node.children);
                 }
-            });
-        };
+            }));
+        });
         calc(nzNodes);
     }
     /**
      * reset checkedNodeList
+     * @param {?} checkedKeys
+     * @param {?} nzNodes
+     * @param {?=} isCheckStrictly
+     * @return {?}
      */
     calcCheckedKeys(checkedKeys, nzNodes, isCheckStrictly = false) {
         this.checkedNodeList = [];
         this.halfCheckedNodeList = [];
-        const calc = (nodes) => {
-            nodes.forEach(node => {
+        /** @type {?} */
+        const calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        (nodes) => {
+            nodes.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            node => {
                 if (isInArray(node.key, checkedKeys)) {
                     node.isChecked = true;
                     node.isHalfChecked = false;
@@ -2946,29 +4722,37 @@ class NzTreeBaseService {
                 if (node.children.length > 0) {
                     calc(node.children);
                 }
-            });
-        };
+            }));
+        });
         calc(nzNodes);
         // controlled state
         this.refreshCheckState(isCheckStrictly);
     }
     /**
      * set drag node
+     * @param {?} node
+     * @return {?}
      */
     setSelectedNode(node) {
         this.selectedNode = node;
     }
     /**
      * set node selected status
+     * @param {?} node
+     * @return {?}
      */
     setNodeActive(node) {
         if (!this.isMultiple && node.isSelected) {
-            this.selectedNodeList.forEach(n => {
+            this.selectedNodeList.forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => {
                 if (node.key !== n.key) {
                     // reset other nodes
                     n.isSelected = false;
                 }
-            });
+            }));
             // single mode: remove pre node
             this.selectedNodeList = [];
         }
@@ -2976,9 +4760,17 @@ class NzTreeBaseService {
     }
     /**
      * add or remove node to selectedNodeList
+     * @param {?} node
+     * @param {?=} isMultiple
+     * @return {?}
      */
     setSelectedNodeList(node, isMultiple = false) {
-        const index = this.selectedNodeList.findIndex(n => node.key === n.key);
+        /** @type {?} */
+        const index = this.selectedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => node.key === n.key));
         if (isMultiple) {
             if (node.isSelected && index === -1) {
                 this.selectedNodeList.push(node);
@@ -2990,34 +4782,65 @@ class NzTreeBaseService {
             }
         }
         if (!node.isSelected) {
-            this.selectedNodeList = this.selectedNodeList.filter(n => n.key !== node.key);
+            this.selectedNodeList = this.selectedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== node.key));
         }
     }
     /**
      * merge checked nodes
+     * @param {?} node
+     * @return {?}
      */
     setHalfCheckedNodeList(node) {
-        const index = this.halfCheckedNodeList.findIndex(n => node.key === n.key);
+        /** @type {?} */
+        const index = this.halfCheckedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => node.key === n.key));
         if (node.isHalfChecked && index === -1) {
             this.halfCheckedNodeList.push(node);
         }
         else if (!node.isHalfChecked && index > -1) {
-            this.halfCheckedNodeList = this.halfCheckedNodeList.filter(n => node.key !== n.key);
+            this.halfCheckedNodeList = this.halfCheckedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => node.key !== n.key));
         }
     }
+    /**
+     * @param {?} node
+     * @return {?}
+     */
     setCheckedNodeList(node) {
-        const index = this.checkedNodeList.findIndex(n => node.key === n.key);
+        /** @type {?} */
+        const index = this.checkedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => node.key === n.key));
         if (node.isChecked && index === -1) {
             this.checkedNodeList.push(node);
         }
         else if (!node.isChecked && index > -1) {
-            this.checkedNodeList = this.checkedNodeList.filter(n => node.key !== n.key);
+            this.checkedNodeList = this.checkedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => node.key !== n.key));
         }
     }
     /**
      * conduct checked/selected/expanded keys
+     * @param {?=} type
+     * @return {?}
      */
     conductNodeState(type = 'check') {
+        /** @type {?} */
         let resultNodesList = [];
         switch (type) {
             case 'select':
@@ -3031,10 +4854,20 @@ class NzTreeBaseService {
                 break;
             case 'check':
                 resultNodesList = this.checkedNodeList;
-                const isIgnore = (node) => {
+                /** @type {?} */
+                const isIgnore = (/**
+                 * @param {?} node
+                 * @return {?}
+                 */
+                (node) => {
+                    /** @type {?} */
                     const parentNode = node.getParentNode();
                     if (parentNode) {
-                        if (this.checkedNodeList.findIndex(n => n.key === parentNode.key) > -1) {
+                        if (this.checkedNodeList.findIndex((/**
+                         * @param {?} n
+                         * @return {?}
+                         */
+                        n => n.key === parentNode.key)) > -1) {
                             return true;
                         }
                         else {
@@ -3042,10 +4875,14 @@ class NzTreeBaseService {
                         }
                     }
                     return false;
-                };
+                });
                 // merge checked
                 if (!this.isCheckStrictly) {
-                    resultNodesList = this.checkedNodeList.filter(n => !isIgnore(n));
+                    resultNodesList = this.checkedNodeList.filter((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    n => !isIgnore(n)));
                 }
                 break;
             case 'halfCheck':
@@ -3058,33 +4895,54 @@ class NzTreeBaseService {
     }
     /**
      * set expanded nodes
+     * @param {?} node
+     * @return {?}
      */
     setExpandedNodeList(node) {
         if (node.isLeaf) {
             return;
         }
-        const index = this.expandedNodeList.findIndex(n => node.key === n.key);
+        /** @type {?} */
+        const index = this.expandedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => node.key === n.key));
         if (node.isExpanded && index === -1) {
             this.expandedNodeList.push(node);
         }
         else if (!node.isExpanded && index > -1) {
-            this.expandedNodeList = this.expandedNodeList.filter(n => node.key !== n.key);
+            this.expandedNodeList = this.expandedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => node.key !== n.key));
         }
     }
     /**
      * check state
-     * @param isCheckStrictly
+     * @param {?=} isCheckStrictly
+     * @return {?}
      */
     refreshCheckState(isCheckStrictly = false) {
         if (isCheckStrictly) {
             return;
         }
-        this.checkedNodeList.forEach(node => {
+        this.checkedNodeList.forEach((/**
+         * @param {?} node
+         * @return {?}
+         */
+        node => {
             this.conduct(node);
-        });
+        }));
     }
     // reset other node checked state based current node
+    /**
+     * @param {?} node
+     * @return {?}
+     */
     conduct(node) {
+        /** @type {?} */
         const isChecked = node.isChecked;
         if (node) {
             this.conductUp(node);
@@ -3095,16 +4953,27 @@ class NzTreeBaseService {
      * 1、children half checked
      * 2、children all checked, parent checked
      * 3、no children checked
+     * @param {?} node
+     * @return {?}
      */
     conductUp(node) {
+        /** @type {?} */
         const parentNode = node.getParentNode();
         if (parentNode) {
             if (!isCheckDisabled(parentNode)) {
-                if (parentNode.children.every(child => isCheckDisabled(child) || (!child.isHalfChecked && child.isChecked))) {
+                if (parentNode.children.every((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                child => isCheckDisabled(child) || (!child.isHalfChecked && child.isChecked)))) {
                     parentNode.isChecked = true;
                     parentNode.isHalfChecked = false;
                 }
-                else if (parentNode.children.some(child => child.isHalfChecked || child.isChecked)) {
+                else if (parentNode.children.some((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                child => child.isHalfChecked || child.isChecked))) {
                     parentNode.isChecked = false;
                     parentNode.isHalfChecked = true;
                 }
@@ -3120,6 +4989,9 @@ class NzTreeBaseService {
     }
     /**
      * reset child check state
+     * @param {?} node
+     * @param {?} value
+     * @return {?}
      */
     conductDown(node, value) {
         if (!isCheckDisabled(node)) {
@@ -3127,31 +4999,49 @@ class NzTreeBaseService {
             node.isHalfChecked = false;
             this.setCheckedNodeList(node);
             this.setHalfCheckedNodeList(node);
-            node.children.forEach(n => {
+            node.children.forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => {
                 this.conductDown(n, value);
-            });
+            }));
         }
     }
     /**
      * search value & expand node
      * should add expandlist
+     * @param {?} value
+     * @return {?}
      */
     searchExpand(value) {
         this.matchedNodeList = [];
+        /** @type {?} */
         const expandedKeys = [];
         if (!isNotNil(value)) {
             return;
         }
         // to reset expandedNodeList
-        const expandParent = (n) => {
+        /** @type {?} */
+        const expandParent = (/**
+         * @param {?} n
+         * @return {?}
+         */
+        (n) => {
             // expand parent node
+            /** @type {?} */
             const parentNode = n.getParentNode();
             if (parentNode) {
                 expandedKeys.push(parentNode.key);
                 expandParent(parentNode);
             }
-        };
-        const searchChild = (n) => {
+        });
+        /** @type {?} */
+        const searchChild = (/**
+         * @param {?} n
+         * @return {?}
+         */
+        (n) => {
             if (value && n.title.includes(value)) {
                 // match the node
                 n.isMatched = true;
@@ -3163,41 +5053,78 @@ class NzTreeBaseService {
                 n.isMatched = false;
             }
             n.canHide = !n.isMatched;
-            n.children.forEach(child => {
+            n.children.forEach((/**
+             * @param {?} child
+             * @return {?}
+             */
+            child => {
                 searchChild(child);
-            });
-        };
-        this.rootNodes.forEach(child => {
-            searchChild(child);
+            }));
         });
+        this.rootNodes.forEach((/**
+         * @param {?} child
+         * @return {?}
+         */
+        child => {
+            searchChild(child);
+        }));
         // expand matched keys
         this.calcExpandedKeys(expandedKeys, this.rootNodes);
     }
     /**
      * flush after delete node
+     * @param {?} nodes
+     * @return {?}
      */
     afterRemove(nodes) {
         // to reset selectedNodeList & expandedNodeList
-        const loopNode = (node) => {
+        /** @type {?} */
+        const loopNode = (/**
+         * @param {?} node
+         * @return {?}
+         */
+        (node) => {
             // remove selected node
-            this.selectedNodeList = this.selectedNodeList.filter(n => n.key !== node.key);
+            this.selectedNodeList = this.selectedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== node.key));
             // remove expanded node
-            this.expandedNodeList = this.expandedNodeList.filter(n => n.key !== node.key);
+            this.expandedNodeList = this.expandedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== node.key));
             // remove checked node
-            this.checkedNodeList = this.checkedNodeList.filter(n => n.key !== node.key);
+            this.checkedNodeList = this.checkedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== node.key));
             if (node.children) {
-                node.children.forEach(child => {
+                node.children.forEach((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                child => {
                     loopNode(child);
-                });
+                }));
             }
-        };
-        nodes.forEach(n => {
-            loopNode(n);
         });
+        nodes.forEach((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => {
+            loopNode(n);
+        }));
         this.refreshCheckState(this.isCheckStrictly);
     }
     /**
      * drag event
+     * @param {?} node
+     * @return {?}
      */
     refreshDragNode(node) {
         if (node.children.length === 0) {
@@ -3205,13 +5132,22 @@ class NzTreeBaseService {
             this.conductUp(node);
         }
         else {
-            node.children.forEach(child => {
+            node.children.forEach((/**
+             * @param {?} child
+             * @return {?}
+             */
+            child => {
                 this.refreshDragNode(child);
-            });
+            }));
         }
     }
     // reset node level
+    /**
+     * @param {?} node
+     * @return {?}
+     */
     resetNodeLevel(node) {
+        /** @type {?} */
         const parentNode = node.getParentNode();
         if (parentNode) {
             node.level = parentNode.level + 1;
@@ -3223,12 +5159,17 @@ class NzTreeBaseService {
             this.resetNodeLevel(child);
         }
     }
+    /**
+     * @param {?} event
+     * @return {?}
+     */
     calcDropPosition(event) {
         const { clientY } = event;
         // to fix firefox undefined
         const { top, bottom, height } = event.srcElement
-            ? event.srcElement.getBoundingClientRect()
-            : event.target.getBoundingClientRect();
+            ? ((/** @type {?} */ (event.srcElement))).getBoundingClientRect()
+            : ((/** @type {?} */ (event.target))).getBoundingClientRect();
+        /** @type {?} */
         const des = Math.max(height * this.DRAG_SIDE_RANGE, this.DRAG_MIN_GAP);
         if (clientY <= top + des) {
             return -1;
@@ -3241,20 +5182,34 @@ class NzTreeBaseService {
     /**
      * drop
      * 0: inner -1: pre 1: next
+     * @param {?} targetNode
+     * @param {?=} dragPos
+     * @return {?}
      */
     dropAndApply(targetNode, dragPos = -1) {
         if (!targetNode || dragPos > 1) {
             return;
         }
+        /** @type {?} */
         const treeService = targetNode.treeService;
+        /** @type {?} */
         const targetParent = targetNode.getParentNode();
+        /** @type {?} */
         const isSelectedRootNode = this.selectedNode.getParentNode();
         // remove the dragNode
         if (isSelectedRootNode) {
-            isSelectedRootNode.children = isSelectedRootNode.children.filter(n => n.key !== this.selectedNode.key);
+            isSelectedRootNode.children = isSelectedRootNode.children.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== this.selectedNode.key));
         }
         else {
-            this.rootNodes = this.rootNodes.filter(n => n.key !== this.selectedNode.key);
+            this.rootNodes = this.rootNodes.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => n.key !== this.selectedNode.key));
         }
         switch (dragPos) {
             case 0:
@@ -3263,15 +5218,18 @@ class NzTreeBaseService {
                 break;
             case -1:
             case 1:
+                /** @type {?} */
                 const tIndex = dragPos === 1 ? 1 : 0;
                 if (targetParent) {
                     targetParent.addChildren([this.selectedNode], targetParent.children.indexOf(targetNode) + tIndex);
+                    /** @type {?} */
                     const parentNode = this.selectedNode.getParentNode();
                     if (parentNode) {
                         this.resetNodeLevel(parentNode);
                     }
                 }
                 else {
+                    /** @type {?} */
                     const targetIndex = this.rootNodes.indexOf(targetNode) + tIndex;
                     // Insert root node.
                     this.rootNodes.splice(targetIndex, 0, this.selectedNode);
@@ -3281,12 +5239,16 @@ class NzTreeBaseService {
                 break;
         }
         // flush all nodes
-        this.rootNodes.forEach(child => {
+        this.rootNodes.forEach((/**
+         * @param {?} child
+         * @return {?}
+         */
+        child => {
             if (!child.treeService) {
                 child.service = treeService;
             }
             this.refreshDragNode(child);
-        });
+        }));
     }
     /**
      * emit Structure
@@ -3294,8 +5256,13 @@ class NzTreeBaseService {
      * node
      * event: MouseEvent / DragEvent
      * dragNode
+     * @param {?} eventName
+     * @param {?} node
+     * @param {?} event
+     * @return {?}
      */
     formatEvent(eventName, node, event) {
+        /** @type {?} */
         const emitStructure = {
             eventName: eventName,
             node: node,
@@ -3314,130 +5281,226 @@ class NzTreeBaseService {
             case 'dblclick':
                 Object.assign(emitStructure, { selectedKeys: this.selectedNodeList });
                 Object.assign(emitStructure, { nodes: this.selectedNodeList });
-                Object.assign(emitStructure, { keys: this.selectedNodeList.map(n => n.key) });
+                Object.assign(emitStructure, { keys: this.selectedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    n => n.key)) });
                 break;
             case 'check':
+                /** @type {?} */
                 const checkedNodeList = this.getCheckedNodeList();
                 Object.assign(emitStructure, { checkedKeys: checkedNodeList });
                 Object.assign(emitStructure, { nodes: checkedNodeList });
-                Object.assign(emitStructure, { keys: checkedNodeList.map(n => n.key) });
+                Object.assign(emitStructure, { keys: checkedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    n => n.key)) });
                 break;
             case 'search':
                 Object.assign(emitStructure, { matchedKeys: this.getMatchedNodeList() });
                 Object.assign(emitStructure, { nodes: this.getMatchedNodeList() });
-                Object.assign(emitStructure, { keys: this.getMatchedNodeList().map(n => n.key) });
+                Object.assign(emitStructure, { keys: this.getMatchedNodeList().map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    n => n.key)) });
                 break;
             case 'expand':
                 Object.assign(emitStructure, { nodes: this.expandedNodeList });
-                Object.assign(emitStructure, { keys: this.expandedNodeList.map(n => n.key) });
+                Object.assign(emitStructure, { keys: this.expandedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    n => n.key)) });
                 break;
         }
         return emitStructure;
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.triggerEventChange$.complete();
     }
 }
-/** @nocollapse */ NzTreeBaseService.ɵfac = function NzTreeBaseService_Factory(t) { return new (t || NzTreeBaseService)(); };
-/** @nocollapse */ NzTreeBaseService.ɵprov = ɵɵdefineInjectable({ token: NzTreeBaseService, factory: NzTreeBaseService.ɵfac });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTreeBaseService, [{
-        type: Injectable
-    }], null, null); })();
+NzTreeBaseService.decorators = [
+    { type: Injectable }
+];
+if (false) {
+    /** @type {?} */
+    NzTreeBaseService.prototype.DRAG_SIDE_RANGE;
+    /** @type {?} */
+    NzTreeBaseService.prototype.DRAG_MIN_GAP;
+    /** @type {?} */
+    NzTreeBaseService.prototype.isCheckStrictly;
+    /** @type {?} */
+    NzTreeBaseService.prototype.isMultiple;
+    /** @type {?} */
+    NzTreeBaseService.prototype.selectedNode;
+    /** @type {?} */
+    NzTreeBaseService.prototype.rootNodes;
+    /** @type {?} */
+    NzTreeBaseService.prototype.selectedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.expandedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.checkedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.halfCheckedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.matchedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.triggerEventChange$;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-service.resolver.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const NzTreeHigherOrderServiceToken = new InjectionToken('NzTreeHigherOrder');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeBase {
+    /**
+     * @param {?} nzTreeService
+     */
     constructor(nzTreeService) {
         this.nzTreeService = nzTreeService;
     }
     /**
-     * Coerces a value({@link any[]}) to a TreeNodes({@link NzTreeNode[]})
+     * Coerces a value({\@link any[]}) to a TreeNodes({\@link NzTreeNode[]})
+     * @param {?} value
+     * @return {?}
      */
     coerceTreeNodes(
     // tslint:disable-next-line:no-any
     value) {
+        /** @type {?} */
         let nodes = [];
         if (!this.nzTreeService.isArrayOfNzTreeNode(value)) {
             // has not been new NzTreeNode
-            nodes = value.map(item => new NzTreeNode(item, null, this.nzTreeService));
+            nodes = value.map((/**
+             * @param {?} item
+             * @return {?}
+             */
+            item => new NzTreeNode(item, null, this.nzTreeService)));
         }
         else {
-            nodes = value.map((item) => {
+            nodes = value.map((/**
+             * @param {?} item
+             * @return {?}
+             */
+            (item) => {
                 item.service = this.nzTreeService;
                 return item;
-            });
+            }));
         }
         return nodes;
     }
     /**
-     * Get all nodes({@link NzTreeNode})
+     * Get all nodes({\@link NzTreeNode})
+     * @return {?}
      */
     getTreeNodes() {
         return this.nzTreeService.rootNodes;
     }
     /**
-     * Get {@link NzTreeNode} with key
+     * Get {\@link NzTreeNode} with key
+     * @param {?} key
+     * @return {?}
      */
     getTreeNodeByKey(key) {
         // flat tree nodes
+        /** @type {?} */
         const nodes = [];
-        const getNode = (node) => {
+        /** @type {?} */
+        const getNode = (/**
+         * @param {?} node
+         * @return {?}
+         */
+        (node) => {
             nodes.push(node);
-            node.getChildren().forEach(n => {
+            node.getChildren().forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            n => {
                 getNode(n);
-            });
-        };
-        this.getTreeNodes().forEach(n => {
-            getNode(n);
+            }));
         });
-        return nodes.find(n => n.key === key) || null;
+        this.getTreeNodes().forEach((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => {
+            getNode(n);
+        }));
+        return nodes.find((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => n.key === key)) || null;
     }
     /**
      * Get checked nodes(merged)
+     * @return {?}
      */
     getCheckedNodeList() {
         return this.nzTreeService.getCheckedNodeList();
     }
     /**
      * Get selected nodes
+     * @return {?}
      */
     getSelectedNodeList() {
         return this.nzTreeService.getSelectedNodeList();
     }
     /**
      * Get half checked nodes
+     * @return {?}
      */
     getHalfCheckedNodeList() {
         return this.nzTreeService.getHalfCheckedNodeList();
     }
     /**
      * Get expanded nodes
+     * @return {?}
      */
     getExpandedNodeList() {
         return this.nzTreeService.getExpandedNodeList();
     }
     /**
      * Get matched nodes(if nzSearchValue is not null)
+     * @return {?}
      */
     getMatchedNodeList() {
         return this.nzTreeService.getMatchedNodeList();
     }
 }
+if (false) {
+    /** @type {?} */
+    NzTreeBase.prototype.nzTreeService;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/common-wrap.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -3447,13 +5510,142 @@ class NzTreeBase {
  */
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: types/direction.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/drop-down-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/indexable.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function IndexableObject() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/ng-class.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function NgClassInterface() { }
+/**
+ * @record
+ */
+function NgStyleInterface() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/size.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function NzSizeMap() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/template.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/shape.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/compare-with.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave-renderer.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWaveRenderer {
+    /**
+     * @param {?} triggerElement
+     * @param {?} ngZone
+     * @param {?} insertExtraNode
+     */
     constructor(triggerElement, ngZone, insertExtraNode) {
         this.triggerElement = triggerElement;
         this.ngZone = ngZone;
@@ -3461,52 +5653,80 @@ class NzWaveRenderer {
         this.waveTransitionDuration = 400;
         this.lastTime = 0;
         this.platform = new Platform();
-        this.onClick = (event) => {
+        this.onClick = (/**
+         * @param {?} event
+         * @return {?}
+         */
+        (event) => {
             if (!this.triggerElement ||
                 !this.triggerElement.getAttribute ||
                 this.triggerElement.getAttribute('disabled') ||
-                event.target.tagName === 'INPUT' ||
+                ((/** @type {?} */ (event.target))).tagName === 'INPUT' ||
                 this.triggerElement.className.indexOf('disabled') >= 0) {
                 return;
             }
             this.fadeOutWave();
-        };
+        });
         this.clickHandler = this.onClick.bind(this);
         this.bindTriggerEvent();
     }
+    /**
+     * @return {?}
+     */
     get waveAttributeName() {
         return this.insertExtraNode ? 'ant-click-animating' : 'ant-click-animating-without-extra-node';
     }
+    /**
+     * @return {?}
+     */
     bindTriggerEvent() {
         if (this.platform.isBrowser) {
-            this.ngZone.runOutsideAngular(() => {
+            this.ngZone.runOutsideAngular((/**
+             * @return {?}
+             */
+            () => {
                 this.removeTriggerEvent();
                 if (this.triggerElement) {
                     this.triggerElement.addEventListener('click', this.clickHandler, true);
                 }
-            });
+            }));
         }
     }
+    /**
+     * @return {?}
+     */
     removeTriggerEvent() {
         if (this.triggerElement) {
             this.triggerElement.removeEventListener('click', this.clickHandler, true);
         }
     }
+    /**
+     * @return {?}
+     */
     removeStyleAndExtraNode() {
         if (this.styleForPseudo && document.body.contains(this.styleForPseudo)) {
             document.body.removeChild(this.styleForPseudo);
             this.styleForPseudo = null;
         }
         if (this.insertExtraNode && this.triggerElement.contains(this.extraNode)) {
-            this.triggerElement.removeChild(this.extraNode);
+            this.triggerElement.removeChild((/** @type {?} */ (this.extraNode)));
         }
     }
+    /**
+     * @return {?}
+     */
     destroy() {
         this.removeTriggerEvent();
         this.removeStyleAndExtraNode();
     }
+    /**
+     * @private
+     * @return {?}
+     */
     fadeOutWave() {
+        /** @type {?} */
         const node = this.triggerElement;
+        /** @type {?} */
         const waveColor = this.getWaveColor(node);
         node.setAttribute(this.waveAttributeName, 'true');
         if (Date.now() < this.lastTime + this.waveTransitionDuration) {
@@ -3530,11 +5750,19 @@ class NzWaveRenderer {
             node.appendChild(this.extraNode);
         }
         this.lastTime = Date.now();
-        this.runTimeoutOutsideZone(() => {
+        this.runTimeoutOutsideZone((/**
+         * @return {?}
+         */
+        () => {
             node.removeAttribute(this.waveAttributeName);
             this.removeStyleAndExtraNode();
-        }, this.waveTransitionDuration);
+        }), this.waveTransitionDuration);
     }
+    /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
     isValidColor(color) {
         return (!!color &&
             color !== '#ffffff' &&
@@ -3543,42 +5771,126 @@ class NzWaveRenderer {
             !/rgba\(\d*, \d*, \d*, 0\)/.test(color) &&
             color !== 'transparent');
     }
+    /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
     isNotGrey(color) {
+        /** @type {?} */
         const match = color.match(/rgba?\((\d*), (\d*), (\d*)(, [\.\d]*)?\)/);
         if (match && match[1] && match[2] && match[3]) {
             return !(match[1] === match[2] && match[2] === match[3]);
         }
         return true;
     }
+    /**
+     * @private
+     * @param {?} node
+     * @return {?}
+     */
     getWaveColor(node) {
+        /** @type {?} */
         const nodeStyle = getComputedStyle(node);
         return (nodeStyle.getPropertyValue('border-top-color') || // Firefox Compatible
             nodeStyle.getPropertyValue('border-color') ||
             nodeStyle.getPropertyValue('background-color'));
     }
+    /**
+     * @private
+     * @param {?} fn
+     * @param {?} delay
+     * @return {?}
+     */
     runTimeoutOutsideZone(fn, delay) {
-        this.ngZone.runOutsideAngular(() => setTimeout(fn, delay));
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        () => setTimeout(fn, delay)));
     }
+}
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.waveTransitionDuration;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.styleForPseudo;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.extraNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.lastTime;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.platform;
+    /** @type {?} */
+    NzWaveRenderer.prototype.clickHandler;
+    /** @type {?} */
+    NzWaveRenderer.prototype.onClick;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.triggerElement;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.insertExtraNode;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzWaveConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzWaveConfig.prototype.disabled;
+}
+/** @type {?} */
 const NZ_WAVE_GLOBAL_DEFAULT_CONFIG = {
     disabled: false
 };
+/** @type {?} */
 const NZ_WAVE_GLOBAL_CONFIG = new InjectionToken('nz-wave-global-options', {
     providedIn: 'root',
     factory: NZ_WAVE_GLOBAL_CONFIG_FACTORY
 });
+/**
+ * @return {?}
+ */
 function NZ_WAVE_GLOBAL_CONFIG_FACTORY() {
     return NZ_WAVE_GLOBAL_DEFAULT_CONFIG;
 }
 class NzWaveDirective {
+    /**
+     * @param {?} ngZone
+     * @param {?} elementRef
+     * @param {?} config
+     * @param {?} animationType
+     */
     constructor(ngZone, elementRef, config, animationType) {
         this.ngZone = ngZone;
         this.elementRef = elementRef;
@@ -3588,13 +5900,23 @@ class NzWaveDirective {
         this.waveDisabled = false;
         this.waveDisabled = this.isConfigDisabled();
     }
+    /**
+     * @return {?}
+     */
     get disabled() {
         return this.waveDisabled;
     }
+    /**
+     * @return {?}
+     */
     get rendererRef() {
         return this.waveRenderer;
     }
+    /**
+     * @return {?}
+     */
     isConfigDisabled() {
+        /** @type {?} */
         let disabled = false;
         if (this.config && typeof this.config.disabled === 'boolean') {
             disabled = this.config.disabled;
@@ -3604,19 +5926,31 @@ class NzWaveDirective {
         }
         return disabled;
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         if (this.waveRenderer) {
             this.waveRenderer.destroy();
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         this.renderWaveIfEnabled();
     }
+    /**
+     * @return {?}
+     */
     renderWaveIfEnabled() {
         if (!this.waveDisabled && this.elementRef.nativeElement) {
             this.waveRenderer = new NzWaveRenderer(this.elementRef.nativeElement, this.ngZone, this.nzWaveExtraNode);
         }
     }
+    /**
+     * @return {?}
+     */
     disable() {
         this.waveDisabled = true;
         if (this.waveRenderer) {
@@ -3624,6 +5958,9 @@ class NzWaveDirective {
             this.waveRenderer.removeStyleAndExtraNode();
         }
     }
+    /**
+     * @return {?}
+     */
     enable() {
         // config priority
         this.waveDisabled = this.isConfigDisabled() || false;
@@ -3632,67 +5969,87 @@ class NzWaveDirective {
         }
     }
 }
-/** @nocollapse */ NzWaveDirective.ɵfac = function NzWaveDirective_Factory(t) { return new (t || NzWaveDirective)(ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NZ_WAVE_GLOBAL_CONFIG, 8), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
-/** @nocollapse */ NzWaveDirective.ɵdir = ɵɵdefineDirective({ type: NzWaveDirective, selectors: [["", "nz-wave", ""]], inputs: { nzWaveExtraNode: "nzWaveExtraNode" }, exportAs: ["nzWave"] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzWaveDirective, [{
-        type: Directive,
-        args: [{
+NzWaveDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nz-wave]',
                 exportAs: 'nzWave'
-            }]
-    }], function () { return [{ type: NgZone }, { type: ElementRef }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_WAVE_GLOBAL_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [ANIMATION_MODULE_TYPE]
-            }] }]; }, { nzWaveExtraNode: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzWaveDirective.ctorParameters = () => [
+    { type: NgZone },
+    { type: ElementRef },
+    { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_WAVE_GLOBAL_CONFIG,] }] },
+    { type: String, decorators: [{ type: Optional }, { type: Inject, args: [ANIMATION_MODULE_TYPE,] }] }
+];
+NzWaveDirective.propDecorators = {
+    nzWaveExtraNode: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    NzWaveDirective.prototype.nzWaveExtraNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.waveRenderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.waveDisabled;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.config;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.animationType;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWaveModule {
 }
-/** @nocollapse */ NzWaveModule.ɵmod = ɵɵdefineNgModule({ type: NzWaveModule });
-/** @nocollapse */ NzWaveModule.ɵinj = ɵɵdefineInjector({ factory: function NzWaveModule_Factory(t) { return new (t || NzWaveModule)(); }, imports: [[PlatformModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzWaveModule, { declarations: [NzWaveDirective], imports: [PlatformModule], exports: [NzWaveDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzWaveModule, [{
-        type: NgModule,
-        args: [{
+NzWaveModule.decorators = [
+    { type: NgModule, args: [{
                 imports: [PlatformModule],
                 exports: [NzWaveDirective],
                 declarations: [NzWaveDirective]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/nz-menu-base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMenuBaseService {
     constructor() {
         this.menuItemClick$ = new Subject(); // tslint:disable-line no-any
+        // tslint:disable-line no-any
         this.theme$ = new Subject();
         this.mode$ = new BehaviorSubject('vertical');
         this.inlineIndent$ = new BehaviorSubject(24);
@@ -3702,45 +6059,81 @@ class NzMenuBaseService {
         this.menuOpen$ = new BehaviorSubject(false);
     }
     // tslint:disable-next-line no-any
+    /**
+     * @param {?} menu
+     * @return {?}
+     */
     onMenuItemClick(menu) {
         this.menuItemClick$.next(menu);
     }
+    /**
+     * @param {?} mode
+     * @return {?}
+     */
     setMode(mode) {
         this.mode = mode;
         this.mode$.next(mode);
     }
+    /**
+     * @param {?} theme
+     * @return {?}
+     */
     setTheme(theme) {
         this.theme = theme;
         this.theme$.next(theme);
     }
+    /**
+     * @param {?} indent
+     * @return {?}
+     */
     setInlineIndent(indent) {
         this.inlineIndent = indent;
         this.inlineIndent$.next(indent);
     }
 }
-/** @nocollapse */ NzMenuBaseService.ɵfac = function NzMenuBaseService_Factory(t) { return new (t || NzMenuBaseService)(); };
-/** @nocollapse */ NzMenuBaseService.ɵprov = ɵɵdefineInjectable({ token: NzMenuBaseService, factory: NzMenuBaseService.ɵfac });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMenuBaseService, [{
-        type: Injectable
-    }], null, null); })();
+NzMenuBaseService.decorators = [
+    { type: Injectable }
+];
+if (false) {
+    /** @type {?} */
+    NzMenuBaseService.prototype.isInDropDown;
+    /** @type {?} */
+    NzMenuBaseService.prototype.menuItemClick$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.theme$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.mode$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.inlineIndent$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.theme;
+    /** @type {?} */
+    NzMenuBaseService.prototype.mode;
+    /** @type {?} */
+    NzMenuBaseService.prototype.inlineIndent;
+    /** @type {?} */
+    NzMenuBaseService.prototype.menuOpen$;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/nz-dropdown-service.resolver.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 const NzDropdownHigherOrderServiceToken = new InjectionToken('NzMenuHigherOrder');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: responsive/nz-breakpoint.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -3748,15 +6141,16 @@ const NzDropdownHigherOrderServiceToken = new InjectionToken('NzMenuHigherOrder'
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var NzBreakpoint;
-(function (NzBreakpoint) {
-    NzBreakpoint["xxl"] = "xxl";
-    NzBreakpoint["xl"] = "xl";
-    NzBreakpoint["lg"] = "lg";
-    NzBreakpoint["md"] = "md";
-    NzBreakpoint["sm"] = "sm";
-    NzBreakpoint["xs"] = "xs";
-})(NzBreakpoint || (NzBreakpoint = {}));
+/** @enum {string} */
+const NzBreakpoint = {
+    xxl: "xxl",
+    xl: "xl",
+    lg: "lg",
+    md: "md",
+    sm: "sm",
+    xs: "xs",
+};
+/** @type {?} */
 const responsiveMap = {
     xs: '(max-width: 575px)',
     sm: '(min-width: 576px)',
@@ -3767,32 +6161,20 @@ const responsiveMap = {
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: responsive/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/nz-trans-button.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransButtonDirective {
 }
-/** @nocollapse */ NzTransButtonDirective.ɵfac = function NzTransButtonDirective_Factory(t) { return new (t || NzTransButtonDirective)(); };
-/** @nocollapse */ NzTransButtonDirective.ɵdir = ɵɵdefineDirective({ type: NzTransButtonDirective, selectors: [["button", "nz-trans-button", ""]], hostBindings: function NzTransButtonDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵallocHostVars(4);
-    } if (rf & 2) {
-        ɵɵstyleSanitizer(ɵɵdefaultStyleSanitizer);
-        ɵɵstyleProp("border", "0")("background", "transparent")("padding", "0")("line-height", "inherit");
-    } } });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTransButtonDirective, [{
-        type: Directive,
-        args: [{
+NzTransButtonDirective.decorators = [
+    { type: Directive, args: [{
                 selector: 'button[nz-trans-button]',
                 host: {
                     '[style.border]': '"0"',
@@ -3800,63 +6182,67 @@ class NzTransButtonDirective {
                     '[style.padding]': '"0"',
                     '[style.line-height]': '"inherit"'
                 }
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/nz-trans-button.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransButtonModule {
 }
-/** @nocollapse */ NzTransButtonModule.ɵmod = ɵɵdefineNgModule({ type: NzTransButtonModule });
-/** @nocollapse */ NzTransButtonModule.ɵinj = ɵɵdefineInjector({ factory: function NzTransButtonModule_Factory(t) { return new (t || NzTransButtonModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzTransButtonModule, { declarations: [NzTransButtonDirective], imports: [CommonModule], exports: [NzTransButtonDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTransButtonModule, [{
-        type: NgModule,
-        args: [{
+NzTransButtonModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [NzTransButtonDirective],
                 exports: [NzTransButtonDirective],
                 imports: [CommonModule]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/highlight.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Regular Expressions for parsing tags and attributes
+/** @type {?} */
 const SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
 // ! to ~ is the ASCII range.
+/** @type {?} */
 const NON_ALPHANUMERIC_REGEXP = /([^\#-~ |!])/g;
 /**
  * Escapes all potentially dangerous characters, so that the
  * resulting string can be safely inserted into attribute or
  * element text.
+ * @param {?} value
+ * @return {?}
  */
 function encodeEntities(value) {
     return value
         .replace(/&/g, '&amp;')
-        .replace(SURROGATE_PAIR_REGEXP, (match) => {
+        .replace(SURROGATE_PAIR_REGEXP, (/**
+     * @param {?} match
+     * @return {?}
+     */
+    (match) => {
+        /** @type {?} */
         const hi = match.charCodeAt(0);
+        /** @type {?} */
         const low = match.charCodeAt(1);
-        return `&#${(hi - 0xd800) * 0x400 + (low - 0xdc00) + 0x10000};`;
-    })
-        .replace(NON_ALPHANUMERIC_REGEXP, (match) => `&#${match.charCodeAt(0)};`)
+        return `&#${(hi - 0xD800) * 0x400 + (low - 0xDC00) + 0x10000};`;
+    }))
+        .replace(NON_ALPHANUMERIC_REGEXP, (/**
+     * @param {?} match
+     * @return {?}
+     */
+    (match) => `&#${match.charCodeAt(0)};`))
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 }
@@ -3864,133 +6250,671 @@ class NzHighlightPipe {
     constructor() {
         this.UNIQUE_WRAPPERS = ['##==-open_tag-==##', '##==-close_tag-==##'];
     }
+    /**
+     * @param {?} value
+     * @param {?} highlightValue
+     * @param {?=} flags
+     * @param {?=} klass
+     * @return {?}
+     */
     transform(value, highlightValue, flags, klass) {
         if (!highlightValue) {
             return value;
         }
         // Escapes regex keyword to interpret these characters literally
+        /** @type {?} */
         const searchValue = new RegExp(highlightValue.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$&'), flags);
+        /** @type {?} */
         const wrapValue = value.replace(searchValue, `${this.UNIQUE_WRAPPERS[0]}$&${this.UNIQUE_WRAPPERS[1]}`);
         return encodeEntities(wrapValue)
             .replace(new RegExp(this.UNIQUE_WRAPPERS[0], 'g'), klass ? `<span class="${klass}">` : '<span>')
             .replace(new RegExp(this.UNIQUE_WRAPPERS[1], 'g'), '</span>');
     }
 }
-/** @nocollapse */ NzHighlightPipe.ɵfac = function NzHighlightPipe_Factory(t) { return new (t || NzHighlightPipe)(); };
-/** @nocollapse */ NzHighlightPipe.ɵpipe = ɵɵdefinePipe({ name: "nzHighlight", type: NzHighlightPipe, pure: true });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzHighlightPipe, [{
-        type: Pipe,
-        args: [{
+NzHighlightPipe.decorators = [
+    { type: Pipe, args: [{
                 name: 'nzHighlight',
                 pure: true
-            }]
-    }], null, null); })();
+            },] }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzHighlightPipe.prototype.UNIQUE_WRAPPERS;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/highlight.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzHighlightModule {
 }
-/** @nocollapse */ NzHighlightModule.ɵmod = ɵɵdefineNgModule({ type: NzHighlightModule });
-/** @nocollapse */ NzHighlightModule.ɵinj = ɵɵdefineInjector({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzHighlightModule, { declarations: [NzHighlightPipe], imports: [CommonModule], exports: [NzHighlightPipe] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzHighlightModule, [{
-        type: NgModule,
-        args: [{
+NzHighlightModule.decorators = [
+    { type: NgModule, args: [{
                 imports: [CommonModule],
                 exports: [NzHighlightPipe],
                 declarations: [NzHighlightPipe]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: config/config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzConfig.prototype.affix;
+    /** @type {?|undefined} */
+    NzConfig.prototype.alert;
+    /** @type {?|undefined} */
+    NzConfig.prototype.anchor;
+    /** @type {?|undefined} */
+    NzConfig.prototype.avatar;
+    /** @type {?|undefined} */
+    NzConfig.prototype.backTop;
+    /** @type {?|undefined} */
+    NzConfig.prototype.badge;
+    /** @type {?|undefined} */
+    NzConfig.prototype.button;
+    /** @type {?|undefined} */
+    NzConfig.prototype.card;
+    /** @type {?|undefined} */
+    NzConfig.prototype.carousel;
+    /** @type {?|undefined} */
+    NzConfig.prototype.cascader;
+    /** @type {?|undefined} */
+    NzConfig.prototype.codeEditor;
+    /** @type {?|undefined} */
+    NzConfig.prototype.collapse;
+    /** @type {?|undefined} */
+    NzConfig.prototype.collapsePanel;
+    /** @type {?|undefined} */
+    NzConfig.prototype.descriptions;
+    /** @type {?|undefined} */
+    NzConfig.prototype.drawer;
+    /** @type {?|undefined} */
+    NzConfig.prototype.empty;
+    /** @type {?|undefined} */
+    NzConfig.prototype.form;
+    /** @type {?|undefined} */
+    NzConfig.prototype.grid;
+    /** @type {?|undefined} */
+    NzConfig.prototype.icon;
+    /** @type {?|undefined} */
+    NzConfig.prototype.message;
+    /** @type {?|undefined} */
+    NzConfig.prototype.modal;
+    /** @type {?|undefined} */
+    NzConfig.prototype.notification;
+    /** @type {?|undefined} */
+    NzConfig.prototype.pageHeader;
+    /** @type {?|undefined} */
+    NzConfig.prototype.progress;
+    /** @type {?|undefined} */
+    NzConfig.prototype.rate;
+    /** @type {?|undefined} */
+    NzConfig.prototype.spin;
+    /** @type {?|undefined} */
+    NzConfig.prototype.switch;
+    /** @type {?|undefined} */
+    NzConfig.prototype.table;
+    /** @type {?|undefined} */
+    NzConfig.prototype.tabs;
+    /** @type {?|undefined} */
+    NzConfig.prototype.timePicker;
+    /** @type {?|undefined} */
+    NzConfig.prototype.tree;
+    /** @type {?|undefined} */
+    NzConfig.prototype.treeSelect;
+    /** @type {?|undefined} */
+    NzConfig.prototype.typography;
+}
+/**
+ * @record
+ */
+function AffixConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AffixConfig.prototype.nzOffsetBottom;
+    /** @type {?|undefined} */
+    AffixConfig.prototype.nzOffsetTop;
+}
+/**
+ * @record
+ */
+function AlertConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AlertConfig.prototype.nzCloseable;
+    /** @type {?|undefined} */
+    AlertConfig.prototype.nzShowIcon;
+}
+/**
+ * @record
+ */
+function AvatarConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AvatarConfig.prototype.nzShape;
+    /** @type {?|undefined} */
+    AvatarConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function AnchorConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzBounds;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzOffsetBottom;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzOffsetTop;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzShowInkInFixed;
+}
+/**
+ * @record
+ */
+function BackTopConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    BackTopConfig.prototype.nzVisibilityHeight;
+}
+/**
+ * @record
+ */
+function BadgeConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzColor;
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzOverflowCount;
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzShowZero;
+}
+/**
+ * @record
+ */
+function ButtonConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ButtonConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function CodeEditorConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.assetsRoot;
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.defaultEditorOption;
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.useStaticLoading;
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onLoad = function () { };
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onFirstEditorInit = function () { };
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onInit = function () { };
+}
+/**
+ * @record
+ */
+function CardConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzHoverable;
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzBordered;
+}
+/**
+ * @record
+ */
+function CarouselConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzAutoPlay;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzAutoPlaySpeed;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzDots;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzEffect;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzEnableSwipe;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzVertical;
+}
+/**
+ * @record
+ */
+function CascaderConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CascaderConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function CollapseConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CollapseConfig.prototype.nzAccordion;
+    /** @type {?|undefined} */
+    CollapseConfig.prototype.nzBordered;
+}
+/**
+ * @record
+ */
+function CollapsePanelConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CollapsePanelConfig.prototype.nzShowArrow;
+}
+/**
+ * @record
+ */
+function DescriptionsConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzBorder;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzColumn;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzColon;
+}
+/**
+ * @record
+ */
+function DrawerConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    DrawerConfig.prototype.nzMask;
+    /** @type {?|undefined} */
+    DrawerConfig.prototype.nzMaskClosable;
+}
+/**
+ * @record
+ */
+function EmptyConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    EmptyConfig.prototype.nzDefaultEmptyContent;
+}
+/**
+ * @record
+ */
+function FormConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    FormConfig.prototype.nzNoColon;
+}
+/**
+ * @record
+ */
+function GridConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzAlign;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzGutter;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzJustify;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzType;
+}
+/**
+ * @record
+ */
+function IconConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    IconConfig.prototype.nzTheme;
+    /** @type {?|undefined} */
+    IconConfig.prototype.nzTwotoneColor;
+}
+/**
+ * @record
+ */
+function MessageConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzAnimate;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzDuration;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzMaxStack;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzPauseOnHover;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzTop;
+}
+/**
+ * @record
+ */
+function ModalConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ModalConfig.prototype.nzMask;
+    /** @type {?|undefined} */
+    ModalConfig.prototype.nzMaskClosable;
+}
+/**
+ * @record
+ */
+function NotificationConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzTop;
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzBottom;
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzPlacement;
+}
+/**
+ * @record
+ */
+function PageHeaderConfig() { }
+if (false) {
+    /** @type {?} */
+    PageHeaderConfig.prototype.nzGhost;
+}
+/**
+ * @record
+ */
+function ProgressConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzGapDegree;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzGapPosition;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzShowInfo;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeSwitch;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeWidth;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeLinecap;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeColor;
+}
+/**
+ * @record
+ */
+function RateConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    RateConfig.prototype.nzAllowClear;
+    /** @type {?|undefined} */
+    RateConfig.prototype.nzAllowHalf;
+}
+/**
+ * @record
+ */
+function SpinConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    SpinConfig.prototype.nzIndicator;
+}
+/**
+ * @record
+ */
+function SwitchConfig() { }
+if (false) {
+    /** @type {?} */
+    SwitchConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function TableConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzBordered;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzShowQuickJumper;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzShowSizeChanger;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzSimple;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzHideOnSinglePage;
+}
+/**
+ * @record
+ */
+function TabsConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzAnimated;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzType;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzTabBarGutter;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzShowPagination;
+}
+/**
+ * @record
+ */
+function TimePickerConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzAllowEmpty;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzClearText;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzFormat;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzHourStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzMinuteStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzSecondStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzPopupClassName;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzUse12Hours;
+}
+/**
+ * @record
+ */
+function TreeConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzBlockNode;
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzShowIcon;
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzHideUnMatched;
+}
+/**
+ * @record
+ */
+function TreeSelectConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzShowIcon;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzShowLine;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzDropdownMatchSelectWidth;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzHideUnMatched;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function TypographyConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TypographyConfig.prototype.nzEllipsisRows;
+}
 /**
  * User should provide an object implements this interface to set global configurations.
+ * @type {?}
  */
 const NZ_CONFIG = new InjectionToken('nz-config');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: config/config.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const isDefined = function (value) {
+/** @type {?} */
+const isDefined = (/**
+ * @param {?=} value
+ * @return {?}
+ */
+function (value) {
     return value !== undefined;
-};
+});
+const ɵ0$1 = isDefined;
 class NzConfigService {
+    /**
+     * @param {?=} defaultConfig
+     */
     constructor(defaultConfig) {
         this.configUpdated$ = new Subject();
         this.config = defaultConfig || {};
     }
+    /**
+     * @template T
+     * @param {?} componentName
+     * @return {?}
+     */
     getConfigForComponent(componentName) {
         return this.config[componentName];
     }
+    /**
+     * @param {?} componentName
+     * @return {?}
+     */
     getConfigChangeEventForComponent(componentName) {
-        return this.configUpdated$.pipe(filter(n => n === componentName), mapTo(undefined));
+        return this.configUpdated$.pipe(filter((/**
+         * @param {?} n
+         * @return {?}
+         */
+        n => n === componentName)), mapTo(undefined));
     }
+    /**
+     * @template T
+     * @param {?} componentName
+     * @param {?} value
+     * @return {?}
+     */
     set(componentName, value) {
-        this.config[componentName] = Object.assign(Object.assign({}, this.config[componentName]), value);
+        this.config[componentName] = Object.assign({}, this.config[componentName], value);
         this.configUpdated$.next(componentName);
     }
 }
-/** @nocollapse */ NzConfigService.ɵfac = function NzConfigService_Factory(t) { return new (t || NzConfigService)(ɵɵinject(NZ_CONFIG, 8)); };
-/** @nocollapse */ NzConfigService.ɵprov = ɵɵdefineInjectable({ token: NzConfigService, factory: NzConfigService.ɵfac, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzConfigService, [{
-        type: Injectable,
-        args: [{
+NzConfigService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: 'root'
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_CONFIG]
-            }] }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzConfigService.ctorParameters = () => [
+    { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_CONFIG,] }] }
+];
+/** @nocollapse */ NzConfigService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzConfigService_Factory() { return new NzConfigService(ɵɵinject(NZ_CONFIG, 8)); }, token: NzConfigService, providedIn: "root" });
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzConfigService.prototype.configUpdated$;
+    /**
+     * Global config holding property.
+     * @type {?}
+     * @private
+     */
+    NzConfigService.prototype.config;
+}
 // tslint:disable:no-invalid-this
 // tslint:disable:no-any
 /**
  * This decorator is used to decorate properties. If a property is decorated, it would try to load default value from
  * config.
+ * @template T
+ * @param {?} componentName
+ * @param {?=} innerDefaultValue
+ * @return {?}
  */
 // tslint:disable-next-line:typedef
 function WithConfig(componentName, innerDefaultValue) {
-    return function ConfigDecorator(target, propName, originalDescriptor) {
+    return (/**
+     * @param {?} target
+     * @param {?} propName
+     * @param {?=} originalDescriptor
+     * @return {?}
+     */
+    function ConfigDecorator(target, propName, originalDescriptor) {
+        /** @type {?} */
         const privatePropName = `$$__assignedValue__${propName}`;
+        if (Object.prototype.hasOwnProperty.call(target, privatePropName)) {
+            console.warn(`The prop "${privatePropName}" is already exist, it will be override by ${componentName} decorator.`);
+        }
         Object.defineProperty(target, privatePropName, {
             configurable: true,
             writable: true,
             enumerable: false
         });
         return {
+            /**
+             * @return {?}
+             */
             get() {
+                /** @type {?} */
                 const originalValue = originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
                 if (isDefined(originalValue)) {
                     return originalValue;
                 }
+                /** @type {?} */
                 const componentConfig = this.nzConfigService.getConfigForComponent(componentName) || {};
+                /** @type {?} */
                 const configValue = componentConfig[propName];
                 return isDefined(configValue) ? configValue : innerDefaultValue;
             },
+            /**
+             * @param {?=} value
+             * @return {?}
+             */
             set(value) {
                 if (originalDescriptor && originalDescriptor.set) {
                     originalDescriptor.set.bind(this)(value);
@@ -4002,118 +6926,118 @@ function WithConfig(componentName, innerDefaultValue) {
             configurable: true,
             enumerable: true
         };
-    };
+    });
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: config/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-css-unit.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzToCssUnitPipe {
+    /**
+     * @param {?} value
+     * @param {?=} defaultUnit
+     * @return {?}
+     */
     transform(value, defaultUnit = 'px') {
-        const formatted = +value; // force convert
+        /** @type {?} */
+        const formatted = +value;
         return isNaN(formatted) ? `${value}` : `${formatted}${defaultUnit}`;
     }
 }
-/** @nocollapse */ NzToCssUnitPipe.ɵfac = function NzToCssUnitPipe_Factory(t) { return new (t || NzToCssUnitPipe)(); };
-/** @nocollapse */ NzToCssUnitPipe.ɵpipe = ɵɵdefinePipe({ name: "nzToCssUnit", type: NzToCssUnitPipe, pure: true });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzToCssUnitPipe, [{
-        type: Pipe,
-        args: [{
+NzToCssUnitPipe.decorators = [
+    { type: Pipe, args: [{
                 name: 'nzToCssUnit'
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-time-range.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimeRangePipe {
+    /**
+     * @param {?} value
+     * @param {?=} format
+     * @return {?}
+     */
     transform(value, format = 'HH:mm:ss') {
+        /** @type {?} */
         let duration = Number(value || 0);
-        return timeUnits.reduce((current, [name, unit]) => {
+        return timeUnits.reduce((/**
+         * @param {?} current
+         * @param {?} __1
+         * @return {?}
+         */
+        (current, [name, unit]) => {
             if (current.indexOf(name) !== -1) {
+                /** @type {?} */
                 const v = Math.floor(duration / unit);
                 duration -= v * unit;
-                return current.replace(new RegExp(`${name}+`, 'g'), (match) => {
+                return current.replace(new RegExp(`${name}+`, 'g'), (/**
+                 * @param {?} match
+                 * @return {?}
+                 */
+                (match) => {
                     return padStart(v.toString(), match.length, '0');
-                });
+                }));
             }
             return current;
-        }, format);
+        }), format);
     }
 }
-/** @nocollapse */ NzTimeRangePipe.ɵfac = function NzTimeRangePipe_Factory(t) { return new (t || NzTimeRangePipe)(); };
-/** @nocollapse */ NzTimeRangePipe.ɵpipe = ɵɵdefinePipe({ name: "nzTimeRange", type: NzTimeRangePipe, pure: true });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTimeRangePipe, [{
-        type: Pipe,
-        args: [{
+NzTimeRangePipe.decorators = [
+    { type: Pipe, args: [{
                 name: 'nzTimeRange',
                 pure: true
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-pipe.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPipesModule {
 }
-/** @nocollapse */ NzPipesModule.ɵmod = ɵɵdefineNgModule({ type: NzPipesModule });
-/** @nocollapse */ NzPipesModule.ɵinj = ɵɵdefineInjector({ factory: function NzPipesModule_Factory(t) { return new (t || NzPipesModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzPipesModule, { declarations: [NzTimeRangePipe, NzToCssUnitPipe], imports: [CommonModule], exports: [NzTimeRangePipe, NzToCssUnitPipe] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzPipesModule, [{
-        type: NgModule,
-        args: [{
+NzPipesModule.decorators = [
+    { type: NgModule, args: [{
                 imports: [CommonModule],
                 exports: [NzTimeRangePipe, NzToCssUnitPipe],
                 declarations: [NzTimeRangePipe, NzToCssUnitPipe]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-core.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { AnimationCurves, AnimationDuration, CandyDate, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_BOTTOM_POSITIONS, DEFAULT_MENTION_TOP_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_CONFIG, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzBreakpoint, NzClassListAddDirective, NzConfigService, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzDragService, NzDropdownHigherOrderServiceToken, NzHighlightModule, NzHighlightPipe, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzPipesModule, NzScrollService, NzSingletonService, NzStringTemplateOutletDirective, NzTimeRangePipe, NzToCssUnitPipe, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, WithConfig, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureInBounds, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getEventPosition, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, getStyleAsText, helpMotion, inNextTick, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, measureScrollbar, moveUpMotion, notificationMotion, padEnd, padStart, properties, pxToNumber, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, sortRangeValue, timeUnits, toArray, toBoolean, toCssPixel, toNumber, treeCollapseMotion, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion };

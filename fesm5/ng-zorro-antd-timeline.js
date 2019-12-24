@@ -1,29 +1,16 @@
-import { ɵɵelementContainerStart, ɵɵtext, ɵɵelementContainerEnd, ɵɵnextContext, ɵɵadvance, ɵɵtextInterpolate, ɵɵdirectiveInject, Renderer2, ChangeDetectorRef, ɵɵdefineComponent, ɵɵstaticViewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵNgOnChangesFeature, ɵɵprojectionDef, ɵɵelementStart, ɵɵelement, ɵɵtemplate, ɵɵelementEnd, ɵɵprojection, ɵɵclassProp, ɵɵproperty, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, ViewChild, Input, ɵɵtextInterpolate1, ɵɵcontentQuery, ɵɵviewQuery, ContentChildren, ContentChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { NzStringTemplateOutletDirective, reverseChildNodes, NzAddOnModule } from 'ng-zorro-antd/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, Renderer2, ChangeDetectorRef, ViewChild, Input, ContentChildren, ContentChild, NgModule } from '@angular/core';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { NgIf, CommonModule } from '@angular/common';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
+import { reverseChildNodes, NzAddOnModule } from 'ng-zorro-antd/core';
+import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-timeline-item.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var _c0 = ["liTemplate"];
-function NzTimelineItemComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r971 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r971.nzDot);
-} }
-var _c1 = ["*"];
 var NzTimelineItemComponent = /** @class */ (function () {
     function NzTimelineItemComponent(renderer, cdr) {
         this.renderer = renderer;
@@ -31,19 +18,49 @@ var NzTimelineItemComponent = /** @class */ (function () {
         this.nzColor = 'blue';
         this.isLast = false;
     }
-    NzTimelineItemComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzTimelineItemComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.tryUpdateCustomColor();
     };
-    NzTimelineItemComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzTimelineItemComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         if (changes.nzColor) {
             this.tryUpdateCustomColor();
         }
     };
-    NzTimelineItemComponent.prototype.detectChanges = function () {
+    /**
+     * @return {?}
+     */
+    NzTimelineItemComponent.prototype.detectChanges = /**
+     * @return {?}
+     */
+    function () {
         this.cdr.detectChanges();
     };
-    NzTimelineItemComponent.prototype.tryUpdateCustomColor = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzTimelineItemComponent.prototype.tryUpdateCustomColor = /**
+     * @private
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var defaultColors = ['blue', 'red', 'green', 'gray'];
+        /** @type {?} */
         var circle = this.liTemplate.nativeElement.querySelector('.ant-timeline-item-head');
         if (defaultColors.indexOf(this.nzColor) === -1) {
             this.renderer.setStyle(circle, 'border-color', this.nzColor);
@@ -52,102 +69,56 @@ var NzTimelineItemComponent = /** @class */ (function () {
             this.renderer.removeStyle(circle, 'border-color');
         }
     };
-    /** @nocollapse */ NzTimelineItemComponent.ɵfac = function NzTimelineItemComponent_Factory(t) { return new (t || NzTimelineItemComponent)(ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef)); };
-    /** @nocollapse */ NzTimelineItemComponent.ɵcmp = ɵɵdefineComponent({ type: NzTimelineItemComponent, selectors: [["nz-timeline-item"], ["", "nz-timeline-item", ""]], viewQuery: function NzTimelineItemComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵstaticViewQuery(_c0, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.liTemplate = _t.first);
-        } }, inputs: { nzColor: "nzColor", nzDot: "nzDot" }, exportAs: ["nzTimelineItem"], features: [ɵɵNgOnChangesFeature()], ngContentSelectors: _c1, decls: 7, vars: 9, consts: [[1, "ant-timeline-item"], ["liTemplate", ""], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"]], template: function NzTimelineItemComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵelementStart(0, "li", 0, 1);
-            ɵɵelement(2, "div", 2);
-            ɵɵelementStart(3, "div", 3);
-            ɵɵtemplate(4, NzTimelineItemComponent_ng_container_4_Template, 2, 1, "ng-container", 4);
-            ɵɵelementEnd();
-            ɵɵelementStart(5, "div", 5);
-            ɵɵprojection(6);
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵclassProp("ant-timeline-item-right", ctx.position === "right")("ant-timeline-item-left", ctx.position === "left")("ant-timeline-item-last", ctx.isLast);
-            ɵɵadvance(3);
-            ɵɵclassProp("ant-timeline-item-head-red", ctx.nzColor === "red")("ant-timeline-item-head-blue", ctx.nzColor === "blue")("ant-timeline-item-head-green", ctx.nzColor === "green")("ant-timeline-item-head-gray", ctx.nzColor === "gray")("ant-timeline-item-head-custom", !!ctx.nzDot);
-            ɵɵadvance(1);
-            ɵɵproperty("nzStringTemplateOutlet", ctx.nzDot);
-        } }, directives: [NzStringTemplateOutletDirective], encapsulation: 2, changeDetection: 0 });
+    NzTimelineItemComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    preserveWhitespaces: false,
+                    selector: 'nz-timeline-item, [nz-timeline-item]',
+                    exportAs: 'nzTimelineItem',
+                    template: "<li\n  class=\"ant-timeline-item\"\n  [class.ant-timeline-item-right]=\"position === 'right'\"\n  [class.ant-timeline-item-left]=\"position === 'left'\"\n  [class.ant-timeline-item-last]=\"isLast\"\n  #liTemplate>\n  <div class=\"ant-timeline-item-tail\"></div>\n  <div\n    class=\"ant-timeline-item-head\"\n    [class.ant-timeline-item-head-red]=\"nzColor === 'red'\"\n    [class.ant-timeline-item-head-blue]=\"nzColor === 'blue'\"\n    [class.ant-timeline-item-head-green]=\"nzColor === 'green'\"\n    [class.ant-timeline-item-head-gray]=\"nzColor === 'gray'\"\n    [class.ant-timeline-item-head-custom]=\"!!nzDot\">\n    <ng-container *nzStringTemplateOutlet=\"nzDot\">{{ nzDot }}</ng-container>\n  </div>\n  <div class=\"ant-timeline-item-content\">\n    <ng-content></ng-content>\n  </div>\n</li>\n"
+                }] }
+    ];
+    /** @nocollapse */
+    NzTimelineItemComponent.ctorParameters = function () { return [
+        { type: Renderer2 },
+        { type: ChangeDetectorRef }
+    ]; };
+    NzTimelineItemComponent.propDecorators = {
+        liTemplate: [{ type: ViewChild, args: ['liTemplate', { static: true },] }],
+        nzColor: [{ type: Input }],
+        nzDot: [{ type: Input }]
+    };
     return NzTimelineItemComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTimelineItemComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                preserveWhitespaces: false,
-                selector: 'nz-timeline-item, [nz-timeline-item]',
-                exportAs: 'nzTimelineItem',
-                templateUrl: './nz-timeline-item.component.html'
-            }]
-    }], function () { return [{ type: Renderer2 }, { type: ChangeDetectorRef }]; }, { liTemplate: [{
-            type: ViewChild,
-            args: ['liTemplate', { static: true }]
-        }], nzColor: [{
-            type: Input
-        }], nzDot: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzTimelineItemComponent.prototype.liTemplate;
+    /** @type {?} */
+    NzTimelineItemComponent.prototype.nzColor;
+    /** @type {?} */
+    NzTimelineItemComponent.prototype.nzDot;
+    /** @type {?} */
+    NzTimelineItemComponent.prototype.isLast;
+    /** @type {?} */
+    NzTimelineItemComponent.prototype.position;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTimelineItemComponent.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTimelineItemComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-timeline.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var _c0$1 = ["pending"];
-var _c1$1 = ["timeline"];
-function NzTimelineComponent_li_3_ng_container_3_i_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 9);
-} }
-function NzTimelineComponent_li_3_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵtemplate(2, NzTimelineComponent_li_3_ng_container_3_i_2_Template, 1, 0, "i", 8);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r967 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r967.nzPendingDot, "");
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", !ctx_r967.nzPendingDot);
-} }
-function NzTimelineComponent_li_3_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r968 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r968.isPendingBoolean ? "" : ctx_r968.nzPending, " ");
-} }
-function NzTimelineComponent_li_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "li", 3);
-    ɵɵelement(1, "div", 4);
-    ɵɵelementStart(2, "div", 5);
-    ɵɵtemplate(3, NzTimelineComponent_li_3_ng_container_3_Template, 3, 2, "ng-container", 6);
-    ɵɵelementEnd();
-    ɵɵelementStart(4, "div", 7);
-    ɵɵtemplate(5, NzTimelineComponent_li_3_ng_container_5_Template, 2, 1, "ng-container", 6);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r966 = ɵɵnextContext();
-    ɵɵadvance(3);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r966.nzPendingDot);
-    ɵɵadvance(2);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r966.nzPending);
-} }
-var _c2 = ["*"];
 var NzTimelineComponent = /** @class */ (function () {
     function NzTimelineComponent(cdr, platform) {
         this.cdr = cdr;
@@ -156,38 +127,80 @@ var NzTimelineComponent = /** @class */ (function () {
         this.isPendingBoolean = false;
         this.destroy$ = new Subject();
     }
-    NzTimelineComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzTimelineComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
+        /** @type {?} */
         var modeChanges = changes.nzMode;
+        /** @type {?} */
         var reverseChanges = changes.nzReverse;
+        /** @type {?} */
         var pendingChanges = changes.nzPending;
         if (modeChanges && (modeChanges.previousValue !== modeChanges.currentValue || modeChanges.isFirstChange())) {
             this.updateChildren();
         }
-        if (reverseChanges && reverseChanges.previousValue !== reverseChanges.currentValue && !reverseChanges.isFirstChange()) {
+        if (reverseChanges &&
+            reverseChanges.previousValue !== reverseChanges.currentValue &&
+            !reverseChanges.isFirstChange()) {
             this.reverseChildTimelineDots();
         }
         if (pendingChanges) {
             this.isPendingBoolean = pendingChanges.currentValue === true;
         }
     };
-    NzTimelineComponent.prototype.ngAfterContentInit = function () {
+    /**
+     * @return {?}
+     */
+    NzTimelineComponent.prototype.ngAfterContentInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         this.updateChildren();
         if (this.listOfTimeLine) {
-            this.listOfTimeLine.changes.pipe(takeUntil(this.destroy$)).subscribe(function () {
+            this.listOfTimeLine.changes.pipe(takeUntil(this.destroy$)).subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.updateChildren();
-            });
+            }));
         }
     };
-    NzTimelineComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzTimelineComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzTimelineComponent.prototype.updateChildren = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzTimelineComponent.prototype.updateChildren = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this.listOfTimeLine && this.listOfTimeLine.length) {
+            /** @type {?} */
             var length_1 = this.listOfTimeLine.length;
-            this.listOfTimeLine.toArray().forEach(function (item, index) {
+            this.listOfTimeLine.toArray().forEach((/**
+             * @param {?} item
+             * @param {?} index
+             * @return {?}
+             */
+            function (item, index) {
                 item.isLast = !_this.nzReverse ? index === length_1 - 1 : index === 0;
                 item.position =
                     _this.nzMode === 'left' || !_this.nzMode
@@ -198,105 +211,112 @@ var NzTimelineComponent = /** @class */ (function () {
                                 ? 'left'
                                 : 'right';
                 item.detectChanges();
-            });
+            }));
             this.cdr.markForCheck();
         }
     };
-    NzTimelineComponent.prototype.reverseChildTimelineDots = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzTimelineComponent.prototype.reverseChildTimelineDots = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this.platform.isBrowser) {
-            reverseChildNodes(this.timeline.nativeElement);
+            reverseChildNodes((/** @type {?} */ (this.timeline.nativeElement)));
             this.updateChildren();
         }
     };
-    /** @nocollapse */ NzTimelineComponent.ɵfac = function NzTimelineComponent_Factory(t) { return new (t || NzTimelineComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Platform)); };
-    /** @nocollapse */ NzTimelineComponent.ɵcmp = ɵɵdefineComponent({ type: NzTimelineComponent, selectors: [["nz-timeline"]], contentQueries: function NzTimelineComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-            ɵɵcontentQuery(dirIndex, _c0$1, true);
-            ɵɵcontentQuery(dirIndex, NzTimelineItemComponent, false);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx._pendingContent = _t.first);
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfTimeLine = _t);
-        } }, viewQuery: function NzTimelineComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵviewQuery(_c1$1, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.timeline = _t.first);
-        } }, inputs: { nzMode: "nzMode", nzPending: "nzPending", nzPendingDot: "nzPendingDot", nzReverse: "nzReverse" }, exportAs: ["nzTimeline"], features: [ɵɵNgOnChangesFeature()], ngContentSelectors: _c2, decls: 4, vars: 5, consts: [[1, "ant-timeline"], ["timeline", ""], ["class", "ant-timeline-item ant-timeline-item-pending", 4, "ngIf"], [1, "ant-timeline-item", "ant-timeline-item-pending"], [1, "ant-timeline-item-tail"], [1, "ant-timeline-item-head", "ant-timeline-item-head-custom", "ant-timeline-item-head-blue"], [4, "nzStringTemplateOutlet"], [1, "ant-timeline-item-content"], ["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzTimelineComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵelementStart(0, "ul", 0, 1);
-            ɵɵprojection(2);
-            ɵɵtemplate(3, NzTimelineComponent_li_3_Template, 6, 2, "li", 2);
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵclassProp("ant-timeline-right", ctx.nzMode === "right")("ant-timeline-alternate", ctx.nzMode === "alternate")("ant-timeline-pending", !!ctx.nzPending)("ant-timeline-reverse", ctx.nzReverse);
-            ɵɵadvance(3);
-            ɵɵproperty("ngIf", ctx.nzPending);
-        } }, directives: [NgIf, NzStringTemplateOutletDirective, NzIconDirective], encapsulation: 2, changeDetection: 0 });
+    NzTimelineComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    preserveWhitespaces: false,
+                    selector: 'nz-timeline',
+                    exportAs: 'nzTimeline',
+                    template: "<ul\n  class=\"ant-timeline\"\n  [class.ant-timeline-right]=\"nzMode === 'right'\"\n  [class.ant-timeline-alternate]=\"nzMode === 'alternate'\"\n  [class.ant-timeline-pending]=\"!!nzPending\"\n  [class.ant-timeline-reverse]=\"nzReverse\"\n  #timeline>\n  <!-- User inserted timeline dots. -->\n  <ng-content></ng-content>\n  <!-- Pending dot. -->\n  <li *ngIf=\"nzPending\" class=\"ant-timeline-item ant-timeline-item-pending\">\n    <div class=\"ant-timeline-item-tail\"></div>\n    <div class=\"ant-timeline-item-head ant-timeline-item-head-custom ant-timeline-item-head-blue\">\n      <ng-container *nzStringTemplateOutlet=\"nzPendingDot\">\n        {{ nzPendingDot }}<i *ngIf=\"!nzPendingDot\" nz-icon nzType=\"loading\"></i>\n      </ng-container>\n    </div>\n    <div class=\"ant-timeline-item-content\">\n      <ng-container *nzStringTemplateOutlet=\"nzPending\">\n        {{ isPendingBoolean ? '' : nzPending }}\n      </ng-container>\n    </div>\n  </li>\n</ul>\n"
+                }] }
+    ];
+    /** @nocollapse */
+    NzTimelineComponent.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: Platform }
+    ]; };
+    NzTimelineComponent.propDecorators = {
+        timeline: [{ type: ViewChild, args: ['timeline', { static: false },] }],
+        listOfTimeLine: [{ type: ContentChildren, args: [NzTimelineItemComponent,] }],
+        _pendingContent: [{ type: ContentChild, args: ['pending', { static: false },] }],
+        nzMode: [{ type: Input }],
+        nzPending: [{ type: Input }],
+        nzPendingDot: [{ type: Input }],
+        nzReverse: [{ type: Input }]
+    };
     return NzTimelineComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTimelineComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                preserveWhitespaces: false,
-                selector: 'nz-timeline',
-                exportAs: 'nzTimeline',
-                templateUrl: './nz-timeline.component.html'
-            }]
-    }], function () { return [{ type: ChangeDetectorRef }, { type: Platform }]; }, { timeline: [{
-            type: ViewChild,
-            args: ['timeline', { static: false }]
-        }], listOfTimeLine: [{
-            type: ContentChildren,
-            args: [NzTimelineItemComponent]
-        }], _pendingContent: [{
-            type: ContentChild,
-            args: ['pending', { static: false }]
-        }], nzMode: [{
-            type: Input
-        }], nzPending: [{
-            type: Input
-        }], nzPendingDot: [{
-            type: Input
-        }], nzReverse: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzTimelineComponent.prototype.timeline;
+    /** @type {?} */
+    NzTimelineComponent.prototype.listOfTimeLine;
+    /** @type {?} */
+    NzTimelineComponent.prototype._pendingContent;
+    /** @type {?} */
+    NzTimelineComponent.prototype.nzMode;
+    /** @type {?} */
+    NzTimelineComponent.prototype.nzPending;
+    /** @type {?} */
+    NzTimelineComponent.prototype.nzPendingDot;
+    /** @type {?} */
+    NzTimelineComponent.prototype.nzReverse;
+    /** @type {?} */
+    NzTimelineComponent.prototype.isPendingBoolean;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTimelineComponent.prototype.destroy$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTimelineComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTimelineComponent.prototype.platform;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-timeline.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTimelineModule = /** @class */ (function () {
     function NzTimelineModule() {
     }
-    /** @nocollapse */ NzTimelineModule.ɵmod = ɵɵdefineNgModule({ type: NzTimelineModule });
-    /** @nocollapse */ NzTimelineModule.ɵinj = ɵɵdefineInjector({ factory: function NzTimelineModule_Factory(t) { return new (t || NzTimelineModule)(); }, imports: [[CommonModule, PlatformModule, NzIconModule, NzAddOnModule]] });
+    NzTimelineModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzTimelineItemComponent, NzTimelineComponent],
+                    exports: [NzTimelineItemComponent, NzTimelineComponent],
+                    imports: [CommonModule, PlatformModule, NzIconModule, NzAddOnModule]
+                },] }
+    ];
     return NzTimelineModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzTimelineModule, { declarations: [NzTimelineItemComponent, NzTimelineComponent], imports: [CommonModule, PlatformModule, NzIconModule, NzAddOnModule], exports: [NzTimelineItemComponent, NzTimelineComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTimelineModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzTimelineItemComponent, NzTimelineComponent],
-                exports: [NzTimelineItemComponent, NzTimelineComponent],
-                imports: [CommonModule, PlatformModule, NzIconModule, NzAddOnModule]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-timeline.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzTimelineComponent, NzTimelineItemComponent, NzTimelineModule };

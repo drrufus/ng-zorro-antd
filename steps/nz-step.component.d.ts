@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, ElementRef, OnDestroy, Renderer2, TemplateRef } from '@angular/core';
 import { NgClassType } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare class NzStepComponent implements OnDestroy {
     private cdr;
     processDotTemplate: TemplateRef<void>;
@@ -41,6 +40,4 @@ export declare class NzStepComponent implements OnDestroy {
     onClick(): void;
     markForCheck(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzStepComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzStepComponent, "nz-step", ["nzStep"], { 'nzTitle': "nzTitle", 'nzSubtitle': "nzSubtitle", 'nzDescription': "nzDescription", 'nzDisabled': "nzDisabled", 'nzStatus': "nzStatus", 'nzIcon': "nzIcon" }, {}, never>;
 }

@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzCarouselContentDirective {
     private elementRef;
     private renderer;
@@ -14,6 +13,4 @@ export declare class NzCarouselContentDirective {
     isActive: boolean;
     private _active;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<NzCarouselContentDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzCarouselContentDirective, "[nz-carousel-content]", ["nzCarouselContent"], {}, {}, never>;
 }

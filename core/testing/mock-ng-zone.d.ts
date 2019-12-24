@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://angular.io/license
  */
 import { EventEmitter, NgZone } from '@angular/core';
-import * as i0 from "@angular/core";
 /**
  * Mock synchronous NgZone implementation that can be used
  * to flush out `onStable` subscriptions in tests.
@@ -20,6 +19,4 @@ export declare class MockNgZone extends NgZone {
     run(fn: Function): any;
     runOutsideAngular(fn: Function): any;
     simulateZoneExit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<MockNgZone>;
-    static ɵprov: i0.ɵɵInjectableDef<MockNgZone>;
 }

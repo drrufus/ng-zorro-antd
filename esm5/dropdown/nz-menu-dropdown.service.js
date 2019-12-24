@@ -1,4 +1,9 @@
-import { __extends } from "tslib";
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-menu-dropdown.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+import * as tslib_1 from "tslib";
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -8,21 +13,21 @@ import { __extends } from "tslib";
  */
 import { Injectable } from '@angular/core';
 import { NzMenuBaseService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 var NzMenuDropdownService = /** @class */ (function (_super) {
-    __extends(NzMenuDropdownService, _super);
+    tslib_1.__extends(NzMenuDropdownService, _super);
     function NzMenuDropdownService() {
         var _this = _super !== null && _super.apply(this, arguments) || this;
         _this.isInDropDown = true;
         return _this;
     }
-    /** @nocollapse */ NzMenuDropdownService.ɵfac = function NzMenuDropdownService_Factory(t) { return ɵNzMenuDropdownService_BaseFactory(t || NzMenuDropdownService); };
-    /** @nocollapse */ NzMenuDropdownService.ɵprov = i0.ɵɵdefineInjectable({ token: NzMenuDropdownService, factory: NzMenuDropdownService.ɵfac });
+    NzMenuDropdownService.decorators = [
+        { type: Injectable }
+    ];
     return NzMenuDropdownService;
 }(NzMenuBaseService));
 export { NzMenuDropdownService };
-var ɵNzMenuDropdownService_BaseFactory = i0.ɵɵgetInheritedFactory(NzMenuDropdownService);
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NzMenuDropdownService, [{
-        type: Injectable
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbWVudS1kcm9wZG93bi5zZXJ2aWNlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9kcm9wZG93bi8iLCJzb3VyY2VzIjpbIm56LW1lbnUtZHJvcGRvd24uc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7OztHQU1HO0FBRUgsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUUzQyxPQUFPLEVBQUUsaUJBQWlCLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQzs7QUFFdkQ7SUFDMkMseUNBQWlCO0lBRDVEO1FBQUEscUVBR0M7UUFEQyxrQkFBWSxHQUFHLElBQUksQ0FBQzs7S0FDckI7NEhBRlkscUJBQXFCO2lFQUFyQixxQkFBcUIsV0FBckIscUJBQXFCO2dDQWJsQztDQWVDLEFBSEQsQ0FDMkMsaUJBQWlCLEdBRTNEO1NBRlkscUJBQXFCO2tFQUFyQixxQkFBcUI7a0RBQXJCLHFCQUFxQjtjQURqQyxVQUFVIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcblxyXG5pbXBvcnQgeyBJbmplY3RhYmxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5pbXBvcnQgeyBOek1lbnVCYXNlU2VydmljZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XHJcblxyXG5ASW5qZWN0YWJsZSgpXHJcbmV4cG9ydCBjbGFzcyBOek1lbnVEcm9wZG93blNlcnZpY2UgZXh0ZW5kcyBOek1lbnVCYXNlU2VydmljZSB7XHJcbiAgaXNJbkRyb3BEb3duID0gdHJ1ZTtcclxufVxyXG4iXX0=
+if (false) {
+    /** @type {?} */
+    NzMenuDropdownService.prototype.isInDropDown;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbWVudS1kcm9wZG93bi5zZXJ2aWNlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9kcm9wZG93bi8iLCJzb3VyY2VzIjpbIm56LW1lbnUtZHJvcGRvd24uc2VydmljZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBUUEsT0FBTyxFQUFFLFVBQVUsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUUzQyxPQUFPLEVBQUUsaUJBQWlCLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUV2RDtJQUMyQyxpREFBaUI7SUFENUQ7UUFBQSxxRUFHQztRQURDLGtCQUFZLEdBQUcsSUFBSSxDQUFDOztJQUN0QixDQUFDOztnQkFIQSxVQUFVOztJQUdYLDRCQUFDO0NBQUEsQUFIRCxDQUMyQyxpQkFBaUIsR0FFM0Q7U0FGWSxxQkFBcUI7OztJQUNoQyw2Q0FBb0IiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cbiAqXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXG4gKi9cblxuaW1wb3J0IHsgSW5qZWN0YWJsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5pbXBvcnQgeyBOek1lbnVCYXNlU2VydmljZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XG5cbkBJbmplY3RhYmxlKClcbmV4cG9ydCBjbGFzcyBOek1lbnVEcm9wZG93blNlcnZpY2UgZXh0ZW5kcyBOek1lbnVCYXNlU2VydmljZSB7XG4gIGlzSW5Ecm9wRG93biA9IHRydWU7XG59XG4iXX0=

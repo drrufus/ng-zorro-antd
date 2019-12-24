@@ -201,123 +201,11 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = ["processDotTemplate"];
-    function NzStepComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "div", 9);
-    } }
-    function NzStepComponent_ng_template_3_span_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵelement(1, "i", 12);
-        core.ɵɵelementEnd();
-    } }
-    function NzStepComponent_ng_template_3_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵelement(1, "i", 13);
-        core.ɵɵelementEnd();
-    } }
-    function NzStepComponent_ng_template_3_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r788 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r788.index + 1);
-    } }
-    function NzStepComponent_ng_template_3_span_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelement(1, "i", 16);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r790 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzType", !ctx_r790.oldAPIIcon && ctx_r790.nzIcon)("ngClass", ctx_r790.oldAPIIcon && ctx_r790.nzIcon);
-    } }
-    function NzStepComponent_ng_template_3_span_3_ng_template_2_ng_template_0_Template(rf, ctx) { }
-    function NzStepComponent_ng_template_3_span_3_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, NzStepComponent_ng_template_3_span_3_ng_template_2_ng_template_0_Template, 0, 0, "ng-template", 17);
-    } if (rf & 2) {
-        var ctx_r792 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r792.nzIcon);
-    } }
-    function NzStepComponent_ng_template_3_span_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵtemplate(1, NzStepComponent_ng_template_3_span_3_ng_container_1_Template, 2, 2, "ng-container", 14);
-        core.ɵɵtemplate(2, NzStepComponent_ng_template_3_span_3_ng_template_2_Template, 1, 1, "ng-template", null, 15, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var _r791 = core.ɵɵreference(3);
-        var ctx_r789 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r789.isIconString)("ngIfElse", _r791);
-    } }
-    function NzStepComponent_ng_template_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, NzStepComponent_ng_template_3_span_0_Template, 2, 0, "span", 10);
-        core.ɵɵtemplate(1, NzStepComponent_ng_template_3_span_1_Template, 2, 0, "span", 10);
-        core.ɵɵtemplate(2, NzStepComponent_ng_template_3_span_2_Template, 2, 1, "span", 10);
-        core.ɵɵtemplate(3, NzStepComponent_ng_template_3_span_3_Template, 4, 2, "span", 10);
-    } if (rf & 2) {
-        var ctx_r781 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngIf", ctx_r781.nzStatus === "finish" && !ctx_r781.nzIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r781.nzStatus === "error");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", (ctx_r781.nzStatus === "process" || ctx_r781.nzStatus === "wait") && !ctx_r781.nzIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r781.nzIcon);
-    } }
-    function NzStepComponent_ng_template_4_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "span", 20);
-    } }
-    function NzStepComponent_ng_template_4_ng_template_3_Template(rf, ctx) { }
-    var _c1 = function (a0, a1, a2) { return { $implicit: a0, status: a1, index: a2 }; };
-    function NzStepComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵtemplate(1, NzStepComponent_ng_template_4_ng_template_1_Template, 1, 0, "ng-template", null, 18, core.ɵɵtemplateRefExtractor);
-        core.ɵɵtemplate(3, NzStepComponent_ng_template_4_ng_template_3_Template, 0, 0, "ng-template", 19);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var _r794 = core.ɵɵreference(2);
-        var ctx_r782 = core.ɵɵnextContext();
-        core.ɵɵadvance(3);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r782.customProcessTemplate || _r794)("ngTemplateOutletContext", core.ɵɵpureFunction3(2, _c1, _r794, ctx_r782.nzStatus, ctx_r782.index));
-    } }
-    function NzStepComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r783 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r783.nzTitle);
-    } }
-    function NzStepComponent_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r797 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r797.nzSubtitle);
-    } }
-    function NzStepComponent_div_8_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 21);
-        core.ɵɵtemplate(1, NzStepComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 6);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r784 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r784.nzSubtitle);
-    } }
-    function NzStepComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r785 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r785.nzDescription);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-step.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzStepComponent = /** @class */ (function () {
         function NzStepComponent(cdr, renderer, elementRef) {
             this.cdr = cdr;
@@ -326,6 +214,7 @@
             this._status = 'wait';
             this.oldAPIIcon = true;
             this.isIconString = true;
+            // Set by parent.
             this.direction = 'horizontal';
             this.index = 0;
             this.last = false;
@@ -337,10 +226,17 @@
             renderer.addClass(elementRef.nativeElement, 'ant-steps-item');
         }
         Object.defineProperty(NzStepComponent.prototype, "nzStatus", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._status;
             },
-            set: function (status) {
+            set: /**
+             * @param {?} status
+             * @return {?}
+             */
+            function (status) {
                 this._status = status;
                 this.isCustomStatus = true;
             },
@@ -348,10 +244,17 @@
             configurable: true
         });
         Object.defineProperty(NzStepComponent.prototype, "nzIcon", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._icon;
             },
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 if (!(value instanceof core.TemplateRef)) {
                     this.isIconString = true;
                     this.oldAPIIcon = typeof value === 'string' && value.indexOf('anticon') > -1;
@@ -365,10 +268,17 @@
             configurable: true
         });
         Object.defineProperty(NzStepComponent.prototype, "currentIndex", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._currentIndex;
             },
-            set: function (current) {
+            set: /**
+             * @param {?} current
+             * @return {?}
+             */
+            function (current) {
                 this._currentIndex = current;
                 if (!this.isCustomStatus) {
                     this._status = current > this.index ? 'finish' : current === this.index ? this.outStatus || '' : 'wait';
@@ -377,105 +287,136 @@
             enumerable: true,
             configurable: true
         });
-        NzStepComponent.prototype.onClick = function () {
+        /**
+         * @return {?}
+         */
+        NzStepComponent.prototype.onClick = /**
+         * @return {?}
+         */
+        function () {
             if (this.clickable && this.currentIndex !== this.index && !this.nzDisabled) {
                 this.click$.next(this.index);
             }
         };
-        NzStepComponent.prototype.markForCheck = function () {
+        /**
+         * @return {?}
+         */
+        NzStepComponent.prototype.markForCheck = /**
+         * @return {?}
+         */
+        function () {
             this.cdr.markForCheck();
         };
-        NzStepComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzStepComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.click$.complete();
         };
-        /** @nocollapse */ NzStepComponent.ɵfac = function NzStepComponent_Factory(t) { return new (t || NzStepComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core.ElementRef)); };
-        /** @nocollapse */ NzStepComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzStepComponent, selectors: [["nz-step"]], viewQuery: function NzStepComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵviewQuery(_c0, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.processDotTemplate = _t.first);
-            } }, hostBindings: function NzStepComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(8);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-steps-item-wait", ctx.nzStatus === "wait")("ant-steps-item-process", ctx.nzStatus === "process")("ant-steps-item-finish", ctx.nzStatus === "finish")("ant-steps-item-error", ctx.nzStatus === "error")("ant-steps-item-active", ctx.currentIndex === ctx.index)("ant-steps-item-disabled", ctx.nzDisabled)("ant-steps-item-custom", !!ctx.nzIcon)("ant-steps-next-error", ctx.outStatus === "error" && ctx.currentIndex === ctx.index + 1);
-            } }, inputs: { nzTitle: "nzTitle", nzSubtitle: "nzSubtitle", nzDescription: "nzDescription", nzDisabled: "nzDisabled", nzStatus: "nzStatus", nzIcon: "nzIcon" }, exportAs: ["nzStep"], decls: 11, vars: 8, consts: [[1, "ant-steps-item-container", 3, "tabindex", "click"], ["class", "ant-steps-item-tail", 4, "ngIf"], [1, "ant-steps-item-icon"], [3, "ngIf"], [1, "ant-steps-item-content"], [1, "ant-steps-item-title"], [4, "nzStringTemplateOutlet"], ["class", "ant-steps-item-subtitle", 4, "ngIf"], [1, "ant-steps-item-description"], [1, "ant-steps-item-tail"], ["class", "ant-steps-icon", 4, "ngIf"], [1, "ant-steps-icon"], ["nz-icon", "", "nzType", "check"], ["nz-icon", "", "nzType", "close"], [4, "ngIf", "ngIfElse"], ["iconTemplate", ""], ["nz-icon", "", 3, "nzType", "ngClass"], [3, "ngTemplateOutlet"], ["processDotTemplate", ""], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-steps-icon-dot"], [1, "ant-steps-item-subtitle"]], template: function NzStepComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "div", 0);
-                core.ɵɵlistener("click", function NzStepComponent_Template_div_click_0_listener($event) { return ctx.onClick(); });
-                core.ɵɵtemplate(1, NzStepComponent_div_1_Template, 1, 0, "div", 1);
-                core.ɵɵelementStart(2, "div", 2);
-                core.ɵɵtemplate(3, NzStepComponent_ng_template_3_Template, 4, 4, "ng-template", 3);
-                core.ɵɵtemplate(4, NzStepComponent_ng_template_4_Template, 4, 6, "ng-template", 3);
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(5, "div", 4);
-                core.ɵɵelementStart(6, "div", 5);
-                core.ɵɵtemplate(7, NzStepComponent_ng_container_7_Template, 2, 1, "ng-container", 6);
-                core.ɵɵtemplate(8, NzStepComponent_div_8_Template, 2, 1, "div", 7);
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(9, "div", 8);
-                core.ɵɵtemplate(10, NzStepComponent_ng_container_10_Template, 2, 1, "ng-container", 6);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("tabindex", ctx.clickable && !ctx.nzDisabled ? 0 : null);
-                core.ɵɵattribute("role", ctx.clickable && !ctx.nzDisabled ? "button" : null);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.last !== true);
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("ngIf", !ctx.showProcessDot);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.showProcessDot);
-                core.ɵɵadvance(3);
-                core.ɵɵproperty("nzStringTemplateOutlet", ctx.nzTitle);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzSubtitle);
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("nzStringTemplateOutlet", ctx.nzDescription);
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective, icon.NzIconDirective, common.NgClass, common.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+        NzStepComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-step',
+                        exportAs: 'nzStep',
+                        preserveWhitespaces: false,
+                        template: "<div\n  class=\"ant-steps-item-container\"\n  [attr.role]=\"(clickable && !nzDisabled) ? 'button' : null\"\n  [tabindex]=\"(clickable && !nzDisabled) ? 0 : null\"\n  (click)=\"onClick()\">\n  <div class=\"ant-steps-item-tail\" *ngIf=\"last !== true\"></div>\n  <div class=\"ant-steps-item-icon\">\n    <ng-template [ngIf]=\"!showProcessDot\">\n      <span class=\"ant-steps-icon\" *ngIf=\"nzStatus === 'finish' && !nzIcon\"><i nz-icon nzType=\"check\"></i></span>\n      <span class=\"ant-steps-icon\" *ngIf=\"nzStatus === 'error'\"><i nz-icon nzType=\"close\"></i></span>\n      <span\n        class=\"ant-steps-icon\"\n        *ngIf=\"(nzStatus === 'process' || nzStatus === 'wait') && !nzIcon\">{{ index + 1 }}</span>\n      <span class=\"ant-steps-icon\" *ngIf=\"nzIcon\">\n      <ng-container *ngIf=\"isIconString; else iconTemplate\">\n        <i nz-icon [nzType]=\"!oldAPIIcon && nzIcon\" [ngClass]=\"oldAPIIcon && nzIcon\"></i>\n      </ng-container>\n      <ng-template #iconTemplate>\n      <ng-template [ngTemplateOutlet]=\"nzIcon\"></ng-template>\n    </ng-template>\n    </span>\n    </ng-template>\n    <ng-template [ngIf]=\"showProcessDot\">\n    <span class=\"ant-steps-icon\">\n      <ng-template #processDotTemplate>\n        <span class=\"ant-steps-icon-dot\"></span>\n      </ng-template>\n      <ng-template\n        [ngTemplateOutlet]=\"customProcessTemplate||processDotTemplate\"\n        [ngTemplateOutletContext]=\"{ $implicit: processDotTemplate, status:nzStatus, index:index }\">\n      </ng-template>\n    </span>\n    </ng-template>\n  </div>\n  <div class=\"ant-steps-item-content\">\n    <div class=\"ant-steps-item-title\">\n      <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n      <div *ngIf=\"nzSubtitle\" class=\"ant-steps-item-subtitle\">\n        <ng-container *nzStringTemplateOutlet=\"nzSubtitle\">{{ nzSubtitle }}</ng-container>\n      </div>\n    </div>\n    <div class=\"ant-steps-item-description\">\n      <ng-container *nzStringTemplateOutlet=\"nzDescription\">{{ nzDescription }}</ng-container>\n    </div>\n  </div>\n</div>\n",
+                        host: {
+                            '[class.ant-steps-item-wait]': 'nzStatus === "wait"',
+                            '[class.ant-steps-item-process]': 'nzStatus === "process"',
+                            '[class.ant-steps-item-finish]': 'nzStatus === "finish"',
+                            '[class.ant-steps-item-error]': 'nzStatus === "error"',
+                            '[class.ant-steps-item-active]': 'currentIndex === index',
+                            '[class.ant-steps-item-disabled]': 'nzDisabled',
+                            '[class.ant-steps-item-custom]': '!!nzIcon',
+                            '[class.ant-steps-next-error]': '(outStatus === "error") && (currentIndex === index + 1)'
+                        }
+                    }] }
+        ];
+        /** @nocollapse */
+        NzStepComponent.ctorParameters = function () { return [
+            { type: core.ChangeDetectorRef },
+            { type: core.Renderer2 },
+            { type: core.ElementRef }
+        ]; };
+        NzStepComponent.propDecorators = {
+            processDotTemplate: [{ type: core.ViewChild, args: ['processDotTemplate', { static: false },] }],
+            nzTitle: [{ type: core.Input }],
+            nzSubtitle: [{ type: core.Input }],
+            nzDescription: [{ type: core.Input }],
+            nzDisabled: [{ type: core.Input }],
+            nzStatus: [{ type: core.Input }],
+            nzIcon: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzStepComponent.prototype, "nzDisabled", void 0);
         return NzStepComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStepComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-step',
-                    exportAs: 'nzStep',
-                    preserveWhitespaces: false,
-                    templateUrl: './nz-step.component.html',
-                    host: {
-                        '[class.ant-steps-item-wait]': 'nzStatus === "wait"',
-                        '[class.ant-steps-item-process]': 'nzStatus === "process"',
-                        '[class.ant-steps-item-finish]': 'nzStatus === "finish"',
-                        '[class.ant-steps-item-error]': 'nzStatus === "error"',
-                        '[class.ant-steps-item-active]': 'currentIndex === index',
-                        '[class.ant-steps-item-disabled]': 'nzDisabled',
-                        '[class.ant-steps-item-custom]': '!!nzIcon',
-                        '[class.ant-steps-next-error]': '(outStatus === "error") && (currentIndex === index + 1)'
-                    }
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }, { type: core.Renderer2 }, { type: core.ElementRef }]; }, { processDotTemplate: [{
-                type: core.ViewChild,
-                args: ['processDotTemplate', { static: false }]
-            }], nzTitle: [{
-                type: core.Input
-            }], nzSubtitle: [{
-                type: core.Input
-            }], nzDescription: [{
-                type: core.Input
-            }], nzDisabled: [{
-                type: core.Input
-            }], nzStatus: [{
-                type: core.Input
-            }], nzIcon: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzStepComponent.prototype.processDotTemplate;
+        /** @type {?} */
+        NzStepComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzStepComponent.prototype.nzSubtitle;
+        /** @type {?} */
+        NzStepComponent.prototype.nzDescription;
+        /** @type {?} */
+        NzStepComponent.prototype.nzDisabled;
+        /** @type {?} */
+        NzStepComponent.prototype.isCustomStatus;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepComponent.prototype._status;
+        /** @type {?} */
+        NzStepComponent.prototype.oldAPIIcon;
+        /** @type {?} */
+        NzStepComponent.prototype.isIconString;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepComponent.prototype._icon;
+        /** @type {?} */
+        NzStepComponent.prototype.customProcessTemplate;
+        /** @type {?} */
+        NzStepComponent.prototype.direction;
+        /** @type {?} */
+        NzStepComponent.prototype.index;
+        /** @type {?} */
+        NzStepComponent.prototype.last;
+        /** @type {?} */
+        NzStepComponent.prototype.outStatus;
+        /** @type {?} */
+        NzStepComponent.prototype.showProcessDot;
+        /** @type {?} */
+        NzStepComponent.prototype.clickable;
+        /** @type {?} */
+        NzStepComponent.prototype.click$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepComponent.prototype._currentIndex;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepComponent.prototype.cdr;
+    }
 
-    var _c0$1 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-steps.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzStepsComponent = /** @class */ (function () {
         function NzStepsComponent() {
             this.nzCurrent = 0;
@@ -490,7 +431,11 @@
             this.showProcessDot = false;
         }
         Object.defineProperty(NzStepsComponent.prototype, "nzProgressDot", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 if (value instanceof core.TemplateRef) {
                     this.showProcessDot = true;
                     this.customProcessDotTemplate = value;
@@ -503,7 +448,15 @@
             enumerable: true,
             configurable: true
         });
-        NzStepsComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzStepsComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzStartIndex || changes.nzDirection || changes.nzStatus || changes.nzCurrent) {
                 this.updateChildrenSteps();
             }
@@ -511,31 +464,71 @@
                 this.setClassMap();
             }
         };
-        NzStepsComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzStepsComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.setClassMap();
             this.updateChildrenSteps();
         };
-        NzStepsComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzStepsComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
             if (this.indexChangeSubscription) {
                 this.indexChangeSubscription.unsubscribe();
             }
         };
-        NzStepsComponent.prototype.ngAfterContentInit = function () {
+        /**
+         * @return {?}
+         */
+        NzStepsComponent.prototype.ngAfterContentInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (this.steps) {
-                this.steps.changes.pipe(operators.startWith(null), operators.takeUntil(this.destroy$)).subscribe(function () {
+                this.steps.changes
+                    .pipe(operators.startWith(null), operators.takeUntil(this.destroy$))
+                    .subscribe((/**
+                 * @return {?}
+                 */
+                function () {
                     _this.updateChildrenSteps();
-                });
+                }));
             }
         };
-        NzStepsComponent.prototype.updateChildrenSteps = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzStepsComponent.prototype.updateChildrenSteps = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (this.steps) {
+                /** @type {?} */
                 var length_1 = this.steps.length;
-                this.steps.toArray().forEach(function (step, index) {
-                    Promise.resolve().then(function () {
+                this.steps.toArray().forEach((/**
+                 * @param {?} step
+                 * @param {?} index
+                 * @return {?}
+                 */
+                function (step, index) {
+                    Promise.resolve().then((/**
+                     * @return {?}
+                     */
+                    function () {
                         step.outStatus = _this.nzStatus;
                         step.showProcessDot = _this.showProcessDot;
                         if (_this.customProcessDotTemplate) {
@@ -547,15 +540,33 @@
                         step.currentIndex = _this.nzCurrent;
                         step.last = length_1 === index + 1;
                         step.markForCheck();
-                    });
-                });
+                    }));
+                }));
                 if (this.indexChangeSubscription) {
                     this.indexChangeSubscription.unsubscribe();
                 }
-                this.indexChangeSubscription = rxjs.merge.apply(void 0, __spread(this.steps.map(function (step) { return step.click$; }))).subscribe(function (index) { return _this.nzIndexChange.emit(index); });
+                this.indexChangeSubscription = rxjs.merge.apply(void 0, __spread(this.steps.map((/**
+                 * @param {?} step
+                 * @return {?}
+                 */
+                function (step) { return step.click$; })))).subscribe((/**
+                 * @param {?} index
+                 * @return {?}
+                 */
+                function (index) {
+                    return _this.nzIndexChange.emit(index);
+                }));
             }
         };
-        NzStepsComponent.prototype.setClassMap = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzStepsComponent.prototype.setClassMap = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _a;
             this.classMap = (_a = {},
                 _a["ant-steps-" + this.nzDirection] = true,
@@ -566,78 +577,84 @@
                 _a['ant-steps-navigation'] = this.nzType === 'navigation',
                 _a);
         };
-        /** @nocollapse */ NzStepsComponent.ɵfac = function NzStepsComponent_Factory(t) { return new (t || NzStepsComponent)(); };
-        /** @nocollapse */ NzStepsComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzStepsComponent, selectors: [["nz-steps"]], contentQueries: function NzStepsComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵcontentQuery(dirIndex, NzStepComponent, false);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.steps = _t);
-            } }, inputs: { nzCurrent: "nzCurrent", nzDirection: "nzDirection", nzLabelPlacement: "nzLabelPlacement", nzType: "nzType", nzSize: "nzSize", nzStartIndex: "nzStartIndex", nzStatus: "nzStatus", nzProgressDot: "nzProgressDot" }, outputs: { nzIndexChange: "nzIndexChange" }, exportAs: ["nzSteps"], features: [core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c0$1, decls: 2, vars: 1, consts: [[1, "ant-steps", 3, "ngClass"]], template: function NzStepsComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵelementStart(0, "div", 0);
-                core.ɵɵprojection(1);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("ngClass", ctx.classMap);
-            } }, directives: [common.NgClass], encapsulation: 2, changeDetection: 0 });
+        NzStepsComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        selector: 'nz-steps',
+                        exportAs: 'nzSteps',
+                        template: "<div class=\"ant-steps\" [ngClass]=\"classMap\">\n  <ng-content></ng-content>\n</div>"
+                    }] }
+        ];
+        NzStepsComponent.propDecorators = {
+            steps: [{ type: core.ContentChildren, args: [NzStepComponent,] }],
+            nzCurrent: [{ type: core.Input }],
+            nzDirection: [{ type: core.Input }],
+            nzLabelPlacement: [{ type: core.Input }],
+            nzType: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }],
+            nzStartIndex: [{ type: core.Input }],
+            nzStatus: [{ type: core.Input }],
+            nzProgressDot: [{ type: core.Input }],
+            nzIndexChange: [{ type: core.Output }]
+        };
         return NzStepsComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStepsComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    preserveWhitespaces: false,
-                    selector: 'nz-steps',
-                    exportAs: 'nzSteps',
-                    templateUrl: './nz-steps.component.html'
-                }]
-        }], null, { steps: [{
-                type: core.ContentChildren,
-                args: [NzStepComponent]
-            }], nzCurrent: [{
-                type: core.Input
-            }], nzDirection: [{
-                type: core.Input
-            }], nzLabelPlacement: [{
-                type: core.Input
-            }], nzType: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }], nzStartIndex: [{
-                type: core.Input
-            }], nzStatus: [{
-                type: core.Input
-            }], nzProgressDot: [{
-                type: core.Input
-            }], nzIndexChange: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzStepsComponent.prototype.steps;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzCurrent;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzDirection;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzLabelPlacement;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzType;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzSize;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzStartIndex;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzStatus;
+        /** @type {?} */
+        NzStepsComponent.prototype.nzIndexChange;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepsComponent.prototype.destroy$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStepsComponent.prototype.indexChangeSubscription;
+        /** @type {?} */
+        NzStepsComponent.prototype.showProcessDot;
+        /** @type {?} */
+        NzStepsComponent.prototype.customProcessDotTemplate;
+        /** @type {?} */
+        NzStepsComponent.prototype.classMap;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-steps.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStepsModule = /** @class */ (function () {
         function NzStepsModule() {
         }
-        /** @nocollapse */ NzStepsModule.ɵmod = core.ɵɵdefineNgModule({ type: NzStepsModule });
-        /** @nocollapse */ NzStepsModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzStepsModule_Factory(t) { return new (t || NzStepsModule)(); }, imports: [[common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule]] });
+        NzStepsModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule],
+                        exports: [NzStepsComponent, NzStepComponent],
+                        declarations: [NzStepsComponent, NzStepComponent]
+                    },] }
+        ];
         return NzStepsModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzStepsModule, { declarations: [NzStepsComponent, NzStepComponent], imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule], exports: [NzStepsComponent, NzStepComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStepsModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule],
-                    exports: [NzStepsComponent, NzStepComponent],
-                    declarations: [NzStepsComponent, NzStepComponent]
-                }]
-        }], null, null); })();
 
     exports.NzStepComponent = NzStepComponent;
     exports.NzStepsComponent = NzStepsComponent;

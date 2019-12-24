@@ -9,7 +9,6 @@ import { EventEmitter, OnChanges, OnInit, SimpleChanges } from '@angular/core';
 import { DateHelperService, NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { PanelMode } from '../../standard-types';
-import * as i0 from "@angular/core";
 export declare class CalendarHeaderComponent implements OnInit, OnChanges {
     private dateHelper;
     locale: NzCalendarI18nInterface;
@@ -46,8 +45,6 @@ export declare class CalendarHeaderComponent implements OnInit, OnChanges {
     private changeValueFromInside;
     private formatDateTime;
     private createYearMonthDaySelectors;
-    static ɵfac: i0.ɵɵFactoryDef<CalendarHeaderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CalendarHeaderComponent, "calendar-header", ["calendarHeader"], { 'locale': "locale", 'enablePrev': "enablePrev", 'enableNext': "enableNext", 'disabledMonth': "disabledMonth", 'disabledYear': "disabledYear", 'showTimePicker': "showTimePicker", 'value': "value", 'panelMode': "panelMode" }, { 'valueChange': "valueChange", 'panelModeChange': "panelModeChange", 'chooseDecade': "chooseDecade", 'chooseYear': "chooseYear", 'chooseMonth': "chooseMonth" }, never>;
 }
 export interface YearMonthDaySelector {
     className: string;

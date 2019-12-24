@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzAutosizeDirective } from 'ng-zorro-antd/input';
-import * as i0 from "@angular/core";
 export declare class NzTextEditComponent implements OnInit, OnDestroy {
     private host;
     private cdr;
@@ -33,6 +32,4 @@ export declare class NzTextEditComponent implements OnInit, OnDestroy {
     onEnter(event: KeyboardEvent): void;
     onCancel(): void;
     focusAndSetValue(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTextEditComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTextEditComponent, "nz-text-edit", ["nzTextEdit"], { 'text': "text" }, { 'startEditing': "startEditing", 'endEditing': "endEditing" }, never>;
 }

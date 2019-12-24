@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/core'), require('@ant-design/icons-angular'), require('ng-zorro-antd/core'), require('@angular/common'), require('@angular/common/http'), require('@angular/platform-browser'), require('@ant-design/icons-angular/icons'), require('rxjs')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/icon', ['exports', '@angular/cdk/platform', '@angular/core', '@ant-design/icons-angular', 'ng-zorro-antd/core', '@angular/common', '@angular/common/http', '@angular/platform-browser', '@ant-design/icons-angular/icons', 'rxjs'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].icon = {}), global.ng.cdk.platform, global.ng.core, global.iconsAngular, global['ng-zorro-antd'].core, global.ng.common, global.ng.common.http, global.ng.platformBrowser, global.icons, global.rxjs));
-}(this, (function (exports, platform, core, iconsAngular, core$1, common, http, platformBrowser, icons, rxjs) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/core'), require('@ant-design/icons-angular'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('@angular/common/http'), require('@angular/platform-browser'), require('@ant-design/icons-angular/icons')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/icon', ['exports', '@angular/cdk/platform', '@angular/core', '@ant-design/icons-angular', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', '@angular/common', '@angular/common/http', '@angular/platform-browser', '@ant-design/icons-angular/icons'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].icon = {}), global.ng.cdk.platform, global.ng.core, global.iconsAngular, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global.ng.common, global.ng.common.http, global.ng.platformBrowser, global.icons));
+}(this, (function (exports, platform, core, iconsAngular, core$1, rxjs, operators, common, http, platformBrowser, icons) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -201,9 +201,26 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-icon.service.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function NzIconfontOption() { }
+    if (false) {
+        /** @type {?} */
+        NzIconfontOption.prototype.scriptUrl;
+    }
+    /** @type {?} */
     var NZ_ICONS = new core.InjectionToken('nz_icons');
+    /** @type {?} */
     var NZ_ICON_DEFAULT_TWOTONE_COLOR = new core.InjectionToken('nz_icon_default_twotone_color');
+    /** @type {?} */
     var DEFAULT_TWOTONE_COLOR = '#1890ff';
+    /** @type {?} */
     var NZ_ICONS_USED_BY_ZORRO = [
         icons.BarsOutline,
         icons.CalendarOutline,
@@ -250,12 +267,7 @@
         __extends(NzIconService, _super);
         function NzIconService(rendererFactory, sanitizer, nzConfigService, handler, 
         // tslint:disable-next-line:no-any
-        _document, icons, 
-        /**
-         * @deprecated
-         * @inner
-         */
-        legacyDefaultTwotoneColor) {
+        _document, icons, legacyDefaultTwotoneColor) {
             var _this = _super.call(this, rendererFactory, handler, _document, sanitizer) || this;
             _this.nzConfigService = nzConfigService;
             _this.legacyDefaultTwotoneColor = legacyDefaultTwotoneColor;
@@ -270,7 +282,34 @@
             _this.configDefaultTheme();
             return _this;
         }
-        NzIconService.prototype.normalizeSvgElement = function (svg) {
+        /**
+         * @param {?} type
+         * @return {?}
+         */
+        NzIconService.prototype.warnAPI = /**
+         * @param {?} type
+         * @return {?}
+         */
+        function (type) {
+            if (type === 'old') {
+                core$1.warnDeprecation("'<i class=\"anticon\"></i>' would be deprecated in 9.0.0. Please use '<i nz-icon nzType=\"\"></i>' API. Please refer https://ng.ant.design/components/icon/en.");
+            }
+            if (type === 'cross') {
+                core$1.warnDeprecation("'cross' icon is replaced by 'close' icon. This auto correction would be removed in 9.0.0.");
+            }
+            if (type === 'vertical') {
+                core$1.warnDeprecation("'verticle' is misspelled. Please use 'vertical'. This misspell would be fixed in 9.0.0.");
+            }
+        };
+        /**
+         * @param {?} svg
+         * @return {?}
+         */
+        NzIconService.prototype.normalizeSvgElement = /**
+         * @param {?} svg
+         * @return {?}
+         */
+        function (svg) {
             if (!svg.getAttribute('viewBox')) {
                 this._renderer.setAttribute(svg, 'viewBox', '0 0 1024 1024');
             }
@@ -282,9 +321,18 @@
                 this._renderer.setAttribute(svg, 'fill', 'currentColor');
             }
         };
-        NzIconService.prototype.fetchFromIconfont = function (opt) {
+        /**
+         * @param {?} opt
+         * @return {?}
+         */
+        NzIconService.prototype.fetchFromIconfont = /**
+         * @param {?} opt
+         * @return {?}
+         */
+        function (opt) {
             var scriptUrl = opt.scriptUrl;
             if (this._document && !this.iconfontCache.has(scriptUrl)) {
+                /** @type {?} */
                 var script = this._renderer.createElement('script');
                 this._renderer.setAttribute(script, 'src', scriptUrl);
                 this._renderer.setAttribute(script, 'data-namespace', scriptUrl.replace(/^(https?|http):/g, ''));
@@ -292,24 +340,63 @@
                 this.iconfontCache.add(scriptUrl);
             }
         };
-        NzIconService.prototype.createIconfontIcon = function (type) {
+        /**
+         * @param {?} type
+         * @return {?}
+         */
+        NzIconService.prototype.createIconfontIcon = /**
+         * @param {?} type
+         * @return {?}
+         */
+        function (type) {
             return this._createSVGElementFromString("<svg><use xlink:href=\"" + type + "\"></svg>");
         };
-        NzIconService.prototype.onConfigChange = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzIconService.prototype.onConfigChange = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.nzConfigService.getConfigChangeEventForComponent('icon').subscribe(function () {
+            this.nzConfigService.getConfigChangeEventForComponent('icon').subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.configDefaultTwotoneColor();
                 _this.configDefaultTheme();
                 _this.configUpdated$.next();
-            });
+            }));
         };
-        NzIconService.prototype.configDefaultTheme = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzIconService.prototype.configDefaultTheme = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var iconConfig = this.getConfig();
             this.defaultTheme = iconConfig.nzTheme || 'outline';
         };
-        NzIconService.prototype.configDefaultTwotoneColor = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzIconService.prototype.configDefaultTwotoneColor = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var iconConfig = this.getConfig();
+            /** @type {?} */
             var defaultTwotoneColor = iconConfig.nzTwotoneColor || this.legacyDefaultTwotoneColor;
+            /** @type {?} */
             var primaryColor = DEFAULT_TWOTONE_COLOR;
             if (defaultTwotoneColor) {
                 if (defaultTwotoneColor.startsWith('#')) {
@@ -321,37 +408,106 @@
             }
             this.twoToneColor = { primaryColor: primaryColor };
         };
-        NzIconService.prototype.getConfig = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzIconService.prototype.getConfig = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             return this.nzConfigService.getConfigForComponent('icon') || {};
         };
-        /** @nocollapse */ NzIconService.ɵfac = function NzIconService_Factory(t) { return new (t || NzIconService)(core.ɵɵinject(core.RendererFactory2), core.ɵɵinject(platformBrowser.DomSanitizer), core.ɵɵinject(core$1.NzConfigService), core.ɵɵinject(http.HttpBackend, 8), core.ɵɵinject(common.DOCUMENT, 8), core.ɵɵinject(NZ_ICONS, 8), core.ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); };
-        /** @nocollapse */ NzIconService.ɵprov = core.ɵɵdefineInjectable({ token: NzIconService, factory: NzIconService.ɵfac, providedIn: 'root' });
+        NzIconService.decorators = [
+            { type: core.Injectable, args: [{
+                        providedIn: 'root'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzIconService.ctorParameters = function () { return [
+            { type: core.RendererFactory2 },
+            { type: platformBrowser.DomSanitizer },
+            { type: core$1.NzConfigService },
+            { type: http.HttpBackend, decorators: [{ type: core.Optional }] },
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [common.DOCUMENT,] }] },
+            { type: Array, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_ICONS,] }] },
+            { type: String, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_ICON_DEFAULT_TWOTONE_COLOR,] }] }
+        ]; };
+        /** @nocollapse */ NzIconService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzIconService_Factory() { return new NzIconService(core.ɵɵinject(core.RendererFactory2), core.ɵɵinject(platformBrowser.DomSanitizer), core.ɵɵinject(core$1.NzConfigService), core.ɵɵinject(http.HttpBackend, 8), core.ɵɵinject(common.DOCUMENT, 8), core.ɵɵinject(NZ_ICONS, 8), core.ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); }, token: NzIconService, providedIn: "root" });
         return NzIconService;
     }(iconsAngular.IconService));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzIconService, [{
-            type: core.Injectable,
-            args: [{
-                    providedIn: 'root'
-                }]
-        }], function () { return [{ type: core.RendererFactory2 }, { type: platformBrowser.DomSanitizer }, { type: core$1.NzConfigService }, { type: http.HttpBackend, decorators: [{
-                    type: core.Optional
-                }] }, { type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [common.DOCUMENT]
-                }] }, { type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [NZ_ICONS]
-                }] }, { type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [NZ_ICON_DEFAULT_TWOTONE_COLOR]
-                }] }]; }, null); })();
+    if (false) {
+        /** @type {?} */
+        NzIconService.prototype.configUpdated$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconService.prototype.iconfontCache;
+        /**
+         * @type {?}
+         * @protected
+         */
+        NzIconService.prototype.nzConfigService;
+        /**
+         * @deprecated
+         * \@inner
+         * @type {?}
+         * @private
+         */
+        NzIconService.prototype.legacyDefaultTwotoneColor;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-icon.directive.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var iconTypeRE = /^anticon\-\w/;
+    /** @type {?} */
+    var getIconTypeClass = (/**
+     * @param {?} className
+     * @return {?}
+     */
+    function (className) {
+        if (!className) {
+            return undefined;
+        }
+        else {
+            /** @type {?} */
+            var classArr = className.split(/\s/);
+            /** @type {?} */
+            var index = classArr.findIndex((/**
+             * @param {?} cls
+             * @return {?}
+             */
+            function (cls) { return cls !== 'anticon' && cls !== 'anticon-spin' && !!cls.match(iconTypeRE); }));
+            return index === -1 ? undefined : { name: classArr[index], index: index };
+        }
+    });
+    var ɵ0 = getIconTypeClass;
+    /** @type {?} */
+    var normalizeType = (/**
+     * @param {?} rawType
+     * @return {?}
+     */
+    function (rawType) {
+        /** @type {?} */
+        var ret = { type: rawType, crossError: false, verticalError: false };
+        ret.type = rawType ? rawType.replace('anticon-', '') : '';
+        if (ret.type.includes('verticle')) {
+            ret.type = 'up';
+            ret.verticalError = true;
+        }
+        if (ret.type.startsWith('cross')) {
+            ret.type = 'close';
+            ret.crossError = true;
+        }
+        return ret;
+    });
+    var ɵ1 = normalizeType;
     /**
      * This directive extends IconDirective to provide:
      *
@@ -359,61 +515,261 @@
      * - spinning
      * - old API compatibility
      *
-     * @break-changes
+     * \@break-changes
      *
      * - old API compatibility, icon class names would not be supported.
      * - properties that not started with `nz`.
      */
     var NzIconDirective = /** @class */ (function (_super) {
         __extends(NzIconDirective, _super);
-        function NzIconDirective(elementRef, iconService, renderer, nzUpdateHostClassService) {
+        function NzIconDirective(iconService, elementRef, renderer, platform) {
             var _this = _super.call(this, iconService, elementRef, renderer) || this;
             _this.iconService = iconService;
+            _this.elementRef = elementRef;
             _this.renderer = renderer;
-            _this.nzUpdateHostClassService = nzUpdateHostClassService;
+            _this.platform = platform;
             _this.nzRotate = 0;
+            /**
+             * @deprecated 8.0.0 avoid exposing low layer API.
+             */
             _this.spin = false;
-            _this.el = elementRef.nativeElement;
+            _this.el = _this.elementRef.nativeElement;
+            _this.destroy$ = new rxjs.Subject();
             return _this;
         }
         Object.defineProperty(NzIconDirective.prototype, "nzSpin", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.spin = value;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzIconDirective.prototype, "nzType", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.type = value;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzIconDirective.prototype, "nzTheme", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.theme = value;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzIconDirective.prototype, "nzTwotoneColor", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.twoToneColor = value;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzIconDirective.prototype, "nzIconfont", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.iconfont = value;
             },
             enumerable: true,
             configurable: true
         });
-        NzIconDirective.prototype.ngOnChanges = function (changes) {
-            var nzType = changes.nzType, nzTwotoneColor = changes.nzTwotoneColor, nzSpin = changes.nzSpin, nzTheme = changes.nzTheme, nzRotate = changes.nzRotate;
-            if (nzType || nzTwotoneColor || nzSpin || nzTheme) {
+        Object.defineProperty(NzIconDirective.prototype, "type", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return this._type;
+            },
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
+                if (value && value.startsWith('anticon')) {
+                    /** @type {?} */
+                    var rawClass = getIconTypeClass(value);
+                    /** @type {?} */
+                    var type = rawClass ? normalizeType(rawClass.name).type : '';
+                    if (type && this.type !== type) {
+                        this._type = type;
+                    }
+                }
+                else {
+                    this._type = value;
+                }
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * Replacement of `changeIcon` for more modifications.
+         * @param oldAPI
+         */
+        /**
+         * Replacement of `changeIcon` for more modifications.
+         * @private
+         * @param {?=} oldAPI
+         * @return {?}
+         */
+        NzIconDirective.prototype.changeIcon2 = /**
+         * Replacement of `changeIcon` for more modifications.
+         * @private
+         * @param {?=} oldAPI
+         * @return {?}
+         */
+        function (oldAPI) {
+            var _this = this;
+            if (oldAPI === void 0) { oldAPI = false; }
+            if (!oldAPI) {
+                this.setClassName();
+            }
+            this._changeIcon().then((/**
+             * @param {?} svg
+             * @return {?}
+             */
+            function (svg) {
+                _this.setSVGData(svg);
+                if (!oldAPI && svg) {
+                    _this.handleSpin(svg);
+                    _this.handleRotate(svg);
+                }
+            }));
+        };
+        /**
+         * @private
+         * @param {?} className
+         * @return {?}
+         */
+        NzIconDirective.prototype.classChangeHandler = /**
+         * @private
+         * @param {?} className
+         * @return {?}
+         */
+        function (className) {
+            /** @type {?} */
+            var ret = getIconTypeClass(className);
+            if (ret) {
+                var _a = normalizeType(ret.name), type = _a.type, crossError = _a.crossError, verticalError = _a.verticalError;
+                if (crossError) {
+                    this.iconService.warnAPI('cross');
+                }
+                if (verticalError) {
+                    this.iconService.warnAPI('vertical');
+                }
+                if (this.type !== type) {
+                    this._type = type;
+                    this.changeIcon2(true);
+                }
+            }
+        };
+        /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        NzIconDirective.prototype.handleSpin = /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        function (svg) {
+            if ((this.spin || this.type === 'loading') && !this.elementRef.nativeElement.classList.contains('anticon-spin')) {
+                this.renderer.addClass(svg, 'anticon-spin');
+            }
+            else {
+                this.renderer.removeClass(svg, 'anticon-spin');
+            }
+        };
+        /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        NzIconDirective.prototype.handleRotate = /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        function (svg) {
+            if (this.nzRotate) {
+                this.renderer.setAttribute(svg, 'style', "transform: rotate(" + this.nzRotate + "deg)");
+            }
+            else {
+                this.renderer.removeAttribute(svg, 'style');
+            }
+        };
+        /**
+         * @private
+         * @return {?}
+         */
+        NzIconDirective.prototype.setClassName = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            if (typeof this.type === 'string') {
+                /** @type {?} */
+                var iconClassNameArr = this.el.className.split(/\s/);
+                /** @type {?} */
+                var ret = getIconTypeClass(this.el.className);
+                if (ret) {
+                    iconClassNameArr.splice(ret.index, 1, "anticon-" + this.type);
+                    this.renderer.setAttribute(this.el, 'class', iconClassNameArr.join(' '));
+                }
+                else {
+                    this.renderer.addClass(this.el, "anticon-" + this.type);
+                }
+            }
+        };
+        /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        NzIconDirective.prototype.setSVGData = /**
+         * @private
+         * @param {?} svg
+         * @return {?}
+         */
+        function (svg) {
+            if (typeof this.type === 'string' && svg) {
+                this.renderer.setAttribute(svg, 'data-icon', this.type);
+                this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+            }
+        };
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzIconDirective.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
+            var type = changes.type, nzType = changes.nzType, nzTwotoneColor = changes.nzTwotoneColor, twoToneColor = changes.twoToneColor, spin = changes.spin, nzSpin = changes.nzSpin, theme = changes.theme, nzTheme = changes.nzTheme, nzRotate = changes.nzRotate;
+            if (type && !nzType) {
+                core$1.warnDeprecation("APIs for Icon without 'nz' prefix are deprecated and will be removed in 9.0.0! Please check icons with this type: '" + type.currentValue + "'.");
+            }
+            if (type || nzType || nzTwotoneColor || twoToneColor || spin || nzSpin || theme || nzTheme) {
                 this.changeIcon2();
             }
             else if (nzRotate) {
@@ -422,73 +778,124 @@
             else {
                 this._setSVGElement(this.iconService.createIconfontIcon("#" + this.iconfont));
             }
+            if (type && !nzType) {
+                core$1.warnDeprecation("APIs for Icon without 'nz' prefix are deprecated and will be removed in 9.0.0! Please check icons with this type: '" + this.type + "'.");
+            }
         };
-        NzIconDirective.prototype.ngOnInit = function () {
-            this.renderer.setAttribute(this.el, 'class', ("anticon " + this.el.className).trim());
+        /**
+         * @return {?}
+         */
+        NzIconDirective.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
+            var _this = this;
+            // If `this.type` is not specified and `classList` contains `anticon`, it should be an icon using old API.
+            if (!this.type && this.el.classList.contains('anticon')) {
+                this.iconService.warnAPI('old');
+                // Get `type` from `className`. If not, initial rendering would be missed.
+                this.classChangeHandler(this.el.className);
+                if (this.platform.isBrowser) {
+                    // Add `class` mutation observer.
+                    this.classNameObserver = new MutationObserver((/**
+                     * @param {?} mutations
+                     * @return {?}
+                     */
+                    function (mutations) {
+                        mutations
+                            .filter((/**
+                         * @param {?} mutation
+                         * @return {?}
+                         */
+                        function (mutation) { return mutation.attributeName === 'class'; }))
+                            .forEach((/**
+                         * @param {?} mutation
+                         * @return {?}
+                         */
+                        function (mutation) { return _this.classChangeHandler(((/** @type {?} */ (mutation.target))).className); }));
+                    }));
+                    this.classNameObserver.observe(this.el, { attributes: true });
+                }
+            }
+            // If `classList` does not contain `anticon`, add it before other class names.
+            if (!this.el.classList.contains('anticon')) {
+                this.renderer.setAttribute(this.el, 'class', ("anticon " + this.el.className).trim());
+            }
+            this.iconService.configUpdated$
+                .asObservable()
+                .pipe(operators.takeUntil(this.destroy$))
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
+                if (_this.type) {
+                    _this.changeIcon2();
+                }
+            }));
+        };
+        /**
+         * @return {?}
+         */
+        NzIconDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
+            if (this.classNameObserver) {
+                this.classNameObserver.disconnect();
+            }
+            this.destroy$.next();
+            this.destroy$.complete();
         };
         /**
          * If custom content is provided, try to normalize SVG elements.
          */
-        NzIconDirective.prototype.ngAfterContentChecked = function () {
-            if (!this.type) {
-                var children = this.el.children;
-                var length_1 = children.length;
-                if (!this.type && children.length) {
-                    while (length_1--) {
-                        var child = children[length_1];
-                        if (child.tagName.toLowerCase() === 'svg') {
-                            this.iconService.normalizeSvgElement(child);
-                        }
+        /**
+         * If custom content is provided, try to normalize SVG elements.
+         * @return {?}
+         */
+        NzIconDirective.prototype.ngAfterContentChecked = /**
+         * If custom content is provided, try to normalize SVG elements.
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
+            var children = this.el.children;
+            /** @type {?} */
+            var length = children.length;
+            if (!this.type && children.length) {
+                while (length--) {
+                    /** @type {?} */
+                    var child = children[length];
+                    if (child.tagName.toLowerCase() === 'svg') {
+                        this.iconService.normalizeSvgElement((/** @type {?} */ (child)));
                     }
                 }
             }
         };
-        /**
-         * Replacement of `changeIcon` for more modifications.
-         */
-        NzIconDirective.prototype.changeIcon2 = function () {
-            var _this = this;
-            this.setClassName();
-            this._changeIcon().then(function (svgOrRemove) {
-                if (svgOrRemove) {
-                    _this.setSVGData(svgOrRemove);
-                    _this.handleSpin(svgOrRemove);
-                    _this.handleRotate(svgOrRemove);
-                }
-            });
+        NzIconDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'i.anticon, [nz-icon]',
+                        exportAs: 'nzIcon'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzIconDirective.ctorParameters = function () { return [
+            { type: NzIconService },
+            { type: core.ElementRef },
+            { type: core.Renderer2 },
+            { type: platform.Platform }
+        ]; };
+        NzIconDirective.propDecorators = {
+            nzSpin: [{ type: core.Input }],
+            nzRotate: [{ type: core.Input }],
+            nzType: [{ type: core.Input }],
+            nzTheme: [{ type: core.Input }],
+            nzTwotoneColor: [{ type: core.Input }],
+            nzIconfont: [{ type: core.Input }],
+            spin: [{ type: core.Input }],
+            iconfont: [{ type: core.Input }],
+            type: [{ type: core.Input }]
         };
-        NzIconDirective.prototype.handleSpin = function (svg) {
-            if (this.spin || this.type === 'loading') {
-                this.renderer.addClass(svg, 'anticon-spin');
-            }
-            else {
-                this.renderer.removeClass(svg, 'anticon-spin');
-            }
-        };
-        NzIconDirective.prototype.handleRotate = function (svg) {
-            if (this.nzRotate) {
-                this.renderer.setAttribute(svg, 'style', "transform: rotate(" + this.nzRotate + "deg)");
-            }
-            else {
-                this.renderer.removeAttribute(svg, 'style');
-            }
-        };
-        NzIconDirective.prototype.setClassName = function () {
-            var _a;
-            this.nzUpdateHostClassService.updateHostClass(this.el, (_a = {},
-                _a["anticon-" + this.type] = true,
-                _a));
-        };
-        NzIconDirective.prototype.setSVGData = function (svg) {
-            this.renderer.setAttribute(svg, 'data-icon', this.type);
-            this.renderer.setAttribute(svg, 'aria-hidden', 'true');
-        };
-        /** @nocollapse */ NzIconDirective.ɵfac = function NzIconDirective_Factory(t) { return new (t || NzIconDirective)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(NzIconService), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core$1.NzUpdateHostClassService)); };
-        /** @nocollapse */ NzIconDirective.ɵdir = core.ɵɵdefineDirective({ type: NzIconDirective, selectors: [["", "nz-icon", ""]], hostBindings: function NzIconDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("anticon", true);
-            } }, inputs: { nzSpin: "nzSpin", nzRotate: "nzRotate", nzType: "nzType", nzTheme: "nzTheme", nzTwotoneColor: "nzTwotoneColor", nzIconfont: "nzIconfont" }, exportAs: ["nzIcon"], features: [core.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), core.ɵɵInheritDefinitionFeature, core.ɵɵNgOnChangesFeature()] });
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Boolean),
@@ -496,53 +903,69 @@
         ], NzIconDirective.prototype, "nzSpin", null);
         return NzIconDirective;
     }(iconsAngular.IconDirective));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzIconDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nz-icon]',
-                    exportAs: 'nzIcon',
-                    providers: [core$1.NzUpdateHostClassService],
-                    host: {
-                        '[class.anticon]': 'true'
-                    }
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: NzIconService }, { type: core.Renderer2 }, { type: core$1.NzUpdateHostClassService }]; }, { nzSpin: [{
-                type: core.Input
-            }], nzRotate: [{
-                type: core.Input
-            }], nzType: [{
-                type: core.Input
-            }], nzTheme: [{
-                type: core.Input
-            }], nzTwotoneColor: [{
-                type: core.Input
-            }], nzIconfont: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzIconDirective.prototype.nzRotate;
+        /**
+         * @deprecated 8.0.0 avoid exposing low layer API.
+         * @type {?}
+         */
+        NzIconDirective.prototype.spin;
+        /**
+         * @deprecated 8.0.0 avoid exposing low layer API.
+         * @type {?}
+         */
+        NzIconDirective.prototype.iconfont;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconDirective.prototype.classNameObserver;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconDirective.prototype.el;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconDirective.prototype.destroy$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconDirective.prototype._type;
+        /** @type {?} */
+        NzIconDirective.prototype.iconService;
+        /** @type {?} */
+        NzIconDirective.prototype.elementRef;
+        /** @type {?} */
+        NzIconDirective.prototype.renderer;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzIconDirective.prototype.platform;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-icon.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzIconModule = /** @class */ (function () {
         function NzIconModule() {
         }
-        /** @nocollapse */ NzIconModule.ɵmod = core.ɵɵdefineNgModule({ type: NzIconModule });
-        /** @nocollapse */ NzIconModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzIconModule_Factory(t) { return new (t || NzIconModule)(); }, imports: [[platform.PlatformModule]] });
+        NzIconModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [NzIconDirective],
+                        declarations: [NzIconDirective],
+                        imports: [platform.PlatformModule]
+                    },] }
+        ];
         return NzIconModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzIconModule, { declarations: [NzIconDirective], imports: [platform.PlatformModule], exports: [NzIconDirective] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzIconModule, [{
-            type: core.NgModule,
-            args: [{
-                    exports: [NzIconDirective],
-                    declarations: [NzIconDirective],
-                    imports: [platform.PlatformModule]
-                }]
-        }], null, null); })();
 
     exports.DEFAULT_TWOTONE_COLOR = DEFAULT_TWOTONE_COLOR;
     exports.NZ_ICONS = NZ_ICONS;

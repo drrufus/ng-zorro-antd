@@ -1,19 +1,19 @@
 import { __decorate, __metadata } from 'tslib';
 import { ContentObserver, ObserversModule } from '@angular/cdk/observers';
-import { ɵɵelement, ɵɵdirectiveInject, ElementRef, ChangeDetectorRef, Renderer2, NgZone, ɵɵdefineComponent, ɵɵcontentQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵstaticViewQuery, ɵɵallocHostVars, ɵɵattribute, ɵɵProvidersFeature, ɵɵNgOnChangesFeature, ɵɵprojectionDef, ɵɵtemplate, ɵɵelementStart, ɵɵprojection, ɵɵelementEnd, ɵɵproperty, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Optional, Inject, ViewChild, ContentChildren, HostBinding, Input, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, ChangeDetectorRef, Renderer2, NgZone, Optional, Inject, ViewChild, ContentChildren, HostBinding, Input, NgModule } from '@angular/core';
 import { ANIMATION_MODULE_TYPE } from '@angular/platform-browser/animations';
 import { NzWaveDirective, isEmpty, findFirstNotEmptyNode, findLastNotEmptyNode, NzUpdateHostClassService, NzConfigService, NZ_WAVE_GLOBAL_CONFIG, InputBoolean, WithConfig, NzWaveModule } from 'ng-zorro-antd/core';
 import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
 import { Subject } from 'rxjs';
 import { takeUntil, startWith } from 'rxjs/operators';
-import { NgIf, CommonModule } from '@angular/common';
+import { CommonModule } from '@angular/common';
 
-var _c0 = ["contentElement"];
-var _c1 = ["nz-button", ""];
-function NzButtonComponent_i_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 2);
-} }
-var _c2 = ["*"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-button.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'button';
 var NzButtonComponent = /** @class */ (function () {
     function NzButtonComponent(elementRef, cdr, renderer, contentObserver, nzUpdateHostClassService, ngZone, nzConfigService, waveConfig, animationType) {
@@ -42,15 +42,28 @@ var NzButtonComponent = /** @class */ (function () {
         this.nzConfigService
             .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
             .pipe(takeUntil(this.destroy$))
-            .subscribe(function () {
+            .subscribe((/**
+         * @return {?}
+         */
+        function () {
             _this.setClassMap();
             _this.cdr.markForCheck();
-        });
+        }));
     }
     /** temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289 */
-    NzButtonComponent.prototype.setClassMap = function () {
+    /**
+     * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+     * @return {?}
+     */
+    NzButtonComponent.prototype.setClassMap = /**
+     * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+     * @return {?}
+     */
+    function () {
         var _a;
+        /** @type {?} */
         var prefixCls = 'ant-btn';
+        /** @type {?} */
         var sizeMap = { large: 'lg', small: 'sm' };
         this.nzUpdateHostClassService.updateHostClass(this.el, (_a = {},
             _a[prefixCls + "-" + this.nzType] = this.nzType,
@@ -63,12 +76,27 @@ var NzButtonComponent = /** @class */ (function () {
             _a["ant-input-search-button"] = this.nzSearch,
             _a));
     };
-    NzButtonComponent.prototype.updateIconDisplay = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzButtonComponent.prototype.updateIconDisplay = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         if (this.iconElement) {
             this.renderer.setStyle(this.iconElement, 'display', value ? 'none' : 'inline-block');
         }
     };
-    NzButtonComponent.prototype.checkContent = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonComponent.prototype.checkContent = /**
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var hasIcon = this.listOfIconElement && this.listOfIconElement.length;
         if (hasIcon) {
             this.moveIcon();
@@ -85,43 +113,83 @@ var NzButtonComponent = /** @class */ (function () {
         }
         this.setClassMap();
         this.updateIconDisplay(this.nzLoading);
-        if (!this.cdr.destroyed) {
+        if (!((/** @type {?} */ (this.cdr))).destroyed) {
             this.cdr.detectChanges();
         }
     };
-    NzButtonComponent.prototype.moveIcon = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonComponent.prototype.moveIcon = /**
+     * @return {?}
+     */
+    function () {
         if (this.listOfIconElement && this.listOfIconElement.length) {
+            /** @type {?} */
             var firstChildElement = findFirstNotEmptyNode(this.contentElement.nativeElement);
+            /** @type {?} */
             var lastChildElement = findLastNotEmptyNode(this.contentElement.nativeElement);
             if (firstChildElement && firstChildElement === this.listOfIconElement.first.nativeElement) {
                 this.renderer.insertBefore(this.el, firstChildElement, this.contentElement.nativeElement);
-                this.iconElement = firstChildElement;
+                this.iconElement = (/** @type {?} */ (firstChildElement));
             }
             else if (lastChildElement && lastChildElement === this.listOfIconElement.last.nativeElement) {
                 this.renderer.appendChild(this.el, lastChildElement);
             }
         }
     };
-    NzButtonComponent.prototype.ngAfterContentInit = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonComponent.prototype.ngAfterContentInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         this.contentObserver
             .observe(this.contentElement)
             .pipe(startWith(true), takeUntil(this.destroy$))
-            .subscribe(function () {
+            .subscribe((/**
+         * @return {?}
+         */
+        function () {
             // https://github.com/NG-ZORRO/ng-zorro-antd/issues/3079
-            Promise.resolve().then(function () { return _this.checkContent(); });
-        });
+            Promise.resolve().then((/**
+             * @return {?}
+             */
+            function () { return _this.checkContent(); }));
+        }));
     };
-    NzButtonComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.setClassMap();
         this.nzWave.ngOnInit();
     };
-    NzButtonComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.destroy$.next();
         this.destroy$.complete();
         this.nzWave.ngOnDestroy();
     };
-    NzButtonComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzButtonComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         if (changes.nzBlock ||
             changes.nzGhost ||
             changes.nzSearch ||
@@ -141,30 +209,41 @@ var NzButtonComponent = /** @class */ (function () {
             this.nzWave.enable();
         }
     };
-    /** @nocollapse */ NzButtonComponent.ɵfac = function NzButtonComponent_Factory(t) { return new (t || NzButtonComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ContentObserver), ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NZ_WAVE_GLOBAL_CONFIG, 8), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
-    /** @nocollapse */ NzButtonComponent.ɵcmp = ɵɵdefineComponent({ type: NzButtonComponent, selectors: [["", "nz-button", ""]], contentQueries: function NzButtonComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-            ɵɵcontentQuery(dirIndex, NzIconDirective, false, ElementRef);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.listOfIconElement = _t);
-        } }, viewQuery: function NzButtonComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵstaticViewQuery(_c0, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.contentElement = _t.first);
-        } }, hostBindings: function NzButtonComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            ɵɵallocHostVars(1);
-        } if (rf & 2) {
-            ɵɵattribute("nz-wave", ctx.nzWave);
-        } }, inputs: { nzBlock: "nzBlock", nzGhost: "nzGhost", nzSearch: "nzSearch", nzLoading: "nzLoading", nzType: "nzType", nzShape: "nzShape", nzSize: "nzSize" }, exportAs: ["nzButton"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵNgOnChangesFeature()], attrs: _c1, ngContentSelectors: _c2, decls: 4, vars: 1, consts: [["nz-icon", "", "nzType", "loading", 4, "ngIf"], ["contentElement", ""], ["nz-icon", "", "nzType", "loading"]], template: function NzButtonComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵtemplate(0, NzButtonComponent_i_0_Template, 1, 0, "i", 0);
-            ɵɵelementStart(1, "span", null, 1);
-            ɵɵprojection(3);
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵproperty("ngIf", ctx.nzLoading);
-        } }, directives: [NgIf, NzIconDirective], encapsulation: 2, changeDetection: 0 });
+    NzButtonComponent.decorators = [
+        { type: Component, args: [{
+                    selector: '[nz-button]',
+                    exportAs: 'nzButton',
+                    providers: [NzUpdateHostClassService],
+                    preserveWhitespaces: false,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    template: "<i nz-icon nzType=\"loading\" *ngIf=\"nzLoading\"></i>\n<span #contentElement><ng-content></ng-content></span>"
+                }] }
+    ];
+    /** @nocollapse */
+    NzButtonComponent.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: ChangeDetectorRef },
+        { type: Renderer2 },
+        { type: ContentObserver },
+        { type: NzUpdateHostClassService },
+        { type: NgZone },
+        { type: NzConfigService },
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_WAVE_GLOBAL_CONFIG,] }] },
+        { type: String, decorators: [{ type: Optional }, { type: Inject, args: [ANIMATION_MODULE_TYPE,] }] }
+    ]; };
+    NzButtonComponent.propDecorators = {
+        contentElement: [{ type: ViewChild, args: ['contentElement', { static: true },] }],
+        listOfIconElement: [{ type: ContentChildren, args: [NzIconDirective, { read: ElementRef },] }],
+        nzWave: [{ type: HostBinding, args: ['attr.nz-wave',] }],
+        nzBlock: [{ type: Input }],
+        nzGhost: [{ type: Input }],
+        nzSearch: [{ type: Input }],
+        nzLoading: [{ type: Input }],
+        nzType: [{ type: Input }],
+        nzShape: [{ type: Input }],
+        nzSize: [{ type: Input }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Boolean)
@@ -187,60 +266,95 @@ var NzButtonComponent = /** @class */ (function () {
     ], NzButtonComponent.prototype, "nzSize", void 0);
     return NzButtonComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzButtonComponent, [{
-        type: Component,
-        args: [{
-                selector: '[nz-button]',
-                exportAs: 'nzButton',
-                providers: [NzUpdateHostClassService],
-                preserveWhitespaces: false,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                templateUrl: './nz-button.component.html'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: ChangeDetectorRef }, { type: Renderer2 }, { type: ContentObserver }, { type: NzUpdateHostClassService }, { type: NgZone }, { type: NzConfigService }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_WAVE_GLOBAL_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [ANIMATION_MODULE_TYPE]
-            }] }]; }, { contentElement: [{
-            type: ViewChild,
-            args: ['contentElement', { static: true }]
-        }], listOfIconElement: [{
-            type: ContentChildren,
-            args: [NzIconDirective, { read: ElementRef }]
-        }], nzWave: [{
-            type: HostBinding,
-            args: ['attr.nz-wave']
-        }], nzBlock: [{
-            type: Input
-        }], nzGhost: [{
-            type: Input
-        }], nzSearch: [{
-            type: Input
-        }], nzLoading: [{
-            type: Input
-        }], nzType: [{
-            type: Input
-        }], nzShape: [{
-            type: Input
-        }], nzSize: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzButtonComponent.prototype.contentElement;
+    /** @type {?} */
+    NzButtonComponent.prototype.listOfIconElement;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzWave;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzBlock;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzGhost;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzSearch;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzLoading;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzType;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzShape;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzSize;
+    /** @type {?} */
+    NzButtonComponent.prototype.el;
+    /** @type {?} */
+    NzButtonComponent.prototype.isInDropdown;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.iconElement;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.iconOnly;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.destroy$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.contentObserver;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.nzUpdateHostClassService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.ngZone;
+    /** @type {?} */
+    NzButtonComponent.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.waveConfig;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonComponent.prototype.animationType;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-button-group.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var _c0$1 = ["*"];
 var NzButtonGroupComponent = /** @class */ (function () {
     function NzButtonGroupComponent(nzUpdateHostClassService, elementRef) {
         this.nzUpdateHostClassService = nzUpdateHostClassService;
@@ -248,19 +362,34 @@ var NzButtonGroupComponent = /** @class */ (function () {
         this.isInDropdown = false;
     }
     Object.defineProperty(NzButtonGroupComponent.prototype, "nzSize", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._size;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._size = value;
             this.setClassMap();
         },
         enumerable: true,
         configurable: true
     });
-    NzButtonGroupComponent.prototype.setClassMap = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonGroupComponent.prototype.setClassMap = /**
+     * @return {?}
+     */
+    function () {
         var _a;
+        /** @type {?} */
         var prefixCls = 'ant-btn-group';
+        /** @type {?} */
         var classMap = (_a = {},
             _a[prefixCls] = true,
             _a["ant-dropdown-button"] = this.isInDropdown,
@@ -269,65 +398,84 @@ var NzButtonGroupComponent = /** @class */ (function () {
             _a);
         this.nzUpdateHostClassService.updateHostClass(this.elementRef.nativeElement, classMap);
     };
-    NzButtonGroupComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzButtonGroupComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.setClassMap();
     };
-    /** @nocollapse */ NzButtonGroupComponent.ɵfac = function NzButtonGroupComponent_Factory(t) { return new (t || NzButtonGroupComponent)(ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(ElementRef)); };
-    /** @nocollapse */ NzButtonGroupComponent.ɵcmp = ɵɵdefineComponent({ type: NzButtonGroupComponent, selectors: [["nz-button-group"]], inputs: { nzSize: "nzSize" }, exportAs: ["nzButtonGroup"], features: [ɵɵProvidersFeature([NzUpdateHostClassService])], ngContentSelectors: _c0$1, decls: 1, vars: 0, template: function NzButtonGroupComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵprojection(0);
-        } }, encapsulation: 2, changeDetection: 0 });
+    NzButtonGroupComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-button-group',
+                    exportAs: 'nzButtonGroup',
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    preserveWhitespaces: false,
+                    providers: [NzUpdateHostClassService],
+                    template: "<ng-content></ng-content>\n"
+                }] }
+    ];
+    /** @nocollapse */
+    NzButtonGroupComponent.ctorParameters = function () { return [
+        { type: NzUpdateHostClassService },
+        { type: ElementRef }
+    ]; };
+    NzButtonGroupComponent.propDecorators = {
+        nzSize: [{ type: Input }]
+    };
     return NzButtonGroupComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzButtonGroupComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-button-group',
-                exportAs: 'nzButtonGroup',
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                preserveWhitespaces: false,
-                providers: [NzUpdateHostClassService],
-                templateUrl: './nz-button-group.component.html'
-            }]
-    }], function () { return [{ type: NzUpdateHostClassService }, { type: ElementRef }]; }, { nzSize: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonGroupComponent.prototype._size;
+    /** @type {?} */
+    NzButtonGroupComponent.prototype.isInDropdown;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonGroupComponent.prototype.nzUpdateHostClassService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzButtonGroupComponent.prototype.elementRef;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-button.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzButtonModule = /** @class */ (function () {
     function NzButtonModule() {
     }
-    /** @nocollapse */ NzButtonModule.ɵmod = ɵɵdefineNgModule({ type: NzButtonModule });
-    /** @nocollapse */ NzButtonModule.ɵinj = ɵɵdefineInjector({ factory: function NzButtonModule_Factory(t) { return new (t || NzButtonModule)(); }, imports: [[CommonModule, ObserversModule, NzWaveModule, NzIconModule]] });
+    NzButtonModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzButtonComponent, NzButtonGroupComponent],
+                    exports: [NzButtonComponent, NzButtonGroupComponent],
+                    imports: [CommonModule, ObserversModule, NzWaveModule, NzIconModule]
+                },] }
+    ];
     return NzButtonModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzButtonModule, { declarations: [NzButtonComponent, NzButtonGroupComponent], imports: [CommonModule, ObserversModule, NzWaveModule, NzIconModule], exports: [NzButtonComponent, NzButtonGroupComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzButtonModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzButtonComponent, NzButtonGroupComponent],
-                exports: [NzButtonComponent, NzButtonGroupComponent],
-                imports: [CommonModule, ObserversModule, NzWaveModule, NzIconModule]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-button.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzButtonComponent, NzButtonGroupComponent, NzButtonModule };

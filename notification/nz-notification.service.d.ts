@@ -12,7 +12,6 @@ import { NzMessageBaseService } from 'ng-zorro-antd/message';
 import { NzNotificationConfigLegacy } from './nz-notification-config';
 import { NzNotificationContainerComponent } from './nz-notification-container.component';
 import { NzNotificationData, NzNotificationDataFilled, NzNotificationDataOptions } from './nz-notification.definitions';
-import * as i0 from "@angular/core";
 export declare class NzNotificationService extends NzMessageBaseService<NzNotificationContainerComponent, NzNotificationData, NzNotificationConfigLegacy> {
     constructor(nzSingletonService: NzSingletonService, overlay: Overlay, injector: Injector, cfr: ComponentFactoryResolver, appRef: ApplicationRef);
     success(title: string, content: string, options?: NzNotificationDataOptions): NzNotificationDataFilled;
@@ -22,6 +21,4 @@ export declare class NzNotificationService extends NzMessageBaseService<NzNotifi
     blank(title: string, content: string, options?: NzNotificationDataOptions): NzNotificationDataFilled;
     create(type: 'success' | 'info' | 'warning' | 'error' | 'blank' | string, title: string, content: string, options?: NzNotificationDataOptions): NzNotificationDataFilled;
     template(template: TemplateRef<{}>, options?: NzNotificationDataOptions): NzNotificationDataFilled;
-    static ɵfac: i0.ɵɵFactoryDef<NzNotificationService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzNotificationService>;
 }

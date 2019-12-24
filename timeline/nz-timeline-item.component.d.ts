@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, ElementRef, OnChanges, OnInit, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzTimelineMode } from './nz-timeline.component';
-import * as i0 from "@angular/core";
 export declare type NzTimelineItemColor = 'red' | 'blue' | 'green' | 'gray' | string;
 export declare class NzTimelineItemComponent implements OnInit, OnChanges {
     private renderer;
@@ -22,6 +21,4 @@ export declare class NzTimelineItemComponent implements OnInit, OnChanges {
     ngOnChanges(changes: SimpleChanges): void;
     detectChanges(): void;
     private tryUpdateCustomColor;
-    static ɵfac: i0.ɵɵFactoryDef<NzTimelineItemComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTimelineItemComponent, "nz-timeline-item, [nz-timeline-item]", ["nzTimelineItem"], { 'nzColor': "nzColor", 'nzDot': "nzDot" }, {}, never>;
 }

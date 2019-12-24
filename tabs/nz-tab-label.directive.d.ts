@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzTabLabelDirective {
     elementRef: ElementRef;
     disabled: boolean;
@@ -15,6 +14,4 @@ export declare class NzTabLabelDirective {
     getOffsetWidth(): number;
     getOffsetTop(): number;
     getOffsetHeight(): number;
-    static ɵfac: i0.ɵɵFactoryDef<NzTabLabelDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzTabLabelDirective, "[nz-tab-label]", ["nzTabLabel"], { 'disabled': "disabled" }, {}, never>;
 }

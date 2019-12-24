@@ -7,12 +7,9 @@
  */
 import { QueryList, TemplateRef } from '@angular/core';
 import { NzOptionComponent } from './nz-option.component';
-import * as i0 from "@angular/core";
 export declare class NzOptionGroupComponent {
     isLabelString: boolean;
     label: string | TemplateRef<void>;
     listOfNzOptionComponent: QueryList<NzOptionComponent>;
     nzLabel: string | TemplateRef<void>;
-    static ɵfac: i0.ɵɵFactoryDef<NzOptionGroupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzOptionGroupComponent, "nz-option-group", ["nzOptionGroup"], { 'nzLabel': "nzLabel" }, {}, ["listOfNzOptionComponent"]>;
 }

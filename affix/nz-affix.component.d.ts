@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnChanges, OnDestroy, SimpleChanges } from '@angular/core';
 import { NzConfigService, NzScrollService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 interface SimpleRect {
     top: number;
     left: number;
@@ -46,7 +45,5 @@ export declare class NzAffixComponent implements AfterViewInit, OnChanges, OnDes
     private setPlaceholderStyle;
     private syncPlaceholderStyle;
     updatePosition(e: Event): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzAffixComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAffixComponent, "nz-affix", ["nzAffix"], { 'nzTarget': "nzTarget", 'nzOffsetTop': "nzOffsetTop", 'nzOffsetBottom': "nzOffsetBottom" }, { 'nzChange': "nzChange" }, never>;
 }
 export {};

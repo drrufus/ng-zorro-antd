@@ -6,12 +6,9 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2, TemplateRef } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzCardMetaComponent {
     nzTitle: string | TemplateRef<void>;
     nzDescription: string | TemplateRef<void>;
     nzAvatar: TemplateRef<void>;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<NzCardMetaComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCardMetaComponent, "nz-card-meta", ["nzCardMeta"], { 'nzTitle': "nzTitle", 'nzDescription': "nzDescription", 'nzAvatar': "nzAvatar" }, {}, never>;
 }

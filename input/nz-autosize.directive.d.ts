@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, DoCheck, ElementRef, NgZone, OnDestroy } from '@angular/core';
 import { NzDomEventService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export interface AutoSizeType {
     minRows?: number;
     maxRows?: number;
@@ -38,6 +37,4 @@ export declare class NzAutosizeDirective implements AfterViewInit, OnDestroy, Do
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     ngDoCheck(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzAutosizeDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzAutosizeDirective, "textarea[nzAutosize]", ["nzAutosize"], { 'nzAutosize': "nzAutosize" }, {}, never>;
 }

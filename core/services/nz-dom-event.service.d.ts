@@ -7,7 +7,6 @@
  */
 import { NgZone, RendererFactory2 } from '@angular/core';
 import { Observable } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare class NzDomEventService {
     private ngZone;
     private rendererFactory2;
@@ -19,6 +18,4 @@ export declare class NzDomEventService {
     unregisterResizeListener(): void;
     private tryToStartListener;
     private tryToStopListener;
-    static ɵfac: i0.ɵɵFactoryDef<NzDomEventService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzDomEventService>;
 }

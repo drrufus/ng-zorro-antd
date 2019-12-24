@@ -7,11 +7,8 @@
  */
 import { PipeTransform } from '@angular/core';
 import { NzI18nService } from './nz-i18n.service';
-import * as i0 from "@angular/core";
 export declare class NzI18nPipe implements PipeTransform {
     private _locale;
     constructor(_locale: NzI18nService);
     transform(path: string, keyValue?: object): string;
-    static ɵfac: i0.ɵɵFactoryDef<NzI18nPipe>;
-    static ɵpipe: i0.ɵɵPipeDefWithMeta<NzI18nPipe, "nzI18n">;
 }

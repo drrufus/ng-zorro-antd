@@ -9,7 +9,6 @@ import { AfterViewInit, ElementRef, OnChanges, OnDestroy, OnInit, Renderer2 } fr
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
 import { NzRowDirective } from './nz-row.directive';
-import * as i0 from "@angular/core";
 export interface EmbeddedProperty {
     span?: number;
     pull?: number;
@@ -44,6 +43,4 @@ export declare class NzColDirective implements OnInit, OnChanges, AfterViewInit,
     ngAfterViewInit(): void;
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzColDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzColDirective, "[nz-col],nz-col", ["nzCol"], { 'nzSpan': "nzSpan", 'nzOrder': "nzOrder", 'nzOffset': "nzOffset", 'nzPush': "nzPush", 'nzPull': "nzPull", 'nzXs': "nzXs", 'nzSm': "nzSm", 'nzMd': "nzMd", 'nzLg': "nzLg", 'nzXl': "nzXl", 'nzXXl': "nzXXl" }, {}, never>;
 }

@@ -9,7 +9,6 @@ import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit, Renderer2, TemplateRe
 import { Subject } from 'rxjs';
 import { NzOptionComponent } from './nz-option.component';
 import { NzSelectService } from './nz-select.service';
-import * as i0 from "@angular/core";
 export declare class NzOptionLiComponent implements OnInit, OnDestroy {
     private elementRef;
     nzSelectService: NzSelectService;
@@ -24,6 +23,4 @@ export declare class NzOptionLiComponent implements OnInit, OnDestroy {
     constructor(elementRef: ElementRef, nzSelectService: NzSelectService, cdr: ChangeDetectorRef, renderer: Renderer2);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzOptionLiComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzOptionLiComponent, "[nz-option-li]", ["nzOptionLi"], { 'nzOption': "nzOption", 'nzMenuItemSelectedIcon': "nzMenuItemSelectedIcon" }, {}, never>;
 }

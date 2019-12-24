@@ -1,268 +1,86 @@
 import { __decorate, __metadata } from 'tslib';
-import { ɵɵdirectiveInject, ElementRef, Renderer2, ɵɵdefineDirective, ɵɵallocHostVars, ɵɵclassProp, ɵsetClassMetadata, Directive, Input, ɵɵprojection, ɵɵdefineComponent, ɵɵstaticViewQuery, TemplateRef, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵprojectionDef, ɵɵtemplate, Component, ViewEncapsulation, ChangeDetectionStrategy, ViewChild, ɵɵelementStart, ɵɵelement, ɵɵelementEnd, ɵɵelementContainerStart, ɵɵtext, ɵɵelementContainerEnd, ɵɵnextContext, ɵɵadvance, ɵɵtextInterpolate, ɵɵproperty, ɵɵstyleProp, ɵɵcontentQuery, ContentChild, ContentChildren, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { InputBoolean, NzConfigService, NzStringTemplateOutletDirective, WithConfig, NzAddOnModule } from 'ng-zorro-antd/core';
-import { NgIf, NgStyle, NgTemplateOutlet, NgForOf, CommonModule } from '@angular/common';
+import { Directive, ElementRef, Renderer2, Input, Component, ViewEncapsulation, ChangeDetectionStrategy, ViewChild, TemplateRef, ContentChild, ContentChildren, NgModule } from '@angular/core';
+import { InputBoolean, NzConfigService, WithConfig, NzAddOnModule } from 'ng-zorro-antd/core';
+import { CommonModule } from '@angular/common';
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-card-grid.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzCardGridDirective {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.nzHoverable = true;
         renderer.addClass(elementRef.nativeElement, 'ant-card-grid');
     }
 }
-/** @nocollapse */ NzCardGridDirective.ɵfac = function NzCardGridDirective_Factory(t) { return new (t || NzCardGridDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzCardGridDirective.ɵdir = ɵɵdefineDirective({ type: NzCardGridDirective, selectors: [["", "nz-card-grid", ""]], hostBindings: function NzCardGridDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵallocHostVars(1);
-    } if (rf & 2) {
-        ɵɵclassProp("ant-card-hoverable", ctx.nzHoverable);
-    } }, inputs: { nzHoverable: "nzHoverable" }, exportAs: ["nzCardGrid"] });
-__decorate([
-    InputBoolean(),
-    __metadata("design:type", Boolean)
-], NzCardGridDirective.prototype, "nzHoverable", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardGridDirective, [{
-        type: Directive,
-        args: [{
+NzCardGridDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nz-card-grid]',
                 exportAs: 'nzCardGrid',
                 host: {
                     '[class.ant-card-hoverable]': 'nzHoverable'
                 }
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, { nzHoverable: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzCardGridDirective.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+NzCardGridDirective.propDecorators = {
+    nzHoverable: [{ type: Input }]
+};
+__decorate([
+    InputBoolean(),
+    __metadata("design:type", Boolean)
+], NzCardGridDirective.prototype, "nzHoverable", void 0);
+if (false) {
+    /** @type {?} */
+    NzCardGridDirective.prototype.nzHoverable;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-card-tab.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzCardTabComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵprojection(0);
-} }
-const _c0 = ["*"];
 class NzCardTabComponent {
 }
-/** @nocollapse */ NzCardTabComponent.ɵfac = function NzCardTabComponent_Factory(t) { return new (t || NzCardTabComponent)(); };
-/** @nocollapse */ NzCardTabComponent.ɵcmp = ɵɵdefineComponent({ type: NzCardTabComponent, selectors: [["nz-card-tab"]], viewQuery: function NzCardTabComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵstaticViewQuery(TemplateRef, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.template = _t.first);
-    } }, exportAs: ["nzCardTab"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzCardTabComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, NzCardTabComponent_ng_template_0_Template, 1, 0, "ng-template");
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardTabComponent, [{
-        type: Component,
-        args: [{
+NzCardTabComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-card-tab',
                 exportAs: 'nzCardTab',
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                templateUrl: './nz-card-tab.component.html'
-            }]
-    }], null, { template: [{
-            type: ViewChild,
-            args: [TemplateRef, { static: true }]
-        }] }); })();
+                template: "<ng-template>\n  <ng-content></ng-content>\n</ng-template>"
+            }] }
+];
+NzCardTabComponent.propDecorators = {
+    template: [{ type: ViewChild, args: [TemplateRef, { static: true },] }]
+};
+if (false) {
+    /** @type {?} */
+    NzCardTabComponent.prototype.template;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-card.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-class NzCardLoadingComponent {
-    constructor(elementRef, renderer) {
-        renderer.addClass(elementRef.nativeElement, 'ant-card-loading-content');
-    }
-}
-/** @nocollapse */ NzCardLoadingComponent.ɵfac = function NzCardLoadingComponent_Factory(t) { return new (t || NzCardLoadingComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzCardLoadingComponent.ɵcmp = ɵɵdefineComponent({ type: NzCardLoadingComponent, selectors: [["nz-card-loading"]], exportAs: ["nzCardLoading"], decls: 33, vars: 0, consts: [[1, "ant-card-loading-content"], [1, "ant-row", 2, "margin-left", "-4px", "margin-right", "-4px"], [1, "ant-col-22", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-card-loading-block"], [1, "ant-col-8", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-15", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-6", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-18", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-13", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-9", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-4", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-3", 2, "padding-left", "4px", "padding-right", "4px"], [1, "ant-col-16", 2, "padding-left", "4px", "padding-right", "4px"]], template: function NzCardLoadingComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵelementStart(1, "div", 1);
-        ɵɵelementStart(2, "div", 2);
-        ɵɵelement(3, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementStart(4, "div", 1);
-        ɵɵelementStart(5, "div", 4);
-        ɵɵelement(6, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(7, "div", 5);
-        ɵɵelement(8, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementStart(9, "div", 1);
-        ɵɵelementStart(10, "div", 6);
-        ɵɵelement(11, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(12, "div", 7);
-        ɵɵelement(13, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementStart(14, "div", 1);
-        ɵɵelementStart(15, "div", 8);
-        ɵɵelement(16, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(17, "div", 9);
-        ɵɵelement(18, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementStart(19, "div", 1);
-        ɵɵelementStart(20, "div", 10);
-        ɵɵelement(21, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(22, "div", 11);
-        ɵɵelement(23, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(24, "div", 12);
-        ɵɵelement(25, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementStart(26, "div", 1);
-        ɵɵelementStart(27, "div", 4);
-        ɵɵelement(28, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(29, "div", 6);
-        ɵɵelement(30, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementStart(31, "div", 4);
-        ɵɵelement(32, "div", 3);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-    } }, styles: ["\n      nz-card-loading {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardLoadingComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-card-loading',
-                exportAs: 'nzCardLoading',
-                templateUrl: './nz-card-loading.component.html',
-                preserveWhitespaces: false,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                styles: [
-                    `
-      nz-card-loading {
-        display: block;
-      }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
-
-function NzCardComponent_div_0_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r75 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r75.nzTitle);
-} }
-function NzCardComponent_div_0_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 9);
-    ɵɵtemplate(1, NzCardComponent_div_0_div_2_ng_container_1_Template, 2, 1, "ng-container", 10);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r72 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r72.nzTitle);
-} }
-function NzCardComponent_div_0_div_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r76 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r76.nzExtra);
-} }
-function NzCardComponent_div_0_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 11);
-    ɵɵtemplate(1, NzCardComponent_div_0_div_3_ng_container_1_Template, 2, 1, "ng-container", 10);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r73 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r73.nzExtra);
-} }
-function NzCardComponent_div_0_ng_container_4_ng_template_1_Template(rf, ctx) { }
-function NzCardComponent_div_0_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzCardComponent_div_0_ng_container_4_ng_template_1_Template, 0, 0, "ng-template", 12);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r74 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r74.tab.template);
-} }
-function NzCardComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 5);
-    ɵɵelementStart(1, "div", 6);
-    ɵɵtemplate(2, NzCardComponent_div_0_div_2_Template, 2, 1, "div", 7);
-    ɵɵtemplate(3, NzCardComponent_div_0_div_3_Template, 2, 1, "div", 8);
-    ɵɵelementEnd();
-    ɵɵtemplate(4, NzCardComponent_div_0_ng_container_4_Template, 2, 1, "ng-container", 3);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r67 = ɵɵnextContext();
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r67.nzTitle);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r67.nzExtra);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r67.tab);
-} }
-function NzCardComponent_div_1_ng_template_1_Template(rf, ctx) { }
-function NzCardComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 13);
-    ɵɵtemplate(1, NzCardComponent_div_1_ng_template_1_Template, 0, 0, "ng-template", 12);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r68 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r68.nzCover);
-} }
-function NzCardComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵprojection(1);
-    ɵɵelementContainerEnd();
-} }
-function NzCardComponent_nz_card_loading_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-card-loading");
-} }
-function NzCardComponent_ul_5_li_1_ng_template_2_Template(rf, ctx) { }
-function NzCardComponent_ul_5_li_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "li");
-    ɵɵelementStart(1, "span");
-    ɵɵtemplate(2, NzCardComponent_ul_5_li_1_ng_template_2_Template, 0, 0, "ng-template", 12);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const action_r80 = ctx.$implicit;
-    const ctx_r79 = ɵɵnextContext(2);
-    ɵɵstyleProp("width", 100 / ctx_r79.nzActions.length, "%");
-    ɵɵadvance(2);
-    ɵɵproperty("ngTemplateOutlet", action_r80);
-} }
-function NzCardComponent_ul_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "ul", 14);
-    ɵɵtemplate(1, NzCardComponent_ul_5_li_1_Template, 3, 2, "li", 15);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r71 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r71.nzActions);
-} }
-const _c0$1 = ["*"];
+/** @type {?} */
 const NZ_CONFIG_COMPONENT_NAME = 'card';
 class NzCardComponent {
+    /**
+     * @param {?} nzConfigService
+     * @param {?} renderer
+     * @param {?} elementRef
+     */
     constructor(nzConfigService, renderer, elementRef) {
         this.nzConfigService = nzConfigService;
         this.nzLoading = false;
@@ -270,40 +88,50 @@ class NzCardComponent {
         renderer.addClass(elementRef.nativeElement, 'ant-card');
     }
 }
-/** @nocollapse */ NzCardComponent.ɵfac = function NzCardComponent_Factory(t) { return new (t || NzCardComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef)); };
-/** @nocollapse */ NzCardComponent.ɵcmp = ɵɵdefineComponent({ type: NzCardComponent, selectors: [["nz-card"]], contentQueries: function NzCardComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵɵcontentQuery(dirIndex, NzCardTabComponent, true);
-        ɵɵcontentQuery(dirIndex, NzCardGridDirective, false);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tab = _t.first);
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.grids = _t);
-    } }, hostBindings: function NzCardComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵallocHostVars(7);
-    } if (rf & 2) {
-        ɵɵclassProp("ant-card-loading", ctx.nzLoading)("ant-card-bordered", ctx.nzBordered)("ant-card-hoverable", ctx.nzHoverable)("ant-card-small", ctx.nzSize === "small")("ant-card-contain-grid", ctx.grids && ctx.grids.length)("ant-card-type-inner", ctx.nzType === "inner")("ant-card-contain-tabs", !!ctx.tab);
-    } }, inputs: { nzBordered: "nzBordered", nzLoading: "nzLoading", nzHoverable: "nzHoverable", nzBodyStyle: "nzBodyStyle", nzCover: "nzCover", nzActions: "nzActions", nzType: "nzType", nzSize: "nzSize", nzTitle: "nzTitle", nzExtra: "nzExtra" }, exportAs: ["nzCard"], ngContentSelectors: _c0$1, decls: 6, vars: 6, consts: [["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function NzCardComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵtemplate(0, NzCardComponent_div_0_Template, 5, 3, "div", 0);
-        ɵɵtemplate(1, NzCardComponent_div_1_Template, 2, 1, "div", 1);
-        ɵɵelementStart(2, "div", 2);
-        ɵɵtemplate(3, NzCardComponent_ng_container_3_Template, 2, 0, "ng-container", 3);
-        ɵɵtemplate(4, NzCardComponent_nz_card_loading_4_Template, 1, 0, "nz-card-loading", 3);
-        ɵɵelementEnd();
-        ɵɵtemplate(5, NzCardComponent_ul_5_Template, 2, 1, "ul", 4);
-    } if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.nzTitle || ctx.nzExtra || ctx.tab);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzCover);
-        ɵɵadvance(1);
-        ɵɵproperty("ngStyle", ctx.nzBodyStyle);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", !ctx.nzLoading);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzLoading);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzActions.length);
-    } }, directives: [NgIf, NgStyle, NzStringTemplateOutletDirective, NgTemplateOutlet, NzCardLoadingComponent, NgForOf], styles: ["\n      nz-card {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+NzCardComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'nz-card',
+                exportAs: 'nzCard',
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                template: "<div class=\"ant-card-head\" *ngIf=\"nzTitle || nzExtra || tab\">\n  <div class=\"ant-card-head-wrapper\">\n    <div class=\"ant-card-head-title\" *ngIf=\"nzTitle\">\n      <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n    </div>\n    <div class=\"ant-card-extra\" *ngIf=\"nzExtra\">\n      <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\n    </div>\n  </div>\n  <ng-container *ngIf=\"tab\">\n    <ng-template [ngTemplateOutlet]=\"tab.template\"></ng-template>\n  </ng-container>\n</div>\n<div class=\"ant-card-cover\" *ngIf=\"nzCover\">\n  <ng-template [ngTemplateOutlet]=\"nzCover\"></ng-template>\n</div>\n<div class=\"ant-card-body\" [ngStyle]=\"nzBodyStyle\">\n  <ng-container *ngIf=\"!nzLoading\">\n    <ng-content></ng-content>\n  </ng-container>\n  <nz-card-loading *ngIf=\"nzLoading\"></nz-card-loading>\n</div>\n<ul class=\"ant-card-actions\" *ngIf=\"nzActions.length\">\n  <li *ngFor=\"let action of nzActions\" [style.width.%]=\"100 / nzActions.length\">\n    <span><ng-template [ngTemplateOutlet]=\"action\"></ng-template></span>\n  </li>\n</ul>",
+                host: {
+                    '[class.ant-card-loading]': 'nzLoading',
+                    '[class.ant-card-bordered]': 'nzBordered',
+                    '[class.ant-card-hoverable]': 'nzHoverable',
+                    '[class.ant-card-small]': 'nzSize === "small"',
+                    '[class.ant-card-contain-grid]': 'grids && grids.length',
+                    '[class.ant-card-type-inner]': 'nzType === "inner"',
+                    '[class.ant-card-contain-tabs]': '!!tab'
+                },
+                styles: [`
+      nz-card {
+        display: block;
+      }
+    `]
+            }] }
+];
+/** @nocollapse */
+NzCardComponent.ctorParameters = () => [
+    { type: NzConfigService },
+    { type: Renderer2 },
+    { type: ElementRef }
+];
+NzCardComponent.propDecorators = {
+    nzBordered: [{ type: Input }],
+    nzLoading: [{ type: Input }],
+    nzHoverable: [{ type: Input }],
+    nzBodyStyle: [{ type: Input }],
+    nzCover: [{ type: Input }],
+    nzActions: [{ type: Input }],
+    nzType: [{ type: Input }],
+    nzSize: [{ type: Input }],
+    nzTitle: [{ type: Input }],
+    nzExtra: [{ type: Input }],
+    tab: [{ type: ContentChild, args: [NzCardTabComponent, { static: false },] }],
+    grids: [{ type: ContentChildren, args: [NzCardGridDirective,] }]
+};
 __decorate([
     WithConfig(NZ_CONFIG_COMPONENT_NAME, true), InputBoolean(),
     __metadata("design:type", Boolean)
@@ -320,195 +148,143 @@ __decorate([
     WithConfig(NZ_CONFIG_COMPONENT_NAME, 'default'),
     __metadata("design:type", String)
 ], NzCardComponent.prototype, "nzSize", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-card',
-                exportAs: 'nzCard',
+if (false) {
+    /** @type {?} */
+    NzCardComponent.prototype.nzBordered;
+    /** @type {?} */
+    NzCardComponent.prototype.nzLoading;
+    /** @type {?} */
+    NzCardComponent.prototype.nzHoverable;
+    /** @type {?} */
+    NzCardComponent.prototype.nzBodyStyle;
+    /** @type {?} */
+    NzCardComponent.prototype.nzCover;
+    /** @type {?} */
+    NzCardComponent.prototype.nzActions;
+    /** @type {?} */
+    NzCardComponent.prototype.nzType;
+    /** @type {?} */
+    NzCardComponent.prototype.nzSize;
+    /** @type {?} */
+    NzCardComponent.prototype.nzTitle;
+    /** @type {?} */
+    NzCardComponent.prototype.nzExtra;
+    /** @type {?} */
+    NzCardComponent.prototype.tab;
+    /** @type {?} */
+    NzCardComponent.prototype.grids;
+    /** @type {?} */
+    NzCardComponent.prototype.nzConfigService;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-card-loading.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+class NzCardLoadingComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
+    constructor(elementRef, renderer) {
+        renderer.addClass(elementRef.nativeElement, 'ant-card-loading-content');
+    }
+}
+NzCardLoadingComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'nz-card-loading',
+                exportAs: 'nzCardLoading',
+                template: "<div class=\"ant-card-loading-content\">\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-22\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-8\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-15\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-6\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-18\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-13\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-9\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-4\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-3\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-16\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n  <div class=\"ant-row\" style=\"margin-left: -4px; margin-right: -4px;\">\n    <div class=\"ant-col-8\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-6\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n    <div class=\"ant-col-8\" style=\"padding-left: 4px; padding-right: 4px;\">\n      <div class=\"ant-card-loading-block\"></div>\n    </div>\n  </div>\n</div>",
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                templateUrl: './nz-card.component.html',
-                styles: [
-                    `
-      nz-card {
+                styles: [`
+      nz-card-loading {
         display: block;
       }
-    `
-                ],
-                host: {
-                    '[class.ant-card-loading]': 'nzLoading',
-                    '[class.ant-card-bordered]': 'nzBordered',
-                    '[class.ant-card-hoverable]': 'nzHoverable',
-                    '[class.ant-card-small]': 'nzSize === "small"',
-                    '[class.ant-card-contain-grid]': 'grids && grids.length',
-                    '[class.ant-card-type-inner]': 'nzType === "inner"',
-                    '[class.ant-card-contain-tabs]': '!!tab'
-                }
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: Renderer2 }, { type: ElementRef }]; }, { nzBordered: [{
-            type: Input
-        }], nzLoading: [{
-            type: Input
-        }], nzHoverable: [{
-            type: Input
-        }], nzBodyStyle: [{
-            type: Input
-        }], nzCover: [{
-            type: Input
-        }], nzActions: [{
-            type: Input
-        }], nzType: [{
-            type: Input
-        }], nzSize: [{
-            type: Input
-        }], nzTitle: [{
-            type: Input
-        }], nzExtra: [{
-            type: Input
-        }], tab: [{
-            type: ContentChild,
-            args: [NzCardTabComponent, { static: false }]
-        }], grids: [{
-            type: ContentChildren,
-            args: [NzCardGridDirective]
-        }] }); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzCardLoadingComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-card-meta.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzCardMetaComponent_div_0_ng_template_1_Template(rf, ctx) { }
-function NzCardMetaComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 2);
-    ɵɵtemplate(1, NzCardMetaComponent_div_0_ng_template_1_Template, 0, 0, "ng-template", 3);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r82 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r82.nzAvatar);
-} }
-function NzCardMetaComponent_div_1_div_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r87 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r87.nzTitle);
-} }
-function NzCardMetaComponent_div_1_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 7);
-    ɵɵtemplate(1, NzCardMetaComponent_div_1_div_1_ng_container_1_Template, 2, 1, "ng-container", 8);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r85 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r85.nzTitle);
-} }
-function NzCardMetaComponent_div_1_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtext(1);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r88 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate(ctx_r88.nzDescription);
-} }
-function NzCardMetaComponent_div_1_div_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 9);
-    ɵɵtemplate(1, NzCardMetaComponent_div_1_div_2_ng_container_1_Template, 2, 1, "ng-container", 8);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r86 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r86.nzDescription);
-} }
-function NzCardMetaComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 4);
-    ɵɵtemplate(1, NzCardMetaComponent_div_1_div_1_Template, 2, 1, "div", 5);
-    ɵɵtemplate(2, NzCardMetaComponent_div_1_div_2_Template, 2, 1, "div", 6);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r83 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r83.nzTitle);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r83.nzDescription);
-} }
 class NzCardMetaComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         renderer.addClass(elementRef.nativeElement, 'ant-card-meta');
     }
 }
-/** @nocollapse */ NzCardMetaComponent.ɵfac = function NzCardMetaComponent_Factory(t) { return new (t || NzCardMetaComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzCardMetaComponent.ɵcmp = ɵɵdefineComponent({ type: NzCardMetaComponent, selectors: [["nz-card-meta"]], inputs: { nzTitle: "nzTitle", nzDescription: "nzDescription", nzAvatar: "nzAvatar" }, exportAs: ["nzCardMeta"], decls: 2, vars: 2, consts: [["class", "ant-card-meta-avatar", 4, "ngIf"], ["class", "ant-card-meta-detail", 4, "ngIf"], [1, "ant-card-meta-avatar"], [3, "ngTemplateOutlet"], [1, "ant-card-meta-detail"], ["class", "ant-card-meta-title", 4, "ngIf"], ["class", "ant-card-meta-description", 4, "ngIf"], [1, "ant-card-meta-title"], [4, "nzStringTemplateOutlet"], [1, "ant-card-meta-description"]], template: function NzCardMetaComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵtemplate(0, NzCardMetaComponent_div_0_Template, 2, 1, "div", 0);
-        ɵɵtemplate(1, NzCardMetaComponent_div_1_Template, 3, 2, "div", 1);
-    } if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.nzAvatar);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzTitle || ctx.nzDescription);
-    } }, directives: [NgIf, NgTemplateOutlet, NzStringTemplateOutletDirective], styles: ["\n      nz-card-meta {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardMetaComponent, [{
-        type: Component,
-        args: [{
+NzCardMetaComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-card-meta',
                 exportAs: 'nzCardMeta',
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                templateUrl: './nz-card-meta.component.html',
-                styles: [
-                    `
+                template: "<div class=\"ant-card-meta-avatar\" *ngIf=\"nzAvatar\">\n  <ng-template [ngTemplateOutlet]=\"nzAvatar\"></ng-template>\n</div>\n<div class=\"ant-card-meta-detail\" *ngIf=\"nzTitle || nzDescription\">\n  <div class=\"ant-card-meta-title\" *ngIf=\"nzTitle\">\n    <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n  </div>\n  <div class=\"ant-card-meta-description\" *ngIf=\"nzDescription\">\n    <ng-container *nzStringTemplateOutlet=\"nzDescription\">{{ nzDescription }}</ng-container>\n  </div>\n</div>",
+                styles: [`
       nz-card-meta {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, { nzTitle: [{
-            type: Input
-        }], nzDescription: [{
-            type: Input
-        }], nzAvatar: [{
-            type: Input
-        }] }); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzCardMetaComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+NzCardMetaComponent.propDecorators = {
+    nzTitle: [{ type: Input }],
+    nzDescription: [{ type: Input }],
+    nzAvatar: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    NzCardMetaComponent.prototype.nzTitle;
+    /** @type {?} */
+    NzCardMetaComponent.prototype.nzDescription;
+    /** @type {?} */
+    NzCardMetaComponent.prototype.nzAvatar;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-card.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCardModule {
 }
-/** @nocollapse */ NzCardModule.ɵmod = ɵɵdefineNgModule({ type: NzCardModule });
-/** @nocollapse */ NzCardModule.ɵinj = ɵɵdefineInjector({ factory: function NzCardModule_Factory(t) { return new (t || NzCardModule)(); }, imports: [[CommonModule, NzAddOnModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzCardModule, { declarations: [NzCardComponent, NzCardGridDirective, NzCardMetaComponent, NzCardLoadingComponent, NzCardTabComponent], imports: [CommonModule, NzAddOnModule], exports: [NzCardComponent, NzCardGridDirective, NzCardMetaComponent, NzCardLoadingComponent, NzCardTabComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCardModule, [{
-        type: NgModule,
-        args: [{
+NzCardModule.decorators = [
+    { type: NgModule, args: [{
                 imports: [CommonModule, NzAddOnModule],
                 declarations: [NzCardComponent, NzCardGridDirective, NzCardMetaComponent, NzCardLoadingComponent, NzCardTabComponent],
                 exports: [NzCardComponent, NzCardGridDirective, NzCardMetaComponent, NzCardLoadingComponent, NzCardTabComponent]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-card.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzCardComponent, NzCardGridDirective, NzCardLoadingComponent, NzCardMetaComponent, NzCardModule, NzCardTabComponent };

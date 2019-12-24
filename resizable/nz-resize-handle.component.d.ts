@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { NzResizableService } from './nz-resizable.service';
-import * as i0 from "@angular/core";
 export declare type NzResizeDirection = 'top' | 'right' | 'bottom' | 'left' | 'topRight' | 'bottomRight' | 'bottomLeft' | 'topLeft';
 export declare class NzResizeHandleMouseDownEvent {
     direction: NzResizeDirection;
@@ -25,6 +24,4 @@ export declare class NzResizeHandleComponent implements OnInit, OnDestroy {
     ngOnInit(): void;
     onMousedown(event: MouseEvent | TouchEvent): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzResizeHandleComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzResizeHandleComponent, "nz-resize-handle, [nz-resize-handle]", ["nzResizeHandle"], { 'nzDirection': "nzDirection" }, { 'nzMouseDown': "nzMouseDown" }, never>;
 }

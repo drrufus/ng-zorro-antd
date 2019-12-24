@@ -7,18 +7,7 @@
   "fesm5": "../fesm5/ng-zorro-antd-layout.js",
   "fesm2015": "../fesm2015/ng-zorro-antd-layout.js",
   "typings": "ng-zorro-antd-layout.d.ts",
+  "metadata": "ng-zorro-antd-layout.metadata.json",
   "sideEffects": false,
-  "name": "ng-zorro-antd/layout",
-  "__processed_by_ivy_ngcc__": {
-    "fesm2015": "9.0.0-rc.7",
-    "fesm5": "9.0.0-rc.7",
-    "es2015": "9.0.0-rc.7",
-    "esm2015": "9.0.0-rc.7",
-    "esm5": "9.0.0-rc.7",
-    "main": "9.0.0-rc.7",
-    "module": "9.0.0-rc.7"
-  },
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
-  }
+  "name": "ng-zorro-antd/layout"
 }

@@ -201,60 +201,11 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzSkeletonComponent_ng_container_0_div_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 5);
-        core.ɵɵelement(1, "span", 6);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r268 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("ant-skeleton-avatar-lg", ctx_r268.avatar.size === "large")("ant-skeleton-avatar-sm", ctx_r268.avatar.size === "small")("ant-skeleton-avatar-circle", ctx_r268.avatar.shape === "circle")("ant-skeleton-avatar-square", ctx_r268.avatar.shape === "square");
-    } }
-    function NzSkeletonComponent_ng_container_0_h3_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "h3", 7);
-    } if (rf & 2) {
-        var ctx_r269 = core.ɵɵnextContext(2);
-        core.ɵɵstyleProp("width", ctx_r269.toCSSUnit(ctx_r269.title.width));
-    } }
-    function NzSkeletonComponent_ng_container_0_ul_4_li_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "li");
-    } if (rf & 2) {
-        var i_r273 = ctx.index;
-        var ctx_r271 = core.ɵɵnextContext(3);
-        core.ɵɵstyleProp("width", ctx_r271.toCSSUnit(ctx_r271.widthList[i_r273]));
-    } }
-    function NzSkeletonComponent_ng_container_0_ul_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "ul", 8);
-        core.ɵɵtemplate(1, NzSkeletonComponent_ng_container_0_ul_4_li_1_Template, 1, 1, "li", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r270 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r270.rowsList);
-    } }
-    function NzSkeletonComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzSkeletonComponent_ng_container_0_div_1_Template, 2, 4, "div", 1);
-        core.ɵɵelementStart(2, "div", 2);
-        core.ɵɵtemplate(3, NzSkeletonComponent_ng_container_0_h3_3_Template, 1, 1, "h3", 3);
-        core.ɵɵtemplate(4, NzSkeletonComponent_ng_container_0_ul_4_Template, 2, 1, "ul", 4);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r266 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !!ctx_r266.nzAvatar);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngIf", !!ctx_r266.nzTitle);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !!ctx_r266.nzParagraph);
-    } }
-    function NzSkeletonComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵprojection(1);
-        core.ɵɵelementContainerEnd();
-    } }
-    var _c0 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-skeleton.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzSkeletonComponent = /** @class */ (function () {
         function NzSkeletonComponent(cdr, renderer, elementRef) {
             this.cdr = cdr;
@@ -267,13 +218,32 @@
             this.widthList = [];
             renderer.addClass(elementRef.nativeElement, 'ant-skeleton');
         }
-        NzSkeletonComponent.prototype.toCSSUnit = function (value) {
+        /**
+         * @param {?=} value
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.toCSSUnit = /**
+         * @param {?=} value
+         * @return {?}
+         */
+        function (value) {
             if (value === void 0) { value = ''; }
             return core$1.toCssPixel(value);
         };
-        NzSkeletonComponent.prototype.getTitleProps = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.getTitleProps = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var hasAvatar = !!this.nzAvatar;
+            /** @type {?} */
             var hasParagraph = !!this.nzParagraph;
+            /** @type {?} */
             var width = '';
             if (!hasAvatar && hasParagraph) {
                 width = '38%';
@@ -283,14 +253,35 @@
             }
             return __assign({ width: width }, this.getProps(this.nzTitle));
         };
-        NzSkeletonComponent.prototype.getAvatarProps = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.getAvatarProps = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var shape = !!this.nzTitle && !this.nzParagraph ? 'square' : 'circle';
+            /** @type {?} */
             var size = 'large';
             return __assign({ shape: shape, size: size }, this.getProps(this.nzAvatar));
         };
-        NzSkeletonComponent.prototype.getParagraphProps = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.getParagraphProps = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var hasAvatar = !!this.nzAvatar;
+            /** @type {?} */
             var hasTitle = !!this.nzTitle;
+            /** @type {?} */
             var basicProps = {};
             // Width
             if (!hasAvatar || !hasTitle) {
@@ -303,24 +294,53 @@
             else {
                 basicProps.rows = 2;
             }
-            return __assign(__assign({}, basicProps), this.getProps(this.nzParagraph));
+            return __assign({}, basicProps, this.getProps(this.nzParagraph));
         };
-        NzSkeletonComponent.prototype.getProps = function (prop) {
+        /**
+         * @private
+         * @template T
+         * @param {?} prop
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.getProps = /**
+         * @private
+         * @template T
+         * @param {?} prop
+         * @return {?}
+         */
+        function (prop) {
             return prop && typeof prop === 'object' ? prop : {};
         };
-        NzSkeletonComponent.prototype.getWidthList = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.getWidthList = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _a = this.paragraph, width = _a.width, rows = _a.rows;
+            /** @type {?} */
             var widthList = [];
             if (width && Array.isArray(width)) {
                 widthList = width;
             }
             else if (width && !Array.isArray(width)) {
                 widthList = [];
-                widthList[rows - 1] = width;
+                widthList[(/** @type {?} */ (rows)) - 1] = width;
             }
             return widthList;
         };
-        NzSkeletonComponent.prototype.updateProps = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.updateProps = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             this.title = this.getTitleProps();
             this.avatar = this.getAvatarProps();
             this.paragraph = this.getParagraphProps();
@@ -328,55 +348,107 @@
             this.widthList = this.getWidthList();
             this.cdr.markForCheck();
         };
-        NzSkeletonComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.updateProps();
         };
-        NzSkeletonComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzSkeletonComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzTitle || changes.nzAvatar || changes.nzParagraph) {
                 this.updateProps();
             }
         };
-        /** @nocollapse */ NzSkeletonComponent.ɵfac = function NzSkeletonComponent_Factory(t) { return new (t || NzSkeletonComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core.ElementRef)); };
-        /** @nocollapse */ NzSkeletonComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzSkeletonComponent, selectors: [["nz-skeleton"]], hostBindings: function NzSkeletonComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(2);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-skeleton-with-avatar", !!ctx.nzAvatar)("ant-skeleton-active", ctx.nzActive);
-            } }, inputs: { nzActive: "nzActive", nzLoading: "nzLoading", nzTitle: "nzTitle", nzAvatar: "nzAvatar", nzParagraph: "nzParagraph" }, exportAs: ["nzSkeleton"], features: [core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c0, decls: 2, vars: 2, consts: [[4, "ngIf"], ["class", "ant-skeleton-header", 4, "ngIf"], [1, "ant-skeleton-content"], ["class", "ant-skeleton-title", 3, "width", 4, "ngIf"], ["class", "ant-skeleton-paragraph", 4, "ngIf"], [1, "ant-skeleton-header"], [1, "ant-skeleton-avatar"], [1, "ant-skeleton-title"], [1, "ant-skeleton-paragraph"], [3, "width", 4, "ngFor", "ngForOf"]], template: function NzSkeletonComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵtemplate(0, NzSkeletonComponent_ng_container_0_Template, 5, 3, "ng-container", 0);
-                core.ɵɵtemplate(1, NzSkeletonComponent_ng_container_1_Template, 2, 0, "ng-container", 0);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.nzLoading);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.nzLoading);
-            } }, directives: [common.NgIf, common.NgForOf], encapsulation: 2, changeDetection: 0 });
+        NzSkeletonComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-skeleton',
+                        exportAs: 'nzSkeleton',
+                        template: "<ng-container *ngIf=\"nzLoading\">\n  <div class=\"ant-skeleton-header\" *ngIf=\"!!nzAvatar\">\n    <span\n      class=\"ant-skeleton-avatar\"\n      [class.ant-skeleton-avatar-lg]=\"avatar.size === 'large'\"\n      [class.ant-skeleton-avatar-sm]=\"avatar.size === 'small'\"\n      [class.ant-skeleton-avatar-circle]=\"avatar.shape === 'circle'\"\n      [class.ant-skeleton-avatar-square]=\"avatar.shape === 'square'\">\n    </span>\n  </div>\n  <div class=\"ant-skeleton-content\">\n    <h3 *ngIf=\"!!nzTitle\" class=\"ant-skeleton-title\" [style.width]=\"toCSSUnit(title.width)\"></h3>\n    <ul *ngIf=\"!!nzParagraph\" class=\"ant-skeleton-paragraph\">\n      <li *ngFor=\"let row of rowsList; let i=index\" [style.width]=\"toCSSUnit(widthList[i])\">\n      </li>\n    </ul>\n  </div>\n</ng-container>\n<ng-container *ngIf=\"!nzLoading\">\n  <ng-content></ng-content>\n</ng-container>",
+                        host: {
+                            '[class.ant-skeleton-with-avatar]': '!!nzAvatar',
+                            '[class.ant-skeleton-active]': 'nzActive'
+                        }
+                    }] }
+        ];
+        /** @nocollapse */
+        NzSkeletonComponent.ctorParameters = function () { return [
+            { type: core.ChangeDetectorRef },
+            { type: core.Renderer2 },
+            { type: core.ElementRef }
+        ]; };
+        NzSkeletonComponent.propDecorators = {
+            nzActive: [{ type: core.Input }],
+            nzLoading: [{ type: core.Input }],
+            nzTitle: [{ type: core.Input }],
+            nzAvatar: [{ type: core.Input }],
+            nzParagraph: [{ type: core.Input }]
+        };
         return NzSkeletonComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSkeletonComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-skeleton',
-                    exportAs: 'nzSkeleton',
-                    templateUrl: './nz-skeleton.component.html',
-                    host: {
-                        '[class.ant-skeleton-with-avatar]': '!!nzAvatar',
-                        '[class.ant-skeleton-active]': 'nzActive'
-                    }
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }, { type: core.Renderer2 }, { type: core.ElementRef }]; }, { nzActive: [{
-                type: core.Input
-            }], nzLoading: [{
-                type: core.Input
-            }], nzTitle: [{
-                type: core.Input
-            }], nzAvatar: [{
-                type: core.Input
-            }], nzParagraph: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzSkeletonComponent.prototype.nzActive;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.nzLoading;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.nzAvatar;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.nzParagraph;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.title;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.avatar;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.paragraph;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.rowsList;
+        /** @type {?} */
+        NzSkeletonComponent.prototype.widthList;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSkeletonComponent.prototype.cdr;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-skeleton.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var NzSkeletonModule = /** @class */ (function () {
+        function NzSkeletonModule() {
+        }
+        NzSkeletonModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzSkeletonComponent],
+                        imports: [common.CommonModule],
+                        exports: [NzSkeletonComponent]
+                    },] }
+        ];
+        return NzSkeletonModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-skeleton.type.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -384,22 +456,34 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var NzSkeletonModule = /** @class */ (function () {
-        function NzSkeletonModule() {
-        }
-        /** @nocollapse */ NzSkeletonModule.ɵmod = core.ɵɵdefineNgModule({ type: NzSkeletonModule });
-        /** @nocollapse */ NzSkeletonModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzSkeletonModule_Factory(t) { return new (t || NzSkeletonModule)(); }, imports: [[common.CommonModule]] });
-        return NzSkeletonModule;
-    }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzSkeletonModule, { declarations: [NzSkeletonComponent], imports: [common.CommonModule], exports: [NzSkeletonComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSkeletonModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzSkeletonComponent],
-                    imports: [common.CommonModule],
-                    exports: [NzSkeletonComponent]
-                }]
-        }], null, null); })();
+    /**
+     * @record
+     */
+    function NzSkeletonAvatar() { }
+    if (false) {
+        /** @type {?|undefined} */
+        NzSkeletonAvatar.prototype.size;
+        /** @type {?|undefined} */
+        NzSkeletonAvatar.prototype.shape;
+    }
+    /**
+     * @record
+     */
+    function NzSkeletonTitle() { }
+    if (false) {
+        /** @type {?|undefined} */
+        NzSkeletonTitle.prototype.width;
+    }
+    /**
+     * @record
+     */
+    function NzSkeletonParagraph() { }
+    if (false) {
+        /** @type {?|undefined} */
+        NzSkeletonParagraph.prototype.rows;
+        /** @type {?|undefined} */
+        NzSkeletonParagraph.prototype.width;
+    }
 
     exports.NzSkeletonComponent = NzSkeletonComponent;
     exports.NzSkeletonModule = NzSkeletonModule;

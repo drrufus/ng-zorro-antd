@@ -8,7 +8,6 @@
 import { EventEmitter, OnInit } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { DateHelperService, NzI18nService as I18n } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class NzCalendarHeaderComponent implements OnInit {
     private i18n;
     private dateHelper;
@@ -38,6 +37,4 @@ export declare class NzCalendarHeaderComponent implements OnInit {
     updateYear(year: number): void;
     private setUpYears;
     private setUpMonths;
-    static ɵfac: i0.ɵɵFactoryDef<NzCalendarHeaderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCalendarHeaderComponent, "nz-calendar-header", ["nzCalendarHeader"], { 'mode': "mode", 'fullscreen': "fullscreen", 'activeDate': "activeDate" }, { 'modeChange': "modeChange", 'yearChange': "yearChange", 'monthChange': "monthChange" }, never>;
 }

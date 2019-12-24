@@ -1,17 +1,15 @@
-import * as i0 from "@angular/core";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzDateCellDirective {
-    static ɵfac: i0.ɵɵFactoryDef<NzDateCellDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzDateCellDirective, "[nzDateCell]", ["nzDateCell"], {}, {}, never>;
 }
 export declare class NzMonthCellDirective {
-    static ɵfac: i0.ɵɵFactoryDef<NzMonthCellDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMonthCellDirective, "[nzMonthCell]", ["nzMonthCell"], {}, {}, never>;
 }
 export declare class NzDateFullCellDirective {
-    static ɵfac: i0.ɵɵFactoryDef<NzDateFullCellDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzDateFullCellDirective, "[nzDateFullCell]", ["nzDateFullCell"], {}, {}, never>;
 }
 export declare class NzMonthFullCellDirective {
-    static ɵfac: i0.ɵɵFactoryDef<NzMonthFullCellDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMonthFullCellDirective, "[nzMonthFullCell]", ["nzMonthFullCell"], {}, {}, never>;
 }

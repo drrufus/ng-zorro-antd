@@ -201,31 +201,15 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzBackTopComponent_div_0_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 4);
-        core.ɵɵelement(1, "div", 5);
-        core.ɵɵelementEnd();
-    } }
-    function NzBackTopComponent_div_0_ng_template_3_Template(rf, ctx) { }
-    function NzBackTopComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-        var _r35 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "div", 1);
-        core.ɵɵlistener("click", function NzBackTopComponent_div_0_Template_div_click_0_listener($event) { core.ɵɵrestoreView(_r35); var ctx_r34 = core.ɵɵnextContext(); return ctx_r34.clickBackTop(); });
-        core.ɵɵtemplate(1, NzBackTopComponent_div_0_ng_template_1_Template, 2, 0, "ng-template", null, 2, core.ɵɵtemplateRefExtractor);
-        core.ɵɵtemplate(3, NzBackTopComponent_div_0_ng_template_3_Template, 0, 0, "ng-template", 3);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var _r31 = core.ɵɵreference(2);
-        var ctx_r30 = core.ɵɵnextContext();
-        core.ɵɵproperty("@fadeMotion", undefined);
-        core.ɵɵadvance(3);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r30.nzTemplate || _r31);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-back-top.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'backTop';
     var NzBackTopComponent = /** @class */ (function () {
-        function NzBackTopComponent(nzConfigService, scrollSrv, 
-        // tslint:disable-next-line:no-any
-        doc, platform, cd) {
+        function NzBackTopComponent(nzConfigService, scrollSrv, doc, platform, cd) {
             this.nzConfigService = nzConfigService;
             this.scrollSrv = scrollSrv;
             this.doc = doc;
@@ -237,38 +221,86 @@
             this.nzClick = new core.EventEmitter();
         }
         Object.defineProperty(NzBackTopComponent.prototype, "nzTarget", {
-            set: function (el) {
+            set: /**
+             * @param {?} el
+             * @return {?}
+             */
+            function (el) {
                 this.target = typeof el === 'string' ? this.doc.querySelector(el) : el;
                 this.registerScrollEvent();
             },
             enumerable: true,
             configurable: true
         });
-        NzBackTopComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             if (!this.scroll$) {
                 this.registerScrollEvent();
             }
         };
-        NzBackTopComponent.prototype.clickBackTop = function () {
+        /**
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.clickBackTop = /**
+         * @return {?}
+         */
+        function () {
             this.scrollSrv.scrollTo(this.getTarget(), 0);
             this.nzClick.emit(true);
         };
-        NzBackTopComponent.prototype.getTarget = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.getTarget = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             return this.target || window;
         };
-        NzBackTopComponent.prototype.handleScroll = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.handleScroll = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (this.visible === this.scrollSrv.getScroll(this.getTarget()) > this.nzVisibilityHeight) {
                 return;
             }
             this.visible = !this.visible;
             this.cd.markForCheck();
         };
-        NzBackTopComponent.prototype.removeListen = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.removeListen = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (this.scroll$) {
                 this.scroll$.unsubscribe();
             }
         };
-        NzBackTopComponent.prototype.registerScrollEvent = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.registerScrollEvent = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (!this.platform.isBrowser) {
                 return;
@@ -277,71 +309,112 @@
             this.handleScroll();
             this.scroll$ = rxjs.fromEvent(this.getTarget(), 'scroll')
                 .pipe(operators.throttleTime(50), operators.distinctUntilChanged())
-                .subscribe(function () { return _this.handleScroll(); });
+                .subscribe((/**
+             * @return {?}
+             */
+            function () { return _this.handleScroll(); }));
         };
-        NzBackTopComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzBackTopComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.removeListen();
         };
-        /** @nocollapse */ NzBackTopComponent.ɵfac = function NzBackTopComponent_Factory(t) { return new (t || NzBackTopComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core$1.NzScrollService), core.ɵɵdirectiveInject(common.DOCUMENT), core.ɵɵdirectiveInject(platform.Platform), core.ɵɵdirectiveInject(core.ChangeDetectorRef)); };
-        /** @nocollapse */ NzBackTopComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzBackTopComponent, selectors: [["nz-back-top"]], inputs: { nzTemplate: "nzTemplate", nzVisibilityHeight: "nzVisibilityHeight", nzTarget: "nzTarget" }, outputs: { nzClick: "nzClick" }, exportAs: ["nzBackTop"], decls: 1, vars: 1, consts: [["class", "ant-back-top", 3, "click", 4, "ngIf"], [1, "ant-back-top", 3, "click"], ["defaultContent", ""], [3, "ngTemplateOutlet"], [1, "ant-back-top-content"], [1, "ant-back-top-icon"]], template: function NzBackTopComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzBackTopComponent_div_0_Template, 4, 2, "div", 0);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.visible);
-            } }, directives: [common.NgIf, common.NgTemplateOutlet], encapsulation: 2, data: { animation: [core$1.fadeMotion] }, changeDetection: 0 });
+        NzBackTopComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-back-top',
+                        exportAs: 'nzBackTop',
+                        animations: [core$1.fadeMotion],
+                        template: "<div class=\"ant-back-top\" (click)=\"clickBackTop()\" @fadeMotion *ngIf=\"visible\">\n  <ng-template #defaultContent>\n    <div class=\"ant-back-top-content\">\n      <div class=\"ant-back-top-icon\"></div>\n    </div>\n  </ng-template>\n  <ng-template [ngTemplateOutlet]=\"nzTemplate || defaultContent\"></ng-template>\n</div>",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false
+                    }] }
+        ];
+        /** @nocollapse */
+        NzBackTopComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core$1.NzScrollService },
+            { type: undefined, decorators: [{ type: core.Inject, args: [common.DOCUMENT,] }] },
+            { type: platform.Platform },
+            { type: core.ChangeDetectorRef }
+        ]; };
+        NzBackTopComponent.propDecorators = {
+            nzTemplate: [{ type: core.Input }],
+            nzVisibilityHeight: [{ type: core.Input }],
+            nzTarget: [{ type: core.Input }],
+            nzClick: [{ type: core.Output }]
+        };
         __decorate([
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, 400), core$1.InputNumber(),
             __metadata("design:type", Number)
         ], NzBackTopComponent.prototype, "nzVisibilityHeight", void 0);
         return NzBackTopComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBackTopComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-back-top',
-                    exportAs: 'nzBackTop',
-                    animations: [core$1.fadeMotion],
-                    templateUrl: './nz-back-top.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    preserveWhitespaces: false
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core$1.NzScrollService }, { type: undefined, decorators: [{
-                    type: core.Inject,
-                    args: [common.DOCUMENT]
-                }] }, { type: platform.Platform }, { type: core.ChangeDetectorRef }]; }, { nzTemplate: [{
-                type: core.Input
-            }], nzVisibilityHeight: [{
-                type: core.Input
-            }], nzTarget: [{
-                type: core.Input
-            }], nzClick: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.scroll$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.target;
+        /** @type {?} */
+        NzBackTopComponent.prototype.visible;
+        /** @type {?} */
+        NzBackTopComponent.prototype.nzTemplate;
+        /** @type {?} */
+        NzBackTopComponent.prototype.nzVisibilityHeight;
+        /** @type {?} */
+        NzBackTopComponent.prototype.nzClick;
+        /** @type {?} */
+        NzBackTopComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.scrollSrv;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.doc;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.platform;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBackTopComponent.prototype.cd;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-back-top.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBackTopModule = /** @class */ (function () {
         function NzBackTopModule() {
         }
-        /** @nocollapse */ NzBackTopModule.ɵmod = core.ɵɵdefineNgModule({ type: NzBackTopModule });
-        /** @nocollapse */ NzBackTopModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzBackTopModule_Factory(t) { return new (t || NzBackTopModule)(); }, providers: [core$1.SCROLL_SERVICE_PROVIDER], imports: [[common.CommonModule, platform.PlatformModule]] });
+        NzBackTopModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzBackTopComponent],
+                        exports: [NzBackTopComponent],
+                        imports: [common.CommonModule, platform.PlatformModule],
+                        providers: [core$1.SCROLL_SERVICE_PROVIDER]
+                    },] }
+        ];
         return NzBackTopModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzBackTopModule, { declarations: [NzBackTopComponent], imports: [common.CommonModule, platform.PlatformModule], exports: [NzBackTopComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBackTopModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzBackTopComponent],
-                    exports: [NzBackTopComponent],
-                    imports: [common.CommonModule, platform.PlatformModule],
-                    providers: [core$1.SCROLL_SERVICE_PROVIDER]
-                }]
-        }], null, null); })();
 
     exports.NzBackTopComponent = NzBackTopComponent;
     exports.NzBackTopModule = NzBackTopModule;

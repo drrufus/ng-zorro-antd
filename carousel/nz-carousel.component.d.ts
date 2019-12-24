@@ -1,10 +1,16 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Platform } from '@angular/cdk/platform';
 import { AfterContentInit, AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, QueryList, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzConfigService, NzDomEventService, NzDragService } from 'ng-zorro-antd/core';
 import { NzCarouselContentDirective } from './nz-carousel-content.directive';
 import { FromToInterface, NzCarouselDotPosition, NzCarouselEffects, NzCarouselStrategyRegistryItem } from './nz-carousel-definitions';
 import { NzCarouselBaseStrategy } from './strategies/base-strategy';
-import * as i0 from "@angular/core";
 export declare class NzCarouselComponent implements AfterContentInit, AfterViewInit, OnDestroy, OnChanges {
     readonly nzConfigService: NzConfigService;
     private readonly renderer;
@@ -61,6 +67,4 @@ export declare class NzCarouselComponent implements AfterContentInit, AfterViewI
      */
     pointerDown: (event: TouchEvent | MouseEvent) => void;
     private syncStrategy;
-    static ɵfac: i0.ɵɵFactoryDef<NzCarouselComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCarouselComponent, "nz-carousel", ["nzCarousel"], { 'nzDotRender': "nzDotRender", 'nzEffect': "nzEffect", 'nzEnableSwipe': "nzEnableSwipe", 'nzDots': "nzDots", 'nzAutoPlay': "nzAutoPlay", 'nzAutoPlaySpeed': "nzAutoPlaySpeed", 'nzTransitionSpeed': "nzTransitionSpeed", 'nzVertical': "nzVertical", 'nzDotPosition': "nzDotPosition" }, { 'nzBeforeChange': "nzBeforeChange", 'nzAfterChange': "nzAfterChange" }, ["carouselContents"]>;
 }

@@ -7,13 +7,10 @@
  */
 import { OnChanges, SimpleChanges } from '@angular/core';
 import { NzResizeDirection } from './nz-resize-handle.component';
-import * as i0 from "@angular/core";
 export declare const DEFAULT_RESIZE_DIRECTION: NzResizeDirection[];
 export declare class NzResizeHandlesComponent implements OnChanges {
     nzDirections: NzResizeDirection[];
     directions: Set<NzResizeDirection>;
     constructor();
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzResizeHandlesComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzResizeHandlesComponent, "nz-resize-handles", ["nzResizeHandles"], { 'nzDirections': "nzDirections" }, {}, never>;
 }

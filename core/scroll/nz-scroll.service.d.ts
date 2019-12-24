@@ -1,5 +1,11 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Provider } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare type EasyingFn = (t: number, b: number, c: number, d: number) => number;
 export declare class NzScrollService {
     private doc;
@@ -22,8 +28,6 @@ export declare class NzScrollService {
      * @param callback callback invoked when transition is done
      */
     scrollTo(containerEl: Element | Window, targetTopValue?: number, easing?: EasyingFn, callback?: () => void): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzScrollService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzScrollService>;
 }
 export declare function SCROLL_SERVICE_PROVIDER_FACTORY(doc: Document, scrollService: NzScrollService): NzScrollService;
 export declare const SCROLL_SERVICE_PROVIDER: Provider;

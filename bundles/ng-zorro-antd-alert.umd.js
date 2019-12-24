@@ -201,121 +201,12 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzAlertComponent_div_0_ng_container_1_i_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 8);
-    } if (rf & 2) {
-        var ctx_r341 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("ngClass", ctx_r341.nzIconType);
-    } }
-    function NzAlertComponent_div_0_ng_container_1_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 9);
-    } if (rf & 2) {
-        var ctx_r343 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("nzType", ctx_r343.iconType)("nzTheme", ctx_r343.iconTheme);
-    } }
-    function NzAlertComponent_div_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_ng_container_1_i_1_Template, 1, 1, "i", 6);
-        core.ɵɵtemplate(2, NzAlertComponent_div_0_ng_container_1_ng_template_2_Template, 1, 2, "ng-template", null, 7, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var _r342 = core.ɵɵreference(3);
-        var ctx_r337 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r337.isIconTypeObject)("ngIfElse", _r342);
-    } }
-    function NzAlertComponent_div_0_span_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r344 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r344.nzMessage);
-    } }
-    function NzAlertComponent_div_0_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 10);
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_span_2_ng_container_1_Template, 2, 1, "ng-container", 11);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r338 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r338.nzMessage);
-    } }
-    function NzAlertComponent_div_0_span_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r345 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r345.nzDescription);
-    } }
-    function NzAlertComponent_div_0_span_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 12);
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_span_3_ng_container_1_Template, 2, 1, "ng-container", 11);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r339 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r339.nzDescription);
-    } }
-    function NzAlertComponent_div_0_a_4_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 16);
-    } }
-    function NzAlertComponent_div_0_a_4_ng_container_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r349 = core.ɵɵnextContext(4);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r349.nzCloseText);
-    } }
-    function NzAlertComponent_div_0_a_4_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_a_4_ng_container_3_ng_container_1_Template, 2, 1, "ng-container", 11);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r348 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r348.nzCloseText);
-    } }
-    function NzAlertComponent_div_0_a_4_Template(rf, ctx) { if (rf & 1) {
-        var _r351 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "a", 13);
-        core.ɵɵlistener("click", function NzAlertComponent_div_0_a_4_Template_a_click_0_listener($event) { core.ɵɵrestoreView(_r351); var ctx_r350 = core.ɵɵnextContext(2); return ctx_r350.closeAlert(); });
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_a_4_ng_template_1_Template, 1, 0, "ng-template", null, 14, core.ɵɵtemplateRefExtractor);
-        core.ɵɵtemplate(3, NzAlertComponent_div_0_a_4_ng_container_3_Template, 2, 1, "ng-container", 15);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var _r346 = core.ɵɵreference(2);
-        var ctx_r340 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(3);
-        core.ɵɵproperty("ngIf", ctx_r340.nzCloseText)("ngIfElse", _r346);
-    } }
-    function NzAlertComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-        var _r353 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "div", 1);
-        core.ɵɵlistener("@slideAlertMotion.done", function NzAlertComponent_div_0_Template_div_animation_slideAlertMotion_done_0_listener($event) { core.ɵɵrestoreView(_r353); var ctx_r352 = core.ɵɵnextContext(); return ctx_r352.onFadeAnimationDone(); });
-        core.ɵɵtemplate(1, NzAlertComponent_div_0_ng_container_1_Template, 4, 2, "ng-container", 2);
-        core.ɵɵtemplate(2, NzAlertComponent_div_0_span_2_Template, 2, 1, "span", 3);
-        core.ɵɵtemplate(3, NzAlertComponent_div_0_span_3_Template, 2, 1, "span", 4);
-        core.ɵɵtemplate(4, NzAlertComponent_div_0_a_4_Template, 4, 2, "a", 5);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r336 = core.ɵɵnextContext();
-        core.ɵɵclassProp("ant-alert-success", ctx_r336.nzType === "success")("ant-alert-info", ctx_r336.nzType === "info")("ant-alert-warning", ctx_r336.nzType === "warning")("ant-alert-error", ctx_r336.nzType === "error")("ant-alert-no-icon", !ctx_r336.nzShowIcon)("ant-alert-banner", ctx_r336.nzBanner)("ant-alert-closable", ctx_r336.nzCloseable)("ant-alert-with-description", !!ctx_r336.nzDescription);
-        core.ɵɵproperty("@slideAlertMotion", undefined);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r336.nzShowIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r336.nzMessage);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r336.nzDescription);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r336.nzCloseable || ctx_r336.nzCloseText);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-alert.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'alert';
     var NzAlertComponent = /** @class */ (function () {
         function NzAlertComponent(nzConfigService) {
@@ -331,21 +222,42 @@
             this.inferredIconType = 'info-circle';
         }
         Object.defineProperty(NzAlertComponent.prototype, "iconType", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzIconType || this.inferredIconType;
             },
             enumerable: true,
             configurable: true
         });
-        NzAlertComponent.prototype.closeAlert = function () {
+        /**
+         * @return {?}
+         */
+        NzAlertComponent.prototype.closeAlert = /**
+         * @return {?}
+         */
+        function () {
             this.destroy = true;
         };
-        NzAlertComponent.prototype.onFadeAnimationDone = function () {
+        /**
+         * @return {?}
+         */
+        NzAlertComponent.prototype.onFadeAnimationDone = /**
+         * @return {?}
+         */
+        function () {
             if (this.destroy) {
                 this.nzOnClose.emit(true);
             }
         };
-        NzAlertComponent.prototype.updateIconClassMap = function () {
+        /**
+         * @return {?}
+         */
+        NzAlertComponent.prototype.updateIconClassMap = /**
+         * @return {?}
+         */
+        function () {
             switch (this.nzType) {
                 case 'error':
                     this.inferredIconType = 'close-circle';
@@ -362,7 +274,15 @@
             }
             this.iconTheme = this.nzDescription ? 'outline' : 'fill';
         };
-        NzAlertComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzAlertComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             var nzShowIcon = changes.nzShowIcon, nzDescription = changes.nzDescription, nzType = changes.nzType, nzBanner = changes.nzBanner, nzIconType = changes.nzIconType;
             if (nzShowIcon) {
                 this.isShowIconSet = true;
@@ -385,12 +305,33 @@
                 this.isIconTypeObject = typeof nzIconType.currentValue === 'object';
             }
         };
-        /** @nocollapse */ NzAlertComponent.ɵfac = function NzAlertComponent_Factory(t) { return new (t || NzAlertComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService)); };
-        /** @nocollapse */ NzAlertComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzAlertComponent, selectors: [["nz-alert"]], inputs: { nzCloseText: "nzCloseText", nzIconType: "nzIconType", nzMessage: "nzMessage", nzDescription: "nzDescription", nzType: "nzType", nzCloseable: "nzCloseable", nzShowIcon: "nzShowIcon", nzBanner: "nzBanner" }, outputs: { nzOnClose: "nzOnClose" }, exportAs: ["nzAlert"], features: [core.ɵɵNgOnChangesFeature()], decls: 1, vars: 1, consts: [["class", "ant-alert", 3, "ant-alert-success", "ant-alert-info", "ant-alert-warning", "ant-alert-error", "ant-alert-no-icon", "ant-alert-banner", "ant-alert-closable", "ant-alert-with-description", 4, "ngIf"], [1, "ant-alert"], [4, "ngIf"], ["class", "ant-alert-message", 4, "ngIf"], ["class", "ant-alert-description", 4, "ngIf"], ["class", "ant-alert-close-icon", 3, "click", 4, "ngIf"], ["class", "ant-alert-icon", 3, "ngClass", 4, "ngIf", "ngIfElse"], ["iconTemplate", ""], [1, "ant-alert-icon", 3, "ngClass"], ["nz-icon", "", 1, "ant-alert-icon", 3, "nzType", "nzTheme"], [1, "ant-alert-message"], [4, "nzStringTemplateOutlet"], [1, "ant-alert-description"], [1, "ant-alert-close-icon", 3, "click"], ["closeDefaultTemplate", ""], [4, "ngIf", "ngIfElse"], ["nz-icon", "", "nzType", "close"]], template: function NzAlertComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzAlertComponent_div_0_Template, 5, 13, "div", 0);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", !ctx.destroy);
-            } }, directives: [common.NgIf, common.NgClass, icon.NzIconDirective, core$1.NzStringTemplateOutletDirective], styles: ["\n      nz-alert {\n        display: block;\n      }\n    "], encapsulation: 2, data: { animation: [core$1.slideAlertMotion] }, changeDetection: 0 });
+        NzAlertComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-alert',
+                        exportAs: 'nzAlert',
+                        animations: [core$1.slideAlertMotion],
+                        template: "<div *ngIf=\"!destroy\"\n  class=\"ant-alert\"\n  [class.ant-alert-success]=\"nzType === 'success'\"\n  [class.ant-alert-info]=\"nzType === 'info'\"\n  [class.ant-alert-warning]=\"nzType === 'warning'\"\n  [class.ant-alert-error]=\"nzType === 'error'\"\n  [class.ant-alert-no-icon]=\"!nzShowIcon\"\n  [class.ant-alert-banner]=\"nzBanner\"\n  [class.ant-alert-closable]=\"nzCloseable\"\n  [class.ant-alert-with-description]=\"!!nzDescription\"\n  [@slideAlertMotion]\n  (@slideAlertMotion.done)=\"onFadeAnimationDone()\">\n  <ng-container *ngIf=\"nzShowIcon\">\n    <i class=\"ant-alert-icon\" [ngClass]=\"nzIconType\" *ngIf=\"isIconTypeObject; else iconTemplate\"></i>\n    <ng-template #iconTemplate>\n      <i nz-icon class=\"ant-alert-icon\" [nzType]=\"iconType\" [nzTheme]=\"iconTheme\"></i>\n    </ng-template>\n  </ng-container>\n  <span class=\"ant-alert-message\" *ngIf=\"nzMessage\">\n    <ng-container *nzStringTemplateOutlet=\"nzMessage\">{{ nzMessage }}</ng-container>\n  </span>\n  <span class=\"ant-alert-description\" *ngIf=\"nzDescription\">\n    <ng-container *nzStringTemplateOutlet=\"nzDescription\">{{ nzDescription }}</ng-container>\n  </span>\n  <a *ngIf=\"nzCloseable || nzCloseText\"\n    class=\"ant-alert-close-icon\"\n    (click)=\"closeAlert()\">\n    <ng-template #closeDefaultTemplate>\n      <i nz-icon nzType=\"close\"></i>\n    </ng-template>\n    <ng-container *ngIf=\"nzCloseText; else closeDefaultTemplate\">\n      <ng-container *nzStringTemplateOutlet=\"nzCloseText\">{{ nzCloseText }}</ng-container>\n    </ng-container>\n  </a>\n</div>\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        styles: ["\n      nz-alert {\n        display: block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzAlertComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService }
+        ]; };
+        NzAlertComponent.propDecorators = {
+            nzCloseText: [{ type: core.Input }],
+            nzIconType: [{ type: core.Input }],
+            nzMessage: [{ type: core.Input }],
+            nzDescription: [{ type: core.Input }],
+            nzType: [{ type: core.Input }],
+            nzCloseable: [{ type: core.Input }],
+            nzShowIcon: [{ type: core.Input }],
+            nzBanner: [{ type: core.Input }],
+            nzOnClose: [{ type: core.Output }]
+        };
         __decorate([
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, false), core$1.InputBoolean(),
             __metadata("design:type", Boolean)
@@ -405,63 +346,67 @@
         ], NzAlertComponent.prototype, "nzBanner", void 0);
         return NzAlertComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzAlertComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-alert',
-                    exportAs: 'nzAlert',
-                    animations: [core$1.slideAlertMotion],
-                    templateUrl: './nz-alert.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    preserveWhitespaces: false,
-                    styles: [
-                        "\n      nz-alert {\n        display: block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }]; }, { nzCloseText: [{
-                type: core.Input
-            }], nzIconType: [{
-                type: core.Input
-            }], nzMessage: [{
-                type: core.Input
-            }], nzDescription: [{
-                type: core.Input
-            }], nzType: [{
-                type: core.Input
-            }], nzCloseable: [{
-                type: core.Input
-            }], nzShowIcon: [{
-                type: core.Input
-            }], nzBanner: [{
-                type: core.Input
-            }], nzOnClose: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzAlertComponent.prototype.nzCloseText;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzIconType;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzMessage;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzDescription;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzType;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzCloseable;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzShowIcon;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzBanner;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzOnClose;
+        /** @type {?} */
+        NzAlertComponent.prototype.destroy;
+        /** @type {?} */
+        NzAlertComponent.prototype.iconTheme;
+        /** @type {?} */
+        NzAlertComponent.prototype.isIconTypeObject;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAlertComponent.prototype.isTypeSet;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAlertComponent.prototype.isShowIconSet;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAlertComponent.prototype.inferredIconType;
+        /** @type {?} */
+        NzAlertComponent.prototype.nzConfigService;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-alert.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAlertModule = /** @class */ (function () {
         function NzAlertModule() {
         }
-        /** @nocollapse */ NzAlertModule.ɵmod = core.ɵɵdefineNgModule({ type: NzAlertModule });
-        /** @nocollapse */ NzAlertModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzAlertModule_Factory(t) { return new (t || NzAlertModule)(); }, imports: [[common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule]] });
+        NzAlertModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzAlertComponent],
+                        exports: [NzAlertComponent],
+                        imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule]
+                    },] }
+        ];
         return NzAlertModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzAlertModule, { declarations: [NzAlertComponent], imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule], exports: [NzAlertComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzAlertModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzAlertComponent],
-                    exports: [NzAlertComponent],
-                    imports: [common.CommonModule, icon.NzIconModule, core$1.NzAddOnModule]
-                }]
-        }], null, null); })();
 
     exports.NzAlertComponent = NzAlertComponent;
     exports.NzAlertModule = NzAlertModule;

@@ -10,7 +10,6 @@ import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzMessageContainerComponent } from 'ng-zorro-antd/message';
 import { NzNotificationConfigLegacy } from './nz-notification-config';
 import { NzNotificationDataFilled } from './nz-notification.definitions';
-import * as i0 from "@angular/core";
 export declare class NzNotificationContainerComponent extends NzMessageContainerComponent {
     config: Required<NzNotificationConfigLegacy>;
     bottom: string | null;
@@ -36,6 +35,4 @@ export declare class NzNotificationContainerComponent extends NzMessageContainer
      */
     protected subscribeConfigChange(): void;
     private replaceNotification;
-    static ɵfac: i0.ɵɵFactoryDef<NzNotificationContainerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzNotificationContainerComponent, "nz-notification-container", ["nzNotificationContainer"], {}, {}, never>;
 }

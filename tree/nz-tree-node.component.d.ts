@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, ElementRef, NgZone, OnChanges, OnDestroy, OnInit, Renderer2, TemplateRef } from '@angular/core';
 import { Observable, Subject } from 'rxjs';
 import { NzFormatBeforeDropEvent, NzNoAnimationDirective, NzTreeBaseService, NzTreeNode } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzTreeNodeComponent implements OnInit, OnChanges, OnDestroy {
     nzTreeService: NzTreeBaseService;
     private ngZone;
@@ -117,6 +116,4 @@ export declare class NzTreeNodeComponent implements OnInit, OnChanges, OnDestroy
     ngOnInit(): void;
     ngOnChanges(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTreeNodeComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTreeNodeComponent, "nz-tree-node", ["nzTreeNode"], { 'nzTreeNode': "nzTreeNode", 'nzShowLine': "nzShowLine", 'nzShowExpand': "nzShowExpand", 'nzCheckable': "nzCheckable", 'nzAsyncData': "nzAsyncData", 'nzHideUnMatched': "nzHideUnMatched", 'nzNoAnimation': "nzNoAnimation", 'nzSelectMode': "nzSelectMode", 'nzShowIcon': "nzShowIcon", 'nzExpandedIcon': "nzExpandedIcon", 'nzTreeTemplate': "nzTreeTemplate", 'nzBeforeDrop': "nzBeforeDrop", 'nzSearchValue': "nzSearchValue", 'nzDraggable': "nzDraggable", 'nzDefaultExpandAll': "nzDefaultExpandAll", 'nzExpandAll': "nzExpandAll" }, {}, never>;
 }

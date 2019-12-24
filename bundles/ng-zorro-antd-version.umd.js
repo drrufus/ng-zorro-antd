@@ -5,13 +5,12 @@
 }(this, (function (exports, core) { 'use strict';
 
 	/**
-	 * @license
-	 * Copyright Alibaba.com All Rights Reserved.
-	 *
-	 * Use of this source code is governed by an MIT-style license that can be
-	 * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+	 * @fileoverview added by tsickle
+	 * Generated from: version.ts
+	 * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
 	 */
-	var VERSION = new core.Version('9.0.0-beta.0');
+	/** @type {?} */
+	var VERSION = new core.Version('8.5.2');
 
 	exports.VERSION = VERSION;
 

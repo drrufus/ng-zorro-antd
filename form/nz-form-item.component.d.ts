@@ -11,7 +11,6 @@ import { AfterContentInit, ChangeDetectorRef, ElementRef, NgZone, OnChanges, OnD
 import { NzDomEventService, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzRowDirective } from 'ng-zorro-antd/grid';
 import { NzFormExplainComponent } from './nz-form-explain.component';
-import * as i0 from "@angular/core";
 /** should add nz-row directive to host, track https://github.com/angular/angular/issues/8785 **/
 export declare class NzFormItemComponent extends NzRowDirective implements AfterContentInit, OnDestroy, OnChanges, OnInit, OnDestroy {
     private cdr;
@@ -26,6 +25,4 @@ export declare class NzFormItemComponent extends NzRowDirective implements After
     ngOnInit(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzFormItemComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzFormItemComponent, "nz-form-item", ["nzFormItem"], { 'nzFlex': "nzFlex" }, {}, ["listOfNzFormExplainComponent"]>;
 }

@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit } from '@angular/core';
 import { NzCopyToClipboardService } from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class NzTextCopyComponent implements OnInit, OnDestroy {
     private host;
     private cdr;
@@ -26,6 +25,4 @@ export declare class NzTextCopyComponent implements OnInit, OnDestroy {
     ngOnDestroy(): void;
     onClick(): void;
     onCopied(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTextCopyComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTextCopyComponent, "nz-text-copy", ["nzTextCopy"], { 'text': "text" }, { 'textCopy': "textCopy" }, never>;
 }

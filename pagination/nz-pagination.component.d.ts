@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export interface PaginationItemRenderContext {
     $implicit: 'page' | 'prev' | 'next';
     page: number;
@@ -57,6 +56,4 @@ export declare class NzPaginationComponent implements OnInit, OnDestroy, OnChang
     ngOnInit(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzPaginationComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzPaginationComponent, "nz-pagination", ["nzPagination"], { 'nzShowTotal': "nzShowTotal", 'nzInTable': "nzInTable", 'nzSize': "nzSize", 'nzPageSizeOptions': "nzPageSizeOptions", 'nzItemRender': "nzItemRender", 'nzDisabled': "nzDisabled", 'nzShowSizeChanger': "nzShowSizeChanger", 'nzHideOnSinglePage': "nzHideOnSinglePage", 'nzShowQuickJumper': "nzShowQuickJumper", 'nzSimple': "nzSimple", 'nzTotal': "nzTotal", 'nzPageIndex': "nzPageIndex", 'nzPageSize': "nzPageSize" }, { 'nzPageSizeChange': "nzPageSizeChange", 'nzPageIndexChange': "nzPageIndexChange" }, never>;
 }

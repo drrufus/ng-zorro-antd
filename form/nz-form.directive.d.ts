@@ -9,7 +9,6 @@ import { AfterContentInit, ElementRef, OnChanges, OnDestroy, OnInit, QueryList, 
 import { Subject } from 'rxjs';
 import { NzConfigService, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzFormLabelComponent } from './nz-form-label.component';
-import * as i0 from "@angular/core";
 export declare class NzFormDirective implements OnInit, OnChanges, AfterContentInit, OnDestroy {
     nzConfigService: NzConfigService;
     private elementRef;
@@ -26,6 +25,4 @@ export declare class NzFormDirective implements OnInit, OnChanges, AfterContentI
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzFormDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzFormDirective, "[nz-form]", ["nzForm"], { 'nzLayout': "nzLayout", 'nzNoColon': "nzNoColon" }, {}, ["nzFormLabelComponent"]>;
 }

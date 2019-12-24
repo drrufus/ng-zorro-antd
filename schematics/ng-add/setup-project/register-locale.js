@@ -17,8 +17,8 @@ function registerLocale(options) {
         const localePrefix = locale.split('_')[0];
         const recorder = host.beginUpdate(appModulePath);
         const changes = [
-            ast_utils_1.insertImport(moduleSource, appModulePath, 'NZ_I18N', 'ng-zorro-antd/i18n'),
-            ast_utils_1.insertImport(moduleSource, appModulePath, locale, 'ng-zorro-antd/i18n'),
+            ast_utils_1.insertImport(moduleSource, appModulePath, 'NZ_I18N', 'ng-zorro-antd'),
+            ast_utils_1.insertImport(moduleSource, appModulePath, locale, 'ng-zorro-antd'),
             ast_utils_1.insertImport(moduleSource, appModulePath, 'registerLocaleData', '@angular/common'),
             ast_utils_1.insertImport(moduleSource, appModulePath, localePrefix, `@angular/common/locales/${localePrefix}`, true),
             registerLocaleData(moduleSource, appModulePath, localePrefix),

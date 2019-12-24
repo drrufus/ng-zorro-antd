@@ -11,7 +11,6 @@ import { AfterContentInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChange
 import { NzMenuBaseService, NzNoAnimationDirective, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzMenuItemDirective } from './nz-menu-item.directive';
 import { NzSubmenuService } from './nz-submenu.service';
-import * as i0 from "@angular/core";
 export declare class NzSubMenuComponent implements OnInit, OnDestroy, AfterContentInit, OnChanges {
     private elementRef;
     nzMenuService: NzMenuBaseService;
@@ -49,6 +48,4 @@ export declare class NzSubMenuComponent implements OnInit, OnDestroy, AfterConte
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSubMenuComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSubMenuComponent, "[nz-submenu]", ["nzSubmenu"], { 'nzMenuClassName': "nzMenuClassName", 'nzPaddingLeft': "nzPaddingLeft", 'nzTitle': "nzTitle", 'nzIcon': "nzIcon", 'nzOpen': "nzOpen", 'nzDisabled': "nzDisabled" }, { 'nzOpenChange': "nzOpenChange" }, ["listOfNzSubMenuComponent", "listOfNzMenuItemDirective"]>;
 }

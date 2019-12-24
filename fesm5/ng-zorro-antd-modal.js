@@ -2,50 +2,65 @@ import { __extends, __assign, __decorate, __metadata } from 'tslib';
 import { FocusTrapFactory } from '@angular/cdk/a11y';
 import { ESCAPE } from '@angular/cdk/keycodes';
 import { OverlayRef, Overlay, OverlayKeyboardDispatcher, OverlayModule } from '@angular/cdk/overlay';
-import { DOCUMENT, NgIf, NgClass, NgStyle, NgSwitch, NgSwitchCase, NgTemplateOutlet, NgSwitchDefault, NgForOf, CommonModule } from '@angular/common';
-import { InjectionToken, ɵɵdefineNgModule, ɵɵdefineInjector, ɵsetClassMetadata, NgModule, ɵɵinject, ɵɵdefineInjectable, Injectable, Optional, SkipSelf, ɵɵdirectiveInject, TemplateRef, ɵɵdefineDirective, Directive, ɵɵprojection, ɵɵelement, ɵɵnextContext, ɵɵstyleProp, ɵɵclassProp, ɵɵproperty, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵadvance, ɵɵgetCurrentView, ɵɵelementStart, ɵɵlistener, ɵɵrestoreView, ɵɵtemplate, ɵɵelementEnd, ɵɵattribute, ɵɵelementContainer, ɵɵreference, ɵɵsanitizeHtml, ɵɵtext, ɵɵtextInterpolate1, EventEmitter, Type, Injector, ComponentFactoryResolver, ElementRef, ViewContainerRef, ChangeDetectorRef, ɵɵdefineComponent, ɵɵcontentQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵstaticViewQuery, ɵɵviewQuery, ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature, ɵɵprojectionDef, ɵɵtemplateRefExtractor, ɵɵpipe, ɵɵclassMapInterpolate1, ɵɵpipeBind1, Component, ChangeDetectionStrategy, Inject, Input, Output, ViewChild, ContentChild, ɵɵsetNgModuleScope } from '@angular/core';
+import { DOCUMENT, CommonModule } from '@angular/common';
+import { InjectionToken, NgModule, Injectable, Optional, SkipSelf, ɵɵdefineInjectable, ɵɵinject, Directive, TemplateRef, EventEmitter, Type, Injector, Component, ChangeDetectionStrategy, ComponentFactoryResolver, ElementRef, ViewContainerRef, ChangeDetectorRef, Inject, Input, Output, ViewChild, ContentChild } from '@angular/core';
 import { Subject, fromEvent } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { warnDeprecation, isPromise, getElementOffset, NzConfigService, NzNoAnimationDirective, NzStringTemplateOutletDirective, NzToCssUnitPipe, InputBoolean, WithConfig, NzAddOnModule, NzPipesModule, NzNoAnimationModule, warn } from 'ng-zorro-antd/core';
+import { warnDeprecation, isPromise, getElementOffset, NzConfigService, InputBoolean, WithConfig, NzAddOnModule, NzPipesModule, NzNoAnimationModule, warn } from 'ng-zorro-antd/core';
 import { NzI18nService, NzI18nModule } from 'ng-zorro-antd/i18n';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
-import { NzButtonComponent, NzButtonModule } from 'ng-zorro-antd/button';
+import { NzButtonModule } from 'ng-zorro-antd/button';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 import { ComponentPortal } from '@angular/cdk/portal';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal-config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzModalConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzModalConfig.prototype.nzMask;
+    /** @type {?|undefined} */
+    NzModalConfig.prototype.nzMaskClosable;
+}
+/** @type {?} */
 var NZ_MODAL_CONFIG = new InjectionToken('NZ_MODAL_CONFIG');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal-control.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzModalControlServiceModule = /** @class */ (function () {
     function NzModalControlServiceModule() {
     }
-    /** @nocollapse */ NzModalControlServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzModalControlServiceModule });
-    /** @nocollapse */ NzModalControlServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzModalControlServiceModule_Factory(t) { return new (t || NzModalControlServiceModule)(); } });
+    NzModalControlServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzModalControlServiceModule;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalControlServiceModule, [{
-        type: NgModule
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal-control.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function RegisteredMeta() { }
+if (false) {
+    /** @type {?} */
+    RegisteredMeta.prototype.modalRef;
+    /** @type {?} */
+    RegisteredMeta.prototype.afterOpenSubscription;
+    /** @type {?} */
+    RegisteredMeta.prototype.afterCloseSubscription;
+}
 var NzModalControlService = /** @class */ (function () {
     function NzModalControlService(parentService) {
         this.parentService = parentService;
@@ -55,39 +70,84 @@ var NzModalControlService = /** @class */ (function () {
     }
     Object.defineProperty(NzModalControlService.prototype, "afterAllClose", {
         // Track singleton afterAllClose through over the injection tree
-        get: function () {
-            return this.parentService ? this.parentService.afterAllClose : this.rootAfterAllClose;
+        get: 
+        // Track singleton afterAllClose through over the injection tree
+        /**
+         * @return {?}
+         */
+        function () {
+            return this.parentService ? this.parentService.afterAllClose : (/** @type {?} */ (this.rootAfterAllClose));
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzModalControlService.prototype, "openModals", {
         // Track singleton openModals array through over the injection tree
-        get: function () {
-            return this.parentService ? this.parentService.openModals : this.rootOpenModals;
+        get: 
+        // Track singleton openModals array through over the injection tree
+        /**
+         * @return {?}
+         */
+        function () {
+            return this.parentService ? this.parentService.openModals : (/** @type {?} */ (this.rootOpenModals));
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzModalControlService.prototype, "registeredMetaMap", {
-        get: function () {
+        get: /**
+         * @private
+         * @return {?}
+         */
+        function () {
             // Registered modal for later usage
-            return this.parentService ? this.parentService.registeredMetaMap : this.rootRegisteredMetaMap;
+            return this.parentService ? this.parentService.registeredMetaMap : (/** @type {?} */ (this.rootRegisteredMetaMap));
         },
         enumerable: true,
         configurable: true
     });
     // Register a modal to listen its open/close
-    NzModalControlService.prototype.registerModal = function (modalRef) {
+    // Register a modal to listen its open/close
+    /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    NzModalControlService.prototype.registerModal = 
+    // Register a modal to listen its open/close
+    /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    function (modalRef) {
         var _this = this;
         if (!this.hasRegistered(modalRef)) {
-            var afterOpenSubscription = modalRef.afterOpen.subscribe(function () { return _this.openModals.push(modalRef); });
-            var afterCloseSubscription = modalRef.afterClose.subscribe(function () { return _this.removeOpenModal(modalRef); });
+            /** @type {?} */
+            var afterOpenSubscription = modalRef.afterOpen.subscribe((/**
+             * @return {?}
+             */
+            function () { return _this.openModals.push(modalRef); }));
+            /** @type {?} */
+            var afterCloseSubscription = modalRef.afterClose.subscribe((/**
+             * @return {?}
+             */
+            function () { return _this.removeOpenModal(modalRef); }));
             this.registeredMetaMap.set(modalRef, { modalRef: modalRef, afterOpenSubscription: afterOpenSubscription, afterCloseSubscription: afterCloseSubscription });
         }
     };
     // deregister modals
-    NzModalControlService.prototype.deregisterModal = function (modalRef) {
+    // deregister modals
+    /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    NzModalControlService.prototype.deregisterModal = 
+    // deregister modals
+    /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    function (modalRef) {
+        /** @type {?} */
         var registeredMeta = this.registeredMetaMap.get(modalRef);
         if (registeredMeta) {
             // Remove this modal if it is still in the opened modal list (NOTE: it may trigger "afterAllClose")
@@ -97,17 +157,46 @@ var NzModalControlService = /** @class */ (function () {
             this.registeredMetaMap.delete(modalRef);
         }
     };
-    NzModalControlService.prototype.hasRegistered = function (modalRef) {
+    /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    NzModalControlService.prototype.hasRegistered = /**
+     * @param {?} modalRef
+     * @return {?}
+     */
+    function (modalRef) {
         return this.registeredMetaMap.has(modalRef);
     };
     // Close all registered opened modals
-    NzModalControlService.prototype.closeAll = function () {
+    // Close all registered opened modals
+    /**
+     * @return {?}
+     */
+    NzModalControlService.prototype.closeAll = 
+    // Close all registered opened modals
+    /**
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var i = this.openModals.length;
         while (i--) {
             this.openModals[i].close();
         }
     };
-    NzModalControlService.prototype.removeOpenModal = function (modalRef) {
+    /**
+     * @private
+     * @param {?} modalRef
+     * @return {?}
+     */
+    NzModalControlService.prototype.removeOpenModal = /**
+     * @private
+     * @param {?} modalRef
+     * @return {?}
+     */
+    function (modalRef) {
+        /** @type {?} */
         var index = this.openModals.indexOf(modalRef);
         if (index > -1) {
             this.openModals.splice(index, 1);
@@ -116,21 +205,46 @@ var NzModalControlService = /** @class */ (function () {
             }
         }
     };
-    /** @nocollapse */ NzModalControlService.ɵfac = function NzModalControlService_Factory(t) { return new (t || NzModalControlService)(ɵɵinject(NzModalControlService, 12)); };
-    /** @nocollapse */ NzModalControlService.ɵprov = ɵɵdefineInjectable({ token: NzModalControlService, factory: NzModalControlService.ɵfac, providedIn: NzModalControlServiceModule });
+    NzModalControlService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzModalControlServiceModule
+                },] }
+    ];
+    /** @nocollapse */
+    NzModalControlService.ctorParameters = function () { return [
+        { type: NzModalControlService, decorators: [{ type: Optional }, { type: SkipSelf }] }
+    ]; };
+    /** @nocollapse */ NzModalControlService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzModalControlService_Factory() { return new NzModalControlService(ɵɵinject(NzModalControlService, 12)); }, token: NzModalControlService, providedIn: NzModalControlServiceModule });
     return NzModalControlService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalControlService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzModalControlServiceModule
-            }]
-    }], function () { return [{ type: NzModalControlService, decorators: [{
-                type: Optional
-            }, {
-                type: SkipSelf
-            }] }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalControlService.prototype.rootOpenModals;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalControlService.prototype.rootAfterAllClose;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalControlService.prototype.rootRegisteredMetaMap;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalControlService.prototype.parentService;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal-ref.class.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -141,20 +255,80 @@ var NzModalControlService = /** @class */ (function () {
 /**
  * API class that public to users to handle the modal instance.
  * NzModalRef is aim to avoid accessing to the modal instance directly by users.
+ * @abstract
+ * @template T, R
  */
 // tslint:disable-next-line:no-any
-var NzModalRef = /** @class */ (function () {
+var  /**
+ * API class that public to users to handle the modal instance.
+ * NzModalRef is aim to avoid accessing to the modal instance directly by users.
+ * @abstract
+ * @template T, R
+ */
+// tslint:disable-next-line:no-any
+NzModalRef = /** @class */ (function () {
     function NzModalRef() {
     }
     return NzModalRef;
 }());
+if (false) {
+    /** @type {?} */
+    NzModalRef.prototype.afterOpen;
+    /** @type {?} */
+    NzModalRef.prototype.afterClose;
+    /**
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.open = function () { };
+    /**
+     * @abstract
+     * @param {?=} result
+     * @return {?}
+     */
+    NzModalRef.prototype.close = function (result) { };
+    /**
+     * @abstract
+     * @param {?=} result
+     * @return {?}
+     */
+    NzModalRef.prototype.destroy = function (result) { };
+    /**
+     * Trigger the nzOnOk/nzOnCancel by manual
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.triggerOk = function () { };
+    /**
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.triggerCancel = function () { };
+    /**
+     * Return the component instance of nzContent when specify nzContent as a Component
+     * Note: this method may return undefined if the Component has not ready yet. (it only available after Modal's ngOnInit)
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.getContentComponent = function () { };
+    /**
+     * Get the dom element of this Modal
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.getElement = function () { };
+    /**
+     * Get the instance of the Modal itself
+     * @abstract
+     * @return {?}
+     */
+    NzModalRef.prototype.getInstance = function () { };
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal-footer.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzModalFooterDirective = /** @class */ (function () {
     function NzModalFooterDirective(nzModalRef, templateRef) {
@@ -164,384 +338,44 @@ var NzModalFooterDirective = /** @class */ (function () {
             this.nzModalRef.getInstance().setFooterWithTemplate(this.templateRef);
         }
     }
-    /** @nocollapse */ NzModalFooterDirective.ɵfac = function NzModalFooterDirective_Factory(t) { return new (t || NzModalFooterDirective)(ɵɵdirectiveInject(NzModalRef, 8), ɵɵdirectiveInject(TemplateRef)); };
-    /** @nocollapse */ NzModalFooterDirective.ɵdir = ɵɵdefineDirective({ type: NzModalFooterDirective, selectors: [["", "nzModalFooter", ""]], exportAs: ["nzModalFooter"] });
+    NzModalFooterDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzModalFooter]',
+                    exportAs: 'nzModalFooter'
+                },] }
+    ];
+    /** @nocollapse */
+    NzModalFooterDirective.ctorParameters = function () { return [
+        { type: NzModalRef, decorators: [{ type: Optional }] },
+        { type: TemplateRef }
+    ]; };
     return NzModalFooterDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalFooterDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzModalFooter]',
-                exportAs: 'nzModalFooter'
-            }]
-    }], function () { return [{ type: NzModalRef, decorators: [{
-                type: Optional
-            }] }, { type: TemplateRef }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalFooterDirective.prototype.nzModalRef;
+    /** @type {?} */
+    NzModalFooterDirective.prototype.templateRef;
+}
 
-var _c0 = ["modalContainer"];
-var _c1 = ["bodyContainer"];
-var _c2 = ["autoFocusButtonOk"];
-function NzModalComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵprojection(0);
-} }
-function NzModalComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 11);
-} if (rf & 2) {
-    var ctx_r1308 = ɵɵnextContext();
-    ɵɵstyleProp("z-index", ctx_r1308.nzZIndex);
-    ɵɵclassProp("ant-modal-mask-hidden", ctx_r1308.hidden);
-    ɵɵproperty("ngClass", ctx_r1308.maskAnimationClassMap)("ngStyle", ctx_r1308.nzMaskStyle);
-} }
-function NzModalComponent_button_9_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "i", 15);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1316 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzType", ctx_r1316.nzCloseIcon);
-} }
-function NzModalComponent_button_9_Template(rf, ctx) { if (rf & 1) {
-    var _r1318 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 12);
-    ɵɵlistener("click", function NzModalComponent_button_9_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1318); var ctx_r1317 = ɵɵnextContext(); return ctx_r1317.onClickCloseBtn(); });
-    ɵɵelementStart(1, "span", 13);
-    ɵɵtemplate(2, NzModalComponent_button_9_ng_container_2_Template, 2, 1, "ng-container", 14);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1310 = ɵɵnextContext();
-    ɵɵattribute("aria-label", ctx_r1310.nzAriaLabel);
-    ɵɵadvance(2);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r1310.nzCloseIcon);
-} }
-function NzModalComponent_ng_container_10_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    ɵɵnextContext(2);
-    var _r1312 = ɵɵreference(12);
-    ɵɵproperty("ngTemplateOutlet", _r1312);
-} }
-function NzModalComponent_ng_container_10_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    ɵɵnextContext(2);
-    var _r1314 = ɵɵreference(14);
-    ɵɵproperty("ngTemplateOutlet", _r1314);
-} }
-function NzModalComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0, 16);
-    ɵɵtemplate(1, NzModalComponent_ng_container_10_ng_container_1_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(2, NzModalComponent_ng_container_10_ng_container_2_Template, 1, 1, "ng-container", 17);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1311 = ɵɵnextContext();
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1311.isModalType("default"));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1311.isModalType("confirm"));
-} }
-function NzModalComponent_ng_template_11_div_0_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    var ctx_r1325 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1325.nzTitle);
-} }
-function NzModalComponent_ng_template_11_div_0_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "div", 26);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1326 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1326.nzTitle, ɵɵsanitizeHtml);
-} }
-function NzModalComponent_ng_template_11_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 23);
-    ɵɵelementStart(1, "div", 24);
-    ɵɵelementContainerStart(2, 16);
-    ɵɵtemplate(3, NzModalComponent_ng_template_11_div_0_ng_container_3_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(4, NzModalComponent_ng_template_11_div_0_ng_container_4_Template, 2, 1, "ng-container", 25);
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1321 = ɵɵnextContext(2);
-    ɵɵadvance(2);
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1321.isTemplateRef(ctx_r1321.nzTitle));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1321.isNonEmptyString(ctx_r1321.nzTitle));
-} }
-function NzModalComponent_ng_template_11_ng_container_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    var ctx_r1327 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1327.nzContent);
-} }
-function NzModalComponent_ng_template_11_ng_container_4_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "div", 26);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1328 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1328.nzContent, ɵɵsanitizeHtml);
-} }
-function NzModalComponent_ng_template_11_ng_container_4_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    ɵɵnextContext(3);
-    var _r1306 = ɵɵreference(1);
-    ɵɵproperty("ngTemplateOutlet", _r1306);
-} }
-function NzModalComponent_ng_template_11_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0, 16);
-    ɵɵtemplate(1, NzModalComponent_ng_template_11_ng_container_4_ng_container_1_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(2, NzModalComponent_ng_template_11_ng_container_4_ng_container_2_Template, 2, 1, "ng-container", 25);
-    ɵɵtemplate(3, NzModalComponent_ng_template_11_ng_container_4_ng_container_3_Template, 1, 1, "ng-container", 27);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1323 = ɵɵnextContext(2);
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1323.isTemplateRef(ctx_r1323.nzContent));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1323.isNonEmptyString(ctx_r1323.nzContent));
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    var ctx_r1330 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1330.nzFooter);
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "div", 26);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1331 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1331.nzFooter, ɵɵsanitizeHtml);
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template(rf, ctx) { if (rf & 1) {
-    var _r1337 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 31);
-    ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1337); var button_r1335 = ctx.$implicit; var ctx_r1336 = ɵɵnextContext(4); return ctx_r1336.onButtonClick(button_r1335); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var button_r1335 = ctx.$implicit;
-    var ctx_r1334 = ɵɵnextContext(4);
-    ɵɵproperty("hidden", !ctx_r1334.getButtonCallableProp(button_r1335, "show"))("nzLoading", ctx_r1334.getButtonCallableProp(button_r1335, "loading"))("disabled", ctx_r1334.getButtonCallableProp(button_r1335, "disabled"))("nzType", button_r1335.type)("nzShape", button_r1335.shape)("nzSize", button_r1335.size)("nzGhost", button_r1335.ghost);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", button_r1335.label, " ");
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template, 2, 8, "button", 30);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1332 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("ngForOf", ctx_r1332.nzFooter);
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template(rf, ctx) { if (rf & 1) {
-    var _r1341 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 34);
-    ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1341); var ctx_r1340 = ɵɵnextContext(4); return ctx_r1340.onClickOkCancel("cancel"); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1338 = ɵɵnextContext(4);
-    ɵɵproperty("nzLoading", ctx_r1338.nzCancelLoading)("disabled", ctx_r1338.nzCancelDisabled);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r1338.cancelText, " ");
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template(rf, ctx) { if (rf & 1) {
-    var _r1343 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 35);
-    ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1343); var ctx_r1342 = ɵɵnextContext(4); return ctx_r1342.onClickOkCancel("ok"); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1339 = ɵɵnextContext(4);
-    ɵɵproperty("nzType", ctx_r1339.nzOkType)("nzLoading", ctx_r1339.nzOkLoading)("disabled", ctx_r1339.nzOkDisabled);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r1339.okText, " ");
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template, 2, 3, "button", 32);
-    ɵɵtemplate(2, NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template, 2, 4, "button", 33);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1333 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r1333.nzCancelText !== null);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r1333.nzOkText !== null);
-} }
-function NzModalComponent_ng_template_11_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 28);
-    ɵɵelementContainerStart(1, 16);
-    ɵɵtemplate(2, NzModalComponent_ng_template_11_div_5_ng_container_2_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(3, NzModalComponent_ng_template_11_div_5_ng_container_3_Template, 2, 1, "ng-container", 25);
-    ɵɵtemplate(4, NzModalComponent_ng_template_11_div_5_ng_container_4_Template, 2, 1, "ng-container", 25);
-    ɵɵtemplate(5, NzModalComponent_ng_template_11_div_5_ng_container_5_Template, 3, 2, "ng-container", 29);
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1324 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1324.isTemplateRef(ctx_r1324.nzFooter));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1324.isNonEmptyString(ctx_r1324.nzFooter));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1324.isModalButtons(ctx_r1324.nzFooter));
-} }
-function NzModalComponent_ng_template_11_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, NzModalComponent_ng_template_11_div_0_Template, 5, 3, "div", 19);
-    ɵɵelementStart(1, "div", 20);
-    ɵɵelementContainerStart(2, null, 21);
-    ɵɵtemplate(4, NzModalComponent_ng_template_11_ng_container_4_Template, 4, 3, "ng-container", 8);
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-    ɵɵtemplate(5, NzModalComponent_ng_template_11_div_5_Template, 6, 4, "div", 22);
-} if (rf & 2) {
-    var ctx_r1313 = ɵɵnextContext();
-    ɵɵproperty("ngIf", ctx_r1313.nzTitle);
-    ɵɵadvance(1);
-    ɵɵproperty("ngStyle", ctx_r1313.nzBodyStyle);
-    ɵɵadvance(3);
-    ɵɵproperty("ngIf", !ctx_r1313.isComponent(ctx_r1313.nzContent));
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r1313.nzFooter !== null);
-} }
-function NzModalComponent_ng_template_13_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    var ctx_r1344 = ɵɵnextContext(2);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1344.nzTitle);
-} }
-function NzModalComponent_ng_template_13_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "span", 26);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1345 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1345.nzTitle, ɵɵsanitizeHtml);
-} }
-function NzModalComponent_ng_template_13_ng_container_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    var ctx_r1350 = ɵɵnextContext(3);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1350.nzContent);
-} }
-function NzModalComponent_ng_template_13_ng_container_11_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "div", 26);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1351 = ɵɵnextContext(3);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1351.nzContent, ɵɵsanitizeHtml);
-} }
-function NzModalComponent_ng_template_13_ng_container_11_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainer(0, 18);
-} if (rf & 2) {
-    ɵɵnextContext(3);
-    var _r1306 = ɵɵreference(1);
-    ɵɵproperty("ngTemplateOutlet", _r1306);
-} }
-function NzModalComponent_ng_template_13_ng_container_11_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0, 16);
-    ɵɵtemplate(1, NzModalComponent_ng_template_13_ng_container_11_ng_container_1_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(2, NzModalComponent_ng_template_13_ng_container_11_ng_container_2_Template, 2, 1, "ng-container", 25);
-    ɵɵtemplate(3, NzModalComponent_ng_template_13_ng_container_11_ng_container_3_Template, 1, 1, "ng-container", 27);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1347 = ɵɵnextContext(2);
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1347.isTemplateRef(ctx_r1347.nzContent));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1347.isNonEmptyString(ctx_r1347.nzContent));
-} }
-function NzModalComponent_ng_template_13_button_13_Template(rf, ctx) { if (rf & 1) {
-    var _r1354 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 34);
-    ɵɵlistener("click", function NzModalComponent_ng_template_13_button_13_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1354); var ctx_r1353 = ɵɵnextContext(2); return ctx_r1353.onClickOkCancel("cancel"); });
-    ɵɵtext(1);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1348 = ɵɵnextContext(2);
-    ɵɵproperty("nzLoading", ctx_r1348.nzCancelLoading)("disabled", ctx_r1348.nzCancelDisabled);
-    ɵɵadvance(1);
-    ɵɵtextInterpolate1(" ", ctx_r1348.cancelText, " ");
-} }
-function NzModalComponent_ng_template_13_button_14_Template(rf, ctx) { if (rf & 1) {
-    var _r1357 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "button", 35, 42);
-    ɵɵlistener("click", function NzModalComponent_ng_template_13_button_14_Template_button_click_0_listener($event) { ɵɵrestoreView(_r1357); var ctx_r1356 = ɵɵnextContext(2); return ctx_r1356.onClickOkCancel("ok"); });
-    ɵɵtext(2);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1349 = ɵɵnextContext(2);
-    ɵɵproperty("nzType", ctx_r1349.nzOkType)("nzLoading", ctx_r1349.nzOkLoading)("disabled", ctx_r1349.nzOkDisabled);
-    ɵɵadvance(2);
-    ɵɵtextInterpolate1(" ", ctx_r1349.okText, " ");
-} }
-function NzModalComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 20);
-    ɵɵelementStart(1, "div", 36);
-    ɵɵelementStart(2, "div", 37);
-    ɵɵelement(3, "i", 38);
-    ɵɵelementStart(4, "span", 39);
-    ɵɵelementContainerStart(5, 16);
-    ɵɵtemplate(6, NzModalComponent_ng_template_13_ng_container_6_Template, 1, 1, "ng-container", 17);
-    ɵɵtemplate(7, NzModalComponent_ng_template_13_ng_container_7_Template, 2, 1, "ng-container", 25);
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(8, "div", 40);
-    ɵɵelementContainerStart(9, null, 21);
-    ɵɵtemplate(11, NzModalComponent_ng_template_13_ng_container_11_Template, 4, 3, "ng-container", 8);
-    ɵɵelementContainerEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementStart(12, "div", 41);
-    ɵɵtemplate(13, NzModalComponent_ng_template_13_button_13_Template, 2, 3, "button", 32);
-    ɵɵtemplate(14, NzModalComponent_ng_template_13_button_14_Template, 3, 4, "button", 33);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1315 = ɵɵnextContext();
-    ɵɵproperty("ngStyle", ctx_r1315.nzBodyStyle);
-    ɵɵadvance(3);
-    ɵɵproperty("nzType", ctx_r1315.nzIconType);
-    ɵɵadvance(2);
-    ɵɵproperty("ngSwitch", true);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1315.isTemplateRef(ctx_r1315.nzTitle));
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", ctx_r1315.isNonEmptyString(ctx_r1315.nzTitle));
-    ɵɵadvance(4);
-    ɵɵproperty("ngIf", !ctx_r1315.isComponent(ctx_r1315.nzContent));
-    ɵɵadvance(2);
-    ɵɵproperty("ngIf", ctx_r1315.nzCancelText !== null);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r1315.nzOkText !== null);
-} }
-var _c3 = ["*"];
-var MODAL_ANIMATE_DURATION = 200; // Duration when perform animations (ms)
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+var MODAL_ANIMATE_DURATION = 200;
+// Duration when perform animations (ms)
+/** @type {?} */
 var WRAP_CLASS_NAME = 'ant-modal-wrap';
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'modal';
+/**
+ * @template T, R
+ */
 var NzModalComponent = /** @class */ (function (_super) {
     __extends(NzModalComponent, _super);
     function NzModalComponent(nzConfigService, overlay, overlayKeyboardDispatcher, i18n, cfr, elementRef, viewContainer, modalControl, focusTrapFactory, cdr, nzModalGlobalConfig, document // tslint:disable-line:no-any
@@ -567,18 +401,26 @@ var NzModalComponent = /** @class */ (function (_super) {
         _this.nzCancelLoading = false;
         _this.nzKeyboard = true;
         _this.nzNoAnimation = false;
-        _this.nzGetContainer = function () { return _this.overlay.create(); }; // [STATIC]
+        // [STATIC] Default Modal ONLY
+        _this.nzGetContainer = (/**
+         * @return {?}
+         */
+        function () { return _this.overlay.create(); }); // [STATIC]
+        // [STATIC]
         _this.nzZIndex = 1000;
         _this.nzWidth = 520;
         _this.nzCloseIcon = 'close';
         _this.nzOkType = 'primary';
         _this.nzIconType = 'question-circle'; // Confirm Modal ONLY
+        // Confirm Modal ONLY
         _this.nzModalType = 'default';
-        _this.nzAriaLabel = 'Close';
+        _this.nzCloseAriaLabel = 'Close';
         _this.nzOnOk = new EventEmitter();
         _this.nzOnCancel = new EventEmitter();
         _this.nzAfterOpen = new EventEmitter(); // Trigger when modal open(visible) after animations
+        // Trigger when modal open(visible) after animations
         _this.nzAfterClose = new EventEmitter(); // Trigger when modal leave-animation over
+        // Trigger when modal leave-animation over
         _this.nzVisibleChange = new EventEmitter();
         _this.locale = {};
         _this.transformOrigin = '0px 0px 0px'; // The origin point that animation based on
@@ -591,7 +433,13 @@ var NzModalComponent = /** @class */ (function (_super) {
         return _this;
     }
     Object.defineProperty(NzModalComponent.prototype, "modalFooter", {
-        set: function (value) {
+        set: 
+        // Only aim to focus the ok button that needs to be auto focused
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (value && value.templateRef) {
                 this.setFooterWithTemplate(value.templateRef);
             }
@@ -600,7 +448,10 @@ var NzModalComponent = /** @class */ (function (_super) {
         configurable: true
     });
     Object.defineProperty(NzModalComponent.prototype, "afterOpen", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             // Observable alias for nzAfterOpen
             return this.nzAfterOpen.asObservable();
         },
@@ -608,7 +459,10 @@ var NzModalComponent = /** @class */ (function (_super) {
         configurable: true
     });
     Object.defineProperty(NzModalComponent.prototype, "afterClose", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             // Observable alias for nzAfterClose
             return this.nzAfterClose.asObservable();
         },
@@ -616,21 +470,30 @@ var NzModalComponent = /** @class */ (function (_super) {
         configurable: true
     });
     Object.defineProperty(NzModalComponent.prototype, "cancelText", {
-        get: function () {
-            return this.nzCancelText || this.locale.cancelText;
+        get: /**
+         * @return {?}
+         */
+        function () {
+            return this.nzCancelText || (/** @type {?} */ (this.locale.cancelText));
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzModalComponent.prototype, "okText", {
-        get: function () {
-            return this.nzOkText || this.locale.okText;
+        get: /**
+         * @return {?}
+         */
+        function () {
+            return this.nzOkText || (/** @type {?} */ (this.locale.okText));
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzModalComponent.prototype, "hidden", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return !this.nzVisible && !this.animationState;
         } // Indicate whether this dialog should hidden
         ,
@@ -645,7 +508,17 @@ var NzModalComponent = /** @class */ (function (_super) {
          * Weight of different mask input:
          * component default value < global configuration < component input value
          */
-        get: function () {
+        get: 
+        // Indicate whether this dialog should hidden
+        /**
+         * \@description
+         * The calculated highest weight of mask value
+         *
+         * Weight of different mask input:
+         * component default value < global configuration < component input value
+         * @return {?}
+         */
+        function () {
             if (this.nzMask != null) {
                 return this.nzMask;
             }
@@ -667,7 +540,15 @@ var NzModalComponent = /** @class */ (function (_super) {
          * Weight of different maskClosable input:
          * component default value < global configuration < component input value
          */
-        get: function () {
+        get: /**
+         * \@description
+         * The calculated highest weight of maskClosable value
+         *
+         * Weight of different maskClosable input:
+         * component default value < global configuration < component input value
+         * @return {?}
+         */
+        function () {
             if (this.nzMaskClosable != null) {
                 return this.nzMaskClosable;
             }
@@ -681,17 +562,26 @@ var NzModalComponent = /** @class */ (function (_super) {
         enumerable: true,
         configurable: true
     });
-    NzModalComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.i18n.localeChange.pipe(takeUntil(this.unsubscribe$)).subscribe(function () {
+        this.i18n.localeChange.pipe(takeUntil(this.unsubscribe$)).subscribe((/**
+         * @return {?}
+         */
+        function () {
             _this.locale = _this.i18n.getLocaleData('Modal');
-        });
+        }));
         if (this.isComponent(this.nzContent)) {
-            this.createDynamicComponent(this.nzContent); // Create component along without View
+            this.createDynamicComponent((/** @type {?} */ (this.nzContent))); // Create component along without View
         }
         if (this.isModalButtons(this.nzFooter)) {
             // Setup default button options
-            this.nzFooter = this.formatModalButtons(this.nzFooter);
+            this.nzFooter = this.formatModalButtons((/** @type {?} */ (this.nzFooter)));
         }
         // Place the modal dom to elsewhere
         this.container = typeof this.nzGetContainer === 'function' ? this.nzGetContainer() : this.nzGetContainer;
@@ -699,7 +589,11 @@ var NzModalComponent = /** @class */ (function (_super) {
             this.container.appendChild(this.elementRef.nativeElement);
             fromEvent(this.document.body, 'keydown')
                 .pipe(takeUntil(this.unsubscribe$))
-                .subscribe(function (e) { return _this.keydownListener(e); });
+                .subscribe((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) { return _this.keydownListener(e); }));
         }
         else if (this.container instanceof OverlayRef) {
             // NOTE: only attach the dom to overlay, the view container is not changed actually
@@ -710,7 +604,11 @@ var NzModalComponent = /** @class */ (function (_super) {
             this.overlayRef
                 .keydownEvents()
                 .pipe(takeUntil(this.unsubscribe$))
-                .subscribe(function (e) { return _this.keydownListener(e); });
+                .subscribe((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) { return _this.keydownListener(e); }));
         }
         // Register modal when afterOpen/afterClose is stable
         this.modalControl.registerModal(this);
@@ -719,138 +617,359 @@ var NzModalComponent = /** @class */ (function (_super) {
     // Because ngOnChanges never be called when using by service,
     // here we can't support "nzContent"(Component) etc. as inputs that initialized dynamically.
     // BUT: User also can change "nzContent" dynamically to trigger UI changes (provided you don't use Component that needs initializations)
-    NzModalComponent.prototype.ngOnChanges = function (changes) {
+    // [NOTE] NOT available when using by service!
+    // Because ngOnChanges never be called when using by service,
+    // here we can't support "nzContent"(Component) etc. as inputs that initialized dynamically.
+    // BUT: User also can change "nzContent" dynamically to trigger UI changes (provided you don't use Component that needs initializations)
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzModalComponent.prototype.ngOnChanges = 
+    // [NOTE] NOT available when using by service!
+    // Because ngOnChanges never be called when using by service,
+    // here we can't support "nzContent"(Component) etc. as inputs that initialized dynamically.
+    // BUT: User also can change "nzContent" dynamically to trigger UI changes (provided you don't use Component that needs initializations)
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         if (changes.nzVisible) {
             this.handleVisibleStateChange(this.nzVisible, !changes.nzVisible.firstChange); // Do not trigger animation while initializing
         }
     };
-    NzModalComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         // If using Component, it is the time to attach View while bodyContainer is ready
         if (this.contentComponentRef) {
             this.bodyContainer.insert(this.contentComponentRef.hostView);
         }
         if (this.autoFocusButtonOk) {
-            this.autoFocusButtonOk.nativeElement.focus();
+            ((/** @type {?} */ (this.autoFocusButtonOk.nativeElement))).focus();
         }
     };
-    NzModalComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         // Close self before destructing
-        this.changeVisibleFromInside(false).then(function () {
+        this.changeVisibleFromInside(false).then((/**
+         * @return {?}
+         */
+        function () {
             _this.modalControl.deregisterModal(_this);
             if (_this.container instanceof OverlayRef) {
                 _this.container.dispose();
             }
             _this.unsubscribe$.next();
             _this.unsubscribe$.complete();
-        });
+        }));
         clearTimeout(this.timeoutId);
     };
-    NzModalComponent.prototype.setFooterWithTemplate = function (templateRef) {
+    /**
+     * @param {?} templateRef
+     * @return {?}
+     */
+    NzModalComponent.prototype.setFooterWithTemplate = /**
+     * @param {?} templateRef
+     * @return {?}
+     */
+    function (templateRef) {
         this.nzFooter = templateRef;
         this.cdr.markForCheck();
     };
-    NzModalComponent.prototype.setOverlayRef = function (overlayRef) {
+    /**
+     * @param {?} overlayRef
+     * @return {?}
+     */
+    NzModalComponent.prototype.setOverlayRef = /**
+     * @param {?} overlayRef
+     * @return {?}
+     */
+    function (overlayRef) {
         this.overlayRef = overlayRef;
     };
-    NzModalComponent.prototype.keydownListener = function (event) {
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    NzModalComponent.prototype.keydownListener = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
         if (event.keyCode === ESCAPE && this.nzKeyboard) {
             this.onClickOkCancel('cancel');
         }
     };
-    NzModalComponent.prototype.open = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.open = /**
+     * @return {?}
+     */
+    function () {
         this.changeVisibleFromInside(true);
     };
-    NzModalComponent.prototype.close = function (result) {
+    /**
+     * @param {?=} result
+     * @return {?}
+     */
+    NzModalComponent.prototype.close = /**
+     * @param {?=} result
+     * @return {?}
+     */
+    function (result) {
         this.changeVisibleFromInside(false, result);
     };
-    NzModalComponent.prototype.destroy = function (result) {
+    /**
+     * @param {?=} result
+     * @return {?}
+     */
+    NzModalComponent.prototype.destroy = /**
+     * @param {?=} result
+     * @return {?}
+     */
+    function (result) {
         // Destroy equals Close
         this.close(result);
     };
-    NzModalComponent.prototype.triggerOk = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.triggerOk = /**
+     * @return {?}
+     */
+    function () {
         this.onClickOkCancel('ok');
     };
-    NzModalComponent.prototype.triggerCancel = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.triggerCancel = /**
+     * @return {?}
+     */
+    function () {
         this.onClickOkCancel('cancel');
     };
-    NzModalComponent.prototype.getInstance = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.getInstance = /**
+     * @return {?}
+     */
+    function () {
         return this;
     };
-    NzModalComponent.prototype.getContentComponentRef = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.getContentComponentRef = /**
+     * @return {?}
+     */
+    function () {
         return this.contentComponentRef;
     };
-    NzModalComponent.prototype.getContentComponent = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.getContentComponent = /**
+     * @return {?}
+     */
+    function () {
         return this.contentComponentRef && this.contentComponentRef.instance;
     };
-    NzModalComponent.prototype.getElement = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.getElement = /**
+     * @return {?}
+     */
+    function () {
         return this.elementRef && this.elementRef.nativeElement;
     };
-    NzModalComponent.prototype.onMaskDialogDown = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.onMaskDialogDown = /**
+     * @return {?}
+     */
+    function () {
         this.dialogMouseDown = true;
     };
-    NzModalComponent.prototype.onDialogUp = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.onDialogUp = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this.dialogMouseDown) {
-            this.timeoutId = setTimeout(function () {
+            this.timeoutId = setTimeout((/**
+             * @return {?}
+             */
+            function () {
                 _this.dialogMouseDown = false;
-            }, 0);
+            }), 0);
         }
     };
-    NzModalComponent.prototype.onClickMask = function ($event) {
+    /**
+     * @param {?} $event
+     * @return {?}
+     */
+    NzModalComponent.prototype.onClickMask = /**
+     * @param {?} $event
+     * @return {?}
+     */
+    function ($event) {
         if (this.mask &&
             this.maskClosable &&
-            $event.target.classList.contains(WRAP_CLASS_NAME) &&
+            ((/** @type {?} */ ($event.target))).classList.contains(WRAP_CLASS_NAME) &&
             this.nzVisible &&
             !this.dialogMouseDown) {
             this.onClickOkCancel('cancel');
         }
     };
-    NzModalComponent.prototype.isModalType = function (type) {
+    /**
+     * @param {?} type
+     * @return {?}
+     */
+    NzModalComponent.prototype.isModalType = /**
+     * @param {?} type
+     * @return {?}
+     */
+    function (type) {
         return this.nzModalType === type;
     };
-    NzModalComponent.prototype.onClickCloseBtn = function () {
+    /**
+     * @return {?}
+     */
+    NzModalComponent.prototype.onClickCloseBtn = /**
+     * @return {?}
+     */
+    function () {
         if (this.nzVisible) {
             this.onClickOkCancel('cancel');
         }
     };
-    NzModalComponent.prototype.onClickOkCancel = function (type) {
+    /**
+     * @param {?} type
+     * @return {?}
+     */
+    NzModalComponent.prototype.onClickOkCancel = /**
+     * @param {?} type
+     * @return {?}
+     */
+    function (type) {
         var _this = this;
+        /** @type {?} */
         var trigger = { ok: this.nzOnOk, cancel: this.nzOnCancel }[type];
+        /** @type {?} */
         var loadingKey = { ok: 'nzOkLoading', cancel: 'nzCancelLoading' }[type];
         if (trigger instanceof EventEmitter) {
             trigger.emit(this.getContentComponent());
         }
         else if (typeof trigger === 'function') {
+            /** @type {?} */
             var result = trigger(this.getContentComponent());
-            var caseClose_1 = function (doClose) { return doClose !== false && _this.close(doClose); }; // Users can return "false" to prevent closing by default
+            /** @type {?} */
+            var caseClose_1 = (/**
+             * @param {?} doClose
+             * @return {?}
+             */
+            function (doClose) { return doClose !== false && _this.close((/** @type {?} */ (doClose))); });
             if (isPromise(result)) {
                 this[loadingKey] = true;
-                var handleThen = function (doClose) {
+                /** @type {?} */
+                var handleThen = (/**
+                 * @param {?} doClose
+                 * @return {?}
+                 */
+                function (doClose) {
                     _this[loadingKey] = false;
                     caseClose_1(doClose);
-                };
-                result.then(handleThen).catch(handleThen);
+                });
+                ((/** @type {?} */ (result))).then(handleThen).catch(handleThen);
             }
             else {
                 caseClose_1(result);
             }
         }
     };
-    NzModalComponent.prototype.isNonEmptyString = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzModalComponent.prototype.isNonEmptyString = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         return typeof value === 'string' && value !== '';
     };
-    NzModalComponent.prototype.isTemplateRef = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzModalComponent.prototype.isTemplateRef = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         return value instanceof TemplateRef;
     };
-    NzModalComponent.prototype.isComponent = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzModalComponent.prototype.isComponent = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         return value instanceof Type;
     };
-    NzModalComponent.prototype.isModalButtons = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzModalComponent.prototype.isModalButtons = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         return Array.isArray(value) && value.length > 0;
     };
     // Do rest things when visible state changed
-    NzModalComponent.prototype.handleVisibleStateChange = function (visible, animation, closeResult) {
+    // Do rest things when visible state changed
+    /**
+     * @private
+     * @param {?} visible
+     * @param {?=} animation
+     * @param {?=} closeResult
+     * @return {?}
+     */
+    NzModalComponent.prototype.handleVisibleStateChange = 
+    // Do rest things when visible state changed
+    /**
+     * @private
+     * @param {?} visible
+     * @param {?=} animation
+     * @param {?=} closeResult
+     * @return {?}
+     */
+    function (visible, animation, closeResult) {
         var _this = this;
         if (animation === void 0) { animation = true; }
         if (visible) {
@@ -867,7 +986,10 @@ var NzModalComponent = /** @class */ (function (_super) {
                 this.overlayKeyboardDispatcher.remove(this.overlayRef);
             }
         }
-        return Promise.resolve(animation ? this.animateTo(visible) : undefined).then(function () {
+        return Promise.resolve(animation ? this.animateTo(visible) : undefined).then((/**
+         * @return {?}
+         */
+        function () {
             // Emit open/close event after animations over
             if (visible) {
                 _this.nzAfterOpen.emit();
@@ -879,11 +1001,26 @@ var NzModalComponent = /** @class */ (function (_super) {
                 // Mark the for check so it can react if the view container is using OnPush change detection.
                 _this.cdr.markForCheck();
             }
-        });
+        }));
     };
     // Lookup a button's property, if the prop is a function, call & then return the result, otherwise, return itself.
-    NzModalComponent.prototype.getButtonCallableProp = function (options, prop) {
+    // Lookup a button's property, if the prop is a function, call & then return the result, otherwise, return itself.
+    /**
+     * @param {?} options
+     * @param {?} prop
+     * @return {?}
+     */
+    NzModalComponent.prototype.getButtonCallableProp = 
+    // Lookup a button's property, if the prop is a function, call & then return the result, otherwise, return itself.
+    /**
+     * @param {?} options
+     * @param {?} prop
+     * @return {?}
+     */
+    function (options, prop) {
+        /** @type {?} */
         var value = options[prop];
+        /** @type {?} */
         var args = [];
         if (this.contentComponentRef) {
             args.push(this.contentComponentRef.instance);
@@ -891,15 +1028,48 @@ var NzModalComponent = /** @class */ (function (_super) {
         return typeof value === 'function' ? value.apply(options, args) : value;
     };
     // On nzFooter's modal button click
-    NzModalComponent.prototype.onButtonClick = function (button) {
-        var result = this.getButtonCallableProp(button, 'onClick'); // Call onClick directly
+    // On nzFooter's modal button click
+    /**
+     * @param {?} button
+     * @return {?}
+     */
+    NzModalComponent.prototype.onButtonClick = 
+    // On nzFooter's modal button click
+    /**
+     * @param {?} button
+     * @return {?}
+     */
+    function (button) {
+        /** @type {?} */
+        var result = this.getButtonCallableProp(button, 'onClick');
         if (isPromise(result)) {
             button.loading = true;
-            result.then(function () { return (button.loading = false); }).catch(function () { return (button.loading = false); });
+            ((/** @type {?} */ (result))).then((/**
+             * @return {?}
+             */
+            function () { return (button.loading = false); })).catch((/**
+             * @return {?}
+             */
+            function () { return (button.loading = false); }));
         }
     };
     // Change nzVisible from inside
-    NzModalComponent.prototype.changeVisibleFromInside = function (visible, closeResult) {
+    // Change nzVisible from inside
+    /**
+     * @private
+     * @param {?} visible
+     * @param {?=} closeResult
+     * @return {?}
+     */
+    NzModalComponent.prototype.changeVisibleFromInside = 
+    // Change nzVisible from inside
+    /**
+     * @private
+     * @param {?} visible
+     * @param {?=} closeResult
+     * @return {?}
+     */
+    function (visible, closeResult) {
         if (this.nzVisible !== visible) {
             // Change nzVisible value immediately
             this.nzVisible = visible;
@@ -908,7 +1078,17 @@ var NzModalComponent = /** @class */ (function (_super) {
         }
         return Promise.resolve();
     };
-    NzModalComponent.prototype.changeAnimationState = function (state) {
+    /**
+     * @private
+     * @param {?} state
+     * @return {?}
+     */
+    NzModalComponent.prototype.changeAnimationState = /**
+     * @private
+     * @param {?} state
+     * @return {?}
+     */
+    function (state) {
         var _a, _b;
         this.animationState = state;
         if (state) {
@@ -925,23 +1105,57 @@ var NzModalComponent = /** @class */ (function (_super) {
             this.maskAnimationClassMap = this.modalAnimationClassMap = null;
         }
     };
-    NzModalComponent.prototype.animateTo = function (isVisible) {
+    /**
+     * @private
+     * @param {?} isVisible
+     * @return {?}
+     */
+    NzModalComponent.prototype.animateTo = /**
+     * @private
+     * @param {?} isVisible
+     * @return {?}
+     */
+    function (isVisible) {
         var _this = this;
         if (isVisible) {
             // Figure out the lastest click position when shows up
-            setTimeout(function () { return _this.updateTransformOrigin(); }); // [NOTE] Using timeout due to the document.click event is fired later than visible change, so if not postponed to next event-loop, we can't get the lastest click position
+            setTimeout((/**
+             * @return {?}
+             */
+            function () { return _this.updateTransformOrigin(); })); // [NOTE] Using timeout due to the document.click event is fired later than visible change, so if not postponed to next event-loop, we can't get the lastest click position
         }
         this.changeAnimationState(isVisible ? 'enter' : 'leave');
-        return new Promise(function (resolve) {
-            return setTimeout(function () {
+        return new Promise((/**
+         * @param {?} resolve
+         * @return {?}
+         */
+        function (resolve) {
+            return setTimeout((/**
+             * @return {?}
+             */
+            function () {
                 // Return when animation is over
                 _this.changeAnimationState(null);
                 resolve();
-            }, _this.nzNoAnimation ? 0 : MODAL_ANIMATE_DURATION);
-        });
+            }), _this.nzNoAnimation ? 0 : MODAL_ANIMATE_DURATION);
+        }));
     };
-    NzModalComponent.prototype.formatModalButtons = function (buttons) {
-        return buttons.map(function (button) {
+    /**
+     * @private
+     * @param {?} buttons
+     * @return {?}
+     */
+    NzModalComponent.prototype.formatModalButtons = /**
+     * @private
+     * @param {?} buttons
+     * @return {?}
+     */
+    function (buttons) {
+        return buttons.map((/**
+         * @param {?} button
+         * @return {?}
+         */
+        function (button) {
             return __assign({
                 type: 'default',
                 size: 'default',
@@ -950,14 +1164,28 @@ var NzModalComponent = /** @class */ (function (_super) {
                 loading: false,
                 disabled: false
             }, button);
-        });
+        }));
     };
     /**
      * Create a component dynamically but not attach to any View (this action will be executed when bodyContainer is ready)
      * @param component Component class
      */
-    NzModalComponent.prototype.createDynamicComponent = function (component) {
+    /**
+     * Create a component dynamically but not attach to any View (this action will be executed when bodyContainer is ready)
+     * @private
+     * @param {?} component Component class
+     * @return {?}
+     */
+    NzModalComponent.prototype.createDynamicComponent = /**
+     * Create a component dynamically but not attach to any View (this action will be executed when bodyContainer is ready)
+     * @private
+     * @param {?} component Component class
+     * @return {?}
+     */
+    function (component) {
+        /** @type {?} */
         var factory = this.cfr.resolveComponentFactory(component);
+        /** @type {?} */
         var childInjector = Injector.create({
             providers: [{ provide: NzModalRef, useValue: this }],
             parent: this.viewContainer.parentInjector
@@ -970,28 +1198,68 @@ var NzModalComponent = /** @class */ (function (_super) {
         this.contentComponentRef.changeDetectorRef.detectChanges();
     };
     // Update transform-origin to the last click position on document
-    NzModalComponent.prototype.updateTransformOrigin = function () {
-        var modalElement = this.modalContainer.nativeElement;
+    // Update transform-origin to the last click position on document
+    /**
+     * @private
+     * @return {?}
+     */
+    NzModalComponent.prototype.updateTransformOrigin = 
+    // Update transform-origin to the last click position on document
+    /**
+     * @private
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
+        var modalElement = (/** @type {?} */ (this.modalContainer.nativeElement));
         if (this.previouslyFocusedElement) {
+            /** @type {?} */
             var previouslyDOMRect = this.previouslyFocusedElement.getBoundingClientRect();
+            /** @type {?} */
             var lastPosition = getElementOffset(this.previouslyFocusedElement);
+            /** @type {?} */
             var x = lastPosition.left + previouslyDOMRect.width / 2;
+            /** @type {?} */
             var y = lastPosition.top + previouslyDOMRect.height / 2;
             this.transformOrigin = x - modalElement.offsetLeft + "px " + (y - modalElement.offsetTop) + "px 0px";
         }
     };
-    NzModalComponent.prototype.savePreviouslyFocusedElement = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzModalComponent.prototype.savePreviouslyFocusedElement = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this.document) {
-            this.previouslyFocusedElement = this.document.activeElement;
+            this.previouslyFocusedElement = (/** @type {?} */ (this.document.activeElement));
         }
     };
-    NzModalComponent.prototype.trapFocus = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzModalComponent.prototype.trapFocus = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (!this.focusTrap) {
             this.focusTrap = this.focusTrapFactory.create(this.elementRef.nativeElement);
         }
         this.focusTrap.focusInitialElementWhenReady();
     };
-    NzModalComponent.prototype.restoreFocus = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzModalComponent.prototype.restoreFocus = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         // We need the extra check, because IE can set the `activeElement` to null in some cases.
         if (this.previouslyFocusedElement && typeof this.previouslyFocusedElement.focus === 'function') {
             this.previouslyFocusedElement.focus();
@@ -1000,57 +1268,70 @@ var NzModalComponent = /** @class */ (function (_super) {
             this.focusTrap.destroy();
         }
     };
-    /** @nocollapse */ NzModalComponent.ɵfac = function NzModalComponent_Factory(t) { return new (t || NzModalComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(Overlay), ɵɵdirectiveInject(OverlayKeyboardDispatcher), ɵɵdirectiveInject(NzI18nService), ɵɵdirectiveInject(ComponentFactoryResolver), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(NzModalControlService), ɵɵdirectiveInject(FocusTrapFactory), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NZ_MODAL_CONFIG, 8), ɵɵdirectiveInject(DOCUMENT)); };
-    /** @nocollapse */ NzModalComponent.ɵcmp = ɵɵdefineComponent({ type: NzModalComponent, selectors: [["nz-modal"]], contentQueries: function NzModalComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-            ɵɵcontentQuery(dirIndex, NzModalFooterDirective, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.modalFooter = _t.first);
-        } }, viewQuery: function NzModalComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵstaticViewQuery(_c0, true);
-            ɵɵviewQuery(_c1, true, ViewContainerRef);
-            ɵɵviewQuery(_c2, true, ElementRef);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.modalContainer = _t.first);
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.bodyContainer = _t.first);
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.autoFocusButtonOk = _t.first);
-        } }, inputs: { nzVisible: "nzVisible", nzClosable: "nzClosable", nzOkLoading: "nzOkLoading", nzOkDisabled: "nzOkDisabled", nzCancelDisabled: "nzCancelDisabled", nzCancelLoading: "nzCancelLoading", nzKeyboard: "nzKeyboard", nzNoAnimation: "nzNoAnimation", nzMask: "nzMask", nzMaskClosable: "nzMaskClosable", nzContent: "nzContent", nzComponentParams: "nzComponentParams", nzFooter: "nzFooter", nzGetContainer: "nzGetContainer", nzZIndex: "nzZIndex", nzWidth: "nzWidth", nzWrapClassName: "nzWrapClassName", nzClassName: "nzClassName", nzStyle: "nzStyle", nzTitle: "nzTitle", nzCloseIcon: "nzCloseIcon", nzMaskStyle: "nzMaskStyle", nzBodyStyle: "nzBodyStyle", nzOkText: "nzOkText", nzCancelText: "nzCancelText", nzOkType: "nzOkType", nzIconType: "nzIconType", nzModalType: "nzModalType", nzAriaLabel: "nzAriaLabel", nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel" }, outputs: { nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel", nzAfterOpen: "nzAfterOpen", nzAfterClose: "nzAfterClose", nzVisibleChange: "nzVisibleChange" }, exportAs: ["nzModal"], features: [ɵɵInheritDefinitionFeature, ɵɵNgOnChangesFeature()], ngContentSelectors: _c3, decls: 15, vars: 18, consts: [["tplOriginContent", ""], [3, "nzNoAnimation"], ["class", "ant-modal-mask", 3, "ngClass", "ant-modal-mask-hidden", "ngStyle", "zIndex", 4, "ngIf"], ["tabindex", "-1", "role", "dialog", 3, "click", "mouseup"], ["role", "document", 3, "ngClass", "ngStyle", "mousedown"], ["modalContainer", ""], [1, "ant-modal-content"], ["class", "ant-modal-close", 3, "click", 4, "ngIf"], [3, "ngSwitch", 4, "ngIf"], ["tplContentDefault", ""], ["tplContentConfirm", ""], [1, "ant-modal-mask", 3, "ngClass", "ngStyle"], [1, "ant-modal-close", 3, "click"], [1, "ant-modal-close-x"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 1, "ant-modal-close-icon", 3, "nzType"], [3, "ngSwitch"], [3, "ngTemplateOutlet", 4, "ngSwitchCase"], [3, "ngTemplateOutlet"], ["class", "ant-modal-header", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["bodyContainer", ""], ["class", "ant-modal-footer", 4, "ngIf"], [1, "ant-modal-header"], [1, "ant-modal-title"], [4, "ngSwitchCase"], [3, "innerHTML"], [3, "ngTemplateOutlet", 4, "ngSwitchDefault"], [1, "ant-modal-footer"], [4, "ngSwitchDefault"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click", 4, "ngFor", "ngForOf"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click"], ["nz-button", "", 3, "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzLoading", "disabled", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "nzType"], [1, "ant-modal-confirm-title"], [1, "ant-modal-confirm-content"], [1, "ant-modal-confirm-btns"], ["autoFocusButtonOk", ""]], template: function NzModalComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵtemplate(0, NzModalComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, ɵɵtemplateRefExtractor);
-            ɵɵelementStart(2, "div", 1);
-            ɵɵtemplate(3, NzModalComponent_div_3_Template, 1, 4, "div", 2);
-            ɵɵelementStart(4, "div", 3);
-            ɵɵlistener("click", function NzModalComponent_Template_div_click_4_listener($event) { return ctx.onClickMask($event); })("mouseup", function NzModalComponent_Template_div_mouseup_4_listener($event) { return ctx.onDialogUp(); });
-            ɵɵelementStart(5, "div", 4, 5);
-            ɵɵlistener("mousedown", function NzModalComponent_Template_div_mousedown_5_listener($event) { return ctx.onMaskDialogDown(); });
-            ɵɵpipe(7, "nzToCssUnit");
-            ɵɵelementStart(8, "div", 6);
-            ɵɵtemplate(9, NzModalComponent_button_9_Template, 3, 2, "button", 7);
-            ɵɵtemplate(10, NzModalComponent_ng_container_10_Template, 3, 3, "ng-container", 8);
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵtemplate(11, NzModalComponent_ng_template_11_Template, 6, 4, "ng-template", null, 9, ɵɵtemplateRefExtractor);
-            ɵɵtemplate(13, NzModalComponent_ng_template_13_Template, 15, 8, "ng-template", null, 10, ɵɵtemplateRefExtractor);
-        } if (rf & 2) {
-            ɵɵadvance(2);
-            ɵɵproperty("nzNoAnimation", ctx.nzNoAnimation);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.mask);
-            ɵɵadvance(1);
-            ɵɵclassMapInterpolate1("ant-modal-wrap ", ctx.nzWrapClassName, "");
-            ɵɵstyleProp("z-index", ctx.nzZIndex)("visibility", ctx.hidden ? "hidden" : null);
-            ɵɵadvance(1);
-            ɵɵclassMapInterpolate1("ant-modal ", ctx.nzClassName, "");
-            ɵɵstyleProp("width", ɵɵpipeBind1(7, 16, ctx.nzWidth))("transform-origin", ctx.transformOrigin);
-            ɵɵproperty("ngClass", ctx.modalAnimationClassMap)("ngStyle", ctx.nzStyle);
-            ɵɵadvance(4);
-            ɵɵproperty("ngIf", ctx.nzClosable);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", !ctx.hidden);
-        } }, directives: [NzNoAnimationDirective, NgIf, NgClass, NgStyle, NzStringTemplateOutletDirective, NzIconDirective, NgSwitch, NgSwitchCase, NgTemplateOutlet, NgSwitchDefault, NgForOf, NzButtonComponent], pipes: [NzToCssUnitPipe], encapsulation: 2 });
+    NzModalComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-modal',
+                    exportAs: 'nzModal',
+                    template: "<ng-template #tplOriginContent><ng-content></ng-content></ng-template> <!-- Compatible: the <ng-content> can appear only once -->\n\n<div [nzNoAnimation]=\"nzNoAnimation\">\n  <div *ngIf=\"mask\"\n    class=\"ant-modal-mask\"\n    [ngClass]=\"maskAnimationClassMap\"\n    [class.ant-modal-mask-hidden]=\"hidden\"\n    [ngStyle]=\"nzMaskStyle\"\n    [style.zIndex]=\"nzZIndex\"\n  ></div>\n  <div\n    (click)=\"onClickMask($event)\"\n    (mouseup)=\"onDialogUp()\"\n    class=\"ant-modal-wrap {{ nzWrapClassName }}\"\n    [style.zIndex]=\"nzZIndex\"\n    [style.visibility]=\"hidden ? 'hidden' : null\"\n    tabindex=\"-1\"\n    role=\"dialog\"\n  >\n    <div #modalContainer\n      class=\"ant-modal {{ nzClassName }}\"\n      (mousedown)=\"onMaskDialogDown()\"\n      [ngClass]=\"modalAnimationClassMap\"\n      [ngStyle]=\"nzStyle\"\n      [style.width]=\"nzWidth | nzToCssUnit\"\n      [style.transform-origin]=\"transformOrigin\"\n      role=\"document\"\n    >\n      <div class=\"ant-modal-content\">\n        <button *ngIf=\"nzClosable\" (click)=\"onClickCloseBtn()\" class=\"ant-modal-close\" [attr.aria-label]=\"nzCloseAriaLabel\">\n          <span class=\"ant-modal-close-x\">\n            <ng-container *nzStringTemplateOutlet=\"nzCloseIcon\">\n              <i nz-icon [nzType]=\"nzCloseIcon\" class=\"ant-modal-close-icon\"></i>\n            </ng-container>\n          </span>\n        </button>\n        <ng-container *ngIf=\"!hidden\" [ngSwitch]=\"true\">\n          <ng-container *ngSwitchCase=\"isModalType('default')\" [ngTemplateOutlet]=\"tplContentDefault\"></ng-container>\n          <ng-container *ngSwitchCase=\"isModalType('confirm')\" [ngTemplateOutlet]=\"tplContentConfirm\"></ng-container>\n        </ng-container>\n      </div>\n    </div>\n  </div>\n</div>\n\n<!-- [Predefined] Default Modal Content -->\n<ng-template #tplContentDefault>\n  <div *ngIf=\"nzTitle\" class=\"ant-modal-header\">\n    <div class=\"ant-modal-title\">\n      <ng-container [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><div [innerHTML]=\"nzTitle\"></div></ng-container>\n      </ng-container>\n    </div>\n  </div>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <ng-container #bodyContainer>\n      <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n        <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n      </ng-container>\n    </ng-container>\n  </div>\n  <div *ngIf=\"nzFooter !== null\" class=\"ant-modal-footer\">\n    <ng-container [ngSwitch]=\"true\">\n      <ng-container *ngSwitchCase=\"isTemplateRef(nzFooter)\" [ngTemplateOutlet]=\"nzFooter\"></ng-container>\n      <ng-container *ngSwitchCase=\"isNonEmptyString(nzFooter)\"><div [innerHTML]=\"nzFooter\"></div></ng-container>\n      <ng-container *ngSwitchCase=\"isModalButtons(nzFooter)\">\n        <button *ngFor=\"let button of nzFooter\" nz-button\n          (click)=\"onButtonClick(button)\"\n          [hidden]=\"!getButtonCallableProp(button, 'show')\"\n          [nzLoading]=\"getButtonCallableProp(button, 'loading')\"\n          [disabled]=\"getButtonCallableProp(button, 'disabled')\"\n          [nzType]=\"button.type\"\n          [nzShape]=\"button.shape\"\n          [nzSize]=\"button.size\"\n          [nzGhost]=\"button.ghost\"\n        >{{ button.label }}</button>\n      </ng-container>\n      <ng-container *ngSwitchDefault>\n        <button *ngIf=\"nzCancelText!==null\" nz-button (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\" [disabled]=\"nzCancelDisabled\">\n          {{ cancelText }}\n        </button>\n        <button *ngIf=\"nzOkText!==null\" nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\" [disabled]=\"nzOkDisabled\">\n          {{ okText }}\n        </button>\n      </ng-container>\n    </ng-container>\n  </div>\n</ng-template>\n<!-- /[Predefined] Default Modal Content -->\n\n<!-- [Predefined] Confirm Modal Content -->\n<ng-template #tplContentConfirm>\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\n    <div class=\"ant-modal-confirm-body-wrapper\">\n      <div class=\"ant-modal-confirm-body\">\n        <i nz-icon [nzType]=\"nzIconType\"></i>\n        <span class=\"ant-modal-confirm-title\">\n          <ng-container [ngSwitch]=\"true\">\n            <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\n            <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><span [innerHTML]=\"nzTitle\"></span></ng-container>\n          </ng-container>\n        </span>\n        <div class=\"ant-modal-confirm-content\">\n          <ng-container #bodyContainer>\n            <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\n              <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\n              <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\n              <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\n            </ng-container>\n          </ng-container>\n        </div>\n      </div>\n      <div class=\"ant-modal-confirm-btns\">\n        <button *ngIf=\"nzCancelText!==null\"\n          nz-button\n          (click)=\"onClickOkCancel('cancel')\"\n          [nzLoading]=\"nzCancelLoading\"\n          [disabled]=\"nzCancelDisabled\">\n          {{ cancelText }}\n        </button>\n        <button #autoFocusButtonOk\n          *ngIf=\"nzOkText!==null\"\n          nz-button\n          (click)=\"onClickOkCancel('ok')\"\n          [nzType]=\"nzOkType\"\n          [nzLoading]=\"nzOkLoading\"\n          [disabled]=\"nzOkDisabled\">\n          {{ okText }}\n        </button>\n      </div>\n    </div> <!-- /.ant-modal-confirm-body-wrapper -->\n  </div>\n</ng-template>\n<!-- /[Predefined] Confirm Modal Content -->\n",
+                    // Using OnPush for modal caused footer can not to detect changes. we can fix it when 8.x.
+                    changeDetection: ChangeDetectionStrategy.Default
+                }] }
+    ];
+    /** @nocollapse */
+    NzModalComponent.ctorParameters = function () { return [
+        { type: NzConfigService },
+        { type: Overlay },
+        { type: OverlayKeyboardDispatcher },
+        { type: NzI18nService },
+        { type: ComponentFactoryResolver },
+        { type: ElementRef },
+        { type: ViewContainerRef },
+        { type: NzModalControlService },
+        { type: FocusTrapFactory },
+        { type: ChangeDetectorRef },
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_MODAL_CONFIG,] }] },
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
+    ]; };
+    NzModalComponent.propDecorators = {
+        nzVisible: [{ type: Input }],
+        nzClosable: [{ type: Input }],
+        nzOkLoading: [{ type: Input }],
+        nzOkDisabled: [{ type: Input }],
+        nzCancelDisabled: [{ type: Input }],
+        nzCancelLoading: [{ type: Input }],
+        nzKeyboard: [{ type: Input }],
+        nzNoAnimation: [{ type: Input }],
+        nzMask: [{ type: Input }],
+        nzMaskClosable: [{ type: Input }],
+        nzContent: [{ type: Input }],
+        nzComponentParams: [{ type: Input }],
+        nzFooter: [{ type: Input }],
+        nzGetContainer: [{ type: Input }],
+        nzZIndex: [{ type: Input }],
+        nzWidth: [{ type: Input }],
+        nzWrapClassName: [{ type: Input }],
+        nzClassName: [{ type: Input }],
+        nzStyle: [{ type: Input }],
+        nzTitle: [{ type: Input }],
+        nzCloseIcon: [{ type: Input }],
+        nzMaskStyle: [{ type: Input }],
+        nzBodyStyle: [{ type: Input }],
+        nzOkText: [{ type: Input }],
+        nzCancelText: [{ type: Input }],
+        nzOkType: [{ type: Input }],
+        nzIconType: [{ type: Input }],
+        nzModalType: [{ type: Input }],
+        nzCloseAriaLabel: [{ type: Input }],
+        nzOnOk: [{ type: Input }, { type: Output }],
+        nzOnCancel: [{ type: Input }, { type: Output }],
+        nzAfterOpen: [{ type: Output }],
+        nzAfterClose: [{ type: Output }],
+        nzVisibleChange: [{ type: Output }],
+        modalContainer: [{ type: ViewChild, args: ['modalContainer', { static: true },] }],
+        bodyContainer: [{ type: ViewChild, args: ['bodyContainer', { static: false, read: ViewContainerRef },] }],
+        autoFocusButtonOk: [{ type: ViewChild, args: ['autoFocusButtonOk', { static: false, read: ElementRef },] }],
+        modalFooter: [{ type: ContentChild, args: [NzModalFooterDirective, { static: false },] }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Boolean)
@@ -1093,192 +1374,252 @@ var NzModalComponent = /** @class */ (function (_super) {
     ], NzModalComponent.prototype, "nzMaskClosable", void 0);
     return NzModalComponent;
 }(NzModalRef));
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-modal',
-                exportAs: 'nzModal',
-                templateUrl: './nz-modal.component.html',
-                // Using OnPush for modal caused footer can not to detect changes. we can fix it when 8.x.
-                changeDetection: ChangeDetectionStrategy.Default
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: Overlay }, { type: OverlayKeyboardDispatcher }, { type: NzI18nService }, { type: ComponentFactoryResolver }, { type: ElementRef }, { type: ViewContainerRef }, { type: NzModalControlService }, { type: FocusTrapFactory }, { type: ChangeDetectorRef }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_MODAL_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }]; }, { nzVisible: [{
-            type: Input
-        }], nzClosable: [{
-            type: Input
-        }], nzOkLoading: [{
-            type: Input
-        }], nzOkDisabled: [{
-            type: Input
-        }], nzCancelDisabled: [{
-            type: Input
-        }], nzCancelLoading: [{
-            type: Input
-        }], nzKeyboard: [{
-            type: Input
-        }], nzNoAnimation: [{
-            type: Input
-        }], nzMask: [{
-            type: Input
-        }], nzMaskClosable: [{
-            type: Input
-        }], nzContent: [{
-            type: Input
-        }], nzComponentParams: [{
-            type: Input
-        }], nzFooter: [{
-            type: Input
-        }], nzGetContainer: [{
-            type: Input
-        }], nzZIndex: [{
-            type: Input
-        }], nzWidth: [{
-            type: Input
-        }], nzWrapClassName: [{
-            type: Input
-        }], nzClassName: [{
-            type: Input
-        }], nzStyle: [{
-            type: Input
-        }], nzTitle: [{
-            type: Input
-        }], nzCloseIcon: [{
-            type: Input
-        }], nzMaskStyle: [{
-            type: Input
-        }], nzBodyStyle: [{
-            type: Input
-        }], nzOkText: [{
-            type: Input
-        }], nzCancelText: [{
-            type: Input
-        }], nzOkType: [{
-            type: Input
-        }], nzIconType: [{
-            type: Input
-        }], nzModalType: [{
-            type: Input
-        }], nzAriaLabel: [{
-            type: Input
-        }], nzOnOk: [{
-            type: Input
-        }, {
-            type: Output
-        }], nzOnCancel: [{
-            type: Input
-        }, {
-            type: Output
-        }], nzAfterOpen: [{
-            type: Output
-        }], nzAfterClose: [{
-            type: Output
-        }], nzVisibleChange: [{
-            type: Output
-        }], modalContainer: [{
-            type: ViewChild,
-            args: ['modalContainer', { static: true }]
-        }], bodyContainer: [{
-            type: ViewChild,
-            args: ['bodyContainer', { static: false, read: ViewContainerRef }]
-        }], autoFocusButtonOk: [{
-            type: ViewChild,
-            args: ['autoFocusButtonOk', { static: false, read: ElementRef }]
-        }], modalFooter: [{
-            type: ContentChild,
-            args: [NzModalFooterDirective, { static: false }]
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzModalComponent.prototype.nzVisible;
+    /** @type {?} */
+    NzModalComponent.prototype.nzClosable;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOkLoading;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOkDisabled;
+    /** @type {?} */
+    NzModalComponent.prototype.nzCancelDisabled;
+    /** @type {?} */
+    NzModalComponent.prototype.nzCancelLoading;
+    /** @type {?} */
+    NzModalComponent.prototype.nzKeyboard;
+    /** @type {?} */
+    NzModalComponent.prototype.nzNoAnimation;
+    /** @type {?} */
+    NzModalComponent.prototype.nzMask;
+    /** @type {?} */
+    NzModalComponent.prototype.nzMaskClosable;
+    /** @type {?} */
+    NzModalComponent.prototype.nzContent;
+    /** @type {?} */
+    NzModalComponent.prototype.nzComponentParams;
+    /** @type {?} */
+    NzModalComponent.prototype.nzFooter;
+    /** @type {?} */
+    NzModalComponent.prototype.nzGetContainer;
+    /** @type {?} */
+    NzModalComponent.prototype.nzZIndex;
+    /** @type {?} */
+    NzModalComponent.prototype.nzWidth;
+    /** @type {?} */
+    NzModalComponent.prototype.nzWrapClassName;
+    /** @type {?} */
+    NzModalComponent.prototype.nzClassName;
+    /** @type {?} */
+    NzModalComponent.prototype.nzStyle;
+    /** @type {?} */
+    NzModalComponent.prototype.nzTitle;
+    /** @type {?} */
+    NzModalComponent.prototype.nzCloseIcon;
+    /** @type {?} */
+    NzModalComponent.prototype.nzMaskStyle;
+    /** @type {?} */
+    NzModalComponent.prototype.nzBodyStyle;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOkText;
+    /** @type {?} */
+    NzModalComponent.prototype.nzCancelText;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOkType;
+    /** @type {?} */
+    NzModalComponent.prototype.nzIconType;
+    /** @type {?} */
+    NzModalComponent.prototype.nzModalType;
+    /** @type {?} */
+    NzModalComponent.prototype.nzCloseAriaLabel;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOnOk;
+    /** @type {?} */
+    NzModalComponent.prototype.nzOnCancel;
+    /** @type {?} */
+    NzModalComponent.prototype.nzAfterOpen;
+    /** @type {?} */
+    NzModalComponent.prototype.nzAfterClose;
+    /** @type {?} */
+    NzModalComponent.prototype.nzVisibleChange;
+    /** @type {?} */
+    NzModalComponent.prototype.modalContainer;
+    /** @type {?} */
+    NzModalComponent.prototype.bodyContainer;
+    /** @type {?} */
+    NzModalComponent.prototype.autoFocusButtonOk;
+    /** @type {?} */
+    NzModalComponent.prototype.locale;
+    /** @type {?} */
+    NzModalComponent.prototype.maskAnimationClassMap;
+    /** @type {?} */
+    NzModalComponent.prototype.modalAnimationClassMap;
+    /** @type {?} */
+    NzModalComponent.prototype.transformOrigin;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.contentComponentRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.animationState;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.container;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.unsubscribe$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.previouslyFocusedElement;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.focusTrap;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.scrollStrategy;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.overlayRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.dialogMouseDown;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.timeoutId;
+    /** @type {?} */
+    NzModalComponent.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.overlay;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.overlayKeyboardDispatcher;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.i18n;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.cfr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.viewContainer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.modalControl;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.focusTrapFactory;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.nzModalGlobalConfig;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalComponent.prototype.document;
+    /* Skipping unhandled member: [key: string]: any;*/
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzModalServiceModule = /** @class */ (function () {
     function NzModalServiceModule() {
     }
-    /** @nocollapse */ NzModalServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzModalServiceModule });
-    /** @nocollapse */ NzModalServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzModalServiceModule_Factory(t) { return new (t || NzModalServiceModule)(); } });
+    NzModalServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzModalServiceModule;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalServiceModule, [{
-        type: NgModule
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzModalModule = /** @class */ (function () {
     function NzModalModule() {
     }
-    /** @nocollapse */ NzModalModule.ɵmod = ɵɵdefineNgModule({ type: NzModalModule });
-    /** @nocollapse */ NzModalModule.ɵinj = ɵɵdefineInjector({ factory: function NzModalModule_Factory(t) { return new (t || NzModalModule)(); }, imports: [[
-                CommonModule,
-                OverlayModule,
-                NzAddOnModule,
-                NzI18nModule,
-                NzButtonModule,
-                NzIconModule,
-                NzPipesModule,
-                NzNoAnimationModule,
-                NzModalServiceModule,
-                NzModalControlServiceModule
-            ]] });
+    NzModalModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [
+                        CommonModule,
+                        OverlayModule,
+                        NzAddOnModule,
+                        NzI18nModule,
+                        NzButtonModule,
+                        NzIconModule,
+                        NzPipesModule,
+                        NzNoAnimationModule,
+                        NzModalServiceModule,
+                        NzModalControlServiceModule
+                    ],
+                    exports: [NzModalComponent, NzModalFooterDirective],
+                    declarations: [NzModalComponent, NzModalFooterDirective],
+                    entryComponents: [NzModalComponent]
+                },] }
+    ];
     return NzModalModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzModalModule, { declarations: [NzModalComponent, NzModalFooterDirective], imports: [CommonModule,
-        OverlayModule,
-        NzAddOnModule,
-        NzI18nModule,
-        NzButtonModule,
-        NzIconModule,
-        NzPipesModule,
-        NzNoAnimationModule,
-        NzModalServiceModule,
-        NzModalControlServiceModule], exports: [NzModalComponent, NzModalFooterDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalModule, [{
-        type: NgModule,
-        args: [{
-                imports: [
-                    CommonModule,
-                    OverlayModule,
-                    NzAddOnModule,
-                    NzI18nModule,
-                    NzButtonModule,
-                    NzIconModule,
-                    NzPipesModule,
-                    NzNoAnimationModule,
-                    NzModalServiceModule,
-                    NzModalControlServiceModule
-                ],
-                exports: [NzModalComponent, NzModalFooterDirective],
-                declarations: [NzModalComponent, NzModalFooterDirective],
-                entryComponents: [NzModalComponent]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // A builder used for managing service creating modals
-var ModalBuilderForService = /** @class */ (function () {
+var 
+// A builder used for managing service creating modals
+ModalBuilderForService = /** @class */ (function () {
     function ModalBuilderForService(overlay, options) {
         var _this = this;
         if (options === void 0) { options = {}; }
@@ -1289,31 +1630,84 @@ var ModalBuilderForService = /** @class */ (function () {
             options.nzGetContainer = undefined; // Override nzGetContainer's default value to prevent creating another overlay
         }
         this.changeProps(options);
-        this.modalRef.instance.setOverlayRef(this.overlayRef);
-        this.modalRef.instance.open();
-        this.modalRef.instance.nzAfterClose.subscribe(function () { return _this.destroyModal(); }); // [NOTE] By default, close equals destroy when using as Service
+        (/** @type {?} */ (this.modalRef)).instance.setOverlayRef(this.overlayRef);
+        (/** @type {?} */ (this.modalRef)).instance.open();
+        (/** @type {?} */ (this.modalRef)).instance.nzAfterClose.subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.destroyModal(); })); // [NOTE] By default, close equals destroy when using as Service
     }
-    ModalBuilderForService.prototype.getInstance = function () {
+    /**
+     * @return {?}
+     */
+    ModalBuilderForService.prototype.getInstance = /**
+     * @return {?}
+     */
+    function () {
         return this.modalRef && this.modalRef.instance;
     };
-    ModalBuilderForService.prototype.destroyModal = function () {
+    /**
+     * @return {?}
+     */
+    ModalBuilderForService.prototype.destroyModal = /**
+     * @return {?}
+     */
+    function () {
         if (this.modalRef) {
             this.overlayRef.dispose();
             this.modalRef = null;
         }
     };
-    ModalBuilderForService.prototype.changeProps = function (options) {
+    /**
+     * @private
+     * @param {?} options
+     * @return {?}
+     */
+    ModalBuilderForService.prototype.changeProps = /**
+     * @private
+     * @param {?} options
+     * @return {?}
+     */
+    function (options) {
         if (this.modalRef) {
             Object.assign(this.modalRef.instance, options); // DANGER: here not limit user's inputs at runtime
         }
     };
     // Create component to ApplicationRef
-    ModalBuilderForService.prototype.createModal = function () {
+    // Create component to ApplicationRef
+    /**
+     * @private
+     * @return {?}
+     */
+    ModalBuilderForService.prototype.createModal = 
+    // Create component to ApplicationRef
+    /**
+     * @private
+     * @return {?}
+     */
+    function () {
         this.overlayRef = this.overlay.create();
         this.modalRef = this.overlayRef.attach(new ComponentPortal(NzModalComponent));
     };
     return ModalBuilderForService;
 }());
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    ModalBuilderForService.prototype.modalRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    ModalBuilderForService.prototype.overlayRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    ModalBuilderForService.prototype.overlay;
+}
 var NzModalService = /** @class */ (function () {
     function NzModalService(overlay, modalControl) {
         this.overlay = overlay;
@@ -1321,33 +1715,76 @@ var NzModalService = /** @class */ (function () {
     }
     Object.defineProperty(NzModalService.prototype, "openModals", {
         // Track of the current close modals (we assume invisible is close this time)
-        get: function () {
+        get: 
+        // Track of the current close modals (we assume invisible is close this time)
+        /**
+         * @return {?}
+         */
+        function () {
             return this.modalControl.openModals;
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzModalService.prototype, "afterAllClose", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this.modalControl.afterAllClose.asObservable();
         },
         enumerable: true,
         configurable: true
     });
     // Closes all of the currently-open dialogs
-    NzModalService.prototype.closeAll = function () {
+    // Closes all of the currently-open dialogs
+    /**
+     * @return {?}
+     */
+    NzModalService.prototype.closeAll = 
+    // Closes all of the currently-open dialogs
+    /**
+     * @return {?}
+     */
+    function () {
         this.modalControl.closeAll();
     };
-    NzModalService.prototype.create = function (options) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    NzModalService.prototype.create = /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         if (options === void 0) { options = {}; }
         if (typeof options.nzOnCancel !== 'function') {
-            options.nzOnCancel = function () { }; // Leave a empty function to close this modal by default
+            options.nzOnCancel = (/**
+             * @return {?}
+             */
+            function () { }); // Leave a empty function to close this modal by default
         }
         // NOTE: use NzModalComponent as the NzModalRef by now, we may need archive the real NzModalRef object in the future
-        var modalRef = new ModalBuilderForService(this.overlay, options).getInstance();
+        /** @type {?} */
+        var modalRef = (/** @type {?} */ (new ModalBuilderForService(this.overlay, options).getInstance()));
         return modalRef;
     };
-    NzModalService.prototype.confirm = function (options, confirmType) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @param {?=} confirmType
+     * @return {?}
+     */
+    NzModalService.prototype.confirm = /**
+     * @template T
+     * @param {?=} options
+     * @param {?=} confirmType
+     * @return {?}
+     */
+    function (options, confirmType) {
         if (options === void 0) { options = {}; }
         if (confirmType === void 0) { confirmType = 'confirm'; }
         if ('nzFooter' in options) {
@@ -1361,30 +1798,88 @@ var NzModalService = /** @class */ (function () {
         }
         if (typeof options.nzOnOk !== 'function') {
             // NOTE: only support function currently by calling confirm()
-            options.nzOnOk = function () { }; // Leave a empty function to close this modal by default
+            options.nzOnOk = (/**
+             * @return {?}
+             */
+            function () { }); // Leave a empty function to close this modal by default
         }
         options.nzModalType = 'confirm';
         options.nzClassName = "ant-modal-confirm ant-modal-confirm-" + confirmType + " " + (options.nzClassName || '');
         return this.create(options);
     };
-    NzModalService.prototype.info = function (options) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    NzModalService.prototype.info = /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         if (options === void 0) { options = {}; }
         return this.simpleConfirm(options, 'info');
     };
-    NzModalService.prototype.success = function (options) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    NzModalService.prototype.success = /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         if (options === void 0) { options = {}; }
         return this.simpleConfirm(options, 'success');
     };
-    NzModalService.prototype.error = function (options) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    NzModalService.prototype.error = /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         if (options === void 0) { options = {}; }
         return this.simpleConfirm(options, 'error');
     };
-    NzModalService.prototype.warning = function (options) {
+    /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    NzModalService.prototype.warning = /**
+     * @template T
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         if (options === void 0) { options = {}; }
         return this.simpleConfirm(options, 'warning');
     };
-    NzModalService.prototype.simpleConfirm = function (options, confirmType) {
+    /**
+     * @private
+     * @template T
+     * @param {?=} options
+     * @param {?=} confirmType
+     * @return {?}
+     */
+    NzModalService.prototype.simpleConfirm = /**
+     * @private
+     * @template T
+     * @param {?=} options
+     * @param {?=} confirmType
+     * @return {?}
+     */
+    function (options, confirmType) {
         if (options === void 0) { options = {}; }
+        /** @type {?} */
         var iconMap = {
             info: 'info-circle',
             success: 'check-circle',
@@ -1400,17 +1895,37 @@ var NzModalService = /** @class */ (function () {
         }
         return this.confirm(options, confirmType);
     };
-    /** @nocollapse */ NzModalService.ɵfac = function NzModalService_Factory(t) { return new (t || NzModalService)(ɵɵinject(Overlay), ɵɵinject(NzModalControlService)); };
-    /** @nocollapse */ NzModalService.ɵprov = ɵɵdefineInjectable({ token: NzModalService, factory: NzModalService.ɵfac, providedIn: NzModalServiceModule });
+    NzModalService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzModalServiceModule
+                },] }
+    ];
+    /** @nocollapse */
+    NzModalService.ctorParameters = function () { return [
+        { type: Overlay },
+        { type: NzModalControlService }
+    ]; };
+    /** @nocollapse */ NzModalService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzModalService_Factory() { return new NzModalService(ɵɵinject(Overlay), ɵɵinject(NzModalControlService)); }, token: NzModalService, providedIn: NzModalServiceModule });
     return NzModalService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzModalService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzModalServiceModule
-            }]
-    }], function () { return [{ type: Overlay }, { type: NzModalControlService }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalService.prototype.overlay;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzModalService.prototype.modalControl;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-modal.type.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -1418,9 +1933,131 @@ var NzModalService = /** @class */ (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ * @template T, R
+ */
+function ModalOptions() { }
+if (false) {
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzModalType;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzVisible;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzZIndex;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzWidth;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzWrapClassName;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzClassName;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzStyle;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzIconType;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzTitle;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzCloseIcon;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzContent;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzComponentParams;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzClosable;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzKeyboard;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzMask;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzMaskClosable;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzMaskStyle;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzBodyStyle;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzFooter;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzGetContainer;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzAfterOpen;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzAfterClose;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOkText;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOkType;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOkLoading;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOkDisabled;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzCancelDisabled;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOnOk;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzCancelText;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzCancelLoading;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzNoAnimation;
+    /** @type {?|undefined} */
+    ModalOptions.prototype.nzOnCancel;
+}
+/**
+ * @record
+ * @template T
+ */
+function ModalOptionsForService() { }
+if (false) {
+    /** @type {?|undefined} */
+    ModalOptionsForService.prototype.nzOnOk;
+    /** @type {?|undefined} */
+    ModalOptionsForService.prototype.nzOnCancel;
+}
+/**
+ * @record
+ * @template T
+ */
+function ModalButtonOptions() { }
+if (false) {
+    /** @type {?} */
+    ModalButtonOptions.prototype.label;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.type;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.shape;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.ghost;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.size;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.autoLoading;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.show;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.loading;
+    /** @type {?|undefined} */
+    ModalButtonOptions.prototype.disabled;
+    /* Skipping unhandled member: [key: string]: any;*/
+    /**
+     * @this {?}
+     * @param {?=} contentComponentInstance
+     * @return {?}
+     */
+    ModalButtonOptions.prototype.onClick = function (contentComponentInstance) { };
+}
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-modal.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NZ_MODAL_CONFIG, NzModalComponent, NzModalControlService, NzModalControlServiceModule, NzModalFooterDirective, NzModalModule, NzModalRef, NzModalService, NzModalServiceModule };

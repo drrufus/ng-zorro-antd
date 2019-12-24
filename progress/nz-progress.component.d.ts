@@ -8,7 +8,6 @@
 import { OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { NgStyleInterface, NzConfigService } from 'ng-zorro-antd/core';
 import { NzProgressCirclePath, NzProgressFormatter, NzProgressGapPositionType, NzProgressStatusType, NzProgressStrokeColorType, NzProgressStrokeLinecapType, NzProgressTypeType } from './nz-progress.definitions';
-import * as i0 from "@angular/core";
 export declare class NzProgressComponent implements OnChanges, OnInit, OnDestroy {
     nzConfigService: NzConfigService;
     nzShowInfo: boolean;
@@ -60,6 +59,4 @@ export declare class NzProgressComponent implements OnChanges, OnInit, OnDestroy
      */
     private getCirclePaths;
     private setStrokeColor;
-    static ɵfac: i0.ɵɵFactoryDef<NzProgressComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzProgressComponent, "nz-progress", ["nzProgress"], { 'nzShowInfo': "nzShowInfo", 'nzWidth': "nzWidth", 'nzStrokeColor': "nzStrokeColor", 'nzSize': "nzSize", 'nzFormat': "nzFormat", 'nzSuccessPercent': "nzSuccessPercent", 'nzPercent': "nzPercent", 'nzStrokeWidth': "nzStrokeWidth", 'nzGapDegree': "nzGapDegree", 'nzStatus': "nzStatus", 'nzType': "nzType", 'nzGapPosition': "nzGapPosition", 'nzStrokeLinecap': "nzStrokeLinecap" }, {}, never>;
 }

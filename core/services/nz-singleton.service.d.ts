@@ -1,4 +1,10 @@
-import * as i0 from "@angular/core";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 /**
  * Some singletons should have life cycle that is same to Angular's. This service make sure that
  * those singletons get destroyed in HMR.
@@ -15,6 +21,4 @@ export declare class NzSingletonService {
     registerSingletonWithKey(key: string, target: any): void;
     getSingletonWithKey<T>(key: string): T | null;
     private withNewTarget;
-    static ɵfac: i0.ɵɵFactoryDef<NzSingletonService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzSingletonService>;
 }

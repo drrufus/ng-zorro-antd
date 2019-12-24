@@ -1,6 +1,12 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzCollapsePanelComponent } from './nz-collapse-panel.component';
-import * as i0 from "@angular/core";
 export declare class NzCollapseComponent {
     nzConfigService: NzConfigService;
     private listOfNzCollapsePanelComponent;
@@ -10,6 +16,4 @@ export declare class NzCollapseComponent {
     addPanel(value: NzCollapsePanelComponent): void;
     removePanel(value: NzCollapsePanelComponent): void;
     click(collapse: NzCollapsePanelComponent): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzCollapseComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCollapseComponent, "nz-collapse", ["nzCollapse"], { 'nzAccordion': "nzAccordion", 'nzBordered': "nzBordered" }, {}, never>;
 }

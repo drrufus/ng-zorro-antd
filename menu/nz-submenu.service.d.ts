@@ -1,7 +1,13 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { BehaviorSubject, Subject } from 'rxjs';
 import { NzDirectionVHIType } from 'ng-zorro-antd/core';
 import { NzMenuService } from './nz-menu.service';
-import * as i0 from "@angular/core";
 export declare class NzSubmenuService {
     private nzHostSubmenuService;
     nzMenuService: NzMenuService;
@@ -19,6 +25,4 @@ export declare class NzSubmenuService {
     setLevel(value: number): void;
     setMouseEnterState(value: boolean): void;
     constructor(nzHostSubmenuService: NzSubmenuService, nzMenuService: NzMenuService);
-    static ɵfac: i0.ɵɵFactoryDef<NzSubmenuService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzSubmenuService>;
 }

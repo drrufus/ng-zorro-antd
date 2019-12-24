@@ -9,7 +9,6 @@ import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ChangeDetectorRef, EventEmitter, OnDestroy } from '@angular/core';
 import { NgStyleInterface, NzConfigService, NzScrollService } from 'ng-zorro-antd/core';
 import { NzAnchorLinkComponent } from './nz-anchor-link.component';
-import * as i0 from "@angular/core";
 export declare class NzAnchorComponent implements OnDestroy, AfterViewInit {
     nzConfigService: NzConfigService;
     private scrollSrv;
@@ -45,6 +44,4 @@ export declare class NzAnchorComponent implements OnDestroy, AfterViewInit {
     private clearActive;
     private handleActive;
     handleScrollTo(linkComp: NzAnchorLinkComponent): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzAnchorComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAnchorComponent, "nz-anchor", ["nzAnchor"], { 'nzAffix': "nzAffix", 'nzShowInkInFixed': "nzShowInkInFixed", 'nzBounds': "nzBounds", 'nzOffsetTop': "nzOffsetTop", 'nzTarget': "nzTarget" }, { 'nzClick': "nzClick", 'nzScroll': "nzScroll" }, never>;
 }

@@ -206,6 +206,11 @@
     }
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/zh_CN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -241,16 +246,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/zh_CN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale = {
-        placeholder: '请选择时间'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -258,6 +257,17 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale = {
+        placeholder: '请选择时间'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/zh_CN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var locale$1 = {
         lang: __assign({ placeholder: '请选择日期', rangePlaceholder: ['开始日期', '结束日期'] }, Calendar),
         timePickerLocale: __assign({}, locale)
@@ -265,6 +275,11 @@
     // should add whitespace between char in Button
     locale$1.lang.ok = '确 定';
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/zh_CN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -288,11 +303,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/zh_CN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var zh_CN = {
         locale: 'zh-cn',
@@ -350,22 +363,22 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-i18n.token.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
+    /** @type {?} */
     var NZ_I18N = new core.InjectionToken('nz-i18n');
-    /** Locale for date operations, should import from date-fns, see example: https://github.com/date-fns/date-fns/blob/v1.30.1/src/locale/zh_cn/index.js */
+    /**
+     * Locale for date operations, should import from date-fns, see example: https://github.com/date-fns/date-fns/blob/v1.30.1/src/locale/zh_cn/index.js
+     * @type {?}
+     */
     var NZ_DATE_LOCALE = new core.InjectionToken('nz-date-locale');
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-i18n.service.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzI18nService = /** @class */ (function () {
         function NzI18nService(locale, dateLocale) {
@@ -374,7 +387,10 @@
             this.setDateLocale(dateLocale || null);
         }
         Object.defineProperty(NzI18nService.prototype, "localeChange", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._change.asObservable();
             },
             enumerable: true,
@@ -383,12 +399,34 @@
         // [NOTE] Performance issue: this method may called by every change detections
         // TODO: cache more deeply paths for performance
         /* tslint:disable-next-line:no-any */
-        NzI18nService.prototype.translate = function (path, data) {
+        // [NOTE] Performance issue: this method may called by every change detections
+        // TODO: cache more deeply paths for performance
+        /* tslint:disable-next-line:no-any */
+        /**
+         * @param {?} path
+         * @param {?=} data
+         * @return {?}
+         */
+        NzI18nService.prototype.translate = 
+        // [NOTE] Performance issue: this method may called by every change detections
+        // TODO: cache more deeply paths for performance
+        /* tslint:disable-next-line:no-any */
+        /**
+         * @param {?} path
+         * @param {?=} data
+         * @return {?}
+         */
+        function (path, data) {
             // this._logger.debug(`[NzI18nService] Translating(${this._locale.locale}): ${path}`);
-            var content = this._getObjectPath(this._locale, path);
+            /** @type {?} */
+            var content = (/** @type {?} */ (this._getObjectPath(this._locale, path)));
             if (typeof content === 'string') {
                 if (data) {
-                    Object.keys(data).forEach(function (key) { return (content = content.replace(new RegExp("%" + key + "%", 'g'), data[key])); });
+                    Object.keys(data).forEach((/**
+                     * @param {?} key
+                     * @return {?}
+                     */
+                    function (key) { return (content = content.replace(new RegExp("%" + key + "%", 'g'), data[key])); }));
                 }
                 return content;
             }
@@ -401,23 +439,65 @@
          *
          * @param locale The translating letters
          */
-        NzI18nService.prototype.setLocale = function (locale) {
+        /**
+         * Set/Change current locale globally throughout the WHOLE application
+         * NOTE: If called at runtime, rendered interface may not change along with the locale change,
+         * because this do not trigger another render schedule.
+         *
+         * @param {?} locale The translating letters
+         * @return {?}
+         */
+        NzI18nService.prototype.setLocale = /**
+         * Set/Change current locale globally throughout the WHOLE application
+         * NOTE: If called at runtime, rendered interface may not change along with the locale change,
+         * because this do not trigger another render schedule.
+         *
+         * @param {?} locale The translating letters
+         * @return {?}
+         */
+        function (locale) {
             if (this._locale && this._locale.locale === locale.locale) {
                 return;
             }
             this._locale = locale;
             this._change.next(locale);
         };
-        NzI18nService.prototype.getLocale = function () {
+        /**
+         * @return {?}
+         */
+        NzI18nService.prototype.getLocale = /**
+         * @return {?}
+         */
+        function () {
             return this._locale;
         };
-        NzI18nService.prototype.getLocaleId = function () {
+        /**
+         * @return {?}
+         */
+        NzI18nService.prototype.getLocaleId = /**
+         * @return {?}
+         */
+        function () {
             return this._locale ? this._locale.locale : '';
         };
-        NzI18nService.prototype.setDateLocale = function (dateLocale) {
+        /**
+         * @param {?} dateLocale
+         * @return {?}
+         */
+        NzI18nService.prototype.setDateLocale = /**
+         * @param {?} dateLocale
+         * @return {?}
+         */
+        function (dateLocale) {
             this.dateLocale = dateLocale;
         };
-        NzI18nService.prototype.getDateLocale = function () {
+        /**
+         * @return {?}
+         */
+        NzI18nService.prototype.getDateLocale = /**
+         * @return {?}
+         */
+        function () {
             return this.dateLocale;
         };
         /**
@@ -426,7 +506,22 @@
          * @param defaultValue default value if the result is not "truthy"
          */
         // tslint:disable-next-line:no-any
-        NzI18nService.prototype.getLocaleData = function (path, defaultValue) {
+        /**
+         * Get locale data
+         * @param {?} path dot paths for finding exist value from locale data, eg. "a.b.c"
+         * @param {?=} defaultValue default value if the result is not "truthy"
+         * @return {?}
+         */
+        // tslint:disable-next-line:no-any
+        NzI18nService.prototype.getLocaleData = /**
+         * Get locale data
+         * @param {?} path dot paths for finding exist value from locale data, eg. "a.b.c"
+         * @param {?=} defaultValue default value if the result is not "truthy"
+         * @return {?}
+         */
+        // tslint:disable-next-line:no-any
+        function (path, defaultValue) {
+            /** @type {?} */
             var result = path ? this._getObjectPath(this._locale, path) : this._locale;
             if (!result && !defaultValue) {
                 core$1.warn("Missing translations for \"" + path + "\" in language \"" + this._locale.locale + "\".\nYou can use \"NzI18nService.setLocale\" as a temporary fix.\nWelcome to submit a pull request to help us optimize the translations!\nhttps://github.com/NG-ZORRO/ng-zorro-antd/blob/master/CONTRIBUTING.md");
@@ -434,85 +529,159 @@
             return result || defaultValue || {};
         };
         // tslint:disable-next-line:no-any
-        NzI18nService.prototype._getObjectPath = function (obj, path) {
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} obj
+         * @param {?} path
+         * @return {?}
+         */
+        NzI18nService.prototype._getObjectPath = 
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} obj
+         * @param {?} path
+         * @return {?}
+         */
+        function (obj, path) {
+            /** @type {?} */
             var res = obj;
+            /** @type {?} */
             var paths = path.split('.');
+            /** @type {?} */
             var depth = paths.length;
+            /** @type {?} */
             var index = 0;
             while (res && index < depth) {
                 res = res[paths[index++]];
             }
             return index === depth ? res : null;
         };
-        /** @nocollapse */ NzI18nService.ɵfac = function NzI18nService_Factory(t) { return new (t || NzI18nService)(core.ɵɵinject(NZ_I18N, 8), core.ɵɵinject(NZ_DATE_LOCALE, 8)); };
-        /** @nocollapse */ NzI18nService.ɵprov = core.ɵɵdefineInjectable({ token: NzI18nService, factory: NzI18nService.ɵfac, providedIn: 'root' });
+        NzI18nService.decorators = [
+            { type: core.Injectable, args: [{
+                        providedIn: 'root'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzI18nService.ctorParameters = function () { return [
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_I18N,] }] },
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_DATE_LOCALE,] }] }
+        ]; };
+        /** @nocollapse */ NzI18nService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzI18nService_Factory() { return new NzI18nService(core.ɵɵinject(NZ_I18N, 8), core.ɵɵinject(NZ_DATE_LOCALE, 8)); }, token: NzI18nService, providedIn: "root" });
         return NzI18nService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzI18nService, [{
-            type: core.Injectable,
-            args: [{
-                    providedIn: 'root'
-                }]
-        }], function () { return [{ type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [NZ_I18N]
-                }] }, { type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [NZ_DATE_LOCALE]
-                }] }]; }, null); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzI18nService.prototype._locale;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzI18nService.prototype._change;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzI18nService.prototype.dateLocale;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-i18n.pipe.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzI18nPipe = /** @class */ (function () {
         function NzI18nPipe(_locale) {
             this._locale = _locale;
         }
-        NzI18nPipe.prototype.transform = function (path, keyValue) {
+        /**
+         * @param {?} path
+         * @param {?=} keyValue
+         * @return {?}
+         */
+        NzI18nPipe.prototype.transform = /**
+         * @param {?} path
+         * @param {?=} keyValue
+         * @return {?}
+         */
+        function (path, keyValue) {
             return this._locale.translate(path, keyValue);
         };
-        /** @nocollapse */ NzI18nPipe.ɵfac = function NzI18nPipe_Factory(t) { return new (t || NzI18nPipe)(core.ɵɵdirectiveInject(NzI18nService)); };
-        /** @nocollapse */ NzI18nPipe.ɵpipe = core.ɵɵdefinePipe({ name: "nzI18n", type: NzI18nPipe, pure: true });
+        NzI18nPipe.decorators = [
+            { type: core.Pipe, args: [{
+                        name: 'nzI18n'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzI18nPipe.ctorParameters = function () { return [
+            { type: NzI18nService }
+        ]; };
         return NzI18nPipe;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzI18nPipe, [{
-            type: core.Pipe,
-            args: [{
-                    name: 'nzI18n'
-                }]
-        }], function () { return [{ type: NzI18nService }]; }, null); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzI18nPipe.prototype._locale;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-i18n.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzI18nModule = /** @class */ (function () {
         function NzI18nModule() {
         }
-        /** @nocollapse */ NzI18nModule.ɵmod = core.ɵɵdefineNgModule({ type: NzI18nModule });
-        /** @nocollapse */ NzI18nModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzI18nModule_Factory(t) { return new (t || NzI18nModule)(); } });
+        NzI18nModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzI18nPipe],
+                        exports: [NzI18nPipe]
+                    },] }
+        ];
         return NzI18nModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzI18nModule, { declarations: [NzI18nPipe], exports: [NzI18nPipe] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzI18nModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzI18nPipe],
-                    exports: [NzI18nPipe]
-                }]
-        }], null, null); })();
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: date-config.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var NZ_DATE_CONFIG = new core.InjectionToken('date-config');
+    /** @type {?} */
+    var NZ_DATE_CONFIG_DEFAULT = {
+        firstDayOfWeek: undefined
+    };
+    /**
+     * @param {?} config
+     * @return {?}
+     */
+    function mergeDateConfig(config) {
+        return __assign({}, NZ_DATE_CONFIG_DEFAULT, config);
+    }
+    /**
+     * @record
+     */
+    function NzDateConfig() { }
+    if (false) {
+        /**
+         * Customize the first day of a week
+         * @type {?|undefined}
+         */
+        NzDateConfig.prototype.firstDayOfWeek;
+    }
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-i18n.interface.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -520,21 +689,178 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var NZ_DATE_CONFIG = new core.InjectionToken('date-config');
-    var NZ_DATE_CONFIG_DEFAULT = {
-        firstDayOfWeek: undefined
-    };
-    function mergeDateConfig(config) {
-        return __assign(__assign({}, NZ_DATE_CONFIG_DEFAULT), config);
+    /**
+     * @record
+     */
+    function NzPaginationI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.items_per_page;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.jump_to;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.jump_to_confirm;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.page;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.prev_page;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.next_page;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.prev_5;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.next_5;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.prev_3;
+        /** @type {?} */
+        NzPaginationI18nInterface.prototype.next_3;
+    }
+    /**
+     * @record
+     */
+    function NzGlobalI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzGlobalI18nInterface.prototype.placeholder;
+    }
+    /**
+     * @record
+     */
+    function NzDatePickerI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzDatePickerI18nInterface.prototype.lang;
+        /** @type {?} */
+        NzDatePickerI18nInterface.prototype.timePickerLocale;
+    }
+    /**
+     * @record
+     */
+    function NzCalendarI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.today;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.now;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.backToToday;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.ok;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.clear;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.month;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.year;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.timeSelect;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.dateSelect;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.monthSelect;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.yearSelect;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.decadeSelect;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.yearFormat;
+        /** @type {?|undefined} */
+        NzCalendarI18nInterface.prototype.monthFormat;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.dateFormat;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.dayFormat;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.dateTimeFormat;
+        /** @type {?|undefined} */
+        NzCalendarI18nInterface.prototype.monthBeforeYear;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.previousMonth;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.nextMonth;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.previousYear;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.nextYear;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.previousDecade;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.nextDecade;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.previousCentury;
+        /** @type {?} */
+        NzCalendarI18nInterface.prototype.nextCentury;
+    }
+    /**
+     * @record
+     */
+    function NzDatePickerLangI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzDatePickerLangI18nInterface.prototype.placeholder;
+        /** @type {?} */
+        NzDatePickerLangI18nInterface.prototype.rangePlaceholder;
+    }
+    /**
+     * @record
+     */
+    function NzTimePickerI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzTimePickerI18nInterface.prototype.placeholder;
+    }
+    /**
+     * @record
+     */
+    function NzI18nInterface() { }
+    if (false) {
+        /** @type {?} */
+        NzI18nInterface.prototype.locale;
+        /** @type {?} */
+        NzI18nInterface.prototype.Pagination;
+        /** @type {?} */
+        NzI18nInterface.prototype.DatePicker;
+        /** @type {?} */
+        NzI18nInterface.prototype.TimePicker;
+        /** @type {?} */
+        NzI18nInterface.prototype.Calendar;
+        /** @type {?|undefined} */
+        NzI18nInterface.prototype.global;
+        /** @type {?} */
+        NzI18nInterface.prototype.Table;
+        /** @type {?} */
+        NzI18nInterface.prototype.Modal;
+        /** @type {?} */
+        NzI18nInterface.prototype.Popconfirm;
+        /** @type {?} */
+        NzI18nInterface.prototype.Transfer;
+        /** @type {?} */
+        NzI18nInterface.prototype.Upload;
+        /** @type {?} */
+        NzI18nInterface.prototype.Empty;
+        /** @type {?|undefined} */
+        NzI18nInterface.prototype.Text;
     }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: date-helper.service.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @param {?} injector
+     * @param {?} config
+     * @return {?}
+     */
     function DATE_HELPER_SERVICE_FACTORY(injector, config) {
+        /** @type {?} */
         var i18n = injector.get(NzI18nService);
         return i18n.getDateLocale() ? new DateHelperByDateFns(i18n, config) : new DateHelperByDatePipe(i18n, config);
     }
     /**
      * Abstract DateHelperService(Token via Class)
      * Compatibility: compact for original usage by default which using DatePipe
+     * @abstract
      */
     var DateHelperService = /** @class */ (function () {
         function DateHelperService(i18n, config) {
@@ -543,40 +869,81 @@
             this.relyOnDatePipe = this instanceof DateHelperByDatePipe; // Indicate whether this service is rely on DatePipe
             this.config = mergeDateConfig(this.config);
         }
-        DateHelperService.prototype.parseDate = function (text) {
+        /**
+         * @param {?} text
+         * @return {?}
+         */
+        DateHelperService.prototype.parseDate = /**
+         * @param {?} text
+         * @return {?}
+         */
+        function (text) {
             if (!text) {
                 return;
             }
             return fnsParse(text);
         };
-        DateHelperService.prototype.parseTime = function (text) {
+        /**
+         * @param {?} text
+         * @return {?}
+         */
+        DateHelperService.prototype.parseTime = /**
+         * @param {?} text
+         * @return {?}
+         */
+        function (text) {
             if (!text) {
                 return;
             }
             return fnsParse("1970-01-01 " + text);
         };
-        /** @nocollapse */ DateHelperService.ɵfac = function DateHelperService_Factory(t) { return new (t || DateHelperService)(core.ɵɵinject(NzI18nService), core.ɵɵinject(NZ_DATE_CONFIG, 8)); };
-        /** @nocollapse */ DateHelperService.ɵprov = core.ɵɵdefineInjectable({ token: DateHelperService, factory: function DateHelperService_Factory(t) { var r = null; if (t) {
-                r = new t();
-            }
-            else {
-                r = DATE_HELPER_SERVICE_FACTORY(core.ɵɵinject(core.Injector), core.ɵɵinject([new core.Optional(), NZ_DATE_CONFIG], 8));
-            } return r; }, providedIn: 'root' });
+        DateHelperService.decorators = [
+            { type: core.Injectable, args: [{
+                        providedIn: 'root',
+                        useFactory: DATE_HELPER_SERVICE_FACTORY,
+                        deps: [core.Injector, [new core.Optional(), NZ_DATE_CONFIG]]
+                    },] }
+        ];
+        /** @nocollapse */
+        DateHelperService.ctorParameters = function () { return [
+            { type: NzI18nService },
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_DATE_CONFIG,] }] }
+        ]; };
+        /** @nocollapse */ DateHelperService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function DateHelperService_Factory() { return DATE_HELPER_SERVICE_FACTORY(core.ɵɵinject(core.INJECTOR), core.ɵɵinject(NZ_DATE_CONFIG, 8)); }, token: DateHelperService, providedIn: "root" });
         return DateHelperService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(DateHelperService, [{
-            type: core.Injectable,
-            args: [{
-                    providedIn: 'root',
-                    useFactory: DATE_HELPER_SERVICE_FACTORY,
-                    deps: [core.Injector, [new core.Optional(), NZ_DATE_CONFIG]]
-                }]
-        }], function () { return [{ type: NzI18nService }, { type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [NZ_DATE_CONFIG]
-                }] }]; }, null); })();
+    if (false) {
+        /** @type {?} */
+        DateHelperService.prototype.relyOnDatePipe;
+        /**
+         * @type {?}
+         * @protected
+         */
+        DateHelperService.prototype.i18n;
+        /**
+         * @type {?}
+         * @protected
+         */
+        DateHelperService.prototype.config;
+        /**
+         * @abstract
+         * @param {?} date
+         * @return {?}
+         */
+        DateHelperService.prototype.getISOWeek = function (date) { };
+        /**
+         * @abstract
+         * @return {?}
+         */
+        DateHelperService.prototype.getFirstDayOfWeek = function () { };
+        /**
+         * @abstract
+         * @param {?} date
+         * @param {?} formatStr
+         * @return {?}
+         */
+        DateHelperService.prototype.format = function (date, formatStr) { };
+    }
     /**
      * DateHelper that handles date formats with date-fns
      */
@@ -585,12 +952,31 @@
         function DateHelperByDateFns() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        DateHelperByDateFns.prototype.getISOWeek = function (date) {
+        /**
+         * @param {?} date
+         * @return {?}
+         */
+        DateHelperByDateFns.prototype.getISOWeek = /**
+         * @param {?} date
+         * @return {?}
+         */
+        function (date) {
             return fnsGetISOWeek(date);
         };
         // TODO: Use date-fns's "weekStartsOn" to support different locale when "config.firstDayOfWeek" is null
         // when v2.0 is ready: https://github.com/date-fns/date-fns/blob/v2.0.0-alpha.27/src/locale/en-US/index.js#L23
-        DateHelperByDateFns.prototype.getFirstDayOfWeek = function () {
+        // TODO: Use date-fns's "weekStartsOn" to support different locale when "config.firstDayOfWeek" is null
+        // when v2.0 is ready: https://github.com/date-fns/date-fns/blob/v2.0.0-alpha.27/src/locale/en-US/index.js#L23
+        /**
+         * @return {?}
+         */
+        DateHelperByDateFns.prototype.getFirstDayOfWeek = 
+        // TODO: Use date-fns's "weekStartsOn" to support different locale when "config.firstDayOfWeek" is null
+        // when v2.0 is ready: https://github.com/date-fns/date-fns/blob/v2.0.0-alpha.27/src/locale/en-US/index.js#L23
+        /**
+         * @return {?}
+         */
+        function () {
             return this.config.firstDayOfWeek == null ? 1 : this.config.firstDayOfWeek;
         };
         /**
@@ -599,9 +985,24 @@
          * @param date Date
          * @param formatStr format string
          */
-        DateHelperByDateFns.prototype.format = function (date, formatStr) {
+        /**
+         * Format a date
+         * @see https://date-fns.org/docs/format#description
+         * @param {?} date Date
+         * @param {?} formatStr format string
+         * @return {?}
+         */
+        DateHelperByDateFns.prototype.format = /**
+         * Format a date
+         * @see https://date-fns.org/docs/format#description
+         * @param {?} date Date
+         * @param {?} formatStr format string
+         * @return {?}
+         */
+        function (date, formatStr) {
             return date ? fnsFormat(date, formatStr, { locale: this.i18n.getDateLocale() }) : '';
         };
+        /** @nocollapse */ DateHelperByDateFns.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function DateHelperByDateFns_Factory() { return DATE_HELPER_SERVICE_FACTORY(core.ɵɵinject(core.INJECTOR), core.ɵɵinject(NZ_DATE_CONFIG, 8)); }, token: DateHelperByDateFns, providedIn: "root" });
         return DateHelperByDateFns;
     }(DateHelperService));
     /**
@@ -615,18 +1016,43 @@
         function DateHelperByDatePipe(i18n, config) {
             return _super.call(this, i18n, config) || this;
         }
-        DateHelperByDatePipe.prototype.getISOWeek = function (date) {
+        /**
+         * @param {?} date
+         * @return {?}
+         */
+        DateHelperByDatePipe.prototype.getISOWeek = /**
+         * @param {?} date
+         * @return {?}
+         */
+        function (date) {
             return +this.format(date, 'w');
         };
-        DateHelperByDatePipe.prototype.getFirstDayOfWeek = function () {
+        /**
+         * @return {?}
+         */
+        DateHelperByDatePipe.prototype.getFirstDayOfWeek = /**
+         * @return {?}
+         */
+        function () {
             if (this.config.firstDayOfWeek === undefined) {
+                /** @type {?} */
                 var locale = this.i18n.getLocaleId();
                 return locale && ['zh-cn', 'zh-tw'].indexOf(locale.toLowerCase()) > -1 ? 1 : 0;
             }
             return this.config.firstDayOfWeek;
         };
-        DateHelperByDatePipe.prototype.format = function (date, formatStr) {
-            return date ? common.formatDate(date, formatStr, this.i18n.getLocaleId()) : '';
+        /**
+         * @param {?} date
+         * @param {?} formatStr
+         * @return {?}
+         */
+        DateHelperByDatePipe.prototype.format = /**
+         * @param {?} date
+         * @param {?} formatStr
+         * @return {?}
+         */
+        function (date, formatStr) {
+            return date ? (/** @type {?} */ (common.formatDate(date, formatStr, this.i18n.getLocaleId()))) : '';
         };
         /**
          * Compatible translate the moment-like format pattern to angular's pattern
@@ -638,19 +1064,46 @@
          * @link https://angular.io/api/common/DatePipe#description
          * @param format input format pattern
          */
-        DateHelperByDatePipe.prototype.transCompatFormat = function (format) {
+        /**
+         * Compatible translate the moment-like format pattern to angular's pattern
+         * Why? For now, we need to support the existing language formats in AntD, and AntD uses the default temporal syntax.
+         *
+         * TODO: compare and complete all format patterns
+         * Each format docs as below:
+         * @link https://momentjs.com/docs/#/displaying/format/ / https://angular.io/api/common/DatePipe#description
+         * @param {?} format input format pattern
+         * @return {?}
+         */
+        DateHelperByDatePipe.prototype.transCompatFormat = /**
+         * Compatible translate the moment-like format pattern to angular's pattern
+         * Why? For now, we need to support the existing language formats in AntD, and AntD uses the default temporal syntax.
+         *
+         * TODO: compare and complete all format patterns
+         * Each format docs as below:
+         * @link https://momentjs.com/docs/#/displaying/format/ / https://angular.io/api/common/DatePipe#description
+         * @param {?} format input format pattern
+         * @return {?}
+         */
+        function (format) {
             return (format &&
                 format
                     .replace(/Y/g, 'y') // only support y, yy, yyy, yyyy
                     .replace(/D/g, 'd')); // d, dd represent of D, DD for momentjs, others are not support
         };
-        DateHelperByDatePipe = __decorate([
-            __param(1, core.Optional()), __param(1, core.Inject(NZ_DATE_CONFIG)),
-            __metadata("design:paramtypes", [NzI18nService, Object])
-        ], DateHelperByDatePipe);
+        /** @nocollapse */
+        DateHelperByDatePipe.ctorParameters = function () { return [
+            { type: NzI18nService },
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_DATE_CONFIG,] }] }
+        ]; };
+        /** @nocollapse */ DateHelperByDatePipe.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function DateHelperByDatePipe_Factory() { return DATE_HELPER_SERVICE_FACTORY(core.ɵɵinject(core.INJECTOR), core.ɵɵinject(NZ_DATE_CONFIG, 8)); }, token: DateHelperByDatePipe, providedIn: "root" });
         return DateHelperByDatePipe;
     }(DateHelperService));
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ar_EG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -687,16 +1140,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ar_EG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$2 = {
-        placeholder: 'اختيار الوقت'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -704,7 +1151,18 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$2 = {
+        placeholder: 'اختيار الوقت'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ar_EG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$3 = {
         lang: __assign({ placeholder: 'اختيار التاريخ', rangePlaceholder: ['البداية', 'النهاية'] }, Calendar$1),
         timePickerLocale: __assign({}, locale$2),
@@ -714,6 +1172,11 @@
         weekFormat: 'wo-YYYY'
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ar_EG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -737,11 +1200,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ar_EG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ar_EG = {
         locale: 'ar',
@@ -798,6 +1259,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/bg_BG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -833,16 +1299,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/bg_BG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$4 = {
-        placeholder: 'Избор на час'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -850,12 +1310,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$4 = {
+        placeholder: 'Избор на час'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/bg_BG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$5 = {
         lang: __assign({ placeholder: 'Избор на дата', rangePlaceholder: ['Начална', 'Крайна'] }, Calendar$2),
         timePickerLocale: __assign({}, locale$4)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/bg_BG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -879,11 +1355,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/bg_BG.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var bg_BG = {
         locale: 'bg',
@@ -924,6 +1398,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ca_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -959,16 +1438,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ca_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$6 = {
-        placeholder: 'Seleccionar hora'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -976,12 +1449,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$6 = {
+        placeholder: 'Seleccionar hora'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ca_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$7 = {
         lang: __assign({ placeholder: 'Seleccionar data', rangePlaceholder: ['Data inicial', 'Data final'] }, Calendar$3),
         timePickerLocale: __assign({}, locale$6)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ca_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1005,11 +1494,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ca_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ca_ES = {
         locale: 'ca',
@@ -1066,6 +1553,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/cs_CZ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1101,16 +1593,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/cs_CZ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$8 = {
-        placeholder: 'Vybrat čas'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1118,12 +1604,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$8 = {
+        placeholder: 'Vybrat čas'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/cs_CZ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$9 = {
         lang: __assign({ placeholder: 'Vybrat datum', rangePlaceholder: ['Od', 'Do'] }, Calendar$4),
         timePickerLocale: __assign({}, locale$8)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/cs_CZ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1147,11 +1649,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/cs_CZ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var cs_CZ = {
         locale: 'cs',
@@ -1190,6 +1690,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/da_DK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1225,16 +1730,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/da_DK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$a = {
-        placeholder: 'Vælg tid'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1242,12 +1741,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$a = {
+        placeholder: 'Vælg tid'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/da_DK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$b = {
         lang: __assign({ placeholder: 'Vælg dato', rangePlaceholder: ['Startdato', 'Slutdato'] }, Calendar$5),
         timePickerLocale: __assign({}, locale$a)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/da_DK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1271,11 +1786,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/da_DK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var da_DK = {
         locale: 'da',
@@ -1316,6 +1829,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/de_DE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1351,16 +1869,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/de_DE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$c = {
-        placeholder: 'Zeit auswählen'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1368,12 +1880,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$c = {
+        placeholder: 'Zeit auswählen'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/de_DE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$d = {
         lang: __assign({ placeholder: 'Datum auswählen', rangePlaceholder: ['Startdatum', 'Enddatum'] }, Calendar$6),
         timePickerLocale: __assign({}, locale$c)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/de_DE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1397,11 +1925,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/de_DE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var de_DE = {
         locale: 'de',
@@ -1459,6 +1985,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/el_GR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1494,16 +2025,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/el_GR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$e = {
-        placeholder: 'Επιλέξτε ώρα'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1511,12 +2036,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$e = {
+        placeholder: 'Επιλέξτε ώρα'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/el_GR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$f = {
         lang: __assign({ placeholder: 'Επιλέξτε ημερομηνία', rangePlaceholder: ['Αρχική ημερομηνία', 'Τελική ημερομηνία'] }, Calendar$7),
         timePickerLocale: __assign({}, locale$e)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/el_GR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1540,11 +2081,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/el_GR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var el_GR = {
         locale: 'el',
@@ -1585,6 +2124,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/en_GB.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1620,16 +2164,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/en_GB.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$g = {
-        placeholder: 'Select time'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1637,12 +2175,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$g = {
+        placeholder: 'Select time'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/en_GB.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$h = {
         lang: __assign({ placeholder: 'Select date', rangePlaceholder: ['Start date', 'End date'] }, Calendar$8),
         timePickerLocale: __assign({}, locale$g)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/en_GB.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1666,11 +2220,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/en_GB.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var en_GB = {
         locale: 'en-gb',
@@ -1711,6 +2263,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/en_US.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1747,16 +2304,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/en_US.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$i = {
-        placeholder: 'Select time'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1764,12 +2315,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$i = {
+        placeholder: 'Select time'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/en_US.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$j = {
         lang: __assign({ placeholder: 'Select date', rangePlaceholder: ['Start date', 'End date'] }, Calendar$9),
         timePickerLocale: __assign({}, locale$i)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/en_US.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1793,11 +2360,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/en_US.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var en_US = {
         locale: 'en',
@@ -1855,6 +2420,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/es_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -1890,16 +2460,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/es_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$k = {
-        placeholder: 'Seleccionar hora'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1907,12 +2471,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$k = {
+        placeholder: 'Seleccionar hora'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/es_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$l = {
         lang: __assign({ placeholder: 'Seleccionar fecha', rangePlaceholder: ['Fecha inicial', 'Fecha final'] }, Calendar$a),
         timePickerLocale: __assign({}, locale$k)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/es_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -1936,11 +2516,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/es_ES.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var es_ES = {
         locale: 'es',
@@ -1997,6 +2575,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/et_EE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2032,16 +2615,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/et_EE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$m = {
-        placeholder: 'Vali aeg'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2049,12 +2626,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$m = {
+        placeholder: 'Vali aeg'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/et_EE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // 统一合并为完整的 Locale
+    /** @type {?} */
     var locale$n = {
         lang: __assign({ placeholder: 'Vali kuupäev', rangePlaceholder: ['Algus kuupäev', 'Lõpu kuupäev'] }, Calendar$b),
         timePickerLocale: __assign({}, locale$m)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/et_EE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2078,11 +2671,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/et_EE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var et_EE = {
         locale: 'et',
@@ -2123,6 +2714,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/fa_IR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2158,16 +2754,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/fa_IR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$o = {
-        placeholder: 'انتخاب زمان'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2175,12 +2765,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$o = {
+        placeholder: 'انتخاب زمان'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/fa_IR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$p = {
         lang: __assign({ placeholder: 'انتخاب تاریخ', rangePlaceholder: ['تاریخ شروع', 'تاریخ پایان'] }, Calendar$c),
         timePickerLocale: __assign({}, locale$o)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/fa_IR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2204,11 +2810,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/fa_IR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var fa_IR = {
         locale: 'fa',
@@ -2249,6 +2853,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/fi_FI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2284,16 +2893,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/fi_FI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$q = {
-        placeholder: 'Valitse aika'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2301,12 +2904,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$q = {
+        placeholder: 'Valitse aika'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/fi_FI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$r = {
         lang: __assign({ placeholder: 'Valitse päivä', rangePlaceholder: ['Alku päivä', 'Loppu päivä'] }, Calendar$d),
         timePickerLocale: __assign({}, locale$q)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/fi_FI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2330,11 +2949,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/fi_FI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var fi_FI = {
         locale: 'fi',
@@ -2376,6 +2993,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/fr_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2383,15 +3005,15 @@
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
     var Calendar$e = {
-        today: "Aujourd'hui",
+        today: 'Aujourd\'hui',
         now: 'Maintenant',
-        backToToday: "Aujourd'hui",
+        backToToday: 'Aujourd\'hui',
         ok: 'Ok',
         clear: 'Rétablir',
         month: 'Mois',
         year: 'Année',
-        timeSelect: "Sélectionner l'heure",
-        dateSelect: "Sélectionner l'heure",
+        timeSelect: 'Sélectionner l\'heure',
+        dateSelect: 'Sélectionner l\'heure',
         monthSelect: 'Choisissez un mois',
         yearSelect: 'Choisissez une année',
         decadeSelect: 'Choisissez une décennie',
@@ -2411,16 +3033,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/fr_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$s = {
-        placeholder: "Sélectionner l'heure"
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2428,12 +3044,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$s = {
+        placeholder: "Sélectionner l'heure"
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/fr_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$t = {
         lang: __assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$e),
         timePickerLocale: __assign({}, locale$s)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/fr_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2457,11 +3089,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/fr_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var fr_BE = {
         locale: 'fr',
@@ -2500,6 +3130,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/fr_FR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2535,16 +3170,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/fr_FR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$u = {
-        placeholder: "Sélectionner l'heure"
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2552,12 +3181,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$u = {
+        placeholder: "Sélectionner l'heure"
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/fr_FR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$v = {
         lang: __assign({ placeholder: 'Sélectionner une date', rangePlaceholder: ['Date de début', 'Date de fin'] }, Calendar$f),
         timePickerLocale: __assign({}, locale$u)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/fr_FR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2581,11 +3226,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/fr_FR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var fr_FR = {
         locale: 'fr',
@@ -2632,6 +3275,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/he_IL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2668,16 +3316,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/he_IL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$w = {
-        placeholder: 'בחר שעה'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2685,12 +3327,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$w = {
+        placeholder: 'בחר שעה'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/he_IL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$x = {
         lang: __assign({ placeholder: 'בחר תאריך', rangePlaceholder: ['תאריך התחלה', 'תאריך סיום'] }, Calendar$g),
         timePickerLocale: __assign({}, locale$w)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/he_IL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2714,11 +3372,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/he_IL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var he_IL = {
         locale: 'he',
@@ -2759,6 +3415,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/hi_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2795,16 +3456,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/hi_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$y = {
-        placeholder: 'समय का चयन करें'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2812,12 +3467,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$y = {
+        placeholder: 'समय का चयन करें'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/hi_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$z = {
         lang: __assign({ placeholder: 'तारीख़ चुनें', rangePlaceholder: ['प्रारंभ तिथि', 'समाप्ति तिथि'] }, Calendar$h),
         timePickerLocale: __assign({}, locale$y)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/hi_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2841,11 +3512,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/hi_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var hi_IN = {
         locale: 'hi',
@@ -2894,6 +3563,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/hr_HR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -2930,16 +3604,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/hr_HR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$A = {
-        placeholder: 'Odaberite vrijeme'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2947,12 +3615,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$A = {
+        placeholder: 'Odaberite vrijeme'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/hr_HR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$B = {
         lang: __assign({ placeholder: 'Odaberite datum', rangePlaceholder: ['Početni datum', 'Završni datum'] }, Calendar$i),
         timePickerLocale: __assign({}, locale$A)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/hr_HR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -2976,11 +3660,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/hr_HR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var hr_HR = {
         locale: 'hr',
@@ -3035,6 +3717,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/hu_HU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3043,32 +3730,58 @@
      */
     var Calendar$j = {
         today: 'Ma',
+        // 'Today',
         now: 'Most',
+        // 'Now',
         backToToday: 'Vissza a mai napra',
+        // 'Back to today',
         ok: 'Ok',
         clear: 'Törlés',
+        // 'Clear',
         month: 'Hónap',
+        // 'Month',
         year: 'Év',
+        // 'Year',
         timeSelect: 'Időpont kiválasztása',
+        // 'Select time',
         dateSelect: 'Dátum kiválasztása',
+        // 'Select date',
         monthSelect: 'Hónap kiválasztása',
+        // 'Choose a month',
         yearSelect: 'Év kiválasztása',
+        // 'Choose a year',
         decadeSelect: 'Évtized kiválasztása',
+        // 'Choose a decade',
         yearFormat: 'YYYY',
         dateFormat: 'YYYY/MM/DD',
+        // 'M/D/YYYY',
         dayFormat: 'DD',
+        // 'D',
         dateTimeFormat: 'YYYY/MM/DD HH:mm:ss',
+        // 'M/D/YYYY HH:mm:ss',
         monthBeforeYear: true,
         previousMonth: 'Előző hónap (PageUp)',
+        // 'Previous month (PageUp)',
         nextMonth: 'Következő hónap (PageDown)',
+        // 'Next month (PageDown)',
         previousYear: 'Múlt év (Control + left)',
+        // 'Last year (Control + left)',
         nextYear: 'Jövő év (Control + right)',
+        // 'Next year (Control + right)',
         previousDecade: 'Előző évtized',
+        // 'Last decade',
         nextDecade: 'Következő évtized',
+        // 'Next decade',
         previousCentury: 'Múlt évszázad',
+        // 'Last century',
         nextCentury: 'Jövő évszázad' // 'Next century',
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/hu_HU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3076,23 +3789,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
     var locale$C = {
         placeholder: 'Válasszon időt'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/hu_HU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
+    /** @type {?} */
     var locale$D = {
         lang: __assign({ placeholder: 'Válasszon dátumot', rangePlaceholder: ['Kezdő dátum', 'Befejezés dátuma'] }, Calendar$j),
         timePickerLocale: __assign({}, locale$C)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/hu_HU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3103,24 +3821,30 @@
     var Pagination$j = {
         // Options.jsx
         items_per_page: '/ oldal',
+        // '/ page',
         jump_to: 'Ugrás',
+        // 'Goto',
         jump_to_confirm: 'megerősít',
+        // 'confirm',
         page: '',
         // Pagination.jsx
         prev_page: 'Előző oldal',
+        // 'Previous Page',
         next_page: 'Következő oldal',
+        // 'Next Page',
         prev_5: 'Előző 5 oldal',
+        // 'Previous 5 Pages',
         next_5: 'Következő 5 oldal',
+        // 'Next 5 Pages',
         prev_3: 'Előző 3 oldal',
+        // 'Previous 3 Pages',
         next_3: 'Következő 3 oldal' // 'Next 3 Pages',
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/hu_HU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var hu_HU = {
         locale: 'hu',
@@ -3162,6 +3886,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/id_ID.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3198,16 +3927,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/id_ID.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$E = {
-        placeholder: 'Pilih waktu'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3215,12 +3938,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$E = {
+        placeholder: 'Pilih waktu'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/id_ID.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$F = {
         lang: __assign({ placeholder: 'Pilih tanggal', rangePlaceholder: ['Mulai tanggal', 'Tanggal akhir'] }, Calendar$k),
         timePickerLocale: __assign({}, locale$E)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/id_ID.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3244,11 +3983,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/id_ID.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var id_ID = {
         locale: 'id',
@@ -3291,6 +4028,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/is_IS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3326,16 +4068,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/is_IS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$G = {
-        placeholder: 'Velja tíma'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3343,12 +4079,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$G = {
+        placeholder: 'Velja tíma'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/is_IS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$H = {
         lang: __assign({ placeholder: 'Veldu dag', rangePlaceholder: ['Upphafsdagur', 'Lokadagur'] }, Calendar$l),
         timePickerLocale: __assign({}, locale$G)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/is_IS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3372,11 +4124,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/is_IS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var is_IS = {
         locale: 'is',
@@ -3417,6 +4167,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/it_IT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3452,16 +4207,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/it_IT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$I = {
-        placeholder: "Selezionare l'orario"
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3469,12 +4218,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$I = {
+        placeholder: "Selezionare l'orario"
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/it_IT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$J = {
         lang: __assign({ placeholder: 'Selezionare la data', rangePlaceholder: ["Data d'inizio", 'Data di fine'] }, Calendar$m),
         timePickerLocale: __assign({}, locale$I)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/it_IT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3498,11 +4263,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/it_IT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var it_IT = {
         locale: 'it',
@@ -3556,6 +4319,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ja_JP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3590,16 +4358,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ja_JP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$K = {
-        placeholder: '時刻を選択'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3607,11 +4369,27 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$K = {
+        placeholder: '時刻を選択'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ja_JP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var locale$L = {
         lang: __assign({ placeholder: '日付を選択', rangePlaceholder: ['開始日付', '終了日付'] }, Calendar$n),
         timePickerLocale: __assign({}, locale$K)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ja_JP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3635,11 +4413,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ja_JP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ja_JP = {
         locale: 'ja',
@@ -3680,6 +4456,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/kn_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -3687,150 +4468,6 @@
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
     var Calendar$o = {
-        today: 'დღეს',
-        now: 'ახლა',
-        backToToday: 'მიმდინარე თარიღი',
-        ok: 'დიახ',
-        clear: 'გასუფთავება',
-        month: 'თვე',
-        year: 'წელი',
-        timeSelect: 'აირჩიეთ დრო',
-        dateSelect: 'აირჩიეთ თარიღი',
-        weekSelect: 'აირჩიეთ კვირა',
-        monthSelect: 'აირჩიეთ თვე',
-        yearSelect: 'აირჩიეთ წელი',
-        decadeSelect: 'აირჩიე ათწლეული',
-        yearFormat: 'YYYY',
-        dateFormat: 'D.M.YYYY',
-        dayFormat: 'D',
-        dateTimeFormat: 'D.M.YYYY HH:mm:ss',
-        monthBeforeYear: true,
-        previousMonth: 'წინა თვე (PageUp)',
-        nextMonth: 'შემდეგი თვე (PageDown)',
-        previousYear: 'წინა წელი (Control + left)',
-        nextYear: 'შემდეგი წელი (Control + right)',
-        previousDecade: 'წინა ათწლეული',
-        nextDecade: 'შემდეგი ათწლეული',
-        previousCentury: 'წინა საუკუნე',
-        nextCentury: 'შემდეგი საუკუნე'
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var locale$M = {
-        placeholder: 'აირჩიეთ დრო'
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    // Merge into a locale object
-    var locale$N = {
-        lang: __assign({ placeholder: 'აირჩიეთ თარიღი', rangePlaceholder: ['საწყისი თარიღი', 'ბოლო თარიღი'] }, Calendar$o),
-        timePickerLocale: __assign({}, locale$M)
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var Pagination$o = {
-        // Options.jsx
-        items_per_page: '/ გვ.',
-        jump_to: 'გადასვლა',
-        jump_to_confirm: 'დადასტურება',
-        page: '',
-        // Pagination.jsx
-        prev_page: 'წინა გვერდი',
-        next_page: 'შემდეგი გვერდი',
-        prev_5: 'წინა 5 გვერდი',
-        next_5: 'შემდეგი 5 გვერდი',
-        prev_3: 'წინა 3 გვერდი',
-        next_3: 'შემდეგი 3 გვერდი'
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var ka_GE = {
-        locale: 'ka',
-        Pagination: Pagination$o,
-        DatePicker: locale$N,
-        TimePicker: locale$M,
-        Calendar: Calendar$o,
-        global: {
-            placeholder: 'აირჩიეთ'
-        },
-        Table: {
-            filterTitle: 'ფილტრი',
-            filterConfirm: 'დიახ',
-            filterReset: 'განულება',
-            selectAll: 'აირჩიეთ მიმდინარე გვერდი',
-            selectInvert: 'გვერდის მიმართულების შეცვლა',
-            sortTitle: 'სორტირება'
-        },
-        Modal: {
-            okText: 'დიახ',
-            cancelText: 'გაუქმება',
-            justOkText: 'დიახ'
-        },
-        Popconfirm: {
-            okText: 'დიახ',
-            cancelText: 'გაუქმება'
-        },
-        Transfer: {
-            titles: ['', ''],
-            searchPlaceholder: 'ძიება',
-            itemUnit: 'ელემ.',
-            itemsUnit: 'ელემ.'
-        },
-        Upload: {
-            uploading: 'იტვირტება...',
-            removeFile: 'ფაილის წაშლა',
-            uploadError: 'ატვირთვის შეცდომა',
-            previewFile: 'ფაილის გადახედვა'
-        },
-        Empty: {
-            description: 'მონაცემი არ არის'
-        },
-        Icon: {
-            icon: 'ხატულა'
-        },
-        Text: {
-            edit: 'რედაქტირება',
-            copy: 'კოპირება',
-            copied: 'წარმატებით დაკოპირდა',
-            expand: 'გახსნა'
-        },
-        PageHeader: {
-            back: 'უკან'
-        }
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var Calendar$p = {
         today: 'ಇಂದು',
         now: 'ಈಗ',
         backToToday: 'ಇಂದು ಹಿಂದಿರುಗಿ',
@@ -3860,29 +4497,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/kn_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$O = {
+    /** @type {?} */
+    var locale$M = {
         placeholder: 'ಸಮಯ ಆಯ್ಕೆಮಾಡಿ'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/kn_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$P = {
-        lang: __assign({ placeholder: 'ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ', rangePlaceholder: ['ಪ್ರಾರಂಭ ದಿನಾಂಕ', 'ಅಂತಿಮ ದಿನಾಂಕ'] }, Calendar$p),
-        timePickerLocale: __assign({}, locale$O)
+    /** @type {?} */
+    var locale$N = {
+        lang: __assign({ placeholder: 'ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ', rangePlaceholder: ['ಪ್ರಾರಂಭ ದಿನಾಂಕ', 'ಅಂತಿಮ ದಿನಾಂಕ'] }, Calendar$o),
+        timePickerLocale: __assign({}, locale$M)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/kn_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -3890,7 +4537,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$p = {
+    var Pagination$o = {
         // Options.jsx
         items_per_page: '/ ಪುಟ',
         jump_to: 'ಜಿಗಿತವನ್ನು',
@@ -3906,18 +4553,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/kn_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var kn_IN = {
         locale: 'kn',
-        Pagination: Pagination$p,
-        DatePicker: locale$P,
-        TimePicker: locale$O,
-        Calendar: Calendar$p,
+        Pagination: Pagination$o,
+        DatePicker: locale$N,
+        TimePicker: locale$M,
+        Calendar: Calendar$o,
         // locales for all comoponents
         global: {
             placeholder: 'ದಯವಿಟ್ಟು ಆರಿಸಿ'
@@ -3959,13 +4604,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ko_KR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$q = {
+    var Calendar$p = {
         today: '오늘',
         now: '현재 시각',
         backToToday: '오늘로 돌아가기',
@@ -3994,29 +4644,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ko_KR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$Q = {
+    /** @type {?} */
+    var locale$O = {
         placeholder: '날짜 선택'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ko_KR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$R = {
-        lang: __assign({ placeholder: '날짜 선택', rangePlaceholder: ['시작일', '종료일'] }, Calendar$q),
-        timePickerLocale: __assign({}, locale$Q)
+    /** @type {?} */
+    var locale$P = {
+        lang: __assign({ placeholder: '날짜 선택', rangePlaceholder: ['시작일', '종료일'] }, Calendar$p),
+        timePickerLocale: __assign({}, locale$O)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ko_KR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4024,7 +4684,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$q = {
+    var Pagination$p = {
         // Options.jsx
         items_per_page: '/ 쪽',
         jump_to: '이동하기',
@@ -4040,18 +4700,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ko_KR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ko_KR = {
         locale: 'ko',
-        Pagination: Pagination$q,
-        DatePicker: locale$R,
-        TimePicker: locale$Q,
-        Calendar: Calendar$q,
+        Pagination: Pagination$p,
+        DatePicker: locale$P,
+        TimePicker: locale$O,
+        Calendar: Calendar$p,
         Table: {
             filterTitle: '필터 메뉴',
             filterConfirm: '확인',
@@ -4085,13 +4743,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ku_IQ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$r = {
+    var Calendar$q = {
         today: 'Îro',
         now: 'Niha',
         backToToday: 'Vegere îro',
@@ -4120,29 +4783,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ku_IQ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$S = {
+    /** @type {?} */
+    var locale$Q = {
         placeholder: 'Demê hilbijêre'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ku_IQ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$T = {
-        lang: __assign({ placeholder: 'Dîrok hilbijêre', rangePlaceholder: ['Dîroka destpêkê', 'Dîroka dawîn'] }, Calendar$r),
-        timePickerLocale: __assign({}, locale$S)
+    /** @type {?} */
+    var locale$R = {
+        lang: __assign({ placeholder: 'Dîrok hilbijêre', rangePlaceholder: ['Dîroka destpêkê', 'Dîroka dawîn'] }, Calendar$q),
+        timePickerLocale: __assign({}, locale$Q)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ku_IQ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4150,7 +4823,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$r = {
+    var Pagination$q = {
         // Options.jsx
         items_per_page: '/ rûpel',
         jump_to: 'Biçe',
@@ -4166,18 +4839,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ku_IQ.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ku_IQ = {
         locale: 'ku-iq',
-        Pagination: Pagination$r,
-        DatePicker: locale$T,
-        TimePicker: locale$S,
-        Calendar: Calendar$r,
+        Pagination: Pagination$q,
+        DatePicker: locale$R,
+        TimePicker: locale$Q,
+        Calendar: Calendar$q,
         Table: {
             filterTitle: 'Menuê peldanka',
             filterConfirm: 'Temam',
@@ -4211,13 +4882,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/lv_LV.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$s = {
+    var Calendar$r = {
         today: 'Šodien',
         now: 'Tagad',
         backToToday: 'Atpakaļ pie šodienas',
@@ -4246,29 +4922,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/lv_LV.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$U = {
+    /** @type {?} */
+    var locale$S = {
         placeholder: 'Izvēlieties laiku'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/lv_LV.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$V = {
-        lang: __assign({ placeholder: 'Izvēlieties datumu', rangePlaceholder: ['Sākuma datums', 'Beigu datums'] }, Calendar$s),
-        timePickerLocale: __assign({}, locale$U)
+    /** @type {?} */
+    var locale$T = {
+        lang: __assign({ placeholder: 'Izvēlieties datumu', rangePlaceholder: ['Sākuma datums', 'Beigu datums'] }, Calendar$r),
+        timePickerLocale: __assign({}, locale$S)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/lv_LV.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4276,7 +4962,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$s = {
+    var Pagination$r = {
         // Options.jsx
         items_per_page: '/ lappuse',
         jump_to: 'iet uz',
@@ -4292,18 +4978,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/lv_LV.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var lv_LV = {
         locale: 'lv',
-        Pagination: Pagination$s,
-        DatePicker: locale$V,
-        TimePicker: locale$U,
-        Calendar: Calendar$s,
+        Pagination: Pagination$r,
+        DatePicker: locale$T,
+        TimePicker: locale$S,
+        Calendar: Calendar$r,
         Table: {
             filterTitle: 'Filtrēšanas izvēlne',
             filterConfirm: 'OK',
@@ -4337,13 +5021,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/mn_MN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$t = {
+    var Calendar$s = {
         today: 'Өнөөдөр',
         now: 'Одоо',
         backToToday: 'Өнөөдөрлүү буцах',
@@ -4373,29 +5062,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/mn_MN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$W = {
+    /** @type {?} */
+    var locale$U = {
         placeholder: 'Цаг сонгох'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/mn_MN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$X = {
-        lang: __assign({ placeholder: 'Огноо сонгох', rangePlaceholder: ['Эхлэх огноо', 'Дуусах огноо'] }, Calendar$t),
-        timePickerLocale: __assign({}, locale$W)
+    /** @type {?} */
+    var locale$V = {
+        lang: __assign({ placeholder: 'Огноо сонгох', rangePlaceholder: ['Эхлэх огноо', 'Дуусах огноо'] }, Calendar$s),
+        timePickerLocale: __assign({}, locale$U)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/mn_MN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4403,7 +5102,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$t = {
+    var Pagination$s = {
         // Options.jsx
         items_per_page: '/ хуудас',
         jump_to: 'Шилжих',
@@ -4419,18 +5118,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/mn_MN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var mn_MN = {
         locale: 'mn-mn',
-        Pagination: Pagination$t,
-        DatePicker: locale$X,
-        TimePicker: locale$W,
-        Calendar: Calendar$t,
+        Pagination: Pagination$s,
+        DatePicker: locale$V,
+        TimePicker: locale$U,
+        Calendar: Calendar$s,
         Table: {
             filterTitle: 'Хайх цэс',
             filterConfirm: 'OK',
@@ -4464,13 +5161,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ms_MY.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$u = {
+    var Calendar$t = {
         today: 'Hari ini',
         now: 'Sekarang',
         backToToday: 'Kembali ke hari ini',
@@ -4499,29 +5201,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ms_MY.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$Y = {
+    /** @type {?} */
+    var locale$W = {
         placeholder: 'Sila pilih masa'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ms_MY.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$Z = {
-        lang: __assign({ placeholder: 'Pilih tarikh', rangePlaceholder: ['Tarikh mula', 'Tarikh akhir'] }, Calendar$u),
-        timePickerLocale: __assign({}, locale$Y)
+    /** @type {?} */
+    var locale$X = {
+        lang: __assign({ placeholder: 'Pilih tarikh', rangePlaceholder: ['Tarikh mula', 'Tarikh akhir'] }, Calendar$t),
+        timePickerLocale: __assign({}, locale$W)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ms_MY.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4529,7 +5241,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$u = {
+    var Pagination$t = {
         // Options.jsx
         items_per_page: '/ halaman',
         jump_to: 'Lompat ke',
@@ -4545,18 +5257,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ms_MY.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ms_MY = {
         locale: 'ms-my',
-        Pagination: Pagination$u,
-        DatePicker: locale$Z,
-        TimePicker: locale$Y,
-        Calendar: Calendar$u,
+        Pagination: Pagination$t,
+        DatePicker: locale$X,
+        TimePicker: locale$W,
+        Calendar: Calendar$t,
         global: {
             placeholder: 'Sila pilih'
         },
@@ -4610,13 +5320,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/nb_NO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$v = {
+    var Calendar$u = {
         today: 'I dag',
         now: 'Nå',
         backToToday: 'Gå til i dag',
@@ -4645,29 +5360,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/nb_NO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$_ = {
+    /** @type {?} */
+    var locale$Y = {
         placeholder: 'Velg tid'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/nb_NO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$$ = {
-        lang: __assign({ placeholder: 'Velg dato', rangePlaceholder: ['Startdato', 'Sluttdato'] }, Calendar$v),
-        timePickerLocale: __assign({}, locale$_)
+    /** @type {?} */
+    var locale$Z = {
+        lang: __assign({ placeholder: 'Velg dato', rangePlaceholder: ['Startdato', 'Sluttdato'] }, Calendar$u),
+        timePickerLocale: __assign({}, locale$Y)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/nb_NO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4675,7 +5400,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$v = {
+    var Pagination$u = {
         // Options.jsx
         items_per_page: '/ side',
         jump_to: 'Gå til side',
@@ -4690,18 +5415,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/nb_NO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var nb_NO = {
         locale: 'nb',
-        DatePicker: locale$$,
-        TimePicker: locale$_,
-        Calendar: Calendar$v,
-        Pagination: Pagination$v,
+        DatePicker: locale$Z,
+        TimePicker: locale$Y,
+        Calendar: Calendar$u,
+        Pagination: Pagination$u,
         Table: {
             filterTitle: 'Filtermeny',
             filterConfirm: 'OK',
@@ -4735,11 +5458,9 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ne_NP.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ne_NP = {
         locale: 'ne-np',
@@ -4781,6 +5502,150 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/nl_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @license
+     * Copyright Alibaba.com All Rights Reserved.
+     *
+     * Use of this source code is governed by an MIT-style license that can be
+     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     */
+    var Calendar$v = {
+        today: 'Vandaag',
+        now: 'Nu',
+        backToToday: 'Terug naar vandaag',
+        ok: 'Ok',
+        clear: 'Reset',
+        month: 'Maand',
+        year: 'Jaar',
+        timeSelect: 'Selecteer tijd',
+        dateSelect: 'Selecteer datum',
+        monthSelect: 'Kies een maand',
+        yearSelect: 'Kies een jaar',
+        decadeSelect: 'Kies een decennium',
+        yearFormat: 'YYYY',
+        dateFormat: 'D-M-YYYY',
+        dayFormat: 'D',
+        dateTimeFormat: 'D-M-YYYY HH:mm:ss',
+        monthBeforeYear: true,
+        previousMonth: 'Vorige maand (PageUp)',
+        nextMonth: 'Volgende maand (PageDown)',
+        previousYear: 'Vorig jaar (Control + left)',
+        nextYear: 'Volgend jaar (Control + right)',
+        previousDecade: 'Vorig decennium',
+        nextDecade: 'Volgend decennium',
+        previousCentury: 'Vorige eeuw',
+        nextCentury: 'Volgende eeuw'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/nl_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @license
+     * Copyright Alibaba.com All Rights Reserved.
+     *
+     * Use of this source code is governed by an MIT-style license that can be
+     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     */
+    /** @type {?} */
+    var locale$_ = {
+        placeholder: 'Selecteer tijd'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/nl_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    // Merge into a locale object
+    /** @type {?} */
+    var locale$$ = {
+        lang: __assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$v),
+        timePickerLocale: __assign({}, locale$_)
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/nl_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @license
+     * Copyright Alibaba.com All Rights Reserved.
+     *
+     * Use of this source code is governed by an MIT-style license that can be
+     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     */
+    var Pagination$v = {
+        // Options.jsx
+        items_per_page: '/ pagina',
+        jump_to: 'Ga naar',
+        jump_to_confirm: 'bevestigen',
+        page: '',
+        // Pagination.jsx
+        prev_page: 'Vorige pagina',
+        next_page: 'Volgende pagina',
+        prev_5: 'Vorige 5 pagina\'s',
+        next_5: 'Volgende 5 pagina\'s',
+        prev_3: 'Vorige 3 pagina\'s',
+        next_3: 'Volgende 3 pagina\'s'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/nl_BE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var nl_BE = {
+        locale: 'nl-be',
+        Pagination: Pagination$v,
+        DatePicker: locale$$,
+        TimePicker: locale$_,
+        Calendar: Calendar$v,
+        Table: {
+            filterTitle: 'FilterMenu',
+            filterConfirm: 'OK',
+            filterReset: 'Reset',
+            selectAll: 'Selecteer huidige pagina',
+            selectInvert: 'Selecteer huidige pagina'
+        },
+        Modal: {
+            okText: 'OK',
+            cancelText: 'Annuleer',
+            justOkText: 'OK'
+        },
+        Popconfirm: {
+            okText: 'OK',
+            cancelText: 'Annuleer'
+        },
+        Transfer: {
+            searchPlaceholder: 'Zoek hier',
+            itemUnit: 'item',
+            itemsUnit: 'items'
+        },
+        Upload: {
+            uploading: 'Uploaden...',
+            removeFile: 'Bestand verwijderen',
+            uploadError: 'Upload fout',
+            previewFile: 'Preview bestand'
+        },
+        Empty: {
+            description: 'Geen gegevens'
+        }
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/nl_NL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -4816,16 +5681,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/nl_NL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$10 = {
-        placeholder: 'Selecteer tijd'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4833,12 +5692,28 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$10 = {
+        placeholder: 'Selecteer tijd'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/nl_NL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
+    /** @type {?} */
     var locale$11 = {
         lang: __assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$w),
         timePickerLocale: __assign({}, locale$10)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/nl_NL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -4855,151 +5730,23 @@
         // Pagination.jsx
         prev_page: 'Vorige pagina',
         next_page: 'Volgende pagina',
-        prev_5: "Vorige 5 pagina's",
-        next_5: "Volgende 5 pagina's",
-        prev_3: "Vorige 3 pagina's",
-        next_3: "Volgende 3 pagina's"
+        prev_5: 'Vorige 5 pagina\'s',
+        next_5: 'Volgende 5 pagina\'s',
+        prev_3: 'Vorige 3 pagina\'s',
+        next_3: 'Volgende 3 pagina\'s'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/nl_NL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var nl_BE = {
-        locale: 'nl-be',
+    var nl_NL = {
+        locale: 'nl',
         Pagination: Pagination$w,
         DatePicker: locale$11,
         TimePicker: locale$10,
         Calendar: Calendar$w,
-        Table: {
-            filterTitle: 'FilterMenu',
-            filterConfirm: 'OK',
-            filterReset: 'Reset',
-            selectAll: 'Selecteer huidige pagina',
-            selectInvert: 'Selecteer huidige pagina'
-        },
-        Modal: {
-            okText: 'OK',
-            cancelText: 'Annuleer',
-            justOkText: 'OK'
-        },
-        Popconfirm: {
-            okText: 'OK',
-            cancelText: 'Annuleer'
-        },
-        Transfer: {
-            searchPlaceholder: 'Zoek hier',
-            itemUnit: 'item',
-            itemsUnit: 'items'
-        },
-        Upload: {
-            uploading: 'Uploaden...',
-            removeFile: 'Bestand verwijderen',
-            uploadError: 'Upload fout',
-            previewFile: 'Preview bestand'
-        },
-        Empty: {
-            description: 'Geen gegevens'
-        }
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var Calendar$x = {
-        today: 'Vandaag',
-        now: 'Nu',
-        backToToday: 'Terug naar vandaag',
-        ok: 'Ok',
-        clear: 'Reset',
-        month: 'Maand',
-        year: 'Jaar',
-        timeSelect: 'Selecteer tijd',
-        dateSelect: 'Selecteer datum',
-        monthSelect: 'Kies een maand',
-        yearSelect: 'Kies een jaar',
-        decadeSelect: 'Kies een decennium',
-        yearFormat: 'YYYY',
-        dateFormat: 'D-M-YYYY',
-        dayFormat: 'D',
-        dateTimeFormat: 'D-M-YYYY HH:mm:ss',
-        monthBeforeYear: true,
-        previousMonth: 'Vorige maand (PageUp)',
-        nextMonth: 'Volgende maand (PageDown)',
-        previousYear: 'Vorig jaar (Control + left)',
-        nextYear: 'Volgend jaar (Control + right)',
-        previousDecade: 'Vorig decennium',
-        nextDecade: 'Volgend decennium',
-        previousCentury: 'Vorige eeuw',
-        nextCentury: 'Volgende eeuw'
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var locale$12 = {
-        placeholder: 'Selecteer tijd'
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    // Merge into a locale object
-    var locale$13 = {
-        lang: __assign({ placeholder: 'Selecteer datum', rangePlaceholder: ['Begin datum', 'Eind datum'] }, Calendar$x),
-        timePickerLocale: __assign({}, locale$12)
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var Pagination$x = {
-        // Options.jsx
-        items_per_page: '/ pagina',
-        jump_to: 'Ga naar',
-        jump_to_confirm: 'bevestigen',
-        page: '',
-        // Pagination.jsx
-        prev_page: 'Vorige pagina',
-        next_page: 'Volgende pagina',
-        prev_5: "Vorige 5 pagina's",
-        next_5: "Volgende 5 pagina's",
-        prev_3: "Vorige 3 pagina's",
-        next_3: "Volgende 3 pagina's"
-    };
-
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-    var nl_NL = {
-        locale: 'nl',
-        Pagination: Pagination$x,
-        DatePicker: locale$13,
-        TimePicker: locale$12,
-        Calendar: Calendar$x,
         Table: {
             filterTitle: 'Filteren',
             filterConfirm: 'OK',
@@ -5033,13 +5780,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/pl_PL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$y = {
+    var Calendar$x = {
         today: 'Dzisiaj',
         now: 'Teraz',
         backToToday: 'Ustaw dzisiaj',
@@ -5068,29 +5820,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/pl_PL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$14 = {
+    /** @type {?} */
+    var locale$12 = {
         placeholder: 'Wybierz godzinę'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/pl_PL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$15 = {
-        lang: __assign({ placeholder: 'Wybierz datę', rangePlaceholder: ['Data początkowa', 'Data końcowa'] }, Calendar$y),
-        timePickerLocale: __assign({}, locale$14)
+    /** @type {?} */
+    var locale$13 = {
+        lang: __assign({ placeholder: 'Wybierz datę', rangePlaceholder: ['Data początkowa', 'Data końcowa'] }, Calendar$x),
+        timePickerLocale: __assign({}, locale$12)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/pl_PL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5098,7 +5860,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$y = {
+    var Pagination$x = {
         // Options.jsx
         items_per_page: '/ stronę',
         jump_to: 'Idź do',
@@ -5114,18 +5876,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/pl_PL.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var pl_PL = {
         locale: 'pl',
-        Pagination: Pagination$y,
-        DatePicker: locale$15,
-        TimePicker: locale$14,
-        Calendar: Calendar$y,
+        Pagination: Pagination$x,
+        DatePicker: locale$13,
+        TimePicker: locale$12,
+        Calendar: Calendar$x,
         Table: {
             filterTitle: 'Menu filtra',
             filterConfirm: 'OK',
@@ -5159,13 +5919,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/pt_BR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$z = {
+    var Calendar$y = {
         today: 'Hoje',
         now: 'Agora',
         backToToday: 'Voltar para hoje',
@@ -5194,29 +5959,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/pt_BR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$16 = {
+    /** @type {?} */
+    var locale$14 = {
         placeholder: 'Hora'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/pt_BR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$17 = {
-        lang: __assign({ placeholder: 'Selecionar data', rangePlaceholder: ['Data de início', 'Data de fim'] }, Calendar$z),
-        timePickerLocale: __assign({}, locale$16)
+    /** @type {?} */
+    var locale$15 = {
+        lang: __assign({ placeholder: 'Selecionar data', rangePlaceholder: ['Data de início', 'Data de fim'] }, Calendar$y),
+        timePickerLocale: __assign({}, locale$14)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/pt_BR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5224,7 +5999,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$z = {
+    var Pagination$y = {
         // Options.jsx
         items_per_page: '/ página',
         jump_to: 'Vá até',
@@ -5240,18 +6015,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/pt_BR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var pt_BR = {
         locale: 'pt-br',
-        Pagination: Pagination$z,
-        DatePicker: locale$17,
-        TimePicker: locale$16,
-        Calendar: Calendar$z,
+        Pagination: Pagination$y,
+        DatePicker: locale$15,
+        TimePicker: locale$14,
+        Calendar: Calendar$y,
         Table: {
             filterTitle: 'Filtro',
             filterConfirm: 'OK',
@@ -5285,13 +6058,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/pt_PT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$A = {
+    var Calendar$z = {
         today: 'Hoje',
         now: 'Agora',
         backToToday: 'Hoje',
@@ -5320,29 +6098,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/pt_PT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$18 = {
+    /** @type {?} */
+    var locale$16 = {
         placeholder: 'Hora'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/pt_PT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$19 = {
-        lang: __assign(__assign({}, Calendar$A), { placeholder: 'Data', rangePlaceholder: ['Data inicial', 'Data final'], today: 'Hoje', now: 'Agora', backToToday: 'Hoje', ok: 'Ok', clear: 'Limpar', month: 'Mês', year: 'Ano', timeSelect: 'Hora', dateSelect: 'Selecionar data', monthSelect: 'Selecionar mês', yearSelect: 'Selecionar ano', decadeSelect: 'Selecionar década', yearFormat: 'YYYY', dateFormat: 'D/M/YYYY', dayFormat: 'D', dateTimeFormat: 'D/M/YYYY HH:mm:ss', monthFormat: 'MMMM', monthBeforeYear: false, previousMonth: 'Mês anterior (PageUp)', nextMonth: 'Mês seguinte (PageDown)', previousYear: 'Ano anterior (Control + left)', nextYear: 'Ano seguinte (Control + right)', previousDecade: 'Última década', nextDecade: 'Próxima década', previousCentury: 'Último século', nextCentury: 'Próximo século' }),
-        timePickerLocale: __assign(__assign({}, locale$18), { placeholder: 'Hora' })
+    /** @type {?} */
+    var locale$17 = {
+        lang: __assign({}, Calendar$z, { placeholder: 'Data', rangePlaceholder: ['Data inicial', 'Data final'], today: 'Hoje', now: 'Agora', backToToday: 'Hoje', ok: 'Ok', clear: 'Limpar', month: 'Mês', year: 'Ano', timeSelect: 'Hora', dateSelect: 'Selecionar data', monthSelect: 'Selecionar mês', yearSelect: 'Selecionar ano', decadeSelect: 'Selecionar década', yearFormat: 'YYYY', dateFormat: 'D/M/YYYY', dayFormat: 'D', dateTimeFormat: 'D/M/YYYY HH:mm:ss', monthFormat: 'MMMM', monthBeforeYear: false, previousMonth: 'Mês anterior (PageUp)', nextMonth: 'Mês seguinte (PageDown)', previousYear: 'Ano anterior (Control + left)', nextYear: 'Ano seguinte (Control + right)', previousDecade: 'Última década', nextDecade: 'Próxima década', previousCentury: 'Último século', nextCentury: 'Próximo século' }),
+        timePickerLocale: __assign({}, locale$16, { placeholder: 'Hora' })
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/pt_PT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5350,7 +6138,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$A = {
+    var Pagination$z = {
         // Options.jsx
         items_per_page: '/ página',
         jump_to: 'Saltar',
@@ -5366,18 +6154,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/pt_PT.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var pt_PT = {
         locale: 'pt',
-        Pagination: Pagination$A,
-        DatePicker: locale$19,
-        TimePicker: locale$18,
-        Calendar: Calendar$A,
+        Pagination: Pagination$z,
+        DatePicker: locale$17,
+        TimePicker: locale$16,
+        Calendar: Calendar$z,
         Table: {
             filterTitle: 'Filtro',
             filterConfirm: 'Aplicar',
@@ -5412,13 +6198,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ro_RO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$B = {
+    var Calendar$A = {
         today: 'Azi',
         now: 'Acum',
         backToToday: 'Înapoi la azi',
@@ -5448,29 +6239,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ro_RO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1a = {
+    /** @type {?} */
+    var locale$18 = {
         placeholder: 'Selectează ora'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ro_RO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1b = {
-        lang: __assign({ placeholder: 'Selectează data', rangePlaceholder: ['Data start', 'Data sfârșit'] }, Calendar$B),
-        timePickerLocale: __assign({}, locale$1a)
+    /** @type {?} */
+    var locale$19 = {
+        lang: __assign({ placeholder: 'Selectează data', rangePlaceholder: ['Data start', 'Data sfârșit'] }, Calendar$A),
+        timePickerLocale: __assign({}, locale$18)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ro_RO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5478,7 +6279,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$B = {
+    var Pagination$A = {
         // Options.jsx
         items_per_page: '/ pagină',
         jump_to: 'Mergi la',
@@ -5494,18 +6295,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ro_RO.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ro_RO = {
         locale: 'ro',
-        Pagination: Pagination$B,
-        DatePicker: locale$1b,
-        TimePicker: locale$1a,
-        Calendar: Calendar$B,
+        Pagination: Pagination$A,
+        DatePicker: locale$19,
+        TimePicker: locale$18,
+        Calendar: Calendar$A,
         global: {
             placeholder: 'Selectează'
         },
@@ -5558,13 +6357,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ru_RU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$C = {
+    var Calendar$B = {
         today: 'Сегодня',
         now: 'Сейчас',
         backToToday: 'Текущая дата',
@@ -5593,6 +6397,11 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ru_RU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
@@ -5601,23 +6410,28 @@
      */
     /**
      * Created by Andrey Gayvoronsky on 13/04/16.
+     * @type {?}
      */
-    var locale$1c = {
+    var locale$1a = {
         placeholder: 'Выберите время'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ru_RU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$1d = {
-        lang: __assign({ placeholder: 'Выберите дату', rangePlaceholder: ['Начальная дата', 'Конечная дата'] }, Calendar$C),
-        timePickerLocale: __assign({}, locale$1c)
+    /** @type {?} */
+    var locale$1b = {
+        lang: __assign({ placeholder: 'Выберите дату', rangePlaceholder: ['Начальная дата', 'Конечная дата'] }, Calendar$B),
+        timePickerLocale: __assign({}, locale$1a)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ru_RU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5625,7 +6439,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$C = {
+    var Pagination$B = {
         // Options.jsx
         items_per_page: '/ стр.',
         jump_to: 'Перейти',
@@ -5641,18 +6455,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ru_RU.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ru_RU = {
         locale: 'ru',
-        Pagination: Pagination$C,
-        DatePicker: locale$1d,
-        TimePicker: locale$1c,
-        Calendar: Calendar$C,
+        Pagination: Pagination$B,
+        DatePicker: locale$1b,
+        TimePicker: locale$1a,
+        Calendar: Calendar$B,
         global: {
             placeholder: 'Пожалуйста, выберите'
         },
@@ -5703,13 +6515,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/sk_SK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$D = {
+    var Calendar$C = {
         today: 'Dnes',
         now: 'Teraz',
         backToToday: 'Späť na dnes',
@@ -5738,29 +6555,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/sk_SK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1e = {
+    /** @type {?} */
+    var locale$1c = {
         placeholder: 'Vybrať čas'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/sk_SK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // 统一合并为完整的 Locale
-    var locale$1f = {
-        lang: __assign({ placeholder: 'Vybrať dátum', rangePlaceholder: ['Od', 'Do'] }, Calendar$D),
-        timePickerLocale: __assign({}, locale$1e)
+    /** @type {?} */
+    var locale$1d = {
+        lang: __assign({ placeholder: 'Vybrať dátum', rangePlaceholder: ['Od', 'Do'] }, Calendar$C),
+        timePickerLocale: __assign({}, locale$1c)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/sk_SK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5768,7 +6595,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$D = {
+    var Pagination$C = {
         // Options.jsx
         items_per_page: '/ strana',
         jump_to: 'Choď na',
@@ -5784,18 +6611,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/sk_SK.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var sk_SK = {
         locale: 'sk',
-        Pagination: Pagination$D,
-        DatePicker: locale$1f,
-        TimePicker: locale$1e,
-        Calendar: Calendar$D,
+        Pagination: Pagination$C,
+        DatePicker: locale$1d,
+        TimePicker: locale$1c,
+        Calendar: Calendar$C,
         Table: {
             filterTitle: 'Filter',
             filterConfirm: 'OK',
@@ -5829,13 +6654,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/sl_SI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$E = {
+    var Calendar$D = {
         today: 'Danes',
         now: 'Trenutno',
         backToToday: 'Nazaj na danes',
@@ -5864,16 +6694,10 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/sl_SI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$1g = {
-        placeholder: 'Izberite čas'
-    };
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5881,8 +6705,19 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /** @type {?} */
+    var locale$1e = {
+        placeholder: 'Izberite čas'
+    };
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/sl_SI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     // Merge into a locale object
-    var locale$1h = {
+    /** @type {?} */
+    var locale$1f = {
         lang: {
             placeholder: 'Izberite datum',
             rangePlaceholder: ['Začetni datum', 'Končni datum'],
@@ -5913,9 +6748,14 @@
             previousCentury: 'Zadnje stoletje',
             nextCentury: 'Naslednje stoletje'
         },
-        timePickerLocale: __assign({}, locale$1g)
+        timePickerLocale: __assign({}, locale$1e)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/sl_SI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -5923,7 +6763,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$E = {
+    var Pagination$D = {
         // Options.jsx
         items_per_page: '/ strani',
         jump_to: 'Pojdi na',
@@ -5939,18 +6779,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/sl_SI.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var sl_SI = {
         locale: 'sl',
-        Pagination: Pagination$E,
-        DatePicker: locale$1h,
-        TimePicker: locale$1g,
-        Calendar: Calendar$E,
+        Pagination: Pagination$D,
+        DatePicker: locale$1f,
+        TimePicker: locale$1e,
+        Calendar: Calendar$D,
         Table: {
             filterTitle: 'Filter',
             filterConfirm: 'Filtriraj',
@@ -5984,13 +6822,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/sr_RS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$F = {
+    var Calendar$E = {
         today: 'Danas',
         now: 'Sada',
         backToToday: 'Vrati se na danas',
@@ -6019,29 +6862,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/sr_RS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1i = {
+    /** @type {?} */
+    var locale$1g = {
         placeholder: 'Izaberite vreme'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/sr_RS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1j = {
-        lang: __assign({ placeholder: 'Izaberite datum', rangePlaceholder: ['Početni datum', 'Krajnji datum'] }, Calendar$F),
-        timePickerLocale: __assign({}, locale$1i)
+    /** @type {?} */
+    var locale$1h = {
+        lang: __assign({ placeholder: 'Izaberite datum', rangePlaceholder: ['Početni datum', 'Krajnji datum'] }, Calendar$E),
+        timePickerLocale: __assign({}, locale$1g)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/sr_RS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6049,7 +6902,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$F = {
+    var Pagination$E = {
         // Options.jsx
         items_per_page: '/ strani',
         jump_to: 'Idi na',
@@ -6064,18 +6917,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/sr_RS.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var sr_RS = {
         locale: 'sr',
-        Pagination: Pagination$F,
-        DatePicker: locale$1j,
-        TimePicker: locale$1i,
-        Calendar: Calendar$F,
+        Pagination: Pagination$E,
+        DatePicker: locale$1h,
+        TimePicker: locale$1g,
+        Calendar: Calendar$E,
         Table: {
             filterTitle: 'Filter',
             filterConfirm: 'Primeni filter',
@@ -6109,13 +6960,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/sv_SE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$G = {
+    var Calendar$F = {
         today: 'I dag',
         now: 'Nu',
         backToToday: 'Till idag',
@@ -6144,28 +7000,38 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/sv_SE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1k = {
+    /** @type {?} */
+    var locale$1i = {
         placeholder: 'Välj tid'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/sv_SE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$1l = {
-        lang: __assign({ placeholder: 'Välj datum', rangePlaceholder: ['Startdatum', 'Slutdatum'] }, Calendar$G),
-        timePickerLocale: __assign({}, locale$1k)
+    /** @type {?} */
+    var locale$1j = {
+        lang: __assign({ placeholder: 'Välj datum', rangePlaceholder: ['Startdatum', 'Slutdatum'] }, Calendar$F),
+        timePickerLocale: __assign({}, locale$1i)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/sv_SE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6173,7 +7039,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$G = {
+    var Pagination$F = {
         // Options.jsx
         items_per_page: '/ sida',
         jump_to: 'Gå till',
@@ -6189,18 +7055,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/sv_SE.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var sv_SE = {
         locale: 'sv',
-        Pagination: Pagination$G,
-        DatePicker: locale$1l,
-        TimePicker: locale$1k,
-        Calendar: Calendar$G,
+        Pagination: Pagination$F,
+        DatePicker: locale$1j,
+        TimePicker: locale$1i,
+        Calendar: Calendar$F,
         Table: {
             filterTitle: 'Filtermeny',
             filterConfirm: 'OK',
@@ -6232,13 +7096,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/ta_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$H = {
+    var Calendar$G = {
         today: 'இன்று',
         now: 'இப்போது',
         backToToday: 'இன்றுக்கு திரும்பு',
@@ -6268,29 +7137,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/ta_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1m = {
+    /** @type {?} */
+    var locale$1k = {
         placeholder: 'நேரத்தைத் தேர்ந்தெடுக்கவும்'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/ta_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1n = {
-        lang: __assign({ placeholder: 'தேதியைத் தேர்ந்தெடுக்கவும்', rangePlaceholder: ['தொடக்க தேதி', 'கடைசி தேதி'] }, Calendar$H),
-        timePickerLocale: __assign({}, locale$1m)
+    /** @type {?} */
+    var locale$1l = {
+        lang: __assign({ placeholder: 'தேதியைத் தேர்ந்தெடுக்கவும்', rangePlaceholder: ['தொடக்க தேதி', 'கடைசி தேதி'] }, Calendar$G),
+        timePickerLocale: __assign({}, locale$1k)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/ta_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6298,7 +7177,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$H = {
+    var Pagination$G = {
         // Options.jsx
         items_per_page: '/ பக்கம்',
         jump_to: 'அடுத்த',
@@ -6314,18 +7193,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/ta_IN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ta_IN = {
         locale: 'ta',
-        Pagination: Pagination$H,
-        DatePicker: locale$1n,
-        TimePicker: locale$1m,
-        Calendar: Calendar$H,
+        Pagination: Pagination$G,
+        DatePicker: locale$1l,
+        TimePicker: locale$1k,
+        Calendar: Calendar$G,
         // locales for all comoponents
         global: {
             placeholder: 'தேதியைத் தேர்ந்தெடுக்கவும்'
@@ -6379,13 +7256,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/th_TH.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$I = {
+    var Calendar$H = {
         today: 'วันนี้',
         now: 'ตอนนี้',
         backToToday: 'กลับไปยังวันนี้',
@@ -6414,29 +7296,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/th_TH.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1o = {
+    /** @type {?} */
+    var locale$1m = {
         placeholder: 'เลือกเวลา'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/th_TH.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1p = {
-        lang: __assign({ placeholder: 'เลือกวันที่', rangePlaceholder: ['วันเริ่มต้น', 'วันสิ้นสุด'] }, Calendar$I),
-        timePickerLocale: __assign({}, locale$1o)
+    /** @type {?} */
+    var locale$1n = {
+        lang: __assign({ placeholder: 'เลือกวันที่', rangePlaceholder: ['วันเริ่มต้น', 'วันสิ้นสุด'] }, Calendar$H),
+        timePickerLocale: __assign({}, locale$1m)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/th_TH.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6444,7 +7336,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$I = {
+    var Pagination$H = {
         // Options.jsx
         items_per_page: '/ หน้า',
         jump_to: 'ไปยัง',
@@ -6460,18 +7352,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/th_TH.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var th_TH = {
         locale: 'th',
-        Pagination: Pagination$I,
-        DatePicker: locale$1p,
-        TimePicker: locale$1o,
-        Calendar: Calendar$I,
+        Pagination: Pagination$H,
+        DatePicker: locale$1n,
+        TimePicker: locale$1m,
+        Calendar: Calendar$H,
         Table: {
             filterTitle: 'ตัวกรอง',
             filterConfirm: 'ยืนยัน',
@@ -6505,13 +7395,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/tr_TR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$J = {
+    var Calendar$I = {
         today: 'Bugün',
         now: 'Şimdi',
         backToToday: 'Bugüne Geri Dön',
@@ -6540,29 +7435,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/tr_TR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1q = {
+    /** @type {?} */
+    var locale$1o = {
         placeholder: 'Zaman Seç'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/tr_TR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1r = {
-        lang: __assign({ placeholder: 'Tarih Seç', rangePlaceholder: ['Başlangıç Tarihi', 'Bitiş Tarihi'] }, Calendar$J),
-        timePickerLocale: __assign({}, locale$1q)
+    /** @type {?} */
+    var locale$1p = {
+        lang: __assign({ placeholder: 'Tarih Seç', rangePlaceholder: ['Başlangıç Tarihi', 'Bitiş Tarihi'] }, Calendar$I),
+        timePickerLocale: __assign({}, locale$1o)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/tr_TR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6570,7 +7475,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$J = {
+    var Pagination$I = {
         // Options.jsx
         items_per_page: '/ sayfa',
         jump_to: 'Git',
@@ -6586,18 +7491,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/tr_TR.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var tr_TR = {
         locale: 'tr',
-        Pagination: Pagination$J,
-        DatePicker: locale$1r,
-        TimePicker: locale$1q,
-        Calendar: Calendar$J,
+        Pagination: Pagination$I,
+        DatePicker: locale$1p,
+        TimePicker: locale$1o,
+        Calendar: Calendar$I,
         global: {
             placeholder: 'Lütfen seçiniz'
         },
@@ -6645,13 +7548,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/uk_UA.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$K = {
+    var Calendar$J = {
         today: 'Сьогодні',
         now: 'Зараз',
         backToToday: 'Поточна дата',
@@ -6680,28 +7588,38 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/uk_UA.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1s = {
+    /** @type {?} */
+    var locale$1q = {
         placeholder: 'Оберіть час'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/uk_UA.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$1t = {
-        lang: __assign({ placeholder: 'Оберіть дату', rangePlaceholder: ['Початкова дата', 'Кінцева дата'] }, Calendar$K),
-        timePickerLocale: __assign({}, locale$1s)
+    /** @type {?} */
+    var locale$1r = {
+        lang: __assign({ placeholder: 'Оберіть дату', rangePlaceholder: ['Початкова дата', 'Кінцева дата'] }, Calendar$J),
+        timePickerLocale: __assign({}, locale$1q)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/uk_UA.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6709,7 +7627,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$K = {
+    var Pagination$J = {
         // Options.jsx
         items_per_page: '/ сторінці',
         jump_to: 'Перейти',
@@ -6725,18 +7643,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/uk_UA.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var uk_UA = {
         locale: 'uk',
-        Pagination: Pagination$K,
-        DatePicker: locale$1t,
-        TimePicker: locale$1s,
-        Calendar: Calendar$K,
+        Pagination: Pagination$J,
+        DatePicker: locale$1r,
+        TimePicker: locale$1q,
+        Calendar: Calendar$J,
         Table: {
             filterTitle: 'Фільтрувати',
             filterConfirm: 'OK',
@@ -6770,13 +7686,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/vi_VN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$L = {
+    var Calendar$K = {
         today: 'Hôm nay',
         now: 'Bây giờ',
         backToToday: 'Trở về hôm nay',
@@ -6806,29 +7727,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/vi_VN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1u = {
+    /** @type {?} */
+    var locale$1s = {
         placeholder: 'Chọn thời gian'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/vi_VN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Merge into a locale object
-    var locale$1v = {
-        lang: __assign({ placeholder: 'Chọn thời điểm', rangePlaceholder: ['Ngày bắt đầu', 'Ngày kết thúc'] }, Calendar$L),
-        timePickerLocale: __assign({}, locale$1u)
+    /** @type {?} */
+    var locale$1t = {
+        lang: __assign({ placeholder: 'Chọn thời điểm', rangePlaceholder: ['Ngày bắt đầu', 'Ngày kết thúc'] }, Calendar$K),
+        timePickerLocale: __assign({}, locale$1s)
     };
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/vi_VN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6836,7 +7767,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$L = {
+    var Pagination$K = {
         // Options.jsx
         items_per_page: '/ trang',
         jump_to: 'Đến',
@@ -6852,18 +7783,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/vi_VN.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var vi_VN = {
         locale: 'vi',
-        Pagination: Pagination$L,
-        DatePicker: locale$1v,
-        TimePicker: locale$1u,
-        Calendar: Calendar$L,
+        Pagination: Pagination$K,
+        DatePicker: locale$1t,
+        TimePicker: locale$1s,
+        Calendar: Calendar$K,
         Table: {
             filterTitle: 'Bộ ',
             filterConfirm: 'OK',
@@ -6897,13 +7826,18 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/calendar/zh_TW.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Calendar$M = {
+    var Calendar$L = {
         today: '今天',
         now: '此刻',
         backToToday: '返回今天',
@@ -6931,29 +7865,39 @@
     };
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/time-picker/zh_TW.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var locale$1w = {
+    /** @type {?} */
+    var locale$1u = {
         placeholder: '請選擇時間'
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/date-picker/zh_TW.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var locale$1x = {
-        lang: __assign({ placeholder: '請選擇日期', rangePlaceholder: ['開始日期', '結束日期'] }, Calendar$M),
-        timePickerLocale: __assign({}, locale$1w)
+    /** @type {?} */
+    var locale$1v = {
+        lang: __assign({ placeholder: '請選擇日期', rangePlaceholder: ['開始日期', '結束日期'] }, Calendar$L),
+        timePickerLocale: __assign({}, locale$1u)
     };
-    locale$1x.lang.ok = '確 定';
+    locale$1v.lang.ok = '確 定';
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: languages/pagination/zh_TW.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -6961,7 +7905,7 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var Pagination$M = {
+    var Pagination$L = {
         // Options.jsx
         items_per_page: '條/頁',
         jump_to: '跳至',
@@ -6977,18 +7921,16 @@
     };
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: languages/zh_TW.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var zh_TW = {
         locale: 'zh-tw',
-        Pagination: Pagination$M,
-        DatePicker: locale$1x,
-        TimePicker: locale$1w,
-        Calendar: Calendar$M,
+        Pagination: Pagination$L,
+        DatePicker: locale$1v,
+        TimePicker: locale$1u,
+        Calendar: Calendar$L,
         // locales for all comoponents
         global: {
             placeholder: '請選擇'
@@ -7070,7 +8012,6 @@
     exports.is_IS = is_IS;
     exports.it_IT = it_IT;
     exports.ja_JP = ja_JP;
-    exports.ka_GE = ka_GE;
     exports.kn_IN = kn_IN;
     exports.ko_KR = ko_KR;
     exports.ku_IQ = ku_IQ;

@@ -201,46 +201,12 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = ["switchElement"];
-    function NzSwitchComponent_i_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 5);
-    } }
-    function NzSwitchComponent_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r808 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r808.nzCheckedChildren);
-    } }
-    function NzSwitchComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzSwitchComponent_ng_container_5_ng_container_1_Template, 2, 1, "ng-container", 6);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r806 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r806.nzCheckedChildren);
-    } }
-    function NzSwitchComponent_ng_container_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r809 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r809.nzUnCheckedChildren);
-    } }
-    function NzSwitchComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzSwitchComponent_ng_container_6_ng_container_1_Template, 2, 1, "ng-container", 6);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r807 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r807.nzUnCheckedChildren);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-switch.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'switch';
     var NzSwitchComponent = /** @class */ (function () {
         function NzSwitchComponent(nzConfigService, cdr, focusMonitor) {
@@ -248,25 +214,55 @@
             this.cdr = cdr;
             this.focusMonitor = focusMonitor;
             this.checked = false;
-            this.onChange = function () { return null; };
-            this.onTouched = function () { return null; };
+            this.onChange = (/**
+             * @return {?}
+             */
+            function () { return null; });
+            this.onTouched = (/**
+             * @return {?}
+             */
+            function () { return null; });
             this.nzLoading = false;
             this.nzDisabled = false;
             this.nzControl = false;
         }
-        NzSwitchComponent.prototype.hostClick = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.hostClick = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             e.preventDefault();
             if (!this.nzDisabled && !this.nzLoading && !this.nzControl) {
                 this.updateValue(!this.checked);
             }
         };
-        NzSwitchComponent.prototype.updateValue = function (value) {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.updateValue = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (this.checked !== value) {
                 this.checked = value;
                 this.onChange(this.checked);
             }
         };
-        NzSwitchComponent.prototype.onKeyDown = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.onKeyDown = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             if (!this.nzControl && !this.nzDisabled && !this.nzLoading) {
                 if (e.keyCode === keycodes.LEFT_ARROW) {
                     this.updateValue(false);
@@ -282,77 +278,144 @@
                 }
             }
         };
-        NzSwitchComponent.prototype.focus = function () {
+        /**
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.focus = /**
+         * @return {?}
+         */
+        function () {
             this.focusMonitor.focusVia(this.switchElement.nativeElement, 'keyboard');
         };
-        NzSwitchComponent.prototype.blur = function () {
+        /**
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.blur = /**
+         * @return {?}
+         */
+        function () {
             this.switchElement.nativeElement.blur();
         };
-        NzSwitchComponent.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.focusMonitor.monitor(this.switchElement.nativeElement, true).subscribe(function (focusOrigin) {
+            this.focusMonitor.monitor(this.switchElement.nativeElement, true).subscribe((/**
+             * @param {?} focusOrigin
+             * @return {?}
+             */
+            function (focusOrigin) {
                 if (!focusOrigin) {
                     // When a focused element becomes disabled, the browser *immediately* fires a blur event.
                     // Angular does not expect events to be raised during change detection, so any state change
                     // (such as a form control's 'ng-touched') will cause a changed-after-checked error.
                     // See https://github.com/angular/angular/issues/17793. To work around this, we defer
                     // telling the form control it has been touched until the next tick.
-                    Promise.resolve().then(function () { return _this.onTouched(); });
+                    Promise.resolve().then((/**
+                     * @return {?}
+                     */
+                    function () { return _this.onTouched(); }));
                 }
-            });
+            }));
         };
-        NzSwitchComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.focusMonitor.stopMonitoring(this.switchElement.nativeElement);
         };
-        NzSwitchComponent.prototype.writeValue = function (value) {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.writeValue = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this.checked = value;
             this.cdr.markForCheck();
         };
-        NzSwitchComponent.prototype.registerOnChange = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.registerOnChange = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onChange = fn;
         };
-        NzSwitchComponent.prototype.registerOnTouched = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.registerOnTouched = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onTouched = fn;
         };
-        NzSwitchComponent.prototype.setDisabledState = function (isDisabled) {
+        /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        NzSwitchComponent.prototype.setDisabledState = /**
+         * @param {?} isDisabled
+         * @return {?}
+         */
+        function (isDisabled) {
             this.nzDisabled = isDisabled;
             this.cdr.markForCheck();
         };
-        /** @nocollapse */ NzSwitchComponent.ɵfac = function NzSwitchComponent_Factory(t) { return new (t || NzSwitchComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(a11y.FocusMonitor)); };
-        /** @nocollapse */ NzSwitchComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzSwitchComponent, selectors: [["nz-switch"]], viewQuery: function NzSwitchComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵstaticViewQuery(_c0, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.switchElement = _t.first);
-            } }, hostBindings: function NzSwitchComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵlistener("click", function NzSwitchComponent_click_HostBindingHandler($event) { return ctx.hostClick($event); });
-            } }, inputs: { nzLoading: "nzLoading", nzDisabled: "nzDisabled", nzControl: "nzControl", nzCheckedChildren: "nzCheckedChildren", nzUnCheckedChildren: "nzUnCheckedChildren", nzSize: "nzSize" }, exportAs: ["nzSwitch"], features: [core.ɵɵProvidersFeature([
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef((function () { return NzSwitchComponent; })),
-                        multi: true
-                    }
-                ])], decls: 7, vars: 9, consts: [["type", "button", "nz-wave", "", 1, "ant-switch", 3, "disabled", "nzWaveExtraNode", "keydown"], ["switchElement", ""], ["nz-icon", "", "nzType", "loading", "class", "ant-switch-loading-icon", 4, "ngIf"], [1, "ant-switch-inner"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading", 1, "ant-switch-loading-icon"], [4, "nzStringTemplateOutlet"]], template: function NzSwitchComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "button", 0, 1);
-                core.ɵɵlistener("keydown", function NzSwitchComponent_Template_button_keydown_0_listener($event) { return ctx.onKeyDown($event); });
-                core.ɵɵtemplate(2, NzSwitchComponent_i_2_Template, 1, 0, "i", 2);
-                core.ɵɵelementStart(3, "span", 3);
-                core.ɵɵelementStart(4, "span");
-                core.ɵɵtemplate(5, NzSwitchComponent_ng_container_5_Template, 2, 1, "ng-container", 4);
-                core.ɵɵtemplate(6, NzSwitchComponent_ng_container_6_Template, 2, 1, "ng-container", 4);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-switch-checked", ctx.checked)("ant-switch-loading", ctx.nzLoading)("ant-switch-disabled", ctx.nzDisabled)("ant-switch-small", ctx.nzSize === "small");
-                core.ɵɵproperty("disabled", ctx.nzDisabled)("nzWaveExtraNode", true);
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("ngIf", ctx.nzLoading);
-                core.ɵɵadvance(3);
-                core.ɵɵproperty("ngIf", ctx.checked);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.checked);
-            } }, directives: [core$1.NzWaveDirective, common.NgIf, icon.NzIconDirective, core$1.NzStringTemplateOutletDirective], styles: ["\n      nz-switch {\n        display: inline-block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzSwitchComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-switch',
+                        exportAs: 'nzSwitch',
+                        preserveWhitespaces: false,
+                        template: "<button type=\"button\" #switchElement\n  nz-wave\n  class=\"ant-switch\"\n  [disabled]=\"nzDisabled\"\n  [class.ant-switch-checked]=\"checked\"\n  [class.ant-switch-loading]=\"nzLoading\"\n  [class.ant-switch-disabled]=\"nzDisabled\"\n  [class.ant-switch-small]=\"nzSize === 'small'\"\n  [nzWaveExtraNode]=\"true\"\n  (keydown)=\"onKeyDown($event)\">\n  <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\n  <span class=\"ant-switch-inner\">\n    <span>\n      <ng-container *ngIf=\"checked\">\n        <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\n      </ng-container>\n      <ng-container *ngIf=\"!checked\">\n        <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\n      </ng-container>\n    </span>\n  </span>\n</button>\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzSwitchComponent; })),
+                                multi: true
+                            }
+                        ],
+                        host: {
+                            '(click)': 'hostClick($event)'
+                        },
+                        styles: ["\n      nz-switch {\n        display: inline-block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzSwitchComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core.ChangeDetectorRef },
+            { type: a11y.FocusMonitor }
+        ]; };
+        NzSwitchComponent.propDecorators = {
+            switchElement: [{ type: core.ViewChild, args: ['switchElement', { static: true },] }],
+            nzLoading: [{ type: core.Input }],
+            nzDisabled: [{ type: core.Input }],
+            nzControl: [{ type: core.Input }],
+            nzCheckedChildren: [{ type: core.Input }],
+            nzUnCheckedChildren: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Object)
@@ -371,69 +434,61 @@
         ], NzSwitchComponent.prototype, "nzSize", void 0);
         return NzSwitchComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSwitchComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-switch',
-                    exportAs: 'nzSwitch',
-                    preserveWhitespaces: false,
-                    templateUrl: './nz-switch.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    providers: [
-                        {
-                            provide: forms.NG_VALUE_ACCESSOR,
-                            useExisting: core.forwardRef((function () { return NzSwitchComponent; })),
-                            multi: true
-                        }
-                    ],
-                    host: {
-                        '(click)': 'hostClick($event)'
-                    },
-                    styles: [
-                        "\n      nz-switch {\n        display: inline-block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core.ChangeDetectorRef }, { type: a11y.FocusMonitor }]; }, { switchElement: [{
-                type: core.ViewChild,
-                args: ['switchElement', { static: true }]
-            }], nzLoading: [{
-                type: core.Input
-            }], nzDisabled: [{
-                type: core.Input
-            }], nzControl: [{
-                type: core.Input
-            }], nzCheckedChildren: [{
-                type: core.Input
-            }], nzUnCheckedChildren: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzSwitchComponent.prototype.checked;
+        /** @type {?} */
+        NzSwitchComponent.prototype.onChange;
+        /** @type {?} */
+        NzSwitchComponent.prototype.onTouched;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSwitchComponent.prototype.switchElement;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzLoading;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzDisabled;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzControl;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzCheckedChildren;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzUnCheckedChildren;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzSize;
+        /** @type {?} */
+        NzSwitchComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSwitchComponent.prototype.cdr;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSwitchComponent.prototype.focusMonitor;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-switch.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSwitchModule = /** @class */ (function () {
         function NzSwitchModule() {
         }
-        /** @nocollapse */ NzSwitchModule.ɵmod = core.ɵɵdefineNgModule({ type: NzSwitchModule });
-        /** @nocollapse */ NzSwitchModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzSwitchModule_Factory(t) { return new (t || NzSwitchModule)(); }, imports: [[common.CommonModule, core$1.NzWaveModule, icon.NzIconModule, core$1.NzAddOnModule]] });
+        NzSwitchModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [NzSwitchComponent],
+                        declarations: [NzSwitchComponent],
+                        imports: [common.CommonModule, core$1.NzWaveModule, icon.NzIconModule, core$1.NzAddOnModule]
+                    },] }
+        ];
         return NzSwitchModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzSwitchModule, { declarations: [NzSwitchComponent], imports: [common.CommonModule, core$1.NzWaveModule, icon.NzIconModule, core$1.NzAddOnModule], exports: [NzSwitchComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSwitchModule, [{
-            type: core.NgModule,
-            args: [{
-                    exports: [NzSwitchComponent],
-                    declarations: [NzSwitchComponent],
-                    imports: [common.CommonModule, core$1.NzWaveModule, icon.NzIconModule, core$1.NzAddOnModule]
-                }]
-        }], null, null); })();
 
     exports.NzSwitchComponent = NzSwitchComponent;
     exports.NzSwitchModule = NzSwitchModule;

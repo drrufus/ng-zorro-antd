@@ -11,7 +11,6 @@ import { Router } from '@angular/router';
 import { NzConfigService, NzFourDirectionType, NzSizeLDSType, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzTabComponent } from './nz-tab.component';
 import { NzTabsNavComponent } from './nz-tabs-nav.component';
-import * as i0 from "@angular/core";
 export interface NzAnimatedInterface {
     inkBar: boolean;
     tabPane: boolean;
@@ -79,6 +78,4 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     private updateRouterActive;
     private findShouldActiveTabIndex;
     private isLinkActive;
-    static ɵfac: i0.ɵɵFactoryDef<NzTabSetComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTabSetComponent, "nz-tabset", ["nzTabset"], { 'nzTabBarExtraContent': "nzTabBarExtraContent", 'nzShowPagination': "nzShowPagination", 'nzAnimated': "nzAnimated", 'nzHideAll': "nzHideAll", 'nzTabPosition': "nzTabPosition", 'nzSize': "nzSize", 'nzTabBarGutter': "nzTabBarGutter", 'nzTabBarStyle': "nzTabBarStyle", 'nzType': "nzType", 'nzLinkRouter': "nzLinkRouter", 'nzLinkExact': "nzLinkExact", 'nzSelectedIndex': "nzSelectedIndex" }, { 'nzOnNextClick': "nzOnNextClick", 'nzOnPrevClick': "nzOnPrevClick", 'nzSelectChange': "nzSelectChange", 'nzSelectedIndexChange': "nzSelectedIndexChange" }, ["listOfNzTabComponent"]>;
 }

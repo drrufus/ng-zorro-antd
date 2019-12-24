@@ -1,11 +1,16 @@
 import { __spread, __assign, __decorate, __metadata } from 'tslib';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 import { DOCUMENT, CommonModule } from '@angular/common';
-import { EventEmitter, ɵɵdirectiveInject, ElementRef, NgZone, ɵɵdefineComponent, ɵɵstaticViewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵNgOnChangesFeature, ɵɵprojectionDef, ɵɵelementStart, ɵɵprojection, ɵɵelementEnd, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Inject, ViewChild, Input, Output, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { shallowEqual, getStyleAsText, NzConfigService, NzScrollService, WithConfig, InputNumber, SCROLL_SERVICE_PROVIDER } from 'ng-zorro-antd/core';
+import { EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, Inject, NgZone, ViewChild, Input, Output, NgModule } from '@angular/core';
 import { Subscription, merge, fromEvent } from 'rxjs';
 import { auditTime } from 'rxjs/operators';
+import { shallowEqual, getStyleAsText, NzConfigService, NzScrollService, WithConfig, InputNumber, SCROLL_SERVICE_PROVIDER } from 'ng-zorro-antd/core';
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: utils.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -13,15 +18,42 @@ import { auditTime } from 'rxjs/operators';
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} target
+ * @return {?}
+ */
 function isTargetWindow(target) {
     return typeof window !== 'undefined' && target === window;
 }
 
-var _c0 = ["fixedEl"];
-var _c1 = ["*"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-affix.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function SimpleRect() { }
+if (false) {
+    /** @type {?} */
+    SimpleRect.prototype.top;
+    /** @type {?} */
+    SimpleRect.prototype.left;
+    /** @type {?|undefined} */
+    SimpleRect.prototype.width;
+    /** @type {?|undefined} */
+    SimpleRect.prototype.height;
+    /** @type {?|undefined} */
+    SimpleRect.prototype.bottom;
+}
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'affix';
+/** @type {?} */
 var NZ_AFFIX_CLS_PREFIX = 'ant-affix';
+/** @type {?} */
 var NZ_AFFIX_DEFAULT_SCROLL_TIME = 20;
+/** @type {?} */
 var NZ_AFFIX_RESPOND_EVENTS = ['resize', 'scroll', 'touchstart', 'touchmove', 'touchend', 'pageshow', 'load'];
 var NzAffixComponent = /** @class */ (function () {
     function NzAffixComponent(el, doc, // tslint:disable-line no-any
@@ -37,48 +69,120 @@ var NzAffixComponent = /** @class */ (function () {
         this.document = doc;
     }
     Object.defineProperty(NzAffixComponent.prototype, "target", {
-        get: function () {
+        get: /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var el = this.nzTarget;
             return (typeof el === 'string' ? this.document.querySelector(el) : el) || window;
         },
         enumerable: true,
         configurable: true
     });
-    NzAffixComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzAffixComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         var nzOffsetBottom = changes.nzOffsetBottom, nzOffsetTop = changes.nzOffsetTop, nzTarget = changes.nzTarget;
         if (nzOffsetBottom || nzOffsetTop) {
-            this.updatePosition({});
+            this.updatePosition((/** @type {?} */ ({})));
         }
         if (nzTarget) {
             this.registerListeners();
         }
     };
-    NzAffixComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzAffixComponent.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         this.registerListeners();
     };
-    NzAffixComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzAffixComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.removeListeners();
     };
-    NzAffixComponent.prototype.registerListeners = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAffixComponent.prototype.registerListeners = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         this.removeListeners();
-        this.scroll$ = this.ngZone.runOutsideAngular(function () {
-            return merge.apply(void 0, __spread(NZ_AFFIX_RESPOND_EVENTS.map(function (evName) { return fromEvent(_this.target, evName); }))).pipe(auditTime(NZ_AFFIX_DEFAULT_SCROLL_TIME))
-                .subscribe(function (e) { return _this.updatePosition(e); });
-        });
-        this.timeout = setTimeout(function () { return _this.updatePosition({}); });
+        this.scroll$ = this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () {
+            return merge.apply(void 0, __spread(NZ_AFFIX_RESPOND_EVENTS.map((/**
+             * @param {?} evName
+             * @return {?}
+             */
+            function (evName) { return fromEvent(_this.target, evName); })))).pipe(auditTime(NZ_AFFIX_DEFAULT_SCROLL_TIME))
+                .subscribe((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) { return _this.updatePosition(e); }));
+        }));
+        this.timeout = setTimeout((/**
+         * @return {?}
+         */
+        function () { return _this.updatePosition((/** @type {?} */ ({}))); }));
     };
-    NzAffixComponent.prototype.removeListeners = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzAffixComponent.prototype.removeListeners = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         clearTimeout(this.timeout);
         this.scroll$.unsubscribe();
     };
-    NzAffixComponent.prototype.getOffset = function (element, target) {
+    /**
+     * @param {?} element
+     * @param {?} target
+     * @return {?}
+     */
+    NzAffixComponent.prototype.getOffset = /**
+     * @param {?} element
+     * @param {?} target
+     * @return {?}
+     */
+    function (element, target) {
+        /** @type {?} */
         var elemRect = element.getBoundingClientRect();
-        var targetRect = this.getTargetRect(target);
+        /** @type {?} */
+        var targetRect = this.getTargetRect((/** @type {?} */ (target)));
+        /** @type {?} */
         var scrollTop = this.scrollSrv.getScroll(target, true);
+        /** @type {?} */
         var scrollLeft = this.scrollSrv.getScroll(target, false);
+        /** @type {?} */
         var docElem = this.document.body;
+        /** @type {?} */
         var clientTop = docElem.clientTop || 0;
+        /** @type {?} */
         var clientLeft = docElem.clientLeft || 0;
         return {
             top: elemRect.top - targetRect.top + scrollTop - clientTop,
@@ -87,7 +191,17 @@ var NzAffixComponent = /** @class */ (function () {
             height: elemRect.height
         };
     };
-    NzAffixComponent.prototype.getTargetRect = function (target) {
+    /**
+     * @private
+     * @param {?} target
+     * @return {?}
+     */
+    NzAffixComponent.prototype.getTargetRect = /**
+     * @private
+     * @param {?} target
+     * @return {?}
+     */
+    function (target) {
         return !isTargetWindow(target)
             ? target.getBoundingClientRect()
             : {
@@ -96,8 +210,22 @@ var NzAffixComponent = /** @class */ (function () {
                 bottom: 0
             };
     };
-    NzAffixComponent.prototype.setAffixStyle = function (e, affixStyle) {
+    /**
+     * @private
+     * @param {?} e
+     * @param {?=} affixStyle
+     * @return {?}
+     */
+    NzAffixComponent.prototype.setAffixStyle = /**
+     * @private
+     * @param {?} e
+     * @param {?=} affixStyle
+     * @return {?}
+     */
+    function (e, affixStyle) {
+        /** @type {?} */
         var originalAffixStyle = this.affixStyle;
+        /** @type {?} */
         var isWindow = this.target === window;
         if (e.type === 'scroll' && originalAffixStyle && affixStyle && isWindow) {
             return;
@@ -105,7 +233,9 @@ var NzAffixComponent = /** @class */ (function () {
         if (shallowEqual(originalAffixStyle, affixStyle)) {
             return;
         }
+        /** @type {?} */
         var fixed = !!affixStyle;
+        /** @type {?} */
         var wrapEl = this.fixedEl.nativeElement;
         wrapEl.style.cssText = getStyleAsText(affixStyle);
         this.affixStyle = affixStyle;
@@ -119,7 +249,18 @@ var NzAffixComponent = /** @class */ (function () {
             this.nzChange.emit(fixed);
         }
     };
-    NzAffixComponent.prototype.setPlaceholderStyle = function (placeholderStyle) {
+    /**
+     * @private
+     * @param {?=} placeholderStyle
+     * @return {?}
+     */
+    NzAffixComponent.prototype.setPlaceholderStyle = /**
+     * @private
+     * @param {?=} placeholderStyle
+     * @return {?}
+     */
+    function (placeholderStyle) {
+        /** @type {?} */
         var originalPlaceholderStyle = this.placeholderStyle;
         if (shallowEqual(placeholderStyle, originalPlaceholderStyle)) {
             return;
@@ -127,32 +268,58 @@ var NzAffixComponent = /** @class */ (function () {
         this.placeholderNode.style.cssText = getStyleAsText(placeholderStyle);
         this.placeholderStyle = placeholderStyle;
     };
-    NzAffixComponent.prototype.syncPlaceholderStyle = function (e) {
+    /**
+     * @private
+     * @param {?} e
+     * @return {?}
+     */
+    NzAffixComponent.prototype.syncPlaceholderStyle = /**
+     * @private
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         if (!this.affixStyle) {
             return;
         }
         this.placeholderNode.style.cssText = '';
         this.placeholderStyle = undefined;
+        /** @type {?} */
         var styleObj = {
             width: this.placeholderNode.offsetWidth,
             height: this.fixedEl.nativeElement.offsetHeight
         };
-        this.setAffixStyle(e, __assign(__assign({}, this.affixStyle), styleObj));
+        this.setAffixStyle(e, __assign({}, this.affixStyle, styleObj));
         this.setPlaceholderStyle(styleObj);
     };
-    NzAffixComponent.prototype.updatePosition = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzAffixComponent.prototype.updatePosition = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         if (!this.platform.isBrowser) {
             return;
         }
+        /** @type {?} */
         var targetNode = this.target;
+        /** @type {?} */
         var offsetTop = this.nzOffsetTop;
+        /** @type {?} */
         var scrollTop = this.scrollSrv.getScroll(targetNode, true);
-        var elemOffset = this.getOffset(this.placeholderNode, targetNode);
+        /** @type {?} */
+        var elemOffset = this.getOffset(this.placeholderNode, (/** @type {?} */ (targetNode)));
+        /** @type {?} */
         var fixedNode = this.fixedEl.nativeElement;
+        /** @type {?} */
         var elemSize = {
             width: fixedNode.offsetWidth,
             height: fixedNode.offsetHeight
         };
+        /** @type {?} */
         var offsetMode = {
             top: false,
             bottom: false
@@ -166,11 +333,15 @@ var NzAffixComponent = /** @class */ (function () {
             offsetMode.top = typeof offsetTop === 'number';
             offsetMode.bottom = typeof this.nzOffsetBottom === 'number';
         }
-        var targetRect = this.getTargetRect(targetNode);
-        var targetInnerHeight = targetNode.innerHeight || targetNode.clientHeight;
-        if (scrollTop >= elemOffset.top - offsetTop && offsetMode.top) {
+        /** @type {?} */
+        var targetRect = this.getTargetRect((/** @type {?} */ (targetNode)));
+        /** @type {?} */
+        var targetInnerHeight = ((/** @type {?} */ (targetNode))).innerHeight || ((/** @type {?} */ (targetNode))).clientHeight;
+        if (scrollTop >= elemOffset.top - ((/** @type {?} */ (offsetTop))) && offsetMode.top) {
+            /** @type {?} */
             var width = elemOffset.width;
-            var top_1 = targetRect.top + offsetTop;
+            /** @type {?} */
+            var top_1 = targetRect.top + ((/** @type {?} */ (offsetTop)));
             this.setAffixStyle(e, {
                 position: 'fixed',
                 top: top_1,
@@ -183,12 +354,15 @@ var NzAffixComponent = /** @class */ (function () {
                 height: elemSize.height
             });
         }
-        else if (scrollTop <= elemOffset.top + elemSize.height + this.nzOffsetBottom - targetInnerHeight && offsetMode.bottom) {
-            var targetBottomOffet = targetNode === window ? 0 : window.innerHeight - targetRect.bottom;
+        else if (scrollTop <= elemOffset.top + elemSize.height + ((/** @type {?} */ (this.nzOffsetBottom))) - targetInnerHeight &&
+            offsetMode.bottom) {
+            /** @type {?} */
+            var targetBottomOffet = targetNode === window ? 0 : window.innerHeight - (/** @type {?} */ (targetRect.bottom));
+            /** @type {?} */
             var width = elemOffset.width;
             this.setAffixStyle(e, {
                 position: 'fixed',
-                bottom: targetBottomOffet + this.nzOffsetBottom,
+                bottom: targetBottomOffet + ((/** @type {?} */ (this.nzOffsetBottom))),
                 left: targetRect.left + elemOffset.left,
                 width: width
             });
@@ -198,8 +372,11 @@ var NzAffixComponent = /** @class */ (function () {
             });
         }
         else {
-            if (e.type === 'resize' && this.affixStyle && this.affixStyle.position === 'fixed' && this.placeholderNode.offsetWidth) {
-                this.setAffixStyle(e, __assign(__assign({}, this.affixStyle), { width: this.placeholderNode.offsetWidth }));
+            if (e.type === 'resize' &&
+                this.affixStyle &&
+                this.affixStyle.position === 'fixed' &&
+                this.placeholderNode.offsetWidth) {
+                this.setAffixStyle(e, __assign({}, this.affixStyle, { width: this.placeholderNode.offsetWidth }));
             }
             else {
                 this.setAffixStyle(e);
@@ -210,18 +387,32 @@ var NzAffixComponent = /** @class */ (function () {
             this.syncPlaceholderStyle(e);
         }
     };
-    /** @nocollapse */ NzAffixComponent.ɵfac = function NzAffixComponent_Factory(t) { return new (t || NzAffixComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(DOCUMENT), ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NzScrollService), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform)); };
-    /** @nocollapse */ NzAffixComponent.ɵcmp = ɵɵdefineComponent({ type: NzAffixComponent, selectors: [["nz-affix"]], viewQuery: function NzAffixComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵstaticViewQuery(_c0, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.fixedEl = _t.first);
-        } }, inputs: { nzTarget: "nzTarget", nzOffsetTop: "nzOffsetTop", nzOffsetBottom: "nzOffsetBottom" }, outputs: { nzChange: "nzChange" }, exportAs: ["nzAffix"], features: [ɵɵNgOnChangesFeature()], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["fixedEl", ""]], template: function NzAffixComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵprojectionDef();
-            ɵɵelementStart(0, "div", null, 0);
-            ɵɵprojection(2);
-            ɵɵelementEnd();
-        } }, styles: ["\n      nz-affix {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+    NzAffixComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-affix',
+                    exportAs: 'nzAffix',
+                    template: "<div #fixedEl>\n  <ng-content></ng-content>\n</div>\n",
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    styles: ["\n      nz-affix {\n        display: block;\n      }\n    "]
+                }] }
+    ];
+    /** @nocollapse */
+    NzAffixComponent.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] },
+        { type: NzConfigService },
+        { type: NzScrollService },
+        { type: NgZone },
+        { type: Platform }
+    ]; };
+    NzAffixComponent.propDecorators = {
+        fixedEl: [{ type: ViewChild, args: ['fixedEl', { static: true },] }],
+        nzTarget: [{ type: Input }],
+        nzOffsetTop: [{ type: Input }],
+        nzOffsetBottom: [{ type: Input }],
+        nzChange: [{ type: Output }]
+    };
     __decorate([
         WithConfig(NZ_CONFIG_COMPONENT_NAME, 0),
         InputNumber(),
@@ -234,69 +425,98 @@ var NzAffixComponent = /** @class */ (function () {
     ], NzAffixComponent.prototype, "nzOffsetBottom", void 0);
     return NzAffixComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAffixComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-affix',
-                exportAs: 'nzAffix',
-                templateUrl: './nz-affix.component.html',
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                styles: [
-                    "\n      nz-affix {\n        display: block;\n      }\n    "
-                ],
-                encapsulation: ViewEncapsulation.None
-            }]
-    }], function () { return [{ type: ElementRef }, { type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }, { type: NzConfigService }, { type: NzScrollService }, { type: NgZone }, { type: Platform }]; }, { fixedEl: [{
-            type: ViewChild,
-            args: ['fixedEl', { static: true }]
-        }], nzTarget: [{
-            type: Input
-        }], nzOffsetTop: [{
-            type: Input
-        }], nzOffsetBottom: [{
-            type: Input
-        }], nzChange: [{
-            type: Output
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.fixedEl;
+    /** @type {?} */
+    NzAffixComponent.prototype.nzTarget;
+    /** @type {?} */
+    NzAffixComponent.prototype.nzOffsetTop;
+    /** @type {?} */
+    NzAffixComponent.prototype.nzOffsetBottom;
+    /** @type {?} */
+    NzAffixComponent.prototype.nzChange;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.placeholderNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.affixStyle;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.placeholderStyle;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.scroll$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.timeout;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.document;
+    /** @type {?} */
+    NzAffixComponent.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.scrollSrv;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzAffixComponent.prototype.platform;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-affix.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAffixModule = /** @class */ (function () {
     function NzAffixModule() {
     }
-    /** @nocollapse */ NzAffixModule.ɵmod = ɵɵdefineNgModule({ type: NzAffixModule });
-    /** @nocollapse */ NzAffixModule.ɵinj = ɵɵdefineInjector({ factory: function NzAffixModule_Factory(t) { return new (t || NzAffixModule)(); }, providers: [SCROLL_SERVICE_PROVIDER], imports: [[CommonModule, PlatformModule]] });
+    NzAffixModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzAffixComponent],
+                    exports: [NzAffixComponent],
+                    imports: [CommonModule, PlatformModule],
+                    providers: [SCROLL_SERVICE_PROVIDER]
+                },] }
+    ];
     return NzAffixModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzAffixModule, { declarations: [NzAffixComponent], imports: [CommonModule, PlatformModule], exports: [NzAffixComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAffixModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzAffixComponent],
-                exports: [NzAffixComponent],
-                imports: [CommonModule, PlatformModule],
-                providers: [SCROLL_SERVICE_PROVIDER]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-affix.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzAffixComponent, NzAffixModule };

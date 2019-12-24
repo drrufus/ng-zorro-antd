@@ -10,7 +10,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { Platform } from '@angular/cdk/platform';
 import { NzBreakPoint, NzDomEventService } from 'ng-zorro-antd/core';
 import { NzLayoutComponent } from './nz-layout.component';
-import * as i0 from "@angular/core";
 export declare class NzSiderComponent implements OnInit, AfterViewInit, OnDestroy {
     private nzLayoutComponent;
     private mediaMatcher;
@@ -43,6 +42,4 @@ export declare class NzSiderComponent implements OnInit, AfterViewInit, OnDestro
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSiderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSiderComponent, "nz-sider", ["nzSider"], { 'nzWidth': "nzWidth", 'nzTheme': "nzTheme", 'nzCollapsedWidth': "nzCollapsedWidth", 'nzBreakpoint': "nzBreakpoint", 'nzZeroTrigger': "nzZeroTrigger", 'nzReverseArrow': "nzReverseArrow", 'nzCollapsible': "nzCollapsible", 'nzCollapsed': "nzCollapsed", 'nzTrigger': "nzTrigger" }, { 'nzCollapsedChange': "nzCollapsedChange" }, never>;
 }

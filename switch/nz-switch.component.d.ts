@@ -9,7 +9,6 @@ import { FocusMonitor } from '@angular/cdk/a11y';
 import { AfterViewInit, ChangeDetectorRef, OnDestroy, TemplateRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NzConfigService, NzSizeDSType } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzSwitchComponent implements ControlValueAccessor, AfterViewInit, OnDestroy {
     nzConfigService: NzConfigService;
     private cdr;
@@ -36,6 +35,4 @@ export declare class NzSwitchComponent implements ControlValueAccessor, AfterVie
     registerOnChange(fn: (_: boolean) => void): void;
     registerOnTouched(fn: () => void): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSwitchComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSwitchComponent, "nz-switch", ["nzSwitch"], { 'nzLoading': "nzLoading", 'nzDisabled': "nzDisabled", 'nzControl': "nzControl", 'nzCheckedChildren': "nzCheckedChildren", 'nzUnCheckedChildren': "nzUnCheckedChildren", 'nzSize': "nzSize" }, {}, never>;
 }

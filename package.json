@@ -1,6 +1,6 @@
 {
   "name": "ng-zorro-antd",
-  "version": "9.0.0-beta.0",
+  "version": "8.5.2",
   "license": "MIT",
   "description": "An enterprise-class UI components based on Ant Design and Angular",
   "schematics": "./schematics/collection.json",
@@ -27,18 +27,18 @@
     "url": "https://github.com/NG-ZORRO/ng-zorro-antd/issues"
   },
   "dependencies": {
-    "@angular/cdk": "~9.0.0-rc.4",
-    "@ant-design/icons-angular": "^9.0.0-rc.4",
-    "date-fns": "^1.30.1"
+    "@angular/cdk": "^8.0.0",
+    "@ant-design/icons-angular": "^8.0.2",
+    "date-fns": "^1.30.1",
+    "tslib": "^1.9.0"
   },
   "peerDependencies": {
-    "@angular/animations": "~9.0.0-rc.4",
-    "@angular/common": "~9.0.0-rc.4",
-    "@angular/core": "~9.0.0-rc.4",
-    "@angular/platform-browser": "~9.0.0-rc.4",
-    "@angular/router": "~9.0.0-rc.4",
-    "rxjs": "~6.5.3",
-    "tslib": "^1.10.0"
+    "@angular/animations": "^8.0.0",
+    "@angular/common": "^8.0.0",
+    "@angular/core": "^8.0.0",
+    "@angular/platform-browser": "^8.0.0",
+    "@angular/router": "^8.0.0",
+    "rxjs": "^6.4.0"
   },
   "main": "bundles/ng-zorro-antd.umd.js",
   "module": "fesm5/ng-zorro-antd.js",
@@ -48,8 +48,6 @@
   "fesm5": "fesm5/ng-zorro-antd.js",
   "fesm2015": "fesm2015/ng-zorro-antd.js",
   "typings": "ng-zorro-antd.d.ts",
-  "sideEffects": false,
-  "scripts": {
-    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by Ivy. This is not allowed.\\nPlease delete and rebuild the package, without compiling with Ivy, before attempting to publish.\\n')\" && exit 1"
-  }
+  "metadata": "ng-zorro-antd.metadata.json",
+  "sideEffects": false
 }

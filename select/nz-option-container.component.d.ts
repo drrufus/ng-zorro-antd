@@ -10,10 +10,9 @@ import { NzOptionGroupComponent } from './nz-option-group.component';
 import { NzOptionLiComponent } from './nz-option-li.component';
 import { NzOptionComponent } from './nz-option.component';
 import { NzSelectService } from './nz-select.service';
-import * as i0 from "@angular/core";
 export declare class NzOptionContainerComponent implements OnDestroy, OnInit, AfterViewInit {
     nzSelectService: NzSelectService;
-    cdr: ChangeDetectorRef;
+    private cdr;
     private ngZone;
     private destroy$;
     private lastScrollTop;
@@ -29,6 +28,4 @@ export declare class NzOptionContainerComponent implements OnDestroy, OnInit, Af
     ngOnInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzOptionContainerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzOptionContainerComponent, "[nz-option-container]", ["nzOptionContainer"], { 'nzNotFoundContent': "nzNotFoundContent", 'nzMenuItemSelectedIcon': "nzMenuItemSelectedIcon" }, { 'nzScrollToBottom': "nzScrollToBottom" }, never>;
 }

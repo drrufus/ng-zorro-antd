@@ -11,7 +11,6 @@ import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { ShowUploadListInterface, UploadChangeParam, UploadFile, UploadFilter, UploadListType, UploadType, UploadXHRArgs, ZipButtonOptions } from './interface';
 import { NzUploadBtnComponent } from './nz-upload-btn.component';
 import { NzUploadListComponent } from './nz-upload-list.component';
-import * as i0 from "@angular/core";
 export declare class NzUploadComponent implements OnInit, OnChanges, OnDestroy {
     private cdr;
     private i18n;
@@ -68,6 +67,4 @@ export declare class NzUploadComponent implements OnInit, OnChanges, OnDestroy {
         [P in keyof this]?: SimpleChange;
     } & SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzUploadComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzUploadComponent, "nz-upload", ["nzUpload"], { 'nzType': "nzType", 'nzLimit': "nzLimit", 'nzSize': "nzSize", 'nzFileType': "nzFileType", 'nzAccept': "nzAccept", 'nzAction': "nzAction", 'nzDirectory': "nzDirectory", 'nzOpenFileDialogOnClick': "nzOpenFileDialogOnClick", 'nzBeforeUpload': "nzBeforeUpload", 'nzCustomRequest': "nzCustomRequest", 'nzData': "nzData", 'nzFilter': "nzFilter", 'nzFileList': "nzFileList", 'nzDisabled': "nzDisabled", 'nzHeaders': "nzHeaders", 'nzListType': "nzListType", 'nzMultiple': "nzMultiple", 'nzName': "nzName", 'nzShowUploadList': "nzShowUploadList", 'nzShowButton': "nzShowButton", 'nzWithCredentials': "nzWithCredentials", 'nzRemove': "nzRemove", 'nzPreview': "nzPreview" }, { 'nzChange': "nzChange", 'nzFileListChange': "nzFileListChange" }, never>;
 }

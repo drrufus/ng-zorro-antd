@@ -9,7 +9,6 @@ import { ElementRef, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } 
 import { NzDirectionVHType, NzSizeLDSType, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { Observable } from 'rxjs';
 import { NzListGrid } from './interface';
-import * as i0 from "@angular/core";
 export declare class NzListComponent implements OnInit, OnChanges, OnDestroy {
     private el;
     private updateHostClassService;
@@ -34,6 +33,4 @@ export declare class NzListComponent implements OnInit, OnChanges, OnDestroy {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzListComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzListComponent, "nz-list, [nz-list]", ["nzList"], { 'nzDataSource': "nzDataSource", 'nzBordered': "nzBordered", 'nzGrid': "nzGrid", 'nzHeader': "nzHeader", 'nzFooter': "nzFooter", 'nzItemLayout': "nzItemLayout", 'nzRenderItem': "nzRenderItem", 'nzLoading': "nzLoading", 'nzLoadMore': "nzLoadMore", 'nzPagination': "nzPagination", 'nzSize': "nzSize", 'nzSplit': "nzSplit", 'nzNoResult': "nzNoResult" }, {}, never>;
 }

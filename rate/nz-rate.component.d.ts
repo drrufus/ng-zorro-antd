@@ -1,7 +1,13 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { AfterViewInit, ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NgClassType, NzConfigService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzRateComponent implements OnInit, OnDestroy, ControlValueAccessor, AfterViewInit, OnChanges {
     nzConfigService: NzConfigService;
     private renderer;
@@ -51,6 +57,4 @@ export declare class NzRateComponent implements OnInit, OnDestroy, ControlValueA
     registerOnTouched(fn: () => void): void;
     onChange: (value: number) => void;
     onTouched: () => void;
-    static ɵfac: i0.ɵɵFactoryDef<NzRateComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzRateComponent, "nz-rate", ["nzRate"], { 'nzAllowClear': "nzAllowClear", 'nzAllowHalf': "nzAllowHalf", 'nzDisabled': "nzDisabled", 'nzAutoFocus': "nzAutoFocus", 'nzCharacter': "nzCharacter", 'nzTooltips': "nzTooltips", 'nzCount': "nzCount" }, { 'nzOnBlur': "nzOnBlur", 'nzOnFocus': "nzOnFocus", 'nzOnHoverChange': "nzOnHoverChange", 'nzOnKeyDown': "nzOnKeyDown" }, never>;
 }

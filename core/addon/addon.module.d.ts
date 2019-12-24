@@ -1,8 +1,9 @@
-import * as i0 from "@angular/core";
-import * as i1 from "./string_template_outlet";
-import * as i2 from "./classlist_add";
-import * as i3 from "@angular/common";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzAddOnModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NzAddOnModule, [typeof i1.NzStringTemplateOutletDirective, typeof i2.NzClassListAddDirective], [typeof i3.CommonModule], [typeof i1.NzStringTemplateOutletDirective, typeof i2.NzClassListAddDirective]>;
-    static ɵinj: i0.ɵɵInjectorDef<NzAddOnModule>;
 }

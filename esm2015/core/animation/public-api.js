@@ -1,16 +1,21 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: animation/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-export * from './animation-consts';
-export * from './collapse';
-export * from './fade';
-export * from './help';
-export * from './move';
-export * from './notification';
-export * from './slide';
-export * from './zoom';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY29yZS8iLCJzb3VyY2VzIjpbImFuaW1hdGlvbi9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7R0FNRztBQUVILGNBQWMsb0JBQW9CLENBQUM7QUFDbkMsY0FBYyxZQUFZLENBQUM7QUFDM0IsY0FBYyxRQUFRLENBQUM7QUFDdkIsY0FBYyxRQUFRLENBQUM7QUFDdkIsY0FBYyxRQUFRLENBQUM7QUFDdkIsY0FBYyxnQkFBZ0IsQ0FBQztBQUMvQixjQUFjLFNBQVMsQ0FBQztBQUN4QixjQUFjLFFBQVEsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9hbmltYXRpb24tY29uc3RzJztcclxuZXhwb3J0ICogZnJvbSAnLi9jb2xsYXBzZSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vZmFkZSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vaGVscCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbW92ZSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbm90aWZpY2F0aW9uJztcclxuZXhwb3J0ICogZnJvbSAnLi9zbGlkZSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vem9vbSc7XHJcbiJdfQ==
+export { AnimationDuration, AnimationCurves } from './animation-consts';
+export { collapseMotion, treeCollapseMotion } from './collapse';
+export { fadeMotion } from './fade';
+export { helpMotion } from './help';
+export { moveUpMotion } from './move';
+export { notificationMotion } from './notification';
+export { slideMotion, slideAlertMotion } from './slide';
+export { zoomMotion, zoomBigMotion, zoomBadgeMotion } from './zoom';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY29yZS8iLCJzb3VyY2VzIjpbImFuaW1hdGlvbi9wdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQVFBLG1EQUFjLG9CQUFvQixDQUFDO0FBQ25DLG1EQUFjLFlBQVksQ0FBQztBQUMzQiwyQkFBYyxRQUFRLENBQUM7QUFDdkIsMkJBQWMsUUFBUSxDQUFDO0FBQ3ZCLDZCQUFjLFFBQVEsQ0FBQztBQUN2QixtQ0FBYyxnQkFBZ0IsQ0FBQztBQUMvQiw4Q0FBYyxTQUFTLENBQUM7QUFDeEIsMkRBQWMsUUFBUSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAbGljZW5zZVxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXG4gKlxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vYW5pbWF0aW9uLWNvbnN0cyc7XG5leHBvcnQgKiBmcm9tICcuL2NvbGxhcHNlJztcbmV4cG9ydCAqIGZyb20gJy4vZmFkZSc7XG5leHBvcnQgKiBmcm9tICcuL2hlbHAnO1xuZXhwb3J0ICogZnJvbSAnLi9tb3ZlJztcbmV4cG9ydCAqIGZyb20gJy4vbm90aWZpY2F0aW9uJztcbmV4cG9ydCAqIGZyb20gJy4vc2xpZGUnO1xuZXhwb3J0ICogZnJvbSAnLi96b29tJztcbiJdfQ==

@@ -1,4 +1,9 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: lib/calendar/time-picker-button.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -6,7 +11,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
-import * as i0 from "@angular/core";
 var TimePickerButtonComponent = /** @class */ (function () {
     function TimePickerButtonComponent() {
         this.timePickerDisabled = false;
@@ -14,41 +18,45 @@ var TimePickerButtonComponent = /** @class */ (function () {
         this.showTimePickerChange = new EventEmitter();
         this.prefixCls = 'ant-calendar';
     }
-    TimePickerButtonComponent.prototype.onClick = function () {
+    /**
+     * @return {?}
+     */
+    TimePickerButtonComponent.prototype.onClick = /**
+     * @return {?}
+     */
+    function () {
         this.showTimePicker = !this.showTimePicker;
         this.showTimePickerChange.emit(this.showTimePicker);
     };
-    /** @nocollapse */ TimePickerButtonComponent.ɵfac = function TimePickerButtonComponent_Factory(t) { return new (t || TimePickerButtonComponent)(); };
-    /** @nocollapse */ TimePickerButtonComponent.ɵcmp = i0.ɵɵdefineComponent({ type: TimePickerButtonComponent, selectors: [["time-picker-button"]], inputs: { locale: "locale", timePickerDisabled: "timePickerDisabled", showTimePicker: "showTimePicker" }, outputs: { showTimePickerChange: "showTimePickerChange" }, exportAs: ["timePickerButton"], decls: 2, vars: 5, consts: [["role", "button", 3, "click"]], template: function TimePickerButtonComponent_Template(rf, ctx) { if (rf & 1) {
-            i0.ɵɵelementStart(0, "a", 0);
-            i0.ɵɵlistener("click", function TimePickerButtonComponent_Template_a_click_0_listener($event) { return ctx.timePickerDisabled ? null : ctx.onClick(); });
-            i0.ɵɵtext(1);
-            i0.ɵɵelementEnd();
-        } if (rf & 2) {
-            i0.ɵɵclassMapInterpolate2("", ctx.prefixCls, "-time-picker-btn ", ctx.timePickerDisabled ? ctx.prefixCls + "-time-picker-btn-disabled" : "", "");
-            i0.ɵɵadvance(1);
-            i0.ɵɵtextInterpolate1(" ", ctx.showTimePicker ? ctx.locale.dateSelect : ctx.locale.timeSelect, "\n");
-        } }, encapsulation: 2, changeDetection: 0 });
+    TimePickerButtonComponent.decorators = [
+        { type: Component, args: [{
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    // tslint:disable-next-line:component-selector
+                    selector: 'time-picker-button',
+                    exportAs: 'timePickerButton',
+                    template: "<a\n  class=\"{{ prefixCls }}-time-picker-btn {{ timePickerDisabled ? prefixCls + '-time-picker-btn-disabled' : '' }}\"\n  role=\"button\"\n  (click)=\"timePickerDisabled ? null : onClick()\"\n>\n  {{ showTimePicker ? locale.dateSelect : locale.timeSelect }}\n</a>"
+                }] }
+    ];
+    TimePickerButtonComponent.propDecorators = {
+        locale: [{ type: Input }],
+        timePickerDisabled: [{ type: Input }],
+        showTimePicker: [{ type: Input }],
+        showTimePickerChange: [{ type: Output }]
+    };
     return TimePickerButtonComponent;
 }());
 export { TimePickerButtonComponent };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(TimePickerButtonComponent, [{
-        type: Component,
-        args: [{
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                // tslint:disable-next-line:component-selector
-                selector: 'time-picker-button',
-                exportAs: 'timePickerButton',
-                templateUrl: 'time-picker-button.component.html'
-            }]
-    }], null, { locale: [{
-            type: Input
-        }], timePickerDisabled: [{
-            type: Input
-        }], showTimePicker: [{
-            type: Input
-        }], showTimePickerChange: [{
-            type: Output
-        }] }); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGltZS1waWNrZXItYnV0dG9uLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvZGF0ZS1waWNrZXIvIiwic291cmNlcyI6WyJsaWIvY2FsZW5kYXIvdGltZS1waWNrZXItYnV0dG9uLmNvbXBvbmVudC50cyIsImxpYi9jYWxlbmRhci90aW1lLXBpY2tlci1idXR0b24uY29tcG9uZW50Lmh0bWwiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HO0FBRUgsT0FBTyxFQUFFLHVCQUF1QixFQUFFLFNBQVMsRUFBRSxZQUFZLEVBQUUsS0FBSyxFQUFFLE1BQU0sRUFBRSxpQkFBaUIsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7QUFJbkg7SUFBQTtRQVVXLHVCQUFrQixHQUFZLEtBQUssQ0FBQztRQUVwQyxtQkFBYyxHQUFZLEtBQUssQ0FBQztRQUN0Qix5QkFBb0IsR0FBRyxJQUFJLFlBQVksRUFBVyxDQUFDO1FBRXRFLGNBQVMsR0FBVyxjQUFjLENBQUM7S0FNcEM7SUFKQywyQ0FBTyxHQUFQO1FBQ0UsSUFBSSxDQUFDLGNBQWMsR0FBRyxDQUFDLElBQUksQ0FBQyxjQUFjLENBQUM7UUFDM0MsSUFBSSxDQUFDLG9CQUFvQixDQUFDLElBQUksQ0FBQyxJQUFJLENBQUMsY0FBYyxDQUFDLENBQUM7SUFDdEQsQ0FBQztzR0FaVSx5QkFBeUI7a0VBQXpCLHlCQUF5QjtZQ3BCdEMsNEJBT0U7WUFGQSxnSUFBOEIsSUFBSyxHQUFFLGFBQVMsSUFBQztZQUUvQyxZQUNGO1lBQUEsaUJBQUk7O1lBUEYsZ0pBRUc7WUFJSCxlQUNGO1lBREUsb0dBQ0Y7O29DRFJBO0NBaUNDLEFBckJELElBcUJDO1NBYlkseUJBQXlCO2tEQUF6Qix5QkFBeUI7Y0FSckMsU0FBUztlQUFDO2dCQUNULGFBQWEsRUFBRSxpQkFBaUIsQ0FBQyxJQUFJO2dCQUNyQyxlQUFlLEVBQUUsdUJBQXVCLENBQUMsTUFBTTtnQkFDL0MsOENBQThDO2dCQUM5QyxRQUFRLEVBQUUsb0JBQW9CO2dCQUM5QixRQUFRLEVBQUUsa0JBQWtCO2dCQUM1QixXQUFXLEVBQUUsbUNBQW1DO2FBQ2pEOztrQkFFRSxLQUFLOztrQkFDTCxLQUFLOztrQkFFTCxLQUFLOztrQkFDTCxNQUFNIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcblxyXG5pbXBvcnQgeyBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneSwgQ29tcG9uZW50LCBFdmVudEVtaXR0ZXIsIElucHV0LCBPdXRwdXQsIFZpZXdFbmNhcHN1bGF0aW9uIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5pbXBvcnQgeyBOekNhbGVuZGFySTE4bkludGVyZmFjZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvaTE4bic7XHJcblxyXG5AQ29tcG9uZW50KHtcclxuICBlbmNhcHN1bGF0aW9uOiBWaWV3RW5jYXBzdWxhdGlvbi5Ob25lLFxyXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxyXG4gIC8vIHRzbGludDpkaXNhYmxlLW5leHQtbGluZTpjb21wb25lbnQtc2VsZWN0b3JcclxuICBzZWxlY3RvcjogJ3RpbWUtcGlja2VyLWJ1dHRvbicsXHJcbiAgZXhwb3J0QXM6ICd0aW1lUGlja2VyQnV0dG9uJyxcclxuICB0ZW1wbGF0ZVVybDogJ3RpbWUtcGlja2VyLWJ1dHRvbi5jb21wb25lbnQuaHRtbCdcclxufSlcclxuZXhwb3J0IGNsYXNzIFRpbWVQaWNrZXJCdXR0b25Db21wb25lbnQge1xyXG4gIEBJbnB1dCgpIGxvY2FsZTogTnpDYWxlbmRhckkxOG5JbnRlcmZhY2U7XHJcbiAgQElucHV0KCkgdGltZVBpY2tlckRpc2FibGVkOiBib29sZWFuID0gZmFsc2U7XHJcblxyXG4gIEBJbnB1dCgpIHNob3dUaW1lUGlja2VyOiBib29sZWFuID0gZmFsc2U7XHJcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHNob3dUaW1lUGlja2VyQ2hhbmdlID0gbmV3IEV2ZW50RW1pdHRlcjxib29sZWFuPigpO1xyXG5cclxuICBwcmVmaXhDbHM6IHN0cmluZyA9ICdhbnQtY2FsZW5kYXInO1xyXG5cclxuICBvbkNsaWNrKCk6IHZvaWQge1xyXG4gICAgdGhpcy5zaG93VGltZVBpY2tlciA9ICF0aGlzLnNob3dUaW1lUGlja2VyO1xyXG4gICAgdGhpcy5zaG93VGltZVBpY2tlckNoYW5nZS5lbWl0KHRoaXMuc2hvd1RpbWVQaWNrZXIpO1xyXG4gIH1cclxufVxyXG4iLCI8YVxyXG4gIGNsYXNzPVwie3sgcHJlZml4Q2xzIH19LXRpbWUtcGlja2VyLWJ0biB7e1xyXG4gICAgdGltZVBpY2tlckRpc2FibGVkID8gcHJlZml4Q2xzICsgJy10aW1lLXBpY2tlci1idG4tZGlzYWJsZWQnIDogJydcclxuICB9fVwiXHJcbiAgcm9sZT1cImJ1dHRvblwiXHJcbiAgKGNsaWNrKT1cInRpbWVQaWNrZXJEaXNhYmxlZCA/IG51bGwgOiBvbkNsaWNrKClcIlxyXG4+XHJcbiAge3sgc2hvd1RpbWVQaWNrZXIgPyBsb2NhbGUuZGF0ZVNlbGVjdCA6IGxvY2FsZS50aW1lU2VsZWN0IH19XHJcbjwvYT5cclxuIl19
+if (false) {
+    /** @type {?} */
+    TimePickerButtonComponent.prototype.locale;
+    /** @type {?} */
+    TimePickerButtonComponent.prototype.timePickerDisabled;
+    /** @type {?} */
+    TimePickerButtonComponent.prototype.showTimePicker;
+    /** @type {?} */
+    TimePickerButtonComponent.prototype.showTimePickerChange;
+    /** @type {?} */
+    TimePickerButtonComponent.prototype.prefixCls;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidGltZS1waWNrZXItYnV0dG9uLmNvbXBvbmVudC5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvZGF0ZS1waWNrZXIvIiwic291cmNlcyI6WyJsaWIvY2FsZW5kYXIvdGltZS1waWNrZXItYnV0dG9uLmNvbXBvbmVudC50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFRQSxPQUFPLEVBQUUsdUJBQXVCLEVBQUUsU0FBUyxFQUFFLFlBQVksRUFBRSxLQUFLLEVBQUUsTUFBTSxFQUFFLGlCQUFpQixFQUFFLE1BQU0sZUFBZSxDQUFDO0FBSW5IO0lBQUE7UUFVVyx1QkFBa0IsR0FBWSxLQUFLLENBQUM7UUFFcEMsbUJBQWMsR0FBWSxLQUFLLENBQUM7UUFDdEIseUJBQW9CLEdBQUcsSUFBSSxZQUFZLEVBQVcsQ0FBQztRQUV0RSxjQUFTLEdBQVcsY0FBYyxDQUFDO0lBTXJDLENBQUM7Ozs7SUFKQywyQ0FBTzs7O0lBQVA7UUFDRSxJQUFJLENBQUMsY0FBYyxHQUFHLENBQUMsSUFBSSxDQUFDLGNBQWMsQ0FBQztRQUMzQyxJQUFJLENBQUMsb0JBQW9CLENBQUMsSUFBSSxDQUFDLElBQUksQ0FBQyxjQUFjLENBQUMsQ0FBQztJQUN0RCxDQUFDOztnQkFwQkYsU0FBUyxTQUFDO29CQUNULGFBQWEsRUFBRSxpQkFBaUIsQ0FBQyxJQUFJO29CQUNyQyxlQUFlLEVBQUUsdUJBQXVCLENBQUMsTUFBTTs7b0JBRS9DLFFBQVEsRUFBRSxvQkFBb0I7b0JBQzlCLFFBQVEsRUFBRSxrQkFBa0I7b0JBQzVCLG9SQUFnRDtpQkFDakQ7Ozt5QkFFRSxLQUFLO3FDQUNMLEtBQUs7aUNBRUwsS0FBSzt1Q0FDTCxNQUFNOztJQVFULGdDQUFDO0NBQUEsQUFyQkQsSUFxQkM7U0FiWSx5QkFBeUI7OztJQUNwQywyQ0FBeUM7O0lBQ3pDLHVEQUE2Qzs7SUFFN0MsbURBQXlDOztJQUN6Qyx5REFBc0U7O0lBRXRFLDhDQUFtQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQGxpY2Vuc2VcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcbiAqL1xuXG5pbXBvcnQgeyBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneSwgQ29tcG9uZW50LCBFdmVudEVtaXR0ZXIsIElucHV0LCBPdXRwdXQsIFZpZXdFbmNhcHN1bGF0aW9uIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XG5cbmltcG9ydCB7IE56Q2FsZW5kYXJJMThuSW50ZXJmYWNlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9pMThuJztcblxuQENvbXBvbmVudCh7XG4gIGVuY2Fwc3VsYXRpb246IFZpZXdFbmNhcHN1bGF0aW9uLk5vbmUsXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxuICAvLyB0c2xpbnQ6ZGlzYWJsZS1uZXh0LWxpbmU6Y29tcG9uZW50LXNlbGVjdG9yXG4gIHNlbGVjdG9yOiAndGltZS1waWNrZXItYnV0dG9uJyxcbiAgZXhwb3J0QXM6ICd0aW1lUGlja2VyQnV0dG9uJyxcbiAgdGVtcGxhdGVVcmw6ICd0aW1lLXBpY2tlci1idXR0b24uY29tcG9uZW50Lmh0bWwnXG59KVxuZXhwb3J0IGNsYXNzIFRpbWVQaWNrZXJCdXR0b25Db21wb25lbnQge1xuICBASW5wdXQoKSBsb2NhbGU6IE56Q2FsZW5kYXJJMThuSW50ZXJmYWNlO1xuICBASW5wdXQoKSB0aW1lUGlja2VyRGlzYWJsZWQ6IGJvb2xlYW4gPSBmYWxzZTtcblxuICBASW5wdXQoKSBzaG93VGltZVBpY2tlcjogYm9vbGVhbiA9IGZhbHNlO1xuICBAT3V0cHV0KCkgcmVhZG9ubHkgc2hvd1RpbWVQaWNrZXJDaGFuZ2UgPSBuZXcgRXZlbnRFbWl0dGVyPGJvb2xlYW4+KCk7XG5cbiAgcHJlZml4Q2xzOiBzdHJpbmcgPSAnYW50LWNhbGVuZGFyJztcblxuICBvbkNsaWNrKCk6IHZvaWQge1xuICAgIHRoaXMuc2hvd1RpbWVQaWNrZXIgPSAhdGhpcy5zaG93VGltZVBpY2tlcjtcbiAgICB0aGlzLnNob3dUaW1lUGlja2VyQ2hhbmdlLmVtaXQodGhpcy5zaG93VGltZVBpY2tlcik7XG4gIH1cbn1cbiJdfQ==

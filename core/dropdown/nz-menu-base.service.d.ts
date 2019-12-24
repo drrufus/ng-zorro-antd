@@ -1,6 +1,12 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { BehaviorSubject, Subject } from 'rxjs';
 import { NzDirectionVHIType } from '../types';
-import * as i0 from "@angular/core";
 export declare class NzMenuBaseService {
     isInDropDown: boolean;
     menuItemClick$: Subject<any>;
@@ -15,6 +21,4 @@ export declare class NzMenuBaseService {
     setMode(mode: NzDirectionVHIType): void;
     setTheme(theme: 'light' | 'dark'): void;
     setInlineIndent(indent: number): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzMenuBaseService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzMenuBaseService>;
 }

@@ -9,7 +9,6 @@ import { AfterContentInit, AfterViewInit, ChangeDetectorRef, ElementRef, EventEm
 import { Observable } from 'rxjs';
 import { CompareWith, NzDropDownPosition, NzNoAnimationDirective } from 'ng-zorro-antd/core';
 import { NzAutocompleteOptionComponent, NzOptionSelectionChange } from './nz-autocomplete-option.component';
-import * as i0 from "@angular/core";
 export interface AutocompleteDataSourceItem {
     value: string;
     label: string;
@@ -66,6 +65,4 @@ export declare class NzAutocompleteComponent implements AfterContentInit, AfterV
      */
     clearSelectedOptions(skip?: NzAutocompleteOptionComponent | null, deselect?: boolean): void;
     private subscribeOptionChanges;
-    static ɵfac: i0.ɵɵFactoryDef<NzAutocompleteComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAutocompleteComponent, "nz-autocomplete", ["nzAutocomplete"], { 'nzWidth': "nzWidth", 'nzOverlayClassName': "nzOverlayClassName", 'nzOverlayStyle': "nzOverlayStyle", 'nzDefaultActiveFirstOption': "nzDefaultActiveFirstOption", 'nzBackfill': "nzBackfill", 'compareWith': "compareWith", 'nzDataSource': "nzDataSource" }, { 'selectionChange': "selectionChange" }, ["fromContentOptions"]>;
 }

@@ -14,8 +14,8 @@ function default_1(options) {
         const style = options.style || schema_1.Style.Css;
         return schematics_1.chain([
             schematics_1.mergeWith(schematics_1.apply(schematics_1.url('./files/src'), [
-                schematics_1.applyTemplates(Object.assign(Object.assign({ prefix,
-                    style }, core_1.strings), options)),
+                schematics_1.applyTemplates(Object.assign({ prefix,
+                    style }, core_1.strings, options)),
                 schematics_1.move(project.sourceRoot),
                 schematics_1.forEach((fileEntry) => {
                     if (host.exists(fileEntry.path)) {

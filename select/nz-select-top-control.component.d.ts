@@ -9,7 +9,6 @@ import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit, Renderer2, TemplateRe
 import { NzNoAnimationDirective } from 'ng-zorro-antd/core';
 import { NzOptionComponent } from './nz-option.component';
 import { NzSelectService } from './nz-select.service';
-import * as i0 from "@angular/core";
 export declare class NzSelectTopControlComponent implements OnInit, OnDestroy {
     private renderer;
     nzSelectService: NzSelectService;
@@ -52,6 +51,4 @@ export declare class NzSelectTopControlComponent implements OnInit, OnDestroy {
     constructor(renderer: Renderer2, nzSelectService: NzSelectService, cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective | undefined);
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSelectTopControlComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSelectTopControlComponent, "[nz-select-top-control]", ["nzSelectTopControl"], { 'nzShowSearch': "nzShowSearch", 'nzPlaceHolder': "nzPlaceHolder", 'nzOpen': "nzOpen", 'nzMaxTagCount': "nzMaxTagCount", 'nzAllowClear': "nzAllowClear", 'nzShowArrow': "nzShowArrow", 'nzLoading': "nzLoading", 'nzCustomTemplate': "nzCustomTemplate", 'nzSuffixIcon': "nzSuffixIcon", 'nzClearIcon': "nzClearIcon", 'nzRemoveIcon': "nzRemoveIcon", 'nzMaxTagPlaceholder': "nzMaxTagPlaceholder", 'nzTokenSeparators': "nzTokenSeparators" }, {}, never>;
 }

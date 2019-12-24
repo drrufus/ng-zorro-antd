@@ -7,7 +7,6 @@
  */
 import { OnChanges, TemplateRef } from '@angular/core';
 import { Subject } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare class NzOptionComponent implements OnChanges {
     changes: Subject<unknown>;
     template: TemplateRef<void>;
@@ -17,6 +16,4 @@ export declare class NzOptionComponent implements OnChanges {
     nzHide: boolean;
     nzCustomContent: boolean;
     ngOnChanges(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzOptionComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzOptionComponent, "nz-option", ["nzOption"], { 'nzLabel': "nzLabel", 'nzValue': "nzValue", 'nzDisabled': "nzDisabled", 'nzHide': "nzHide", 'nzCustomContent': "nzCustomContent" }, {}, never>;
 }

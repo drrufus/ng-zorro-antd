@@ -7,7 +7,6 @@
  */
 import { ElementRef, InjectionToken, NgZone, OnDestroy, OnInit } from '@angular/core';
 import { NzWaveRenderer } from './nz-wave-renderer';
-import * as i0 from "@angular/core";
 export interface NzWaveConfig {
     disabled?: boolean;
 }
@@ -31,6 +30,4 @@ export declare class NzWaveDirective implements OnInit, OnDestroy {
     renderWaveIfEnabled(): void;
     disable(): void;
     enable(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzWaveDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzWaveDirective, "[nz-wave]", ["nzWave"], { 'nzWaveExtraNode': "nzWaveExtraNode" }, {}, never>;
 }

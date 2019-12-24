@@ -202,11 +202,9 @@
     }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: classlist_add.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzClassListAddDirective = /** @class */ (function () {
         function NzClassListAddDirective(elementRef, renderer) {
@@ -215,33 +213,67 @@
             this.classList = [];
         }
         Object.defineProperty(NzClassListAddDirective.prototype, "nzClassListAdd", {
-            set: function (list) {
+            set: /**
+             * @param {?} list
+             * @return {?}
+             */
+            function (list) {
                 var _this = this;
-                this.classList.forEach(function (name) {
+                this.classList.forEach((/**
+                 * @param {?} name
+                 * @return {?}
+                 */
+                function (name) {
                     _this.renderer.removeClass(_this.elementRef.nativeElement, name);
-                });
-                list.forEach(function (name) {
+                }));
+                list.forEach((/**
+                 * @param {?} name
+                 * @return {?}
+                 */
+                function (name) {
                     _this.renderer.addClass(_this.elementRef.nativeElement, name);
-                });
+                }));
                 this.classList = list;
             },
             enumerable: true,
             configurable: true
         });
-        /** @nocollapse */ NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.Renderer2)); };
-        /** @nocollapse */ NzClassListAddDirective.ɵdir = core.ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
+        NzClassListAddDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzClassListAdd]',
+                        exportAs: 'nzClassListAdd'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzClassListAddDirective.ctorParameters = function () { return [
+            { type: core.ElementRef },
+            { type: core.Renderer2 }
+        ]; };
+        NzClassListAddDirective.propDecorators = {
+            nzClassListAdd: [{ type: core.Input }]
+        };
         return NzClassListAddDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzClassListAddDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzClassListAdd]',
-                    exportAs: 'nzClassListAdd'
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: core.Renderer2 }]; }, { nzClassListAdd: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzClassListAddDirective.prototype.classList;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzClassListAddDirective.prototype.elementRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzClassListAddDirective.prototype.renderer;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: string_template_outlet.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzStringTemplateOutletDirective = /** @class */ (function () {
         function NzStringTemplateOutletDirective(viewContainer, defaultTemplate) {
             this.viewContainer = viewContainer;
@@ -254,7 +286,11 @@
             this.nzStringTemplateOutletContext = null;
         }
         Object.defineProperty(NzStringTemplateOutletDirective.prototype, "nzStringTemplateOutlet", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 if (value instanceof core.TemplateRef) {
                     this.isTemplate = true;
                     this.inputTemplate = value;
@@ -266,7 +302,13 @@
             enumerable: true,
             configurable: true
         });
-        NzStringTemplateOutletDirective.prototype.recreateView = function () {
+        /**
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.recreateView = /**
+         * @return {?}
+         */
+        function () {
             if (!this.isTemplate) {
                 /** use default template when input is string **/
                 if (!this.defaultViewRef) {
@@ -285,7 +327,20 @@
             }
         };
         // tslint:disable-next-line:no-any
-        NzStringTemplateOutletDirective.prototype.getType = function (value) {
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.getType = 
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (value instanceof core.TemplateRef) {
                 return 'template';
             }
@@ -293,25 +348,51 @@
                 return 'string';
             }
         };
-        NzStringTemplateOutletDirective.prototype.shouldRecreateView = function (changes) {
+        /**
+         * @private
+         * @param {?} changes
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.shouldRecreateView = /**
+         * @private
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             var nzStringTemplateOutletContext = changes.nzStringTemplateOutletContext, nzStringTemplateOutlet = changes.nzStringTemplateOutlet;
+            /** @type {?} */
             var shouldOutletRecreate = false;
             if (nzStringTemplateOutlet) {
                 if (nzStringTemplateOutlet.firstChange) {
                     shouldOutletRecreate = true;
                 }
                 else {
+                    /** @type {?} */
                     var previousOutletType = this.getType(nzStringTemplateOutlet.previousValue);
+                    /** @type {?} */
                     var currentOutletType = this.getType(nzStringTemplateOutlet.currentValue);
                     shouldOutletRecreate = !(previousOutletType === 'string' && currentOutletType === 'string');
                 }
             }
+            /** @type {?} */
             var shouldContextRecreate = nzStringTemplateOutletContext && this.hasContextShapeChanged(nzStringTemplateOutletContext);
             return shouldContextRecreate || shouldOutletRecreate;
         };
-        NzStringTemplateOutletDirective.prototype.hasContextShapeChanged = function (ctxChange) {
+        /**
+         * @private
+         * @param {?} ctxChange
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.hasContextShapeChanged = /**
+         * @private
+         * @param {?} ctxChange
+         * @return {?}
+         */
+        function (ctxChange) {
             var e_1, _a;
+            /** @type {?} */
             var prevCtxKeys = Object.keys(ctxChange.previousValue || {});
+            /** @type {?} */
             var currCtxKeys = Object.keys(ctxChange.currentValue || {});
             if (prevCtxKeys.length === currCtxKeys.length) {
                 try {
@@ -336,13 +417,26 @@
             }
         };
         // tslint:disable-next-line:no-any
-        NzStringTemplateOutletDirective.prototype.updateExistingContext = function (ctx) {
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} ctx
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.updateExistingContext = 
+        // tslint:disable-next-line:no-any
+        /**
+         * @private
+         * @param {?} ctx
+         * @return {?}
+         */
+        function (ctx) {
             var e_2, _a;
             try {
                 for (var _b = __values(Object.keys(ctx)), _c = _b.next(); !_c.done; _c = _b.next()) {
                     var propName = _c.value;
                     // tslint:disable-next-line:no-any
-                    this.inputViewRef.context[propName] = this.nzStringTemplateOutletContext[propName];
+                    ((/** @type {?} */ ((/** @type {?} */ (this.inputViewRef)).context)))[propName] = this.nzStringTemplateOutletContext[propName];
                 }
             }
             catch (e_2_1) { e_2 = { error: e_2_1 }; }
@@ -353,7 +447,16 @@
                 finally { if (e_2) throw e_2.error; }
             }
         };
-        NzStringTemplateOutletDirective.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzStringTemplateOutletDirective.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
+            /** @type {?} */
             var recreateView = this.shouldRecreateView(changes);
             if (recreateView) {
                 if (this.viewContainer) {
@@ -369,45 +472,75 @@
                 }
             }
         };
-        /** @nocollapse */ NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(core.ɵɵdirectiveInject(core.ViewContainerRef), core.ɵɵdirectiveInject(core.TemplateRef)); };
-        /** @nocollapse */ NzStringTemplateOutletDirective.ɵdir = core.ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [core.ɵɵNgOnChangesFeature()] });
+        NzStringTemplateOutletDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzStringTemplateOutlet]',
+                        exportAs: 'nzStringTemplateOutlet'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzStringTemplateOutletDirective.ctorParameters = function () { return [
+            { type: core.ViewContainerRef },
+            { type: core.TemplateRef }
+        ]; };
+        NzStringTemplateOutletDirective.propDecorators = {
+            nzStringTemplateOutletContext: [{ type: core.Input }],
+            nzStringTemplateOutlet: [{ type: core.Input }]
+        };
         return NzStringTemplateOutletDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzStringTemplateOutlet]',
-                    exportAs: 'nzStringTemplateOutlet'
-                }]
-        }], function () { return [{ type: core.ViewContainerRef }, { type: core.TemplateRef }]; }, { nzStringTemplateOutletContext: [{
-                type: core.Input
-            }], nzStringTemplateOutlet: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.isTemplate;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.inputTemplate;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.inputViewRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.defaultViewRef;
+        /** @type {?} */
+        NzStringTemplateOutletDirective.prototype.nzStringTemplateOutletContext;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.viewContainer;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStringTemplateOutletDirective.prototype.defaultTemplate;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: addon.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAddOnModule = /** @class */ (function () {
         function NzAddOnModule() {
         }
-        /** @nocollapse */ NzAddOnModule.ɵmod = core.ɵɵdefineNgModule({ type: NzAddOnModule });
-        /** @nocollapse */ NzAddOnModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[common.CommonModule]] });
+        NzAddOnModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule],
+                        exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
+                        declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
+                    },] }
+        ];
         return NzAddOnModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzAddOnModule, { declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective], imports: [common.CommonModule], exports: [NzStringTemplateOutletDirective, NzClassListAddDirective] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzAddOnModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule],
-                    exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
-                    declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-                }]
-        }], null, null); })();
 
     exports.NzAddOnModule = NzAddOnModule;
     exports.NzClassListAddDirective = NzClassListAddDirective;

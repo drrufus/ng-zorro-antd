@@ -7,7 +7,6 @@
  */
 import { ElementRef, EventEmitter, Renderer2 } from '@angular/core';
 import { NzCheckboxComponent } from './nz-checkbox.component';
-import * as i0 from "@angular/core";
 export declare class NzCheckboxWrapperComponent {
     readonly nzOnChange: EventEmitter<string[]>;
     private checkboxList;
@@ -16,6 +15,4 @@ export declare class NzCheckboxWrapperComponent {
     outputValue(): string[];
     onChange(): void;
     constructor(renderer: Renderer2, elementRef: ElementRef);
-    static ɵfac: i0.ɵɵFactoryDef<NzCheckboxWrapperComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCheckboxWrapperComponent, "nz-checkbox-wrapper", ["nzCheckboxWrapper"], {}, { 'nzOnChange': "nzOnChange" }, never>;
 }

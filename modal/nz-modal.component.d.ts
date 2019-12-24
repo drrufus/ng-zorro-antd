@@ -16,7 +16,6 @@ import { NzModalControlService } from './nz-modal-control.service';
 import { NzModalFooterDirective } from './nz-modal-footer.directive';
 import { NzModalRef } from './nz-modal-ref.class';
 import { ModalButtonOptions, ModalOptions, ModalType, OnClickCallback } from './nz-modal.type';
-import * as i0 from "@angular/core";
 export declare const MODAL_ANIMATE_DURATION = 200;
 export declare const WRAP_CLASS_NAME = "ant-modal-wrap";
 export declare class NzModalComponent<T = any, R = any> extends NzModalRef<T, R> implements OnInit, OnChanges, AfterViewInit, OnDestroy, ModalOptions<T> {
@@ -60,7 +59,7 @@ export declare class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     nzOkType: string;
     nzIconType: string;
     nzModalType: ModalType;
-    nzAriaLabel: string;
+    nzCloseAriaLabel: string;
     readonly nzOnOk: EventEmitter<T> | OnClickCallback<T>;
     readonly nzOnCancel: EventEmitter<T> | OnClickCallback<T>;
     readonly nzAfterOpen: EventEmitter<void>;
@@ -152,6 +151,4 @@ export declare class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     private savePreviouslyFocusedElement;
     private trapFocus;
     private restoreFocus;
-    static ɵfac: i0.ɵɵFactoryDef<NzModalComponent<any, any>>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzModalComponent<any, any>, "nz-modal", ["nzModal"], { 'nzVisible': "nzVisible", 'nzClosable': "nzClosable", 'nzOkLoading': "nzOkLoading", 'nzOkDisabled': "nzOkDisabled", 'nzCancelDisabled': "nzCancelDisabled", 'nzCancelLoading': "nzCancelLoading", 'nzKeyboard': "nzKeyboard", 'nzNoAnimation': "nzNoAnimation", 'nzMask': "nzMask", 'nzMaskClosable': "nzMaskClosable", 'nzContent': "nzContent", 'nzComponentParams': "nzComponentParams", 'nzFooter': "nzFooter", 'nzGetContainer': "nzGetContainer", 'nzZIndex': "nzZIndex", 'nzWidth': "nzWidth", 'nzWrapClassName': "nzWrapClassName", 'nzClassName': "nzClassName", 'nzStyle': "nzStyle", 'nzTitle': "nzTitle", 'nzCloseIcon': "nzCloseIcon", 'nzMaskStyle': "nzMaskStyle", 'nzBodyStyle': "nzBodyStyle", 'nzOkText': "nzOkText", 'nzCancelText': "nzCancelText", 'nzOkType': "nzOkType", 'nzIconType': "nzIconType", 'nzModalType': "nzModalType", 'nzAriaLabel': "nzAriaLabel", 'nzOnOk': "nzOnOk", 'nzOnCancel': "nzOnCancel" }, { 'nzOnOk': "nzOnOk", 'nzOnCancel': "nzOnCancel", 'nzAfterOpen': "nzAfterOpen", 'nzAfterClose': "nzAfterClose", 'nzVisibleChange': "nzVisibleChange" }, ["modalFooter"]>;
 }

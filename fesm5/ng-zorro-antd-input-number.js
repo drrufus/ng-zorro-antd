@@ -1,13 +1,17 @@
 import { __decorate, __metadata } from 'tslib';
 import { FocusMonitor } from '@angular/cdk/a11y';
 import { UP_ARROW, DOWN_ARROW, ENTER } from '@angular/cdk/keycodes';
-import { EventEmitter, ɵɵdirectiveInject, ElementRef, Renderer2, ChangeDetectorRef, ɵɵdefineComponent, ɵɵstaticViewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵallocHostVars, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, ɵɵNgOnChangesFeature, ɵɵelementStart, ɵɵlistener, ɵɵelement, ɵɵelementEnd, ɵɵadvance, ɵɵproperty, ɵɵattribute, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Output, ViewChild, Input, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
-import { NG_VALUE_ACCESSOR, DefaultValueAccessor, NgControlStatus, NgModel, FormsModule } from '@angular/forms';
+import { EventEmitter, Component, forwardRef, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, Renderer2, ChangeDetectorRef, Output, ViewChild, Input, NgModule } from '@angular/core';
+import { NG_VALUE_ACCESSOR, FormsModule } from '@angular/forms';
 import { isNotNil, InputBoolean } from 'ng-zorro-antd/core';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
 import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
-var _c0 = ["inputElement"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-input-number.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzInputNumberComponent = /** @class */ (function () {
     function NzInputNumberComponent(elementRef, renderer, cdr, focusMonitor) {
         this.elementRef = elementRef;
@@ -17,22 +21,45 @@ var NzInputNumberComponent = /** @class */ (function () {
         this.isFocused = false;
         this.disabledUp = false;
         this.disabledDown = false;
-        this.onChange = function () { return null; };
-        this.onTouched = function () { return null; };
+        this.onChange = (/**
+         * @return {?}
+         */
+        function () { return null; });
+        this.onTouched = (/**
+         * @return {?}
+         */
+        function () { return null; });
         this.nzBlur = new EventEmitter();
         this.nzFocus = new EventEmitter();
         this.nzSize = 'default';
         this.nzMin = -Infinity;
         this.nzMax = Infinity;
-        this.nzParser = function (value) { return value; }; // tslint:disable-line:no-any
+        this.nzParser = (/**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) { return value; }); // tslint:disable-line:no-any
         this.nzPlaceHolder = '';
         this.nzStep = 1;
         this.nzDisabled = false;
         this.nzAutoFocus = false;
-        this.nzFormatter = function (value) { return value; };
+        this.nzFormatter = (/**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) { return value; });
         renderer.addClass(elementRef.nativeElement, 'ant-input-number');
     }
-    NzInputNumberComponent.prototype.updateAutoFocus = function () {
+    // tslint:disable-line:no-any
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.updateAutoFocus = 
+    // tslint:disable-line:no-any
+    /**
+     * @return {?}
+     */
+    function () {
         if (this.nzAutoFocus) {
             this.renderer.setAttribute(this.inputElement.nativeElement, 'autofocus', 'autofocus');
         }
@@ -40,20 +67,37 @@ var NzInputNumberComponent = /** @class */ (function () {
             this.renderer.removeAttribute(this.inputElement.nativeElement, 'autofocus');
         }
     };
-    NzInputNumberComponent.prototype.onModelChange = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.onModelChange = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         this.actualValue = this.nzParser(value
             .trim()
             .replace(/。/g, '.')
             .replace(/[^\w\.-]+/g, ''));
         this.inputElement.nativeElement.value = "" + this.actualValue;
     };
-    NzInputNumberComponent.prototype.getCurrentValidValue = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getCurrentValidValue = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
+        /** @type {?} */
         var val = value;
         if (val === '') {
             val = '';
         }
         else if (!this.isNotCompleteNumber(val)) {
-            val = this.getValidValue(val);
+            val = (/** @type {?} */ (this.getValidValue(val)));
         }
         else {
             val = this.value;
@@ -61,11 +105,34 @@ var NzInputNumberComponent = /** @class */ (function () {
         return this.toNumber(val);
     };
     // '1.' '1x' 'xx' '' => are not complete numbers
-    NzInputNumberComponent.prototype.isNotCompleteNumber = function (num) {
-        return isNaN(num) || num === '' || num === null || !!(num && num.toString().indexOf('.') === num.toString().length - 1);
+    // '1.' '1x' 'xx' '' => are not complete numbers
+    /**
+     * @param {?} num
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.isNotCompleteNumber = 
+    // '1.' '1x' 'xx' '' => are not complete numbers
+    /**
+     * @param {?} num
+     * @return {?}
+     */
+    function (num) {
+        return (isNaN((/** @type {?} */ (num))) ||
+            num === '' ||
+            num === null ||
+            !!(num && num.toString().indexOf('.') === num.toString().length - 1));
     };
-    NzInputNumberComponent.prototype.getValidValue = function (value) {
-        var val = parseFloat(value);
+    /**
+     * @param {?=} value
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getValidValue = /**
+     * @param {?=} value
+     * @return {?}
+     */
+    function (value) {
+        /** @type {?} */
+        var val = parseFloat((/** @type {?} */ (value)));
         // https://github.com/ant-design/ant-design/issues/7358
         if (isNaN(val)) {
             return value;
@@ -78,27 +145,63 @@ var NzInputNumberComponent = /** @class */ (function () {
         }
         return val;
     };
-    NzInputNumberComponent.prototype.toNumber = function (num) {
+    /**
+     * @param {?} num
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.toNumber = /**
+     * @param {?} num
+     * @return {?}
+     */
+    function (num) {
         if (this.isNotCompleteNumber(num)) {
-            return num;
+            return (/** @type {?} */ (num));
         }
         if (isNotNil(this.nzPrecision)) {
             return Number(Number(num).toFixed(this.nzPrecision));
         }
         return Number(num);
     };
-    NzInputNumberComponent.prototype.setValidateValue = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.setValidateValue = /**
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var value = this.getCurrentValidValue(this.actualValue);
         this.setValue(value, "" + this.value !== "" + value);
     };
-    NzInputNumberComponent.prototype.onBlur = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.onBlur = /**
+     * @return {?}
+     */
+    function () {
         this.isFocused = false;
         this.setValidateValue();
     };
-    NzInputNumberComponent.prototype.onFocus = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.onFocus = /**
+     * @return {?}
+     */
+    function () {
         this.isFocused = true;
     };
-    NzInputNumberComponent.prototype.getRatio = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getRatio = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
+        /** @type {?} */
         var ratio = 1;
         if (e.metaKey || e.ctrlKey) {
             ratio = 0.1;
@@ -108,23 +211,53 @@ var NzInputNumberComponent = /** @class */ (function () {
         }
         return ratio;
     };
-    NzInputNumberComponent.prototype.down = function (e, ratio) {
+    /**
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.down = /**
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    function (e, ratio) {
         if (!this.isFocused) {
             this.focus();
         }
         this.step('down', e, ratio);
     };
-    NzInputNumberComponent.prototype.up = function (e, ratio) {
+    /**
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.up = /**
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    function (e, ratio) {
         if (!this.isFocused) {
             this.focus();
         }
         this.step('up', e, ratio);
     };
-    NzInputNumberComponent.prototype.getPrecision = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getPrecision = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
+        /** @type {?} */
         var valueString = value.toString();
         if (valueString.indexOf('e-') >= 0) {
             return parseInt(valueString.slice(valueString.indexOf('e-') + 2), 10);
         }
+        /** @type {?} */
         var precision = 0;
         if (valueString.indexOf('.') >= 0) {
             precision = valueString.length - valueString.indexOf('.') - 1;
@@ -136,25 +269,73 @@ var NzInputNumberComponent = /** @class */ (function () {
     // then value should be 2.51, rather than 2.5
     // if this.props.precision is undefined
     // https://github.com/react-component/input-number/issues/39
-    NzInputNumberComponent.prototype.getMaxPrecision = function (currentValue, ratio) {
+    // step={1.0} value={1.51}
+    // press +
+    // then value should be 2.51, rather than 2.5
+    // if this.props.precision is undefined
+    // https://github.com/react-component/input-number/issues/39
+    /**
+     * @param {?} currentValue
+     * @param {?} ratio
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getMaxPrecision = 
+    // step={1.0} value={1.51}
+    // press +
+    // then value should be 2.51, rather than 2.5
+    // if this.props.precision is undefined
+    // https://github.com/react-component/input-number/issues/39
+    /**
+     * @param {?} currentValue
+     * @param {?} ratio
+     * @return {?}
+     */
+    function (currentValue, ratio) {
         if (isNotNil(this.nzPrecision)) {
             return this.nzPrecision;
         }
+        /** @type {?} */
         var ratioPrecision = this.getPrecision(ratio);
+        /** @type {?} */
         var stepPrecision = this.getPrecision(this.nzStep);
-        var currentValuePrecision = this.getPrecision(currentValue);
+        /** @type {?} */
+        var currentValuePrecision = this.getPrecision((/** @type {?} */ (currentValue)));
         if (!currentValue) {
             return ratioPrecision + stepPrecision;
         }
         return Math.max(currentValuePrecision, ratioPrecision + stepPrecision);
     };
-    NzInputNumberComponent.prototype.getPrecisionFactor = function (currentValue, ratio) {
+    /**
+     * @param {?} currentValue
+     * @param {?} ratio
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.getPrecisionFactor = /**
+     * @param {?} currentValue
+     * @param {?} ratio
+     * @return {?}
+     */
+    function (currentValue, ratio) {
+        /** @type {?} */
         var precision = this.getMaxPrecision(currentValue, ratio);
         return Math.pow(10, precision);
     };
-    NzInputNumberComponent.prototype.upStep = function (val, rat) {
+    /**
+     * @param {?} val
+     * @param {?} rat
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.upStep = /**
+     * @param {?} val
+     * @param {?} rat
+     * @return {?}
+     */
+    function (val, rat) {
+        /** @type {?} */
         var precisionFactor = this.getPrecisionFactor(val, rat);
+        /** @type {?} */
         var precision = Math.abs(this.getMaxPrecision(val, rat));
+        /** @type {?} */
         var result;
         if (typeof val === 'number') {
             result = ((precisionFactor * val + precisionFactor * this.nzStep * rat) / precisionFactor).toFixed(precision);
@@ -164,9 +345,22 @@ var NzInputNumberComponent = /** @class */ (function () {
         }
         return this.toNumber(result);
     };
-    NzInputNumberComponent.prototype.downStep = function (val, rat) {
+    /**
+     * @param {?} val
+     * @param {?} rat
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.downStep = /**
+     * @param {?} val
+     * @param {?} rat
+     * @return {?}
+     */
+    function (val, rat) {
+        /** @type {?} */
         var precisionFactor = this.getPrecisionFactor(val, rat);
+        /** @type {?} */
         var precision = Math.abs(this.getMaxPrecision(val, rat));
+        /** @type {?} */
         var result;
         if (typeof val === 'number') {
             result = ((precisionFactor * val - precisionFactor * this.nzStep * rat) / precisionFactor).toFixed(precision);
@@ -176,7 +370,19 @@ var NzInputNumberComponent = /** @class */ (function () {
         }
         return this.toNumber(result);
     };
-    NzInputNumberComponent.prototype.step = function (type, e, ratio) {
+    /**
+     * @param {?} type
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.step = /**
+     * @param {?} type
+     * @param {?} e
+     * @param {?=} ratio
+     * @return {?}
+     */
+    function (type, e, ratio) {
         var _this = this;
         if (ratio === void 0) { ratio = 1; }
         this.stop();
@@ -184,7 +390,9 @@ var NzInputNumberComponent = /** @class */ (function () {
         if (this.nzDisabled) {
             return;
         }
+        /** @type {?} */
         var value = this.getCurrentValidValue(this.actualValue) || 0;
+        /** @type {?} */
         var val = 0;
         if (type === 'up') {
             val = this.upStep(value, ratio);
@@ -192,6 +400,7 @@ var NzInputNumberComponent = /** @class */ (function () {
         else if (type === 'down') {
             val = this.downStep(value, ratio);
         }
+        /** @type {?} */
         var outOfRange = val > this.nzMax || val < this.nzMin;
         if (val > this.nzMax) {
             val = this.nzMax;
@@ -204,26 +413,47 @@ var NzInputNumberComponent = /** @class */ (function () {
         if (outOfRange) {
             return;
         }
-        this.autoStepTimer = setTimeout(function () {
+        this.autoStepTimer = setTimeout((/**
+         * @return {?}
+         */
+        function () {
             _this[type](e, ratio, true);
-        }, 600);
+        }), 600);
     };
-    NzInputNumberComponent.prototype.stop = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.stop = /**
+     * @return {?}
+     */
+    function () {
         if (this.autoStepTimer) {
             clearTimeout(this.autoStepTimer);
         }
     };
-    NzInputNumberComponent.prototype.setValue = function (value, emit) {
+    /**
+     * @param {?} value
+     * @param {?} emit
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.setValue = /**
+     * @param {?} value
+     * @param {?} emit
+     * @return {?}
+     */
+    function (value, emit) {
         if (emit && "" + this.value !== "" + value) {
             this.onChange(value);
         }
         this.value = value;
         this.actualValue = value;
+        /** @type {?} */
         var displayValue = isNotNil(this.nzFormatter(this.value)) ? this.nzFormatter(this.value) : '';
         this.displayValue = displayValue;
         this.inputElement.nativeElement.value = "" + displayValue;
         this.disabledUp = this.disabledDown = false;
         if (value || value === 0) {
+            /** @type {?} */
             var val = Number(value);
             if (val >= this.nzMax) {
                 this.disabledUp = true;
@@ -233,13 +463,23 @@ var NzInputNumberComponent = /** @class */ (function () {
             }
         }
     };
-    NzInputNumberComponent.prototype.onKeyDown = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.onKeyDown = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         if (e.code === 'ArrowUp' || e.keyCode === UP_ARROW) {
+            /** @type {?} */
             var ratio = this.getRatio(e);
             this.up(e, ratio);
             this.stop();
         }
         else if (e.code === 'ArrowDown' || e.keyCode === DOWN_ARROW) {
+            /** @type {?} */
             var ratio = this.getRatio(e);
             this.down(e, ratio);
             this.stop();
@@ -248,101 +488,192 @@ var NzInputNumberComponent = /** @class */ (function () {
             this.setValidateValue();
         }
     };
-    NzInputNumberComponent.prototype.onKeyUp = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.onKeyUp = /**
+     * @return {?}
+     */
+    function () {
         this.stop();
     };
-    NzInputNumberComponent.prototype.writeValue = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.writeValue = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         this.setValue(value, false);
         this.cdr.markForCheck();
     };
-    NzInputNumberComponent.prototype.registerOnChange = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.registerOnChange = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onChange = fn;
     };
-    NzInputNumberComponent.prototype.registerOnTouched = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.registerOnTouched = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onTouched = fn;
     };
-    NzInputNumberComponent.prototype.setDisabledState = function (isDisabled) {
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.setDisabledState = /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    function (isDisabled) {
         this.nzDisabled = isDisabled;
         this.cdr.markForCheck();
     };
-    NzInputNumberComponent.prototype.focus = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.focus = /**
+     * @return {?}
+     */
+    function () {
         this.focusMonitor.focusVia(this.inputElement, 'keyboard');
     };
-    NzInputNumberComponent.prototype.blur = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.blur = /**
+     * @return {?}
+     */
+    function () {
         this.inputElement.nativeElement.blur();
     };
-    NzInputNumberComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.focusMonitor.monitor(this.elementRef, true).subscribe(function (focusOrigin) {
+        this.focusMonitor.monitor(this.elementRef, true).subscribe((/**
+         * @param {?} focusOrigin
+         * @return {?}
+         */
+        function (focusOrigin) {
             if (!focusOrigin) {
                 _this.onBlur();
                 _this.nzBlur.emit();
-                Promise.resolve().then(function () { return _this.onTouched(); });
+                Promise.resolve().then((/**
+                 * @return {?}
+                 */
+                function () { return _this.onTouched(); }));
             }
             else {
                 _this.onFocus();
                 _this.nzFocus.emit();
             }
-        });
+        }));
     };
-    NzInputNumberComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         if (changes.nzAutoFocus) {
             this.updateAutoFocus();
         }
         if (changes.nzFormatter) {
+            /** @type {?} */
             var value = this.getCurrentValidValue(this.actualValue);
             this.setValue(value, true);
         }
     };
-    NzInputNumberComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         if (this.nzAutoFocus) {
             this.focus();
         }
     };
-    NzInputNumberComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzInputNumberComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.focusMonitor.stopMonitoring(this.elementRef);
     };
-    /** @nocollapse */ NzInputNumberComponent.ɵfac = function NzInputNumberComponent_Factory(t) { return new (t || NzInputNumberComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(FocusMonitor)); };
-    /** @nocollapse */ NzInputNumberComponent.ɵcmp = ɵɵdefineComponent({ type: NzInputNumberComponent, selectors: [["nz-input-number"]], viewQuery: function NzInputNumberComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵstaticViewQuery(_c0, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.inputElement = _t.first);
-        } }, hostBindings: function NzInputNumberComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            ɵɵallocHostVars(4);
-        } if (rf & 2) {
-            ɵɵclassProp("ant-input-number-focused", ctx.isFocused)("ant-input-number-lg", ctx.nzSize === "large")("ant-input-number-sm", ctx.nzSize === "small")("ant-input-number-disabled", ctx.nzDisabled);
-        } }, inputs: { nzSize: "nzSize", nzMin: "nzMin", nzMax: "nzMax", nzParser: "nzParser", nzPrecision: "nzPrecision", nzPlaceHolder: "nzPlaceHolder", nzStep: "nzStep", nzId: "nzId", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzFormatter: "nzFormatter" }, outputs: { nzBlur: "nzBlur", nzFocus: "nzFocus" }, exportAs: ["nzInputNumber"], features: [ɵɵProvidersFeature([
-                {
-                    provide: NG_VALUE_ACCESSOR,
-                    useExisting: forwardRef((function () { return NzInputNumberComponent; })),
-                    multi: true
-                }
-            ]), ɵɵNgOnChangesFeature()], decls: 8, vars: 9, consts: [[1, "ant-input-number-handler-wrap"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-up", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "up", 1, "ant-input-number-handler-up-inner"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-down", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "down", 1, "ant-input-number-handler-down-inner"], [1, "ant-input-number-input-wrap"], ["autocomplete", "off", 1, "ant-input-number-input", 3, "disabled", "placeholder", "ngModel", "keydown", "keyup", "ngModelChange"], ["inputElement", ""]], template: function NzInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "div", 0);
-            ɵɵelementStart(1, "span", 1);
-            ɵɵlistener("mousedown", function NzInputNumberComponent_Template_span_mousedown_1_listener($event) { return ctx.up($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_1_listener($event) { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_1_listener($event) { return ctx.stop(); });
-            ɵɵelement(2, "i", 2);
-            ɵɵelementEnd();
-            ɵɵelementStart(3, "span", 3);
-            ɵɵlistener("mousedown", function NzInputNumberComponent_Template_span_mousedown_3_listener($event) { return ctx.down($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_3_listener($event) { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_3_listener($event) { return ctx.stop(); });
-            ɵɵelement(4, "i", 4);
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementStart(5, "div", 5);
-            ɵɵelementStart(6, "input", 6, 7);
-            ɵɵlistener("keydown", function NzInputNumberComponent_Template_input_keydown_6_listener($event) { return ctx.onKeyDown($event); })("keyup", function NzInputNumberComponent_Template_input_keyup_6_listener($event) { return ctx.onKeyUp(); })("ngModelChange", function NzInputNumberComponent_Template_input_ngModelChange_6_listener($event) { return ctx.onModelChange($event); });
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵadvance(1);
-            ɵɵclassProp("ant-input-number-handler-up-disabled", ctx.disabledUp);
-            ɵɵadvance(2);
-            ɵɵclassProp("ant-input-number-handler-down-disabled", ctx.disabledDown);
-            ɵɵadvance(3);
-            ɵɵproperty("disabled", ctx.nzDisabled)("placeholder", ctx.nzPlaceHolder)("ngModel", ctx.displayValue);
-            ɵɵattribute("id", ctx.nzId)("min", ctx.nzMin)("max", ctx.nzMax)("step", ctx.nzStep);
-        } }, directives: [NzIconDirective, DefaultValueAccessor, NgControlStatus, NgModel], encapsulation: 2, changeDetection: 0 });
+    NzInputNumberComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-input-number',
+                    exportAs: 'nzInputNumber',
+                    template: "<div class=\"ant-input-number-handler-wrap\">\n  <span unselectable=\"unselectable\"\n        class=\"ant-input-number-handler ant-input-number-handler-up\"\n        (mousedown)=\"up($event)\"\n        (mouseup)=\"stop()\"\n        (mouseleave)=\"stop()\"\n        [class.ant-input-number-handler-up-disabled]=\"disabledUp\">\n    <i nz-icon nzType=\"up\" class=\"ant-input-number-handler-up-inner\"></i>\n  </span>\n  <span unselectable=\"unselectable\"\n        class=\"ant-input-number-handler ant-input-number-handler-down\"\n        (mousedown)=\"down($event)\"\n        (mouseup)=\"stop()\"\n        (mouseleave)=\"stop()\"\n        [class.ant-input-number-handler-down-disabled]=\"disabledDown\">\n    <i nz-icon nzType=\"down\" class=\"ant-input-number-handler-down-inner\"></i>\n  </span>\n</div>\n<div class=\"ant-input-number-input-wrap\">\n  <input #inputElement\n         autocomplete=\"off\"\n         class=\"ant-input-number-input\"\n         [attr.id]=\"nzId\"\n         [disabled]=\"nzDisabled\"\n         [attr.min]=\"nzMin\"\n         [attr.max]=\"nzMax\"\n         [placeholder]=\"nzPlaceHolder\"\n         [attr.step]=\"nzStep\"\n         (keydown)=\"onKeyDown($event)\"\n         (keyup)=\"onKeyUp()\"\n         [ngModel]=\"displayValue\"\n         (ngModelChange)=\"onModelChange($event)\">\n</div>\n",
+                    providers: [
+                        {
+                            provide: NG_VALUE_ACCESSOR,
+                            useExisting: forwardRef((/**
+                             * @return {?}
+                             */
+                            function () { return NzInputNumberComponent; })),
+                            multi: true
+                        }
+                    ],
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    host: {
+                        '[class.ant-input-number-focused]': 'isFocused',
+                        '[class.ant-input-number-lg]': "nzSize === 'large'",
+                        '[class.ant-input-number-sm]': "nzSize === 'small'",
+                        '[class.ant-input-number-disabled]': 'nzDisabled'
+                    }
+                }] }
+    ];
+    /** @nocollapse */
+    NzInputNumberComponent.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: Renderer2 },
+        { type: ChangeDetectorRef },
+        { type: FocusMonitor }
+    ]; };
+    NzInputNumberComponent.propDecorators = {
+        nzBlur: [{ type: Output }],
+        nzFocus: [{ type: Output }],
+        inputElement: [{ type: ViewChild, args: ['inputElement', { static: true },] }],
+        nzSize: [{ type: Input }],
+        nzMin: [{ type: Input }],
+        nzMax: [{ type: Input }],
+        nzParser: [{ type: Input }],
+        nzPrecision: [{ type: Input }],
+        nzPlaceHolder: [{ type: Input }],
+        nzStep: [{ type: Input }],
+        nzId: [{ type: Input }],
+        nzDisabled: [{ type: Input }],
+        nzAutoFocus: [{ type: Input }],
+        nzFormatter: [{ type: Input }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Object)
@@ -353,93 +684,113 @@ var NzInputNumberComponent = /** @class */ (function () {
     ], NzInputNumberComponent.prototype, "nzAutoFocus", void 0);
     return NzInputNumberComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzInputNumberComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-input-number',
-                exportAs: 'nzInputNumber',
-                templateUrl: './nz-input-number.component.html',
-                providers: [
-                    {
-                        provide: NG_VALUE_ACCESSOR,
-                        useExisting: forwardRef((function () { return NzInputNumberComponent; })),
-                        multi: true
-                    }
-                ],
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                host: {
-                    '[class.ant-input-number-focused]': 'isFocused',
-                    '[class.ant-input-number-lg]': "nzSize === 'large'",
-                    '[class.ant-input-number-sm]': "nzSize === 'small'",
-                    '[class.ant-input-number-disabled]': 'nzDisabled'
-                }
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: ChangeDetectorRef }, { type: FocusMonitor }]; }, { nzBlur: [{
-            type: Output
-        }], nzFocus: [{
-            type: Output
-        }], inputElement: [{
-            type: ViewChild,
-            args: ['inputElement', { static: true }]
-        }], nzSize: [{
-            type: Input
-        }], nzMin: [{
-            type: Input
-        }], nzMax: [{
-            type: Input
-        }], nzParser: [{
-            type: Input
-        }], nzPrecision: [{
-            type: Input
-        }], nzPlaceHolder: [{
-            type: Input
-        }], nzStep: [{
-            type: Input
-        }], nzId: [{
-            type: Input
-        }], nzDisabled: [{
-            type: Input
-        }], nzAutoFocus: [{
-            type: Input
-        }], nzFormatter: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.autoStepTimer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.actualValue;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.value;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.displayValue;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.isFocused;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.disabledUp;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.disabledDown;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.onChange;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.onTouched;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzBlur;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzFocus;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.inputElement;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzSize;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzMin;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzMax;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzParser;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzPrecision;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzPlaceHolder;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzStep;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzId;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzDisabled;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzAutoFocus;
+    /** @type {?} */
+    NzInputNumberComponent.prototype.nzFormatter;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzInputNumberComponent.prototype.focusMonitor;
+    /* Skipping unhandled member: [property: string]: any;*/
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-input-number.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzInputNumberModule = /** @class */ (function () {
     function NzInputNumberModule() {
     }
-    /** @nocollapse */ NzInputNumberModule.ɵmod = ɵɵdefineNgModule({ type: NzInputNumberModule });
-    /** @nocollapse */ NzInputNumberModule.ɵinj = ɵɵdefineInjector({ factory: function NzInputNumberModule_Factory(t) { return new (t || NzInputNumberModule)(); }, imports: [[CommonModule, FormsModule, NzIconModule]] });
+    NzInputNumberModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule, FormsModule, NzIconModule],
+                    declarations: [NzInputNumberComponent],
+                    exports: [NzInputNumberComponent]
+                },] }
+    ];
     return NzInputNumberModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzInputNumberModule, { declarations: [NzInputNumberComponent], imports: [CommonModule, FormsModule, NzIconModule], exports: [NzInputNumberComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzInputNumberModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule, FormsModule, NzIconModule],
-                declarations: [NzInputNumberComponent],
-                exports: [NzInputNumberComponent]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-input-number.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzInputNumberComponent, NzInputNumberModule };

@@ -5,6 +5,7 @@ const config_1 = require("@schematics/angular/utility/config");
 const ng_ast_utils_1 = require("@schematics/angular/utility/ng-ast-utils");
 const chalk_1 = require("chalk");
 const modulesMap = {
+    NgZorroAntdModule: 'ng-zorro-antd',
     FormsModule: '@angular/forms',
     HttpClientModule: '@angular/common/http'
 };

@@ -7,7 +7,6 @@
  */
 import { ElementRef, EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzTdComponent implements OnChanges {
     private elementRef;
     private nzUpdateHostClassService;
@@ -28,6 +27,4 @@ export declare class NzTdComponent implements OnChanges {
     setClassMap(): void;
     constructor(elementRef: ElementRef, nzUpdateHostClassService: NzUpdateHostClassService);
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTdComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTdComponent, "td:not(.nz-disable-td):not([mat-cell])", never, { 'nzChecked': "nzChecked", 'nzDisabled': "nzDisabled", 'nzIndeterminate': "nzIndeterminate", 'nzLeft': "nzLeft", 'nzRight': "nzRight", 'nzAlign': "nzAlign", 'nzIndentSize': "nzIndentSize", 'nzExpand': "nzExpand", 'nzShowExpand': "nzShowExpand", 'nzShowCheckbox': "nzShowCheckbox", 'nzBreakWord': "nzBreakWord" }, { 'nzCheckedChange': "nzCheckedChange", 'nzExpandChange': "nzExpandChange" }, never>;
 }

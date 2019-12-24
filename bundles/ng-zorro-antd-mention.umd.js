@@ -202,69 +202,93 @@
     }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-mention-suggestions.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMentionSuggestionDirective = /** @class */ (function () {
         function NzMentionSuggestionDirective() {
         }
-        /** @nocollapse */ NzMentionSuggestionDirective.ɵfac = function NzMentionSuggestionDirective_Factory(t) { return new (t || NzMentionSuggestionDirective)(); };
-        /** @nocollapse */ NzMentionSuggestionDirective.ɵdir = core.ɵɵdefineDirective({ type: NzMentionSuggestionDirective, selectors: [["", "nzMentionSuggestion", ""]], exportAs: ["nzMentionSuggestion"] });
+        NzMentionSuggestionDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzMentionSuggestion]',
+                        exportAs: 'nzMentionSuggestion'
+                    },] }
+        ];
         return NzMentionSuggestionDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMentionSuggestionDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzMentionSuggestion]',
-                    exportAs: 'nzMentionSuggestion'
-                }]
-        }], null, null); })();
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-mention.service.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMentionService = /** @class */ (function () {
         function NzMentionService() {
             this.triggerChange$ = new rxjs.Subject();
         }
-        NzMentionService.prototype.triggerChanged = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionService.prototype.triggerChanged = /**
+         * @return {?}
+         */
+        function () {
             return this.triggerChange$.asObservable();
         };
-        NzMentionService.prototype.registerTrigger = function (trigger) {
+        /**
+         * @param {?} trigger
+         * @return {?}
+         */
+        NzMentionService.prototype.registerTrigger = /**
+         * @param {?} trigger
+         * @return {?}
+         */
+        function (trigger) {
             if (this.trigger !== trigger) {
                 this.trigger = trigger;
                 this.triggerChange$.next(trigger);
             }
         };
-        NzMentionService.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionService.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.triggerChange$.complete();
         };
-        /** @nocollapse */ NzMentionService.ɵfac = function NzMentionService_Factory(t) { return new (t || NzMentionService)(); };
-        /** @nocollapse */ NzMentionService.ɵprov = core.ɵɵdefineInjectable({ token: NzMentionService, factory: NzMentionService.ɵfac });
+        NzMentionService.decorators = [
+            { type: core.Injectable }
+        ];
         return NzMentionService;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMentionService, [{
-            type: core.Injectable
-        }], null, null); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionService.prototype.trigger;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionService.prototype.triggerChange$;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-mention-trigger.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var _c0 = ["autocomplete", "off"];
+    /** @type {?} */
     var NZ_MENTION_TRIGGER_ACCESSOR = {
         provide: forms.NG_VALUE_ACCESSOR,
-        useExisting: core.forwardRef(function () { return NzMentionTriggerDirective; }),
+        useExisting: core.forwardRef((/**
+         * @return {?}
+         */
+        function () { return NzMentionTriggerDirective; })),
         multi: true
     };
     var NzMentionTriggerDirective = /** @class */ (function () {
@@ -277,27 +301,64 @@
             this.onKeydown = new core.EventEmitter();
             this.onClick = new core.EventEmitter();
         }
-        NzMentionTriggerDirective.prototype.completeEvents = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.completeEvents = /**
+         * @return {?}
+         */
+        function () {
             this.onFocusin.complete();
             this.onBlur.complete();
             this.onInput.complete();
             this.onKeydown.complete();
             this.onClick.complete();
         };
-        NzMentionTriggerDirective.prototype.focus = function (caretPos) {
+        /**
+         * @param {?=} caretPos
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.focus = /**
+         * @param {?=} caretPos
+         * @return {?}
+         */
+        function (caretPos) {
             this.el.nativeElement.focus();
             this.el.nativeElement.setSelectionRange(caretPos, caretPos);
         };
-        NzMentionTriggerDirective.prototype.insertMention = function (mention) {
+        /**
+         * @param {?} mention
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.insertMention = /**
+         * @param {?} mention
+         * @return {?}
+         */
+        function (mention) {
+            /** @type {?} */
             var value = this.el.nativeElement.value;
+            /** @type {?} */
             var insertValue = mention.mention.trim() + ' ';
-            var newValue = [value.slice(0, mention.startPos + 1), insertValue, value.slice(mention.endPos, value.length)].join('');
+            /** @type {?} */
+            var newValue = [
+                value.slice(0, mention.startPos + 1),
+                insertValue,
+                value.slice(mention.endPos, value.length)
+            ].join('');
             this.el.nativeElement.value = newValue;
             this.focus(mention.startPos + insertValue.length + 1);
             this.onChange(newValue);
             this.value = newValue;
         };
-        NzMentionTriggerDirective.prototype.writeValue = function (value) {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.writeValue = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this.value = value;
             if (typeof value === 'string') {
                 this.el.nativeElement.value = value;
@@ -306,117 +367,121 @@
                 this.el.nativeElement.value = '';
             }
         };
-        NzMentionTriggerDirective.prototype.registerOnChange = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.registerOnChange = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onChange = fn;
         };
-        NzMentionTriggerDirective.prototype.registerOnTouched = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.registerOnTouched = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onTouched = fn;
         };
-        NzMentionTriggerDirective.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             this.nzMentionService.registerTrigger(this);
         };
-        NzMentionTriggerDirective.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionTriggerDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.completeEvents();
         };
-        /** @nocollapse */ NzMentionTriggerDirective.ɵfac = function NzMentionTriggerDirective_Factory(t) { return new (t || NzMentionTriggerDirective)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(NzMentionService)); };
-        /** @nocollapse */ NzMentionTriggerDirective.ɵdir = core.ɵɵdefineDirective({ type: NzMentionTriggerDirective, selectors: [["input", "nzMentionTrigger", ""], ["textarea", "nzMentionTrigger", ""]], hostBindings: function NzMentionTriggerDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵlistener("focusin", function NzMentionTriggerDirective_focusin_HostBindingHandler($event) { return ctx.onFocusin.emit(); })("blur", function NzMentionTriggerDirective_blur_HostBindingHandler($event) { return ctx.onBlur.emit(); })("input", function NzMentionTriggerDirective_input_HostBindingHandler($event) { return ctx.onInput.emit($event); })("keydown", function NzMentionTriggerDirective_keydown_HostBindingHandler($event) { return ctx.onKeydown.emit($event); })("click", function NzMentionTriggerDirective_click_HostBindingHandler($event) { return ctx.onClick.emit($event); });
-                core.ɵɵelementHostAttrs(_c0);
-            } }, exportAs: ["nzMentionTrigger"], features: [core.ɵɵProvidersFeature([NZ_MENTION_TRIGGER_ACCESSOR])] });
+        NzMentionTriggerDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
+                        exportAs: 'nzMentionTrigger',
+                        providers: [NZ_MENTION_TRIGGER_ACCESSOR],
+                        host: {
+                            autocomplete: 'off',
+                            '(focusin)': 'onFocusin.emit()',
+                            '(blur)': 'onBlur.emit()',
+                            '(input)': 'onInput.emit($event)',
+                            '(keydown)': 'onKeydown.emit($event)',
+                            '(click)': 'onClick.emit($event)'
+                        }
+                    },] }
+        ];
+        /** @nocollapse */
+        NzMentionTriggerDirective.ctorParameters = function () { return [
+            { type: core.ElementRef },
+            { type: NzMentionService }
+        ]; };
         return NzMentionTriggerDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMentionTriggerDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
-                    exportAs: 'nzMentionTrigger',
-                    providers: [NZ_MENTION_TRIGGER_ACCESSOR],
-                    host: {
-                        autocomplete: 'off',
-                        '(focusin)': 'onFocusin.emit()',
-                        '(blur)': 'onBlur.emit()',
-                        '(input)': 'onInput.emit($event)',
-                        '(keydown)': 'onKeydown.emit($event)',
-                        '(click)': 'onClick.emit($event)'
-                    }
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: NzMentionService }]; }, null); })();
+    if (false) {
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onChange;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onTouched;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onFocusin;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onBlur;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onInput;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onKeydown;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.onClick;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.value;
+        /** @type {?} */
+        NzMentionTriggerDirective.prototype.el;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionTriggerDirective.prototype.nzMentionService;
+    }
 
-    function NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    var _c0$1 = function (a0) { return { $implicit: a0 }; };
-    function NzMentionComponent_ng_template_1_li_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template, 1, 0, "ng-container", 7);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var suggestion_r587 = core.ɵɵnextContext().$implicit;
-        var ctx_r589 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r589.suggestionTemplate)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c0$1, suggestion_r587));
-    } }
-    function NzMentionComponent_ng_template_1_li_1_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtext(0);
-    } if (rf & 2) {
-        var suggestion_r587 = core.ɵɵnextContext().$implicit;
-        var ctx_r591 = core.ɵɵnextContext(2);
-        core.ɵɵtextInterpolate(ctx_r591.nzValueWith(suggestion_r587));
-    } }
-    function NzMentionComponent_ng_template_1_li_1_Template(rf, ctx) { if (rf & 1) {
-        var _r596 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "li", 4);
-        core.ɵɵlistener("mousedown", function NzMentionComponent_ng_template_1_li_1_Template_li_mousedown_0_listener($event) { core.ɵɵrestoreView(_r596); return $event.preventDefault(); })("click", function NzMentionComponent_ng_template_1_li_1_Template_li_click_0_listener($event) { core.ɵɵrestoreView(_r596); var suggestion_r587 = ctx.$implicit; var ctx_r597 = core.ɵɵnextContext(2); return ctx_r597.selectSuggestion(suggestion_r587); });
-        core.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_ng_container_1_Template, 2, 4, "ng-container", 5);
-        core.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_1_ng_template_2_Template, 1, 1, "ng-template", null, 6, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var i_r588 = ctx.index;
-        var _r590 = core.ɵɵreference(3);
-        var ctx_r585 = core.ɵɵnextContext(2);
-        core.ɵɵclassProp("focus", i_r588 === ctx_r585.activeIndex);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r585.suggestionTemplate)("ngIfElse", _r590);
-    } }
-    function NzMentionComponent_ng_template_1_li_2_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span");
-        core.ɵɵelement(1, "i", 10);
-        core.ɵɵelementEnd();
-    } }
-    function NzMentionComponent_ng_template_1_li_2_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span");
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r599 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r599.nzNotFoundContent);
-    } }
-    function NzMentionComponent_ng_template_1_li_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "li", 8);
-        core.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_2_span_1_Template, 2, 0, "span", 9);
-        core.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_2_span_2_Template, 2, 1, "span", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r586 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r586.nzLoading);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r586.nzLoading);
-    } }
-    function NzMentionComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "ul", 1);
-        core.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_Template, 4, 3, "li", 2);
-        core.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_2_Template, 3, 2, "li", 3);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r584 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r584.filteredSuggestions);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r584.filteredSuggestions.length === 0);
-    } }
-    var _c1 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-mention.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function MentionOnSearchTypes() { }
+    if (false) {
+        /** @type {?} */
+        MentionOnSearchTypes.prototype.value;
+        /** @type {?} */
+        MentionOnSearchTypes.prototype.prefix;
+    }
+    /**
+     * @record
+     */
+    function Mention() { }
+    if (false) {
+        /** @type {?} */
+        Mention.prototype.startPos;
+        /** @type {?} */
+        Mention.prototype.endPos;
+        /** @type {?} */
+        Mention.prototype.mention;
+    }
     var NzMentionComponent = /** @class */ (function () {
         function NzMentionComponent(ngDocument, // tslint:disable-line:no-any
         changeDetectorRef, overlay, viewContainerRef, nzMentionService) {
@@ -425,7 +490,12 @@
             this.overlay = overlay;
             this.viewContainerRef = viewContainerRef;
             this.nzMentionService = nzMentionService;
-            this.nzValueWith = function (value) { return value; }; // tslint:disable-line:no-any
+            this.nzValueWith = (/**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) { return value; }); // tslint:disable-line:no-any
+            // tslint:disable-line:no-any
             this.nzPrefix = '@';
             this.nzLoading = false;
             this.nzNotFoundContent = '无匹配结果，轻敲空格完成输入';
@@ -436,11 +506,16 @@
             this.isOpen = false;
             this.filteredSuggestions = [];
             this.suggestionTemplate = null; // tslint:disable-line:no-any
+            // tslint:disable-line:no-any
             this.activeIndex = -1;
             this.previousValue = null;
         }
         Object.defineProperty(NzMentionComponent.prototype, "suggestionChild", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 if (value) {
                     this.suggestionTemplate = value;
                 }
@@ -449,22 +524,44 @@
             configurable: true
         });
         Object.defineProperty(NzMentionComponent.prototype, "triggerNativeElement", {
-            get: function () {
+            get: /**
+             * @private
+             * @return {?}
+             */
+            function () {
                 return this.trigger.el.nativeElement;
             },
             enumerable: true,
             configurable: true
         });
-        NzMentionComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.nzMentionService.triggerChanged().subscribe(function (trigger) {
+            this.nzMentionService.triggerChanged().subscribe((/**
+             * @param {?} trigger
+             * @return {?}
+             */
+            function (trigger) {
                 _this.trigger = trigger;
                 _this.bindTriggerEvents();
                 _this.closeDropdown();
                 _this.overlayRef = null;
-            });
+            }));
         };
-        NzMentionComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzMentionComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.hasOwnProperty('nzSuggestions')) {
                 if (this.isOpen) {
                     this.previousValue = null;
@@ -473,10 +570,22 @@
                 }
             }
         };
-        NzMentionComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.closeDropdown();
         };
-        NzMentionComponent.prototype.closeDropdown = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionComponent.prototype.closeDropdown = /**
+         * @return {?}
+         */
+        function () {
             if (this.overlayRef && this.overlayRef.hasAttached()) {
                 this.overlayRef.detach();
                 this.overlayBackdropClickSubscription.unsubscribe();
@@ -484,15 +593,36 @@
                 this.changeDetectorRef.markForCheck();
             }
         };
-        NzMentionComponent.prototype.openDropdown = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionComponent.prototype.openDropdown = /**
+         * @return {?}
+         */
+        function () {
             this.attachOverlay();
             this.isOpen = true;
             this.changeDetectorRef.markForCheck();
         };
-        NzMentionComponent.prototype.getMentions = function () {
+        /**
+         * @return {?}
+         */
+        NzMentionComponent.prototype.getMentions = /**
+         * @return {?}
+         */
+        function () {
             return this.trigger ? core$1.getMentions(this.trigger.value, this.nzPrefix) : [];
         };
-        NzMentionComponent.prototype.selectSuggestion = function (suggestion) {
+        /**
+         * @param {?} suggestion
+         * @return {?}
+         */
+        NzMentionComponent.prototype.selectSuggestion = /**
+         * @param {?} suggestion
+         * @return {?}
+         */
+        function (suggestion) {
+            /** @type {?} */
             var value = this.nzValueWith(suggestion);
             this.trigger.insertMention({
                 mention: value,
@@ -503,13 +633,35 @@
             this.closeDropdown();
             this.activeIndex = -1;
         };
-        NzMentionComponent.prototype.handleInput = function (event) {
-            var target = event.target;
+        /**
+         * @private
+         * @param {?} event
+         * @return {?}
+         */
+        NzMentionComponent.prototype.handleInput = /**
+         * @private
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
+            /** @type {?} */
+            var target = (/** @type {?} */ (event.target));
             this.trigger.onChange(target.value);
             this.trigger.value = target.value;
             this.resetDropdown();
         };
-        NzMentionComponent.prototype.handleKeydown = function (event) {
+        /**
+         * @private
+         * @param {?} event
+         * @return {?}
+         */
+        NzMentionComponent.prototype.handleKeydown = /**
+         * @private
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
+            /** @type {?} */
             var keyCode = event.keyCode;
             if (this.isOpen && keyCode === keycodes.ENTER && this.activeIndex !== -1 && this.filteredSuggestions.length) {
                 this.selectSuggestion(this.filteredSuggestions[this.activeIndex]);
@@ -536,17 +688,57 @@
                 }
             }
         };
-        NzMentionComponent.prototype.handleClick = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.handleClick = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             this.resetDropdown();
         };
-        NzMentionComponent.prototype.bindTriggerEvents = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.bindTriggerEvents = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.trigger.onInput.subscribe(function (e) { return _this.handleInput(e); });
-            this.trigger.onKeydown.subscribe(function (e) { return _this.handleKeydown(e); });
-            this.trigger.onClick.subscribe(function () { return _this.handleClick(); });
+            this.trigger.onInput.subscribe((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) { return _this.handleInput(e); }));
+            this.trigger.onKeydown.subscribe((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) { return _this.handleKeydown(e); }));
+            this.trigger.onClick.subscribe((/**
+             * @return {?}
+             */
+            function () { return _this.handleClick(); }));
         };
-        NzMentionComponent.prototype.suggestionsFilter = function (value, emit) {
+        /**
+         * @private
+         * @param {?} value
+         * @param {?} emit
+         * @return {?}
+         */
+        NzMentionComponent.prototype.suggestionsFilter = /**
+         * @private
+         * @param {?} value
+         * @param {?} emit
+         * @return {?}
+         */
+        function (value, emit) {
             var _this = this;
+            /** @type {?} */
             var suggestions = value.substring(1);
             if (this.previousValue === value) {
                 return;
@@ -554,18 +746,33 @@
             this.previousValue = value;
             if (emit) {
                 this.nzOnSearchChange.emit({
-                    value: this.cursorMention.substring(1),
-                    prefix: this.cursorMention[0]
+                    value: (/** @type {?} */ (this.cursorMention)).substring(1),
+                    prefix: (/** @type {?} */ (this.cursorMention))[0]
                 });
             }
+            /** @type {?} */
             var searchValue = suggestions.toLowerCase();
-            this.filteredSuggestions = this.nzSuggestions.filter(function (suggestion) {
+            this.filteredSuggestions = this.nzSuggestions.filter((/**
+             * @param {?} suggestion
+             * @return {?}
+             */
+            function (suggestion) {
                 return _this.nzValueWith(suggestion)
                     .toLowerCase()
                     .includes(searchValue);
-            });
+            }));
         };
-        NzMentionComponent.prototype.resetDropdown = function (emit) {
+        /**
+         * @private
+         * @param {?=} emit
+         * @return {?}
+         */
+        NzMentionComponent.prototype.resetDropdown = /**
+         * @private
+         * @param {?=} emit
+         * @return {?}
+         */
+        function (emit) {
             if (emit === void 0) { emit = true; }
             this.resetCursorMention();
             if (typeof this.cursorMention !== 'string' || !this.canOpen()) {
@@ -573,32 +780,76 @@
                 return;
             }
             this.suggestionsFilter(this.cursorMention, emit);
+            /** @type {?} */
             var activeIndex = this.filteredSuggestions.indexOf(this.cursorMention.substring(1));
             this.activeIndex = activeIndex >= 0 ? activeIndex : 0;
             this.openDropdown();
         };
-        NzMentionComponent.prototype.setNextItemActive = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.setNextItemActive = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             this.activeIndex = this.activeIndex + 1 <= this.filteredSuggestions.length - 1 ? this.activeIndex + 1 : 0;
             this.changeDetectorRef.markForCheck();
         };
-        NzMentionComponent.prototype.setPreviousItemActive = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.setPreviousItemActive = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             this.activeIndex = this.activeIndex - 1 < 0 ? this.filteredSuggestions.length - 1 : this.activeIndex - 1;
             this.changeDetectorRef.markForCheck();
         };
-        NzMentionComponent.prototype.canOpen = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.canOpen = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var element = this.triggerNativeElement;
             return !element.readOnly && !element.disabled;
         };
-        NzMentionComponent.prototype.resetCursorMention = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.resetCursorMention = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var value = this.triggerNativeElement.value.replace(/[\r\n]/g, ' ') || '';
-            var selectionStart = this.triggerNativeElement.selectionStart;
+            /** @type {?} */
+            var selectionStart = (/** @type {?} */ (this.triggerNativeElement.selectionStart));
+            /** @type {?} */
             var prefix = typeof this.nzPrefix === 'string' ? [this.nzPrefix] : this.nzPrefix;
+            /** @type {?} */
             var i = prefix.length;
             while (i >= 0) {
+                /** @type {?} */
                 var startPos = value.lastIndexOf(prefix[i], selectionStart);
+                /** @type {?} */
                 var endPos = value.indexOf(' ', selectionStart) > -1 ? value.indexOf(' ', selectionStart) : value.length;
+                /** @type {?} */
                 var mention = value.substring(startPos, endPos);
-                if ((startPos > 0 && value[startPos - 1] !== ' ') || startPos < 0 || mention.includes(prefix[i], 1) || mention.includes(' ')) {
+                if ((startPos > 0 && value[startPos - 1] !== ' ') ||
+                    startPos < 0 ||
+                    mention.includes(prefix[i], 1) ||
+                    mention.includes(' ')) {
                     this.cursorMention = null;
                     this.cursorMentionStart = -1;
                     this.cursorMentionEnd = -1;
@@ -612,12 +863,23 @@
                 i--;
             }
         };
-        NzMentionComponent.prototype.updatePositions = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.updatePositions = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var coordinates = core$1.getCaretCoordinates(this.triggerNativeElement, this.cursorMentionStart);
+            /** @type {?} */
             var top = coordinates.top -
                 this.triggerNativeElement.getBoundingClientRect().height -
                 this.triggerNativeElement.scrollTop +
                 (this.nzPlacement === 'bottom' ? coordinates.height - 6 : -6);
+            /** @type {?} */
             var left = coordinates.left - this.triggerNativeElement.scrollLeft;
             this.positionStrategy.withDefaultOffsetX(left).withDefaultOffsetY(top);
             if (this.nzPlacement === 'bottom') {
@@ -628,19 +890,39 @@
             }
             this.positionStrategy.apply();
         };
-        NzMentionComponent.prototype.subscribeOverlayBackdropClick = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.subscribeOverlayBackdropClick = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            return rxjs.merge(rxjs.fromEvent(this.ngDocument, 'click'), rxjs.fromEvent(this.ngDocument, 'touchend')).subscribe(function (event) {
-                var clickTarget = event.target;
+            return rxjs.merge(rxjs.fromEvent(this.ngDocument, 'click'), rxjs.fromEvent(this.ngDocument, 'touchend')).subscribe((/**
+             * @param {?} event
+             * @return {?}
+             */
+            function (event) {
+                /** @type {?} */
+                var clickTarget = (/** @type {?} */ (event.target));
                 if (_this.isOpen &&
                     clickTarget !== _this.trigger.el.nativeElement &&
-                    !!_this.overlayRef &&
-                    !_this.overlayRef.overlayElement.contains(clickTarget)) {
+                    (!!_this.overlayRef && !_this.overlayRef.overlayElement.contains(clickTarget))) {
                     _this.closeDropdown();
                 }
-            });
+            }));
         };
-        NzMentionComponent.prototype.attachOverlay = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.attachOverlay = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (!this.overlayRef) {
                 this.portal = new portal.TemplatePortal(this.suggestionsTemp, this.viewContainerRef);
                 this.overlayRef = this.overlay.create(this.getOverlayConfig());
@@ -651,13 +933,30 @@
             }
             this.updatePositions();
         };
-        NzMentionComponent.prototype.getOverlayConfig = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.getOverlayConfig = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             return new overlay.OverlayConfig({
                 positionStrategy: this.getOverlayPosition(),
                 scrollStrategy: this.overlay.scrollStrategies.reposition()
             });
         };
-        NzMentionComponent.prototype.getOverlayPosition = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzMentionComponent.prototype.getOverlayPosition = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var positions = [
                 new overlay.ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'top' }),
                 new overlay.ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'start', overlayY: 'bottom' })
@@ -670,87 +969,158 @@
                 .withPush(false);
             return this.positionStrategy;
         };
-        /** @nocollapse */ NzMentionComponent.ɵfac = function NzMentionComponent_Factory(t) { return new (t || NzMentionComponent)(core.ɵɵdirectiveInject(common.DOCUMENT, 8), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(overlay.Overlay), core.ɵɵdirectiveInject(core.ViewContainerRef), core.ɵɵdirectiveInject(NzMentionService)); };
-        /** @nocollapse */ NzMentionComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzMentionComponent, selectors: [["nz-mention"]], contentQueries: function NzMentionComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵcontentQuery(dirIndex, NzMentionSuggestionDirective, true, core.TemplateRef);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.suggestionChild = _t.first);
-            } }, viewQuery: function NzMentionComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵviewQuery(core.TemplateRef, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.suggestionsTemp = _t.first);
-            } }, inputs: { nzValueWith: "nzValueWith", nzPrefix: "nzPrefix", nzLoading: "nzLoading", nzNotFoundContent: "nzNotFoundContent", nzPlacement: "nzPlacement", nzSuggestions: "nzSuggestions" }, outputs: { nzOnSelect: "nzOnSelect", nzOnSearchChange: "nzOnSearchChange" }, exportAs: ["nzMention"], features: [core.ɵɵProvidersFeature([NzMentionService]), core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["suggestions", ""], [1, "ant-mention-dropdown"], ["class", "ant-mention-dropdown-item", 3, "focus", "mousedown", "click", 4, "ngFor", "ngForOf"], ["class", "ant-mention-dropdown-notfound ant-mention-dropdown-item", 4, "ngIf"], [1, "ant-mention-dropdown-item", 3, "mousedown", "click"], [4, "ngIf", "ngIfElse"], ["defaultSuggestion", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-mention-dropdown-notfound", "ant-mention-dropdown-item"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzMentionComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵprojection(0);
-                core.ɵɵtemplate(1, NzMentionComponent_ng_template_1_Template, 3, 2, "ng-template", null, 0, core.ɵɵtemplateRefExtractor);
-            } }, directives: [common.NgForOf, common.NgIf, common.NgTemplateOutlet, icon.NzIconDirective], styles: [".ant-mention-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }"], changeDetection: 0 });
+        NzMentionComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-mention',
+                        exportAs: 'nzMention',
+                        template: "<ng-content></ng-content>\n<ng-template #suggestions>\n  <ul class=\"ant-mention-dropdown\">\n    <li class=\"ant-mention-dropdown-item\"\n        *ngFor=\"let suggestion of filteredSuggestions; let i = index\"\n        [class.focus]=\"i === activeIndex\"\n        (mousedown)=\"$event.preventDefault()\"\n        (click)=\"selectSuggestion(suggestion)\">\n      <ng-container *ngIf=\"suggestionTemplate else defaultSuggestion\">\n        <ng-container *ngTemplateOutlet=\"suggestionTemplate; context: {$implicit: suggestion}\"></ng-container>\n      </ng-container>\n      <ng-template #defaultSuggestion>{{ nzValueWith(suggestion) }}</ng-template>\n    </li>\n    <li class=\"ant-mention-dropdown-notfound ant-mention-dropdown-item\"\n        *ngIf=\"filteredSuggestions.length === 0\">\n      <span *ngIf=\"nzLoading\"><i nz-icon nzType=\"loading\"></i></span>\n      <span *ngIf=\"!nzLoading\">{{ nzNotFoundContent }}</span>\n    </li>\n  </ul>\n</ng-template>\n",
+                        preserveWhitespaces: false,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        providers: [NzMentionService],
+                        styles: ["\n      .ant-mention-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzMentionComponent.ctorParameters = function () { return [
+            { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [common.DOCUMENT,] }] },
+            { type: core.ChangeDetectorRef },
+            { type: overlay.Overlay },
+            { type: core.ViewContainerRef },
+            { type: NzMentionService }
+        ]; };
+        NzMentionComponent.propDecorators = {
+            nzValueWith: [{ type: core.Input }],
+            nzPrefix: [{ type: core.Input }],
+            nzLoading: [{ type: core.Input }],
+            nzNotFoundContent: [{ type: core.Input }],
+            nzPlacement: [{ type: core.Input }],
+            nzSuggestions: [{ type: core.Input }],
+            nzOnSelect: [{ type: core.Output }],
+            nzOnSearchChange: [{ type: core.Output }],
+            suggestionsTemp: [{ type: core.ViewChild, args: [core.TemplateRef, { static: false },] }],
+            suggestionChild: [{ type: core.ContentChild, args: [NzMentionSuggestionDirective, { static: false, read: core.TemplateRef },] }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzMentionComponent.prototype, "nzLoading", void 0);
         return NzMentionComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMentionComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-mention',
-                    exportAs: 'nzMention',
-                    templateUrl: './nz-mention.component.html',
-                    preserveWhitespaces: false,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    providers: [NzMentionService],
-                    styles: [
-                        "\n      .ant-mention-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: undefined, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Inject,
-                    args: [common.DOCUMENT]
-                }] }, { type: core.ChangeDetectorRef }, { type: overlay.Overlay }, { type: core.ViewContainerRef }, { type: NzMentionService }]; }, { nzValueWith: [{
-                type: core.Input
-            }], nzPrefix: [{
-                type: core.Input
-            }], nzLoading: [{
-                type: core.Input
-            }], nzNotFoundContent: [{
-                type: core.Input
-            }], nzPlacement: [{
-                type: core.Input
-            }], nzSuggestions: [{
-                type: core.Input
-            }], nzOnSelect: [{
-                type: core.Output
-            }], nzOnSearchChange: [{
-                type: core.Output
-            }], suggestionsTemp: [{
-                type: core.ViewChild,
-                args: [core.TemplateRef, { static: false }]
-            }], suggestionChild: [{
-                type: core.ContentChild,
-                args: [NzMentionSuggestionDirective, { static: false, read: core.TemplateRef }]
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzMentionComponent.prototype.nzValueWith;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzPrefix;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzLoading;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzNotFoundContent;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzPlacement;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzSuggestions;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzOnSelect;
+        /** @type {?} */
+        NzMentionComponent.prototype.nzOnSearchChange;
+        /** @type {?} */
+        NzMentionComponent.prototype.trigger;
+        /** @type {?} */
+        NzMentionComponent.prototype.suggestionsTemp;
+        /** @type {?} */
+        NzMentionComponent.prototype.isOpen;
+        /** @type {?} */
+        NzMentionComponent.prototype.filteredSuggestions;
+        /** @type {?} */
+        NzMentionComponent.prototype.suggestionTemplate;
+        /** @type {?} */
+        NzMentionComponent.prototype.activeIndex;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.previousValue;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.cursorMention;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.cursorMentionStart;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.cursorMentionEnd;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.overlayRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.portal;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.positionStrategy;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.overlayBackdropClickSubscription;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.ngDocument;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.changeDetectorRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.overlay;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.viewContainerRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzMentionComponent.prototype.nzMentionService;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-mention.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var COMPONENTS = [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective];
     var NzMentionModule = /** @class */ (function () {
         function NzMentionModule() {
         }
-        /** @nocollapse */ NzMentionModule.ɵmod = core.ɵɵdefineNgModule({ type: NzMentionModule });
-        /** @nocollapse */ NzMentionModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzMentionModule_Factory(t) { return new (t || NzMentionModule)(); }, imports: [[common.CommonModule, forms.FormsModule, overlay.OverlayModule, icon.NzIconModule]] });
+        NzMentionModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, forms.FormsModule, overlay.OverlayModule, icon.NzIconModule],
+                        declarations: __spread(COMPONENTS),
+                        exports: __spread(COMPONENTS)
+                    },] }
+        ];
         return NzMentionModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzMentionModule, { declarations: [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective], imports: [common.CommonModule, forms.FormsModule, overlay.OverlayModule, icon.NzIconModule], exports: [NzMentionComponent, NzMentionTriggerDirective, NzMentionSuggestionDirective] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMentionModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, forms.FormsModule, overlay.OverlayModule, icon.NzIconModule],
-                    declarations: __spread(COMPONENTS),
-                    exports: __spread(COMPONENTS)
-                }]
-        }], null, null); })();
 
     exports.NZ_MENTION_TRIGGER_ACCESSOR = NZ_MENTION_TRIGGER_ACCESSOR;
     exports.NzMentionComponent = NzMentionComponent;

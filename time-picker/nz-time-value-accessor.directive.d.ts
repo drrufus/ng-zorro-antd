@@ -8,7 +8,6 @@
 import { ElementRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { DateHelperService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class NzTimeValueAccessorDirective implements ControlValueAccessor {
     private dateHelper;
     private elementRef;
@@ -24,6 +23,4 @@ export declare class NzTimeValueAccessorDirective implements ControlValueAccesso
     writeValue(value: Date): void;
     registerOnChange(fn: (value: Date) => void): void;
     registerOnTouched(fn: () => void): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTimeValueAccessorDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzTimeValueAccessorDirective, "input[nzTime]", ["nzTime"], { 'nzTime': "nzTime" }, {}, never>;
 }

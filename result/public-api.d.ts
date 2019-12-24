@@ -8,6 +8,6 @@
 export * from './nz-result.module';
 export * from './nz-result.component';
 export * from './nz-result-cells';
-export { NzResultNotFoundComponent as ɵNzResultNotFoundComponent } from './partial/not-found';
-export { NzResultServerErrorComponent as ɵNzResultServerErrorComponent } from './partial/server-error.component';
-export { NzResultUnauthorizedComponent as ɵNzResultUnauthorizedComponent } from './partial/unauthorized';
+export { NzResultNotFoundComponent as θNzResultNotFoundComponent } from './partial/not-found';
+export { NzResultServerErrorComponent as θNzResultServerErrorComponent } from './partial/server-error.component';
+export { NzResultUnauthorizedComponent as θNzResultUnauthorizedComponent } from './partial/unauthorized';

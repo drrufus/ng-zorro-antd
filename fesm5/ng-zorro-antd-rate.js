@@ -1,91 +1,20 @@
 import { __decorate, __metadata } from 'tslib';
 import { RIGHT_ARROW, LEFT_ARROW } from '@angular/cdk/keycodes';
-import { ɵɵelement, EventEmitter, ɵɵdefineComponent, ɵɵelementStart, ɵɵlistener, ɵɵtemplate, ɵɵelementEnd, ɵɵtemplateRefExtractor, ɵɵreference, ɵɵadvance, ɵɵproperty, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, ɵɵgetCurrentView, ɵɵrestoreView, ɵɵnextContext, ɵɵdirectiveInject, Renderer2, ChangeDetectorRef, ɵɵviewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵProvidersFeature, forwardRef, ɵɵNgOnChangesFeature, ɵɵclassProp, ViewChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, forwardRef, Renderer2, ChangeDetectorRef, ViewChild, Input, Output, NgModule } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
-import { InputBoolean, NzConfigService, WithConfig } from 'ng-zorro-antd/core';
-import { NgTemplateOutlet, NgClass, NgForOf, CommonModule } from '@angular/common';
-import { NzTooltipDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
+import { NzConfigService, WithConfig, InputBoolean } from 'ng-zorro-antd/core';
+import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
-var _c0 = ["nz-rate-item", ""];
-function NzRateItemComponent_ng_template_1_Template(rf, ctx) { }
-function NzRateItemComponent_ng_template_3_Template(rf, ctx) { }
-function NzRateItemComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 4);
-} }
-var NzRateItemComponent = /** @class */ (function () {
-    function NzRateItemComponent() {
-        this.allowHalf = false;
-        this.itemHover = new EventEmitter();
-        this.itemClick = new EventEmitter();
-    }
-    NzRateItemComponent.prototype.hoverRate = function (isHalf) {
-        this.itemHover.next(isHalf && this.allowHalf);
-    };
-    NzRateItemComponent.prototype.clickRate = function (isHalf) {
-        this.itemClick.next(isHalf && this.allowHalf);
-    };
-    /** @nocollapse */ NzRateItemComponent.ɵfac = function NzRateItemComponent_Factory(t) { return new (t || NzRateItemComponent)(); };
-    /** @nocollapse */ NzRateItemComponent.ɵcmp = ɵɵdefineComponent({ type: NzRateItemComponent, selectors: [["", "nz-rate-item", ""]], inputs: { character: "character", allowHalf: "allowHalf" }, outputs: { itemHover: "itemHover", itemClick: "itemClick" }, exportAs: ["nzRateItem"], attrs: _c0, decls: 6, vars: 2, consts: [[1, "ant-rate-star-second", 3, "mouseover", "click"], [3, "ngTemplateOutlet"], [1, "ant-rate-star-first", 3, "mouseover", "click"], ["defaultCharacter", ""], ["nz-icon", "", "nzType", "star", "nzTheme", "fill"]], template: function NzRateItemComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "div", 0);
-            ɵɵlistener("mouseover", function NzRateItemComponent_Template_div_mouseover_0_listener($event) { ctx.hoverRate(false); return $event.stopPropagation(); })("click", function NzRateItemComponent_Template_div_click_0_listener($event) { return ctx.clickRate(false); });
-            ɵɵtemplate(1, NzRateItemComponent_ng_template_1_Template, 0, 0, "ng-template", 1);
-            ɵɵelementEnd();
-            ɵɵelementStart(2, "div", 2);
-            ɵɵlistener("mouseover", function NzRateItemComponent_Template_div_mouseover_2_listener($event) { ctx.hoverRate(true); return $event.stopPropagation(); })("click", function NzRateItemComponent_Template_div_click_2_listener($event) { return ctx.clickRate(true); });
-            ɵɵtemplate(3, NzRateItemComponent_ng_template_3_Template, 0, 0, "ng-template", 1);
-            ɵɵelementEnd();
-            ɵɵtemplate(4, NzRateItemComponent_ng_template_4_Template, 1, 0, "ng-template", null, 3, ɵɵtemplateRefExtractor);
-        } if (rf & 2) {
-            var _r702 = ɵɵreference(5);
-            ɵɵadvance(1);
-            ɵɵproperty("ngTemplateOutlet", ctx.character || _r702);
-            ɵɵadvance(2);
-            ɵɵproperty("ngTemplateOutlet", ctx.character || _r702);
-        } }, directives: [NgTemplateOutlet, NzIconDirective], encapsulation: 2, changeDetection: 0 });
-    __decorate([
-        InputBoolean(),
-        __metadata("design:type", Boolean)
-    ], NzRateItemComponent.prototype, "allowHalf", void 0);
-    return NzRateItemComponent;
-}());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzRateItemComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: '[nz-rate-item]',
-                exportAs: 'nzRateItem',
-                templateUrl: './nz-rate-item.component.html'
-            }]
-    }], null, { character: [{
-            type: Input
-        }], allowHalf: [{
-            type: Input
-        }], itemHover: [{
-            type: Output
-        }], itemClick: [{
-            type: Output
-        }] }); })();
-
-var _c0$1 = ["ulElement"];
-function NzRateComponent_li_2_Template(rf, ctx) { if (rf & 1) {
-    var _r698 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "li", 3);
-    ɵɵelementStart(1, "div", 4);
-    ɵɵlistener("itemHover", function NzRateComponent_li_2_Template_div_itemHover_1_listener($event) { ɵɵrestoreView(_r698); var i_r696 = ctx.index; var ctx_r697 = ɵɵnextContext(); return ctx_r697.onItemHover(i_r696, $event); })("itemClick", function NzRateComponent_li_2_Template_div_itemClick_1_listener($event) { ɵɵrestoreView(_r698); var i_r696 = ctx.index; var ctx_r699 = ɵɵnextContext(); return ctx_r699.onItemClick(i_r696, $event); });
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var star_r695 = ctx.$implicit;
-    var i_r696 = ctx.index;
-    var ctx_r694 = ɵɵnextContext();
-    ɵɵproperty("ngClass", ctx_r694.setClasses(star_r695))("nzTitle", ctx_r694.nzTooltips[i_r696]);
-    ɵɵadvance(1);
-    ɵɵproperty("allowHalf", ctx_r694.nzAllowHalf)("character", ctx_r694.nzCharacter);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-rate.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'rate';
 var NzRateComponent = /** @class */ (function () {
     function NzRateComponent(nzConfigService, renderer, cdr) {
@@ -109,14 +38,27 @@ var NzRateComponent = /** @class */ (function () {
         this.destroy$ = new Subject();
         this._count = 5;
         this._value = 0;
-        this.onChange = function () { return null; };
-        this.onTouched = function () { return null; };
+        this.onChange = (/**
+         * @return {?}
+         */
+        function () { return null; });
+        this.onTouched = (/**
+         * @return {?}
+         */
+        function () { return null; });
     }
     Object.defineProperty(NzRateComponent.prototype, "nzCount", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._count;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (this._count === value) {
                 return;
             }
@@ -127,10 +69,17 @@ var NzRateComponent = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzRateComponent.prototype, "nzValue", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._value;
         },
-        set: function (input) {
+        set: /**
+         * @param {?} input
+         * @return {?}
+         */
+        function (input) {
             if (this._value === input) {
                 return;
             }
@@ -141,7 +90,15 @@ var NzRateComponent = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NzRateComponent.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzRateComponent.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         if (changes.nzAutoFocus && !changes.nzAutoFocus.isFirstChange()) {
             if (this.nzAutoFocus && !this.nzDisabled) {
                 this.renderer.setAttribute(this.ulElement.nativeElement, 'autofocus', 'autofocus');
@@ -151,26 +108,58 @@ var NzRateComponent = /** @class */ (function () {
             }
         }
     };
-    NzRateComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         this.updateStarArray();
         this.nzConfigService
             .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
             .pipe(takeUntil(this.destroy$))
-            .subscribe(function () { return _this.cdr.markForCheck(); });
+            .subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.cdr.markForCheck(); }));
     };
-    NzRateComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzRateComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         this.isInit = true;
     };
-    NzRateComponent.prototype.onItemClick = function (index, isHalf) {
+    /**
+     * @param {?} index
+     * @param {?} isHalf
+     * @return {?}
+     */
+    NzRateComponent.prototype.onItemClick = /**
+     * @param {?} index
+     * @param {?} isHalf
+     * @return {?}
+     */
+    function (index, isHalf) {
         if (this.nzDisabled) {
             return;
         }
         this.hoverValue = index + 1;
+        /** @type {?} */
         var actualValue = isHalf ? index + 0.5 : index + 1;
         if (this.nzValue === actualValue) {
             if (this.nzAllowClear) {
@@ -183,7 +172,17 @@ var NzRateComponent = /** @class */ (function () {
             this.onChange(this.nzValue);
         }
     };
-    NzRateComponent.prototype.onItemHover = function (index, isHalf) {
+    /**
+     * @param {?} index
+     * @param {?} isHalf
+     * @return {?}
+     */
+    NzRateComponent.prototype.onItemHover = /**
+     * @param {?} index
+     * @param {?} isHalf
+     * @return {?}
+     */
+    function (index, isHalf) {
         if (this.nzDisabled || (this.hoverValue === index + 1 && isHalf === this.hasHalf)) {
             return;
         }
@@ -191,25 +190,68 @@ var NzRateComponent = /** @class */ (function () {
         this.hasHalf = isHalf;
         this.nzOnHoverChange.emit(this.hoverValue);
     };
-    NzRateComponent.prototype.onRateLeave = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.onRateLeave = /**
+     * @return {?}
+     */
+    function () {
         this.hasHalf = !Number.isInteger(this.nzValue);
         this.hoverValue = Math.ceil(this.nzValue);
     };
-    NzRateComponent.prototype.onFocus = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzRateComponent.prototype.onFocus = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         this.isFocused = true;
         this.nzOnFocus.emit(e);
     };
-    NzRateComponent.prototype.onBlur = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzRateComponent.prototype.onBlur = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
         this.isFocused = false;
         this.nzOnBlur.emit(e);
     };
-    NzRateComponent.prototype.focus = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.focus = /**
+     * @return {?}
+     */
+    function () {
         this.ulElement.nativeElement.focus();
     };
-    NzRateComponent.prototype.blur = function () {
+    /**
+     * @return {?}
+     */
+    NzRateComponent.prototype.blur = /**
+     * @return {?}
+     */
+    function () {
         this.ulElement.nativeElement.blur();
     };
-    NzRateComponent.prototype.onKeyDown = function (e) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    NzRateComponent.prototype.onKeyDown = /**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) {
+        /** @type {?} */
         var oldVal = this.nzValue;
         if (e.keyCode === RIGHT_ARROW && this.nzValue < this.nzCount) {
             this.nzValue += this.nzAllowHalf ? 0.5 : 1;
@@ -223,7 +265,15 @@ var NzRateComponent = /** @class */ (function () {
             this.cdr.markForCheck();
         }
     };
-    NzRateComponent.prototype.setClasses = function (i) {
+    /**
+     * @param {?} i
+     * @return {?}
+     */
+    NzRateComponent.prototype.setClasses = /**
+     * @param {?} i
+     * @return {?}
+     */
+    function (i) {
         var _a;
         return _a = {},
             _a[this.innerPrefixCls + "-full"] = i + 1 < this.hoverValue || (!this.hasHalf && i + 1 === this.hoverValue),
@@ -233,48 +283,113 @@ var NzRateComponent = /** @class */ (function () {
             _a[this.innerPrefixCls + "-focused"] = this.hasHalf && i + 1 === this.hoverValue && this.isFocused,
             _a;
     };
-    NzRateComponent.prototype.updateStarArray = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzRateComponent.prototype.updateStarArray = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         this.starArray = Array(this.nzCount)
             .fill(0)
-            .map(function (_, i) { return i; });
+            .map((/**
+         * @param {?} _
+         * @param {?} i
+         * @return {?}
+         */
+        function (_, i) { return i; }));
     };
     // #region Implement `ControlValueAccessor`
-    NzRateComponent.prototype.writeValue = function (value) {
+    // #region Implement `ControlValueAccessor`
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzRateComponent.prototype.writeValue = 
+    // #region Implement `ControlValueAccessor`
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         this.nzValue = value || 0;
         this.cdr.markForCheck();
     };
-    NzRateComponent.prototype.setDisabledState = function (isDisabled) {
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    NzRateComponent.prototype.setDisabledState = /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
+    function (isDisabled) {
         this.nzDisabled = isDisabled;
     };
-    NzRateComponent.prototype.registerOnChange = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzRateComponent.prototype.registerOnChange = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onChange = fn;
     };
-    NzRateComponent.prototype.registerOnTouched = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzRateComponent.prototype.registerOnTouched = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onTouched = fn;
     };
-    /** @nocollapse */ NzRateComponent.ɵfac = function NzRateComponent_Factory(t) { return new (t || NzRateComponent)(ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ChangeDetectorRef)); };
-    /** @nocollapse */ NzRateComponent.ɵcmp = ɵɵdefineComponent({ type: NzRateComponent, selectors: [["nz-rate"]], viewQuery: function NzRateComponent_Query(rf, ctx) { if (rf & 1) {
-            ɵɵviewQuery(_c0$1, true);
-        } if (rf & 2) {
-            var _t;
-            ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.ulElement = _t.first);
-        } }, inputs: { nzAllowClear: "nzAllowClear", nzAllowHalf: "nzAllowHalf", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzCharacter: "nzCharacter", nzTooltips: "nzTooltips", nzCount: "nzCount" }, outputs: { nzOnBlur: "nzOnBlur", nzOnFocus: "nzOnFocus", nzOnHoverChange: "nzOnHoverChange", nzOnKeyDown: "nzOnKeyDown" }, exportAs: ["nzRate"], features: [ɵɵProvidersFeature([
-                {
-                    provide: NG_VALUE_ACCESSOR,
-                    useExisting: forwardRef((function () { return NzRateComponent; })),
-                    multi: true
-                }
-            ]), ɵɵNgOnChangesFeature()], decls: 3, vars: 4, consts: [[1, "ant-rate", 3, "ngClass", "tabindex", "blur", "focus", "keydown", "mouseleave"], ["ulElement", ""], ["class", "ant-rate-star", "nz-tooltip", "", 3, "ngClass", "nzTitle", 4, "ngFor", "ngForOf"], ["nz-tooltip", "", 1, "ant-rate-star", 3, "ngClass", "nzTitle"], ["nz-rate-item", "", 3, "allowHalf", "character", "itemHover", "itemClick"]], template: function NzRateComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "ul", 0, 1);
-            ɵɵlistener("blur", function NzRateComponent_Template_ul_blur_0_listener($event) { return ctx.onBlur($event); })("focus", function NzRateComponent_Template_ul_focus_0_listener($event) { return ctx.onFocus($event); })("keydown", function NzRateComponent_Template_ul_keydown_0_listener($event) { ctx.onKeyDown($event); return $event.preventDefault(); })("mouseleave", function NzRateComponent_Template_ul_mouseleave_0_listener($event) { ctx.onRateLeave(); return $event.stopPropagation(); });
-            ɵɵtemplate(2, NzRateComponent_li_2_Template, 2, 4, "li", 2);
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵclassProp("ant-rate-disabled", ctx.nzDisabled);
-            ɵɵproperty("ngClass", ctx.classMap)("tabindex", ctx.nzDisabled ? 0 - 1 : 1);
-            ɵɵadvance(2);
-            ɵɵproperty("ngForOf", ctx.starArray);
-        } }, directives: [NgClass, NgForOf, NzTooltipDirective, NzRateItemComponent], encapsulation: 2, changeDetection: 0 });
+    NzRateComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    selector: 'nz-rate',
+                    exportAs: 'nzRate',
+                    preserveWhitespaces: false,
+                    template: "<ul #ulElement\n  class=\"ant-rate\"\n  [class.ant-rate-disabled]=\"nzDisabled\"\n  [ngClass]=\"classMap\"\n  (blur)=\"onBlur($event)\"\n  (focus)=\"onFocus($event)\"\n  (keydown)=\"onKeyDown($event); $event.preventDefault();\"\n  (mouseleave)=\"onRateLeave(); $event.stopPropagation();\"\n  [tabindex]=\"nzDisabled ? -1 : 1\">\n  <li *ngFor=\"let star of starArray; let i = index\"\n    class=\"ant-rate-star\"\n    [ngClass]=\"setClasses(star)\"\n    nz-tooltip\n    [nzTitle]=\"nzTooltips[ i ]\">\n    <div nz-rate-item\n      [allowHalf]=\"nzAllowHalf\"\n      [character]=\"nzCharacter\"\n      (itemHover)=\"onItemHover(i, $event)\"\n      (itemClick)=\"onItemClick(i, $event)\">\n    </div>\n  </li>\n</ul>\n",
+                    providers: [
+                        {
+                            provide: NG_VALUE_ACCESSOR,
+                            useExisting: forwardRef((/**
+                             * @return {?}
+                             */
+                            function () { return NzRateComponent; })),
+                            multi: true
+                        }
+                    ]
+                }] }
+    ];
+    /** @nocollapse */
+    NzRateComponent.ctorParameters = function () { return [
+        { type: NzConfigService },
+        { type: Renderer2 },
+        { type: ChangeDetectorRef }
+    ]; };
+    NzRateComponent.propDecorators = {
+        ulElement: [{ type: ViewChild, args: ['ulElement', { static: false },] }],
+        nzAllowClear: [{ type: Input }],
+        nzAllowHalf: [{ type: Input }],
+        nzDisabled: [{ type: Input }],
+        nzAutoFocus: [{ type: Input }],
+        nzCharacter: [{ type: Input }],
+        nzTooltips: [{ type: Input }],
+        nzOnBlur: [{ type: Output }],
+        nzOnFocus: [{ type: Output }],
+        nzOnHoverChange: [{ type: Output }],
+        nzOnKeyDown: [{ type: Output }],
+        nzCount: [{ type: Input }]
+    };
     __decorate([
         WithConfig(NZ_CONFIG_COMPONENT_NAME, true), InputBoolean(),
         __metadata("design:type", Boolean)
@@ -293,84 +408,174 @@ var NzRateComponent = /** @class */ (function () {
     ], NzRateComponent.prototype, "nzAutoFocus", void 0);
     return NzRateComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzRateComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-rate',
-                exportAs: 'nzRate',
-                preserveWhitespaces: false,
-                templateUrl: './nz-rate.component.html',
-                providers: [
-                    {
-                        provide: NG_VALUE_ACCESSOR,
-                        useExisting: forwardRef((function () { return NzRateComponent; })),
-                        multi: true
-                    }
-                ]
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: Renderer2 }, { type: ChangeDetectorRef }]; }, { ulElement: [{
-            type: ViewChild,
-            args: ['ulElement', { static: false }]
-        }], nzAllowClear: [{
-            type: Input
-        }], nzAllowHalf: [{
-            type: Input
-        }], nzDisabled: [{
-            type: Input
-        }], nzAutoFocus: [{
-            type: Input
-        }], nzCharacter: [{
-            type: Input
-        }], nzTooltips: [{
-            type: Input
-        }], nzOnBlur: [{
-            type: Output
-        }], nzOnFocus: [{
-            type: Output
-        }], nzOnHoverChange: [{
-            type: Output
-        }], nzOnKeyDown: [{
-            type: Output
-        }], nzCount: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype.ulElement;
+    /** @type {?} */
+    NzRateComponent.prototype.nzAllowClear;
+    /** @type {?} */
+    NzRateComponent.prototype.nzAllowHalf;
+    /** @type {?} */
+    NzRateComponent.prototype.nzDisabled;
+    /** @type {?} */
+    NzRateComponent.prototype.nzAutoFocus;
+    /** @type {?} */
+    NzRateComponent.prototype.nzCharacter;
+    /** @type {?} */
+    NzRateComponent.prototype.nzTooltips;
+    /** @type {?} */
+    NzRateComponent.prototype.nzOnBlur;
+    /** @type {?} */
+    NzRateComponent.prototype.nzOnFocus;
+    /** @type {?} */
+    NzRateComponent.prototype.nzOnHoverChange;
+    /** @type {?} */
+    NzRateComponent.prototype.nzOnKeyDown;
+    /** @type {?} */
+    NzRateComponent.prototype.classMap;
+    /** @type {?} */
+    NzRateComponent.prototype.hasHalf;
+    /** @type {?} */
+    NzRateComponent.prototype.hoverValue;
+    /** @type {?} */
+    NzRateComponent.prototype.prefixCls;
+    /** @type {?} */
+    NzRateComponent.prototype.innerPrefixCls;
+    /** @type {?} */
+    NzRateComponent.prototype.isFocused;
+    /** @type {?} */
+    NzRateComponent.prototype.isInit;
+    /** @type {?} */
+    NzRateComponent.prototype.starArray;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype.destroy$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype._count;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype._value;
+    /** @type {?} */
+    NzRateComponent.prototype.onChange;
+    /** @type {?} */
+    NzRateComponent.prototype.onTouched;
+    /** @type {?} */
+    NzRateComponent.prototype.nzConfigService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRateComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-rate-item.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+var NzRateItemComponent = /** @class */ (function () {
+    function NzRateItemComponent() {
+        this.allowHalf = false;
+        this.itemHover = new EventEmitter();
+        this.itemClick = new EventEmitter();
+    }
+    /**
+     * @param {?} isHalf
+     * @return {?}
+     */
+    NzRateItemComponent.prototype.hoverRate = /**
+     * @param {?} isHalf
+     * @return {?}
+     */
+    function (isHalf) {
+        this.itemHover.next(isHalf && this.allowHalf);
+    };
+    /**
+     * @param {?} isHalf
+     * @return {?}
+     */
+    NzRateItemComponent.prototype.clickRate = /**
+     * @param {?} isHalf
+     * @return {?}
+     */
+    function (isHalf) {
+        this.itemClick.next(isHalf && this.allowHalf);
+    };
+    NzRateItemComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    selector: '[nz-rate-item]',
+                    exportAs: 'nzRateItem',
+                    template: "<div class=\"ant-rate-star-second\"\n  (mouseover)=\"hoverRate(false); $event.stopPropagation();\"\n  (click)=\"clickRate(false);\">\n  <ng-template [ngTemplateOutlet]=\"character || defaultCharacter\"></ng-template>\n</div>\n<div class=\"ant-rate-star-first\"\n  (mouseover)=\"hoverRate(true); $event.stopPropagation();\"\n  (click)=\"clickRate(true);\">\n  <ng-template [ngTemplateOutlet]=\"character || defaultCharacter\"></ng-template>\n</div>\n\n<ng-template #defaultCharacter>\n  <i nz-icon\n    nzType=\"star\"\n    nzTheme=\"fill\"></i>\n</ng-template>\n"
+                }] }
+    ];
+    NzRateItemComponent.propDecorators = {
+        character: [{ type: Input }],
+        allowHalf: [{ type: Input }],
+        itemHover: [{ type: Output }],
+        itemClick: [{ type: Output }]
+    };
+    __decorate([
+        InputBoolean(),
+        __metadata("design:type", Boolean)
+    ], NzRateItemComponent.prototype, "allowHalf", void 0);
+    return NzRateItemComponent;
+}());
+if (false) {
+    /** @type {?} */
+    NzRateItemComponent.prototype.character;
+    /** @type {?} */
+    NzRateItemComponent.prototype.allowHalf;
+    /** @type {?} */
+    NzRateItemComponent.prototype.itemHover;
+    /** @type {?} */
+    NzRateItemComponent.prototype.itemClick;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-rate.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzRateModule = /** @class */ (function () {
     function NzRateModule() {
     }
-    /** @nocollapse */ NzRateModule.ɵmod = ɵɵdefineNgModule({ type: NzRateModule });
-    /** @nocollapse */ NzRateModule.ɵinj = ɵɵdefineInjector({ factory: function NzRateModule_Factory(t) { return new (t || NzRateModule)(); }, imports: [[CommonModule, NzIconModule, NzToolTipModule]] });
+    NzRateModule.decorators = [
+        { type: NgModule, args: [{
+                    exports: [NzRateComponent],
+                    declarations: [NzRateComponent, NzRateItemComponent],
+                    imports: [CommonModule, NzIconModule, NzToolTipModule]
+                },] }
+    ];
     return NzRateModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzRateModule, { declarations: [NzRateComponent, NzRateItemComponent], imports: [CommonModule, NzIconModule, NzToolTipModule], exports: [NzRateComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzRateModule, [{
-        type: NgModule,
-        args: [{
-                exports: [NzRateComponent],
-                declarations: [NzRateComponent, NzRateItemComponent],
-                imports: [CommonModule, NzIconModule, NzToolTipModule]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-rate.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzRateComponent, NzRateItemComponent, NzRateModule };

@@ -9,7 +9,6 @@ import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { ExtendedMark, NzMarks, SliderHandler, SliderShowTooltip, SliderValue } from './nz-slider-definitions';
-import * as i0 from "@angular/core";
 export declare class NzSliderComponent implements ControlValueAccessor, OnInit, OnChanges, OnDestroy {
     private cdr;
     private platform;
@@ -111,6 +110,4 @@ export declare class NzSliderComponent implements ControlValueAccessor, OnInit, 
     private hideAllHandleTooltip;
     private generateHandles;
     private generateMarkItems;
-    static ɵfac: i0.ɵɵFactoryDef<NzSliderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSliderComponent, "nz-slider", ["nzSlider"], { 'nzDisabled': "nzDisabled", 'nzDots': "nzDots", 'nzIncluded': "nzIncluded", 'nzRange': "nzRange", 'nzVertical': "nzVertical", 'nzDefaultValue': "nzDefaultValue", 'nzMarks': "nzMarks", 'nzMax': "nzMax", 'nzMin': "nzMin", 'nzStep': "nzStep", 'nzTooltipVisible': "nzTooltipVisible", 'nzTooltipPlacement': "nzTooltipPlacement", 'nzTipFormatter': "nzTipFormatter" }, { 'nzOnAfterChange': "nzOnAfterChange" }, never>;
 }

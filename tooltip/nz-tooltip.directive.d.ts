@@ -7,10 +7,10 @@
  */
 import { ComponentFactory, ComponentFactoryResolver, ElementRef, Renderer2, ViewContainerRef } from '@angular/core';
 import { NzNoAnimationDirective, NzTSType } from 'ng-zorro-antd/core';
-import { NzTooltipBaseDirective } from './nz-tooltip-base.directive';
+import { NzTooltipBaseComponentLegacy } from './base/nz-tooltip-base-legacy.component';
+import { NzTooltipBaseDirective } from './base/nz-tooltip-base.directive';
 import { NzToolTipComponent } from './nz-tooltip.component';
 import { NzTooltipTrigger } from './nz-tooltip.definitions';
-import * as i0 from "@angular/core";
 export declare class NzTooltipDirective extends NzTooltipBaseDirective {
     /**
      * The title that should have highest priority.
@@ -23,7 +23,5 @@ export declare class NzTooltipDirective extends NzTooltipBaseDirective {
     specificTrigger: NzTooltipTrigger;
     specificPlacement: string;
     componentFactory: ComponentFactory<NzToolTipComponent>;
-    constructor(elementRef: ElementRef, hostView: ViewContainerRef, resolver: ComponentFactoryResolver, renderer: Renderer2, noAnimation?: NzNoAnimationDirective);
-    static ɵfac: i0.ɵɵFactoryDef<NzTooltipDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzTooltipDirective, "[nz-tooltip]", ["nzTooltip"], { 'specificTitle': "nzTooltipTitle", 'directiveNameTitle': "nz-tooltip", 'specificTrigger': "nzTooltipTrigger", 'specificPlacement': "nzTooltipPlacement" }, {}, never>;
+    constructor(elementRef: ElementRef, hostView: ViewContainerRef, resolver: ComponentFactoryResolver, renderer: Renderer2, _tooltip?: NzTooltipBaseComponentLegacy, noAnimation?: NzNoAnimationDirective);
 }

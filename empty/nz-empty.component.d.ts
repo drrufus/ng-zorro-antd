@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class NzEmptyComponent implements OnChanges, OnInit, OnDestroy {
     private sanitizer;
     private i18n;
@@ -27,6 +26,4 @@ export declare class NzEmptyComponent implements OnChanges, OnInit, OnDestroy {
     ngOnChanges(changes: SimpleChanges): void;
     ngOnInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzEmptyComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzEmptyComponent, "nz-empty", ["nzEmpty"], { 'nzNotFoundImage': "nzNotFoundImage", 'nzNotFoundContent': "nzNotFoundContent", 'nzNotFoundFooter': "nzNotFoundFooter" }, {}, never>;
 }

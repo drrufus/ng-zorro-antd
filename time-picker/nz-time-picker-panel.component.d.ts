@@ -10,7 +10,6 @@ import { ControlValueAccessor } from '@angular/forms';
 import { NzUpdateHostClassService as UpdateCls } from 'ng-zorro-antd/core';
 import { NzTimeValueAccessorDirective } from './nz-time-value-accessor.directive';
 import { TimeHolder } from './time-holder';
-import * as i0 from "@angular/core";
 export declare type NzTimePickerUnit = 'hour' | 'minute' | 'second' | '12-hour';
 export declare class NzTimePickerPanelComponent implements ControlValueAccessor, OnInit, OnDestroy, OnChanges {
     private element;
@@ -123,6 +122,4 @@ export declare class NzTimePickerPanelComponent implements ControlValueAccessor,
     writeValue(value: Date): void;
     registerOnChange(fn: (value: Date) => void): void;
     registerOnTouched(fn: () => void): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTimePickerPanelComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTimePickerPanelComponent, "nz-time-picker-panel", ["nzTimePickerPanel"], { 'nzInDatePicker': "nzInDatePicker", 'nzAddOn': "nzAddOn", 'nzHideDisabledOptions': "nzHideDisabledOptions", 'nzClearText': "nzClearText", 'nzPlaceHolder': "nzPlaceHolder", 'nzUse12Hours': "nzUse12Hours", 'opened': "opened", 'nzDefaultOpenValue': "nzDefaultOpenValue", 'nzAllowEmpty': "nzAllowEmpty", 'nzDisabledHours': "nzDisabledHours", 'nzDisabledMinutes': "nzDisabledMinutes", 'nzDisabledSeconds': "nzDisabledSeconds", 'format': "format", 'nzHourStep': "nzHourStep", 'nzMinuteStep': "nzMinuteStep", 'nzSecondStep': "nzSecondStep" }, {}, never>;
 }

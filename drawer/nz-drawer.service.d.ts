@@ -8,7 +8,6 @@
 import { Overlay } from '@angular/cdk/overlay';
 import { NzDrawerOptions, NzDrawerOptionsOfComponent } from './nz-drawer-options';
 import { NzDrawerRef } from './nz-drawer-ref';
-import * as i0 from "@angular/core";
 export declare class DrawerBuilderForService<R> {
     private overlay;
     private options;
@@ -24,6 +23,4 @@ export declare class NzDrawerService {
     private overlay;
     constructor(overlay: Overlay);
     create<T = any, D = any, R = any>(options: NzDrawerOptions<T, D>): NzDrawerRef<R>;
-    static ɵfac: i0.ɵɵFactoryDef<NzDrawerService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzDrawerService>;
 }

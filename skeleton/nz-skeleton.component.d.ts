@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, ElementRef, OnChanges, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 import { NzSkeletonAvatar, NzSkeletonParagraph, NzSkeletonTitle } from './nz-skeleton.type';
-import * as i0 from "@angular/core";
 export declare class NzSkeletonComponent implements OnInit, OnChanges {
     private cdr;
     nzActive: boolean;
@@ -30,6 +29,4 @@ export declare class NzSkeletonComponent implements OnInit, OnChanges {
     private updateProps;
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSkeletonComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSkeletonComponent, "nz-skeleton", ["nzSkeleton"], { 'nzActive': "nzActive", 'nzLoading': "nzLoading", 'nzTitle': "nzTitle", 'nzAvatar': "nzAvatar", 'nzParagraph': "nzParagraph" }, {}, never>;
 }

@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, OnDestroy, OnInit } from '@angular/core';
 import { NzMessageContainerComponent } from './nz-message-container.component';
 import { NzMessageDataFilled, NzMessageDataOptions } from './nz-message.definitions';
-import * as i0 from "@angular/core";
 export declare class NzMessageComponent implements OnInit, OnDestroy {
     private _messageContainer;
     protected cdr: ChangeDetectorRef;
@@ -29,6 +28,4 @@ export declare class NzMessageComponent implements OnInit, OnDestroy {
     private _updateTTL;
     private _startEraseTimeout;
     private _clearEraseTimeout;
-    static ɵfac: i0.ɵɵFactoryDef<NzMessageComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzMessageComponent, "nz-message", ["nzMessage"], { 'nzMessage': "nzMessage", 'nzIndex': "nzIndex" }, {}, never>;
 }

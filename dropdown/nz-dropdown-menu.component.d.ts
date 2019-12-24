@@ -9,7 +9,6 @@ import { AfterContentInit, ChangeDetectorRef, ElementRef, Injector, Renderer2, T
 import { NzMenuBaseService, NzNoAnimationDirective } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
 import { NzMenuDropdownService } from './nz-menu-dropdown.service';
-import * as i0 from "@angular/core";
 export declare type NzPlacementType = 'bottomLeft' | 'bottomCenter' | 'bottomRight' | 'topLeft' | 'topCenter' | 'topRight';
 export declare function dropdownMenuServiceFactory(injector: Injector): NzMenuBaseService;
 export declare class NzDropdownMenuComponent implements AfterContentInit {
@@ -35,6 +34,4 @@ export declare class NzDropdownMenuComponent implements AfterContentInit {
     setValue<T extends keyof NzDropdownMenuComponent>(key: T, value: this[T]): void;
     constructor(cdr: ChangeDetectorRef, elementRef: ElementRef, renderer: Renderer2, viewContainerRef: ViewContainerRef, nzMenuDropdownService: NzMenuDropdownService, noAnimation?: NzNoAnimationDirective | undefined);
     ngAfterContentInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzDropdownMenuComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzDropdownMenuComponent, "nz-dropdown-menu", ["nzDropdownMenu"], {}, {}, never>;
 }

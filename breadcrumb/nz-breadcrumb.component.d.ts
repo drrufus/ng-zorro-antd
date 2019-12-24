@@ -7,7 +7,6 @@
  */
 import { ChangeDetectorRef, ElementRef, Injector, NgZone, OnDestroy, OnInit, Renderer2, TemplateRef } from '@angular/core';
 import { Params } from '@angular/router';
-import * as i0 from "@angular/core";
 export interface BreadcrumbOption {
     label: string;
     params: Params;
@@ -28,6 +27,4 @@ export declare class NzBreadCrumbComponent implements OnInit, OnDestroy {
     navigate(url: string, e: MouseEvent): void;
     private registerRouterChange;
     private getBreadcrumbs;
-    static ɵfac: i0.ɵɵFactoryDef<NzBreadCrumbComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzBreadCrumbComponent, "nz-breadcrumb", ["nzBreadcrumb"], { 'nzAutoGenerate': "nzAutoGenerate", 'nzSeparator': "nzSeparator", 'nzRouteLabel': "nzRouteLabel" }, {}, never>;
 }

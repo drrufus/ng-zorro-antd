@@ -8,7 +8,6 @@
 import { AnimationEvent } from '@angular/animations';
 import { ElementRef, EventEmitter, OnChanges, OnInit, Renderer2 } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzTagComponent implements OnInit, OnChanges {
     private renderer;
     private elementRef;
@@ -29,6 +28,4 @@ export declare class NzTagComponent implements OnInit, OnChanges {
     constructor(renderer: Renderer2, elementRef: ElementRef, nzUpdateHostClassService: NzUpdateHostClassService);
     ngOnInit(): void;
     ngOnChanges(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTagComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTagComponent, "nz-tag", ["nzTag"], { 'nzMode': "nzMode", 'nzColor': "nzColor", 'nzChecked': "nzChecked", 'nzNoAnimation': "nzNoAnimation" }, { 'nzAfterClose': "nzAfterClose", 'nzOnClose': "nzOnClose", 'nzCheckedChange': "nzCheckedChange" }, never>;
 }

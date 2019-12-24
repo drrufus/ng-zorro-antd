@@ -9,7 +9,6 @@ import { AfterContentInit, ChangeDetectorRef, ElementRef, OnChanges, OnDestroy, 
 import { ControlValueAccessor } from '@angular/forms';
 import { NzSizeLDSType } from 'ng-zorro-antd/core';
 import { NzRadioComponent } from './nz-radio.component';
-import * as i0 from "@angular/core";
 export declare type NzRadioButtonStyle = 'outline' | 'solid';
 export declare class NzRadioGroupComponent implements AfterContentInit, ControlValueAccessor, OnDestroy, OnChanges {
     private cdr;
@@ -33,6 +32,4 @@ export declare class NzRadioGroupComponent implements AfterContentInit, ControlV
     registerOnChange(fn: (_: string) => void): void;
     registerOnTouched(fn: () => void): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzRadioGroupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzRadioGroupComponent, "nz-radio-group", ["nzRadioGroup"], { 'nzDisabled': "nzDisabled", 'nzButtonStyle': "nzButtonStyle", 'nzSize': "nzSize", 'nzName': "nzName" }, {}, ["radios"]>;
 }

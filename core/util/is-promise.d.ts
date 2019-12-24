@@ -5,4 +5,4 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-export declare function isPromise<T>(obj: any): obj is Promise<T>;
+export declare function isPromise(obj: any): obj is Promise<any>;

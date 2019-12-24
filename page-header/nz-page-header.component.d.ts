@@ -9,7 +9,6 @@ import { ElementRef, EventEmitter, OnChanges, SimpleChanges, TemplateRef } from 
 import { Location } from '@angular/common';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzPageHeaderBreadcrumbDirective, NzPageHeaderFooterDirective } from './nz-page-header-cells';
-import * as i0 from "@angular/core";
 export declare class NzPageHeaderComponent implements OnChanges {
     private location;
     nzConfigService: NzConfigService;
@@ -25,6 +24,4 @@ export declare class NzPageHeaderComponent implements OnChanges {
     constructor(location: Location, nzConfigService: NzConfigService);
     ngOnChanges(changes: SimpleChanges): void;
     onBack(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzPageHeaderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzPageHeaderComponent, "nz-page-header", ["nzPageHeader"], { 'nzBackIcon': "nzBackIcon", 'nzTitle': "nzTitle", 'nzSubtitle': "nzSubtitle", 'nzGhost': "nzGhost" }, { 'nzBack': "nzBack" }, ["nzPageHeaderFooter", "nzPageHeaderBreadcrumb"]>;
 }

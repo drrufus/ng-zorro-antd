@@ -1,4 +1,4 @@
-import { ɵɵdirectiveInject, ElementRef, Renderer2, NgZone, ɵɵdefineDirective, ɵɵProvidersFeature, ɵɵNgOnChangesFeature, ɵsetClassMetadata, Directive, Input, Optional, Host, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { Directive, ElementRef, Renderer2, NgZone, Input, Optional, Host, NgModule } from '@angular/core';
 import { MediaMatcher, LayoutModule } from '@angular/cdk/layout';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 import { responsiveMap, NzUpdateHostClassService, NzDomEventService, isNotNil } from 'ng-zorro-antd/core';
@@ -7,13 +7,20 @@ import { takeUntil, finalize, startWith } from 'rxjs/operators';
 import { CommonModule } from '@angular/common';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-row.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRowDirective {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     * @param {?} nzUpdateHostClassService
+     * @param {?} mediaMatcher
+     * @param {?} ngZone
+     * @param {?} platform
+     * @param {?} nzDomEventService
+     */
     constructor(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService) {
         this.elementRef = elementRef;
         this.renderer = renderer;
@@ -29,6 +36,9 @@ class NzRowDirective {
         this.actualGutter$ = new Subject();
         this.destroy$ = new Subject();
     }
+    /**
+     * @return {?}
+     */
     calculateGutter() {
         if (typeof this.nzGutter !== 'object') {
             return this.nzGutter;
@@ -40,7 +50,11 @@ class NzRowDirective {
             return 0;
         }
     }
+    /**
+     * @return {?}
+     */
     updateGutter() {
+        /** @type {?} */
         const actualGutter = this.calculateGutter();
         if (this.actualGutter !== actualGutter) {
             this.actualGutter = actualGutter;
@@ -49,18 +63,31 @@ class NzRowDirective {
             this.renderer.setStyle(this.el, 'margin-right', `-${this.actualGutter / 2}px`);
         }
     }
+    /**
+     * @return {?}
+     */
     watchMedia() {
-        Object.keys(responsiveMap).map((screen) => {
-            const castBP = screen;
+        Object.keys(responsiveMap).map((/**
+         * @param {?} screen
+         * @return {?}
+         */
+        (screen) => {
+            /** @type {?} */
+            const castBP = (/** @type {?} */ (screen));
+            /** @type {?} */
             const matchBelow = this.mediaMatcher.matchMedia(responsiveMap[castBP]).matches;
             if (matchBelow) {
                 this.breakPoint = castBP;
             }
-        });
+        }));
         this.updateGutter();
     }
-    /** temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289*/
+    /**
+     * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+     * @return {?}
+     */
     setClassMap() {
+        /** @type {?} */
         const classMap = {
             [`${this.prefixCls}`]: !this.nzType,
             [`${this.prefixCls}-${this.nzType}`]: this.nzType,
@@ -69,10 +96,17 @@ class NzRowDirective {
         };
         this.nzUpdateHostClassService.updateHostClass(this.el, classMap);
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         this.setClassMap();
         this.watchMedia();
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         if (changes.nzType || changes.nzAlign || changes.nzJustify) {
             this.setClassMap();
@@ -81,46 +115,131 @@ class NzRowDirective {
             this.updateGutter();
         }
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         if (this.platform.isBrowser) {
             this.nzDomEventService
                 .registerResizeListener()
-                .pipe(takeUntil(this.destroy$), finalize(() => this.nzDomEventService.unregisterResizeListener()))
-                .subscribe(() => this.watchMedia());
+                .pipe(takeUntil(this.destroy$), finalize((/**
+             * @return {?}
+             */
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.watchMedia()));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
 }
-/** @nocollapse */ NzRowDirective.ɵfac = function NzRowDirective_Factory(t) { return new (t || NzRowDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(MediaMatcher), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(NzDomEventService)); };
-/** @nocollapse */ NzRowDirective.ɵdir = ɵɵdefineDirective({ type: NzRowDirective, selectors: [["", "nz-row", ""], ["nz-row"]], inputs: { nzType: "nzType", nzAlign: "nzAlign", nzJustify: "nzJustify", nzGutter: "nzGutter" }, exportAs: ["nzRow"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵNgOnChangesFeature()] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzRowDirective, [{
-        type: Directive,
-        args: [{
+NzRowDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nz-row],nz-row',
                 exportAs: 'nzRow',
                 providers: [NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: NzUpdateHostClassService }, { type: MediaMatcher }, { type: NgZone }, { type: Platform }, { type: NzDomEventService }]; }, { nzType: [{
-            type: Input
-        }], nzAlign: [{
-            type: Input
-        }], nzJustify: [{
-            type: Input
-        }], nzGutter: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzRowDirective.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 },
+    { type: NzUpdateHostClassService },
+    { type: MediaMatcher },
+    { type: NgZone },
+    { type: Platform },
+    { type: NzDomEventService }
+];
+NzRowDirective.propDecorators = {
+    nzType: [{ type: Input }],
+    nzAlign: [{ type: Input }],
+    nzJustify: [{ type: Input }],
+    nzGutter: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    NzRowDirective.prototype.nzType;
+    /** @type {?} */
+    NzRowDirective.prototype.nzAlign;
+    /** @type {?} */
+    NzRowDirective.prototype.nzJustify;
+    /** @type {?} */
+    NzRowDirective.prototype.nzGutter;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRowDirective.prototype.el;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRowDirective.prototype.prefixCls;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRowDirective.prototype.breakPoint;
+    /** @type {?} */
+    NzRowDirective.prototype.actualGutter;
+    /** @type {?} */
+    NzRowDirective.prototype.actualGutter$;
+    /** @type {?} */
+    NzRowDirective.prototype.destroy$;
+    /** @type {?} */
+    NzRowDirective.prototype.elementRef;
+    /** @type {?} */
+    NzRowDirective.prototype.renderer;
+    /** @type {?} */
+    NzRowDirective.prototype.nzUpdateHostClassService;
+    /** @type {?} */
+    NzRowDirective.prototype.mediaMatcher;
+    /** @type {?} */
+    NzRowDirective.prototype.ngZone;
+    /** @type {?} */
+    NzRowDirective.prototype.platform;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzRowDirective.prototype.nzDomEventService;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-col.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function EmbeddedProperty() { }
+if (false) {
+    /** @type {?|undefined} */
+    EmbeddedProperty.prototype.span;
+    /** @type {?|undefined} */
+    EmbeddedProperty.prototype.pull;
+    /** @type {?|undefined} */
+    EmbeddedProperty.prototype.push;
+    /** @type {?|undefined} */
+    EmbeddedProperty.prototype.offset;
+    /** @type {?|undefined} */
+    EmbeddedProperty.prototype.order;
+}
 class NzColDirective {
+    /**
+     * @param {?} nzUpdateHostClassService
+     * @param {?} elementRef
+     * @param {?} nzRowDirective
+     * @param {?} renderer
+     */
     constructor(nzUpdateHostClassService, elementRef, nzRowDirective, renderer) {
         this.nzUpdateHostClassService = nzUpdateHostClassService;
         this.elementRef = elementRef;
@@ -130,121 +249,197 @@ class NzColDirective {
         this.prefixCls = 'ant-col';
         this.destroy$ = new Subject();
     }
-    /** temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289*/
+    /**
+     * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+     * @return {?}
+     */
     setClassMap() {
+        /** @type {?} */
         const classMap = Object.assign({ [`${this.prefixCls}`]: true, [`${this.prefixCls}-${this.nzSpan}`]: isNotNil(this.nzSpan), [`${this.prefixCls}-order-${this.nzOrder}`]: isNotNil(this.nzOrder), [`${this.prefixCls}-offset-${this.nzOffset}`]: isNotNil(this.nzOffset), [`${this.prefixCls}-pull-${this.nzPull}`]: isNotNil(this.nzPull), [`${this.prefixCls}-push-${this.nzPush}`]: isNotNil(this.nzPush) }, this.generateClass());
         this.nzUpdateHostClassService.updateHostClass(this.el, classMap);
     }
+    /**
+     * @return {?}
+     */
     generateClass() {
+        /** @type {?} */
         const listOfSizeInputName = ['nzXs', 'nzSm', 'nzMd', 'nzLg', 'nzXl', 'nzXXl'];
+        /** @type {?} */
         const listClassMap = {};
-        listOfSizeInputName.forEach(name => {
+        listOfSizeInputName.forEach((/**
+         * @param {?} name
+         * @return {?}
+         */
+        name => {
+            /** @type {?} */
             const sizeName = name.replace('nz', '').toLowerCase();
             if (isNotNil(this[name])) {
                 if (typeof this[name] === 'number' || typeof this[name] === 'string') {
                     listClassMap[`${this.prefixCls}-${sizeName}-${this[name]}`] = true;
                 }
                 else {
-                    const embedded = this[name];
+                    /** @type {?} */
+                    const embedded = (/** @type {?} */ (this[name]));
+                    /** @type {?} */
                     const prefixArray = ['span', 'pull', 'push', 'offset', 'order'];
-                    prefixArray.forEach(prefix => {
+                    prefixArray.forEach((/**
+                     * @param {?} prefix
+                     * @return {?}
+                     */
+                    prefix => {
+                        /** @type {?} */
                         const prefixClass = prefix === 'span' ? '-' : `-${prefix}-`;
-                        listClassMap[`${this.prefixCls}-${sizeName}${prefixClass}${embedded[prefix]}`] = embedded && isNotNil(embedded[prefix]);
-                    });
+                        listClassMap[`${this.prefixCls}-${sizeName}${prefixClass}${embedded[prefix]}`] =
+                            embedded && isNotNil(embedded[prefix]);
+                    }));
                 }
             }
-        });
+        }));
         return listClassMap;
     }
+    /**
+     * @return {?}
+     */
     ngOnChanges() {
         this.setClassMap();
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         if (this.nzRowDirective) {
             this.nzRowDirective.actualGutter$
                 .pipe(startWith(this.nzRowDirective.actualGutter), takeUntil(this.destroy$))
-                .subscribe(actualGutter => {
+                .subscribe((/**
+             * @param {?} actualGutter
+             * @return {?}
+             */
+            actualGutter => {
                 this.renderer.setStyle(this.el, 'padding-left', `${actualGutter / 2}px`);
                 this.renderer.setStyle(this.el, 'padding-right', `${actualGutter / 2}px`);
-            });
+            }));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         this.setClassMap();
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
     }
 }
-/** @nocollapse */ NzColDirective.ɵfac = function NzColDirective_Factory(t) { return new (t || NzColDirective)(ɵɵdirectiveInject(NzUpdateHostClassService), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NzRowDirective, 9), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzColDirective.ɵdir = ɵɵdefineDirective({ type: NzColDirective, selectors: [["", "nz-col", ""], ["nz-col"]], inputs: { nzSpan: "nzSpan", nzOrder: "nzOrder", nzOffset: "nzOffset", nzPush: "nzPush", nzPull: "nzPull", nzXs: "nzXs", nzSm: "nzSm", nzMd: "nzMd", nzLg: "nzLg", nzXl: "nzXl", nzXXl: "nzXXl" }, exportAs: ["nzCol"], features: [ɵɵProvidersFeature([NzUpdateHostClassService]), ɵɵNgOnChangesFeature()] });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzColDirective, [{
-        type: Directive,
-        args: [{
+NzColDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nz-col],nz-col',
                 exportAs: 'nzCol',
                 providers: [NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: NzUpdateHostClassService }, { type: ElementRef }, { type: NzRowDirective, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: Renderer2 }]; }, { nzSpan: [{
-            type: Input
-        }], nzOrder: [{
-            type: Input
-        }], nzOffset: [{
-            type: Input
-        }], nzPush: [{
-            type: Input
-        }], nzPull: [{
-            type: Input
-        }], nzXs: [{
-            type: Input
-        }], nzSm: [{
-            type: Input
-        }], nzMd: [{
-            type: Input
-        }], nzLg: [{
-            type: Input
-        }], nzXl: [{
-            type: Input
-        }], nzXXl: [{
-            type: Input
-        }] }); })();
+            },] }
+];
+/** @nocollapse */
+NzColDirective.ctorParameters = () => [
+    { type: NzUpdateHostClassService },
+    { type: ElementRef },
+    { type: NzRowDirective, decorators: [{ type: Optional }, { type: Host }] },
+    { type: Renderer2 }
+];
+NzColDirective.propDecorators = {
+    nzSpan: [{ type: Input }],
+    nzOrder: [{ type: Input }],
+    nzOffset: [{ type: Input }],
+    nzPush: [{ type: Input }],
+    nzPull: [{ type: Input }],
+    nzXs: [{ type: Input }],
+    nzSm: [{ type: Input }],
+    nzMd: [{ type: Input }],
+    nzLg: [{ type: Input }],
+    nzXl: [{ type: Input }],
+    nzXXl: [{ type: Input }]
+};
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzColDirective.prototype.el;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzColDirective.prototype.prefixCls;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzColDirective.prototype.destroy$;
+    /** @type {?} */
+    NzColDirective.prototype.nzSpan;
+    /** @type {?} */
+    NzColDirective.prototype.nzOrder;
+    /** @type {?} */
+    NzColDirective.prototype.nzOffset;
+    /** @type {?} */
+    NzColDirective.prototype.nzPush;
+    /** @type {?} */
+    NzColDirective.prototype.nzPull;
+    /** @type {?} */
+    NzColDirective.prototype.nzXs;
+    /** @type {?} */
+    NzColDirective.prototype.nzSm;
+    /** @type {?} */
+    NzColDirective.prototype.nzMd;
+    /** @type {?} */
+    NzColDirective.prototype.nzLg;
+    /** @type {?} */
+    NzColDirective.prototype.nzXl;
+    /** @type {?} */
+    NzColDirective.prototype.nzXXl;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzColDirective.prototype.nzUpdateHostClassService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzColDirective.prototype.elementRef;
+    /** @type {?} */
+    NzColDirective.prototype.nzRowDirective;
+    /** @type {?} */
+    NzColDirective.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-grid.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzGridModule {
 }
-/** @nocollapse */ NzGridModule.ɵmod = ɵɵdefineNgModule({ type: NzGridModule });
-/** @nocollapse */ NzGridModule.ɵinj = ɵɵdefineInjector({ factory: function NzGridModule_Factory(t) { return new (t || NzGridModule)(); }, imports: [[CommonModule, LayoutModule, PlatformModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzGridModule, { declarations: [NzColDirective, NzRowDirective], imports: [CommonModule, LayoutModule, PlatformModule], exports: [NzColDirective, NzRowDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzGridModule, [{
-        type: NgModule,
-        args: [{
+NzGridModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [NzColDirective, NzRowDirective],
                 exports: [NzColDirective, NzRowDirective],
                 imports: [CommonModule, LayoutModule, PlatformModule]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-grid.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzColDirective, NzGridModule, NzRowDirective };

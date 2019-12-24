@@ -9,7 +9,6 @@ import { AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, Renderer2 } fr
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzColDirective, NzRowDirective } from 'ng-zorro-antd/grid';
 import { NzFormItemComponent } from './nz-form-item.component';
-import * as i0 from "@angular/core";
 export declare class NzFormLabelComponent extends NzColDirective implements OnDestroy, AfterViewInit {
     private cdr;
     nzFor: string;
@@ -21,6 +20,4 @@ export declare class NzFormLabelComponent extends NzColDirective implements OnDe
     setDefaultNoColon(value: boolean): void;
     ngOnDestroy(): void;
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzFormLabelComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzFormLabelComponent, "nz-form-label", ["nzFormLabel"], { 'nzFor': "nzFor", 'nzRequired': "nzRequired", 'nzNoColon': "nzNoColon" }, {}, never>;
 }

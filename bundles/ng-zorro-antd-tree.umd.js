@@ -201,183 +201,11 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = ["dragElement"];
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_1_ng_template_0_Template(rf, ctx) { }
-    var _c1 = function (a0) { return { $implicit: a0 }; };
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_1_ng_template_0_Template, 0, 0, "ng-template", 3);
-    } if (rf & 2) {
-        var ctx_r1010 = core.ɵɵnextContext(4);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r1010.nzExpandedIcon)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c1, ctx_r1010.nzTreeNode));
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_i_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 8);
-    } if (rf & 2) {
-        var ctx_r1011 = core.ɵɵnextContext(4);
-        core.ɵɵclassProp("ant-select-switcher-icon", ctx_r1011.nzSelectMode)("ant-tree-switcher-icon", !ctx_r1011.nzSelectMode);
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_1_Template, 1, 4, undefined, 2);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_i_2_Template, 1, 2, "i", 7);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1008 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1008.isTemplateRef(ctx_r1008.nzExpandedIcon));
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r1008.isTemplateRef(ctx_r1008.nzExpandedIcon));
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_i_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 9);
-    } if (rf & 2) {
-        core.ɵɵproperty("nzSpin", true);
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzTreeNodeComponent_ng_container_2_ng_container_2_ng_container_1_Template, 3, 2, "ng-container", 2);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_ng_container_2_i_2_Template, 1, 1, "i", 6);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1006 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r1006.nzTreeNode.isLoading);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1006.nzTreeNode.isLoading);
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_1_ng_template_0_Template(rf, ctx) { }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, NzTreeNodeComponent_ng_container_2_ng_container_3_1_ng_template_0_Template, 0, 0, "ng-template", 3);
-    } if (rf & 2) {
-        var ctx_r1013 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r1013.nzExpandedIcon)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c1, ctx_r1013.nzTreeNode));
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_i_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 12);
-    } if (rf & 2) {
-        var ctx_r1016 = core.ɵɵnextContext(4);
-        core.ɵɵproperty("nzType", ctx_r1016.isSwitcherOpen ? "minus-square" : "plus-square");
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_i_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 13);
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_i_1_Template, 1, 1, "i", 10);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_i_2_Template, 1, 0, "i", 11);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1014 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1014.isShowLineIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r1014.isShowLineIcon);
-    } }
-    function NzTreeNodeComponent_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzTreeNodeComponent_ng_container_2_ng_container_3_1_Template, 1, 4, undefined, 2);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_ng_container_3_ng_container_2_Template, 3, 2, "ng-container", 2);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1007 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1007.isTemplateRef(ctx_r1007.nzExpandedIcon));
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r1007.isTemplateRef(ctx_r1007.nzExpandedIcon));
-    } }
-    function NzTreeNodeComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        var _r1019 = core.ɵɵgetCurrentView();
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "span", 5);
-        core.ɵɵlistener("click", function NzTreeNodeComponent_ng_container_2_Template_span_click_1_listener($event) { core.ɵɵrestoreView(_r1019); var ctx_r1018 = core.ɵɵnextContext(); return ctx_r1018._clickExpand($event); });
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_ng_container_2_Template, 3, 2, "ng-container", 2);
-        core.ɵɵtemplate(3, NzTreeNodeComponent_ng_container_2_ng_container_3_Template, 3, 2, "ng-container", 2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1001 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngClass", ctx_r1001.nzNodeSwitcherClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1001.isShowSwitchIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1001.nzShowLine);
-    } }
-    function NzTreeNodeComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        var _r1021 = core.ɵɵgetCurrentView();
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "span", 5);
-        core.ɵɵlistener("click", function NzTreeNodeComponent_ng_container_3_Template_span_click_1_listener($event) { core.ɵɵrestoreView(_r1021); var ctx_r1020 = core.ɵɵnextContext(); return ctx_r1020._clickCheckBox($event); });
-        core.ɵɵelement(2, "span");
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1002 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngClass", ctx_r1002.nzNodeCheckboxClass);
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("ant-tree-checkbox-inner", !ctx_r1002.nzSelectMode)("ant-select-tree-checkbox-inner", ctx_r1002.nzSelectMode);
-    } }
-    function NzTreeNodeComponent_ng_container_4_span_2_i_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 19);
-    } if (rf & 2) {
-        var ctx_r1023 = core.ɵɵnextContext(3);
-        core.ɵɵproperty("nzType", ctx_r1023.nzIcon);
-    } }
-    function NzTreeNodeComponent_ng_container_4_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 17);
-        core.ɵɵelementStart(1, "span", 17);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_4_span_2_i_2_Template, 1, 1, "i", 18);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r1022 = core.ɵɵnextContext(2);
-        core.ɵɵclassProp("ant-tree-icon__open", ctx_r1022.isSwitcherOpen)("ant-tree-icon__close", ctx_r1022.isSwitcherClose)("ant-tree-icon_loading", ctx_r1022.nzTreeNode.isLoading);
-        core.ɵɵproperty("ngClass", ctx_r1022.nzNodeContentLoadingClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngClass", ctx_r1022.nzNodeContentIconClass);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1022.nzIcon);
-    } }
-    function NzTreeNodeComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "span", 14);
-        core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_4_span_2_Template, 3, 6, "span", 15);
-        core.ɵɵelement(3, "span", 16);
-        core.ɵɵpipe(4, "nzHighlight");
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r1003 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("draggable", ctx_r1003.canDraggable);
-        core.ɵɵpropertyInterpolate("title", ctx_r1003.nzTreeNode.title);
-        core.ɵɵproperty("ngClass", ctx_r1003.nzNodeContentClass);
-        core.ɵɵattribute("draggable", ctx_r1003.canDraggable)("aria-grabbed", ctx_r1003.canDraggable);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r1003.nzTreeNode.icon && ctx_r1003.nzShowIcon);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("innerHTML", core.ɵɵpipeBind4(4, 7, ctx_r1003.nzTreeNode.title, ctx_r1003.nzSearchValue, "", "font-highlight"), core.ɵɵsanitizeHtml);
-    } }
-    function NzTreeNodeComponent_ng_template_5_Template(rf, ctx) { }
-    function NzTreeNodeComponent_ul_6_nz_tree_node_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "nz-tree-node", 22);
-    } if (rf & 2) {
-        var node_r1025 = ctx.$implicit;
-        var ctx_r1024 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("nzTreeNode", node_r1025)("nzShowExpand", ctx_r1024.nzShowExpand)("@.disabled", ctx_r1024.noAnimation == null ? null : ctx_r1024.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1024.noAnimation == null ? null : ctx_r1024.noAnimation.nzNoAnimation)("nzSelectMode", ctx_r1024.nzSelectMode)("nzShowLine", ctx_r1024.nzShowLine)("nzExpandedIcon", ctx_r1024.nzExpandedIcon)("nzDraggable", ctx_r1024.nzDraggable)("nzCheckable", ctx_r1024.nzCheckable)("nzAsyncData", ctx_r1024.nzAsyncData)("nzExpandAll", ctx_r1024.nzExpandAll)("nzShowIcon", ctx_r1024.nzShowIcon)("nzSearchValue", ctx_r1024.nzSearchValue)("nzHideUnMatched", ctx_r1024.nzHideUnMatched)("nzBeforeDrop", ctx_r1024.nzBeforeDrop)("nzTreeTemplate", ctx_r1024.nzTreeTemplate);
-    } }
-    function NzTreeNodeComponent_ul_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "ul", 20);
-        core.ɵɵtemplate(1, NzTreeNodeComponent_ul_6_nz_tree_node_1_Template, 1, 16, "nz-tree-node", 21);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r1005 = core.ɵɵnextContext();
-        core.ɵɵclassProp("ant-tree-child-tree-open", !ctx_r1005.nzSelectMode || ctx_r1005.nzTreeNode.isExpanded);
-        core.ɵɵproperty("@.disabled", ctx_r1005.noAnimation == null ? null : ctx_r1005.noAnimation.nzNoAnimation)("@treeCollapseMotion", undefined);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r1005.nzTreeNode.getChildren());
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-tree-node.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzTreeNodeComponent = /** @class */ (function () {
         function NzTreeNodeComponent(nzTreeService, ngZone, renderer, elRef, cdr, noAnimation) {
             this.nzTreeService = nzTreeService;
@@ -416,10 +244,17 @@
             this._nzExpandAll = false;
         }
         Object.defineProperty(NzTreeNodeComponent.prototype, "nzDraggable", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._nzDraggable;
             },
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this._nzDraggable = value;
                 this.handDragEvent();
             },
@@ -427,13 +262,21 @@
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "nzDefaultExpandAll", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._nzExpandAll;
             },
             /**
              * @deprecated use `nzExpandAll` instead.
              */
-            set: function (value) {
+            set: /**
+             * @deprecated use `nzExpandAll` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 core$1.warnDeprecation("'nzDefaultExpandAll' is going to be removed in 9.0.0. Please use 'nzExpandAll' instead.");
                 this._nzExpandAll = value;
                 if (value && this.nzTreeNode && !this.nzTreeNode.isLeaf) {
@@ -444,11 +287,20 @@
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "nzExpandAll", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._nzExpandAll;
             },
             // default set
-            set: function (value) {
+            set: 
+            // default set
+            /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this._nzExpandAll = value;
                 if (value && this.nzTreeNode && !this.nzTreeNode.isLeaf) {
                     this.nzTreeNode.isExpanded = true;
@@ -458,49 +310,70 @@
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "nzIcon", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzTreeNode.icon;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "canDraggable", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzDraggable && !this.nzTreeNode.isDisabled ? true : null;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "isShowLineIcon", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return !this.nzTreeNode.isLeaf && this.nzShowLine;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "isShowSwitchIcon", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return !this.nzTreeNode.isLeaf && !this.nzShowLine;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "isSwitcherOpen", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzTreeNode.isExpanded && !this.nzTreeNode.isLeaf;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "isSwitcherClose", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return !this.nzTreeNode.isExpanded && !this.nzTreeNode.isLeaf;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeNodeComponent.prototype, "displayStyle", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 // to hide unmatched nodes
                 return this.nzSearchValue &&
                     this.nzHideUnMatched &&
@@ -516,7 +389,15 @@
         /**
          * reset node class
          */
-        NzTreeNodeComponent.prototype.setClassMap = function () {
+        /**
+         * reset node class
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.setClassMap = /**
+         * reset node class
+         * @return {?}
+         */
+        function () {
             var _a, _b, _c, _d, _e, _f;
             this.prefixCls = this.nzSelectMode ? 'ant-select-tree' : 'ant-tree';
             this.nzNodeClass = (_a = {},
@@ -554,7 +435,15 @@
                 _f[this.prefixCls + "-iconEle"] = true,
                 _f);
         };
-        NzTreeNodeComponent.prototype.onMousedown = function (event) {
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.onMousedown = /**
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             if (this.nzSelectMode) {
                 event.preventDefault();
             }
@@ -562,35 +451,74 @@
         /**
          * click node to select, 200ms to dbl click
          */
-        NzTreeNodeComponent.prototype.nzClick = function (event) {
+        /**
+         * click node to select, 200ms to dbl click
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.nzClick = /**
+         * click node to select, 200ms to dbl click
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             event.preventDefault();
             event.stopPropagation();
             if (this.nzTreeNode.isSelectable && !this.nzTreeNode.isDisabled) {
                 this.nzTreeNode.isSelected = !this.nzTreeNode.isSelected;
             }
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('click', this.nzTreeNode, event);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
-        NzTreeNodeComponent.prototype.nzDblClick = function (event) {
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.nzDblClick = /**
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             event.preventDefault();
             event.stopPropagation();
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('dblclick', this.nzTreeNode, event);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
         /**
          * @param event
          */
-        NzTreeNodeComponent.prototype.nzContextMenu = function (event) {
+        /**
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.nzContextMenu = /**
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             event.preventDefault();
             event.stopPropagation();
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('contextmenu', this.nzTreeNode, event);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
         /**
          * collapse node
          * @param event
          */
-        NzTreeNodeComponent.prototype._clickExpand = function (event) {
+        /**
+         * collapse node
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype._clickExpand = /**
+         * collapse node
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             event.preventDefault();
             event.stopPropagation();
             if (!this.nzTreeNode.isLoading && !this.nzTreeNode.isLeaf) {
@@ -603,22 +531,49 @@
                     this.setDisplayForParentNodes(this.nzTreeNode);
                 }
                 this.setDisplayForChildNodes(this.nzTreeNode);
+                /** @type {?} */
                 var eventNext = this.nzTreeService.formatEvent('expand', this.nzTreeNode, event);
-                this.nzTreeService.triggerEventChange$.next(eventNext);
+                (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
             }
         };
-        NzTreeNodeComponent.prototype.setDisplayForChildNodes = function (parentNode) {
+        /**
+         * @private
+         * @param {?} parentNode
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.setDisplayForChildNodes = /**
+         * @private
+         * @param {?} parentNode
+         * @return {?}
+         */
+        function (parentNode) {
             var _this = this;
             var children = parentNode.children;
             if (children.length > 0) {
-                children.map(function (node) {
+                children.map((/**
+                 * @param {?} node
+                 * @return {?}
+                 */
+                function (node) {
+                    /** @type {?} */
                     var canHide = !node.isMatched;
                     node.canHide = canHide;
                     _this.setDisplayForChildNodes(node);
-                });
+                }));
             }
         };
-        NzTreeNodeComponent.prototype.setDisplayForParentNodes = function (targetNode) {
+        /**
+         * @private
+         * @param {?} targetNode
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.setDisplayForParentNodes = /**
+         * @private
+         * @param {?} targetNode
+         * @return {?}
+         */
+        function (targetNode) {
+            /** @type {?} */
             var parentNode = targetNode.getParentNode();
             if (parentNode) {
                 parentNode.canHide = false;
@@ -629,7 +584,17 @@
          * check node
          * @param event
          */
-        NzTreeNodeComponent.prototype._clickCheckBox = function (event) {
+        /**
+         * check node
+         * @param {?} event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype._clickCheckBox = /**
+         * check node
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             event.preventDefault();
             event.stopPropagation();
             // return if node is disabled
@@ -641,53 +606,98 @@
             if (!this.nzTreeService.isCheckStrictly) {
                 this.nzTreeService.conduct(this.nzTreeNode);
             }
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('check', this.nzTreeNode, event);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
         /**
          * drag event
          * @param e
          */
-        NzTreeNodeComponent.prototype.clearDragClass = function () {
+        /**
+         * drag event
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.clearDragClass = /**
+         * drag event
+         * @return {?}
+         */
+        function () {
             var _this = this;
+            /** @type {?} */
             var dragClass = ['drag-over-gap-top', 'drag-over-gap-bottom', 'drag-over'];
-            dragClass.forEach(function (e) {
+            dragClass.forEach((/**
+             * @param {?} e
+             * @return {?}
+             */
+            function (e) {
                 _this.renderer.removeClass(_this.dragElement.nativeElement, e);
-            });
+            }));
         };
-        NzTreeNodeComponent.prototype.handleDragStart = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragStart = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             e.stopPropagation();
             try {
                 // ie throw error
                 // firefox-need-it
-                e.dataTransfer.setData('text/plain', this.nzTreeNode.key);
+                (/** @type {?} */ (e.dataTransfer)).setData('text/plain', (/** @type {?} */ (this.nzTreeNode.key)));
             }
             catch (error) {
                 // empty
             }
             this.nzTreeService.setSelectedNode(this.nzTreeNode);
             this.nzTreeNode.isExpanded = false;
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('dragstart', this.nzTreeNode, e);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
-        NzTreeNodeComponent.prototype.handleDragEnter = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragEnter = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             var _this = this;
             e.preventDefault();
             e.stopPropagation();
             // reset position
             this.dragPos = 2;
-            this.ngZone.run(function () {
+            this.ngZone.run((/**
+             * @return {?}
+             */
+            function () {
+                /** @type {?} */
                 var node = _this.nzTreeService.getSelectedNode();
                 if (node && node.key !== _this.nzTreeNode.key && !_this.nzTreeNode.isExpanded && !_this.nzTreeNode.isLeaf) {
                     _this.nzTreeNode.isExpanded = true;
                 }
+                /** @type {?} */
                 var eventNext = _this.nzTreeService.formatEvent('dragenter', _this.nzTreeNode, e);
-                _this.nzTreeService.triggerEventChange$.next(eventNext);
-            });
+                (/** @type {?} */ ((/** @type {?} */ (_this.nzTreeService)).triggerEventChange$)).next(eventNext);
+            }));
         };
-        NzTreeNodeComponent.prototype.handleDragOver = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragOver = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             e.preventDefault();
             e.stopPropagation();
+            /** @type {?} */
             var dropPosition = this.nzTreeService.calcDropPosition(e);
             if (this.dragPos !== dropPosition) {
                 this.clearDragClass();
@@ -697,101 +707,199 @@
                     this.renderer.addClass(this.dragElement.nativeElement, this.dragPosClass[this.dragPos]);
                 }
             }
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('dragover', this.nzTreeNode, e);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
-        NzTreeNodeComponent.prototype.handleDragLeave = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragLeave = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             var _this = this;
             e.stopPropagation();
-            this.ngZone.run(function () {
+            this.ngZone.run((/**
+             * @return {?}
+             */
+            function () {
                 _this.clearDragClass();
-            });
+            }));
+            /** @type {?} */
             var eventNext = this.nzTreeService.formatEvent('dragleave', this.nzTreeNode, e);
-            this.nzTreeService.triggerEventChange$.next(eventNext);
+            (/** @type {?} */ ((/** @type {?} */ (this.nzTreeService)).triggerEventChange$)).next(eventNext);
         };
-        NzTreeNodeComponent.prototype.handleDragDrop = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragDrop = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             var _this = this;
             e.preventDefault();
             e.stopPropagation();
-            this.ngZone.run(function () {
+            this.ngZone.run((/**
+             * @return {?}
+             */
+            function () {
                 _this.clearDragClass();
+                /** @type {?} */
                 var node = _this.nzTreeService.getSelectedNode();
                 if (!node || (node && node.key === _this.nzTreeNode.key) || (_this.dragPos === 0 && _this.nzTreeNode.isLeaf)) {
                     return;
                 }
                 // pass if node is leafNo
+                /** @type {?} */
                 var dropEvent = _this.nzTreeService.formatEvent('drop', _this.nzTreeNode, e);
+                /** @type {?} */
                 var dragEndEvent = _this.nzTreeService.formatEvent('dragend', _this.nzTreeNode, e);
                 if (_this.nzBeforeDrop) {
                     _this.nzBeforeDrop({
-                        dragNode: _this.nzTreeService.getSelectedNode(),
+                        dragNode: (/** @type {?} */ (_this.nzTreeService.getSelectedNode())),
                         node: _this.nzTreeNode,
                         pos: _this.dragPos
-                    }).subscribe(function (canDrop) {
+                    }).subscribe((/**
+                     * @param {?} canDrop
+                     * @return {?}
+                     */
+                    function (canDrop) {
                         if (canDrop) {
                             _this.nzTreeService.dropAndApply(_this.nzTreeNode, _this.dragPos);
                         }
-                        _this.nzTreeService.triggerEventChange$.next(dropEvent);
-                        _this.nzTreeService.triggerEventChange$.next(dragEndEvent);
-                    });
+                        (/** @type {?} */ ((/** @type {?} */ (_this.nzTreeService)).triggerEventChange$)).next(dropEvent);
+                        (/** @type {?} */ ((/** @type {?} */ (_this.nzTreeService)).triggerEventChange$)).next(dragEndEvent);
+                    }));
                 }
                 else if (_this.nzTreeNode) {
                     _this.nzTreeService.dropAndApply(_this.nzTreeNode, _this.dragPos);
-                    _this.nzTreeService.triggerEventChange$.next(dropEvent);
+                    (/** @type {?} */ ((/** @type {?} */ (_this.nzTreeService)).triggerEventChange$)).next(dropEvent);
                 }
-            });
+            }));
         };
-        NzTreeNodeComponent.prototype.handleDragEnd = function (e) {
+        /**
+         * @param {?} e
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handleDragEnd = /**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             var _this = this;
             e.stopPropagation();
-            this.ngZone.run(function () {
+            this.ngZone.run((/**
+             * @return {?}
+             */
+            function () {
                 // if user do not custom beforeDrop
                 if (!_this.nzBeforeDrop) {
+                    /** @type {?} */
                     var eventNext = _this.nzTreeService.formatEvent('dragend', _this.nzTreeNode, e);
-                    _this.nzTreeService.triggerEventChange$.next(eventNext);
+                    (/** @type {?} */ ((/** @type {?} */ (_this.nzTreeService)).triggerEventChange$)).next(eventNext);
                 }
-            });
+            }));
         };
         /**
          * Listening to dragging events.
          */
-        NzTreeNodeComponent.prototype.handDragEvent = function () {
+        /**
+         * Listening to dragging events.
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.handDragEvent = /**
+         * Listening to dragging events.
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.ngZone.runOutsideAngular(function () {
+            this.ngZone.runOutsideAngular((/**
+             * @return {?}
+             */
+            function () {
                 if (_this.nzDraggable) {
                     _this.destroy$ = new rxjs.Subject();
                     rxjs.fromEvent(_this.elRef.nativeElement, 'dragstart')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragStart(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragStart(e); }));
                     rxjs.fromEvent(_this.elRef.nativeElement, 'dragenter')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragEnter(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragEnter(e); }));
                     rxjs.fromEvent(_this.elRef.nativeElement, 'dragover')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragOver(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragOver(e); }));
                     rxjs.fromEvent(_this.elRef.nativeElement, 'dragleave')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragLeave(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragLeave(e); }));
                     rxjs.fromEvent(_this.elRef.nativeElement, 'drop')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragDrop(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragDrop(e); }));
                     rxjs.fromEvent(_this.elRef.nativeElement, 'dragend')
                         .pipe(operators.takeUntil(_this.destroy$))
-                        .subscribe(function (e) { return _this.handleDragEnd(e); });
+                        .subscribe((/**
+                     * @param {?} e
+                     * @return {?}
+                     */
+                    function (e) { return _this.handleDragEnd(e); }));
                 }
                 else {
                     _this.destroy$.next();
                     _this.destroy$.complete();
                 }
-            });
+            }));
         };
-        NzTreeNodeComponent.prototype.isTemplateRef = function (value) {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.isTemplateRef = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             return value instanceof core.TemplateRef;
         };
-        NzTreeNodeComponent.prototype.markForCheck = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.markForCheck = /**
+         * @return {?}
+         */
+        function () {
             this.cdr.markForCheck();
         };
-        NzTreeNodeComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             // init expanded / selected / checked list
             if (this.nzTreeNode.isSelected) {
@@ -807,50 +915,81 @@
             this.nzTreeNode.component = this;
             this.nzTreeService
                 .eventTriggerChanged()
-                .pipe(operators.filter(function (data) { return data.node.key === _this.nzTreeNode.key; }), operators.takeUntil(this.destroy$))
-                .subscribe(function () {
+                .pipe(operators.filter((/**
+             * @param {?} data
+             * @return {?}
+             */
+            function (data) { return (/** @type {?} */ (data.node)).key === _this.nzTreeNode.key; })), operators.takeUntil(this.destroy$))
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.setClassMap();
                 _this.markForCheck();
-            });
+            }));
             this.setClassMap();
         };
-        NzTreeNodeComponent.prototype.ngOnChanges = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.ngOnChanges = /**
+         * @return {?}
+         */
+        function () {
             this.setClassMap();
         };
-        NzTreeNodeComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeNodeComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        /** @nocollapse */ NzTreeNodeComponent.ɵfac = function NzTreeNodeComponent_Factory(t) { return new (t || NzTreeNodeComponent)(core.ɵɵdirectiveInject(core$1.NzTreeBaseService), core.ɵɵdirectiveInject(core.NgZone), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core$1.NzNoAnimationDirective, 9)); };
-        /** @nocollapse */ NzTreeNodeComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzTreeNodeComponent, selectors: [["nz-tree-node"]], viewQuery: function NzTreeNodeComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵviewQuery(_c0, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.dragElement = _t.first);
-            } }, hostBindings: function NzTreeNodeComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵlistener("mousedown", function NzTreeNodeComponent_mousedown_HostBindingHandler($event) { return ctx.onMousedown($event); })("click", function NzTreeNodeComponent_click_HostBindingHandler($event) { return ctx.nzClick($event); })("dblclick", function NzTreeNodeComponent_dblclick_HostBindingHandler($event) { return ctx.nzDblClick($event); })("contextmenu", function NzTreeNodeComponent_contextmenu_HostBindingHandler($event) { return ctx.nzContextMenu($event); });
-            } }, inputs: { nzTreeNode: "nzTreeNode", nzShowLine: "nzShowLine", nzShowExpand: "nzShowExpand", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzHideUnMatched: "nzHideUnMatched", nzNoAnimation: "nzNoAnimation", nzSelectMode: "nzSelectMode", nzShowIcon: "nzShowIcon", nzExpandedIcon: "nzExpandedIcon", nzTreeTemplate: "nzTreeTemplate", nzBeforeDrop: "nzBeforeDrop", nzSearchValue: "nzSearchValue", nzDraggable: "nzDraggable", nzDefaultExpandAll: "nzDefaultExpandAll", nzExpandAll: "nzExpandAll" }, exportAs: ["nzTreeNode"], features: [core.ɵɵNgOnChangesFeature()], decls: 7, vars: 10, consts: [["role", "treeitem", 3, "ngClass"], ["dragElement", ""], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["role", "group", "class", "ant-tree-child-tree", "data-expanded", "true", 3, "ant-tree-child-tree-open", 4, "ngIf"], [3, "ngClass", "click"], ["nz-icon", "", "nzType", "loading", "class", "ant-tree-switcher-loading-icon", 3, "nzSpin", 4, "ngIf"], ["nz-icon", "", "nzType", "caret-down", 3, "ant-select-switcher-icon", "ant-tree-switcher-icon", 4, "ngIf"], ["nz-icon", "", "nzType", "caret-down"], ["nz-icon", "", "nzType", "loading", 1, "ant-tree-switcher-loading-icon", 3, "nzSpin"], ["nz-icon", "", "class", "ant-tree-switcher-line-icon", 3, "nzType", 4, "ngIf"], ["nz-icon", "", "nzType", "file", "class", "ant-tree-switcher-line-icon", 4, "ngIf"], ["nz-icon", "", 1, "ant-tree-switcher-line-icon", 3, "nzType"], ["nz-icon", "", "nzType", "file", 1, "ant-tree-switcher-line-icon"], [3, "title", "ngClass"], [3, "ant-tree-icon__open", "ant-tree-icon__close", "ant-tree-icon_loading", "ngClass", 4, "ngIf"], [1, "ant-tree-title", 3, "innerHTML"], [3, "ngClass"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], ["role", "group", "data-expanded", "true", 1, "ant-tree-child-tree"], [3, "nzTreeNode", "nzShowExpand", "nzNoAnimation", "nzSelectMode", "nzShowLine", "nzExpandedIcon", "nzDraggable", "nzCheckable", "nzAsyncData", "nzExpandAll", "nzShowIcon", "nzSearchValue", "nzHideUnMatched", "nzBeforeDrop", "nzTreeTemplate", 4, "ngFor", "ngForOf"], [3, "nzTreeNode", "nzShowExpand", "nzNoAnimation", "nzSelectMode", "nzShowLine", "nzExpandedIcon", "nzDraggable", "nzCheckable", "nzAsyncData", "nzExpandAll", "nzShowIcon", "nzSearchValue", "nzHideUnMatched", "nzBeforeDrop", "nzTreeTemplate"]], template: function NzTreeNodeComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "li", 0, 1);
-                core.ɵɵtemplate(2, NzTreeNodeComponent_ng_container_2_Template, 4, 3, "ng-container", 2);
-                core.ɵɵtemplate(3, NzTreeNodeComponent_ng_container_3_Template, 3, 3, "ng-container", 2);
-                core.ɵɵtemplate(4, NzTreeNodeComponent_ng_container_4_Template, 5, 12, "ng-container", 2);
-                core.ɵɵtemplate(5, NzTreeNodeComponent_ng_template_5_Template, 0, 0, "ng-template", 3);
-                core.ɵɵtemplate(6, NzTreeNodeComponent_ul_6_Template, 2, 4, "ul", 4);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵstyleProp("display", ctx.displayStyle);
-                core.ɵɵproperty("ngClass", ctx.nzNodeClass);
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("ngIf", ctx.nzShowExpand);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzCheckable);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.nzTreeTemplate);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngTemplateOutlet", ctx.nzTreeTemplate)("ngTemplateOutletContext", core.ɵɵpureFunction1(8, _c1, ctx.nzTreeNode));
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzTreeNode.isExpanded);
-            } }, directives: [common.NgClass, common.NgIf, common.NgTemplateOutlet, icon.NzIconDirective, common.NgForOf, NzTreeNodeComponent, core$1.NzNoAnimationDirective], pipes: [core$1.NzHighlightPipe], encapsulation: 2, data: { animation: [core$1.treeCollapseMotion] }, changeDetection: 0 });
+        NzTreeNodeComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-tree-node',
+                        exportAs: 'nzTreeNode',
+                        template: "<li\n  #dragElement\n  role=\"treeitem\"\n  [style.display]=\"displayStyle\"\n  [ngClass]=\"nzNodeClass\">\n  <ng-container *ngIf=\"nzShowExpand\">\n    <span\n      [ngClass]=\"nzNodeSwitcherClass\"\n      (click)=\"_clickExpand($event)\">\n      <ng-container *ngIf=\"isShowSwitchIcon\">\n        <ng-container *ngIf=\"!nzTreeNode.isLoading\">\n          <ng-template\n            *ngIf=\"isTemplateRef(nzExpandedIcon)\"\n            [ngTemplateOutlet]=\"nzExpandedIcon\"\n            [ngTemplateOutletContext]=\"{ $implicit: nzTreeNode }\">\n          </ng-template>\n          <i\n            *ngIf=\"!isTemplateRef(nzExpandedIcon)\"\n            nz-icon\n            nzType=\"caret-down\"\n            [class.ant-select-switcher-icon]=\"nzSelectMode\"\n            [class.ant-tree-switcher-icon]=\"!nzSelectMode\">\n          </i>\n        </ng-container>\n        <i *ngIf=\"nzTreeNode.isLoading\" nz-icon nzType=\"loading\" [nzSpin]=\"true\" class=\"ant-tree-switcher-loading-icon\"></i>\n      </ng-container>\n      <ng-container *ngIf=\"nzShowLine\">\n        <ng-template\n          *ngIf=\"isTemplateRef(nzExpandedIcon)\"\n          [ngTemplateOutlet]=\"nzExpandedIcon\"\n          [ngTemplateOutletContext]=\"{ $implicit: nzTreeNode }\">\n        </ng-template>\n        <ng-container *ngIf=\"!isTemplateRef(nzExpandedIcon)\">\n          <i *ngIf=\"isShowLineIcon\" nz-icon [nzType]=\"isSwitcherOpen ? 'minus-square' : 'plus-square'\" class=\"ant-tree-switcher-line-icon\"></i>\n          <i *ngIf=\"!isShowLineIcon\" nz-icon nzType=\"file\" class=\"ant-tree-switcher-line-icon\"></i>\n        </ng-container>\n      </ng-container>\n    </span>\n  </ng-container>\n  <ng-container *ngIf=\"nzCheckable\">\n    <span\n      [ngClass]=\"nzNodeCheckboxClass\"\n      (click)=\"_clickCheckBox($event)\">\n      <span [class.ant-tree-checkbox-inner]=\"!nzSelectMode\"\n            [class.ant-select-tree-checkbox-inner]=\"nzSelectMode\"></span>\n    </span>\n  </ng-container>\n  <ng-container *ngIf=\"!nzTreeTemplate\">\n    <span\n      title=\"{{nzTreeNode.title}}\"\n      [attr.draggable]=\"canDraggable\"\n      [attr.aria-grabbed]=\"canDraggable\"\n      [ngClass]=\"nzNodeContentClass\"\n      [class.draggable]=\"canDraggable\">\n      <span\n        *ngIf=\"nzTreeNode.icon && nzShowIcon\"\n        [class.ant-tree-icon__open]=\"isSwitcherOpen\"\n        [class.ant-tree-icon__close]=\"isSwitcherClose\"\n        [class.ant-tree-icon_loading]=\"nzTreeNode.isLoading\"\n        [ngClass]=\"nzNodeContentLoadingClass\">\n        <span\n          [ngClass]=\"nzNodeContentIconClass\">\n          <i nz-icon *ngIf=\"nzIcon\" [nzType]=\"nzIcon\"></i>\n        </span>\n      </span>\n      <span class=\"ant-tree-title\" [innerHTML]=\"nzTreeNode.title | nzHighlight: nzSearchValue: '' : 'font-highlight'\">\n      </span>\n    </span>\n  </ng-container>\n  <ng-template\n    [ngTemplateOutlet]=\"nzTreeTemplate\"\n    [ngTemplateOutletContext]=\"{ $implicit: nzTreeNode }\">\n  </ng-template>\n\n  <ul\n    *ngIf=\"nzTreeNode.isExpanded\"\n    role=\"group\"\n    class=\"ant-tree-child-tree\"\n    [class.ant-tree-child-tree-open]=\"!nzSelectMode || nzTreeNode.isExpanded\"\n    data-expanded=\"true\"\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\n    @treeCollapseMotion>\n    <nz-tree-node\n      *ngFor=\"let node of nzTreeNode.getChildren()\"\n      [nzTreeNode]=\"node\"\n      [nzShowExpand]=\"nzShowExpand\"\n      [@.disabled]=\"noAnimation?.nzNoAnimation\"\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n      [nzSelectMode]=\"nzSelectMode\"\n      [nzShowLine]=\"nzShowLine\"\n      [nzExpandedIcon]=\"nzExpandedIcon\"\n      [nzDraggable]=\"nzDraggable\"\n      [nzCheckable]=\"nzCheckable\"\n      [nzAsyncData]=\"nzAsyncData\"\n      [nzExpandAll]=\"nzExpandAll\"\n      [nzShowIcon]=\"nzShowIcon\"\n      [nzSearchValue]=\"nzSearchValue\"\n      [nzHideUnMatched]=\"nzHideUnMatched\"\n      [nzBeforeDrop]=\"nzBeforeDrop\"\n      [nzTreeTemplate]=\"nzTreeTemplate\">\n    </nz-tree-node>\n  </ul>\n</li>\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        preserveWhitespaces: false,
+                        animations: [core$1.treeCollapseMotion]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzTreeNodeComponent.ctorParameters = function () { return [
+            { type: core$1.NzTreeBaseService },
+            { type: core.NgZone },
+            { type: core.Renderer2 },
+            { type: core.ElementRef },
+            { type: core.ChangeDetectorRef },
+            { type: core$1.NzNoAnimationDirective, decorators: [{ type: core.Host }, { type: core.Optional }] }
+        ]; };
+        NzTreeNodeComponent.propDecorators = {
+            dragElement: [{ type: core.ViewChild, args: ['dragElement', { static: false },] }],
+            nzTreeNode: [{ type: core.Input }],
+            nzShowLine: [{ type: core.Input }],
+            nzShowExpand: [{ type: core.Input }],
+            nzCheckable: [{ type: core.Input }],
+            nzAsyncData: [{ type: core.Input }],
+            nzHideUnMatched: [{ type: core.Input }],
+            nzNoAnimation: [{ type: core.Input }],
+            nzSelectMode: [{ type: core.Input }],
+            nzShowIcon: [{ type: core.Input }],
+            nzExpandedIcon: [{ type: core.Input }],
+            nzTreeTemplate: [{ type: core.Input }],
+            nzBeforeDrop: [{ type: core.Input }],
+            nzSearchValue: [{ type: core.Input }],
+            nzDraggable: [{ type: core.Input }],
+            nzDefaultExpandAll: [{ type: core.Input }],
+            nzExpandAll: [{ type: core.Input }],
+            onMousedown: [{ type: core.HostListener, args: ['mousedown', ['$event'],] }],
+            nzClick: [{ type: core.HostListener, args: ['click', ['$event'],] }],
+            nzDblClick: [{ type: core.HostListener, args: ['dblclick', ['$event'],] }],
+            nzContextMenu: [{ type: core.HostListener, args: ['contextmenu', ['$event'],] }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Boolean)
@@ -885,97 +1024,124 @@
         ], NzTreeNodeComponent.prototype, "nzShowIcon", void 0);
         return NzTreeNodeComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzTreeNodeComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-tree-node',
-                    exportAs: 'nzTreeNode',
-                    templateUrl: './nz-tree-node.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    preserveWhitespaces: false,
-                    animations: [core$1.treeCollapseMotion]
-                }]
-        }], function () { return [{ type: core$1.NzTreeBaseService }, { type: core.NgZone }, { type: core.Renderer2 }, { type: core.ElementRef }, { type: core.ChangeDetectorRef }, { type: core$1.NzNoAnimationDirective, decorators: [{
-                    type: core.Host
-                }, {
-                    type: core.Optional
-                }] }]; }, { dragElement: [{
-                type: core.ViewChild,
-                args: ['dragElement', { static: false }]
-            }], nzTreeNode: [{
-                type: core.Input
-            }], nzShowLine: [{
-                type: core.Input
-            }], nzShowExpand: [{
-                type: core.Input
-            }], nzCheckable: [{
-                type: core.Input
-            }], nzAsyncData: [{
-                type: core.Input
-            }], nzHideUnMatched: [{
-                type: core.Input
-            }], nzNoAnimation: [{
-                type: core.Input
-            }], nzSelectMode: [{
-                type: core.Input
-            }], nzShowIcon: [{
-                type: core.Input
-            }], nzExpandedIcon: [{
-                type: core.Input
-            }], nzTreeTemplate: [{
-                type: core.Input
-            }], nzBeforeDrop: [{
-                type: core.Input
-            }], nzSearchValue: [{
-                type: core.Input
-            }], nzDraggable: [{
-                type: core.Input
-            }], nzDefaultExpandAll: [{
-                type: core.Input
-            }], nzExpandAll: [{
-                type: core.Input
-            }], onMousedown: [{
-                type: core.HostListener,
-                args: ['mousedown', ['$event']]
-            }], nzClick: [{
-                type: core.HostListener,
-                args: ['click', ['$event']]
-            }], nzDblClick: [{
-                type: core.HostListener,
-                args: ['dblclick', ['$event']]
-            }], nzContextMenu: [{
-                type: core.HostListener,
-                args: ['contextmenu', ['$event']]
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.dragElement;
+        /**
+         * for global property
+         * @type {?}
+         */
+        NzTreeNodeComponent.prototype.nzTreeNode;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzShowLine;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzShowExpand;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzCheckable;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzAsyncData;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzHideUnMatched;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNoAnimation;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzSelectMode;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzShowIcon;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzExpandedIcon;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzTreeTemplate;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzBeforeDrop;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzSearchValue;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.prefixCls;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeClass;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeSwitcherClass;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeContentClass;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeCheckboxClass;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeContentIconClass;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzNodeContentLoadingClass;
+        /**
+         * drag var
+         * @type {?}
+         */
+        NzTreeNodeComponent.prototype.destroy$;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.dragPos;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.dragPosClass;
+        /**
+         * default set
+         * @type {?}
+         */
+        NzTreeNodeComponent.prototype._nzDraggable;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype._nzExpandAll;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.nzTreeService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeNodeComponent.prototype.ngZone;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeNodeComponent.prototype.renderer;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeNodeComponent.prototype.elRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeNodeComponent.prototype.cdr;
+        /** @type {?} */
+        NzTreeNodeComponent.prototype.noAnimation;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-tree.service.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzTreeService = /** @class */ (function (_super) {
         __extends(NzTreeService, _super);
         function NzTreeService() {
             return _super !== null && _super.apply(this, arguments) || this;
         }
-        /** @nocollapse */ NzTreeService.ɵfac = function NzTreeService_Factory(t) { return ɵNzTreeService_BaseFactory(t || NzTreeService); };
-        /** @nocollapse */ NzTreeService.ɵprov = core.ɵɵdefineInjectable({ token: NzTreeService, factory: NzTreeService.ɵfac });
+        NzTreeService.decorators = [
+            { type: core.Injectable }
+        ];
         return NzTreeService;
     }(core$1.NzTreeBaseService));
-    var ɵNzTreeService_BaseFactory = core.ɵɵgetInheritedFactory(NzTreeService);
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzTreeService, [{
-            type: core.Injectable
-        }], null, null); })();
 
-    var _c0$1 = ["nzTreeTemplate"];
-    function NzTreeComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelement(1, "nz-tree-node", 2);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var node_r1027 = ctx.$implicit;
-        var ctx_r1026 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzTreeNode", node_r1027)("nzSelectMode", ctx_r1026.nzSelectMode)("nzShowLine", ctx_r1026.nzShowLine)("nzExpandedIcon", ctx_r1026.nzExpandedIcon)("nzDraggable", ctx_r1026.nzDraggable)("nzCheckable", ctx_r1026.nzCheckable)("nzShowExpand", ctx_r1026.nzShowExpand)("nzAsyncData", ctx_r1026.nzAsyncData)("nzSearchValue", ctx_r1026.nzSearchValue)("nzHideUnMatched", ctx_r1026.nzHideUnMatched)("nzBeforeDrop", ctx_r1026.nzBeforeDrop)("nzExpandAll", ctx_r1026.nzExpandAll)("nzShowIcon", ctx_r1026.nzShowIcon)("nzTreeTemplate", ctx_r1026.treeTemplate)("@.disabled", ctx_r1026.noAnimation == null ? null : ctx_r1026.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1026.noAnimation == null ? null : ctx_r1026.noAnimation.nzNoAnimation);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-tree.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @param {?} higherOrderService
+     * @param {?} treeService
+     * @return {?}
+     */
     function NzTreeServiceFactory(higherOrderService, treeService) {
         return higherOrderService ? higherOrderService : treeService;
     }
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'tree';
     var NzTreeComponent = /** @class */ (function (_super) {
         __extends(NzTreeComponent, _super);
@@ -1017,25 +1183,42 @@
             _this.destroy$ = new rxjs.Subject();
             _this.prefixCls = 'ant-tree';
             _this.classMap = {};
-            _this.onChange = function () { return null; };
-            _this.onTouched = function () { return null; };
+            _this.onChange = (/**
+             * @return {?}
+             */
+            function () { return null; });
+            _this.onTouched = (/**
+             * @return {?}
+             */
+            function () { return null; });
             return _this;
         }
         Object.defineProperty(NzTreeComponent.prototype, "treeTemplate", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzTreeTemplate || this.nzTreeTemplateChild;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzDefaultExpandAll", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._nzDefaultExpandAll;
             },
             /**
              * @deprecated 9.0.0 use `nzExpandAll` instead.
              */
-            set: function (value) {
+            set: /**
+             * @deprecated 9.0.0 use `nzExpandAll` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 core$1.warnDeprecation("'nzDefaultExpandAll' would be removed in 9.0.0. Please use 'nzExpandAll' instead.");
                 this.nzExpandAll = value;
                 this._nzDefaultExpandAll = value;
@@ -1044,7 +1227,11 @@
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzData", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.initNzData(value);
             },
             enumerable: true,
@@ -1054,7 +1241,12 @@
             /**
              * @deprecated 9.0.0 - use `nzExpandedKeys` instead.
              */
-            set: function (value) {
+            set: /**
+             * @deprecated 9.0.0 - use `nzExpandedKeys` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 core$1.warnDeprecation("'nzDefaultExpandedKeys' would be removed in 9.0.0. Please use 'nzExpandedKeys' instead.");
                 this.nzDefaultSubject.next({ type: 'nzExpandedKeys', keys: value });
             },
@@ -1065,7 +1257,12 @@
             /**
              * @deprecated 9.0.0 - use `nzSelectedKeys` instead.
              */
-            set: function (value) {
+            set: /**
+             * @deprecated 9.0.0 - use `nzSelectedKeys` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 core$1.warnDeprecation("'nzDefaultSelectedKeys' would be removed in 9.0.0. Please use 'nzSelectedKeys' instead.");
                 this.nzDefaultSubject.next({ type: 'nzSelectedKeys', keys: value });
             },
@@ -1076,7 +1273,12 @@
             /**
              * @deprecated 9.0.0 - use `nzCheckedKeys` instead.
              */
-            set: function (value) {
+            set: /**
+             * @deprecated 9.0.0 - use `nzCheckedKeys` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 core$1.warnDeprecation("'nzDefaultCheckedKeys' would be removed in 9.0.0. Please use 'nzCheckedKeys' instead.");
                 this.nzDefaultSubject.next({ type: 'nzCheckedKeys', keys: value });
             },
@@ -1084,31 +1286,50 @@
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzExpandedKeys", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.nzDefaultSubject.next({ type: 'nzExpandedKeys', keys: value });
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzSelectedKeys", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.nzDefaultSubject.next({ type: 'nzSelectedKeys', keys: value });
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzCheckedKeys", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.nzDefaultSubject.next({ type: 'nzCheckedKeys', keys: value });
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzTreeComponent.prototype, "nzSearchValue", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._searchValue;
             },
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this._searchValue = value;
                 this.nzTreeService.searchExpand(value);
                 if (core$1.isNotNil(value)) {
@@ -1127,13 +1348,23 @@
             /**
              * To render nodes if root is changed.
              */
-            get: function () {
+            get: /**
+             * To render nodes if root is changed.
+             * @return {?}
+             */
+            function () {
                 return this.nzTreeService.rootNodes;
             },
             enumerable: true,
             configurable: true
         });
-        NzTreeComponent.prototype.setClassMap = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeComponent.prototype.setClassMap = /**
+         * @return {?}
+         */
+        function () {
             var _a;
             this.classMap = (_a = {},
                 _a[this.prefixCls] = true,
@@ -1144,27 +1375,72 @@
                 _a['ant-select-tree'] = this.nzSelectMode,
                 _a);
         };
-        NzTreeComponent.prototype.writeValue = function (value) {
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzTreeComponent.prototype.writeValue = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this.initNzData(value);
         };
-        NzTreeComponent.prototype.registerOnChange = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzTreeComponent.prototype.registerOnChange = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onChange = fn;
         };
-        NzTreeComponent.prototype.registerOnTouched = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzTreeComponent.prototype.registerOnTouched = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onTouched = fn;
         };
         // tslint:disable-next-line:no-any
-        NzTreeComponent.prototype.initNzData = function (value) {
+        // tslint:disable-next-line:no-any
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzTreeComponent.prototype.initNzData = 
+        // tslint:disable-next-line:no-any
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (Array.isArray(value)) {
                 this.nzTreeService.isCheckStrictly = this.nzCheckStrictly;
                 this.nzTreeService.isMultiple = this.nzMultiple;
                 this.nzTreeService.initTree(this.coerceTreeNodes(value));
             }
         };
-        NzTreeComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             this.setClassMap();
-            this.nzDefaultSubject.pipe(operators.takeUntil(this.destroy$)).subscribe(function (data) {
+            this.nzDefaultSubject.pipe(operators.takeUntil(this.destroy$)).subscribe((/**
+             * @param {?} data
+             * @return {?}
+             */
+            function (data) {
                 if (!data || !data.keys) {
                     return;
                 }
@@ -1183,11 +1459,15 @@
                         break;
                 }
                 _this.cdr.markForCheck();
-            });
+            }));
             this.nzTreeService
                 .eventTriggerChanged()
                 .pipe(operators.takeUntil(this.destroy$))
-                .subscribe(function (data) {
+                .subscribe((/**
+             * @param {?} data
+             * @return {?}
+             */
+            function (data) {
                 switch (data.eventName) {
                     case 'expand':
                         _this.nzExpandChange.emit(data);
@@ -1224,9 +1504,17 @@
                         _this.nzOnDragEnd.emit(data);
                         break;
                 }
-            });
+            }));
         };
-        NzTreeComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzTreeComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzCheckStrictly) {
                 this.nzTreeService.isCheckStrictly = this.nzCheckStrictly;
             }
@@ -1234,37 +1522,90 @@
                 this.nzTreeService.isMultiple = this.nzMultiple;
             }
         };
-        NzTreeComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzTreeComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        /** @nocollapse */ NzTreeComponent.ɵfac = function NzTreeComponent_Factory(t) { return new (t || NzTreeComponent)(core.ɵɵdirectiveInject(core$1.NzTreeBaseService), core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core$1.NzNoAnimationDirective, 9)); };
-        /** @nocollapse */ NzTreeComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzTreeComponent, selectors: [["nz-tree"]], contentQueries: function NzTreeComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵstaticContentQuery(dirIndex, _c0$1, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.nzTreeTemplateChild = _t.first);
-            } }, inputs: { nzShowIcon: "nzShowIcon", nzShowExpand: "nzShowExpand", nzShowLine: "nzShowLine", nzExpandedIcon: "nzExpandedIcon", nzCheckable: "nzCheckable", nzAsyncData: "nzAsyncData", nzDraggable: "nzDraggable", nzHideUnMatched: "nzHideUnMatched", nzSelectMode: "nzSelectMode", nzCheckStrictly: "nzCheckStrictly", nzBlockNode: "nzBlockNode", nzExpandAll: "nzExpandAll", nzTreeTemplate: "nzTreeTemplate", nzDefaultExpandAll: "nzDefaultExpandAll", nzBeforeDrop: "nzBeforeDrop", nzMultiple: "nzMultiple", nzData: "nzData", nzDefaultExpandedKeys: "nzDefaultExpandedKeys", nzDefaultSelectedKeys: "nzDefaultSelectedKeys", nzDefaultCheckedKeys: "nzDefaultCheckedKeys", nzExpandedKeys: "nzExpandedKeys", nzSelectedKeys: "nzSelectedKeys", nzCheckedKeys: "nzCheckedKeys", nzSearchValue: "nzSearchValue" }, outputs: { nzExpandedKeysChange: "nzExpandedKeysChange", nzSelectedKeysChange: "nzSelectedKeysChange", nzCheckedKeysChange: "nzCheckedKeysChange", nzSearchValueChange: "nzSearchValueChange", nzOnSearchNode: "nzOnSearchNode", nzClick: "nzClick", nzDblClick: "nzDblClick", nzContextMenu: "nzContextMenu", nzCheckBoxChange: "nzCheckBoxChange", nzExpandChange: "nzExpandChange", nzOnDragStart: "nzOnDragStart", nzOnDragEnter: "nzOnDragEnter", nzOnDragOver: "nzOnDragOver", nzOnDragLeave: "nzOnDragLeave", nzOnDrop: "nzOnDrop", nzOnDragEnd: "nzOnDragEnd" }, exportAs: ["nzTree"], features: [core.ɵɵProvidersFeature([
-                    NzTreeService,
-                    {
-                        provide: core$1.NzTreeBaseService,
-                        useFactory: NzTreeServiceFactory,
-                        deps: [[new core.SkipSelf(), new core.Optional(), core$1.NzTreeHigherOrderServiceToken], NzTreeService]
-                    },
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef((function () { return NzTreeComponent; })),
-                        multi: true
-                    }
-                ]), core.ɵɵInheritDefinitionFeature, core.ɵɵNgOnChangesFeature()], decls: 2, vars: 2, consts: [["role", "tree", "unselectable", "on", 3, "ngClass"], [4, "ngFor", "ngForOf"], [3, "nzTreeNode", "nzSelectMode", "nzShowLine", "nzExpandedIcon", "nzDraggable", "nzCheckable", "nzShowExpand", "nzAsyncData", "nzSearchValue", "nzHideUnMatched", "nzBeforeDrop", "nzExpandAll", "nzShowIcon", "nzTreeTemplate", "nzNoAnimation"]], template: function NzTreeComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "ul", 0);
-                core.ɵɵtemplate(1, NzTreeComponent_ng_container_1_Template, 2, 16, "ng-container", 1);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("ngClass", ctx.classMap);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.nzNodes);
-            } }, directives: [common.NgClass, common.NgForOf, NzTreeNodeComponent, core$1.NzNoAnimationDirective], encapsulation: 2, changeDetection: 0 });
+        NzTreeComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-tree',
+                        exportAs: 'nzTree',
+                        template: "<ul\n  role=\"tree\"\n  unselectable=\"on\"\n  [ngClass]=\"classMap\">\n  <ng-container *ngFor=\"let node of nzNodes\">\n    <nz-tree-node\n      [nzTreeNode]=\"node\"\n      [nzSelectMode]=\"nzSelectMode\"\n      [nzShowLine]=\"nzShowLine\"\n      [nzExpandedIcon]=\"nzExpandedIcon\"\n      [nzDraggable]=\"nzDraggable\"\n      [nzCheckable]=\"nzCheckable\"\n      [nzShowExpand]=\"nzShowExpand\"\n      [nzAsyncData]=\"nzAsyncData\"\n      [nzSearchValue]=\"nzSearchValue\"\n      [nzHideUnMatched]=\"nzHideUnMatched\"\n      [nzBeforeDrop]=\"nzBeforeDrop\"\n      [nzExpandAll]=\"nzExpandAll\"\n      [nzShowIcon]=\"nzShowIcon\"\n      [nzTreeTemplate]=\"treeTemplate\"\n      [@.disabled]=\"noAnimation?.nzNoAnimation\"\n      [nzNoAnimation]=\"noAnimation?.nzNoAnimation\">\n    </nz-tree-node>\n  </ng-container>\n</ul>",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        providers: [
+                            NzTreeService,
+                            {
+                                provide: core$1.NzTreeBaseService,
+                                useFactory: NzTreeServiceFactory,
+                                deps: [[new core.SkipSelf(), new core.Optional(), core$1.NzTreeHigherOrderServiceToken], NzTreeService]
+                            },
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzTreeComponent; })),
+                                multi: true
+                            }
+                        ]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzTreeComponent.ctorParameters = function () { return [
+            { type: core$1.NzTreeBaseService },
+            { type: core$1.NzConfigService },
+            { type: core.ChangeDetectorRef },
+            { type: core$1.NzNoAnimationDirective, decorators: [{ type: core.Host }, { type: core.Optional }] }
+        ]; };
+        NzTreeComponent.propDecorators = {
+            nzShowIcon: [{ type: core.Input }],
+            nzShowExpand: [{ type: core.Input }],
+            nzShowLine: [{ type: core.Input }],
+            nzExpandedIcon: [{ type: core.Input }],
+            nzCheckable: [{ type: core.Input }],
+            nzAsyncData: [{ type: core.Input }],
+            nzDraggable: [{ type: core.Input }],
+            nzHideUnMatched: [{ type: core.Input }],
+            nzSelectMode: [{ type: core.Input }],
+            nzCheckStrictly: [{ type: core.Input }],
+            nzBlockNode: [{ type: core.Input }],
+            nzExpandAll: [{ type: core.Input }],
+            nzTreeTemplate: [{ type: core.Input }],
+            nzTreeTemplateChild: [{ type: core.ContentChild, args: ['nzTreeTemplate', { static: true },] }],
+            nzDefaultExpandAll: [{ type: core.Input }],
+            nzBeforeDrop: [{ type: core.Input }],
+            nzMultiple: [{ type: core.Input }],
+            nzData: [{ type: core.Input }],
+            nzDefaultExpandedKeys: [{ type: core.Input }],
+            nzDefaultSelectedKeys: [{ type: core.Input }],
+            nzDefaultCheckedKeys: [{ type: core.Input }],
+            nzExpandedKeys: [{ type: core.Input }],
+            nzSelectedKeys: [{ type: core.Input }],
+            nzCheckedKeys: [{ type: core.Input }],
+            nzSearchValue: [{ type: core.Input }],
+            nzExpandedKeysChange: [{ type: core.Output }],
+            nzSelectedKeysChange: [{ type: core.Output }],
+            nzCheckedKeysChange: [{ type: core.Output }],
+            nzSearchValueChange: [{ type: core.Output }],
+            nzOnSearchNode: [{ type: core.Output }],
+            nzClick: [{ type: core.Output }],
+            nzDblClick: [{ type: core.Output }],
+            nzContextMenu: [{ type: core.Output }],
+            nzCheckBoxChange: [{ type: core.Output }],
+            nzExpandChange: [{ type: core.Output }],
+            nzOnDragStart: [{ type: core.Output }],
+            nzOnDragEnter: [{ type: core.Output }],
+            nzOnDragOver: [{ type: core.Output }],
+            nzOnDragLeave: [{ type: core.Output }],
+            nzOnDrop: [{ type: core.Output }],
+            nzOnDragEnd: [{ type: core.Output }]
+        };
         __decorate([
             core$1.InputBoolean(), core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, false),
             __metadata("design:type", Boolean)
@@ -1320,139 +1661,121 @@
         ], NzTreeComponent.prototype, "nzMultiple", void 0);
         return NzTreeComponent;
     }(core$1.NzTreeBase));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzTreeComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-tree',
-                    exportAs: 'nzTree',
-                    templateUrl: './nz-tree.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    providers: [
-                        NzTreeService,
-                        {
-                            provide: core$1.NzTreeBaseService,
-                            useFactory: NzTreeServiceFactory,
-                            deps: [[new core.SkipSelf(), new core.Optional(), core$1.NzTreeHigherOrderServiceToken], NzTreeService]
-                        },
-                        {
-                            provide: forms.NG_VALUE_ACCESSOR,
-                            useExisting: core.forwardRef((function () { return NzTreeComponent; })),
-                            multi: true
-                        }
-                    ]
-                }]
-        }], function () { return [{ type: core$1.NzTreeBaseService }, { type: core$1.NzConfigService }, { type: core.ChangeDetectorRef }, { type: core$1.NzNoAnimationDirective, decorators: [{
-                    type: core.Host
-                }, {
-                    type: core.Optional
-                }] }]; }, { nzShowIcon: [{
-                type: core.Input
-            }], nzShowExpand: [{
-                type: core.Input
-            }], nzShowLine: [{
-                type: core.Input
-            }], nzExpandedIcon: [{
-                type: core.Input
-            }], nzCheckable: [{
-                type: core.Input
-            }], nzAsyncData: [{
-                type: core.Input
-            }], nzDraggable: [{
-                type: core.Input
-            }], nzHideUnMatched: [{
-                type: core.Input
-            }], nzSelectMode: [{
-                type: core.Input
-            }], nzCheckStrictly: [{
-                type: core.Input
-            }], nzBlockNode: [{
-                type: core.Input
-            }], nzExpandAll: [{
-                type: core.Input
-            }], nzTreeTemplate: [{
-                type: core.Input
-            }], nzTreeTemplateChild: [{
-                type: core.ContentChild,
-                args: ['nzTreeTemplate', { static: true }]
-            }], nzDefaultExpandAll: [{
-                type: core.Input
-            }], nzBeforeDrop: [{
-                type: core.Input
-            }], nzMultiple: [{
-                type: core.Input
-            }], nzData: [{
-                type: core.Input
-            }], nzDefaultExpandedKeys: [{
-                type: core.Input
-            }], nzDefaultSelectedKeys: [{
-                type: core.Input
-            }], nzDefaultCheckedKeys: [{
-                type: core.Input
-            }], nzExpandedKeys: [{
-                type: core.Input
-            }], nzSelectedKeys: [{
-                type: core.Input
-            }], nzCheckedKeys: [{
-                type: core.Input
-            }], nzSearchValue: [{
-                type: core.Input
-            }], nzExpandedKeysChange: [{
-                type: core.Output
-            }], nzSelectedKeysChange: [{
-                type: core.Output
-            }], nzCheckedKeysChange: [{
-                type: core.Output
-            }], nzSearchValueChange: [{
-                type: core.Output
-            }], nzOnSearchNode: [{
-                type: core.Output
-            }], nzClick: [{
-                type: core.Output
-            }], nzDblClick: [{
-                type: core.Output
-            }], nzContextMenu: [{
-                type: core.Output
-            }], nzCheckBoxChange: [{
-                type: core.Output
-            }], nzExpandChange: [{
-                type: core.Output
-            }], nzOnDragStart: [{
-                type: core.Output
-            }], nzOnDragEnter: [{
-                type: core.Output
-            }], nzOnDragOver: [{
-                type: core.Output
-            }], nzOnDragLeave: [{
-                type: core.Output
-            }], nzOnDrop: [{
-                type: core.Output
-            }], nzOnDragEnd: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzTreeComponent.prototype.nzShowIcon;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzShowExpand;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzShowLine;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzExpandedIcon;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzCheckable;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzAsyncData;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzDraggable;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzHideUnMatched;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzSelectMode;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzCheckStrictly;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzBlockNode;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzExpandAll;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzTreeTemplate;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzTreeTemplateChild;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeComponent.prototype._nzDefaultExpandAll;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzBeforeDrop;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzMultiple;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzExpandedKeysChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzSelectedKeysChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzCheckedKeysChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzSearchValueChange;
+        /**
+         * @deprecated use `nzSearchValueChange` instead.
+         * @type {?}
+         */
+        NzTreeComponent.prototype.nzOnSearchNode;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzClick;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzDblClick;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzContextMenu;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzCheckBoxChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzExpandChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDragStart;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDragEnter;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDragOver;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDragLeave;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDrop;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzOnDragEnd;
+        /** @type {?} */
+        NzTreeComponent.prototype._searchValue;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzDefaultSubject;
+        /** @type {?} */
+        NzTreeComponent.prototype.destroy$;
+        /** @type {?} */
+        NzTreeComponent.prototype.prefixCls;
+        /** @type {?} */
+        NzTreeComponent.prototype.classMap;
+        /** @type {?} */
+        NzTreeComponent.prototype.onChange;
+        /** @type {?} */
+        NzTreeComponent.prototype.onTouched;
+        /** @type {?} */
+        NzTreeComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzTreeComponent.prototype.cdr;
+        /** @type {?} */
+        NzTreeComponent.prototype.noAnimation;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-tree.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeModule = /** @class */ (function () {
         function NzTreeModule() {
         }
-        /** @nocollapse */ NzTreeModule.ɵmod = core.ɵɵdefineNgModule({ type: NzTreeModule });
-        /** @nocollapse */ NzTreeModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzTreeModule_Factory(t) { return new (t || NzTreeModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule, core$1.NzNoAnimationModule, core$1.NzHighlightModule]] });
+        NzTreeModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule, core$1.NzNoAnimationModule, core$1.NzHighlightModule],
+                        declarations: [NzTreeComponent, NzTreeNodeComponent],
+                        exports: [NzTreeComponent, NzTreeNodeComponent]
+                    },] }
+        ];
         return NzTreeModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzTreeModule, { declarations: [NzTreeComponent, NzTreeNodeComponent], imports: [common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule, core$1.NzNoAnimationModule, core$1.NzHighlightModule], exports: [NzTreeComponent, NzTreeNodeComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzTreeModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule, core$1.NzNoAnimationModule, core$1.NzHighlightModule],
-                    declarations: [NzTreeComponent, NzTreeNodeComponent],
-                    exports: [NzTreeComponent, NzTreeNodeComponent]
-                }]
-        }], null, null); })();
 
     exports.NzTreeComponent = NzTreeComponent;
     exports.NzTreeModule = NzTreeModule;

@@ -201,101 +201,12 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = ["contentElement"];
-    function NzBadgeComponent_span_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "span", 4);
-    } if (rf & 2) {
-        var ctx_r52 = core.ɵɵnextContext();
-        core.ɵɵstyleSanitizer(core.ɵɵdefaultStyleSanitizer);
-        core.ɵɵclassMapInterpolate1("ant-badge-status-dot ant-badge-status-", ctx_r52.nzStatus || ctx_r52.presetColor, "");
-        core.ɵɵstyleProp("background", !ctx_r52.presetColor && ctx_r52.nzColor);
-        core.ɵɵproperty("ngStyle", ctx_r52.nzStyle);
-    } }
-    function NzBadgeComponent_span_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 5);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r53 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r53.nzText);
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_ng_container_1_p_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "p");
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var p_r63 = ctx.$implicit;
-        var i_r59 = core.ɵɵnextContext(3).index;
-        var ctx_r62 = core.ɵɵnextContext(3);
-        core.ɵɵclassProp("current", p_r63 === ctx_r62.countArray[i_r59]);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(p_r63);
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_ng_container_1_p_1_Template, 2, 2, "p", 12);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r61 = core.ɵɵnextContext(5);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r61.countSingleArray);
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 11);
-        core.ɵɵtemplate(1, NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_ng_container_1_Template, 2, 1, "ng-container", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var i_r59 = core.ɵɵnextContext().index;
-        var ctx_r60 = core.ɵɵnextContext(3);
-        core.ɵɵstyleProp("transform", "translateY(" + (0 - ctx_r60.countArray[i_r59]) * 100 + "%)");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r60.nzDot && ctx_r60.countArray[i_r59] !== undefined);
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzBadgeComponent_ng_container_5_sup_1_ng_container_1_span_1_Template, 2, 2, "span", 10);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r56 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r56.count <= ctx_r56.nzOverflowCount);
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r57 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1("", ctx_r57.nzOverflowCount, "+");
-    } }
-    function NzBadgeComponent_ng_container_5_sup_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "sup", 7);
-        core.ɵɵtemplate(1, NzBadgeComponent_ng_container_5_sup_1_ng_container_1_Template, 2, 1, "ng-container", 8);
-        core.ɵɵtemplate(2, NzBadgeComponent_ng_container_5_sup_1_ng_container_2_Template, 2, 1, "ng-container", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r55 = core.ɵɵnextContext(2);
-        core.ɵɵstyleProp("right", ctx_r55.nzOffset && ctx_r55.nzOffset[0] ? 0 - ctx_r55.nzOffset[0] : null, "px")("margin-top", ctx_r55.nzOffset && ctx_r55.nzOffset[1] ? ctx_r55.nzOffset[1] : null, "px");
-        core.ɵɵclassProp("ant-badge-count", !ctx_r55.nzDot)("ant-badge-dot", ctx_r55.nzDot)("ant-badge-multiple-words", ctx_r55.countArray.length >= 2);
-        core.ɵɵproperty("@.disabled", ctx_r55.notWrapper)("@zoomBadgeMotion", undefined)("ngStyle", ctx_r55.nzStyle);
-        core.ɵɵattribute("title", ctx_r55.nzTitle || ctx_r55.nzCount);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r55.maxNumberArray);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r55.count > ctx_r55.nzOverflowCount);
-    } }
-    function NzBadgeComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzBadgeComponent_ng_container_5_sup_1_Template, 3, 11, "sup", 6);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r54 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r54.showSup && ctx_r54.viewInit);
-    } }
-    var _c1 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-badge.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'backTop';
     var NzBadgeComponent = /** @class */ (function () {
         function NzBadgeComponent(nzConfigService, renderer, elementRef, contentObserver, cdr, ngZone) {
@@ -311,14 +222,34 @@
             this.maxNumberArray = [];
             this.countArray = [];
             this.countSingleArray = [0, 1, 2, 3, 4, 5, 6, 7, 8, 9];
-            this.colorArray = ['pink', 'red', 'yellow', 'orange', 'cyan', 'green', 'blue', 'purple', 'geekblue', 'magenta', 'volcano', 'gold', 'lime'];
+            this.colorArray = [
+                'pink',
+                'red',
+                'yellow',
+                'orange',
+                'cyan',
+                'green',
+                'blue',
+                'purple',
+                'geekblue',
+                'magenta',
+                'volcano',
+                'gold',
+                'lime'
+            ];
             this.presetColor = null;
             this.nzShowZero = false;
             this.nzShowDot = true;
             this.nzDot = false;
             renderer.addClass(elementRef.nativeElement, 'ant-badge');
         }
-        NzBadgeComponent.prototype.checkContent = function () {
+        /**
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.checkContent = /**
+         * @return {?}
+         */
+        function () {
             this.notWrapper = core$1.isEmpty(this.contentElement.nativeElement);
             if (this.notWrapper) {
                 this.renderer.addClass(this.elementRef.nativeElement, 'ant-badge-not-a-wrapper');
@@ -328,39 +259,78 @@
             }
         };
         Object.defineProperty(NzBadgeComponent.prototype, "showSup", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return (this.nzShowDot && this.nzDot) || this.count > 0 || (this.count === 0 && this.nzShowZero);
             },
             enumerable: true,
             configurable: true
         });
-        NzBadgeComponent.prototype.generateMaxNumberArray = function () {
+        /**
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.generateMaxNumberArray = /**
+         * @return {?}
+         */
+        function () {
             this.maxNumberArray = this.nzOverflowCount.toString().split('');
         };
-        NzBadgeComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.generateMaxNumberArray();
         };
-        NzBadgeComponent.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            this.ngZone.onStable.pipe(operators.take(1)).subscribe(function () {
+            this.ngZone.onStable.pipe(operators.take(1)).subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.viewInit = true;
                 _this.cdr.markForCheck();
-            });
+            }));
             this.contentObserver
                 .observe(this.contentElement)
                 .pipe(operators.startWith(true), operators.takeUntil(this.destroy$))
-                .subscribe(function () {
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.checkContent();
-            });
+            }));
         };
-        NzBadgeComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             var nzOverflowCount = changes.nzOverflowCount, nzCount = changes.nzCount, nzColor = changes.nzColor;
             if (nzCount && !(nzCount.currentValue instanceof core.TemplateRef)) {
                 this.count = Math.max(0, nzCount.currentValue);
                 this.countArray = this.count
                     .toString()
                     .split('')
-                    .map(function (item) { return +item; });
+                    .map((/**
+                 * @param {?} item
+                 * @return {?}
+                 */
+                function (item) { return +item; }));
             }
             if (nzOverflowCount) {
                 this.generateMaxNumberArray();
@@ -369,36 +339,53 @@
                 this.presetColor = this.colorArray.indexOf(this.nzColor) !== -1 ? this.nzColor : null;
             }
         };
-        NzBadgeComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzBadgeComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        /** @nocollapse */ NzBadgeComponent.ɵfac = function NzBadgeComponent_Factory(t) { return new (t || NzBadgeComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(observers.ContentObserver), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core.NgZone)); };
-        /** @nocollapse */ NzBadgeComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzBadgeComponent, selectors: [["nz-badge"]], viewQuery: function NzBadgeComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵviewQuery(_c0, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.contentElement = _t.first);
-            } }, hostBindings: function NzBadgeComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-badge-status", ctx.nzStatus);
-            } }, inputs: { nzShowZero: "nzShowZero", nzShowDot: "nzShowDot", nzDot: "nzDot", nzOverflowCount: "nzOverflowCount", nzText: "nzText", nzColor: "nzColor", nzTitle: "nzTitle", nzStyle: "nzStyle", nzStatus: "nzStatus", nzCount: "nzCount", nzOffset: "nzOffset" }, exportAs: ["nzBadge"], features: [core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c1, decls: 6, vars: 3, consts: [["contentElement", ""], [3, "class", "background", "ngStyle", 4, "ngIf"], ["class", "ant-badge-status-text", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [3, "ngStyle"], [1, "ant-badge-status-text"], ["class", "ant-scroll-number", 3, "ngStyle", "right", "marginTop", "ant-badge-count", "ant-badge-dot", "ant-badge-multiple-words", 4, "ngIf"], [1, "ant-scroll-number", 3, "ngStyle"], [4, "ngFor", "ngForOf"], [4, "ngIf"], ["class", "ant-scroll-number-only", 3, "transform", 4, "ngIf"], [1, "ant-scroll-number-only"], [3, "current", 4, "ngFor", "ngForOf"]], template: function NzBadgeComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵelementStart(0, "span", null, 0);
-                core.ɵɵprojection(2);
-                core.ɵɵelementEnd();
-                core.ɵɵtemplate(3, NzBadgeComponent_span_3_Template, 1, 5, "span", 1);
-                core.ɵɵtemplate(4, NzBadgeComponent_span_4_Template, 2, 1, "span", 2);
-                core.ɵɵtemplate(5, NzBadgeComponent_ng_container_5_Template, 2, 1, "ng-container", 3);
-            } if (rf & 2) {
-                core.ɵɵadvance(3);
-                core.ɵɵproperty("ngIf", ctx.nzStatus || ctx.nzColor);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzStatus || ctx.nzColor);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("nzStringTemplateOutlet", ctx.nzCount);
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective, common.NgStyle, common.NgForOf], encapsulation: 2, data: { animation: [core$1.zoomBadgeMotion] }, changeDetection: 0 });
+        NzBadgeComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-badge',
+                        exportAs: 'nzBadge',
+                        preserveWhitespaces: false,
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        animations: [core$1.zoomBadgeMotion],
+                        template: "<span #contentElement><ng-content></ng-content></span>\n<span class=\"ant-badge-status-dot ant-badge-status-{{nzStatus || presetColor}}\"\n      [style.background]=\"!presetColor && nzColor\"\n      *ngIf=\"nzStatus || nzColor\"\n      [ngStyle]=\"nzStyle\"></span>\n<span class=\"ant-badge-status-text\" *ngIf=\"nzStatus || nzColor\">{{ nzText }}</span>\n<ng-container *nzStringTemplateOutlet=\"nzCount\">\n  <sup class=\"ant-scroll-number\"\n       *ngIf=\"showSup && viewInit\"\n       [@.disabled]=\"notWrapper\"\n       [@zoomBadgeMotion]\n       [ngStyle]=\"nzStyle\"\n       [attr.title]=\"nzTitle || nzCount\"\n       [style.right.px]=\"nzOffset && nzOffset[0] ? -nzOffset[0] : null\"\n       [style.marginTop.px]=\"nzOffset && nzOffset[1] ? nzOffset[1] : null\"\n       [class.ant-badge-count]=\"!nzDot\"\n       [class.ant-badge-dot]=\"nzDot\"\n       [class.ant-badge-multiple-words]=\"countArray.length>=2\">\n    <ng-container *ngFor=\"let n of maxNumberArray;let i = index;\">\n      <span class=\"ant-scroll-number-only\"\n            *ngIf=\"count <= nzOverflowCount\"\n            [style.transform]=\"'translateY(' + (-countArray[i] * 100) + '%)'\">\n          <ng-container *ngIf=\"!nzDot && countArray[i] !== undefined\">\n            <p *ngFor=\"let p of countSingleArray\" [class.current]=\"p === countArray[i]\">{{ p }}</p>\n          </ng-container>\n      </span>\n    </ng-container>\n    <ng-container *ngIf=\"count > nzOverflowCount\">{{ nzOverflowCount }}+</ng-container>\n  </sup>\n</ng-container>",
+                        host: {
+                            '[class.ant-badge-status]': 'nzStatus'
+                        }
+                    }] }
+        ];
+        /** @nocollapse */
+        NzBadgeComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core.Renderer2 },
+            { type: core.ElementRef },
+            { type: observers.ContentObserver },
+            { type: core.ChangeDetectorRef },
+            { type: core.NgZone }
+        ]; };
+        NzBadgeComponent.propDecorators = {
+            contentElement: [{ type: core.ViewChild, args: ['contentElement', { static: false },] }],
+            nzShowZero: [{ type: core.Input }],
+            nzShowDot: [{ type: core.Input }],
+            nzDot: [{ type: core.Input }],
+            nzOverflowCount: [{ type: core.Input }],
+            nzText: [{ type: core.Input }],
+            nzColor: [{ type: core.Input }],
+            nzTitle: [{ type: core.Input }],
+            nzStyle: [{ type: core.Input }],
+            nzStatus: [{ type: core.Input }],
+            nzCount: [{ type: core.Input }],
+            nzOffset: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Boolean)
@@ -421,70 +408,98 @@
         ], NzBadgeComponent.prototype, "nzColor", void 0);
         return NzBadgeComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBadgeComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-badge',
-                    exportAs: 'nzBadge',
-                    preserveWhitespaces: false,
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    animations: [core$1.zoomBadgeMotion],
-                    templateUrl: './nz-badge.component.html',
-                    host: {
-                        '[class.ant-badge-status]': 'nzStatus'
-                    }
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core.Renderer2 }, { type: core.ElementRef }, { type: observers.ContentObserver }, { type: core.ChangeDetectorRef }, { type: core.NgZone }]; }, { contentElement: [{
-                type: core.ViewChild,
-                args: ['contentElement', { static: false }]
-            }], nzShowZero: [{
-                type: core.Input
-            }], nzShowDot: [{
-                type: core.Input
-            }], nzDot: [{
-                type: core.Input
-            }], nzOverflowCount: [{
-                type: core.Input
-            }], nzText: [{
-                type: core.Input
-            }], nzColor: [{
-                type: core.Input
-            }], nzTitle: [{
-                type: core.Input
-            }], nzStyle: [{
-                type: core.Input
-            }], nzStatus: [{
-                type: core.Input
-            }], nzCount: [{
-                type: core.Input
-            }], nzOffset: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.destroy$;
+        /** @type {?} */
+        NzBadgeComponent.prototype.notWrapper;
+        /** @type {?} */
+        NzBadgeComponent.prototype.viewInit;
+        /** @type {?} */
+        NzBadgeComponent.prototype.maxNumberArray;
+        /** @type {?} */
+        NzBadgeComponent.prototype.countArray;
+        /** @type {?} */
+        NzBadgeComponent.prototype.countSingleArray;
+        /** @type {?} */
+        NzBadgeComponent.prototype.colorArray;
+        /** @type {?} */
+        NzBadgeComponent.prototype.presetColor;
+        /** @type {?} */
+        NzBadgeComponent.prototype.count;
+        /** @type {?} */
+        NzBadgeComponent.prototype.contentElement;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzShowZero;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzShowDot;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzDot;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzOverflowCount;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzText;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzColor;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzStyle;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzStatus;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzCount;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzOffset;
+        /** @type {?} */
+        NzBadgeComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.renderer;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.elementRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.contentObserver;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.cdr;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBadgeComponent.prototype.ngZone;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-badge.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBadgeModule = /** @class */ (function () {
         function NzBadgeModule() {
         }
-        /** @nocollapse */ NzBadgeModule.ɵmod = core.ɵɵdefineNgModule({ type: NzBadgeModule });
-        /** @nocollapse */ NzBadgeModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzBadgeModule_Factory(t) { return new (t || NzBadgeModule)(); }, imports: [[common.CommonModule, observers.ObserversModule, core$1.NzAddOnModule]] });
+        NzBadgeModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzBadgeComponent],
+                        exports: [NzBadgeComponent],
+                        imports: [common.CommonModule, observers.ObserversModule, core$1.NzAddOnModule]
+                    },] }
+        ];
         return NzBadgeModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzBadgeModule, { declarations: [NzBadgeComponent], imports: [common.CommonModule, observers.ObserversModule, core$1.NzAddOnModule], exports: [NzBadgeComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBadgeModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzBadgeComponent],
-                    exports: [NzBadgeComponent],
-                    imports: [common.CommonModule, observers.ObserversModule, core$1.NzAddOnModule]
-                }]
-        }], null, null); })();
 
     exports.NzBadgeComponent = NzBadgeComponent;
     exports.NzBadgeModule = NzBadgeModule;

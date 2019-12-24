@@ -202,11 +202,9 @@
     }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-row.directive.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzRowDirective = /** @class */ (function () {
         function NzRowDirective(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService) {
@@ -224,7 +222,13 @@
             this.actualGutter$ = new rxjs.Subject();
             this.destroy$ = new rxjs.Subject();
         }
-        NzRowDirective.prototype.calculateGutter = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.calculateGutter = /**
+         * @return {?}
+         */
+        function () {
             if (typeof this.nzGutter !== 'object') {
                 return this.nzGutter;
             }
@@ -235,7 +239,14 @@
                 return 0;
             }
         };
-        NzRowDirective.prototype.updateGutter = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.updateGutter = /**
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var actualGutter = this.calculateGutter();
             if (this.actualGutter !== actualGutter) {
                 this.actualGutter = actualGutter;
@@ -244,20 +255,41 @@
                 this.renderer.setStyle(this.el, 'margin-right', "-" + this.actualGutter / 2 + "px");
             }
         };
-        NzRowDirective.prototype.watchMedia = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.watchMedia = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
-            Object.keys(core$1.responsiveMap).map(function (screen) {
-                var castBP = screen;
+            Object.keys(core$1.responsiveMap).map((/**
+             * @param {?} screen
+             * @return {?}
+             */
+            function (screen) {
+                /** @type {?} */
+                var castBP = (/** @type {?} */ (screen));
+                /** @type {?} */
                 var matchBelow = _this.mediaMatcher.matchMedia(core$1.responsiveMap[castBP]).matches;
                 if (matchBelow) {
                     _this.breakPoint = castBP;
                 }
-            });
+            }));
             this.updateGutter();
         };
         /** temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289*/
-        NzRowDirective.prototype.setClassMap = function () {
+        /**
+         * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+         * @return {?}
+         */
+        NzRowDirective.prototype.setClassMap = /**
+         * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+         * @return {?}
+         */
+        function () {
             var _a;
+            /** @type {?} */
             var classMap = (_a = {},
                 _a["" + this.prefixCls] = !this.nzType,
                 _a[this.prefixCls + "-" + this.nzType] = this.nzType,
@@ -266,11 +298,25 @@
                 _a);
             this.nzUpdateHostClassService.updateHostClass(this.el, classMap);
         };
-        NzRowDirective.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.setClassMap();
             this.watchMedia();
         };
-        NzRowDirective.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzRowDirective.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzType || changes.nzAlign || changes.nzJustify) {
                 this.setClassMap();
             }
@@ -278,40 +324,132 @@
                 this.updateGutter();
             }
         };
-        NzRowDirective.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (this.platform.isBrowser) {
                 this.nzDomEventService
                     .registerResizeListener()
-                    .pipe(operators.takeUntil(this.destroy$), operators.finalize(function () { return _this.nzDomEventService.unregisterResizeListener(); }))
-                    .subscribe(function () { return _this.watchMedia(); });
+                    .pipe(operators.takeUntil(this.destroy$), operators.finalize((/**
+                 * @return {?}
+                 */
+                function () { return _this.nzDomEventService.unregisterResizeListener(); })))
+                    .subscribe((/**
+                 * @return {?}
+                 */
+                function () { return _this.watchMedia(); }));
             }
         };
-        NzRowDirective.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzRowDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        /** @nocollapse */ NzRowDirective.ɵfac = function NzRowDirective_Factory(t) { return new (t || NzRowDirective)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core$1.NzUpdateHostClassService), core.ɵɵdirectiveInject(layout.MediaMatcher), core.ɵɵdirectiveInject(core.NgZone), core.ɵɵdirectiveInject(platform.Platform), core.ɵɵdirectiveInject(core$1.NzDomEventService)); };
-        /** @nocollapse */ NzRowDirective.ɵdir = core.ɵɵdefineDirective({ type: NzRowDirective, selectors: [["", "nz-row", ""], ["nz-row"]], inputs: { nzType: "nzType", nzAlign: "nzAlign", nzJustify: "nzJustify", nzGutter: "nzGutter" }, exportAs: ["nzRow"], features: [core.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), core.ɵɵNgOnChangesFeature()] });
+        NzRowDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nz-row],nz-row',
+                        exportAs: 'nzRow',
+                        providers: [core$1.NzUpdateHostClassService]
+                    },] }
+        ];
+        /** @nocollapse */
+        NzRowDirective.ctorParameters = function () { return [
+            { type: core.ElementRef },
+            { type: core.Renderer2 },
+            { type: core$1.NzUpdateHostClassService },
+            { type: layout.MediaMatcher },
+            { type: core.NgZone },
+            { type: platform.Platform },
+            { type: core$1.NzDomEventService }
+        ]; };
+        NzRowDirective.propDecorators = {
+            nzType: [{ type: core.Input }],
+            nzAlign: [{ type: core.Input }],
+            nzJustify: [{ type: core.Input }],
+            nzGutter: [{ type: core.Input }]
+        };
         return NzRowDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzRowDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nz-row],nz-row',
-                    exportAs: 'nzRow',
-                    providers: [core$1.NzUpdateHostClassService]
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: core.Renderer2 }, { type: core$1.NzUpdateHostClassService }, { type: layout.MediaMatcher }, { type: core.NgZone }, { type: platform.Platform }, { type: core$1.NzDomEventService }]; }, { nzType: [{
-                type: core.Input
-            }], nzAlign: [{
-                type: core.Input
-            }], nzJustify: [{
-                type: core.Input
-            }], nzGutter: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzRowDirective.prototype.nzType;
+        /** @type {?} */
+        NzRowDirective.prototype.nzAlign;
+        /** @type {?} */
+        NzRowDirective.prototype.nzJustify;
+        /** @type {?} */
+        NzRowDirective.prototype.nzGutter;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzRowDirective.prototype.el;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzRowDirective.prototype.prefixCls;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzRowDirective.prototype.breakPoint;
+        /** @type {?} */
+        NzRowDirective.prototype.actualGutter;
+        /** @type {?} */
+        NzRowDirective.prototype.actualGutter$;
+        /** @type {?} */
+        NzRowDirective.prototype.destroy$;
+        /** @type {?} */
+        NzRowDirective.prototype.elementRef;
+        /** @type {?} */
+        NzRowDirective.prototype.renderer;
+        /** @type {?} */
+        NzRowDirective.prototype.nzUpdateHostClassService;
+        /** @type {?} */
+        NzRowDirective.prototype.mediaMatcher;
+        /** @type {?} */
+        NzRowDirective.prototype.ngZone;
+        /** @type {?} */
+        NzRowDirective.prototype.platform;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzRowDirective.prototype.nzDomEventService;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-col.directive.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function EmbeddedProperty() { }
+    if (false) {
+        /** @type {?|undefined} */
+        EmbeddedProperty.prototype.span;
+        /** @type {?|undefined} */
+        EmbeddedProperty.prototype.pull;
+        /** @type {?|undefined} */
+        EmbeddedProperty.prototype.push;
+        /** @type {?|undefined} */
+        EmbeddedProperty.prototype.offset;
+        /** @type {?|undefined} */
+        EmbeddedProperty.prototype.order;
+    }
     var NzColDirective = /** @class */ (function () {
         function NzColDirective(nzUpdateHostClassService, elementRef, nzRowDirective, renderer) {
             this.nzUpdateHostClassService = nzUpdateHostClassService;
@@ -323,116 +461,212 @@
             this.destroy$ = new rxjs.Subject();
         }
         /** temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289*/
-        NzColDirective.prototype.setClassMap = function () {
+        /**
+         * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+         * @return {?}
+         */
+        NzColDirective.prototype.setClassMap = /**
+         * temp solution since no method add classMap to host https://github.com/angular/angular/issues/7289
+         * @return {?}
+         */
+        function () {
             var _a;
+            /** @type {?} */
             var classMap = __assign((_a = {}, _a["" + this.prefixCls] = true, _a[this.prefixCls + "-" + this.nzSpan] = core$1.isNotNil(this.nzSpan), _a[this.prefixCls + "-order-" + this.nzOrder] = core$1.isNotNil(this.nzOrder), _a[this.prefixCls + "-offset-" + this.nzOffset] = core$1.isNotNil(this.nzOffset), _a[this.prefixCls + "-pull-" + this.nzPull] = core$1.isNotNil(this.nzPull), _a[this.prefixCls + "-push-" + this.nzPush] = core$1.isNotNil(this.nzPush), _a), this.generateClass());
             this.nzUpdateHostClassService.updateHostClass(this.el, classMap);
         };
-        NzColDirective.prototype.generateClass = function () {
+        /**
+         * @return {?}
+         */
+        NzColDirective.prototype.generateClass = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
+            /** @type {?} */
             var listOfSizeInputName = ['nzXs', 'nzSm', 'nzMd', 'nzLg', 'nzXl', 'nzXXl'];
+            /** @type {?} */
             var listClassMap = {};
-            listOfSizeInputName.forEach(function (name) {
+            listOfSizeInputName.forEach((/**
+             * @param {?} name
+             * @return {?}
+             */
+            function (name) {
+                /** @type {?} */
                 var sizeName = name.replace('nz', '').toLowerCase();
                 if (core$1.isNotNil(_this[name])) {
                     if (typeof _this[name] === 'number' || typeof _this[name] === 'string') {
                         listClassMap[_this.prefixCls + "-" + sizeName + "-" + _this[name]] = true;
                     }
                     else {
-                        var embedded_1 = _this[name];
+                        /** @type {?} */
+                        var embedded_1 = (/** @type {?} */ (_this[name]));
+                        /** @type {?} */
                         var prefixArray = ['span', 'pull', 'push', 'offset', 'order'];
-                        prefixArray.forEach(function (prefix) {
+                        prefixArray.forEach((/**
+                         * @param {?} prefix
+                         * @return {?}
+                         */
+                        function (prefix) {
+                            /** @type {?} */
                             var prefixClass = prefix === 'span' ? '-' : "-" + prefix + "-";
-                            listClassMap[_this.prefixCls + "-" + sizeName + prefixClass + embedded_1[prefix]] = embedded_1 && core$1.isNotNil(embedded_1[prefix]);
-                        });
+                            listClassMap[_this.prefixCls + "-" + sizeName + prefixClass + embedded_1[prefix]] =
+                                embedded_1 && core$1.isNotNil(embedded_1[prefix]);
+                        }));
                     }
                 }
-            });
+            }));
             return listClassMap;
         };
-        NzColDirective.prototype.ngOnChanges = function () {
+        /**
+         * @return {?}
+         */
+        NzColDirective.prototype.ngOnChanges = /**
+         * @return {?}
+         */
+        function () {
             this.setClassMap();
         };
-        NzColDirective.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzColDirective.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (this.nzRowDirective) {
                 this.nzRowDirective.actualGutter$
                     .pipe(operators.startWith(this.nzRowDirective.actualGutter), operators.takeUntil(this.destroy$))
-                    .subscribe(function (actualGutter) {
+                    .subscribe((/**
+                 * @param {?} actualGutter
+                 * @return {?}
+                 */
+                function (actualGutter) {
                     _this.renderer.setStyle(_this.el, 'padding-left', actualGutter / 2 + "px");
                     _this.renderer.setStyle(_this.el, 'padding-right', actualGutter / 2 + "px");
-                });
+                }));
             }
         };
-        NzColDirective.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzColDirective.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.setClassMap();
         };
-        NzColDirective.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzColDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        /** @nocollapse */ NzColDirective.ɵfac = function NzColDirective_Factory(t) { return new (t || NzColDirective)(core.ɵɵdirectiveInject(core$1.NzUpdateHostClassService), core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(NzRowDirective, 9), core.ɵɵdirectiveInject(core.Renderer2)); };
-        /** @nocollapse */ NzColDirective.ɵdir = core.ɵɵdefineDirective({ type: NzColDirective, selectors: [["", "nz-col", ""], ["nz-col"]], inputs: { nzSpan: "nzSpan", nzOrder: "nzOrder", nzOffset: "nzOffset", nzPush: "nzPush", nzPull: "nzPull", nzXs: "nzXs", nzSm: "nzSm", nzMd: "nzMd", nzLg: "nzLg", nzXl: "nzXl", nzXXl: "nzXXl" }, exportAs: ["nzCol"], features: [core.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), core.ɵɵNgOnChangesFeature()] });
+        NzColDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nz-col],nz-col',
+                        exportAs: 'nzCol',
+                        providers: [core$1.NzUpdateHostClassService]
+                    },] }
+        ];
+        /** @nocollapse */
+        NzColDirective.ctorParameters = function () { return [
+            { type: core$1.NzUpdateHostClassService },
+            { type: core.ElementRef },
+            { type: NzRowDirective, decorators: [{ type: core.Optional }, { type: core.Host }] },
+            { type: core.Renderer2 }
+        ]; };
+        NzColDirective.propDecorators = {
+            nzSpan: [{ type: core.Input }],
+            nzOrder: [{ type: core.Input }],
+            nzOffset: [{ type: core.Input }],
+            nzPush: [{ type: core.Input }],
+            nzPull: [{ type: core.Input }],
+            nzXs: [{ type: core.Input }],
+            nzSm: [{ type: core.Input }],
+            nzMd: [{ type: core.Input }],
+            nzLg: [{ type: core.Input }],
+            nzXl: [{ type: core.Input }],
+            nzXXl: [{ type: core.Input }]
+        };
         return NzColDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzColDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nz-col],nz-col',
-                    exportAs: 'nzCol',
-                    providers: [core$1.NzUpdateHostClassService]
-                }]
-        }], function () { return [{ type: core$1.NzUpdateHostClassService }, { type: core.ElementRef }, { type: NzRowDirective, decorators: [{
-                    type: core.Optional
-                }, {
-                    type: core.Host
-                }] }, { type: core.Renderer2 }]; }, { nzSpan: [{
-                type: core.Input
-            }], nzOrder: [{
-                type: core.Input
-            }], nzOffset: [{
-                type: core.Input
-            }], nzPush: [{
-                type: core.Input
-            }], nzPull: [{
-                type: core.Input
-            }], nzXs: [{
-                type: core.Input
-            }], nzSm: [{
-                type: core.Input
-            }], nzMd: [{
-                type: core.Input
-            }], nzLg: [{
-                type: core.Input
-            }], nzXl: [{
-                type: core.Input
-            }], nzXXl: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /**
+         * @type {?}
+         * @private
+         */
+        NzColDirective.prototype.el;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzColDirective.prototype.prefixCls;
+        /**
+         * @type {?}
+         * @protected
+         */
+        NzColDirective.prototype.destroy$;
+        /** @type {?} */
+        NzColDirective.prototype.nzSpan;
+        /** @type {?} */
+        NzColDirective.prototype.nzOrder;
+        /** @type {?} */
+        NzColDirective.prototype.nzOffset;
+        /** @type {?} */
+        NzColDirective.prototype.nzPush;
+        /** @type {?} */
+        NzColDirective.prototype.nzPull;
+        /** @type {?} */
+        NzColDirective.prototype.nzXs;
+        /** @type {?} */
+        NzColDirective.prototype.nzSm;
+        /** @type {?} */
+        NzColDirective.prototype.nzMd;
+        /** @type {?} */
+        NzColDirective.prototype.nzLg;
+        /** @type {?} */
+        NzColDirective.prototype.nzXl;
+        /** @type {?} */
+        NzColDirective.prototype.nzXXl;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzColDirective.prototype.nzUpdateHostClassService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzColDirective.prototype.elementRef;
+        /** @type {?} */
+        NzColDirective.prototype.nzRowDirective;
+        /** @type {?} */
+        NzColDirective.prototype.renderer;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-grid.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzGridModule = /** @class */ (function () {
         function NzGridModule() {
         }
-        /** @nocollapse */ NzGridModule.ɵmod = core.ɵɵdefineNgModule({ type: NzGridModule });
-        /** @nocollapse */ NzGridModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzGridModule_Factory(t) { return new (t || NzGridModule)(); }, imports: [[common.CommonModule, layout.LayoutModule, platform.PlatformModule]] });
+        NzGridModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzColDirective, NzRowDirective],
+                        exports: [NzColDirective, NzRowDirective],
+                        imports: [common.CommonModule, layout.LayoutModule, platform.PlatformModule]
+                    },] }
+        ];
         return NzGridModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzGridModule, { declarations: [NzColDirective, NzRowDirective], imports: [common.CommonModule, layout.LayoutModule, platform.PlatformModule], exports: [NzColDirective, NzRowDirective] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzGridModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzColDirective, NzRowDirective],
-                    exports: [NzColDirective, NzRowDirective],
-                    imports: [common.CommonModule, layout.LayoutModule, platform.PlatformModule]
-                }]
-        }], null, null); })();
 
     exports.NzColDirective = NzColDirective;
     exports.NzGridModule = NzGridModule;

@@ -7,7 +7,6 @@
  */
 import { OnChanges, OnDestroy, TemplateRef } from '@angular/core';
 import { Subject } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare class NzDescriptionsItemComponent implements OnChanges, OnDestroy {
     content: TemplateRef<void>;
     nzSpan: number;
@@ -15,6 +14,4 @@ export declare class NzDescriptionsItemComponent implements OnChanges, OnDestroy
     readonly inputChange$: Subject<void>;
     ngOnChanges(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzDescriptionsItemComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzDescriptionsItemComponent, "nz-descriptions-item", ["nzDescriptionsItem"], { 'nzSpan': "nzSpan", 'nzTitle': "nzTitle" }, {}, never>;
 }

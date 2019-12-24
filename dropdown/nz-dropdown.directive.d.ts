@@ -1,10 +1,16 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { ConnectionPositionPair, Overlay, OverlayConfig } from '@angular/cdk/overlay';
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ElementRef, EventEmitter, OnChanges, OnDestroy, Renderer2, SimpleChanges, ViewContainerRef } from '@angular/core';
 import { NzButtonComponent, NzButtonGroupComponent } from 'ng-zorro-antd/button';
 import { Observable } from 'rxjs';
 import { NzDropdownMenuComponent, NzPlacementType } from './nz-dropdown-menu.component';
-import * as i0 from "@angular/core";
 export declare class NzDropDownDirective implements AfterViewInit, OnDestroy, OnChanges {
     elementRef: ElementRef;
     private renderer;
@@ -60,6 +66,4 @@ export declare class NzDropDownDirective implements AfterViewInit, OnDestroy, On
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzDropDownDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzDropDownDirective, "[nz-dropdown]", ["nzDropdown"], { 'nzDropdownMenu': "nzDropdownMenu", 'nzTrigger': "nzTrigger", 'nzMatchWidthElement': "nzMatchWidthElement", 'nzBackdrop': "nzBackdrop", 'nzClickHide': "nzClickHide", 'nzDisabled': "nzDisabled", 'nzVisible': "nzVisible", 'nzTableFilter': "nzTableFilter", 'nzOverlayClassName': "nzOverlayClassName", 'nzOverlayStyle': "nzOverlayStyle", 'nzPlacement': "nzPlacement" }, { 'nzVisibleChange': "nzVisibleChange" }, never>;
 }

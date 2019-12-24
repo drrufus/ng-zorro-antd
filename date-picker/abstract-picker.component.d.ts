@@ -12,7 +12,6 @@ import { NzNoAnimationDirective } from 'ng-zorro-antd/core';
 import { DateHelperService, NzDatePickerI18nInterface, NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzPickerComponent } from './picker.component';
 import { CompatibleDate, CompatibleValue } from './standard-types';
-import * as i0 from "@angular/core";
 /**
  * The base picker for all common APIs
  */
@@ -66,6 +65,4 @@ export declare abstract class AbstractPickerComponent implements OnInit, OnChang
     private setLocale;
     private setDefaultPlaceHolder;
     private setValue;
-    static ɵfac: i0.ɵɵFactoryDef<AbstractPickerComponent>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<AbstractPickerComponent, never, never, { 'nzAllowClear': "nzAllowClear", 'nzAutoFocus': "nzAutoFocus", 'nzDisabled': "nzDisabled", 'nzOpen': "nzOpen", 'nzClassName': "nzClassName", 'nzDisabledDate': "nzDisabledDate", 'nzLocale': "nzLocale", 'nzPlaceHolder': "nzPlaceHolder", 'nzPopupStyle': "nzPopupStyle", 'nzDropdownClassName': "nzDropdownClassName", 'nzSize': "nzSize", 'nzStyle': "nzStyle", 'nzFormat': "nzFormat", 'nzValue': "nzValue" }, { 'nzOnOpenChange': "nzOnOpenChange" }, never>;
 }

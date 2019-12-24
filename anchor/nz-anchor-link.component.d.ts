@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit, Renderer2, TemplateRef } from '@angular/core';
 import { NzAnchorComponent } from './nz-anchor.component';
-import * as i0 from "@angular/core";
 export declare class NzAnchorLinkComponent implements OnInit, OnDestroy {
     elementRef: ElementRef;
     private anchorComp;
@@ -16,7 +15,7 @@ export declare class NzAnchorLinkComponent implements OnInit, OnDestroy {
     private platform;
     nzHref: string;
     titleStr: string | null;
-    titleTpl: TemplateRef<any>;
+    titleTpl: TemplateRef<void>;
     active: boolean;
     nzTitle: string | TemplateRef<void>;
     nzTemplate: TemplateRef<void>;
@@ -25,6 +24,4 @@ export declare class NzAnchorLinkComponent implements OnInit, OnDestroy {
     goToClick(e: Event): void;
     markForCheck(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzAnchorLinkComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzAnchorLinkComponent, "nz-link", ["nzLink"], { 'nzHref': "nzHref", 'nzTitle': "nzTitle" }, {}, ["nzTemplate"]>;
 }

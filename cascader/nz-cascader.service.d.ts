@@ -8,7 +8,6 @@
 import { OnDestroy } from '@angular/core';
 import { BehaviorSubject, Subject } from 'rxjs';
 import { NzCascaderComponentAsSource, NzCascaderOption, NzCascaderSearchOption } from './nz-cascader-definitions';
-import * as i0 from "@angular/core";
 /**
  * All data is stored and parsed in NzCascaderService.
  */
@@ -115,6 +114,4 @@ export declare class NzCascaderService implements OnDestroy {
      */
     private findOptionWithValue;
     private prepareEmitValue;
-    static ɵfac: i0.ɵɵFactoryDef<NzCascaderService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzCascaderService>;
 }

@@ -10,7 +10,6 @@ import { FormControl, FormControlDirective, FormControlName, NgModel } from '@an
 import { NgClassType, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzColDirective, NzRowDirective } from 'ng-zorro-antd/grid';
 import { NzFormItemComponent } from './nz-form-item.component';
-import * as i0 from "@angular/core";
 export declare type NzFormControlStatusType = 'warning' | 'validating' | 'error' | 'success' | null;
 export declare class NzFormControlComponent extends NzColDirective implements OnDestroy, OnInit, AfterContentInit, AfterViewInit, OnDestroy {
     private nzFormItemComponent;
@@ -53,6 +52,4 @@ export declare class NzFormControlComponent extends NzColDirective implements On
     ngOnDestroy(): void;
     ngAfterContentInit(): void;
     ngAfterViewInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzFormControlComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzFormControlComponent, "nz-form-control", ["nzFormControl"], { 'nzSuccessTip': "nzSuccessTip", 'nzWarningTip': "nzWarningTip", 'nzErrorTip': "nzErrorTip", 'nzValidatingTip': "nzValidatingTip", 'nzExtra': "nzExtra", 'nzHasFeedback': "nzHasFeedback", 'nzValidateStatus': "nzValidateStatus" }, {}, ["defaultValidateControl"]>;
 }

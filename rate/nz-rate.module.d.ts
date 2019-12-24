@@ -1,10 +1,9 @@
-import * as i0 from "@angular/core";
-import * as i1 from "./nz-rate.component";
-import * as i2 from "./nz-rate-item.component";
-import * as i3 from "@angular/common";
-import * as i4 from "ng-zorro-antd/icon";
-import * as i5 from "ng-zorro-antd/tooltip";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzRateModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NzRateModule, [typeof i1.NzRateComponent, typeof i2.NzRateItemComponent], [typeof i3.CommonModule, typeof i4.NzIconModule, typeof i5.NzToolTipModule], [typeof i1.NzRateComponent]>;
-    static ɵinj: i0.ɵɵInjectorDef<NzRateModule>;
 }

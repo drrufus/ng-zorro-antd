@@ -10,7 +10,6 @@ import { CandyDate, FunctionProp, NzNoAnimationDirective } from 'ng-zorro-antd/c
 import { DateHelperService, NzI18nService } from 'ng-zorro-antd/i18n';
 import { AbstractPickerComponent } from './abstract-picker.component';
 import { DisabledTimeFn, PanelMode, PresetRanges } from './standard-types';
-import * as i0 from "@angular/core";
 export declare class DateRangePickerComponent extends AbstractPickerComponent implements OnInit, OnChanges {
     showWeek: boolean;
     nzDateRender: FunctionProp<TemplateRef<Date> | string>;
@@ -38,6 +37,4 @@ export declare class DateRangePickerComponent extends AbstractPickerComponent im
     onResultOk(): void;
     onOpenChange(open: boolean): void;
     private setFixedPickerStyle;
-    static ɵfac: i0.ɵɵFactoryDef<DateRangePickerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<DateRangePickerComponent, "ng-component", never, { 'nzDateRender': "nzDateRender", 'nzDisabledTime': "nzDisabledTime", 'nzRenderExtraFooter': "nzRenderExtraFooter", 'nzShowToday': "nzShowToday", 'nzMode': "nzMode", 'nzRanges': "nzRanges", 'nzShowTime': "nzShowTime" }, { 'nzOnPanelChange': "nzOnPanelChange", 'nzOnCalendarChange': "nzOnCalendarChange", 'nzOnOk': "nzOnOk" }, never>;
 }

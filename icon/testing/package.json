@@ -7,6 +7,7 @@
   "fesm5": "../../fesm5/ng-zorro-antd-icon-testing.js",
   "fesm2015": "../../fesm2015/ng-zorro-antd-icon-testing.js",
   "typings": "ng-zorro-antd-icon-testing.d.ts",
+  "metadata": "ng-zorro-antd-icon-testing.metadata.json",
   "sideEffects": false,
   "name": "ng-zorro-antd/icon/testing"
 }

@@ -201,33 +201,12 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = ["textEl"];
-    function NzAvatarComponent_i_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 3);
-    } if (rf & 2) {
-        var ctx_r372 = core.ɵɵnextContext();
-        core.ɵɵproperty("nzType", !ctx_r372.oldAPIIcon && ctx_r372.nzIcon)("ngClass", ctx_r372.oldAPIIcon && ctx_r372.nzIcon);
-    } }
-    function NzAvatarComponent_img_1_Template(rf, ctx) { if (rf & 1) {
-        var _r376 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "img", 4);
-        core.ɵɵlistener("error", function NzAvatarComponent_img_1_Template_img_error_0_listener($event) { core.ɵɵrestoreView(_r376); var ctx_r375 = core.ɵɵnextContext(); return ctx_r375.imgError($event); });
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r373 = core.ɵɵnextContext();
-        core.ɵɵproperty("src", ctx_r373.nzSrc, core.ɵɵsanitizeUrl);
-        core.ɵɵattribute("srcset", ctx_r373.nzSrcSet, core.ɵɵsanitizeUrl)("alt", ctx_r373.nzAlt);
-    } }
-    function NzAvatarComponent_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 5, 6);
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r374 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngStyle", ctx_r374.textStyles);
-        core.ɵɵadvance(2);
-        core.ɵɵtextInterpolate(ctx_r374.nzText);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-avatar.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'avatar';
     var NzAvatarComponent = /** @class */ (function () {
         function NzAvatarComponent(nzConfigService, elementRef, cd, updateHostClassService, renderer, platform) {
@@ -239,6 +218,7 @@
             this.platform = platform;
             this.nzError = new core.EventEmitter();
             this.oldAPIIcon = true; // Make the user defined icon compatible to old API. Should be removed in 2.0.
+            // Make the user defined icon compatible to old API. Should be removed in 2.0.
             this.hasText = false;
             this.hasSrc = true;
             this.hasIcon = false;
@@ -246,21 +226,40 @@
             this.prefixCls = 'ant-avatar';
             this.sizeMap = { large: 'lg', small: 'sm' };
         }
-        NzAvatarComponent.prototype.setClass = function () {
+        /**
+         * @template THIS
+         * @this {THIS}
+         * @return {THIS}
+         */
+        NzAvatarComponent.prototype.setClass = /**
+         * @template THIS
+         * @this {THIS}
+         * @return {THIS}
+         */
+        function () {
             var _a;
+            /** @type {?} */
             var classMap = (_a = {},
-                _a[this.prefixCls] = true,
-                _a[this.prefixCls + "-" + this.sizeMap[this.nzSize]] = this.sizeMap[this.nzSize],
-                _a[this.prefixCls + "-" + this.nzShape] = this.nzShape,
-                _a[this.prefixCls + "-icon"] = this.nzIcon,
-                _a[this.prefixCls + "-image"] = this.hasSrc // downgrade after image error
+                _a[(/** @type {?} */ (this)).prefixCls] = true,
+                _a[(/** @type {?} */ (this)).prefixCls + "-" + (/** @type {?} */ (this)).sizeMap[(/** @type {?} */ (this)).nzSize]] = (/** @type {?} */ (this)).sizeMap[(/** @type {?} */ (this)).nzSize],
+                _a[(/** @type {?} */ (this)).prefixCls + "-" + (/** @type {?} */ (this)).nzShape] = (/** @type {?} */ (this)).nzShape,
+                _a[(/** @type {?} */ (this)).prefixCls + "-icon"] = (/** @type {?} */ (this)).nzIcon,
+                _a[(/** @type {?} */ (this)).prefixCls + "-image"] = (/** @type {?} */ (this)).hasSrc // downgrade after image error
             ,
                 _a);
-            this.updateHostClassService.updateHostClass(this.el, classMap);
-            this.cd.detectChanges();
-            return this;
+            (/** @type {?} */ (this)).updateHostClassService.updateHostClass((/** @type {?} */ (this)).el, classMap);
+            (/** @type {?} */ (this)).cd.detectChanges();
+            return (/** @type {?} */ (this));
         };
-        NzAvatarComponent.prototype.imgError = function ($event) {
+        /**
+         * @param {?} $event
+         * @return {?}
+         */
+        NzAvatarComponent.prototype.imgError = /**
+         * @param {?} $event
+         * @return {?}
+         */
+        function ($event) {
             this.nzError.emit($event);
             if (!$event.defaultPrevented) {
                 this.hasSrc = false;
@@ -276,7 +275,15 @@
                 this.setSizeStyle();
             }
         };
-        NzAvatarComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzAvatarComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.hasOwnProperty('nzIcon') && changes.nzIcon.currentValue) {
                 this.oldAPIIcon = changes.nzIcon.currentValue.indexOf('anticon') > -1;
             }
@@ -286,12 +293,23 @@
             this.setClass().notifyCalc();
             this.setSizeStyle();
         };
-        NzAvatarComponent.prototype.calcStringSize = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzAvatarComponent.prototype.calcStringSize = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (!this.hasText) {
                 return;
             }
+            /** @type {?} */
             var childrenWidth = this.textEl.nativeElement.offsetWidth;
+            /** @type {?} */
             var avatarWidth = this.el.getBoundingClientRect().width;
+            /** @type {?} */
             var scale = avatarWidth - 8 < childrenWidth ? (avatarWidth - 8) / childrenWidth : 1;
             this.textStyles = {
                 transform: "scale(" + scale + ") translateX(-50%)"
@@ -303,17 +321,41 @@
             }
             this.cd.detectChanges();
         };
-        NzAvatarComponent.prototype.notifyCalc = function () {
+        /**
+         * @private
+         * @template THIS
+         * @this {THIS}
+         * @return {THIS}
+         */
+        NzAvatarComponent.prototype.notifyCalc = /**
+         * @private
+         * @template THIS
+         * @this {THIS}
+         * @return {THIS}
+         */
+        function () {
             var _this = this;
             // If use ngAfterViewChecked, always demands more computations, so......
-            if (this.platform.isBrowser) {
-                setTimeout(function () {
-                    _this.calcStringSize();
-                });
+            if ((/** @type {?} */ (this)).platform.isBrowser) {
+                setTimeout((/**
+                 * @return {?}
+                 */
+                function () {
+                    (/** @type {?} */ (_this)).calcStringSize();
+                }));
             }
-            return this;
+            return (/** @type {?} */ (this));
         };
-        NzAvatarComponent.prototype.setSizeStyle = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzAvatarComponent.prototype.setSizeStyle = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var size = typeof this.nzSize === 'string' ? this.nzSize : this.nzSize + "px";
             this.renderer.setStyle(this.el, 'width', size);
             this.renderer.setStyle(this.el, 'height', size);
@@ -322,23 +364,37 @@
                 this.renderer.setStyle(this.el, 'font-size', "calc(" + size + " / 2)");
             }
         };
-        /** @nocollapse */ NzAvatarComponent.ɵfac = function NzAvatarComponent_Factory(t) { return new (t || NzAvatarComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core$1.NzUpdateHostClassService), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(platform.Platform)); };
-        /** @nocollapse */ NzAvatarComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzAvatarComponent, selectors: [["nz-avatar"]], viewQuery: function NzAvatarComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵviewQuery(_c0, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.textEl = _t.first);
-            } }, inputs: { nzShape: "nzShape", nzSize: "nzSize", nzText: "nzText", nzSrc: "nzSrc", nzSrcSet: "nzSrcSet", nzAlt: "nzAlt", nzIcon: "nzIcon" }, outputs: { nzError: "nzError" }, exportAs: ["nzAvatar"], features: [core.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), core.ɵɵNgOnChangesFeature()], decls: 3, vars: 3, consts: [["nz-icon", "", 3, "nzType", "ngClass", 4, "ngIf"], [3, "src", "error", 4, "ngIf"], ["class", "ant-avatar-string", 3, "ngStyle", 4, "ngIf"], ["nz-icon", "", 3, "nzType", "ngClass"], [3, "src", "error"], [1, "ant-avatar-string", 3, "ngStyle"], ["textEl", ""]], template: function NzAvatarComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzAvatarComponent_i_0_Template, 1, 2, "i", 0);
-                core.ɵɵtemplate(1, NzAvatarComponent_img_1_Template, 1, 3, "img", 1);
-                core.ɵɵtemplate(2, NzAvatarComponent_span_2_Template, 3, 2, "span", 2);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.nzIcon && ctx.hasIcon);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzSrc && ctx.hasSrc);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzText && ctx.hasText);
-            } }, directives: [common.NgIf, icon.NzIconDirective, common.NgClass, common.NgStyle], encapsulation: 2, changeDetection: 0 });
+        NzAvatarComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-avatar',
+                        exportAs: 'nzAvatar',
+                        template: "<i nz-icon *ngIf=\"nzIcon && hasIcon\" [nzType]=\"!oldAPIIcon && nzIcon\" [ngClass]=\"oldAPIIcon && nzIcon\"></i>\n<img *ngIf=\"nzSrc && hasSrc\" [src]=\"nzSrc\" [attr.srcset]=\"nzSrcSet\" [attr.alt]=\"nzAlt\" (error)=\"imgError($event)\"/>\n<span class=\"ant-avatar-string\" #textEl [ngStyle]=\"textStyles\" *ngIf=\"nzText && hasText\">{{ nzText }}</span>\n",
+                        providers: [core$1.NzUpdateHostClassService],
+                        preserveWhitespaces: false,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None
+                    }] }
+        ];
+        /** @nocollapse */
+        NzAvatarComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core.ElementRef },
+            { type: core.ChangeDetectorRef },
+            { type: core$1.NzUpdateHostClassService },
+            { type: core.Renderer2 },
+            { type: platform.Platform }
+        ]; };
+        NzAvatarComponent.propDecorators = {
+            nzShape: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }],
+            nzText: [{ type: core.Input }],
+            nzSrc: [{ type: core.Input }],
+            nzSrcSet: [{ type: core.Input }],
+            nzAlt: [{ type: core.Input }],
+            nzIcon: [{ type: core.Input }],
+            nzError: [{ type: core.Output }],
+            textEl: [{ type: core.ViewChild, args: ['textEl', { static: false },] }]
+        };
         __decorate([
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, 'circle'),
             __metadata("design:type", String)
@@ -349,61 +405,96 @@
         ], NzAvatarComponent.prototype, "nzSize", void 0);
         return NzAvatarComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzAvatarComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-avatar',
-                    exportAs: 'nzAvatar',
-                    templateUrl: './nz-avatar.component.html',
-                    providers: [core$1.NzUpdateHostClassService],
-                    preserveWhitespaces: false,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core.ElementRef }, { type: core.ChangeDetectorRef }, { type: core$1.NzUpdateHostClassService }, { type: core.Renderer2 }, { type: platform.Platform }]; }, { nzShape: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }], nzText: [{
-                type: core.Input
-            }], nzSrc: [{
-                type: core.Input
-            }], nzSrcSet: [{
-                type: core.Input
-            }], nzAlt: [{
-                type: core.Input
-            }], nzIcon: [{
-                type: core.Input
-            }], nzError: [{
-                type: core.Output
-            }], textEl: [{
-                type: core.ViewChild,
-                args: ['textEl', { static: false }]
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzShape;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzSize;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzText;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzSrc;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzSrcSet;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzAlt;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzIcon;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzError;
+        /** @type {?} */
+        NzAvatarComponent.prototype.oldAPIIcon;
+        /** @type {?} */
+        NzAvatarComponent.prototype.hasText;
+        /** @type {?} */
+        NzAvatarComponent.prototype.hasSrc;
+        /** @type {?} */
+        NzAvatarComponent.prototype.hasIcon;
+        /** @type {?} */
+        NzAvatarComponent.prototype.textStyles;
+        /** @type {?} */
+        NzAvatarComponent.prototype.textEl;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.el;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.prefixCls;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.sizeMap;
+        /** @type {?} */
+        NzAvatarComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.elementRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.cd;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.updateHostClassService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.renderer;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzAvatarComponent.prototype.platform;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-avatar.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAvatarModule = /** @class */ (function () {
         function NzAvatarModule() {
         }
-        /** @nocollapse */ NzAvatarModule.ɵmod = core.ɵɵdefineNgModule({ type: NzAvatarModule });
-        /** @nocollapse */ NzAvatarModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzAvatarModule_Factory(t) { return new (t || NzAvatarModule)(); }, imports: [[common.CommonModule, icon.NzIconModule, platform.PlatformModule]] });
+        NzAvatarModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [NzAvatarComponent],
+                        exports: [NzAvatarComponent],
+                        imports: [common.CommonModule, icon.NzIconModule, platform.PlatformModule]
+                    },] }
+        ];
         return NzAvatarModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzAvatarModule, { declarations: [NzAvatarComponent], imports: [common.CommonModule, icon.NzIconModule, platform.PlatformModule], exports: [NzAvatarComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzAvatarModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [NzAvatarComponent],
-                    exports: [NzAvatarComponent],
-                    imports: [common.CommonModule, icon.NzIconModule, platform.PlatformModule]
-                }]
-        }], null, null); })();
 
     exports.NzAvatarComponent = NzAvatarComponent;
     exports.NzAvatarModule = NzAvatarModule;

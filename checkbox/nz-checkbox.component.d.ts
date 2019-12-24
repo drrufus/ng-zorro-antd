@@ -9,7 +9,6 @@ import { FocusMonitor } from '@angular/cdk/a11y';
 import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NzCheckboxWrapperComponent } from './nz-checkbox-wrapper.component';
-import * as i0 from "@angular/core";
 export declare class NzCheckboxComponent implements OnInit, ControlValueAccessor, OnChanges, AfterViewInit, OnDestroy {
     private elementRef;
     private renderer;
@@ -41,6 +40,4 @@ export declare class NzCheckboxComponent implements OnInit, ControlValueAccessor
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzCheckboxComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCheckboxComponent, "[nz-checkbox]", ["nzCheckbox"], { 'nzValue': "nzValue", 'nzAutoFocus': "nzAutoFocus", 'nzDisabled': "nzDisabled", 'nzIndeterminate': "nzIndeterminate", 'nzChecked': "nzChecked" }, { 'nzCheckedChange': "nzCheckedChange" }, never>;
 }

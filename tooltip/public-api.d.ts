@@ -9,5 +9,4 @@ export * from './nz-tooltip.definitions';
 export * from './nz-tooltip.component';
 export * from './nz-tooltip.directive';
 export * from './nz-tooltip.module';
-export * from './nz-tooltip-base.component';
-export * from './nz-tooltip-base.directive';
+export * from './base/public-api';

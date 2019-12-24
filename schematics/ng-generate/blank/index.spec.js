@@ -1,10 +1,9 @@
 "use strict";
 var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, generator) {
-    function adopt(value) { return value instanceof P ? value : new P(function (resolve) { resolve(value); }); }
     return new (P || (P = Promise))(function (resolve, reject) {
         function fulfilled(value) { try { step(generator.next(value)); } catch (e) { reject(e); } }
         function rejected(value) { try { step(generator["throw"](value)); } catch (e) { reject(e); } }
-        function step(result) { result.done ? resolve(result.value) : adopt(result.value).then(fulfilled, rejected); }
+        function step(result) { result.done ? resolve(result.value) : new P(function (resolve) { resolve(result.value); }).then(fulfilled, rejected); }
         step((generator = generator.apply(thisArg, _arguments || [])).next());
     });
 };
@@ -14,11 +13,11 @@ const test_app_1 = require("../../testing/test-app");
 describe('ng-component schematic', () => {
     let runner;
     let appTree;
-    beforeEach(() => __awaiter(void 0, void 0, void 0, function* () {
+    beforeEach(() => __awaiter(this, void 0, void 0, function* () {
         runner = new testing_1.SchematicTestRunner('schematics', require.resolve('../../collection.json'));
         appTree = yield test_app_1.createTestApp(runner);
     }));
-    it('should update app.component.html', () => __awaiter(void 0, void 0, void 0, function* () {
+    it('should update app.component.html', () => __awaiter(this, void 0, void 0, function* () {
         const appComponentHTMLPath = '/projects/ng-zorro/src/app/app.component.html';
         const tree = yield runner.runSchematicAsync('blank', {}, appTree).toPromise();
         const appComponentHTML = tree.readContent(appComponentHTMLPath);

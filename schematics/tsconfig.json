@@ -5,7 +5,6 @@
     "moduleResolution": "node",
     "outDir": "../publish/schematics",
     "noEmitOnError": false,
-    "resolveJsonModule": true,
     "skipDefaultLibCheck": true,
     "skipLibCheck": true,
     "sourceMap": true,

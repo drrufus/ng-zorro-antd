@@ -1,8 +1,14 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Overlay } from '@angular/cdk/overlay';
 import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef, ViewContainerRef } from '@angular/core';
 import { NzMentionTriggerDirective } from './nz-mention-trigger';
 import { NzMentionService } from './nz-mention.service';
-import * as i0 from "@angular/core";
 export interface MentionOnSearchTypes {
     value: string;
     prefix: string;
@@ -71,6 +77,4 @@ export declare class NzMentionComponent implements OnDestroy, OnInit, OnChanges 
     private attachOverlay;
     private getOverlayConfig;
     private getOverlayPosition;
-    static ɵfac: i0.ɵɵFactoryDef<NzMentionComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzMentionComponent, "nz-mention", ["nzMention"], { 'nzValueWith': "nzValueWith", 'nzPrefix': "nzPrefix", 'nzLoading': "nzLoading", 'nzNotFoundContent': "nzNotFoundContent", 'nzPlacement': "nzPlacement", 'nzSuggestions': "nzSuggestions" }, { 'nzOnSelect': "nzOnSelect", 'nzOnSearchChange': "nzOnSearchChange" }, ["suggestionChild"]>;
 }

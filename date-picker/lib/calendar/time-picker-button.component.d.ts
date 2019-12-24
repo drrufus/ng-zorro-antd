@@ -7,7 +7,6 @@
  */
 import { EventEmitter } from '@angular/core';
 import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class TimePickerButtonComponent {
     locale: NzCalendarI18nInterface;
     timePickerDisabled: boolean;
@@ -15,6 +14,4 @@ export declare class TimePickerButtonComponent {
     readonly showTimePickerChange: EventEmitter<boolean>;
     prefixCls: string;
     onClick(): void;
-    static ɵfac: i0.ɵɵFactoryDef<TimePickerButtonComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TimePickerButtonComponent, "time-picker-button", ["timePickerButton"], { 'locale': "locale", 'timePickerDisabled': "timePickerDisabled", 'showTimePicker': "showTimePicker" }, { 'showTimePickerChange': "showTimePickerChange" }, never>;
 }

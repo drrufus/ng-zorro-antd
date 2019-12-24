@@ -1,7 +1,13 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { NgZone, OnDestroy } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NzResizeHandleMouseDownEvent } from './nz-resize-handle.component';
-import * as i0 from "@angular/core";
 export declare class NzResizableService implements OnDestroy {
     private ngZone;
     private document;
@@ -14,6 +20,4 @@ export declare class NzResizableService implements OnDestroy {
     startResizing(event: MouseEvent | TouchEvent): void;
     private clearListeners;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzResizableService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzResizableService>;
 }

@@ -10,7 +10,6 @@ import { ControlValueAccessor } from '@angular/forms';
 import { Observable, ReplaySubject, Subject } from 'rxjs';
 import { NzConfigService, NzFormatBeforeDropEvent, NzFormatEmitEvent, NzNoAnimationDirective, NzTreeBase, NzTreeBaseService, NzTreeNode } from 'ng-zorro-antd/core';
 import { NzTreeService } from './nz-tree.service';
-import * as i0 from "@angular/core";
 export declare function NzTreeServiceFactory(higherOrderService: NzTreeBaseService, treeService: NzTreeService): NzTreeBaseService;
 export declare class NzTreeComponent extends NzTreeBase implements OnInit, OnDestroy, ControlValueAccessor, OnChanges {
     nzConfigService: NzConfigService;
@@ -107,6 +106,4 @@ export declare class NzTreeComponent extends NzTreeBase implements OnInit, OnDes
         [propertyName: string]: SimpleChange;
     }): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTreeComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTreeComponent, "nz-tree", ["nzTree"], { 'nzShowIcon': "nzShowIcon", 'nzShowExpand': "nzShowExpand", 'nzShowLine': "nzShowLine", 'nzExpandedIcon': "nzExpandedIcon", 'nzCheckable': "nzCheckable", 'nzAsyncData': "nzAsyncData", 'nzDraggable': "nzDraggable", 'nzHideUnMatched': "nzHideUnMatched", 'nzSelectMode': "nzSelectMode", 'nzCheckStrictly': "nzCheckStrictly", 'nzBlockNode': "nzBlockNode", 'nzExpandAll': "nzExpandAll", 'nzTreeTemplate': "nzTreeTemplate", 'nzDefaultExpandAll': "nzDefaultExpandAll", 'nzBeforeDrop': "nzBeforeDrop", 'nzMultiple': "nzMultiple", 'nzData': "nzData", 'nzDefaultExpandedKeys': "nzDefaultExpandedKeys", 'nzDefaultSelectedKeys': "nzDefaultSelectedKeys", 'nzDefaultCheckedKeys': "nzDefaultCheckedKeys", 'nzExpandedKeys': "nzExpandedKeys", 'nzSelectedKeys': "nzSelectedKeys", 'nzCheckedKeys': "nzCheckedKeys", 'nzSearchValue': "nzSearchValue" }, { 'nzExpandedKeysChange': "nzExpandedKeysChange", 'nzSelectedKeysChange': "nzSelectedKeysChange", 'nzCheckedKeysChange': "nzCheckedKeysChange", 'nzSearchValueChange': "nzSearchValueChange", 'nzOnSearchNode': "nzOnSearchNode", 'nzClick': "nzClick", 'nzDblClick': "nzDblClick", 'nzContextMenu': "nzContextMenu", 'nzCheckBoxChange': "nzCheckBoxChange", 'nzExpandChange': "nzExpandChange", 'nzOnDragStart': "nzOnDragStart", 'nzOnDragEnter': "nzOnDragEnter", 'nzOnDragOver': "nzOnDragOver", 'nzOnDragLeave': "nzOnDragLeave", 'nzOnDrop': "nzOnDrop", 'nzOnDragEnd': "nzOnDragEnd" }, ["nzTreeTemplateChild"]>;
 }

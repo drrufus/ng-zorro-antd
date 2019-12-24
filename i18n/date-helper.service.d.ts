@@ -1,7 +1,13 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Injector } from '@angular/core';
 import { NzDateConfig } from './date-config';
 import { NzI18nService } from './nz-i18n.service';
-import * as i0 from "@angular/core";
 export declare function DATE_HELPER_SERVICE_FACTORY(injector: Injector, config: NzDateConfig): DateHelperService;
 /**
  * Abstract DateHelperService(Token via Class)
@@ -17,8 +23,6 @@ export declare abstract class DateHelperService {
     abstract format(date: Date, formatStr: string): string;
     parseDate(text: string): Date | undefined;
     parseTime(text: string): Date | undefined;
-    static ɵfac: i0.ɵɵFactoryDef<DateHelperService>;
-    static ɵprov: i0.ɵɵInjectableDef<DateHelperService>;
 }
 /**
  * DateHelper that handles date formats with date-fns

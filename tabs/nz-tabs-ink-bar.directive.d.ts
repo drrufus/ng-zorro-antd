@@ -7,7 +7,6 @@
  */
 import { ElementRef, NgZone, Renderer2 } from '@angular/core';
 import { NzTabPositionMode } from './nz-tabset.component';
-import * as i0 from "@angular/core";
 export declare class NzTabsInkBarDirective {
     private renderer;
     private elementRef;
@@ -21,6 +20,4 @@ export declare class NzTabsInkBarDirective {
     getElementWidth(element: HTMLElement): string;
     getTopPosition(element: HTMLElement): string;
     getElementHeight(element: HTMLElement): string;
-    static ɵfac: i0.ɵɵFactoryDef<NzTabsInkBarDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzTabsInkBarDirective, "[nz-tabs-ink-bar]", ["nzTabsInkBar"], { 'nzAnimated': "nzAnimated", 'nzPositionMode': "nzPositionMode" }, {}, never>;
 }

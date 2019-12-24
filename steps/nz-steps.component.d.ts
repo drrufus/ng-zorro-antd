@@ -8,7 +8,6 @@
 import { AfterContentInit, EventEmitter, OnChanges, OnDestroy, OnInit, QueryList, SimpleChanges, TemplateRef } from '@angular/core';
 import { NgClassType, NzSizeDSType } from 'ng-zorro-antd/core';
 import { NzStepComponent } from './nz-step.component';
-import * as i0 from "@angular/core";
 export declare type NzDirectionType = 'horizontal' | 'vertical';
 export declare type NzStatusType = 'wait' | 'process' | 'finish' | 'error';
 export declare class NzStepsComponent implements OnChanges, OnInit, OnDestroy, AfterContentInit {
@@ -41,6 +40,4 @@ export declare class NzStepsComponent implements OnChanges, OnInit, OnDestroy, A
     ngAfterContentInit(): void;
     private updateChildrenSteps;
     private setClassMap;
-    static ɵfac: i0.ɵɵFactoryDef<NzStepsComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzStepsComponent, "nz-steps", ["nzSteps"], { 'nzCurrent': "nzCurrent", 'nzDirection': "nzDirection", 'nzLabelPlacement': "nzLabelPlacement", 'nzType': "nzType", 'nzSize': "nzSize", 'nzStartIndex': "nzStartIndex", 'nzStatus': "nzStatus", 'nzProgressDot': "nzProgressDot" }, { 'nzIndexChange': "nzIndexChange" }, ["steps"]>;
 }

@@ -7,7 +7,6 @@
  */
 import { OnChanges, SimpleChanges } from '@angular/core';
 import { DisplayedMark, ExtendedMark } from './nz-slider-definitions';
-import * as i0 from "@angular/core";
 export declare class NzSliderMarksComponent implements OnChanges {
     nzLowerBound: number | null;
     nzUpperBound: number | null;
@@ -22,6 +21,4 @@ export declare class NzSliderMarksComponent implements OnChanges {
     private buildMarks;
     private getMarkStyles;
     private togglePointActive;
-    static ɵfac: i0.ɵɵFactoryDef<NzSliderMarksComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSliderMarksComponent, "nz-slider-marks", ["nzSliderMarks"], { 'nzLowerBound': "nzLowerBound", 'nzUpperBound': "nzUpperBound", 'nzMarksArray': "nzMarksArray", 'nzMin': "nzMin", 'nzMax': "nzMax", 'nzVertical': "nzVertical", 'nzIncluded': "nzIncluded" }, {}, never>;
 }

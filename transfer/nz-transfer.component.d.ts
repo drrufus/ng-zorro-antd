@@ -10,7 +10,6 @@ import { Observable } from 'rxjs';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { TransferCanMove, TransferChange, TransferDirection, TransferItem, TransferSearchChange, TransferSelectChange } from './interface';
-import * as i0 from "@angular/core";
 export declare class NzTransferComponent implements OnInit, OnChanges, OnDestroy {
     private cdr;
     private i18n;
@@ -66,6 +65,4 @@ export declare class NzTransferComponent implements OnInit, OnChanges, OnDestroy
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTransferComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTransferComponent, "nz-transfer", ["nzTransfer"], { 'nzDisabled': "nzDisabled", 'nzDataSource': "nzDataSource", 'nzTitles': "nzTitles", 'nzOperations': "nzOperations", 'nzListStyle': "nzListStyle", 'nzShowSelectAll': "nzShowSelectAll", 'nzItemUnit': "nzItemUnit", 'nzItemsUnit': "nzItemsUnit", 'nzCanMove': "nzCanMove", 'nzRenderList': "nzRenderList", 'nzRender': "nzRender", 'nzFooter': "nzFooter", 'nzShowSearch': "nzShowSearch", 'nzFilterOption': "nzFilterOption", 'nzSearchPlaceholder': "nzSearchPlaceholder", 'nzNotFoundContent': "nzNotFoundContent" }, { 'nzChange': "nzChange", 'nzSearchChange': "nzSearchChange", 'nzSelectChange': "nzSelectChange" }, never>;
 }

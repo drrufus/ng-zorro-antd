@@ -1,9 +1,15 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Overlay } from '@angular/cdk/overlay';
 import { ElementRef, ExistingProvider, NgZone, OnDestroy, ViewContainerRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { NzAutocompleteOptionComponent } from './nz-autocomplete-option.component';
 import { NzAutocompleteComponent } from './nz-autocomplete.component';
-import * as i0 from "@angular/core";
 export declare const NZ_AUTOCOMPLETE_VALUE_ACCESSOR: ExistingProvider;
 export declare function getNzAutocompleteMissingPanelError(): Error;
 export declare class NzAutocompleteTriggerDirective implements ControlValueAccessor, OnDestroy {
@@ -18,7 +24,7 @@ export declare class NzAutocompleteTriggerDirective implements ControlValueAcces
     _onTouched: () => void;
     panelOpen: boolean;
     /** Current active option */
-    readonly activeOption: NzAutocompleteOptionComponent | void;
+    readonly activeOption: NzAutocompleteOptionComponent | undefined;
     private overlayRef;
     private portal;
     private positionStrategy;
@@ -67,6 +73,4 @@ export declare class NzAutocompleteTriggerDirective implements ControlValueAcces
     private setTriggerValue;
     private doBackfill;
     private canOpen;
-    static ɵfac: i0.ɵɵFactoryDef<NzAutocompleteTriggerDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzAutocompleteTriggerDirective, "input[nzAutocomplete], textarea[nzAutocomplete]", ["nzAutocompleteTrigger"], { 'nzAutocomplete': "nzAutocomplete" }, {}, never>;
 }

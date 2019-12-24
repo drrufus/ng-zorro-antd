@@ -9,7 +9,6 @@ import { ChangeDetectorRef, OnInit } from '@angular/core';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzMessageConfigLegacy } from './nz-message-config';
 import { NzMessageDataFilled, NzMessageDataOptions } from './nz-message.definitions';
-import * as i0 from "@angular/core";
 export declare class NzMessageContainerComponent implements OnInit {
     protected cdr: ChangeDetectorRef;
     protected nzConfigService: NzConfigService;
@@ -41,6 +40,4 @@ export declare class NzMessageContainerComponent implements OnInit {
      * @param options
      */
     protected _mergeMessageOptions(options?: NzMessageDataOptions): NzMessageDataOptions;
-    static ɵfac: i0.ɵɵFactoryDef<NzMessageContainerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzMessageContainerComponent, "nz-message-container", ["nzMessageContainer"], {}, {}, never>;
 }

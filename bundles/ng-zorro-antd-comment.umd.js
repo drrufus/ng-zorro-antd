@@ -201,259 +201,206 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    var _c0 = [1, "ant-comment-content-detail"];
-    function NzCommentActionComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵprojection(0);
-    } }
-    var _c1 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-comment-cells.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzCommentAvatarDirective = /** @class */ (function () {
         function NzCommentAvatarDirective() {
         }
-        /** @nocollapse */ NzCommentAvatarDirective.ɵfac = function NzCommentAvatarDirective_Factory(t) { return new (t || NzCommentAvatarDirective)(); };
-        /** @nocollapse */ NzCommentAvatarDirective.ɵdir = core.ɵɵdefineDirective({ type: NzCommentAvatarDirective, selectors: [["nz-avatar", "nz-comment-avatar", ""]], exportAs: ["nzCommentAvatar"] });
+        NzCommentAvatarDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-avatar[nz-comment-avatar]',
+                        exportAs: 'nzCommentAvatar'
+                    },] }
+        ];
         return NzCommentAvatarDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentAvatarDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: 'nz-avatar[nz-comment-avatar]',
-                    exportAs: 'nzCommentAvatar'
-                }]
-        }], null, null); })();
     var NzCommentContentDirective = /** @class */ (function () {
         function NzCommentContentDirective() {
         }
-        /** @nocollapse */ NzCommentContentDirective.ɵfac = function NzCommentContentDirective_Factory(t) { return new (t || NzCommentContentDirective)(); };
-        /** @nocollapse */ NzCommentContentDirective.ɵdir = core.ɵɵdefineDirective({ type: NzCommentContentDirective, selectors: [["nz-comment-content"], ["", "nz-comment-content", ""]], hostBindings: function NzCommentContentDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵelementHostAttrs(_c0);
-            } }, exportAs: ["nzCommentContent"] });
+        NzCommentContentDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-comment-content, [nz-comment-content]',
+                        exportAs: 'nzCommentContent',
+                        host: { class: 'ant-comment-content-detail' }
+                    },] }
+        ];
         return NzCommentContentDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentContentDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: 'nz-comment-content, [nz-comment-content]',
-                    exportAs: 'nzCommentContent',
-                    host: { class: 'ant-comment-content-detail' }
-                }]
-        }], null, null); })();
     var NzCommentActionHostDirective = /** @class */ (function (_super) {
         __extends(NzCommentActionHostDirective, _super);
         function NzCommentActionHostDirective(componentFactoryResolver, viewContainerRef) {
             return _super.call(this, componentFactoryResolver, viewContainerRef) || this;
         }
-        NzCommentActionHostDirective.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzCommentActionHostDirective.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             _super.prototype.ngOnInit.call(this);
         };
-        NzCommentActionHostDirective.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzCommentActionHostDirective.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             _super.prototype.ngOnDestroy.call(this);
         };
-        NzCommentActionHostDirective.prototype.ngAfterViewInit = function () {
+        /**
+         * @return {?}
+         */
+        NzCommentActionHostDirective.prototype.ngAfterViewInit = /**
+         * @return {?}
+         */
+        function () {
             this.attach(this.nzCommentActionHost);
         };
-        /** @nocollapse */ NzCommentActionHostDirective.ɵfac = function NzCommentActionHostDirective_Factory(t) { return new (t || NzCommentActionHostDirective)(core.ɵɵdirectiveInject(core.ComponentFactoryResolver), core.ɵɵdirectiveInject(core.ViewContainerRef)); };
-        /** @nocollapse */ NzCommentActionHostDirective.ɵdir = core.ɵɵdefineDirective({ type: NzCommentActionHostDirective, selectors: [["", "nzCommentActionHost", ""]], inputs: { nzCommentActionHost: "nzCommentActionHost" }, exportAs: ["nzCommentActionHost"], features: [core.ɵɵInheritDefinitionFeature] });
+        NzCommentActionHostDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzCommentActionHost]',
+                        exportAs: 'nzCommentActionHost'
+                    },] }
+        ];
+        /** @nocollapse */
+        NzCommentActionHostDirective.ctorParameters = function () { return [
+            { type: core.ComponentFactoryResolver },
+            { type: core.ViewContainerRef }
+        ]; };
+        NzCommentActionHostDirective.propDecorators = {
+            nzCommentActionHost: [{ type: core.Input }]
+        };
         return NzCommentActionHostDirective;
     }(portal.CdkPortalOutlet));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentActionHostDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzCommentActionHost]',
-                    exportAs: 'nzCommentActionHost'
-                }]
-        }], function () { return [{ type: core.ComponentFactoryResolver }, { type: core.ViewContainerRef }]; }, { nzCommentActionHost: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzCommentActionHostDirective.prototype.nzCommentActionHost;
+    }
     var NzCommentActionComponent = /** @class */ (function () {
         function NzCommentActionComponent(viewContainerRef) {
             this.viewContainerRef = viewContainerRef;
             this.contentPortal = null;
         }
         Object.defineProperty(NzCommentActionComponent.prototype, "content", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.contentPortal;
             },
             enumerable: true,
             configurable: true
         });
-        NzCommentActionComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzCommentActionComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.contentPortal = new portal.TemplatePortal(this.implicitContent, this.viewContainerRef);
         };
-        /** @nocollapse */ NzCommentActionComponent.ɵfac = function NzCommentActionComponent_Factory(t) { return new (t || NzCommentActionComponent)(core.ɵɵdirectiveInject(core.ViewContainerRef)); };
-        /** @nocollapse */ NzCommentActionComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzCommentActionComponent, selectors: [["nz-comment-action"]], viewQuery: function NzCommentActionComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵstaticViewQuery(core.TemplateRef, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.implicitContent = _t.first);
-            } }, exportAs: ["nzCommentAction"], ngContentSelectors: _c1, decls: 1, vars: 0, template: function NzCommentActionComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵtemplate(0, NzCommentActionComponent_ng_template_0_Template, 1, 0, "ng-template");
-            } }, encapsulation: 2, changeDetection: 0 });
+        NzCommentActionComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-comment-action',
+                        exportAs: 'nzCommentAction',
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        template: '<ng-template><ng-content></ng-content></ng-template>'
+                    }] }
+        ];
+        /** @nocollapse */
+        NzCommentActionComponent.ctorParameters = function () { return [
+            { type: core.ViewContainerRef }
+        ]; };
+        NzCommentActionComponent.propDecorators = {
+            implicitContent: [{ type: core.ViewChild, args: [core.TemplateRef, { static: true },] }]
+        };
         return NzCommentActionComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentActionComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-comment-action',
-                    exportAs: 'nzCommentAction',
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    template: '<ng-template><ng-content></ng-content></ng-template>'
-                }]
-        }], function () { return [{ type: core.ViewContainerRef }]; }, { implicitContent: [{
-                type: core.ViewChild,
-                args: [core.TemplateRef, { static: true }]
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzCommentActionComponent.prototype.implicitContent;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCommentActionComponent.prototype.contentPortal;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCommentActionComponent.prototype.viewContainerRef;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-comment.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var _c0$1 = [1, "ant-comment"];
-    function NzCommentComponent_span_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r163 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r163.nzAuthor);
-    } }
-    function NzCommentComponent_span_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 8);
-        core.ɵɵtemplate(1, NzCommentComponent_span_5_ng_container_1_Template, 2, 1, "ng-container", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r160 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r160.nzAuthor);
-    } }
-    function NzCommentComponent_span_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r164 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r164.nzDatetime);
-    } }
-    function NzCommentComponent_span_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 10);
-        core.ɵɵtemplate(1, NzCommentComponent_span_6_ng_container_1_Template, 2, 1, "ng-container", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r161 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r161.nzDatetime);
-    } }
-    function NzCommentComponent_ul_8_li_1_ng_template_2_Template(rf, ctx) { }
-    function NzCommentComponent_ul_8_li_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "li");
-        core.ɵɵelementStart(1, "span");
-        core.ɵɵtemplate(2, NzCommentComponent_ul_8_li_1_ng_template_2_Template, 0, 0, "ng-template", 13);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var action_r166 = ctx.$implicit;
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("nzCommentActionHost", action_r166.content);
-    } }
-    function NzCommentComponent_ul_8_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "ul", 11);
-        core.ɵɵtemplate(1, NzCommentComponent_ul_8_li_1_Template, 3, 1, "li", 12);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r162 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r162.actions);
-    } }
-    var _c1$1 = [[["nz-avatar", "nz-comment-avatar", ""]], [["nz-comment-content"]], "*"];
-    var _c2 = ["nz-avatar[nz-comment-avatar]", "nz-comment-content", "*"];
     var NzCommentComponent = /** @class */ (function () {
         function NzCommentComponent() {
         }
-        /** @nocollapse */ NzCommentComponent.ɵfac = function NzCommentComponent_Factory(t) { return new (t || NzCommentComponent)(); };
-        /** @nocollapse */ NzCommentComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzCommentComponent, selectors: [["nz-comment"]], contentQueries: function NzCommentComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵcontentQuery(dirIndex, NzCommentActionComponent, false);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.actions = _t);
-            } }, hostBindings: function NzCommentComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵelementHostAttrs(_c0$1);
-            } }, inputs: { nzAuthor: "nzAuthor", nzDatetime: "nzDatetime" }, exportAs: ["nzComment"], ngContentSelectors: _c2, decls: 11, vars: 3, consts: [[1, "ant-comment-inner"], [1, "ant-comment-avatar"], [1, "ant-comment-content"], [1, "ant-comment-content-author"], ["class", "ant-comment-content-author-name", 4, "ngIf"], ["class", "ant-comment-content-author-time", 4, "ngIf"], ["class", "ant-comment-actions", 4, "ngIf"], [1, "ant-comment-nested"], [1, "ant-comment-content-author-name"], [4, "nzStringTemplateOutlet"], [1, "ant-comment-content-author-time"], [1, "ant-comment-actions"], [4, "ngFor", "ngForOf"], [3, "nzCommentActionHost"]], template: function NzCommentComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef(_c1$1);
-                core.ɵɵelementStart(0, "div", 0);
-                core.ɵɵelementStart(1, "div", 1);
-                core.ɵɵprojection(2);
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(3, "div", 2);
-                core.ɵɵelementStart(4, "div", 3);
-                core.ɵɵtemplate(5, NzCommentComponent_span_5_Template, 2, 1, "span", 4);
-                core.ɵɵtemplate(6, NzCommentComponent_span_6_Template, 2, 1, "span", 5);
-                core.ɵɵelementEnd();
-                core.ɵɵprojection(7, 1);
-                core.ɵɵtemplate(8, NzCommentComponent_ul_8_Template, 2, 1, "ul", 6);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(9, "div", 7);
-                core.ɵɵprojection(10, 2);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵadvance(5);
-                core.ɵɵproperty("ngIf", ctx.nzAuthor);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzDatetime);
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("ngIf", ctx.actions == null ? null : ctx.actions.length);
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective, common.NgForOf, NzCommentActionHostDirective], styles: ["\n      nz-comment {\n        display: block;\n      }\n\n      nz-comment-content {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzCommentComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-comment',
+                        exportAs: 'nzComment',
+                        template: "<div class=\"ant-comment-inner\">\n  <div class=\"ant-comment-avatar\">\n    <ng-content select=\"nz-avatar[nz-comment-avatar]\"></ng-content>\n  </div>\n  <div class=\"ant-comment-content\">\n    <div class=\"ant-comment-content-author\">\n      <span *ngIf=\"nzAuthor\" class=\"ant-comment-content-author-name\">\n        <ng-container *nzStringTemplateOutlet=\"nzAuthor\">{{ nzAuthor }}</ng-container>\n      </span>\n      <span *ngIf=\"nzDatetime\" class=\"ant-comment-content-author-time\">\n        <ng-container *nzStringTemplateOutlet=\"nzDatetime\">{{ nzDatetime }}</ng-container>\n      </span>\n    </div>\n    <ng-content select=\"nz-comment-content\"></ng-content>\n    <ul class=\"ant-comment-actions\" *ngIf=\"actions?.length\">\n      <li *ngFor=\"let action of actions\">\n        <span><ng-template [nzCommentActionHost]=\"action.content\"></ng-template></span>\n      </li>\n    </ul>\n  </div>\n</div>\n<div class=\"ant-comment-nested\">\n  <ng-content></ng-content>\n</div>",
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        host: {
+                            class: 'ant-comment'
+                        },
+                        styles: ["\n      nz-comment {\n        display: block;\n      }\n\n      nz-comment-content {\n        display: block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzCommentComponent.ctorParameters = function () { return []; };
+        NzCommentComponent.propDecorators = {
+            nzAuthor: [{ type: core.Input }],
+            nzDatetime: [{ type: core.Input }],
+            actions: [{ type: core.ContentChildren, args: [NzCommentActionComponent,] }]
+        };
         return NzCommentComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-comment',
-                    exportAs: 'nzComment',
-                    templateUrl: './nz-comment.component.html',
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    host: {
-                        class: 'ant-comment'
-                    },
-                    styles: [
-                        "\n      nz-comment {\n        display: block;\n      }\n\n      nz-comment-content {\n        display: block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return []; }, { nzAuthor: [{
-                type: core.Input
-            }], nzDatetime: [{
-                type: core.Input
-            }], actions: [{
-                type: core.ContentChildren,
-                args: [NzCommentActionComponent]
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzCommentComponent.prototype.nzAuthor;
+        /** @type {?} */
+        NzCommentComponent.prototype.nzDatetime;
+        /** @type {?} */
+        NzCommentComponent.prototype.actions;
+    }
 
-    var NZ_COMMENT_CELLS = [NzCommentAvatarDirective, NzCommentContentDirective, NzCommentActionComponent, NzCommentActionHostDirective];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-comment.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
+    var NZ_COMMENT_CELLS = [
+        NzCommentAvatarDirective,
+        NzCommentContentDirective,
+        NzCommentActionComponent,
+        NzCommentActionHostDirective
+    ];
     var NzCommentModule = /** @class */ (function () {
         function NzCommentModule() {
         }
-        /** @nocollapse */ NzCommentModule.ɵmod = core.ɵɵdefineNgModule({ type: NzCommentModule });
-        /** @nocollapse */ NzCommentModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzCommentModule_Factory(t) { return new (t || NzCommentModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule]] });
+        NzCommentModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule],
+                        exports: __spread([NzCommentComponent], NZ_COMMENT_CELLS),
+                        declarations: __spread([NzCommentComponent], NZ_COMMENT_CELLS)
+                    },] }
+        ];
         return NzCommentModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzCommentModule, { declarations: [NzCommentComponent,
-            NzCommentAvatarDirective, NzCommentContentDirective, NzCommentActionComponent, NzCommentActionHostDirective], imports: [common.CommonModule, core$1.NzAddOnModule], exports: [NzCommentComponent,
-            NzCommentAvatarDirective, NzCommentContentDirective, NzCommentActionComponent, NzCommentActionHostDirective] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCommentModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, core$1.NzAddOnModule],
-                    exports: __spread([NzCommentComponent], NZ_COMMENT_CELLS),
-                    declarations: __spread([NzCommentComponent], NZ_COMMENT_CELLS)
-                }]
-        }], null, null); })();
 
     exports.NzCommentActionComponent = NzCommentActionComponent;
     exports.NzCommentActionHostDirective = NzCommentActionHostDirective;

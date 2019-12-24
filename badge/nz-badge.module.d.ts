@@ -1,9 +1,9 @@
-import * as i0 from "@angular/core";
-import * as i1 from "./nz-badge.component";
-import * as i2 from "@angular/common";
-import * as i3 from "@angular/cdk/observers";
-import * as i4 from "ng-zorro-antd/core";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzBadgeModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NzBadgeModule, [typeof i1.NzBadgeComponent], [typeof i2.CommonModule, typeof i3.ObserversModule, typeof i4.NzAddOnModule], [typeof i1.NzBadgeComponent]>;
-    static ɵinj: i0.ɵɵInjectorDef<NzBadgeModule>;
 }

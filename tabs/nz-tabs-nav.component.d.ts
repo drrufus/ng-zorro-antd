@@ -14,7 +14,6 @@ import { Subscription } from 'rxjs';
 import { NzTabLabelDirective } from './nz-tab-label.directive';
 import { NzTabsInkBarDirective } from './nz-tabs-ink-bar.directive';
 import { NzTabPositionMode } from './nz-tabset.component';
-import * as i0 from "@angular/core";
 export declare type ScrollDirection = 'after' | 'before';
 export declare class NzTabsNavComponent implements AfterContentChecked, AfterContentInit, OnDestroy {
     elementRef: ElementRef;
@@ -78,6 +77,4 @@ export declare class NzTabsNavComponent implements AfterContentChecked, AfterCon
     readonly tabListScrollOffSetWidthHeight: number;
     getLayoutDirection(): Direction;
     alignInkBarToSelectedTab(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTabsNavComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTabsNavComponent, "[nz-tabs-nav]", ["nzTabsNav"], { 'nzTabBarExtraContent': "nzTabBarExtraContent", 'nzAnimated': "nzAnimated", 'nzHideBar': "nzHideBar", 'nzShowPagination': "nzShowPagination", 'nzType': "nzType", 'nzPositionMode': "nzPositionMode", 'selectedIndex': "selectedIndex" }, { 'nzOnNextClick': "nzOnNextClick", 'nzOnPrevClick': "nzOnPrevClick" }, ["listOfNzTabLabelDirective"]>;
 }

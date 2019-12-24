@@ -11,7 +11,6 @@ import { NzConfigService, NzDomEventService } from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzTextCopyComponent } from './nz-text-copy.component';
 import { NzTextEditComponent } from './nz-text-edit.component';
-import * as i0 from "@angular/core";
 export declare class NzTypographyComponent implements OnInit, AfterViewInit, OnDestroy, OnChanges {
     nzConfigService: NzConfigService;
     private host;
@@ -72,6 +71,4 @@ export declare class NzTypographyComponent implements OnInit, AfterViewInit, OnD
     ngAfterViewInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTypographyComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTypographyComponent, "  nz-typography,  [nz-typography],  p[nz-paragraph],  span[nz-text],  h1[nz-title], h2[nz-title], h3[nz-title], h4[nz-title]  ", ["nzTypography"], { 'nzCopyable': "nzCopyable", 'nzEditable': "nzEditable", 'nzDisabled': "nzDisabled", 'nzExpandable': "nzExpandable", 'nzEllipsis': "nzEllipsis", 'nzContent': "nzContent", 'nzEllipsisRows': "nzEllipsisRows", 'nzType': "nzType", 'nzCopyText': "nzCopyText" }, { 'nzContentChange': "nzContentChange", 'nzCopy': "nzCopy", 'nzExpandChange': "nzExpandChange" }, never>;
 }

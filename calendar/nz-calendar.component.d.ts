@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, EventEmitter, TemplateRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
 import { CandyDate } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare type ModeType = 'month' | 'year';
 export declare type DateTemplate = TemplateRef<{
     $implicit: Date;
@@ -45,6 +44,10 @@ export declare class NzCalendarComponent implements ControlValueAccessor {
     nzMonthFullCellChild: DateTemplate;
     readonly monthFullCell: DateTemplate;
     nzFullscreen: boolean;
+    /**
+     * @deprecated use `[nzFullscreen]` instead.
+     */
+    nzCard: boolean;
     constructor(cdr: ChangeDetectorRef);
     onModeChange(mode: ModeType): void;
     onYearSelect(year: number): void;
@@ -54,6 +57,4 @@ export declare class NzCalendarComponent implements ControlValueAccessor {
     registerOnChange(fn: (date: Date) => void): void;
     registerOnTouched(fn: () => void): void;
     private updateDate;
-    static ɵfac: i0.ɵɵFactoryDef<NzCalendarComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCalendarComponent, "nz-calendar", ["nzCalendar"], { 'nzMode': "nzMode", 'nzValue': "nzValue", 'nzDateCell': "nzDateCell", 'nzDateFullCell': "nzDateFullCell", 'nzMonthCell': "nzMonthCell", 'nzMonthFullCell': "nzMonthFullCell", 'nzFullscreen': "nzFullscreen" }, { 'nzModeChange': "nzModeChange", 'nzPanelChange': "nzPanelChange", 'nzSelectChange': "nzSelectChange", 'nzValueChange': "nzValueChange" }, ["nzDateCellChild", "nzDateFullCellChild", "nzMonthCellChild", "nzMonthFullCellChild"]>;
 }

@@ -1,8 +1,14 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, ElementRef, OnChanges } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { ShowUploadListInterface, UploadFile, UploadListType } from './interface';
-import * as i0 from "@angular/core";
 export declare class NzUploadListComponent implements OnChanges {
     private el;
     private cdr;
@@ -29,6 +35,4 @@ export declare class NzUploadListComponent implements OnChanges {
     constructor(el: ElementRef, cdr: ChangeDetectorRef, updateHostClassService: NzUpdateHostClassService, platform: Platform);
     detectChanges(): void;
     ngOnChanges(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzUploadListComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzUploadListComponent, "nz-upload-list", ["nzUploadList"], { 'locale': "locale", 'listType': "listType", 'items': "items", 'icons': "icons", 'onPreview': "onPreview", 'onRemove': "onRemove" }, {}, never>;
 }

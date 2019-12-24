@@ -11,7 +11,6 @@ import { NzModalControlService } from './nz-modal-control.service';
 import { NzModalRef } from './nz-modal-ref.class';
 import { NzModalComponent } from './nz-modal.component';
 import { ConfirmType, ModalOptionsForService } from './nz-modal.type';
-import * as i0 from "@angular/core";
 export declare class ModalBuilderForService {
     private overlay;
     private modalRef;
@@ -36,6 +35,4 @@ export declare class NzModalService {
     error<T>(options?: ModalOptionsForService<T>): NzModalRef<T>;
     warning<T>(options?: ModalOptionsForService<T>): NzModalRef<T>;
     private simpleConfirm;
-    static ɵfac: i0.ɵɵFactoryDef<NzModalService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzModalService>;
 }

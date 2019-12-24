@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { OnChanges, SimpleChanges } from '@angular/core';
-import * as i0 from "@angular/core";
 export interface NzSliderTrackStyle {
     bottom?: string | null;
     height?: string | null;
@@ -21,6 +20,4 @@ export declare class NzSliderTrackComponent implements OnChanges {
     nzIncluded: boolean;
     style: NzSliderTrackStyle;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSliderTrackComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSliderTrackComponent, "nz-slider-track", ["nzSliderTrack"], { 'nzOffset': "nzOffset", 'nzLength': "nzLength", 'nzVertical': "nzVertical", 'nzIncluded': "nzIncluded" }, {}, never>;
 }

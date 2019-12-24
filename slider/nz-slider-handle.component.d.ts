@@ -10,7 +10,6 @@ import { NgStyleInterface } from 'ng-zorro-antd/core';
 import { NzTooltipDirective } from 'ng-zorro-antd/tooltip';
 import { SliderShowTooltip } from './nz-slider-definitions';
 import { NzSliderComponent } from './nz-slider.component';
-import * as i0 from "@angular/core";
 export declare class NzSliderHandleComponent implements OnChanges, OnDestroy {
     private sliderComponent;
     private cdr;
@@ -34,6 +33,4 @@ export declare class NzSliderHandleComponent implements OnChanges, OnDestroy {
     private updateTooltipTitle;
     private updateTooltipPosition;
     private updateStyle;
-    static ɵfac: i0.ɵɵFactoryDef<NzSliderHandleComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSliderHandleComponent, "nz-slider-handle", ["nzSliderHandle"], { 'nzVertical': "nzVertical", 'nzOffset': "nzOffset", 'nzValue': "nzValue", 'nzTooltipVisible': "nzTooltipVisible", 'nzTooltipPlacement': "nzTooltipPlacement", 'nzTipFormatter': "nzTipFormatter", 'nzActive': "nzActive" }, {}, never>;
 }

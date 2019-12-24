@@ -1,4 +1,9 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: lib/popups/inner-popup.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -7,110 +12,101 @@
  */
 import { ChangeDetectionStrategy, Component, EventEmitter, Input, Output, ViewEncapsulation } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
-import * as i1 from "../calendar/calendar-header.component";
-import * as i2 from "@angular/common";
-import * as i3 from "ng-zorro-antd/calendar";
-import * as i4 from "ng-zorro-antd/time-picker";
-import * as i5 from "@angular/forms";
-function InnerPopupComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    const _r2303 = i0.ɵɵgetCurrentView();
-    i0.ɵɵelementContainerStart(0);
-    i0.ɵɵelementStart(1, "nz-time-picker-panel", 3);
-    i0.ɵɵlistener("ngModelChange", function InnerPopupComponent_ng_container_1_Template_nz_time_picker_panel_ngModelChange_1_listener($event) { i0.ɵɵrestoreView(_r2303); const ctx_r2302 = i0.ɵɵnextContext(); return ctx_r2302.onSelectTime($event); });
-    i0.ɵɵelementEnd();
-    i0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r2301 = i0.ɵɵnextContext();
-    i0.ɵɵadvance(1);
-    i0.ɵɵproperty("nzInDatePicker", true)("ngModel", ctx_r2301.value == null ? null : ctx_r2301.value.nativeDate)("format", ctx_r2301.timeOptions.nzFormat)("nzHourStep", ctx_r2301.timeOptions.nzHourStep)("nzMinuteStep", ctx_r2301.timeOptions.nzMinuteStep)("nzSecondStep", ctx_r2301.timeOptions.nzSecondStep)("nzDisabledHours", ctx_r2301.timeOptions.nzDisabledHours)("nzDisabledMinutes", ctx_r2301.timeOptions.nzDisabledMinutes)("nzDisabledSeconds", ctx_r2301.timeOptions.nzDisabledSeconds)("nzHideDisabledOptions", ctx_r2301.timeOptions.nzHideDisabledOptions)("nzDefaultOpenValue", ctx_r2301.timeOptions.nzDefaultOpenValue)("nzUse12Hours", ctx_r2301.timeOptions.nzUse12Hours)("nzAddOn", ctx_r2301.timeOptions.nzAddOn)("opened", true);
-} }
 export class InnerPopupComponent {
     constructor() {
         this.panelModeChange = new EventEmitter();
         this.headerChange = new EventEmitter(); // Emitted when user changed the header's value
+        // Emitted when user changed the header's value
         this.selectDate = new EventEmitter(); // Emitted when the date is selected by click the date panel
+        // Emitted when the date is selected by click the date panel
         this.selectTime = new EventEmitter();
         this.dayHover = new EventEmitter(); // Emitted when hover on a day by mouse enter
+        // Emitted when hover on a day by mouse enter
         this.prefixCls = 'ant-calendar';
     }
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     onSelectTime(date) {
         this.selectTime.emit(new CandyDate(date));
     }
     // The value real changed to outside
+    /**
+     * @param {?} date
+     * @return {?}
+     */
     onSelectDate(date) {
+        /** @type {?} */
         const value = date instanceof CandyDate ? date : new CandyDate(date);
-        const timeValue = this.timeOptions && this.timeOptions.nzDefaultOpenValue;
-        // Display timeValue when value is null
-        if (!this.value && timeValue) {
-            value.setHms(timeValue.getHours(), timeValue.getMinutes(), timeValue.getSeconds());
-        }
         this.selectDate.emit(value);
     }
 }
-/** @nocollapse */ InnerPopupComponent.ɵfac = function InnerPopupComponent_Factory(t) { return new (t || InnerPopupComponent)(); };
-/** @nocollapse */ InnerPopupComponent.ɵcmp = i0.ɵɵdefineComponent({ type: InnerPopupComponent, selectors: [["inner-popup"]], inputs: { showWeek: "showWeek", locale: "locale", showTimePicker: "showTimePicker", timeOptions: "timeOptions", enablePrev: "enablePrev", enableNext: "enableNext", disabledDate: "disabledDate", dateRender: "dateRender", selectedValue: "selectedValue", hoverValue: "hoverValue", panelMode: "panelMode", value: "value" }, outputs: { panelModeChange: "panelModeChange", headerChange: "headerChange", selectDate: "selectDate", selectTime: "selectTime", dayHover: "dayHover" }, exportAs: ["innerPopup"], decls: 4, vars: 17, consts: [[3, "panelMode", "value", "locale", "showTimePicker", "enablePrev", "enableNext", "panelModeChange", "valueChange"], [4, "ngIf"], [3, "locale", "showWeek", "value", "disabledDate", "dateCellRender", "selectedValue", "hoverValue", "valueChange", "dayHover"], [3, "nzInDatePicker", "ngModel", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzHideDisabledOptions", "nzDefaultOpenValue", "nzUse12Hours", "nzAddOn", "opened", "ngModelChange"]], template: function InnerPopupComponent_Template(rf, ctx) { if (rf & 1) {
-        i0.ɵɵelementStart(0, "calendar-header", 0);
-        i0.ɵɵlistener("panelModeChange", function InnerPopupComponent_Template_calendar_header_panelModeChange_0_listener($event) { return ctx.panelMode = $event; })("panelModeChange", function InnerPopupComponent_Template_calendar_header_panelModeChange_0_listener($event) { return ctx.panelModeChange.emit($event); })("valueChange", function InnerPopupComponent_Template_calendar_header_valueChange_0_listener($event) { return ctx.value = $event; })("valueChange", function InnerPopupComponent_Template_calendar_header_valueChange_0_listener($event) { return ctx.headerChange.emit($event); });
-        i0.ɵɵelementEnd();
-        i0.ɵɵtemplate(1, InnerPopupComponent_ng_container_1_Template, 2, 14, "ng-container", 1);
-        i0.ɵɵelementStart(2, "div");
-        i0.ɵɵelementStart(3, "date-table", 2);
-        i0.ɵɵlistener("valueChange", function InnerPopupComponent_Template_date_table_valueChange_3_listener($event) { return ctx.onSelectDate($event); })("dayHover", function InnerPopupComponent_Template_date_table_dayHover_3_listener($event) { return ctx.dayHover.emit($event); });
-        i0.ɵɵelementEnd();
-        i0.ɵɵelementEnd();
-    } if (rf & 2) {
-        i0.ɵɵproperty("panelMode", ctx.panelMode)("value", ctx.value)("locale", ctx.locale)("showTimePicker", ctx.showTimePicker)("enablePrev", ctx.enablePrev)("enableNext", ctx.enableNext);
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("ngIf", ctx.showTimePicker && ctx.timeOptions);
-        i0.ɵɵadvance(1);
-        i0.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-body");
-        i0.ɵɵadvance(1);
-        i0.ɵɵproperty("locale", ctx.locale)("showWeek", ctx.showWeek)("value", ctx.value)("disabledDate", ctx.disabledDate)("dateCellRender", ctx.dateRender)("selectedValue", ctx.selectedValue)("hoverValue", ctx.hoverValue);
-    } }, directives: [i1.CalendarHeaderComponent, i2.NgIf, i3.DateTableComponent, i4.NzTimePickerPanelComponent, i5.NgControlStatus, i5.NgModel], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(InnerPopupComponent, [{
-        type: Component,
-        args: [{
+InnerPopupComponent.decorators = [
+    { type: Component, args: [{
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 // tslint:disable-next-line:component-selector
                 selector: 'inner-popup',
                 exportAs: 'innerPopup',
-                templateUrl: 'inner-popup.component.html'
-            }]
-    }], null, { showWeek: [{
-            type: Input
-        }], locale: [{
-            type: Input
-        }], showTimePicker: [{
-            type: Input
-        }], timeOptions: [{
-            type: Input
-        }], enablePrev: [{
-            type: Input
-        }], enableNext: [{
-            type: Input
-        }], disabledDate: [{
-            type: Input
-        }], dateRender: [{
-            type: Input
-        }], selectedValue: [{
-            type: Input
-        }], hoverValue: [{
-            type: Input
-        }], panelMode: [{
-            type: Input
-        }], panelModeChange: [{
-            type: Output
-        }], value: [{
-            type: Input
-        }], headerChange: [{
-            type: Output
-        }], selectDate: [{
-            type: Output
-        }], selectTime: [{
-            type: Output
-        }], dayHover: [{
-            type: Output
-        }] }); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5uZXItcG9wdXAuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9kYXRlLXBpY2tlci8iLCJzb3VyY2VzIjpbImxpYi9wb3B1cHMvaW5uZXItcG9wdXAuY29tcG9uZW50LnRzIiwibGliL3BvcHVwcy9pbm5lci1wb3B1cC5jb21wb25lbnQuaHRtbCJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFFSCxPQUFPLEVBQUUsdUJBQXVCLEVBQUUsU0FBUyxFQUFFLFlBQVksRUFBRSxLQUFLLEVBQUUsTUFBTSxFQUFlLGlCQUFpQixFQUFFLE1BQU0sZUFBZSxDQUFDO0FBRWhJLE9BQU8sRUFBRSxTQUFTLEVBQWdCLE1BQU0sb0JBQW9CLENBQUM7Ozs7Ozs7OztJQ0M3RCw2QkFDRTtJQUFBLCtDQWdCd0I7SUFidEIscVBBQXNDO0lBYXZDLGlCQUF1QjtJQUUxQiwwQkFBZTs7O0lBakJYLGVBQXVCO0lBQXZCLHFDQUF1Qix3RUFBQSwwQ0FBQSxnREFBQSxvREFBQSxvREFBQSwwREFBQSw4REFBQSw4REFBQSxzRUFBQSxnRUFBQSxvREFBQSwwQ0FBQSxnQkFBQTs7QURTM0IsTUFBTSxPQUFPLG1CQUFtQjtJQVJoQztRQXNCcUIsb0JBQWUsR0FBRyxJQUFJLFlBQVksRUFBYSxDQUFDO1FBSWhELGlCQUFZLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQyxDQUFDLCtDQUErQztRQUM3RixlQUFVLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQyxDQUFDLDREQUE0RDtRQUN4RyxlQUFVLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQztRQUMzQyxhQUFRLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQyxDQUFDLDZDQUE2QztRQUUxRyxjQUFTLEdBQVcsY0FBYyxDQUFDO0tBa0JwQztJQWhCQyxZQUFZLENBQUMsSUFBVTtRQUNyQixJQUFJLENBQUMsVUFBVSxDQUFDLElBQUksQ0FBQyxJQUFJLFNBQVMsQ0FBQyxJQUFJLENBQUMsQ0FBQyxDQUFDO0lBQzVDLENBQUM7SUFFRCxvQ0FBb0M7SUFDcEMsWUFBWSxDQUFDLElBQXNCO1FBQ2pDLE1BQU0sS0FBSyxHQUFHLElBQUksWUFBWSxTQUFTLENBQUMsQ0FBQyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUMsSUFBSSxTQUFTLENBQUMsSUFBSSxDQUFDLENBQUM7UUFDckUsTUFBTSxTQUFTLEdBQUcsSUFBSSxDQUFDLFdBQVcsSUFBSSxJQUFJLENBQUMsV0FBVyxDQUFDLGtCQUFrQixDQUFDO1FBRTFFLHVDQUF1QztRQUN2QyxJQUFJLENBQUMsSUFBSSxDQUFDLEtBQUssSUFBSSxTQUFTLEVBQUU7WUFDNUIsS0FBSyxDQUFDLE1BQU0sQ0FBQyxTQUFTLENBQUMsUUFBUSxFQUFFLEVBQUUsU0FBUyxDQUFDLFVBQVUsRUFBRSxFQUFFLFNBQVMsQ0FBQyxVQUFVLEVBQUUsQ0FBQyxDQUFDO1NBQ3BGO1FBRUQsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDOUIsQ0FBQzs7c0ZBeENVLG1CQUFtQjt3REFBbkIsbUJBQW1CO1FDdEJoQywwQ0FTbUI7UUFSakIsNkpBQXlCLHNIQUNOLGdDQUE0QixJQUR0QixvSUFBQSw4R0FHViw2QkFBeUIsSUFIZjtRQVExQixpQkFBa0I7UUFFbkIsdUZBQ0U7UUFvQkYsMkJBQ0U7UUFBQSxxQ0FVYztRQU5aLHNIQUFlLHdCQUFvQixJQUFDLG1HQUt4Qix5QkFBcUIsSUFMRztRQU1yQyxpQkFBYTtRQUNoQixpQkFBTTs7UUEzQ0oseUNBQXlCLG9CQUFBLHNCQUFBLHNDQUFBLDhCQUFBLDhCQUFBO1FBVWIsZUFBcUM7UUFBckMsNERBQXFDO1FBcUI5QyxlQUE0QjtRQUE1QixxREFBNEI7UUFFN0IsZUFBaUI7UUFBakIsbUNBQWlCLDBCQUFBLG9CQUFBLGtDQUFBLGtDQUFBLG9DQUFBLDhCQUFBOztrRERaUixtQkFBbUI7Y0FSL0IsU0FBUztlQUFDO2dCQUNULGFBQWEsRUFBRSxpQkFBaUIsQ0FBQyxJQUFJO2dCQUNyQyxlQUFlLEVBQUUsdUJBQXVCLENBQUMsTUFBTTtnQkFDL0MsOENBQThDO2dCQUM5QyxRQUFRLEVBQUUsYUFBYTtnQkFDdkIsUUFBUSxFQUFFLFlBQVk7Z0JBQ3RCLFdBQVcsRUFBRSw0QkFBNEI7YUFDMUM7O2tCQUVFLEtBQUs7O2tCQUVMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUNMLEtBQUs7O2tCQUVMLEtBQUs7O2tCQUNMLE1BQU07O2tCQUVOLEtBQUs7O2tCQUVMLE1BQU07O2tCQUNOLE1BQU07O2tCQUNOLE1BQU07O2tCQUNOLE1BQU0iLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IENoYW5nZURldGVjdGlvblN0cmF0ZWd5LCBDb21wb25lbnQsIEV2ZW50RW1pdHRlciwgSW5wdXQsIE91dHB1dCwgVGVtcGxhdGVSZWYsIFZpZXdFbmNhcHN1bGF0aW9uIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5pbXBvcnQgeyBDYW5keURhdGUsIEZ1bmN0aW9uUHJvcCB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XHJcbmltcG9ydCB7IE56Q2FsZW5kYXJJMThuSW50ZXJmYWNlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9pMThuJztcclxuaW1wb3J0IHsgRGlzYWJsZWREYXRlRm4sIFBhbmVsTW9kZSwgU3VwcG9ydFRpbWVPcHRpb25zIH0gZnJvbSAnLi4vLi4vc3RhbmRhcmQtdHlwZXMnO1xyXG5cclxuQENvbXBvbmVudCh7XHJcbiAgZW5jYXBzdWxhdGlvbjogVmlld0VuY2Fwc3VsYXRpb24uTm9uZSxcclxuICBjaGFuZ2VEZXRlY3Rpb246IENoYW5nZURldGVjdGlvblN0cmF0ZWd5Lk9uUHVzaCxcclxuICAvLyB0c2xpbnQ6ZGlzYWJsZS1uZXh0LWxpbmU6Y29tcG9uZW50LXNlbGVjdG9yXHJcbiAgc2VsZWN0b3I6ICdpbm5lci1wb3B1cCcsXHJcbiAgZXhwb3J0QXM6ICdpbm5lclBvcHVwJyxcclxuICB0ZW1wbGF0ZVVybDogJ2lubmVyLXBvcHVwLmNvbXBvbmVudC5odG1sJ1xyXG59KVxyXG5leHBvcnQgY2xhc3MgSW5uZXJQb3B1cENvbXBvbmVudCB7XHJcbiAgQElucHV0KCkgc2hvd1dlZWs6IGJvb2xlYW47XHJcblxyXG4gIEBJbnB1dCgpIGxvY2FsZTogTnpDYWxlbmRhckkxOG5JbnRlcmZhY2U7XHJcbiAgQElucHV0KCkgc2hvd1RpbWVQaWNrZXI6IGJvb2xlYW47XHJcbiAgQElucHV0KCkgdGltZU9wdGlvbnM6IFN1cHBvcnRUaW1lT3B0aW9ucztcclxuICBASW5wdXQoKSBlbmFibGVQcmV2OiBib29sZWFuO1xyXG4gIEBJbnB1dCgpIGVuYWJsZU5leHQ6IGJvb2xlYW47XHJcbiAgQElucHV0KCkgZGlzYWJsZWREYXRlOiBEaXNhYmxlZERhdGVGbjtcclxuICBASW5wdXQoKSBkYXRlUmVuZGVyOiBGdW5jdGlvblByb3A8VGVtcGxhdGVSZWY8RGF0ZT4gfCBzdHJpbmc+O1xyXG4gIEBJbnB1dCgpIHNlbGVjdGVkVmFsdWU6IENhbmR5RGF0ZVtdOyAvLyBSYW5nZSBPTkxZXHJcbiAgQElucHV0KCkgaG92ZXJWYWx1ZTogQ2FuZHlEYXRlW107IC8vIFJhbmdlIE9OTFlcclxuXHJcbiAgQElucHV0KCkgcGFuZWxNb2RlOiBQYW5lbE1vZGU7XHJcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHBhbmVsTW9kZUNoYW5nZSA9IG5ldyBFdmVudEVtaXR0ZXI8UGFuZWxNb2RlPigpO1xyXG5cclxuICBASW5wdXQoKSB2YWx1ZTogQ2FuZHlEYXRlO1xyXG5cclxuICBAT3V0cHV0KCkgcmVhZG9ubHkgaGVhZGVyQ2hhbmdlID0gbmV3IEV2ZW50RW1pdHRlcjxDYW5keURhdGU+KCk7IC8vIEVtaXR0ZWQgd2hlbiB1c2VyIGNoYW5nZWQgdGhlIGhlYWRlcidzIHZhbHVlXHJcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHNlbGVjdERhdGUgPSBuZXcgRXZlbnRFbWl0dGVyPENhbmR5RGF0ZT4oKTsgLy8gRW1pdHRlZCB3aGVuIHRoZSBkYXRlIGlzIHNlbGVjdGVkIGJ5IGNsaWNrIHRoZSBkYXRlIHBhbmVsXHJcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHNlbGVjdFRpbWUgPSBuZXcgRXZlbnRFbWl0dGVyPENhbmR5RGF0ZT4oKTtcclxuICBAT3V0cHV0KCkgcmVhZG9ubHkgZGF5SG92ZXIgPSBuZXcgRXZlbnRFbWl0dGVyPENhbmR5RGF0ZT4oKTsgLy8gRW1pdHRlZCB3aGVuIGhvdmVyIG9uIGEgZGF5IGJ5IG1vdXNlIGVudGVyXHJcblxyXG4gIHByZWZpeENsczogc3RyaW5nID0gJ2FudC1jYWxlbmRhcic7XHJcblxyXG4gIG9uU2VsZWN0VGltZShkYXRlOiBEYXRlKTogdm9pZCB7XHJcbiAgICB0aGlzLnNlbGVjdFRpbWUuZW1pdChuZXcgQ2FuZHlEYXRlKGRhdGUpKTtcclxuICB9XHJcblxyXG4gIC8vIFRoZSB2YWx1ZSByZWFsIGNoYW5nZWQgdG8gb3V0c2lkZVxyXG4gIG9uU2VsZWN0RGF0ZShkYXRlOiBDYW5keURhdGUgfCBEYXRlKTogdm9pZCB7XHJcbiAgICBjb25zdCB2YWx1ZSA9IGRhdGUgaW5zdGFuY2VvZiBDYW5keURhdGUgPyBkYXRlIDogbmV3IENhbmR5RGF0ZShkYXRlKTtcclxuICAgIGNvbnN0IHRpbWVWYWx1ZSA9IHRoaXMudGltZU9wdGlvbnMgJiYgdGhpcy50aW1lT3B0aW9ucy5uekRlZmF1bHRPcGVuVmFsdWU7XHJcblxyXG4gICAgLy8gRGlzcGxheSB0aW1lVmFsdWUgd2hlbiB2YWx1ZSBpcyBudWxsXHJcbiAgICBpZiAoIXRoaXMudmFsdWUgJiYgdGltZVZhbHVlKSB7XHJcbiAgICAgIHZhbHVlLnNldEhtcyh0aW1lVmFsdWUuZ2V0SG91cnMoKSwgdGltZVZhbHVlLmdldE1pbnV0ZXMoKSwgdGltZVZhbHVlLmdldFNlY29uZHMoKSk7XHJcbiAgICB9XHJcblxyXG4gICAgdGhpcy5zZWxlY3REYXRlLmVtaXQodmFsdWUpO1xyXG4gIH1cclxufVxyXG4iLCI8Y2FsZW5kYXItaGVhZGVyXHJcbiAgWyhwYW5lbE1vZGUpXT1cInBhbmVsTW9kZVwiXHJcbiAgKHBhbmVsTW9kZUNoYW5nZSk9XCJwYW5lbE1vZGVDaGFuZ2UuZW1pdCgkZXZlbnQpXCJcclxuICBbKHZhbHVlKV09XCJ2YWx1ZVwiXHJcbiAgKHZhbHVlQ2hhbmdlKT1cImhlYWRlckNoYW5nZS5lbWl0KCRldmVudClcIlxyXG4gIFtsb2NhbGVdPVwibG9jYWxlXCJcclxuICBbc2hvd1RpbWVQaWNrZXJdPVwic2hvd1RpbWVQaWNrZXJcIlxyXG4gIFtlbmFibGVQcmV2XT1cImVuYWJsZVByZXZcIlxyXG4gIFtlbmFibGVOZXh0XT1cImVuYWJsZU5leHRcIlxyXG4+PC9jYWxlbmRhci1oZWFkZXI+XHJcblxyXG48bmctY29udGFpbmVyICpuZ0lmPVwic2hvd1RpbWVQaWNrZXIgJiYgdGltZU9wdGlvbnNcIj5cclxuICA8bnotdGltZS1waWNrZXItcGFuZWxcclxuICAgIFtuekluRGF0ZVBpY2tlcl09XCJ0cnVlXCJcclxuICAgIFtuZ01vZGVsXT1cInZhbHVlPy5uYXRpdmVEYXRlXCJcclxuICAgIChuZ01vZGVsQ2hhbmdlKT1cIm9uU2VsZWN0VGltZSgkZXZlbnQpXCJcclxuICAgIFtmb3JtYXRdPVwidGltZU9wdGlvbnMubnpGb3JtYXRcIlxyXG4gICAgW256SG91clN0ZXBdPVwidGltZU9wdGlvbnMubnpIb3VyU3RlcFwiXHJcbiAgICBbbnpNaW51dGVTdGVwXT1cInRpbWVPcHRpb25zLm56TWludXRlU3RlcFwiXHJcbiAgICBbbnpTZWNvbmRTdGVwXT1cInRpbWVPcHRpb25zLm56U2Vjb25kU3RlcFwiXHJcbiAgICBbbnpEaXNhYmxlZEhvdXJzXT1cInRpbWVPcHRpb25zLm56RGlzYWJsZWRIb3Vyc1wiXHJcbiAgICBbbnpEaXNhYmxlZE1pbnV0ZXNdPVwidGltZU9wdGlvbnMubnpEaXNhYmxlZE1pbnV0ZXNcIlxyXG4gICAgW256RGlzYWJsZWRTZWNvbmRzXT1cInRpbWVPcHRpb25zLm56RGlzYWJsZWRTZWNvbmRzXCJcclxuICAgIFtuekhpZGVEaXNhYmxlZE9wdGlvbnNdPVwidGltZU9wdGlvbnMubnpIaWRlRGlzYWJsZWRPcHRpb25zXCJcclxuICAgIFtuekRlZmF1bHRPcGVuVmFsdWVdPVwidGltZU9wdGlvbnMubnpEZWZhdWx0T3BlblZhbHVlXCJcclxuICAgIFtuelVzZTEySG91cnNdPVwidGltZU9wdGlvbnMubnpVc2UxMkhvdXJzXCJcclxuICAgIFtuekFkZE9uXT1cInRpbWVPcHRpb25zLm56QWRkT25cIlxyXG4gICAgW29wZW5lZF09XCJ0cnVlXCJcclxuICA+PC9uei10aW1lLXBpY2tlci1wYW5lbD5cclxuICA8IS0tIHVzZSBbb3BlbmVkXSB0byB0cmlnZ2VyIHRpbWUgcGFuZWwgYGluaXRQb3NpdGlvbigpYCAtLT5cclxuPC9uZy1jb250YWluZXI+XHJcblxyXG48ZGl2IGNsYXNzPVwie3sgcHJlZml4Q2xzIH19LWJvZHlcIj5cclxuICA8ZGF0ZS10YWJsZVxyXG4gICAgW2xvY2FsZV09XCJsb2NhbGVcIlxyXG4gICAgW3Nob3dXZWVrXT1cInNob3dXZWVrXCJcclxuICAgIFt2YWx1ZV09XCJ2YWx1ZVwiXHJcbiAgICAodmFsdWVDaGFuZ2UpPVwib25TZWxlY3REYXRlKCRldmVudClcIlxyXG4gICAgW2Rpc2FibGVkRGF0ZV09XCJkaXNhYmxlZERhdGVcIlxyXG4gICAgW2RhdGVDZWxsUmVuZGVyXT1cImRhdGVSZW5kZXJcIlxyXG4gICAgW3NlbGVjdGVkVmFsdWVdPVwic2VsZWN0ZWRWYWx1ZVwiXHJcbiAgICBbaG92ZXJWYWx1ZV09XCJob3ZlclZhbHVlXCJcclxuICAgIChkYXlIb3Zlcik9XCJkYXlIb3Zlci5lbWl0KCRldmVudClcIlxyXG4gID48L2RhdGUtdGFibGU+XHJcbjwvZGl2PlxyXG4iXX0=
+                template: "<calendar-header\n  [(panelMode)]=\"panelMode\"\n  (panelModeChange)=\"panelModeChange.emit($event)\"\n  [(value)]=\"value\"\n  (valueChange)=\"headerChange.emit($event)\"\n  [locale]=\"locale\"\n  [showTimePicker]=\"showTimePicker\"\n  [enablePrev]=\"enablePrev\"\n  [enableNext]=\"enableNext\"\n></calendar-header>\n\n<ng-container *ngIf=\"showTimePicker && timeOptions\">\n  <nz-time-picker-panel\n    [nzInDatePicker]=\"true\"\n    [ngModel]=\"value?.nativeDate\"\n    (ngModelChange)=\"onSelectTime($event)\"\n    [format]=\"timeOptions.nzFormat\"\n    [nzHourStep]=\"timeOptions.nzHourStep\"\n    [nzMinuteStep]=\"timeOptions.nzMinuteStep\"\n    [nzSecondStep]=\"timeOptions.nzSecondStep\"\n    [nzDisabledHours]=\"timeOptions.nzDisabledHours\"\n    [nzDisabledMinutes]=\"timeOptions.nzDisabledMinutes\"\n    [nzDisabledSeconds]=\"timeOptions.nzDisabledSeconds\"\n    [nzHideDisabledOptions]=\"timeOptions.nzHideDisabledOptions\"\n    [nzDefaultOpenValue]=\"timeOptions.nzDefaultOpenValue\"\n    [nzUse12Hours]=\"timeOptions.nzUse12Hours\"\n    [nzAddOn]=\"timeOptions.nzAddOn\"\n    [opened]=\"true\"\n  ></nz-time-picker-panel>\n  <!-- use [opened] to trigger time panel `initPosition()` -->\n</ng-container>\n\n<div class=\"{{ prefixCls }}-body\">\n  <date-table\n    [locale]=\"locale\"\n    [showWeek]=\"showWeek\"\n    [value]=\"value\"\n    (valueChange)=\"onSelectDate($event)\"\n    showWeekNumber=\"false\"\n    [disabledDate]=\"disabledDate\"\n    [dateCellRender]=\"dateRender\"\n    [selectedValue]=\"selectedValue\"\n    [hoverValue]=\"hoverValue\"\n    (dayHover)=\"dayHover.emit($event)\"\n  ></date-table>\n</div>"
+            }] }
+];
+InnerPopupComponent.propDecorators = {
+    showWeek: [{ type: Input }],
+    locale: [{ type: Input }],
+    showTimePicker: [{ type: Input }],
+    timeOptions: [{ type: Input }],
+    enablePrev: [{ type: Input }],
+    enableNext: [{ type: Input }],
+    disabledDate: [{ type: Input }],
+    dateRender: [{ type: Input }],
+    selectedValue: [{ type: Input }],
+    hoverValue: [{ type: Input }],
+    panelMode: [{ type: Input }],
+    panelModeChange: [{ type: Output }],
+    value: [{ type: Input }],
+    headerChange: [{ type: Output }],
+    selectDate: [{ type: Output }],
+    selectTime: [{ type: Output }],
+    dayHover: [{ type: Output }]
+};
+if (false) {
+    /** @type {?} */
+    InnerPopupComponent.prototype.showWeek;
+    /** @type {?} */
+    InnerPopupComponent.prototype.locale;
+    /** @type {?} */
+    InnerPopupComponent.prototype.showTimePicker;
+    /** @type {?} */
+    InnerPopupComponent.prototype.timeOptions;
+    /** @type {?} */
+    InnerPopupComponent.prototype.enablePrev;
+    /** @type {?} */
+    InnerPopupComponent.prototype.enableNext;
+    /** @type {?} */
+    InnerPopupComponent.prototype.disabledDate;
+    /** @type {?} */
+    InnerPopupComponent.prototype.dateRender;
+    /** @type {?} */
+    InnerPopupComponent.prototype.selectedValue;
+    /** @type {?} */
+    InnerPopupComponent.prototype.hoverValue;
+    /** @type {?} */
+    InnerPopupComponent.prototype.panelMode;
+    /** @type {?} */
+    InnerPopupComponent.prototype.panelModeChange;
+    /** @type {?} */
+    InnerPopupComponent.prototype.value;
+    /** @type {?} */
+    InnerPopupComponent.prototype.headerChange;
+    /** @type {?} */
+    InnerPopupComponent.prototype.selectDate;
+    /** @type {?} */
+    InnerPopupComponent.prototype.selectTime;
+    /** @type {?} */
+    InnerPopupComponent.prototype.dayHover;
+    /** @type {?} */
+    InnerPopupComponent.prototype.prefixCls;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaW5uZXItcG9wdXAuY29tcG9uZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9kYXRlLXBpY2tlci8iLCJzb3VyY2VzIjpbImxpYi9wb3B1cHMvaW5uZXItcG9wdXAuY29tcG9uZW50LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQVFBLE9BQU8sRUFDTCx1QkFBdUIsRUFDdkIsU0FBUyxFQUNULFlBQVksRUFDWixLQUFLLEVBQ0wsTUFBTSxFQUVOLGlCQUFpQixFQUNsQixNQUFNLGVBQWUsQ0FBQztBQUV2QixPQUFPLEVBQUUsU0FBUyxFQUFnQixNQUFNLG9CQUFvQixDQUFDO0FBWTdELE1BQU0sT0FBTyxtQkFBbUI7SUFSaEM7UUF1QnFCLG9CQUFlLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQztRQUloRCxpQkFBWSxHQUFHLElBQUksWUFBWSxFQUFhLENBQUMsQ0FBQywrQ0FBK0M7O1FBQzdGLGVBQVUsR0FBRyxJQUFJLFlBQVksRUFBYSxDQUFDLENBQUMsNERBQTREOztRQUN4RyxlQUFVLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQztRQUMzQyxhQUFRLEdBQUcsSUFBSSxZQUFZLEVBQWEsQ0FBQyxDQUFDLDZDQUE2Qzs7UUFFMUcsY0FBUyxHQUFXLGNBQWMsQ0FBQztJQVdyQyxDQUFDOzs7OztJQVRDLFlBQVksQ0FBQyxJQUFVO1FBQ3JCLElBQUksQ0FBQyxVQUFVLENBQUMsSUFBSSxDQUFDLElBQUksU0FBUyxDQUFDLElBQUksQ0FBQyxDQUFDLENBQUM7SUFDNUMsQ0FBQzs7Ozs7O0lBR0QsWUFBWSxDQUFDLElBQXNCOztjQUMzQixLQUFLLEdBQUcsSUFBSSxZQUFZLFNBQVMsQ0FBQyxDQUFDLENBQUMsSUFBSSxDQUFDLENBQUMsQ0FBQyxJQUFJLFNBQVMsQ0FBQyxJQUFJLENBQUM7UUFDcEUsSUFBSSxDQUFDLFVBQVUsQ0FBQyxJQUFJLENBQUMsS0FBSyxDQUFDLENBQUM7SUFDOUIsQ0FBQzs7O1lBMUNGLFNBQVMsU0FBQztnQkFDVCxhQUFhLEVBQUUsaUJBQWlCLENBQUMsSUFBSTtnQkFDckMsZUFBZSxFQUFFLHVCQUF1QixDQUFDLE1BQU07O2dCQUUvQyxRQUFRLEVBQUUsYUFBYTtnQkFDdkIsUUFBUSxFQUFFLFlBQVk7Z0JBQ3RCLGduREFBeUM7YUFDMUM7Ozt1QkFFRSxLQUFLO3FCQUVMLEtBQUs7NkJBQ0wsS0FBSzswQkFFTCxLQUFLO3lCQUNMLEtBQUs7eUJBQ0wsS0FBSzsyQkFDTCxLQUFLO3lCQUNMLEtBQUs7NEJBQ0wsS0FBSzt5QkFDTCxLQUFLO3dCQUVMLEtBQUs7OEJBQ0wsTUFBTTtvQkFFTixLQUFLOzJCQUVMLE1BQU07eUJBQ04sTUFBTTt5QkFDTixNQUFNO3VCQUNOLE1BQU07Ozs7SUFyQlAsdUNBQTJCOztJQUUzQixxQ0FBeUM7O0lBQ3pDLDZDQUFpQzs7SUFFakMsMENBQTBCOztJQUMxQix5Q0FBNkI7O0lBQzdCLHlDQUE2Qjs7SUFDN0IsMkNBQXNDOztJQUN0Qyx5Q0FBOEQ7O0lBQzlELDRDQUFvQzs7SUFDcEMseUNBQWlDOztJQUVqQyx3Q0FBOEI7O0lBQzlCLDhDQUFtRTs7SUFFbkUsb0NBQTBCOztJQUUxQiwyQ0FBZ0U7O0lBQ2hFLHlDQUE4RDs7SUFDOUQseUNBQThEOztJQUM5RCx1Q0FBNEQ7O0lBRTVELHdDQUFtQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxuICogQGxpY2Vuc2VcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxuICpcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcbiAqL1xuXG5pbXBvcnQge1xuICBDaGFuZ2VEZXRlY3Rpb25TdHJhdGVneSxcbiAgQ29tcG9uZW50LFxuICBFdmVudEVtaXR0ZXIsXG4gIElucHV0LFxuICBPdXRwdXQsXG4gIFRlbXBsYXRlUmVmLFxuICBWaWV3RW5jYXBzdWxhdGlvblxufSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuaW1wb3J0IHsgQ2FuZHlEYXRlLCBGdW5jdGlvblByb3AgfSBmcm9tICduZy16b3Jyby1hbnRkL2NvcmUnO1xuaW1wb3J0IHsgTnpDYWxlbmRhckkxOG5JbnRlcmZhY2UgfSBmcm9tICduZy16b3Jyby1hbnRkL2kxOG4nO1xuaW1wb3J0IHsgRGlzYWJsZWREYXRlRm4sIFBhbmVsTW9kZSB9IGZyb20gJy4uLy4uL3N0YW5kYXJkLXR5cGVzJztcblxuQENvbXBvbmVudCh7XG4gIGVuY2Fwc3VsYXRpb246IFZpZXdFbmNhcHN1bGF0aW9uLk5vbmUsXG4gIGNoYW5nZURldGVjdGlvbjogQ2hhbmdlRGV0ZWN0aW9uU3RyYXRlZ3kuT25QdXNoLFxuICAvLyB0c2xpbnQ6ZGlzYWJsZS1uZXh0LWxpbmU6Y29tcG9uZW50LXNlbGVjdG9yXG4gIHNlbGVjdG9yOiAnaW5uZXItcG9wdXAnLFxuICBleHBvcnRBczogJ2lubmVyUG9wdXAnLFxuICB0ZW1wbGF0ZVVybDogJ2lubmVyLXBvcHVwLmNvbXBvbmVudC5odG1sJ1xufSlcbmV4cG9ydCBjbGFzcyBJbm5lclBvcHVwQ29tcG9uZW50IHtcbiAgQElucHV0KCkgc2hvd1dlZWs6IGJvb2xlYW47XG5cbiAgQElucHV0KCkgbG9jYWxlOiBOekNhbGVuZGFySTE4bkludGVyZmFjZTtcbiAgQElucHV0KCkgc2hvd1RpbWVQaWNrZXI6IGJvb2xlYW47XG4gIC8vIHRzbGludDpkaXNhYmxlLW5leHQtbGluZTpuby1hbnlcbiAgQElucHV0KCkgdGltZU9wdGlvbnM6IGFueTtcbiAgQElucHV0KCkgZW5hYmxlUHJldjogYm9vbGVhbjtcbiAgQElucHV0KCkgZW5hYmxlTmV4dDogYm9vbGVhbjtcbiAgQElucHV0KCkgZGlzYWJsZWREYXRlOiBEaXNhYmxlZERhdGVGbjtcbiAgQElucHV0KCkgZGF0ZVJlbmRlcjogRnVuY3Rpb25Qcm9wPFRlbXBsYXRlUmVmPERhdGU+IHwgc3RyaW5nPjtcbiAgQElucHV0KCkgc2VsZWN0ZWRWYWx1ZTogQ2FuZHlEYXRlW107IC8vIFJhbmdlIE9OTFlcbiAgQElucHV0KCkgaG92ZXJWYWx1ZTogQ2FuZHlEYXRlW107IC8vIFJhbmdlIE9OTFlcblxuICBASW5wdXQoKSBwYW5lbE1vZGU6IFBhbmVsTW9kZTtcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHBhbmVsTW9kZUNoYW5nZSA9IG5ldyBFdmVudEVtaXR0ZXI8UGFuZWxNb2RlPigpO1xuXG4gIEBJbnB1dCgpIHZhbHVlOiBDYW5keURhdGU7XG5cbiAgQE91dHB1dCgpIHJlYWRvbmx5IGhlYWRlckNoYW5nZSA9IG5ldyBFdmVudEVtaXR0ZXI8Q2FuZHlEYXRlPigpOyAvLyBFbWl0dGVkIHdoZW4gdXNlciBjaGFuZ2VkIHRoZSBoZWFkZXIncyB2YWx1ZVxuICBAT3V0cHV0KCkgcmVhZG9ubHkgc2VsZWN0RGF0ZSA9IG5ldyBFdmVudEVtaXR0ZXI8Q2FuZHlEYXRlPigpOyAvLyBFbWl0dGVkIHdoZW4gdGhlIGRhdGUgaXMgc2VsZWN0ZWQgYnkgY2xpY2sgdGhlIGRhdGUgcGFuZWxcbiAgQE91dHB1dCgpIHJlYWRvbmx5IHNlbGVjdFRpbWUgPSBuZXcgRXZlbnRFbWl0dGVyPENhbmR5RGF0ZT4oKTtcbiAgQE91dHB1dCgpIHJlYWRvbmx5IGRheUhvdmVyID0gbmV3IEV2ZW50RW1pdHRlcjxDYW5keURhdGU+KCk7IC8vIEVtaXR0ZWQgd2hlbiBob3ZlciBvbiBhIGRheSBieSBtb3VzZSBlbnRlclxuXG4gIHByZWZpeENsczogc3RyaW5nID0gJ2FudC1jYWxlbmRhcic7XG5cbiAgb25TZWxlY3RUaW1lKGRhdGU6IERhdGUpOiB2b2lkIHtcbiAgICB0aGlzLnNlbGVjdFRpbWUuZW1pdChuZXcgQ2FuZHlEYXRlKGRhdGUpKTtcbiAgfVxuXG4gIC8vIFRoZSB2YWx1ZSByZWFsIGNoYW5nZWQgdG8gb3V0c2lkZVxuICBvblNlbGVjdERhdGUoZGF0ZTogQ2FuZHlEYXRlIHwgRGF0ZSk6IHZvaWQge1xuICAgIGNvbnN0IHZhbHVlID0gZGF0ZSBpbnN0YW5jZW9mIENhbmR5RGF0ZSA/IGRhdGUgOiBuZXcgQ2FuZHlEYXRlKGRhdGUpO1xuICAgIHRoaXMuc2VsZWN0RGF0ZS5lbWl0KHZhbHVlKTtcbiAgfVxufVxuIl19

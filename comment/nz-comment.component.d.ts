@@ -7,12 +7,9 @@
  */
 import { QueryList, TemplateRef } from '@angular/core';
 import { NzCommentActionComponent as CommentAction } from './nz-comment-cells';
-import * as i0 from "@angular/core";
 export declare class NzCommentComponent {
     nzAuthor: string | TemplateRef<void>;
     nzDatetime: string | TemplateRef<void>;
     actions: QueryList<CommentAction>;
     constructor();
-    static ɵfac: i0.ɵɵFactoryDef<NzCommentComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCommentComponent, "nz-comment", ["nzComment"], { 'nzAuthor': "nzAuthor", 'nzDatetime': "nzDatetime" }, {}, ["actions"]>;
 }

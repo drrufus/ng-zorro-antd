@@ -7,7 +7,6 @@
  */
 import { ElementRef, OnChanges, TemplateRef } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare type NzResultIconType = 'success' | 'error' | 'info' | 'warning';
 export declare type NzExceptionStatusType = '404' | '500' | '403';
 export declare type NzResultStatusType = NzExceptionStatusType | NzResultIconType;
@@ -25,6 +24,4 @@ export declare class NzResultComponent implements OnChanges {
     ngOnChanges(): void;
     private setStatusIcon;
     private setClassMap;
-    static ɵfac: i0.ɵɵFactoryDef<NzResultComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzResultComponent, "nz-result", ["nzResult"], { 'nzIcon': "nzIcon", 'nzTitle': "nzTitle", 'nzStatus': "nzStatus", 'nzSubTitle': "nzSubTitle", 'nzExtra': "nzExtra" }, {}, never>;
 }

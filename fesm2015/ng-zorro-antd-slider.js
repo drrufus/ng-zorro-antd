@@ -1,13 +1,18 @@
 import { __decorate, __metadata } from 'tslib';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
-import { ɵɵelement, ɵɵnextContext, ɵɵproperty, EventEmitter, ɵɵdirectiveInject, ChangeDetectorRef, ɵɵdefineComponent, ɵɵstaticViewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵProvidersFeature, forwardRef, ɵɵNgOnChangesFeature, ɵɵelementStart, ɵɵtemplate, ɵɵelementEnd, ɵɵclassProp, ɵɵadvance, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, ViewChild, Input, Output, ɵɵviewQuery, ɵɵlistener, ɵɵsanitizeHtml, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, ɵɵsetComponentScope } from '@angular/core';
+import { EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, forwardRef, ChangeDetectorRef, ViewChild, Input, Output, NgModule } from '@angular/core';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { fromEvent, merge, Subscription } from 'rxjs';
 import { filter, tap, pluck, map, distinctUntilChanged, takeUntil } from 'rxjs/operators';
 import { shallowCopyArray, silentEvent, ensureNumberInRange, getPrecision, getPercent, getElementOffset, arraysEqual, InputBoolean, InputNumber } from 'ng-zorro-antd/core';
-import { NgIf, NgStyle, NgForOf, CommonModule, NgClass, NgComponentOutlet, NgTemplateOutlet, NgSwitch, NgSwitchCase, NgSwitchDefault, NgPlural, NgPluralCase, AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe } from '@angular/common';
-import { NzTooltipDirective, NzToolTipModule, NzToolTipComponent } from 'ng-zorro-antd/tooltip';
+import { CommonModule } from '@angular/common';
+import { NzTooltipDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -15,8 +20,71 @@ import { NzTooltipDirective, NzToolTipModule, NzToolTipComponent } from 'ng-zorr
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function MarkObj() { }
+if (false) {
+    /** @type {?|undefined} */
+    MarkObj.prototype.style;
+    /** @type {?} */
+    MarkObj.prototype.label;
+}
 class Marks {
 }
+/**
+ * Processed steps that would be passed to sub components.
+ * @record
+ */
+function ExtendedMark() { }
+if (false) {
+    /** @type {?} */
+    ExtendedMark.prototype.value;
+    /** @type {?} */
+    ExtendedMark.prototype.offset;
+    /** @type {?} */
+    ExtendedMark.prototype.config;
+}
+/**
+ * Marks that would be rendered.
+ * @record
+ */
+function DisplayedMark() { }
+if (false) {
+    /** @type {?} */
+    DisplayedMark.prototype.active;
+    /** @type {?} */
+    DisplayedMark.prototype.label;
+    /** @type {?|undefined} */
+    DisplayedMark.prototype.style;
+}
+/**
+ * Steps that would be rendered.
+ * @record
+ */
+function DisplayedStep() { }
+if (false) {
+    /** @type {?} */
+    DisplayedStep.prototype.active;
+    /** @type {?|undefined} */
+    DisplayedStep.prototype.style;
+}
+/**
+ * @record
+ */
+function SliderHandler() { }
+if (false) {
+    /** @type {?} */
+    SliderHandler.prototype.offset;
+    /** @type {?} */
+    SliderHandler.prototype.value;
+    /** @type {?} */
+    SliderHandler.prototype.active;
+}
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isValueARange(value) {
     if (value instanceof Array) {
         return value.length === 2;
@@ -25,10 +93,19 @@ function isValueARange(value) {
         return false;
     }
 }
+/**
+ * @param {?} config
+ * @return {?}
+ */
 function isConfigAObject(config) {
     return config instanceof Object;
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-error.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -36,31 +113,23 @@ function isConfigAObject(config) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @return {?}
+ */
 function getValueTypeNotMatchError() {
     return new Error(`The "nzRange" can't match the "ngModel"'s type, please check these properties: "nzRange", "ngModel", "nzDefaultValue".`);
 }
 
-const _c0 = ["slider"];
-function NzSliderComponent_nz_slider_step_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-slider-step", 7);
-} if (rf & 2) {
-    const ctx_r741 = ɵɵnextContext();
-    ɵɵproperty("nzVertical", ctx_r741.nzVertical)("nzLowerBound", ctx_r741.bounds.lower)("nzUpperBound", ctx_r741.bounds.upper)("nzMarksArray", ctx_r741.marksArray)("nzIncluded", ctx_r741.nzIncluded);
-} }
-function NzSliderComponent_nz_slider_handle_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-slider-handle", 8);
-} if (rf & 2) {
-    const handle_r744 = ctx.$implicit;
-    const ctx_r742 = ɵɵnextContext();
-    ɵɵproperty("nzVertical", ctx_r742.nzVertical)("nzOffset", handle_r744.offset)("nzValue", handle_r744.value)("nzActive", handle_r744.active)("nzTipFormatter", ctx_r742.nzTipFormatter)("nzTooltipVisible", ctx_r742.nzTooltipVisible)("nzTooltipPlacement", ctx_r742.nzTooltipPlacement);
-} }
-function NzSliderComponent_nz_slider_marks_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-slider-marks", 9);
-} if (rf & 2) {
-    const ctx_r743 = ɵɵnextContext();
-    ɵɵproperty("nzVertical", ctx_r743.nzVertical)("nzMin", ctx_r743.nzMin)("nzMax", ctx_r743.nzMax)("nzLowerBound", ctx_r743.bounds.lower)("nzUpperBound", ctx_r743.bounds.upper)("nzMarksArray", ctx_r743.marksArray)("nzIncluded", ctx_r743.nzIncluded);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzSliderComponent {
+    /**
+     * @param {?} cdr
+     * @param {?} platform
+     */
     constructor(cdr, platform) {
         this.cdr = cdr;
         this.platform = platform;
@@ -81,10 +150,16 @@ class NzSliderComponent {
         this.cacheSliderStart = null;
         this.cacheSliderLength = null;
         this.activeValueIndex = undefined; // Current activated handle's index ONLY for range=true
+        // Current activated handle's index ONLY for range=true
         this.track = { offset: null, length: null }; // Track's offset and length
+        // "steps" in array type with more data & FILTER out the invalid mark
         this.bounds = { lower: null, upper: null }; // now for nz-slider-step
+        // now for nz-slider-step
         this.isDragging = false; // Current dragging state
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         this.handles = this.generateHandles(this.nzRange ? 2 : 1);
         this.sliderDOM = this.slider.nativeElement;
@@ -97,6 +172,10 @@ class NzSliderComponent {
             this.setValue(this.formatValue(null));
         }
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         const { nzDisabled, nzMarks, nzRange } = changes;
         if (nzDisabled && !nzDisabled.firstChange) {
@@ -109,74 +188,144 @@ class NzSliderComponent {
             this.setValue(this.formatValue(null));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.unsubscribeDrag();
     }
+    /**
+     * @param {?} val
+     * @return {?}
+     */
     writeValue(val) {
         this.setValue(val, true);
     }
+    /**
+     * @param {?} _value
+     * @return {?}
+     */
     onValueChange(_value) { }
+    /**
+     * @return {?}
+     */
     onTouched() { }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
     registerOnChange(fn) {
         this.onValueChange = fn;
     }
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
     registerOnTouched(fn) {
         this.onTouched = fn;
     }
+    /**
+     * @param {?} isDisabled
+     * @return {?}
+     */
     setDisabledState(isDisabled) {
         this.nzDisabled = isDisabled;
         this.toggleDragDisabled(isDisabled);
     }
+    /**
+     * @private
+     * @param {?} value
+     * @param {?=} isWriteValue
+     * @return {?}
+     */
     setValue(value, isWriteValue = false) {
         if (isWriteValue) {
             this.value = this.formatValue(value);
             this.updateTrackAndHandles();
         }
-        else if (!this.valuesEqual(this.value, value)) {
+        else if (!this.valuesEqual((/** @type {?} */ (this.value)), (/** @type {?} */ (value)))) {
             this.value = value;
             this.updateTrackAndHandles();
             this.onValueChange(this.getValue(true));
         }
     }
+    /**
+     * @private
+     * @param {?=} cloneAndSort
+     * @return {?}
+     */
     getValue(cloneAndSort = false) {
         if (cloneAndSort && this.value && isValueARange(this.value)) {
-            return shallowCopyArray(this.value).sort((a, b) => a - b);
+            return shallowCopyArray(this.value).sort((/**
+             * @param {?} a
+             * @param {?} b
+             * @return {?}
+             */
+            (a, b) => a - b));
         }
-        return this.value;
+        return (/** @type {?} */ (this.value));
     }
     /**
      * Clone & sort current value and convert them to offsets, then return the new one.
+     * @private
+     * @param {?=} value
+     * @return {?}
      */
     getValueToOffset(value) {
+        /** @type {?} */
         let normalizedValue = value;
         if (typeof normalizedValue === 'undefined') {
             normalizedValue = this.getValue(true);
         }
-        return isValueARange(normalizedValue) ? normalizedValue.map(val => this.valueToOffset(val)) : this.valueToOffset(normalizedValue);
+        return isValueARange(normalizedValue)
+            ? normalizedValue.map((/**
+             * @param {?} val
+             * @return {?}
+             */
+            val => this.valueToOffset(val)))
+            : this.valueToOffset(normalizedValue);
     }
     /**
      * Find the closest value to be activated (only for range = true).
+     * @private
+     * @param {?} pointerValue
+     * @return {?}
      */
     setActiveValueIndex(pointerValue) {
+        /** @type {?} */
         const value = this.getValue();
         if (isValueARange(value)) {
+            /** @type {?} */
             let minimal = null;
+            /** @type {?} */
             let gap;
+            /** @type {?} */
             let activeIndex = -1;
-            value.forEach((val, index) => {
+            value.forEach((/**
+             * @param {?} val
+             * @param {?} index
+             * @return {?}
+             */
+            (val, index) => {
                 gap = Math.abs(pointerValue - val);
-                if (minimal === null || gap < minimal) {
+                if (minimal === null || gap < (/** @type {?} */ (minimal))) {
                     minimal = gap;
                     activeIndex = index;
                 }
-            });
+            }));
             this.activeValueIndex = activeIndex;
         }
     }
+    /**
+     * @private
+     * @param {?} pointerValue
+     * @return {?}
+     */
     setActiveValue(pointerValue) {
-        if (isValueARange(this.value)) {
-            const newValue = shallowCopyArray(this.value);
-            newValue[this.activeValueIndex] = pointerValue;
+        if (isValueARange((/** @type {?} */ (this.value)))) {
+            /** @type {?} */
+            const newValue = shallowCopyArray((/** @type {?} */ (this.value)));
+            newValue[(/** @type {?} */ (this.activeValueIndex))] = pointerValue;
             this.setValue(newValue);
         }
         else {
@@ -185,22 +334,42 @@ class NzSliderComponent {
     }
     /**
      * Update track and handles' position and length.
+     * @private
+     * @return {?}
      */
     updateTrackAndHandles() {
+        /** @type {?} */
         const value = this.getValue();
+        /** @type {?} */
         const offset = this.getValueToOffset(value);
+        /** @type {?} */
         const valueSorted = this.getValue(true);
+        /** @type {?} */
         const offsetSorted = this.getValueToOffset(valueSorted);
+        /** @type {?} */
         const boundParts = isValueARange(valueSorted) ? valueSorted : [0, valueSorted];
-        const trackParts = isValueARange(offsetSorted) ? [offsetSorted[0], offsetSorted[1] - offsetSorted[0]] : [0, offsetSorted];
-        this.handles.forEach((handle, index) => {
+        /** @type {?} */
+        const trackParts = isValueARange(offsetSorted)
+            ? [offsetSorted[0], offsetSorted[1] - offsetSorted[0]]
+            : [0, offsetSorted];
+        this.handles.forEach((/**
+         * @param {?} handle
+         * @param {?} index
+         * @return {?}
+         */
+        (handle, index) => {
             handle.offset = isValueARange(offset) ? offset[index] : offset;
             handle.value = isValueARange(value) ? value[index] : value || 0;
-        });
+        }));
         [this.bounds.lower, this.bounds.upper] = boundParts;
         [this.track.offset, this.track.length] = trackParts;
         this.cdr.markForCheck();
     }
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
     onDragStart(value) {
         this.toggleDragMoving(true);
         this.cacheSliderProperty();
@@ -208,10 +377,19 @@ class NzSliderComponent {
         this.setActiveValue(value);
         this.showHandleTooltip(this.nzRange ? this.activeValueIndex : 0);
     }
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
     onDragMove(value) {
         this.setActiveValue(value);
         this.cdr.markForCheck();
     }
+    /**
+     * @private
+     * @return {?}
+     */
     onDragEnd() {
         this.nzOnAfterChange.emit(this.getValue(true));
         this.toggleDragMoving(false);
@@ -221,33 +399,63 @@ class NzSliderComponent {
     }
     /**
      * Create user interactions handles.
+     * @private
+     * @return {?}
      */
     createDraggingObservables() {
+        /** @type {?} */
         const sliderDOM = this.sliderDOM;
+        /** @type {?} */
         const orientField = this.nzVertical ? 'pageY' : 'pageX';
+        /** @type {?} */
         const mouse = {
             start: 'mousedown',
             move: 'mousemove',
             end: 'mouseup',
             pluckKey: [orientField]
         };
+        /** @type {?} */
         const touch = {
             start: 'touchstart',
             move: 'touchmove',
             end: 'touchend',
             pluckKey: ['touches', '0', orientField],
-            filter: (e) => e instanceof TouchEvent
+            filter: (/**
+             * @param {?} e
+             * @return {?}
+             */
+            (e) => e instanceof TouchEvent)
         };
-        [mouse, touch].forEach(source => {
-            const { start, move, end, pluckKey, filter: filterFunc = () => true } = source;
-            source.startPlucked$ = fromEvent(sliderDOM, start).pipe(filter(filterFunc), tap(silentEvent), pluck(...pluckKey), map((position) => this.findClosestValue(position)));
+        [mouse, touch].forEach((/**
+         * @param {?} source
+         * @return {?}
+         */
+        source => {
+            const { start, move, end, pluckKey, filter: filterFunc = (/**
+             * @return {?}
+             */
+            () => true) } = source;
+            source.startPlucked$ = fromEvent(sliderDOM, start).pipe(filter(filterFunc), tap(silentEvent), pluck(...pluckKey), map((/**
+             * @param {?} position
+             * @return {?}
+             */
+            (position) => this.findClosestValue(position))));
             source.end$ = fromEvent(document, end);
-            source.moveResolved$ = fromEvent(document, move).pipe(filter(filterFunc), tap(silentEvent), pluck(...pluckKey), distinctUntilChanged(), map((position) => this.findClosestValue(position)), distinctUntilChanged(), takeUntil(source.end$));
-        });
-        this.dragStart$ = merge(mouse.startPlucked$, touch.startPlucked$);
-        this.dragMove$ = merge(mouse.moveResolved$, touch.moveResolved$);
-        this.dragEnd$ = merge(mouse.end$, touch.end$);
+            source.moveResolved$ = fromEvent(document, move).pipe(filter(filterFunc), tap(silentEvent), pluck(...pluckKey), distinctUntilChanged(), map((/**
+             * @param {?} position
+             * @return {?}
+             */
+            (position) => this.findClosestValue(position))), distinctUntilChanged(), takeUntil(source.end$));
+        }));
+        this.dragStart$ = merge((/** @type {?} */ (mouse.startPlucked$)), (/** @type {?} */ (touch.startPlucked$)));
+        this.dragMove$ = merge((/** @type {?} */ (mouse.moveResolved$)), (/** @type {?} */ (touch.moveResolved$)));
+        this.dragEnd$ = merge((/** @type {?} */ (mouse.end$)), (/** @type {?} */ (touch.end$)));
     }
+    /**
+     * @private
+     * @param {?=} periods
+     * @return {?}
+     */
     subscribeDrag(periods = ['start', 'move', 'end']) {
         if (periods.indexOf('start') !== -1 && this.dragStart$ && !this.dragStart_) {
             this.dragStart_ = this.dragStart$.subscribe(this.onDragStart.bind(this));
@@ -259,6 +467,11 @@ class NzSliderComponent {
             this.dragEnd_ = this.dragEnd$.subscribe(this.onDragEnd.bind(this));
         }
     }
+    /**
+     * @private
+     * @param {?=} periods
+     * @return {?}
+     */
     unsubscribeDrag(periods = ['start', 'move', 'end']) {
         if (periods.indexOf('start') !== -1 && this.dragStart_) {
             this.dragStart_.unsubscribe();
@@ -273,7 +486,13 @@ class NzSliderComponent {
             this.dragEnd_ = null;
         }
     }
+    /**
+     * @private
+     * @param {?} movable
+     * @return {?}
+     */
     toggleDragMoving(movable) {
+        /** @type {?} */
         const periods = ['move', 'end'];
         if (movable) {
             this.isDragging = true;
@@ -284,6 +503,11 @@ class NzSliderComponent {
             this.unsubscribeDrag(periods);
         }
     }
+    /**
+     * @private
+     * @param {?} disabled
+     * @return {?}
+     */
     toggleDragDisabled(disabled) {
         if (disabled) {
             this.unsubscribeDrag();
@@ -292,58 +516,106 @@ class NzSliderComponent {
             this.subscribeDrag(['start']);
         }
     }
+    /**
+     * @private
+     * @param {?} position
+     * @return {?}
+     */
     findClosestValue(position) {
+        /** @type {?} */
         const sliderStart = this.getSliderStartPosition();
+        /** @type {?} */
         const sliderLength = this.getSliderLength();
+        /** @type {?} */
         const ratio = ensureNumberInRange((position - sliderStart) / sliderLength, 0, 1);
+        /** @type {?} */
         const val = (this.nzMax - this.nzMin) * (this.nzVertical ? 1 - ratio : ratio) + this.nzMin;
+        /** @type {?} */
         const points = this.nzMarks === null ? [] : Object.keys(this.nzMarks).map(parseFloat);
         if (this.nzStep !== null && !this.nzDots) {
+            /** @type {?} */
             const closestOne = Math.round(val / this.nzStep) * this.nzStep;
             points.push(closestOne);
         }
-        const gaps = points.map(point => Math.abs(val - point));
+        /** @type {?} */
+        const gaps = points.map((/**
+         * @param {?} point
+         * @return {?}
+         */
+        point => Math.abs(val - point)));
+        /** @type {?} */
         const closest = points[gaps.indexOf(Math.min(...gaps))];
         return this.nzStep === null ? closest : parseFloat(closest.toFixed(getPrecision(this.nzStep)));
     }
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
     valueToOffset(value) {
         return getPercent(this.nzMin, this.nzMax, value);
     }
+    /**
+     * @private
+     * @return {?}
+     */
     getSliderStartPosition() {
         if (this.cacheSliderStart !== null) {
             return this.cacheSliderStart;
         }
+        /** @type {?} */
         const offset = getElementOffset(this.sliderDOM);
         return this.nzVertical ? offset.top : offset.left;
     }
+    /**
+     * @private
+     * @return {?}
+     */
     getSliderLength() {
         if (this.cacheSliderLength !== null) {
             return this.cacheSliderLength;
         }
+        /** @type {?} */
         const sliderDOM = this.sliderDOM;
         return this.nzVertical ? sliderDOM.clientHeight : sliderDOM.clientWidth;
     }
     /**
      * Cache DOM layout/reflow operations for performance (may not necessary?)
+     * @private
+     * @param {?=} remove
+     * @return {?}
      */
     cacheSliderProperty(remove = false) {
         this.cacheSliderStart = remove ? null : this.getSliderStartPosition();
         this.cacheSliderLength = remove ? null : this.getSliderLength();
     }
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
     formatValue(value) {
+        /** @type {?} */
         let res = value;
-        if (!this.assertValueValid(value)) {
+        if (!this.assertValueValid((/** @type {?} */ (value)))) {
             res = this.nzDefaultValue === null ? (this.nzRange ? [this.nzMin, this.nzMax] : this.nzMin) : this.nzDefaultValue;
         }
         else {
-            res = isValueARange(value)
-                ? value.map(val => ensureNumberInRange(val, this.nzMin, this.nzMax))
-                : ensureNumberInRange(value, this.nzMin, this.nzMax);
+            res = isValueARange((/** @type {?} */ (value)))
+                ? ((/** @type {?} */ (value))).map((/**
+                 * @param {?} val
+                 * @return {?}
+                 */
+                val => ensureNumberInRange(val, this.nzMin, this.nzMax)))
+                : ensureNumberInRange((/** @type {?} */ (value)), this.nzMin, this.nzMax);
         }
         return res;
     }
     /**
      * Check if value is valid and throw error if value-type/range not match.
+     * @private
+     * @param {?} value
+     * @return {?}
      */
     assertValueValid(value) {
         if (!Array.isArray(value) && isNaN(typeof value !== 'number' ? parseFloat(value) : value)) {
@@ -353,6 +625,9 @@ class NzSliderComponent {
     }
     /**
      * Assert that if `this.nzRange` is `true`, value is also a range, vice versa.
+     * @private
+     * @param {?} value
+     * @return {?}
      */
     assertValueTypeMatch(value) {
         if (!value) {
@@ -365,6 +640,12 @@ class NzSliderComponent {
             return true;
         }
     }
+    /**
+     * @private
+     * @param {?} valA
+     * @param {?} valB
+     * @return {?}
+     */
     valuesEqual(valA, valB) {
         if (typeof valA !== typeof valB) {
             return false;
@@ -373,24 +654,56 @@ class NzSliderComponent {
     }
     /**
      * Show one handle's tooltip and hide others'.
+     * @private
+     * @param {?=} handleIndex
+     * @return {?}
      */
     showHandleTooltip(handleIndex = 0) {
-        this.handles.forEach((handle, index) => {
+        this.handles.forEach((/**
+         * @param {?} handle
+         * @param {?} index
+         * @return {?}
+         */
+        (handle, index) => {
             handle.active = index === handleIndex;
-        });
+        }));
     }
+    /**
+     * @private
+     * @return {?}
+     */
     hideAllHandleTooltip() {
-        this.handles.forEach(handle => (handle.active = false));
+        this.handles.forEach((/**
+         * @param {?} handle
+         * @return {?}
+         */
+        handle => (handle.active = false)));
     }
+    /**
+     * @private
+     * @param {?} amount
+     * @return {?}
+     */
     generateHandles(amount) {
         return Array(amount)
             .fill(0)
-            .map(() => ({ offset: null, value: null, active: false }));
+            .map((/**
+         * @return {?}
+         */
+        () => ({ offset: null, value: null, active: false })));
     }
+    /**
+     * @private
+     * @param {?} marks
+     * @return {?}
+     */
     generateMarkItems(marks) {
+        /** @type {?} */
         const marksArray = [];
         for (const key in marks) {
+            /** @type {?} */
             const mark = marks[key];
+            /** @type {?} */
             const val = typeof key === 'number' ? key : parseFloat(key);
             if (val >= this.nzMin && val <= this.nzMax) {
                 marksArray.push({ value: val, offset: this.valueToOffset(val), config: mark });
@@ -399,37 +712,48 @@ class NzSliderComponent {
         return marksArray.length ? marksArray : null;
     }
 }
-/** @nocollapse */ NzSliderComponent.ɵfac = function NzSliderComponent_Factory(t) { return new (t || NzSliderComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(Platform)); };
-/** @nocollapse */ NzSliderComponent.ɵcmp = ɵɵdefineComponent({ type: NzSliderComponent, selectors: [["nz-slider"]], viewQuery: function NzSliderComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵstaticViewQuery(_c0, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.slider = _t.first);
-    } }, inputs: { nzDisabled: "nzDisabled", nzDots: "nzDots", nzIncluded: "nzIncluded", nzRange: "nzRange", nzVertical: "nzVertical", nzDefaultValue: "nzDefaultValue", nzMarks: "nzMarks", nzMax: "nzMax", nzMin: "nzMin", nzStep: "nzStep", nzTooltipVisible: "nzTooltipVisible", nzTooltipPlacement: "nzTooltipPlacement", nzTipFormatter: "nzTipFormatter" }, outputs: { nzOnAfterChange: "nzOnAfterChange" }, exportAs: ["nzSlider"], features: [ɵɵProvidersFeature([
-            {
-                provide: NG_VALUE_ACCESSOR,
-                useExisting: forwardRef((() => NzSliderComponent)),
-                multi: true
-            }
-        ]), ɵɵNgOnChangesFeature()], decls: 7, vars: 10, consts: [[1, "ant-slider"], ["slider", ""], [1, "ant-slider-rail"], [3, "nzVertical", "nzIncluded", "nzOffset", "nzLength"], [3, "nzVertical", "nzLowerBound", "nzUpperBound", "nzMarksArray", "nzIncluded", 4, "ngIf"], [3, "nzVertical", "nzOffset", "nzValue", "nzActive", "nzTipFormatter", "nzTooltipVisible", "nzTooltipPlacement", 4, "ngFor", "ngForOf"], [3, "nzVertical", "nzMin", "nzMax", "nzLowerBound", "nzUpperBound", "nzMarksArray", "nzIncluded", 4, "ngIf"], [3, "nzVertical", "nzLowerBound", "nzUpperBound", "nzMarksArray", "nzIncluded"], [3, "nzVertical", "nzOffset", "nzValue", "nzActive", "nzTipFormatter", "nzTooltipVisible", "nzTooltipPlacement"], [3, "nzVertical", "nzMin", "nzMax", "nzLowerBound", "nzUpperBound", "nzMarksArray", "nzIncluded"]], template: function NzSliderComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0, 1);
-        ɵɵelement(2, "div", 2);
-        ɵɵelement(3, "nz-slider-track", 3);
-        ɵɵtemplate(4, NzSliderComponent_nz_slider_step_4_Template, 1, 5, "nz-slider-step", 4);
-        ɵɵtemplate(5, NzSliderComponent_nz_slider_handle_5_Template, 1, 7, "nz-slider-handle", 5);
-        ɵɵtemplate(6, NzSliderComponent_nz_slider_marks_6_Template, 1, 7, "nz-slider-marks", 6);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵclassProp("ant-slider-disabled", ctx.nzDisabled)("ant-slider-vertical", ctx.nzVertical)("ant-slider-with-marks", ctx.marksArray);
-        ɵɵadvance(3);
-        ɵɵproperty("nzVertical", ctx.nzVertical)("nzIncluded", ctx.nzIncluded)("nzOffset", ctx.track.offset)("nzLength", ctx.track.length);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.marksArray);
-        ɵɵadvance(1);
-        ɵɵproperty("ngForOf", ctx.handles);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.marksArray);
-    } }, encapsulation: 2, changeDetection: 0 });
+NzSliderComponent.decorators = [
+    { type: Component, args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: 'nz-slider',
+                exportAs: 'nzSlider',
+                preserveWhitespaces: false,
+                providers: [
+                    {
+                        provide: NG_VALUE_ACCESSOR,
+                        useExisting: forwardRef((/**
+                         * @return {?}
+                         */
+                        () => NzSliderComponent)),
+                        multi: true
+                    }
+                ],
+                template: "<div #slider\n  class=\"ant-slider\"\n  [class.ant-slider-disabled]=\"nzDisabled\"\n  [class.ant-slider-vertical]=\"nzVertical\"\n  [class.ant-slider-with-marks]=\"marksArray\">\n  <div class=\"ant-slider-rail\"></div>\n  <nz-slider-track\n    [nzVertical]=\"nzVertical\"\n    [nzIncluded]=\"nzIncluded\"\n    [nzOffset]=\"track.offset\"\n    [nzLength]=\"track.length\"></nz-slider-track>\n  <nz-slider-step\n    *ngIf=\"marksArray\"\n    [nzVertical]=\"nzVertical\"\n    [nzLowerBound]=\"bounds.lower\"\n    [nzUpperBound]=\"bounds.upper\"\n    [nzMarksArray]=\"marksArray\"\n    [nzIncluded]=\"nzIncluded\"></nz-slider-step>\n  <nz-slider-handle\n    *ngFor=\"let handle of handles\"\n    [nzVertical]=\"nzVertical\"\n    [nzOffset]=\"handle.offset\"\n    [nzValue]=\"handle.value\"\n    [nzActive]=\"handle.active\"\n    [nzTipFormatter]=\"nzTipFormatter\"\n    [nzTooltipVisible]=\"nzTooltipVisible\"\n    [nzTooltipPlacement]=\"nzTooltipPlacement\"\n    ></nz-slider-handle>\n  <nz-slider-marks\n    *ngIf=\"marksArray\"\n    [nzVertical]=\"nzVertical\"\n    [nzMin]=\"nzMin\"\n    [nzMax]=\"nzMax\"\n    [nzLowerBound]=\"bounds.lower\"\n    [nzUpperBound]=\"bounds.upper\"\n    [nzMarksArray]=\"marksArray\"\n    [nzIncluded]=\"nzIncluded\"></nz-slider-marks>\n</div>"
+            }] }
+];
+/** @nocollapse */
+NzSliderComponent.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: Platform }
+];
+NzSliderComponent.propDecorators = {
+    slider: [{ type: ViewChild, args: ['slider', { static: true },] }],
+    nzDisabled: [{ type: Input }],
+    nzDots: [{ type: Input }],
+    nzIncluded: [{ type: Input }],
+    nzRange: [{ type: Input }],
+    nzVertical: [{ type: Input }],
+    nzDefaultValue: [{ type: Input }],
+    nzMarks: [{ type: Input }],
+    nzMax: [{ type: Input }],
+    nzMin: [{ type: Input }],
+    nzStep: [{ type: Input }],
+    nzTooltipVisible: [{ type: Input }],
+    nzTooltipPlacement: [{ type: Input }],
+    nzTipFormatter: [{ type: Input }],
+    nzOnAfterChange: [{ type: Output }]
+};
 __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
@@ -450,69 +774,109 @@ __decorate([
     InputBoolean(),
     __metadata("design:type", Boolean)
 ], NzSliderComponent.prototype, "nzVertical", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-slider',
-                exportAs: 'nzSlider',
-                preserveWhitespaces: false,
-                providers: [
-                    {
-                        provide: NG_VALUE_ACCESSOR,
-                        useExisting: forwardRef((() => NzSliderComponent)),
-                        multi: true
-                    }
-                ],
-                templateUrl: './nz-slider.component.html'
-            }]
-    }], function () { return [{ type: ChangeDetectorRef }, { type: Platform }]; }, { slider: [{
-            type: ViewChild,
-            args: ['slider', { static: true }]
-        }], nzDisabled: [{
-            type: Input
-        }], nzDots: [{
-            type: Input
-        }], nzIncluded: [{
-            type: Input
-        }], nzRange: [{
-            type: Input
-        }], nzVertical: [{
-            type: Input
-        }], nzDefaultValue: [{
-            type: Input
-        }], nzMarks: [{
-            type: Input
-        }], nzMax: [{
-            type: Input
-        }], nzMin: [{
-            type: Input
-        }], nzStep: [{
-            type: Input
-        }], nzTooltipVisible: [{
-            type: Input
-        }], nzTooltipPlacement: [{
-            type: Input
-        }], nzTipFormatter: [{
-            type: Input
-        }], nzOnAfterChange: [{
-            type: Output
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzSliderComponent.prototype.slider;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzDisabled;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzDots;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzIncluded;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzRange;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzVertical;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzDefaultValue;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzMarks;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzMax;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzMin;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzStep;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzTooltipVisible;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzTooltipPlacement;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzTipFormatter;
+    /** @type {?} */
+    NzSliderComponent.prototype.nzOnAfterChange;
+    /** @type {?} */
+    NzSliderComponent.prototype.value;
+    /** @type {?} */
+    NzSliderComponent.prototype.sliderDOM;
+    /** @type {?} */
+    NzSliderComponent.prototype.cacheSliderStart;
+    /** @type {?} */
+    NzSliderComponent.prototype.cacheSliderLength;
+    /** @type {?} */
+    NzSliderComponent.prototype.activeValueIndex;
+    /** @type {?} */
+    NzSliderComponent.prototype.track;
+    /** @type {?} */
+    NzSliderComponent.prototype.handles;
+    /** @type {?} */
+    NzSliderComponent.prototype.marksArray;
+    /** @type {?} */
+    NzSliderComponent.prototype.bounds;
+    /** @type {?} */
+    NzSliderComponent.prototype.isDragging;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragStart$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragMove$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragEnd$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragStart_;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragMove_;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.dragEnd_;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderComponent.prototype.platform;
+}
 
-function NzSliderHandleComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 2);
-} if (rf & 2) {
-    const ctx_r745 = ɵɵnextContext();
-    ɵɵproperty("ngStyle", ctx_r745.style)("nzTitle", ctx_r745.tooltipTitle)("nzTrigger", null)("nzPlacement", ctx_r745.nzTooltipPlacement);
-} }
-function NzSliderHandleComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "div", 3);
-} if (rf & 2) {
-    const ctx_r746 = ɵɵnextContext();
-    ɵɵproperty("ngStyle", ctx_r746.style);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-handle.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzSliderHandleComponent {
+    /**
+     * @param {?} sliderComponent
+     * @param {?} cdr
+     */
     constructor(sliderComponent, cdr) {
         this.sliderComponent = sliderComponent;
         this.cdr = cdr;
@@ -520,20 +884,30 @@ class NzSliderHandleComponent {
         this.nzActive = false;
         this.style = {};
         this.hovers_ = new Subscription();
-        this.enterHandle = () => {
+        this.enterHandle = (/**
+         * @return {?}
+         */
+        () => {
             if (!this.sliderComponent.isDragging) {
                 this.toggleTooltip(true);
                 this.updateTooltipPosition();
                 this.cdr.detectChanges();
             }
-        };
-        this.leaveHandle = () => {
+        });
+        this.leaveHandle = (/**
+         * @return {?}
+         */
+        () => {
             if (!this.sliderComponent.isDragging) {
                 this.toggleTooltip(false);
                 this.cdr.detectChanges();
             }
-        };
+        });
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         const { nzOffset, nzValue, nzActive, nzTooltipVisible } = changes;
         if (nzOffset) {
@@ -552,12 +926,24 @@ class NzSliderHandleComponent {
             }
         }
         if (nzTooltipVisible && nzTooltipVisible.currentValue === 'always') {
-            Promise.resolve().then(() => this.toggleTooltip(true, true));
+            Promise.resolve().then((/**
+             * @return {?}
+             */
+            () => this.toggleTooltip(true, true)));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.hovers_.unsubscribe();
     }
+    /**
+     * @private
+     * @param {?} show
+     * @param {?=} force
+     * @return {?}
+     */
     toggleTooltip(show, force = false) {
         if (!force && (this.nzTooltipVisible !== 'default' || !this.tooltip)) {
             return;
@@ -569,79 +955,114 @@ class NzSliderHandleComponent {
             this.tooltip.hide();
         }
     }
+    /**
+     * @private
+     * @return {?}
+     */
     updateTooltipTitle() {
         this.tooltipTitle = this.nzTipFormatter ? this.nzTipFormatter(this.nzValue) : `${this.nzValue}`;
     }
+    /**
+     * @private
+     * @return {?}
+     */
     updateTooltipPosition() {
         if (this.tooltip) {
-            Promise.resolve().then(() => this.tooltip.updatePosition());
+            Promise.resolve().then((/**
+             * @return {?}
+             */
+            () => this.tooltip.updatePosition()));
         }
     }
+    /**
+     * @private
+     * @return {?}
+     */
     updateStyle() {
         this.style[this.nzVertical ? 'bottom' : 'left'] = `${this.nzOffset}%`;
         this.cdr.markForCheck();
     }
 }
-/** @nocollapse */ NzSliderHandleComponent.ɵfac = function NzSliderHandleComponent_Factory(t) { return new (t || NzSliderHandleComponent)(ɵɵdirectiveInject(NzSliderComponent), ɵɵdirectiveInject(ChangeDetectorRef)); };
-/** @nocollapse */ NzSliderHandleComponent.ɵcmp = ɵɵdefineComponent({ type: NzSliderHandleComponent, selectors: [["nz-slider-handle"]], viewQuery: function NzSliderHandleComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵviewQuery(NzTooltipDirective, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.tooltip = _t.first);
-    } }, hostBindings: function NzSliderHandleComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵlistener("mouseenter", function NzSliderHandleComponent_mouseenter_HostBindingHandler($event) { return ctx.enterHandle(); })("mouseleave", function NzSliderHandleComponent_mouseleave_HostBindingHandler($event) { return ctx.leaveHandle(); });
-    } }, inputs: { nzVertical: "nzVertical", nzOffset: "nzOffset", nzValue: "nzValue", nzTooltipVisible: "nzTooltipVisible", nzTooltipPlacement: "nzTooltipPlacement", nzTipFormatter: "nzTipFormatter", nzActive: "nzActive" }, exportAs: ["nzSliderHandle"], features: [ɵɵNgOnChangesFeature()], decls: 2, vars: 2, consts: [["nz-tooltip", "", "class", "ant-slider-handle", 3, "ngStyle", "nzTitle", "nzTrigger", "nzPlacement", 4, "ngIf"], ["class", "ant-slider-handle", 3, "ngStyle", 4, "ngIf"], ["nz-tooltip", "", 1, "ant-slider-handle", 3, "ngStyle", "nzTitle", "nzTrigger", "nzPlacement"], [1, "ant-slider-handle", 3, "ngStyle"]], template: function NzSliderHandleComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵtemplate(0, NzSliderHandleComponent_div_0_Template, 1, 4, "div", 0);
-        ɵɵtemplate(1, NzSliderHandleComponent_div_1_Template, 1, 1, "div", 1);
-    } if (rf & 2) {
-        ɵɵproperty("ngIf", ctx.nzTipFormatter !== null && ctx.nzTooltipVisible !== "never");
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzTipFormatter === null || ctx.nzTooltipVisible === "never");
-    } }, directives: [NgIf, NzTooltipDirective, NgStyle], encapsulation: 2, changeDetection: 0 });
-__decorate([
-    InputBoolean(),
-    __metadata("design:type", Object)
-], NzSliderHandleComponent.prototype, "nzActive", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderHandleComponent, [{
-        type: Component,
-        args: [{
+NzSliderHandleComponent.decorators = [
+    { type: Component, args: [{
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 selector: 'nz-slider-handle',
                 exportAs: 'nzSliderHandle',
                 preserveWhitespaces: false,
-                templateUrl: './nz-slider-handle.component.html',
+                template: "<div nz-tooltip\n     *ngIf=\"nzTipFormatter !== null && nzTooltipVisible !== 'never'\"\n     class=\"ant-slider-handle\"\n     [ngStyle]=\"style\"\n     [nzTitle]=\"tooltipTitle\"\n     [nzTrigger]=\"null\"\n     [nzPlacement]=\"nzTooltipPlacement\"></div>\n<div *ngIf=\"nzTipFormatter === null || nzTooltipVisible === 'never'\"\n     class=\"ant-slider-handle\"\n     [ngStyle]=\"style\"></div>\n",
                 host: {
                     '(mouseenter)': 'enterHandle()',
                     '(mouseleave)': 'leaveHandle()'
                 }
-            }]
-    }], function () { return [{ type: NzSliderComponent }, { type: ChangeDetectorRef }]; }, { tooltip: [{
-            type: ViewChild,
-            args: [NzTooltipDirective, { static: false }]
-        }], nzVertical: [{
-            type: Input
-        }], nzOffset: [{
-            type: Input
-        }], nzValue: [{
-            type: Input
-        }], nzTooltipVisible: [{
-            type: Input
-        }], nzTooltipPlacement: [{
-            type: Input
-        }], nzTipFormatter: [{
-            type: Input
-        }], nzActive: [{
-            type: Input
-        }] }); })();
+            }] }
+];
+/** @nocollapse */
+NzSliderHandleComponent.ctorParameters = () => [
+    { type: NzSliderComponent },
+    { type: ChangeDetectorRef }
+];
+NzSliderHandleComponent.propDecorators = {
+    tooltip: [{ type: ViewChild, args: [NzTooltipDirective, { static: false },] }],
+    nzVertical: [{ type: Input }],
+    nzOffset: [{ type: Input }],
+    nzValue: [{ type: Input }],
+    nzTooltipVisible: [{ type: Input }],
+    nzTooltipPlacement: [{ type: Input }],
+    nzTipFormatter: [{ type: Input }],
+    nzActive: [{ type: Input }]
+};
+__decorate([
+    InputBoolean(),
+    __metadata("design:type", Object)
+], NzSliderHandleComponent.prototype, "nzActive", void 0);
+if (false) {
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.tooltip;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzVertical;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzOffset;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzValue;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzTooltipVisible;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzTooltipPlacement;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzTipFormatter;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.nzActive;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.tooltipTitle;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.style;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderHandleComponent.prototype.hovers_;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.enterHandle;
+    /** @type {?} */
+    NzSliderHandleComponent.prototype.leaveHandle;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderHandleComponent.prototype.sliderComponent;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSliderHandleComponent.prototype.cdr;
+}
 
-function NzSliderMarksComponent_span_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "span", 2);
-} if (rf & 2) {
-    const attr_r748 = ctx.$implicit;
-    ɵɵclassProp("ant-slider-mark-active", attr_r748.active);
-    ɵɵproperty("ngStyle", attr_r748.style)("innerHTML", attr_r748.label, ɵɵsanitizeHtml);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-marks.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzSliderMarksComponent {
     constructor() {
         this.nzLowerBound = null;
@@ -649,6 +1070,10 @@ class NzSliderMarksComponent {
         this.nzVertical = false;
         this.nzIncluded = false;
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         if (changes.nzMarksArray) {
             this.buildMarks();
@@ -657,14 +1082,30 @@ class NzSliderMarksComponent {
             this.togglePointActive();
         }
     }
+    /**
+     * @param {?} _index
+     * @param {?} mark
+     * @return {?}
+     */
     trackById(_index, mark) {
         return mark.value;
     }
+    /**
+     * @private
+     * @return {?}
+     */
     buildMarks() {
+        /** @type {?} */
         const range = this.nzMax - this.nzMin;
-        this.marks = this.nzMarksArray.map(mark => {
+        this.marks = this.nzMarksArray.map((/**
+         * @param {?} mark
+         * @return {?}
+         */
+        mark => {
             const { value, offset, config } = mark;
+            /** @type {?} */
             const style = this.getMarkStyles(value, range, config);
+            /** @type {?} */
             const label = isConfigAObject(config) ? config.label : config;
             return {
                 label,
@@ -674,9 +1115,17 @@ class NzSliderMarksComponent {
                 config,
                 active: false
             };
-        });
+        }));
     }
+    /**
+     * @private
+     * @param {?} value
+     * @param {?} range
+     * @param {?} config
+     * @return {?}
+     */
     getMarkStyles(value, range, config) {
+        /** @type {?} */
         let style;
         if (this.nzVertical) {
             style = {
@@ -691,30 +1140,50 @@ class NzSliderMarksComponent {
             };
         }
         if (isConfigAObject(config) && config.style) {
-            style = Object.assign(Object.assign({}, style), config.style);
+            style = Object.assign({}, style, config.style);
         }
         return style;
     }
+    /**
+     * @private
+     * @return {?}
+     */
     togglePointActive() {
         if (this.marks && this.nzLowerBound !== null && this.nzUpperBound !== null) {
-            this.marks.forEach(mark => {
+            this.marks.forEach((/**
+             * @param {?} mark
+             * @return {?}
+             */
+            mark => {
+                /** @type {?} */
                 const value = mark.value;
+                /** @type {?} */
                 const isActive = (!this.nzIncluded && value === this.nzUpperBound) ||
-                    (this.nzIncluded && value <= this.nzUpperBound && value >= this.nzLowerBound);
+                    (this.nzIncluded && value <= (/** @type {?} */ (this.nzUpperBound)) && value >= (/** @type {?} */ (this.nzLowerBound)));
                 mark.active = isActive;
-            });
+            }));
         }
     }
 }
-/** @nocollapse */ NzSliderMarksComponent.ɵfac = function NzSliderMarksComponent_Factory(t) { return new (t || NzSliderMarksComponent)(); };
-/** @nocollapse */ NzSliderMarksComponent.ɵcmp = ɵɵdefineComponent({ type: NzSliderMarksComponent, selectors: [["nz-slider-marks"]], inputs: { nzLowerBound: "nzLowerBound", nzUpperBound: "nzUpperBound", nzMarksArray: "nzMarksArray", nzMin: "nzMin", nzMax: "nzMax", nzVertical: "nzVertical", nzIncluded: "nzIncluded" }, exportAs: ["nzSliderMarks"], features: [ɵɵNgOnChangesFeature()], decls: 2, vars: 2, consts: [[1, "ant-slider-mark"], ["class", "ant-slider-mark-text", 3, "ant-slider-mark-active", "ngStyle", "innerHTML", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-mark-text", 3, "ngStyle", "innerHTML"]], template: function NzSliderMarksComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, NzSliderMarksComponent_span_1_Template, 1, 3, "span", 1);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵadvance(1);
-        ɵɵproperty("ngForOf", ctx.marks)("ngForTrackBy", ctx.trackById);
-    } }, directives: [NgForOf, NgStyle], encapsulation: 2, changeDetection: 0 });
+NzSliderMarksComponent.decorators = [
+    { type: Component, args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                preserveWhitespaces: false,
+                selector: 'nz-slider-marks',
+                exportAs: 'nzSliderMarks',
+                template: "<div class=\"ant-slider-mark\">\n  <span\n    class=\"ant-slider-mark-text\"\n    *ngFor=\"let attr of marks; trackBy: trackById\"\n    [class.ant-slider-mark-active]=\"attr.active\"\n    [ngStyle]=\"attr.style\"\n    [innerHTML]=\"attr.label\">\n  </span>\n</div>"
+            }] }
+];
+NzSliderMarksComponent.propDecorators = {
+    nzLowerBound: [{ type: Input }],
+    nzUpperBound: [{ type: Input }],
+    nzMarksArray: [{ type: Input }],
+    nzMin: [{ type: Input }],
+    nzMax: [{ type: Input }],
+    nzVertical: [{ type: Input }],
+    nzIncluded: [{ type: Input }]
+};
 __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
@@ -723,39 +1192,30 @@ __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
 ], NzSliderMarksComponent.prototype, "nzIncluded", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderMarksComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                preserveWhitespaces: false,
-                selector: 'nz-slider-marks',
-                exportAs: 'nzSliderMarks',
-                templateUrl: './nz-slider-marks.component.html'
-            }]
-    }], null, { nzLowerBound: [{
-            type: Input
-        }], nzUpperBound: [{
-            type: Input
-        }], nzMarksArray: [{
-            type: Input
-        }], nzMin: [{
-            type: Input
-        }], nzMax: [{
-            type: Input
-        }], nzVertical: [{
-            type: Input
-        }], nzIncluded: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzLowerBound;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzUpperBound;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzMarksArray;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzMin;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzMax;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzVertical;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.nzIncluded;
+    /** @type {?} */
+    NzSliderMarksComponent.prototype.marks;
+}
 
-function NzSliderStepComponent_span_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "span", 2);
-} if (rf & 2) {
-    const mark_r750 = ctx.$implicit;
-    ɵɵclassProp("ant-slider-dot-active", mark_r750.active);
-    ɵɵproperty("ngStyle", mark_r750.style);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-step.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzSliderStepComponent {
     constructor() {
         this.nzLowerBound = null;
@@ -763,6 +1223,10 @@ class NzSliderStepComponent {
         this.nzVertical = false;
         this.nzIncluded = false;
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         if (changes.nzMarksArray) {
             this.buildSteps();
@@ -771,12 +1235,26 @@ class NzSliderStepComponent {
             this.togglePointActive();
         }
     }
+    /**
+     * @param {?} _index
+     * @param {?} step
+     * @return {?}
+     */
     trackById(_index, step) {
         return step.value;
     }
+    /**
+     * @private
+     * @return {?}
+     */
     buildSteps() {
+        /** @type {?} */
         const orient = this.nzVertical ? 'bottom' : 'left';
-        this.steps = this.nzMarksArray.map(mark => {
+        this.steps = this.nzMarksArray.map((/**
+         * @param {?} mark
+         * @return {?}
+         */
+        mark => {
             const { value, offset, config } = mark;
             return {
                 value,
@@ -787,28 +1265,46 @@ class NzSliderStepComponent {
                     [orient]: `${offset}%`
                 }
             };
-        });
+        }));
     }
+    /**
+     * @private
+     * @return {?}
+     */
     togglePointActive() {
         if (this.steps && this.nzLowerBound !== null && this.nzUpperBound !== null) {
-            this.steps.forEach(step => {
+            this.steps.forEach((/**
+             * @param {?} step
+             * @return {?}
+             */
+            step => {
+                /** @type {?} */
                 const value = step.value;
+                /** @type {?} */
                 const isActive = (!this.nzIncluded && value === this.nzUpperBound) ||
-                    (this.nzIncluded && value <= this.nzUpperBound && value >= this.nzLowerBound);
+                    (this.nzIncluded && value <= (/** @type {?} */ (this.nzUpperBound)) && value >= (/** @type {?} */ (this.nzLowerBound)));
                 step.active = isActive;
-            });
+            }));
         }
     }
 }
-/** @nocollapse */ NzSliderStepComponent.ɵfac = function NzSliderStepComponent_Factory(t) { return new (t || NzSliderStepComponent)(); };
-/** @nocollapse */ NzSliderStepComponent.ɵcmp = ɵɵdefineComponent({ type: NzSliderStepComponent, selectors: [["nz-slider-step"]], inputs: { nzLowerBound: "nzLowerBound", nzUpperBound: "nzUpperBound", nzMarksArray: "nzMarksArray", nzVertical: "nzVertical", nzIncluded: "nzIncluded" }, exportAs: ["nzSliderStep"], features: [ɵɵNgOnChangesFeature()], decls: 2, vars: 2, consts: [[1, "ant-slider-step"], ["class", "ant-slider-dot", 3, "ant-slider-dot-active", "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], [1, "ant-slider-dot", 3, "ngStyle"]], template: function NzSliderStepComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵtemplate(1, NzSliderStepComponent_span_1_Template, 1, 2, "span", 1);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵadvance(1);
-        ɵɵproperty("ngForOf", ctx.steps)("ngForTrackBy", ctx.trackById);
-    } }, directives: [NgForOf, NgStyle], encapsulation: 2, changeDetection: 0 });
+NzSliderStepComponent.decorators = [
+    { type: Component, args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: 'nz-slider-step',
+                exportAs: 'nzSliderStep',
+                preserveWhitespaces: false,
+                template: "<div class=\"ant-slider-step\">\n  <span\n    class=\"ant-slider-dot\"\n    *ngFor=\"let mark of steps; trackBy: trackById\"\n    [class.ant-slider-dot-active]=\"mark.active\"\n    [ngStyle]=\"mark.style\">\n  </span>\n</div>"
+            }] }
+];
+NzSliderStepComponent.propDecorators = {
+    nzLowerBound: [{ type: Input }],
+    nzUpperBound: [{ type: Input }],
+    nzMarksArray: [{ type: Input }],
+    nzVertical: [{ type: Input }],
+    nzIncluded: [{ type: Input }]
+};
 __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
@@ -817,34 +1313,52 @@ __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
 ], NzSliderStepComponent.prototype, "nzIncluded", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderStepComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-slider-step',
-                exportAs: 'nzSliderStep',
-                preserveWhitespaces: false,
-                templateUrl: './nz-slider-step.component.html'
-            }]
-    }], null, { nzLowerBound: [{
-            type: Input
-        }], nzUpperBound: [{
-            type: Input
-        }], nzMarksArray: [{
-            type: Input
-        }], nzVertical: [{
-            type: Input
-        }], nzIncluded: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzSliderStepComponent.prototype.nzLowerBound;
+    /** @type {?} */
+    NzSliderStepComponent.prototype.nzUpperBound;
+    /** @type {?} */
+    NzSliderStepComponent.prototype.nzMarksArray;
+    /** @type {?} */
+    NzSliderStepComponent.prototype.nzVertical;
+    /** @type {?} */
+    NzSliderStepComponent.prototype.nzIncluded;
+    /** @type {?} */
+    NzSliderStepComponent.prototype.steps;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider-track.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function NzSliderTrackStyle() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzSliderTrackStyle.prototype.bottom;
+    /** @type {?|undefined} */
+    NzSliderTrackStyle.prototype.height;
+    /** @type {?|undefined} */
+    NzSliderTrackStyle.prototype.left;
+    /** @type {?|undefined} */
+    NzSliderTrackStyle.prototype.width;
+    /** @type {?|undefined} */
+    NzSliderTrackStyle.prototype.visibility;
+}
 class NzSliderTrackComponent {
     constructor() {
         this.nzVertical = false;
         this.nzIncluded = false;
         this.style = {};
     }
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
     ngOnChanges(changes) {
         if (changes.nzIncluded) {
             this.style.visibility = this.nzIncluded ? 'visible' : 'hidden';
@@ -865,12 +1379,22 @@ class NzSliderTrackComponent {
         }
     }
 }
-/** @nocollapse */ NzSliderTrackComponent.ɵfac = function NzSliderTrackComponent_Factory(t) { return new (t || NzSliderTrackComponent)(); };
-/** @nocollapse */ NzSliderTrackComponent.ɵcmp = ɵɵdefineComponent({ type: NzSliderTrackComponent, selectors: [["nz-slider-track"]], inputs: { nzOffset: "nzOffset", nzLength: "nzLength", nzVertical: "nzVertical", nzIncluded: "nzIncluded" }, exportAs: ["nzSliderTrack"], features: [ɵɵNgOnChangesFeature()], decls: 1, vars: 1, consts: [[1, "ant-slider-track", 3, "ngStyle"]], template: function NzSliderTrackComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelement(0, "div", 0);
-    } if (rf & 2) {
-        ɵɵproperty("ngStyle", ctx.style);
-    } }, directives: [NgStyle], encapsulation: 2, changeDetection: 0 });
+NzSliderTrackComponent.decorators = [
+    { type: Component, args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: 'nz-slider-track',
+                exportAs: 'nzSliderTrack',
+                preserveWhitespaces: false,
+                template: "<div class=\"ant-slider-track\" [ngStyle]=\"style\"></div>"
+            }] }
+];
+NzSliderTrackComponent.propDecorators = {
+    nzOffset: [{ type: Input }],
+    nzLength: [{ type: Input }],
+    nzVertical: [{ type: Input }],
+    nzIncluded: [{ type: Input }]
+};
 __decorate([
     InputNumber(),
     __metadata("design:type", Number)
@@ -887,58 +1411,56 @@ __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
 ], NzSliderTrackComponent.prototype, "nzIncluded", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderTrackComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-slider-track',
-                exportAs: 'nzSliderTrack',
-                preserveWhitespaces: false,
-                templateUrl: './nz-slider-track.component.html'
-            }]
-    }], null, { nzOffset: [{
-            type: Input
-        }], nzLength: [{
-            type: Input
-        }], nzVertical: [{
-            type: Input
-        }], nzIncluded: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzSliderTrackComponent.prototype.nzOffset;
+    /** @type {?} */
+    NzSliderTrackComponent.prototype.nzLength;
+    /** @type {?} */
+    NzSliderTrackComponent.prototype.nzVertical;
+    /** @type {?} */
+    NzSliderTrackComponent.prototype.nzIncluded;
+    /** @type {?} */
+    NzSliderTrackComponent.prototype.style;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-slider.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderModule {
 }
-/** @nocollapse */ NzSliderModule.ɵmod = ɵɵdefineNgModule({ type: NzSliderModule });
-/** @nocollapse */ NzSliderModule.ɵinj = ɵɵdefineInjector({ factory: function NzSliderModule_Factory(t) { return new (t || NzSliderModule)(); }, imports: [[CommonModule, PlatformModule, NzToolTipModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzSliderModule, { declarations: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent], imports: [CommonModule, PlatformModule, NzToolTipModule], exports: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSliderModule, [{
-        type: NgModule,
-        args: [{
-                exports: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent],
-                declarations: [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent],
+NzSliderModule.decorators = [
+    { type: NgModule, args: [{
+                exports: [
+                    NzSliderComponent,
+                    NzSliderTrackComponent,
+                    NzSliderHandleComponent,
+                    NzSliderStepComponent,
+                    NzSliderMarksComponent
+                ],
+                declarations: [
+                    NzSliderComponent,
+                    NzSliderTrackComponent,
+                    NzSliderHandleComponent,
+                    NzSliderStepComponent,
+                    NzSliderMarksComponent
+                ],
                 imports: [CommonModule, PlatformModule, NzToolTipModule]
-            }]
-    }], null, null); })();
-ɵɵsetComponentScope(NzSliderComponent, [NzSliderComponent, NzSliderTrackComponent, NzSliderHandleComponent, NzSliderStepComponent, NzSliderMarksComponent, NgClass, NgComponentOutlet, NgForOf, NgIf, NgTemplateOutlet, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault, NgPlural, NgPluralCase, NzToolTipComponent, NzTooltipDirective], [AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe]);
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-slider.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { Marks, NzSliderComponent, NzSliderHandleComponent, NzSliderMarksComponent, NzSliderModule, NzSliderStepComponent, NzSliderTrackComponent, isConfigAObject, isValueARange };

@@ -8,7 +8,6 @@
 import { ContentObserver } from '@angular/cdk/observers';
 import { AfterContentInit, ChangeDetectorRef, ElementRef, NgZone, OnChanges, OnDestroy, OnInit, QueryList, Renderer2, SimpleChanges } from '@angular/core';
 import { NzConfigService, NzSizeLDSType, NzUpdateHostClassService, NzWaveConfig, NzWaveDirective } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare type NzButtonType = 'primary' | 'dashed' | 'danger' | 'default' | 'link';
 export declare type NzButtonShape = 'circle' | 'round' | null;
 export declare class NzButtonComponent implements AfterContentInit, OnInit, OnDestroy, OnChanges {
@@ -46,6 +45,4 @@ export declare class NzButtonComponent implements AfterContentInit, OnInit, OnDe
     ngOnInit(): void;
     ngOnDestroy(): void;
     ngOnChanges(changes: SimpleChanges): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzButtonComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzButtonComponent, "[nz-button]", ["nzButton"], { 'nzBlock': "nzBlock", 'nzGhost': "nzGhost", 'nzSearch': "nzSearch", 'nzLoading': "nzLoading", 'nzType': "nzType", 'nzShape': "nzShape", 'nzSize': "nzSize" }, {}, ["listOfIconElement"]>;
 }

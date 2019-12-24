@@ -10,7 +10,6 @@ import { MediaMatcher } from '@angular/cdk/layout';
 import { Platform } from '@angular/cdk/platform';
 import { IndexableObject, NzAlignType, NzDomEventService, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
-import * as i0 from "@angular/core";
 export declare type NzJustify = 'start' | 'end' | 'center' | 'space-around' | 'space-between';
 export declare type NzGridType = 'flex' | null;
 export declare class NzRowDirective implements OnInit, OnChanges, AfterViewInit, OnDestroy {
@@ -41,6 +40,4 @@ export declare class NzRowDirective implements OnInit, OnChanges, AfterViewInit,
     ngOnChanges(changes: SimpleChanges): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzRowDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzRowDirective, "[nz-row],nz-row", ["nzRow"], { 'nzType': "nzType", 'nzAlign': "nzAlign", 'nzJustify': "nzJustify", 'nzGutter': "nzGutter" }, {}, never>;
 }

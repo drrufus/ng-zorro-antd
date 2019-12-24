@@ -2,7 +2,7 @@
 Object.defineProperty(exports, "__esModule", { value: true });
 const data_1 = require("./data");
 /** Upgrade data that will be used for the NG-ZORRO ng-update schematic. */
-exports.ruleUpgradeData = {
+exports.materialUpgradeData = {
     attributeSelectors: data_1.attributeSelectors,
     classNames: data_1.classNames,
     constructorChecks: data_1.constructorChecks,

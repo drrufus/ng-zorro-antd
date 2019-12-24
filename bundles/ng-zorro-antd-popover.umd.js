@@ -201,56 +201,11 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzPopoverComponent_ng_template_1_div_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r649 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r649.title);
-    } }
-    function NzPopoverComponent_ng_template_1_div_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 9);
-        core.ɵɵtemplate(1, NzPopoverComponent_ng_template_1_div_5_ng_container_1_Template, 2, 1, "ng-container", 8);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r647 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r647.title);
-    } }
-    function NzPopoverComponent_ng_template_1_ng_container_7_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r648 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r648.content);
-    } }
-    function NzPopoverComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 2);
-        core.ɵɵelementStart(1, "div", 3);
-        core.ɵɵelement(2, "div", 4);
-        core.ɵɵelementStart(3, "div", 5);
-        core.ɵɵelementStart(4, "div");
-        core.ɵɵtemplate(5, NzPopoverComponent_ng_template_1_div_5_Template, 2, 1, "div", 6);
-        core.ɵɵelementStart(6, "div", 7);
-        core.ɵɵtemplate(7, NzPopoverComponent_ng_template_1_ng_container_7_Template, 2, 1, "ng-container", 8);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r646 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngClass", ctx_r646._classMap)("ngStyle", ctx_r646.nzOverlayStyle)("@.disabled", ctx_r646.noAnimation == null ? null : ctx_r646.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r646.noAnimation == null ? null : ctx_r646.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
-        core.ɵɵadvance(5);
-        core.ɵɵproperty("ngIf", ctx_r646.title);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r646.content);
-    } }
-    var _c0 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-popover.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzPopoverComponent = /** @class */ (function (_super) {
         __extends(NzPopoverComponent, _super);
         function NzPopoverComponent(cdr, noAnimation) {
@@ -259,111 +214,130 @@
             _this._prefix = 'ant-popover-placement';
             return _this;
         }
-        NzPopoverComponent.prototype.isEmpty = function () {
-            return tooltip.isTooltipEmpty(this.title) && tooltip.isTooltipEmpty(this.content);
+        NzPopoverComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-popover',
+                        exportAs: 'nzPopoverComponent',
+                        animations: [core$1.zoomBigMotion],
+                        template: "<ng-content></ng-content>\n<ng-template\n  #overlay=\"cdkConnectedOverlay\"\n  cdkConnectedOverlay\n  nzConnectedOverlay\n  [cdkConnectedOverlayOrigin]=\"origin\"\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\n  (backdropClick)=\"hide()\"\n  (detach)=\"hide()\"\n  (positionChange)=\"onPositionChange($event)\"\n  [cdkConnectedOverlayPositions]=\"_positions\"\n  [cdkConnectedOverlayOpen]=\"_visible\">\n  <div class=\"ant-popover\"\n    [ngClass]=\"_classMap\"\n    [ngStyle]=\"nzOverlayStyle\"\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\n    [@zoomBigMotion]=\"'active'\">\n    <div class=\"ant-popover-content\">\n      <div class=\"ant-popover-arrow\"></div>\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\n        <div>\n          <div class=\"ant-popover-title\" *ngIf=\"title\">\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\n          </div>\n          <div class=\"ant-popover-inner-content\">\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\n          </div>\n        </div>\n      </div>\n    </div>\n  </div>\n</ng-template>",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        providers: [
+                            {
+                                provide: tooltip.NzTooltipBaseComponentLegacy,
+                                useExisting: NzPopoverComponent
+                            }
+                        ],
+                        preserveWhitespaces: false,
+                        styles: ["\n      .ant-popover {\n        position: relative;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzPopoverComponent.ctorParameters = function () { return [
+            { type: core.ChangeDetectorRef },
+            { type: core$1.NzNoAnimationDirective, decorators: [{ type: core.Host }, { type: core.Optional }] }
+        ]; };
+        NzPopoverComponent.propDecorators = {
+            nzTitle: [{ type: core.Input }],
+            nzTitleTemplate: [{ type: core.ContentChild, args: ['neverUsedTemplate', { static: true },] }],
+            nzContent: [{ type: core.Input }],
+            nzContentTemplate: [{ type: core.ContentChild, args: ['nzTemplate', { static: true },] }]
         };
-        /** @nocollapse */ NzPopoverComponent.ɵfac = function NzPopoverComponent_Factory(t) { return new (t || NzPopoverComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core$1.NzNoAnimationDirective, 9)); };
-        /** @nocollapse */ NzPopoverComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzPopoverComponent, selectors: [["nz-popover"]], exportAs: ["nzPopoverComponent"], features: [core.ɵɵInheritDefinitionFeature], ngContentSelectors: _c0, decls: 3, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-popover", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-popover-content"], [1, "ant-popover-arrow"], ["role", "tooltip", 1, "ant-popover-inner"], ["class", "ant-popover-title", 4, "ngIf"], [1, "ant-popover-inner-content"], [4, "nzStringTemplateOutlet"], [1, "ant-popover-title"]], template: function NzPopoverComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵprojection(0);
-                core.ɵɵtemplate(1, NzPopoverComponent_ng_template_1_Template, 8, 7, "ng-template", 0, 1, core.ɵɵtemplateRefExtractor);
-                core.ɵɵlistener("backdropClick", function NzPopoverComponent_Template_ng_template_backdropClick_1_listener($event) { return ctx.hide(); })("detach", function NzPopoverComponent_Template_ng_template_detach_1_listener($event) { return ctx.hide(); })("positionChange", function NzPopoverComponent_Template_ng_template_positionChange_1_listener($event) { return ctx.onPositionChange($event); });
-            } if (rf & 2) {
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayHasBackdrop", ctx._hasBackdrop)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayOpen", ctx._visible);
-            } }, directives: [overlay.CdkConnectedOverlay, core$1.NzConnectedOverlayDirective, common.NgClass, common.NgStyle, core$1.NzNoAnimationDirective, common.NgIf, core$1.NzStringTemplateOutletDirective], styles: ["\n      .ant-popover {\n        position: relative;\n      }\n    "], encapsulation: 2, data: { animation: [core$1.zoomBigMotion] }, changeDetection: 0 });
         return NzPopoverComponent;
     }(tooltip.NzToolTipComponent));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzPopoverComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-popover',
-                    exportAs: 'nzPopoverComponent',
-                    animations: [core$1.zoomBigMotion],
-                    templateUrl: './nz-popover.component.html',
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    preserveWhitespaces: false,
-                    styles: [
-                        "\n      .ant-popover {\n        position: relative;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }, { type: core$1.NzNoAnimationDirective, decorators: [{
-                    type: core.Host
-                }, {
-                    type: core.Optional
-                }] }]; }, null); })();
+    if (false) {
+        /** @type {?} */
+        NzPopoverComponent.prototype._prefix;
+        /**
+         * Use `neverUsedTemplate` to force `nzTemplate` to be catched by `nzPopoverContent`.
+         * @type {?}
+         */
+        NzPopoverComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzPopoverComponent.prototype.nzTitleTemplate;
+        /** @type {?} */
+        NzPopoverComponent.prototype.nzContent;
+        /** @type {?} */
+        NzPopoverComponent.prototype.nzContentTemplate;
+        /** @type {?} */
+        NzPopoverComponent.prototype.noAnimation;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-popover.directive.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzPopoverDirective = /** @class */ (function (_super) {
         __extends(NzPopoverDirective, _super);
-        function NzPopoverDirective(elementRef, hostView, resolver, renderer, noAnimation) {
-            var _this = _super.call(this, elementRef, hostView, resolver, renderer, noAnimation) || this;
+        function NzPopoverDirective(elementRef, hostView, resolver, renderer, tooltip, noAnimation) {
+            var _this = _super.call(this, elementRef, hostView, resolver, renderer, tooltip, noAnimation) || this;
             _this.noAnimation = noAnimation;
             _this.componentFactory = _this.resolver.resolveComponentFactory(NzPopoverComponent);
             return _this;
         }
-        /** @nocollapse */ NzPopoverDirective.ɵfac = function NzPopoverDirective_Factory(t) { return new (t || NzPopoverDirective)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.ViewContainerRef), core.ɵɵdirectiveInject(core.ComponentFactoryResolver), core.ɵɵdirectiveInject(core.Renderer2), core.ɵɵdirectiveInject(core$1.NzNoAnimationDirective, 9)); };
-        /** @nocollapse */ NzPopoverDirective.ɵdir = core.ɵɵdefineDirective({ type: NzPopoverDirective, selectors: [["", "nz-popover", ""]], hostBindings: function NzPopoverDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-popover-open", ctx.isTooltipComponentVisible);
-            } }, inputs: { specificTitle: ["nzPopoverTitle", "specificTitle"], specificContent: ["nzPopoverContent", "specificContent"], directiveNameTitle: ["nz-popover", "directiveNameTitle"], specificTrigger: ["nzPopoverTrigger", "specificTrigger"], specificPlacement: ["nzPopoverPlacement", "specificPlacement"] }, exportAs: ["nzPopover"], features: [core.ɵɵInheritDefinitionFeature] });
+        NzPopoverDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nz-popover]',
+                        exportAs: 'nzPopover',
+                        host: {
+                            '[class.ant-popover-open]': 'isTooltipComponentVisible'
+                        }
+                    },] }
+        ];
+        /** @nocollapse */
+        NzPopoverDirective.ctorParameters = function () { return [
+            { type: core.ElementRef },
+            { type: core.ViewContainerRef },
+            { type: core.ComponentFactoryResolver },
+            { type: core.Renderer2 },
+            { type: NzPopoverComponent, decorators: [{ type: core.Optional }] },
+            { type: core$1.NzNoAnimationDirective, decorators: [{ type: core.Host }, { type: core.Optional }] }
+        ]; };
+        NzPopoverDirective.propDecorators = {
+            specificTitle: [{ type: core.Input, args: ['nzPopoverTitle',] }],
+            specificContent: [{ type: core.Input, args: ['nzPopoverContent',] }],
+            directiveNameTitle: [{ type: core.Input, args: ['nz-popover',] }],
+            specificTrigger: [{ type: core.Input, args: ['nzPopoverTrigger',] }],
+            specificPlacement: [{ type: core.Input, args: ['nzPopoverPlacement',] }]
+        };
         return NzPopoverDirective;
     }(tooltip.NzTooltipBaseDirective));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzPopoverDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nz-popover]',
-                    exportAs: 'nzPopover',
-                    host: {
-                        '[class.ant-popover-open]': 'isTooltipComponentVisible'
-                    }
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: core.ViewContainerRef }, { type: core.ComponentFactoryResolver }, { type: core.Renderer2 }, { type: core$1.NzNoAnimationDirective, decorators: [{
-                    type: core.Host
-                }, {
-                    type: core.Optional
-                }] }]; }, { specificTitle: [{
-                type: core.Input,
-                args: ['nzPopoverTitle']
-            }], specificContent: [{
-                type: core.Input,
-                args: ['nzPopoverContent']
-            }], directiveNameTitle: [{
-                type: core.Input,
-                args: ['nz-popover']
-            }], specificTrigger: [{
-                type: core.Input,
-                args: ['nzPopoverTrigger']
-            }], specificPlacement: [{
-                type: core.Input,
-                args: ['nzPopoverPlacement']
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzPopoverDirective.prototype.specificTitle;
+        /** @type {?} */
+        NzPopoverDirective.prototype.specificContent;
+        /** @type {?} */
+        NzPopoverDirective.prototype.directiveNameTitle;
+        /** @type {?} */
+        NzPopoverDirective.prototype.specificTrigger;
+        /** @type {?} */
+        NzPopoverDirective.prototype.specificPlacement;
+        /** @type {?} */
+        NzPopoverDirective.prototype.componentFactory;
+        /** @type {?} */
+        NzPopoverDirective.prototype.noAnimation;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-popover.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopoverModule = /** @class */ (function () {
         function NzPopoverModule() {
         }
-        /** @nocollapse */ NzPopoverModule.ɵmod = core.ɵɵdefineNgModule({ type: NzPopoverModule });
-        /** @nocollapse */ NzPopoverModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzPopoverModule_Factory(t) { return new (t || NzPopoverModule)(); }, imports: [[common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule]] });
+        NzPopoverModule.decorators = [
+            { type: core.NgModule, args: [{
+                        entryComponents: [NzPopoverComponent],
+                        exports: [NzPopoverDirective, NzPopoverComponent],
+                        declarations: [NzPopoverDirective, NzPopoverComponent],
+                        imports: [common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule]
+                    },] }
+        ];
         return NzPopoverModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzPopoverModule, { declarations: [NzPopoverDirective, NzPopoverComponent], imports: [common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule], exports: [NzPopoverDirective, NzPopoverComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzPopoverModule, [{
-            type: core.NgModule,
-            args: [{
-                    entryComponents: [NzPopoverComponent],
-                    exports: [NzPopoverDirective, NzPopoverComponent],
-                    declarations: [NzPopoverDirective, NzPopoverComponent],
-                    imports: [common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule]
-                }]
-        }], null, null); })();
 
     exports.NzPopoverComponent = NzPopoverComponent;
     exports.NzPopoverDirective = NzPopoverDirective;

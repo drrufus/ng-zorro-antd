@@ -202,223 +202,48 @@
     }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: date-table-cell.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var _c0 = ["date-table-cell", ""];
-    function DateTableCellComponent_ng_container_1_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    var _c1 = function (a0) { return { $implicit: a0 }; };
-    function DateTableCellComponent_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, DateTableCellComponent_ng_container_1_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 3);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2023 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r2023.cell.dateCellRender)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c1, ctx_r2023.cell.value));
-    } }
-    function DateTableCellComponent_ng_container_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelement(1, "span", 4);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2024 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("innerHTML", ctx_r2024.cell.dateCellRender, core.ɵɵsanitizeHtml);
-    } }
-    function DateTableCellComponent_ng_container_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "div");
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2025 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵclassMapInterpolate1("", ctx_r2025.prefixCls, "-date");
-        core.ɵɵattribute("aria-selected", ctx_r2025.cell.isSelected)("aria-disabled", ctx_r2025.cell.isDisabled);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r2025.cell.content, " ");
-    } }
-    function DateTableCellComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementContainerStart(1, 0);
-        core.ɵɵtemplate(2, DateTableCellComponent_ng_container_1_ng_container_2_Template, 2, 4, "ng-container", 1);
-        core.ɵɵtemplate(3, DateTableCellComponent_ng_container_1_ng_container_3_Template, 2, 1, "ng-container", 1);
-        core.ɵɵtemplate(4, DateTableCellComponent_ng_container_1_ng_container_4_Template, 3, 6, "ng-container", 2);
-        core.ɵɵelementContainerEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2021 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitch", true);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitchCase", ctx_r2021.isTemplateRef(ctx_r2021.cell.dateCellRender));
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitchCase", ctx_r2021.isNonEmptyString(ctx_r2021.cell.dateCellRender));
-    } }
-    function DateTableCellComponent_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    function DateTableCellComponent_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, DateTableCellComponent_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 3);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2027 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r2027.cell.dateFullCellRender)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c1, ctx_r2027.cell.value));
-    } }
-    function DateTableCellComponent_ng_container_2_ng_template_3_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    function DateTableCellComponent_ng_container_2_ng_template_3_div_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵtemplate(1, DateTableCellComponent_ng_container_2_ng_template_3_div_2_ng_container_1_Template, 1, 0, "ng-container", 3);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2031 = core.ɵɵnextContext(3);
-        core.ɵɵclassMapInterpolate1("", ctx_r2031.prefixCls, "-content");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r2031.cell.dateCellRender)("ngTemplateOutletContext", core.ɵɵpureFunction1(5, _c1, ctx_r2031.cell.value));
-    } }
-    function DateTableCellComponent_ng_container_2_ng_template_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-        core.ɵɵtemplate(2, DateTableCellComponent_ng_container_2_ng_template_3_div_2_Template, 2, 7, "div", 8);
-    } if (rf & 2) {
-        var ctx_r2029 = core.ɵɵnextContext(2);
-        core.ɵɵclassMapInterpolate1("", ctx_r2029.prefixCls, "-value");
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r2029.cell.content);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r2029.cell.dateCellRender);
-    } }
-    function DateTableCellComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "div", 5);
-        core.ɵɵtemplate(2, DateTableCellComponent_ng_container_2_ng_container_2_Template, 2, 4, "ng-container", 6);
-        core.ɵɵtemplate(3, DateTableCellComponent_ng_container_2_ng_template_3_Template, 3, 5, "ng-template", null, 7, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var _r2028 = core.ɵɵreference(4);
-        var ctx_r2022 = core.ɵɵnextContext();
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngIf", ctx_r2022.cell.dateFullCellRender)("ngIfElse", _r2028);
-    } }
     var DateTableCellComponent = /** @class */ (function () {
         function DateTableCellComponent() {
             this.isTemplateRef = core$1.isTemplateRef;
             this.isNonEmptyString = core$1.isNonEmptyString;
         }
-        /** @nocollapse */ DateTableCellComponent.ɵfac = function DateTableCellComponent_Factory(t) { return new (t || DateTableCellComponent)(); };
-        /** @nocollapse */ DateTableCellComponent.ɵcmp = core.ɵɵdefineComponent({ type: DateTableCellComponent, selectors: [["", "date-table-cell", ""]], inputs: { prefixCls: "prefixCls", cell: "cell" }, exportAs: ["dateTableCell"], attrs: _c0, decls: 3, vars: 3, consts: [[3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngSwitchDefault"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "innerHTML"], [1, "ant-fullcalendar-date"], [4, "ngIf", "ngIfElse"], ["defaultCell", ""], [3, "class", 4, "ngIf"]], template: function DateTableCellComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementContainerStart(0, 0);
-                core.ɵɵtemplate(1, DateTableCellComponent_ng_container_1_Template, 5, 3, "ng-container", 1);
-                core.ɵɵtemplate(2, DateTableCellComponent_ng_container_2_Template, 5, 2, "ng-container", 1);
-                core.ɵɵelementContainerEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("ngSwitch", ctx.prefixCls);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngSwitchCase", "ant-calendar");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngSwitchCase", "ant-fullcalendar");
-            } }, directives: [common.NgSwitch, common.NgSwitchCase, common.NgSwitchDefault, common.NgTemplateOutlet, common.NgIf], encapsulation: 2 });
+        DateTableCellComponent.decorators = [
+            { type: core.Component, args: [{
+                        // tslint:disable-next-line: component-selector
+                        selector: '[date-table-cell]',
+                        exportAs: 'dateTableCell',
+                        template: "<ng-container [ngSwitch]=\"prefixCls\">\n  <ng-container *ngSwitchCase=\"'ant-calendar'\">\n    <ng-container [ngSwitch]=\"true\">\n      <ng-container *ngSwitchCase=\"isTemplateRef(cell.dateCellRender)\">\n        <ng-container *ngTemplateOutlet=\"cell.dateCellRender; context: { $implicit: cell.value }\"></ng-container>\n      </ng-container>\n      <ng-container *ngSwitchCase=\"isNonEmptyString(cell.dateCellRender)\">\n        <span [innerHTML]=\"cell.dateCellRender\"></span>\n      </ng-container>\n      <ng-container *ngSwitchDefault>\n        <div class=\"{{ prefixCls }}-date\" [attr.aria-selected]=\"cell.isSelected\" [attr.aria-disabled]=\"cell.isDisabled\">\n          {{ cell.content }}\n        </div>\n      </ng-container>\n    </ng-container>\n  </ng-container>\n  <ng-container *ngSwitchCase=\"'ant-fullcalendar'\">\n    <div class=\"ant-fullcalendar-date\">\n      <ng-container *ngIf=\"cell.dateFullCellRender else defaultCell\">\n        <ng-container *ngTemplateOutlet=\"cell.dateFullCellRender; context: {$implicit: cell.value}\"></ng-container>\n      </ng-container>\n      <ng-template #defaultCell>\n        <div class=\"{{ prefixCls }}-value\">{{ cell.content }}</div>\n        <div *ngIf=\"cell.dateCellRender\" class=\"{{ prefixCls }}-content\">\n          <ng-container *ngTemplateOutlet=\"cell.dateCellRender; context: {$implicit: cell.value}\"></ng-container>\n        </div>\n      </ng-template>\n    </div>\n  </ng-container>\n</ng-container>"
+                    }] }
+        ];
+        DateTableCellComponent.propDecorators = {
+            prefixCls: [{ type: core.Input }],
+            cell: [{ type: core.Input }]
+        };
         return DateTableCellComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(DateTableCellComponent, [{
-            type: core.Component,
-            args: [{
-                    // tslint:disable-next-line: component-selector
-                    selector: '[date-table-cell]',
-                    exportAs: 'dateTableCell',
-                    templateUrl: './date-table-cell.component.html',
-                    styles: []
-                }]
-        }], null, { prefixCls: [{
-                type: core.Input
-            }], cell: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        DateTableCellComponent.prototype.isTemplateRef;
+        /** @type {?} */
+        DateTableCellComponent.prototype.isNonEmptyString;
+        /** @type {?} */
+        DateTableCellComponent.prototype.prefixCls;
+        /** @type {?} */
+        DateTableCellComponent.prototype.cell;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: date-table.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    function DateTableComponent_th_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "th", 5);
-        core.ɵɵelementStart(1, "span");
-        core.ɵɵtext(2, "x");
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2010 = core.ɵɵnextContext();
-        core.ɵɵclassMapInterpolate2("", ctx_r2010.prefixCls, "-column-header ", ctx_r2010.prefixCls, "-week-number-header");
-        core.ɵɵadvance(1);
-        core.ɵɵclassMapInterpolate1("", ctx_r2010.prefixCls, "-column-header-inner");
-    } }
-    function DateTableComponent_th_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "th", 6);
-        core.ɵɵelementStart(1, "span");
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var cell_r2013 = ctx.$implicit;
-        var ctx_r2011 = core.ɵɵnextContext();
-        core.ɵɵclassMapInterpolate1("", ctx_r2011.prefixCls, "-column-header");
-        core.ɵɵpropertyInterpolate("title", cell_r2013.short);
-        core.ɵɵadvance(1);
-        core.ɵɵclassMapInterpolate1("", ctx_r2011.prefixCls, "-column-header-inner");
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(cell_r2013.veryShort);
-    } }
-    function DateTableComponent_tr_6_td_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "td", 10);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var row_r2014 = core.ɵɵnextContext().$implicit;
-        var ctx_r2015 = core.ɵɵnextContext();
-        core.ɵɵclassMapInterpolate1("", ctx_r2015.prefixCls, "-week-number-cell");
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", row_r2014.weekNum, " ");
-    } }
-    function DateTableComponent_tr_6_td_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "td", 11);
-        core.ɵɵlistener("click", function DateTableComponent_tr_6_td_2_Template_td_click_0_listener($event) { var cell_r2018 = ctx.$implicit; return cell_r2018.isDisabled ? null : cell_r2018.onClick(); })("mouseenter", function DateTableComponent_tr_6_td_2_Template_td_mouseenter_0_listener($event) { var cell_r2018 = ctx.$implicit; return cell_r2018.isDisabled ? null : cell_r2018.onMouseEnter(); });
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var cell_r2018 = ctx.$implicit;
-        var ctx_r2016 = core.ɵɵnextContext(2);
-        core.ɵɵpropertyInterpolate("title", cell_r2018.title);
-        core.ɵɵproperty("ngClass", cell_r2018.classMap)("prefixCls", ctx_r2016.prefixCls)("cell", cell_r2018);
-    } }
-    function DateTableComponent_tr_6_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "tr", 7);
-        core.ɵɵtemplate(1, DateTableComponent_tr_6_td_1_Template, 2, 4, "td", 8);
-        core.ɵɵtemplate(2, DateTableComponent_tr_6_td_2_Template, 1, 4, "td", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var row_r2014 = ctx.$implicit;
-        var ctx_r2012 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngClass", row_r2014.classMap);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", row_r2014.weekNum);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", row_r2014.dateCells)("ngForTrackBy", ctx_r2012.trackByDateFn);
-    } }
+    /** @type {?} */
     var DATE_ROW_NUM = 6;
+    /** @type {?} */
     var DATE_COL_NUM = 7;
     var DateTableComponent = /** @class */ (function () {
         function DateTableComponent(i18n, dateHelper) {
@@ -427,23 +252,47 @@
             this.prefixCls = 'ant-calendar';
             this.showWeek = false;
             this.dayHover = new core.EventEmitter(); // Emitted when hover on a day by mouse enter
+            // Emitted when hover on a day by mouse enter
             this.valueChange = new core.EventEmitter();
         }
         Object.defineProperty(DateTableComponent.prototype, "value", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this._value;
             },
-            set: function (date) {
+            set: 
+            // Range ONLY
+            /**
+             * @param {?} date
+             * @return {?}
+             */
+            function (date) {
                 // Show today by default
                 this._value = this.activeDate = date || new core$1.CandyDate();
             },
             enumerable: true,
             configurable: true
         });
-        DateTableComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        DateTableComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.render();
         };
-        DateTableComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        DateTableComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (this.isDateRealChange(changes.activeDate) ||
                 this.isDateRealChange(changes.value) ||
                 this.isDateRealChange(changes.selectedValue) ||
@@ -451,54 +300,125 @@
                 this.render();
             }
         };
-        DateTableComponent.prototype.isDateRealChange = function (change) {
+        /**
+         * @private
+         * @param {?} change
+         * @return {?}
+         */
+        DateTableComponent.prototype.isDateRealChange = /**
+         * @private
+         * @param {?} change
+         * @return {?}
+         */
+        function (change) {
             if (change) {
+                /** @type {?} */
                 var previousValue_1 = change.previousValue;
+                /** @type {?} */
                 var currentValue = change.currentValue;
                 if (Array.isArray(currentValue)) {
                     return (!Array.isArray(previousValue_1) ||
                         currentValue.length !== previousValue_1.length ||
-                        currentValue.some(function (value, index) {
+                        currentValue.some((/**
+                         * @param {?} value
+                         * @param {?} index
+                         * @return {?}
+                         */
+                        function (value, index) {
+                            /** @type {?} */
                             var previousCandyDate = previousValue_1[index];
-                            return previousCandyDate instanceof core$1.CandyDate ? previousCandyDate.isSameDay(value) : previousCandyDate !== value;
-                        }));
+                            return previousCandyDate instanceof core$1.CandyDate
+                                ? previousCandyDate.isSameDay(value)
+                                : previousCandyDate !== value;
+                        })));
                 }
                 else {
-                    return !this.isSameDate(previousValue_1, currentValue);
+                    return !this.isSameDate((/** @type {?} */ (previousValue_1)), currentValue);
                 }
             }
             return false;
         };
-        DateTableComponent.prototype.isSameDate = function (left, right) {
+        /**
+         * @private
+         * @param {?} left
+         * @param {?} right
+         * @return {?}
+         */
+        DateTableComponent.prototype.isSameDate = /**
+         * @private
+         * @param {?} left
+         * @param {?} right
+         * @return {?}
+         */
+        function (left, right) {
             return (!left && !right) || (left && right && right.isSameDay(left));
         };
-        DateTableComponent.prototype.render = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        DateTableComponent.prototype.render = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (this.value) {
                 this.headWeekDays = this.makeHeadWeekDays();
                 this.weekRows = this.makeWeekRows();
             }
         };
-        DateTableComponent.prototype.changeValueFromInside = function (value) {
+        /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        DateTableComponent.prototype.changeValueFromInside = /**
+         * @private
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             // Only change date not change time
+            /** @type {?} */
             var newValue = this.value
                 .setYear(value.getYear())
                 .setMonth(value.getMonth())
                 .setDate(value.getDate());
             this.valueChange.emit(newValue);
         };
-        DateTableComponent.prototype.makeHeadWeekDays = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        DateTableComponent.prototype.makeHeadWeekDays = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var weekDays = [];
+            /** @type {?} */
             var start = this.activeDate.calendarStart({ weekStartsOn: this.dateHelper.getFirstDayOfWeek() });
             for (var colIndex = 0; colIndex < DATE_COL_NUM; colIndex++) {
+                /** @type {?} */
                 var day = start.addDays(colIndex);
                 weekDays[colIndex] = {
                     short: this.dateHelper.format(day.nativeDate, this.dateHelper.relyOnDatePipe ? 'E' : 'ddd'),
+                    // eg. Tue
                     veryShort: this.dateHelper.format(day.nativeDate, this.getVeryShortWeekFormat()) // eg. Tu
                 };
             }
             return weekDays;
         };
-        DateTableComponent.prototype.getVeryShortWeekFormat = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        DateTableComponent.prototype.getVeryShortWeekFormat = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (this.dateHelper.relyOnDatePipe) {
                 return this.i18n
                     .getLocaleId()
@@ -509,13 +429,25 @@
             }
             return 'dd';
         };
-        DateTableComponent.prototype.makeWeekRows = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        DateTableComponent.prototype.makeWeekRows = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _a;
             var _this = this;
+            /** @type {?} */
             var weekRows = [];
+            /** @type {?} */
             var firstDayOfMonth = this.activeDate.calendarStart({ weekStartsOn: this.dateHelper.getFirstDayOfWeek() });
             for (var week = 0; week < DATE_ROW_NUM; week++) {
+                /** @type {?} */
                 var weekStart = firstDayOfMonth.addDays(week * 7);
+                /** @type {?} */
                 var row = {
                     isActive: false,
                     isCurrent: false,
@@ -524,12 +456,17 @@
                 };
                 var _loop_1 = function (day) {
                     var _a;
+                    /** @type {?} */
                     var date = weekStart.addDays(day);
+                    /** @type {?} */
                     var dateFormat = this_1.dateHelper.relyOnDatePipe
                         ? 'longDate'
                         : this_1.i18n.getLocaleData('DatePicker.lang.dateFormat', 'YYYY-MM-DD');
+                    /** @type {?} */
                     var title = this_1.dateHelper.format(date.nativeDate, dateFormat);
+                    /** @type {?} */
                     var label = this_1.dateHelper.format(date.nativeDate, this_1.dateHelper.relyOnDatePipe ? 'dd' : 'DD');
+                    /** @type {?} */
                     var cell = {
                         value: date.nativeDate,
                         label: label,
@@ -538,10 +475,17 @@
                         isToday: false,
                         title: title,
                         dateCellRender: core$1.valueFunctionProp(this_1.dateCellRender, date),
+                        // Customized content
                         dateFullCellRender: core$1.valueFunctionProp(this_1.dateFullCellRender, date),
                         content: "" + date.getDate(),
-                        onClick: function () { return _this.changeValueFromInside(date); },
-                        onMouseEnter: function () { return _this.dayHover.emit(date); }
+                        onClick: (/**
+                         * @return {?}
+                         */
+                        function () { return _this.changeValueFromInside(date); }),
+                        onMouseEnter: (/**
+                         * @return {?}
+                         */
+                        function () { return _this.dayHover.emit(date); })
                     };
                     if (this_1.showWeek && !row.weekNum) {
                         row.weekNum = this_1.dateHelper.getISOWeek(date.nativeDate);
@@ -552,8 +496,11 @@
                     }
                     if (Array.isArray(this_1.selectedValue) && date.isSameMonth(this_1.activeDate)) {
                         // Range selections
+                        /** @type {?} */
                         var rangeValue = this_1.hoverValue && this_1.hoverValue.length ? this_1.hoverValue : this_1.selectedValue;
+                        /** @type {?} */
                         var start = rangeValue[0];
+                        /** @type {?} */
                         var end = rangeValue[1];
                         if (start) {
                             if (start.isSameDay(date)) {
@@ -605,183 +552,181 @@
             }
             return weekRows;
         };
-        DateTableComponent.prototype.trackByDateFn = function (_index, item) {
+        /**
+         * @param {?} _index
+         * @param {?} item
+         * @return {?}
+         */
+        DateTableComponent.prototype.trackByDateFn = /**
+         * @param {?} _index
+         * @param {?} item
+         * @return {?}
+         */
+        function (_index, item) {
             return "" + item.title;
         };
-        DateTableComponent.prototype.trackByWeekFn = function (_index, item) {
+        /**
+         * @param {?} _index
+         * @param {?} item
+         * @return {?}
+         */
+        DateTableComponent.prototype.trackByWeekFn = /**
+         * @param {?} _index
+         * @param {?} item
+         * @return {?}
+         */
+        function (_index, item) {
             return item.year + "-" + item.weekNum;
         };
-        /** @nocollapse */ DateTableComponent.ɵfac = function DateTableComponent_Factory(t) { return new (t || DateTableComponent)(core.ɵɵdirectiveInject(i18n.NzI18nService), core.ɵɵdirectiveInject(i18n.DateHelperService)); };
-        /** @nocollapse */ DateTableComponent.ɵcmp = core.ɵɵdefineComponent({ type: DateTableComponent, selectors: [["date-table"]], inputs: { prefixCls: "prefixCls", locale: "locale", selectedValue: "selectedValue", hoverValue: "hoverValue", value: "value", activeDate: "activeDate", showWeek: "showWeek", disabledDate: "disabledDate", dateCellRender: "dateCellRender", dateFullCellRender: "dateFullCellRender" }, outputs: { dayHover: "dayHover", valueChange: "valueChange" }, exportAs: ["dateTable"], features: [core.ɵɵNgOnChangesFeature()], decls: 7, vars: 10, consts: [["cellSpacing", "0", "role", "grid"], ["role", "row"], ["role", "columnheader", 3, "class", 4, "ngIf"], ["role", "columnheader", 3, "title", "class", 4, "ngFor", "ngForOf"], ["role", "row", 3, "ngClass", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "columnheader"], ["role", "columnheader", 3, "title"], ["role", "row", 3, "ngClass"], ["role", "gridcell", 3, "class", 4, "ngIf"], ["role", "gridcell", "date-table-cell", "", 3, "title", "ngClass", "prefixCls", "cell", "click", "mouseenter", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "gridcell"], ["role", "gridcell", "date-table-cell", "", 3, "title", "ngClass", "prefixCls", "cell", "click", "mouseenter"]], template: function DateTableComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "table", 0);
-                core.ɵɵelementStart(1, "thead");
-                core.ɵɵelementStart(2, "tr", 1);
-                core.ɵɵtemplate(3, DateTableComponent_th_3_Template, 3, 7, "th", 2);
-                core.ɵɵtemplate(4, DateTableComponent_th_4_Template, 3, 8, "th", 3);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(5, "tbody");
-                core.ɵɵtemplate(6, DateTableComponent_tr_6_Template, 3, 4, "tr", 4);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-table");
-                core.ɵɵadvance(3);
-                core.ɵɵproperty("ngIf", ctx.showWeek);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.headWeekDays);
-                core.ɵɵadvance(1);
-                core.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-tbody");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.weekRows)("ngForTrackBy", ctx.trackByWeekFn);
-            } }, encapsulation: 2, changeDetection: 0 });
+        DateTableComponent.decorators = [
+            { type: core.Component, args: [{
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        // tslint:disable-next-line:component-selector
+                        selector: 'date-table',
+                        exportAs: 'dateTable',
+                        template: "<table class=\"{{ prefixCls }}-table\" cellSpacing=\"0\" role=\"grid\">\n  <thead>\n    <tr role=\"row\">\n      <th *ngIf=\"showWeek\" role=\"columnheader\" class=\"{{ prefixCls }}-column-header {{ prefixCls }}-week-number-header\">\n        <span class=\"{{ prefixCls }}-column-header-inner\">x</span>\n      </th>\n      <th *ngFor=\"let cell of headWeekDays\" role=\"columnheader\" title=\"{{ cell.short }}\"\n        class=\"{{ prefixCls }}-column-header\">\n        <span class=\"{{ prefixCls }}-column-header-inner\">{{ cell.veryShort }}</span>\n      </th>\n    </tr>\n  </thead>\n  <tbody class=\"{{ prefixCls }}-tbody\">\n    <tr *ngFor=\"let row of weekRows;trackBy:trackByWeekFn\" [ngClass]=\"row.classMap\" role=\"row\">\n      <td *ngIf=\"row.weekNum\" role=\"gridcell\" class=\"{{ prefixCls }}-week-number-cell\">\n        {{ row.weekNum }}\n      </td>\n      <td *ngFor=\"let cell of row.dateCells;trackBy:trackByDateFn\" title=\"{{ cell.title }}\" role=\"gridcell\" [ngClass]=\"cell.classMap\"\n        (click)=\"cell.isDisabled ? null : cell.onClick()\" (mouseenter)=\"cell.isDisabled ? null : cell.onMouseEnter()\"\n        date-table-cell [prefixCls]=\"prefixCls\" [cell]=\"cell\">\n      </td>\n    </tr>\n  </tbody>\n</table>"
+                    }] }
+        ];
+        /** @nocollapse */
+        DateTableComponent.ctorParameters = function () { return [
+            { type: i18n.NzI18nService },
+            { type: i18n.DateHelperService }
+        ]; };
+        DateTableComponent.propDecorators = {
+            prefixCls: [{ type: core.Input }],
+            locale: [{ type: core.Input }],
+            selectedValue: [{ type: core.Input }],
+            hoverValue: [{ type: core.Input }],
+            value: [{ type: core.Input }],
+            activeDate: [{ type: core.Input }],
+            showWeek: [{ type: core.Input }],
+            disabledDate: [{ type: core.Input }],
+            dateCellRender: [{ type: core.Input }],
+            dateFullCellRender: [{ type: core.Input }],
+            dayHover: [{ type: core.Output }],
+            valueChange: [{ type: core.Output }]
+        };
         return DateTableComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(DateTableComponent, [{
-            type: core.Component,
-            args: [{
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    // tslint:disable-next-line:component-selector
-                    selector: 'date-table',
-                    exportAs: 'dateTable',
-                    templateUrl: 'date-table.component.html'
-                }]
-        }], function () { return [{ type: i18n.NzI18nService }, { type: i18n.DateHelperService }]; }, { prefixCls: [{
-                type: core.Input
-            }], locale: [{
-                type: core.Input
-            }], selectedValue: [{
-                type: core.Input
-            }], hoverValue: [{
-                type: core.Input
-            }], value: [{
-                type: core.Input
-            }], activeDate: [{
-                type: core.Input
-            }], showWeek: [{
-                type: core.Input
-            }], disabledDate: [{
-                type: core.Input
-            }], dateCellRender: [{
-                type: core.Input
-            }], dateFullCellRender: [{
-                type: core.Input
-            }], dayHover: [{
-                type: core.Output
-            }], valueChange: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        DateTableComponent.prototype._value;
+        /** @type {?} */
+        DateTableComponent.prototype.headWeekDays;
+        /** @type {?} */
+        DateTableComponent.prototype.weekRows;
+        /** @type {?} */
+        DateTableComponent.prototype.prefixCls;
+        /** @type {?} */
+        DateTableComponent.prototype.locale;
+        /** @type {?} */
+        DateTableComponent.prototype.selectedValue;
+        /** @type {?} */
+        DateTableComponent.prototype.hoverValue;
+        /** @type {?} */
+        DateTableComponent.prototype.activeDate;
+        /** @type {?} */
+        DateTableComponent.prototype.showWeek;
+        /** @type {?} */
+        DateTableComponent.prototype.disabledDate;
+        /** @type {?} */
+        DateTableComponent.prototype.dateCellRender;
+        /** @type {?} */
+        DateTableComponent.prototype.dateFullCellRender;
+        /** @type {?} */
+        DateTableComponent.prototype.dayHover;
+        /** @type {?} */
+        DateTableComponent.prototype.valueChange;
+        /**
+         * @type {?}
+         * @private
+         */
+        DateTableComponent.prototype.i18n;
+        /**
+         * @type {?}
+         * @private
+         */
+        DateTableComponent.prototype.dateHelper;
+    }
+    /**
+     * @record
+     */
+    function WeekDayLabel() { }
+    if (false) {
+        /** @type {?} */
+        WeekDayLabel.prototype.short;
+        /** @type {?} */
+        WeekDayLabel.prototype.veryShort;
+    }
+    /**
+     * @record
+     */
+    function DateCell() { }
+    if (false) {
+        /** @type {?} */
+        DateCell.prototype.value;
+        /** @type {?} */
+        DateCell.prototype.label;
+        /** @type {?} */
+        DateCell.prototype.title;
+        /** @type {?} */
+        DateCell.prototype.dateCellRender;
+        /** @type {?} */
+        DateCell.prototype.dateFullCellRender;
+        /** @type {?} */
+        DateCell.prototype.content;
+        /** @type {?|undefined} */
+        DateCell.prototype.isSelected;
+        /** @type {?|undefined} */
+        DateCell.prototype.isToday;
+        /** @type {?|undefined} */
+        DateCell.prototype.isDisabled;
+        /** @type {?|undefined} */
+        DateCell.prototype.isSelectedStartDate;
+        /** @type {?|undefined} */
+        DateCell.prototype.isSelectedEndDate;
+        /** @type {?|undefined} */
+        DateCell.prototype.isInRange;
+        /** @type {?|undefined} */
+        DateCell.prototype.classMap;
+        /**
+         * @param {?} date
+         * @return {?}
+         */
+        DateCell.prototype.onClick = function (date) { };
+        /**
+         * @return {?}
+         */
+        DateCell.prototype.onMouseEnter = function () { };
+    }
+    /**
+     * @record
+     */
+    function WeekRow() { }
+    if (false) {
+        /** @type {?|undefined} */
+        WeekRow.prototype.isCurrent;
+        /** @type {?|undefined} */
+        WeekRow.prototype.isActive;
+        /** @type {?|undefined} */
+        WeekRow.prototype.weekNum;
+        /** @type {?|undefined} */
+        WeekRow.prototype.year;
+        /** @type {?|undefined} */
+        WeekRow.prototype.classMap;
+        /** @type {?} */
+        WeekRow.prototype.dateCells;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: month-table.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    function MonthTableComponent_tr_2_td_1_ng_container_2_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    var _c0$1 = function (a0) { return { $implicit: a0 }; };
-    function MonthTableComponent_tr_2_td_1_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, MonthTableComponent_tr_2_td_1_ng_container_2_ng_container_2_ng_container_1_Template, 1, 0, "ng-container", 9);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var monthCell_r2036 = core.ɵɵnextContext(2).$implicit;
-        var ctx_r2039 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r2039.monthFullCellRender)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c0$1, monthCell_r2036.value));
-    } }
-    function MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    function MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_div_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵtemplate(1, MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_div_2_ng_container_1_Template, 1, 0, "ng-container", 9);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthCell_r2036 = core.ɵɵnextContext(3).$implicit;
-        var ctx_r2044 = core.ɵɵnextContext(2);
-        core.ɵɵclassMapInterpolate1("", ctx_r2044.prefixCls, "-content");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r2044.monthCellRender)("ngTemplateOutletContext", core.ɵɵpureFunction1(5, _c0$1, monthCell_r2036.value));
-    } }
-    function MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-        core.ɵɵtemplate(2, MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_div_2_Template, 2, 7, "div", 10);
-    } if (rf & 2) {
-        var monthCell_r2036 = core.ɵɵnextContext(2).$implicit;
-        var ctx_r2041 = core.ɵɵnextContext(2);
-        core.ɵɵclassMapInterpolate1("", ctx_r2041.prefixCls, "-value");
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(monthCell_r2036.content);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r2041.monthCellRender);
-    } }
-    function MonthTableComponent_tr_2_td_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "div");
-        core.ɵɵtemplate(2, MonthTableComponent_tr_2_td_1_ng_container_2_ng_container_2_Template, 2, 4, "ng-container", 7);
-        core.ɵɵtemplate(3, MonthTableComponent_tr_2_td_1_ng_container_2_ng_template_3_Template, 3, 5, "ng-template", null, 8, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var _r2040 = core.ɵɵreference(4);
-        var ctx_r2037 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵclassMapInterpolate1("", ctx_r2037.prefixCls, "-month");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r2037.monthFullCellRender)("ngIfElse", _r2040);
-    } }
-    function MonthTableComponent_tr_2_td_1_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "a");
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var monthCell_r2036 = core.ɵɵnextContext().$implicit;
-        var ctx_r2038 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵclassMapInterpolate1("", ctx_r2038.prefixCls, "-month-panel-month");
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(monthCell_r2036.content);
-    } }
-    function MonthTableComponent_tr_2_td_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "td", 4);
-        core.ɵɵlistener("click", function MonthTableComponent_tr_2_td_1_Template_td_click_0_listener($event) { var monthCell_r2036 = ctx.$implicit; return monthCell_r2036.disabled ? null : monthCell_r2036.onClick(); });
-        core.ɵɵelementContainerStart(1, 5);
-        core.ɵɵtemplate(2, MonthTableComponent_tr_2_td_1_ng_container_2_Template, 5, 5, "ng-container", 6);
-        core.ɵɵtemplate(3, MonthTableComponent_tr_2_td_1_ng_container_3_Template, 3, 4, "ng-container", 6);
-        core.ɵɵelementContainerEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var monthCell_r2036 = ctx.$implicit;
-        var ctx_r2035 = core.ɵɵnextContext(2);
-        core.ɵɵpropertyInterpolate("title", monthCell_r2036.title);
-        core.ɵɵproperty("ngClass", monthCell_r2036.classMap);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitch", ctx_r2035.prefixCls);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitchCase", "ant-fullcalendar");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngSwitchCase", "ant-calendar");
-    } }
-    function MonthTableComponent_tr_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "tr", 2);
-        core.ɵɵtemplate(1, MonthTableComponent_tr_2_td_1_Template, 4, 5, "td", 3);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var row_r2034 = ctx.$implicit;
-        var ctx_r2033 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", row_r2034)("ngForTrackBy", ctx_r2033.trackPanelMonth);
-    } }
+    /** @type {?} */
     var MAX_ROW = 4;
+    /** @type {?} */
     var MAX_COL = 3;
     var MonthTableComponent = /** @class */ (function () {
         function MonthTableComponent(dateHelper) {
@@ -790,35 +735,85 @@
             this.prefixCls = 'ant-fullcalendar';
             this.valueChange = new core.EventEmitter();
         }
-        MonthTableComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        MonthTableComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.value || changes.disabledDate) {
                 this.render();
             }
         };
-        MonthTableComponent.prototype.trackYear = function (_index) {
+        /**
+         * @param {?} _index
+         * @return {?}
+         */
+        MonthTableComponent.prototype.trackYear = /**
+         * @param {?} _index
+         * @return {?}
+         */
+        function (_index) {
             return this.value ? this.value.getYear() : _index;
         };
-        MonthTableComponent.prototype.trackPanelMonth = function (_index, monthData) {
+        /**
+         * @param {?} _index
+         * @param {?} monthData
+         * @return {?}
+         */
+        MonthTableComponent.prototype.trackPanelMonth = /**
+         * @param {?} _index
+         * @param {?} monthData
+         * @return {?}
+         */
+        function (_index, monthData) {
             return monthData.content;
         };
-        MonthTableComponent.prototype.render = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        MonthTableComponent.prototype.render = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (this.value) {
                 this.panelMonths = this.makePanelMonths();
             }
         };
-        MonthTableComponent.prototype.makePanelMonths = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        MonthTableComponent.prototype.makePanelMonths = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
+            /** @type {?} */
             var months = [];
+            /** @type {?} */
             var currentMonth = this.value.getMonth();
+            /** @type {?} */
             var today = new core$1.CandyDate();
+            /** @type {?} */
             var monthValue = 0;
             for (var rowIndex = 0; rowIndex < MAX_ROW; rowIndex++) {
                 months[rowIndex] = [];
                 var _loop_1 = function (colIndex) {
                     var _a;
+                    /** @type {?} */
                     var month = this_1.value.setMonth(monthValue);
+                    /** @type {?} */
                     var disabled = this_1.disabledDate ? this_1.disabledDate(this_1.value.setMonth(monthValue).nativeDate) : false;
+                    /** @type {?} */
                     var content = this_1.dateHelper.format(month.nativeDate, 'MMM');
+                    /** @type {?} */
                     var cell = (months[rowIndex][colIndex] = {
                         value: month.nativeDate,
                         disabled: disabled,
@@ -826,7 +821,10 @@
                         month: monthValue,
                         title: content,
                         classMap: null,
-                        onClick: function () { return _this.chooseMonth(cell.month); } // don't use monthValue here
+                        onClick: (/**
+                         * @return {?}
+                         */
+                        function () { return _this.chooseMonth(cell.month); }) // don't use monthValue here
                     });
                     cell.classMap = (_a = {},
                         _a[this_1.prefixCls + "-month-panel-cell"] = true,
@@ -843,146 +841,142 @@
             }
             return months;
         };
-        MonthTableComponent.prototype.chooseMonth = function (month) {
+        /**
+         * @private
+         * @param {?} month
+         * @return {?}
+         */
+        MonthTableComponent.prototype.chooseMonth = /**
+         * @private
+         * @param {?} month
+         * @return {?}
+         */
+        function (month) {
             this.value = this.value.setMonth(month);
             this.valueChange.emit(this.value);
             this.render();
         };
-        /** @nocollapse */ MonthTableComponent.ɵfac = function MonthTableComponent_Factory(t) { return new (t || MonthTableComponent)(core.ɵɵdirectiveInject(i18n.DateHelperService)); };
-        /** @nocollapse */ MonthTableComponent.ɵcmp = core.ɵɵdefineComponent({ type: MonthTableComponent, selectors: [["month-table"]], inputs: { value: "value", prefixCls: "prefixCls", monthCellRender: "monthCellRender", monthFullCellRender: "monthFullCellRender", disabledDate: "disabledDate" }, outputs: { valueChange: "valueChange" }, exportAs: ["monthTable"], features: [core.ɵɵNgOnChangesFeature()], decls: 3, vars: 8, consts: [["cellSpacing", "0", "role", "grid"], ["role", "row", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "row"], ["role", "gridcell", 3, "title", "ngClass", "click", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["role", "gridcell", 3, "title", "ngClass", "click"], [3, "ngSwitch"], [4, "ngSwitchCase"], [4, "ngIf", "ngIfElse"], ["defaultCell", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "class", 4, "ngIf"]], template: function MonthTableComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "table", 0);
-                core.ɵɵelementStart(1, "tbody");
-                core.ɵɵtemplate(2, MonthTableComponent_tr_2_Template, 2, 2, "tr", 1);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-month-panel-table");
-                core.ɵɵadvance(1);
-                core.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-month-panel-tbody");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.panelMonths)("ngForTrackBy", ctx.trackYear);
-            } }, directives: [common.NgForOf, common.NgClass, common.NgSwitch, common.NgSwitchCase, common.NgIf, common.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+        MonthTableComponent.decorators = [
+            { type: core.Component, args: [{
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        // tslint:disable-next-line:component-selector
+                        selector: 'month-table',
+                        exportAs: 'monthTable',
+                        template: "<table class=\"{{ prefixCls }}-month-panel-table\" cellSpacing=\"0\" role=\"grid\">\n  <tbody class=\"{{ prefixCls }}-month-panel-tbody\">\n    <tr *ngFor=\"let row of panelMonths; trackBy: trackYear\" role=\"row\">\n      <td *ngFor=\"let monthCell of row; trackBy: trackPanelMonth\" role=\"gridcell\" title=\"{{ monthCell.title }}\"\n        (click)=\"monthCell.disabled ? null : monthCell.onClick()\" [ngClass]=\"monthCell.classMap\">\n        <ng-container [ngSwitch]=\"prefixCls\">\n          <ng-container *ngSwitchCase=\"'ant-fullcalendar'\">\n            <div class=\"{{ prefixCls }}-month\">\n              <ng-container *ngIf=\"monthFullCellRender else defaultCell\">\n                <ng-container *ngTemplateOutlet=\"monthFullCellRender; context: { $implicit: monthCell.value }\">\n                </ng-container>\n              </ng-container>\n              <ng-template #defaultCell>\n                <div class=\"{{prefixCls}}-value\">{{ monthCell.content }}</div>\n                <div *ngIf=\"monthCellRender\" class=\"{{prefixCls}}-content\">\n                  <ng-container *ngTemplateOutlet=\"monthCellRender; context: { $implicit: monthCell.value }\">\n                  </ng-container>\n                </div>\n              </ng-template>\n            </div>\n          </ng-container>\n          <ng-container *ngSwitchCase=\"'ant-calendar'\">\n            <a class=\"{{ prefixCls }}-month-panel-month\">{{ monthCell.content }}</a>\n          </ng-container>\n        </ng-container>\n      </td>\n    </tr>\n  </tbody>\n</table>"
+                    }] }
+        ];
+        /** @nocollapse */
+        MonthTableComponent.ctorParameters = function () { return [
+            { type: i18n.DateHelperService }
+        ]; };
+        MonthTableComponent.propDecorators = {
+            value: [{ type: core.Input }],
+            prefixCls: [{ type: core.Input }],
+            monthCellRender: [{ type: core.Input }],
+            monthFullCellRender: [{ type: core.Input }],
+            valueChange: [{ type: core.Output }],
+            disabledDate: [{ type: core.Input }]
+        };
         return MonthTableComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(MonthTableComponent, [{
-            type: core.Component,
-            args: [{
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    // tslint:disable-next-line:component-selector
-                    selector: 'month-table',
-                    exportAs: 'monthTable',
-                    templateUrl: 'month-table.component.html'
-                }]
-        }], function () { return [{ type: i18n.DateHelperService }]; }, { value: [{
-                type: core.Input
-            }], prefixCls: [{
-                type: core.Input
-            }], monthCellRender: [{
-                type: core.Input
-            }], monthFullCellRender: [{
-                type: core.Input
-            }], valueChange: [{
-                type: core.Output
-            }], disabledDate: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        MonthTableComponent.prototype.value;
+        /** @type {?} */
+        MonthTableComponent.prototype.prefixCls;
+        /** @type {?} */
+        MonthTableComponent.prototype.monthCellRender;
+        /** @type {?} */
+        MonthTableComponent.prototype.monthFullCellRender;
+        /** @type {?} */
+        MonthTableComponent.prototype.valueChange;
+        /** @type {?} */
+        MonthTableComponent.prototype.disabledDate;
+        /** @type {?} */
+        MonthTableComponent.prototype.panelMonths;
+        /**
+         * @type {?}
+         * @private
+         */
+        MonthTableComponent.prototype.dateHelper;
+    }
+    /**
+     * @record
+     */
+    function PanelMonthData() { }
+    if (false) {
+        /** @type {?} */
+        PanelMonthData.prototype.disabled;
+        /** @type {?} */
+        PanelMonthData.prototype.content;
+        /** @type {?} */
+        PanelMonthData.prototype.month;
+        /** @type {?} */
+        PanelMonthData.prototype.title;
+        /** @type {?} */
+        PanelMonthData.prototype.classMap;
+        /** @type {?} */
+        PanelMonthData.prototype.onClick;
+        /** @type {?} */
+        PanelMonthData.prototype.value;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-calendar-cells.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDateCellDirective = /** @class */ (function () {
         function NzDateCellDirective() {
         }
-        /** @nocollapse */ NzDateCellDirective.ɵfac = function NzDateCellDirective_Factory(t) { return new (t || NzDateCellDirective)(); };
-        /** @nocollapse */ NzDateCellDirective.ɵdir = core.ɵɵdefineDirective({ type: NzDateCellDirective, selectors: [["", "nzDateCell", ""]], exportAs: ["nzDateCell"] });
+        NzDateCellDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzDateCell]',
+                        exportAs: 'nzDateCell'
+                    },] }
+        ];
         return NzDateCellDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDateCellDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzDateCell]',
-                    exportAs: 'nzDateCell'
-                }]
-        }], null, null); })();
     var NzMonthCellDirective = /** @class */ (function () {
         function NzMonthCellDirective() {
         }
-        /** @nocollapse */ NzMonthCellDirective.ɵfac = function NzMonthCellDirective_Factory(t) { return new (t || NzMonthCellDirective)(); };
-        /** @nocollapse */ NzMonthCellDirective.ɵdir = core.ɵɵdefineDirective({ type: NzMonthCellDirective, selectors: [["", "nzMonthCell", ""]], exportAs: ["nzMonthCell"] });
+        NzMonthCellDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzMonthCell]',
+                        exportAs: 'nzMonthCell'
+                    },] }
+        ];
         return NzMonthCellDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMonthCellDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzMonthCell]',
-                    exportAs: 'nzMonthCell'
-                }]
-        }], null, null); })();
     var NzDateFullCellDirective = /** @class */ (function () {
         function NzDateFullCellDirective() {
         }
-        /** @nocollapse */ NzDateFullCellDirective.ɵfac = function NzDateFullCellDirective_Factory(t) { return new (t || NzDateFullCellDirective)(); };
-        /** @nocollapse */ NzDateFullCellDirective.ɵdir = core.ɵɵdefineDirective({ type: NzDateFullCellDirective, selectors: [["", "nzDateFullCell", ""]], exportAs: ["nzDateFullCell"] });
+        NzDateFullCellDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzDateFullCell]',
+                        exportAs: 'nzDateFullCell'
+                    },] }
+        ];
         return NzDateFullCellDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDateFullCellDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzDateFullCell]',
-                    exportAs: 'nzDateFullCell'
-                }]
-        }], null, null); })();
     var NzMonthFullCellDirective = /** @class */ (function () {
         function NzMonthFullCellDirective() {
         }
-        /** @nocollapse */ NzMonthFullCellDirective.ɵfac = function NzMonthFullCellDirective_Factory(t) { return new (t || NzMonthFullCellDirective)(); };
-        /** @nocollapse */ NzMonthFullCellDirective.ɵdir = core.ɵɵdefineDirective({ type: NzMonthFullCellDirective, selectors: [["", "nzMonthFullCell", ""]], exportAs: ["nzMonthFullCell"] });
+        NzMonthFullCellDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: '[nzMonthFullCell]',
+                        exportAs: 'nzMonthFullCell'
+                    },] }
+        ];
         return NzMonthFullCellDirective;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzMonthFullCellDirective, [{
-            type: core.Directive,
-            args: [{
-                    selector: '[nzMonthFullCell]',
-                    exportAs: 'nzMonthFullCell'
-                }]
-        }], null, null); })();
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-calendar-header.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    function NzCalendarHeaderComponent_nz_option_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "nz-option", 6);
-    } if (rf & 2) {
-        var year_r2052 = ctx.$implicit;
-        core.ɵɵproperty("nzLabel", year_r2052.label)("nzValue", year_r2052.value);
-    } }
-    function NzCalendarHeaderComponent_nz_select_2_nz_option_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "nz-option", 6);
-    } if (rf & 2) {
-        var month_r2054 = ctx.$implicit;
-        core.ɵɵproperty("nzLabel", month_r2054.label)("nzValue", month_r2054.value);
-    } }
-    function NzCalendarHeaderComponent_nz_select_2_Template(rf, ctx) { if (rf & 1) {
-        var _r2056 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "nz-select", 7);
-        core.ɵɵlistener("ngModelChange", function NzCalendarHeaderComponent_nz_select_2_Template_nz_select_ngModelChange_0_listener($event) { core.ɵɵrestoreView(_r2056); var ctx_r2055 = core.ɵɵnextContext(); return ctx_r2055.monthChange.emit($event); });
-        core.ɵɵtemplate(1, NzCalendarHeaderComponent_nz_select_2_nz_option_1_Template, 1, 2, "nz-option", 1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2051 = core.ɵɵnextContext();
-        core.ɵɵproperty("nzSize", ctx_r2051.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx_r2051.activeMonth);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r2051.months);
-    } }
     var NzCalendarHeaderComponent = /** @class */ (function () {
         function NzCalendarHeaderComponent(i18n, dateHelper) {
             this.i18n = i18n;
@@ -998,155 +992,194 @@
             this.yearTotal = 20;
         }
         Object.defineProperty(NzCalendarHeaderComponent.prototype, "activeYear", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.activeDate.getYear();
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarHeaderComponent.prototype, "activeMonth", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.activeDate.getMonth();
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarHeaderComponent.prototype, "size", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.fullscreen ? 'default' : 'small';
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarHeaderComponent.prototype, "yearTypeText", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.i18n.getLocale().Calendar.year;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarHeaderComponent.prototype, "monthTypeText", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.i18n.getLocale().Calendar.month;
             },
             enumerable: true,
             configurable: true
         });
-        NzCalendarHeaderComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzCalendarHeaderComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.setUpYears();
             this.setUpMonths();
         };
-        NzCalendarHeaderComponent.prototype.updateYear = function (year) {
+        /**
+         * @param {?} year
+         * @return {?}
+         */
+        NzCalendarHeaderComponent.prototype.updateYear = /**
+         * @param {?} year
+         * @return {?}
+         */
+        function (year) {
             this.yearChange.emit(year);
             this.setUpYears(year);
         };
-        NzCalendarHeaderComponent.prototype.setUpYears = function (year) {
+        /**
+         * @private
+         * @param {?=} year
+         * @return {?}
+         */
+        NzCalendarHeaderComponent.prototype.setUpYears = /**
+         * @private
+         * @param {?=} year
+         * @return {?}
+         */
+        function (year) {
+            /** @type {?} */
             var start = (year || this.activeYear) - this.yearOffset;
+            /** @type {?} */
             var end = start + this.yearTotal;
             this.years = [];
             for (var i = start; i < end; i++) {
                 this.years.push({ label: "" + i, value: i });
             }
         };
-        NzCalendarHeaderComponent.prototype.setUpMonths = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzCalendarHeaderComponent.prototype.setUpMonths = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             this.months = [];
             for (var i = 0; i < 12; i++) {
+                /** @type {?} */
                 var dateInMonth = this.activeDate.setMonth(i);
+                /** @type {?} */
                 var monthText = this.dateHelper.format(dateInMonth.nativeDate, 'MMM');
                 this.months.push({ label: monthText, value: i });
             }
         };
-        /** @nocollapse */ NzCalendarHeaderComponent.ɵfac = function NzCalendarHeaderComponent_Factory(t) { return new (t || NzCalendarHeaderComponent)(core.ɵɵdirectiveInject(i18n.NzI18nService), core.ɵɵdirectiveInject(i18n.DateHelperService)); };
-        /** @nocollapse */ NzCalendarHeaderComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzCalendarHeaderComponent, selectors: [["nz-calendar-header"]], hostBindings: function NzCalendarHeaderComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(2);
-            } if (rf & 2) {
-                core.ɵɵstyleProp("display", "block");
-                core.ɵɵclassProp("ant-fullcalendar-header", true);
-            } }, inputs: { mode: "mode", fullscreen: "fullscreen", activeDate: "activeDate" }, outputs: { modeChange: "modeChange", yearChange: "yearChange", monthChange: "monthChange" }, exportAs: ["nzCalendarHeader"], decls: 8, vars: 9, consts: [[1, "ant-fullcalendar-year-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"], [3, "nzLabel", "nzValue", 4, "ngFor", "ngForOf"], ["class", "ant-fullcalendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange", 4, "ngIf"], [3, "ngModel", "nzSize", "ngModelChange"], ["nz-radio-button", "", "nzValue", "month"], ["nz-radio-button", "", "nzValue", "year"], [3, "nzLabel", "nzValue"], [1, "ant-fullcalendar-month-select", 3, "nzSize", "nzDropdownMatchSelectWidth", "ngModel", "ngModelChange"]], template: function NzCalendarHeaderComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "nz-select", 0);
-                core.ɵɵlistener("ngModelChange", function NzCalendarHeaderComponent_Template_nz_select_ngModelChange_0_listener($event) { return ctx.updateYear($event); });
-                core.ɵɵtemplate(1, NzCalendarHeaderComponent_nz_option_1_Template, 1, 2, "nz-option", 1);
-                core.ɵɵelementEnd();
-                core.ɵɵtemplate(2, NzCalendarHeaderComponent_nz_select_2_Template, 2, 4, "nz-select", 2);
-                core.ɵɵelementStart(3, "nz-radio-group", 3);
-                core.ɵɵlistener("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.mode = $event; })("ngModelChange", function NzCalendarHeaderComponent_Template_nz_radio_group_ngModelChange_3_listener($event) { return ctx.modeChange.emit($event); });
-                core.ɵɵelementStart(4, "label", 4);
-                core.ɵɵtext(5);
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(6, "label", 5);
-                core.ɵɵtext(7);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("nzSize", ctx.size)("nzDropdownMatchSelectWidth", false)("ngModel", ctx.activeYear);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngForOf", ctx.years);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.mode === "month");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngModel", ctx.mode)("nzSize", ctx.size);
-                core.ɵɵadvance(2);
-                core.ɵɵtextInterpolate(ctx.monthTypeText);
-                core.ɵɵadvance(2);
-                core.ɵɵtextInterpolate(ctx.yearTypeText);
-            } }, directives: [select.NzSelectComponent, forms.NgControlStatus, forms.NgModel, common.NgForOf, common.NgIf, radio.NzRadioGroupComponent, radio.NzRadioButtonComponent, select.NzOptionComponent], encapsulation: 2, changeDetection: 0 });
+        NzCalendarHeaderComponent.decorators = [
+            { type: core.Component, args: [{
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        selector: 'nz-calendar-header',
+                        exportAs: 'nzCalendarHeader',
+                        template: "<nz-select class=\"ant-fullcalendar-year-select\" [nzSize]=\"size\" [nzDropdownMatchSelectWidth]=\"false\"\n           [ngModel]=\"activeYear\" (ngModelChange)=\"updateYear($event)\"> \n  <nz-option *ngFor=\"let year of years\" [nzLabel]=\"year.label\" [nzValue]=\"year.value\"></nz-option>\n</nz-select>\n\n<nz-select *ngIf=\"mode === 'month'\" class=\"ant-fullcalendar-month-select\" [nzSize]=\"size\" [nzDropdownMatchSelectWidth]=\"false\"\n           [ngModel]=\"activeMonth\" (ngModelChange)=\"monthChange.emit($event)\">\n  <nz-option *ngFor=\"let month of months\" [nzLabel]=\"month.label\" [nzValue]=\"month.value\"></nz-option>\n</nz-select>\n\n<nz-radio-group [(ngModel)]=\"mode\" (ngModelChange)=\"modeChange.emit($event)\" [nzSize]=\"size\">\n  <label nz-radio-button nzValue=\"month\">{{ monthTypeText }}</label>\n  <label nz-radio-button nzValue=\"year\">{{ yearTypeText }}</label>\n</nz-radio-group>\n",
+                        host: {
+                            '[style.display]': "'block'",
+                            '[class.ant-fullcalendar-header]': "true"
+                        }
+                    }] }
+        ];
+        /** @nocollapse */
+        NzCalendarHeaderComponent.ctorParameters = function () { return [
+            { type: i18n.NzI18nService },
+            { type: i18n.DateHelperService }
+        ]; };
+        NzCalendarHeaderComponent.propDecorators = {
+            mode: [{ type: core.Input }],
+            fullscreen: [{ type: core.Input }],
+            modeChange: [{ type: core.Output }],
+            activeDate: [{ type: core.Input }],
+            yearChange: [{ type: core.Output }],
+            monthChange: [{ type: core.Output }]
+        };
         return NzCalendarHeaderComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCalendarHeaderComponent, [{
-            type: core.Component,
-            args: [{
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    selector: 'nz-calendar-header',
-                    exportAs: 'nzCalendarHeader',
-                    templateUrl: './nz-calendar-header.component.html',
-                    host: {
-                        '[style.display]': "'block'",
-                        '[class.ant-fullcalendar-header]': "true"
-                    }
-                }]
-        }], function () { return [{ type: i18n.NzI18nService }, { type: i18n.DateHelperService }]; }, { mode: [{
-                type: core.Input
-            }], fullscreen: [{
-                type: core.Input
-            }], modeChange: [{
-                type: core.Output
-            }], activeDate: [{
-                type: core.Input
-            }], yearChange: [{
-                type: core.Output
-            }], monthChange: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.mode;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.fullscreen;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.modeChange;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.activeDate;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.yearChange;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.monthChange;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.yearOffset;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.yearTotal;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.years;
+        /** @type {?} */
+        NzCalendarHeaderComponent.prototype.months;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCalendarHeaderComponent.prototype.i18n;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCalendarHeaderComponent.prototype.dateHelper;
+    }
 
-    function NzCalendarComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0);
-    } }
-    function NzCalendarComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-        var _r2063 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "date-table", 4);
-        core.ɵɵlistener("valueChange", function NzCalendarComponent_ng_template_4_Template_date_table_valueChange_0_listener($event) { core.ɵɵrestoreView(_r2063); var ctx_r2062 = core.ɵɵnextContext(); return ctx_r2062.onDateSelect($event); });
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2059 = core.ɵɵnextContext();
-        core.ɵɵproperty("prefixCls", ctx_r2059.prefixCls)("value", ctx_r2059.activeDate)("dateCellRender", ctx_r2059.dateCell)("dateFullCellRender", ctx_r2059.dateFullCell);
-    } }
-    function NzCalendarComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-        var _r2065 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "month-table", 5);
-        core.ɵɵlistener("valueChange", function NzCalendarComponent_ng_template_6_Template_month_table_valueChange_0_listener($event) { core.ɵɵrestoreView(_r2065); var ctx_r2064 = core.ɵɵnextContext(); return ctx_r2064.onDateSelect($event); });
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r2061 = core.ɵɵnextContext();
-        core.ɵɵproperty("prefixCls", ctx_r2061.prefixCls)("value", ctx_r2061.activeDate)("monthCellRender", ctx_r2061.monthCell)("monthFullCellRender", ctx_r2061.monthFullCell);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-calendar.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzCalendarComponent = /** @class */ (function () {
         function NzCalendarComponent(cdr) {
             this.cdr = cdr;
             this.activeDate = new core$1.CandyDate();
             this.prefixCls = 'ant-fullcalendar';
-            this.onChangeFn = function () { };
-            this.onTouchFn = function () { };
+            this.onChangeFn = (/**
+             * @return {?}
+             */
+            function () { });
+            this.onTouchFn = (/**
+             * @return {?}
+             */
+            function () { });
             this.nzMode = 'month';
             this.nzModeChange = new core.EventEmitter();
             this.nzPanelChange = new core.EventEmitter();
@@ -1155,68 +1188,176 @@
             this.nzFullscreen = true;
         }
         Object.defineProperty(NzCalendarComponent.prototype, "nzValue", {
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 this.updateDate(new core$1.CandyDate(value), false);
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarComponent.prototype, "dateCell", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzDateCell || this.nzDateCellChild;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarComponent.prototype, "dateFullCell", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzDateFullCell || this.nzDateFullCellChild;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarComponent.prototype, "monthCell", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzMonthCell || this.nzMonthCellChild;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzCalendarComponent.prototype, "monthFullCell", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzMonthFullCell || this.nzMonthFullCellChild;
             },
             enumerable: true,
             configurable: true
         });
-        NzCalendarComponent.prototype.onModeChange = function (mode) {
+        Object.defineProperty(NzCalendarComponent.prototype, "nzCard", {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return !this.nzFullscreen;
+            },
+            /**
+             * @deprecated use `[nzFullscreen]` instead.
+             */
+            set: /**
+             * @deprecated use `[nzFullscreen]` instead.
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
+                core$1.warnDeprecation("'nzCard' is going to be removed in 9.0.0. Please use 'nzFullscreen' instead.");
+                this.nzFullscreen = !core$1.toBoolean(value);
+            },
+            enumerable: true,
+            configurable: true
+        });
+        /**
+         * @param {?} mode
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.onModeChange = /**
+         * @param {?} mode
+         * @return {?}
+         */
+        function (mode) {
             this.nzModeChange.emit(mode);
             this.nzPanelChange.emit({ date: this.activeDate.nativeDate, mode: mode });
         };
-        NzCalendarComponent.prototype.onYearSelect = function (year) {
+        /**
+         * @param {?} year
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.onYearSelect = /**
+         * @param {?} year
+         * @return {?}
+         */
+        function (year) {
+            /** @type {?} */
             var date = this.activeDate.setYear(year);
             this.updateDate(date);
         };
-        NzCalendarComponent.prototype.onMonthSelect = function (month) {
+        /**
+         * @param {?} month
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.onMonthSelect = /**
+         * @param {?} month
+         * @return {?}
+         */
+        function (month) {
+            /** @type {?} */
             var date = this.activeDate.setMonth(month);
             this.updateDate(date);
         };
-        NzCalendarComponent.prototype.onDateSelect = function (date) {
+        /**
+         * @param {?} date
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.onDateSelect = /**
+         * @param {?} date
+         * @return {?}
+         */
+        function (date) {
             // Only activeDate is enough in calendar
             // this.value = date;
             this.updateDate(date);
         };
-        NzCalendarComponent.prototype.writeValue = function (value) {
-            this.updateDate(new core$1.CandyDate(value), false);
+        /**
+         * @param {?} value
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.writeValue = /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
+            this.updateDate(new core$1.CandyDate((/** @type {?} */ (value))), false);
             this.cdr.markForCheck();
         };
-        NzCalendarComponent.prototype.registerOnChange = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.registerOnChange = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onChangeFn = fn;
         };
-        NzCalendarComponent.prototype.registerOnTouched = function (fn) {
+        /**
+         * @param {?} fn
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.registerOnTouched = /**
+         * @param {?} fn
+         * @return {?}
+         */
+        function (fn) {
             this.onTouchFn = fn;
         };
-        NzCalendarComponent.prototype.updateDate = function (date, touched) {
+        /**
+         * @private
+         * @param {?} date
+         * @param {?=} touched
+         * @return {?}
+         */
+        NzCalendarComponent.prototype.updateDate = /**
+         * @private
+         * @param {?} date
+         * @param {?=} touched
+         * @return {?}
+         */
+        function (date, touched) {
             if (touched === void 0) { touched = true; }
             this.activeDate = date;
             if (touched) {
@@ -1226,164 +1367,137 @@
                 this.nzValueChange.emit(date.nativeDate);
             }
         };
-        /** @nocollapse */ NzCalendarComponent.ɵfac = function NzCalendarComponent_Factory(t) { return new (t || NzCalendarComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef)); };
-        /** @nocollapse */ NzCalendarComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzCalendarComponent, selectors: [["nz-calendar"]], contentQueries: function NzCalendarComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵcontentQuery(dirIndex, NzDateCellDirective, true, core.TemplateRef);
-                core.ɵɵcontentQuery(dirIndex, NzDateFullCellDirective, true, core.TemplateRef);
-                core.ɵɵcontentQuery(dirIndex, NzMonthCellDirective, true, core.TemplateRef);
-                core.ɵɵcontentQuery(dirIndex, NzMonthFullCellDirective, true, core.TemplateRef);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.nzDateCellChild = _t.first);
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.nzDateFullCellChild = _t.first);
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.nzMonthCellChild = _t.first);
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.nzMonthFullCellChild = _t.first);
-            } }, hostBindings: function NzCalendarComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-fullcalendar--fullscreen", ctx.nzFullscreen);
-            } }, inputs: { nzMode: "nzMode", nzValue: "nzValue", nzDateCell: "nzDateCell", nzDateFullCell: "nzDateFullCell", nzMonthCell: "nzMonthCell", nzMonthFullCell: "nzMonthFullCell", nzFullscreen: "nzFullscreen" }, outputs: { nzModeChange: "nzModeChange", nzPanelChange: "nzPanelChange", nzSelectChange: "nzSelectChange", nzValueChange: "nzValueChange" }, exportAs: ["nzCalendar"], features: [core.ɵɵProvidersFeature([{ provide: forms.NG_VALUE_ACCESSOR, useExisting: core.forwardRef((function () { return NzCalendarComponent; })), multi: true }])], decls: 8, vars: 14, consts: [[3, "fullscreen", "activeDate", "mode", "modeChange", "yearChange", "monthChange"], [4, "ngIf", "ngIfThen", "ngIfElse"], ["monthModeTable", ""], ["yearModeTable", ""], [3, "prefixCls", "value", "dateCellRender", "dateFullCellRender", "valueChange"], [3, "prefixCls", "value", "monthCellRender", "monthFullCellRender", "valueChange"]], template: function NzCalendarComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "nz-calendar-header", 0);
-                core.ɵɵlistener("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.nzMode = $event; })("modeChange", function NzCalendarComponent_Template_nz_calendar_header_modeChange_0_listener($event) { return ctx.onModeChange($event); })("yearChange", function NzCalendarComponent_Template_nz_calendar_header_yearChange_0_listener($event) { return ctx.onYearSelect($event); })("monthChange", function NzCalendarComponent_Template_nz_calendar_header_monthChange_0_listener($event) { return ctx.onMonthSelect($event); });
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(1, "div");
-                core.ɵɵelementStart(2, "div");
-                core.ɵɵtemplate(3, NzCalendarComponent_ng_container_3_Template, 1, 0, "ng-container", 1);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵtemplate(4, NzCalendarComponent_ng_template_4_Template, 1, 4, "ng-template", null, 2, core.ɵɵtemplateRefExtractor);
-                core.ɵɵtemplate(6, NzCalendarComponent_ng_template_6_Template, 1, 4, "ng-template", null, 3, core.ɵɵtemplateRefExtractor);
-            } if (rf & 2) {
-                var _r2058 = core.ɵɵreference(5);
-                var _r2060 = core.ɵɵreference(7);
-                core.ɵɵproperty("fullscreen", ctx.nzFullscreen)("activeDate", ctx.activeDate)("mode", ctx.nzMode);
-                core.ɵɵadvance(1);
-                core.ɵɵclassMapInterpolate2("", ctx.prefixCls, " ", ctx.prefixCls, "-full");
-                core.ɵɵclassProp("ant-fullcalendar-fullscreen", ctx.nzFullscreen);
-                core.ɵɵadvance(1);
-                core.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-calendar-body");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzMode === "month")("ngIfThen", _r2058)("ngIfElse", _r2060);
-            } }, directives: [NzCalendarHeaderComponent, common.NgIf, DateTableComponent, MonthTableComponent], encapsulation: 2, changeDetection: 0 });
+        NzCalendarComponent.decorators = [
+            { type: core.Component, args: [{
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        selector: 'nz-calendar',
+                        exportAs: 'nzCalendar',
+                        template: "<nz-calendar-header [fullscreen]=\"nzFullscreen\" [activeDate]=\"activeDate\" [(mode)]=\"nzMode\"\n  (modeChange)=\"onModeChange($event)\" (yearChange)=\"onYearSelect($event)\" (monthChange)=\"onMonthSelect($event)\">\n</nz-calendar-header>\n\n<div class=\"{{prefixCls}} {{prefixCls}}-full\" [class.ant-fullcalendar-fullscreen]=\"nzFullscreen\">\n  <div class=\"{{prefixCls}}-calendar-body\">\n    <ng-container *ngIf=\"nzMode === 'month' then monthModeTable else yearModeTable\"></ng-container>\n  </div>\n</div>\n\n<ng-template #monthModeTable>\n  <date-table [prefixCls]=\"prefixCls\" [value]=\"activeDate\" [dateCellRender]=\"dateCell\"\n    [dateFullCellRender]=\"dateFullCell\" (valueChange)=\"onDateSelect($event)\"></date-table>\n</ng-template>\n\n<ng-template #yearModeTable>\n  <month-table [prefixCls]=\"prefixCls\" [value]=\"activeDate\" [monthCellRender]=\"monthCell\"\n    [monthFullCellRender]=\"monthFullCell\" (valueChange)=\"onDateSelect($event)\"></month-table>\n</ng-template>",
+                        providers: [{ provide: forms.NG_VALUE_ACCESSOR, useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzCalendarComponent; })), multi: true }]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzCalendarComponent.ctorParameters = function () { return [
+            { type: core.ChangeDetectorRef }
+        ]; };
+        NzCalendarComponent.propDecorators = {
+            nzMode: [{ type: core.Input }],
+            nzModeChange: [{ type: core.Output }],
+            nzPanelChange: [{ type: core.Output }],
+            nzSelectChange: [{ type: core.Output }],
+            nzValue: [{ type: core.Input }],
+            nzValueChange: [{ type: core.Output }],
+            nzDateCell: [{ type: core.Input }],
+            nzDateCellChild: [{ type: core.ContentChild, args: [NzDateCellDirective, { static: false, read: core.TemplateRef },] }],
+            nzDateFullCell: [{ type: core.Input }],
+            nzDateFullCellChild: [{ type: core.ContentChild, args: [NzDateFullCellDirective, { static: false, read: core.TemplateRef },] }],
+            nzMonthCell: [{ type: core.Input }],
+            nzMonthCellChild: [{ type: core.ContentChild, args: [NzMonthCellDirective, { static: false, read: core.TemplateRef },] }],
+            nzMonthFullCell: [{ type: core.Input }],
+            nzMonthFullCellChild: [{ type: core.ContentChild, args: [NzMonthFullCellDirective, { static: false, read: core.TemplateRef },] }],
+            nzFullscreen: [{ type: core.Input }, { type: core.HostBinding, args: ['class.ant-fullcalendar--fullscreen',] }],
+            nzCard: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Boolean)
         ], NzCalendarComponent.prototype, "nzFullscreen", void 0);
         return NzCalendarComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCalendarComponent, [{
-            type: core.Component,
-            args: [{
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    selector: 'nz-calendar',
-                    exportAs: 'nzCalendar',
-                    templateUrl: './nz-calendar.component.html',
-                    providers: [{ provide: forms.NG_VALUE_ACCESSOR, useExisting: core.forwardRef((function () { return NzCalendarComponent; })), multi: true }]
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }]; }, { nzMode: [{
-                type: core.Input
-            }], nzModeChange: [{
-                type: core.Output
-            }], nzPanelChange: [{
-                type: core.Output
-            }], nzSelectChange: [{
-                type: core.Output
-            }], nzValue: [{
-                type: core.Input
-            }], nzValueChange: [{
-                type: core.Output
-            }], nzDateCell: [{
-                type: core.Input
-            }], nzDateCellChild: [{
-                type: core.ContentChild,
-                args: [NzDateCellDirective, { static: false, read: core.TemplateRef }]
-            }], nzDateFullCell: [{
-                type: core.Input
-            }], nzDateFullCellChild: [{
-                type: core.ContentChild,
-                args: [NzDateFullCellDirective, { static: false, read: core.TemplateRef }]
-            }], nzMonthCell: [{
-                type: core.Input
-            }], nzMonthCellChild: [{
-                type: core.ContentChild,
-                args: [NzMonthCellDirective, { static: false, read: core.TemplateRef }]
-            }], nzMonthFullCell: [{
-                type: core.Input
-            }], nzMonthFullCellChild: [{
-                type: core.ContentChild,
-                args: [NzMonthFullCellDirective, { static: false, read: core.TemplateRef }]
-            }], nzFullscreen: [{
-                type: core.Input
-            }, {
-                type: core.HostBinding,
-                args: ['class.ant-fullcalendar--fullscreen']
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzCalendarComponent.prototype.activeDate;
+        /** @type {?} */
+        NzCalendarComponent.prototype.prefixCls;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCalendarComponent.prototype.onChangeFn;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCalendarComponent.prototype.onTouchFn;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzMode;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzModeChange;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzPanelChange;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzSelectChange;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzValueChange;
+        /**
+         * Cannot use \@Input and \@ContentChild on one variable
+         * because { static: false } will make \@Input property get delayed
+         *
+         * @type {?}
+         */
+        NzCalendarComponent.prototype.nzDateCell;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzDateCellChild;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzDateFullCell;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzDateFullCellChild;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzMonthCell;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzMonthCellChild;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzMonthFullCell;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzMonthFullCellChild;
+        /** @type {?} */
+        NzCalendarComponent.prototype.nzFullscreen;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCalendarComponent.prototype.cdr;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-calendar.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCalendarModule = /** @class */ (function () {
         function NzCalendarModule() {
         }
-        /** @nocollapse */ NzCalendarModule.ɵmod = core.ɵɵdefineNgModule({ type: NzCalendarModule });
-        /** @nocollapse */ NzCalendarModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzCalendarModule_Factory(t) { return new (t || NzCalendarModule)(); }, imports: [[common.CommonModule, forms.FormsModule, i18n.NzI18nModule, radio.NzRadioModule, select.NzSelectModule]] });
+        NzCalendarModule.decorators = [
+            { type: core.NgModule, args: [{
+                        declarations: [
+                            NzCalendarHeaderComponent,
+                            NzCalendarComponent,
+                            NzDateCellDirective,
+                            NzDateFullCellDirective,
+                            NzMonthCellDirective,
+                            NzMonthFullCellDirective,
+                            DateTableComponent,
+                            DateTableCellComponent,
+                            MonthTableComponent
+                        ],
+                        exports: [
+                            NzCalendarComponent,
+                            NzDateCellDirective,
+                            NzDateFullCellDirective,
+                            NzMonthCellDirective,
+                            NzMonthFullCellDirective,
+                            DateTableComponent,
+                            MonthTableComponent
+                        ],
+                        imports: [common.CommonModule, forms.FormsModule, i18n.NzI18nModule, radio.NzRadioModule, select.NzSelectModule]
+                    },] }
+        ];
         return NzCalendarModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzCalendarModule, { declarations: [NzCalendarHeaderComponent,
-            NzCalendarComponent,
-            NzDateCellDirective,
-            NzDateFullCellDirective,
-            NzMonthCellDirective,
-            NzMonthFullCellDirective,
-            DateTableComponent,
-            DateTableCellComponent,
-            MonthTableComponent], imports: [common.CommonModule, forms.FormsModule, i18n.NzI18nModule, radio.NzRadioModule, select.NzSelectModule], exports: [NzCalendarComponent,
-            NzDateCellDirective,
-            NzDateFullCellDirective,
-            NzMonthCellDirective,
-            NzMonthFullCellDirective,
-            DateTableComponent,
-            MonthTableComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCalendarModule, [{
-            type: core.NgModule,
-            args: [{
-                    declarations: [
-                        NzCalendarHeaderComponent,
-                        NzCalendarComponent,
-                        NzDateCellDirective,
-                        NzDateFullCellDirective,
-                        NzMonthCellDirective,
-                        NzMonthFullCellDirective,
-                        DateTableComponent,
-                        DateTableCellComponent,
-                        MonthTableComponent
-                    ],
-                    exports: [
-                        NzCalendarComponent,
-                        NzDateCellDirective,
-                        NzDateFullCellDirective,
-                        NzMonthCellDirective,
-                        NzMonthFullCellDirective,
-                        DateTableComponent,
-                        MonthTableComponent
-                    ],
-                    imports: [common.CommonModule, forms.FormsModule, i18n.NzI18nModule, radio.NzRadioModule, select.NzSelectModule]
-                }]
-        }], null, null); })();
-    core.ɵɵsetComponentScope(DateTableComponent, [NzCalendarHeaderComponent,
-        NzCalendarComponent,
-        NzDateCellDirective,
-        NzDateFullCellDirective,
-        NzMonthCellDirective,
-        NzMonthFullCellDirective,
-        DateTableComponent,
-        DateTableCellComponent,
-        MonthTableComponent, common.NgClass, common.NgComponentOutlet, common.NgForOf, common.NgIf, common.NgTemplateOutlet, common.NgStyle, common.NgSwitch, common.NgSwitchCase, common.NgSwitchDefault, common.NgPlural, common.NgPluralCase, forms.ɵangular_packages_forms_forms_y, forms.NgSelectOption, forms.ɵangular_packages_forms_forms_x, forms.DefaultValueAccessor, forms.NumberValueAccessor, forms.RangeValueAccessor, forms.CheckboxControlValueAccessor, forms.SelectControlValueAccessor, forms.SelectMultipleControlValueAccessor, forms.RadioControlValueAccessor, forms.NgControlStatus, forms.NgControlStatusGroup, forms.RequiredValidator, forms.MinLengthValidator, forms.MaxLengthValidator, forms.PatternValidator, forms.CheckboxRequiredValidator, forms.EmailValidator, forms.NgModel, forms.NgModelGroup, forms.NgForm, radio.NzRadioComponent, radio.NzRadioButtonComponent, radio.NzRadioGroupComponent, select.NzOptionComponent, select.NzSelectComponent, select.NzOptionContainerComponent, select.NzOptionGroupComponent, select.NzSelectTopControlComponent], [common.AsyncPipe, common.UpperCasePipe, common.LowerCasePipe, common.JsonPipe, common.SlicePipe, common.DecimalPipe, common.PercentPipe, common.TitleCasePipe, common.CurrencyPipe, common.DatePipe, common.I18nPluralPipe, common.I18nSelectPipe, common.KeyValuePipe, i18n.NzI18nPipe]);
 
     exports.DateTableCellComponent = DateTableCellComponent;
     exports.DateTableComponent = DateTableComponent;

@@ -10,7 +10,6 @@ import { Router, RouterLink, RouterLinkWithHref } from '@angular/router';
 import { NzMenuBaseService, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
 import { NzSubmenuService } from './nz-submenu.service';
-import * as i0 from "@angular/core";
 export declare class NzMenuItemDirective implements OnInit, OnChanges, OnDestroy, AfterContentInit {
     private nzUpdateHostClassService;
     private nzMenuService;
@@ -43,6 +42,4 @@ export declare class NzMenuItemDirective implements OnInit, OnChanges, OnDestroy
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzMenuItemDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMenuItemDirective, "[nz-menu-item]", ["nzMenuItem"], { 'nzDisabled': "nzDisabled", 'nzSelected': "nzSelected", 'nzPaddingLeft': "nzPaddingLeft", 'nzMatchRouterExact': "nzMatchRouterExact", 'nzMatchRouter': "nzMatchRouter" }, {}, ["listOfRouterLink", "listOfRouterLinkWithHref"]>;
 }

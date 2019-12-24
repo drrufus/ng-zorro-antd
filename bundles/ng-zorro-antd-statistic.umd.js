@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/core'), require('rxjs'), require('ng-zorro-antd/core'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/statistic', ['exports', '@angular/cdk/platform', '@angular/core', 'rxjs', 'ng-zorro-antd/core', '@angular/common'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].statistic = {}), global.ng.cdk.platform, global.ng.core, global.rxjs, global['ng-zorro-antd'].core, global.ng.common));
-}(this, (function (exports, platform, core, rxjs, core$1, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/core'), require('rxjs'), require('@angular/common'), require('ng-zorro-antd/core')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/statistic', ['exports', '@angular/cdk/platform', '@angular/core', 'rxjs', '@angular/common', 'ng-zorro-antd/core'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].statistic = {}), global.ng.cdk.platform, global.ng.core, global.rxjs, global.ng.common, global['ng-zorro-antd'].core));
+}(this, (function (exports, platform, core, rxjs, common, core$1) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -202,104 +202,10 @@
     }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-statistic-definitions.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var REFRESH_INTERVAL = 1000 / 30;
-
-    var _c0 = [1, "ant-statistic-content-value"];
-    var _c1 = function (a0) { return { $implicit: a0 }; };
-    function NzStatisticNumberComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainer(0, 2);
-    } if (rf & 2) {
-        var ctx_r304 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r304.nzValueTemplate)("ngTemplateOutletContext", core.ɵɵpureFunction1(2, _c1, ctx_r304.nzValue));
-    } }
-    function NzStatisticNumberComponent_ng_container_1_span_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 5);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r306 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r306.displayInt);
-    } }
-    function NzStatisticNumberComponent_ng_container_1_span_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 6);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r307 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r307.displayDecimal);
-    } }
-    function NzStatisticNumberComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzStatisticNumberComponent_ng_container_1_span_1_Template, 2, 1, "span", 3);
-        core.ɵɵtemplate(2, NzStatisticNumberComponent_ng_container_1_span_2_Template, 2, 1, "span", 4);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r305 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r305.displayInt);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r305.displayDecimal);
-    } }
-    var NzStatisticNumberComponent = /** @class */ (function () {
-        function NzStatisticNumberComponent(locale_id) {
-            this.locale_id = locale_id;
-            this.displayInt = '';
-            this.displayDecimal = '';
-        }
-        NzStatisticNumberComponent.prototype.ngOnChanges = function () {
-            this.formatNumber();
-        };
-        NzStatisticNumberComponent.prototype.formatNumber = function () {
-            var decimalSeparator = typeof this.nzValue === 'number' ? '.' : common.getLocaleNumberSymbol(this.locale_id, common.NumberSymbol.Decimal);
-            var value = String(this.nzValue);
-            var _a = __read(value.split(decimalSeparator), 2), int = _a[0], decimal = _a[1];
-            this.displayInt = int;
-            this.displayDecimal = decimal ? "" + decimalSeparator + decimal : '';
-        };
-        /** @nocollapse */ NzStatisticNumberComponent.ɵfac = function NzStatisticNumberComponent_Factory(t) { return new (t || NzStatisticNumberComponent)(core.ɵɵdirectiveInject(core.LOCALE_ID)); };
-        /** @nocollapse */ NzStatisticNumberComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzStatisticNumberComponent, selectors: [["nz-statistic-number"]], hostBindings: function NzStatisticNumberComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵelementHostAttrs(_c0);
-            } }, inputs: { nzValue: "nzValue", nzValueTemplate: "nzValueTemplate" }, exportAs: ["nzStatisticNumber"], features: [core.ɵɵNgOnChangesFeature()], decls: 2, vars: 2, consts: [[3, "ngTemplateOutlet", "ngTemplateOutletContext", 4, "ngIf"], [4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "ant-statistic-content-value-int", 4, "ngIf"], ["class", "ant-statistic-content-value-decimal", 4, "ngIf"], [1, "ant-statistic-content-value-int"], [1, "ant-statistic-content-value-decimal"]], template: function NzStatisticNumberComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzStatisticNumberComponent_ng_container_0_Template, 1, 4, "ng-container", 0);
-                core.ɵɵtemplate(1, NzStatisticNumberComponent_ng_container_1_Template, 3, 2, "ng-container", 1);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.nzValueTemplate);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.nzValueTemplate);
-            } }, directives: [common.NgIf, common.NgTemplateOutlet], styles: ["nz-number { display: inline }"], encapsulation: 2, changeDetection: 0 });
-        return NzStatisticNumberComponent;
-    }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStatisticNumberComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    preserveWhitespaces: false,
-                    selector: 'nz-statistic-number',
-                    exportAs: 'nzStatisticNumber',
-                    templateUrl: './nz-statistic-number.component.html',
-                    host: {
-                        class: 'ant-statistic-content-value'
-                    },
-                    styles: ['nz-number { display: inline }']
-                }]
-        }], function () { return [{ type: undefined, decorators: [{
-                    type: core.Inject,
-                    args: [core.LOCALE_ID]
-                }] }]; }, { nzValue: [{
-                type: core.Input
-            }], nzValueTemplate: [{
-                type: core.Input
-            }] }); })();
-
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -307,116 +213,61 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var _c0$1 = [1, "ant-statistic"];
-    function NzStatisticComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r297 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r297.nzTitle);
-    } }
-    function NzStatisticComponent_span_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r300 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r300.nzPrefix);
-    } }
-    function NzStatisticComponent_span_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 6);
-        core.ɵɵtemplate(1, NzStatisticComponent_span_3_ng_container_1_Template, 2, 1, "ng-container", 1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r298 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r298.nzPrefix);
-    } }
-    function NzStatisticComponent_span_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r301 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r301.nzSuffix);
-    } }
-    function NzStatisticComponent_span_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 7);
-        core.ɵɵtemplate(1, NzStatisticComponent_span_5_ng_container_1_Template, 2, 1, "ng-container", 1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r299 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r299.nzSuffix);
-    } }
+    /** @type {?} */
+    var REFRESH_INTERVAL = 1000 / 30;
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-statistic.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzStatisticComponent = /** @class */ (function () {
         function NzStatisticComponent() {
             this.nzValueStyle = {};
         }
-        /** @nocollapse */ NzStatisticComponent.ɵfac = function NzStatisticComponent_Factory(t) { return new (t || NzStatisticComponent)(); };
-        /** @nocollapse */ NzStatisticComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzStatisticComponent, selectors: [["nz-statistic"]], hostBindings: function NzStatisticComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵelementHostAttrs(_c0$1);
-            } }, inputs: { nzPrefix: "nzPrefix", nzSuffix: "nzSuffix", nzTitle: "nzTitle", nzValue: "nzValue", nzValueStyle: "nzValueStyle", nzValueTemplate: "nzValueTemplate" }, exportAs: ["nzStatistic"], decls: 6, vars: 6, consts: [[1, "ant-statistic-title"], [4, "nzStringTemplateOutlet"], [1, "ant-statistic-content", 3, "ngStyle"], ["class", "ant-statistic-content-prefix", 4, "ngIf"], [3, "nzValue", "nzValueTemplate"], ["class", "ant-statistic-content-suffix", 4, "ngIf"], [1, "ant-statistic-content-prefix"], [1, "ant-statistic-content-suffix"]], template: function NzStatisticComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelementStart(0, "div", 0);
-                core.ɵɵtemplate(1, NzStatisticComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
-                core.ɵɵelementEnd();
-                core.ɵɵelementStart(2, "div", 2);
-                core.ɵɵtemplate(3, NzStatisticComponent_span_3_Template, 2, 1, "span", 3);
-                core.ɵɵelement(4, "nz-statistic-number", 4);
-                core.ɵɵtemplate(5, NzStatisticComponent_span_5_Template, 2, 1, "span", 5);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("nzStringTemplateOutlet", ctx.nzTitle);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngStyle", ctx.nzValueStyle);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzPrefix);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("nzValue", ctx.nzValue)("nzValueTemplate", ctx.nzValueTemplate);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzSuffix);
-            } }, directives: [core$1.NzStringTemplateOutletDirective, common.NgStyle, common.NgIf, NzStatisticNumberComponent], styles: ["nz-statistic { display: block; }"], encapsulation: 2, changeDetection: 0 });
+        NzStatisticComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-statistic',
+                        exportAs: 'nzStatistic',
+                        template: "<div class=\"ant-statistic-title\">\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n</div>\n<div class=\"ant-statistic-content\" [ngStyle]=\"nzValueStyle\">\n  <span *ngIf=\"nzPrefix\" class=\"ant-statistic-content-prefix\">\n    <ng-container *nzStringTemplateOutlet=\"nzPrefix\">{{ nzPrefix }}</ng-container>\n  </span>\n  <nz-statistic-number\n    [nzValue]=\"nzValue\"\n    [nzValueTemplate]=\"nzValueTemplate\">\n  </nz-statistic-number>\n  <span *ngIf=\"nzSuffix\" class=\"ant-statistic-content-suffix\">\n    <ng-container *nzStringTemplateOutlet=\"nzSuffix\">{{ nzSuffix }}</ng-container>\n  </span>\n</div>\n",
+                        host: {
+                            class: 'ant-statistic'
+                        },
+                        styles: ['nz-statistic { display: block; }']
+                    }] }
+        ];
+        NzStatisticComponent.propDecorators = {
+            nzPrefix: [{ type: core.Input }],
+            nzSuffix: [{ type: core.Input }],
+            nzTitle: [{ type: core.Input }],
+            nzValue: [{ type: core.Input }],
+            nzValueStyle: [{ type: core.Input }],
+            nzValueTemplate: [{ type: core.Input }]
+        };
         return NzStatisticComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStatisticComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-statistic',
-                    exportAs: 'nzStatistic',
-                    templateUrl: './nz-statistic.component.html',
-                    host: {
-                        class: 'ant-statistic'
-                    },
-                    styles: ['nz-statistic { display: block; }']
-                }]
-        }], null, { nzPrefix: [{
-                type: core.Input
-            }], nzSuffix: [{
-                type: core.Input
-            }], nzTitle: [{
-                type: core.Input
-            }], nzValue: [{
-                type: core.Input
-            }], nzValueStyle: [{
-                type: core.Input
-            }], nzValueTemplate: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzPrefix;
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzSuffix;
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzValue;
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzValueStyle;
+        /** @type {?} */
+        NzStatisticComponent.prototype.nzValueTemplate;
+    }
 
-    function NzCountdownComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtext(0);
-        core.ɵɵpipe(1, "nzTimeRange");
-    } if (rf & 2) {
-        var ctx_r303 = core.ɵɵnextContext();
-        core.ɵɵtextInterpolate(core.ɵɵpipeBind2(1, 1, ctx_r303.diff, ctx_r303.nzFormat));
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-countdown.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzCountdownComponent = /** @class */ (function (_super) {
         __extends(NzCountdownComponent, _super);
         function NzCountdownComponent(cdr, ngZone, platform) {
@@ -424,13 +275,25 @@
             _this.cdr = cdr;
             _this.ngZone = ngZone;
             _this.platform = platform;
-            /** @override */
+            /**
+             * @override
+             */
             _this.nzFormat = 'HH:mm:ss';
             _this.nzCountdownFinish = new core.EventEmitter();
             return _this;
         }
         /** @override */
-        NzCountdownComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @override
+         * @param {?} changes
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.ngOnChanges = /**
+         * @override
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzValue) {
                 this.target = Number(changes.nzValue.currentValue);
                 if (!changes.nzValue.isFirstChange()) {
@@ -438,13 +301,31 @@
                 }
             }
         };
-        NzCountdownComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.syncTimer();
         };
-        NzCountdownComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.stopTimer();
         };
-        NzCountdownComponent.prototype.syncTimer = function () {
+        /**
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.syncTimer = /**
+         * @return {?}
+         */
+        function () {
             if (this.target >= Date.now()) {
                 this.startTimer();
             }
@@ -452,19 +333,37 @@
                 this.stopTimer();
             }
         };
-        NzCountdownComponent.prototype.startTimer = function () {
+        /**
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.startTimer = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (this.platform.isBrowser) {
-                this.ngZone.runOutsideAngular(function () {
+                this.ngZone.runOutsideAngular((/**
+                 * @return {?}
+                 */
+                function () {
                     _this.stopTimer();
-                    _this.updater_ = rxjs.interval(REFRESH_INTERVAL).subscribe(function () {
+                    _this.updater_ = rxjs.interval(REFRESH_INTERVAL).subscribe((/**
+                     * @return {?}
+                     */
+                    function () {
                         _this.updateValue();
                         _this.cdr.detectChanges();
-                    });
-                });
+                    }));
+                }));
             }
         };
-        NzCountdownComponent.prototype.stopTimer = function () {
+        /**
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.stopTimer = /**
+         * @return {?}
+         */
+        function () {
             if (this.updater_) {
                 this.updater_.unsubscribe();
                 this.updater_ = null;
@@ -473,61 +372,175 @@
         /**
          * Update time that should be displayed on the screen.
          */
-        NzCountdownComponent.prototype.updateValue = function () {
+        /**
+         * Update time that should be displayed on the screen.
+         * @protected
+         * @return {?}
+         */
+        NzCountdownComponent.prototype.updateValue = /**
+         * Update time that should be displayed on the screen.
+         * @protected
+         * @return {?}
+         */
+        function () {
             this.diff = Math.max(this.target - Date.now(), 0);
             if (this.diff === 0) {
                 this.stopTimer();
                 this.nzCountdownFinish.emit();
             }
         };
-        /** @nocollapse */ NzCountdownComponent.ɵfac = function NzCountdownComponent_Factory(t) { return new (t || NzCountdownComponent)(core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core.NgZone), core.ɵɵdirectiveInject(platform.Platform)); };
-        /** @nocollapse */ NzCountdownComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzCountdownComponent, selectors: [["nz-countdown"]], inputs: { nzFormat: "nzFormat" }, outputs: { nzCountdownFinish: "nzCountdownFinish" }, exportAs: ["nzCountdown"], features: [core.ɵɵInheritDefinitionFeature, core.ɵɵNgOnChangesFeature()], decls: 3, vars: 6, consts: [[3, "nzValue", "nzValueStyle", "nzValueTemplate", "nzTitle", "nzPrefix", "nzSuffix"], ["countDownTpl", ""]], template: function NzCountdownComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵelement(0, "nz-statistic", 0);
-                core.ɵɵtemplate(1, NzCountdownComponent_ng_template_1_Template, 2, 4, "ng-template", null, 1, core.ɵɵtemplateRefExtractor);
-            } if (rf & 2) {
-                var _r302 = core.ɵɵreference(2);
-                core.ɵɵproperty("nzValue", ctx.diff)("nzValueStyle", ctx.nzValueStyle)("nzValueTemplate", ctx.nzValueTemplate || _r302)("nzTitle", ctx.nzTitle)("nzPrefix", ctx.nzPrefix)("nzSuffix", ctx.nzSuffix);
-            } }, directives: [NzStatisticComponent], pipes: [core$1.NzTimeRangePipe], encapsulation: 2, changeDetection: 0 });
+        NzCountdownComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-countdown',
+                        exportAs: 'nzCountdown',
+                        template: "<nz-statistic\n  [nzValue]=\"diff\"\n  [nzValueStyle]=\"nzValueStyle\"\n  [nzValueTemplate]=\"nzValueTemplate || countDownTpl\"\n  [nzTitle]=\"nzTitle\"\n  [nzPrefix]=\"nzPrefix\"\n  [nzSuffix]=\"nzSuffix\">\n</nz-statistic>\n\n<ng-template #countDownTpl>{{ diff | nzTimeRange: nzFormat }}</ng-template>"
+                    }] }
+        ];
+        /** @nocollapse */
+        NzCountdownComponent.ctorParameters = function () { return [
+            { type: core.ChangeDetectorRef },
+            { type: core.NgZone },
+            { type: platform.Platform }
+        ]; };
+        NzCountdownComponent.propDecorators = {
+            nzFormat: [{ type: core.Input }],
+            nzCountdownFinish: [{ type: core.Output }]
+        };
         return NzCountdownComponent;
     }(NzStatisticComponent));
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzCountdownComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-countdown',
-                    exportAs: 'nzCountdown',
-                    templateUrl: './nz-countdown.component.html'
-                }]
-        }], function () { return [{ type: core.ChangeDetectorRef }, { type: core.NgZone }, { type: platform.Platform }]; }, { nzFormat: [{
-                type: core.Input
-            }], nzCountdownFinish: [{
-                type: core.Output
-            }] }); })();
+    if (false) {
+        /**
+         * @override
+         * @type {?}
+         */
+        NzCountdownComponent.prototype.nzFormat;
+        /** @type {?} */
+        NzCountdownComponent.prototype.nzCountdownFinish;
+        /** @type {?} */
+        NzCountdownComponent.prototype.diff;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCountdownComponent.prototype.target;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCountdownComponent.prototype.updater_;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCountdownComponent.prototype.cdr;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCountdownComponent.prototype.ngZone;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzCountdownComponent.prototype.platform;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-statistic-number.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var NzStatisticNumberComponent = /** @class */ (function () {
+        function NzStatisticNumberComponent(locale_id) {
+            this.locale_id = locale_id;
+            this.displayInt = '';
+            this.displayDecimal = '';
+        }
+        /**
+         * @return {?}
+         */
+        NzStatisticNumberComponent.prototype.ngOnChanges = /**
+         * @return {?}
+         */
+        function () {
+            this.formatNumber();
+        };
+        /**
+         * @private
+         * @return {?}
+         */
+        NzStatisticNumberComponent.prototype.formatNumber = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
+            var decimalSeparator = typeof this.nzValue === 'number' ? '.' : common.getLocaleNumberSymbol(this.locale_id, common.NumberSymbol.Decimal);
+            /** @type {?} */
+            var value = String(this.nzValue);
+            var _a = __read(value.split(decimalSeparator), 2), int = _a[0], decimal = _a[1];
+            this.displayInt = int;
+            this.displayDecimal = decimal ? "" + decimalSeparator + decimal : '';
+        };
+        NzStatisticNumberComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        selector: 'nz-statistic-number',
+                        exportAs: 'nzStatisticNumber',
+                        template: "<ng-container\n  *ngIf=\"nzValueTemplate\"\n  [ngTemplateOutlet]=\"nzValueTemplate\"\n  [ngTemplateOutletContext]=\"{ $implicit: nzValue }\">\n</ng-container>\n<ng-container *ngIf=\"!nzValueTemplate\">\n  <span *ngIf=\"displayInt\" class=\"ant-statistic-content-value-int\">{{ displayInt }}</span>\n  <span *ngIf=\"displayDecimal\" class=\"ant-statistic-content-value-decimal\">{{ displayDecimal }}</span>\n</ng-container>\n",
+                        host: {
+                            class: 'ant-statistic-content-value'
+                        },
+                        styles: ['nz-number { display: inline }']
+                    }] }
+        ];
+        /** @nocollapse */
+        NzStatisticNumberComponent.ctorParameters = function () { return [
+            { type: String, decorators: [{ type: core.Inject, args: [core.LOCALE_ID,] }] }
+        ]; };
+        NzStatisticNumberComponent.propDecorators = {
+            nzValue: [{ type: core.Input }],
+            nzValueTemplate: [{ type: core.Input }]
+        };
+        return NzStatisticNumberComponent;
+    }());
+    if (false) {
+        /** @type {?} */
+        NzStatisticNumberComponent.prototype.nzValue;
+        /** @type {?} */
+        NzStatisticNumberComponent.prototype.nzValueTemplate;
+        /** @type {?} */
+        NzStatisticNumberComponent.prototype.displayInt;
+        /** @type {?} */
+        NzStatisticNumberComponent.prototype.displayDecimal;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzStatisticNumberComponent.prototype.locale_id;
+    }
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-statistic.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStatisticModule = /** @class */ (function () {
         function NzStatisticModule() {
         }
-        /** @nocollapse */ NzStatisticModule.ɵmod = core.ɵɵdefineNgModule({ type: NzStatisticModule });
-        /** @nocollapse */ NzStatisticModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzStatisticModule_Factory(t) { return new (t || NzStatisticModule)(); }, imports: [[common.CommonModule, platform.PlatformModule, core$1.NzAddOnModule, core$1.NzPipesModule]] });
+        NzStatisticModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, platform.PlatformModule, core$1.NzAddOnModule, core$1.NzPipesModule],
+                        declarations: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent],
+                        exports: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]
+                    },] }
+        ];
         return NzStatisticModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzStatisticModule, { declarations: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent], imports: [common.CommonModule, platform.PlatformModule, core$1.NzAddOnModule, core$1.NzPipesModule], exports: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzStatisticModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, platform.PlatformModule, core$1.NzAddOnModule, core$1.NzPipesModule],
-                    declarations: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent],
-                    exports: [NzStatisticComponent, NzCountdownComponent, NzStatisticNumberComponent]
-                }]
-        }], null, null); })();
 
     exports.NzCountdownComponent = NzCountdownComponent;
     exports.NzStatisticComponent = NzStatisticComponent;

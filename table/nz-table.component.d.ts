@@ -14,7 +14,6 @@ import { PaginationItemRenderContext } from 'ng-zorro-antd/pagination';
 import { NzThComponent } from './nz-th.component';
 import { NzTheadComponent } from './nz-thead.component';
 import { NzVirtualScrollDirective } from './nz-virtual-scroll.directive';
-import * as i0 from "@angular/core";
 export declare class NzTableComponent<T = any> implements OnInit, AfterViewInit, OnDestroy, OnChanges, AfterContentInit {
     nzConfigService: NzConfigService;
     private renderer;
@@ -93,6 +92,4 @@ export declare class NzTableComponent<T = any> implements OnInit, AfterViewInit,
     ngAfterViewInit(): void;
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTableComponent<any>>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTableComponent<any>, "nz-table", ["nzTable"], { 'nzSize': "nzSize", 'nzShowTotal': "nzShowTotal", 'nzPageSizeOptions': "nzPageSizeOptions", 'nzVirtualScroll': "nzVirtualScroll", 'nzVirtualItemSize': "nzVirtualItemSize", 'nzVirtualMaxBufferPx': "nzVirtualMaxBufferPx", 'nzVirtualMinBufferPx': "nzVirtualMinBufferPx", 'nzVirtualForTrackBy': "nzVirtualForTrackBy", 'nzLoadingDelay': "nzLoadingDelay", 'nzLoadingIndicator': "nzLoadingIndicator", 'nzTotal': "nzTotal", 'nzTitle': "nzTitle", 'nzFooter': "nzFooter", 'nzNoResult': "nzNoResult", 'nzWidthConfig': "nzWidthConfig", 'nzPageIndex': "nzPageIndex", 'nzPageSize': "nzPageSize", 'nzData': "nzData", 'nzPaginationPosition': "nzPaginationPosition", 'nzScroll': "nzScroll", 'nzItemRender': "nzItemRender", 'nzFrontPagination': "nzFrontPagination", 'nzTemplateMode': "nzTemplateMode", 'nzBordered': "nzBordered", 'nzShowPagination': "nzShowPagination", 'nzLoading': "nzLoading", 'nzShowSizeChanger': "nzShowSizeChanger", 'nzHideOnSinglePage': "nzHideOnSinglePage", 'nzShowQuickJumper': "nzShowQuickJumper", 'nzSimple': "nzSimple" }, { 'nzPageSizeChange': "nzPageSizeChange", 'nzPageIndexChange': "nzPageIndexChange", 'nzCurrentPageDataChange': "nzCurrentPageDataChange" }, ["nzVirtualScrollDirective", "listOfNzThComponent"]>;
 }

@@ -8,7 +8,6 @@
 import { EventEmitter } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class MonthPanelComponent {
     locale: NzCalendarI18nInterface;
     value: CandyDate;
@@ -19,6 +18,4 @@ export declare class MonthPanelComponent {
     previousYear(): void;
     nextYear(): void;
     private gotoYear;
-    static ɵfac: i0.ɵɵFactoryDef<MonthPanelComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<MonthPanelComponent, "month-panel", ["monthPanel"], { 'locale': "locale", 'value': "value", 'disabledDate': "disabledDate" }, { 'valueChange': "valueChange", 'yearPanelShow': "yearPanelShow" }, never>;
 }

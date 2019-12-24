@@ -7,7 +7,6 @@
  */
 import { RendererFactory2 } from '@angular/core';
 import { Observable } from 'rxjs';
-import * as i0 from "@angular/core";
 interface Point {
     x: number;
     y: number;
@@ -26,7 +25,5 @@ export declare class NzDragService {
     requestDraggingSequence(event: MouseEvent | TouchEvent): Observable<Delta>;
     private registerDraggingHandler;
     private teardownDraggingSequence;
-    static ɵfac: i0.ɵɵFactoryDef<NzDragService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzDragService>;
 }
 export {};

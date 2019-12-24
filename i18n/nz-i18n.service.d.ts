@@ -1,6 +1,12 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { Observable } from 'rxjs';
 import { DateLocale, NzI18nInterface } from './nz-i18n.interface';
-import * as i0 from "@angular/core";
 export declare class NzI18nService {
     private _locale;
     private _change;
@@ -27,6 +33,4 @@ export declare class NzI18nService {
      */
     getLocaleData(path: string, defaultValue?: any): any;
     private _getObjectPath;
-    static ɵfac: i0.ɵɵFactoryDef<NzI18nService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzI18nService>;
 }

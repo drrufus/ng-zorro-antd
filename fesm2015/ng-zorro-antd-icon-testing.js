@@ -1,56 +1,54 @@
-import { ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, ɵsetClassMetadata, NgModule } from '@angular/core';
+import { NgModule } from '@angular/core';
 import * as AllIcons from '@ant-design/icons-angular/icons';
-import { NZ_ICONS, NzIconModule } from 'ng-zorro-antd/icon';
+import { NzIconModule, NZ_ICONS } from 'ng-zorro-antd/icon';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-icon-test.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const antDesignIcons = AllIcons;
-const icons = Object.keys(antDesignIcons).map(key => {
+/** @type {?} */
+const antDesignIcons = (/** @type {?} */ (AllIcons));
+const ɵ0 = /**
+ * @param {?} key
+ * @return {?}
+ */
+key => {
+    /** @type {?} */
     const i = antDesignIcons[key];
     return i;
-});
+};
+/** @type {?} */
+const icons = Object.keys(antDesignIcons).map((ɵ0));
+const ɵ1 = icons;
 /**
  * Include this module in every testing spec, except `nz-icon.spec.ts`.
  */
 // @dynamic
 class NzIconTestModule {
 }
-/** @nocollapse */ NzIconTestModule.ɵmod = ɵɵdefineNgModule({ type: NzIconTestModule });
-/** @nocollapse */ NzIconTestModule.ɵinj = ɵɵdefineInjector({ factory: function NzIconTestModule_Factory(t) { return new (t || NzIconTestModule)(); }, providers: [
-        {
-            provide: NZ_ICONS,
-            useValue: icons
-        }
-    ], imports: [NzIconModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzIconTestModule, { exports: [NzIconModule] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzIconTestModule, [{
-        type: NgModule,
-        args: [{
+NzIconTestModule.decorators = [
+    { type: NgModule, args: [{
                 exports: [NzIconModule],
                 providers: [
                     {
                         provide: NZ_ICONS,
-                        useValue: icons
+                        useValue: ɵ1
                     }
                 ]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-icon-testing.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzIconTestModule };

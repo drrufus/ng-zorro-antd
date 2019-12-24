@@ -20,7 +20,7 @@ function default_1(options) {
             const workspace = config_1.getWorkspace(host);
             const project = schematics_1.getProjectFromWorkspace(workspace, options.project);
             const style = project_style_1.getProjectStyle(project);
-            context.addTask(new tasks_1.RunSchematicTask(options.template, Object.assign(Object.assign({}, options), { style: style })));
+            context.addTask(new tasks_1.RunSchematicTask(options.template, Object.assign({}, options, { style: style })));
         }
     };
 }

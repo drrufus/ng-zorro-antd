@@ -7,7 +7,6 @@
  */
 import { ElementRef, OnChanges, OnInit, TemplateRef } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzDividerComponent implements OnChanges, OnInit {
     private elementRef;
     private nzUpdateHostClassService;
@@ -19,6 +18,4 @@ export declare class NzDividerComponent implements OnChanges, OnInit {
     constructor(elementRef: ElementRef, nzUpdateHostClassService: NzUpdateHostClassService);
     ngOnChanges(): void;
     ngOnInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzDividerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzDividerComponent, "nz-divider", ["nzDivider"], { 'nzText': "nzText", 'nzType': "nzType", 'nzOrientation': "nzOrientation", 'nzDashed': "nzDashed" }, {}, never>;
 }

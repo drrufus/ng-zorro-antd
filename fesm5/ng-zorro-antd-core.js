@@ -1,5 +1,5 @@
 import { CommonModule, DOCUMENT } from '@angular/common';
-import { ɵɵdirectiveInject, ElementRef, Renderer2, ɵɵdefineDirective, ɵsetClassMetadata, Directive, Input, TemplateRef, ViewContainerRef, ɵɵNgOnChangesFeature, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule, isDevMode, Optional, Inject, ɵɵinject, ɵɵdefineInjectable, Injectable, SkipSelf, RendererFactory2, NgZone, Type, EventEmitter, InjectionToken, ɵɵallocHostVars, ɵɵstyleSanitizer, ɵɵdefaultStyleSanitizer, ɵɵstyleProp, ɵɵdefinePipe, Pipe } from '@angular/core';
+import { Directive, ElementRef, Renderer2, Input, TemplateRef, ViewContainerRef, NgModule, isDevMode, Optional, Inject, Injectable, SkipSelf, RendererFactory2, ɵɵdefineInjectable, ɵɵinject, NgZone, Type, EventEmitter, InjectionToken, Pipe } from '@angular/core';
 import { __values, __spread, __decorate, __metadata, __read, __assign, __extends } from 'tslib';
 import { trigger, state, style, transition, animate } from '@angular/animations';
 import { coerceBooleanProperty, _isNumberValue, coerceCssPixelValue, coerceElement } from '@angular/cdk/coercion';
@@ -15,11 +15,9 @@ import { auditTime, map, filter, finalize, take, mapTo } from 'rxjs/operators';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/classlist_add.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzClassListAddDirective = /** @class */ (function () {
     function NzClassListAddDirective(elementRef, renderer) {
@@ -28,33 +26,67 @@ var NzClassListAddDirective = /** @class */ (function () {
         this.classList = [];
     }
     Object.defineProperty(NzClassListAddDirective.prototype, "nzClassListAdd", {
-        set: function (list) {
+        set: /**
+         * @param {?} list
+         * @return {?}
+         */
+        function (list) {
             var _this = this;
-            this.classList.forEach(function (name) {
+            this.classList.forEach((/**
+             * @param {?} name
+             * @return {?}
+             */
+            function (name) {
                 _this.renderer.removeClass(_this.elementRef.nativeElement, name);
-            });
-            list.forEach(function (name) {
+            }));
+            list.forEach((/**
+             * @param {?} name
+             * @return {?}
+             */
+            function (name) {
                 _this.renderer.addClass(_this.elementRef.nativeElement, name);
-            });
+            }));
             this.classList = list;
         },
         enumerable: true,
         configurable: true
     });
-    /** @nocollapse */ NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-    /** @nocollapse */ NzClassListAddDirective.ɵdir = ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
+    NzClassListAddDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzClassListAdd]',
+                    exportAs: 'nzClassListAdd'
+                },] }
+    ];
+    /** @nocollapse */
+    NzClassListAddDirective.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: Renderer2 }
+    ]; };
+    NzClassListAddDirective.propDecorators = {
+        nzClassListAdd: [{ type: Input }]
+    };
     return NzClassListAddDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzClassListAddDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzClassListAdd]',
-                exportAs: 'nzClassListAdd'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, { nzClassListAdd: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzClassListAddDirective.prototype.classList;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzClassListAddDirective.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzClassListAddDirective.prototype.renderer;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: addon/string_template_outlet.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzStringTemplateOutletDirective = /** @class */ (function () {
     function NzStringTemplateOutletDirective(viewContainer, defaultTemplate) {
         this.viewContainer = viewContainer;
@@ -67,7 +99,11 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         this.nzStringTemplateOutletContext = null;
     }
     Object.defineProperty(NzStringTemplateOutletDirective.prototype, "nzStringTemplateOutlet", {
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             if (value instanceof TemplateRef) {
                 this.isTemplate = true;
                 this.inputTemplate = value;
@@ -79,7 +115,13 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NzStringTemplateOutletDirective.prototype.recreateView = function () {
+    /**
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.recreateView = /**
+     * @return {?}
+     */
+    function () {
         if (!this.isTemplate) {
             /** use default template when input is string **/
             if (!this.defaultViewRef) {
@@ -98,7 +140,20 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         }
     };
     // tslint:disable-next-line:no-any
-    NzStringTemplateOutletDirective.prototype.getType = function (value) {
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.getType = 
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         if (value instanceof TemplateRef) {
             return 'template';
         }
@@ -106,25 +161,51 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
             return 'string';
         }
     };
-    NzStringTemplateOutletDirective.prototype.shouldRecreateView = function (changes) {
+    /**
+     * @private
+     * @param {?} changes
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.shouldRecreateView = /**
+     * @private
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
         var nzStringTemplateOutletContext = changes.nzStringTemplateOutletContext, nzStringTemplateOutlet = changes.nzStringTemplateOutlet;
+        /** @type {?} */
         var shouldOutletRecreate = false;
         if (nzStringTemplateOutlet) {
             if (nzStringTemplateOutlet.firstChange) {
                 shouldOutletRecreate = true;
             }
             else {
+                /** @type {?} */
                 var previousOutletType = this.getType(nzStringTemplateOutlet.previousValue);
+                /** @type {?} */
                 var currentOutletType = this.getType(nzStringTemplateOutlet.currentValue);
                 shouldOutletRecreate = !(previousOutletType === 'string' && currentOutletType === 'string');
             }
         }
+        /** @type {?} */
         var shouldContextRecreate = nzStringTemplateOutletContext && this.hasContextShapeChanged(nzStringTemplateOutletContext);
         return shouldContextRecreate || shouldOutletRecreate;
     };
-    NzStringTemplateOutletDirective.prototype.hasContextShapeChanged = function (ctxChange) {
+    /**
+     * @private
+     * @param {?} ctxChange
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.hasContextShapeChanged = /**
+     * @private
+     * @param {?} ctxChange
+     * @return {?}
+     */
+    function (ctxChange) {
         var e_1, _a;
+        /** @type {?} */
         var prevCtxKeys = Object.keys(ctxChange.previousValue || {});
+        /** @type {?} */
         var currCtxKeys = Object.keys(ctxChange.currentValue || {});
         if (prevCtxKeys.length === currCtxKeys.length) {
             try {
@@ -149,13 +230,26 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         }
     };
     // tslint:disable-next-line:no-any
-    NzStringTemplateOutletDirective.prototype.updateExistingContext = function (ctx) {
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} ctx
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.updateExistingContext = 
+    // tslint:disable-next-line:no-any
+    /**
+     * @private
+     * @param {?} ctx
+     * @return {?}
+     */
+    function (ctx) {
         var e_2, _a;
         try {
             for (var _b = __values(Object.keys(ctx)), _c = _b.next(); !_c.done; _c = _b.next()) {
                 var propName = _c.value;
                 // tslint:disable-next-line:no-any
-                this.inputViewRef.context[propName] = this.nzStringTemplateOutletContext[propName];
+                ((/** @type {?} */ ((/** @type {?} */ (this.inputViewRef)).context)))[propName] = this.nzStringTemplateOutletContext[propName];
             }
         }
         catch (e_2_1) { e_2 = { error: e_2_1 }; }
@@ -166,7 +260,16 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
             finally { if (e_2) throw e_2.error; }
         }
     };
-    NzStringTemplateOutletDirective.prototype.ngOnChanges = function (changes) {
+    /**
+     * @param {?} changes
+     * @return {?}
+     */
+    NzStringTemplateOutletDirective.prototype.ngOnChanges = /**
+     * @param {?} changes
+     * @return {?}
+     */
+    function (changes) {
+        /** @type {?} */
         var recreateView = this.shouldRecreateView(changes);
         if (recreateView) {
             if (this.viewContainer) {
@@ -182,54 +285,87 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
             }
         }
     };
-    /** @nocollapse */ NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(ɵɵdirectiveInject(ViewContainerRef), ɵɵdirectiveInject(TemplateRef)); };
-    /** @nocollapse */ NzStringTemplateOutletDirective.ɵdir = ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [ɵɵNgOnChangesFeature()] });
+    NzStringTemplateOutletDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzStringTemplateOutlet]',
+                    exportAs: 'nzStringTemplateOutlet'
+                },] }
+    ];
+    /** @nocollapse */
+    NzStringTemplateOutletDirective.ctorParameters = function () { return [
+        { type: ViewContainerRef },
+        { type: TemplateRef }
+    ]; };
+    NzStringTemplateOutletDirective.propDecorators = {
+        nzStringTemplateOutletContext: [{ type: Input }],
+        nzStringTemplateOutlet: [{ type: Input }]
+    };
     return NzStringTemplateOutletDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzStringTemplateOutlet]',
-                exportAs: 'nzStringTemplateOutlet'
-            }]
-    }], function () { return [{ type: ViewContainerRef }, { type: TemplateRef }]; }, { nzStringTemplateOutletContext: [{
-            type: Input
-        }], nzStringTemplateOutlet: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.isTemplate;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.inputTemplate;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.inputViewRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.defaultViewRef;
+    /** @type {?} */
+    NzStringTemplateOutletDirective.prototype.nzStringTemplateOutletContext;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.viewContainer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzStringTemplateOutletDirective.prototype.defaultTemplate;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/addon.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAddOnModule = /** @class */ (function () {
     function NzAddOnModule() {
     }
-    /** @nocollapse */ NzAddOnModule.ɵmod = ɵɵdefineNgModule({ type: NzAddOnModule });
-    /** @nocollapse */ NzAddOnModule.ɵinj = ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[CommonModule]] });
+    NzAddOnModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule],
+                    exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
+                    declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
+                },] }
+    ];
     return NzAddOnModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzAddOnModule, { declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective], imports: [CommonModule], exports: [NzStringTemplateOutletDirective, NzClassListAddDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzAddOnModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule],
-                exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
-                declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: addon/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: animation/animation-consts.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -241,10 +377,19 @@ var AnimationDuration = /** @class */ (function () {
     function AnimationDuration() {
     }
     AnimationDuration.SLOW = '0.3s'; // Modal
+    // Modal
     AnimationDuration.BASE = '0.2s';
     AnimationDuration.FAST = '0.1s'; // Tooltip
     return AnimationDuration;
 }());
+if (false) {
+    /** @type {?} */
+    AnimationDuration.SLOW;
+    /** @type {?} */
+    AnimationDuration.BASE;
+    /** @type {?} */
+    AnimationDuration.FAST;
+}
 var AnimationCurves = /** @class */ (function () {
     function AnimationCurves() {
     }
@@ -264,14 +409,43 @@ var AnimationCurves = /** @class */ (function () {
     AnimationCurves.EASE_IN_OUT_QUINT = 'cubic-bezier(0.86, 0, 0.07, 1)';
     return AnimationCurves;
 }());
+if (false) {
+    /** @type {?} */
+    AnimationCurves.EASE_BASE_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_BASE_IN;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_BACK;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_CIRC;
+    /** @type {?} */
+    AnimationCurves.EASE_OUT_QUINT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_QUINT;
+    /** @type {?} */
+    AnimationCurves.EASE_IN_OUT_QUINT;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/collapse.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var collapseMotion = trigger('collapseMotion', [
     state('expanded', style({ height: '*' })),
     state('collapsed', style({ height: 0, overflow: 'hidden' })),
@@ -281,8 +455,12 @@ var collapseMotion = trigger('collapseMotion', [
     transition('collapsed => expanded', animate("150ms " + AnimationCurves.EASE_IN_OUT)),
     transition('hidden => expanded', animate("150ms " + AnimationCurves.EASE_IN_OUT))
 ]);
+/** @type {?} */
 var treeCollapseMotion = trigger('treeCollapseMotion', [
-    transition(':leave', [style({ overflow: 'hidden' }), animate("150ms " + AnimationCurves.EASE_IN_OUT, style({ height: 0 }))]),
+    transition(':leave', [
+        style({ overflow: 'hidden' }),
+        animate("150ms " + AnimationCurves.EASE_IN_OUT, style({ height: 0 }))
+    ]),
     transition(':enter', [
         style({ overflow: 'hidden', height: 0 }),
         animate("150ms " + AnimationCurves.EASE_IN_OUT, style({ overflow: 'hidden', height: '*' }))
@@ -290,24 +468,22 @@ var treeCollapseMotion = trigger('treeCollapseMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/fade.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var fadeMotion = trigger('fadeMotion', [
     transition(':enter', [style({ opacity: 0 }), animate("" + AnimationDuration.BASE, style({ opacity: 1 }))]),
     transition(':leave', [style({ opacity: 1 }), animate("" + AnimationDuration.BASE, style({ opacity: 0 }))])
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/help.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var helpMotion = trigger('helpMotion', [
     transition(':enter', [
         style({
@@ -332,12 +508,11 @@ var helpMotion = trigger('helpMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/move.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var moveUpMotion = trigger('moveUpMotion', [
     transition('* => enter', [
         style({
@@ -366,12 +541,11 @@ var moveUpMotion = trigger('moveUpMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/notification.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var notificationMotion = trigger('notificationMotion', [
     state('enterRight', style({ opacity: 1, transform: 'translateX(0)' })),
     transition('* => enterRight', [style({ opacity: 0, transform: 'translateX(5%)' }), animate('100ms linear')]),
@@ -393,14 +567,15 @@ var notificationMotion = trigger('notificationMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/slide.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var ANIMATION_TRANSITION_IN = AnimationDuration.BASE + " " + AnimationCurves.EASE_OUT_QUINT;
+/** @type {?} */
 var ANIMATION_TRANSITION_OUT = AnimationDuration.BASE + " " + AnimationCurves.EASE_IN_QUINT;
+/** @type {?} */
 var slideMotion = trigger('slideMotion', [
     state('bottom', style({
         opacity: 1,
@@ -443,6 +618,7 @@ var slideMotion = trigger('slideMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 var slideAlertMotion = trigger('slideAlertMotion', [
     transition(':leave', [
         style({ opacity: 1, transform: 'scaleY(1)', transformOrigin: '0% 0%' }),
@@ -455,12 +631,11 @@ var slideAlertMotion = trigger('slideAlertMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/zoom.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var zoomMotion = trigger('zoomMotion', [
     transition(':enter', [
         style({ opacity: 0, transform: 'scale(0.2)' }),
@@ -477,6 +652,7 @@ var zoomMotion = trigger('zoomMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 var zoomBigMotion = trigger('zoomBigMotion', [
     transition('void => active', [
         style({ opacity: 0, transform: 'scale(0.8)' }),
@@ -493,6 +669,7 @@ var zoomBigMotion = trigger('zoomBigMotion', [
         }))
     ])
 ]);
+/** @type {?} */
 var zoomBadgeMotion = trigger('zoomBadgeMotion', [
     transition(':enter', [
         style({ opacity: 0, transform: 'scale(0) translate(50%, -50%)' }),
@@ -511,13 +688,16 @@ var zoomBadgeMotion = trigger('zoomBadgeMotion', [
 ]);
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: animation/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: environments/environment.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -525,25 +705,36 @@ var zoomBadgeMotion = trigger('zoomBadgeMotion', [
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/** @type {?} */
 var environment = {
     isTestMode: false
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/logger.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var record = {};
+/** @type {?} */
 var PREFIX = '[NG-ZORRO]:';
+/**
+ * @param {...?} args
+ * @return {?}
+ */
 function notRecorded() {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
-    var asRecord = args.reduce(function (acc, c) { return acc + c.toString(); }, '');
+    /** @type {?} */
+    var asRecord = args.reduce((/**
+     * @param {?} acc
+     * @param {?} c
+     * @return {?}
+     */
+    function (acc, c) { return acc + c.toString(); }), '');
     if (record[asRecord]) {
         return false;
     }
@@ -552,6 +743,11 @@ function notRecorded() {
         return true;
     }
 }
+/**
+ * @param {?} consoleFunc
+ * @param {...?} args
+ * @return {?}
+ */
 function consoleCommonBehavior(consoleFunc) {
     var args = [];
     for (var _i = 1; _i < arguments.length; _i++) {
@@ -562,40 +758,67 @@ function consoleCommonBehavior(consoleFunc) {
     }
 }
 // Warning should only be printed in dev mode and only once.
-var warn = function () {
+/** @type {?} */
+var warn = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+function () {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
-    return consoleCommonBehavior.apply(void 0, __spread([function () {
+    return consoleCommonBehavior.apply(void 0, __spread([(/**
+         * @param {...?} arg
+         * @return {?}
+         */
+        function () {
             var arg = [];
             for (var _i = 0; _i < arguments.length; _i++) {
                 arg[_i] = arguments[_i];
             }
             return console.warn.apply(console, __spread([PREFIX], arg));
-        }], args));
-};
-var warnDeprecation = function () {
+        })], args));
+});
+/** @type {?} */
+var warnDeprecation = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+function () {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
     }
     if (!environment.isTestMode) {
+        /** @type {?} */
         var stack_1 = new Error().stack;
-        return consoleCommonBehavior.apply(void 0, __spread([function () {
+        return consoleCommonBehavior.apply(void 0, __spread([(/**
+             * @param {...?} arg
+             * @return {?}
+             */
+            function () {
                 var arg = [];
                 for (var _i = 0; _i < arguments.length; _i++) {
                     arg[_i] = arguments[_i];
                 }
                 return console.warn.apply(console, __spread([PREFIX, 'deprecated:'], arg, [stack_1]));
-            }], args));
+            })], args));
     }
     else {
-        return function () { };
+        return (/**
+         * @return {?}
+         */
+        function () { });
     }
-};
+});
 // Log should only be printed in dev mode.
-var log = function () {
+/** @type {?} */
+var log = (/**
+ * @param {...?} args
+ * @return {?}
+ */
+function () {
     var args = [];
     for (var _i = 0; _i < arguments.length; _i++) {
         args[_i] = arguments[_i];
@@ -603,22 +826,33 @@ var log = function () {
     if (isDevMode()) {
         console.log.apply(console, __spread([PREFIX], args));
     }
-};
+});
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/convert.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} value
+ * @return {?}
  */
 function toBoolean(value) {
     return coerceBooleanProperty(value);
 }
+/**
+ * @param {?} value
+ * @param {?=} fallbackValue
+ * @return {?}
+ */
 function toNumber(value, fallbackValue) {
     if (fallbackValue === void 0) { fallbackValue = 0; }
     return _isNumberValue(value) ? Number(value) : fallbackValue;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function toCssPixel(value) {
     return coerceCssPixelValue(value);
 }
@@ -626,6 +860,10 @@ function toCssPixel(value) {
 // tslint:disable no-invalid-this
 /**
  * Get the function-property type's value
+ * @template T
+ * @param {?} prop
+ * @param {...?} args
+ * @return {?}
  */
 function valueFunctionProp(prop) {
     var args = [];
@@ -634,8 +872,21 @@ function valueFunctionProp(prop) {
     }
     return typeof prop === 'function' ? prop.apply(void 0, __spread(args)) : prop;
 }
+/**
+ * @template T, D
+ * @param {?} name
+ * @param {?} fallback
+ * @return {?}
+ */
 function propDecoratorFactory(name, fallback) {
+    /**
+     * @param {?} target
+     * @param {?} propName
+     * @param {?=} originalDescriptor
+     * @return {?}
+     */
     function propDecorator(target, propName, originalDescriptor) {
+        /** @type {?} */
         var privatePropName = "$$__" + propName;
         if (Object.prototype.hasOwnProperty.call(target, privatePropName)) {
             warn("The prop \"" + privatePropName + "\" is already exist, it will be overrided by " + name + " decorator.");
@@ -645,10 +896,19 @@ function propDecoratorFactory(name, fallback) {
             writable: true
         });
         return {
-            get: function () {
-                return originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
+            get: /**
+             * @return {?}
+             */
+            function () {
+                return originalDescriptor && originalDescriptor.get
+                    ? originalDescriptor.get.bind(this)()
+                    : this[privatePropName];
             },
-            set: function (value) {
+            set: /**
+             * @param {?} value
+             * @return {?}
+             */
+            function (value) {
                 if (originalDescriptor && originalDescriptor.set) {
                     originalDescriptor.set.bind(this)(fallback(value));
                 }
@@ -661,30 +921,43 @@ function propDecoratorFactory(name, fallback) {
 /**
  * Input decorator that handle a prop to do get/set automatically with toBoolean
  *
- * Why not using @InputBoolean alone without @Input? AOT needs @Input to be visible
+ * Why not using \@InputBoolean alone without \@Input? AOT needs \@Input to be visible
  *
- * @howToUse
+ * \@howToUse
  * ```
- * @Input() @InputBoolean() visible: boolean = false;
+ * \@Input() \@InputBoolean() visible: boolean = false;
  *
  * // Act as below:
- * // @Input()
+ * // \@Input()
  * // get visible() { return this.__visible; }
  * // set visible(value) { this.__visible = value; }
  * // __visible = false;
  * ```
+ * @return {?}
  */
 function InputBoolean() {
     return propDecoratorFactory('InputBoolean', toBoolean);
 }
+/**
+ * @return {?}
+ */
 function InputCssPixel() {
     return propDecoratorFactory('InputCssPixel', toCssPixel);
 }
+/**
+ * @return {?}
+ */
 function InputNumber() {
     // tslint:disable-line: no-any
     return propDecoratorFactory('InputNumber', toNumber);
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/nz-no-animation.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 var DISABLED_CLASSNAME = 'nz-animate-disabled';
 var NzNoAnimationDirective = /** @class */ (function () {
     function NzNoAnimationDirective(element, renderer, animationType) {
@@ -693,13 +966,34 @@ var NzNoAnimationDirective = /** @class */ (function () {
         this.animationType = animationType;
         this.nzNoAnimation = false;
     }
-    NzNoAnimationDirective.prototype.ngOnChanges = function () {
+    /**
+     * @return {?}
+     */
+    NzNoAnimationDirective.prototype.ngOnChanges = /**
+     * @return {?}
+     */
+    function () {
         this.updateClass();
     };
-    NzNoAnimationDirective.prototype.ngAfterViewInit = function () {
+    /**
+     * @return {?}
+     */
+    NzNoAnimationDirective.prototype.ngAfterViewInit = /**
+     * @return {?}
+     */
+    function () {
         this.updateClass();
     };
-    NzNoAnimationDirective.prototype.updateClass = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzNoAnimationDirective.prototype.updateClass = /**
+     * @private
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var element = coerceElement(this.element);
         if (!element) {
             return;
@@ -711,115 +1005,124 @@ var NzNoAnimationDirective = /** @class */ (function () {
             this.renderer.removeClass(element, DISABLED_CLASSNAME);
         }
     };
-    /** @nocollapse */ NzNoAnimationDirective.ɵfac = function NzNoAnimationDirective_Factory(t) { return new (t || NzNoAnimationDirective)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
-    /** @nocollapse */ NzNoAnimationDirective.ɵdir = ɵɵdefineDirective({ type: NzNoAnimationDirective, selectors: [["", "nzNoAnimation", ""]], inputs: { nzNoAnimation: "nzNoAnimation" }, exportAs: ["nzNoAnimation"], features: [ɵɵNgOnChangesFeature()] });
+    NzNoAnimationDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzNoAnimation]',
+                    exportAs: 'nzNoAnimation'
+                },] }
+    ];
+    /** @nocollapse */
+    NzNoAnimationDirective.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: Renderer2 },
+        { type: String, decorators: [{ type: Optional }, { type: Inject, args: [ANIMATION_MODULE_TYPE,] }] }
+    ]; };
+    NzNoAnimationDirective.propDecorators = {
+        nzNoAnimation: [{ type: Input }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Boolean)
     ], NzNoAnimationDirective.prototype, "nzNoAnimation", void 0);
     return NzNoAnimationDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNoAnimationDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzNoAnimation]',
-                exportAs: 'nzNoAnimation'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [ANIMATION_MODULE_TYPE]
-            }] }]; }, { nzNoAnimation: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzNoAnimationDirective.prototype.nzNoAnimation;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.element;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNoAnimationDirective.prototype.animationType;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/nz-no-animation.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzNoAnimationModule = /** @class */ (function () {
     function NzNoAnimationModule() {
     }
-    /** @nocollapse */ NzNoAnimationModule.ɵmod = ɵɵdefineNgModule({ type: NzNoAnimationModule });
-    /** @nocollapse */ NzNoAnimationModule.ɵinj = ɵɵdefineInjector({ factory: function NzNoAnimationModule_Factory(t) { return new (t || NzNoAnimationModule)(); }, imports: [[CommonModule]] });
+    NzNoAnimationModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzNoAnimationDirective],
+                    exports: [NzNoAnimationDirective],
+                    imports: [CommonModule]
+                },] }
+    ];
     return NzNoAnimationModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzNoAnimationModule, { declarations: [NzNoAnimationDirective], imports: [CommonModule], exports: [NzNoAnimationDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNoAnimationModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzNoAnimationDirective],
-                exports: [NzNoAnimationDirective],
-                imports: [CommonModule]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: no-animation/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/nz-connected-overlay.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzConnectedOverlayDirective = /** @class */ (function () {
     function NzConnectedOverlayDirective(cdkConnectedOverlay) {
         this.cdkConnectedOverlay = cdkConnectedOverlay;
         this.cdkConnectedOverlay.backdropClass = 'nz-overlay-transparent-backdrop';
     }
-    /** @nocollapse */ NzConnectedOverlayDirective.ɵfac = function NzConnectedOverlayDirective_Factory(t) { return new (t || NzConnectedOverlayDirective)(ɵɵdirectiveInject(CdkConnectedOverlay)); };
-    /** @nocollapse */ NzConnectedOverlayDirective.ɵdir = ɵɵdefineDirective({ type: NzConnectedOverlayDirective, selectors: [["", "cdkConnectedOverlay", "", "nzConnectedOverlay", ""]], exportAs: ["nzConnectedOverlay"] });
+    NzConnectedOverlayDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
+                    exportAs: 'nzConnectedOverlay'
+                },] }
+    ];
+    /** @nocollapse */
+    NzConnectedOverlayDirective.ctorParameters = function () { return [
+        { type: CdkConnectedOverlay }
+    ]; };
     return NzConnectedOverlayDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzConnectedOverlayDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
-                exportAs: 'nzConnectedOverlay'
-            }]
-    }], function () { return [{ type: CdkConnectedOverlay }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzConnectedOverlayDirective.prototype.cdkConnectedOverlay;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/nz-overlay.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOverlayModule = /** @class */ (function () {
     function NzOverlayModule() {
     }
-    /** @nocollapse */ NzOverlayModule.ɵmod = ɵɵdefineNgModule({ type: NzOverlayModule });
-    /** @nocollapse */ NzOverlayModule.ɵinj = ɵɵdefineInjector({ factory: function NzOverlayModule_Factory(t) { return new (t || NzOverlayModule)(); } });
+    NzOverlayModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzConnectedOverlayDirective],
+                    exports: [NzConnectedOverlayDirective]
+                },] }
+    ];
     return NzOverlayModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzOverlayModule, { declarations: [NzConnectedOverlayDirective], exports: [NzConnectedOverlayDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzOverlayModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzConnectedOverlayDirective],
-                exports: [NzConnectedOverlayDirective]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/overlay-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var POSITION_MAP = {
     top: new ConnectionPositionPair({ originX: 'center', originY: 'top' }, { overlayX: 'center', overlayY: 'bottom' }),
     topCenter: new ConnectionPositionPair({ originX: 'center', originY: 'top' }, { overlayX: 'center', overlayY: 'bottom' }),
@@ -836,22 +1139,41 @@ var POSITION_MAP = {
     leftTop: new ConnectionPositionPair({ originX: 'start', originY: 'top' }, { overlayX: 'end', overlayY: 'top' }),
     leftBottom: new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'bottom' })
 };
+/** @type {?} */
 var DEFAULT_TOOLTIP_POSITIONS = [POSITION_MAP.top, POSITION_MAP.right, POSITION_MAP.bottom, POSITION_MAP.left];
-var DEFAULT_DROPDOWN_POSITIONS = [POSITION_MAP.bottomLeft, POSITION_MAP.bottomRight, POSITION_MAP.topRight, POSITION_MAP.topLeft];
+/** @type {?} */
+var DEFAULT_DROPDOWN_POSITIONS = [
+    POSITION_MAP.bottomLeft,
+    POSITION_MAP.bottomRight,
+    POSITION_MAP.topRight,
+    POSITION_MAP.topLeft
+];
+/** @type {?} */
 var DEFAULT_SUBMENU_POSITIONS = [POSITION_MAP.rightTop, POSITION_MAP.leftTop];
+/** @type {?} */
 var DEFAULT_MENTION_TOP_POSITIONS = [
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'start', overlayY: 'bottom' }),
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'bottom' })
 ];
+/** @type {?} */
 var DEFAULT_MENTION_BOTTOM_POSITIONS = [
     POSITION_MAP.bottomLeft,
     new ConnectionPositionPair({ originX: 'start', originY: 'bottom' }, { overlayX: 'end', overlayY: 'top' })
 ];
+/**
+ * @param {?} position
+ * @return {?}
+ */
 function getPlacementName(position) {
+    /** @type {?} */
     var keyList = ['originX', 'originY', 'overlayX', 'overlayY'];
     var _loop_1 = function (placement) {
         // @ts-ignore
-        if (keyList.every(function (key) { return position.connectionPair[key] === POSITION_MAP[placement][key]; })) {
+        if (keyList.every((/**
+         * @param {?} key
+         * @return {?}
+         */
+        function (key) { return position.connectionPair[key] === POSITION_MAP[placement][key]; }))) {
             return { value: placement };
         }
     };
@@ -860,39 +1182,34 @@ function getPlacementName(position) {
         if (typeof state_1 === "object")
             return state_1.value;
     }
-    return undefined;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: overlay/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: logger/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/candy-date.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} rangeValue
+ * @return {?}
  */
 function sortRangeValue(rangeValue) {
     if (Array.isArray(rangeValue)) {
@@ -907,7 +1224,13 @@ function sortRangeValue(rangeValue) {
  * NOTE: most APIs are based on local time other than customized locale id (this needs tobe support in future)
  * TODO: support format() against to angular's core API
  */
-var CandyDate = /** @class */ (function () {
+var  /**
+ * Wrapping kind APIs for date operating and unify
+ * NOTE: every new API return new CandyDate object without side effects to the former Date object
+ * NOTE: most APIs are based on local time other than customized locale id (this needs tobe support in future)
+ * TODO: support format() against to angular's core API
+ */
+CandyDate = /** @class */ (function () {
     // locale: string; // Custom specified locale ID
     function CandyDate(date) {
         if (date) {
@@ -933,75 +1256,262 @@ var CandyDate = /** @class */ (function () {
     //   this.locale = locale;
     //   return this;
     // }
-    CandyDate.prototype.calendarStart = function (options) {
+    // getLocale(): string {
+    //   return this.locale;
+    // }
+    // setLocale(locale: string): CandyDate {
+    //   this.locale = locale;
+    //   return this;
+    // }
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
+    CandyDate.prototype.calendarStart = 
+    // getLocale(): string {
+    //   return this.locale;
+    // }
+    // setLocale(locale: string): CandyDate {
+    //   this.locale = locale;
+    //   return this;
+    // }
+    /**
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
         return new CandyDate(startOfWeek(startOfMonth(this.nativeDate), options));
     };
     // ---------------------------------------------------------------------
     // | Native shortcuts
     // ---------------------------------------------------------------------
-    CandyDate.prototype.getYear = function () {
+    // ---------------------------------------------------------------------
+    // | Native shortcuts
+    // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getYear = 
+    // ---------------------------------------------------------------------
+    // | Native shortcuts
+    // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getFullYear();
     };
-    CandyDate.prototype.getMonth = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getMonth = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getMonth();
     };
-    CandyDate.prototype.getDay = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getDay = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getDay();
     };
-    CandyDate.prototype.getTime = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getTime = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getTime();
     };
-    CandyDate.prototype.getDate = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getDate = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getDate();
     };
-    CandyDate.prototype.getHours = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getHours = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getHours();
     };
-    CandyDate.prototype.getMinutes = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getMinutes = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getMinutes();
     };
-    CandyDate.prototype.getSeconds = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getSeconds = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getSeconds();
     };
-    CandyDate.prototype.getMilliseconds = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.getMilliseconds = /**
+     * @return {?}
+     */
+    function () {
         return this.nativeDate.getMilliseconds();
     };
     // ---------------------------------------------------------------------
     // | New implementing APIs
     // ---------------------------------------------------------------------
-    CandyDate.prototype.clone = function () {
+    // ---------------------------------------------------------------------
+    // | New implementing APIs
+    // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.clone = 
+    // ---------------------------------------------------------------------
+    // | New implementing APIs
+    // ---------------------------------------------------------------------
+    /**
+     * @return {?}
+     */
+    function () {
         return new CandyDate(new Date(this.nativeDate));
     };
-    CandyDate.prototype.setHms = function (hour, minute, second) {
-        return new CandyDate(this.nativeDate.setHours(hour, minute, second));
+    /**
+     * @param {?} hour
+     * @param {?} minute
+     * @param {?} second
+     * @return {?}
+     */
+    CandyDate.prototype.setHms = /**
+     * @param {?} hour
+     * @param {?} minute
+     * @param {?} second
+     * @return {?}
+     */
+    function (hour, minute, second) {
+        /** @type {?} */
+        var date = new Date(this.nativeDate);
+        date.setHours(hour, minute, second);
+        return new CandyDate(date);
     };
-    CandyDate.prototype.setYear = function (year) {
+    /**
+     * @param {?} year
+     * @return {?}
+     */
+    CandyDate.prototype.setYear = /**
+     * @param {?} year
+     * @return {?}
+     */
+    function (year) {
         return new CandyDate(setYear(this.nativeDate, year));
     };
-    CandyDate.prototype.addYears = function (amount) {
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
+    CandyDate.prototype.addYears = /**
+     * @param {?} amount
+     * @return {?}
+     */
+    function (amount) {
         return new CandyDate(addYears(this.nativeDate, amount));
     };
     // NOTE: month starts from 0
     // NOTE: Don't use the native API for month manipulation as it not restrict the date when it overflows, eg. (new Date('2018-7-31')).setMonth(1) will be date of 2018-3-03 instead of 2018-2-28
-    CandyDate.prototype.setMonth = function (month) {
+    // NOTE: month starts from 0
+    // NOTE: Don't use the native API for month manipulation as it not restrict the date when it overflows, eg. (new Date('2018-7-31')).setMonth(1) will be date of 2018-3-03 instead of 2018-2-28
+    /**
+     * @param {?} month
+     * @return {?}
+     */
+    CandyDate.prototype.setMonth = 
+    // NOTE: month starts from 0
+    // NOTE: Don't use the native API for month manipulation as it not restrict the date when it overflows, eg. (new Date('2018-7-31')).setMonth(1) will be date of 2018-3-03 instead of 2018-2-28
+    /**
+     * @param {?} month
+     * @return {?}
+     */
+    function (month) {
         return new CandyDate(setMonth(this.nativeDate, month));
     };
-    CandyDate.prototype.addMonths = function (amount) {
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
+    CandyDate.prototype.addMonths = /**
+     * @param {?} amount
+     * @return {?}
+     */
+    function (amount) {
         return new CandyDate(addMonths(this.nativeDate, amount));
     };
-    CandyDate.prototype.setDay = function (day, options) {
+    /**
+     * @param {?} day
+     * @param {?=} options
+     * @return {?}
+     */
+    CandyDate.prototype.setDay = /**
+     * @param {?} day
+     * @param {?=} options
+     * @return {?}
+     */
+    function (day, options) {
         return new CandyDate(setDay(this.nativeDate, day, options));
     };
-    CandyDate.prototype.setDate = function (amount) {
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
+    CandyDate.prototype.setDate = /**
+     * @param {?} amount
+     * @return {?}
+     */
+    function (amount) {
+        /** @type {?} */
         var date = new Date(this.nativeDate);
         date.setDate(amount);
         return new CandyDate(date);
     };
-    CandyDate.prototype.addDays = function (amount) {
+    /**
+     * @param {?} amount
+     * @return {?}
+     */
+    CandyDate.prototype.addDays = /**
+     * @param {?} amount
+     * @return {?}
+     */
+    function (amount) {
         return this.setDate(this.getDate() + amount);
     };
-    CandyDate.prototype.isSame = function (date, grain) {
+    /**
+     * @param {?} date
+     * @param {?=} grain
+     * @return {?}
+     */
+    CandyDate.prototype.isSame = /**
+     * @param {?} date
+     * @param {?=} grain
+     * @return {?}
+     */
+    function (date, grain) {
         if (grain === void 0) { grain = 'day'; }
+        /** @type {?} */
         var fn;
         switch (grain) {
             case 'year':
@@ -1028,30 +1538,91 @@ var CandyDate = /** @class */ (function () {
         }
         return fn(this.nativeDate, this.toNativeDate(date));
     };
-    CandyDate.prototype.isSameYear = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameYear = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'year');
     };
-    CandyDate.prototype.isSameMonth = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameMonth = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'month');
     };
-    CandyDate.prototype.isSameDay = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameDay = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'day');
     };
-    CandyDate.prototype.isSameHour = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameHour = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'hour');
     };
-    CandyDate.prototype.isSameMinute = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameMinute = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'minute');
     };
-    CandyDate.prototype.isSameSecond = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isSameSecond = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.isSame(date, 'second');
     };
-    CandyDate.prototype.compare = function (date, grain, isBefore) {
+    /**
+     * @param {?} date
+     * @param {?=} grain
+     * @param {?=} isBefore
+     * @return {?}
+     */
+    CandyDate.prototype.compare = /**
+     * @param {?} date
+     * @param {?=} grain
+     * @param {?=} isBefore
+     * @return {?}
+     */
+    function (date, grain, isBefore) {
         if (grain === void 0) { grain = 'day'; }
         if (isBefore === void 0) { isBefore = true; }
         if (date === null) {
             return false;
         }
+        /** @type {?} */
         var fn;
         switch (grain) {
             case 'year':
@@ -1076,59 +1647,197 @@ var CandyDate = /** @class */ (function () {
                 fn = differenceInCalendarDays;
                 break;
         }
-        return isBefore ? fn(this.nativeDate, this.toNativeDate(date)) < 0 : fn(this.nativeDate, this.toNativeDate(date)) > 0;
+        return isBefore
+            ? fn(this.nativeDate, this.toNativeDate(date)) < 0
+            : fn(this.nativeDate, this.toNativeDate(date)) > 0;
     };
-    CandyDate.prototype.isBeforeYear = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeYear = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'year');
     };
-    CandyDate.prototype.isBeforeMonth = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeMonth = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'month');
     };
-    CandyDate.prototype.isBeforeDay = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeDay = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'day');
     };
-    CandyDate.prototype.isBeforeHour = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeHour = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'hour');
     };
-    CandyDate.prototype.isBeforeMinute = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeMinute = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'minute');
     };
-    CandyDate.prototype.isBeforeSecond = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isBeforeSecond = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'second');
     };
     // TODO: isBefore
-    CandyDate.prototype.isAfterYear = function (date) {
+    // TODO: isBefore
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterYear = 
+    // TODO: isBefore
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'year', false);
     };
-    CandyDate.prototype.isAfterMonth = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterMonth = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'month', false);
     };
-    CandyDate.prototype.isAfterDay = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterDay = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'day', false);
     };
-    CandyDate.prototype.isAfterHour = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterHour = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'hour', false);
     };
-    CandyDate.prototype.isAfterMinute = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterMinute = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'minute', false);
     };
-    CandyDate.prototype.isAfterSecond = function (date) {
+    /**
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.isAfterSecond = /**
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return this.compare(date, 'second', false);
     };
     // Equal to today accurate to "day"
-    CandyDate.prototype.isToday = function () {
+    // Equal to today accurate to "day"
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.isToday = 
+    // Equal to today accurate to "day"
+    /**
+     * @return {?}
+     */
+    function () {
         return isToday(this.nativeDate);
     };
-    CandyDate.prototype.isValid = function () {
+    /**
+     * @return {?}
+     */
+    CandyDate.prototype.isValid = /**
+     * @return {?}
+     */
+    function () {
         return isValid(this.nativeDate);
     };
     // tslint:disable-next-line: no-any
-    CandyDate.prototype.toNativeDate = function (date) {
+    // tslint:disable-next-line: no-any
+    /**
+     * @private
+     * @param {?} date
+     * @return {?}
+     */
+    CandyDate.prototype.toNativeDate = 
+    // tslint:disable-next-line: no-any
+    /**
+     * @private
+     * @param {?} date
+     * @return {?}
+     */
+    function (date) {
         return date instanceof CandyDate ? date.nativeDate : date;
     };
     return CandyDate;
 }());
+if (false) {
+    /** @type {?} */
+    CandyDate.prototype.nativeDate;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: time/time.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -1136,6 +1845,7 @@ var CandyDate = /** @class */ (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/** @type {?} */
 var timeUnits = [
     ['Y', 1000 * 60 * 60 * 24 * 365],
     ['M', 1000 * 60 * 60 * 24 * 30],
@@ -1147,13 +1857,16 @@ var timeUnits = [
 ];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: polyfill/request-animation.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -1162,30 +1875,60 @@ var timeUnits = [
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 // tslint:disable:no-any typedef no-invalid-this
+/** @type {?} */
 var availablePrefixes = ['moz', 'ms', 'webkit'];
+/**
+ * @return {?}
+ */
 function requestAnimationFramePolyfill() {
+    /** @type {?} */
     var lastTime = 0;
-    return function (callback) {
+    return (/**
+     * @param {?} callback
+     * @return {?}
+     */
+    function (callback) {
+        /** @type {?} */
         var currTime = new Date().getTime();
+        /** @type {?} */
         var timeToCall = Math.max(0, 16 - (currTime - lastTime));
-        var id = setTimeout(function () {
+        /** @type {?} */
+        var id = setTimeout((/**
+         * @return {?}
+         */
+        function () {
             callback(currTime + timeToCall);
-        }, timeToCall);
+        }), timeToCall);
         lastTime = currTime + timeToCall;
         return id;
-    };
+    });
 }
+/**
+ * @return {?}
+ */
 function getRequestAnimationFrame() {
     if (typeof window === 'undefined') {
-        return function () { return 0; };
+        return (/**
+         * @return {?}
+         */
+        function () { return 0; });
     }
     if (window.requestAnimationFrame) {
         // https://github.com/vuejs/vue/issues/4465
         return window.requestAnimationFrame.bind(window);
     }
-    var prefix = availablePrefixes.filter(function (key) { return key + "RequestAnimationFrame" in window; })[0];
-    return prefix ? window[prefix + "RequestAnimationFrame"] : requestAnimationFramePolyfill();
+    /** @type {?} */
+    var prefix = availablePrefixes.filter((/**
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) { return key + "RequestAnimationFrame" in window; }))[0];
+    return prefix ? ((/** @type {?} */ (window)))[prefix + "RequestAnimationFrame"] : requestAnimationFramePolyfill();
 }
+/**
+ * @param {?} id
+ * @return {?}
+ */
 function cancelRequestAnimationFrame(id) {
     if (typeof window === 'undefined') {
         return null;
@@ -1193,32 +1936,43 @@ function cancelRequestAnimationFrame(id) {
     if (window.cancelAnimationFrame) {
         return window.cancelAnimationFrame(id);
     }
-    var prefix = availablePrefixes.filter(function (key) { return key + "CancelAnimationFrame" in window || key + "CancelRequestAnimationFrame" in window; })[0];
+    /** @type {?} */
+    var prefix = availablePrefixes.filter((/**
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) { return key + "CancelAnimationFrame" in window || key + "CancelRequestAnimationFrame" in window; }))[0];
     return prefix
-        ? (window[prefix + "CancelAnimationFrame"] || window[prefix + "CancelRequestAnimationFrame"])
+        ? (((/** @type {?} */ (window)))[prefix + "CancelAnimationFrame"] || ((/** @type {?} */ (window)))[prefix + "CancelRequestAnimationFrame"])
             // @ts-ignore
             .call(this, id)
         : clearTimeout(id);
 }
+/** @type {?} */
 var reqAnimFrame = getRequestAnimationFrame();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: polyfill/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: scroll/nz-scroll.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @param {?} t
+ * @param {?} b
+ * @param {?} c
+ * @param {?} d
+ * @return {?}
  */
 function easeInOutCubic(t, b, c, d) {
+    /** @type {?} */
     var cc = c - b;
+    /** @type {?} */
     var tt = t / (d / 2);
     if (tt < 1) {
         return (cc / 2) * tt * tt * tt + b;
@@ -1233,18 +1987,41 @@ var NzScrollService = /** @class */ (function () {
         this.doc = doc;
     }
     /** Set the position of the scroll bar of `el`. */
-    NzScrollService.prototype.setScrollTop = function (el, topValue) {
+    /**
+     * Set the position of the scroll bar of `el`.
+     * @param {?} el
+     * @param {?=} topValue
+     * @return {?}
+     */
+    NzScrollService.prototype.setScrollTop = /**
+     * Set the position of the scroll bar of `el`.
+     * @param {?} el
+     * @param {?=} topValue
+     * @return {?}
+     */
+    function (el, topValue) {
         if (topValue === void 0) { topValue = 0; }
         if (el === window) {
             this.doc.body.scrollTop = topValue;
-            this.doc.documentElement.scrollTop = topValue;
+            (/** @type {?} */ (this.doc.documentElement)).scrollTop = topValue;
         }
         else {
-            el.scrollTop = topValue;
+            ((/** @type {?} */ (el))).scrollTop = topValue;
         }
     };
     /** Get position of `el` against window. */
-    NzScrollService.prototype.getOffset = function (el) {
+    /**
+     * Get position of `el` against window.
+     * @param {?} el
+     * @return {?}
+     */
+    NzScrollService.prototype.getOffset = /**
+     * Get position of `el` against window.
+     * @param {?} el
+     * @return {?}
+     */
+    function (el) {
+        /** @type {?} */
         var ret = {
             top: 0,
             left: 0
@@ -1252,11 +2029,13 @@ var NzScrollService = /** @class */ (function () {
         if (!el || !el.getClientRects().length) {
             return ret;
         }
+        /** @type {?} */
         var rect = el.getBoundingClientRect();
         if (rect.width || rect.height) {
-            var doc = el.ownerDocument.documentElement;
-            ret.top = rect.top - doc.clientTop;
-            ret.left = rect.left - doc.clientLeft;
+            /** @type {?} */
+            var doc = (/** @type {?} */ (el.ownerDocument)).documentElement;
+            ret.top = rect.top - (/** @type {?} */ (doc)).clientTop;
+            ret.left = rect.left - (/** @type {?} */ (doc)).clientLeft;
         }
         else {
             ret.top = rect.top;
@@ -1266,16 +2045,35 @@ var NzScrollService = /** @class */ (function () {
     };
     /** Get the position of the scoll bar of `el`. */
     // TODO: remove '| Window' as the fallback already happens here
-    NzScrollService.prototype.getScroll = function (el, top) {
+    /**
+     * Get the position of the scoll bar of `el`.
+     * @param {?=} el
+     * @param {?=} top
+     * @return {?}
+     */
+    // TODO: remove '| Window' as the fallback already happens here
+    NzScrollService.prototype.getScroll = /**
+     * Get the position of the scoll bar of `el`.
+     * @param {?=} el
+     * @param {?=} top
+     * @return {?}
+     */
+    // TODO: remove '| Window' as the fallback already happens here
+    function (el, top) {
         if (top === void 0) { top = true; }
+        /** @type {?} */
         var target = el ? el : window;
+        /** @type {?} */
         var prop = top ? 'pageYOffset' : 'pageXOffset';
+        /** @type {?} */
         var method = top ? 'scrollTop' : 'scrollLeft';
+        /** @type {?} */
         var isWindow = target === window;
         // @ts-ignore
+        /** @type {?} */
         var ret = isWindow ? target[prop] : target[method];
         if (isWindow && typeof ret !== 'number') {
-            ret = this.doc.documentElement[method];
+            ret = (/** @type {?} */ (this.doc.documentElement))[method];
         }
         return ret;
     };
@@ -1287,14 +2085,41 @@ var NzScrollService = /** @class */ (function () {
      * @param easing Transition curve, `easeInOutCubic` by default
      * @param callback callback invoked when transition is done
      */
-    NzScrollService.prototype.scrollTo = function (containerEl, targetTopValue, easing, callback) {
+    /**
+     * Scroll `el` to some position with animation.
+     *
+     * @param {?} containerEl container, `window` by default
+     * @param {?=} targetTopValue Scroll to `top`, 0 by default
+     * @param {?=} easing Transition curve, `easeInOutCubic` by default
+     * @param {?=} callback callback invoked when transition is done
+     * @return {?}
+     */
+    NzScrollService.prototype.scrollTo = /**
+     * Scroll `el` to some position with animation.
+     *
+     * @param {?} containerEl container, `window` by default
+     * @param {?=} targetTopValue Scroll to `top`, 0 by default
+     * @param {?=} easing Transition curve, `easeInOutCubic` by default
+     * @param {?=} callback callback invoked when transition is done
+     * @return {?}
+     */
+    function (containerEl, targetTopValue, easing, callback) {
         var _this = this;
         if (targetTopValue === void 0) { targetTopValue = 0; }
+        /** @type {?} */
         var target = containerEl ? containerEl : window;
+        /** @type {?} */
         var scrollTop = this.getScroll(target);
+        /** @type {?} */
         var startTime = Date.now();
-        var frameFunc = function () {
+        /** @type {?} */
+        var frameFunc = (/**
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var timestamp = Date.now();
+            /** @type {?} */
             var time = timestamp - startTime;
             _this.setScrollTop(target, (easing || easeInOutCubic)(time, scrollTop, targetTopValue, 450));
             if (time < 450) {
@@ -1305,22 +2130,34 @@ var NzScrollService = /** @class */ (function () {
                     callback();
                 }
             }
-        };
+        });
         reqAnimFrame(frameFunc);
     };
-    /** @nocollapse */ NzScrollService.ɵfac = function NzScrollService_Factory(t) { return new (t || NzScrollService)(ɵɵinject(DOCUMENT)); };
-    /** @nocollapse */ NzScrollService.ɵprov = ɵɵdefineInjectable({ token: NzScrollService, factory: NzScrollService.ɵfac });
+    NzScrollService.decorators = [
+        { type: Injectable }
+    ];
+    /** @nocollapse */
+    NzScrollService.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
+    ]; };
     return NzScrollService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzScrollService, [{
-        type: Injectable
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzScrollService.prototype.doc;
+}
+/**
+ * @param {?} doc
+ * @param {?} scrollService
+ * @return {?}
+ */
 function SCROLL_SERVICE_PROVIDER_FACTORY(doc, scrollService) {
     return scrollService || new NzScrollService(doc);
 }
+/** @type {?} */
 var SCROLL_SERVICE_PROVIDER = {
     provide: NzScrollService,
     useFactory: SCROLL_SERVICE_PROVIDER_FACTORY,
@@ -1328,94 +2165,155 @@ var SCROLL_SERVICE_PROVIDER = {
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: scroll/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: services/update-host-class.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzUpdateHostClassService = /** @class */ (function () {
     function NzUpdateHostClassService(rendererFactory2) {
         this.classMap = {};
         this.renderer = rendererFactory2.createRenderer(null, null);
     }
-    NzUpdateHostClassService.prototype.updateHostClass = function (el, classMap) {
+    /**
+     * @param {?} el
+     * @param {?} classMap
+     * @return {?}
+     */
+    NzUpdateHostClassService.prototype.updateHostClass = /**
+     * @param {?} el
+     * @param {?} classMap
+     * @return {?}
+     */
+    function (el, classMap) {
         this.removeClass(el, this.classMap, this.renderer);
         this.classMap = __assign({}, classMap);
         this.addClass(el, this.classMap, this.renderer);
     };
-    NzUpdateHostClassService.prototype.removeClass = function (el, classMap, renderer) {
+    /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
+    NzUpdateHostClassService.prototype.removeClass = /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
+    function (el, classMap, renderer) {
         for (var i in classMap) {
             if (classMap.hasOwnProperty(i)) {
                 renderer.removeClass(el, i);
             }
         }
     };
-    NzUpdateHostClassService.prototype.addClass = function (el, classMap, renderer) {
+    /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
+    NzUpdateHostClassService.prototype.addClass = /**
+     * @private
+     * @param {?} el
+     * @param {?} classMap
+     * @param {?} renderer
+     * @return {?}
+     */
+    function (el, classMap, renderer) {
         for (var i in classMap) {
             if (classMap.hasOwnProperty(i) && classMap[i]) {
                 renderer.addClass(el, i);
             }
         }
     };
-    /** @nocollapse */ NzUpdateHostClassService.ɵfac = function NzUpdateHostClassService_Factory(t) { return new (t || NzUpdateHostClassService)(ɵɵinject(RendererFactory2)); };
-    /** @nocollapse */ NzUpdateHostClassService.ɵprov = ɵɵdefineInjectable({ token: NzUpdateHostClassService, factory: NzUpdateHostClassService.ɵfac });
+    NzUpdateHostClassService.decorators = [
+        { type: Injectable }
+    ];
+    /** @nocollapse */
+    NzUpdateHostClassService.ctorParameters = function () { return [
+        { type: RendererFactory2 }
+    ]; };
     return NzUpdateHostClassService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzUpdateHostClassService, [{
-        type: Injectable
-    }], function () { return [{ type: RendererFactory2 }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzUpdateHostClassService.prototype.classMap;
+    /** @type {?} */
+    NzUpdateHostClassService.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-copy-to-clipboard.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCopyToClipboardServiceModule = /** @class */ (function () {
     function NzCopyToClipboardServiceModule() {
     }
-    /** @nocollapse */ NzCopyToClipboardServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzCopyToClipboardServiceModule });
-    /** @nocollapse */ NzCopyToClipboardServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzCopyToClipboardServiceModule_Factory(t) { return new (t || NzCopyToClipboardServiceModule)(); } });
+    NzCopyToClipboardServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzCopyToClipboardServiceModule;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCopyToClipboardServiceModule, [{
-        type: NgModule
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-copy-to-clipboard.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCopyToClipboardService = /** @class */ (function () {
     // tslint:disable-next-line:no-any
     function NzCopyToClipboardService(document) {
         this.document = document;
     }
-    NzCopyToClipboardService.prototype.copy = function (text) {
+    /**
+     * @param {?} text
+     * @return {?}
+     */
+    NzCopyToClipboardService.prototype.copy = /**
+     * @param {?} text
+     * @return {?}
+     */
+    function (text) {
         var _this = this;
-        return new Promise(function (resolve, reject) {
+        return new Promise((/**
+         * @param {?} resolve
+         * @param {?} reject
+         * @return {?}
+         */
+        function (resolve, reject) {
+            /** @type {?} */
             var copyTextArea = null;
             try {
                 // tslint:disable-next-line no-any
-                copyTextArea = _this.document.createElement('textarea');
-                copyTextArea.style.all = 'unset';
+                copyTextArea = (/** @type {?} */ (_this.document.createElement('textarea')));
+                (/** @type {?} */ (copyTextArea.style)).all = 'unset';
                 copyTextArea.style.position = 'fixed';
                 copyTextArea.style.top = '0';
                 copyTextArea.style.clip = 'rect(0, 0, 0, 0)';
                 copyTextArea.style.whiteSpace = 'pre';
                 copyTextArea.style.webkitUserSelect = 'text';
-                copyTextArea.style.MozUserSelect = 'text';
+                (/** @type {?} */ (copyTextArea.style)).MozUserSelect = 'text';
                 copyTextArea.style.msUserSelect = 'text';
                 copyTextArea.style.userSelect = 'text';
                 _this.document.body.appendChild(copyTextArea);
                 copyTextArea.value = text;
                 copyTextArea.select();
+                /** @type {?} */
                 var successful = _this.document.execCommand('copy');
                 if (!successful) {
                     reject(text);
@@ -1427,29 +2325,50 @@ var NzCopyToClipboardService = /** @class */ (function () {
                     _this.document.body.removeChild(copyTextArea);
                 }
             }
-        });
+        }));
     };
-    /** @nocollapse */ NzCopyToClipboardService.ɵfac = function NzCopyToClipboardService_Factory(t) { return new (t || NzCopyToClipboardService)(ɵɵinject(DOCUMENT)); };
-    /** @nocollapse */ NzCopyToClipboardService.ɵprov = ɵɵdefineInjectable({ token: NzCopyToClipboardService, factory: NzCopyToClipboardService.ɵfac, providedIn: NzCopyToClipboardServiceModule });
+    NzCopyToClipboardService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzCopyToClipboardServiceModule
+                },] }
+    ];
+    /** @nocollapse */
+    NzCopyToClipboardService.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
+    ]; };
+    /** @nocollapse */ NzCopyToClipboardService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzCopyToClipboardService_Factory() { return new NzCopyToClipboardService(ɵɵinject(DOCUMENT)); }, token: NzCopyToClipboardService, providedIn: NzCopyToClipboardServiceModule });
     return NzCopyToClipboardService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCopyToClipboardService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzCopyToClipboardServiceModule
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCopyToClipboardService.prototype.document;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-dom-event.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function Listener() { }
+if (false) {
+    /** @type {?} */
+    Listener.prototype.countOfListeners;
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    Listener.prototype.handler = function (e) { };
+    /**
+     * @return {?}
+     */
+    Listener.prototype.unsubscribe = function () { };
+}
 var NzDomEventService = /** @class */ (function () {
     function NzDomEventService(ngZone, rendererFactory2) {
         this.ngZone = ngZone;
@@ -1458,64 +2377,143 @@ var NzDomEventService = /** @class */ (function () {
         this.domEventListeners = new Map();
         this.renderer = this.rendererFactory2.createRenderer(null, null);
     }
-    NzDomEventService.prototype.registerResizeListener = function () {
+    /**
+     * @return {?}
+     */
+    NzDomEventService.prototype.registerResizeListener = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (!this.domEventListeners.has('resize')) {
             this.domEventListeners.set('resize', {
-                handler: function () {
+                handler: (/**
+                 * @return {?}
+                 */
+                function () {
                     _this.resizeSource.next();
-                },
+                }),
                 countOfListeners: 0
             });
         }
-        var listener = this.domEventListeners.get('resize');
+        /** @type {?} */
+        var listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
         this.tryToStartListener(listener, 'resize');
         return this.resizeSource.pipe(auditTime(16));
     };
-    NzDomEventService.prototype.unregisterResizeListener = function () {
+    /**
+     * @return {?}
+     */
+    NzDomEventService.prototype.unregisterResizeListener = /**
+     * @return {?}
+     */
+    function () {
         if (!this.domEventListeners.has('resize')) {
             return;
         }
-        var listener = this.domEventListeners.get('resize');
+        /** @type {?} */
+        var listener = (/** @type {?} */ (this.domEventListeners.get('resize')));
         this.tryToStopListener(listener);
     };
-    NzDomEventService.prototype.tryToStartListener = function (l, name) {
+    /**
+     * @private
+     * @param {?} l
+     * @param {?} name
+     * @return {?}
+     */
+    NzDomEventService.prototype.tryToStartListener = /**
+     * @private
+     * @param {?} l
+     * @param {?} name
+     * @return {?}
+     */
+    function (l, name) {
         var _this = this;
         l.countOfListeners += 1;
-        this.ngZone.runOutsideAngular(function () {
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () {
             if (l.countOfListeners === 1) {
                 l.unsubscribe = _this.renderer.listen('window', name, l.handler);
             }
-        });
+        }));
     };
-    NzDomEventService.prototype.tryToStopListener = function (l) {
+    /**
+     * @private
+     * @param {?} l
+     * @return {?}
+     */
+    NzDomEventService.prototype.tryToStopListener = /**
+     * @private
+     * @param {?} l
+     * @return {?}
+     */
+    function (l) {
         l.countOfListeners -= 1;
         if (l.countOfListeners === 0) {
-            l.unsubscribe();
+            (/** @type {?} */ (l.unsubscribe))();
             l.unsubscribe = undefined;
         }
     };
-    /** @nocollapse */ NzDomEventService.ɵfac = function NzDomEventService_Factory(t) { return new (t || NzDomEventService)(ɵɵinject(NgZone), ɵɵinject(RendererFactory2)); };
-    /** @nocollapse */ NzDomEventService.ɵprov = ɵɵdefineInjectable({ token: NzDomEventService, factory: NzDomEventService.ɵfac, providedIn: 'root' });
+    NzDomEventService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    /** @nocollapse */
+    NzDomEventService.ctorParameters = function () { return [
+        { type: NgZone },
+        { type: RendererFactory2 }
+    ]; };
+    /** @nocollapse */ NzDomEventService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDomEventService_Factory() { return new NzDomEventService(ɵɵinject(NgZone), ɵɵinject(RendererFactory2)); }, token: NzDomEventService, providedIn: "root" });
     return NzDomEventService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzDomEventService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: NgZone }, { type: RendererFactory2 }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.resizeSource;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.domEventListeners;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.renderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDomEventService.prototype.rendererFactory2;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/nz-singleton.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function SingletonRegistryItem() { }
+if (false) {
+    /** @type {?} */
+    SingletonRegistryItem.prototype.target;
+}
 /**
  * When running in test, singletons should not be destroyed. So we keep references of singletons
  * in this global variable.
+ * @type {?}
  */
 var testSingleRegistry = new Map();
 /**
@@ -1533,53 +2531,108 @@ var NzSingletonService = /** @class */ (function () {
         this._singletonRegistry = new Map();
     }
     Object.defineProperty(NzSingletonService.prototype, "singletonRegistry", {
-        get: function () {
+        get: /**
+         * @private
+         * @return {?}
+         */
+        function () {
             return environment.isTestMode ? testSingleRegistry : this._singletonRegistry;
         },
         enumerable: true,
         configurable: true
     });
-    NzSingletonService.prototype.registerSingletonWithKey = function (key, target) {
+    /**
+     * @param {?} key
+     * @param {?} target
+     * @return {?}
+     */
+    NzSingletonService.prototype.registerSingletonWithKey = /**
+     * @param {?} key
+     * @param {?} target
+     * @return {?}
+     */
+    function (key, target) {
+        /** @type {?} */
         var alreadyHave = this.singletonRegistry.has(key);
-        var item = alreadyHave ? this.singletonRegistry.get(key) : this.withNewTarget(target);
+        /** @type {?} */
+        var item = alreadyHave ? (/** @type {?} */ (this.singletonRegistry.get(key))) : this.withNewTarget(target);
         if (!alreadyHave) {
             this.singletonRegistry.set(key, item);
         }
     };
-    NzSingletonService.prototype.getSingletonWithKey = function (key) {
-        return this.singletonRegistry.has(key) ? this.singletonRegistry.get(key).target : null;
+    /**
+     * @template T
+     * @param {?} key
+     * @return {?}
+     */
+    NzSingletonService.prototype.getSingletonWithKey = /**
+     * @template T
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) {
+        return this.singletonRegistry.has(key) ? ((/** @type {?} */ ((/** @type {?} */ (this.singletonRegistry.get(key))).target))) : null;
     };
-    NzSingletonService.prototype.withNewTarget = function (target) {
+    /**
+     * @private
+     * @param {?} target
+     * @return {?}
+     */
+    NzSingletonService.prototype.withNewTarget = /**
+     * @private
+     * @param {?} target
+     * @return {?}
+     */
+    function (target) {
         return {
             target: target
         };
     };
-    /** @nocollapse */ NzSingletonService.ɵfac = function NzSingletonService_Factory(t) { return new (t || NzSingletonService)(); };
-    /** @nocollapse */ NzSingletonService.ɵprov = ɵɵdefineInjectable({ token: NzSingletonService, factory: NzSingletonService.ɵfac, providedIn: 'root' });
+    NzSingletonService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    /** @nocollapse */ NzSingletonService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzSingletonService_Factory() { return new NzSingletonService(); }, token: NzSingletonService, providedIn: "root" });
     return NzSingletonService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSingletonService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], null, null); })();
+if (false) {
+    /**
+     * This registry is used to register singleton in dev mode.
+     * So that singletons get destroyed when hot module reload happens.
+     *
+     * This works in prod mode too but with no specific effect.
+     * @type {?}
+     * @private
+     */
+    NzSingletonService.prototype._singletonRegistry;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/check.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
  */
 function isNotNil(value) {
     return typeof value !== 'undefined' && value !== null;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isNil(value) {
     return typeof value === 'undefined' || value === null;
 }
 /**
  * Examine if two objects are shallowly equaled.
+ * @param {?=} objA
+ * @param {?=} objB
+ * @return {?}
  */
 function shallowEqual(objA, objB) {
     if (objA === objB) {
@@ -1588,14 +2641,18 @@ function shallowEqual(objA, objB) {
     if (typeof objA !== 'object' || !objA || typeof objB !== 'object' || !objB) {
         return false;
     }
+    /** @type {?} */
     var keysA = Object.keys(objA);
+    /** @type {?} */
     var keysB = Object.keys(objB);
     if (keysA.length !== keysB.length) {
         return false;
     }
+    /** @type {?} */
     var bHasOwnProperty = Object.prototype.hasOwnProperty.bind(objB);
     // tslint:disable-next-line:prefer-for-of
     for (var idx = 0; idx < keysA.length; idx++) {
+        /** @type {?} */
         var key = keysA[idx];
         if (!bHasOwnProperty(key)) {
             return false;
@@ -1606,10 +2663,19 @@ function shallowEqual(objA, objB) {
     }
     return true;
 }
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isInteger(value) {
     return typeof value === 'number' && isFinite(value) && Math.floor(value) === value;
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function isEmpty(element) {
+    /** @type {?} */
     var nodes = element.childNodes;
     for (var i = 0; i < nodes.length; i++) {
         if (filterNotEmptyNode(nodes.item(i))) {
@@ -1618,13 +2684,17 @@ function isEmpty(element) {
     }
     return true;
 }
+/**
+ * @param {?} node
+ * @return {?}
+ */
 function filterNotEmptyNode(node) {
     if (node) {
-        if (node.nodeType === 1 && node.outerHTML.toString().trim().length !== 0) {
+        if (node.nodeType === 1 && ((/** @type {?} */ (node))).outerHTML.toString().trim().length !== 0) {
             // ELEMENT_NODE
             return node;
         }
-        else if (node.nodeType === 3 && node.textContent.toString().trim().length !== 0) {
+        else if (node.nodeType === 3 && (/** @type {?} */ (node.textContent)).toString().trim().length !== 0) {
             // TEXT_NODE
             return node;
         }
@@ -1633,46 +2703,70 @@ function filterNotEmptyNode(node) {
     return null;
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isNonEmptyString(value) {
     return typeof value === 'string' && value !== '';
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isTemplateRef(value) {
     return value instanceof TemplateRef;
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function isComponent(value) {
     return value instanceof Type;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/dom.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Silent an event by stopping and preventing it.
+ * @param {?} e
+ * @return {?}
  */
 function silentEvent(e) {
     e.stopPropagation();
     e.preventDefault();
 }
+/**
+ * @param {?} elem
+ * @return {?}
+ */
 function getElementOffset(elem) {
     if (!elem.getClientRects().length) {
         return { top: 0, left: 0 };
     }
+    /** @type {?} */
     var rect = elem.getBoundingClientRect();
-    var win = elem.ownerDocument.defaultView;
+    /** @type {?} */
+    var win = (/** @type {?} */ (elem.ownerDocument)).defaultView;
     return {
-        top: rect.top + win.pageYOffset,
-        left: rect.left + win.pageXOffset
+        top: rect.top + (/** @type {?} */ (win)).pageYOffset,
+        left: rect.left + (/** @type {?} */ (win)).pageXOffset
     };
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function findFirstNotEmptyNode(element) {
+    /** @type {?} */
     var children = element.childNodes;
     for (var i = 0; i < children.length; i++) {
+        /** @type {?} */
         var node = children.item(i);
         if (filterNotEmptyNode(node)) {
             return node;
@@ -1680,9 +2774,15 @@ function findFirstNotEmptyNode(element) {
     }
     return null;
 }
+/**
+ * @param {?} element
+ * @return {?}
+ */
 function findLastNotEmptyNode(element) {
+    /** @type {?} */
     var children = element.childNodes;
     for (var i = children.length - 1; i >= 0; i--) {
+        /** @type {?} */
         var node = children.item(i);
         if (filterNotEmptyNode(node)) {
             return node;
@@ -1690,12 +2790,24 @@ function findLastNotEmptyNode(element) {
     }
     return null;
 }
+/**
+ * @param {?} parent
+ * @return {?}
+ */
 function reverseChildNodes(parent) {
+    /** @type {?} */
     var children = parent.childNodes;
+    /** @type {?} */
     var length = children.length;
     if (length) {
+        /** @type {?} */
         var nodes_1 = [];
-        children.forEach(function (node, i) { return (nodes_1[i] = node); });
+        children.forEach((/**
+         * @param {?} node
+         * @param {?} i
+         * @return {?}
+         */
+        function (node, i) { return (nodes_1[i] = node); }));
         while (length--) {
             parent.appendChild(nodes_1[length]);
         }
@@ -1703,22 +2815,81 @@ function reverseChildNodes(parent) {
 }
 /**
  * Investigate if an event is a `TouchEvent`.
+ * @param {?} event
+ * @return {?}
  */
 function isTouchEvent(event) {
     return event.type.startsWith('touch');
 }
+/**
+ * @param {?} event
+ * @return {?}
+ */
 function getEventPosition(event) {
     return isTouchEvent(event) ? event.touches[0] || event.changedTouches[0] : event;
 }
+/**
+ * @record
+ */
+function MouseTouchObserverConfig() { }
+if (false) {
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.end;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.move;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.pluckKey;
+    /** @type {?} */
+    MouseTouchObserverConfig.prototype.start;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.end$;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.moveResolved$;
+    /** @type {?|undefined} */
+    MouseTouchObserverConfig.prototype.startPlucked$;
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    MouseTouchObserverConfig.prototype.filter = function (e) { };
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/drag/nz-drag.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @record
+ */
+function Point() { }
+if (false) {
+    /** @type {?} */
+    Point.prototype.x;
+    /** @type {?} */
+    Point.prototype.y;
+}
+/**
+ * @record
+ */
+function HandlerItem() { }
+if (false) {
+    /**
+     * @param {?} e
+     * @return {?}
+     */
+    HandlerItem.prototype.handler = function (e) { };
+    /**
+     * @return {?}
+     */
+    HandlerItem.prototype.teardown = function () { };
+}
+/**
+ * @param {?} event
+ * @return {?}
  */
 function getPagePosition(event) {
+    /** @type {?} */
     var e = getEventPosition(event);
     return {
         x: e.pageX,
@@ -1736,7 +2907,15 @@ var NzDragService = /** @class */ (function () {
         this.handleRegistry = new Set();
         this.renderer = rendererFactory2.createRenderer(null, null);
     }
-    NzDragService.prototype.requestDraggingSequence = function (event) {
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    NzDragService.prototype.requestDraggingSequence = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
         var _this = this;
         if (!this.handleRegistry.size) {
             this.registerDraggingHandler(isTouchEvent(event));
@@ -1747,78 +2926,151 @@ var NzDragService = /** @class */ (function () {
         }
         this.currentStartingPoint = getPagePosition(event);
         this.currentDraggingSequence = new Subject();
-        return this.currentDraggingSequence.pipe(map(function (e) {
+        return this.currentDraggingSequence.pipe(map((/**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) {
             return {
-                x: e.pageX - _this.currentStartingPoint.x,
-                y: e.pageY - _this.currentStartingPoint.y
+                x: e.pageX - (/** @type {?} */ (_this.currentStartingPoint)).x,
+                y: e.pageY - (/** @type {?} */ (_this.currentStartingPoint)).y
             };
-        }), filter(function (e) { return Math.abs(e.x) > _this.draggingThreshold || Math.abs(e.y) > _this.draggingThreshold; }), finalize(function () { return _this.teardownDraggingSequence(); }));
+        })), filter((/**
+         * @param {?} e
+         * @return {?}
+         */
+        function (e) { return Math.abs(e.x) > _this.draggingThreshold || Math.abs(e.y) > _this.draggingThreshold; })), finalize((/**
+         * @return {?}
+         */
+        function () { return _this.teardownDraggingSequence(); })));
     };
-    NzDragService.prototype.registerDraggingHandler = function (isTouch) {
+    /**
+     * @private
+     * @param {?} isTouch
+     * @return {?}
+     */
+    NzDragService.prototype.registerDraggingHandler = /**
+     * @private
+     * @param {?} isTouch
+     * @return {?}
+     */
+    function (isTouch) {
         var _this = this;
         if (isTouch) {
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'touchmove', function (e) {
+                teardown: this.renderer.listen('document', 'touchmove', (/**
+                 * @param {?} e
+                 * @return {?}
+                 */
+                function (e) {
                     if (_this.currentDraggingSequence) {
                         _this.currentDraggingSequence.next(e.touches[0] || e.changedTouches[0]);
                     }
-                })
+                }))
             });
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'touchend', function () {
+                teardown: this.renderer.listen('document', 'touchend', (/**
+                 * @return {?}
+                 */
+                function () {
                     if (_this.currentDraggingSequence) {
                         _this.currentDraggingSequence.complete();
                     }
-                })
+                }))
             });
         }
         else {
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'mousemove', function (e) {
+                teardown: this.renderer.listen('document', 'mousemove', (/**
+                 * @param {?} e
+                 * @return {?}
+                 */
+                function (e) {
                     if (_this.currentDraggingSequence) {
                         _this.currentDraggingSequence.next(e);
                     }
-                })
+                }))
             });
             this.handleRegistry.add({
-                teardown: this.renderer.listen('document', 'mouseup', function () {
+                teardown: this.renderer.listen('document', 'mouseup', (/**
+                 * @return {?}
+                 */
+                function () {
                     if (_this.currentDraggingSequence) {
                         _this.currentDraggingSequence.complete();
                     }
-                })
+                }))
             });
         }
     };
-    NzDragService.prototype.teardownDraggingSequence = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzDragService.prototype.teardownDraggingSequence = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         this.currentDraggingSequence = null;
     };
-    /** @nocollapse */ NzDragService.ɵfac = function NzDragService_Factory(t) { return new (t || NzDragService)(ɵɵinject(RendererFactory2)); };
-    /** @nocollapse */ NzDragService.ɵprov = ɵɵdefineInjectable({ token: NzDragService, factory: NzDragService.ɵfac, providedIn: 'root' });
+    NzDragService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    /** @nocollapse */
+    NzDragService.ctorParameters = function () { return [
+        { type: RendererFactory2 }
+    ]; };
+    /** @nocollapse */ NzDragService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDragService_Factory() { return new NzDragService(ɵɵinject(RendererFactory2)); }, token: NzDragService, providedIn: "root" });
     return NzDragService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzDragService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: RendererFactory2 }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.draggingThreshold;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.currentDraggingSequence;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.currentStartingPoint;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.handleRegistry;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzDragService.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/drag/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: services/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/event-objects.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1826,26 +3078,46 @@ var NzDragService = /** @class */ (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/** Creates a browser MouseEvent with the specified options. */
+/**
+ * Creates a browser MouseEvent with the specified options.
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @param {?=} button
+ * @return {?}
+ */
 function createMouseEvent(type, x, y, button) {
     if (x === void 0) { x = 0; }
     if (y === void 0) { y = 0; }
     if (button === void 0) { button = 0; }
+    /** @type {?} */
     var event = document.createEvent('MouseEvent');
     event.initMouseEvent(type, true /* canBubble */, false /* cancelable */, window /* view */, 0 /* detail */, x /* screenX */, y /* screenY */, x /* clientX */, y /* clientY */, false /* ctrlKey */, false /* altKey */, false /* shiftKey */, false /* metaKey */, button /* button */, null /* relatedTarget */);
     // `initMouseEvent` doesn't allow us to pass the `buttons` and
     // defaults it to 0 which looks like a fake event.
-    Object.defineProperty(event, 'buttons', { get: function () { return 1; } });
+    Object.defineProperty(event, 'buttons', { get: (/**
+         * @return {?}
+         */
+        function () { return 1; }) });
     return event;
 }
-/** Creates a browser TouchEvent with the specified pointer coordinates. */
+/**
+ * Creates a browser TouchEvent with the specified pointer coordinates.
+ * @param {?} type
+ * @param {?=} pageX
+ * @param {?=} pageY
+ * @return {?}
+ */
 function createTouchEvent(type, pageX, pageY) {
     if (pageX === void 0) { pageX = 0; }
     if (pageY === void 0) { pageY = 0; }
     // In favor of creating events that work for most of the browsers, the event is created
     // as a basic UI Event. The necessary details for the event will be set manually.
-    var event = new UIEvent(type, { detail: 0, view: window });
+    /** @type {?} */
+    var event = document.createEvent('UIEvent');
+    /** @type {?} */
     var touchDetails = { pageX: pageX, pageY: pageY, clientX: pageX, clientY: pageY };
+    event.initUIEvent(type, true, true, window, 0);
     // Most of the browsers don't have a "initTouchEvent" method that can be used to define
     // the touch details.
     Object.defineProperties(event, {
@@ -1855,10 +3127,19 @@ function createTouchEvent(type, pageX, pageY) {
     });
     return event;
 }
-/** Dispatches a keydown event from an element. */
+/**
+ * Dispatches a keydown event from an element.
+ * @param {?} type
+ * @param {?} keyCode
+ * @param {?=} target
+ * @param {?=} key
+ * @return {?}
+ */
 function createKeyboardEvent(type, keyCode, target, key) {
     // tslint:disable-next-line:no-any
-    var event = document.createEvent('KeyboardEvent');
+    /** @type {?} */
+    var event = (/** @type {?} */ (document.createEvent('KeyboardEvent')));
+    /** @type {?} */
     var originalPreventDefault = event.preventDefault;
     // Firefox does not support `initKeyboardEvent`, but supports `initKeyEvent`.
     if (event.initKeyEvent) {
@@ -1870,74 +3151,126 @@ function createKeyboardEvent(type, keyCode, target, key) {
     // Webkit Browsers don't set the keyCode when calling the init function.
     // See related bug https://bugs.webkit.org/show_bug.cgi?id=16735
     Object.defineProperties(event, {
-        keyCode: { get: function () { return keyCode; } },
-        key: { get: function () { return key; } },
-        target: { get: function () { return target; } }
+        keyCode: { get: (/**
+             * @return {?}
+             */
+            function () { return keyCode; }) },
+        key: { get: (/**
+             * @return {?}
+             */
+            function () { return key; }) },
+        target: { get: (/**
+             * @return {?}
+             */
+            function () { return target; }) }
     });
     // IE won't set `defaultPrevented` on synthetic events so we need to do it manually.
     // tslint:disable-next-line:typedef
-    event.preventDefault = function () {
-        Object.defineProperty(event, 'defaultPrevented', { get: function () { return true; }, configurable: true });
+    event.preventDefault = (/**
+     * @return {?}
+     */
+    function () {
+        Object.defineProperty(event, 'defaultPrevented', { get: (/**
+             * @return {?}
+             */
+            function () { return true; }) });
         // tslint:disable-next-line:no-invalid-this
         return originalPreventDefault.apply(this, arguments);
-    };
+    });
     return event;
 }
-/** Creates a fake event object with any desired event type. */
+/**
+ * Creates a fake event object with any desired event type.
+ * @param {?} type
+ * @param {?=} canBubble
+ * @param {?=} cancelable
+ * @return {?}
+ */
 function createFakeEvent(type, canBubble, cancelable) {
     if (canBubble === void 0) { canBubble = true; }
     if (cancelable === void 0) { cancelable = true; }
+    /** @type {?} */
     var event = document.createEvent('Event');
     event.initEvent(type, canBubble, cancelable);
     return event;
 }
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/dispatch-events.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-/** Utility to dispatch any event on a Node. */
+/**
+ * Utility to dispatch any event on a Node.
+ * @param {?} node
+ * @param {?} event
+ * @return {?}
+ */
 function dispatchEvent(node, event) {
     node.dispatchEvent(event);
     return event;
 }
-/** Shorthand to dispatch a fake event on a specified node. */
+/**
+ * Shorthand to dispatch a fake event on a specified node.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} canBubble
+ * @return {?}
+ */
 function dispatchFakeEvent(node, type, canBubble) {
     return dispatchEvent(node, createFakeEvent(type, canBubble));
 }
-/** Shorthand to dispatch a keyboard event with a specified key code. */
+/**
+ * Shorthand to dispatch a keyboard event with a specified key code.
+ * @param {?} node
+ * @param {?} type
+ * @param {?} keyCode
+ * @param {?=} target
+ * @return {?}
+ */
 function dispatchKeyboardEvent(node, type, keyCode, target) {
-    return dispatchEvent(node, createKeyboardEvent(type, keyCode, target));
+    return (/** @type {?} */ (dispatchEvent(node, createKeyboardEvent(type, keyCode, target))));
 }
-/** Shorthand to dispatch a mouse event on the specified coordinates. */
+/**
+ * Shorthand to dispatch a mouse event on the specified coordinates.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @param {?=} event
+ * @return {?}
+ */
 function dispatchMouseEvent(node, type, x, y, event) {
     if (x === void 0) { x = 0; }
     if (y === void 0) { y = 0; }
     if (event === void 0) { event = createMouseEvent(type, x, y); }
-    return dispatchEvent(node, event);
+    return (/** @type {?} */ (dispatchEvent(node, event)));
 }
-/** Shorthand to dispatch a touch event on the specified coordinates. */
+/**
+ * Shorthand to dispatch a touch event on the specified coordinates.
+ * @param {?} node
+ * @param {?} type
+ * @param {?=} x
+ * @param {?=} y
+ * @return {?}
+ */
 function dispatchTouchEvent(node, type, x, y) {
     if (x === void 0) { x = 0; }
     if (y === void 0) { y = 0; }
-    return dispatchEvent(node, createTouchEvent(type, x, y));
+    return (/** @type {?} */ (dispatchEvent(node, createTouchEvent(type, x, y))));
 }
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/type-in-element.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
  * Focuses an input, sets its value and dispatches
  * the `input` event, simulating the user typing.
- * @param value Value to be set on the input.
- * @param element Element onto which to set the value.
+ * @param {?} value Value to be set on the input.
+ * @param {?} element Element onto which to set the value.
+ * @return {?}
  */
 function typeInElement(value, element) {
     element.focus();
@@ -1945,6 +3278,11 @@ function typeInElement(value, element) {
     dispatchFakeEvent(element, 'input');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/wrapped-error-message.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1955,12 +3293,20 @@ function typeInElement(value, element) {
 /**
  * Gets a RegExp used to detect an angular wrapped error message.
  * See https://github.com/angular/angular/issues/8348
+ * @param {?} e
+ * @return {?}
  */
 function wrappedErrorMessage(e) {
+    /** @type {?} */
     var escapedMessage = e.message.replace(/[|\\{}()[\]^$+*?.]/g, '\\$&');
     return new RegExp(escapedMessage);
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: testing/fake-viewport-ruler.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Google LLC All Rights Reserved.
@@ -1968,11 +3314,22 @@ function wrappedErrorMessage(e) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://angular.io/license
  */
-/** @docs-private */
-var FakeViewportRuler = /** @class */ (function () {
+/**
+ * \@docs-private
+ */
+var  /**
+ * \@docs-private
+ */
+FakeViewportRuler = /** @class */ (function () {
     function FakeViewportRuler() {
     }
-    FakeViewportRuler.prototype.getViewportRect = function () {
+    /**
+     * @return {?}
+     */
+    FakeViewportRuler.prototype.getViewportRect = /**
+     * @return {?}
+     */
+    function () {
         return {
             left: 0,
             top: 0,
@@ -1982,21 +3339,38 @@ var FakeViewportRuler = /** @class */ (function () {
             right: 1014
         };
     };
-    FakeViewportRuler.prototype.getViewportSize = function () {
+    /**
+     * @return {?}
+     */
+    FakeViewportRuler.prototype.getViewportSize = /**
+     * @return {?}
+     */
+    function () {
         return { width: 1014, height: 686 };
     };
-    FakeViewportRuler.prototype.getViewportScrollPosition = function () {
+    /**
+     * @return {?}
+     */
+    FakeViewportRuler.prototype.getViewportScrollPosition = /**
+     * @return {?}
+     */
+    function () {
         return { top: 0, left: 0 };
     };
     return FakeViewportRuler;
 }());
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: testing/mock-ng-zone.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * Mock synchronous NgZone implementation that can be used
  * to flush out `onStable` subscriptions in tests.
  *
  * via: https://github.com/angular/angular/blob/master/packages/core/testing/src/ng_zone_mock.ts
- * @docs-private
+ * \@docs-private
  */
 var MockNgZone = /** @class */ (function (_super) {
     __extends(MockNgZone, _super);
@@ -2005,38 +3379,89 @@ var MockNgZone = /** @class */ (function (_super) {
         _this.onStable = new EventEmitter(false);
         return _this;
     }
-    MockNgZone.prototype.run = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    MockNgZone.prototype.run = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         return fn();
     };
-    MockNgZone.prototype.runOutsideAngular = function (fn) {
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    MockNgZone.prototype.runOutsideAngular = /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         return fn();
     };
-    MockNgZone.prototype.simulateZoneExit = function () {
+    /**
+     * @return {?}
+     */
+    MockNgZone.prototype.simulateZoneExit = /**
+     * @return {?}
+     */
+    function () {
         this.onStable.emit(null);
     };
-    /** @nocollapse */ MockNgZone.ɵfac = function MockNgZone_Factory(t) { return new (t || MockNgZone)(); };
-    /** @nocollapse */ MockNgZone.ɵprov = ɵɵdefineInjectable({ token: MockNgZone, factory: MockNgZone.ɵfac });
+    MockNgZone.decorators = [
+        { type: Injectable }
+    ];
+    /** @nocollapse */
+    MockNgZone.ctorParameters = function () { return []; };
     return MockNgZone;
 }(NgZone));
-/*@__PURE__*/ (function () { ɵsetClassMetadata(MockNgZone, [{
-        type: Injectable
-    }], function () { return []; }, null); })();
+if (false) {
+    /** @type {?} */
+    MockNgZone.prototype.onStable;
+}
 
 /**
- * @license
- * Copyright Google LLC All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://angular.io/license
+ * @fileoverview added by tsickle
+ * Generated from: testing/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base-node.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzTreeNodeOptions() { }
+if (false) {
+    /** @type {?} */
+    NzTreeNodeOptions.prototype.title;
+    /** @type {?} */
+    NzTreeNodeOptions.prototype.key;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.icon;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.isLeaf;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.checked;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.selected;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.selectable;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.disabled;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.disableCheckbox;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.expanded;
+    /** @type {?|undefined} */
+    NzTreeNodeOptions.prototype.children;
+    /* Skipping unhandled member: [key: string]: any;*/
+}
 var NzTreeNode = /** @class */ (function () {
     function NzTreeNode(option, parent, service) {
         var _this = this;
@@ -2074,17 +3499,30 @@ var NzTreeNode = /** @class */ (function () {
             this.level = 0;
         }
         if (typeof option.children !== 'undefined' && option.children !== null) {
-            option.children.forEach(function (nodeOptions) {
+            option.children.forEach((/**
+             * @param {?} nodeOptions
+             * @return {?}
+             */
+            function (nodeOptions) {
+                /** @type {?} */
                 var s = _this.treeService;
-                if (s && !s.isCheckStrictly && option.checked && !option.disabled && !nodeOptions.disabled && !nodeOptions.disableCheckbox) {
+                if (s &&
+                    !s.isCheckStrictly &&
+                    option.checked &&
+                    !option.disabled &&
+                    !nodeOptions.disabled &&
+                    !nodeOptions.disableCheckbox) {
                     nodeOptions.checked = option.checked;
                 }
                 _this._children.push(new NzTreeNode(nodeOptions, _this));
-            });
+            }));
         }
     }
     Object.defineProperty(NzTreeNode.prototype, "treeService", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this.service || (this.parentNode && this.parentNode.treeService);
         },
         enumerable: true,
@@ -2096,10 +3534,20 @@ var NzTreeNode = /** @class */ (function () {
          * get
          * set
          */
-        get: function () {
+        get: /**
+         * auto generate
+         * get
+         * set
+         * @return {?}
+         */
+        function () {
             return this._title;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._title = value;
             this.update();
         },
@@ -2107,10 +3555,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "icon", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._icon;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._icon = value;
             this.update();
         },
@@ -2118,10 +3573,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "children", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._children;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._children = value;
             this.update();
         },
@@ -2129,10 +3591,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isLeaf", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isLeaf;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isLeaf = value;
             this.update();
         },
@@ -2140,10 +3609,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isChecked", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isChecked;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isChecked = value;
             this._isAllChecked = value;
             this.origin.checked = value;
@@ -2153,13 +3629,21 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isAllChecked", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isAllChecked;
         },
         /**
          * @deprecated Maybe removed in next major version, use `isChecked` instead.
          */
-        set: function (value) {
+        set: /**
+         * @deprecated Maybe removed in next major version, use `isChecked` instead.
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             warnDeprecation("'isAllChecked' is going to be removed in 9.0.0. Please use 'isChecked' instead.");
             this._isAllChecked = value;
         },
@@ -2167,10 +3651,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isHalfChecked", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isHalfChecked;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isHalfChecked = value;
             this.afterValueChange('isHalfChecked');
         },
@@ -2178,10 +3669,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isSelectable", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isSelectable;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isSelectable = value;
             this.update();
         },
@@ -2189,10 +3687,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isDisabled", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isDisabled;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isDisabled = value;
             this.update();
         },
@@ -2200,10 +3705,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isDisableCheckbox", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isDisableCheckbox;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isDisableCheckbox = value;
             this.update();
         },
@@ -2211,10 +3723,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isExpanded", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isExpanded;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isExpanded = value;
             this.origin.expanded = value;
             this.afterValueChange('isExpanded');
@@ -2223,10 +3742,17 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isSelected", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isSelected;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isSelected = value;
             this.origin.selected = value;
             this.afterValueChange('isSelected');
@@ -2235,17 +3761,34 @@ var NzTreeNode = /** @class */ (function () {
         configurable: true
     });
     Object.defineProperty(NzTreeNode.prototype, "isLoading", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this._isLoading;
         },
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this._isLoading = value;
             this.update();
         },
         enumerable: true,
         configurable: true
     });
-    NzTreeNode.prototype.setSyncChecked = function (checked, halfChecked) {
+    /**
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
+     */
+    NzTreeNode.prototype.setSyncChecked = /**
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
+     */
+    function (checked, halfChecked) {
         if (checked === void 0) { checked = false; }
         if (halfChecked === void 0) { halfChecked = false; }
         this.setChecked(checked, halfChecked);
@@ -2256,7 +3799,19 @@ var NzTreeNode = /** @class */ (function () {
     /**
      * @deprecated Maybe removed in next major version, use `isChecked` instead.
      */
-    NzTreeNode.prototype.setChecked = function (checked, halfChecked) {
+    /**
+     * @deprecated Maybe removed in next major version, use `isChecked` instead.
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
+     */
+    NzTreeNode.prototype.setChecked = /**
+     * @deprecated Maybe removed in next major version, use `isChecked` instead.
+     * @param {?=} checked
+     * @param {?=} halfChecked
+     * @return {?}
+     */
+    function (checked, halfChecked) {
         if (checked === void 0) { checked = false; }
         if (halfChecked === void 0) { halfChecked = false; }
         warnDeprecation("'setChecked' is going to be removed in 9.0.0. Please use 'isChecked' instead.");
@@ -2268,43 +3823,103 @@ var NzTreeNode = /** @class */ (function () {
     /**
      * @deprecated Maybe removed in next major version, use `isExpanded` instead.
      */
-    NzTreeNode.prototype.setExpanded = function (value) {
+    /**
+     * @deprecated Maybe removed in next major version, use `isExpanded` instead.
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeNode.prototype.setExpanded = /**
+     * @deprecated Maybe removed in next major version, use `isExpanded` instead.
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         warnDeprecation("'setExpanded' is going to be removed in 9.0.0. Please use 'isExpanded' instead.");
         this.isExpanded = value;
     };
     /**
      * @deprecated Maybe removed in next major version, use `isSelected` instead.
      */
-    NzTreeNode.prototype.setSelected = function (value) {
+    /**
+     * @deprecated Maybe removed in next major version, use `isSelected` instead.
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeNode.prototype.setSelected = /**
+     * @deprecated Maybe removed in next major version, use `isSelected` instead.
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         warnDeprecation("'setSelected' is going to be removed in 9.0.0. Please use 'isExpanded' isSelected.");
         if (this.isDisabled) {
             return;
         }
         this.isSelected = value;
     };
-    NzTreeNode.prototype.getParentNode = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeNode.prototype.getParentNode = /**
+     * @return {?}
+     */
+    function () {
         return this.parentNode;
     };
-    NzTreeNode.prototype.getChildren = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeNode.prototype.getChildren = /**
+     * @return {?}
+     */
+    function () {
         return this.children;
     };
     /**
      * Support appending child nodes by position. Leaf node cannot be appended.
      */
     // tslint:disable-next-line:no-any
-    NzTreeNode.prototype.addChildren = function (children, childPos) {
+    /**
+     * Support appending child nodes by position. Leaf node cannot be appended.
+     * @param {?} children
+     * @param {?=} childPos
+     * @return {?}
+     */
+    // tslint:disable-next-line:no-any
+    NzTreeNode.prototype.addChildren = /**
+     * Support appending child nodes by position. Leaf node cannot be appended.
+     * @param {?} children
+     * @param {?=} childPos
+     * @return {?}
+     */
+    // tslint:disable-next-line:no-any
+    function (children, childPos) {
         var _this = this;
         if (childPos === void 0) { childPos = -1; }
         if (!this.isLeaf) {
-            children.forEach(function (node) {
-                var refreshLevel = function (n) {
-                    n.getChildren().forEach(function (c) {
-                        c.level = c.getParentNode().level + 1;
+            children.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            function (node) {
+                /** @type {?} */
+                var refreshLevel = (/**
+                 * @param {?} n
+                 * @return {?}
+                 */
+                function (n) {
+                    n.getChildren().forEach((/**
+                     * @param {?} c
+                     * @return {?}
+                     */
+                    function (c) {
+                        c.level = (/** @type {?} */ (c.getParentNode())).level + 1;
                         // flush origin
                         c.origin.level = c.level;
                         refreshLevel(c);
-                    });
-                };
+                    }));
+                });
+                /** @type {?} */
                 var child = node;
                 if (child instanceof NzTreeNode) {
                     child.parentNode = _this;
@@ -2320,28 +3935,61 @@ var NzTreeNode = /** @class */ (function () {
                     // flush origin
                 }
                 catch (e) { }
-            });
-            this.origin.children = this.getChildren().map(function (v) { return v.origin; });
+            }));
+            this.origin.children = this.getChildren().map((/**
+             * @param {?} v
+             * @return {?}
+             */
+            function (v) { return v.origin; }));
             // remove loading state
             this.isLoading = false;
         }
     };
-    NzTreeNode.prototype.clearChildren = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeNode.prototype.clearChildren = /**
+     * @return {?}
+     */
+    function () {
         // refresh checked state
         this.afterValueChange('clearChildren');
         this.children = [];
         this.origin.children = [];
     };
-    NzTreeNode.prototype.remove = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeNode.prototype.remove = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
+        /** @type {?} */
         var parentNode = this.getParentNode();
         if (parentNode) {
-            parentNode.children = parentNode.getChildren().filter(function (v) { return v.key !== _this.key; });
-            parentNode.origin.children = parentNode.origin.children.filter(function (v) { return v.key !== _this.key; });
+            parentNode.children = parentNode.getChildren().filter((/**
+             * @param {?} v
+             * @return {?}
+             */
+            function (v) { return v.key !== _this.key; }));
+            parentNode.origin.children = (/** @type {?} */ (parentNode.origin.children)).filter((/**
+             * @param {?} v
+             * @return {?}
+             */
+            function (v) { return v.key !== _this.key; }));
             this.afterValueChange('remove');
         }
     };
-    NzTreeNode.prototype.afterValueChange = function (key) {
+    /**
+     * @param {?} key
+     * @return {?}
+     */
+    NzTreeNode.prototype.afterValueChange = /**
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) {
         if (this.treeService) {
             switch (key) {
                 case 'isChecked':
@@ -2366,7 +4014,13 @@ var NzTreeNode = /** @class */ (function () {
         }
         this.update();
     };
-    NzTreeNode.prototype.update = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeNode.prototype.update = /**
+     * @return {?}
+     */
+    function () {
         if (this.component) {
             this.component.setClassMap();
             this.component.markForCheck();
@@ -2374,7 +4028,96 @@ var NzTreeNode = /** @class */ (function () {
     };
     return NzTreeNode;
 }());
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._title;
+    /** @type {?} */
+    NzTreeNode.prototype.key;
+    /** @type {?} */
+    NzTreeNode.prototype.level;
+    /** @type {?} */
+    NzTreeNode.prototype.origin;
+    /** @type {?} */
+    NzTreeNode.prototype.parentNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._icon;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._children;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isLeaf;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isChecked;
+    /**
+     * @deprecated Maybe removed in next major version, use isChecked instead
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isAllChecked;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isSelectable;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isDisabled;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isDisableCheckbox;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isExpanded;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isHalfChecked;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isSelected;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTreeNode.prototype._isLoading;
+    /** @type {?} */
+    NzTreeNode.prototype.canHide;
+    /** @type {?} */
+    NzTreeNode.prototype.isMatched;
+    /** @type {?} */
+    NzTreeNode.prototype.service;
+    /** @type {?} */
+    NzTreeNode.prototype.component;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2382,7 +4125,76 @@ var NzTreeNode = /** @class */ (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function NzFormatEmitEvent() { }
+if (false) {
+    /** @type {?} */
+    NzFormatEmitEvent.prototype.eventName;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.node;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.event;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.dragNode;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.selectedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.checkedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.matchedKeys;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.nodes;
+    /** @type {?|undefined} */
+    NzFormatEmitEvent.prototype.keys;
+}
+/**
+ * @record
+ */
+function NzFormatBeforeDropEvent() { }
+if (false) {
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.dragNode;
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.node;
+    /** @type {?} */
+    NzFormatBeforeDropEvent.prototype.pos;
+}
+/**
+ * @record
+ */
+function NzTreeNodeBaseComponent() { }
+if (false) {
+    /**
+     * @return {?}
+     */
+    NzTreeNodeBaseComponent.prototype.setClassMap = function () { };
+    /**
+     * @return {?}
+     */
+    NzTreeNodeBaseComponent.prototype.markForCheck = function () { };
+}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/array.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @template T
+ * @param {?} value
+ * @return {?}
+ */
 function toArray(value) {
+    /** @type {?} */
     var ret;
     if (value == null) {
         ret = [];
@@ -2395,10 +4207,17 @@ function toArray(value) {
     }
     return ret;
 }
+/**
+ * @template T
+ * @param {?} array1
+ * @param {?} array2
+ * @return {?}
+ */
 function arraysEqual(array1, array2) {
     if (!array1 || !array2 || array1.length !== array2.length) {
         return false;
     }
+    /** @type {?} */
     var len = array1.length;
     for (var i = 0; i < len; i++) {
         if (array1[i] !== array2[i]) {
@@ -2407,10 +4226,20 @@ function arraysEqual(array1, array2) {
     }
     return true;
 }
+/**
+ * @template T
+ * @param {?} source
+ * @return {?}
+ */
 function shallowCopyArray(source) {
     return source.slice();
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/getMentions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2418,24 +4247,46 @@ function shallowCopyArray(source) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} prefix
+ * @return {?}
+ */
 function getRegExp(prefix) {
+    /** @type {?} */
     var prefixArray = Array.isArray(prefix) ? prefix : [prefix];
+    /** @type {?} */
     var prefixToken = prefixArray.join('').replace(/(\$|\^)/g, '\\$1');
     if (prefixArray.length > 1) {
         prefixToken = "[" + prefixToken + "]";
     }
     return new RegExp("(\\s|^)(" + prefixToken + ")[^\\s]*", 'g');
 }
+/**
+ * @param {?} value
+ * @param {?=} prefix
+ * @return {?}
+ */
 function getMentions(value, prefix) {
     if (prefix === void 0) { prefix = '@'; }
     if (typeof value !== 'string') {
         return [];
     }
+    /** @type {?} */
     var regex = getRegExp(prefix);
+    /** @type {?} */
     var mentions = value.match(regex);
-    return mentions !== null ? mentions.map(function (e) { return e.trim(); }) : [];
+    return mentions !== null ? mentions.map((/**
+     * @param {?} e
+     * @return {?}
+     */
+    function (e) { return e.trim(); })) : [];
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/string.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2445,24 +4296,46 @@ function getMentions(value, prefix) {
  */
 /**
  * Much like lodash.
+ * @param {?} toPad
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
  */
 function padStart(toPad, length, element) {
     if (toPad.length > length) {
         return toPad;
     }
+    /** @type {?} */
     var joined = "" + getRepeatedElement(length, element) + toPad;
     return joined.slice(joined.length - length, joined.length);
 }
+/**
+ * @param {?} toPad
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
+ */
 function padEnd(toPad, length, element) {
+    /** @type {?} */
     var joined = "" + toPad + getRepeatedElement(length, element);
     return joined.slice(0, length);
 }
+/**
+ * @param {?} length
+ * @param {?} element
+ * @return {?}
+ */
 function getRepeatedElement(length, element) {
     return Array(length)
         .fill(element)
         .join('');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/is-promise.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2471,10 +4344,19 @@ function getRepeatedElement(length, element) {
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} obj
+ * @return {?}
+ */
 function isPromise(obj) {
     return !!obj && typeof obj.then === 'function' && typeof obj.catch === 'function';
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/number.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2482,14 +4364,32 @@ function isPromise(obj) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} min
+ * @param {?} max
+ * @param {?} value
+ * @return {?}
+ */
 function getPercent(min, max, value) {
     return ((value - min) / (max - min)) * 100;
 }
+/**
+ * @param {?} num
+ * @return {?}
+ */
 function getPrecision(num) {
+    /** @type {?} */
     var numStr = num.toString();
+    /** @type {?} */
     var dotIndex = numStr.indexOf('.');
     return dotIndex >= 0 ? numStr.length - dotIndex - 1 : 0;
 }
+/**
+ * @param {?} num
+ * @param {?} min
+ * @param {?} max
+ * @return {?}
+ */
 function ensureNumberInRange(num, min, max) {
     if (isNaN(num) || num < min) {
         return min;
@@ -2503,14 +4403,24 @@ function ensureNumberInRange(num, min, max) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/scroll-into-view-if-needed.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} node
+ * @return {?}
+ */
 function scrollIntoView(node) {
-    var nodeAsAny = node; // tslint:disable-line:no-any
+    /** @type {?} */
+    var nodeAsAny = (/** @type {?} */ (node));
     if (nodeAsAny.scrollIntoViewIfNeeded) {
         /* tslint:disable-next-line:no-string-literal */
         nodeAsAny.scrollIntoViewIfNeeded(false);
@@ -2523,6 +4433,11 @@ function scrollIntoView(node) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/textarea-caret-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -2534,6 +4449,7 @@ function scrollIntoView(node) {
 // Note that some browsers, such as Firefox, do not concatenate properties
 // into their shorthand (e.g. padding-top, padding-bottom etc. -> padding),
 // so we have to list every single property explicitly.
+/** @type {?} */
 var properties = [
     'direction',
     'boxSizing',
@@ -2568,28 +4484,61 @@ var properties = [
     'tabSize',
     'MozTabSize'
 ];
+/** @type {?} */
 var isBrowser = typeof window !== 'undefined';
 // tslint:disable-next-line:no-any
-var isFirefox = isBrowser && window.mozInnerScreenX != null;
-var _parseInt = function (str) { return parseInt(str, 10); };
+/** @type {?} */
+var isFirefox = isBrowser && ((/** @type {?} */ (window))).mozInnerScreenX != null;
+/** @type {?} */
+var _parseInt = (/**
+ * @param {?} str
+ * @return {?}
+ */
+function (str) { return parseInt(str, 10); });
+var ɵ0 = _parseInt;
+/**
+ * @record
+ */
+function Coordinates() { }
+if (false) {
+    /** @type {?} */
+    Coordinates.prototype.top;
+    /** @type {?} */
+    Coordinates.prototype.left;
+    /** @type {?} */
+    Coordinates.prototype.height;
+}
+/**
+ * @param {?} element
+ * @param {?} position
+ * @param {?=} options
+ * @return {?}
+ */
 function getCaretCoordinates(element, position, options) {
     if (!isBrowser) {
         throw new Error('textarea-caret-position#getCaretCoordinates should only be called in a browser');
     }
+    /** @type {?} */
     var debug = (options && options.debug) || false;
     if (debug) {
+        /** @type {?} */
         var el = document.querySelector('#input-textarea-caret-position-mirror-div');
         if (el) {
-            el.parentNode.removeChild(el);
+            (/** @type {?} */ (el.parentNode)).removeChild(el);
         }
     }
     // The mirror div will replicate the textarea's style
+    /** @type {?} */
     var div = document.createElement('div');
     div.id = 'input-textarea-caret-position-mirror-div';
     document.body.appendChild(div);
+    /** @type {?} */
     var style = div.style;
     // tslint:disable-next-line:no-any
-    var computed = window.getComputedStyle ? window.getComputedStyle(element) : element.currentStyle; // currentStyle for IE < 9
+    /** @type {?} */
+    var computed = window.getComputedStyle ? window.getComputedStyle(element) : ((/** @type {?} */ (element))).currentStyle;
+    // currentStyle for IE < 9
+    /** @type {?} */
     var isInput = element.nodeName === 'INPUT';
     // Default textarea styles
     style.whiteSpace = 'pre-wrap';
@@ -2602,7 +4551,11 @@ function getCaretCoordinates(element, position, options) {
         style.visibility = 'hidden';
     } // not 'display: none' because we want rendering
     // Transfer the element's properties to the div
-    properties.forEach(function (prop) {
+    properties.forEach((/**
+     * @param {?} prop
+     * @return {?}
+     */
+    function (prop) {
         if (isInput && prop === 'lineHeight') {
             // Special case for <input>s because text is rendered centered and line height may be != height
             style.lineHeight = computed.height;
@@ -2611,7 +4564,7 @@ function getCaretCoordinates(element, position, options) {
             // @ts-ignore
             style[prop] = computed[prop];
         }
-    });
+    }));
     if (isFirefox) {
         // Firefox lies about the overflow property for textareas: https://bugzilla.mozilla.org/show_bug.cgi?id=984275
         if (element.scrollHeight > _parseInt(computed.height)) {
@@ -2627,6 +4580,7 @@ function getCaretCoordinates(element, position, options) {
     if (isInput) {
         div.textContent = div.textContent.replace(/\s/g, '\u00a0');
     }
+    /** @type {?} */
     var span = document.createElement('span');
     // Wrapping must be replicated *exactly*, including when a long word gets
     // onto the next line, with whitespace at the end of the line before (#7).
@@ -2635,6 +4589,7 @@ function getCaretCoordinates(element, position, options) {
     // For inputs, just '.' would be enough, but no need to bother.
     span.textContent = element.value.substring(position) || '.'; // || because a completely empty faux span doesn't render at all
     div.appendChild(span);
+    /** @type {?} */
     var coordinates = {
         top: span.offsetTop + _parseInt(computed.borderTopWidth),
         left: span.offsetLeft + _parseInt(computed.borderLeftWidth),
@@ -2649,19 +4604,37 @@ function getCaretCoordinates(element, position, options) {
     }
     return coordinates;
 }
+/**
+ * @param {?} element
+ * @param {?} coordinates
+ * @return {?}
+ */
 function createDebugEle(element, coordinates) {
+    /** @type {?} */
     var fontSize = getComputedStyle(element).getPropertyValue('font-size');
-    var rect = document.querySelector('#DEBUG') || document.createElement('div');
+    /** @type {?} */
+    var rect = ((/** @type {?} */ (document.querySelector('#DEBUG')))) || document.createElement('div');
     document.body.appendChild(rect);
     rect.id = 'DEBUG';
     rect.style.position = 'absolute';
     rect.style.backgroundColor = 'red';
     rect.style.height = fontSize;
     rect.style.width = '1px';
-    rect.style.top = element.getBoundingClientRect().top - element.scrollTop + window.pageYOffset + coordinates.top + "px";
-    rect.style.left = element.getBoundingClientRect().left - element.scrollLeft + window.pageXOffset + coordinates.left + "px";
+    rect.style.top = element.getBoundingClientRect().top -
+        element.scrollTop +
+        window.pageYOffset +
+        coordinates.top + "px";
+    rect.style.left = element.getBoundingClientRect().left -
+        element.scrollLeft +
+        window.pageXOffset +
+        coordinates.left + "px";
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/style.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2669,26 +4642,49 @@ function createDebugEle(element, coordinates) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @param {?} styleName
+ * @return {?}
+ */
 function isStyleSupport(styleName) {
     if (typeof window !== 'undefined' && window.document && window.document.documentElement) {
+        /** @type {?} */
         var styleNameList = Array.isArray(styleName) ? styleName : [styleName];
         var documentElement_1 = window.document.documentElement;
-        return styleNameList.some(function (name) { return name in documentElement_1.style; });
+        return styleNameList.some((/**
+         * @param {?} name
+         * @return {?}
+         */
+        function (name) { return name in documentElement_1.style; }));
     }
     return false;
 }
+/**
+ * @param {?=} styles
+ * @return {?}
+ */
 function getStyleAsText(styles) {
     if (!styles) {
         return '';
     }
     return Object.keys(styles)
-        .map(function (key) {
+        .map((/**
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) {
+        /** @type {?} */
         var val = styles[key];
         return key + ":" + (typeof val === 'string' ? val : val + 'px');
-    })
+    }))
         .join(';');
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/text-measure.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2696,43 +4692,90 @@ function getStyleAsText(styles) {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function MeasureResult() { }
+if (false) {
+    /** @type {?} */
+    MeasureResult.prototype.finished;
+    /** @type {?} */
+    MeasureResult.prototype.node;
+}
 // We only handle element & text node.
+/** @type {?} */
 var ELEMENT_NODE = 1;
+/** @type {?} */
 var TEXT_NODE = 3;
+/** @type {?} */
 var COMMENT_NODE = 8;
+/** @type {?} */
 var ellipsisContainer;
+/** @type {?} */
 var wrapperStyle = {
     padding: '0',
     margin: '0',
     display: 'inline',
     lineHeight: 'inherit'
 };
+/**
+ * @param {?} value
+ * @return {?}
+ */
 function pxToNumber(value) {
     if (!value) {
         return 0;
     }
+    /** @type {?} */
     var match = value.match(/^\d*(\.\d*)?/);
     return match ? Number(match[0]) : 0;
 }
+/**
+ * @param {?} style
+ * @return {?}
+ */
 function styleToString(style) {
     // There are some different behavior between Firefox & Chrome.
     // We have to handle this ourself.
+    /** @type {?} */
     var styleNames = Array.prototype.slice.apply(style);
-    return styleNames.map(function (name) { return name + ": " + style.getPropertyValue(name) + ";"; }).join('');
+    return styleNames.map((/**
+     * @param {?} name
+     * @return {?}
+     */
+    function (name) { return name + ": " + style.getPropertyValue(name) + ";"; })).join('');
 }
+/**
+ * @param {?} children
+ * @return {?}
+ */
 function mergeChildren(children) {
+    /** @type {?} */
     var childList = [];
-    children.forEach(function (child) {
+    children.forEach((/**
+     * @param {?} child
+     * @return {?}
+     */
+    function (child) {
+        /** @type {?} */
         var prevChild = childList[childList.length - 1];
         if (prevChild && child.nodeType === TEXT_NODE && prevChild.nodeType === TEXT_NODE) {
-            prevChild.data += child.data;
+            ((/** @type {?} */ (prevChild))).data += ((/** @type {?} */ (child))).data;
         }
         else {
             childList.push(child);
         }
-    });
+    }));
     return childList;
 }
+/**
+ * @param {?} originEle
+ * @param {?} rows
+ * @param {?} contentNodes
+ * @param {?} fixedContent
+ * @param {?} ellipsisStr
+ * @return {?}
+ */
 function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
     if (!ellipsisContainer) {
         ellipsisContainer = document.createElement('div');
@@ -2740,9 +4783,13 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
         document.body.appendChild(ellipsisContainer);
     }
     // Get origin style
+    /** @type {?} */
     var originStyle = window.getComputedStyle(originEle);
+    /** @type {?} */
     var originCSS = styleToString(originStyle);
+    /** @type {?} */
     var lineHeight = pxToNumber(originStyle.lineHeight);
+    /** @type {?} */
     var maxHeight = lineHeight * (rows + 1) + pxToNumber(originStyle.paddingTop) + pxToNumber(originStyle.paddingBottom);
     // Set shadow
     ellipsisContainer.setAttribute('style', originCSS);
@@ -2757,68 +4804,111 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
     ellipsisContainer.style.textOverflow = 'clip';
     ellipsisContainer.style.whiteSpace = 'normal';
     // tslint:disable-next-line no-any
-    ellipsisContainer.style.webkitLineClamp = 'none';
+    ((/** @type {?} */ (ellipsisContainer.style))).webkitLineClamp = 'none';
+    /** @type {?} */
     var contentList = mergeChildren(contentNodes);
+    /** @type {?} */
     var container = document.createElement('div');
+    /** @type {?} */
     var contentContainer = document.createElement('span');
+    /** @type {?} */
     var fixedContainer = document.createElement('span');
     // Add styles in container
     Object.assign(container.style, wrapperStyle);
     Object.assign(contentContainer.style, wrapperStyle);
     Object.assign(fixedContainer.style, wrapperStyle);
-    contentList.forEach(function (n) {
+    contentList.forEach((/**
+     * @param {?} n
+     * @return {?}
+     */
+    function (n) {
         contentContainer.appendChild(n);
-    });
-    fixedContent.forEach(function (node) {
+    }));
+    fixedContent.forEach((/**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         fixedContainer.appendChild(node.cloneNode(true));
-    });
+    }));
     container.appendChild(contentContainer);
     container.appendChild(fixedContainer);
     // Render in the fake container
     ellipsisContainer.appendChild(container);
     // Check if ellipsis in measure div is height enough for content
+    /**
+     * @return {?}
+     */
     function inRange() {
         return ellipsisContainer.offsetHeight < maxHeight;
     }
     if (inRange()) {
+        /** @type {?} */
         var text = ellipsisContainer.innerHTML;
         ellipsisContainer.removeChild(container);
         return { contentNodes: contentNodes, text: text, ellipsis: false };
     }
     // We should clone the childNode since they're controlled by React and we can't reuse it without warning
+    /** @type {?} */
     var childNodes = Array.prototype.slice
         .apply(ellipsisContainer.childNodes[0].childNodes[0].cloneNode(true).childNodes)
-        .filter(function (_a) {
+        .filter((/**
+     * @param {?} __0
+     * @return {?}
+     */
+    function (_a) {
         var nodeType = _a.nodeType;
         return nodeType !== COMMENT_NODE;
-    });
+    }));
+    /** @type {?} */
     var fixedNodes = Array.prototype.slice.apply(ellipsisContainer.childNodes[0].childNodes[1].cloneNode(true).childNodes);
     ellipsisContainer.removeChild(container);
     // ========================= Find match ellipsis content =========================
     ellipsisContainer.innerHTML = '';
     // Create origin content holder
+    /** @type {?} */
     var ellipsisContentHolder = document.createElement('span');
     ellipsisContainer.appendChild(ellipsisContentHolder);
+    /** @type {?} */
     var ellipsisTextNode = document.createTextNode(ellipsisStr);
     ellipsisContentHolder.appendChild(ellipsisTextNode);
-    fixedNodes.forEach(function (childNode) {
+    fixedNodes.forEach((/**
+     * @param {?} childNode
+     * @return {?}
+     */
+    function (childNode) {
         ellipsisContainer.appendChild(childNode);
-    });
+    }));
     // Append before fixed nodes
+    /**
+     * @param {?} node
+     * @return {?}
+     */
     function appendChildNode(node) {
         ellipsisContentHolder.insertBefore(node, ellipsisTextNode);
     }
     // Get maximum text
+    /**
+     * @param {?} textNode
+     * @param {?} fullText
+     * @param {?=} startLoc
+     * @param {?=} endLoc
+     * @param {?=} lastSuccessLoc
+     * @return {?}
+     */
     function measureText(textNode, fullText, startLoc, endLoc, lastSuccessLoc) {
         if (startLoc === void 0) { startLoc = 0; }
         if (endLoc === void 0) { endLoc = fullText.length; }
         if (lastSuccessLoc === void 0) { lastSuccessLoc = 0; }
+        /** @type {?} */
         var midLoc = Math.floor((startLoc + endLoc) / 2);
+        /** @type {?} */
         var currentText = fullText.slice(0, midLoc);
         textNode.textContent = currentText;
         if (startLoc >= endLoc - 1) {
             // Loop when step is small
             for (var step = endLoc; step >= startLoc; step -= 1) {
+                /** @type {?} */
                 var currentStepText = fullText.slice(0, step);
                 textNode.textContent = currentStepText;
                 if (inRange()) {
@@ -2841,7 +4931,13 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             return measureText(textNode, fullText, startLoc, midLoc, lastSuccessLoc);
         }
     }
+    /**
+     * @param {?} childNode
+     * @param {?} index
+     * @return {?}
+     */
     function measureNode(childNode, index) {
+        /** @type {?} */
         var type = childNode.nodeType;
         if (type === ELEMENT_NODE) {
             // We don't split element, it will keep if whole element can be displayed.
@@ -2860,7 +4956,9 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             };
         }
         else if (type === TEXT_NODE) {
+            /** @type {?} */
             var fullText = childNode.textContent || '';
+            /** @type {?} */
             var textNode = document.createTextNode(fullText);
             appendChildNode(textNode);
             return measureText(textNode, fullText);
@@ -2872,14 +4970,21 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
             node: null
         };
     }
+    /** @type {?} */
     var ellipsisNodes = [];
-    childNodes.some(function (childNode, index) {
+    childNodes.some((/**
+     * @param {?} childNode
+     * @param {?} index
+     * @return {?}
+     */
+    function (childNode, index) {
         var _a = measureNode(childNode, index), finished = _a.finished, node = _a.node;
         if (node) {
             ellipsisNodes.push(node);
         }
         return finished;
-    });
+    }));
+    /** @type {?} */
     var result = {
         contentNodes: ellipsisNodes,
         text: ellipsisContainer.innerHTML,
@@ -2892,27 +4997,41 @@ function measure(originEle, rows, contentNodes, fixedContent, ellipsisStr) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/measure-scrollbar.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @type {?}
  */
 var scrollbarVerticalSize;
+/** @type {?} */
 var scrollbarHorizontalSize;
 // Measure scrollbar width for padding body during modal show/hide
+/** @type {?} */
 var scrollbarMeasure = {
     position: 'absolute',
     top: '-9999px',
     width: '50px',
     height: '50px'
 };
+/**
+ * @param {?=} direction
+ * @param {?=} prefix
+ * @return {?}
+ */
 function measureScrollbar(direction, prefix) {
     if (direction === void 0) { direction = 'vertical'; }
     if (prefix === void 0) { prefix = 'ant'; }
     if (typeof document === 'undefined' || typeof window === 'undefined') {
         return 0;
     }
+    /** @type {?} */
     var isVertical = direction === 'vertical';
     if (isVertical && scrollbarVerticalSize) {
         return scrollbarVerticalSize;
@@ -2920,11 +5039,16 @@ function measureScrollbar(direction, prefix) {
     else if (!isVertical && scrollbarHorizontalSize) {
         return scrollbarHorizontalSize;
     }
+    /** @type {?} */
     var scrollDiv = document.createElement('div');
-    Object.keys(scrollbarMeasure).forEach(function (scrollProp) {
+    Object.keys(scrollbarMeasure).forEach((/**
+     * @param {?} scrollProp
+     * @return {?}
+     */
+    function (scrollProp) {
         // @ts-ignore
         scrollDiv.style[scrollProp] = scrollbarMeasure[scrollProp];
-    });
+    }));
     // apply hide scrollbar className ahead
     scrollDiv.className = prefix + "-hide-scrollbar scroll-div-append-to-body";
     // Append related overflow style
@@ -2935,6 +5059,7 @@ function measureScrollbar(direction, prefix) {
         scrollDiv.style.overflowX = 'scroll';
     }
     document.body.appendChild(scrollDiv);
+    /** @type {?} */
     var size = 0;
     if (isVertical) {
         size = scrollDiv.offsetWidth - scrollDiv.clientWidth;
@@ -2949,37 +5074,61 @@ function measureScrollbar(direction, prefix) {
 }
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: util/ensure-in-bounds.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @param {?} value
+ * @param {?} boundValue
+ * @return {?}
  */
 function ensureInBounds(value, boundValue) {
     return value ? (value < boundValue ? value : boundValue) : boundValue;
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/tick.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @return {?}
  */
 function inNextTick() {
+    /** @type {?} */
     var timer = new Subject();
-    Promise.resolve().then(function () { return timer.next(); });
+    Promise.resolve().then((/**
+     * @return {?}
+     */
+    function () { return timer.next(); }));
     return timer.pipe(take(1));
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: util/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: util/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base-util.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -2987,23 +5136,29 @@ function inNextTick() {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @param {?} node
+ * @return {?}
  */
 function isCheckDisabled(node) {
     var isDisabled = node.isDisabled, isDisableCheckbox = node.isDisableCheckbox;
     return !!(isDisabled || isDisableCheckbox);
 }
 // tslint:disable-next-line:no-any
+/**
+ * @param {?} needle
+ * @param {?} haystack
+ * @return {?}
+ */
 function isInArray(needle, haystack) {
     return haystack.length > 0 && haystack.indexOf(needle) > -1;
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzTreeBaseService = /** @class */ (function () {
     function NzTreeBaseService() {
         this.DRAG_SIDE_RANGE = 0.25;
@@ -3021,13 +5176,31 @@ var NzTreeBaseService = /** @class */ (function () {
     /**
      * trigger event
      */
-    NzTreeBaseService.prototype.eventTriggerChanged = function () {
+    /**
+     * trigger event
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.eventTriggerChanged = /**
+     * trigger event
+     * @return {?}
+     */
+    function () {
         return this.triggerEventChange$.asObservable();
     };
     /**
      * reset tree nodes will clear default node list
      */
-    NzTreeBaseService.prototype.initTree = function (nzNodes) {
+    /**
+     * reset tree nodes will clear default node list
+     * @param {?} nzNodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.initTree = /**
+     * reset tree nodes will clear default node list
+     * @param {?} nzNodes
+     * @return {?}
+     */
+    function (nzNodes) {
         var _this = this;
         this.rootNodes = nzNodes;
         this.expandedNodeList = [];
@@ -3036,51 +5209,136 @@ var NzTreeBaseService = /** @class */ (function () {
         this.checkedNodeList = [];
         this.matchedNodeList = [];
         // refresh node checked state
-        setTimeout(function () {
+        setTimeout((/**
+         * @return {?}
+         */
+        function () {
             _this.refreshCheckState(_this.isCheckStrictly);
-        });
+        }));
     };
-    NzTreeBaseService.prototype.getSelectedNode = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getSelectedNode = /**
+     * @return {?}
+     */
+    function () {
         return this.selectedNode;
     };
     /**
      * get some list
      */
-    NzTreeBaseService.prototype.getSelectedNodeList = function () {
+    /**
+     * get some list
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getSelectedNodeList = /**
+     * get some list
+     * @return {?}
+     */
+    function () {
         return this.conductNodeState('select');
     };
     /**
      * return checked nodes
      */
-    NzTreeBaseService.prototype.getCheckedNodeList = function () {
+    /**
+     * return checked nodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getCheckedNodeList = /**
+     * return checked nodes
+     * @return {?}
+     */
+    function () {
         return this.conductNodeState('check');
     };
-    NzTreeBaseService.prototype.getHalfCheckedNodeList = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getHalfCheckedNodeList = /**
+     * @return {?}
+     */
+    function () {
         return this.conductNodeState('halfCheck');
     };
     /**
      * return expanded nodes
      */
-    NzTreeBaseService.prototype.getExpandedNodeList = function () {
+    /**
+     * return expanded nodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getExpandedNodeList = /**
+     * return expanded nodes
+     * @return {?}
+     */
+    function () {
         return this.conductNodeState('expand');
     };
     /**
      * return search matched nodes
      */
-    NzTreeBaseService.prototype.getMatchedNodeList = function () {
+    /**
+     * return search matched nodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.getMatchedNodeList = /**
+     * return search matched nodes
+     * @return {?}
+     */
+    function () {
         return this.conductNodeState('match');
     };
     // tslint:disable-next-line:no-any
-    NzTreeBaseService.prototype.isArrayOfNzTreeNode = function (value) {
-        return value.every(function (item) { return item instanceof NzTreeNode; });
+    // tslint:disable-next-line:no-any
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.isArrayOfNzTreeNode = 
+    // tslint:disable-next-line:no-any
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
+        return value.every((/**
+         * @param {?} item
+         * @return {?}
+         */
+        function (item) { return item instanceof NzTreeNode; }));
     };
     /**
      * reset selectedNodeList
      */
-    NzTreeBaseService.prototype.calcSelectedKeys = function (selectedKeys, nzNodes, isMulti) {
+    /**
+     * reset selectedNodeList
+     * @param {?} selectedKeys
+     * @param {?} nzNodes
+     * @param {?=} isMulti
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.calcSelectedKeys = /**
+     * reset selectedNodeList
+     * @param {?} selectedKeys
+     * @param {?} nzNodes
+     * @param {?=} isMulti
+     * @return {?}
+     */
+    function (selectedKeys, nzNodes, isMulti) {
         if (isMulti === void 0) { isMulti = false; }
-        var calc = function (nodes) {
-            return nodes.every(function (node) {
+        /** @type {?} */
+        var calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        function (nodes) {
+            return nodes.every((/**
+             * @param {?} node
+             * @return {?}
+             */
+            function (node) {
                 if (isInArray(node.key, selectedKeys)) {
                     node.isSelected = true;
                     if (!isMulti) {
@@ -3096,34 +5354,78 @@ var NzTreeBaseService = /** @class */ (function () {
                     return calc(node.children);
                 }
                 return true;
-            });
-        };
+            }));
+        });
         calc(nzNodes);
     };
     /**
      * reset expandedNodeList
      */
-    NzTreeBaseService.prototype.calcExpandedKeys = function (expandedKeys, nzNodes) {
+    /**
+     * reset expandedNodeList
+     * @param {?} expandedKeys
+     * @param {?} nzNodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.calcExpandedKeys = /**
+     * reset expandedNodeList
+     * @param {?} expandedKeys
+     * @param {?} nzNodes
+     * @return {?}
+     */
+    function (expandedKeys, nzNodes) {
         this.expandedNodeList = [];
-        var calc = function (nodes) {
-            nodes.forEach(function (node) {
+        /** @type {?} */
+        var calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        function (nodes) {
+            nodes.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            function (node) {
                 node.isExpanded = isInArray(node.key, expandedKeys);
                 if (node.children.length > 0) {
                     calc(node.children);
                 }
-            });
-        };
+            }));
+        });
         calc(nzNodes);
     };
     /**
      * reset checkedNodeList
      */
-    NzTreeBaseService.prototype.calcCheckedKeys = function (checkedKeys, nzNodes, isCheckStrictly) {
+    /**
+     * reset checkedNodeList
+     * @param {?} checkedKeys
+     * @param {?} nzNodes
+     * @param {?=} isCheckStrictly
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.calcCheckedKeys = /**
+     * reset checkedNodeList
+     * @param {?} checkedKeys
+     * @param {?} nzNodes
+     * @param {?=} isCheckStrictly
+     * @return {?}
+     */
+    function (checkedKeys, nzNodes, isCheckStrictly) {
         if (isCheckStrictly === void 0) { isCheckStrictly = false; }
         this.checkedNodeList = [];
         this.halfCheckedNodeList = [];
-        var calc = function (nodes) {
-            nodes.forEach(function (node) {
+        /** @type {?} */
+        var calc = (/**
+         * @param {?} nodes
+         * @return {?}
+         */
+        function (nodes) {
+            nodes.forEach((/**
+             * @param {?} node
+             * @return {?}
+             */
+            function (node) {
                 if (isInArray(node.key, checkedKeys)) {
                     node.isChecked = true;
                     node.isHalfChecked = false;
@@ -3135,8 +5437,8 @@ var NzTreeBaseService = /** @class */ (function () {
                 if (node.children.length > 0) {
                     calc(node.children);
                 }
-            });
-        };
+            }));
+        });
         calc(nzNodes);
         // controlled state
         this.refreshCheckState(isCheckStrictly);
@@ -3144,20 +5446,44 @@ var NzTreeBaseService = /** @class */ (function () {
     /**
      * set drag node
      */
-    NzTreeBaseService.prototype.setSelectedNode = function (node) {
+    /**
+     * set drag node
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setSelectedNode = /**
+     * set drag node
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         this.selectedNode = node;
     };
     /**
      * set node selected status
      */
-    NzTreeBaseService.prototype.setNodeActive = function (node) {
+    /**
+     * set node selected status
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setNodeActive = /**
+     * set node selected status
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         if (!this.isMultiple && node.isSelected) {
-            this.selectedNodeList.forEach(function (n) {
+            this.selectedNodeList.forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) {
                 if (node.key !== n.key) {
                     // reset other nodes
                     n.isSelected = false;
                 }
-            });
+            }));
             // single mode: remove pre node
             this.selectedNodeList = [];
         }
@@ -3166,9 +5492,26 @@ var NzTreeBaseService = /** @class */ (function () {
     /**
      * add or remove node to selectedNodeList
      */
-    NzTreeBaseService.prototype.setSelectedNodeList = function (node, isMultiple) {
+    /**
+     * add or remove node to selectedNodeList
+     * @param {?} node
+     * @param {?=} isMultiple
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setSelectedNodeList = /**
+     * add or remove node to selectedNodeList
+     * @param {?} node
+     * @param {?=} isMultiple
+     * @return {?}
+     */
+    function (node, isMultiple) {
         if (isMultiple === void 0) { isMultiple = false; }
-        var index = this.selectedNodeList.findIndex(function (n) { return node.key === n.key; });
+        /** @type {?} */
+        var index = this.selectedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return node.key === n.key; }));
         if (isMultiple) {
             if (node.isSelected && index === -1) {
                 this.selectedNodeList.push(node);
@@ -3180,36 +5523,87 @@ var NzTreeBaseService = /** @class */ (function () {
             }
         }
         if (!node.isSelected) {
-            this.selectedNodeList = this.selectedNodeList.filter(function (n) { return n.key !== node.key; });
+            this.selectedNodeList = this.selectedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== node.key; }));
         }
     };
     /**
      * merge checked nodes
      */
-    NzTreeBaseService.prototype.setHalfCheckedNodeList = function (node) {
-        var index = this.halfCheckedNodeList.findIndex(function (n) { return node.key === n.key; });
+    /**
+     * merge checked nodes
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setHalfCheckedNodeList = /**
+     * merge checked nodes
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
+        var index = this.halfCheckedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return node.key === n.key; }));
         if (node.isHalfChecked && index === -1) {
             this.halfCheckedNodeList.push(node);
         }
         else if (!node.isHalfChecked && index > -1) {
-            this.halfCheckedNodeList = this.halfCheckedNodeList.filter(function (n) { return node.key !== n.key; });
+            this.halfCheckedNodeList = this.halfCheckedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return node.key !== n.key; }));
         }
     };
-    NzTreeBaseService.prototype.setCheckedNodeList = function (node) {
-        var index = this.checkedNodeList.findIndex(function (n) { return node.key === n.key; });
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setCheckedNodeList = /**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
+        var index = this.checkedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return node.key === n.key; }));
         if (node.isChecked && index === -1) {
             this.checkedNodeList.push(node);
         }
         else if (!node.isChecked && index > -1) {
-            this.checkedNodeList = this.checkedNodeList.filter(function (n) { return node.key !== n.key; });
+            this.checkedNodeList = this.checkedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return node.key !== n.key; }));
         }
     };
     /**
      * conduct checked/selected/expanded keys
      */
-    NzTreeBaseService.prototype.conductNodeState = function (type) {
+    /**
+     * conduct checked/selected/expanded keys
+     * @param {?=} type
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.conductNodeState = /**
+     * conduct checked/selected/expanded keys
+     * @param {?=} type
+     * @return {?}
+     */
+    function (type) {
         var _this = this;
         if (type === void 0) { type = 'check'; }
+        /** @type {?} */
         var resultNodesList = [];
         switch (type) {
             case 'select':
@@ -3223,10 +5617,20 @@ var NzTreeBaseService = /** @class */ (function () {
                 break;
             case 'check':
                 resultNodesList = this.checkedNodeList;
-                var isIgnore_1 = function (node) {
+                /** @type {?} */
+                var isIgnore_1 = (/**
+                 * @param {?} node
+                 * @return {?}
+                 */
+                function (node) {
+                    /** @type {?} */
                     var parentNode = node.getParentNode();
                     if (parentNode) {
-                        if (_this.checkedNodeList.findIndex(function (n) { return n.key === parentNode.key; }) > -1) {
+                        if (_this.checkedNodeList.findIndex((/**
+                         * @param {?} n
+                         * @return {?}
+                         */
+                        function (n) { return n.key === parentNode.key; })) > -1) {
                             return true;
                         }
                         else {
@@ -3234,10 +5638,14 @@ var NzTreeBaseService = /** @class */ (function () {
                         }
                     }
                     return false;
-                };
+                });
                 // merge checked
                 if (!this.isCheckStrictly) {
-                    resultNodesList = this.checkedNodeList.filter(function (n) { return !isIgnore_1(n); });
+                    resultNodesList = this.checkedNodeList.filter((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    function (n) { return !isIgnore_1(n); }));
                 }
                 break;
             case 'halfCheck':
@@ -3251,34 +5659,79 @@ var NzTreeBaseService = /** @class */ (function () {
     /**
      * set expanded nodes
      */
-    NzTreeBaseService.prototype.setExpandedNodeList = function (node) {
+    /**
+     * set expanded nodes
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.setExpandedNodeList = /**
+     * set expanded nodes
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         if (node.isLeaf) {
             return;
         }
-        var index = this.expandedNodeList.findIndex(function (n) { return node.key === n.key; });
+        /** @type {?} */
+        var index = this.expandedNodeList.findIndex((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return node.key === n.key; }));
         if (node.isExpanded && index === -1) {
             this.expandedNodeList.push(node);
         }
         else if (!node.isExpanded && index > -1) {
-            this.expandedNodeList = this.expandedNodeList.filter(function (n) { return node.key !== n.key; });
+            this.expandedNodeList = this.expandedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return node.key !== n.key; }));
         }
     };
     /**
      * check state
      * @param isCheckStrictly
      */
-    NzTreeBaseService.prototype.refreshCheckState = function (isCheckStrictly) {
+    /**
+     * check state
+     * @param {?=} isCheckStrictly
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.refreshCheckState = /**
+     * check state
+     * @param {?=} isCheckStrictly
+     * @return {?}
+     */
+    function (isCheckStrictly) {
         var _this = this;
         if (isCheckStrictly === void 0) { isCheckStrictly = false; }
         if (isCheckStrictly) {
             return;
         }
-        this.checkedNodeList.forEach(function (node) {
+        this.checkedNodeList.forEach((/**
+         * @param {?} node
+         * @return {?}
+         */
+        function (node) {
             _this.conduct(node);
-        });
+        }));
     };
     // reset other node checked state based current node
-    NzTreeBaseService.prototype.conduct = function (node) {
+    // reset other node checked state based current node
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.conduct = 
+    // reset other node checked state based current node
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
         var isChecked = node.isChecked;
         if (node) {
             this.conductUp(node);
@@ -3290,15 +5743,38 @@ var NzTreeBaseService = /** @class */ (function () {
      * 2、children all checked, parent checked
      * 3、no children checked
      */
-    NzTreeBaseService.prototype.conductUp = function (node) {
+    /**
+     * 1、children half checked
+     * 2、children all checked, parent checked
+     * 3、no children checked
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.conductUp = /**
+     * 1、children half checked
+     * 2、children all checked, parent checked
+     * 3、no children checked
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
         var parentNode = node.getParentNode();
         if (parentNode) {
             if (!isCheckDisabled(parentNode)) {
-                if (parentNode.children.every(function (child) { return isCheckDisabled(child) || (!child.isHalfChecked && child.isChecked); })) {
+                if (parentNode.children.every((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                function (child) { return isCheckDisabled(child) || (!child.isHalfChecked && child.isChecked); }))) {
                     parentNode.isChecked = true;
                     parentNode.isHalfChecked = false;
                 }
-                else if (parentNode.children.some(function (child) { return child.isHalfChecked || child.isChecked; })) {
+                else if (parentNode.children.some((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                function (child) { return child.isHalfChecked || child.isChecked; }))) {
                     parentNode.isChecked = false;
                     parentNode.isHalfChecked = true;
                 }
@@ -3315,39 +5791,79 @@ var NzTreeBaseService = /** @class */ (function () {
     /**
      * reset child check state
      */
-    NzTreeBaseService.prototype.conductDown = function (node, value) {
+    /**
+     * reset child check state
+     * @param {?} node
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.conductDown = /**
+     * reset child check state
+     * @param {?} node
+     * @param {?} value
+     * @return {?}
+     */
+    function (node, value) {
         var _this = this;
         if (!isCheckDisabled(node)) {
             node.isChecked = value;
             node.isHalfChecked = false;
             this.setCheckedNodeList(node);
             this.setHalfCheckedNodeList(node);
-            node.children.forEach(function (n) {
+            node.children.forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) {
                 _this.conductDown(n, value);
-            });
+            }));
         }
     };
     /**
      * search value & expand node
      * should add expandlist
      */
-    NzTreeBaseService.prototype.searchExpand = function (value) {
+    /**
+     * search value & expand node
+     * should add expandlist
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.searchExpand = /**
+     * search value & expand node
+     * should add expandlist
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         var _this = this;
         this.matchedNodeList = [];
+        /** @type {?} */
         var expandedKeys = [];
         if (!isNotNil(value)) {
             return;
         }
         // to reset expandedNodeList
-        var expandParent = function (n) {
+        /** @type {?} */
+        var expandParent = (/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) {
             // expand parent node
+            /** @type {?} */
             var parentNode = n.getParentNode();
             if (parentNode) {
                 expandedKeys.push(parentNode.key);
                 expandParent(parentNode);
             }
-        };
-        var searchChild = function (n) {
+        });
+        /** @type {?} */
+        var searchChild = (/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) {
             if (value && n.title.includes(value)) {
                 // match the node
                 n.isMatched = true;
@@ -3359,58 +5875,127 @@ var NzTreeBaseService = /** @class */ (function () {
                 n.isMatched = false;
             }
             n.canHide = !n.isMatched;
-            n.children.forEach(function (child) {
+            n.children.forEach((/**
+             * @param {?} child
+             * @return {?}
+             */
+            function (child) {
                 searchChild(child);
-            });
-        };
-        this.rootNodes.forEach(function (child) {
-            searchChild(child);
+            }));
         });
+        this.rootNodes.forEach((/**
+         * @param {?} child
+         * @return {?}
+         */
+        function (child) {
+            searchChild(child);
+        }));
         // expand matched keys
         this.calcExpandedKeys(expandedKeys, this.rootNodes);
     };
     /**
      * flush after delete node
      */
-    NzTreeBaseService.prototype.afterRemove = function (nodes) {
+    /**
+     * flush after delete node
+     * @param {?} nodes
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.afterRemove = /**
+     * flush after delete node
+     * @param {?} nodes
+     * @return {?}
+     */
+    function (nodes) {
         var _this = this;
         // to reset selectedNodeList & expandedNodeList
-        var loopNode = function (node) {
+        /** @type {?} */
+        var loopNode = (/**
+         * @param {?} node
+         * @return {?}
+         */
+        function (node) {
             // remove selected node
-            _this.selectedNodeList = _this.selectedNodeList.filter(function (n) { return n.key !== node.key; });
+            _this.selectedNodeList = _this.selectedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== node.key; }));
             // remove expanded node
-            _this.expandedNodeList = _this.expandedNodeList.filter(function (n) { return n.key !== node.key; });
+            _this.expandedNodeList = _this.expandedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== node.key; }));
             // remove checked node
-            _this.checkedNodeList = _this.checkedNodeList.filter(function (n) { return n.key !== node.key; });
+            _this.checkedNodeList = _this.checkedNodeList.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== node.key; }));
             if (node.children) {
-                node.children.forEach(function (child) {
+                node.children.forEach((/**
+                 * @param {?} child
+                 * @return {?}
+                 */
+                function (child) {
                     loopNode(child);
-                });
+                }));
             }
-        };
-        nodes.forEach(function (n) {
-            loopNode(n);
         });
+        nodes.forEach((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) {
+            loopNode(n);
+        }));
         this.refreshCheckState(this.isCheckStrictly);
     };
     /**
      * drag event
      */
-    NzTreeBaseService.prototype.refreshDragNode = function (node) {
+    /**
+     * drag event
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.refreshDragNode = /**
+     * drag event
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         var _this = this;
         if (node.children.length === 0) {
             // until root
             this.conductUp(node);
         }
         else {
-            node.children.forEach(function (child) {
+            node.children.forEach((/**
+             * @param {?} child
+             * @return {?}
+             */
+            function (child) {
                 _this.refreshDragNode(child);
-            });
+            }));
         }
     };
     // reset node level
-    NzTreeBaseService.prototype.resetNodeLevel = function (node) {
+    // reset node level
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.resetNodeLevel = 
+    // reset node level
+    /**
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
         var e_1, _a;
+        /** @type {?} */
         var parentNode = node.getParentNode();
         if (parentNode) {
             node.level = parentNode.level + 1;
@@ -3432,12 +6017,21 @@ var NzTreeBaseService = /** @class */ (function () {
             finally { if (e_1) throw e_1.error; }
         }
     };
-    NzTreeBaseService.prototype.calcDropPosition = function (event) {
+    /**
+     * @param {?} event
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.calcDropPosition = /**
+     * @param {?} event
+     * @return {?}
+     */
+    function (event) {
         var clientY = event.clientY;
         // to fix firefox undefined
         var _a = event.srcElement
-            ? event.srcElement.getBoundingClientRect()
-            : event.target.getBoundingClientRect(), top = _a.top, bottom = _a.bottom, height = _a.height;
+            ? ((/** @type {?} */ (event.srcElement))).getBoundingClientRect()
+            : ((/** @type {?} */ (event.target))).getBoundingClientRect(), top = _a.top, bottom = _a.bottom, height = _a.height;
+        /** @type {?} */
         var des = Math.max(height * this.DRAG_SIDE_RANGE, this.DRAG_MIN_GAP);
         if (clientY <= top + des) {
             return -1;
@@ -3451,21 +6045,46 @@ var NzTreeBaseService = /** @class */ (function () {
      * drop
      * 0: inner -1: pre 1: next
      */
-    NzTreeBaseService.prototype.dropAndApply = function (targetNode, dragPos) {
+    /**
+     * drop
+     * 0: inner -1: pre 1: next
+     * @param {?} targetNode
+     * @param {?=} dragPos
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.dropAndApply = /**
+     * drop
+     * 0: inner -1: pre 1: next
+     * @param {?} targetNode
+     * @param {?=} dragPos
+     * @return {?}
+     */
+    function (targetNode, dragPos) {
         var _this = this;
         if (dragPos === void 0) { dragPos = -1; }
         if (!targetNode || dragPos > 1) {
             return;
         }
+        /** @type {?} */
         var treeService = targetNode.treeService;
+        /** @type {?} */
         var targetParent = targetNode.getParentNode();
+        /** @type {?} */
         var isSelectedRootNode = this.selectedNode.getParentNode();
         // remove the dragNode
         if (isSelectedRootNode) {
-            isSelectedRootNode.children = isSelectedRootNode.children.filter(function (n) { return n.key !== _this.selectedNode.key; });
+            isSelectedRootNode.children = isSelectedRootNode.children.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== _this.selectedNode.key; }));
         }
         else {
-            this.rootNodes = this.rootNodes.filter(function (n) { return n.key !== _this.selectedNode.key; });
+            this.rootNodes = this.rootNodes.filter((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) { return n.key !== _this.selectedNode.key; }));
         }
         switch (dragPos) {
             case 0:
@@ -3474,15 +6093,18 @@ var NzTreeBaseService = /** @class */ (function () {
                 break;
             case -1:
             case 1:
+                /** @type {?} */
                 var tIndex = dragPos === 1 ? 1 : 0;
                 if (targetParent) {
                     targetParent.addChildren([this.selectedNode], targetParent.children.indexOf(targetNode) + tIndex);
+                    /** @type {?} */
                     var parentNode = this.selectedNode.getParentNode();
                     if (parentNode) {
                         this.resetNodeLevel(parentNode);
                     }
                 }
                 else {
+                    /** @type {?} */
                     var targetIndex = this.rootNodes.indexOf(targetNode) + tIndex;
                     // Insert root node.
                     this.rootNodes.splice(targetIndex, 0, this.selectedNode);
@@ -3492,12 +6114,16 @@ var NzTreeBaseService = /** @class */ (function () {
                 break;
         }
         // flush all nodes
-        this.rootNodes.forEach(function (child) {
+        this.rootNodes.forEach((/**
+         * @param {?} child
+         * @return {?}
+         */
+        function (child) {
             if (!child.treeService) {
                 child.service = treeService;
             }
             _this.refreshDragNode(child);
-        });
+        }));
     };
     /**
      * emit Structure
@@ -3506,7 +6132,30 @@ var NzTreeBaseService = /** @class */ (function () {
      * event: MouseEvent / DragEvent
      * dragNode
      */
-    NzTreeBaseService.prototype.formatEvent = function (eventName, node, event) {
+    /**
+     * emit Structure
+     * eventName
+     * node
+     * event: MouseEvent / DragEvent
+     * dragNode
+     * @param {?} eventName
+     * @param {?} node
+     * @param {?} event
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.formatEvent = /**
+     * emit Structure
+     * eventName
+     * node
+     * event: MouseEvent / DragEvent
+     * dragNode
+     * @param {?} eventName
+     * @param {?} node
+     * @param {?} event
+     * @return {?}
+     */
+    function (eventName, node, event) {
+        /** @type {?} */
         var emitStructure = {
             eventName: eventName,
             node: node,
@@ -3525,52 +6174,96 @@ var NzTreeBaseService = /** @class */ (function () {
             case 'dblclick':
                 Object.assign(emitStructure, { selectedKeys: this.selectedNodeList });
                 Object.assign(emitStructure, { nodes: this.selectedNodeList });
-                Object.assign(emitStructure, { keys: this.selectedNodeList.map(function (n) { return n.key; }) });
+                Object.assign(emitStructure, { keys: this.selectedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    function (n) { return n.key; })) });
                 break;
             case 'check':
+                /** @type {?} */
                 var checkedNodeList = this.getCheckedNodeList();
                 Object.assign(emitStructure, { checkedKeys: checkedNodeList });
                 Object.assign(emitStructure, { nodes: checkedNodeList });
-                Object.assign(emitStructure, { keys: checkedNodeList.map(function (n) { return n.key; }) });
+                Object.assign(emitStructure, { keys: checkedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    function (n) { return n.key; })) });
                 break;
             case 'search':
                 Object.assign(emitStructure, { matchedKeys: this.getMatchedNodeList() });
                 Object.assign(emitStructure, { nodes: this.getMatchedNodeList() });
-                Object.assign(emitStructure, { keys: this.getMatchedNodeList().map(function (n) { return n.key; }) });
+                Object.assign(emitStructure, { keys: this.getMatchedNodeList().map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    function (n) { return n.key; })) });
                 break;
             case 'expand':
                 Object.assign(emitStructure, { nodes: this.expandedNodeList });
-                Object.assign(emitStructure, { keys: this.expandedNodeList.map(function (n) { return n.key; }) });
+                Object.assign(emitStructure, { keys: this.expandedNodeList.map((/**
+                     * @param {?} n
+                     * @return {?}
+                     */
+                    function (n) { return n.key; })) });
                 break;
         }
         return emitStructure;
     };
-    NzTreeBaseService.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzTreeBaseService.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         this.triggerEventChange$.complete();
     };
-    /** @nocollapse */ NzTreeBaseService.ɵfac = function NzTreeBaseService_Factory(t) { return new (t || NzTreeBaseService)(); };
-    /** @nocollapse */ NzTreeBaseService.ɵprov = ɵɵdefineInjectable({ token: NzTreeBaseService, factory: NzTreeBaseService.ɵfac });
+    NzTreeBaseService.decorators = [
+        { type: Injectable }
+    ];
     return NzTreeBaseService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTreeBaseService, [{
-        type: Injectable
-    }], null, null); })();
+if (false) {
+    /** @type {?} */
+    NzTreeBaseService.prototype.DRAG_SIDE_RANGE;
+    /** @type {?} */
+    NzTreeBaseService.prototype.DRAG_MIN_GAP;
+    /** @type {?} */
+    NzTreeBaseService.prototype.isCheckStrictly;
+    /** @type {?} */
+    NzTreeBaseService.prototype.isMultiple;
+    /** @type {?} */
+    NzTreeBaseService.prototype.selectedNode;
+    /** @type {?} */
+    NzTreeBaseService.prototype.rootNodes;
+    /** @type {?} */
+    NzTreeBaseService.prototype.selectedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.expandedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.checkedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.halfCheckedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.matchedNodeList;
+    /** @type {?} */
+    NzTreeBaseService.prototype.triggerEventChange$;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-service.resolver.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var NzTreeHigherOrderServiceToken = new InjectionToken('NzTreeHigherOrder');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: tree/nz-tree-base.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTreeBase = /** @class */ (function () {
     function NzTreeBase(nzTreeService) {
@@ -3579,79 +6272,189 @@ var NzTreeBase = /** @class */ (function () {
     /**
      * Coerces a value({@link any[]}) to a TreeNodes({@link NzTreeNode[]})
      */
-    NzTreeBase.prototype.coerceTreeNodes = function (
+    /**
+     * Coerces a value({\@link any[]}) to a TreeNodes({\@link NzTreeNode[]})
+     * @param {?} value
+     * @return {?}
+     */
+    NzTreeBase.prototype.coerceTreeNodes = /**
+     * Coerces a value({\@link any[]}) to a TreeNodes({\@link NzTreeNode[]})
+     * @param {?} value
+     * @return {?}
+     */
+    function (
     // tslint:disable-next-line:no-any
     value) {
         var _this = this;
+        /** @type {?} */
         var nodes = [];
         if (!this.nzTreeService.isArrayOfNzTreeNode(value)) {
             // has not been new NzTreeNode
-            nodes = value.map(function (item) { return new NzTreeNode(item, null, _this.nzTreeService); });
+            nodes = value.map((/**
+             * @param {?} item
+             * @return {?}
+             */
+            function (item) { return new NzTreeNode(item, null, _this.nzTreeService); }));
         }
         else {
-            nodes = value.map(function (item) {
+            nodes = value.map((/**
+             * @param {?} item
+             * @return {?}
+             */
+            function (item) {
                 item.service = _this.nzTreeService;
                 return item;
-            });
+            }));
         }
         return nodes;
     };
     /**
      * Get all nodes({@link NzTreeNode})
      */
-    NzTreeBase.prototype.getTreeNodes = function () {
+    /**
+     * Get all nodes({\@link NzTreeNode})
+     * @return {?}
+     */
+    NzTreeBase.prototype.getTreeNodes = /**
+     * Get all nodes({\@link NzTreeNode})
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.rootNodes;
     };
     /**
      * Get {@link NzTreeNode} with key
      */
-    NzTreeBase.prototype.getTreeNodeByKey = function (key) {
+    /**
+     * Get {\@link NzTreeNode} with key
+     * @param {?} key
+     * @return {?}
+     */
+    NzTreeBase.prototype.getTreeNodeByKey = /**
+     * Get {\@link NzTreeNode} with key
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) {
         // flat tree nodes
+        /** @type {?} */
         var nodes = [];
-        var getNode = function (node) {
+        /** @type {?} */
+        var getNode = (/**
+         * @param {?} node
+         * @return {?}
+         */
+        function (node) {
             nodes.push(node);
-            node.getChildren().forEach(function (n) {
+            node.getChildren().forEach((/**
+             * @param {?} n
+             * @return {?}
+             */
+            function (n) {
                 getNode(n);
-            });
-        };
-        this.getTreeNodes().forEach(function (n) {
-            getNode(n);
+            }));
         });
-        return nodes.find(function (n) { return n.key === key; }) || null;
+        this.getTreeNodes().forEach((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) {
+            getNode(n);
+        }));
+        return nodes.find((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return n.key === key; })) || null;
     };
     /**
      * Get checked nodes(merged)
      */
-    NzTreeBase.prototype.getCheckedNodeList = function () {
+    /**
+     * Get checked nodes(merged)
+     * @return {?}
+     */
+    NzTreeBase.prototype.getCheckedNodeList = /**
+     * Get checked nodes(merged)
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.getCheckedNodeList();
     };
     /**
      * Get selected nodes
      */
-    NzTreeBase.prototype.getSelectedNodeList = function () {
+    /**
+     * Get selected nodes
+     * @return {?}
+     */
+    NzTreeBase.prototype.getSelectedNodeList = /**
+     * Get selected nodes
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.getSelectedNodeList();
     };
     /**
      * Get half checked nodes
      */
-    NzTreeBase.prototype.getHalfCheckedNodeList = function () {
+    /**
+     * Get half checked nodes
+     * @return {?}
+     */
+    NzTreeBase.prototype.getHalfCheckedNodeList = /**
+     * Get half checked nodes
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.getHalfCheckedNodeList();
     };
     /**
      * Get expanded nodes
      */
-    NzTreeBase.prototype.getExpandedNodeList = function () {
+    /**
+     * Get expanded nodes
+     * @return {?}
+     */
+    NzTreeBase.prototype.getExpandedNodeList = /**
+     * Get expanded nodes
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.getExpandedNodeList();
     };
     /**
      * Get matched nodes(if nzSearchValue is not null)
      */
-    NzTreeBase.prototype.getMatchedNodeList = function () {
+    /**
+     * Get matched nodes(if nzSearchValue is not null)
+     * @return {?}
+     */
+    NzTreeBase.prototype.getMatchedNodeList = /**
+     * Get matched nodes(if nzSearchValue is not null)
+     * @return {?}
+     */
+    function () {
         return this.nzTreeService.getMatchedNodeList();
     };
     return NzTreeBase;
 }());
+if (false) {
+    /** @type {?} */
+    NzTreeBase.prototype.nzTreeService;
+}
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: tree/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/common-wrap.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -3661,11 +6464,135 @@ var NzTreeBase = /** @class */ (function () {
  */
 
 /**
+ * @fileoverview added by tsickle
+ * Generated from: types/direction.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/drop-down-position.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/indexable.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function IndexableObject() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/ng-class.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function NgClassInterface() { }
+/**
+ * @record
+ */
+function NgStyleInterface() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/size.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+/**
+ * @record
+ */
+function NzSizeMap() { }
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/template.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/shape.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/compare-with.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: types/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave-renderer.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzWaveRenderer = /** @class */ (function () {
     function NzWaveRenderer(triggerElement, ngZone, insertExtraNode) {
@@ -3676,58 +6603,102 @@ var NzWaveRenderer = /** @class */ (function () {
         this.waveTransitionDuration = 400;
         this.lastTime = 0;
         this.platform = new Platform();
-        this.onClick = function (event) {
+        this.onClick = (/**
+         * @param {?} event
+         * @return {?}
+         */
+        function (event) {
             if (!_this.triggerElement ||
                 !_this.triggerElement.getAttribute ||
                 _this.triggerElement.getAttribute('disabled') ||
-                event.target.tagName === 'INPUT' ||
+                ((/** @type {?} */ (event.target))).tagName === 'INPUT' ||
                 _this.triggerElement.className.indexOf('disabled') >= 0) {
                 return;
             }
             _this.fadeOutWave();
-        };
+        });
         this.clickHandler = this.onClick.bind(this);
         this.bindTriggerEvent();
     }
     Object.defineProperty(NzWaveRenderer.prototype, "waveAttributeName", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this.insertExtraNode ? 'ant-click-animating' : 'ant-click-animating-without-extra-node';
         },
         enumerable: true,
         configurable: true
     });
-    NzWaveRenderer.prototype.bindTriggerEvent = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.bindTriggerEvent = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this.platform.isBrowser) {
-            this.ngZone.runOutsideAngular(function () {
+            this.ngZone.runOutsideAngular((/**
+             * @return {?}
+             */
+            function () {
                 _this.removeTriggerEvent();
                 if (_this.triggerElement) {
                     _this.triggerElement.addEventListener('click', _this.clickHandler, true);
                 }
-            });
+            }));
         }
     };
-    NzWaveRenderer.prototype.removeTriggerEvent = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.removeTriggerEvent = /**
+     * @return {?}
+     */
+    function () {
         if (this.triggerElement) {
             this.triggerElement.removeEventListener('click', this.clickHandler, true);
         }
     };
-    NzWaveRenderer.prototype.removeStyleAndExtraNode = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.removeStyleAndExtraNode = /**
+     * @return {?}
+     */
+    function () {
         if (this.styleForPseudo && document.body.contains(this.styleForPseudo)) {
             document.body.removeChild(this.styleForPseudo);
             this.styleForPseudo = null;
         }
         if (this.insertExtraNode && this.triggerElement.contains(this.extraNode)) {
-            this.triggerElement.removeChild(this.extraNode);
+            this.triggerElement.removeChild((/** @type {?} */ (this.extraNode)));
         }
     };
-    NzWaveRenderer.prototype.destroy = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.destroy = /**
+     * @return {?}
+     */
+    function () {
         this.removeTriggerEvent();
         this.removeStyleAndExtraNode();
     };
-    NzWaveRenderer.prototype.fadeOutWave = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.fadeOutWave = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
+        /** @type {?} */
         var node = this.triggerElement;
+        /** @type {?} */
         var waveColor = this.getWaveColor(node);
         node.setAttribute(this.waveAttributeName, 'true');
         if (Date.now() < this.lastTime + this.waveTransitionDuration) {
@@ -3748,12 +6719,25 @@ var NzWaveRenderer = /** @class */ (function () {
             node.appendChild(this.extraNode);
         }
         this.lastTime = Date.now();
-        this.runTimeoutOutsideZone(function () {
+        this.runTimeoutOutsideZone((/**
+         * @return {?}
+         */
+        function () {
             node.removeAttribute(_this.waveAttributeName);
             _this.removeStyleAndExtraNode();
-        }, this.waveTransitionDuration);
+        }), this.waveTransitionDuration);
     };
-    NzWaveRenderer.prototype.isValidColor = function (color) {
+    /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.isValidColor = /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
+    function (color) {
         return (!!color &&
             color !== '#ffffff' &&
             color !== 'rgb(255, 255, 255)' &&
@@ -3761,39 +6745,133 @@ var NzWaveRenderer = /** @class */ (function () {
             !/rgba\(\d*, \d*, \d*, 0\)/.test(color) &&
             color !== 'transparent');
     };
-    NzWaveRenderer.prototype.isNotGrey = function (color) {
+    /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.isNotGrey = /**
+     * @private
+     * @param {?} color
+     * @return {?}
+     */
+    function (color) {
+        /** @type {?} */
         var match = color.match(/rgba?\((\d*), (\d*), (\d*)(, [\.\d]*)?\)/);
         if (match && match[1] && match[2] && match[3]) {
             return !(match[1] === match[2] && match[2] === match[3]);
         }
         return true;
     };
-    NzWaveRenderer.prototype.getWaveColor = function (node) {
+    /**
+     * @private
+     * @param {?} node
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.getWaveColor = /**
+     * @private
+     * @param {?} node
+     * @return {?}
+     */
+    function (node) {
+        /** @type {?} */
         var nodeStyle = getComputedStyle(node);
         return (nodeStyle.getPropertyValue('border-top-color') || // Firefox Compatible
             nodeStyle.getPropertyValue('border-color') ||
             nodeStyle.getPropertyValue('background-color'));
     };
-    NzWaveRenderer.prototype.runTimeoutOutsideZone = function (fn, delay) {
-        this.ngZone.runOutsideAngular(function () { return setTimeout(fn, delay); });
+    /**
+     * @private
+     * @param {?} fn
+     * @param {?} delay
+     * @return {?}
+     */
+    NzWaveRenderer.prototype.runTimeoutOutsideZone = /**
+     * @private
+     * @param {?} fn
+     * @param {?} delay
+     * @return {?}
+     */
+    function (fn, delay) {
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () { return setTimeout(fn, delay); }));
     };
     return NzWaveRenderer;
 }());
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.waveTransitionDuration;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.styleForPseudo;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.extraNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.lastTime;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.platform;
+    /** @type {?} */
+    NzWaveRenderer.prototype.clickHandler;
+    /** @type {?} */
+    NzWaveRenderer.prototype.onClick;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.triggerElement;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveRenderer.prototype.insertExtraNode;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzWaveConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzWaveConfig.prototype.disabled;
+}
+/** @type {?} */
 var NZ_WAVE_GLOBAL_DEFAULT_CONFIG = {
     disabled: false
 };
+/** @type {?} */
 var NZ_WAVE_GLOBAL_CONFIG = new InjectionToken('nz-wave-global-options', {
     providedIn: 'root',
     factory: NZ_WAVE_GLOBAL_CONFIG_FACTORY
 });
+/**
+ * @return {?}
+ */
 function NZ_WAVE_GLOBAL_CONFIG_FACTORY() {
     return NZ_WAVE_GLOBAL_DEFAULT_CONFIG;
 }
@@ -3808,20 +6886,33 @@ var NzWaveDirective = /** @class */ (function () {
         this.waveDisabled = this.isConfigDisabled();
     }
     Object.defineProperty(NzWaveDirective.prototype, "disabled", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this.waveDisabled;
         },
         enumerable: true,
         configurable: true
     });
     Object.defineProperty(NzWaveDirective.prototype, "rendererRef", {
-        get: function () {
+        get: /**
+         * @return {?}
+         */
+        function () {
             return this.waveRenderer;
         },
         enumerable: true,
         configurable: true
     });
-    NzWaveDirective.prototype.isConfigDisabled = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.isConfigDisabled = /**
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var disabled = false;
         if (this.config && typeof this.config.disabled === 'boolean') {
             disabled = this.config.disabled;
@@ -3831,99 +6922,149 @@ var NzWaveDirective = /** @class */ (function () {
         }
         return disabled;
     };
-    NzWaveDirective.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         if (this.waveRenderer) {
             this.waveRenderer.destroy();
         }
     };
-    NzWaveDirective.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.renderWaveIfEnabled();
     };
-    NzWaveDirective.prototype.renderWaveIfEnabled = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.renderWaveIfEnabled = /**
+     * @return {?}
+     */
+    function () {
         if (!this.waveDisabled && this.elementRef.nativeElement) {
             this.waveRenderer = new NzWaveRenderer(this.elementRef.nativeElement, this.ngZone, this.nzWaveExtraNode);
         }
     };
-    NzWaveDirective.prototype.disable = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.disable = /**
+     * @return {?}
+     */
+    function () {
         this.waveDisabled = true;
         if (this.waveRenderer) {
             this.waveRenderer.removeTriggerEvent();
             this.waveRenderer.removeStyleAndExtraNode();
         }
     };
-    NzWaveDirective.prototype.enable = function () {
+    /**
+     * @return {?}
+     */
+    NzWaveDirective.prototype.enable = /**
+     * @return {?}
+     */
+    function () {
         // config priority
         this.waveDisabled = this.isConfigDisabled() || false;
         if (this.waveRenderer) {
             this.waveRenderer.bindTriggerEvent();
         }
     };
-    /** @nocollapse */ NzWaveDirective.ɵfac = function NzWaveDirective_Factory(t) { return new (t || NzWaveDirective)(ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(NZ_WAVE_GLOBAL_CONFIG, 8), ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
-    /** @nocollapse */ NzWaveDirective.ɵdir = ɵɵdefineDirective({ type: NzWaveDirective, selectors: [["", "nz-wave", ""]], inputs: { nzWaveExtraNode: "nzWaveExtraNode" }, exportAs: ["nzWave"] });
+    NzWaveDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-wave]',
+                    exportAs: 'nzWave'
+                },] }
+    ];
+    /** @nocollapse */
+    NzWaveDirective.ctorParameters = function () { return [
+        { type: NgZone },
+        { type: ElementRef },
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_WAVE_GLOBAL_CONFIG,] }] },
+        { type: String, decorators: [{ type: Optional }, { type: Inject, args: [ANIMATION_MODULE_TYPE,] }] }
+    ]; };
+    NzWaveDirective.propDecorators = {
+        nzWaveExtraNode: [{ type: Input }]
+    };
     return NzWaveDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzWaveDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-wave]',
-                exportAs: 'nzWave'
-            }]
-    }], function () { return [{ type: NgZone }, { type: ElementRef }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_WAVE_GLOBAL_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [ANIMATION_MODULE_TYPE]
-            }] }]; }, { nzWaveExtraNode: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzWaveDirective.prototype.nzWaveExtraNode;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.waveRenderer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.waveDisabled;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.config;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzWaveDirective.prototype.animationType;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/nz-wave.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzWaveModule = /** @class */ (function () {
     function NzWaveModule() {
     }
-    /** @nocollapse */ NzWaveModule.ɵmod = ɵɵdefineNgModule({ type: NzWaveModule });
-    /** @nocollapse */ NzWaveModule.ɵinj = ɵɵdefineInjector({ factory: function NzWaveModule_Factory(t) { return new (t || NzWaveModule)(); }, imports: [[PlatformModule]] });
+    NzWaveModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [PlatformModule],
+                    exports: [NzWaveDirective],
+                    declarations: [NzWaveDirective]
+                },] }
+    ];
     return NzWaveModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzWaveModule, { declarations: [NzWaveDirective], imports: [PlatformModule], exports: [NzWaveDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzWaveModule, [{
-        type: NgModule,
-        args: [{
-                imports: [PlatformModule],
-                exports: [NzWaveDirective],
-                declarations: [NzWaveDirective]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: wave/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/nz-menu-base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuBaseService = /** @class */ (function () {
     function NzMenuBaseService() {
         this.menuItemClick$ = new Subject(); // tslint:disable-line no-any
+        // tslint:disable-line no-any
         this.theme$ = new Subject();
         this.mode$ = new BehaviorSubject('vertical');
         this.inlineIndent$ = new BehaviorSubject(24);
@@ -3933,46 +7074,101 @@ var NzMenuBaseService = /** @class */ (function () {
         this.menuOpen$ = new BehaviorSubject(false);
     }
     // tslint:disable-next-line no-any
-    NzMenuBaseService.prototype.onMenuItemClick = function (menu) {
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} menu
+     * @return {?}
+     */
+    NzMenuBaseService.prototype.onMenuItemClick = 
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} menu
+     * @return {?}
+     */
+    function (menu) {
         this.menuItemClick$.next(menu);
     };
-    NzMenuBaseService.prototype.setMode = function (mode) {
+    /**
+     * @param {?} mode
+     * @return {?}
+     */
+    NzMenuBaseService.prototype.setMode = /**
+     * @param {?} mode
+     * @return {?}
+     */
+    function (mode) {
         this.mode = mode;
         this.mode$.next(mode);
     };
-    NzMenuBaseService.prototype.setTheme = function (theme) {
+    /**
+     * @param {?} theme
+     * @return {?}
+     */
+    NzMenuBaseService.prototype.setTheme = /**
+     * @param {?} theme
+     * @return {?}
+     */
+    function (theme) {
         this.theme = theme;
         this.theme$.next(theme);
     };
-    NzMenuBaseService.prototype.setInlineIndent = function (indent) {
+    /**
+     * @param {?} indent
+     * @return {?}
+     */
+    NzMenuBaseService.prototype.setInlineIndent = /**
+     * @param {?} indent
+     * @return {?}
+     */
+    function (indent) {
         this.inlineIndent = indent;
         this.inlineIndent$.next(indent);
     };
-    /** @nocollapse */ NzMenuBaseService.ɵfac = function NzMenuBaseService_Factory(t) { return new (t || NzMenuBaseService)(); };
-    /** @nocollapse */ NzMenuBaseService.ɵprov = ɵɵdefineInjectable({ token: NzMenuBaseService, factory: NzMenuBaseService.ɵfac });
+    NzMenuBaseService.decorators = [
+        { type: Injectable }
+    ];
     return NzMenuBaseService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMenuBaseService, [{
-        type: Injectable
-    }], null, null); })();
+if (false) {
+    /** @type {?} */
+    NzMenuBaseService.prototype.isInDropDown;
+    /** @type {?} */
+    NzMenuBaseService.prototype.menuItemClick$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.theme$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.mode$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.inlineIndent$;
+    /** @type {?} */
+    NzMenuBaseService.prototype.theme;
+    /** @type {?} */
+    NzMenuBaseService.prototype.mode;
+    /** @type {?} */
+    NzMenuBaseService.prototype.inlineIndent;
+    /** @type {?} */
+    NzMenuBaseService.prototype.menuOpen$;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/nz-dropdown-service.resolver.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var NzDropdownHigherOrderServiceToken = new InjectionToken('NzMenuHigherOrder');
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: dropdown/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: responsive/nz-breakpoint.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -3980,15 +7176,16 @@ var NzDropdownHigherOrderServiceToken = new InjectionToken('NzMenuHigherOrder');
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-var NzBreakpoint;
-(function (NzBreakpoint) {
-    NzBreakpoint["xxl"] = "xxl";
-    NzBreakpoint["xl"] = "xl";
-    NzBreakpoint["lg"] = "lg";
-    NzBreakpoint["md"] = "md";
-    NzBreakpoint["sm"] = "sm";
-    NzBreakpoint["xs"] = "xs";
-})(NzBreakpoint || (NzBreakpoint = {}));
+/** @enum {string} */
+var NzBreakpoint = {
+    xxl: "xxl",
+    xl: "xl",
+    lg: "lg",
+    md: "md",
+    sm: "sm",
+    xs: "xs",
+};
+/** @type {?} */
 var responsiveMap = {
     xs: '(max-width: 575px)',
     sm: '(min-width: 576px)',
@@ -3999,102 +7196,94 @@ var responsiveMap = {
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: responsive/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/nz-trans-button.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransButtonDirective = /** @class */ (function () {
     function NzTransButtonDirective() {
     }
-    /** @nocollapse */ NzTransButtonDirective.ɵfac = function NzTransButtonDirective_Factory(t) { return new (t || NzTransButtonDirective)(); };
-    /** @nocollapse */ NzTransButtonDirective.ɵdir = ɵɵdefineDirective({ type: NzTransButtonDirective, selectors: [["button", "nz-trans-button", ""]], hostBindings: function NzTransButtonDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            ɵɵallocHostVars(4);
-        } if (rf & 2) {
-            ɵɵstyleSanitizer(ɵɵdefaultStyleSanitizer);
-            ɵɵstyleProp("border", "0")("background", "transparent")("padding", "0")("line-height", "inherit");
-        } } });
+    NzTransButtonDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: 'button[nz-trans-button]',
+                    host: {
+                        '[style.border]': '"0"',
+                        '[style.background]': '"transparent"',
+                        '[style.padding]': '"0"',
+                        '[style.line-height]': '"inherit"'
+                    }
+                },] }
+    ];
     return NzTransButtonDirective;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTransButtonDirective, [{
-        type: Directive,
-        args: [{
-                selector: 'button[nz-trans-button]',
-                host: {
-                    '[style.border]': '"0"',
-                    '[style.background]': '"transparent"',
-                    '[style.padding]': '"0"',
-                    '[style.line-height]': '"inherit"'
-                }
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/nz-trans-button.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransButtonModule = /** @class */ (function () {
     function NzTransButtonModule() {
     }
-    /** @nocollapse */ NzTransButtonModule.ɵmod = ɵɵdefineNgModule({ type: NzTransButtonModule });
-    /** @nocollapse */ NzTransButtonModule.ɵinj = ɵɵdefineInjector({ factory: function NzTransButtonModule_Factory(t) { return new (t || NzTransButtonModule)(); }, imports: [[CommonModule]] });
+    NzTransButtonModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzTransButtonDirective],
+                    exports: [NzTransButtonDirective],
+                    imports: [CommonModule]
+                },] }
+    ];
     return NzTransButtonModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzTransButtonModule, { declarations: [NzTransButtonDirective], imports: [CommonModule], exports: [NzTransButtonDirective] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTransButtonModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzTransButtonDirective],
-                exports: [NzTransButtonDirective],
-                imports: [CommonModule]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: trans-button/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/highlight.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Regular Expressions for parsing tags and attributes
+/** @type {?} */
 var SURROGATE_PAIR_REGEXP = /[\uD800-\uDBFF][\uDC00-\uDFFF]/g;
 // ! to ~ is the ASCII range.
+/** @type {?} */
 var NON_ALPHANUMERIC_REGEXP = /([^\#-~ |!])/g;
 /**
  * Escapes all potentially dangerous characters, so that the
  * resulting string can be safely inserted into attribute or
  * element text.
+ * @param {?} value
+ * @return {?}
  */
 function encodeEntities(value) {
     return value
         .replace(/&/g, '&amp;')
-        .replace(SURROGATE_PAIR_REGEXP, function (match) {
+        .replace(SURROGATE_PAIR_REGEXP, (/**
+     * @param {?} match
+     * @return {?}
+     */
+    function (match) {
+        /** @type {?} */
         var hi = match.charCodeAt(0);
+        /** @type {?} */
         var low = match.charCodeAt(1);
-        return "&#" + ((hi - 0xd800) * 0x400 + (low - 0xdc00) + 0x10000) + ";";
-    })
-        .replace(NON_ALPHANUMERIC_REGEXP, function (match) { return "&#" + match.charCodeAt(0) + ";"; })
+        return "&#" + ((hi - 0xD800) * 0x400 + (low - 0xDC00) + 0x10000) + ";";
+    }))
+        .replace(NON_ALPHANUMERIC_REGEXP, (/**
+     * @param {?} match
+     * @return {?}
+     */
+    function (match) { return "&#" + match.charCodeAt(0) + ";"; }))
         .replace(/</g, '&lt;')
         .replace(/>/g, '&gt;');
 }
@@ -4102,132 +7291,696 @@ var NzHighlightPipe = /** @class */ (function () {
     function NzHighlightPipe() {
         this.UNIQUE_WRAPPERS = ['##==-open_tag-==##', '##==-close_tag-==##'];
     }
-    NzHighlightPipe.prototype.transform = function (value, highlightValue, flags, klass) {
+    /**
+     * @param {?} value
+     * @param {?} highlightValue
+     * @param {?=} flags
+     * @param {?=} klass
+     * @return {?}
+     */
+    NzHighlightPipe.prototype.transform = /**
+     * @param {?} value
+     * @param {?} highlightValue
+     * @param {?=} flags
+     * @param {?=} klass
+     * @return {?}
+     */
+    function (value, highlightValue, flags, klass) {
         if (!highlightValue) {
             return value;
         }
         // Escapes regex keyword to interpret these characters literally
+        /** @type {?} */
         var searchValue = new RegExp(highlightValue.replace(/([.*+?^=!:${}()|[\]\/\\])/g, '\\$&'), flags);
+        /** @type {?} */
         var wrapValue = value.replace(searchValue, this.UNIQUE_WRAPPERS[0] + "$&" + this.UNIQUE_WRAPPERS[1]);
         return encodeEntities(wrapValue)
             .replace(new RegExp(this.UNIQUE_WRAPPERS[0], 'g'), klass ? "<span class=\"" + klass + "\">" : '<span>')
             .replace(new RegExp(this.UNIQUE_WRAPPERS[1], 'g'), '</span>');
     };
-    /** @nocollapse */ NzHighlightPipe.ɵfac = function NzHighlightPipe_Factory(t) { return new (t || NzHighlightPipe)(); };
-    /** @nocollapse */ NzHighlightPipe.ɵpipe = ɵɵdefinePipe({ name: "nzHighlight", type: NzHighlightPipe, pure: true });
+    NzHighlightPipe.decorators = [
+        { type: Pipe, args: [{
+                    name: 'nzHighlight',
+                    pure: true
+                },] }
+    ];
     return NzHighlightPipe;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzHighlightPipe, [{
-        type: Pipe,
-        args: [{
-                name: 'nzHighlight',
-                pure: true
-            }]
-    }], null, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzHighlightPipe.prototype.UNIQUE_WRAPPERS;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/highlight.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzHighlightModule = /** @class */ (function () {
     function NzHighlightModule() {
     }
-    /** @nocollapse */ NzHighlightModule.ɵmod = ɵɵdefineNgModule({ type: NzHighlightModule });
-    /** @nocollapse */ NzHighlightModule.ɵinj = ɵɵdefineInjector({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[CommonModule]] });
+    NzHighlightModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule],
+                    exports: [NzHighlightPipe],
+                    declarations: [NzHighlightPipe]
+                },] }
+    ];
     return NzHighlightModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzHighlightModule, { declarations: [NzHighlightPipe], imports: [CommonModule], exports: [NzHighlightPipe] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzHighlightModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule],
-                exports: [NzHighlightPipe],
-                declarations: [NzHighlightPipe]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: highlight/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: config/config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @record
+ */
+function NzConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzConfig.prototype.affix;
+    /** @type {?|undefined} */
+    NzConfig.prototype.alert;
+    /** @type {?|undefined} */
+    NzConfig.prototype.anchor;
+    /** @type {?|undefined} */
+    NzConfig.prototype.avatar;
+    /** @type {?|undefined} */
+    NzConfig.prototype.backTop;
+    /** @type {?|undefined} */
+    NzConfig.prototype.badge;
+    /** @type {?|undefined} */
+    NzConfig.prototype.button;
+    /** @type {?|undefined} */
+    NzConfig.prototype.card;
+    /** @type {?|undefined} */
+    NzConfig.prototype.carousel;
+    /** @type {?|undefined} */
+    NzConfig.prototype.cascader;
+    /** @type {?|undefined} */
+    NzConfig.prototype.codeEditor;
+    /** @type {?|undefined} */
+    NzConfig.prototype.collapse;
+    /** @type {?|undefined} */
+    NzConfig.prototype.collapsePanel;
+    /** @type {?|undefined} */
+    NzConfig.prototype.descriptions;
+    /** @type {?|undefined} */
+    NzConfig.prototype.drawer;
+    /** @type {?|undefined} */
+    NzConfig.prototype.empty;
+    /** @type {?|undefined} */
+    NzConfig.prototype.form;
+    /** @type {?|undefined} */
+    NzConfig.prototype.grid;
+    /** @type {?|undefined} */
+    NzConfig.prototype.icon;
+    /** @type {?|undefined} */
+    NzConfig.prototype.message;
+    /** @type {?|undefined} */
+    NzConfig.prototype.modal;
+    /** @type {?|undefined} */
+    NzConfig.prototype.notification;
+    /** @type {?|undefined} */
+    NzConfig.prototype.pageHeader;
+    /** @type {?|undefined} */
+    NzConfig.prototype.progress;
+    /** @type {?|undefined} */
+    NzConfig.prototype.rate;
+    /** @type {?|undefined} */
+    NzConfig.prototype.spin;
+    /** @type {?|undefined} */
+    NzConfig.prototype.switch;
+    /** @type {?|undefined} */
+    NzConfig.prototype.table;
+    /** @type {?|undefined} */
+    NzConfig.prototype.tabs;
+    /** @type {?|undefined} */
+    NzConfig.prototype.timePicker;
+    /** @type {?|undefined} */
+    NzConfig.prototype.tree;
+    /** @type {?|undefined} */
+    NzConfig.prototype.treeSelect;
+    /** @type {?|undefined} */
+    NzConfig.prototype.typography;
+}
+/**
+ * @record
+ */
+function AffixConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AffixConfig.prototype.nzOffsetBottom;
+    /** @type {?|undefined} */
+    AffixConfig.prototype.nzOffsetTop;
+}
+/**
+ * @record
+ */
+function AlertConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AlertConfig.prototype.nzCloseable;
+    /** @type {?|undefined} */
+    AlertConfig.prototype.nzShowIcon;
+}
+/**
+ * @record
+ */
+function AvatarConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AvatarConfig.prototype.nzShape;
+    /** @type {?|undefined} */
+    AvatarConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function AnchorConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzBounds;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzOffsetBottom;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzOffsetTop;
+    /** @type {?|undefined} */
+    AnchorConfig.prototype.nzShowInkInFixed;
+}
+/**
+ * @record
+ */
+function BackTopConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    BackTopConfig.prototype.nzVisibilityHeight;
+}
+/**
+ * @record
+ */
+function BadgeConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzColor;
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzOverflowCount;
+    /** @type {?|undefined} */
+    BadgeConfig.prototype.nzShowZero;
+}
+/**
+ * @record
+ */
+function ButtonConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ButtonConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function CodeEditorConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.assetsRoot;
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.defaultEditorOption;
+    /** @type {?|undefined} */
+    CodeEditorConfig.prototype.useStaticLoading;
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onLoad = function () { };
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onFirstEditorInit = function () { };
+    /**
+     * @return {?}
+     */
+    CodeEditorConfig.prototype.onInit = function () { };
+}
+/**
+ * @record
+ */
+function CardConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzHoverable;
+    /** @type {?|undefined} */
+    CardConfig.prototype.nzBordered;
+}
+/**
+ * @record
+ */
+function CarouselConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzAutoPlay;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzAutoPlaySpeed;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzDots;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzEffect;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzEnableSwipe;
+    /** @type {?|undefined} */
+    CarouselConfig.prototype.nzVertical;
+}
+/**
+ * @record
+ */
+function CascaderConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CascaderConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function CollapseConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CollapseConfig.prototype.nzAccordion;
+    /** @type {?|undefined} */
+    CollapseConfig.prototype.nzBordered;
+}
+/**
+ * @record
+ */
+function CollapsePanelConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    CollapsePanelConfig.prototype.nzShowArrow;
+}
+/**
+ * @record
+ */
+function DescriptionsConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzBorder;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzColumn;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    DescriptionsConfig.prototype.nzColon;
+}
+/**
+ * @record
+ */
+function DrawerConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    DrawerConfig.prototype.nzMask;
+    /** @type {?|undefined} */
+    DrawerConfig.prototype.nzMaskClosable;
+}
+/**
+ * @record
+ */
+function EmptyConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    EmptyConfig.prototype.nzDefaultEmptyContent;
+}
+/**
+ * @record
+ */
+function FormConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    FormConfig.prototype.nzNoColon;
+}
+/**
+ * @record
+ */
+function GridConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzAlign;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzGutter;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzJustify;
+    /** @type {?|undefined} */
+    GridConfig.prototype.nzType;
+}
+/**
+ * @record
+ */
+function IconConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    IconConfig.prototype.nzTheme;
+    /** @type {?|undefined} */
+    IconConfig.prototype.nzTwotoneColor;
+}
+/**
+ * @record
+ */
+function MessageConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzAnimate;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzDuration;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzMaxStack;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzPauseOnHover;
+    /** @type {?|undefined} */
+    MessageConfig.prototype.nzTop;
+}
+/**
+ * @record
+ */
+function ModalConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ModalConfig.prototype.nzMask;
+    /** @type {?|undefined} */
+    ModalConfig.prototype.nzMaskClosable;
+}
+/**
+ * @record
+ */
+function NotificationConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzTop;
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzBottom;
+    /** @type {?|undefined} */
+    NotificationConfig.prototype.nzPlacement;
+}
+/**
+ * @record
+ */
+function PageHeaderConfig() { }
+if (false) {
+    /** @type {?} */
+    PageHeaderConfig.prototype.nzGhost;
+}
+/**
+ * @record
+ */
+function ProgressConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzGapDegree;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzGapPosition;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzShowInfo;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeSwitch;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeWidth;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeLinecap;
+    /** @type {?|undefined} */
+    ProgressConfig.prototype.nzStrokeColor;
+}
+/**
+ * @record
+ */
+function RateConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    RateConfig.prototype.nzAllowClear;
+    /** @type {?|undefined} */
+    RateConfig.prototype.nzAllowHalf;
+}
+/**
+ * @record
+ */
+function SpinConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    SpinConfig.prototype.nzIndicator;
+}
+/**
+ * @record
+ */
+function SwitchConfig() { }
+if (false) {
+    /** @type {?} */
+    SwitchConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function TableConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzBordered;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzShowQuickJumper;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzShowSizeChanger;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzSimple;
+    /** @type {?|undefined} */
+    TableConfig.prototype.nzHideOnSinglePage;
+}
+/**
+ * @record
+ */
+function TabsConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzAnimated;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzSize;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzType;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzTabBarGutter;
+    /** @type {?|undefined} */
+    TabsConfig.prototype.nzShowPagination;
+}
+/**
+ * @record
+ */
+function TimePickerConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzAllowEmpty;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzClearText;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzFormat;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzHourStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzMinuteStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzSecondStep;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzPopupClassName;
+    /** @type {?|undefined} */
+    TimePickerConfig.prototype.nzUse12Hours;
+}
+/**
+ * @record
+ */
+function TreeConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzBlockNode;
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzShowIcon;
+    /** @type {?|undefined} */
+    TreeConfig.prototype.nzHideUnMatched;
+}
+/**
+ * @record
+ */
+function TreeSelectConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzShowIcon;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzShowLine;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzDropdownMatchSelectWidth;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzHideUnMatched;
+    /** @type {?|undefined} */
+    TreeSelectConfig.prototype.nzSize;
+}
+/**
+ * @record
+ */
+function TypographyConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    TypographyConfig.prototype.nzEllipsisRows;
+}
 /**
  * User should provide an object implements this interface to set global configurations.
+ * @type {?}
  */
 var NZ_CONFIG = new InjectionToken('nz-config');
 
-var isDefined = function (value) {
+/**
+ * @fileoverview added by tsickle
+ * Generated from: config/config.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
+var isDefined = (/**
+ * @param {?=} value
+ * @return {?}
+ */
+function (value) {
     return value !== undefined;
-};
+});
+var ɵ0$1 = isDefined;
 var NzConfigService = /** @class */ (function () {
     function NzConfigService(defaultConfig) {
         this.configUpdated$ = new Subject();
         this.config = defaultConfig || {};
     }
-    NzConfigService.prototype.getConfigForComponent = function (componentName) {
+    /**
+     * @template T
+     * @param {?} componentName
+     * @return {?}
+     */
+    NzConfigService.prototype.getConfigForComponent = /**
+     * @template T
+     * @param {?} componentName
+     * @return {?}
+     */
+    function (componentName) {
         return this.config[componentName];
     };
-    NzConfigService.prototype.getConfigChangeEventForComponent = function (componentName) {
-        return this.configUpdated$.pipe(filter(function (n) { return n === componentName; }), mapTo(undefined));
+    /**
+     * @param {?} componentName
+     * @return {?}
+     */
+    NzConfigService.prototype.getConfigChangeEventForComponent = /**
+     * @param {?} componentName
+     * @return {?}
+     */
+    function (componentName) {
+        return this.configUpdated$.pipe(filter((/**
+         * @param {?} n
+         * @return {?}
+         */
+        function (n) { return n === componentName; })), mapTo(undefined));
     };
-    NzConfigService.prototype.set = function (componentName, value) {
-        this.config[componentName] = __assign(__assign({}, this.config[componentName]), value);
+    /**
+     * @template T
+     * @param {?} componentName
+     * @param {?} value
+     * @return {?}
+     */
+    NzConfigService.prototype.set = /**
+     * @template T
+     * @param {?} componentName
+     * @param {?} value
+     * @return {?}
+     */
+    function (componentName, value) {
+        this.config[componentName] = __assign({}, this.config[componentName], value);
         this.configUpdated$.next(componentName);
     };
-    /** @nocollapse */ NzConfigService.ɵfac = function NzConfigService_Factory(t) { return new (t || NzConfigService)(ɵɵinject(NZ_CONFIG, 8)); };
-    /** @nocollapse */ NzConfigService.ɵprov = ɵɵdefineInjectable({ token: NzConfigService, factory: NzConfigService.ɵfac, providedIn: 'root' });
+    NzConfigService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    /** @nocollapse */
+    NzConfigService.ctorParameters = function () { return [
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_CONFIG,] }] }
+    ]; };
+    /** @nocollapse */ NzConfigService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzConfigService_Factory() { return new NzConfigService(ɵɵinject(NZ_CONFIG, 8)); }, token: NzConfigService, providedIn: "root" });
     return NzConfigService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzConfigService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_CONFIG]
-            }] }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzConfigService.prototype.configUpdated$;
+    /**
+     * Global config holding property.
+     * @type {?}
+     * @private
+     */
+    NzConfigService.prototype.config;
+}
 // tslint:disable:no-invalid-this
 // tslint:disable:no-any
 /**
  * This decorator is used to decorate properties. If a property is decorated, it would try to load default value from
  * config.
+ * @template T
+ * @param {?} componentName
+ * @param {?=} innerDefaultValue
+ * @return {?}
  */
 // tslint:disable-next-line:typedef
 function WithConfig(componentName, innerDefaultValue) {
-    return function ConfigDecorator(target, propName, originalDescriptor) {
+    return (/**
+     * @param {?} target
+     * @param {?} propName
+     * @param {?=} originalDescriptor
+     * @return {?}
+     */
+    function ConfigDecorator(target, propName, originalDescriptor) {
+        /** @type {?} */
         var privatePropName = "$$__assignedValue__" + propName;
+        if (Object.prototype.hasOwnProperty.call(target, privatePropName)) {
+            console.warn("The prop \"" + privatePropName + "\" is already exist, it will be override by " + componentName + " decorator.");
+        }
         Object.defineProperty(target, privatePropName, {
             configurable: true,
             writable: true,
             enumerable: false
         });
         return {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
+                /** @type {?} */
                 var originalValue = originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
                 if (isDefined(originalValue)) {
                     return originalValue;
                 }
+                /** @type {?} */
                 var componentConfig = this.nzConfigService.getConfigForComponent(componentName) || {};
+                /** @type {?} */
                 var configValue = componentConfig[propName];
                 return isDefined(configValue) ? configValue : innerDefaultValue;
             },
-            set: function (value) {
+            set: /**
+             * @param {?=} value
+             * @return {?}
+             */
+            function (value) {
                 if (originalDescriptor && originalDescriptor.set) {
                     originalDescriptor.set.bind(this)(value);
                 }
@@ -4238,123 +7991,140 @@ function WithConfig(componentName, innerDefaultValue) {
             configurable: true,
             enumerable: true
         };
-    };
+    });
 }
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: config/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-css-unit.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzToCssUnitPipe = /** @class */ (function () {
     function NzToCssUnitPipe() {
     }
-    NzToCssUnitPipe.prototype.transform = function (value, defaultUnit) {
+    /**
+     * @param {?} value
+     * @param {?=} defaultUnit
+     * @return {?}
+     */
+    NzToCssUnitPipe.prototype.transform = /**
+     * @param {?} value
+     * @param {?=} defaultUnit
+     * @return {?}
+     */
+    function (value, defaultUnit) {
         if (defaultUnit === void 0) { defaultUnit = 'px'; }
-        var formatted = +value; // force convert
+        /** @type {?} */
+        var formatted = +value;
         return isNaN(formatted) ? "" + value : "" + formatted + defaultUnit;
     };
-    /** @nocollapse */ NzToCssUnitPipe.ɵfac = function NzToCssUnitPipe_Factory(t) { return new (t || NzToCssUnitPipe)(); };
-    /** @nocollapse */ NzToCssUnitPipe.ɵpipe = ɵɵdefinePipe({ name: "nzToCssUnit", type: NzToCssUnitPipe, pure: true });
+    NzToCssUnitPipe.decorators = [
+        { type: Pipe, args: [{
+                    name: 'nzToCssUnit'
+                },] }
+    ];
     return NzToCssUnitPipe;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzToCssUnitPipe, [{
-        type: Pipe,
-        args: [{
-                name: 'nzToCssUnit'
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: time/index.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-time-range.pipe.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzTimeRangePipe = /** @class */ (function () {
     function NzTimeRangePipe() {
     }
-    NzTimeRangePipe.prototype.transform = function (value, format) {
+    /**
+     * @param {?} value
+     * @param {?=} format
+     * @return {?}
+     */
+    NzTimeRangePipe.prototype.transform = /**
+     * @param {?} value
+     * @param {?=} format
+     * @return {?}
+     */
+    function (value, format) {
         if (format === void 0) { format = 'HH:mm:ss'; }
+        /** @type {?} */
         var duration = Number(value || 0);
-        return timeUnits.reduce(function (current, _a) {
+        return timeUnits.reduce((/**
+         * @param {?} current
+         * @param {?} __1
+         * @return {?}
+         */
+        function (current, _a) {
             var _b = __read(_a, 2), name = _b[0], unit = _b[1];
             if (current.indexOf(name) !== -1) {
+                /** @type {?} */
                 var v_1 = Math.floor(duration / unit);
                 duration -= v_1 * unit;
-                return current.replace(new RegExp(name + "+", 'g'), function (match) {
+                return current.replace(new RegExp(name + "+", 'g'), (/**
+                 * @param {?} match
+                 * @return {?}
+                 */
+                function (match) {
                     return padStart(v_1.toString(), match.length, '0');
-                });
+                }));
             }
             return current;
-        }, format);
+        }), format);
     };
-    /** @nocollapse */ NzTimeRangePipe.ɵfac = function NzTimeRangePipe_Factory(t) { return new (t || NzTimeRangePipe)(); };
-    /** @nocollapse */ NzTimeRangePipe.ɵpipe = ɵɵdefinePipe({ name: "nzTimeRange", type: NzTimeRangePipe, pure: true });
+    NzTimeRangePipe.decorators = [
+        { type: Pipe, args: [{
+                    name: 'nzTimeRange',
+                    pure: true
+                },] }
+    ];
     return NzTimeRangePipe;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzTimeRangePipe, [{
-        type: Pipe,
-        args: [{
-                name: 'nzTimeRange',
-                pure: true
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/nz-pipe.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzPipesModule = /** @class */ (function () {
     function NzPipesModule() {
     }
-    /** @nocollapse */ NzPipesModule.ɵmod = ɵɵdefineNgModule({ type: NzPipesModule });
-    /** @nocollapse */ NzPipesModule.ɵinj = ɵɵdefineInjector({ factory: function NzPipesModule_Factory(t) { return new (t || NzPipesModule)(); }, imports: [[CommonModule]] });
+    NzPipesModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule],
+                    exports: [NzTimeRangePipe, NzToCssUnitPipe],
+                    declarations: [NzTimeRangePipe, NzToCssUnitPipe]
+                },] }
+    ];
     return NzPipesModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzPipesModule, { declarations: [NzTimeRangePipe, NzToCssUnitPipe], imports: [CommonModule], exports: [NzTimeRangePipe, NzToCssUnitPipe] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzPipesModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule],
-                exports: [NzTimeRangePipe, NzToCssUnitPipe],
-                declarations: [NzTimeRangePipe, NzToCssUnitPipe]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: pipe/public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-core.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { AnimationCurves, AnimationDuration, CandyDate, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_BOTTOM_POSITIONS, DEFAULT_MENTION_TOP_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_CONFIG, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzBreakpoint, NzClassListAddDirective, NzConfigService, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzDragService, NzDropdownHigherOrderServiceToken, NzHighlightModule, NzHighlightPipe, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzPipesModule, NzScrollService, NzSingletonService, NzStringTemplateOutletDirective, NzTimeRangePipe, NzToCssUnitPipe, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, WithConfig, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureInBounds, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getEventPosition, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, getStyleAsText, helpMotion, inNextTick, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, measureScrollbar, moveUpMotion, notificationMotion, padEnd, padStart, properties, pxToNumber, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, sortRangeValue, timeUnits, toArray, toBoolean, toCssPixel, toNumber, treeCollapseMotion, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion };

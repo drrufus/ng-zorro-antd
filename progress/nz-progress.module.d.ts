@@ -1,8 +1,9 @@
-import * as i0 from "@angular/core";
-import * as i1 from "./nz-progress.component";
-import * as i2 from "@angular/common";
-import * as i3 from "ng-zorro-antd/icon";
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 export declare class NzProgressModule {
-    static ɵmod: i0.ɵɵNgModuleDefWithMeta<NzProgressModule, [typeof i1.NzProgressComponent], [typeof i2.CommonModule, typeof i3.NzIconModule], [typeof i1.NzProgressComponent]>;
-    static ɵinj: i0.ɵɵInjectorDef<NzProgressModule>;
 }

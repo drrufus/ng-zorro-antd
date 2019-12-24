@@ -1,27 +1,33 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-export * from './addon/public-api';
-export * from './animation/public-api';
-export * from './no-animation/public-api';
-export * from './overlay/public-api';
-export * from './time/public-api';
-export * from './polyfill/public-api';
-export * from './scroll/public-api';
-export * from './services/public-api';
-export * from './testing/public-api';
-export * from './tree/public-api';
-export * from './util/public-api';
-export * from './wave/public-api';
-export * from './dropdown/public-api';
-export * from './logger/public-api';
-export * from './responsive/public-api';
-export * from './trans-button/public-api';
-export * from './highlight/public-api';
-export * from './config/public-api';
-export * from './pipe/public-api';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY29yZS8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HO0FBRUgsY0FBYyxvQkFBb0IsQ0FBQztBQUNuQyxjQUFjLHdCQUF3QixDQUFDO0FBQ3ZDLGNBQWMsMkJBQTJCLENBQUM7QUFDMUMsY0FBYyxzQkFBc0IsQ0FBQztBQUNyQyxjQUFjLG1CQUFtQixDQUFDO0FBQ2xDLGNBQWMsdUJBQXVCLENBQUM7QUFDdEMsY0FBYyxxQkFBcUIsQ0FBQztBQUNwQyxjQUFjLHVCQUF1QixDQUFDO0FBQ3RDLGNBQWMsc0JBQXNCLENBQUM7QUFDckMsY0FBYyxtQkFBbUIsQ0FBQztBQUVsQyxjQUFjLG1CQUFtQixDQUFDO0FBQ2xDLGNBQWMsbUJBQW1CLENBQUM7QUFDbEMsY0FBYyx1QkFBdUIsQ0FBQztBQUN0QyxjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMseUJBQXlCLENBQUM7QUFDeEMsY0FBYywyQkFBMkIsQ0FBQztBQUMxQyxjQUFjLHdCQUF3QixDQUFDO0FBQ3ZDLGNBQWMscUJBQXFCLENBQUM7QUFDcEMsY0FBYyxtQkFBbUIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9hZGRvbi9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9hbmltYXRpb24vcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbm8tYW5pbWF0aW9uL3B1YmxpYy1hcGknO1xyXG5leHBvcnQgKiBmcm9tICcuL292ZXJsYXkvcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vdGltZS9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9wb2x5ZmlsbC9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9zY3JvbGwvcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vc2VydmljZXMvcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vdGVzdGluZy9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi90cmVlL3B1YmxpYy1hcGknO1xyXG5leHBvcnQgKiBmcm9tICcuL3R5cGVzL3B1YmxpYy1hcGknO1xyXG5leHBvcnQgKiBmcm9tICcuL3V0aWwvcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vd2F2ZS9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9kcm9wZG93bi9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9sb2dnZXIvcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vcmVzcG9uc2l2ZS9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi90cmFucy1idXR0b24vcHVibGljLWFwaSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vaGlnaGxpZ2h0L3B1YmxpYy1hcGknO1xyXG5leHBvcnQgKiBmcm9tICcuL2NvbmZpZy9wdWJsaWMtYXBpJztcclxuZXhwb3J0ICogZnJvbSAnLi9waXBlL3B1YmxpYy1hcGknO1xyXG4iXX0=
+export { NzAddOnModule, NzClassListAddDirective, NzStringTemplateOutletDirective } from './addon/public-api';
+export { AnimationDuration, AnimationCurves, collapseMotion, treeCollapseMotion, fadeMotion, helpMotion, moveUpMotion, notificationMotion, slideMotion, slideAlertMotion, zoomMotion, zoomBigMotion, zoomBadgeMotion } from './animation/public-api';
+export { NzNoAnimationModule, NzNoAnimationDirective } from './no-animation/public-api';
+export { NzConnectedOverlayDirective, NzOverlayModule, getPlacementName, POSITION_MAP, DEFAULT_TOOLTIP_POSITIONS, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_MENTION_TOP_POSITIONS, DEFAULT_MENTION_BOTTOM_POSITIONS } from './overlay/public-api';
+export { sortRangeValue, CandyDate, timeUnits } from './time/public-api';
+export { cancelRequestAnimationFrame, reqAnimFrame } from './polyfill/public-api';
+export { SCROLL_SERVICE_PROVIDER_FACTORY, NzScrollService, SCROLL_SERVICE_PROVIDER } from './scroll/public-api';
+export { NzUpdateHostClassService, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzSingletonService, NzDragService } from './services/public-api';
+export { dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, createMouseEvent, createTouchEvent, createKeyboardEvent, createFakeEvent, typeInElement, wrappedErrorMessage, FakeViewportRuler, MockNgZone } from './testing/public-api';
+export { NzTreeNode, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeBase } from './tree/public-api';
+export {} from './types/public-api';
+export { toArray, arraysEqual, shallowCopyArray, isNotNil, isNil, shallowEqual, isInteger, isEmpty, filterNotEmptyNode, isNonEmptyString, isTemplateRef, isComponent, toBoolean, toNumber, toCssPixel, valueFunctionProp, InputBoolean, InputCssPixel, InputNumber, silentEvent, getElementOffset, findFirstNotEmptyNode, findLastNotEmptyNode, reverseChildNodes, isTouchEvent, getEventPosition, getRegExp, getMentions, padStart, padEnd, getRepeatedElement, isPromise, getPercent, getPrecision, ensureNumberInRange, scrollIntoView, getCaretCoordinates, createDebugEle, properties, isStyleSupport, getStyleAsText, pxToNumber, measure, measureScrollbar, ensureInBounds, inNextTick } from './util/public-api';
+export { NzWaveRenderer, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NZ_WAVE_GLOBAL_CONFIG, NzWaveDirective, NzWaveModule } from './wave/public-api';
+export { NzMenuBaseService, NzDropdownHigherOrderServiceToken } from './dropdown/public-api';
+export { PREFIX, warn, warnDeprecation, log } from './logger/public-api';
+export { NzBreakpoint, responsiveMap } from './responsive/public-api';
+export { NzTransButtonModule, NzTransButtonDirective } from './trans-button/public-api';
+export { NzHighlightPipe, NzHighlightModule } from './highlight/public-api';
+export { WithConfig, NzConfigService, NZ_CONFIG } from './config/public-api';
+export { NzPipesModule, NzTimeRangePipe, NzToCssUnitPipe } from './pipe/public-api';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY29yZS8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBUUEsd0ZBQWMsb0JBQW9CLENBQUM7QUFDbkMsNE5BQWMsd0JBQXdCLENBQUM7QUFDdkMsNERBQWMsMkJBQTJCLENBQUM7QUFDMUMsZ1BBQWMsc0JBQXNCLENBQUM7QUFDckMscURBQWMsbUJBQW1CLENBQUM7QUFDbEMsMERBQWMsdUJBQXVCLENBQUM7QUFDdEMsMEZBQWMscUJBQXFCLENBQUM7QUFDcEMseUpBQWMsdUJBQXVCLENBQUM7QUFDdEMsNlBBQWMsc0JBQXNCLENBQUM7QUFDckMseUZBQWMsbUJBQW1CLENBQUM7QUFDbEMsZUFBYyxvQkFBb0IsQ0FBQztBQUNuQyxxcUJBQWMsbUJBQW1CLENBQUM7QUFDbEMsbUpBQWMsbUJBQW1CLENBQUM7QUFDbEMscUVBQWMsdUJBQXVCLENBQUM7QUFDdEMsbURBQWMscUJBQXFCLENBQUM7QUFDcEMsNENBQWMseUJBQXlCLENBQUM7QUFDeEMsNERBQWMsMkJBQTJCLENBQUM7QUFDMUMsbURBQWMsd0JBQXdCLENBQUM7QUFDdkMsdURBQWMscUJBQXFCLENBQUM7QUFDcEMsZ0VBQWMsbUJBQW1CLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cbiAqXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXG4gKi9cblxuZXhwb3J0ICogZnJvbSAnLi9hZGRvbi9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vYW5pbWF0aW9uL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi9uby1hbmltYXRpb24vcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL292ZXJsYXkvcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL3RpbWUvcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL3BvbHlmaWxsL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi9zY3JvbGwvcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL3NlcnZpY2VzL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi90ZXN0aW5nL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi90cmVlL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi90eXBlcy9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vdXRpbC9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vd2F2ZS9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vZHJvcGRvd24vcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL2xvZ2dlci9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vcmVzcG9uc2l2ZS9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vdHJhbnMtYnV0dG9uL3B1YmxpYy1hcGknO1xuZXhwb3J0ICogZnJvbSAnLi9oaWdobGlnaHQvcHVibGljLWFwaSc7XG5leHBvcnQgKiBmcm9tICcuL2NvbmZpZy9wdWJsaWMtYXBpJztcbmV4cG9ydCAqIGZyb20gJy4vcGlwZS9wdWJsaWMtYXBpJztcbiJdfQ==

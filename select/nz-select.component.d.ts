@@ -15,7 +15,6 @@ import { NzOptionComponent } from './nz-option.component';
 import { TFilterOption } from './nz-option.pipe';
 import { NzSelectTopControlComponent } from './nz-select-top-control.component';
 import { NzSelectService } from './nz-select.service';
-import * as i0 from "@angular/core";
 export declare class NzSelectComponent implements ControlValueAccessor, OnInit, AfterViewInit, OnDestroy, AfterContentInit {
     nzSelectService: NzSelectService;
     private cdr;
@@ -98,6 +97,4 @@ export declare class NzSelectComponent implements ControlValueAccessor, OnInit, 
     ngAfterViewInit(): void;
     ngAfterContentInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzSelectComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzSelectComponent, "nz-select", ["nzSelect"], { 'nzSize': "nzSize", 'nzDropdownClassName': "nzDropdownClassName", 'nzDropdownMatchSelectWidth': "nzDropdownMatchSelectWidth", 'nzDropdownStyle': "nzDropdownStyle", 'nzNotFoundContent': "nzNotFoundContent", 'nzAllowClear': "nzAllowClear", 'nzShowSearch': "nzShowSearch", 'nzLoading': "nzLoading", 'nzAutoFocus': "nzAutoFocus", 'nzPlaceHolder': "nzPlaceHolder", 'nzMaxTagCount': "nzMaxTagCount", 'nzDropdownRender': "nzDropdownRender", 'nzCustomTemplate': "nzCustomTemplate", 'nzSuffixIcon': "nzSuffixIcon", 'nzClearIcon': "nzClearIcon", 'nzRemoveIcon': "nzRemoveIcon", 'nzMenuItemSelectedIcon': "nzMenuItemSelectedIcon", 'nzShowArrow': "nzShowArrow", 'nzTokenSeparators': "nzTokenSeparators", 'nzMaxTagPlaceholder': "nzMaxTagPlaceholder", 'nzAutoClearSearchValue': "nzAutoClearSearchValue", 'nzMaxMultipleCount': "nzMaxMultipleCount", 'nzServerSearch': "nzServerSearch", 'nzMode': "nzMode", 'nzFilterOption': "nzFilterOption", 'compareWith': "compareWith", 'nzOpen': "nzOpen", 'nzDisabled': "nzDisabled" }, { 'nzOnSearch': "nzOnSearch", 'nzScrollToBottom': "nzScrollToBottom", 'nzOpenChange': "nzOpenChange", 'nzBlur': "nzBlur", 'nzFocus': "nzFocus" }, ["listOfNzOptionComponent", "listOfNzOptionGroupComponent"]>;
 }

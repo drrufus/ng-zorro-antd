@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/dropdown'), require('@angular/router'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('ng-zorro-antd/icon'), require('@angular/cdk/overlay'), require('@angular/cdk/bidi'), require('@angular/cdk/scrolling'), require('ng-zorro-antd/menu')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/breadcrumb', ['exports', '@angular/core', 'ng-zorro-antd/dropdown', '@angular/router', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', '@angular/common', 'ng-zorro-antd/icon', '@angular/cdk/overlay', '@angular/cdk/bidi', '@angular/cdk/scrolling', 'ng-zorro-antd/menu'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].breadcrumb = {}), global.ng.core, global['ng-zorro-antd'].dropdown, global.ng.router, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global.ng.common, global['ng-zorro-antd'].icon, global.ng.cdk.overlay, global.ng.cdk.bidi, global.ng.cdk.scrolling, global.menu));
-}(this, (function (exports, core, dropdown, router, core$1, rxjs, operators, common, icon, overlay, bidi, scrolling, menu) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/dropdown'), require('@angular/router'), require('rxjs'), require('rxjs/operators'), require('ng-zorro-antd/core'), require('@angular/cdk/overlay'), require('@angular/common'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/breadcrumb', ['exports', '@angular/core', 'ng-zorro-antd/dropdown', '@angular/router', 'rxjs', 'rxjs/operators', 'ng-zorro-antd/core', '@angular/cdk/overlay', '@angular/common', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].breadcrumb = {}), global.ng.core, global['ng-zorro-antd'].dropdown, global.ng.router, global.rxjs, global.rxjs.operators, global['ng-zorro-antd'].core, global.ng.cdk.overlay, global.ng.common, global['ng-zorro-antd'].icon));
+}(this, (function (exports, core, dropdown, router, rxjs, operators, core$1, overlay, common, icon) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -201,31 +201,23 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzBreadCrumbComponent_ng_container_1_nz_breadcrumb_item_1_Template(rf, ctx) { if (rf & 1) {
-        var _r2199 = core.ɵɵgetCurrentView();
-        core.ɵɵelementStart(0, "nz-breadcrumb-item");
-        core.ɵɵelementStart(1, "a", 2);
-        core.ɵɵlistener("click", function NzBreadCrumbComponent_ng_container_1_nz_breadcrumb_item_1_Template_a_click_1_listener($event) { core.ɵɵrestoreView(_r2199); var breadcrumb_r2197 = ctx.$implicit; var ctx_r2198 = core.ɵɵnextContext(2); return ctx_r2198.navigate(breadcrumb_r2197.url, $event); });
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var breadcrumb_r2197 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵattribute("href", breadcrumb_r2197.url, core.ɵɵsanitizeUrl);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(breadcrumb_r2197.label);
-    } }
-    function NzBreadCrumbComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzBreadCrumbComponent_ng_container_1_nz_breadcrumb_item_1_Template, 3, 2, "nz-breadcrumb-item", 1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2195 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r2195.breadcrumbs);
-    } }
-    var _c0 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-breadcrumb.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @record
+     */
+    function BreadcrumbOption() { }
+    if (false) {
+        /** @type {?} */
+        BreadcrumbOption.prototype.label;
+        /** @type {?} */
+        BreadcrumbOption.prototype.params;
+        /** @type {?} */
+        BreadcrumbOption.prototype.url;
+    }
     var NzBreadCrumbComponent = /** @class */ (function () {
         function NzBreadCrumbComponent(injector, ngZone, cdr, elementRef, renderer) {
             this.injector = injector;
@@ -238,48 +230,105 @@
             this.destroy$ = new rxjs.Subject();
             renderer.addClass(elementRef.nativeElement, 'ant-breadcrumb');
         }
-        NzBreadCrumbComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzBreadCrumbComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             if (this.nzAutoGenerate) {
                 this.registerRouterChange();
             }
         };
-        NzBreadCrumbComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzBreadCrumbComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        NzBreadCrumbComponent.prototype.navigate = function (url, e) {
+        /**
+         * @param {?} url
+         * @param {?} e
+         * @return {?}
+         */
+        NzBreadCrumbComponent.prototype.navigate = /**
+         * @param {?} url
+         * @param {?} e
+         * @return {?}
+         */
+        function (url, e) {
             var _this = this;
             e.preventDefault();
             this.ngZone
-                .run(function () {
+                .run((/**
+             * @return {?}
+             */
+            function () {
                 return _this.injector
                     .get(router.Router)
                     .navigateByUrl(url)
                     .then();
-            })
+            }))
                 .then();
         };
-        NzBreadCrumbComponent.prototype.registerRouterChange = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzBreadCrumbComponent.prototype.registerRouterChange = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
             try {
+                /** @type {?} */
                 var router$1 = this.injector.get(router.Router);
+                /** @type {?} */
                 var activatedRoute_1 = this.injector.get(router.ActivatedRoute);
                 router$1.events
-                    .pipe(operators.filter(function (e) { return e instanceof router.NavigationEnd; }), operators.takeUntil(this.destroy$), operators.startWith(true) // Trigger initial render.
+                    .pipe(operators.filter((/**
+                 * @param {?} e
+                 * @return {?}
+                 */
+                function (e) { return e instanceof router.NavigationEnd; })), operators.takeUntil(this.destroy$), operators.startWith(true) // Trigger initial render.
                 )
-                    .subscribe(function () {
+                    .subscribe((/**
+                 * @return {?}
+                 */
+                function () {
                     _this.breadcrumbs = _this.getBreadcrumbs(activatedRoute_1.root);
                     _this.cdr.markForCheck();
-                });
+                }));
             }
             catch (e) {
                 throw new Error(core$1.PREFIX + " You should import RouterModule if you want to use 'NzAutoGenerate'.");
             }
         };
-        NzBreadCrumbComponent.prototype.getBreadcrumbs = function (route, url, breadcrumbs) {
+        /**
+         * @private
+         * @param {?} route
+         * @param {?=} url
+         * @param {?=} breadcrumbs
+         * @return {?}
+         */
+        NzBreadCrumbComponent.prototype.getBreadcrumbs = /**
+         * @private
+         * @param {?} route
+         * @param {?=} url
+         * @param {?=} breadcrumbs
+         * @return {?}
+         */
+        function (route, url, breadcrumbs) {
             var e_1, _a;
             if (url === void 0) { url = ''; }
             if (breadcrumbs === void 0) { breadcrumbs = []; }
+            /** @type {?} */
             var children = route.children;
             // If there's no sub root, then stop the recurse and returns the generated breadcrumbs.
             if (children.length === 0) {
@@ -291,11 +340,19 @@
                     if (child.outlet === router.PRIMARY_OUTLET) {
                         // Only parse components in primary router-outlet (in another word, router-outlet without a specific name).
                         // Parse this layer and generate a breadcrumb item.
-                        var routeURL = child.snapshot.url.map(function (segment) { return segment.path; }).join('/');
+                        /** @type {?} */
+                        var routeURL = child.snapshot.url.map((/**
+                         * @param {?} segment
+                         * @return {?}
+                         */
+                        function (segment) { return segment.path; })).join('/');
+                        /** @type {?} */
                         var nextUrl = url + ("/" + routeURL);
+                        /** @type {?} */
                         var breadcrumbLabel = child.snapshot.data[this.nzRouteLabel];
                         // If have data, go to generate a breadcrumb for it.
                         if (routeURL && breadcrumbLabel) {
+                            /** @type {?} */
                             var breadcrumb = {
                                 label: breadcrumbLabel,
                                 params: child.snapshot.params,
@@ -314,148 +371,124 @@
                 }
                 finally { if (e_1) throw e_1.error; }
             }
-            return undefined;
         };
-        /** @nocollapse */ NzBreadCrumbComponent.ɵfac = function NzBreadCrumbComponent_Factory(t) { return new (t || NzBreadCrumbComponent)(core.ɵɵdirectiveInject(core.Injector), core.ɵɵdirectiveInject(core.NgZone), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core.Renderer2)); };
-        /** @nocollapse */ NzBreadCrumbComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzBreadCrumbComponent, selectors: [["nz-breadcrumb"]], inputs: { nzAutoGenerate: "nzAutoGenerate", nzSeparator: "nzSeparator", nzRouteLabel: "nzRouteLabel" }, exportAs: ["nzBreadcrumb"], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [[4, "ngIf"], [4, "ngFor", "ngForOf"], [3, "click"]], template: function NzBreadCrumbComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵprojection(0);
-                core.ɵɵtemplate(1, NzBreadCrumbComponent_ng_container_1_Template, 2, 1, "ng-container", 0);
-            } if (rf & 2) {
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzAutoGenerate);
-            } }, styles: ["\n      nz-breadcrumb {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzBreadCrumbComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-breadcrumb',
+                        exportAs: 'nzBreadcrumb',
+                        preserveWhitespaces: false,
+                        template: "<ng-content></ng-content>\n<ng-container *ngIf=\"nzAutoGenerate\">\n  <nz-breadcrumb-item *ngFor=\"let breadcrumb of breadcrumbs\">\n    <a [attr.href]=\"breadcrumb.url\" (click)=\"navigate(breadcrumb.url, $event)\">{{ breadcrumb.label }}</a>\n  </nz-breadcrumb-item>\n</ng-container>",
+                        styles: ["\n      nz-breadcrumb {\n        display: block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzBreadCrumbComponent.ctorParameters = function () { return [
+            { type: core.Injector },
+            { type: core.NgZone },
+            { type: core.ChangeDetectorRef },
+            { type: core.ElementRef },
+            { type: core.Renderer2 }
+        ]; };
+        NzBreadCrumbComponent.propDecorators = {
+            nzAutoGenerate: [{ type: core.Input }],
+            nzSeparator: [{ type: core.Input }],
+            nzRouteLabel: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzBreadCrumbComponent.prototype, "nzAutoGenerate", void 0);
         return NzBreadCrumbComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBreadCrumbComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-breadcrumb',
-                    exportAs: 'nzBreadcrumb',
-                    preserveWhitespaces: false,
-                    templateUrl: './nz-breadcrumb.component.html',
-                    styles: [
-                        "\n      nz-breadcrumb {\n        display: block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core.Injector }, { type: core.NgZone }, { type: core.ChangeDetectorRef }, { type: core.ElementRef }, { type: core.Renderer2 }]; }, { nzAutoGenerate: [{
-                type: core.Input
-            }], nzSeparator: [{
-                type: core.Input
-            }], nzRouteLabel: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzBreadCrumbComponent.prototype.nzAutoGenerate;
+        /** @type {?} */
+        NzBreadCrumbComponent.prototype.nzSeparator;
+        /** @type {?} */
+        NzBreadCrumbComponent.prototype.nzRouteLabel;
+        /** @type {?} */
+        NzBreadCrumbComponent.prototype.breadcrumbs;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBreadCrumbComponent.prototype.destroy$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBreadCrumbComponent.prototype.injector;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBreadCrumbComponent.prototype.ngZone;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzBreadCrumbComponent.prototype.cdr;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-breadcrumb-item.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    function NzBreadCrumbItemComponent_ng_container_0_ng_template_2_Template(rf, ctx) { }
-    function NzBreadCrumbItemComponent_ng_container_0_i_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "i", 7);
-    } }
-    function NzBreadCrumbItemComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "span", 4);
-        core.ɵɵtemplate(2, NzBreadCrumbItemComponent_ng_container_0_ng_template_2_Template, 0, 0, "ng-template", 5);
-        core.ɵɵtemplate(3, NzBreadCrumbItemComponent_ng_container_0_i_3_Template, 1, 0, "i", 6);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2200 = core.ɵɵnextContext();
-        var _r2201 = core.ɵɵreference(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzDropdownMenu", ctx_r2200.nzOverlay);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", _r2201);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !!ctx_r2200.nzOverlay);
-    } }
-    function NzBreadCrumbItemComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 8);
-        core.ɵɵprojection(1);
-        core.ɵɵelementEnd();
-    } }
-    function NzBreadCrumbItemComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r2203 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", ctx_r2203.nzBreadCrumbComponent.nzSeparator, " ");
-    } }
-    var _c0$1 = ["*"];
     var NzBreadCrumbItemComponent = /** @class */ (function () {
         function NzBreadCrumbItemComponent(nzBreadCrumbComponent) {
             this.nzBreadCrumbComponent = nzBreadCrumbComponent;
         }
-        /** @nocollapse */ NzBreadCrumbItemComponent.ɵfac = function NzBreadCrumbItemComponent_Factory(t) { return new (t || NzBreadCrumbItemComponent)(core.ɵɵdirectiveInject(NzBreadCrumbComponent)); };
-        /** @nocollapse */ NzBreadCrumbItemComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzBreadCrumbItemComponent, selectors: [["nz-breadcrumb-item"]], inputs: { nzOverlay: "nzOverlay" }, exportAs: ["nzBreadcrumbItem"], ngContentSelectors: _c0$1, decls: 5, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["noMenuTpl", ""], [1, "ant-breadcrumb-separator"], [4, "nzStringTemplateOutlet"], ["nz-dropdown", "", 1, "ant-breadcrumb-overlay-link", 3, "nzDropdownMenu"], [3, "ngTemplateOutlet"], ["nz-icon", "", "nzType", "down", 4, "ngIf"], ["nz-icon", "", "nzType", "down"], [1, "ant-breadcrumb-link"]], template: function NzBreadCrumbItemComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵtemplate(0, NzBreadCrumbItemComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
-                core.ɵɵtemplate(1, NzBreadCrumbItemComponent_ng_template_1_Template, 2, 0, "ng-template", null, 1, core.ɵɵtemplateRefExtractor);
-                core.ɵɵelementStart(3, "span", 2);
-                core.ɵɵtemplate(4, NzBreadCrumbItemComponent_ng_container_4_Template, 2, 1, "ng-container", 3);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                var _r2201 = core.ɵɵreference(2);
-                core.ɵɵproperty("ngIf", !!ctx.nzOverlay)("ngIfElse", _r2201);
-                core.ɵɵadvance(4);
-                core.ɵɵproperty("nzStringTemplateOutlet", ctx.nzBreadCrumbComponent.nzSeparator);
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective, dropdown.NzDropDownDirective, common.NgTemplateOutlet, icon.NzIconDirective], styles: ["\n      nz-breadcrumb-item:last-child {\n        color: rgba(0, 0, 0, 0.65);\n      }\n\n      nz-breadcrumb-item:last-child .ant-breadcrumb-separator {\n        display: none;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzBreadCrumbItemComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-breadcrumb-item',
+                        exportAs: 'nzBreadcrumbItem',
+                        preserveWhitespaces: false,
+                        template: "<ng-container *ngIf=\"!!nzOverlay; else noMenuTpl\">\n  <span class=\"ant-breadcrumb-overlay-link\" nz-dropdown [nzDropdownMenu]=\"nzOverlay\">\n    <ng-template [ngTemplateOutlet]=\"noMenuTpl\"></ng-template>\n    <i *ngIf=\"!!nzOverlay\" nz-icon nzType=\"down\"></i>\n  </span>\n</ng-container>\n\n<ng-template #noMenuTpl>\n  <span class=\"ant-breadcrumb-link\">\n    <ng-content></ng-content>\n  </span>\n</ng-template>\n\n<span class=\"ant-breadcrumb-separator\">\n  <ng-container *nzStringTemplateOutlet=\"nzBreadCrumbComponent.nzSeparator\">\n    {{ nzBreadCrumbComponent.nzSeparator }}\n  </ng-container>\n</span>\n",
+                        styles: ["\n      nz-breadcrumb-item:last-child {\n        color: rgba(0, 0, 0, 0.65);\n      }\n\n      nz-breadcrumb-item:last-child .ant-breadcrumb-separator {\n        display: none;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzBreadCrumbItemComponent.ctorParameters = function () { return [
+            { type: NzBreadCrumbComponent }
+        ]; };
+        NzBreadCrumbItemComponent.propDecorators = {
+            nzOverlay: [{ type: core.Input }]
+        };
         return NzBreadCrumbItemComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBreadCrumbItemComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-breadcrumb-item',
-                    exportAs: 'nzBreadcrumbItem',
-                    preserveWhitespaces: false,
-                    templateUrl: './nz-breadcrumb-item.component.html',
-                    styles: [
-                        "\n      nz-breadcrumb-item:last-child {\n        color: rgba(0, 0, 0, 0.65);\n      }\n\n      nz-breadcrumb-item:last-child .ant-breadcrumb-separator {\n        display: none;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: NzBreadCrumbComponent }]; }, { nzOverlay: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /**
+         * Dropdown content of a breadcrumb item.
+         * @type {?}
+         */
+        NzBreadCrumbItemComponent.prototype.nzOverlay;
+        /** @type {?} */
+        NzBreadCrumbItemComponent.prototype.nzBreadCrumbComponent;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-breadcrumb.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBreadCrumbModule = /** @class */ (function () {
         function NzBreadCrumbModule() {
         }
-        /** @nocollapse */ NzBreadCrumbModule.ɵmod = core.ɵɵdefineNgModule({ type: NzBreadCrumbModule });
-        /** @nocollapse */ NzBreadCrumbModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzBreadCrumbModule_Factory(t) { return new (t || NzBreadCrumbModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule, overlay.OverlayModule, core$1.NzOverlayModule, dropdown.NzDropDownModule, icon.NzIconModule]] });
+        NzBreadCrumbModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule, overlay.OverlayModule, core$1.NzOverlayModule, dropdown.NzDropDownModule, icon.NzIconModule],
+                        declarations: [NzBreadCrumbComponent, NzBreadCrumbItemComponent],
+                        exports: [NzBreadCrumbComponent, NzBreadCrumbItemComponent]
+                    },] }
+        ];
         return NzBreadCrumbModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzBreadCrumbModule, { declarations: [NzBreadCrumbComponent, NzBreadCrumbItemComponent], imports: [common.CommonModule, core$1.NzAddOnModule, overlay.OverlayModule, core$1.NzOverlayModule, dropdown.NzDropDownModule, icon.NzIconModule], exports: [NzBreadCrumbComponent, NzBreadCrumbItemComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzBreadCrumbModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, core$1.NzAddOnModule, overlay.OverlayModule, core$1.NzOverlayModule, dropdown.NzDropDownModule, icon.NzIconModule],
-                    declarations: [NzBreadCrumbComponent, NzBreadCrumbItemComponent],
-                    exports: [NzBreadCrumbComponent, NzBreadCrumbItemComponent]
-                }]
-        }], null, null); })();
-    core.ɵɵsetComponentScope(NzBreadCrumbComponent, [NzBreadCrumbComponent, NzBreadCrumbItemComponent, common.NgClass, common.NgComponentOutlet, common.NgForOf, common.NgIf, common.NgTemplateOutlet, common.NgStyle, common.NgSwitch, common.NgSwitchCase, common.NgSwitchDefault, common.NgPlural, common.NgPluralCase, core$1.NzStringTemplateOutletDirective, core$1.NzClassListAddDirective, overlay.CdkConnectedOverlay, overlay.CdkOverlayOrigin, bidi.Dir, scrolling.CdkFixedSizeVirtualScroll, scrolling.CdkScrollable, scrolling.CdkVirtualForOf, scrolling.CdkVirtualScrollViewport, core$1.NzConnectedOverlayDirective, menu.NzMenuDirective, menu.NzMenuItemDirective, menu.NzSubMenuComponent, menu.NzMenuDividerDirective, menu.NzMenuGroupComponent, dropdown.NzDropDownDirective, dropdown.NzDropDownADirective, dropdown.NzDropdownMenuComponent, icon.NzIconDirective], [common.AsyncPipe, common.UpperCasePipe, common.LowerCasePipe, common.JsonPipe, common.SlicePipe, common.DecimalPipe, common.PercentPipe, common.TitleCasePipe, common.CurrencyPipe, common.DatePipe, common.I18nPluralPipe, common.I18nSelectPipe, common.KeyValuePipe]);
 
     exports.NzBreadCrumbComponent = NzBreadCrumbComponent;
     exports.NzBreadCrumbItemComponent = NzBreadCrumbItemComponent;

@@ -6,13 +6,10 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzClassListAddDirective {
     private elementRef;
     private renderer;
     classList: string[];
     nzClassListAdd: string[];
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<NzClassListAddDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzClassListAddDirective, "[nzClassListAdd]", ["nzClassListAdd"], { 'nzClassListAdd': "nzClassListAdd" }, {}, never>;
 }

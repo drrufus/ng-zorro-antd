@@ -1,4 +1,9 @@
-import { __extends } from "tslib";
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-tooltip.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+import * as tslib_1 from "tslib";
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -8,50 +13,59 @@ import { __extends } from "tslib";
  */
 import { ComponentFactoryResolver, Directive, ElementRef, Host, Input, Optional, Renderer2, ViewContainerRef } from '@angular/core';
 import { NzNoAnimationDirective } from 'ng-zorro-antd/core';
-import { NzTooltipBaseDirective } from './nz-tooltip-base.directive';
+import { NzTooltipBaseComponentLegacy } from './base/nz-tooltip-base-legacy.component';
+import { NzTooltipBaseDirective } from './base/nz-tooltip-base.directive';
 import { NzToolTipComponent } from './nz-tooltip.component';
-import * as i0 from "@angular/core";
-import * as i1 from "ng-zorro-antd/core";
 var NzTooltipDirective = /** @class */ (function (_super) {
-    __extends(NzTooltipDirective, _super);
-    function NzTooltipDirective(elementRef, hostView, resolver, renderer, noAnimation) {
-        var _this = _super.call(this, elementRef, hostView, resolver, renderer, noAnimation) || this;
+    tslib_1.__extends(NzTooltipDirective, _super);
+    function NzTooltipDirective(elementRef, hostView, resolver, renderer, _tooltip, noAnimation) {
+        var _this = _super.call(this, elementRef, hostView, resolver, renderer, _tooltip, noAnimation) || this;
         _this.componentFactory = _this.resolver.resolveComponentFactory(NzToolTipComponent);
         return _this;
     }
-    /** @nocollapse */ NzTooltipDirective.ɵfac = function NzTooltipDirective_Factory(t) { return new (t || NzTooltipDirective)(i0.ɵɵdirectiveInject(i0.ElementRef), i0.ɵɵdirectiveInject(i0.ViewContainerRef), i0.ɵɵdirectiveInject(i0.ComponentFactoryResolver), i0.ɵɵdirectiveInject(i0.Renderer2), i0.ɵɵdirectiveInject(i1.NzNoAnimationDirective, 9)); };
-    /** @nocollapse */ NzTooltipDirective.ɵdir = i0.ɵɵdefineDirective({ type: NzTooltipDirective, selectors: [["", "nz-tooltip", ""]], hostBindings: function NzTooltipDirective_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            i0.ɵɵallocHostVars(1);
-        } if (rf & 2) {
-            i0.ɵɵclassProp("ant-tooltip-open", ctx.isTooltipComponentVisible);
-        } }, inputs: { specificTitle: ["nzTooltipTitle", "specificTitle"], directiveNameTitle: ["nz-tooltip", "directiveNameTitle"], specificTrigger: ["nzTooltipTrigger", "specificTrigger"], specificPlacement: ["nzTooltipPlacement", "specificPlacement"] }, exportAs: ["nzTooltip"], features: [i0.ɵɵInheritDefinitionFeature] });
+    NzTooltipDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-tooltip]',
+                    exportAs: 'nzTooltip',
+                    host: {
+                        '[class.ant-tooltip-open]': 'isTooltipComponentVisible'
+                    }
+                },] }
+    ];
+    /** @nocollapse */
+    NzTooltipDirective.ctorParameters = function () { return [
+        { type: ElementRef },
+        { type: ViewContainerRef },
+        { type: ComponentFactoryResolver },
+        { type: Renderer2 },
+        { type: NzTooltipBaseComponentLegacy, decorators: [{ type: Optional }] },
+        { type: NzNoAnimationDirective, decorators: [{ type: Host }, { type: Optional }] }
+    ]; };
+    NzTooltipDirective.propDecorators = {
+        specificTitle: [{ type: Input, args: ['nzTooltipTitle',] }],
+        directiveNameTitle: [{ type: Input, args: ['nz-tooltip',] }],
+        specificTrigger: [{ type: Input, args: ['nzTooltipTrigger',] }],
+        specificPlacement: [{ type: Input, args: ['nzTooltipPlacement',] }]
+    };
     return NzTooltipDirective;
 }(NzTooltipBaseDirective));
 export { NzTooltipDirective };
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NzTooltipDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-tooltip]',
-                exportAs: 'nzTooltip',
-                host: {
-                    '[class.ant-tooltip-open]': 'isTooltipComponentVisible'
-                }
-            }]
-    }], function () { return [{ type: i0.ElementRef }, { type: i0.ViewContainerRef }, { type: i0.ComponentFactoryResolver }, { type: i0.Renderer2 }, { type: i1.NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, { specificTitle: [{
-            type: Input,
-            args: ['nzTooltipTitle']
-        }], directiveNameTitle: [{
-            type: Input,
-            args: ['nz-tooltip']
-        }], specificTrigger: [{
-            type: Input,
-            args: ['nzTooltipTrigger']
-        }], specificPlacement: [{
-            type: Input,
-            args: ['nzTooltipPlacement']
-        }] }); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdG9vbHRpcC5kaXJlY3RpdmUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL3Rvb2x0aXAvIiwic291cmNlcyI6WyJuei10b29sdGlwLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiO0FBQUE7Ozs7OztHQU1HO0FBRUgsT0FBTyxFQUVMLHdCQUF3QixFQUN4QixTQUFTLEVBQ1QsVUFBVSxFQUNWLElBQUksRUFDSixLQUFLLEVBQ0wsUUFBUSxFQUNSLFNBQVMsRUFDVCxnQkFBZ0IsRUFDakIsTUFBTSxlQUFlLENBQUM7QUFFdkIsT0FBTyxFQUFFLHNCQUFzQixFQUFZLE1BQU0sb0JBQW9CLENBQUM7QUFFdEUsT0FBTyxFQUFFLHNCQUFzQixFQUFFLE1BQU0sNkJBQTZCLENBQUM7QUFDckUsT0FBTyxFQUFFLGtCQUFrQixFQUFFLE1BQU0sd0JBQXdCLENBQUM7OztBQUc1RDtJQU93QyxzQ0FBc0I7SUFnQjVELDRCQUNFLFVBQXNCLEVBQ3RCLFFBQTBCLEVBQzFCLFFBQWtDLEVBQ2xDLFFBQW1CLEVBQ0MsV0FBb0M7UUFMMUQsWUFPRSxrQkFBTSxVQUFVLEVBQUUsUUFBUSxFQUFFLFFBQVEsRUFBRSxRQUFRLEVBQUUsV0FBVyxDQUFDLFNBQzdEO1FBVkQsc0JBQWdCLEdBQXlDLEtBQUksQ0FBQyxRQUFRLENBQUMsdUJBQXVCLENBQUMsa0JBQWtCLENBQUMsQ0FBQzs7SUFVbkgsQ0FBQzt3RkF4QlUsa0JBQWtCOzJEQUFsQixrQkFBa0I7Ozs7OzZCQWpDL0I7Q0EwREMsQUFoQ0QsQ0FPd0Msc0JBQXNCLEdBeUI3RDtTQXpCWSxrQkFBa0I7a0RBQWxCLGtCQUFrQjtjQVA5QixTQUFTO2VBQUM7Z0JBQ1QsUUFBUSxFQUFFLGNBQWM7Z0JBQ3hCLFFBQVEsRUFBRSxXQUFXO2dCQUNyQixJQUFJLEVBQUU7b0JBQ0osMEJBQTBCLEVBQUUsMkJBQTJCO2lCQUN4RDthQUNGOztzQkFzQkksSUFBSTs7c0JBQUksUUFBUTs7a0JBakJsQixLQUFLO21CQUFDLGdCQUFnQjs7a0JBS3RCLEtBQUs7bUJBQUMsWUFBWTs7a0JBRWxCLEtBQUs7bUJBQUMsa0JBQWtCOztrQkFDeEIsS0FBSzttQkFBQyxvQkFBb0IiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7XHJcbiAgQ29tcG9uZW50RmFjdG9yeSxcclxuICBDb21wb25lbnRGYWN0b3J5UmVzb2x2ZXIsXHJcbiAgRGlyZWN0aXZlLFxyXG4gIEVsZW1lbnRSZWYsXHJcbiAgSG9zdCxcclxuICBJbnB1dCxcclxuICBPcHRpb25hbCxcclxuICBSZW5kZXJlcjIsXHJcbiAgVmlld0NvbnRhaW5lclJlZlxyXG59IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuaW1wb3J0IHsgTnpOb0FuaW1hdGlvbkRpcmVjdGl2ZSwgTnpUU1R5cGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2NvcmUnO1xyXG5cclxuaW1wb3J0IHsgTnpUb29sdGlwQmFzZURpcmVjdGl2ZSB9IGZyb20gJy4vbnotdG9vbHRpcC1iYXNlLmRpcmVjdGl2ZSc7XHJcbmltcG9ydCB7IE56VG9vbFRpcENvbXBvbmVudCB9IGZyb20gJy4vbnotdG9vbHRpcC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBOelRvb2x0aXBUcmlnZ2VyIH0gZnJvbSAnLi9uei10b29sdGlwLmRlZmluaXRpb25zJztcclxuXHJcbkBEaXJlY3RpdmUoe1xyXG4gIHNlbGVjdG9yOiAnW256LXRvb2x0aXBdJyxcclxuICBleHBvcnRBczogJ256VG9vbHRpcCcsXHJcbiAgaG9zdDoge1xyXG4gICAgJ1tjbGFzcy5hbnQtdG9vbHRpcC1vcGVuXSc6ICdpc1Rvb2x0aXBDb21wb25lbnRWaXNpYmxlJ1xyXG4gIH1cclxufSlcclxuZXhwb3J0IGNsYXNzIE56VG9vbHRpcERpcmVjdGl2ZSBleHRlbmRzIE56VG9vbHRpcEJhc2VEaXJlY3RpdmUge1xyXG4gIC8qKlxyXG4gICAqIFRoZSB0aXRsZSB0aGF0IHNob3VsZCBoYXZlIGhpZ2hlc3QgcHJpb3JpdHkuXHJcbiAgICovXHJcbiAgQElucHV0KCduelRvb2x0aXBUaXRsZScpIHNwZWNpZmljVGl0bGU6IE56VFNUeXBlO1xyXG5cclxuICAvKipcclxuICAgKiBVc2UgdGhlIGRpcmVjdGl2ZSdzIG5hbWUgYXMgdGhlIHRpdGxlIHRoYXQgaGF2ZSBwcmlvcml0eSBpbiB0aGUgc2Vjb25kIHBsYWNlLlxyXG4gICAqL1xyXG4gIEBJbnB1dCgnbnotdG9vbHRpcCcpIGRpcmVjdGl2ZU5hbWVUaXRsZTogTnpUU1R5cGUgfCBudWxsO1xyXG5cclxuICBASW5wdXQoJ256VG9vbHRpcFRyaWdnZXInKSBzcGVjaWZpY1RyaWdnZXI6IE56VG9vbHRpcFRyaWdnZXI7XHJcbiAgQElucHV0KCduelRvb2x0aXBQbGFjZW1lbnQnKSBzcGVjaWZpY1BsYWNlbWVudDogc3RyaW5nO1xyXG5cclxuICBjb21wb25lbnRGYWN0b3J5OiBDb21wb25lbnRGYWN0b3J5PE56VG9vbFRpcENvbXBvbmVudD4gPSB0aGlzLnJlc29sdmVyLnJlc29sdmVDb21wb25lbnRGYWN0b3J5KE56VG9vbFRpcENvbXBvbmVudCk7XHJcblxyXG4gIGNvbnN0cnVjdG9yKFxyXG4gICAgZWxlbWVudFJlZjogRWxlbWVudFJlZixcclxuICAgIGhvc3RWaWV3OiBWaWV3Q29udGFpbmVyUmVmLFxyXG4gICAgcmVzb2x2ZXI6IENvbXBvbmVudEZhY3RvcnlSZXNvbHZlcixcclxuICAgIHJlbmRlcmVyOiBSZW5kZXJlcjIsXHJcbiAgICBASG9zdCgpIEBPcHRpb25hbCgpIG5vQW5pbWF0aW9uPzogTnpOb0FuaW1hdGlvbkRpcmVjdGl2ZVxyXG4gICkge1xyXG4gICAgc3VwZXIoZWxlbWVudFJlZiwgaG9zdFZpZXcsIHJlc29sdmVyLCByZW5kZXJlciwgbm9BbmltYXRpb24pO1xyXG4gIH1cclxufVxyXG4iXX0=
+if (false) {
+    /**
+     * The title that should have highest priority.
+     * @type {?}
+     */
+    NzTooltipDirective.prototype.specificTitle;
+    /**
+     * Use the directive's name as the title that have priority in the second place.
+     * @type {?}
+     */
+    NzTooltipDirective.prototype.directiveNameTitle;
+    /** @type {?} */
+    NzTooltipDirective.prototype.specificTrigger;
+    /** @type {?} */
+    NzTooltipDirective.prototype.specificPlacement;
+    /** @type {?} */
+    NzTooltipDirective.prototype.componentFactory;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdG9vbHRpcC5kaXJlY3RpdmUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL3Rvb2x0aXAvIiwic291cmNlcyI6WyJuei10b29sdGlwLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7O0FBUUEsT0FBTyxFQUVMLHdCQUF3QixFQUN4QixTQUFTLEVBQ1QsVUFBVSxFQUNWLElBQUksRUFDSixLQUFLLEVBQ0wsUUFBUSxFQUNSLFNBQVMsRUFDVCxnQkFBZ0IsRUFDakIsTUFBTSxlQUFlLENBQUM7QUFFdkIsT0FBTyxFQUFFLHNCQUFzQixFQUFZLE1BQU0sb0JBQW9CLENBQUM7QUFFdEUsT0FBTyxFQUFFLDRCQUE0QixFQUFFLE1BQU0seUNBQXlDLENBQUM7QUFDdkYsT0FBTyxFQUFFLHNCQUFzQixFQUFFLE1BQU0sa0NBQWtDLENBQUM7QUFDMUUsT0FBTyxFQUFFLGtCQUFrQixFQUFFLE1BQU0sd0JBQXdCLENBQUM7QUFHNUQ7SUFPd0MsOENBQXNCO0lBZ0I1RCw0QkFDRSxVQUFzQixFQUN0QixRQUEwQixFQUMxQixRQUFrQyxFQUNsQyxRQUFtQixFQUNQLFFBQXVDLEVBQy9CLFdBQW9DO1FBTjFELFlBUUUsa0JBQU0sVUFBVSxFQUFFLFFBQVEsRUFBRSxRQUFRLEVBQUUsUUFBUSxFQUFFLFFBQVEsRUFBRSxXQUFXLENBQUMsU0FDdkU7UUFYRCxzQkFBZ0IsR0FBeUMsS0FBSSxDQUFDLFFBQVEsQ0FBQyx1QkFBdUIsQ0FBQyxrQkFBa0IsQ0FBQyxDQUFDOztJQVduSCxDQUFDOztnQkFoQ0YsU0FBUyxTQUFDO29CQUNULFFBQVEsRUFBRSxjQUFjO29CQUN4QixRQUFRLEVBQUUsV0FBVztvQkFDckIsSUFBSSxFQUFFO3dCQUNKLDBCQUEwQixFQUFFLDJCQUEyQjtxQkFDeEQ7aUJBQ0Y7Ozs7Z0JBckJDLFVBQVU7Z0JBS1YsZ0JBQWdCO2dCQVBoQix3QkFBd0I7Z0JBTXhCLFNBQVM7Z0JBTUYsNEJBQTRCLHVCQWlDaEMsUUFBUTtnQkFuQ0osc0JBQXNCLHVCQW9DMUIsSUFBSSxZQUFJLFFBQVE7OztnQ0FsQmxCLEtBQUssU0FBQyxnQkFBZ0I7cUNBS3RCLEtBQUssU0FBQyxZQUFZO2tDQUVsQixLQUFLLFNBQUMsa0JBQWtCO29DQUN4QixLQUFLLFNBQUMsb0JBQW9COztJQWM3Qix5QkFBQztDQUFBLEFBakNELENBT3dDLHNCQUFzQixHQTBCN0Q7U0ExQlksa0JBQWtCOzs7Ozs7SUFJN0IsMkNBQWlEOzs7OztJQUtqRCxnREFBeUQ7O0lBRXpELDZDQUE2RDs7SUFDN0QsK0NBQXVEOztJQUV2RCw4Q0FBbUgiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cbiAqXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXG4gKi9cblxuaW1wb3J0IHtcbiAgQ29tcG9uZW50RmFjdG9yeSxcbiAgQ29tcG9uZW50RmFjdG9yeVJlc29sdmVyLFxuICBEaXJlY3RpdmUsXG4gIEVsZW1lbnRSZWYsXG4gIEhvc3QsXG4gIElucHV0LFxuICBPcHRpb25hbCxcbiAgUmVuZGVyZXIyLFxuICBWaWV3Q29udGFpbmVyUmVmXG59IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5pbXBvcnQgeyBOek5vQW5pbWF0aW9uRGlyZWN0aXZlLCBOelRTVHlwZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XG5cbmltcG9ydCB7IE56VG9vbHRpcEJhc2VDb21wb25lbnRMZWdhY3kgfSBmcm9tICcuL2Jhc2UvbnotdG9vbHRpcC1iYXNlLWxlZ2FjeS5jb21wb25lbnQnO1xuaW1wb3J0IHsgTnpUb29sdGlwQmFzZURpcmVjdGl2ZSB9IGZyb20gJy4vYmFzZS9uei10b29sdGlwLWJhc2UuZGlyZWN0aXZlJztcbmltcG9ydCB7IE56VG9vbFRpcENvbXBvbmVudCB9IGZyb20gJy4vbnotdG9vbHRpcC5jb21wb25lbnQnO1xuaW1wb3J0IHsgTnpUb29sdGlwVHJpZ2dlciB9IGZyb20gJy4vbnotdG9vbHRpcC5kZWZpbml0aW9ucyc7XG5cbkBEaXJlY3RpdmUoe1xuICBzZWxlY3RvcjogJ1tuei10b29sdGlwXScsXG4gIGV4cG9ydEFzOiAnbnpUb29sdGlwJyxcbiAgaG9zdDoge1xuICAgICdbY2xhc3MuYW50LXRvb2x0aXAtb3Blbl0nOiAnaXNUb29sdGlwQ29tcG9uZW50VmlzaWJsZSdcbiAgfVxufSlcbmV4cG9ydCBjbGFzcyBOelRvb2x0aXBEaXJlY3RpdmUgZXh0ZW5kcyBOelRvb2x0aXBCYXNlRGlyZWN0aXZlIHtcbiAgLyoqXG4gICAqIFRoZSB0aXRsZSB0aGF0IHNob3VsZCBoYXZlIGhpZ2hlc3QgcHJpb3JpdHkuXG4gICAqL1xuICBASW5wdXQoJ256VG9vbHRpcFRpdGxlJykgc3BlY2lmaWNUaXRsZTogTnpUU1R5cGU7XG5cbiAgLyoqXG4gICAqIFVzZSB0aGUgZGlyZWN0aXZlJ3MgbmFtZSBhcyB0aGUgdGl0bGUgdGhhdCBoYXZlIHByaW9yaXR5IGluIHRoZSBzZWNvbmQgcGxhY2UuXG4gICAqL1xuICBASW5wdXQoJ256LXRvb2x0aXAnKSBkaXJlY3RpdmVOYW1lVGl0bGU6IE56VFNUeXBlIHwgbnVsbDtcblxuICBASW5wdXQoJ256VG9vbHRpcFRyaWdnZXInKSBzcGVjaWZpY1RyaWdnZXI6IE56VG9vbHRpcFRyaWdnZXI7XG4gIEBJbnB1dCgnbnpUb29sdGlwUGxhY2VtZW50Jykgc3BlY2lmaWNQbGFjZW1lbnQ6IHN0cmluZztcblxuICBjb21wb25lbnRGYWN0b3J5OiBDb21wb25lbnRGYWN0b3J5PE56VG9vbFRpcENvbXBvbmVudD4gPSB0aGlzLnJlc29sdmVyLnJlc29sdmVDb21wb25lbnRGYWN0b3J5KE56VG9vbFRpcENvbXBvbmVudCk7XG5cbiAgY29uc3RydWN0b3IoXG4gICAgZWxlbWVudFJlZjogRWxlbWVudFJlZixcbiAgICBob3N0VmlldzogVmlld0NvbnRhaW5lclJlZixcbiAgICByZXNvbHZlcjogQ29tcG9uZW50RmFjdG9yeVJlc29sdmVyLFxuICAgIHJlbmRlcmVyOiBSZW5kZXJlcjIsXG4gICAgQE9wdGlvbmFsKCkgX3Rvb2x0aXA/OiBOelRvb2x0aXBCYXNlQ29tcG9uZW50TGVnYWN5LFxuICAgIEBIb3N0KCkgQE9wdGlvbmFsKCkgbm9BbmltYXRpb24/OiBOek5vQW5pbWF0aW9uRGlyZWN0aXZlXG4gICkge1xuICAgIHN1cGVyKGVsZW1lbnRSZWYsIGhvc3RWaWV3LCByZXNvbHZlciwgcmVuZGVyZXIsIF90b29sdGlwLCBub0FuaW1hdGlvbik7XG4gIH1cbn1cbiJdfQ==

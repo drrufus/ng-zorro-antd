@@ -9,7 +9,6 @@ import { TemplateRef, Type } from '@angular/core';
 import { BehaviorSubject } from 'rxjs';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzEmptyCustomContent } from './nz-empty-config';
-import * as i0 from "@angular/core";
 export declare class NzEmptyService<T = any> {
     private nzConfigService;
     private legacyDefaultEmptyContent;
@@ -18,6 +17,4 @@ export declare class NzEmptyService<T = any> {
     setDefaultContent(content?: NzEmptyCustomContent): void;
     resetDefault(): void;
     private getUserDefaultEmptyContent;
-    static ɵfac: i0.ɵɵFactoryDef<NzEmptyService<any>>;
-    static ɵprov: i0.ɵɵInjectableDef<NzEmptyService<any>>;
 }

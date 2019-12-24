@@ -1,10 +1,16 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { HttpBackend } from '@angular/common/http';
 import { InjectionToken, RendererFactory2 } from '@angular/core';
 import { DomSanitizer } from '@angular/platform-browser';
 import { IconDefinition, IconService } from '@ant-design/icons-angular';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
-import * as i0 from "@angular/core";
 export interface NzIconfontOption {
     scriptUrl: string;
 }
@@ -24,6 +30,7 @@ export declare class NzIconService extends IconService {
     private legacyDefaultTwotoneColor?;
     configUpdated$: Subject<void>;
     private iconfontCache;
+    warnAPI(type: 'old' | 'cross' | 'vertical'): void;
     normalizeSvgElement(svg: SVGElement): void;
     fetchFromIconfont(opt: NzIconfontOption): void;
     createIconfontIcon(type: string): SVGElement;
@@ -37,6 +44,4 @@ export declare class NzIconService extends IconService {
     private configDefaultTheme;
     private configDefaultTwotoneColor;
     private getConfig;
-    static ɵfac: i0.ɵɵFactoryDef<NzIconService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzIconService>;
 }

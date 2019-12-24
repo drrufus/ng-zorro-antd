@@ -1,16 +1,21 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-export * from './nz-table.component';
-export * from './nz-table.module';
-export * from './nz-tbody.directive';
-export * from './nz-td.component';
-export * from './nz-th.component';
-export * from './nz-thead.component';
-export * from './nz-tr.directive';
-export * from './nz-virtual-scroll.directive';
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvdGFibGUvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7R0FNRztBQUVILGNBQWMsc0JBQXNCLENBQUM7QUFDckMsY0FBYyxtQkFBbUIsQ0FBQztBQUNsQyxjQUFjLHNCQUFzQixDQUFDO0FBQ3JDLGNBQWMsbUJBQW1CLENBQUM7QUFDbEMsY0FBYyxtQkFBbUIsQ0FBQztBQUNsQyxjQUFjLHNCQUFzQixDQUFDO0FBQ3JDLGNBQWMsbUJBQW1CLENBQUM7QUFDbEMsY0FBYywrQkFBK0IsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9uei10YWJsZS5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXRhYmxlLm1vZHVsZSc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbnotdGJvZHkuZGlyZWN0aXZlJztcclxuZXhwb3J0ICogZnJvbSAnLi9uei10ZC5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXRoLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbnotdGhlYWQuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei10ci5kaXJlY3RpdmUnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXZpcnR1YWwtc2Nyb2xsLmRpcmVjdGl2ZSc7XHJcbiJdfQ==
+export { NzTableComponent } from './nz-table.component';
+export { NzTableModule } from './nz-table.module';
+export { NzTbodyDirective } from './nz-tbody.directive';
+export { NzTdComponent } from './nz-td.component';
+export { NzThComponent } from './nz-th.component';
+export { NzTheadComponent } from './nz-thead.component';
+export { NzTrDirective } from './nz-tr.directive';
+export { NzVirtualScrollDirective } from './nz-virtual-scroll.directive';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvdGFibGUvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQVFBLGlDQUFjLHNCQUFzQixDQUFDO0FBQ3JDLDhCQUFjLG1CQUFtQixDQUFDO0FBQ2xDLGlDQUFjLHNCQUFzQixDQUFDO0FBQ3JDLDhCQUFjLG1CQUFtQixDQUFDO0FBQ2xDLDhCQUFjLG1CQUFtQixDQUFDO0FBQ2xDLGlDQUFjLHNCQUFzQixDQUFDO0FBQ3JDLDhCQUFjLG1CQUFtQixDQUFDO0FBQ2xDLHlDQUFjLCtCQUErQixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAbGljZW5zZVxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXG4gKlxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxuICovXG5cbmV4cG9ydCAqIGZyb20gJy4vbnotdGFibGUuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbnotdGFibGUubW9kdWxlJztcbmV4cG9ydCAqIGZyb20gJy4vbnotdGJvZHkuZGlyZWN0aXZlJztcbmV4cG9ydCAqIGZyb20gJy4vbnotdGQuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbnotdGguY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbnotdGhlYWQuY29tcG9uZW50JztcbmV4cG9ydCAqIGZyb20gJy4vbnotdHIuZGlyZWN0aXZlJztcbmV4cG9ydCAqIGZyb20gJy4vbnotdmlydHVhbC1zY3JvbGwuZGlyZWN0aXZlJztcbiJdfQ==

@@ -8,7 +8,6 @@
 import { EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { DateHelperService, NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class TodayButtonComponent implements OnChanges {
     private dateHelper;
     locale: NzCalendarI18nInterface;
@@ -22,6 +21,4 @@ export declare class TodayButtonComponent implements OnChanges {
     constructor(dateHelper: DateHelperService);
     ngOnChanges(changes: SimpleChanges): void;
     onClickToday(): void;
-    static ɵfac: i0.ɵɵFactoryDef<TodayButtonComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<TodayButtonComponent, "today-button", ["todayButton"], { 'locale': "locale", 'hasTimePicker': "hasTimePicker", 'disabledDate': "disabledDate" }, { 'clickToday': "clickToday" }, never>;
 }

@@ -1,4 +1,9 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: overlay/nz-connected-overlay.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -7,21 +12,30 @@
  */
 import { CdkConnectedOverlay } from '@angular/cdk/overlay';
 import { Directive } from '@angular/core';
-import * as i0 from "@angular/core";
-import * as i1 from "@angular/cdk/overlay";
 export class NzConnectedOverlayDirective {
+    /**
+     * @param {?} cdkConnectedOverlay
+     */
     constructor(cdkConnectedOverlay) {
         this.cdkConnectedOverlay = cdkConnectedOverlay;
         this.cdkConnectedOverlay.backdropClass = 'nz-overlay-transparent-backdrop';
     }
 }
-/** @nocollapse */ NzConnectedOverlayDirective.ɵfac = function NzConnectedOverlayDirective_Factory(t) { return new (t || NzConnectedOverlayDirective)(i0.ɵɵdirectiveInject(i1.CdkConnectedOverlay)); };
-/** @nocollapse */ NzConnectedOverlayDirective.ɵdir = i0.ɵɵdefineDirective({ type: NzConnectedOverlayDirective, selectors: [["", "cdkConnectedOverlay", "", "nzConnectedOverlay", ""]], exportAs: ["nzConnectedOverlay"] });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NzConnectedOverlayDirective, [{
-        type: Directive,
-        args: [{
+NzConnectedOverlayDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
                 exportAs: 'nzConnectedOverlay'
-            }]
-    }], function () { return [{ type: i1.CdkConnectedOverlay }]; }, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotY29ubmVjdGVkLW92ZXJsYXkuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL2NvcmUvIiwic291cmNlcyI6WyJvdmVybGF5L256LWNvbm5lY3RlZC1vdmVybGF5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7R0FNRztBQUVILE9BQU8sRUFBRSxtQkFBbUIsRUFBRSxNQUFNLHNCQUFzQixDQUFDO0FBQzNELE9BQU8sRUFBRSxTQUFTLEVBQUUsTUFBTSxlQUFlLENBQUM7OztBQU0xQyxNQUFNLE9BQU8sMkJBQTJCO0lBQ3RDLFlBQW9CLG1CQUF3QztRQUF4Qyx3QkFBbUIsR0FBbkIsbUJBQW1CLENBQXFCO1FBQzFELElBQUksQ0FBQyxtQkFBbUIsQ0FBQyxhQUFhLEdBQUcsaUNBQWlDLENBQUM7SUFDN0UsQ0FBQzs7c0dBSFUsMkJBQTJCO2dFQUEzQiwyQkFBMkI7a0RBQTNCLDJCQUEyQjtjQUp2QyxTQUFTO2VBQUM7Z0JBQ1QsUUFBUSxFQUFFLDJDQUEyQztnQkFDckQsUUFBUSxFQUFFLG9CQUFvQjthQUMvQiIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuaW1wb3J0IHsgQ2RrQ29ubmVjdGVkT3ZlcmxheSB9IGZyb20gJ0Bhbmd1bGFyL2Nkay9vdmVybGF5JztcclxuaW1wb3J0IHsgRGlyZWN0aXZlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5ARGlyZWN0aXZlKHtcclxuICBzZWxlY3RvcjogJ1tjZGtDb25uZWN0ZWRPdmVybGF5XVtuekNvbm5lY3RlZE92ZXJsYXldJyxcclxuICBleHBvcnRBczogJ256Q29ubmVjdGVkT3ZlcmxheSdcclxufSlcclxuZXhwb3J0IGNsYXNzIE56Q29ubmVjdGVkT3ZlcmxheURpcmVjdGl2ZSB7XHJcbiAgY29uc3RydWN0b3IocHJpdmF0ZSBjZGtDb25uZWN0ZWRPdmVybGF5OiBDZGtDb25uZWN0ZWRPdmVybGF5KSB7XHJcbiAgICB0aGlzLmNka0Nvbm5lY3RlZE92ZXJsYXkuYmFja2Ryb3BDbGFzcyA9ICduei1vdmVybGF5LXRyYW5zcGFyZW50LWJhY2tkcm9wJztcclxuICB9XHJcbn1cclxuIl19
+            },] }
+];
+/** @nocollapse */
+NzConnectedOverlayDirective.ctorParameters = () => [
+    { type: CdkConnectedOverlay }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzConnectedOverlayDirective.prototype.cdkConnectedOverlay;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotY29ubmVjdGVkLW92ZXJsYXkuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL2NvcmUvIiwic291cmNlcyI6WyJvdmVybGF5L256LWNvbm5lY3RlZC1vdmVybGF5LnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQVFBLE9BQU8sRUFBRSxtQkFBbUIsRUFBRSxNQUFNLHNCQUFzQixDQUFDO0FBQzNELE9BQU8sRUFBRSxTQUFTLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFNMUMsTUFBTSxPQUFPLDJCQUEyQjs7OztJQUN0QyxZQUFvQixtQkFBd0M7UUFBeEMsd0JBQW1CLEdBQW5CLG1CQUFtQixDQUFxQjtRQUMxRCxJQUFJLENBQUMsbUJBQW1CLENBQUMsYUFBYSxHQUFHLGlDQUFpQyxDQUFDO0lBQzdFLENBQUM7OztZQVBGLFNBQVMsU0FBQztnQkFDVCxRQUFRLEVBQUUsMkNBQTJDO2dCQUNyRCxRQUFRLEVBQUUsb0JBQW9CO2FBQy9COzs7O1lBTlEsbUJBQW1COzs7Ozs7O0lBUWQsMERBQWdEIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXG4gKiBAbGljZW5zZVxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXG4gKlxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxuICovXG5cbmltcG9ydCB7IENka0Nvbm5lY3RlZE92ZXJsYXkgfSBmcm9tICdAYW5ndWxhci9jZGsvb3ZlcmxheSc7XG5pbXBvcnQgeyBEaXJlY3RpdmUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcblxuQERpcmVjdGl2ZSh7XG4gIHNlbGVjdG9yOiAnW2Nka0Nvbm5lY3RlZE92ZXJsYXldW256Q29ubmVjdGVkT3ZlcmxheV0nLFxuICBleHBvcnRBczogJ256Q29ubmVjdGVkT3ZlcmxheSdcbn0pXG5leHBvcnQgY2xhc3MgTnpDb25uZWN0ZWRPdmVybGF5RGlyZWN0aXZlIHtcbiAgY29uc3RydWN0b3IocHJpdmF0ZSBjZGtDb25uZWN0ZWRPdmVybGF5OiBDZGtDb25uZWN0ZWRPdmVybGF5KSB7XG4gICAgdGhpcy5jZGtDb25uZWN0ZWRPdmVybGF5LmJhY2tkcm9wQ2xhc3MgPSAnbnotb3ZlcmxheS10cmFuc3BhcmVudC1iYWNrZHJvcCc7XG4gIH1cbn1cbiJdfQ==

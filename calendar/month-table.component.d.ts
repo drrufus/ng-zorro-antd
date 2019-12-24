@@ -8,7 +8,6 @@
 import { EventEmitter, OnChanges, SimpleChanges, TemplateRef } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { DateHelperService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class MonthTableComponent implements OnChanges {
     private dateHelper;
     value: CandyDate;
@@ -29,8 +28,6 @@ export declare class MonthTableComponent implements OnChanges {
     private render;
     private makePanelMonths;
     private chooseMonth;
-    static ɵfac: i0.ɵɵFactoryDef<MonthTableComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<MonthTableComponent, "month-table", ["monthTable"], { 'value': "value", 'prefixCls': "prefixCls", 'monthCellRender': "monthCellRender", 'monthFullCellRender': "monthFullCellRender", 'disabledDate': "disabledDate" }, { 'valueChange': "valueChange" }, never>;
 }
 export interface PanelMonthData {
     disabled: boolean;

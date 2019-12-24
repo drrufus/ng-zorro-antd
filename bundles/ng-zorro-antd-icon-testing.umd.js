@@ -5,17 +5,24 @@
 }(this, (function (exports, core, AllIcons, icon) { 'use strict';
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-icon-test.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
-    var antDesignIcons = AllIcons;
-    var icons = Object.keys(antDesignIcons).map(function (key) {
+    /** @type {?} */
+    var antDesignIcons = (/** @type {?} */ (AllIcons));
+    var ɵ0 = /**
+     * @param {?} key
+     * @return {?}
+     */
+    function (key) {
+        /** @type {?} */
         var i = antDesignIcons[key];
         return i;
-    });
+    };
+    /** @type {?} */
+    var icons = Object.keys(antDesignIcons).map((ɵ0));
+    var ɵ1 = icons;
     /**
      * Include this module in every testing spec, except `nz-icon.spec.ts`.
      */
@@ -23,28 +30,19 @@
     var NzIconTestModule = /** @class */ (function () {
         function NzIconTestModule() {
         }
-        /** @nocollapse */ NzIconTestModule.ɵmod = core.ɵɵdefineNgModule({ type: NzIconTestModule });
-        /** @nocollapse */ NzIconTestModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzIconTestModule_Factory(t) { return new (t || NzIconTestModule)(); }, providers: [
-                {
-                    provide: icon.NZ_ICONS,
-                    useValue: icons
-                }
-            ], imports: [icon.NzIconModule] });
+        NzIconTestModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [icon.NzIconModule],
+                        providers: [
+                            {
+                                provide: icon.NZ_ICONS,
+                                useValue: ɵ1
+                            }
+                        ]
+                    },] }
+        ];
         return NzIconTestModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzIconTestModule, { exports: [icon.NzIconModule] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzIconTestModule, [{
-            type: core.NgModule,
-            args: [{
-                    exports: [icon.NzIconModule],
-                    providers: [
-                        {
-                            provide: icon.NZ_ICONS,
-                            useValue: icons
-                        }
-                    ]
-                }]
-        }], null, null); })();
 
     exports.NzIconTestModule = NzIconTestModule;
 

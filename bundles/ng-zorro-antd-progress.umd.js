@@ -202,239 +202,206 @@
     }
 
     /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-progress-utils.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
      *
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
+    /**
+     * @param {?} percent
+     * @return {?}
+     */
     function stripPercentToNumber(percent) {
         return +percent.replace('%', '');
     }
-    var sortGradient = function (gradients) {
+    /** @type {?} */
+    var sortGradient = (/**
+     * @param {?} gradients
+     * @return {?}
+     */
+    function (gradients) {
+        /** @type {?} */
         var tempArr = [];
-        Object.keys(gradients).forEach(function (key) {
+        Object.keys(gradients).forEach((/**
+         * @param {?} key
+         * @return {?}
+         */
+        function (key) {
+            /** @type {?} */
             var value = gradients[key];
+            /** @type {?} */
             var formatKey = stripPercentToNumber(key);
-            if (!isNaN(formatKey)) {
-                tempArr.push({
-                    key: formatKey,
-                    value: value
-                });
+            if (isNaN(formatKey)) {
+                return {};
             }
-        });
-        tempArr = tempArr.sort(function (a, b) { return a.key - b.key; });
+            tempArr.push({
+                key: formatKey,
+                value: value
+            });
+        }));
+        tempArr = tempArr.sort((/**
+         * @param {?} a
+         * @param {?} b
+         * @return {?}
+         */
+        function (a, b) { return a.key - b.key; }));
         return tempArr;
-    };
-    var handleCircleGradient = function (strokeColor) {
-        return sortGradient(strokeColor).map(function (_a) {
+    });
+    /** @type {?} */
+    var handleCircleGradient = (/**
+     * @param {?} strokeColor
+     * @return {?}
+     */
+    function (strokeColor) {
+        return sortGradient(strokeColor).map((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        function (_a) {
             var key = _a.key, value = _a.value;
             return ({ offset: key + "%", color: value });
-        });
-    };
-    var handleLinearGradient = function (strokeColor) {
+        }));
+    });
+    /** @type {?} */
+    var handleLinearGradient = (/**
+     * @param {?} strokeColor
+     * @return {?}
+     */
+    function (strokeColor) {
         var _a = strokeColor.from, from = _a === void 0 ? '#1890ff' : _a, _b = strokeColor.to, to = _b === void 0 ? '#1890ff' : _b, _c = strokeColor.direction, direction = _c === void 0 ? 'to right' : _c, rest = __rest(strokeColor, ["from", "to", "direction"]);
         if (Object.keys(rest).length !== 0) {
-            var sortedGradients = sortGradient(rest)
-                .map(function (_a) {
+            /** @type {?} */
+            var sortedGradients = sortGradient((/** @type {?} */ (rest)))
+                .map((/**
+             * @param {?} __0
+             * @return {?}
+             */
+            function (_a) {
                 var key = _a.key, value = _a.value;
                 return value + " " + key + "%";
-            })
+            }))
                 .join(', ');
             return "linear-gradient(" + direction + ", " + sortedGradients + ")";
         }
         return "linear-gradient(" + direction + ", " + from + ", " + to + ")";
-    };
+    });
 
-    function NzProgressComponent_ng_template_0_span_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelement(1, "i", 8);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r671 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzType", ctx_r671.icon);
-    } }
-    function NzProgressComponent_ng_template_0_span_0_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtext(0);
-    } if (rf & 2) {
-        var ctx_r673 = core.ɵɵnextContext(3);
-        core.ɵɵtextInterpolate1(" ", ctx_r673.formatter(ctx_r673.nzPercent), " ");
-    } }
-    function NzProgressComponent_ng_template_0_span_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 5);
-        core.ɵɵtemplate(1, NzProgressComponent_ng_template_0_span_0_ng_container_1_Template, 2, 1, "ng-container", 6);
-        core.ɵɵtemplate(2, NzProgressComponent_ng_template_0_span_0_ng_template_2_Template, 1, 1, "ng-template", null, 7, core.ɵɵtemplateRefExtractor);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var _r672 = core.ɵɵreference(3);
-        var ctx_r670 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r670.status === "exception" || ctx_r670.status === "success" && !ctx_r670.nzFormat)("ngIfElse", _r672);
-    } }
-    function NzProgressComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵtemplate(0, NzProgressComponent_ng_template_0_span_0_Template, 4, 2, "span", 4);
-    } if (rf & 2) {
-        var ctx_r667 = core.ɵɵnextContext();
-        core.ɵɵproperty("ngIf", ctx_r667.nzShowInfo);
-    } }
-    function NzProgressComponent_div_3_div_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelement(0, "div", 14);
-    } if (rf & 2) {
-        var ctx_r674 = core.ɵɵnextContext(2);
-        core.ɵɵstyleProp("width", ctx_r674.nzSuccessPercent, "%")("border-radius", ctx_r674.nzStrokeLinecap === "round" ? "100px" : "0")("height", ctx_r674.strokeWidth, "px");
-    } }
-    function NzProgressComponent_div_3_ng_template_5_Template(rf, ctx) { }
-    function NzProgressComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵelementStart(1, "div", 9);
-        core.ɵɵelementStart(2, "div", 10);
-        core.ɵɵelement(3, "div", 11);
-        core.ɵɵtemplate(4, NzProgressComponent_div_3_div_4_Template, 1, 3, "div", 12);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵtemplate(5, NzProgressComponent_div_3_ng_template_5_Template, 0, 0, "ng-template", 13);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r668 = core.ɵɵnextContext();
-        var _r666 = core.ɵɵreference(1);
-        core.ɵɵadvance(3);
-        core.ɵɵstyleSanitizer(core.ɵɵdefaultStyleSanitizer);
-        core.ɵɵstyleProp("width", ctx_r668.nzPercent, "%")("border-radius", ctx_r668.nzStrokeLinecap === "round" ? "100px" : "0")("background", !ctx_r668.isGradient ? ctx_r668.nzStrokeColor : null)("background-image", ctx_r668.isGradient ? ctx_r668.lineGradient : null)("height", ctx_r668.strokeWidth, "px");
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r668.nzSuccessPercent || ctx_r668.nzSuccessPercent === 0);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", _r666);
-    } }
-    function NzProgressComponent_div_4__svg_defs_2__svg_stop_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵnamespaceSVG();
-        core.ɵɵelement(0, "stop");
-    } if (rf & 2) {
-        var i_r680 = ctx.$implicit;
-        core.ɵɵattribute("offset", i_r680.offset)("stop-color", i_r680.color);
-    } }
-    function NzProgressComponent_div_4__svg_defs_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵnamespaceSVG();
-        core.ɵɵelementStart(0, "defs");
-        core.ɵɵelementStart(1, "linearGradient", 18);
-        core.ɵɵtemplate(2, NzProgressComponent_div_4__svg_defs_2__svg_stop_2_Template, 1, 2, "stop", 19);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r676 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("id", "gradient-" + ctx_r676.gradientId);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r676.circleGradient);
-    } }
-    function NzProgressComponent_div_4__svg_path_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵnamespaceSVG();
-        core.ɵɵelement(0, "path", 20);
-    } if (rf & 2) {
-        var p_r681 = ctx.$implicit;
-        var ctx_r677 = core.ɵɵnextContext(2);
-        core.ɵɵproperty("ngStyle", p_r681.strokePathStyle);
-        core.ɵɵattribute("d", ctx_r677.pathString)("stroke-linecap", ctx_r677.nzStrokeLinecap)("stroke", p_r681.stroke)("stroke-width", ctx_r677.nzPercent ? ctx_r677.strokeWidth : 0);
-    } }
-    function NzProgressComponent_div_4_ng_template_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵnamespaceSVG();
-    } }
-    function NzProgressComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 10);
-        core.ɵɵnamespaceSVG();
-        core.ɵɵelementStart(1, "svg", 15);
-        core.ɵɵtemplate(2, NzProgressComponent_div_4__svg_defs_2_Template, 3, 2, "defs", 2);
-        core.ɵɵelement(3, "path", 16);
-        core.ɵɵtemplate(4, NzProgressComponent_div_4__svg_path_4_Template, 1, 5, "path", 17);
-        core.ɵɵelementEnd();
-        core.ɵɵtemplate(5, NzProgressComponent_div_4_ng_template_5_Template, 0, 0, "ng-template", 13);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r669 = core.ɵɵnextContext();
-        var _r666 = core.ɵɵreference(1);
-        core.ɵɵstyleProp("width", ctx_r669.nzWidth, "px")("height", ctx_r669.nzWidth, "px")("font-size", ctx_r669.nzWidth * 0.15 + 6, "px");
-        core.ɵɵclassProp("ant-progress-circle-gradient", ctx_r669.isGradient);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngIf", ctx_r669.isGradient);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngStyle", ctx_r669.trailPathStyle);
-        core.ɵɵattribute("stroke-width", ctx_r669.strokeWidth)("d", ctx_r669.pathString);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r669.progressCirclePath)("ngForTrackBy", ctx_r669.trackByFn);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", _r666);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-progress.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var gradientIdSeed = 0;
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'progress';
-    var statusIconNameMap = new Map([
-        ['success', 'check'],
-        ['exception', 'close']
-    ]);
-    var statusColorMap = new Map([
-        ['normal', '#108ee9'],
-        ['exception', '#ff5500'],
-        ['success', '#87d068']
-    ]);
-    var defaultFormatter = function (p) { return p + "%"; };
+    /** @type {?} */
+    var statusIconNameMap = new Map([['success', 'check'], ['exception', 'close']]);
+    /** @type {?} */
+    var statusColorMap = new Map([['normal', '#108ee9'], ['exception', '#ff5500'], ['success', '#87d068']]);
+    /** @type {?} */
+    var defaultFormatter = (/**
+     * @param {?} p
+     * @return {?}
+     */
+    function (p) { return p + "%"; });
+    var ɵ0 = defaultFormatter;
     var NzProgressComponent = /** @class */ (function () {
         function NzProgressComponent(nzConfigService) {
             this.nzConfigService = nzConfigService;
             this.nzWidth = 132;
             this.nzPercent = 0;
             this.nzType = 'line';
-            /** Gradient style when `nzType` is `line`. */
+            /**
+             * Gradient style when `nzType` is `line`.
+             */
             this.lineGradient = null;
-            /** If user uses gradient color. */
+            /**
+             * If user uses gradient color.
+             */
             this.isGradient = false;
             /**
              * Each progress whose `nzType` is circle or dashboard should have unique id to
              * define `<linearGradient>`.
              */
             this.gradientId = gradientIdSeed++;
-            /** Paths to rendered in the template. */
+            /**
+             * Paths to rendered in the template.
+             */
             this.progressCirclePath = [];
-            this.trackByFn = function (index) { return "" + index; };
+            this.trackByFn = (/**
+             * @param {?} index
+             * @return {?}
+             */
+            function (index) { return "" + index; });
             this.cachedStatus = 'normal';
             this.inferredStatus = 'normal';
             this.destroy$ = new rxjs.Subject();
         }
         Object.defineProperty(NzProgressComponent.prototype, "formatter", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzFormat || defaultFormatter;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzProgressComponent.prototype, "status", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzStatus || this.inferredStatus;
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzProgressComponent.prototype, "strokeWidth", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzStrokeWidth || (this.nzType === 'line' && this.nzSize !== 'small' ? 8 : 6);
             },
             enumerable: true,
             configurable: true
         });
         Object.defineProperty(NzProgressComponent.prototype, "isCircleStyle", {
-            get: function () {
+            get: /**
+             * @return {?}
+             */
+            function () {
                 return this.nzType === 'circle' || this.nzType === 'dashboard';
             },
             enumerable: true,
             configurable: true
         });
-        NzProgressComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzProgressComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             var nzGapPosition = changes.nzGapPosition, nzStrokeLinecap = changes.nzStrokeLinecap, nzStrokeColor = changes.nzStrokeColor, nzGapDegree = changes.nzGapDegree, nzType = changes.nzType, nzStatus = changes.nzStatus, nzPercent = changes.nzPercent, nzSuccessPercent = changes.nzSuccessPercent;
             if (nzStatus) {
                 this.cachedStatus = this.nzStatus || this.cachedStatus;
             }
             if (nzPercent || nzSuccessPercent) {
+                /** @type {?} */
                 var fillAll = parseInt(this.nzPercent.toString(), 10) >= 100;
                 if (fillAll) {
-                    if ((core$1.isNotNil(this.nzSuccessPercent) && this.nzSuccessPercent >= 100) || this.nzSuccessPercent === undefined) {
+                    if ((core$1.isNotNil(this.nzSuccessPercent) && (/** @type {?} */ (this.nzSuccessPercent)) >= 100) || this.nzSuccessPercent === undefined) {
                         this.inferredStatus = 'success';
                     }
                 }
@@ -452,42 +419,85 @@
                 this.getCirclePaths();
             }
         };
-        NzProgressComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzProgressComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             this.nzConfigService
                 .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
                 .pipe(operators.takeUntil(this.destroy$))
-                .subscribe(function () {
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.updateIcon();
                 _this.setStrokeColor();
                 _this.getCirclePaths();
-            });
+            }));
         };
-        NzProgressComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzProgressComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
         };
-        NzProgressComponent.prototype.updateIcon = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzProgressComponent.prototype.updateIcon = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var ret = statusIconNameMap.get(this.status);
             this.icon = ret ? ret + (this.isCircleStyle ? '-o' : '-circle-fill') : '';
         };
         /**
          * Calculate paths when the type is circle or dashboard.
          */
-        NzProgressComponent.prototype.getCirclePaths = function () {
+        /**
+         * Calculate paths when the type is circle or dashboard.
+         * @private
+         * @return {?}
+         */
+        NzProgressComponent.prototype.getCirclePaths = /**
+         * Calculate paths when the type is circle or dashboard.
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
             if (!this.isCircleStyle) {
                 return;
             }
-            var values = core$1.isNotNil(this.nzSuccessPercent) ? [this.nzSuccessPercent, this.nzPercent] : [this.nzPercent];
+            /** @type {?} */
+            var values = core$1.isNotNil(this.nzSuccessPercent) ? [(/** @type {?} */ (this.nzSuccessPercent)), this.nzPercent] : [this.nzPercent];
             // Calculate shared styles.
+            /** @type {?} */
             var radius = 50 - this.strokeWidth / 2;
+            /** @type {?} */
             var gapPosition = this.nzGapPosition || (this.nzType === 'circle' ? 'top' : 'bottom');
+            /** @type {?} */
             var len = Math.PI * 2 * radius;
+            /** @type {?} */
             var gapDegree = this.nzGapDegree || (this.nzType === 'circle' ? 0 : 75);
+            /** @type {?} */
             var beginPositionX = 0;
+            /** @type {?} */
             var beginPositionY = -radius;
+            /** @type {?} */
             var endPositionX = 0;
+            /** @type {?} */
             var endPositionY = radius * -2;
             switch (gapPosition) {
                 case 'left':
@@ -516,50 +526,83 @@
             };
             // Calculate styles for each path.
             this.progressCirclePath = values
-                .map(function (value, index) {
+                .map((/**
+             * @param {?} value
+             * @param {?} index
+             * @return {?}
+             */
+            function (value, index) {
+                /** @type {?} */
                 var isSuccessPercent = values.length === 2 && index === 0;
                 return {
                     stroke: _this.isGradient && !isSuccessPercent ? "url(#gradient-" + _this.gradientId + ")" : null,
                     strokePathStyle: {
-                        stroke: !_this.isGradient ? (isSuccessPercent ? statusColorMap.get('success') : _this.nzStrokeColor) : null,
+                        stroke: !_this.isGradient
+                            ? isSuccessPercent
+                                ? statusColorMap.get('success')
+                                : ((/** @type {?} */ (_this.nzStrokeColor)))
+                            : null,
                         transition: 'stroke-dashoffset .3s ease 0s, stroke-dasharray .3s ease 0s, stroke .3s, stroke-width .06s ease .3s',
                         strokeDasharray: ((value || 0) / 100) * (len - gapDegree) + "px " + len + "px",
                         strokeDashoffset: "-" + gapDegree / 2 + "px"
                     }
                 };
-            })
+            }))
                 .reverse();
         };
-        NzProgressComponent.prototype.setStrokeColor = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzProgressComponent.prototype.setStrokeColor = /**
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var color = this.nzStrokeColor;
+            /** @type {?} */
             var isGradient = (this.isGradient = !!color && typeof color !== 'string');
             if (isGradient && !this.isCircleStyle) {
-                this.lineGradient = handleLinearGradient(color);
+                this.lineGradient = handleLinearGradient((/** @type {?} */ (color)));
             }
             else if (isGradient && this.isCircleStyle) {
-                this.circleGradient = handleCircleGradient(this.nzStrokeColor);
+                this.circleGradient = handleCircleGradient((/** @type {?} */ (this.nzStrokeColor)));
             }
             else {
                 this.lineGradient = null;
                 this.circleGradient = [];
             }
         };
-        /** @nocollapse */ NzProgressComponent.ɵfac = function NzProgressComponent_Factory(t) { return new (t || NzProgressComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService)); };
-        /** @nocollapse */ NzProgressComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzProgressComponent, selectors: [["nz-progress"]], inputs: { nzShowInfo: "nzShowInfo", nzWidth: "nzWidth", nzStrokeColor: "nzStrokeColor", nzSize: "nzSize", nzFormat: "nzFormat", nzSuccessPercent: "nzSuccessPercent", nzPercent: "nzPercent", nzStrokeWidth: "nzStrokeWidth", nzGapDegree: "nzGapDegree", nzStatus: "nzStatus", nzType: "nzType", nzGapPosition: "nzGapPosition", nzStrokeLinecap: "nzStrokeLinecap" }, exportAs: ["nzProgress"], features: [core.ɵɵNgOnChangesFeature()], decls: 5, vars: 7, consts: [["progressInfoTemplate", ""], [3, "ngClass"], [4, "ngIf"], ["class", "ant-progress-inner", 3, "width", "height", "fontSize", "ant-progress-circle-gradient", 4, "ngIf"], ["class", "ant-progress-text", 4, "ngIf"], [1, "ant-progress-text"], [4, "ngIf", "ngIfElse"], ["formatTemplate", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-progress-outer"], [1, "ant-progress-inner"], [1, "ant-progress-bg"], ["class", "ant-progress-success-bg", 3, "width", "border-radius", "height", 4, "ngIf"], [3, "ngTemplateOutlet"], [1, "ant-progress-success-bg"], ["viewBox", "0 0 100 100", 1, "ant-progress-circle"], ["stroke", "#f3f3f3", "fill-opacity", "0", 1, "ant-progress-circle-trail", 3, "ngStyle"], ["class", "ant-progress-circle-path", "fill-opacity", "0", 3, "ngStyle", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["x1", "100%", "y1", "0%", "x2", "0%", "y2", "0%", 3, "id"], [4, "ngFor", "ngForOf"], ["fill-opacity", "0", 1, "ant-progress-circle-path", 3, "ngStyle"]], template: function NzProgressComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzProgressComponent_ng_template_0_Template, 1, 1, "ng-template", null, 0, core.ɵɵtemplateRefExtractor);
-                core.ɵɵelementStart(2, "div", 1);
-                core.ɵɵtemplate(3, NzProgressComponent_div_3_Template, 6, 7, "div", 2);
-                core.ɵɵtemplate(4, NzProgressComponent_div_4_Template, 6, 11, "div", 3);
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵadvance(2);
-                core.ɵɵclassProp("ant-progress-line", ctx.nzType == "line")("ant-progress-small", ctx.nzSize == "small")("ant-progress-show-info", ctx.nzShowInfo)("ant-progress-circle", ctx.isCircleStyle);
-                core.ɵɵproperty("ngClass", "ant-progress ant-progress-status-" + ctx.status);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzType === "line");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.isCircleStyle);
-            } }, directives: [common.NgClass, common.NgIf, icon.NzIconDirective, common.NgTemplateOutlet, common.NgStyle, common.NgForOf], encapsulation: 2, changeDetection: 0 });
+        NzProgressComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-progress',
+                        exportAs: 'nzProgress',
+                        preserveWhitespaces: false,
+                        template: "<ng-template #progressInfoTemplate>\n  <span class=\"ant-progress-text\"\n        *ngIf=\"nzShowInfo\">\n    <ng-container *ngIf=\"status === 'exception' || (status === 'success' && !nzFormat); else formatTemplate\">\n      <i nz-icon\n         [nzType]=\"icon\"></i>\n    </ng-container>\n    <ng-template #formatTemplate>\n      {{ formatter(nzPercent) }}\n    </ng-template>\n  </span>\n</ng-template>\n\n<div [ngClass]=\"'ant-progress ant-progress-status-' + status\"\n     [class.ant-progress-line]=\"nzType == 'line'\"\n     [class.ant-progress-small]=\"nzSize == 'small'\"\n     [class.ant-progress-show-info]=\"nzShowInfo\"\n     [class.ant-progress-circle]=\"isCircleStyle\">\n  <!-- line progress -->\n  <div *ngIf=\"nzType === 'line'\">\n    <div class=\"ant-progress-outer\">\n      <div class=\"ant-progress-inner\">\n        <div class=\"ant-progress-bg\"\n             [style.width.%]=\"nzPercent\"\n             [style.border-radius]=\"nzStrokeLinecap === 'round' ? '100px' : '0'\"\n             [style.background]=\"!isGradient ? nzStrokeColor : null\"\n             [style.background-image]=\"isGradient ? lineGradient : null\"\n             [style.height.px]=\"strokeWidth\"></div>\n        <div *ngIf=\"nzSuccessPercent || nzSuccessPercent === 0\"\n             class=\"ant-progress-success-bg\"\n             [style.width.%]=\"nzSuccessPercent\"\n             [style.border-radius]=\"nzStrokeLinecap === 'round' ? '100px' : '0'\"\n             [style.height.px]=\"strokeWidth\"></div>\n      </div>\n    </div>\n    <ng-template [ngTemplateOutlet]=\"progressInfoTemplate\"></ng-template>\n  </div>\n\n  <!-- circle / dashboard progress -->\n  <div [style.width.px]=\"this.nzWidth\"\n       [style.height.px]=\"this.nzWidth\"\n       [style.fontSize.px]=\"this.nzWidth * 0.15 + 6\"\n       class=\"ant-progress-inner\"\n       [class.ant-progress-circle-gradient]=\"isGradient\"\n       *ngIf=\"isCircleStyle\">\n    <svg class=\"ant-progress-circle \"\n         viewBox=\"0 0 100 100\">\n      <defs *ngIf=\"isGradient\">\n        <linearGradient [id]=\"'gradient-' + gradientId\"\n                        x1=\"100%\"\n                        y1=\"0%\"\n                        x2=\"0%\"\n                        y2=\"0%\">\n          <stop *ngFor=\"let i of circleGradient;\"\n                [attr.offset]=\"i.offset\"\n                [attr.stop-color]=\"i.color\"></stop>\n        </linearGradient>\n      </defs>\n      <path class=\"ant-progress-circle-trail\"\n            stroke=\"#f3f3f3\"\n            fill-opacity=\"0\"\n            [attr.stroke-width]=\"strokeWidth\"\n            [attr.d]=\"pathString\"\n            [ngStyle]=\"trailPathStyle\"></path>\n      <path *ngFor=\"let p of progressCirclePath; trackBy: trackByFn\"\n            class=\"ant-progress-circle-path\"\n            fill-opacity=\"0\"\n            [attr.d]=\"pathString\"\n            [attr.stroke-linecap]=\"nzStrokeLinecap\"\n            [attr.stroke]=\"p.stroke\"\n            [attr.stroke-width]=\"nzPercent ? strokeWidth : 0\"\n            [ngStyle]=\"p.strokePathStyle\">\n      </path>\n    </svg>\n    <ng-template [ngTemplateOutlet]=\"progressInfoTemplate\"></ng-template>\n  </div>\n</div>\n"
+                    }] }
+        ];
+        /** @nocollapse */
+        NzProgressComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService }
+        ]; };
+        NzProgressComponent.propDecorators = {
+            nzShowInfo: [{ type: core.Input }],
+            nzWidth: [{ type: core.Input }],
+            nzStrokeColor: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }],
+            nzFormat: [{ type: core.Input }],
+            nzSuccessPercent: [{ type: core.Input }],
+            nzPercent: [{ type: core.Input }],
+            nzStrokeWidth: [{ type: core.Input }],
+            nzGapDegree: [{ type: core.Input }],
+            nzStatus: [{ type: core.Input }],
+            nzType: [{ type: core.Input }],
+            nzGapPosition: [{ type: core.Input }],
+            nzStrokeLinecap: [{ type: core.Input }]
+        };
         __decorate([
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, true),
             __metadata("design:type", Boolean)
@@ -598,44 +641,106 @@
         ], NzProgressComponent.prototype, "nzStrokeLinecap", void 0);
         return NzProgressComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzProgressComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-progress',
-                    exportAs: 'nzProgress',
-                    preserveWhitespaces: false,
-                    templateUrl: './nz-progress.component.html'
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }]; }, { nzShowInfo: [{
-                type: core.Input
-            }], nzWidth: [{
-                type: core.Input
-            }], nzStrokeColor: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }], nzFormat: [{
-                type: core.Input
-            }], nzSuccessPercent: [{
-                type: core.Input
-            }], nzPercent: [{
-                type: core.Input
-            }], nzStrokeWidth: [{
-                type: core.Input
-            }], nzGapDegree: [{
-                type: core.Input
-            }], nzStatus: [{
-                type: core.Input
-            }], nzType: [{
-                type: core.Input
-            }], nzGapPosition: [{
-                type: core.Input
-            }], nzStrokeLinecap: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzProgressComponent.prototype.nzShowInfo;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzWidth;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzStrokeColor;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzSize;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzFormat;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzSuccessPercent;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzPercent;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzStrokeWidth;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzGapDegree;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzStatus;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzType;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzGapPosition;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzStrokeLinecap;
+        /**
+         * Gradient style when `nzType` is `line`.
+         * @type {?}
+         */
+        NzProgressComponent.prototype.lineGradient;
+        /**
+         * If user uses gradient color.
+         * @type {?}
+         */
+        NzProgressComponent.prototype.isGradient;
+        /**
+         * Each progress whose `nzType` is circle or dashboard should have unique id to
+         * define `<linearGradient>`.
+         * @type {?}
+         */
+        NzProgressComponent.prototype.gradientId;
+        /**
+         * Paths to rendered in the template.
+         * @type {?}
+         */
+        NzProgressComponent.prototype.progressCirclePath;
+        /** @type {?} */
+        NzProgressComponent.prototype.circleGradient;
+        /** @type {?} */
+        NzProgressComponent.prototype.trailPathStyle;
+        /** @type {?} */
+        NzProgressComponent.prototype.pathString;
+        /** @type {?} */
+        NzProgressComponent.prototype.icon;
+        /** @type {?} */
+        NzProgressComponent.prototype.trackByFn;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzProgressComponent.prototype.cachedStatus;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzProgressComponent.prototype.inferredStatus;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzProgressComponent.prototype.destroy$;
+        /** @type {?} */
+        NzProgressComponent.prototype.nzConfigService;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-progress.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var NzProgressModule = /** @class */ (function () {
+        function NzProgressModule() {
+        }
+        NzProgressModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [NzProgressComponent],
+                        declarations: [NzProgressComponent],
+                        imports: [common.CommonModule, icon.NzIconModule]
+                    },] }
+        ];
+        return NzProgressModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-progress.definitions.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -643,22 +748,30 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var NzProgressModule = /** @class */ (function () {
-        function NzProgressModule() {
-        }
-        /** @nocollapse */ NzProgressModule.ɵmod = core.ɵɵdefineNgModule({ type: NzProgressModule });
-        /** @nocollapse */ NzProgressModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzProgressModule_Factory(t) { return new (t || NzProgressModule)(); }, imports: [[common.CommonModule, icon.NzIconModule]] });
-        return NzProgressModule;
-    }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzProgressModule, { declarations: [NzProgressComponent], imports: [common.CommonModule, icon.NzIconModule], exports: [NzProgressComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzProgressModule, [{
-            type: core.NgModule,
-            args: [{
-                    exports: [NzProgressComponent],
-                    declarations: [NzProgressComponent],
-                    imports: [common.CommonModule, icon.NzIconModule]
-                }]
-        }], null, null); })();
+    /**
+     * @record
+     */
+    function NzProgressGradientProgress() { }
+    /**
+     * @record
+     */
+    function NzProgressGradientFromTo() { }
+    if (false) {
+        /** @type {?} */
+        NzProgressGradientFromTo.prototype.from;
+        /** @type {?} */
+        NzProgressGradientFromTo.prototype.to;
+    }
+    /**
+     * @record
+     */
+    function NzProgressCirclePath() { }
+    if (false) {
+        /** @type {?} */
+        NzProgressCirclePath.prototype.stroke;
+        /** @type {?} */
+        NzProgressCirclePath.prototype.strokePathStyle;
+    }
 
     exports.NzProgressComponent = NzProgressComponent;
     exports.NzProgressModule = NzProgressModule;

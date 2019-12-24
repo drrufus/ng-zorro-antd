@@ -8,7 +8,6 @@
 import { FocusMonitor } from '@angular/cdk/a11y';
 import { ChangeDetectorRef, ElementRef, OnDestroy, OnInit, Renderer2 } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
-import * as i0 from "@angular/core";
 export interface NzCheckBoxOptionInterface {
     label: string;
     value: string;
@@ -32,6 +31,4 @@ export declare class NzCheckboxGroupComponent implements ControlValueAccessor, O
     registerOnChange(fn: (_: NzCheckBoxOptionInterface[]) => {}): void;
     registerOnTouched(fn: () => {}): void;
     setDisabledState(isDisabled: boolean): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzCheckboxGroupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCheckboxGroupComponent, "nz-checkbox-group", ["nzCheckboxGroup"], { 'nzDisabled': "nzDisabled" }, {}, never>;
 }

@@ -6,9 +6,8 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { EventEmitter, TemplateRef } from '@angular/core';
-import { CandyDate, isNonEmptyString, isTemplateRef } from 'ng-zorro-antd/core';
+import { isNonEmptyString, isTemplateRef, CandyDate } from 'ng-zorro-antd/core';
 import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class CalendarFooterComponent {
     locale: NzCalendarI18nInterface;
     showToday: boolean;
@@ -26,6 +25,4 @@ export declare class CalendarFooterComponent {
     prefixCls: string;
     isTemplateRef: typeof isTemplateRef;
     isNonEmptyString: typeof isNonEmptyString;
-    static ɵfac: i0.ɵɵFactoryDef<CalendarFooterComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<CalendarFooterComponent, "calendar-footer", ["calendarFooter"], { 'locale': "locale", 'showToday': "showToday", 'hasTimePicker': "hasTimePicker", 'isRange': "isRange", 'showTimePicker': "showTimePicker", 'timePickerDisabled': "timePickerDisabled", 'okDisabled': "okDisabled", 'disabledDate': "disabledDate", 'extraFooter': "extraFooter", 'rangeQuickSelector': "rangeQuickSelector" }, { 'showTimePickerChange': "showTimePickerChange", 'clickOk': "clickOk", 'clickToday': "clickToday" }, never>;
 }

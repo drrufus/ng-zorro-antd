@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { AfterViewInit, ElementRef, EventEmitter, NgZone, OnDestroy, Renderer2 } from '@angular/core';
 import { NzResizableService } from './nz-resizable.service';
-import * as i0 from "@angular/core";
 export interface NzResizeEvent {
     width?: number;
     height?: number;
@@ -54,6 +53,4 @@ export declare class NzResizableDirective implements AfterViewInit, OnDestroy {
     removeGhostElement(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzResizableDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzResizableDirective, "[nz-resizable]", ["nzResizable"], { 'nzBounds': "nzBounds", 'nzMaxHeight': "nzMaxHeight", 'nzMaxWidth': "nzMaxWidth", 'nzMinHeight': "nzMinHeight", 'nzMinWidth': "nzMinWidth", 'nzGridColumnCount': "nzGridColumnCount", 'nzMaxColumn': "nzMaxColumn", 'nzMinColumn': "nzMinColumn", 'nzLockAspectRatio': "nzLockAspectRatio", 'nzPreview': "nzPreview" }, { 'nzResize': "nzResize", 'nzResizeEnd': "nzResizeEnd", 'nzResizeStart': "nzResizeStart" }, never>;
 }

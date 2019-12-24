@@ -12,7 +12,7 @@ function default_1(options) {
         const prefix = options.prefix || project.prefix;
         return schematics_1.chain([
             schematics_1.mergeWith(schematics_1.apply(schematics_1.url('./files/src'), [
-                schematics_1.applyTemplates(Object.assign(Object.assign(Object.assign({}, core_1.strings), options), { prefix })),
+                schematics_1.applyTemplates(Object.assign({}, core_1.strings, options, { prefix })),
                 schematics_1.move(project.sourceRoot),
                 schematics_1.forEach((fileEntry) => {
                     if (host.exists(fileEntry.path)) {
@@ -22,9 +22,7 @@ function default_1(options) {
                 })
             ]), schematics_1.MergeStrategy.Overwrite),
             root_module_1.addModule('AppRoutingModule', './app-routing.module'),
-            root_module_1.addModule('IconsProviderModule', './icons-provider.module'),
-            root_module_1.addModule('NzLayoutModule', 'ng-zorro-antd/layout'),
-            root_module_1.addModule('NzMenuModule', 'ng-zorro-antd/menu')
+            root_module_1.addModule('IconsProviderModule', './icons-provider.module')
         ]);
     };
 }

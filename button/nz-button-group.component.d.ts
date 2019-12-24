@@ -7,7 +7,6 @@
  */
 import { ElementRef, OnInit } from '@angular/core';
 import { NzSizeLDSType, NzUpdateHostClassService } from 'ng-zorro-antd/core';
-import * as i0 from "@angular/core";
 export declare class NzButtonGroupComponent implements OnInit {
     private nzUpdateHostClassService;
     private elementRef;
@@ -17,6 +16,4 @@ export declare class NzButtonGroupComponent implements OnInit {
     constructor(nzUpdateHostClassService: NzUpdateHostClassService, elementRef: ElementRef);
     setClassMap(): void;
     ngOnInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzButtonGroupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzButtonGroupComponent, "nz-button-group", ["nzButtonGroup"], { 'nzSize': "nzSize" }, {}, never>;
 }

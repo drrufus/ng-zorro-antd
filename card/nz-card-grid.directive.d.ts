@@ -6,10 +6,7 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { ElementRef, Renderer2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzCardGridDirective {
     nzHoverable: boolean;
     constructor(elementRef: ElementRef, renderer: Renderer2);
-    static ɵfac: i0.ɵɵFactoryDef<NzCardGridDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzCardGridDirective, "[nz-card-grid]", ["nzCardGrid"], { 'nzHoverable': "nzHoverable" }, {}, never>;
 }

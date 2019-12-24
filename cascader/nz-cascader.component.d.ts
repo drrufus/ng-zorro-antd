@@ -1,3 +1,10 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { CdkConnectedOverlay, ConnectedOverlayPositionChange, ConnectionPositionPair } from '@angular/cdk/overlay';
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, QueryList, Renderer2, TemplateRef } from '@angular/core';
 import { ControlValueAccessor } from '@angular/forms';
@@ -6,7 +13,6 @@ import { NzCascaderI18nInterface, NzI18nService } from 'ng-zorro-antd/i18n';
 import { NzCascaderComponentAsSource, NzCascaderExpandTrigger, NzCascaderOption, NzCascaderSize, NzCascaderTriggerType, NzShowSearchOptions } from './nz-cascader-definitions';
 import { NzCascaderOptionComponent } from './nz-cascader-li.component';
 import { NzCascaderService } from './nz-cascader.service';
-import * as i0 from "@angular/core";
 export declare class NzCascaderComponent implements NzCascaderComponentAsSource, OnInit, OnDestroy, ControlValueAccessor {
     cascaderService: NzCascaderService;
     private i18nService;
@@ -125,6 +131,4 @@ export declare class NzCascaderComponent implements NzCascaderComponentAsSource,
     private checkChildren;
     private buildDisplayLabel;
     private setLocale;
-    static ɵfac: i0.ɵɵFactoryDef<NzCascaderComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCascaderComponent, "nz-cascader, [nz-cascader]", ["nzCascader"], { 'nzOptionRender': "nzOptionRender", 'nzShowInput': "nzShowInput", 'nzShowArrow': "nzShowArrow", 'nzAllowClear': "nzAllowClear", 'nzAutoFocus': "nzAutoFocus", 'nzChangeOnSelect': "nzChangeOnSelect", 'nzDisabled': "nzDisabled", 'nzColumnClassName': "nzColumnClassName", 'nzExpandTrigger': "nzExpandTrigger", 'nzValueProperty': "nzValueProperty", 'nzLabelRender': "nzLabelRender", 'nzLabelProperty': "nzLabelProperty", 'nzNotFoundContent': "nzNotFoundContent", 'nzSize': "nzSize", 'nzShowSearch': "nzShowSearch", 'nzPlaceHolder': "nzPlaceHolder", 'nzMenuClassName': "nzMenuClassName", 'nzMenuStyle': "nzMenuStyle", 'nzMouseEnterDelay': "nzMouseEnterDelay", 'nzMouseLeaveDelay': "nzMouseLeaveDelay", 'nzTriggerAction': "nzTriggerAction", 'nzChangeOn': "nzChangeOn", 'nzLoadData': "nzLoadData", 'nzOptions': "nzOptions" }, { 'nzVisibleChange': "nzVisibleChange", 'nzSelectionChange': "nzSelectionChange", 'nzSelect': "nzSelect", 'nzClear': "nzClear" }, never>;
 }

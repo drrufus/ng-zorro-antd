@@ -9,7 +9,6 @@ import { AfterViewInit, ElementRef, EventEmitter, ExistingProvider, OnDestroy } 
 import { ControlValueAccessor } from '@angular/forms';
 import { Mention } from './nz-mention.component';
 import { NzMentionService } from './nz-mention.service';
-import * as i0 from "@angular/core";
 export declare const NZ_MENTION_TRIGGER_ACCESSOR: ExistingProvider;
 export declare class NzMentionTriggerDirective implements ControlValueAccessor, OnDestroy, AfterViewInit {
     el: ElementRef;
@@ -31,6 +30,4 @@ export declare class NzMentionTriggerDirective implements ControlValueAccessor, 
     registerOnTouched(fn: () => void): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzMentionTriggerDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMentionTriggerDirective, "input[nzMentionTrigger], textarea[nzMentionTrigger]", ["nzMentionTrigger"], {}, {}, never>;
 }

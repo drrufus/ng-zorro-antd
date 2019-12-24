@@ -1,4 +1,9 @@
 /**
+ * @fileoverview added by tsickle
+ * Generated from: nz-virtual-scroll.directive.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
  *
@@ -6,20 +11,27 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { Directive, TemplateRef } from '@angular/core';
-import * as i0 from "@angular/core";
 export class NzVirtualScrollDirective {
     /* tslint:disable-next-line:no-any */
+    /**
+     * @param {?} templateRef
+     */
     constructor(templateRef) {
         this.templateRef = templateRef;
     }
 }
-/** @nocollapse */ NzVirtualScrollDirective.ɵfac = function NzVirtualScrollDirective_Factory(t) { return new (t || NzVirtualScrollDirective)(i0.ɵɵdirectiveInject(i0.TemplateRef)); };
-/** @nocollapse */ NzVirtualScrollDirective.ɵdir = i0.ɵɵdefineDirective({ type: NzVirtualScrollDirective, selectors: [["", "nz-virtual-scroll", ""]], exportAs: ["nzVirtualScroll"] });
-/*@__PURE__*/ (function () { i0.ɵsetClassMetadata(NzVirtualScrollDirective, [{
-        type: Directive,
-        args: [{
+NzVirtualScrollDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nz-virtual-scroll]',
                 exportAs: 'nzVirtualScroll'
-            }]
-    }], function () { return [{ type: i0.TemplateRef }]; }, null); })();
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdmlydHVhbC1zY3JvbGwuZGlyZWN0aXZlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC90YWJsZS8iLCJzb3VyY2VzIjpbIm56LXZpcnR1YWwtc2Nyb2xsLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFFSCxPQUFPLEVBQUUsU0FBUyxFQUFFLFdBQVcsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7QUFNdkQsTUFBTSxPQUFPLHdCQUF3QjtJQUNuQyxxQ0FBcUM7SUFDckMsWUFBbUIsV0FBMkQ7UUFBM0QsZ0JBQVcsR0FBWCxXQUFXLENBQWdEO0lBQUcsQ0FBQzs7Z0dBRnZFLHdCQUF3Qjs2REFBeEIsd0JBQXdCO2tEQUF4Qix3QkFBd0I7Y0FKcEMsU0FBUztlQUFDO2dCQUNULFFBQVEsRUFBRSxxQkFBcUI7Z0JBQy9CLFFBQVEsRUFBRSxpQkFBaUI7YUFDNUIiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IERpcmVjdGl2ZSwgVGVtcGxhdGVSZWYgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuXHJcbkBEaXJlY3RpdmUoe1xyXG4gIHNlbGVjdG9yOiAnW256LXZpcnR1YWwtc2Nyb2xsXScsXHJcbiAgZXhwb3J0QXM6ICduelZpcnR1YWxTY3JvbGwnXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBOelZpcnR1YWxTY3JvbGxEaXJlY3RpdmUge1xyXG4gIC8qIHRzbGludDpkaXNhYmxlLW5leHQtbGluZTpuby1hbnkgKi9cclxuICBjb25zdHJ1Y3RvcihwdWJsaWMgdGVtcGxhdGVSZWY6IFRlbXBsYXRlUmVmPHsgJGltcGxpY2l0OiBhbnk7IGluZGV4OiBudW1iZXIgfT4pIHt9XHJcbn1cclxuIl19
+            },] }
+];
+/** @nocollapse */
+NzVirtualScrollDirective.ctorParameters = () => [
+    { type: TemplateRef }
+];
+if (false) {
+    /** @type {?} */
+    NzVirtualScrollDirective.prototype.templateRef;
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdmlydHVhbC1zY3JvbGwuZGlyZWN0aXZlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC90YWJsZS8iLCJzb3VyY2VzIjpbIm56LXZpcnR1YWwtc2Nyb2xsLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7Ozs7QUFRQSxPQUFPLEVBQUUsU0FBUyxFQUFFLFdBQVcsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQU12RCxNQUFNLE9BQU8sd0JBQXdCOzs7OztJQUVuQyxZQUFtQixXQUEyRDtRQUEzRCxnQkFBVyxHQUFYLFdBQVcsQ0FBZ0Q7SUFBRyxDQUFDOzs7WUFObkYsU0FBUyxTQUFDO2dCQUNULFFBQVEsRUFBRSxxQkFBcUI7Z0JBQy9CLFFBQVEsRUFBRSxpQkFBaUI7YUFDNUI7Ozs7WUFMbUIsV0FBVzs7OztJQVFqQiwrQ0FBa0UiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcbiAqIEBsaWNlbnNlXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cbiAqXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXG4gKi9cblxuaW1wb3J0IHsgRGlyZWN0aXZlLCBUZW1wbGF0ZVJlZiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xuXG5ARGlyZWN0aXZlKHtcbiAgc2VsZWN0b3I6ICdbbnotdmlydHVhbC1zY3JvbGxdJyxcbiAgZXhwb3J0QXM6ICduelZpcnR1YWxTY3JvbGwnXG59KVxuZXhwb3J0IGNsYXNzIE56VmlydHVhbFNjcm9sbERpcmVjdGl2ZSB7XG4gIC8qIHRzbGludDpkaXNhYmxlLW5leHQtbGluZTpuby1hbnkgKi9cbiAgY29uc3RydWN0b3IocHVibGljIHRlbXBsYXRlUmVmOiBUZW1wbGF0ZVJlZjx7ICRpbXBsaWNpdDogYW55OyBpbmRleDogbnVtYmVyIH0+KSB7fVxufVxuIl19

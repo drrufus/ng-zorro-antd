@@ -8,7 +8,6 @@
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnChanges, OnInit, SimpleChanges, TemplateRef } from '@angular/core';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { TransferItem } from './interface';
-import * as i0 from "@angular/core";
 export declare class NzTransferListComponent implements OnChanges, OnInit {
     private el;
     private updateHostClassService;
@@ -52,6 +51,4 @@ export declare class NzTransferListComponent implements OnChanges, OnInit {
     ngOnChanges(changes: SimpleChanges): void;
     ngOnInit(): void;
     markForCheck(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTransferListComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTransferListComponent, "nz-transfer-list", ["nzTransferList"], { 'direction': "direction", 'titleText': "titleText", 'showSelectAll': "showSelectAll", 'dataSource': "dataSource", 'itemUnit': "itemUnit", 'itemsUnit': "itemsUnit", 'filter': "filter", 'disabled': "disabled", 'showSearch': "showSearch", 'searchPlaceholder': "searchPlaceholder", 'notFoundContent': "notFoundContent", 'filterOption': "filterOption", 'renderList': "renderList", 'render': "render", 'footer': "footer" }, { 'handleSelectAll': "handleSelectAll", 'handleSelect': "handleSelect", 'filterChange': "filterChange" }, never>;
 }

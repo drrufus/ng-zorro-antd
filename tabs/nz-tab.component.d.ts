@@ -8,7 +8,6 @@
 import { ElementRef, EventEmitter, OnChanges, OnDestroy, Renderer2, SimpleChanges, TemplateRef } from '@angular/core';
 import { Subject } from 'rxjs';
 import { NzTabLinkDirective } from './nz-tab-link.directive';
-import * as i0 from "@angular/core";
 export declare class NzTabComponent implements OnChanges, OnDestroy {
     elementRef: ElementRef;
     private renderer;
@@ -30,6 +29,4 @@ export declare class NzTabComponent implements OnChanges, OnDestroy {
     constructor(elementRef: ElementRef, renderer: Renderer2);
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTabComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTabComponent, "nz-tab", ["nzTab"], { 'nzTitle': "nzTitle", 'nzRouterIdentifier': "nzRouterIdentifier", 'nzForceRender': "nzForceRender", 'nzDisabled': "nzDisabled" }, { 'nzClick': "nzClick", 'nzSelect': "nzSelect", 'nzDeselect': "nzDeselect" }, ["template", "linkDirective"]>;
 }

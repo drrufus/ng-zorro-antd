@@ -11,7 +11,6 @@ import { AfterContentInit, ChangeDetectorRef, OnChanges, OnDestroy, QueryList, S
 import { NzBreakpoint, NzConfigService, NzDomEventService } from 'ng-zorro-antd/core';
 import { NzDescriptionsItemRenderProps, NzDescriptionsLayout, NzDescriptionsSize } from './nz-descriptions-definitions';
 import { NzDescriptionsItemComponent } from './nz-descriptions-item.component';
-import * as i0 from "@angular/core";
 export declare class NzDescriptionsComponent implements OnChanges, OnDestroy, AfterContentInit {
     nzConfigService: NzConfigService;
     private cdr;
@@ -41,6 +40,4 @@ export declare class NzDescriptionsComponent implements OnChanges, OnDestroy, Af
     private prepareMatrix;
     private matchMedia;
     private getColumn;
-    static ɵfac: i0.ɵɵFactoryDef<NzDescriptionsComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzDescriptionsComponent, "nz-descriptions", ["nzDescriptions"], { 'nzBordered': "nzBordered", 'nzLayout': "nzLayout", 'nzColumn': "nzColumn", 'nzSize': "nzSize", 'nzTitle': "nzTitle", 'nzColon': "nzColon" }, {}, ["items"]>;
 }

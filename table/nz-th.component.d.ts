@@ -9,7 +9,6 @@ import { ChangeDetectorRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleCh
 import { Subject } from 'rxjs';
 import { NzDropdownMenuComponent } from 'ng-zorro-antd/dropdown';
 import { NzI18nInterface, NzI18nService } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare type NzThFilterType = Array<{
     text: string;
     value: any;
@@ -79,6 +78,4 @@ export declare class NzThComponent implements OnChanges, OnInit, OnDestroy {
     ngOnInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzThComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzThComponent, "th:not(.nz-disable-th):not([mat-sort-header]):not([mat-header-cell])", never, { 'nzSelections': "nzSelections", 'nzChecked': "nzChecked", 'nzDisabled': "nzDisabled", 'nzIndeterminate': "nzIndeterminate", 'nzSortKey': "nzSortKey", 'nzFilterMultiple': "nzFilterMultiple", 'nzWidth': "nzWidth", 'nzLeft': "nzLeft", 'nzRight': "nzRight", 'nzAlign': "nzAlign", 'nzSort': "nzSort", 'nzFilters': "nzFilters", 'nzExpand': "nzExpand", 'nzShowCheckbox': "nzShowCheckbox", 'nzCustomFilter': "nzCustomFilter", 'nzShowSort': "nzShowSort", 'nzShowFilter': "nzShowFilter", 'nzShowRowSelection': "nzShowRowSelection" }, { 'nzCheckedChange': "nzCheckedChange", 'nzSortChange': "nzSortChange", 'nzSortChangeWithKey': "nzSortChangeWithKey", 'nzFilterChange': "nzFilterChange" }, never>;
 }

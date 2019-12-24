@@ -8,7 +8,6 @@
 import { EventEmitter, OnChanges, SimpleChanges } from '@angular/core';
 import { CandyDate } from 'ng-zorro-antd/core';
 import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
-import * as i0 from "@angular/core";
 export declare class YearPanelComponent implements OnChanges {
     locale: NzCalendarI18nInterface;
     value: CandyDate;
@@ -29,8 +28,6 @@ export declare class YearPanelComponent implements OnChanges {
     private gotoYear;
     private chooseYear;
     private makePanelYears;
-    static ɵfac: i0.ɵɵFactoryDef<YearPanelComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<YearPanelComponent, "year-panel", ["yearPanel"], { 'locale': "locale", 'value': "value", 'disabledDate': "disabledDate" }, { 'valueChange': "valueChange", 'decadePanelShow': "decadePanelShow" }, never>;
 }
 export interface PanelYearData {
     disabled: boolean;

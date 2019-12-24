@@ -7,6 +7,7 @@
   "fesm5": "../fesm5/ng-zorro-antd-resizable.js",
   "fesm2015": "../fesm2015/ng-zorro-antd-resizable.js",
   "typings": "ng-zorro-antd-resizable.d.ts",
+  "metadata": "ng-zorro-antd-resizable.metadata.json",
   "sideEffects": false,
   "name": "ng-zorro-antd/resizable"
 }

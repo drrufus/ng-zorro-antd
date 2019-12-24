@@ -8,7 +8,6 @@
 import { AfterContentInit, AfterViewInit, ElementRef, EventEmitter, OnDestroy, QueryList, Renderer2, TemplateRef } from '@angular/core';
 import { NzTableComponent } from './nz-table.component';
 import { NzThComponent } from './nz-th.component';
-import * as i0 from "@angular/core";
 export declare class NzTheadComponent implements AfterContentInit, OnDestroy, AfterViewInit {
     nzTableComponent: NzTableComponent;
     private elementRef;
@@ -25,6 +24,4 @@ export declare class NzTheadComponent implements AfterContentInit, OnDestroy, Af
     ngAfterContentInit(): void;
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzTheadComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzTheadComponent, "thead:not(.ant-table-thead)", never, { 'nzSingleSort': "nzSingleSort" }, { 'nzSortChange': "nzSortChange" }, ["listOfNzThComponent"]>;
 }

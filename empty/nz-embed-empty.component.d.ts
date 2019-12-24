@@ -11,7 +11,6 @@ import { DomSanitizer } from '@angular/platform-browser';
 import { Subscription } from 'rxjs';
 import { NzEmptyCustomContent, NzEmptySize } from './nz-empty-config';
 import { NzEmptyService } from './nz-empty.service';
-import * as i0 from "@angular/core";
 export declare class NzEmbedEmptyComponent implements OnChanges, OnInit, OnDestroy {
     emptyService: NzEmptyService;
     private sanitizer;
@@ -32,6 +31,4 @@ export declare class NzEmbedEmptyComponent implements OnChanges, OnInit, OnDestr
     ngOnDestroy(): void;
     private getEmptySize;
     private renderEmpty;
-    static ɵfac: i0.ɵɵFactoryDef<NzEmbedEmptyComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzEmbedEmptyComponent, "nz-embed-empty", ["nzEmbedEmpty"], { 'nzComponentName': "nzComponentName", 'specificContent': "specificContent" }, {}, never>;
 }

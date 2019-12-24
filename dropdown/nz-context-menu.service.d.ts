@@ -8,7 +8,6 @@
 /** keep track https://github.com/angular/material2/issues/5007 **/
 import { Overlay } from '@angular/cdk/overlay';
 import { NzDropdownMenuComponent } from './nz-dropdown-menu.component';
-import * as i0 from "@angular/core";
 export declare class NzContextMenuService {
     private overlay;
     private overlayRef;
@@ -27,6 +26,4 @@ export declare class NzContextMenuService {
     private subscribeToPositions;
     private createOverlay;
     private updatePosition;
-    static ɵfac: i0.ɵɵFactoryDef<NzContextMenuService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzContextMenuService>;
 }

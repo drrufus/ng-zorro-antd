@@ -201,24 +201,11 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzDividerComponent_span_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r253 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r253.nzText);
-    } }
-    function NzDividerComponent_span_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 1);
-        core.ɵɵtemplate(1, NzDividerComponent_span_0_ng_container_1_Template, 2, 1, "ng-container", 2);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r252 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r252.nzText);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-divider.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzDividerComponent = /** @class */ (function () {
         function NzDividerComponent(elementRef, nzUpdateHostClassService) {
             this.elementRef = elementRef;
@@ -227,7 +214,15 @@
             this.nzOrientation = 'center';
             this.nzDashed = false;
         }
-        NzDividerComponent.prototype.setClass = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzDividerComponent.prototype.setClass = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _a;
             this.nzUpdateHostClassService.updateHostClass(this.elementRef.nativeElement, (_a = {},
                 _a['ant-divider'] = true,
@@ -236,68 +231,90 @@
                 _a["ant-divider-dashed"] = this.nzDashed,
                 _a));
         };
-        NzDividerComponent.prototype.ngOnChanges = function () {
+        /**
+         * @return {?}
+         */
+        NzDividerComponent.prototype.ngOnChanges = /**
+         * @return {?}
+         */
+        function () {
             this.setClass();
         };
-        NzDividerComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzDividerComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             this.setClass();
         };
-        /** @nocollapse */ NzDividerComponent.ɵfac = function NzDividerComponent_Factory(t) { return new (t || NzDividerComponent)(core.ɵɵdirectiveInject(core.ElementRef), core.ɵɵdirectiveInject(core$1.NzUpdateHostClassService)); };
-        /** @nocollapse */ NzDividerComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzDividerComponent, selectors: [["nz-divider"]], inputs: { nzText: "nzText", nzType: "nzType", nzOrientation: "nzOrientation", nzDashed: "nzDashed" }, exportAs: ["nzDivider"], features: [core.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), core.ɵɵNgOnChangesFeature()], decls: 1, vars: 1, consts: [["class", "ant-divider-inner-text", 4, "ngIf"], [1, "ant-divider-inner-text"], [4, "nzStringTemplateOutlet"]], template: function NzDividerComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzDividerComponent_span_0_Template, 2, 1, "span", 0);
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.nzText);
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective], encapsulation: 2, changeDetection: 0 });
+        NzDividerComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-divider',
+                        exportAs: 'nzDivider',
+                        template: "<span *ngIf=\"nzText\" class=\"ant-divider-inner-text\">\n  <ng-container *nzStringTemplateOutlet=\"nzText\">{{ nzText }}</ng-container>\n</span>",
+                        preserveWhitespaces: false,
+                        providers: [core$1.NzUpdateHostClassService],
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush
+                    }] }
+        ];
+        /** @nocollapse */
+        NzDividerComponent.ctorParameters = function () { return [
+            { type: core.ElementRef },
+            { type: core$1.NzUpdateHostClassService }
+        ]; };
+        NzDividerComponent.propDecorators = {
+            nzText: [{ type: core.Input }],
+            nzType: [{ type: core.Input }],
+            nzOrientation: [{ type: core.Input }],
+            nzDashed: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzDividerComponent.prototype, "nzDashed", void 0);
         return NzDividerComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDividerComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-divider',
-                    exportAs: 'nzDivider',
-                    templateUrl: './nz-divider.component.html',
-                    preserveWhitespaces: false,
-                    providers: [core$1.NzUpdateHostClassService],
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush
-                }]
-        }], function () { return [{ type: core.ElementRef }, { type: core$1.NzUpdateHostClassService }]; }, { nzText: [{
-                type: core.Input
-            }], nzType: [{
-                type: core.Input
-            }], nzOrientation: [{
-                type: core.Input
-            }], nzDashed: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzDividerComponent.prototype.nzText;
+        /** @type {?} */
+        NzDividerComponent.prototype.nzType;
+        /** @type {?} */
+        NzDividerComponent.prototype.nzOrientation;
+        /** @type {?} */
+        NzDividerComponent.prototype.nzDashed;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDividerComponent.prototype.elementRef;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDividerComponent.prototype.nzUpdateHostClassService;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-divider.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDividerModule = /** @class */ (function () {
         function NzDividerModule() {
         }
-        /** @nocollapse */ NzDividerModule.ɵmod = core.ɵɵdefineNgModule({ type: NzDividerModule });
-        /** @nocollapse */ NzDividerModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzDividerModule_Factory(t) { return new (t || NzDividerModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule]] });
+        NzDividerModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule],
+                        declarations: [NzDividerComponent],
+                        exports: [NzDividerComponent]
+                    },] }
+        ];
         return NzDividerModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzDividerModule, { declarations: [NzDividerComponent], imports: [common.CommonModule, core$1.NzAddOnModule], exports: [NzDividerComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDividerModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, core$1.NzAddOnModule],
-                    declarations: [NzDividerComponent],
-                    exports: [NzDividerComponent]
-                }]
-        }], null, null); })();
 
     exports.NzDividerComponent = NzDividerComponent;
     exports.NzDividerModule = NzDividerModule;

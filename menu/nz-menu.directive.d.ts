@@ -9,7 +9,6 @@ import { AfterContentInit, ElementRef, EventEmitter, OnChanges, OnDestroy, OnIni
 import { NzDirectionVHIType, NzMenuBaseService, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzMenuItemDirective } from './nz-menu-item.directive';
 import { NzSubMenuComponent } from './nz-submenu.component';
-import * as i0 from "@angular/core";
 export declare class NzMenuDirective implements AfterContentInit, OnInit, OnChanges, OnDestroy {
     elementRef: ElementRef;
     private nzMenuService;
@@ -33,6 +32,4 @@ export declare class NzMenuDirective implements AfterContentInit, OnInit, OnChan
     ngAfterContentInit(): void;
     ngOnChanges(changes: SimpleChanges): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzMenuDirective>;
-    static ɵdir: i0.ɵɵDirectiveDefWithMeta<NzMenuDirective, "[nz-menu]", ["nzMenu"], { 'nzInlineIndent': "nzInlineIndent", 'nzTheme': "nzTheme", 'nzMode': "nzMode", 'nzInDropDown': "nzInDropDown", 'nzInlineCollapsed': "nzInlineCollapsed", 'nzSelectable': "nzSelectable" }, { 'nzClick': "nzClick" }, ["listOfNzMenuItemDirective", "listOfNzSubMenuComponent"]>;
 }

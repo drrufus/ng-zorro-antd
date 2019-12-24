@@ -1,9 +1,15 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { HttpClient } from '@angular/common/http';
 import { ElementRef, OnChanges, OnDestroy, OnInit } from '@angular/core';
 import { Subscription } from 'rxjs';
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { UploadFile, ZipButtonOptions } from './interface';
-import * as i0 from "@angular/core";
 export declare class NzUploadBtnComponent implements OnInit, OnChanges, OnDestroy {
     private http;
     private el;
@@ -35,6 +41,4 @@ export declare class NzUploadBtnComponent implements OnInit, OnChanges, OnDestro
     ngOnInit(): void;
     ngOnChanges(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzUploadBtnComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzUploadBtnComponent, "[nz-upload-btn]", ["nzUploadBtn"], { 'classes': "classes", 'options': "options" }, {}, never>;
 }

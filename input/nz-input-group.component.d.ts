@@ -8,7 +8,6 @@
 import { AfterContentInit, QueryList, TemplateRef } from '@angular/core';
 import { NgClassType, NzSizeLDSType } from 'ng-zorro-antd/core';
 import { NzInputDirective } from './nz-input.directive';
-import * as i0 from "@angular/core";
 export declare class NzInputGroupComponent implements AfterContentInit {
     listOfNzInputDirective: QueryList<NzInputDirective>;
     private _size;
@@ -39,6 +38,4 @@ export declare class NzInputGroupComponent implements AfterContentInit {
     readonly isSmallSearch: boolean;
     updateChildrenInputSize(): void;
     ngAfterContentInit(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzInputGroupComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzInputGroupComponent, "nz-input-group", ["nzInputGroup"], { 'nzAddOnBeforeIcon': "nzAddOnBeforeIcon", 'nzAddOnAfterIcon': "nzAddOnAfterIcon", 'nzPrefixIcon': "nzPrefixIcon", 'nzSuffixIcon': "nzSuffixIcon", 'nzAddOnBefore': "nzAddOnBefore", 'nzAddOnAfter': "nzAddOnAfter", 'nzPrefix': "nzPrefix", 'nzSuffix': "nzSuffix", 'nzSearch': "nzSearch", 'nzCompact': "nzCompact", 'nzSize': "nzSize" }, {}, ["listOfNzInputDirective"]>;
 }

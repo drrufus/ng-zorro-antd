@@ -1,221 +1,226 @@
-import { ɵɵdirectiveInject, ElementRef, Renderer2, ɵɵdefineComponent, ɵɵprojectionDef, ɵɵprojection, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, ɵɵgetCurrentView, ɵɵelementStart, ɵɵlistener, ɵɵrestoreView, ɵɵnextContext, ɵɵtemplate, ɵɵelementEnd, ɵɵreference, ɵɵadvance, ɵɵproperty, ɵɵstyleProp, ɵɵelement, EventEmitter, NgZone, ChangeDetectorRef, ɵɵstaticViewQuery, ɵɵqueryRefresh, ɵɵloadQuery, ɵɵallocHostVars, ɵɵclassProp, ɵɵtemplateRefExtractor, Optional, Host, Output, Input, ViewChild, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, ElementRef, Renderer2, EventEmitter, Optional, Host, NgZone, ChangeDetectorRef, Output, Input, ViewChild, NgModule } from '@angular/core';
 import { __decorate, __metadata } from 'tslib';
 import { MediaMatcher, LayoutModule } from '@angular/cdk/layout';
 import { Platform, PlatformModule } from '@angular/cdk/platform';
 import { Subject } from 'rxjs';
 import { takeUntil, finalize } from 'rxjs/operators';
 import { toCssPixel, NzDomEventService, InputBoolean } from 'ng-zorro-antd/core';
-import { NgIf, NgTemplateOutlet, CommonModule } from '@angular/common';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
+import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-content.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0 = ["*"];
 class NzContentComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-content');
     }
 }
-/** @nocollapse */ NzContentComponent.ɵfac = function NzContentComponent_Factory(t) { return new (t || NzContentComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzContentComponent.ɵcmp = ɵɵdefineComponent({ type: NzContentComponent, selectors: [["nz-content"]], exportAs: ["nzContent"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzContentComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, styles: ["\n      nz-content {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzContentComponent, [{
-        type: Component,
-        args: [{
+NzContentComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-content',
                 exportAs: 'nzContent',
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                templateUrl: './nz-content.component.html',
-                styles: [
-                    `
+                template: "<ng-content></ng-content>",
+                styles: [`
       nz-content {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzContentComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzContentComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzContentComponent.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-footer.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$1 = ["*"];
 class NzFooterComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-footer');
     }
 }
-/** @nocollapse */ NzFooterComponent.ɵfac = function NzFooterComponent_Factory(t) { return new (t || NzFooterComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzFooterComponent.ɵcmp = ɵɵdefineComponent({ type: NzFooterComponent, selectors: [["nz-footer"]], exportAs: ["nzFooter"], ngContentSelectors: _c0$1, decls: 1, vars: 0, template: function NzFooterComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, styles: ["\n      nz-footer {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzFooterComponent, [{
-        type: Component,
-        args: [{
+NzFooterComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-footer',
                 exportAs: 'nzFooter',
                 preserveWhitespaces: false,
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
-                templateUrl: './nz-footer.component.html',
-                styles: [
-                    `
+                template: "<ng-content></ng-content>",
+                styles: [`
       nz-footer {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzFooterComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzFooterComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzFooterComponent.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-header.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$2 = ["*"];
 class NzHeaderComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-header');
     }
 }
-/** @nocollapse */ NzHeaderComponent.ɵfac = function NzHeaderComponent_Factory(t) { return new (t || NzHeaderComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzHeaderComponent.ɵcmp = ɵɵdefineComponent({ type: NzHeaderComponent, selectors: [["nz-header"]], exportAs: ["nzHeader"], ngContentSelectors: _c0$2, decls: 1, vars: 0, template: function NzHeaderComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, styles: ["\n      nz-header {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzHeaderComponent, [{
-        type: Component,
-        args: [{
+NzHeaderComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-header',
                 exportAs: 'nzHeader',
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 preserveWhitespaces: false,
-                templateUrl: './nz-header.component.html',
-                styles: [
-                    `
+                template: "<ng-content></ng-content>",
+                styles: [`
       nz-header {
         display: block;
       }
-    `
-                ]
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+    `]
+            }] }
+];
+/** @nocollapse */
+NzHeaderComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /** @type {?} */
+    NzHeaderComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzHeaderComponent.prototype.renderer;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-layout.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-const _c0$3 = ["*"];
 class NzLayoutComponent {
+    /**
+     * @param {?} elementRef
+     * @param {?} renderer
+     */
     constructor(elementRef, renderer) {
         this.elementRef = elementRef;
         this.renderer = renderer;
         renderer.addClass(elementRef.nativeElement, 'ant-layout');
     }
+    /**
+     * @return {?}
+     */
     destroySider() {
         this.renderer.removeClass(this.elementRef.nativeElement, 'ant-layout-has-sider');
     }
+    /**
+     * @return {?}
+     */
     initSider() {
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-layout-has-sider');
     }
 }
-/** @nocollapse */ NzLayoutComponent.ɵfac = function NzLayoutComponent_Factory(t) { return new (t || NzLayoutComponent)(ɵɵdirectiveInject(ElementRef), ɵɵdirectiveInject(Renderer2)); };
-/** @nocollapse */ NzLayoutComponent.ɵcmp = ɵɵdefineComponent({ type: NzLayoutComponent, selectors: [["nz-layout"]], exportAs: ["nzLayout"], ngContentSelectors: _c0$3, decls: 1, vars: 0, template: function NzLayoutComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵprojection(0);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzLayoutComponent, [{
-        type: Component,
-        args: [{
+NzLayoutComponent.decorators = [
+    { type: Component, args: [{
                 selector: 'nz-layout',
                 exportAs: 'nzLayout',
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 preserveWhitespaces: false,
-                templateUrl: './nz-layout.component.html'
-            }]
-    }], function () { return [{ type: ElementRef }, { type: Renderer2 }]; }, null); })();
+                template: "<ng-content></ng-content>"
+            }] }
+];
+/** @nocollapse */
+NzLayoutComponent.ctorParameters = () => [
+    { type: ElementRef },
+    { type: Renderer2 }
+];
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzLayoutComponent.prototype.elementRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzLayoutComponent.prototype.renderer;
+}
 
-const _c0$4 = ["defaultTrigger"];
-function NzSiderComponent_span_2_ng_template_1_Template(rf, ctx) { }
-function NzSiderComponent_span_2_Template(rf, ctx) { if (rf & 1) {
-    const _r546 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "span", 5);
-    ɵɵlistener("click", function NzSiderComponent_span_2_Template_span_click_0_listener($event) { ɵɵrestoreView(_r546); const ctx_r545 = ɵɵnextContext(); return ctx_r545.toggleCollapse(); });
-    ɵɵtemplate(1, NzSiderComponent_span_2_ng_template_1_Template, 0, 0, "ng-template", 6);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r538 = ɵɵnextContext();
-    const _r542 = ɵɵreference(7);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r538.nzZeroTrigger || _r542);
-} }
-function NzSiderComponent_div_3_ng_template_1_Template(rf, ctx) { }
-function NzSiderComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-    const _r549 = ɵɵgetCurrentView();
-    ɵɵelementStart(0, "div", 7);
-    ɵɵlistener("click", function NzSiderComponent_div_3_Template_div_click_0_listener($event) { ɵɵrestoreView(_r549); const ctx_r548 = ɵɵnextContext(); return ctx_r548.toggleCollapse(); });
-    ɵɵtemplate(1, NzSiderComponent_div_3_ng_template_1_Template, 0, 0, "ng-template", 6);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r539 = ɵɵnextContext();
-    ɵɵstyleProp("width", ctx_r539.widthSetting);
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r539.trigger);
-} }
-function NzSiderComponent_ng_template_4_i_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 9);
-} if (rf & 2) {
-    const ctx_r550 = ɵɵnextContext(2);
-    ɵɵproperty("nzType", ctx_r550.nzCollapsed ? "right" : "left");
-} }
-function NzSiderComponent_ng_template_4_i_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 9);
-} if (rf & 2) {
-    const ctx_r551 = ɵɵnextContext(2);
-    ɵɵproperty("nzType", ctx_r551.nzCollapsed ? "left" : "right");
-} }
-function NzSiderComponent_ng_template_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵtemplate(0, NzSiderComponent_ng_template_4_i_0_Template, 1, 1, "i", 8);
-    ɵɵtemplate(1, NzSiderComponent_ng_template_4_i_1_Template, 1, 1, "i", 8);
-} if (rf & 2) {
-    const ctx_r541 = ɵɵnextContext();
-    ɵɵproperty("ngIf", !ctx_r541.nzReverseArrow);
-    ɵɵadvance(1);
-    ɵɵproperty("ngIf", ctx_r541.nzReverseArrow);
-} }
-function NzSiderComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 10);
-} }
-const _c1 = ["*"];
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-sider.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzSiderComponent {
+    /**
+     * @param {?} nzLayoutComponent
+     * @param {?} mediaMatcher
+     * @param {?} ngZone
+     * @param {?} platform
+     * @param {?} cdr
+     * @param {?} nzDomEventService
+     * @param {?} renderer
+     * @param {?} elementRef
+     */
     constructor(nzLayoutComponent, mediaMatcher, ngZone, platform, cdr, nzDomEventService, renderer, elementRef) {
         this.nzLayoutComponent = nzLayoutComponent;
         this.mediaMatcher = mediaMatcher;
@@ -242,12 +247,21 @@ class NzSiderComponent {
         this.nzCollapsed = false;
         renderer.addClass(elementRef.nativeElement, 'ant-layout-sider');
     }
+    /**
+     * @return {?}
+     */
     get trigger() {
         return this.nzTrigger !== undefined ? this.nzTrigger : this.defaultTrigger;
     }
+    /**
+     * @return {?}
+     */
     get flexSetting() {
         return `0 0 ${this.widthSetting}`;
     }
+    /**
+     * @return {?}
+     */
     get widthSetting() {
         if (this.nzCollapsed) {
             return `${this.nzCollapsedWidth}px`;
@@ -256,41 +270,78 @@ class NzSiderComponent {
             return toCssPixel(this.nzWidth);
         }
     }
+    /**
+     * @return {?}
+     */
     watchMatchMedia() {
         if (this.nzBreakpoint) {
+            /** @type {?} */
             const matchBelow = this.mediaMatcher.matchMedia(`(max-width: ${this.dimensionMap[this.nzBreakpoint]})`).matches;
             this.below = matchBelow;
             this.nzCollapsed = matchBelow;
             this.nzCollapsedChange.emit(matchBelow);
-            this.ngZone.run(() => {
+            this.ngZone.run((/**
+             * @return {?}
+             */
+            () => {
                 this.cdr.markForCheck();
-            });
+            }));
         }
     }
+    /**
+     * @return {?}
+     */
     toggleCollapse() {
         this.nzCollapsed = !this.nzCollapsed;
         this.nzCollapsedChange.emit(this.nzCollapsed);
     }
+    /**
+     * @return {?}
+     */
     get isZeroTrigger() {
-        return this.nzCollapsible && this.trigger && this.nzCollapsedWidth === 0 && ((this.nzBreakpoint && this.below) || !this.nzBreakpoint);
+        return (this.nzCollapsible &&
+            this.trigger &&
+            this.nzCollapsedWidth === 0 &&
+            ((this.nzBreakpoint && this.below) || !this.nzBreakpoint));
     }
+    /**
+     * @return {?}
+     */
     get isSiderTrigger() {
         return this.nzCollapsible && this.trigger && this.nzCollapsedWidth !== 0;
     }
+    /**
+     * @return {?}
+     */
     ngOnInit() {
         if (this.nzLayoutComponent) {
             this.nzLayoutComponent.initSider();
         }
     }
+    /**
+     * @return {?}
+     */
     ngAfterViewInit() {
         if (this.platform.isBrowser) {
-            Promise.resolve().then(() => this.watchMatchMedia());
+            Promise.resolve().then((/**
+             * @return {?}
+             */
+            () => this.watchMatchMedia()));
             this.nzDomEventService
                 .registerResizeListener()
-                .pipe(takeUntil(this.destroy$), finalize(() => this.nzDomEventService.unregisterResizeListener()))
-                .subscribe(() => this.watchMatchMedia());
+                .pipe(takeUntil(this.destroy$), finalize((/**
+             * @return {?}
+             */
+            () => this.nzDomEventService.unregisterResizeListener())))
+                .subscribe((/**
+             * @return {?}
+             */
+            () => this.watchMatchMedia()));
         }
     }
+    /**
+     * @return {?}
+     */
     ngOnDestroy() {
         this.destroy$.next();
         this.destroy$.complete();
@@ -299,32 +350,49 @@ class NzSiderComponent {
         }
     }
 }
-/** @nocollapse */ NzSiderComponent.ɵfac = function NzSiderComponent_Factory(t) { return new (t || NzSiderComponent)(ɵɵdirectiveInject(NzLayoutComponent, 9), ɵɵdirectiveInject(MediaMatcher), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(Platform), ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzDomEventService), ɵɵdirectiveInject(Renderer2), ɵɵdirectiveInject(ElementRef)); };
-/** @nocollapse */ NzSiderComponent.ɵcmp = ɵɵdefineComponent({ type: NzSiderComponent, selectors: [["nz-sider"]], viewQuery: function NzSiderComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵɵstaticViewQuery(_c0$4, true);
-    } if (rf & 2) {
-        var _t;
-        ɵɵqueryRefresh(_t = ɵɵloadQuery()) && (ctx.defaultTrigger = _t.first);
-    } }, hostBindings: function NzSiderComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-        ɵɵallocHostVars(7);
-    } if (rf & 2) {
-        ɵɵstyleProp("flex", ctx.flexSetting)("max-width", ctx.widthSetting)("min-width", ctx.widthSetting)("width", ctx.widthSetting);
-        ɵɵclassProp("ant-layout-sider-zero-width", ctx.nzCollapsed && ctx.nzCollapsedWidth === 0)("ant-layout-sider-light", ctx.nzTheme === "light")("ant-layout-sider-collapsed", ctx.nzCollapsed);
-    } }, inputs: { nzWidth: "nzWidth", nzTheme: "nzTheme", nzCollapsedWidth: "nzCollapsedWidth", nzBreakpoint: "nzBreakpoint", nzZeroTrigger: "nzZeroTrigger", nzReverseArrow: "nzReverseArrow", nzCollapsible: "nzCollapsible", nzCollapsed: "nzCollapsed", nzTrigger: "nzTrigger" }, outputs: { nzCollapsedChange: "nzCollapsedChange" }, exportAs: ["nzSider"], ngContentSelectors: _c1, decls: 8, vars: 2, consts: [[1, "ant-layout-sider-children"], ["class", "ant-layout-sider-zero-width-trigger", 3, "click", 4, "ngIf"], ["class", "ant-layout-sider-trigger", 3, "width", "click", 4, "ngIf"], ["defaultTrigger", ""], ["zeroTrigger", ""], [1, "ant-layout-sider-zero-width-trigger", 3, "click"], [3, "ngTemplateOutlet"], [1, "ant-layout-sider-trigger", 3, "click"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", "nzType", "bars"]], template: function NzSiderComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵprojectionDef();
-        ɵɵelementStart(0, "div", 0);
-        ɵɵprojection(1);
-        ɵɵelementEnd();
-        ɵɵtemplate(2, NzSiderComponent_span_2_Template, 2, 1, "span", 1);
-        ɵɵtemplate(3, NzSiderComponent_div_3_Template, 2, 2, "div", 2);
-        ɵɵtemplate(4, NzSiderComponent_ng_template_4_Template, 2, 2, "ng-template", null, 3, ɵɵtemplateRefExtractor);
-        ɵɵtemplate(6, NzSiderComponent_ng_template_6_Template, 1, 0, "ng-template", null, 4, ɵɵtemplateRefExtractor);
-    } if (rf & 2) {
-        ɵɵadvance(2);
-        ɵɵproperty("ngIf", ctx.isZeroTrigger);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.isSiderTrigger);
-    } }, directives: [NgIf, NgTemplateOutlet, NzIconDirective], encapsulation: 2, changeDetection: 0 });
+NzSiderComponent.decorators = [
+    { type: Component, args: [{
+                selector: 'nz-sider',
+                exportAs: 'nzSider',
+                preserveWhitespaces: false,
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                template: "<div class=\"ant-layout-sider-children\">\n  <ng-content></ng-content>\n</div>\n<span class=\"ant-layout-sider-zero-width-trigger\" *ngIf=\"isZeroTrigger\" (click)=\"toggleCollapse()\">\n  <ng-template [ngTemplateOutlet]=\"nzZeroTrigger || zeroTrigger\"></ng-template>\n</span>\n<div class=\"ant-layout-sider-trigger\"\n  *ngIf=\"isSiderTrigger\"\n  (click)=\"toggleCollapse()\"\n  [style.width]=\"widthSetting\">\n  <ng-template [ngTemplateOutlet]=\"trigger\"></ng-template>\n</div>\n<ng-template #defaultTrigger>\n  <i nz-icon [nzType]=\"nzCollapsed ? 'right' : 'left'\" *ngIf=\"!nzReverseArrow\"></i>\n  <i nz-icon [nzType]=\"nzCollapsed ? 'left' : 'right'\" *ngIf=\"nzReverseArrow\"></i>\n</ng-template>\n<ng-template #zeroTrigger>\n  <i nz-icon nzType=\"bars\"></i>\n</ng-template>",
+                host: {
+                    '[class.ant-layout-sider-zero-width]': 'nzCollapsed && nzCollapsedWidth === 0',
+                    '[class.ant-layout-sider-light]': `nzTheme === 'light'`,
+                    '[class.ant-layout-sider-collapsed]': 'nzCollapsed',
+                    '[style.flex]': 'flexSetting',
+                    '[style.max-width]': 'widthSetting',
+                    '[style.min-width]': 'widthSetting',
+                    '[style.width]': 'widthSetting'
+                }
+            }] }
+];
+/** @nocollapse */
+NzSiderComponent.ctorParameters = () => [
+    { type: NzLayoutComponent, decorators: [{ type: Optional }, { type: Host }] },
+    { type: MediaMatcher },
+    { type: NgZone },
+    { type: Platform },
+    { type: ChangeDetectorRef },
+    { type: NzDomEventService },
+    { type: Renderer2 },
+    { type: ElementRef }
+];
+NzSiderComponent.propDecorators = {
+    nzCollapsedChange: [{ type: Output }],
+    nzWidth: [{ type: Input }],
+    nzTheme: [{ type: Input }],
+    nzCollapsedWidth: [{ type: Input }],
+    nzBreakpoint: [{ type: Input }],
+    nzZeroTrigger: [{ type: Input }],
+    nzReverseArrow: [{ type: Input }],
+    nzCollapsible: [{ type: Input }],
+    nzCollapsed: [{ type: Input }],
+    nzTrigger: [{ type: Input }],
+    defaultTrigger: [{ type: ViewChild, args: ['defaultTrigger', { static: true },] }]
+};
 __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
@@ -337,85 +405,101 @@ __decorate([
     InputBoolean(),
     __metadata("design:type", Object)
 ], NzSiderComponent.prototype, "nzCollapsed", void 0);
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzSiderComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-sider',
-                exportAs: 'nzSider',
-                preserveWhitespaces: false,
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                templateUrl: './nz-sider.component.html',
-                host: {
-                    '[class.ant-layout-sider-zero-width]': 'nzCollapsed && nzCollapsedWidth === 0',
-                    '[class.ant-layout-sider-light]': `nzTheme === 'light'`,
-                    '[class.ant-layout-sider-collapsed]': 'nzCollapsed',
-                    '[style.flex]': 'flexSetting',
-                    '[style.max-width]': 'widthSetting',
-                    '[style.min-width]': 'widthSetting',
-                    '[style.width]': 'widthSetting'
-                }
-            }]
-    }], function () { return [{ type: NzLayoutComponent, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: MediaMatcher }, { type: NgZone }, { type: Platform }, { type: ChangeDetectorRef }, { type: NzDomEventService }, { type: Renderer2 }, { type: ElementRef }]; }, { nzCollapsedChange: [{
-            type: Output
-        }], nzWidth: [{
-            type: Input
-        }], nzTheme: [{
-            type: Input
-        }], nzCollapsedWidth: [{
-            type: Input
-        }], nzBreakpoint: [{
-            type: Input
-        }], nzZeroTrigger: [{
-            type: Input
-        }], nzReverseArrow: [{
-            type: Input
-        }], nzCollapsible: [{
-            type: Input
-        }], nzCollapsed: [{
-            type: Input
-        }], nzTrigger: [{
-            type: Input
-        }], defaultTrigger: [{
-            type: ViewChild,
-            args: ['defaultTrigger', { static: true }]
-        }] }); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.below;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.destroy$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.dimensionMap;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzCollapsedChange;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzWidth;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzTheme;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzCollapsedWidth;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzBreakpoint;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzZeroTrigger;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzReverseArrow;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzCollapsible;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzCollapsed;
+    /** @type {?} */
+    NzSiderComponent.prototype.nzTrigger;
+    /** @type {?} */
+    NzSiderComponent.prototype.defaultTrigger;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.nzLayoutComponent;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.mediaMatcher;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.ngZone;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.platform;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzSiderComponent.prototype.nzDomEventService;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-layout.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzLayoutModule {
 }
-/** @nocollapse */ NzLayoutModule.ɵmod = ɵɵdefineNgModule({ type: NzLayoutModule });
-/** @nocollapse */ NzLayoutModule.ɵinj = ɵɵdefineInjector({ factory: function NzLayoutModule_Factory(t) { return new (t || NzLayoutModule)(); }, imports: [[CommonModule, NzIconModule, LayoutModule, PlatformModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzLayoutModule, { declarations: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent], imports: [CommonModule, NzIconModule, LayoutModule, PlatformModule], exports: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzLayoutModule, [{
-        type: NgModule,
-        args: [{
+NzLayoutModule.decorators = [
+    { type: NgModule, args: [{
                 declarations: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent],
                 exports: [NzLayoutComponent, NzHeaderComponent, NzContentComponent, NzFooterComponent, NzSiderComponent],
                 imports: [CommonModule, NzIconModule, LayoutModule, PlatformModule]
-            }]
-    }], null, null); })();
+            },] }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-layout.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NzContentComponent, NzFooterComponent, NzHeaderComponent, NzLayoutComponent, NzLayoutModule, NzSiderComponent };

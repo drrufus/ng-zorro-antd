@@ -8,7 +8,6 @@
 import { Platform } from '@angular/cdk/platform';
 import { ChangeDetectorRef, EventEmitter, NgZone, OnChanges, OnDestroy, OnInit, SimpleChanges } from '@angular/core';
 import { NzStatisticComponent } from './nz-statistic.component';
-import * as i0 from "@angular/core";
 export declare class NzCountdownComponent extends NzStatisticComponent implements OnInit, OnChanges, OnDestroy {
     private cdr;
     private ngZone;
@@ -31,6 +30,4 @@ export declare class NzCountdownComponent extends NzStatisticComponent implement
      * Update time that should be displayed on the screen.
      */
     protected updateValue(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzCountdownComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzCountdownComponent, "nz-countdown", ["nzCountdown"], { 'nzFormat': "nzFormat" }, { 'nzCountdownFinish': "nzCountdownFinish" }, never>;
 }

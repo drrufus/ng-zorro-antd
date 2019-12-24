@@ -10,7 +10,6 @@ import { CandyDate, FunctionProp, NzNoAnimationDirective } from 'ng-zorro-antd/c
 import { DateHelperService, NzI18nService } from 'ng-zorro-antd/i18n';
 import { AbstractPickerComponent } from './abstract-picker.component';
 import { PanelMode } from './standard-types';
-import * as i0 from "@angular/core";
 /**
  * The base picker for header panels, current support: Year/Month
  */
@@ -30,7 +29,5 @@ export declare class HeaderPickerComponent extends AbstractPickerComponent imple
     onChooseValue(mode: SupportHeaderPanel, value: CandyDate): void;
     onOpenChange(open: boolean): void;
     private cleanUp;
-    static ɵfac: i0.ɵɵFactoryDef<HeaderPickerComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<HeaderPickerComponent, "ng-component", never, { 'nzPlaceHolder': "nzPlaceHolder", 'nzRenderExtraFooter': "nzRenderExtraFooter", 'nzDefaultValue': "nzDefaultValue", 'nzFormat': "nzFormat" }, {}, never>;
 }
 export declare type SupportHeaderPanel = 'year' | 'month';

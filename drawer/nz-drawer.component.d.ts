@@ -1,3 +1,10 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { AfterViewInit, ChangeDetectorRef, EventEmitter, Injector, OnChanges, OnDestroy, OnInit, Renderer2, SimpleChanges, TemplateRef, Type, ViewContainerRef } from '@angular/core';
 import { FocusTrap, FocusTrapFactory } from '@angular/cdk/a11y';
 import { Overlay, OverlayKeyboardDispatcher, OverlayRef } from '@angular/cdk/overlay';
@@ -6,7 +13,6 @@ import { Observable, Subject } from 'rxjs';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzDrawerOptionsOfComponent, NzDrawerPlacement } from './nz-drawer-options';
 import { NzDrawerRef } from './nz-drawer-ref';
-import * as i0 from "@angular/core";
 export declare const DRAWER_ANIMATE_DURATION = 300;
 export declare class NzDrawerComponent<T = any, R = any, D = any> extends NzDrawerRef<R> implements OnInit, OnDestroy, AfterViewInit, OnChanges, NzDrawerOptionsOfComponent {
     private document;
@@ -82,6 +88,4 @@ export declare class NzDrawerComponent<T = any, R = any, D = any> extends NzDraw
     savePreviouslyFocusedElement(): void;
     private trapFocus;
     private restoreFocus;
-    static ɵfac: i0.ɵɵFactoryDef<NzDrawerComponent<any, any, any>>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzDrawerComponent<any, any, any>, "nz-drawer", ["nzDrawer"], { 'nzContent': "nzContent", 'nzClosable': "nzClosable", 'nzMaskClosable': "nzMaskClosable", 'nzMask': "nzMask", 'nzNoAnimation': "nzNoAnimation", 'nzKeyboard': "nzKeyboard", 'nzTitle': "nzTitle", 'nzPlacement': "nzPlacement", 'nzMaskStyle': "nzMaskStyle", 'nzBodyStyle': "nzBodyStyle", 'nzWrapClassName': "nzWrapClassName", 'nzWidth': "nzWidth", 'nzHeight': "nzHeight", 'nzZIndex': "nzZIndex", 'nzOffsetX': "nzOffsetX", 'nzOffsetY': "nzOffsetY", 'nzVisible': "nzVisible" }, { 'nzOnViewInit': "nzOnViewInit", 'nzOnClose': "nzOnClose" }, never>;
 }

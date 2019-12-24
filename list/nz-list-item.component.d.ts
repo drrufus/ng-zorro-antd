@@ -8,7 +8,6 @@
 import { AfterViewInit, ChangeDetectorRef, ElementRef, OnDestroy, QueryList, Renderer2, TemplateRef } from '@angular/core';
 import { NzListItemMetaComponent } from './nz-list-item-meta.component';
 import { NzListComponent } from './nz-list.component';
-import * as i0 from "@angular/core";
 export declare class NzListItemComponent implements OnDestroy, AfterViewInit {
     private parentComp;
     private cdr;
@@ -23,6 +22,4 @@ export declare class NzListItemComponent implements OnDestroy, AfterViewInit {
     constructor(elementRef: ElementRef, renderer: Renderer2, parentComp: NzListComponent, cdr: ChangeDetectorRef);
     ngAfterViewInit(): void;
     ngOnDestroy(): void;
-    static ɵfac: i0.ɵɵFactoryDef<NzListItemComponent>;
-    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzListItemComponent, "nz-list-item, [nz-list-item]", ["nzListItem"], { 'nzActions': "nzActions", 'nzContent': "nzContent", 'nzExtra': "nzExtra", 'nzNoFlex': "nzNoFlex" }, {}, ["metas"]>;
 }

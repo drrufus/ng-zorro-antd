@@ -201,280 +201,75 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzDescriptionsItemComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵprojection(0);
-    } }
-    var _c0 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-descriptions-item.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     var NzDescriptionsItemComponent = /** @class */ (function () {
         function NzDescriptionsItemComponent() {
             this.nzSpan = 1;
             this.nzTitle = '';
             this.inputChange$ = new rxjs.Subject();
         }
-        NzDescriptionsItemComponent.prototype.ngOnChanges = function () {
+        /**
+         * @return {?}
+         */
+        NzDescriptionsItemComponent.prototype.ngOnChanges = /**
+         * @return {?}
+         */
+        function () {
             this.inputChange$.next();
         };
-        NzDescriptionsItemComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzDescriptionsItemComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.inputChange$.complete();
         };
-        /** @nocollapse */ NzDescriptionsItemComponent.ɵfac = function NzDescriptionsItemComponent_Factory(t) { return new (t || NzDescriptionsItemComponent)(); };
-        /** @nocollapse */ NzDescriptionsItemComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzDescriptionsItemComponent, selectors: [["nz-descriptions-item"]], viewQuery: function NzDescriptionsItemComponent_Query(rf, ctx) { if (rf & 1) {
-                core.ɵɵstaticViewQuery(core.TemplateRef, true);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.content = _t.first);
-            } }, inputs: { nzSpan: "nzSpan", nzTitle: "nzTitle" }, exportAs: ["nzDescriptionsItem"], features: [core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzDescriptionsItemComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵtemplate(0, NzDescriptionsItemComponent_ng_template_0_Template, 1, 0, "ng-template");
-            } }, encapsulation: 2, changeDetection: 0 });
+        NzDescriptionsItemComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-descriptions-item',
+                        template: "<!-- Use a template to wrap contents so contents wouldn't be displayed. -->\n<ng-template>\n  <ng-content></ng-content>\n</ng-template>\n",
+                        exportAs: 'nzDescriptionsItem',
+                        preserveWhitespaces: false
+                    }] }
+        ];
+        NzDescriptionsItemComponent.propDecorators = {
+            content: [{ type: core.ViewChild, args: [core.TemplateRef, { static: true },] }],
+            nzSpan: [{ type: core.Input }],
+            nzTitle: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputNumber(),
             __metadata("design:type", Object)
         ], NzDescriptionsItemComponent.prototype, "nzSpan", void 0);
         return NzDescriptionsItemComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDescriptionsItemComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-descriptions-item',
-                    templateUrl: './nz-descriptions-item.component.html',
-                    exportAs: 'nzDescriptionsItem',
-                    preserveWhitespaces: false
-                }]
-        }], null, { content: [{
-                type: core.ViewChild,
-                args: [core.TemplateRef, { static: true }]
-            }], nzSpan: [{
-                type: core.Input
-            }], nzTitle: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzDescriptionsItemComponent.prototype.content;
+        /** @type {?} */
+        NzDescriptionsItemComponent.prototype.nzSpan;
+        /** @type {?} */
+        NzDescriptionsItemComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzDescriptionsItemComponent.prototype.inputChange$;
+    }
 
-    var _c0$1 = [1, "ant-descriptions"];
-    function NzDescriptionsComponent_div_0_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtext(1);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r213 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r213.nzTitle);
-    } }
-    function NzDescriptionsComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 3);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_div_0_ng_container_1_Template, 2, 1, "ng-container", 4);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r210 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", ctx_r210.nzTitle);
-    } }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_1_ng_template_5_Template(rf, ctx) { }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "td", 8);
-        core.ɵɵelementStart(2, "span", 9);
-        core.ɵɵtext(3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(4, "span", 10);
-        core.ɵɵtemplate(5, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_1_ng_template_5_Template, 0, 0, "ng-template", 11);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r218 = core.ɵɵnextContext().$implicit;
-        var ctx_r220 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r218.span);
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("ant-descriptions-item-colon", ctx_r220.nzColon);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(item_r218.title);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngTemplateOutlet", item_r218.content);
-    } }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_td_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "td", 9);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var item_r218 = core.ɵɵnextContext(2).$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", item_r218.title, " ");
-    } }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_ng_template_3_Template(rf, ctx) { }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_td_1_Template, 2, 1, "td", 12);
-        core.ɵɵelementStart(2, "td", 13);
-        core.ɵɵtemplate(3, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_ng_template_3_Template, 0, 0, "ng-template", 11);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r218 = core.ɵɵnextContext().$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("nzStringTemplateOutlet", item_r218.title);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r218.span * 2 - 1);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", item_r218.content);
-    } }
-    function NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_1_Template, 6, 4, "ng-container", 2);
-        core.ɵɵtemplate(2, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_ng_container_2_Template, 4, 3, "ng-container", 2);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r217 = core.ɵɵnextContext(3);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r217.nzBordered);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r217.nzBordered);
-    } }
-    function NzDescriptionsComponent_ng_container_4_tr_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "tr", 6);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_4_tr_1_ng_container_1_Template, 3, 2, "ng-container", 7);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var row_r215 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", row_r215);
-    } }
-    function NzDescriptionsComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_4_tr_1_Template, 2, 1, "tr", 5);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r211 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r211.itemMatrix);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "td", 8);
-        core.ɵɵelementStart(2, "span", 9);
-        core.ɵɵtext(3);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r235 = ctx.$implicit;
-        var ctx_r233 = core.ɵɵnextContext(4);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r235.span);
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("ant-descriptions-item-colon", ctx_r233.nzColon);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(item_r235.title);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_4_ng_template_3_Template(rf, ctx) { }
-    function NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "td", 8);
-        core.ɵɵelementStart(2, "span", 10);
-        core.ɵɵtemplate(3, NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_4_ng_template_3_Template, 0, 0, "ng-template", 11);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r237 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r237.span);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngTemplateOutlet", item_r237.content);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "tr", 6);
-        core.ɵɵtemplate(2, NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_2_Template, 4, 3, "ng-container", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(3, "tr", 6);
-        core.ɵɵtemplate(4, NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_ng_container_4_Template, 4, 2, "ng-container", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var row_r231 = ctx.$implicit;
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngForOf", row_r231);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngForOf", row_r231);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_5_ng_container_1_ng_container_1_Template, 5, 2, "ng-container", 7);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r228 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r228.itemMatrix);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "td", 14);
-        core.ɵɵtext(2);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r245 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r245.span);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate1(" ", item_r245.title, " ");
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_4_ng_template_2_Template(rf, ctx) { }
-    function NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "td", 13);
-        core.ɵɵtemplate(2, NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_4_ng_template_2_Template, 0, 0, "ng-template", 11);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var item_r247 = ctx.$implicit;
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("colSpan", item_r247.span);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", item_r247.content);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵelementStart(1, "tr", 6);
-        core.ɵɵtemplate(2, NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_2_Template, 3, 2, "ng-container", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementStart(3, "tr", 6);
-        core.ɵɵtemplate(4, NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_ng_container_4_Template, 3, 2, "ng-container", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var row_r241 = ctx.$implicit;
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngForOf", row_r241);
-        core.ɵɵadvance(2);
-        core.ɵɵproperty("ngForOf", row_r241);
-    } }
-    function NzDescriptionsComponent_ng_container_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_5_ng_container_2_ng_container_1_Template, 5, 2, "ng-container", 7);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r229 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngForOf", ctx_r229.itemMatrix);
-    } }
-    function NzDescriptionsComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementContainerStart(0);
-        core.ɵɵtemplate(1, NzDescriptionsComponent_ng_container_5_ng_container_1_Template, 2, 1, "ng-container", 2);
-        core.ɵɵtemplate(2, NzDescriptionsComponent_ng_container_5_ng_container_2_Template, 2, 1, "ng-container", 2);
-        core.ɵɵelementContainerEnd();
-    } if (rf & 2) {
-        var ctx_r212 = core.ɵɵnextContext();
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", !ctx_r212.nzBordered);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r212.nzBordered);
-    } }
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-descriptions.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'descriptions';
+    /** @type {?} */
     var defaultColumnMap = {
         xxl: 3,
         xl: 3,
@@ -497,28 +292,65 @@
             this.destroy$ = new rxjs.Subject();
             this.resize$ = new rxjs.Subject();
         }
-        NzDescriptionsComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzColumn) {
                 this.resize$.next();
             }
         };
-        NzDescriptionsComponent.prototype.ngAfterContentInit = function () {
+        /**
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.ngAfterContentInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
+            /** @type {?} */
             var contentChange$ = this.items.changes.pipe(operators.startWith(this.items), operators.takeUntil(this.destroy$));
-            rxjs.merge(contentChange$, contentChange$.pipe(operators.switchMap(function () { return rxjs.merge.apply(void 0, __spread(_this.items.map(function (i) { return i.inputChange$; }))).pipe(operators.auditTime(16)); })), this.resize$)
+            rxjs.merge(contentChange$, contentChange$.pipe(operators.switchMap((/**
+             * @return {?}
+             */
+            function () { return rxjs.merge.apply(void 0, __spread(_this.items.map((/**
+             * @param {?} i
+             * @return {?}
+             */
+            function (i) { return i.inputChange$; })))).pipe(operators.auditTime(16)); }))), this.resize$)
                 .pipe(operators.takeUntil(this.destroy$))
-                .subscribe(function () {
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.prepareMatrix();
                 _this.cdr.markForCheck();
-            });
+            }));
             if (this.platform.isBrowser) {
                 this.nzDomEventService
                     .registerResizeListener()
-                    .pipe(operators.takeUntil(this.destroy$), operators.finalize(function () { return _this.nzDomEventService.unregisterResizeListener(); }))
-                    .subscribe(function () { return _this.resize$.next(); });
+                    .pipe(operators.takeUntil(this.destroy$), operators.finalize((/**
+                 * @return {?}
+                 */
+                function () { return _this.nzDomEventService.unregisterResizeListener(); })))
+                    .subscribe((/**
+                 * @return {?}
+                 */
+                function () { return _this.resize$.next(); }));
             }
         };
-        NzDescriptionsComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
             this.resize$.complete();
@@ -526,19 +358,40 @@
         /**
          * Prepare the render matrix according to description items' spans.
          */
-        NzDescriptionsComponent.prototype.prepareMatrix = function () {
+        /**
+         * Prepare the render matrix according to description items' spans.
+         * @private
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.prepareMatrix = /**
+         * Prepare the render matrix according to description items' spans.
+         * @private
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var currentRow = [];
+            /** @type {?} */
             var width = 0;
+            /** @type {?} */
             var column = (this.realColumn = this.getColumn());
+            /** @type {?} */
             var items = this.items.toArray();
+            /** @type {?} */
             var length = items.length;
+            /** @type {?} */
             var matrix = [];
-            var flushRow = function () {
+            /** @type {?} */
+            var flushRow = (/**
+             * @return {?}
+             */
+            function () {
                 matrix.push(currentRow);
                 currentRow = [];
                 width = 0;
-            };
+            });
             for (var i = 0; i < length; i++) {
+                /** @type {?} */
                 var item = items[i];
                 var title = item.nzTitle, content = item.content, span = item.nzSpan;
                 width += span;
@@ -562,52 +415,81 @@
             }
             this.itemMatrix = matrix;
         };
-        NzDescriptionsComponent.prototype.matchMedia = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.matchMedia = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             var _this = this;
+            /** @type {?} */
             var bp = core$1.NzBreakpoint.md;
-            Object.keys(core$1.responsiveMap).map(function (breakpoint) {
-                var castBP = breakpoint;
+            Object.keys(core$1.responsiveMap).map((/**
+             * @param {?} breakpoint
+             * @return {?}
+             */
+            function (breakpoint) {
+                /** @type {?} */
+                var castBP = (/** @type {?} */ (breakpoint));
+                /** @type {?} */
                 var matchBelow = _this.mediaMatcher.matchMedia(core$1.responsiveMap[castBP]).matches;
                 if (matchBelow) {
                     bp = castBP;
                 }
-            });
+            }));
             return bp;
         };
-        NzDescriptionsComponent.prototype.getColumn = function () {
+        /**
+         * @private
+         * @return {?}
+         */
+        NzDescriptionsComponent.prototype.getColumn = /**
+         * @private
+         * @return {?}
+         */
+        function () {
             if (typeof this.nzColumn !== 'number') {
                 return this.nzColumn[this.matchMedia()];
             }
             return this.nzColumn;
         };
-        /** @nocollapse */ NzDescriptionsComponent.ɵfac = function NzDescriptionsComponent_Factory(t) { return new (t || NzDescriptionsComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.ChangeDetectorRef), core.ɵɵdirectiveInject(layout.MediaMatcher), core.ɵɵdirectiveInject(platform.Platform), core.ɵɵdirectiveInject(core$1.NzDomEventService)); };
-        /** @nocollapse */ NzDescriptionsComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzDescriptionsComponent, selectors: [["nz-descriptions"]], contentQueries: function NzDescriptionsComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-                core.ɵɵcontentQuery(dirIndex, NzDescriptionsItemComponent, false);
-            } if (rf & 2) {
-                var _t;
-                core.ɵɵqueryRefresh(_t = core.ɵɵloadQuery()) && (ctx.items = _t);
-            } }, hostBindings: function NzDescriptionsComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(3);
-                core.ɵɵelementHostAttrs(_c0$1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-descriptions-bordered", ctx.nzBordered)("ant-descriptions-middle", ctx.nzSize === "middle")("ant-descriptions-small", ctx.nzSize === "small");
-            } }, inputs: { nzBordered: "nzBordered", nzLayout: "nzLayout", nzColumn: "nzColumn", nzSize: "nzSize", nzTitle: "nzTitle", nzColon: "nzColon" }, exportAs: ["nzDescriptions"], features: [core.ɵɵNgOnChangesFeature()], decls: 6, vars: 3, consts: [["class", "ant-descriptions-title", 4, "ngIf"], [1, "ant-descriptions-view"], [4, "ngIf"], [1, "ant-descriptions-title"], [4, "nzStringTemplateOutlet"], ["class", "ant-descriptions-row", 4, "ngFor", "ngForOf"], [1, "ant-descriptions-row"], [4, "ngFor", "ngForOf"], [1, "ant-descriptions-item", 3, "colSpan"], [1, "ant-descriptions-item-label"], [1, "ant-descriptions-item-content"], [3, "ngTemplateOutlet"], ["class", "ant-descriptions-item-label", 4, "nzStringTemplateOutlet"], [1, "ant-descriptions-item-content", 3, "colSpan"], [1, "ant-descriptions-item-label", 3, "colSpan"]], template: function NzDescriptionsComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵtemplate(0, NzDescriptionsComponent_div_0_Template, 2, 1, "div", 0);
-                core.ɵɵelementStart(1, "div", 1);
-                core.ɵɵelementStart(2, "table");
-                core.ɵɵelementStart(3, "tbody");
-                core.ɵɵtemplate(4, NzDescriptionsComponent_ng_container_4_Template, 2, 1, "ng-container", 2);
-                core.ɵɵtemplate(5, NzDescriptionsComponent_ng_container_5_Template, 3, 2, "ng-container", 2);
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-                core.ɵɵelementEnd();
-            } if (rf & 2) {
-                core.ɵɵproperty("ngIf", ctx.nzTitle);
-                core.ɵɵadvance(4);
-                core.ɵɵproperty("ngIf", ctx.nzLayout === "horizontal");
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", ctx.nzLayout === "vertical");
-            } }, directives: [common.NgIf, core$1.NzStringTemplateOutletDirective, common.NgForOf, common.NgTemplateOutlet], styles: ["\n      nz-descriptions {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzDescriptionsComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-descriptions',
+                        template: "<div *ngIf=\"nzTitle\"\n     class=\"ant-descriptions-title\">\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\n</div>\n<div class=\"ant-descriptions-view\">\n  <table>\n    <tbody>\n      <ng-container *ngIf=\"nzLayout === 'horizontal'\">\n        <tr class=\"ant-descriptions-row\"\n            *ngFor=\"let row of itemMatrix; let i = index\">\n          <ng-container *ngFor=\"let item of row; let isLast = last\">\n            <!-- Horizontal & NOT Bordered -->\n            <ng-container *ngIf=\"!nzBordered\">\n              <td class=\"ant-descriptions-item\"\n                  [colSpan]=\"item.span\">\n                <span class=\"ant-descriptions-item-label\"\n                      [class.ant-descriptions-item-colon]=\"nzColon\">{{ item.title }}</span>\n                <span class=\"ant-descriptions-item-content\">\n                  <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                </span>\n              </td>\n            </ng-container>\n            <!-- Horizontal & Bordered -->\n            <ng-container *ngIf=\"nzBordered\">\n              <td class=\"ant-descriptions-item-label\"\n                  *nzStringTemplateOutlet=\"item.title\">{{ item.title }}</td>\n              <td class=\"ant-descriptions-item-content\"\n                  [colSpan]=\"item.span * 2 - 1\">\n                <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n              </td>\n            </ng-container>\n          </ng-container>\n        </tr>\n      </ng-container>\n\n      <ng-container *ngIf=\"nzLayout === 'vertical'\">\n        <!-- Vertical & NOT Bordered -->\n        <ng-container *ngIf=\"!nzBordered\">\n          <ng-container *ngFor=\"let row of itemMatrix; let i = index\">\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item\"\n                    [colSpan]=\"item.span\">\n                  <span class=\"ant-descriptions-item-label\"\n                        [class.ant-descriptions-item-colon]=\"nzColon\">{{ item.title }}</span>\n                </td>\n              </ng-container>\n            </tr>\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item\"\n                    [colSpan]=\"item.span\">\n                  <span class=\"ant-descriptions-item-content\">\n                    <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                  </span>\n                </td>\n              </ng-container>\n            </tr>\n          </ng-container>\n        </ng-container>\n        <!-- Vertical & Bordered -->\n        <ng-container *ngIf=\"nzBordered\">\n          <ng-container *ngFor=\"let row of itemMatrix; let i = index\">\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item-label\"\n                    [colSpan]=\"item.span\">\n                  {{ item.title }}\n                </td>\n              </ng-container>\n            </tr>\n            <tr class=\"ant-descriptions-row\">\n              <ng-container *ngFor=\"let item of row; let isLast = last\">\n                <td class=\"ant-descriptions-item-content\"\n                    [colSpan]=\"item.span\">\n                  <ng-template [ngTemplateOutlet]=\"item.content\"></ng-template>\n                </td>\n              </ng-container>\n            </tr>\n          </ng-container>\n        </ng-container>\n      </ng-container>\n    </tbody>\n  </table>\n</div>\n",
+                        exportAs: 'nzDescriptions',
+                        preserveWhitespaces: false,
+                        host: {
+                            class: 'ant-descriptions',
+                            '[class.ant-descriptions-bordered]': 'nzBordered',
+                            '[class.ant-descriptions-middle]': 'nzSize === "middle"',
+                            '[class.ant-descriptions-small]': 'nzSize === "small"'
+                        },
+                        styles: ["\n      nz-descriptions {\n        display: block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzDescriptionsComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core.ChangeDetectorRef },
+            { type: layout.MediaMatcher },
+            { type: platform.Platform },
+            { type: core$1.NzDomEventService }
+        ]; };
+        NzDescriptionsComponent.propDecorators = {
+            items: [{ type: core.ContentChildren, args: [NzDescriptionsItemComponent,] }],
+            nzBordered: [{ type: core.Input }],
+            nzLayout: [{ type: core.Input }],
+            nzColumn: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }],
+            nzTitle: [{ type: core.Input }],
+            nzColon: [{ type: core.Input }]
+        };
         __decorate([
             core$1.InputBoolean(), core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, false),
             __metadata("design:type", Boolean)
@@ -626,42 +508,82 @@
         ], NzDescriptionsComponent.prototype, "nzColon", void 0);
         return NzDescriptionsComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDescriptionsComponent, [{
-            type: core.Component,
-            args: [{
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    encapsulation: core.ViewEncapsulation.None,
-                    selector: 'nz-descriptions',
-                    templateUrl: './nz-descriptions.component.html',
-                    exportAs: 'nzDescriptions',
-                    preserveWhitespaces: false,
-                    host: {
-                        class: 'ant-descriptions',
-                        '[class.ant-descriptions-bordered]': 'nzBordered',
-                        '[class.ant-descriptions-middle]': 'nzSize === "middle"',
-                        '[class.ant-descriptions-small]': 'nzSize === "small"'
-                    },
-                    styles: [
-                        "\n      nz-descriptions {\n        display: block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core.ChangeDetectorRef }, { type: layout.MediaMatcher }, { type: platform.Platform }, { type: core$1.NzDomEventService }]; }, { items: [{
-                type: core.ContentChildren,
-                args: [NzDescriptionsItemComponent]
-            }], nzBordered: [{
-                type: core.Input
-            }], nzLayout: [{
-                type: core.Input
-            }], nzColumn: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }], nzTitle: [{
-                type: core.Input
-            }], nzColon: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.items;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzBordered;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzLayout;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzColumn;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzSize;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzTitle;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzColon;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.itemMatrix;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.realColumn;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.destroy$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.resize$;
+        /** @type {?} */
+        NzDescriptionsComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.cdr;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.mediaMatcher;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.platform;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzDescriptionsComponent.prototype.nzDomEventService;
+    }
 
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-descriptions.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    var NzDescriptionsModule = /** @class */ (function () {
+        function NzDescriptionsModule() {
+        }
+        NzDescriptionsModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule, platform.PlatformModule],
+                        declarations: [NzDescriptionsComponent, NzDescriptionsItemComponent],
+                        exports: [NzDescriptionsComponent, NzDescriptionsItemComponent]
+                    },] }
+        ];
+        return NzDescriptionsModule;
+    }());
+
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-descriptions-definitions.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
     /**
      * @license
      * Copyright Alibaba.com All Rights Reserved.
@@ -669,22 +591,18 @@
      * Use of this source code is governed by an MIT-style license that can be
      * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
      */
-    var NzDescriptionsModule = /** @class */ (function () {
-        function NzDescriptionsModule() {
-        }
-        /** @nocollapse */ NzDescriptionsModule.ɵmod = core.ɵɵdefineNgModule({ type: NzDescriptionsModule });
-        /** @nocollapse */ NzDescriptionsModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzDescriptionsModule_Factory(t) { return new (t || NzDescriptionsModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule, platform.PlatformModule]] });
-        return NzDescriptionsModule;
-    }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzDescriptionsModule, { declarations: [NzDescriptionsComponent, NzDescriptionsItemComponent], imports: [common.CommonModule, core$1.NzAddOnModule, platform.PlatformModule], exports: [NzDescriptionsComponent, NzDescriptionsItemComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzDescriptionsModule, [{
-            type: core.NgModule,
-            args: [{
-                    imports: [common.CommonModule, core$1.NzAddOnModule, platform.PlatformModule],
-                    declarations: [NzDescriptionsComponent, NzDescriptionsItemComponent],
-                    exports: [NzDescriptionsComponent, NzDescriptionsItemComponent]
-                }]
-        }], null, null); })();
+    /**
+     * @record
+     */
+    function NzDescriptionsItemRenderProps() { }
+    if (false) {
+        /** @type {?} */
+        NzDescriptionsItemRenderProps.prototype.title;
+        /** @type {?} */
+        NzDescriptionsItemRenderProps.prototype.span;
+        /** @type {?} */
+        NzDescriptionsItemRenderProps.prototype.content;
+    }
 
     exports.NzDescriptionsComponent = NzDescriptionsComponent;
     exports.NzDescriptionsItemComponent = NzDescriptionsItemComponent;

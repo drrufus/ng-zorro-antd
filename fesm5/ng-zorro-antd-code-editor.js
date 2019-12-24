@@ -1,38 +1,78 @@
-import { InjectionToken, ɵɵinject, ɵɵdefineInjectable, ɵsetClassMetadata, Injectable, Inject, Optional, ɵɵelementStart, ɵɵelement, ɵɵelementEnd, ɵɵtemplate, ɵɵnextContext, ɵɵadvance, ɵɵproperty, EventEmitter, ɵɵdirectiveInject, NgZone, ElementRef, ɵɵdefineComponent, ɵɵallocHostVars, ɵɵclassProp, ɵɵProvidersFeature, forwardRef, Component, ChangeDetectionStrategy, ViewEncapsulation, Input, Output, ɵɵdefineNgModule, ɵɵdefineInjector, ɵɵsetNgModuleScope, NgModule } from '@angular/core';
+import { InjectionToken, Injectable, Inject, Optional, ɵɵdefineInjectable, ɵɵinject, EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, forwardRef, NgZone, ElementRef, Input, Output, NgModule } from '@angular/core';
 import { __spread, __assign, __read, __decorate, __metadata } from 'tslib';
 import { NG_VALUE_ACCESSOR } from '@angular/forms';
 import { Subject, BehaviorSubject, of, combineLatest, fromEvent } from 'rxjs';
 import { tap, map, takeUntil, debounceTime, filter, distinctUntilChanged } from 'rxjs/operators';
 import { warnDeprecation, warn, PREFIX, NzConfigService, inNextTick, InputBoolean } from 'ng-zorro-antd/core';
-import { DOCUMENT, NgIf, NgTemplateOutlet, CommonModule } from '@angular/common';
-import { NzSpinComponent, NzSpinModule } from 'ng-zorro-antd/spin';
+import { DOCUMENT, CommonModule } from '@angular/common';
 import { NzIconModule } from 'ng-zorro-antd/icon';
+import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-code-editor.definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-var NzCodeEditorLoadingStatus;
-(function (NzCodeEditorLoadingStatus) {
-    NzCodeEditorLoadingStatus["UNLOAD"] = "unload";
-    NzCodeEditorLoadingStatus["LOADING"] = "loading";
-    NzCodeEditorLoadingStatus["LOADED"] = "LOADED";
-})(NzCodeEditorLoadingStatus || (NzCodeEditorLoadingStatus = {}));
+/** @enum {string} */
+var NzCodeEditorLoadingStatus = {
+    UNLOAD: "unload",
+    LOADING: "loading",
+    LOADED: "LOADED",
+};
+/**
+ * @record
+ */
+function NzCodeEditorConfig() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzCodeEditorConfig.prototype.assetsRoot;
+    /** @type {?|undefined} */
+    NzCodeEditorConfig.prototype.defaultEditorOption;
+    /** @type {?|undefined} */
+    NzCodeEditorConfig.prototype.useStaticLoading;
+    /**
+     * @return {?}
+     */
+    NzCodeEditorConfig.prototype.onLoad = function () { };
+    /**
+     * @return {?}
+     */
+    NzCodeEditorConfig.prototype.onFirstEditorInit = function () { };
+    /**
+     * @return {?}
+     */
+    NzCodeEditorConfig.prototype.onInit = function () { };
+}
+/** @type {?} */
 var NZ_CODE_EDITOR_CONFIG = new InjectionToken('nz-code-editor-config', {
     providedIn: 'root',
     factory: NZ_CODE_EDITOR_CONFIG_FACTORY
 });
+/**
+ * @return {?}
+ */
 function NZ_CODE_EDITOR_CONFIG_FACTORY() {
     return {};
 }
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-code-editor.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'codeEditor';
 // tslint:disable no-any
+/**
+ * @param {?=} fn
+ * @return {?}
+ */
 function tryTriggerFunc(fn) {
-    return function () {
+    return (/**
+     * @param {...?} args
+     * @return {?}
+     */
+    function () {
         var args = [];
         for (var _i = 0; _i < arguments.length; _i++) {
             args[_i] = arguments[_i];
@@ -40,7 +80,7 @@ function tryTriggerFunc(fn) {
         if (fn) {
             fn.apply(void 0, __spread(args));
         }
-    };
+    });
 }
 // tslint:enable no-any
 var NzCodeEditorService = /** @class */ (function () {
@@ -52,32 +92,61 @@ var NzCodeEditorService = /** @class */ (function () {
         this.loaded$ = new Subject();
         this.loadingStatus = NzCodeEditorLoadingStatus.UNLOAD;
         this.option$ = new BehaviorSubject(this.option);
+        /** @type {?} */
         var globalConfig = this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME);
         if (config) {
             warnDeprecation("'NZ_CODE_EDITOR_CONFIG' is deprecated and will be removed in next minor version. Please use 'NzConfigService' instead.");
         }
         this.document = _document;
-        this.config = __assign(__assign({}, config), globalConfig);
+        this.config = __assign({}, config, globalConfig);
         this.option = this.config.defaultEditorOption || {};
-        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe(function () {
+        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe((/**
+         * @return {?}
+         */
+        function () {
+            /** @type {?} */
             var newGlobalConfig = _this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME);
             if (newGlobalConfig) {
                 _this._updateDefaultOption(newGlobalConfig.defaultEditorOption);
             }
-        });
+        }));
     }
-    NzCodeEditorService.prototype.updateDefaultOption = function (option) {
+    /**
+     * @param {?} option
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.updateDefaultOption = /**
+     * @param {?} option
+     * @return {?}
+     */
+    function (option) {
         warnDeprecation("'updateDefaultOption' is deprecated and will be removed in next minor version. Please use 'set' of 'NzConfigService' instead.");
         this._updateDefaultOption(option);
     };
-    NzCodeEditorService.prototype._updateDefaultOption = function (option) {
-        this.option = __assign(__assign({}, this.option), option);
+    /**
+     * @private
+     * @param {?} option
+     * @return {?}
+     */
+    NzCodeEditorService.prototype._updateDefaultOption = /**
+     * @private
+     * @param {?} option
+     * @return {?}
+     */
+    function (option) {
+        this.option = __assign({}, this.option, option);
         this.option$.next(this.option);
         if (option.theme) {
             monaco.editor.setTheme(option.theme);
         }
     };
-    NzCodeEditorService.prototype.requestToInit = function () {
+    /**
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.requestToInit = /**
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this.loadingStatus === NzCodeEditorLoadingStatus.LOADED) {
             this.onInit();
@@ -93,9 +162,23 @@ var NzCodeEditorService = /** @class */ (function () {
                 this.loadMonacoScript();
             }
         }
-        return this.loaded$.asObservable().pipe(tap(function () { return _this.onInit(); }), map(function () { return _this.getLatestOption(); }));
+        return this.loaded$.asObservable().pipe(tap((/**
+         * @return {?}
+         */
+        function () { return _this.onInit(); })), map((/**
+         * @return {?}
+         */
+        function () { return _this.getLatestOption(); })));
     };
-    NzCodeEditorService.prototype.loadMonacoScript = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.loadMonacoScript = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this.config.useStaticLoading) {
             this.onLoad();
@@ -105,75 +188,138 @@ var NzCodeEditorService = /** @class */ (function () {
             return;
         }
         this.loadingStatus = NzCodeEditorLoadingStatus.LOADING;
+        /** @type {?} */
         var assetsRoot = this.config.assetsRoot;
+        /** @type {?} */
         var vs = assetsRoot ? assetsRoot + "/vs" : 'assets/vs';
-        var windowAsAny = window; // tslint:disable-line no-any
+        /** @type {?} */
+        var windowAsAny = (/** @type {?} */ (window));
+        // tslint:disable-line no-any
+        /** @type {?} */
         var loadScript = this.document.createElement('script');
         loadScript.type = 'text/javascript';
         loadScript.src = vs + "/loader.js";
-        loadScript.onload = function () {
+        loadScript.onload = (/**
+         * @return {?}
+         */
+        function () {
             windowAsAny.require.config({
                 paths: { vs: vs }
             });
-            windowAsAny.require(['vs/editor/editor.main'], function () {
+            windowAsAny.require(['vs/editor/editor.main'], (/**
+             * @return {?}
+             */
+            function () {
                 _this.onLoad();
-            });
-        };
-        loadScript.onerror = function () {
+            }));
+        });
+        loadScript.onerror = (/**
+         * @return {?}
+         */
+        function () {
             throw new Error(PREFIX + " cannot load assets of monaco editor from source \"" + vs + "\".");
-        };
+        });
         this.document.documentElement.appendChild(loadScript);
     };
-    NzCodeEditorService.prototype.onLoad = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.onLoad = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         this.loadingStatus = NzCodeEditorLoadingStatus.LOADED;
         this.loaded$.next(true);
         this.loaded$.complete();
         tryTriggerFunc(this.config.onLoad)();
     };
-    NzCodeEditorService.prototype.onInit = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.onInit = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (!this.firstEditorInitialized) {
             this.firstEditorInitialized = true;
             tryTriggerFunc(this.config.onFirstEditorInit)();
         }
         tryTriggerFunc(this.config.onInit)();
     };
-    NzCodeEditorService.prototype.getLatestOption = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorService.prototype.getLatestOption = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         return __assign({}, this.option);
     };
-    /** @nocollapse */ NzCodeEditorService.ɵfac = function NzCodeEditorService_Factory(t) { return new (t || NzCodeEditorService)(ɵɵinject(NzConfigService), ɵɵinject(DOCUMENT), ɵɵinject(NZ_CODE_EDITOR_CONFIG, 8)); };
-    /** @nocollapse */ NzCodeEditorService.ɵprov = ɵɵdefineInjectable({ token: NzCodeEditorService, factory: NzCodeEditorService.ɵfac, providedIn: 'root' });
+    NzCodeEditorService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
+    /** @nocollapse */
+    NzCodeEditorService.ctorParameters = function () { return [
+        { type: NzConfigService },
+        { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] },
+        { type: undefined, decorators: [{ type: Inject, args: [NZ_CODE_EDITOR_CONFIG,] }, { type: Optional }] }
+    ]; };
+    /** @nocollapse */ NzCodeEditorService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzCodeEditorService_Factory() { return new NzCodeEditorService(ɵɵinject(NzConfigService), ɵɵinject(DOCUMENT), ɵɵinject(NZ_CODE_EDITOR_CONFIG, 8)); }, token: NzCodeEditorService, providedIn: "root" });
     return NzCodeEditorService;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCodeEditorService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: NzConfigService }, { type: undefined, decorators: [{
-                type: Inject,
-                args: [DOCUMENT]
-            }] }, { type: undefined, decorators: [{
-                type: Inject,
-                args: [NZ_CODE_EDITOR_CONFIG]
-            }, {
-                type: Optional
-            }] }]; }, null); })();
+if (false) {
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.document;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.firstEditorInitialized;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.loaded$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.loadingStatus;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.option;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.config;
+    /** @type {?} */
+    NzCodeEditorService.prototype.option$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorService.prototype.nzConfigService;
+}
 
-function NzCodeEditorComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 2);
-    ɵɵelement(1, "nz-spin");
-    ɵɵelementEnd();
-} }
-function NzCodeEditorComponent_div_1_ng_template_1_Template(rf, ctx) { }
-function NzCodeEditorComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 3);
-    ɵɵtemplate(1, NzCodeEditorComponent_div_1_ng_template_1_Template, 0, 0, "ng-template", 4);
-    ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1032 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngTemplateOutlet", ctx_r1032.nzToolkit);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-code-editor.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzCodeEditorComponent = /** @class */ (function () {
     function NzCodeEditorComponent(nzCodeEditorService, ngZone, elementRef) {
         this.nzCodeEditorService = nzCodeEditorService;
@@ -192,7 +338,11 @@ var NzCodeEditorComponent = /** @class */ (function () {
         this.el = elementRef.nativeElement;
     }
     Object.defineProperty(NzCodeEditorComponent.prototype, "nzEditorOption", {
-        set: function (value) {
+        set: /**
+         * @param {?} value
+         * @return {?}
+         */
+        function (value) {
             this.editorOption$.next(value);
         },
         enumerable: true,
@@ -201,37 +351,118 @@ var NzCodeEditorComponent = /** @class */ (function () {
     /**
      * Initialize a monaco editor instance.
      */
-    NzCodeEditorComponent.prototype.ngAfterViewInit = function () {
+    /**
+     * Initialize a monaco editor instance.
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.ngAfterViewInit = /**
+     * Initialize a monaco editor instance.
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.nzCodeEditorService.requestToInit().subscribe(function (option) { return _this.setup(option); });
+        this.nzCodeEditorService.requestToInit().subscribe((/**
+         * @param {?} option
+         * @return {?}
+         */
+        function (option) { return _this.setup(option); }));
     };
-    NzCodeEditorComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         if (this.editorInstance) {
             this.editorInstance.dispose();
         }
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzCodeEditorComponent.prototype.writeValue = function (value) {
+    /**
+     * @param {?} value
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.writeValue = /**
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         this.value = value;
         this.setValue();
     };
     // tslint:disable-next-line no-any
-    NzCodeEditorComponent.prototype.registerOnChange = function (fn) {
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.registerOnChange = 
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onChange = fn;
     };
     // tslint:disable-next-line no-any
-    NzCodeEditorComponent.prototype.registerOnTouched = function (fn) {
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.registerOnTouched = 
+    // tslint:disable-next-line no-any
+    /**
+     * @param {?} fn
+     * @return {?}
+     */
+    function (fn) {
         this.onTouch = fn;
     };
-    NzCodeEditorComponent.prototype.onChange = function (_value) { };
-    NzCodeEditorComponent.prototype.onTouch = function () { };
-    NzCodeEditorComponent.prototype.layout = function () {
+    /**
+     * @param {?} _value
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.onChange = /**
+     * @param {?} _value
+     * @return {?}
+     */
+    function (_value) { };
+    /**
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.onTouch = /**
+     * @return {?}
+     */
+    function () { };
+    /**
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.layout = /**
+     * @return {?}
+     */
+    function () {
         this.resize$.next();
     };
-    NzCodeEditorComponent.prototype.setup = function (option) {
+    /**
+     * @private
+     * @param {?} option
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.setup = /**
+     * @private
+     * @param {?} option
+     * @return {?}
+     */
+    function (option) {
         var _this = this;
-        inNextTick().subscribe(function () {
+        inNextTick().subscribe((/**
+         * @return {?}
+         */
+        function () {
             _this.editorOptionCached = option;
             _this.registerOptionChanges();
             _this.initMonacoEditorInstance();
@@ -241,46 +472,105 @@ var NzCodeEditorComponent = /** @class */ (function () {
                 _this.setValueEmitter();
             }
             _this.nzEditorInitialized.emit(_this.editorInstance);
-        });
+        }));
     };
-    NzCodeEditorComponent.prototype.registerOptionChanges = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.registerOptionChanges = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         combineLatest([this.editorOption$, this.nzCodeEditorService.option$])
             .pipe(takeUntil(this.destroy$))
-            .subscribe(function (_a) {
+            .subscribe((/**
+         * @param {?} __0
+         * @return {?}
+         */
+        function (_a) {
             var _b = __read(_a, 2), selfOpt = _b[0], defaultOpt = _b[1];
-            _this.editorOptionCached = __assign(__assign(__assign({}, _this.editorOptionCached), defaultOpt), selfOpt);
+            _this.editorOptionCached = __assign({}, _this.editorOptionCached, defaultOpt, selfOpt);
             _this.updateOptionToMonaco();
-        });
+        }));
     };
-    NzCodeEditorComponent.prototype.initMonacoEditorInstance = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.initMonacoEditorInstance = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.ngZone.runOutsideAngular(function () {
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () {
             _this.editorInstance =
                 _this.nzEditorMode === 'normal'
                     ? monaco.editor.create(_this.el, __assign({}, _this.editorOptionCached))
-                    : monaco.editor.createDiffEditor(_this.el, __assign({}, _this.editorOptionCached));
-        });
+                    : monaco.editor.createDiffEditor(_this.el, __assign({}, ((/** @type {?} */ (_this.editorOptionCached)))));
+        }));
     };
-    NzCodeEditorComponent.prototype.registerResizeChange = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.registerResizeChange = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.ngZone.runOutsideAngular(function () {
+        this.ngZone.runOutsideAngular((/**
+         * @return {?}
+         */
+        function () {
             fromEvent(window, 'resize')
                 .pipe(debounceTime(300), takeUntil(_this.destroy$))
-                .subscribe(function () {
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.layout();
-            });
+            }));
             _this.resize$
-                .pipe(takeUntil(_this.destroy$), filter(function () { return !!_this.editorInstance; }), map(function () { return ({
+                .pipe(takeUntil(_this.destroy$), filter((/**
+             * @return {?}
+             */
+            function () { return !!_this.editorInstance; })), map((/**
+             * @return {?}
+             */
+            function () { return ({
                 width: _this.el.clientWidth,
                 height: _this.el.clientHeight
-            }); }), distinctUntilChanged(function (a, b) { return a.width === b.width && a.height === b.height; }), debounceTime(50))
-                .subscribe(function () {
+            }); })), distinctUntilChanged((/**
+             * @param {?} a
+             * @param {?} b
+             * @return {?}
+             */
+            function (a, b) { return a.width === b.width && a.height === b.height; })), debounceTime(50))
+                .subscribe((/**
+             * @return {?}
+             */
+            function () {
                 _this.editorInstance.layout();
-            });
-        });
+            }));
+        }));
     };
-    NzCodeEditorComponent.prototype.setValue = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.setValue = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (!this.editorInstance) {
             return;
         }
@@ -290,65 +580,116 @@ var NzCodeEditorComponent = /** @class */ (function () {
         }
         if (this.nzEditorMode === 'normal') {
             if (this.modelSet) {
-                this.editorInstance.getModel().setValue(this.value);
+                ((/** @type {?} */ (this.editorInstance.getModel()))).setValue(this.value);
             }
             else {
-                this.editorInstance.setModel(monaco.editor.createModel(this.value, this.editorOptionCached.language));
+                ((/** @type {?} */ (this.editorInstance))).setModel(monaco.editor.createModel(this.value, ((/** @type {?} */ (this.editorOptionCached))).language));
                 this.modelSet = true;
             }
         }
         else {
             if (this.modelSet) {
-                var model = this.editorInstance.getModel();
+                /** @type {?} */
+                var model = (/** @type {?} */ (((/** @type {?} */ (this.editorInstance))).getModel()));
                 model.modified.setValue(this.value);
                 model.original.setValue(this.nzOriginalText);
             }
             else {
-                var language = this.editorOptionCached.language;
-                this.editorInstance.setModel({
-                    original: monaco.editor.createModel(this.value, language),
-                    modified: monaco.editor.createModel(this.nzOriginalText, language)
+                /** @type {?} */
+                var language = ((/** @type {?} */ (this.editorOptionCached))).language;
+                ((/** @type {?} */ (this.editorInstance))).setModel({
+                    original: monaco.editor.createModel(this.nzOriginalText, language),
+                    modified: monaco.editor.createModel(this.value, language)
                 });
+                this.modelSet = true;
             }
         }
     };
-    NzCodeEditorComponent.prototype.setValueEmitter = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.setValueEmitter = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        var model = (this.nzEditorMode === 'normal'
-            ? this.editorInstance.getModel()
-            : this.editorInstance.getModel().modified);
-        model.onDidChangeContent(function () {
+        /** @type {?} */
+        var model = (/** @type {?} */ ((this.nzEditorMode === 'normal'
+            ? ((/** @type {?} */ (this.editorInstance))).getModel()
+            : (/** @type {?} */ (((/** @type {?} */ (this.editorInstance))).getModel())).modified)));
+        model.onDidChangeContent((/**
+         * @return {?}
+         */
+        function () {
             _this.emitValue(model.getValue());
-        });
+        }));
     };
-    NzCodeEditorComponent.prototype.emitValue = function (value) {
+    /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.emitValue = /**
+     * @private
+     * @param {?} value
+     * @return {?}
+     */
+    function (value) {
         this.value = value;
         this.onChange(value);
     };
-    NzCodeEditorComponent.prototype.updateOptionToMonaco = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzCodeEditorComponent.prototype.updateOptionToMonaco = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this.editorInstance) {
             this.editorInstance.updateOptions(__assign({}, this.editorOptionCached));
         }
     };
-    /** @nocollapse */ NzCodeEditorComponent.ɵfac = function NzCodeEditorComponent_Factory(t) { return new (t || NzCodeEditorComponent)(ɵɵdirectiveInject(NzCodeEditorService), ɵɵdirectiveInject(NgZone), ɵɵdirectiveInject(ElementRef)); };
-    /** @nocollapse */ NzCodeEditorComponent.ɵcmp = ɵɵdefineComponent({ type: NzCodeEditorComponent, selectors: [["nz-code-editor"]], hostBindings: function NzCodeEditorComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-            ɵɵallocHostVars(1);
-        } if (rf & 2) {
-            ɵɵclassProp("ant-code-editor", true);
-        } }, inputs: { nzEditorMode: "nzEditorMode", nzOriginalText: "nzOriginalText", nzLoading: "nzLoading", nzFullControl: "nzFullControl", nzToolkit: "nzToolkit", nzEditorOption: "nzEditorOption" }, outputs: { nzEditorInitialized: "nzEditorInitialized" }, exportAs: ["nzCodeEditor"], features: [ɵɵProvidersFeature([
-                {
-                    provide: NG_VALUE_ACCESSOR,
-                    useExisting: forwardRef((function () { return NzCodeEditorComponent; })),
-                    multi: true
-                }
-            ])], decls: 2, vars: 2, consts: [["class", "ant-code-editor-loading", 4, "ngIf"], ["class", "ant-code-editor-toolkit", 4, "ngIf"], [1, "ant-code-editor-loading"], [1, "ant-code-editor-toolkit"], [3, "ngTemplateOutlet"]], template: function NzCodeEditorComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵtemplate(0, NzCodeEditorComponent_div_0_Template, 2, 0, "div", 0);
-            ɵɵtemplate(1, NzCodeEditorComponent_div_1_Template, 2, 1, "div", 1);
-        } if (rf & 2) {
-            ɵɵproperty("ngIf", ctx.nzLoading);
-            ɵɵadvance(1);
-            ɵɵproperty("ngIf", ctx.nzToolkit);
-        } }, directives: [NgIf, NzSpinComponent, NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+    NzCodeEditorComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    selector: 'nz-code-editor',
+                    exportAs: 'nzCodeEditor',
+                    template: "<div class=\"ant-code-editor-loading\" *ngIf=\"nzLoading\">\n  <nz-spin></nz-spin>\n</div>\n\n<div class=\"ant-code-editor-toolkit\" *ngIf=\"nzToolkit\">\n  <ng-template [ngTemplateOutlet]=\"nzToolkit\"></ng-template>\n</div>\n",
+                    host: {
+                        '[class.ant-code-editor]': 'true'
+                    },
+                    providers: [
+                        {
+                            provide: NG_VALUE_ACCESSOR,
+                            useExisting: forwardRef((/**
+                             * @return {?}
+                             */
+                            function () { return NzCodeEditorComponent; })),
+                            multi: true
+                        }
+                    ]
+                }] }
+    ];
+    /** @nocollapse */
+    NzCodeEditorComponent.ctorParameters = function () { return [
+        { type: NzCodeEditorService },
+        { type: NgZone },
+        { type: ElementRef }
+    ]; };
+    NzCodeEditorComponent.propDecorators = {
+        nzEditorMode: [{ type: Input }],
+        nzOriginalText: [{ type: Input }],
+        nzLoading: [{ type: Input }],
+        nzFullControl: [{ type: Input }],
+        nzToolkit: [{ type: Input }],
+        nzEditorOption: [{ type: Input }],
+        nzEditorInitialized: [{ type: Output }]
+    };
     __decorate([
         InputBoolean(),
         __metadata("design:type", Object)
@@ -359,75 +700,96 @@ var NzCodeEditorComponent = /** @class */ (function () {
     ], NzCodeEditorComponent.prototype, "nzFullControl", void 0);
     return NzCodeEditorComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCodeEditorComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-code-editor',
-                exportAs: 'nzCodeEditor',
-                templateUrl: './nz-code-editor.component.html',
-                host: {
-                    '[class.ant-code-editor]': 'true'
-                },
-                providers: [
-                    {
-                        provide: NG_VALUE_ACCESSOR,
-                        useExisting: forwardRef((function () { return NzCodeEditorComponent; })),
-                        multi: true
-                    }
-                ]
-            }]
-    }], function () { return [{ type: NzCodeEditorService }, { type: NgZone }, { type: ElementRef }]; }, { nzEditorMode: [{
-            type: Input
-        }], nzOriginalText: [{
-            type: Input
-        }], nzLoading: [{
-            type: Input
-        }], nzFullControl: [{
-            type: Input
-        }], nzToolkit: [{
-            type: Input
-        }], nzEditorOption: [{
-            type: Input
-        }], nzEditorInitialized: [{
-            type: Output
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzEditorMode;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzOriginalText;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzLoading;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzFullControl;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzToolkit;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.nzEditorInitialized;
+    /** @type {?} */
+    NzCodeEditorComponent.prototype.editorOptionCached;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.el;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.destroy$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.resize$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.editorOption$;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.editorInstance;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.value;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.modelSet;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.nzCodeEditorService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzCodeEditorComponent.prototype.ngZone;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-code-editor.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCodeEditorModule = /** @class */ (function () {
     function NzCodeEditorModule() {
     }
-    /** @nocollapse */ NzCodeEditorModule.ɵmod = ɵɵdefineNgModule({ type: NzCodeEditorModule });
-    /** @nocollapse */ NzCodeEditorModule.ɵinj = ɵɵdefineInjector({ factory: function NzCodeEditorModule_Factory(t) { return new (t || NzCodeEditorModule)(); }, imports: [[CommonModule, NzIconModule, NzSpinModule]] });
+    NzCodeEditorModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzCodeEditorComponent],
+                    imports: [CommonModule, NzIconModule, NzSpinModule],
+                    exports: [NzCodeEditorComponent]
+                },] }
+    ];
     return NzCodeEditorModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzCodeEditorModule, { declarations: [NzCodeEditorComponent], imports: [CommonModule, NzIconModule, NzSpinModule], exports: [NzCodeEditorComponent] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzCodeEditorModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzCodeEditorComponent],
-                imports: [CommonModule, NzIconModule, NzSpinModule],
-                exports: [NzCodeEditorComponent]
-            }]
-    }], null, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-code-editor.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NZ_CODE_EDITOR_CONFIG, NZ_CODE_EDITOR_CONFIG_FACTORY, NzCodeEditorComponent, NzCodeEditorLoadingStatus, NzCodeEditorModule, NzCodeEditorService };

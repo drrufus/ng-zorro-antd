@@ -6,7 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { Renderer2, RendererFactory2 } from '@angular/core';
-import * as i0 from "@angular/core";
 export declare class NzUpdateHostClassService {
     private classMap;
     readonly renderer: Renderer2;
@@ -14,6 +13,4 @@ export declare class NzUpdateHostClassService {
     private removeClass;
     private addClass;
     constructor(rendererFactory2: RendererFactory2);
-    static ɵfac: i0.ɵɵFactoryDef<NzUpdateHostClassService>;
-    static ɵprov: i0.ɵɵInjectableDef<NzUpdateHostClassService>;
 }

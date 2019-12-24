@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('rxjs/operators'), require('ng-zorro-antd/core'), require('@angular/common'), require('@angular/cdk/observers')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/spin', ['exports', '@angular/core', 'rxjs', 'rxjs/operators', 'ng-zorro-antd/core', '@angular/common', '@angular/cdk/observers'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].spin = {}), global.ng.core, global.rxjs, global.rxjs.operators, global['ng-zorro-antd'].core, global.ng.common, global.ng.cdk.observers));
-}(this, (function (exports, core, rxjs, operators, core$1, common, observers) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('rxjs/operators'), require('ng-zorro-antd/core'), require('@angular/cdk/observers'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/spin', ['exports', '@angular/core', 'rxjs', 'rxjs/operators', 'ng-zorro-antd/core', '@angular/cdk/observers', '@angular/common'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].spin = {}), global.ng.core, global.rxjs, global.rxjs.operators, global['ng-zorro-antd'].core, global.ng.cdk.observers, global.ng.common));
+}(this, (function (exports, core, rxjs, operators, core$1, observers, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -201,53 +201,12 @@
         return (mod && mod.__esModule) ? mod : { default: mod };
     }
 
-    function NzSpinComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "span", 3);
-        core.ɵɵelement(1, "i", 4);
-        core.ɵɵelement(2, "i", 4);
-        core.ɵɵelement(3, "i", 4);
-        core.ɵɵelement(4, "i", 4);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r281 = core.ɵɵnextContext();
-        core.ɵɵclassProp("ant-spin-dot-spin", ctx_r281.loading);
-    } }
-    function NzSpinComponent_div_2_ng_template_2_Template(rf, ctx) { }
-    function NzSpinComponent_div_2_div_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 8);
-        core.ɵɵtext(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r285 = core.ɵɵnextContext(2);
-        core.ɵɵadvance(1);
-        core.ɵɵtextInterpolate(ctx_r285.nzTip);
-    } }
-    function NzSpinComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div");
-        core.ɵɵelementStart(1, "div", 5);
-        core.ɵɵtemplate(2, NzSpinComponent_div_2_ng_template_2_Template, 0, 0, "ng-template", 6);
-        core.ɵɵtemplate(3, NzSpinComponent_div_2_div_3_Template, 2, 1, "div", 7);
-        core.ɵɵelementEnd();
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r282 = core.ɵɵnextContext();
-        var _r280 = core.ɵɵreference(1);
-        core.ɵɵadvance(1);
-        core.ɵɵclassProp("ant-spin-spinning", ctx_r282.loading)("ant-spin-lg", ctx_r282.nzSize === "large")("ant-spin-sm", ctx_r282.nzSize === "small")("ant-spin-show-text", ctx_r282.nzTip);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngTemplateOutlet", ctx_r282.nzIndicator || _r280);
-        core.ɵɵadvance(1);
-        core.ɵɵproperty("ngIf", ctx_r282.nzTip);
-    } }
-    function NzSpinComponent_div_3_Template(rf, ctx) { if (rf & 1) {
-        core.ɵɵelementStart(0, "div", 9);
-        core.ɵɵprojection(1);
-        core.ɵɵelementEnd();
-    } if (rf & 2) {
-        var ctx_r283 = core.ɵɵnextContext();
-        core.ɵɵclassProp("ant-spin-blur", ctx_r283.loading);
-    } }
-    var _c0 = ["*"];
+    /**
+     * @fileoverview added by tsickle
+     * Generated from: nz-spin.component.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /** @type {?} */
     var NZ_CONFIG_COMPONENT_NAME = 'spin';
     var NzSpinComponent = /** @class */ (function () {
         function NzSpinComponent(nzConfigService, cdr) {
@@ -262,29 +221,62 @@
             this.spinning$ = new rxjs.BehaviorSubject(this.nzSpinning);
             this.loading$ = this.spinning$.pipe(operators.debounceTime(this.nzDelay));
         }
-        NzSpinComponent.prototype.subscribeLoading = function () {
+        /**
+         * @return {?}
+         */
+        NzSpinComponent.prototype.subscribeLoading = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             this.unsubscribeLoading();
-            this.loading_ = this.loading$.subscribe(function (data) {
+            this.loading_ = this.loading$.subscribe((/**
+             * @param {?} data
+             * @return {?}
+             */
+            function (data) {
                 _this.loading = data;
                 _this.cdr.markForCheck();
-            });
+            }));
         };
-        NzSpinComponent.prototype.unsubscribeLoading = function () {
+        /**
+         * @return {?}
+         */
+        NzSpinComponent.prototype.unsubscribeLoading = /**
+         * @return {?}
+         */
+        function () {
             if (this.loading_) {
                 this.loading_.unsubscribe();
                 this.loading_ = null;
             }
         };
-        NzSpinComponent.prototype.ngOnInit = function () {
+        /**
+         * @return {?}
+         */
+        NzSpinComponent.prototype.ngOnInit = /**
+         * @return {?}
+         */
+        function () {
             var _this = this;
             this.subscribeLoading();
             this.nzConfigService
                 .getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME)
                 .pipe(operators.takeUntil(this.destroy$))
-                .subscribe(function () { return _this.cdr.markForCheck(); });
+                .subscribe((/**
+             * @return {?}
+             */
+            function () { return _this.cdr.markForCheck(); }));
         };
-        NzSpinComponent.prototype.ngOnChanges = function (changes) {
+        /**
+         * @param {?} changes
+         * @return {?}
+         */
+        NzSpinComponent.prototype.ngOnChanges = /**
+         * @param {?} changes
+         * @return {?}
+         */
+        function (changes) {
             if (changes.nzSpinning) {
                 if (changes.nzSpinning.isFirstChange()) {
                     this.loading = this.nzSpinning;
@@ -296,27 +288,44 @@
                 this.subscribeLoading();
             }
         };
-        NzSpinComponent.prototype.ngOnDestroy = function () {
+        /**
+         * @return {?}
+         */
+        NzSpinComponent.prototype.ngOnDestroy = /**
+         * @return {?}
+         */
+        function () {
             this.destroy$.next();
             this.destroy$.complete();
             this.unsubscribeLoading();
         };
-        /** @nocollapse */ NzSpinComponent.ɵfac = function NzSpinComponent_Factory(t) { return new (t || NzSpinComponent)(core.ɵɵdirectiveInject(core$1.NzConfigService), core.ɵɵdirectiveInject(core.ChangeDetectorRef)); };
-        /** @nocollapse */ NzSpinComponent.ɵcmp = core.ɵɵdefineComponent({ type: NzSpinComponent, selectors: [["nz-spin"]], hostBindings: function NzSpinComponent_HostBindings(rf, ctx, elIndex) { if (rf & 1) {
-                core.ɵɵallocHostVars(1);
-            } if (rf & 2) {
-                core.ɵɵclassProp("ant-spin-nested-loading", !ctx.nzSimple);
-            } }, inputs: { nzIndicator: "nzIndicator", nzSize: "nzSize", nzTip: "nzTip", nzDelay: "nzDelay", nzSimple: "nzSimple", nzSpinning: "nzSpinning" }, exportAs: ["nzSpin"], features: [core.ɵɵNgOnChangesFeature()], ngContentSelectors: _c0, decls: 4, vars: 2, consts: [["defaultIndicatorTemplate", ""], [4, "ngIf"], ["class", "ant-spin-container", 3, "ant-spin-blur", 4, "ngIf"], [1, "ant-spin-dot"], [1, "ant-spin-dot-item"], [1, "ant-spin"], [3, "ngTemplateOutlet"], ["class", "ant-spin-text", 4, "ngIf"], [1, "ant-spin-text"], [1, "ant-spin-container"]], template: function NzSpinComponent_Template(rf, ctx) { if (rf & 1) {
-                core.ɵɵprojectionDef();
-                core.ɵɵtemplate(0, NzSpinComponent_ng_template_0_Template, 5, 1, "ng-template", null, 0, core.ɵɵtemplateRefExtractor);
-                core.ɵɵtemplate(2, NzSpinComponent_div_2_Template, 4, 6, "div", 1);
-                core.ɵɵtemplate(3, NzSpinComponent_div_3_Template, 2, 1, "div", 2);
-            } if (rf & 2) {
-                core.ɵɵadvance(2);
-                core.ɵɵproperty("ngIf", ctx.loading);
-                core.ɵɵadvance(1);
-                core.ɵɵproperty("ngIf", !ctx.nzSimple);
-            } }, directives: [common.NgIf, common.NgTemplateOutlet], styles: ["\n      nz-spin {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+        NzSpinComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-spin',
+                        exportAs: 'nzSpin',
+                        preserveWhitespaces: false,
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        template: "<ng-template #defaultIndicatorTemplate>\n  <span class=\"ant-spin-dot\" [class.ant-spin-dot-spin]=\"loading\">\n    <i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i><i class=\"ant-spin-dot-item\"></i>\n  </span>\n</ng-template>\n<div *ngIf=\"loading\">\n  <div class=\"ant-spin\"\n    [class.ant-spin-spinning]=\"loading\"\n    [class.ant-spin-lg]=\"nzSize === 'large'\"\n    [class.ant-spin-sm]=\"nzSize === 'small'\"\n    [class.ant-spin-show-text]=\"nzTip\">\n    <ng-template [ngTemplateOutlet]=\"nzIndicator || defaultIndicatorTemplate\"></ng-template>\n    <div class=\"ant-spin-text\" *ngIf=\"nzTip\">{{ nzTip }}</div>\n  </div>\n</div>\n<div *ngIf=\"!nzSimple\"\n  class=\"ant-spin-container\"\n  [class.ant-spin-blur]=\"loading\">\n  <ng-content></ng-content>\n</div>\n",
+                        host: {
+                            '[class.ant-spin-nested-loading]': '!nzSimple'
+                        },
+                        styles: ["\n      nz-spin {\n        display: block;\n      }\n    "]
+                    }] }
+        ];
+        /** @nocollapse */
+        NzSpinComponent.ctorParameters = function () { return [
+            { type: core$1.NzConfigService },
+            { type: core.ChangeDetectorRef }
+        ]; };
+        NzSpinComponent.propDecorators = {
+            nzIndicator: [{ type: core.Input }],
+            nzSize: [{ type: core.Input }],
+            nzTip: [{ type: core.Input }],
+            nzDelay: [{ type: core.Input }],
+            nzSimple: [{ type: core.Input }],
+            nzSpinning: [{ type: core.Input }]
+        };
         __decorate([
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME),
             __metadata("design:type", core.TemplateRef)
@@ -335,59 +344,67 @@
         ], NzSpinComponent.prototype, "nzSpinning", void 0);
         return NzSpinComponent;
     }());
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSpinComponent, [{
-            type: core.Component,
-            args: [{
-                    selector: 'nz-spin',
-                    exportAs: 'nzSpin',
-                    preserveWhitespaces: false,
-                    encapsulation: core.ViewEncapsulation.None,
-                    changeDetection: core.ChangeDetectionStrategy.OnPush,
-                    templateUrl: './nz-spin.component.html',
-                    host: {
-                        '[class.ant-spin-nested-loading]': '!nzSimple'
-                    },
-                    styles: [
-                        "\n      nz-spin {\n        display: block;\n      }\n    "
-                    ]
-                }]
-        }], function () { return [{ type: core$1.NzConfigService }, { type: core.ChangeDetectorRef }]; }, { nzIndicator: [{
-                type: core.Input
-            }], nzSize: [{
-                type: core.Input
-            }], nzTip: [{
-                type: core.Input
-            }], nzDelay: [{
-                type: core.Input
-            }], nzSimple: [{
-                type: core.Input
-            }], nzSpinning: [{
-                type: core.Input
-            }] }); })();
+    if (false) {
+        /** @type {?} */
+        NzSpinComponent.prototype.nzIndicator;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzSize;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzTip;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzDelay;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzSimple;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzSpinning;
+        /** @type {?} */
+        NzSpinComponent.prototype.loading;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSpinComponent.prototype.destroy$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSpinComponent.prototype.spinning$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSpinComponent.prototype.loading$;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSpinComponent.prototype.loading_;
+        /** @type {?} */
+        NzSpinComponent.prototype.nzConfigService;
+        /**
+         * @type {?}
+         * @private
+         */
+        NzSpinComponent.prototype.cdr;
+    }
 
     /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     * @fileoverview added by tsickle
+     * Generated from: nz-spin.module.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSpinModule = /** @class */ (function () {
         function NzSpinModule() {
         }
-        /** @nocollapse */ NzSpinModule.ɵmod = core.ɵɵdefineNgModule({ type: NzSpinModule });
-        /** @nocollapse */ NzSpinModule.ɵinj = core.ɵɵdefineInjector({ factory: function NzSpinModule_Factory(t) { return new (t || NzSpinModule)(); }, imports: [[common.CommonModule, observers.ObserversModule]] });
+        NzSpinModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [NzSpinComponent],
+                        declarations: [NzSpinComponent],
+                        imports: [common.CommonModule, observers.ObserversModule]
+                    },] }
+        ];
         return NzSpinModule;
     }());
-    (function () { (typeof ngJitMode === "undefined" || ngJitMode) && core.ɵɵsetNgModuleScope(NzSpinModule, { declarations: [NzSpinComponent], imports: [common.CommonModule, observers.ObserversModule], exports: [NzSpinComponent] }); })();
-    /*@__PURE__*/ (function () { core.ɵsetClassMetadata(NzSpinModule, [{
-            type: core.NgModule,
-            args: [{
-                    exports: [NzSpinComponent],
-                    declarations: [NzSpinComponent],
-                    imports: [common.CommonModule, observers.ObserversModule]
-                }]
-        }], null, null); })();
 
     exports.NzSpinComponent = NzSpinComponent;
     exports.NzSpinModule = NzSpinModule;

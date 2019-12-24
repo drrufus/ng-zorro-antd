@@ -1,51 +1,62 @@
-import { InjectionToken, ɵɵelement, ɵɵproperty, ɵɵdirectiveInject, ChangeDetectorRef, ɵɵdefineComponent, ɵɵInheritDefinitionFeature, ɵɵelementStart, ɵɵtemplate, ɵɵelementEnd, ɵɵclassMapInterpolate1, ɵɵstyleProp, ɵɵadvance, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Optional, Inject, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵnextContext, ɵɵpureFunction1, ɵɵclassProp, ɵɵsanitizeHtml, ɵɵlistener, ɵɵtemplateRefExtractor, ɵɵreference, ɵɵpureFunction2, Input, ɵɵdefineNgModule, ɵɵdefineInjector, NgModule, ɵɵsetNgModuleScope, ɵɵsetComponentScope, ɵɵinject, Injector, ComponentFactoryResolver, ApplicationRef, ɵɵdefineInjectable, Injectable } from '@angular/core';
-import { warnDeprecation, toCssPixel, NzConfigService, NzStringTemplateOutletDirective, notificationMotion, NzAddOnModule, NzClassListAddDirective, NzSingletonService } from 'ng-zorro-antd/core';
+import { InjectionToken, Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Optional, Inject, Input, NgModule, Injectable, Injector, ComponentFactoryResolver, ApplicationRef, ɵɵdefineInjectable, ɵɵinject, INJECTOR } from '@angular/core';
+import { warnDeprecation, toCssPixel, NzConfigService, notificationMotion, NzSingletonService } from 'ng-zorro-antd/core';
 import { NzMessageContainerComponent, NzMessageComponent, NzMessageBaseService } from 'ng-zorro-antd/message';
 import { Subject } from 'rxjs';
-import { NgStyle, NgClass, NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, CommonModule, NgComponentOutlet, NgForOf, NgSwitchDefault, NgPlural, NgPluralCase, AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe } from '@angular/common';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
-import { OverlayModule, CdkConnectedOverlay, CdkOverlayOrigin, Overlay } from '@angular/cdk/overlay';
-import { Dir } from '@angular/cdk/bidi';
-import { CdkFixedSizeVirtualScroll, CdkScrollable, CdkVirtualForOf, CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
+import { OverlayModule, Overlay } from '@angular/cdk/overlay';
+import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification-config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @deprecated This interface would has been moved to `ng-zorro-antd/core`. Please migrate to that.
+ * @record
+ */
+function NzNotificationConfigLegacy() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzNotificationConfigLegacy.prototype.nzTop;
+    /** @type {?|undefined} */
+    NzNotificationConfigLegacy.prototype.nzBottom;
+    /** @type {?|undefined} */
+    NzNotificationConfigLegacy.prototype.nzPlacement;
+}
+/** @type {?} */
 const NZ_NOTIFICATION_DEFAULT_CONFIG = new InjectionToken('NZ_NOTIFICATION_DEFAULT_CONFIG');
+/** @type {?} */
 const NZ_NOTIFICATION_CONFIG = new InjectionToken('NZ_NOTIFICATION_CONFIG');
+const ɵ0 = {
+    nzTop: '24px',
+    nzBottom: '24px',
+    nzPlacement: 'topRight',
+    nzDuration: 4500,
+    nzMaxStack: 7,
+    nzPauseOnHover: true,
+    nzAnimate: true
+};
+/** @type {?} */
 const NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER = {
     provide: NZ_NOTIFICATION_DEFAULT_CONFIG,
-    useValue: {
-        nzTop: '24px',
-        nzBottom: '24px',
-        nzPlacement: 'topRight',
-        nzDuration: 4500,
-        nzMaxStack: 7,
-        nzPauseOnHover: true,
-        nzAnimate: true
-    }
+    useValue: ɵ0
 };
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification-container.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzNotificationContainerComponent_nz_notification_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-notification", 1);
-} if (rf & 2) {
-    const message_r1359 = ctx.$implicit;
-    const i_r1360 = ctx.index;
-    ɵɵproperty("nzMessage", message_r1359)("nzIndex", i_r1360);
-} }
+/** @type {?} */
 const NZ_CONFIG_COMPONENT_NAME = 'notification';
 class NzNotificationContainerComponent extends NzMessageContainerComponent {
+    /**
+     * @param {?} cdr
+     * @param {?} nzConfigService
+     * @param {?} defaultConfig
+     * @param {?} config
+     */
     constructor(cdr, nzConfigService, defaultConfig, config) {
         super(cdr, nzConfigService, defaultConfig, config);
         /**
@@ -58,9 +69,13 @@ class NzNotificationContainerComponent extends NzMessageContainerComponent {
     }
     /**
      * @override
+     * @param {?=} config
+     * @return {?}
      */
     setConfig(config) {
-        const newConfig = (this.config = Object.assign(Object.assign(Object.assign({}, this.config), config), this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME)));
+        /** @type {?} */
+        const newConfig = (this.config = Object.assign({}, this.config, config, this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME)));
+        /** @type {?} */
         const placement = this.config.nzPlacement;
         this.top = placement === 'topLeft' || placement === 'topRight' ? toCssPixel(newConfig.nzTop) : null;
         this.bottom = placement === 'bottomLeft' || placement === 'bottomRight' ? toCssPixel(newConfig.nzBottom) : null;
@@ -71,13 +86,20 @@ class NzNotificationContainerComponent extends NzMessageContainerComponent {
      * If there's a notification whose `nzKey` is same with `nzKey` in `NzNotificationDataFilled`,
      * replace its content instead of create a new one.
      * @override
-     * @param notification
+     * @param {?} notification
+     * @return {?}
      */
     createMessage(notification) {
         notification.options = this._mergeMessageOptions(notification.options);
         notification.onClose = new Subject();
+        /** @type {?} */
         const key = notification.options.nzKey;
-        const notificationWithSameKey = this.messages.find(msg => msg.options.nzKey === notification.options.nzKey);
+        /** @type {?} */
+        const notificationWithSameKey = this.messages.find((/**
+         * @param {?} msg
+         * @return {?}
+         */
+        msg => msg.options.nzKey === ((/** @type {?} */ (notification.options))).nzKey));
         if (key && notificationWithSameKey) {
             this.replaceNotification(notificationWithSameKey, notification);
         }
@@ -85,16 +107,27 @@ class NzNotificationContainerComponent extends NzMessageContainerComponent {
             if (this.messages.length >= this.config.nzMaxStack) {
                 this.messages.splice(0, 1);
             }
-            this.messages.push(notification);
+            this.messages.push((/** @type {?} */ (notification)));
         }
         this.cdr.detectChanges();
     }
     /**
      * @override
+     * @protected
+     * @return {?}
      */
     subscribeConfigChange() {
-        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe(() => this.setConfig());
+        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe((/**
+         * @return {?}
+         */
+        () => this.setConfig()));
     }
+    /**
+     * @private
+     * @param {?} old
+     * @param {?} _new
+     * @return {?}
+     */
     replaceNotification(old, _new) {
         old.title = _new.title;
         old.content = _new.content;
@@ -102,127 +135,59 @@ class NzNotificationContainerComponent extends NzMessageContainerComponent {
         old.type = _new.type;
     }
 }
-/** @nocollapse */ NzNotificationContainerComponent.ɵfac = function NzNotificationContainerComponent_Factory(t) { return new (t || NzNotificationContainerComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NZ_NOTIFICATION_DEFAULT_CONFIG, 8), ɵɵdirectiveInject(NZ_NOTIFICATION_CONFIG, 8)); };
-/** @nocollapse */ NzNotificationContainerComponent.ɵcmp = ɵɵdefineComponent({ type: NzNotificationContainerComponent, selectors: [["nz-notification-container"]], exportAs: ["nzNotificationContainer"], features: [ɵɵInheritDefinitionFeature], decls: 2, vars: 8, consts: [[3, "nzMessage", "nzIndex", 4, "ngFor", "ngForOf"], [3, "nzMessage", "nzIndex"]], template: function NzNotificationContainerComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div");
-        ɵɵtemplate(1, NzNotificationContainerComponent_nz_notification_1_Template, 1, 2, "nz-notification", 0);
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵɵclassMapInterpolate1("ant-notification ant-notification-", ctx.config.nzPlacement, "");
-        ɵɵstyleProp("top", ctx.config.nzPlacement === "topLeft" || ctx.config.nzPlacement === "topRight" ? ctx.top : null)("bottom", ctx.config.nzPlacement === "bottomLeft" || ctx.config.nzPlacement === "bottomRight" ? ctx.bottom : null)("right", ctx.config.nzPlacement === "bottomRight" || ctx.config.nzPlacement === "topRight" ? "0px" : null)("left", ctx.config.nzPlacement === "topLeft" || ctx.config.nzPlacement === "bottomLeft" ? "0px" : null);
-        ɵɵadvance(1);
-        ɵɵproperty("ngForOf", ctx.messages);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNotificationContainerComponent, [{
-        type: Component,
-        args: [{
+NzNotificationContainerComponent.decorators = [
+    { type: Component, args: [{
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 selector: 'nz-notification-container',
                 exportAs: 'nzNotificationContainer',
                 preserveWhitespaces: false,
-                templateUrl: './nz-notification-container.component.html'
-            }]
-    }], function () { return [{ type: ChangeDetectorRef }, { type: NzConfigService }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_NOTIFICATION_DEFAULT_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_NOTIFICATION_CONFIG]
-            }] }]; }, null); })();
+                template: "<div\n  class=\"ant-notification ant-notification-{{config.nzPlacement}}\"\n  [style.top]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'topRight') ? top : null\"\n  [style.bottom]=\"(config.nzPlacement === 'bottomLeft' || config.nzPlacement === 'bottomRight') ? bottom : null\"\n  [style.right]=\"(config.nzPlacement === 'bottomRight' || config.nzPlacement === 'topRight') ? '0px' : null\"\n  [style.left]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'bottomLeft') ? '0px' : null\">\n  <nz-notification\n    *ngFor=\"let message of messages; let i = index\"\n    [nzMessage]=\"message\"\n    [nzIndex]=\"i\">\n  </nz-notification>\n</div>"
+            }] }
+];
+/** @nocollapse */
+NzNotificationContainerComponent.ctorParameters = () => [
+    { type: ChangeDetectorRef },
+    { type: NzConfigService },
+    { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_NOTIFICATION_DEFAULT_CONFIG,] }] },
+    { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_NOTIFICATION_CONFIG,] }] }
+];
+if (false) {
+    /** @type {?} */
+    NzNotificationContainerComponent.prototype.config;
+    /** @type {?} */
+    NzNotificationContainerComponent.prototype.bottom;
+    /**
+     * @override
+     * @type {?}
+     */
+    NzNotificationContainerComponent.prototype.messages;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzNotificationComponent_div_1_i_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 16);
-} }
-function NzNotificationComponent_div_1_i_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 17);
-} }
-function NzNotificationComponent_div_1_i_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 18);
-} }
-function NzNotificationComponent_div_1_i_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 19);
-} }
-const _c0 = function (a0) { return { "ant-notification-notice-with-icon": a0 }; };
-function NzNotificationComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementStart(0, "div", 7);
-    ɵɵelementStart(1, "div", 8);
-    ɵɵelementStart(2, "div");
-    ɵɵelementContainerStart(3, 9);
-    ɵɵtemplate(4, NzNotificationComponent_div_1_i_4_Template, 1, 0, "i", 10);
-    ɵɵtemplate(5, NzNotificationComponent_div_1_i_5_Template, 1, 0, "i", 11);
-    ɵɵtemplate(6, NzNotificationComponent_div_1_i_6_Template, 1, 0, "i", 12);
-    ɵɵtemplate(7, NzNotificationComponent_div_1_i_7_Template, 1, 0, "i", 13);
-    ɵɵelementContainerEnd();
-    ɵɵelement(8, "div", 14);
-    ɵɵelement(9, "div", 15);
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-    ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r1361 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("ngClass", ɵɵpureFunction1(9, _c0, ctx_r1361.nzMessage.type !== "blank"));
-    ɵɵadvance(1);
-    ɵɵclassProp("ant-notification-notice-with-icon", ctx_r1361.nzMessage.type !== "blank");
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitch", ctx_r1361.nzMessage.type);
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", "success");
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", "info");
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", "warning");
-    ɵɵadvance(1);
-    ɵɵproperty("ngSwitchCase", "error");
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1361.nzMessage.title, ɵɵsanitizeHtml);
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r1361.nzMessage.content, ɵɵsanitizeHtml);
-} }
-function NzNotificationComponent_ng_template_2_Template(rf, ctx) { }
-function NzNotificationComponent_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "i", 21);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r1370 = ɵɵnextContext(2);
-    ɵɵadvance(1);
-    ɵɵproperty("nzType", ctx_r1370.nzMessage.options == null ? null : ctx_r1370.nzMessage.options.nzCloseIcon);
-} }
-function NzNotificationComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵtemplate(1, NzNotificationComponent_ng_container_5_ng_container_1_Template, 2, 1, "ng-container", 20);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r1363 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("nzStringTemplateOutlet", ctx_r1363.nzMessage.options == null ? null : ctx_r1363.nzMessage.options.nzCloseIcon);
-} }
-function NzNotificationComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 22);
-} }
-const _c1 = function (a0, a1) { return { $implicit: a0, data: a1 }; };
 class NzNotificationComponent extends NzMessageComponent {
+    /**
+     * @param {?} container
+     * @param {?} cdr
+     */
     constructor(container, cdr) {
         super(container, cdr);
         this.container = container;
         this.cdr = cdr;
     }
+    /**
+     * @return {?}
+     */
     close() {
         this._destroy(true);
     }
+    /**
+     * @return {?}
+     */
     get state() {
         if (this.nzMessage.state === 'enter') {
             if (this.container.config.nzPlacement === 'topLeft' || this.container.config.nzPlacement === 'bottomLeft') {
@@ -237,82 +202,71 @@ class NzNotificationComponent extends NzMessageComponent {
         }
     }
 }
-/** @nocollapse */ NzNotificationComponent.ɵfac = function NzNotificationComponent_Factory(t) { return new (t || NzNotificationComponent)(ɵɵdirectiveInject(NzNotificationContainerComponent), ɵɵdirectiveInject(ChangeDetectorRef)); };
-/** @nocollapse */ NzNotificationComponent.ɵcmp = ɵɵdefineComponent({ type: NzNotificationComponent, selectors: [["nz-notification"]], inputs: { nzMessage: "nzMessage" }, exportAs: ["nzNotification"], features: [ɵɵInheritDefinitionFeature], decls: 8, vars: 12, consts: [[1, "ant-notification-notice", "ant-notification-notice-closable", 3, "ngStyle", "ngClass", "mouseenter", "mouseleave"], ["class", "ant-notification-notice-content", 4, "ngIf"], [3, "ngIf", "ngTemplateOutlet", "ngTemplateOutletContext"], ["tabindex", "0", 1, "ant-notification-notice-close", 3, "click"], [1, "ant-notification-notice-close-x"], [4, "ngIf", "ngIfElse"], ["iconTpl", ""], [1, "ant-notification-notice-content"], [1, "ant-notification-notice-content", 3, "ngClass"], [3, "ngSwitch"], ["nz-icon", "", "nzType", "check-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-success", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "info-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-info", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "exclamation-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-warning", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "close-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-error", 4, "ngSwitchCase"], [1, "ant-notification-notice-message", 3, "innerHTML"], [1, "ant-notification-notice-description", 3, "innerHTML"], ["nz-icon", "", "nzType", "check-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-success"], ["nz-icon", "", "nzType", "info-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-info"], ["nz-icon", "", "nzType", "exclamation-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-warning"], ["nz-icon", "", "nzType", "close-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-error"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType"], ["nz-icon", "", "nzType", "close", 1, "ant-notification-close-icon"]], template: function NzNotificationComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵɵelementStart(0, "div", 0);
-        ɵɵlistener("mouseenter", function NzNotificationComponent_Template_div_mouseenter_0_listener($event) { return ctx.onEnter(); })("mouseleave", function NzNotificationComponent_Template_div_mouseleave_0_listener($event) { return ctx.onLeave(); });
-        ɵɵtemplate(1, NzNotificationComponent_div_1_Template, 10, 11, "div", 1);
-        ɵɵtemplate(2, NzNotificationComponent_ng_template_2_Template, 0, 0, "ng-template", 2);
-        ɵɵelementStart(3, "a", 3);
-        ɵɵlistener("click", function NzNotificationComponent_Template_a_click_3_listener($event) { return ctx.close(); });
-        ɵɵelementStart(4, "span", 4);
-        ɵɵtemplate(5, NzNotificationComponent_ng_container_5_Template, 2, 1, "ng-container", 5);
-        ɵɵtemplate(6, NzNotificationComponent_ng_template_6_Template, 1, 0, "ng-template", null, 6, ɵɵtemplateRefExtractor);
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-        ɵɵelementEnd();
-    } if (rf & 2) {
-        const _r1364 = ɵɵreference(7);
-        ɵɵproperty("ngStyle", ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzStyle)("ngClass", ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzClass)("@notificationMotion", ctx.state);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", !ctx.nzMessage.template);
-        ɵɵadvance(1);
-        ɵɵproperty("ngIf", ctx.nzMessage.template)("ngTemplateOutlet", ctx.nzMessage.template)("ngTemplateOutletContext", ɵɵpureFunction2(9, _c1, ctx, ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzData));
-        ɵɵadvance(3);
-        ɵɵproperty("ngIf", ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzCloseIcon)("ngIfElse", _r1364);
-    } }, directives: [NgStyle, NgClass, NgIf, NgTemplateOutlet, NgSwitch, NgSwitchCase, NzIconDirective, NzStringTemplateOutletDirective], encapsulation: 2, data: { animation: [notificationMotion] } });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNotificationComponent, [{
-        type: Component,
-        args: [{
+NzNotificationComponent.decorators = [
+    { type: Component, args: [{
                 encapsulation: ViewEncapsulation.None,
                 selector: 'nz-notification',
                 exportAs: 'nzNotification',
                 preserveWhitespaces: false,
                 animations: [notificationMotion],
-                templateUrl: './nz-notification.component.html'
-            }]
-    }], function () { return [{ type: NzNotificationContainerComponent }, { type: ChangeDetectorRef }]; }, { nzMessage: [{
-            type: Input
-        }] }); })();
+                template: "<div class=\"ant-notification-notice ant-notification-notice-closable\"\n  [ngStyle]=\"nzMessage.options?.nzStyle\"\n  [ngClass]=\"nzMessage.options?.nzClass\"\n  [@notificationMotion]=\"state\"\n  (mouseenter)=\"onEnter()\"\n  (mouseleave)=\"onLeave()\">\n  <div *ngIf=\"!nzMessage.template\" class=\"ant-notification-notice-content\">\n    <div class=\"ant-notification-notice-content\" [ngClass]=\"{ 'ant-notification-notice-with-icon': nzMessage.type !== 'blank' }\">\n      <div [class.ant-notification-notice-with-icon]=\"nzMessage.type !== 'blank'\">\n        <ng-container [ngSwitch]=\"nzMessage.type\">\n          <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-success\"></i>\n          <i *ngSwitchCase=\"'info'\" nz-icon nzType=\"info-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-info\"></i>\n          <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-warning\"></i>\n          <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-error\"></i>\n        </ng-container>\n        <div class=\"ant-notification-notice-message\" [innerHTML]=\"nzMessage.title\"></div>\n        <div class=\"ant-notification-notice-description\" [innerHTML]=\"nzMessage.content\"></div>\n      </div>\n    </div>\n  </div>\n  <ng-template\n    [ngIf]=\"nzMessage.template\"\n    [ngTemplateOutlet]=\"nzMessage.template\"\n    [ngTemplateOutletContext]=\"{ $implicit: this, data: nzMessage.options?.nzData }\">\n  </ng-template>\n  <a tabindex=\"0\" class=\"ant-notification-notice-close\" (click)=\"close()\">\n    <span class=\"ant-notification-notice-close-x\">\n      <i nz-icon nzType=\"close\" class=\"ant-notification-close-icon\"></i>\n    </span>\n  </a>\n</div>\n"
+            }] }
+];
+/** @nocollapse */
+NzNotificationComponent.ctorParameters = () => [
+    { type: NzNotificationContainerComponent },
+    { type: ChangeDetectorRef }
+];
+NzNotificationComponent.propDecorators = {
+    nzMessage: [{ type: Input }]
+};
+if (false) {
+    /** @type {?} */
+    NzNotificationComponent.prototype.nzMessage;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzNotificationComponent.prototype.container;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzNotificationComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationServiceModule {
 }
-/** @nocollapse */ NzNotificationServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzNotificationServiceModule });
-/** @nocollapse */ NzNotificationServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzNotificationServiceModule_Factory(t) { return new (t || NzNotificationServiceModule)(); } });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNotificationServiceModule, [{
-        type: NgModule
-    }], null, null); })();
+NzNotificationServiceModule.decorators = [
+    { type: NgModule }
+];
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzNotificationModule {
 }
-/** @nocollapse */ NzNotificationModule.ɵmod = ɵɵdefineNgModule({ type: NzNotificationModule });
-/** @nocollapse */ NzNotificationModule.ɵinj = ɵɵdefineInjector({ factory: function NzNotificationModule_Factory(t) { return new (t || NzNotificationModule)(); }, providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER], imports: [[CommonModule, OverlayModule, NzIconModule, NzNotificationServiceModule, NzAddOnModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzNotificationModule, { declarations: [NzNotificationComponent, NzNotificationContainerComponent], imports: [CommonModule, OverlayModule, NzIconModule, NzNotificationServiceModule, NzAddOnModule] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNotificationModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule, OverlayModule, NzIconModule, NzNotificationServiceModule, NzAddOnModule],
+NzNotificationModule.decorators = [
+    { type: NgModule, args: [{
+                imports: [CommonModule, OverlayModule, NzIconModule, NzNotificationServiceModule],
                 declarations: [NzNotificationComponent, NzNotificationContainerComponent],
                 providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER],
                 entryComponents: [NzNotificationContainerComponent]
-            }]
-    }], null, null); })();
-ɵɵsetComponentScope(NzNotificationContainerComponent, [NzNotificationComponent, NzNotificationContainerComponent, NgClass, NgComponentOutlet, NgForOf, NgIf, NgTemplateOutlet, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault, NgPlural, NgPluralCase, CdkConnectedOverlay, CdkOverlayOrigin, Dir, CdkFixedSizeVirtualScroll, CdkScrollable, CdkVirtualForOf, CdkVirtualScrollViewport, NzIconDirective, NzStringTemplateOutletDirective, NzClassListAddDirective], [AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe]);
+            },] }
+];
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -320,53 +274,160 @@ class NzNotificationModule {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function NzNotificationData() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzNotificationData.prototype.template;
+    /** @type {?|undefined} */
+    NzNotificationData.prototype.type;
+    /** @type {?|undefined} */
+    NzNotificationData.prototype.title;
+}
+/**
+ * @record
+ * @template T
+ */
+function NzNotificationDataOptions() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzNotificationDataOptions.prototype.nzKey;
+    /** @type {?|undefined} */
+    NzNotificationDataOptions.prototype.nzStyle;
+    /** @type {?|undefined} */
+    NzNotificationDataOptions.prototype.nzClass;
+    /**
+     * Anything user wants renderer into a template.
+     * @type {?|undefined}
+     */
+    NzNotificationDataOptions.prototype.nzData;
+}
+/**
+ * @record
+ */
+function NzNotificationDataFilled() { }
+if (false) {
+    /** @type {?} */
+    NzNotificationDataFilled.prototype.messageId;
+    /** @type {?} */
+    NzNotificationDataFilled.prototype.createdAt;
+    /** @type {?|undefined} */
+    NzNotificationDataFilled.prototype.state;
+    /** @type {?|undefined} */
+    NzNotificationDataFilled.prototype.options;
+    /** @type {?|undefined} */
+    NzNotificationDataFilled.prototype.onClose;
+}
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-notification.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 class NzNotificationService extends NzMessageBaseService {
+    /**
+     * @param {?} nzSingletonService
+     * @param {?} overlay
+     * @param {?} injector
+     * @param {?} cfr
+     * @param {?} appRef
+     */
     constructor(nzSingletonService, overlay, injector, cfr, appRef) {
         super(nzSingletonService, overlay, NzNotificationContainerComponent, injector, cfr, appRef, 'notification-');
     }
     // Shortcut methods
+    /**
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     success(title, content, options) {
-        return this.createMessage({ type: 'success', title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type: 'success', title, content }, options)));
     }
+    /**
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     error(title, content, options) {
-        return this.createMessage({ type: 'error', title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type: 'error', title, content }, options)));
     }
+    /**
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     info(title, content, options) {
-        return this.createMessage({ type: 'info', title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type: 'info', title, content }, options)));
     }
+    /**
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     warning(title, content, options) {
-        return this.createMessage({ type: 'warning', title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type: 'warning', title, content }, options)));
     }
+    /**
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     blank(title, content, options) {
-        return this.createMessage({ type: 'blank', title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type: 'blank', title, content }, options)));
     }
+    /**
+     * @param {?} type
+     * @param {?} title
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
     create(type, title, content, options) {
-        return this.createMessage({ type, title, content }, options);
+        return (/** @type {?} */ (this.createMessage({ type, title, content }, options)));
     }
     // For content with template
+    /**
+     * @param {?} template
+     * @param {?=} options
+     * @return {?}
+     */
     template(template, options) {
-        return this.createMessage({ template }, options);
+        return (/** @type {?} */ (this.createMessage({ template }, options)));
     }
 }
-/** @nocollapse */ NzNotificationService.ɵfac = function NzNotificationService_Factory(t) { return new (t || NzNotificationService)(ɵɵinject(NzSingletonService), ɵɵinject(Overlay), ɵɵinject(Injector), ɵɵinject(ComponentFactoryResolver), ɵɵinject(ApplicationRef)); };
-/** @nocollapse */ NzNotificationService.ɵprov = ɵɵdefineInjectable({ token: NzNotificationService, factory: NzNotificationService.ɵfac, providedIn: NzNotificationServiceModule });
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzNotificationService, [{
-        type: Injectable,
-        args: [{
+NzNotificationService.decorators = [
+    { type: Injectable, args: [{
                 providedIn: NzNotificationServiceModule
-            }]
-    }], function () { return [{ type: NzSingletonService }, { type: Overlay }, { type: Injector }, { type: ComponentFactoryResolver }, { type: ApplicationRef }]; }, null); })();
+            },] }
+];
+/** @nocollapse */
+NzNotificationService.ctorParameters = () => [
+    { type: NzSingletonService },
+    { type: Overlay },
+    { type: Injector },
+    { type: ComponentFactoryResolver },
+    { type: ApplicationRef }
+];
+/** @nocollapse */ NzNotificationService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzNotificationService_Factory() { return new NzNotificationService(ɵɵinject(NzSingletonService), ɵɵinject(Overlay), ɵɵinject(INJECTOR), ɵɵinject(ComponentFactoryResolver), ɵɵinject(ApplicationRef)); }, token: NzNotificationService, providedIn: NzNotificationServiceModule });
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-notification.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NZ_NOTIFICATION_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG, NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER, NzNotificationComponent, NzNotificationContainerComponent, NzNotificationModule, NzNotificationService, NzNotificationServiceModule };

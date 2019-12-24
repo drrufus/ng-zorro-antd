@@ -1,22 +1,25 @@
 import { __assign, __extends } from 'tslib';
-import { warnDeprecation, toCssPixel, NzConfigService, NzSingletonService, NzStringTemplateOutletDirective, moveUpMotion, NzAddOnModule, NzClassListAddDirective } from 'ng-zorro-antd/core';
-import { Overlay, OverlayModule, CdkConnectedOverlay, CdkOverlayOrigin } from '@angular/cdk/overlay';
-import { InjectionToken, ɵɵelement, ɵɵproperty, ɵɵdirectiveInject, ChangeDetectorRef, ɵɵdefineComponent, ɵɵelementStart, ɵɵtemplate, ɵɵelementEnd, ɵɵstyleProp, ɵɵadvance, ɵsetClassMetadata, Component, ChangeDetectionStrategy, ViewEncapsulation, Optional, Inject, ɵɵdefineNgModule, ɵɵdefineInjector, NgModule, ɵɵinject, Injector, ComponentFactoryResolver, ApplicationRef, ɵɵdefineInjectable, Injectable, ɵɵelementContainerStart, ɵɵelementContainerEnd, ɵɵnextContext, ɵɵsanitizeHtml, ɵɵlistener, Input, ɵɵsetNgModuleScope, ɵɵsetComponentScope } from '@angular/core';
+import { warnDeprecation, toCssPixel, NzConfigService, NzSingletonService, moveUpMotion, NzAddOnModule } from 'ng-zorro-antd/core';
+import { Overlay, OverlayModule } from '@angular/cdk/overlay';
+import { InjectionToken, Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Optional, Inject, NgModule, Injectable, Injector, ComponentFactoryResolver, ApplicationRef, ɵɵdefineInjectable, ɵɵinject, INJECTOR, Input } from '@angular/core';
 import { Subject } from 'rxjs';
-import { NgClass, NgSwitch, NgSwitchCase, CommonModule, NgComponentOutlet, NgForOf, NgIf, NgTemplateOutlet, NgStyle, NgSwitchDefault, NgPlural, NgPluralCase, AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe } from '@angular/common';
-import { NzIconDirective, NzIconModule } from 'ng-zorro-antd/icon';
-import { Dir } from '@angular/cdk/bidi';
-import { CdkFixedSizeVirtualScroll, CdkScrollable, CdkVirtualForOf, CdkVirtualScrollViewport } from '@angular/cdk/scrolling';
+import { CommonModule } from '@angular/common';
+import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-message-base.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/** @type {?} */
 var globalCounter = 0;
-var NzMessageBaseService = /** @class */ (function () {
+/**
+ * @template ContainerClass, MessageData, MessageConfig
+ */
+var  /**
+ * @template ContainerClass, MessageData, MessageConfig
+ */
+NzMessageBaseService = /** @class */ (function () {
     function NzMessageBaseService(nzSingletonService, overlay, containerClass, injector, cfr, appRef, name) {
         if (name === void 0) { name = ''; }
         this.nzSingletonService = nzSingletonService;
@@ -29,7 +32,15 @@ var NzMessageBaseService = /** @class */ (function () {
         this._container = this.withContainer();
         this.nzSingletonService.registerSingletonWithKey(this.name, this._container);
     }
-    NzMessageBaseService.prototype.remove = function (messageId) {
+    /**
+     * @param {?=} messageId
+     * @return {?}
+     */
+    NzMessageBaseService.prototype.remove = /**
+     * @param {?=} messageId
+     * @return {?}
+     */
+    function (messageId) {
         if (messageId) {
             this._container.removeMessage(messageId);
         }
@@ -37,8 +48,19 @@ var NzMessageBaseService = /** @class */ (function () {
             this._container.removeMessageAll();
         }
     };
-    NzMessageBaseService.prototype.createMessage = function (message, options) {
-        var resultMessage = __assign(__assign({}, message), {
+    /**
+     * @param {?} message
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageBaseService.prototype.createMessage = /**
+     * @param {?} message
+     * @param {?=} options
+     * @return {?}
+     */
+    function (message, options) {
+        /** @type {?} */
+        var resultMessage = __assign({}, ((/** @type {?} */ (message))), {
             createdAt: new Date(),
             messageId: this._generateMessageId(),
             options: options
@@ -46,62 +68,156 @@ var NzMessageBaseService = /** @class */ (function () {
         this._container.createMessage(resultMessage);
         return resultMessage;
     };
-    NzMessageBaseService.prototype.config = function (config) {
+    /**
+     * @param {?} config
+     * @return {?}
+     */
+    NzMessageBaseService.prototype.config = /**
+     * @param {?} config
+     * @return {?}
+     */
+    function (config) {
         warnDeprecation("'config' of 'NzMessageService' and 'NzNotificationService' is deprecated and will be removed in 9.0.0. Please use 'set' of 'NzConfigService' instead.");
         this._container.setConfig(config);
     };
-    NzMessageBaseService.prototype._generateMessageId = function () {
+    /**
+     * @protected
+     * @return {?}
+     */
+    NzMessageBaseService.prototype._generateMessageId = /**
+     * @protected
+     * @return {?}
+     */
+    function () {
         return this.name + "-" + globalCounter++;
     };
     // Manually creating container for overlay to avoid multi-checking error, see: https://github.com/NG-ZORRO/ng-zorro-antd/issues/391
     // NOTE: we never clean up the container component and it's overlay resources, if we should, we need to do it by our own codes.
-    NzMessageBaseService.prototype.withContainer = function () {
+    // Manually creating container for overlay to avoid multi-checking error, see: https://github.com/NG-ZORRO/ng-zorro-antd/issues/391
+    // NOTE: we never clean up the container component and it's overlay resources, if we should, we need to do it by our own codes.
+    /**
+     * @private
+     * @return {?}
+     */
+    NzMessageBaseService.prototype.withContainer = 
+    // Manually creating container for overlay to avoid multi-checking error, see: https://github.com/NG-ZORRO/ng-zorro-antd/issues/391
+    // NOTE: we never clean up the container component and it's overlay resources, if we should, we need to do it by our own codes.
+    /**
+     * @private
+     * @return {?}
+     */
+    function () {
+        /** @type {?} */
         var containerInstance = this.nzSingletonService.getSingletonWithKey(this.name);
         if (containerInstance) {
-            return containerInstance;
+            return (/** @type {?} */ (containerInstance));
         }
+        /** @type {?} */
         var factory = this.cfr.resolveComponentFactory(this.containerClass);
-        var componentRef = factory.create(this.injector); // Use root injector
+        /** @type {?} */
+        var componentRef = factory.create(this.injector);
         componentRef.changeDetectorRef.detectChanges(); // Immediately change detection to avoid multi-checking error
         this.appRef.attachView(componentRef.hostView); // Load view into app root
+        // Load view into app root
+        /** @type {?} */
         var overlayPane = this.overlay.create().overlayElement;
         overlayPane.style.zIndex = '1010'; // Patching: assign the same zIndex of ant-message to it's parent overlay panel, to the ant-message's zindex work.
-        overlayPane.appendChild(componentRef.hostView.rootNodes[0]);
+        overlayPane.appendChild((/** @type {?} */ (((/** @type {?} */ (componentRef.hostView))).rootNodes[0])));
         return componentRef.instance;
     };
     return NzMessageBaseService;
 }());
+if (false) {
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzMessageBaseService.prototype._container;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.nzSingletonService;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.overlay;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.containerClass;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.injector;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.cfr;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.appRef;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageBaseService.prototype.name;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-message-config.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+/**
+ * @deprecated This interface has been removed to `ng-zorro-antd/core`. Please migrate to that.
+ * @record
+ */
+function NzMessageConfigLegacy() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzMessageConfigLegacy.prototype.nzAnimate;
+    /** @type {?|undefined} */
+    NzMessageConfigLegacy.prototype.nzDuration;
+    /** @type {?|undefined} */
+    NzMessageConfigLegacy.prototype.nzMaxStack;
+    /** @type {?|undefined} */
+    NzMessageConfigLegacy.prototype.nzPauseOnHover;
+    /** @type {?|undefined} */
+    NzMessageConfigLegacy.prototype.nzTop;
+}
+/** @type {?} */
 var NZ_MESSAGE_DEFAULT_CONFIG = new InjectionToken('NZ_MESSAGE_DEFAULT_CONFIG');
 /**
  * @deprecated 9.0.0 - Injection token 'NZ_MESSAGE_CONFIG' is deprecated and will be removed in 9.0.0. Please use 'NzConfigService' instead.
+ * @type {?}
  */
 var NZ_MESSAGE_CONFIG = new InjectionToken('NZ_MESSAGE_CONFIG');
+var ɵ0 = {
+    nzAnimate: true,
+    nzDuration: 3000,
+    nzMaxStack: 7,
+    nzPauseOnHover: true,
+    nzTop: 24
+};
+/** @type {?} */
 var NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER = {
     provide: NZ_MESSAGE_DEFAULT_CONFIG,
-    useValue: {
-        nzAnimate: true,
-        nzDuration: 3000,
-        nzMaxStack: 7,
-        nzPauseOnHover: true,
-        nzTop: 24
-    }
+    useValue: ɵ0
 };
 
-function NzMessageContainerComponent_nz_message_1_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "nz-message", 2);
-} if (rf & 2) {
-    var message_r610 = ctx.$implicit;
-    var i_r611 = ctx.index;
-    ɵɵproperty("nzMessage", message_r610)("nzIndex", i_r611);
-} }
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-message-container.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+/** @type {?} */
 var NZ_CONFIG_COMPONENT_NAME = 'message';
 var NzMessageContainerComponent = /** @class */ (function () {
     function NzMessageContainerComponent(cdr, nzConfigService, defaultConfig, config) {
@@ -111,12 +227,26 @@ var NzMessageContainerComponent = /** @class */ (function () {
         if (!!config) {
             warnDeprecation("Injection token 'NZ_MESSAGE_CONFIG' is deprecated and will be removed in 9.0.0. Please use 'NzConfigService' instead.");
         }
-        this.setConfig(__assign(__assign({}, defaultConfig), config));
+        this.setConfig(__assign({}, defaultConfig, config));
     }
-    NzMessageContainerComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         this.subscribeConfigChange();
     };
-    NzMessageContainerComponent.prototype.setConfig = function (config) {
+    /**
+     * @param {?=} config
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.setConfig = /**
+     * @param {?=} config
+     * @return {?}
+     */
+    function (config) {
         this.config = this.mergeMessageConfig(config);
         this.top = toCssPixel(this.config.nzTop);
         this.cdr.markForCheck();
@@ -125,7 +255,17 @@ var NzMessageContainerComponent = /** @class */ (function () {
      * Create a new message.
      * @param message Parsed message configuration.
      */
-    NzMessageContainerComponent.prototype.createMessage = function (message) {
+    /**
+     * Create a new message.
+     * @param {?} message Parsed message configuration.
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.createMessage = /**
+     * Create a new message.
+     * @param {?} message Parsed message configuration.
+     * @return {?}
+     */
+    function (message) {
         if (this.messages.length >= this.config.nzMaxStack) {
             this.messages.splice(0, 1);
         }
@@ -139,173 +279,289 @@ var NzMessageContainerComponent = /** @class */ (function () {
      * @param messageId Id of the message to be removed.
      * @param userAction Whether this is closed by user interaction.
      */
-    NzMessageContainerComponent.prototype.removeMessage = function (messageId, userAction) {
+    /**
+     * Remove a message by `messageId`.
+     * @param {?} messageId Id of the message to be removed.
+     * @param {?=} userAction Whether this is closed by user interaction.
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.removeMessage = /**
+     * Remove a message by `messageId`.
+     * @param {?} messageId Id of the message to be removed.
+     * @param {?=} userAction Whether this is closed by user interaction.
+     * @return {?}
+     */
+    function (messageId, userAction) {
         var _this = this;
         if (userAction === void 0) { userAction = false; }
-        this.messages.some(function (message, index) {
+        this.messages.some((/**
+         * @param {?} message
+         * @param {?} index
+         * @return {?}
+         */
+        function (message, index) {
             if (message.messageId === messageId) {
                 _this.messages.splice(index, 1);
                 _this.cdr.detectChanges();
-                message.onClose.next(userAction);
-                message.onClose.complete();
+                (/** @type {?} */ (message.onClose)).next(userAction);
+                (/** @type {?} */ (message.onClose)).complete();
                 return true;
             }
             return false;
-        });
+        }));
     };
     /**
      * Remove all messages.
      */
-    NzMessageContainerComponent.prototype.removeMessageAll = function () {
+    /**
+     * Remove all messages.
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.removeMessageAll = /**
+     * Remove all messages.
+     * @return {?}
+     */
+    function () {
         this.messages = [];
         this.cdr.detectChanges();
     };
-    NzMessageContainerComponent.prototype.subscribeConfigChange = function () {
+    /**
+     * @protected
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.subscribeConfigChange = /**
+     * @protected
+     * @return {?}
+     */
+    function () {
         var _this = this;
-        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe(function () { return _this.setConfig(); });
+        this.nzConfigService.getConfigChangeEventForComponent(NZ_CONFIG_COMPONENT_NAME).subscribe((/**
+         * @return {?}
+         */
+        function () { return _this.setConfig(); }));
     };
-    NzMessageContainerComponent.prototype.mergeMessageConfig = function (config) {
-        return __assign(__assign(__assign({}, this.config), config), this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME));
+    /**
+     * @protected
+     * @param {?=} config
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype.mergeMessageConfig = /**
+     * @protected
+     * @param {?=} config
+     * @return {?}
+     */
+    function (config) {
+        return __assign({}, this.config, config, this.nzConfigService.getConfigForComponent(NZ_CONFIG_COMPONENT_NAME));
     };
     /**
      * Merge default options and custom message options
      * @param options
      */
-    NzMessageContainerComponent.prototype._mergeMessageOptions = function (options) {
+    /**
+     * Merge default options and custom message options
+     * @protected
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageContainerComponent.prototype._mergeMessageOptions = /**
+     * Merge default options and custom message options
+     * @protected
+     * @param {?=} options
+     * @return {?}
+     */
+    function (options) {
+        /** @type {?} */
         var defaultOptions = {
             nzDuration: this.config.nzDuration,
             nzAnimate: this.config.nzAnimate,
             nzPauseOnHover: this.config.nzPauseOnHover
         };
-        return __assign(__assign({}, defaultOptions), options);
+        return __assign({}, defaultOptions, options);
     };
-    /** @nocollapse */ NzMessageContainerComponent.ɵfac = function NzMessageContainerComponent_Factory(t) { return new (t || NzMessageContainerComponent)(ɵɵdirectiveInject(ChangeDetectorRef), ɵɵdirectiveInject(NzConfigService), ɵɵdirectiveInject(NZ_MESSAGE_DEFAULT_CONFIG, 8), ɵɵdirectiveInject(NZ_MESSAGE_CONFIG, 8)); };
-    /** @nocollapse */ NzMessageContainerComponent.ɵcmp = ɵɵdefineComponent({ type: NzMessageContainerComponent, selectors: [["nz-message-container"]], exportAs: ["nzMessageContainer"], decls: 2, vars: 2, consts: [[1, "ant-message"], [3, "nzMessage", "nzIndex", 4, "ngFor", "ngForOf"], [3, "nzMessage", "nzIndex"]], template: function NzMessageContainerComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "div", 0);
-            ɵɵtemplate(1, NzMessageContainerComponent_nz_message_1_Template, 1, 2, "nz-message", 1);
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵstyleProp("top", ctx.top);
-            ɵɵadvance(1);
-            ɵɵproperty("ngForOf", ctx.messages);
-        } }, encapsulation: 2, changeDetection: 0 });
+    NzMessageContainerComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    selector: 'nz-message-container',
+                    exportAs: 'nzMessageContainer',
+                    preserveWhitespaces: false,
+                    template: "<div class=\"ant-message\" [style.top]=\"top\">\n  <nz-message *ngFor=\"let message of messages; let i = index\" [nzMessage]=\"message\" [nzIndex]=\"i\"></nz-message>\n</div>"
+                }] }
+    ];
+    /** @nocollapse */
+    NzMessageContainerComponent.ctorParameters = function () { return [
+        { type: ChangeDetectorRef },
+        { type: NzConfigService },
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_MESSAGE_DEFAULT_CONFIG,] }] },
+        { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_MESSAGE_CONFIG,] }] }
+    ]; };
     return NzMessageContainerComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMessageContainerComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-message-container',
-                exportAs: 'nzMessageContainer',
-                preserveWhitespaces: false,
-                templateUrl: './nz-message-container.component.html'
-            }]
-    }], function () { return [{ type: ChangeDetectorRef }, { type: NzConfigService }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_MESSAGE_DEFAULT_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_MESSAGE_CONFIG]
-            }] }]; }, null); })();
+if (false) {
+    /** @type {?} */
+    NzMessageContainerComponent.prototype.messages;
+    /** @type {?} */
+    NzMessageContainerComponent.prototype.config;
+    /** @type {?} */
+    NzMessageContainerComponent.prototype.top;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzMessageContainerComponent.prototype.cdr;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzMessageContainerComponent.prototype.nzConfigService;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-message.service.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageServiceModule = /** @class */ (function () {
     function NzMessageServiceModule() {
     }
-    /** @nocollapse */ NzMessageServiceModule.ɵmod = ɵɵdefineNgModule({ type: NzMessageServiceModule });
-    /** @nocollapse */ NzMessageServiceModule.ɵinj = ɵɵdefineInjector({ factory: function NzMessageServiceModule_Factory(t) { return new (t || NzMessageServiceModule)(); } });
+    NzMessageServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzMessageServiceModule;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMessageServiceModule, [{
-        type: NgModule
-    }], null, null); })();
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-message.service.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 var NzMessageService = /** @class */ (function (_super) {
     __extends(NzMessageService, _super);
     function NzMessageService(nzSingletonService, overlay, injector, cfr, appRef) {
         return _super.call(this, nzSingletonService, overlay, NzMessageContainerComponent, injector, cfr, appRef, 'message') || this;
     }
     // Shortcut methods
-    NzMessageService.prototype.success = function (content, options) {
+    // Shortcut methods
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.success = 
+    // Shortcut methods
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (content, options) {
         return this.createMessage({ type: 'success', content: content }, options);
     };
-    NzMessageService.prototype.error = function (content, options) {
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.error = /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (content, options) {
         return this.createMessage({ type: 'error', content: content }, options);
     };
-    NzMessageService.prototype.info = function (content, options) {
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.info = /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (content, options) {
         return this.createMessage({ type: 'info', content: content }, options);
     };
-    NzMessageService.prototype.warning = function (content, options) {
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.warning = /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (content, options) {
         return this.createMessage({ type: 'warning', content: content }, options);
     };
-    NzMessageService.prototype.loading = function (content, options) {
+    /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.loading = /**
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (content, options) {
         return this.createMessage({ type: 'loading', content: content }, options);
     };
-    NzMessageService.prototype.create = function (type, content, options) {
+    /**
+     * @param {?} type
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    NzMessageService.prototype.create = /**
+     * @param {?} type
+     * @param {?} content
+     * @param {?=} options
+     * @return {?}
+     */
+    function (type, content, options) {
         return this.createMessage({ type: type, content: content }, options);
     };
-    /** @nocollapse */ NzMessageService.ɵfac = function NzMessageService_Factory(t) { return new (t || NzMessageService)(ɵɵinject(NzSingletonService), ɵɵinject(Overlay), ɵɵinject(Injector), ɵɵinject(ComponentFactoryResolver), ɵɵinject(ApplicationRef)); };
-    /** @nocollapse */ NzMessageService.ɵprov = ɵɵdefineInjectable({ token: NzMessageService, factory: NzMessageService.ɵfac, providedIn: NzMessageServiceModule });
+    NzMessageService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzMessageServiceModule
+                },] }
+    ];
+    /** @nocollapse */
+    NzMessageService.ctorParameters = function () { return [
+        { type: NzSingletonService },
+        { type: Overlay },
+        { type: Injector },
+        { type: ComponentFactoryResolver },
+        { type: ApplicationRef }
+    ]; };
+    /** @nocollapse */ NzMessageService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzMessageService_Factory() { return new NzMessageService(ɵɵinject(NzSingletonService), ɵɵinject(Overlay), ɵɵinject(INJECTOR), ɵɵinject(ComponentFactoryResolver), ɵɵinject(ApplicationRef)); }, token: NzMessageService, providedIn: NzMessageServiceModule });
     return NzMessageService;
 }(NzMessageBaseService));
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMessageService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzMessageServiceModule
-            }]
-    }], function () { return [{ type: NzSingletonService }, { type: Overlay }, { type: Injector }, { type: ComponentFactoryResolver }, { type: ApplicationRef }]; }, null); })();
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-message.component.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-function NzMessageComponent_i_4_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 10);
-} }
-function NzMessageComponent_i_5_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 11);
-} }
-function NzMessageComponent_i_6_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 12);
-} }
-function NzMessageComponent_i_7_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 13);
-} }
-function NzMessageComponent_i_8_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelement(0, "i", 14);
-} }
-function NzMessageComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
-    ɵɵelementContainerStart(0);
-    ɵɵelement(1, "span", 15);
-    ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r617 = ɵɵnextContext();
-    ɵɵadvance(1);
-    ɵɵproperty("innerHTML", ctx_r617.nzMessage.content, ɵɵsanitizeHtml);
-} }
 var NzMessageComponent = /** @class */ (function () {
     function NzMessageComponent(_messageContainer, cdr) {
         this._messageContainer = _messageContainer;
         this.cdr = cdr;
+        // Whether to set a timeout to destroy itself.
         this._eraseTimer = null;
     }
-    NzMessageComponent.prototype.ngOnInit = function () {
+    /**
+     * @return {?}
+     */
+    NzMessageComponent.prototype.ngOnInit = /**
+     * @return {?}
+     */
+    function () {
         // `NzMessageContainer` does its job so all properties cannot be undefined.
-        this._options = this.nzMessage.options;
+        this._options = (/** @type {?} */ (this.nzMessage.options));
         if (this._options.nzAnimate) {
             this.nzMessage.state = 'enter';
         }
@@ -315,142 +571,218 @@ var NzMessageComponent = /** @class */ (function () {
             this._startEraseTimeout();
         }
     };
-    NzMessageComponent.prototype.ngOnDestroy = function () {
+    /**
+     * @return {?}
+     */
+    NzMessageComponent.prototype.ngOnDestroy = /**
+     * @return {?}
+     */
+    function () {
         if (this._autoErase) {
             this._clearEraseTimeout();
         }
     };
-    NzMessageComponent.prototype.onEnter = function () {
+    /**
+     * @return {?}
+     */
+    NzMessageComponent.prototype.onEnter = /**
+     * @return {?}
+     */
+    function () {
         if (this._autoErase && this._options.nzPauseOnHover) {
             this._clearEraseTimeout();
             this._updateTTL();
         }
     };
-    NzMessageComponent.prototype.onLeave = function () {
+    /**
+     * @return {?}
+     */
+    NzMessageComponent.prototype.onLeave = /**
+     * @return {?}
+     */
+    function () {
         if (this._autoErase && this._options.nzPauseOnHover) {
             this._startEraseTimeout();
         }
     };
     // Remove self
-    NzMessageComponent.prototype._destroy = function (userAction) {
+    // Remove self
+    /**
+     * @protected
+     * @param {?=} userAction
+     * @return {?}
+     */
+    NzMessageComponent.prototype._destroy = 
+    // Remove self
+    /**
+     * @protected
+     * @param {?=} userAction
+     * @return {?}
+     */
+    function (userAction) {
         var _this = this;
         if (userAction === void 0) { userAction = false; }
         if (this._options.nzAnimate) {
             this.nzMessage.state = 'leave';
             this.cdr.detectChanges();
-            setTimeout(function () { return _this._messageContainer.removeMessage(_this.nzMessage.messageId, userAction); }, 200);
+            setTimeout((/**
+             * @return {?}
+             */
+            function () { return _this._messageContainer.removeMessage(_this.nzMessage.messageId, userAction); }), 200);
         }
         else {
             this._messageContainer.removeMessage(this.nzMessage.messageId, userAction);
         }
     };
-    NzMessageComponent.prototype._initErase = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzMessageComponent.prototype._initErase = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         this._eraseTTL = this._options.nzDuration;
         this._eraseTimingStart = Date.now();
     };
-    NzMessageComponent.prototype._updateTTL = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzMessageComponent.prototype._updateTTL = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this._autoErase) {
             this._eraseTTL -= Date.now() - this._eraseTimingStart;
         }
     };
-    NzMessageComponent.prototype._startEraseTimeout = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzMessageComponent.prototype._startEraseTimeout = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         var _this = this;
         if (this._eraseTTL > 0) {
             this._clearEraseTimeout();
-            this._eraseTimer = setTimeout(function () { return _this._destroy(); }, this._eraseTTL);
+            this._eraseTimer = setTimeout((/**
+             * @return {?}
+             */
+            function () { return _this._destroy(); }), this._eraseTTL);
             this._eraseTimingStart = Date.now();
         }
         else {
             this._destroy();
         }
     };
-    NzMessageComponent.prototype._clearEraseTimeout = function () {
+    /**
+     * @private
+     * @return {?}
+     */
+    NzMessageComponent.prototype._clearEraseTimeout = /**
+     * @private
+     * @return {?}
+     */
+    function () {
         if (this._eraseTimer !== null) {
             clearTimeout(this._eraseTimer);
             this._eraseTimer = null;
         }
     };
-    /** @nocollapse */ NzMessageComponent.ɵfac = function NzMessageComponent_Factory(t) { return new (t || NzMessageComponent)(ɵɵdirectiveInject(NzMessageContainerComponent), ɵɵdirectiveInject(ChangeDetectorRef)); };
-    /** @nocollapse */ NzMessageComponent.ɵcmp = ɵɵdefineComponent({ type: NzMessageComponent, selectors: [["nz-message"]], inputs: { nzMessage: "nzMessage", nzIndex: "nzIndex" }, exportAs: ["nzMessage"], decls: 10, vars: 9, consts: [[1, "ant-message-notice", 3, "mouseenter", "mouseleave"], [1, "ant-message-notice-content"], [1, "ant-message-custom-content", 3, "ngClass"], [3, "ngSwitch"], ["nz-icon", "", "nzType", "check-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "info-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "exclamation-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "close-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "loading", 4, "ngSwitchCase"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", "nzType", "check-circle"], ["nz-icon", "", "nzType", "info-circle"], ["nz-icon", "", "nzType", "exclamation-circle"], ["nz-icon", "", "nzType", "close-circle"], ["nz-icon", "", "nzType", "loading"], [3, "innerHTML"]], template: function NzMessageComponent_Template(rf, ctx) { if (rf & 1) {
-            ɵɵelementStart(0, "div", 0);
-            ɵɵlistener("mouseenter", function NzMessageComponent_Template_div_mouseenter_0_listener($event) { return ctx.onEnter(); })("mouseleave", function NzMessageComponent_Template_div_mouseleave_0_listener($event) { return ctx.onLeave(); });
-            ɵɵelementStart(1, "div", 1);
-            ɵɵelementStart(2, "div", 2);
-            ɵɵelementContainerStart(3, 3);
-            ɵɵtemplate(4, NzMessageComponent_i_4_Template, 1, 0, "i", 4);
-            ɵɵtemplate(5, NzMessageComponent_i_5_Template, 1, 0, "i", 5);
-            ɵɵtemplate(6, NzMessageComponent_i_6_Template, 1, 0, "i", 6);
-            ɵɵtemplate(7, NzMessageComponent_i_7_Template, 1, 0, "i", 7);
-            ɵɵtemplate(8, NzMessageComponent_i_8_Template, 1, 0, "i", 8);
-            ɵɵelementContainerEnd();
-            ɵɵtemplate(9, NzMessageComponent_ng_container_9_Template, 2, 1, "ng-container", 9);
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-            ɵɵelementEnd();
-        } if (rf & 2) {
-            ɵɵproperty("@moveUpMotion", ctx.nzMessage.state);
-            ɵɵadvance(2);
-            ɵɵproperty("ngClass", "ant-message-" + ctx.nzMessage.type);
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitch", ctx.nzMessage.type);
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "success");
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "info");
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "warning");
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "error");
-            ɵɵadvance(1);
-            ɵɵproperty("ngSwitchCase", "loading");
-            ɵɵadvance(1);
-            ɵɵproperty("nzStringTemplateOutlet", ctx.nzMessage.content);
-        } }, directives: [NgClass, NgSwitch, NgSwitchCase, NzStringTemplateOutletDirective, NzIconDirective], encapsulation: 2, data: { animation: [moveUpMotion] }, changeDetection: 0 });
+    NzMessageComponent.decorators = [
+        { type: Component, args: [{
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    encapsulation: ViewEncapsulation.None,
+                    selector: 'nz-message',
+                    exportAs: 'nzMessage',
+                    preserveWhitespaces: false,
+                    animations: [moveUpMotion],
+                    template: "<div class=\"ant-message-notice\"\n  [@moveUpMotion]=\"nzMessage.state\"\n  (mouseenter)=\"onEnter()\"\n  (mouseleave)=\"onLeave()\">\n  <div class=\"ant-message-notice-content\">\n    <div class=\"ant-message-custom-content\" [ngClass]=\"'ant-message-' + nzMessage.type\">\n      <ng-container [ngSwitch]=\"nzMessage.type\">\n        <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\"></i>\n        <i *ngSwitchCase=\"'info'\"  nz-icon nzType=\"info-circle\"></i>\n        <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\"></i>\n        <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\"></i>\n        <i *ngSwitchCase=\"'loading'\" nz-icon nzType=\"loading\"></i>\n      </ng-container>\n      <ng-container *nzStringTemplateOutlet=\"nzMessage.content\">\n        <span [innerHTML]=\"nzMessage.content\"></span>\n      </ng-container>\n    </div>\n  </div>\n</div>\n"
+                }] }
+    ];
+    /** @nocollapse */
+    NzMessageComponent.ctorParameters = function () { return [
+        { type: NzMessageContainerComponent },
+        { type: ChangeDetectorRef }
+    ]; };
+    NzMessageComponent.propDecorators = {
+        nzMessage: [{ type: Input }],
+        nzIndex: [{ type: Input }]
+    };
     return NzMessageComponent;
 }());
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMessageComponent, [{
-        type: Component,
-        args: [{
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                encapsulation: ViewEncapsulation.None,
-                selector: 'nz-message',
-                exportAs: 'nzMessage',
-                preserveWhitespaces: false,
-                animations: [moveUpMotion],
-                templateUrl: './nz-message.component.html'
-            }]
-    }], function () { return [{ type: NzMessageContainerComponent }, { type: ChangeDetectorRef }]; }, { nzMessage: [{
-            type: Input
-        }], nzIndex: [{
-            type: Input
-        }] }); })();
+if (false) {
+    /** @type {?} */
+    NzMessageComponent.prototype.nzMessage;
+    /** @type {?} */
+    NzMessageComponent.prototype.nzIndex;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzMessageComponent.prototype._options;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageComponent.prototype._autoErase;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageComponent.prototype._eraseTimer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageComponent.prototype._eraseTimingStart;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageComponent.prototype._eraseTTL;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzMessageComponent.prototype._messageContainer;
+    /**
+     * @type {?}
+     * @protected
+     */
+    NzMessageComponent.prototype.cdr;
+}
 
 /**
- * @license
- * Copyright Alibaba.com All Rights Reserved.
- *
- * Use of this source code is governed by an MIT-style license that can be
- * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ * @fileoverview added by tsickle
+ * Generated from: nz-message.module.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageModule = /** @class */ (function () {
     function NzMessageModule() {
     }
-    /** @nocollapse */ NzMessageModule.ɵmod = ɵɵdefineNgModule({ type: NzMessageModule });
-    /** @nocollapse */ NzMessageModule.ɵinj = ɵɵdefineInjector({ factory: function NzMessageModule_Factory(t) { return new (t || NzMessageModule)(); }, providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER], imports: [[CommonModule, OverlayModule, NzIconModule, NzAddOnModule, NzMessageServiceModule]] });
+    NzMessageModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule, OverlayModule, NzIconModule, NzAddOnModule, NzMessageServiceModule],
+                    declarations: [NzMessageContainerComponent, NzMessageComponent],
+                    providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER],
+                    entryComponents: [NzMessageContainerComponent]
+                },] }
+    ];
     return NzMessageModule;
 }());
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵɵsetNgModuleScope(NzMessageModule, { declarations: [NzMessageContainerComponent, NzMessageComponent], imports: [CommonModule, OverlayModule, NzIconModule, NzAddOnModule, NzMessageServiceModule] }); })();
-/*@__PURE__*/ (function () { ɵsetClassMetadata(NzMessageModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule, OverlayModule, NzIconModule, NzAddOnModule, NzMessageServiceModule],
-                declarations: [NzMessageContainerComponent, NzMessageComponent],
-                providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER],
-                entryComponents: [NzMessageContainerComponent]
-            }]
-    }], null, null); })();
-ɵɵsetComponentScope(NzMessageContainerComponent, [NzMessageContainerComponent, NzMessageComponent, NgClass, NgComponentOutlet, NgForOf, NgIf, NgTemplateOutlet, NgStyle, NgSwitch, NgSwitchCase, NgSwitchDefault, NgPlural, NgPluralCase, CdkConnectedOverlay, CdkOverlayOrigin, Dir, CdkFixedSizeVirtualScroll, CdkScrollable, CdkVirtualForOf, CdkVirtualScrollViewport, NzIconDirective, NzStringTemplateOutletDirective, NzClassListAddDirective], [AsyncPipe, UpperCasePipe, LowerCasePipe, JsonPipe, SlicePipe, DecimalPipe, PercentPipe, TitleCasePipe, CurrencyPipe, DatePipe, I18nPluralPipe, I18nSelectPipe, KeyValuePipe]);
 
+/**
+ * @fileoverview added by tsickle
+ * Generated from: nz-message.definitions.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
 /**
  * @license
  * Copyright Alibaba.com All Rights Reserved.
@@ -458,9 +790,57 @@ var NzMessageModule = /** @class */ (function () {
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @record
+ */
+function NzMessageDataOptions() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzMessageDataOptions.prototype.nzDuration;
+    /** @type {?|undefined} */
+    NzMessageDataOptions.prototype.nzAnimate;
+    /** @type {?|undefined} */
+    NzMessageDataOptions.prototype.nzPauseOnHover;
+}
+/**
+ * Message data for terminal users.
+ * @record
+ */
+function NzMessageData() { }
+if (false) {
+    /** @type {?|undefined} */
+    NzMessageData.prototype.type;
+    /** @type {?|undefined} */
+    NzMessageData.prototype.content;
+}
+/**
+ * Filled version of NzMessageData (includes more private properties).
+ * @record
+ */
+function NzMessageDataFilled() { }
+if (false) {
+    /** @type {?} */
+    NzMessageDataFilled.prototype.messageId;
+    /** @type {?} */
+    NzMessageDataFilled.prototype.createdAt;
+    /** @type {?|undefined} */
+    NzMessageDataFilled.prototype.options;
+    /** @type {?|undefined} */
+    NzMessageDataFilled.prototype.state;
+    /** @type {?|undefined} */
+    NzMessageDataFilled.prototype.onClose;
+}
 
 /**
- * Generated bundle index. Do not edit.
+ * @fileoverview added by tsickle
+ * Generated from: public-api.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+ */
+
+/**
+ * @fileoverview added by tsickle
+ * Generated from: ng-zorro-antd-message.ts
+ * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 export { NZ_MESSAGE_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG, NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER, NzMessageBaseService, NzMessageComponent, NzMessageContainerComponent, NzMessageModule, NzMessageService, NzMessageServiceModule };
