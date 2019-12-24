@@ -1,0 +1,24 @@
+{
+  "main": "../bundles/ng-zorro-antd-result.umd.js",
+  "module": "../fesm5/ng-zorro-antd-result.js",
+  "es2015": "../fesm2015/ng-zorro-antd-result.js",
+  "esm5": "../esm5/result/ng-zorro-antd-result.js",
+  "esm2015": "../esm2015/result/ng-zorro-antd-result.js",
+  "fesm5": "../fesm5/ng-zorro-antd-result.js",
+  "fesm2015": "../fesm2015/ng-zorro-antd-result.js",
+  "typings": "ng-zorro-antd-result.d.ts",
+  "sideEffects": false,
+  "name": "ng-zorro-antd/result",
+  "__processed_by_ivy_ngcc__": {
+    "fesm2015": "9.0.0-rc.7",
+    "fesm5": "9.0.0-rc.7",
+    "es2015": "9.0.0-rc.7",
+    "esm2015": "9.0.0-rc.7",
+    "esm5": "9.0.0-rc.7",
+    "main": "9.0.0-rc.7",
+    "module": "9.0.0-rc.7"
+  },
+  "scripts": {
+    "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
+  }
+}

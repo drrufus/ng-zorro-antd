@@ -1,0 +1,20 @@
+/**
+ * @license
+ * Copyright Google LLC All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://angular.io/license
+ */
+import { dispatchFakeEvent } from './dispatch-events';
+/**
+ * Focuses an input, sets its value and dispatches
+ * the `input` event, simulating the user typing.
+ * @param value Value to be set on the input.
+ * @param element Element onto which to set the value.
+ */
+export function typeInElement(value, element) {
+    element.focus();
+    element.value = value;
+    dispatchFakeEvent(element, 'input');
+}
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoidHlwZS1pbi1lbGVtZW50LmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC9jb3JlLyIsInNvdXJjZXMiOlsidGVzdGluZy90eXBlLWluLWVsZW1lbnQudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HO0FBRUgsT0FBTyxFQUFFLGlCQUFpQixFQUFFLE1BQU0sbUJBQW1CLENBQUM7QUFFdEQ7Ozs7O0dBS0c7QUFDSCxNQUFNLFVBQVUsYUFBYSxDQUFDLEtBQWEsRUFBRSxPQUErQztJQUMxRixPQUFPLENBQUMsS0FBSyxFQUFFLENBQUM7SUFDaEIsT0FBTyxDQUFDLEtBQUssR0FBRyxLQUFLLENBQUM7SUFDdEIsaUJBQWlCLENBQUMsT0FBTyxFQUFFLE9BQU8sQ0FBQyxDQUFDO0FBQ3RDLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEdvb2dsZSBMTEMgQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2FuZ3VsYXIuaW8vbGljZW5zZVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IGRpc3BhdGNoRmFrZUV2ZW50IH0gZnJvbSAnLi9kaXNwYXRjaC1ldmVudHMnO1xyXG5cclxuLyoqXHJcbiAqIEZvY3VzZXMgYW4gaW5wdXQsIHNldHMgaXRzIHZhbHVlIGFuZCBkaXNwYXRjaGVzXHJcbiAqIHRoZSBgaW5wdXRgIGV2ZW50LCBzaW11bGF0aW5nIHRoZSB1c2VyIHR5cGluZy5cclxuICogQHBhcmFtIHZhbHVlIFZhbHVlIHRvIGJlIHNldCBvbiB0aGUgaW5wdXQuXHJcbiAqIEBwYXJhbSBlbGVtZW50IEVsZW1lbnQgb250byB3aGljaCB0byBzZXQgdGhlIHZhbHVlLlxyXG4gKi9cclxuZXhwb3J0IGZ1bmN0aW9uIHR5cGVJbkVsZW1lbnQodmFsdWU6IHN0cmluZywgZWxlbWVudDogSFRNTElucHV0RWxlbWVudCB8IEhUTUxUZXh0QXJlYUVsZW1lbnQpOiB2b2lkIHtcclxuICBlbGVtZW50LmZvY3VzKCk7XHJcbiAgZWxlbWVudC52YWx1ZSA9IHZhbHVlO1xyXG4gIGRpc3BhdGNoRmFrZUV2ZW50KGVsZW1lbnQsICdpbnB1dCcpO1xyXG59XHJcbiJdfQ==

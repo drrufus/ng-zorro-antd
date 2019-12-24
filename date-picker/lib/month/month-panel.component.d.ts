@@ -1,0 +1,24 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { EventEmitter } from '@angular/core';
+import { CandyDate } from 'ng-zorro-antd/core';
+import { NzCalendarI18nInterface } from 'ng-zorro-antd/i18n';
+import * as i0 from "@angular/core";
+export declare class MonthPanelComponent {
+    locale: NzCalendarI18nInterface;
+    value: CandyDate;
+    disabledDate: (date: Date) => boolean;
+    readonly valueChange: EventEmitter<CandyDate>;
+    readonly yearPanelShow: EventEmitter<void>;
+    prefixCls: string;
+    previousYear(): void;
+    nextYear(): void;
+    private gotoYear;
+    static ɵfac: i0.ɵɵFactoryDef<MonthPanelComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<MonthPanelComponent, "month-panel", ["monthPanel"], { 'locale': "locale", 'value': "value", 'disabledDate': "disabledDate" }, { 'valueChange': "valueChange", 'yearPanelShow': "yearPanelShow" }, never>;
+}

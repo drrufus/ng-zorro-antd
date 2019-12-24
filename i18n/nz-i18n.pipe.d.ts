@@ -1,0 +1,17 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { PipeTransform } from '@angular/core';
+import { NzI18nService } from './nz-i18n.service';
+import * as i0 from "@angular/core";
+export declare class NzI18nPipe implements PipeTransform {
+    private _locale;
+    constructor(_locale: NzI18nService);
+    transform(path: string, keyValue?: object): string;
+    static ɵfac: i0.ɵɵFactoryDef<NzI18nPipe>;
+    static ɵpipe: i0.ɵɵPipeDefWithMeta<NzI18nPipe, "nzI18n">;
+}

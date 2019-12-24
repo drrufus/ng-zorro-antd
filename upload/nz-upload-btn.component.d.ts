@@ -1,0 +1,40 @@
+import { HttpClient } from '@angular/common/http';
+import { ElementRef, OnChanges, OnDestroy, OnInit } from '@angular/core';
+import { Subscription } from 'rxjs';
+import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
+import { UploadFile, ZipButtonOptions } from './interface';
+import * as i0 from "@angular/core";
+export declare class NzUploadBtnComponent implements OnInit, OnChanges, OnDestroy {
+    private http;
+    private el;
+    private updateHostClassService;
+    reqs: {
+        [key: string]: Subscription;
+    };
+    private inited;
+    private destroy;
+    file: ElementRef;
+    classes: {};
+    options: ZipButtonOptions;
+    onClick(): void;
+    onKeyDown(e: KeyboardEvent): void;
+    onFileDrop(e: any): void;
+    onChange(e: Event): void;
+    private traverseFileTree;
+    private attrAccept;
+    private attachUid;
+    uploadFiles(fileList: FileList | File[]): void;
+    private upload;
+    private post;
+    private xhr;
+    private clean;
+    abort(file?: UploadFile): void;
+    private prefixCls;
+    private setClassMap;
+    constructor(http: HttpClient, el: ElementRef, updateHostClassService: NzUpdateHostClassService);
+    ngOnInit(): void;
+    ngOnChanges(): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<NzUploadBtnComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzUploadBtnComponent, "[nz-upload-btn]", ["nzUploadBtn"], { 'classes': "classes", 'options': "options" }, {}, never>;
+}

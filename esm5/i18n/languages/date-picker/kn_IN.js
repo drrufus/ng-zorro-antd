@@ -1,0 +1,19 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { __assign } from "tslib";
+import CalendarLocale from '../calendar/kn_IN';
+import TimePickerLocale from '../time-picker/kn_IN';
+// Merge into a locale object
+var locale = {
+    lang: __assign({ placeholder: 'ದಿನಾಂಕ ಆಯ್ಕೆಮಾಡಿ', rangePlaceholder: ['ಪ್ರಾರಂಭ ದಿನಾಂಕ', 'ಅಂತಿಮ ದಿನಾಂಕ'] }, CalendarLocale),
+    timePickerLocale: __assign({}, TimePickerLocale)
+};
+// All settings at:
+// https://github.com/ant-design/ant-design/blob/master/components/date-picker/locale/example.json
+export default locale;
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoia25fSU4uanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL2kxOG4vIiwic291cmNlcyI6WyJsYW5ndWFnZXMvZGF0ZS1waWNrZXIva25fSU4udHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HOztBQUVILE9BQU8sY0FBYyxNQUFNLG1CQUFtQixDQUFDO0FBQy9DLE9BQU8sZ0JBQWdCLE1BQU0sc0JBQXNCLENBQUM7QUFFcEQsNkJBQTZCO0FBQzdCLElBQU0sTUFBTSxHQUFHO0lBQ2IsSUFBSSxhQUNGLFdBQVcsRUFBRSxrQkFBa0IsRUFDL0IsZ0JBQWdCLEVBQUUsQ0FBQyxnQkFBZ0IsRUFBRSxjQUFjLENBQUMsSUFDakQsY0FBYyxDQUNsQjtJQUNELGdCQUFnQixlQUNYLGdCQUFnQixDQUNwQjtDQUNGLENBQUM7QUFFRixtQkFBbUI7QUFDbkIsa0dBQWtHO0FBRWxHLGVBQWUsTUFBTSxDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcblxyXG5pbXBvcnQgQ2FsZW5kYXJMb2NhbGUgZnJvbSAnLi4vY2FsZW5kYXIva25fSU4nO1xyXG5pbXBvcnQgVGltZVBpY2tlckxvY2FsZSBmcm9tICcuLi90aW1lLXBpY2tlci9rbl9JTic7XHJcblxyXG4vLyBNZXJnZSBpbnRvIGEgbG9jYWxlIG9iamVjdFxyXG5jb25zdCBsb2NhbGUgPSB7XHJcbiAgbGFuZzoge1xyXG4gICAgcGxhY2Vob2xkZXI6ICfgsqbgsr/gsqjgsr7gsoLgspUg4LKG4LKv4LON4LKV4LOG4LKu4LK+4LKh4LK/JyxcclxuICAgIHJhbmdlUGxhY2Vob2xkZXI6IFsn4LKq4LON4LKw4LK+4LKw4LKC4LKtIOCypuCyv+CyqOCyvuCyguCylScsICfgsoXgsoLgsqTgsr/gsq4g4LKm4LK/4LKo4LK+4LKC4LKVJ10sXHJcbiAgICAuLi5DYWxlbmRhckxvY2FsZVxyXG4gIH0sXHJcbiAgdGltZVBpY2tlckxvY2FsZToge1xyXG4gICAgLi4uVGltZVBpY2tlckxvY2FsZVxyXG4gIH1cclxufTtcclxuXHJcbi8vIEFsbCBzZXR0aW5ncyBhdDpcclxuLy8gaHR0cHM6Ly9naXRodWIuY29tL2FudC1kZXNpZ24vYW50LWRlc2lnbi9ibG9iL21hc3Rlci9jb21wb25lbnRzL2RhdGUtcGlja2VyL2xvY2FsZS9leGFtcGxlLmpzb25cclxuXHJcbmV4cG9ydCBkZWZhdWx0IGxvY2FsZTtcclxuIl19

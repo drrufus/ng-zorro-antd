@@ -1,0 +1,15 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+export * from './nz-slider.component';
+export * from './nz-slider.module';
+export * from './nz-slider-handle.component';
+export * from './nz-slider-marks.component';
+export * from './nz-slider-step.component';
+export * from './nz-slider-track.component';
+export * from './nz-slider-definitions';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvc2xpZGVyLyIsInNvdXJjZXMiOlsicHVibGljLWFwaS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFFSCxjQUFjLHVCQUF1QixDQUFDO0FBQ3RDLGNBQWMsb0JBQW9CLENBQUM7QUFDbkMsY0FBYyw4QkFBOEIsQ0FBQztBQUM3QyxjQUFjLDZCQUE2QixDQUFDO0FBQzVDLGNBQWMsNEJBQTRCLENBQUM7QUFDM0MsY0FBYyw2QkFBNkIsQ0FBQztBQUM1QyxjQUFjLHlCQUF5QixDQUFDIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcblxyXG5leHBvcnQgKiBmcm9tICcuL256LXNsaWRlci5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXNsaWRlci5tb2R1bGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXNsaWRlci1oYW5kbGUuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1zbGlkZXItbWFya3MuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1zbGlkZXItc3RlcC5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXNsaWRlci10cmFjay5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LXNsaWRlci1kZWZpbml0aW9ucyc7XHJcbiJdfQ==

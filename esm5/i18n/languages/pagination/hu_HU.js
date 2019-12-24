@@ -1,0 +1,22 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+export default {
+    // Options.jsx
+    items_per_page: '/ oldal',
+    jump_to: 'Ugrás',
+    jump_to_confirm: 'megerősít',
+    page: '',
+    // Pagination.jsx
+    prev_page: 'Előző oldal',
+    next_page: 'Következő oldal',
+    prev_5: 'Előző 5 oldal',
+    next_5: 'Következő 5 oldal',
+    prev_3: 'Előző 3 oldal',
+    next_3: 'Következő 3 oldal' // 'Next 3 Pages',
+};
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoiaHVfSFUuanMiLCJzb3VyY2VSb290Ijoibmc6Ly9uZy16b3Jyby1hbnRkL2kxOG4vIiwic291cmNlcyI6WyJsYW5ndWFnZXMvcGFnaW5hdGlvbi9odV9IVS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFBQTs7Ozs7O0dBTUc7QUFFSCxlQUFlO0lBQ2IsY0FBYztJQUNkLGNBQWMsRUFBRSxTQUFTO0lBQ3pCLE9BQU8sRUFBRSxPQUFPO0lBQ2hCLGVBQWUsRUFBRSxXQUFXO0lBQzVCLElBQUksRUFBRSxFQUFFO0lBRVIsaUJBQWlCO0lBQ2pCLFNBQVMsRUFBRSxhQUFhO0lBQ3hCLFNBQVMsRUFBRSxpQkFBaUI7SUFDNUIsTUFBTSxFQUFFLGVBQWU7SUFDdkIsTUFBTSxFQUFFLG1CQUFtQjtJQUMzQixNQUFNLEVBQUUsZUFBZTtJQUN2QixNQUFNLEVBQUUsbUJBQW1CLENBQUMsa0JBQWtCO0NBQy9DLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmV4cG9ydCBkZWZhdWx0IHtcclxuICAvLyBPcHRpb25zLmpzeFxyXG4gIGl0ZW1zX3Blcl9wYWdlOiAnLyBvbGRhbCcsIC8vICcvIHBhZ2UnLFxyXG4gIGp1bXBfdG86ICdVZ3LDoXMnLCAvLyAnR290bycsXHJcbiAganVtcF90b19jb25maXJtOiAnbWVnZXLFkXPDrXQnLCAvLyAnY29uZmlybScsXHJcbiAgcGFnZTogJycsXHJcblxyXG4gIC8vIFBhZ2luYXRpb24uanN4XHJcbiAgcHJldl9wYWdlOiAnRWzFkXrFkSBvbGRhbCcsIC8vICdQcmV2aW91cyBQYWdlJyxcclxuICBuZXh0X3BhZ2U6ICdLw7Z2ZXRrZXrFkSBvbGRhbCcsIC8vICdOZXh0IFBhZ2UnLFxyXG4gIHByZXZfNTogJ0VsxZF6xZEgNSBvbGRhbCcsIC8vICdQcmV2aW91cyA1IFBhZ2VzJyxcclxuICBuZXh0XzU6ICdLw7Z2ZXRrZXrFkSA1IG9sZGFsJywgLy8gJ05leHQgNSBQYWdlcycsXHJcbiAgcHJldl8zOiAnRWzFkXrFkSAzIG9sZGFsJywgLy8gJ1ByZXZpb3VzIDMgUGFnZXMnLFxyXG4gIG5leHRfMzogJ0vDtnZldGtlesWRIDMgb2xkYWwnIC8vICdOZXh0IDMgUGFnZXMnLFxyXG59O1xyXG4iXX0=

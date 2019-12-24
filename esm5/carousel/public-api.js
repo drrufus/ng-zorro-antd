@@ -1,0 +1,13 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+export * from './nz-carousel.module';
+export * from './nz-carousel.component';
+export * from './nz-carousel-content.directive';
+export * from './nz-carousel-definitions';
+export * from './strategies/base-strategy';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY2Fyb3VzZWwvIiwic291cmNlcyI6WyJwdWJsaWMtYXBpLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBOzs7Ozs7R0FNRztBQUVILGNBQWMsc0JBQXNCLENBQUM7QUFDckMsY0FBYyx5QkFBeUIsQ0FBQztBQUN4QyxjQUFjLGlDQUFpQyxDQUFDO0FBQ2hELGNBQWMsMkJBQTJCLENBQUM7QUFDMUMsY0FBYyw0QkFBNEIsQ0FBQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuZXhwb3J0ICogZnJvbSAnLi9uei1jYXJvdXNlbC5tb2R1bGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LWNhcm91c2VsLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbnotY2Fyb3VzZWwtY29udGVudC5kaXJlY3RpdmUnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LWNhcm91c2VsLWRlZmluaXRpb25zJztcclxuZXhwb3J0ICogZnJvbSAnLi9zdHJhdGVnaWVzL2Jhc2Utc3RyYXRlZ3knO1xyXG4iXX0=

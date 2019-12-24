@@ -1,0 +1,17 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+export * from './nz-form.module';
+export * from './nz-form.directive';
+export * from './nz-form-control.component';
+export * from './nz-form-explain.component';
+export * from './nz-form-item.component';
+export * from './nz-form-extra.component';
+export * from './nz-form-label.component';
+export * from './nz-form-split.component';
+export * from './nz-form-text.component';
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoicHVibGljLWFwaS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvZm9ybS8iLCJzb3VyY2VzIjpbInB1YmxpYy1hcGkudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBQUE7Ozs7OztHQU1HO0FBRUgsY0FBYyxrQkFBa0IsQ0FBQztBQUNqQyxjQUFjLHFCQUFxQixDQUFDO0FBQ3BDLGNBQWMsNkJBQTZCLENBQUM7QUFDNUMsY0FBYyw2QkFBNkIsQ0FBQztBQUM1QyxjQUFjLDBCQUEwQixDQUFDO0FBQ3pDLGNBQWMsMkJBQTJCLENBQUM7QUFDMUMsY0FBYywyQkFBMkIsQ0FBQztBQUMxQyxjQUFjLDJCQUEyQixDQUFDO0FBQzFDLGNBQWMsMEJBQTBCLENBQUMiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmV4cG9ydCAqIGZyb20gJy4vbnotZm9ybS5tb2R1bGUnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LWZvcm0uZGlyZWN0aXZlJztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1mb3JtLWNvbnRyb2wuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1mb3JtLWV4cGxhaW4uY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1mb3JtLWl0ZW0uY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1mb3JtLWV4dHJhLmNvbXBvbmVudCc7XHJcbmV4cG9ydCAqIGZyb20gJy4vbnotZm9ybS1sYWJlbC5jb21wb25lbnQnO1xyXG5leHBvcnQgKiBmcm9tICcuL256LWZvcm0tc3BsaXQuY29tcG9uZW50JztcclxuZXhwb3J0ICogZnJvbSAnLi9uei1mb3JtLXRleHQuY29tcG9uZW50JztcclxuIl19

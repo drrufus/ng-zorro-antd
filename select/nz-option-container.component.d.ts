@@ -1,0 +1,34 @@
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { AfterViewInit, ChangeDetectorRef, ElementRef, EventEmitter, NgZone, OnDestroy, OnInit, QueryList, TemplateRef } from '@angular/core';
+import { NzOptionGroupComponent } from './nz-option-group.component';
+import { NzOptionLiComponent } from './nz-option-li.component';
+import { NzOptionComponent } from './nz-option.component';
+import { NzSelectService } from './nz-select.service';
+import * as i0 from "@angular/core";
+export declare class NzOptionContainerComponent implements OnDestroy, OnInit, AfterViewInit {
+    nzSelectService: NzSelectService;
+    cdr: ChangeDetectorRef;
+    private ngZone;
+    private destroy$;
+    private lastScrollTop;
+    listOfNzOptionLiComponent: QueryList<NzOptionLiComponent>;
+    dropdownUl: ElementRef<HTMLUListElement>;
+    nzNotFoundContent: string;
+    nzMenuItemSelectedIcon: TemplateRef<void>;
+    readonly nzScrollToBottom: EventEmitter<void>;
+    scrollIntoViewIfNeeded(option: NzOptionComponent): void;
+    trackLabel(_index: number, option: NzOptionGroupComponent): string | TemplateRef<void>;
+    trackValue(_index: number, option: NzOptionComponent): any;
+    constructor(nzSelectService: NzSelectService, cdr: ChangeDetectorRef, ngZone: NgZone);
+    ngOnInit(): void;
+    ngAfterViewInit(): void;
+    ngOnDestroy(): void;
+    static ɵfac: i0.ɵɵFactoryDef<NzOptionContainerComponent>;
+    static ɵcmp: i0.ɵɵComponentDefWithMeta<NzOptionContainerComponent, "[nz-option-container]", ["nzOptionContainer"], { 'nzNotFoundContent': "nzNotFoundContent", 'nzMenuItemSelectedIcon': "nzMenuItemSelectedIcon" }, { 'nzScrollToBottom': "nzScrollToBottom" }, never>;
+}
