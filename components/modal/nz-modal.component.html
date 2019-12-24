@@ -34,7 +34,7 @@
           *ngIf="nzClosable"
           (click)="onClickCloseBtn()"
           class="ant-modal-close"
-          aria-label="Close"
+          [attr.aria-label]="nzAriaLabel"
         >
           <span class="ant-modal-close-x">
             <ng-container *nzStringTemplateOutlet="nzCloseIcon">

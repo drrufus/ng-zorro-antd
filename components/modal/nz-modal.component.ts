@@ -97,6 +97,7 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
   @Input() nzOkType: string = 'primary';
   @Input() nzIconType: string = 'question-circle'; // Confirm Modal ONLY
   @Input() nzModalType: ModalType = 'default';
+  @Input() nzAriaLabel: string = 'Close';
 
   @Input() @Output() readonly nzOnOk: EventEmitter<T> | OnClickCallback<T> = new EventEmitter<T>();
   @Input() @Output() readonly nzOnCancel: EventEmitter<T> | OnClickCallback<T> = new EventEmitter<T>();

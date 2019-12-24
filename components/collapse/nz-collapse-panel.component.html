@@ -1,4 +1,4 @@
-<div role="tab" [attr.aria-expanded]="nzActive" class="ant-collapse-header" (click)="clickHeader()">
+<div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" class="ant-collapse-header" (click)="clickHeader()">
   <ng-container *ngIf="nzShowArrow">
     <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
       <i
