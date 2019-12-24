@@ -25,13 +25,20 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-import { Observable, of, Subject } from 'rxjs';
+import { of, Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 import { InputBoolean, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 
-import { TransferCanMove, TransferChange, TransferDirection, TransferItem, TransferSearchChange, TransferSelectChange } from './interface';
+import {
+  TransferCanMove,
+  TransferChange,
+  TransferDirection,
+  TransferItem,
+  TransferSearchChange,
+  TransferSelectChange
+} from './interface';
 import { NzTransferListComponent } from './nz-transfer-list.component';
 
 @Component({
@@ -145,11 +152,7 @@ export class NzTransferComponent implements OnInit, OnChanges, OnDestroy {
     const datasource = direction === 'left' ? this.rightDataSource : this.leftDataSource;
     const moveList = datasource.filter(item => item.checked === true && !item.disabled);
     this.nzCanMove({ direction, list: moveList }).subscribe(
-      newMoveList =>
-        this.truthMoveTo(
-          direction,
-          newMoveList.filter(i => !!i)
-        ),
+      newMoveList => this.truthMoveTo(direction, newMoveList.filter(i => !!i)),
       () => moveList.forEach(i => (i.checked = false))
     );
   }

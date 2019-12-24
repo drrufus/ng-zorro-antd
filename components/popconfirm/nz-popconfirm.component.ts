@@ -10,16 +10,17 @@ import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
+  EventEmitter,
   Host,
-  OnDestroy,
+  Input,
   Optional,
+  Output,
   TemplateRef,
   ViewEncapsulation
 } from '@angular/core';
 
-import { NzNoAnimationDirective, zoomBigMotion } from 'ng-zorro-antd/core';
-import { NzToolTipComponent, NzTooltipTrigger } from 'ng-zorro-antd/tooltip';
-import { Subject } from 'rxjs';
+import { zoomBigMotion, InputBoolean, NzNoAnimationDirective } from 'ng-zorro-antd/core';
+import { NzTooltipBaseComponentLegacy, NzTooltipTrigger, NzToolTipComponent } from 'ng-zorro-antd/tooltip';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,
@@ -29,6 +30,12 @@ import { Subject } from 'rxjs';
   preserveWhitespaces: false,
   animations: [zoomBigMotion],
   templateUrl: './nz-popconfirm.component.html',
+  providers: [
+    {
+      provide: NzTooltipBaseComponentLegacy,
+      useExisting: NzPopconfirmComponent
+    }
+  ],
   styles: [
     `
       .ant-popover {
@@ -37,30 +44,22 @@ import { Subject } from 'rxjs';
     `
   ]
 })
-export class NzPopconfirmComponent extends NzToolTipComponent implements OnDestroy {
-  nzCancelText: string;
-  nzCondition = false;
-  nzIcon: string | TemplateRef<void>;
-  nzOkText: string;
-  nzOkType: string = 'primary';
+export class NzPopconfirmComponent extends NzToolTipComponent {
+  @Input() nzOkText: string;
+  @Input() nzOkType: string = 'primary';
+  @Input() nzCancelText: string;
+  @Input() @InputBoolean() nzCondition = false;
+  @Input() nzIcon: string | TemplateRef<void>;
 
-  readonly nzOnCancel = new Subject<void>();
-  readonly nzOnConfirm = new Subject<void>();
-
-  protected _trigger: NzTooltipTrigger = 'click';
+  @Output() readonly nzOnCancel: EventEmitter<void> = new EventEmitter();
+  @Output() readonly nzOnConfirm: EventEmitter<void> = new EventEmitter();
 
   _prefix = 'ant-popover-placement';
+  _trigger: NzTooltipTrigger = 'click';
   _hasBackdrop = true;
 
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
     super(cdr, noAnimation);
-  }
-
-  ngOnDestroy(): void {
-    super.ngOnDestroy();
-
-    this.nzOnCancel.complete();
-    this.nzOnConfirm.complete();
   }
 
   show(): void {
@@ -72,12 +71,12 @@ export class NzPopconfirmComponent extends NzToolTipComponent implements OnDestr
   }
 
   onCancel(): void {
-    this.nzOnCancel.next();
+    this.nzOnCancel.emit();
     super.hide();
   }
 
   onConfirm(): void {
-    this.nzOnConfirm.next();
+    this.nzOnConfirm.emit();
     super.hide();
   }
 }

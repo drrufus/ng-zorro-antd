@@ -6,7 +6,15 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
-import { ChangeDetectionStrategy, Component, ElementRef, EventEmitter, Output, Renderer2, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  EventEmitter,
+  Output,
+  Renderer2,
+  ViewEncapsulation
+} from '@angular/core';
 
 import { NzCheckboxComponent } from './nz-checkbox.component';
 

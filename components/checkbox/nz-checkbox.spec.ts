@@ -1,6 +1,6 @@
 import { Component, DebugElement, ViewChild } from '@angular/core';
-import { ComponentFixture, fakeAsync, flush, TestBed } from '@angular/core/testing';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { fakeAsync, flush, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
 import { NzCheckboxGroupComponent } from './nz-checkbox-group.component';
@@ -38,8 +38,12 @@ describe('checkbox', () => {
       fixture.detectChanges();
       expect(checkbox.nativeElement.classList.contains('ant-checkbox-wrapper')).toBe(true);
       expect(checkbox.nativeElement.firstElementChild!.classList.contains('ant-checkbox')).toBe(true);
-      expect(checkbox.nativeElement.firstElementChild.firstElementChild!.classList.contains('ant-checkbox-input')).toBe(true);
-      expect(checkbox.nativeElement.firstElementChild.lastElementChild.classList.contains('ant-checkbox-inner')).toBe(true);
+      expect(checkbox.nativeElement.firstElementChild.firstElementChild!.classList.contains('ant-checkbox-input')).toBe(
+        true
+      );
+      expect(checkbox.nativeElement.firstElementChild.lastElementChild.classList.contains('ant-checkbox-inner')).toBe(
+        true
+      );
       expect(checkbox.nativeElement.lastElementChild.innerText).toBe('Checkbox');
     });
     it('should click change', () => {
@@ -322,7 +326,11 @@ export class NzTestCheckboxSingleComponent {
 
 @Component({
   template: `
-    <nz-checkbox-group [nzDisabled]="disabled" [ngModel]="options" (ngModelChange)="modelChange($event)"></nz-checkbox-group>
+    <nz-checkbox-group
+      [nzDisabled]="disabled"
+      [ngModel]="options"
+      (ngModelChange)="modelChange($event)"
+    ></nz-checkbox-group>
   `
 })
 export class NzTestCheckboxGroupComponent {

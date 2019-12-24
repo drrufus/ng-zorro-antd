@@ -1,6 +1,6 @@
 import { LEFT_ARROW, RIGHT_ARROW } from '@angular/cdk/keycodes';
 import { Component, DebugElement, ViewChild } from '@angular/core';
-import { ComponentFixture, fakeAsync, TestBed, tick } from '@angular/core/testing';
+import { fakeAsync, tick, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 
 import { dispatchKeyboardEvent, dispatchMouseEvent } from 'ng-zorro-antd/core/testing';
@@ -104,7 +104,9 @@ describe('carousel', () => {
       expect(carouselWrapper.nativeElement.querySelector('.slick-dots').children.length).toBe(4);
       expect(carouselWrapper.nativeElement.querySelector('.slick-dots').firstElementChild.innerText).toBe('1');
       expect(carouselWrapper.nativeElement.querySelector('.slick-dots').lastElementChild.innerText).toBe('4');
-      expect(carouselWrapper.nativeElement.querySelector('.slick-dots').firstElementChild.firstElementChild.tagName).toBe('A');
+      expect(
+        carouselWrapper.nativeElement.querySelector('.slick-dots').firstElementChild.firstElementChild.tagName
+      ).toBe('A');
     });
 
     it('should click content change', () => {
@@ -159,7 +161,9 @@ describe('carousel', () => {
       fixture.detectChanges();
       tick(1000);
       fixture.detectChanges();
-      expect(carouselWrapper.nativeElement.querySelector('.slick-track').style.transform).toBe('translate3d(0px, 0px, 0px)');
+      expect(carouselWrapper.nativeElement.querySelector('.slick-track').style.transform).toBe(
+        'translate3d(0px, 0px, 0px)'
+      );
       carouselWrapper.nativeElement.querySelector('.slick-dots').lastElementChild.click();
       tickMilliseconds(fixture, 700);
       expect(carouselWrapper.nativeElement.querySelector('.slick-track').style.transform).not.toBe('');
@@ -177,7 +181,9 @@ describe('carousel', () => {
       expect(carouselContents[0].nativeElement.classList).toContain('slick-active');
       carouselWrapper.nativeElement.querySelector('.slick-dots').lastElementChild.click();
       tickMilliseconds(fixture, 700);
-      expect(carouselWrapper.nativeElement.querySelector('.slick-track').style.transform).not.toBe('translate3d(0px, 0px, 0px)');
+      expect(carouselWrapper.nativeElement.querySelector('.slick-track').style.transform).not.toBe(
+        'translate3d(0px, 0px, 0px)'
+      );
     }));
 
     it('should autoplay work', fakeAsync(() => {
@@ -234,7 +240,7 @@ describe('carousel', () => {
       expect(resizeSpy).toHaveBeenCalledTimes(1);
     }));
 
-    // TODO(wendellhu95): no idea why this stops working with auditTime
+    // TODO(wendzhue): no idea why this stops working with auditTime
     it('should support swiping to switch', fakeAsync(() => {
       swipe(testComponent.nzCarouselComponent, 500);
       tickMilliseconds(fixture, 700);

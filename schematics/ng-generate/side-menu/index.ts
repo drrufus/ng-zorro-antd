@@ -3,14 +3,14 @@ import {
   apply,
   applyTemplates,
   chain,
-  FileEntry,
   forEach,
-  MergeStrategy,
   mergeWith,
   move,
+  url,
+  FileEntry,
+  MergeStrategy,
   Rule,
-  Tree,
-  url
+  Tree
 } from '@angular-devkit/schematics';
 import { getProjectFromWorkspace } from '@angular/cdk/schematics';
 import { getWorkspace } from '@schematics/angular/utility/config';
@@ -44,9 +44,7 @@ export default function(options: Schema): Rule {
         MergeStrategy.Overwrite
       ),
       addModule('AppRoutingModule', './app-routing.module'),
-      addModule('IconsProviderModule', './icons-provider.module'),
-      addModule('NzLayoutModule', 'ng-zorro-antd/layout'),
-      addModule('NzMenuModule', 'ng-zorro-antd/menu')
+      addModule('IconsProviderModule', './icons-provider.module')
     ]);
   }
 }

@@ -1,5 +1,4 @@
-<div
-  *ngIf="!destroy"
+<div *ngIf="!destroy"
   class="ant-alert"
   [class.ant-alert-success]="nzType === 'success'"
   [class.ant-alert-info]="nzType === 'info'"
@@ -10,14 +9,9 @@
   [class.ant-alert-closable]="nzCloseable"
   [class.ant-alert-with-description]="!!nzDescription"
   [@slideAlertMotion]
-  (@slideAlertMotion.done)="onFadeAnimationDone()"
->
+  (@slideAlertMotion.done)="onFadeAnimationDone()">
   <ng-container *ngIf="nzShowIcon">
-    <i
-      class="ant-alert-icon"
-      [ngClass]="nzIconType"
-      *ngIf="isIconTypeObject; else iconTemplate"
-    ></i>
+    <i class="ant-alert-icon" [ngClass]="nzIconType" *ngIf="isIconTypeObject; else iconTemplate"></i>
     <ng-template #iconTemplate>
       <i nz-icon class="ant-alert-icon" [nzType]="iconType" [nzTheme]="iconTheme"></i>
     </ng-template>
@@ -28,7 +22,9 @@
   <span class="ant-alert-description" *ngIf="nzDescription">
     <ng-container *nzStringTemplateOutlet="nzDescription">{{ nzDescription }}</ng-container>
   </span>
-  <a *ngIf="nzCloseable || nzCloseText" class="ant-alert-close-icon" (click)="closeAlert()">
+  <a *ngIf="nzCloseable || nzCloseText"
+    class="ant-alert-close-icon"
+    (click)="closeAlert()">
     <ng-template #closeDefaultTemplate>
       <i nz-icon nzType="close"></i>
     </ng-template>

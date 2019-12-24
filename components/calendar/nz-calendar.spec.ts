@@ -1,7 +1,7 @@
 import { registerLocaleData } from '@angular/common';
 import zh from '@angular/common/locales/zh';
 import { Component } from '@angular/core';
-import { async, ComponentFixture, fakeAsync, flush, TestBed } from '@angular/core/testing';
+import { async, fakeAsync, flush, ComponentFixture, TestBed } from '@angular/core/testing';
 import { FormsModule, NgModel } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
@@ -256,6 +256,17 @@ describe('Calendar', () => {
       expect(header.fullscreen).toBe(false);
     });
 
+    it('should update fullscreen by nzCard', () => {
+      component.card = true;
+
+      fixture.detectChanges();
+
+      const host = fixture.debugElement.queryAll(By.directive(Calendar))[2];
+      const header = host.query(By.directive(CalendarHeader)).injector.get(CalendarHeader);
+
+      expect(header.fullscreen).toBe(false);
+    });
+
     it('should support imperative access', () => {
       component.fullscreen = false;
 
@@ -264,6 +275,7 @@ describe('Calendar', () => {
       const calendar = fixture.debugElement.queryAll(By.directive(Calendar))[1].injector.get(Calendar);
 
       expect(calendar.nzFullscreen).toBe(false);
+      expect(calendar.nzCard).toBe(true);
     });
   });
 
@@ -440,6 +452,7 @@ class NzTestCalendarValueComponent {
   template: `
     <nz-calendar></nz-calendar>
     <nz-calendar [nzFullscreen]="fullscreen"></nz-calendar>
+    <nz-calendar [nzCard]="card"></nz-calendar>
   `
 })
 class NzTestCalendarFullscreenComponent {
@@ -493,7 +506,12 @@ class NzTestCalendarMonthFullCellComponent {}
 
 @Component({
   template: `
-    <nz-calendar [(nzMode)]="mode" [(ngModel)]="date0" (nzPanelChange)="panelChange($event)" (nzSelectChange)="selectChange($event)">
+    <nz-calendar
+      [(nzMode)]="mode"
+      [(ngModel)]="date0"
+      (nzPanelChange)="panelChange($event)"
+      (nzSelectChange)="selectChange($event)"
+    >
     </nz-calendar>
   `
 })

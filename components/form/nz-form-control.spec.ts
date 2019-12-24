@@ -1,6 +1,14 @@
 import { Component, DebugElement } from '@angular/core';
-import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core/testing';
-import { FormBuilder, FormControl, FormControlName, FormGroup, FormsModule, ReactiveFormsModule, Validators } from '@angular/forms';
+import { fakeAsync, flush, tick, ComponentFixture, TestBed } from '@angular/core/testing';
+import {
+  FormsModule,
+  FormBuilder,
+  FormControl,
+  FormControlName,
+  FormGroup,
+  ReactiveFormsModule,
+  Validators
+} from '@angular/forms';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NzFormControlComponent } from './nz-form-control.component';
@@ -10,7 +18,11 @@ describe('nz-form-control', () => {
   beforeEach(fakeAsync(() => {
     TestBed.configureTestingModule({
       imports: [NzFormModule, NoopAnimationsModule, ReactiveFormsModule, FormsModule],
-      declarations: [NzTestStaticFormControlComponent, NzTestReactiveFormControlComponent, NzTestReactiveFormControlInitStatusComponent]
+      declarations: [
+        NzTestStaticFormControlComponent,
+        NzTestReactiveFormControlComponent,
+        NzTestReactiveFormControlInitStatusComponent
+      ]
     });
     TestBed.compileComponents();
   }));
@@ -48,7 +60,9 @@ describe('nz-form-control', () => {
       statusList.forEach(status => {
         testComponent.status = status;
         fixture.detectChanges();
-        expect(formControl.nativeElement.querySelector('.ant-form-item-control').classList).toContain(statusMap[status]);
+        expect(formControl.nativeElement.querySelector('.ant-form-item-control').classList).toContain(
+          statusMap[status]
+        );
       });
     });
   });
@@ -66,8 +80,12 @@ describe('nz-form-control', () => {
       fixture.detectChanges();
       flush();
       fixture.detectChanges();
-      expect(formControls[0].nativeElement.querySelector('.ant-form-item-control').className).toContain('ant-form-item-control');
-      expect(formControls[1].nativeElement.querySelector('.ant-form-item-control').className).toContain('ant-form-item-control');
+      expect(formControls[0].nativeElement.querySelector('.ant-form-item-control').className).toBe(
+        'ant-form-item-control'
+      );
+      expect(formControls[1].nativeElement.querySelector('.ant-form-item-control').className).toBe(
+        'ant-form-item-control'
+      );
     }));
     it('should valid work', fakeAsync(() => {
       testComponent.formGroup.get('input')!.markAsDirty();
@@ -126,8 +144,12 @@ describe('nz-form-control', () => {
       fixture.detectChanges();
       flush();
       fixture.detectChanges();
-      expect(formControls[0].nativeElement.querySelector('.ant-form-item-control').classList).not.toContain('has-error');
-      expect(formControls[1].nativeElement.querySelector('.ant-form-item-control').classList).not.toContain('has-error');
+      expect(formControls[0].nativeElement.querySelector('.ant-form-item-control').classList).not.toContain(
+        'has-error'
+      );
+      expect(formControls[1].nativeElement.querySelector('.ant-form-item-control').classList).not.toContain(
+        'has-error'
+      );
     }));
     it('should pending work', fakeAsync(() => {
       testComponent.formGroup.get('input2')!.markAsDirty();

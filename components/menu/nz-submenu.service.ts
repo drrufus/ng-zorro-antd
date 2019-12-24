@@ -7,7 +7,7 @@
  */
 
 import { Injectable, Optional, SkipSelf } from '@angular/core';
-import { BehaviorSubject, combineLatest, Subject } from 'rxjs';
+import { combineLatest, BehaviorSubject, Subject } from 'rxjs';
 import { auditTime, distinctUntilChanged, map, tap } from 'rxjs/operators';
 
 import { NzDirectionVHIType } from 'ng-zorro-antd/core';
@@ -66,7 +66,10 @@ export class NzSubmenuService {
     }
   }
 
-  constructor(@SkipSelf() @Optional() private nzHostSubmenuService: NzSubmenuService, public nzMenuService: NzMenuService) {
+  constructor(
+    @SkipSelf() @Optional() private nzHostSubmenuService: NzSubmenuService,
+    public nzMenuService: NzMenuService
+  ) {
     if (this.nzHostSubmenuService) {
       this.setLevel(this.nzHostSubmenuService.level + 1);
     }

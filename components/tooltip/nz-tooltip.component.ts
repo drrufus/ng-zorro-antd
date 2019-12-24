@@ -18,9 +18,9 @@ import {
   ViewEncapsulation
 } from '@angular/core';
 
-import { NzNoAnimationDirective, NzTSType, zoomBigMotion } from 'ng-zorro-antd/core';
+import { zoomBigMotion, NzNoAnimationDirective, NzTSType } from 'ng-zorro-antd/core';
 
-import { isTooltipEmpty, NzTooltipBaseComponent } from './nz-tooltip-base.component';
+import { NzTooltipBaseComponentLegacy } from './base/nz-tooltip-base-legacy.component';
 
 @Component({
   selector: 'nz-tooltip',
@@ -30,6 +30,12 @@ import { isTooltipEmpty, NzTooltipBaseComponent } from './nz-tooltip-base.compon
   animations: [zoomBigMotion],
   templateUrl: './nz-tooltip.component.html',
   preserveWhitespaces: false,
+  providers: [
+    {
+      provide: NzTooltipBaseComponentLegacy,
+      useExisting: NzToolTipComponent
+    }
+  ],
   styles: [
     `
       .ant-tooltip {
@@ -38,15 +44,11 @@ import { isTooltipEmpty, NzTooltipBaseComponent } from './nz-tooltip-base.compon
     `
   ]
 })
-export class NzToolTipComponent extends NzTooltipBaseComponent {
+export class NzToolTipComponent extends NzTooltipBaseComponentLegacy {
   @Input() nzTitle: NzTSType | null;
   @ContentChild('nzTemplate', { static: true }) nzTitleTemplate: TemplateRef<void>;
 
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
     super(cdr);
-  }
-
-  protected isEmpty(): boolean {
-    return isTooltipEmpty(this.title);
   }
 }

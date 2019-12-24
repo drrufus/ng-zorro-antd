@@ -17,5 +17,8 @@ import { RouterLink, RouterLinkWithHref } from '@angular/router';
   exportAs: 'nzTabLink'
 })
 export class NzTabLinkDirective {
-  constructor(@Optional() @Self() public routerLink?: RouterLink, @Optional() @Self() public routerLinkWithHref?: RouterLinkWithHref) {}
+  constructor(
+    @Optional() @Self() public routerLink?: RouterLink,
+    @Optional() @Self() public routerLinkWithHref?: RouterLinkWithHref
+  ) {}
 }

@@ -4,7 +4,12 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 @Component({
   selector: 'nz-demo-form-layout',
   template: `
-    <form nz-form [nzLayout]="validateForm.get('formLayout')?.value" [formGroup]="validateForm" (ngSubmit)="submitForm()">
+    <form
+      nz-form
+      [nzLayout]="validateForm.get('formLayout')?.value"
+      [formGroup]="validateForm"
+      (ngSubmit)="submitForm()"
+    >
       <nz-form-item>
         <nz-form-label [nzSpan]="isHorizontal ? 4 : null">Form Layout</nz-form-label>
         <nz-form-control [nzSpan]="isHorizontal ? 14 : null">

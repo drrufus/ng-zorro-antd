@@ -25,7 +25,15 @@ import {
 import { fromEvent, Subscription } from 'rxjs';
 import { distinctUntilChanged, throttleTime } from 'rxjs/operators';
 
-import { InputBoolean, InputNumber, NgStyleInterface, NzConfigService, NzScrollService, toNumber, WithConfig } from 'ng-zorro-antd/core';
+import {
+  toNumber,
+  InputBoolean,
+  InputNumber,
+  NgStyleInterface,
+  NzConfigService,
+  NzScrollService,
+  WithConfig
+} from 'ng-zorro-antd/core';
 
 import { NzAnchorLinkComponent } from './nz-anchor-link.component';
 
@@ -129,7 +137,10 @@ export class NzAnchorComponent implements OnDestroy, AfterViewInit {
     }
     this.removeListen();
     this.scroll$ = fromEvent(this.getTarget(), 'scroll')
-      .pipe(throttleTime(50), distinctUntilChanged())
+      .pipe(
+        throttleTime(50),
+        distinctUntilChanged()
+      )
       .subscribe(() => this.handleScroll());
     // Browser would maintain the scrolling position when refreshing.
     // So we have to delay calculation in avoid of getting a incorrect result.
@@ -203,7 +214,9 @@ export class NzAnchorComponent implements OnDestroy, AfterViewInit {
     comp.active = true;
     comp.markForCheck();
 
-    const linkNode = (comp.elementRef.nativeElement as HTMLDivElement).querySelector('.ant-anchor-link-title') as HTMLElement;
+    const linkNode = (comp.elementRef.nativeElement as HTMLDivElement).querySelector(
+      '.ant-anchor-link-title'
+    ) as HTMLElement;
     this.ink.nativeElement.style.top = `${linkNode.offsetTop + linkNode.clientHeight / 2 - 4.5}px`;
     this.visible = true;
     this.cdr.detectChanges();

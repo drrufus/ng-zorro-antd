@@ -11,6 +11,7 @@ import {
   AfterViewInit,
   ComponentFactory,
   ComponentFactoryResolver,
+  ComponentRef,
   ElementRef,
   EventEmitter,
   Input,
@@ -22,12 +23,13 @@ import {
   SimpleChanges,
   ViewContainerRef
 } from '@angular/core';
-import { NgStyleInterface, NzNoAnimationDirective, NzTSType, warnDeprecation } from 'ng-zorro-antd/core';
+import { warnDeprecation, NgStyleInterface, NzNoAnimationDirective, NzTSType } from 'ng-zorro-antd/core';
 import { Subject } from 'rxjs';
 import { distinctUntilChanged, takeUntil } from 'rxjs/operators';
 
+import { NzTooltipTrigger } from '../nz-tooltip.definitions';
+import { NzTooltipBaseComponentLegacy } from './nz-tooltip-base-legacy.component';
 import { NzTooltipBaseComponent } from './nz-tooltip-base.component';
-import { NzTooltipTrigger } from './nz-tooltip.definitions';
 
 export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDestroy, AfterViewInit {
   directiveNameTitle?: NzTSType | null;
@@ -36,27 +38,28 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
   specificContent?: NzTSType | null;
   specificTrigger?: NzTooltipTrigger;
   specificPlacement?: string;
+  tooltipRef: ComponentRef<NzTooltipBaseComponent>;
 
   /**
-   * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+   * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
    * Please use a more specific API. Like `nzTooltipTitle`.
    */
   @Input() nzTitle: NzTSType | null;
 
   /**
-   * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+   * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
    * Please use a more specific API. Like `nzPopoverContent`.
    */
   @Input() nzContent: NzTSType | null;
 
   /**
-   * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+   * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
    * Please use a more specific API. Like `nzTooltipTrigger`.
    */
   @Input() nzTrigger: NzTooltipTrigger = 'hover';
 
   /**
-   * @deprecated 10.0.0. This is deprecated and going to be removed in 10.0.0.
+   * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
    * Please use a more specific API. Like `nzTooltipPlacement`.
    */
   @Input() nzPlacement: string = 'top';
@@ -88,8 +91,7 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
   }
 
   protected get trigger(): NzTooltipTrigger {
-    // NzTooltipTrigger can be null.
-    return typeof this.specificTrigger !== 'undefined' ? this.specificTrigger : this.nzTrigger;
+    return this.specificTrigger || this.nzTrigger;
   }
 
   protected needProxyProperties = [
@@ -103,11 +105,18 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
 
   @Output() readonly nzVisibleChange = new EventEmitter<boolean>();
 
-  isTooltipComponentVisible = false;
   tooltip: NzTooltipBaseComponent;
 
-  protected readonly $destroy = new Subject<void>();
-  protected readonly triggerDisposables: Array<() => void> = [];
+  isTooltipComponentVisible = false;
+
+  /**
+   * @deprecated 9.0.0. Tooltips would always be dynamic in 9.0.0.
+   */
+  protected isDynamicTooltip = false;
+
+  protected readonly triggerUnlisteners: Array<() => void> = [];
+
+  protected $destroy = new Subject<void>();
 
   private delayTimer?: number;
 
@@ -116,6 +125,10 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
     protected hostView: ViewContainerRef,
     protected resolver: ComponentFactoryResolver,
     protected renderer: Renderer2,
+    /**
+     * @deprecated 9.0.0. This will always be `null`.
+     */
+    protected _tooltip?: NzTooltipBaseComponentLegacy,
     protected noAnimation?: NzNoAnimationDirective
   ) {}
 
@@ -127,45 +140,56 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
       this.registerTriggers();
     }
 
-    if (this.tooltip) {
+    if (this.tooltip && this.isDynamicTooltip) {
       this.updateChangedProperties(changes);
     }
 
-    if (changes.nzTitle) {
-      warnDeprecation(
-        `'nzTitle' of 'nz-tooltip' is deprecated and will be removed in 10.0.0.
-Please use 'nzTooltipTitle' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
-      );
-    }
+    // TODO: enable these warning in 9.0.0.
+    // if (changes.nzTitle) {
+    //   warnDeprecation(
+    //     `'nzTitle' of 'nz-tooltip' is deprecated and will be removed in 10.0.0. Please use 'nzTooltipTitle' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
+    //   );
+    // }
 
-    if (changes.nzContent) {
-      warnDeprecation(
-        `'nzContent' of 'nz-popover' is deprecated and will be removed in 10.0.0.
-Please use 'nzPopoverContent' instead.`
-      );
-    }
+    // if (changes.nzContent) {
+    //   warnDeprecation(
+    //     `'nzContent' of 'nz-popover' is deprecated and will be removed in 10.0.0. Please use 'nzPopoverContent' instead.`
+    //   );
+    // }
 
-    if (changes.nzPlacement) {
-      warnDeprecation(
-        `'nzPlacement' of 'nz-tooltip' is deprecated and will be removed in 10.0.0.
-Please use 'nzTooltipContent' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
-      );
-    }
+    // if (changes.nzPlacement) {
+    //   warnDeprecation(
+    //     `'nzPlacement' of 'nz-tooltip' is deprecated and will be removed in 10.0.0. Please use 'nzTooltipContent' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
+    //   );
+    // }
 
-    if (changes.nzTrigger) {
-      warnDeprecation(
-        `'nzTrigger' of 'nz-tooltip' is deprecated and will be removed in 10.0.0.
-Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
-      );
-    }
+    // if (changes.nzTrigger) {
+    //   warnDeprecation(
+    //     `'nzTrigger' of 'nz-tooltip' is deprecated and will be removed in 10.0.0. Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popconfirm'.`
+    //   );
+    // }
   }
 
   ngOnInit(): void {
-    this.createTooltipComponent();
-    this.tooltip.nzVisibleChange.pipe(distinctUntilChanged(), takeUntil(this.$destroy)).subscribe((visible: boolean) => {
-      this.isTooltipComponentVisible = visible;
-      this.nzVisibleChange.emit(visible);
-    });
+    if (!this._tooltip) {
+      this.createDynamicTooltipComponent();
+    } else {
+      warnDeprecation(
+        `'<nz-tooltip></nz-tooltip>', '<nz-popover></nz-popover>' and '<nz-popconfirm></nz-popconfirm>' is deprecated and will be removed in 9.0.0. Refer: https://ng.ant.design/components/tooltip/zh .`
+      );
+      this.tooltip = this._tooltip;
+      this.tooltip.setOverlayOrigin(this as CdkOverlayOrigin);
+    }
+
+    this.tooltip.nzVisibleChange
+      .pipe(
+        distinctUntilChanged(),
+        takeUntil(this.$destroy)
+      )
+      .subscribe((visible: boolean) => {
+        this.isTooltipComponentVisible = visible;
+        this.nzVisibleChange.emit(visible);
+      });
   }
 
   ngAfterViewInit(): void {
@@ -179,6 +203,10 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
     // Clear toggling timer. Issue #3875 #4317 #4386
     this.clearTogglingTimer();
     this.removeTriggerListeners();
+
+    if (this.tooltipRef) {
+      this.tooltipRef.destroy();
+    }
   }
 
   show(): void {
@@ -193,7 +221,7 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
    * Force the component to update its position.
    */
   updatePosition(): void {
-    if (this.tooltip) {
+    if (this.tooltip && this.isDynamicTooltip) {
       this.tooltip.updatePosition();
     }
   }
@@ -201,15 +229,21 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
   /**
    * Create a dynamic tooltip component. This method can be override.
    */
-  protected createTooltipComponent(): void {
-    const tooltipRef = this.hostView.createComponent(this.componentFactory);
+  protected createDynamicTooltipComponent(): void {
+    this.isDynamicTooltip = true;
 
-    this.tooltip = tooltipRef.instance;
+    this.tooltipRef = this.hostView.createComponent(this.componentFactory);
 
-    // Remove the component's DOM because it should be in the overlay container.
-    this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), tooltipRef.location.nativeElement);
+    this.tooltip = this.tooltipRef.instance;
+    this.renderer.removeChild(
+      this.renderer.parentNode(this.elementRef.nativeElement),
+      this.tooltipRef.location.nativeElement
+    ); // Remove the component's DOM because it should be in the overlay container.
+
+    // If the tooltip component is dynamically created, we should set its origin before updating properties to
+    // the component.
     this.tooltip.setOverlayOrigin(this as CdkOverlayOrigin);
-
+    // Update all properties to the component.
     this.updateChangedProperties(this.needProxyProperties);
   }
 
@@ -217,28 +251,28 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
     // When the method gets invoked, all properties has been synced to the dynamic component.
     // After removing the old API, we can just check the directive's own `nzTrigger`.
     const el = this.elementRef.nativeElement;
-    const trigger = this.trigger;
+    const trigger = this.isDynamicTooltip ? this.trigger : this.tooltip.nzTrigger;
 
     this.removeTriggerListeners();
 
     if (trigger === 'hover') {
       let overlayElement: HTMLElement;
-      this.triggerDisposables.push(
+      this.triggerUnlisteners.push(
         this.renderer.listen(el, 'mouseenter', () => {
           this.delayEnterLeave(true, true, this.tooltip.nzMouseEnterDelay);
         })
       );
-      this.triggerDisposables.push(
+      this.triggerUnlisteners.push(
         this.renderer.listen(el, 'mouseleave', () => {
           this.delayEnterLeave(true, false, this.tooltip.nzMouseLeaveDelay);
           if (this.tooltip.overlay.overlayRef && !overlayElement) {
             overlayElement = this.tooltip.overlay.overlayRef.overlayElement;
-            this.triggerDisposables.push(
+            this.triggerUnlisteners.push(
               this.renderer.listen(overlayElement, 'mouseenter', () => {
                 this.delayEnterLeave(false, true);
               })
             );
-            this.triggerDisposables.push(
+            this.triggerUnlisteners.push(
               this.renderer.listen(overlayElement, 'mouseleave', () => {
                 this.delayEnterLeave(false, false);
               })
@@ -247,10 +281,10 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
         })
       );
     } else if (trigger === 'focus') {
-      this.triggerDisposables.push(this.renderer.listen(el, 'focus', () => this.show()));
-      this.triggerDisposables.push(this.renderer.listen(el, 'blur', () => this.hide()));
+      this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', () => this.show()));
+      this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', () => this.hide()));
     } else if (trigger === 'click') {
-      this.triggerDisposables.push(
+      this.triggerUnlisteners.push(
         this.renderer.listen(el, 'click', e => {
           e.preventDefault();
           this.show();
@@ -264,10 +298,10 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
    */
   protected updateChangedProperties(propertiesOrChanges: string[] | SimpleChanges): void {
     const isArray = Array.isArray(propertiesOrChanges);
-    const keys = isArray ? (propertiesOrChanges as string[]) : Object.keys(propertiesOrChanges);
+    const keys_ = isArray ? (propertiesOrChanges as string[]) : Object.keys(propertiesOrChanges);
 
     // tslint:disable-next-line no-any
-    keys.forEach((property: any) => {
+    keys_.forEach((property: any) => {
       if (this.needProxyProperties.indexOf(property) !== -1) {
         // @ts-ignore
         this.updateComponentValue(property, this[property]);
@@ -322,8 +356,8 @@ Please use 'nzTooltipTrigger' instead. The same with 'nz-popover' and 'nz-popcon
   }
 
   private removeTriggerListeners(): void {
-    this.triggerDisposables.forEach(dispose => dispose());
-    this.triggerDisposables.length = 0;
+    this.triggerUnlisteners.forEach(cancel => cancel());
+    this.triggerUnlisteners.length = 0;
   }
 
   private clearTogglingTimer(): void {

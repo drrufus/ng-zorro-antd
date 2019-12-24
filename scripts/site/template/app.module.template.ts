@@ -6,11 +6,10 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule } from '@angular/router';
 import { IconDefinition } from '@ant-design/icons-angular';
 import { LeftOutline, RightOutline } from '@ant-design/icons-angular/icons';
-import { NZ_ICON_DEFAULT_TWOTONE_COLOR, NZ_ICONS } from 'ng-zorro-antd/icon';
+import { NgZorroAntdModule, NZ_ICON_DEFAULT_TWOTONE_COLOR, NZ_ICONS } from 'ng-zorro-antd';
 
 import { AppComponent } from './app.component';
 import { routes } from './app.routing.module';
-import { SiteNgZorroAntdModule } from './ng-zorro-antd.module';
 {{importPart}}
 
 const icons: IconDefinition[] = [ LeftOutline, RightOutline ];
@@ -25,7 +24,7 @@ const icons: IconDefinition[] = [ LeftOutline, RightOutline ];
     BrowserAnimationsModule,
     FormsModule,
     HttpClientModule,
-    SiteNgZorroAntdModule,
+    NgZorroAntdModule,
     RouterModule.forRoot(routes,{ useHash: true })
   ],
   providers   : [

@@ -14,8 +14,7 @@
   [noAnimation]="noAnimation?.nzNoAnimation"
   (openChange)="onOpenChange($event)"
 >
-  <date-range-popup
-    *ngIf="realOpenState"
+  <date-range-popup *ngIf="realOpenState"
     [isRange]="isRange"
     [showWeek]="showWeek"
     [panelMode]="nzMode"

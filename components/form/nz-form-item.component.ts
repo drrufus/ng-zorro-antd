@@ -52,7 +52,8 @@ import { NzFormExplainComponent } from './nz-form-explain.component';
     `
   ]
 })
-export class NzFormItemComponent extends NzRowDirective implements AfterContentInit, OnDestroy, OnChanges, OnInit, OnDestroy {
+export class NzFormItemComponent extends NzRowDirective
+  implements AfterContentInit, OnDestroy, OnChanges, OnInit, OnDestroy {
   @Input() @InputBoolean() nzFlex: boolean = false;
   @ContentChildren(NzFormExplainComponent, { descendants: true })
   listOfNzFormExplainComponent: QueryList<NzFormExplainComponent>;
@@ -89,10 +90,15 @@ export class NzFormItemComponent extends NzRowDirective implements AfterContentI
 
   ngAfterContentInit(): void {
     if (!this.tipsMode) {
-      this.listOfNzFormExplainComponent.changes.pipe(startWith(true), takeUntil(this.destroy$)).subscribe(() => {
-        this.withHelpClass = this.listOfNzFormExplainComponent && this.listOfNzFormExplainComponent.length > 0;
-        this.cdr.markForCheck();
-      });
+      this.listOfNzFormExplainComponent.changes
+        .pipe(
+          startWith(true),
+          takeUntil(this.destroy$)
+        )
+        .subscribe(() => {
+          this.withHelpClass = this.listOfNzFormExplainComponent && this.listOfNzFormExplainComponent.length > 0;
+          this.cdr.markForCheck();
+        });
     }
   }
 

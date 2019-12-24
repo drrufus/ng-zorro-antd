@@ -6,7 +6,16 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
-import { ChangeDetectionStrategy, Component, ElementRef, Input, OnChanges, OnInit, TemplateRef, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  ElementRef,
+  Input,
+  OnChanges,
+  OnInit,
+  TemplateRef,
+  ViewEncapsulation
+} from '@angular/core';
 
 import { InputBoolean, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 

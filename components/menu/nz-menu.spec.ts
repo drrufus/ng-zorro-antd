@@ -1,8 +1,16 @@
 import { Directionality } from '@angular/cdk/bidi';
 import { ConnectedOverlayPositionChange, OverlayContainer } from '@angular/cdk/overlay';
 import { ScrollDispatcher } from '@angular/cdk/scrolling';
-import { Component, DebugElement, ElementRef, NO_ERRORS_SCHEMA, QueryList, ViewChild, ViewChildren } from '@angular/core';
-import { async, ComponentFixture, fakeAsync, inject, TestBed, tick } from '@angular/core/testing';
+import {
+  Component,
+  DebugElement,
+  ElementRef,
+  NO_ERRORS_SCHEMA,
+  QueryList,
+  ViewChild,
+  ViewChildren
+} from '@angular/core';
+import { async, fakeAsync, inject, tick, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { Subject } from 'rxjs';
@@ -106,7 +114,9 @@ describe('menu', () => {
       it('should className correct', () => {
         fixture.detectChanges();
         expect(submenus.every(subitem => subitem.nativeElement.classList.contains('ant-menu-submenu'))).toBe(true);
-        expect(submenus.every(subitem => subitem.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(true);
+        expect(submenus.every(subitem => subitem.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(
+          true
+        );
         expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-light ant-menu-inline');
       });
       it('should padding left work', () => {
@@ -149,7 +159,9 @@ describe('menu', () => {
         expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-dark ant-menu-inline');
         testComponent.isCollapsed = true;
         fixture.detectChanges();
-        expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-dark ant-menu-vertical ant-menu-inline-collapsed');
+        expect(menu.nativeElement.className).toBe(
+          'ant-menu ant-menu-root ant-menu-dark ant-menu-vertical ant-menu-inline-collapsed'
+        );
         testComponent.isCollapsed = false;
         fixture.detectChanges();
         expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-dark ant-menu-inline');
@@ -245,12 +257,18 @@ describe('menu', () => {
       it('should className correct', () => {
         fixture.detectChanges();
         expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-light ant-menu-inline');
-        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(true);
+        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(
+          true
+        );
         testComponent.mode = true;
         fixture.detectChanges();
         expect(menu.nativeElement.className).toBe('ant-menu ant-menu-root ant-menu-light ant-menu-vertical');
-        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(false);
-        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-vertical'))).toBe(true);
+        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-inline'))).toBe(
+          false
+        );
+        expect(submenus.every(submenu => submenu.nativeElement.classList.contains('ant-menu-submenu-vertical'))).toBe(
+          true
+        );
       });
     });
   });
@@ -399,7 +417,9 @@ describe('menu', () => {
         fixture.detectChanges();
         testComponent.open = true;
         fixture.detectChanges();
-        expect((overlayContainerElement.querySelector('ul.submenu') as HTMLUListElement).classList).toContain('ant-menu-sub');
+        expect((overlayContainerElement.querySelector('ul.submenu') as HTMLUListElement).classList).toContain(
+          'ant-menu-sub'
+        );
       }));
       it('should nested submenu `nzMenuClassName` work', () => {
         testComponent.open = true;
@@ -408,7 +428,9 @@ describe('menu', () => {
         subs[1].nzOpen = true;
         subs[1].nzSubmenuService.open$.next(true);
         fixture.detectChanges();
-        expect((overlayContainerElement.querySelector('ul.nested-submenu') as HTMLUListElement).classList).toContain('ant-menu-sub');
+        expect((overlayContainerElement.querySelector('ul.nested-submenu') as HTMLUListElement).classList).toContain(
+          'ant-menu-sub'
+        );
       });
     });
     describe('inline submenu', () => {
@@ -473,7 +495,9 @@ describe('menu', () => {
       it('should default selected active submenu', () => {
         const fixture = TestBed.createComponent(NzTestSubMenuSelectedComponent);
         fixture.detectChanges();
-        expect(fixture.debugElement.nativeElement.querySelector('.ant-menu-submenu').classList).toContain('ant-menu-submenu-selected');
+        expect(fixture.debugElement.nativeElement.querySelector('.ant-menu-submenu').classList).toContain(
+          'ant-menu-submenu-selected'
+        );
       });
     });
   });

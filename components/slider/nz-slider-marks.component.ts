@@ -10,7 +10,7 @@ import { ChangeDetectionStrategy, Component, Input, OnChanges, SimpleChanges, Vi
 
 import { InputBoolean, NgStyleInterface } from 'ng-zorro-antd/core';
 
-import { DisplayedMark, ExtendedMark, isConfigAObject, Mark } from './nz-slider-definitions';
+import { isConfigAObject, DisplayedMark, ExtendedMark, Mark } from './nz-slider-definitions';
 
 @Component({
   changeDetection: ChangeDetectionStrategy.OnPush,

@@ -6,7 +6,15 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
-import { AfterViewInit, Directive, ElementRef, EventEmitter, ExistingProvider, forwardRef, OnDestroy } from '@angular/core';
+import {
+  forwardRef,
+  AfterViewInit,
+  Directive,
+  ElementRef,
+  EventEmitter,
+  ExistingProvider,
+  OnDestroy
+} from '@angular/core';
 import { ControlValueAccessor, NG_VALUE_ACCESSOR } from '@angular/forms';
 
 import { Mention } from './nz-mention.component';
@@ -60,7 +68,11 @@ export class NzMentionTriggerDirective implements ControlValueAccessor, OnDestro
   insertMention(mention: Mention): void {
     const value: string = this.el.nativeElement.value;
     const insertValue = mention.mention.trim() + ' ';
-    const newValue = [value.slice(0, mention.startPos + 1), insertValue, value.slice(mention.endPos, value.length)].join('');
+    const newValue = [
+      value.slice(0, mention.startPos + 1),
+      insertValue,
+      value.slice(mention.endPos, value.length)
+    ].join('');
     this.el.nativeElement.value = newValue;
     this.focus(mention.startPos + insertValue.length + 1);
     this.onChange(newValue);

@@ -165,7 +165,12 @@ export class NzCascaderService implements OnDestroy {
    * @param performSelect Select
    * @param loadingChildren Try to load children asynchronously.
    */
-  setOptionActivated(option: NzCascaderOption, columnIndex: number, performSelect: boolean = false, loadingChildren: boolean = true): void {
+  setOptionActivated(
+    option: NzCascaderOption,
+    columnIndex: number,
+    performSelect: boolean = false,
+    loadingChildren: boolean = true
+  ): void {
     if (option.disabled) {
       return;
     }

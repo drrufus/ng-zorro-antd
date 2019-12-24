@@ -7,12 +7,12 @@
  */
 
 import {
+  forwardRef,
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ContentChild,
   EventEmitter,
-  forwardRef,
   Host,
   Input,
   OnChanges,
@@ -29,8 +29,9 @@ import { Observable, ReplaySubject, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
 import {
-  InputBoolean,
   isNotNil,
+  warnDeprecation,
+  InputBoolean,
   NzConfigService,
   NzFormatBeforeDropEvent,
   NzFormatEmitEvent,
@@ -39,13 +40,15 @@ import {
   NzTreeBaseService,
   NzTreeHigherOrderServiceToken,
   NzTreeNode,
-  warnDeprecation,
   WithConfig
 } from 'ng-zorro-antd/core';
 
 import { NzTreeService } from './nz-tree.service';
 
-export function NzTreeServiceFactory(higherOrderService: NzTreeBaseService, treeService: NzTreeService): NzTreeBaseService {
+export function NzTreeServiceFactory(
+  higherOrderService: NzTreeBaseService,
+  treeService: NzTreeService
+): NzTreeBaseService {
   return higherOrderService ? higherOrderService : treeService;
 }
 

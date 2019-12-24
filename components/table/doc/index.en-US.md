@@ -12,6 +12,10 @@ A table displays rows of data.
 - To display a collection of structured data.
 - To sort, search, paginate, filter data.
 
+## Import this Component Individually
+
+You can get more detail [here](/docs/getting-started/en#import-a-component-individually).
+
 ```ts
 import { NzTableModule } from 'ng-zorro-antd/table';
 ```

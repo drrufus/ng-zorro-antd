@@ -12,7 +12,7 @@ title: 全局配置项
 想要为某些组件提供默认配置项，请在根注入器中根据注入令牌 `NZ_CONFIG` 提供一个符合 `NzConfig` 接口的对象，例如：
 
 ```typescript
-import { NzConfig, NZ_CONFIG } from 'ng-zorro-antd/core';
+import { NgZorroAntdModule, NzConfig, NZ_CONFIG } from 'ng-zorro-antd';
 
 const ngZorroConfig: NzConfig = {
   // 注意组件名称没有 nz 前缀
@@ -24,6 +24,7 @@ const ngZorroConfig: NzConfig = {
   declarations: [AppComponent],
   imports: [
     CommonModule
+    NgZorroAntdModule,
   ],
   providers: [
     { provide: NZ_CONFIG, useValue: ngZorroConfig }
@@ -116,7 +117,7 @@ export class AppModule {}
 你可以通过调用 `NzConfigService` 的 `set` 方法来改变某个组件的全局配置项，例如：
 
 ```typescript
-import { NzConfigService } from 'ng-zorro-antd/core';
+import { NzConfigService } from 'ng-zorro-antd';
 
 @Component({
   selector: 'app-change-zorro-config'

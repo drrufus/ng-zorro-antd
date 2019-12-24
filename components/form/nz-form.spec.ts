@@ -1,5 +1,5 @@
 import { Component, DebugElement } from '@angular/core';
-import { ComponentFixture, fakeAsync, TestBed } from '@angular/core/testing';
+import { fakeAsync, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { NzFormItemComponent } from './nz-form-item.component';
@@ -69,7 +69,9 @@ describe('nz-form', () => {
 
     it('should set default `NoColon` value', () => {
       fixture.detectChanges();
-      const labels = (form.nativeElement as HTMLElement).querySelectorAll<HTMLLabelElement>('.ant-form-item-label label');
+      const labels = (form.nativeElement as HTMLElement).querySelectorAll<HTMLLabelElement>(
+        '.ant-form-item-label label'
+      );
       labels.forEach(label => expect(label.classList).not.toContain('ant-form-item-no-colon'));
       testComponent.defaultNoColon = true;
       fixture.detectChanges();
@@ -78,7 +80,9 @@ describe('nz-form', () => {
 
     it('should label have high priority', () => {
       fixture.detectChanges();
-      const labels = (form.nativeElement as HTMLElement).querySelectorAll<HTMLLabelElement>('.ant-form-item-label label');
+      const labels = (form.nativeElement as HTMLElement).querySelectorAll<HTMLLabelElement>(
+        '.ant-form-item-label label'
+      );
       labels.forEach(label => expect(label.classList).not.toContain('ant-form-item-no-colon'));
       testComponent.defaultNoColon = true;
       fixture.detectChanges();

@@ -29,9 +29,9 @@ export function registerLocale(options: Schema): Rule {
 
     const changes = [
       insertImport(moduleSource, appModulePath, 'NZ_I18N',
-        'ng-zorro-antd/i18n'),
+        'ng-zorro-antd'),
       insertImport(moduleSource, appModulePath, locale,
-        'ng-zorro-antd/i18n'),
+        'ng-zorro-antd'),
       insertImport(moduleSource, appModulePath, 'registerLocaleData',
         '@angular/common'),
       insertImport(moduleSource, appModulePath, localePrefix,

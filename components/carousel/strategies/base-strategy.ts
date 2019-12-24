@@ -34,7 +34,11 @@ export abstract class NzCarouselBaseStrategy {
     return this.contents[this.maxIndex].el;
   }
 
-  constructor(carouselComponent: NzCarouselComponentAsSource, protected cdr: ChangeDetectorRef, protected renderer: Renderer2) {
+  constructor(
+    carouselComponent: NzCarouselComponentAsSource,
+    protected cdr: ChangeDetectorRef,
+    protected renderer: Renderer2
+  ) {
     this.carouselComponent = carouselComponent;
   }
 

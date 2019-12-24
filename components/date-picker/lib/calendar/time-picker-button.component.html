@@ -1,7 +1,5 @@
 <a
-  class="{{ prefixCls }}-time-picker-btn {{
-    timePickerDisabled ? prefixCls + '-time-picker-btn-disabled' : ''
-  }}"
+  class="{{ prefixCls }}-time-picker-btn {{ timePickerDisabled ? prefixCls + '-time-picker-btn-disabled' : '' }}"
   role="button"
   (click)="timePickerDisabled ? null : onClick()"
 >

@@ -39,10 +39,17 @@ import {
 import { fromEvent, Observable, Subject } from 'rxjs';
 import { takeUntil } from 'rxjs/operators';
 
-import { getElementOffset, InputBoolean, isPromise, NzConfigService, warnDeprecation, WithConfig } from 'ng-zorro-antd/core';
+import {
+  getElementOffset,
+  isPromise,
+  warnDeprecation,
+  InputBoolean,
+  NzConfigService,
+  WithConfig
+} from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 
-import { NZ_MODAL_CONFIG, NzModalConfig } from './nz-modal-config';
+import { NzModalConfig, NZ_MODAL_CONFIG } from './nz-modal-config';
 import { NzModalControlService } from './nz-modal-control.service';
 import { NzModalFooterDirective } from './nz-modal-footer.directive';
 import { NzModalRef } from './nz-modal-ref.class';
@@ -97,7 +104,8 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
   @Input() nzOkType: string = 'primary';
   @Input() nzIconType: string = 'question-circle'; // Confirm Modal ONLY
   @Input() nzModalType: ModalType = 'default';
-  @Input() nzAriaLabel: string = 'Close';
+
+  @Input() nzCloseAriaLabel: string = 'Close';
 
   @Input() @Output() readonly nzOnOk: EventEmitter<T> | OnClickCallback<T> = new EventEmitter<T>();
   @Input() @Output() readonly nzOnCancel: EventEmitter<T> | OnClickCallback<T> = new EventEmitter<T>();
@@ -209,7 +217,9 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     this.scrollStrategy = this.overlay.scrollStrategies.block();
 
     if (this.nzModalGlobalConfig) {
-      warnDeprecation('`NZ_MODAL_CONFIG` has been deprecated and will be removed in 9.0.0. Please use global config instead.');
+      warnDeprecation(
+        '`NZ_MODAL_CONFIG` has been deprecated and will be removed in 9.0.0. Please use global config instead.'
+      );
     }
   }
 
@@ -387,7 +397,7 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
           this[loadingKey] = false;
           caseClose(doClose);
         };
-        result.then(handleThen).catch(handleThen);
+        (result as Promise<void>).then(handleThen).catch(handleThen);
       } else {
         caseClose(result);
       }
@@ -455,7 +465,7 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     const result = this.getButtonCallableProp(button, 'onClick'); // Call onClick directly
     if (isPromise(result)) {
       button.loading = true;
-      result.then(() => (button.loading = false)).catch(() => (button.loading = false));
+      (result as Promise<{}>).then(() => (button.loading = false)).catch(() => (button.loading = false));
     }
   }
 

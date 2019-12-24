@@ -1,6 +1,6 @@
 import { Component, DebugElement, ViewChild } from '@angular/core';
-import { ComponentFixture, fakeAsync, flush, TestBed, tick } from '@angular/core/testing';
-import { FormBuilder, FormGroup, FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { fakeAsync, flush, tick, ComponentFixture, TestBed } from '@angular/core/testing';
+import { FormsModule, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { By } from '@angular/platform-browser';
 
 import { dispatchEvent, dispatchFakeEvent } from 'ng-zorro-antd/core';
@@ -381,11 +381,9 @@ describe('input number', () => {
     it('should update value immediately after formatter changed', () => {
       const newFormatter = (v: number) => `${v} %`;
       const initValue = 1;
-      const component = testComponent.nzInputNumberComponent;
-      component.onModelChange(`${initValue}`);
+      testComponent.nzInputNumberComponent.onModelChange(`${initValue}`);
       fixture.detectChanges();
-      component.nzFormatter = newFormatter;
-      component.setValue(component.getCurrentValidValue(component.actualValue), true);
+      testComponent.formatter = newFormatter;
       fixture.detectChanges();
       expect(inputElement.value).toBe(newFormatter(initValue));
     });

@@ -35,15 +35,15 @@ import { flatMap, map, startWith, takeUntil } from 'rxjs/operators';
 
 import {
   collapseMotion,
-  DEFAULT_SUBMENU_POSITIONS,
   getPlacementName,
+  slideMotion,
+  zoomBigMotion,
+  DEFAULT_SUBMENU_POSITIONS,
   InputBoolean,
   NzMenuBaseService,
   NzNoAnimationDirective,
   NzUpdateHostClassService,
-  POSITION_MAP,
-  slideMotion,
-  zoomBigMotion
+  POSITION_MAP
 } from 'ng-zorro-antd/core';
 
 import { NzMenuItemDirective } from './nz-menu-item.directive';
@@ -165,7 +165,8 @@ export class NzSubMenuComponent implements OnInit, OnDestroy, AfterContentInit, 
           this.isMouseHover = false;
           this.expandState = 'collapsed';
         }
-        this.overlayPositions = mode === 'horizontal' ? [POSITION_MAP.bottomLeft] : [POSITION_MAP.rightTop, POSITION_MAP.leftTop];
+        this.overlayPositions =
+          mode === 'horizontal' ? [POSITION_MAP.bottomLeft] : [POSITION_MAP.rightTop, POSITION_MAP.leftTop];
         if (open !== this.nzOpen) {
           this.setTriggerWidth();
           this.nzOpen = open;
@@ -194,7 +195,9 @@ export class NzSubMenuComponent implements OnInit, OnDestroy, AfterContentInit, 
     this.listOfNzMenuItemDirective.changes
       .pipe(
         startWith(true),
-        flatMap(() => merge(this.listOfNzMenuItemDirective.changes, ...this.listOfNzMenuItemDirective.map(menu => menu.selected$))),
+        flatMap(() =>
+          merge(this.listOfNzMenuItemDirective.changes, ...this.listOfNzMenuItemDirective.map(menu => menu.selected$))
+        ),
         startWith(true),
         map(() => this.listOfNzMenuItemDirective.some(e => e.nzSelected)),
         takeUntil(this.destroy$)

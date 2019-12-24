@@ -8,7 +8,15 @@
 
 import { animate, style, transition, trigger } from '@angular/animations';
 import { Platform } from '@angular/cdk/platform';
-import { ChangeDetectionStrategy, ChangeDetectorRef, Component, ElementRef, Input, OnChanges, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  ChangeDetectorRef,
+  Component,
+  ElementRef,
+  Input,
+  OnChanges,
+  ViewEncapsulation
+} from '@angular/core';
 
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 
@@ -21,7 +29,10 @@ import { ShowUploadListInterface, UploadFile, UploadListType } from './interface
   providers: [NzUpdateHostClassService],
   animations: [
     trigger('itemState', [
-      transition(':enter', [style({ height: '0', width: '0', opacity: 0 }), animate(150, style({ height: '*', width: '*', opacity: 1 }))]),
+      transition(':enter', [
+        style({ height: '0', width: '0', opacity: 0 }),
+        animate(150, style({ height: '*', width: '*', opacity: 1 }))
+      ]),
       transition(':leave', [animate(150, style({ height: '0', width: '0', opacity: 0 }))])
     ])
   ],
@@ -118,7 +129,13 @@ export class NzUploadListComponent implements OnChanges {
     }
     // tslint:disable-next-line:no-any
     const win = window as any;
-    if (!this.showPic || typeof document === 'undefined' || typeof win === 'undefined' || !win.FileReader || !win.File) {
+    if (
+      !this.showPic ||
+      typeof document === 'undefined' ||
+      typeof win === 'undefined' ||
+      !win.FileReader ||
+      !win.File
+    ) {
       return;
     }
     this.items

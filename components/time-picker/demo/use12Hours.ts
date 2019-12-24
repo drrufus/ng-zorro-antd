@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'nz-demo-time-picker-use12-hours',
+  selector: 'nz-demo-time-picker-use12Hours',
   template: `
     <nz-time-picker [(ngModel)]="time" [nzUse12Hours]="true"></nz-time-picker>
     <nz-time-picker [(ngModel)]="time" [nzUse12Hours]="true" nzFormat="h:mm a"></nz-time-picker>

@@ -22,10 +22,10 @@
       nzType="menu"
       class="nav-phone-icon"
       nz-popover
-      nzPopoverPlacement="bottomRight"
+      nzPlacement="bottomRight"
       nzOverlayClassName="popover-menu"
-      [nzPopoverContent]="languageAndVersionTpl"
-      [nzPopoverTrigger]="'click'">
+      [nzContent]="languageAndVersionTpl"
+      [nzTrigger]="'click'">
     </i>
     <div nz-row>
       <div nz-col [nzXs]="24" [nzSm]="24" [nzMd]="8" [nzLg]="5" [nzXl]="5" [nzXXl]="4">
@@ -161,7 +161,7 @@
                     </a>
                   </div>
                   <div>
-                    <a href="https://twitter.com/ng_zorro" target="_blank" rel="noopener noreferrer"><span>
+                    <a href="https://twitter.com/NG_ZORRO" target="_blank" rel="noopener noreferrer"><span>
                       <i nz-icon nzType="twitter" style="margin-right: 4px; color: rgb(29, 161, 242);"></i>Twitter
                     </span>
                     </a>
@@ -272,9 +272,9 @@
                   <div style="margin-top: 20px;">
                     <div class="theme-color"
                       nz-popover
-                      [nzPopoverTrigger]="'click'"
+                      [nzTrigger]="'click'"
                       nzOverlayClassName="theme-color-content"
-                      [nzPopoverContent]="colorTpl">
+                      [nzContent]="colorTpl">
                       <div class="theme-color-value" [ngStyle]="{'background': color}"></div>
                     </div>
                     <ng-template #colorTpl>

@@ -7,7 +7,16 @@
  */
 
 import { getLocaleNumberSymbol, NumberSymbol } from '@angular/common';
-import { ChangeDetectionStrategy, Component, Inject, Input, LOCALE_ID, OnChanges, TemplateRef, ViewEncapsulation } from '@angular/core';
+import {
+  ChangeDetectionStrategy,
+  Component,
+  Inject,
+  Input,
+  LOCALE_ID,
+  OnChanges,
+  TemplateRef,
+  ViewEncapsulation
+} from '@angular/core';
 import { NzStatisticValueType } from './nz-statistic-definitions';
 
 @Component({
@@ -36,7 +45,8 @@ export class NzStatisticNumberComponent implements OnChanges {
   }
 
   private formatNumber(): void {
-    const decimalSeparator: string = typeof this.nzValue === 'number' ? '.' : getLocaleNumberSymbol(this.locale_id, NumberSymbol.Decimal);
+    const decimalSeparator: string =
+      typeof this.nzValue === 'number' ? '.' : getLocaleNumberSymbol(this.locale_id, NumberSymbol.Decimal);
     const value = String(this.nzValue);
     const [int, decimal] = value.split(decimalSeparator);
 

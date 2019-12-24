@@ -2,7 +2,6 @@ const fs = require('fs-extra');
 const path = require('path');
 const routingTemplate = String(fs.readFileSync(path.resolve(__dirname, '../template/app.routing.module.template.ts')));
 const moduleTemplate = String(fs.readFileSync(path.resolve(__dirname, '../template/app.module.template.ts')));
-const zorroModule = String(fs.readFileSync(path.resolve(__dirname, '../template/ng-zorro-antd.module.template.ts')));
 
 module.exports = function (iframeTargetPath, componentsMap) {
   let routing = routingTemplate;
@@ -27,5 +26,4 @@ module.exports = function (iframeTargetPath, componentsMap) {
   module = module.replace(/{{declarationPart}}/g, declarationPart);
   fs.writeFileSync(path.join(iframeTargetPath, `app.routing.module.ts`), routing);
   fs.writeFileSync(path.join(iframeTargetPath, `app.module.ts`), module);
-  fs.writeFileSync(path.join(iframeTargetPath, `ng-zorro-antd.module.ts`), zorroModule);
 };

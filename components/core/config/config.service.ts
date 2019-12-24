@@ -13,7 +13,7 @@ import { Observable, Subject } from 'rxjs';
 
 import { filter, mapTo } from 'rxjs/operators';
 
-import { NZ_CONFIG, NzConfig, NzConfigKey } from './config';
+import { NzConfig, NzConfigKey, NZ_CONFIG } from './config';
 
 const isDefined = function(value?: any): boolean {
   return value !== undefined;
@@ -61,6 +61,12 @@ export function WithConfig<T>(componentName: NzConfigKey, innerDefaultValue?: T)
   return function ConfigDecorator(target: any, propName: any, originalDescriptor?: TypedPropertyDescriptor<T>): any {
     const privatePropName = `$$__assignedValue__${propName}`;
 
+    if (Object.prototype.hasOwnProperty.call(target, privatePropName)) {
+      console.warn(
+        `The prop "${privatePropName}" is already exist, it will be override by ${componentName} decorator.`
+      );
+    }
+
     Object.defineProperty(target, privatePropName, {
       configurable: true,
       writable: true,
@@ -69,7 +75,8 @@ export function WithConfig<T>(componentName: NzConfigKey, innerDefaultValue?: T)
 
     return {
       get(): T | undefined {
-        const originalValue = originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
+        const originalValue =
+          originalDescriptor && originalDescriptor.get ? originalDescriptor.get.bind(this)() : this[privatePropName];
 
         if (isDefined(originalValue)) {
           return originalValue;

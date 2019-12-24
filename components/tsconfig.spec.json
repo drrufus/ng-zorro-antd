@@ -12,7 +12,9 @@
   ],
   "include": [
     "**/*.spec.ts",
-    "**/*.d.ts",
-    "../node_modules/@types/jasmine/index.d.ts"
-  ]
+    "**/*.d.ts"
+  ],
+  "angularCompilerOptions": {
+    "enableIvy": false
+  }
 }

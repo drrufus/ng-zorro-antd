@@ -32,10 +32,17 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import { EMPTY, fromEvent, merge, Subject } from 'rxjs';
+import { fromEvent, merge, EMPTY, Subject } from 'rxjs';
 import { flatMap, startWith, takeUntil } from 'rxjs/operators';
 
-import { InputBoolean, InputNumber, measureScrollbar, NzConfigService, NzSizeMDSType, WithConfig } from 'ng-zorro-antd/core';
+import {
+  measureScrollbar,
+  InputBoolean,
+  InputNumber,
+  NzConfigService,
+  NzSizeMDSType,
+  WithConfig
+} from 'ng-zorro-antd/core';
 import { NzI18nService } from 'ng-zorro-antd/i18n';
 import { PaginationItemRenderContext } from 'ng-zorro-antd/pagination';
 
@@ -291,7 +298,10 @@ export class NzTableComponent<T = any> implements OnInit, AfterViewInit, OnDestr
           this.syncScrollTable(data);
         });
       fromEvent<UIEvent>(window, 'resize')
-        .pipe(startWith(true), takeUntil(this.destroy$))
+        .pipe(
+          startWith(true),
+          takeUntil(this.destroy$)
+        )
         .subscribe(() => {
           this.fitScrollBar();
           this.setScrollPositionClassName();
@@ -303,7 +313,9 @@ export class NzTableComponent<T = any> implements OnInit, AfterViewInit, OnDestr
     this.listOfNzThComponent.changes
       .pipe(
         startWith(true),
-        flatMap(() => merge(this.listOfNzThComponent.changes, ...this.listOfNzThComponent.map(th => th.nzWidthChange$))),
+        flatMap(() =>
+          merge(this.listOfNzThComponent.changes, ...this.listOfNzThComponent.map(th => th.nzWidthChange$))
+        ),
         takeUntil(this.destroy$)
       )
       .subscribe(() => {

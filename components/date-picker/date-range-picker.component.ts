@@ -6,9 +6,26 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
-import { ChangeDetectorRef, Component, EventEmitter, Input, OnChanges, OnInit, Output, SimpleChanges, TemplateRef } from '@angular/core';
+import {
+  ChangeDetectorRef,
+  Component,
+  EventEmitter,
+  Input,
+  OnChanges,
+  OnInit,
+  Output,
+  SimpleChanges,
+  TemplateRef
+} from '@angular/core';
 
-import { CandyDate, FunctionProp, InputBoolean, NzNoAnimationDirective, toBoolean, valueFunctionProp } from 'ng-zorro-antd/core';
+import {
+  toBoolean,
+  valueFunctionProp,
+  CandyDate,
+  FunctionProp,
+  InputBoolean,
+  NzNoAnimationDirective
+} from 'ng-zorro-antd/core';
 import { DateHelperService, NzI18nService } from 'ng-zorro-antd/i18n';
 
 import { AbstractPickerComponent } from './abstract-picker.component';
@@ -47,7 +64,12 @@ export class DateRangePickerComponent extends AbstractPickerComponent implements
   pickerStyle: object; // Final picker style that contains width fix corrections etc.
   extraFooter: TemplateRef<void> | string;
 
-  constructor(i18n: NzI18nService, cdr: ChangeDetectorRef, dateHelper: DateHelperService, noAnimation?: NzNoAnimationDirective) {
+  constructor(
+    i18n: NzI18nService,
+    cdr: ChangeDetectorRef,
+    dateHelper: DateHelperService,
+    noAnimation?: NzNoAnimationDirective
+  ) {
     super(i18n, cdr, dateHelper, noAnimation);
   }
 

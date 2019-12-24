@@ -20,10 +20,10 @@ import {
   ViewChild,
   ViewEncapsulation
 } from '@angular/core';
-import { Observable, of, Subscription } from 'rxjs';
+import { of, Observable, Subscription } from 'rxjs';
 import { switchMap } from 'rxjs/operators';
 
-import { NzUpdateHostClassService, warn } from 'ng-zorro-antd/core';
+import { warn, NzUpdateHostClassService } from 'ng-zorro-antd/core';
 
 import { UploadFile, UploadXHRArgs, ZipButtonOptions } from './interface';
 
@@ -139,7 +139,9 @@ export class NzUploadBtnComponent implements OnInit, OnChanges, OnDestroy {
         const validType = type.trim();
         if (validType.charAt(0) === '.') {
           return (
-            fileName.toLowerCase().indexOf(validType.toLowerCase(), fileName.toLowerCase().length - validType.toLowerCase().length) !== -1
+            fileName
+              .toLowerCase()
+              .indexOf(validType.toLowerCase(), fileName.toLowerCase().length - validType.toLowerCase().length) !== -1
           );
         } else if (/\/\*$/.test(validType)) {
           // This is something like a image/* mime type
@@ -325,7 +327,11 @@ export class NzUploadBtnComponent implements OnInit, OnChanges, OnDestroy {
 
   // #endregion
 
-  constructor(@Optional() private http: HttpClient, private el: ElementRef, private updateHostClassService: NzUpdateHostClassService) {
+  constructor(
+    @Optional() private http: HttpClient,
+    private el: ElementRef,
+    private updateHostClassService: NzUpdateHostClassService
+  ) {
     if (!http) {
       throw new Error(`Not found 'HttpClient', You can import 'HttpClientModule' in your root module.`);
     }

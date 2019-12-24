@@ -48,6 +48,12 @@ import { NzSelectComponent } from './nz-select.component';
     NzSelectTopControlComponent,
     NzSelectUnselectableDirective
   ],
-  exports: [NzOptionComponent, NzSelectComponent, NzOptionContainerComponent, NzOptionGroupComponent, NzSelectTopControlComponent]
+  exports: [
+    NzOptionComponent,
+    NzSelectComponent,
+    NzOptionContainerComponent,
+    NzOptionGroupComponent,
+    NzSelectTopControlComponent
+  ]
 })
 export class NzSelectModule {}

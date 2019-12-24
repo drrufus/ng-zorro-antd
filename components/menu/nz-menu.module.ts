@@ -21,8 +21,23 @@ import { NzMenuDirective } from './nz-menu.directive';
 import { NzSubMenuComponent } from './nz-submenu.component';
 
 @NgModule({
-  imports: [CommonModule, FormsModule, PlatformModule, NzButtonModule, OverlayModule, NzIconModule, NzNoAnimationModule, NzAddOnModule],
-  declarations: [NzMenuDirective, NzMenuItemDirective, NzSubMenuComponent, NzMenuDividerDirective, NzMenuGroupComponent],
+  imports: [
+    CommonModule,
+    FormsModule,
+    PlatformModule,
+    NzButtonModule,
+    OverlayModule,
+    NzIconModule,
+    NzNoAnimationModule,
+    NzAddOnModule
+  ],
+  declarations: [
+    NzMenuDirective,
+    NzMenuItemDirective,
+    NzSubMenuComponent,
+    NzMenuDividerDirective,
+    NzMenuGroupComponent
+  ],
   exports: [NzMenuDirective, NzMenuItemDirective, NzSubMenuComponent, NzMenuDividerDirective, NzMenuGroupComponent]
 })
 export class NzMenuModule {}

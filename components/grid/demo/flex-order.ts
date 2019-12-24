@@ -4,7 +4,9 @@ import { Component, OnInit } from '@angular/core';
   selector: 'nz-demo-grid-flex-order',
   template: `
     <div nz-row nzType="flex">
-      <div nz-col nzSpan="6" [nzOrder]="order" *ngFor="let order of orderList; index as i">{{ i + 1 }} col-order-{{ order }}</div>
+      <div nz-col nzSpan="6" [nzOrder]="order" *ngFor="let order of orderList; index as i">
+        {{ i + 1 }} col-order-{{ order }}
+      </div>
     </div>
   `
 })

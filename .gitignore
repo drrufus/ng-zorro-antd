@@ -4,7 +4,6 @@
 dist/
 /site/
 tmp/
-junit/
 out-tsc/
 /publish/
 integration/**/lib/
@@ -38,7 +37,6 @@ yarn.lock
 /.sass-cache
 /connect.lock
 /coverage
-/coverage-report
 /libpeerconnection.log
 npm-debug.log
 testem.log

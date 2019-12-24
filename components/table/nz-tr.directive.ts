@@ -29,5 +29,9 @@ export class NzTrDirective {
     }
   }
 
-  constructor(private elementRef: ElementRef, private renderer: Renderer2, @Host() @Optional() public nzTableComponent: NzTableComponent) {}
+  constructor(
+    private elementRef: ElementRef,
+    private renderer: Renderer2,
+    @Host() @Optional() public nzTableComponent: NzTableComponent
+  ) {}
 }

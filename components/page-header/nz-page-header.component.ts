@@ -61,9 +61,13 @@ export class NzPageHeaderComponent implements OnChanges {
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, true) nzGhost: boolean;
   @Output() readonly nzBack = new EventEmitter<void>();
 
-  @ContentChild(NzPageHeaderFooterDirective, { static: false }) nzPageHeaderFooter: ElementRef<NzPageHeaderFooterDirective>;
+  @ContentChild(NzPageHeaderFooterDirective, { static: false }) nzPageHeaderFooter: ElementRef<
+    NzPageHeaderFooterDirective
+  >;
 
-  @ContentChild(NzPageHeaderBreadcrumbDirective, { static: false }) nzPageHeaderBreadcrumb: ElementRef<NzPageHeaderBreadcrumbDirective>;
+  @ContentChild(NzPageHeaderBreadcrumbDirective, { static: false }) nzPageHeaderBreadcrumb: ElementRef<
+    NzPageHeaderBreadcrumbDirective
+  >;
 
   constructor(private location: Location, public nzConfigService: NzConfigService) {}
 

@@ -24,10 +24,7 @@ describe('list', () => {
 
   describe('[fields]', () => {
     describe('#nzItemLayout', () => {
-      for (const item of [
-        { type: 'default', ret: false },
-        { type: 'vertical', ret: true }
-      ]) {
+      for (const item of [{ type: 'default', ret: false }, { type: 'vertical', ret: true }]) {
         it(`[${item.type}]`, () => {
           context.nzItemLayout = item.type;
           fixture.detectChanges();
@@ -65,13 +62,15 @@ describe('list', () => {
         const fixtureTemp = TestBed.createComponent(TestListWithTemplateComponent);
         fixtureTemp.detectChanges();
         const footerEl = fixtureTemp.debugElement.query(By.css('.ant-list-footer'));
-        expect((footerEl.nativeElement as HTMLDivElement).innerText).toBe(fixtureTemp.componentInstance.footer as string);
+        expect((footerEl.nativeElement as HTMLDivElement).innerText).toBe(fixtureTemp.componentInstance
+          .footer as string);
       });
       it('change string to template', () => {
         const fixtureTemp = TestBed.createComponent(TestListWithTemplateComponent);
         fixtureTemp.detectChanges();
         const footerEl = fixtureTemp.debugElement.query(By.css('.ant-list-footer'));
-        expect((footerEl.nativeElement as HTMLDivElement).innerText).toBe(fixtureTemp.componentInstance.footer as string);
+        expect((footerEl.nativeElement as HTMLDivElement).innerText).toBe(fixtureTemp.componentInstance
+          .footer as string);
         (fixtureTemp.debugElement.query(By.css('#change')).nativeElement as HTMLButtonElement).click();
         fixtureTemp.detectChanges();
         expect(fixtureTemp.debugElement.query(By.css('.list-footer')) != null).toBe(true);
@@ -167,9 +166,8 @@ describe('list', () => {
     });
     it('with string', () => {
       expect(
-        (fixtureTemp.debugElement.query(By.css('#item-string .ant-list-item')).nativeElement as HTMLElement).textContent!.includes(
-          'content'
-        )
+        (fixtureTemp.debugElement.query(By.css('#item-string .ant-list-item'))
+          .nativeElement as HTMLElement).textContent!.includes('content')
       ).toBe(true);
       expect(fixtureTemp.debugElement.query(By.css('#item-string .ant-list-item-action')) != null).toBe(true);
       expect(fixtureTemp.debugElement.query(By.css('#item-string .extra-logo')) != null).toBe(true);
@@ -283,7 +281,12 @@ class TestListWithTemplateComponent {
       <nz-list-item [nzContent]="'content'" [nzActions]="[action]" [nzExtra]="extra" [nzNoFlex]="noFlex">
         <ng-template #action><i nz-icon nzType="star-o" style="margin-right: 8px;"></i> 156</ng-template>
         <ng-template #extra>
-          <img width="272" class="extra-logo" alt="logo" src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png" />
+          <img
+            width="272"
+            class="extra-logo"
+            alt="logo"
+            src="https://gw.alipayobjects.com/zos/rmsportal/mqaQswcyDLcXyDKnZfES.png"
+          />
         </ng-template>
         <nz-list-item-meta
           nzTitle="title"

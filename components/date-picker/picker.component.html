@@ -15,6 +15,7 @@
       [class.ant-input-lg]="size === 'large'"
       [class.ant-input-sm]="size === 'small'"
       [class.ant-input-disabled]="disabled"
+
       [disabled]="disabled"
       readonly
       value="{{ getReadableValue() }}"
@@ -34,9 +35,7 @@
     >
       <ng-container *ngTemplateOutlet="tplRangeInput; context: { partType: 'left' }"></ng-container>
       <span class="{{ prefixCls }}-range-picker-separator"> ~ </span>
-      <ng-container
-        *ngTemplateOutlet="tplRangeInput; context: { partType: 'right' }"
-      ></ng-container>
+      <ng-container *ngTemplateOutlet="tplRangeInput; context: { partType: 'right' }"></ng-container>
       <ng-container *ngTemplateOutlet="tplRightRest"></ng-container>
     </span>
   </ng-container>
@@ -87,8 +86,7 @@
     style="position: relative;"
     [style.left]="currentPositionX === 'start' ? '-2px' : '2px'"
     [style.top]="currentPositionY === 'top' ? '-2px' : '2px'"
-  >
-    <!-- Compatible for overlay that not support offset dynamically and immediately -->
+  > <!-- Compatible for overlay that not support offset dynamically and immediately -->
     <ng-content></ng-content>
   </div>
 </ng-template>

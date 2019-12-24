@@ -39,8 +39,9 @@ export function createMouseEvent(type: string, x: number = 0, y: number = 0, but
 export function createTouchEvent(type: string, pageX: number = 0, pageY: number = 0): UIEvent {
   // In favor of creating events that work for most of the browsers, the event is created
   // as a basic UI Event. The necessary details for the event will be set manually.
-  const event = new UIEvent(type, { detail: 0, view: window });
+  const event = document.createEvent('UIEvent');
   const touchDetails = { pageX, pageY, clientX: pageX, clientY: pageY };
+  event.initUIEvent(type, true, true, window, 0);
 
   // Most of the browsers don't have a "initTouchEvent" method that can be used to define
   // the touch details.
@@ -77,7 +78,7 @@ export function createKeyboardEvent(type: string, keyCode: number, target?: Elem
   // IE won't set `defaultPrevented` on synthetic events so we need to do it manually.
   // tslint:disable-next-line:typedef
   event.preventDefault = function() {
-    Object.defineProperty(event, 'defaultPrevented', { get: () => true, configurable: true });
+    Object.defineProperty(event, 'defaultPrevented', { get: () => true });
     // tslint:disable-next-line:no-invalid-this
     return originalPreventDefault.apply(this, arguments);
   };

@@ -12,6 +12,7 @@ import chalk from 'chalk';
 import { Schema } from '../schema';
 
 const modulesMap = {
+  NgZorroAntdModule: 'ng-zorro-antd',
   FormsModule      : '@angular/forms',
   HttpClientModule : '@angular/common/http'
 };

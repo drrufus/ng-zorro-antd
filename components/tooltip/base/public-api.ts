@@ -6,8 +6,6 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
-const locale = {
-  placeholder: 'აირჩიეთ დრო'
-};
-
-export default locale;
+export * from './nz-tooltip-base-legacy.component';
+export * from './nz-tooltip-base.component';
+export * from './nz-tooltip-base.directive';
