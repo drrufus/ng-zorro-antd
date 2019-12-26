@@ -1,0 +1,21 @@
+{
+  "name": "ngx-color/sketch",
+  "author": "scttcper",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/scttcper/ngx-color.git"
+  },
+  "main": "bundles/ngx-color-sketch.umd.js",
+  "module": "fesm5/ngx-color-sketch.js",
+  "es2015": "fesm2015/ngx-color-sketch.js",
+  "esm5": "esm5/ngx-color-sketch.js",
+  "esm2015": "esm2015/ngx-color-sketch.js",
+  "fesm5": "fesm5/ngx-color-sketch.js",
+  "fesm2015": "fesm2015/ngx-color-sketch.js",
+  "typings": "ngx-color-sketch.d.ts",
+  "metadata": "ngx-color-sketch.metadata.json",
+  "sideEffects": false,
+  "dependencies": {
+    "tslib": "^1.9.0"
+  }
+}

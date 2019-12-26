@@ -1010,7 +1010,7 @@
             { type: core.Component, args: [{
                         selector: 'nz-resize-handles',
                         exportAs: 'nzResizeHandles',
-                        template: "<nz-resize-handle *ngFor=\"let dir of directions\" [nzDirection]=\"dir\"></nz-resize-handle>\n",
+                        template: "<nz-resize-handle *ngFor=\"let dir of directions\" [nzDirection]=\"dir\"></nz-resize-handle>\r\n",
                         changeDetection: core.ChangeDetectionStrategy.OnPush
                     }] }
         ];

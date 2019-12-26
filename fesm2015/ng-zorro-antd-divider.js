@@ -49,7 +49,7 @@ NzDividerComponent.decorators = [
     { type: Component, args: [{
                 selector: 'nz-divider',
                 exportAs: 'nzDivider',
-                template: "<span *ngIf=\"nzText\" class=\"ant-divider-inner-text\">\n  <ng-container *nzStringTemplateOutlet=\"nzText\">{{ nzText }}</ng-container>\n</span>",
+                template: "<span *ngIf=\"nzText\" class=\"ant-divider-inner-text\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzText\">{{ nzText }}</ng-container>\r\n</span>",
                 preserveWhitespaces: false,
                 providers: [NzUpdateHostClassService],
                 encapsulation: ViewEncapsulation.None,

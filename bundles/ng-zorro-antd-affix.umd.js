@@ -586,7 +586,7 @@
             { type: core.Component, args: [{
                         selector: 'nz-affix',
                         exportAs: 'nzAffix',
-                        template: "<div #fixedEl>\n  <ng-content></ng-content>\n</div>\n",
+                        template: "<div #fixedEl>\r\n  <ng-content></ng-content>\r\n</div>\r\n",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.None,
                         styles: ["\n      nz-affix {\n        display: block;\n      }\n    "]

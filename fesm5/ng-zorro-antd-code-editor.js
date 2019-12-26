@@ -659,7 +659,7 @@ var NzCodeEditorComponent = /** @class */ (function () {
                     encapsulation: ViewEncapsulation.None,
                     selector: 'nz-code-editor',
                     exportAs: 'nzCodeEditor',
-                    template: "<div class=\"ant-code-editor-loading\" *ngIf=\"nzLoading\">\n  <nz-spin></nz-spin>\n</div>\n\n<div class=\"ant-code-editor-toolkit\" *ngIf=\"nzToolkit\">\n  <ng-template [ngTemplateOutlet]=\"nzToolkit\"></ng-template>\n</div>\n",
+                    template: "<div class=\"ant-code-editor-loading\" *ngIf=\"nzLoading\">\r\n  <nz-spin></nz-spin>\r\n</div>\r\n\r\n<div class=\"ant-code-editor-toolkit\" *ngIf=\"nzToolkit\">\r\n  <ng-template [ngTemplateOutlet]=\"nzToolkit\"></ng-template>\r\n</div>\r\n",
                     host: {
                         '[class.ant-code-editor]': 'true'
                     },

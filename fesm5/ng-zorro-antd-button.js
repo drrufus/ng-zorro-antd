@@ -217,7 +217,7 @@ var NzButtonComponent = /** @class */ (function () {
                     preserveWhitespaces: false,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.None,
-                    template: "<i nz-icon nzType=\"loading\" *ngIf=\"nzLoading\"></i>\n<span #contentElement><ng-content></ng-content></span>"
+                    template: "<i nz-icon nzType=\"loading\" *ngIf=\"nzLoading\"></i>\r\n<span #contentElement><ng-content></ng-content></span>"
                 }] }
     ];
     /** @nocollapse */
@@ -415,7 +415,7 @@ var NzButtonGroupComponent = /** @class */ (function () {
                     encapsulation: ViewEncapsulation.None,
                     preserveWhitespaces: false,
                     providers: [NzUpdateHostClassService],
-                    template: "<ng-content></ng-content>\n"
+                    template: "<ng-content></ng-content>\r\n"
                 }] }
     ];
     /** @nocollapse */

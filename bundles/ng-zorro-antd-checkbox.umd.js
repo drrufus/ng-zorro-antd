@@ -510,7 +510,7 @@
                         preserveWhitespaces: false,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.None,
-                        template: "<span class=\"ant-checkbox\"\n  [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\n  [class.ant-checkbox-disabled]=\"nzDisabled\"\n  [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\" (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" type=\"checkbox\" class=\"ant-checkbox-input\">\n  <span class=\"ant-checkbox-inner\"></span>\n</span>\n<span #contentElement (cdkObserveContent)=\"checkContent()\"><ng-content></ng-content></span>",
+                        template: "<span class=\"ant-checkbox\"\r\n  [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\"\r\n  [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\" (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\"><ng-content></ng-content></span>",
                         providers: [
                             {
                                 provide: forms.NG_VALUE_ACCESSOR,
@@ -758,7 +758,7 @@
                         exportAs: 'nzCheckboxGroup',
                         preserveWhitespaces: false,
                         encapsulation: core.ViewEncapsulation.None,
-                        template: "<label nz-checkbox\n       class=\"ant-checkbox-group-item\"\n       *ngFor=\"let option of options; trackBy:trackByOption\"\n       [nzDisabled]=\"option.disabled || nzDisabled\"\n       [(nzChecked)]=\"option.checked\"\n       (nzCheckedChange)=\"onOptionChange()\">\n  <span>{{ option.label }}</span>\n</label>",
+                        template: "<label nz-checkbox\r\n       class=\"ant-checkbox-group-item\"\r\n       *ngFor=\"let option of options; trackBy:trackByOption\"\r\n       [nzDisabled]=\"option.disabled || nzDisabled\"\r\n       [(nzChecked)]=\"option.checked\"\r\n       (nzCheckedChange)=\"onOptionChange()\">\r\n  <span>{{ option.label }}</span>\r\n</label>",
                         providers: [
                             {
                                 provide: forms.NG_VALUE_ACCESSOR,
