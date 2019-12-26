@@ -6,6 +6,14 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
 import { CdkOverlayOrigin } from '@angular/cdk/overlay';
 import {
   AfterViewInit,
@@ -130,7 +138,7 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
      */
     protected _tooltip?: NzTooltipBaseComponentLegacy,
     protected noAnimation?: NzNoAnimationDirective
-  ) {}
+  ) { }
 
   ngOnChanges(changes: SimpleChanges): void {
     const { nzTrigger, specificTrigger } = changes;
@@ -255,115 +263,119 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
 
     this.removeTriggerListeners();
 
-    if (trigger === 'hover') {
-      let overlayElement: HTMLElement;
-      this.triggerUnlisteners.push(
-        this.renderer.listen(el, 'mouseenter', () => {
-          this.delayEnterLeave(true, true, this.tooltip.nzMouseEnterDelay);
-        })
-      );
-      this.triggerUnlisteners.push(
-        this.renderer.listen(el, 'mouseleave', () => {
-          this.delayEnterLeave(true, false, this.tooltip.nzMouseLeaveDelay);
-          if (this.tooltip.overlay.overlayRef && !overlayElement) {
-            overlayElement = this.tooltip.overlay.overlayRef.overlayElement;
-            this.triggerUnlisteners.push(
-              this.renderer.listen(overlayElement, 'mouseenter', () => {
-                this.delayEnterLeave(false, true);
-              })
-            );
-            this.triggerUnlisteners.push(
-              this.renderer.listen(overlayElement, 'mouseleave', () => {
-                this.delayEnterLeave(false, false);
-              })
-            );
-          }
-        })
-      );
-    } else if (trigger === 'focus') {
-      this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', () => this.show()));
-      this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', () => this.hide()));
-    } else if (trigger === 'click') {
+    if (trigger === 'click') {
       this.triggerUnlisteners.push(
         this.renderer.listen(el, 'click', e => {
           e.preventDefault();
           this.show();
         })
       );
-    } // Else do nothing because user wants to control the visibility programmatically.
-  }
+    } else {
+      if (trigger === 'hover' || trigger === 'combined') {
+        let overlayElement: HTMLElement;
+        this.triggerUnlisteners.push(
+          this.renderer.listen(el, 'mouseenter', () => {
+            this.delayEnterLeave(true, true, this.tooltip.nzMouseEnterDelay);
+          })
+        );
+        this.triggerUnlisteners.push(
+          this.renderer.listen(el, 'mouseleave', () => {
+            this.delayEnterLeave(true, false, this.tooltip.nzMouseLeaveDelay);
+            if (this.tooltip.overlay.overlayRef && !overlayElement) {
+              overlayElement = this.tooltip.overlay.overlayRef.overlayElement;
+              this.triggerUnlisteners.push(
+                this.renderer.listen(overlayElement, 'mouseenter', () => {
+                  this.delayEnterLeave(false, true);
+                })
+              );
+              this.triggerUnlisteners.push(
+                this.renderer.listen(overlayElement, 'mouseleave', () => {
+                  this.delayEnterLeave(false, false);
+                })
+              );
+            }
+          })
+        );
+      }
+      if (trigger === 'focus' || trigger === 'combined') {
+        this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', () => this.show()));
+        this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', () => this.hide()));
+      }
+    }
+  // Else do nothing because user wants to control the visibility programmatically.
+}
 
   /**
    * Sync changed properties to the component and trigger change detection in that component.
    */
   protected updateChangedProperties(propertiesOrChanges: string[] | SimpleChanges): void {
-    const isArray = Array.isArray(propertiesOrChanges);
-    const keys_ = isArray ? (propertiesOrChanges as string[]) : Object.keys(propertiesOrChanges);
+  const isArray = Array.isArray(propertiesOrChanges);
+  const keys_ = isArray ? (propertiesOrChanges as string[]) : Object.keys(propertiesOrChanges);
 
-    // tslint:disable-next-line no-any
-    keys_.forEach((property: any) => {
-      if (this.needProxyProperties.indexOf(property) !== -1) {
-        // @ts-ignore
-        this.updateComponentValue(property, this[property]);
-      }
-    });
+  // tslint:disable-next-line no-any
+  keys_.forEach((property: any) => {
+    if (this.needProxyProperties.indexOf(property) !== -1) {
+      // @ts-ignore
+      this.updateComponentValue(property, this[property]);
+    }
+  });
 
-    if (isArray) {
-      this.updateComponentValue('nzTitle', this.title);
-      this.updateComponentValue('nzContent', this.content);
-      this.updateComponentValue('nzPlacement', this.placement);
-      this.updateComponentValue('nzTrigger', this.trigger);
-    } else {
-      const c = propertiesOrChanges as SimpleChanges;
-      if (c.specificTitle || c.directiveNameTitle || c.nzTitle) {
-        this.updateComponentValue('nzTitle', this.title);
-      }
-      if (c.specificContent || c.directiveNameContent || c.nzContent) {
-        this.updateComponentValue('nzContent', this.content);
-      }
-      if (c.specificTrigger || c.nzTrigger) {
-        this.updateComponentValue('nzTrigger', this.trigger);
-      }
-      if (c.specificPlacement || c.nzPlacement) {
-        this.updateComponentValue('nzPlacement', this.placement);
-      }
+  if (isArray) {
+    this.updateComponentValue('nzTitle', this.title);
+    this.updateComponentValue('nzContent', this.content);
+    this.updateComponentValue('nzPlacement', this.placement);
+    this.updateComponentValue('nzTrigger', this.trigger);
+  } else {
+    const c = propertiesOrChanges as SimpleChanges;
+    if (c.specificTitle || c.directiveNameTitle || c.nzTitle) {
+  this.updateComponentValue('nzTitle', this.title);
+}
+    if (c.specificContent || c.directiveNameContent || c.nzContent) {
+  this.updateComponentValue('nzContent', this.content);
+}
+    if (c.specificTrigger || c.nzTrigger) {
+  this.updateComponentValue('nzTrigger', this.trigger);
+}
+    if (c.specificPlacement || c.nzPlacement) {
+  this.updateComponentValue('nzPlacement', this.placement);
+}
     }
 
-    this.tooltip.updateByDirective();
+  this.tooltip.updateByDirective();
   }
 
   // tslint:disable-next-line no-any
   private updateComponentValue(key: string, value: any): void {
-    if (typeof value !== 'undefined') {
-      // @ts-ignore
-      this.tooltip[key] = value;
-    }
+  if (typeof value !== 'undefined') {
+  // @ts-ignore
+  this.tooltip[key] = value;
+}
   }
 
   private delayEnterLeave(isOrigin: boolean, isEnter: boolean, delay: number = -1): void {
-    if (this.delayTimer) {
-      this.clearTogglingTimer();
-    } else if (delay > 0) {
-      this.delayTimer = setTimeout(() => {
-        this.delayTimer = undefined;
-        isEnter ? this.show() : this.hide();
-      }, delay * 1000);
-    } else {
-      // `isOrigin` is used due to the tooltip will not hide immediately
-      // (may caused by the fade-out animation).
-      isEnter && isOrigin ? this.show() : this.hide();
-    }
+  if (this.delayTimer) {
+  this.clearTogglingTimer();
+} else if (delay > 0) {
+  this.delayTimer = setTimeout(() => {
+    this.delayTimer = undefined;
+    isEnter ? this.show() : this.hide();
+  }, delay * 1000);
+} else {
+  // `isOrigin` is used due to the tooltip will not hide immediately
+  // (may caused by the fade-out animation).
+  isEnter && isOrigin ? this.show() : this.hide();
+}
   }
 
   private removeTriggerListeners(): void {
-    this.triggerUnlisteners.forEach(cancel => cancel());
-    this.triggerUnlisteners.length = 0;
-  }
+  this.triggerUnlisteners.forEach(cancel => cancel());
+  this.triggerUnlisteners.length = 0;
+}
 
   private clearTogglingTimer(): void {
-    if (this.delayTimer) {
-      clearTimeout(this.delayTimer);
-      this.delayTimer = undefined;
-    }
+  if (this.delayTimer) {
+  clearTimeout(this.delayTimer);
+  this.delayTimer = undefined;
+}
   }
 }
