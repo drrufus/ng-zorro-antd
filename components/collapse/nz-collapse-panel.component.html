@@ -1,7 +1,7 @@
 <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" class="ant-collapse-header" (click)="clickHeader()">
   <ng-container *ngIf="nzShowArrow">
     <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
-      <a href="javascript:" tabindex="0">
+      <a href="javascript:" tabindex="0" class="ant-collapse-arrow-link">
         <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
       </a>
     </ng-container>
