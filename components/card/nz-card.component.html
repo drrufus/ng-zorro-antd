@@ -1,7 +1,11 @@
 <div class="ant-card-head" *ngIf="nzTitle || nzExtra || tab">
   <div class="ant-card-head-wrapper">
     <div class="ant-card-head-title" *ngIf="nzTitle">
-      <ng-container *nzStringTemplateOutlet="nzTitle">{{ nzTitle }}</ng-container>
+      <ng-container *nzStringTemplateOutlet="nzTitle">
+        <h4 style="margin-bottom: 0;">
+          {{ nzTitle }}
+        </h4>
+      </ng-container>
     </div>
     <div class="ant-card-extra" *ngIf="nzExtra">
       <ng-container *nzStringTemplateOutlet="nzExtra">{{ nzExtra }}</ng-container>

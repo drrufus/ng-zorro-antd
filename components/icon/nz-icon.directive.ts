@@ -6,6 +6,14 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
 import { Platform } from '@angular/cdk/platform';
 import {
   AfterContentChecked,
@@ -114,6 +122,8 @@ export class NzIconDirective extends IconDirective implements OnInit, OnChanges,
     return this._type;
   }
 
+  @Input() nzIconLabel: string | null = null;
+
   private classNameObserver: MutationObserver;
   private el = this.elementRef.nativeElement;
   private destroy$ = new Subject<void>();
@@ -185,7 +195,11 @@ export class NzIconDirective extends IconDirective implements OnInit, OnChanges,
   private setSVGData(svg: SVGElement | null): void {
     if (typeof this.type === 'string' && svg) {
       this.renderer.setAttribute(svg, 'data-icon', this.type);
-      this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+      if (this.nzIconLabel != null) {
+        this.renderer.setAttribute(svg, 'aria-label', this.nzIconLabel);
+      } else {
+        this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+      }
     }
   }
 
