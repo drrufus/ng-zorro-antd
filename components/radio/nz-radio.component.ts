@@ -52,7 +52,8 @@ import { InputBoolean } from 'ng-zorro-antd/core';
   ],
   host: {
     '[class.ant-radio-wrapper-checked]': 'checked',
-    '[class.ant-radio-wrapper-disabled]': 'nzDisabled'
+    '[class.ant-radio-wrapper-disabled]': 'nzDisabled',
+    '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
   }
 })
 export class NzRadioComponent implements ControlValueAccessor, AfterViewInit, OnChanges, OnDestroy {
