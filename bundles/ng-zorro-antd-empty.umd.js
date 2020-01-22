@@ -6,7 +6,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-empty-config.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // tslint:disable-next-line:no-any
@@ -21,7 +20,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-empty.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -121,7 +119,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-embed-empty.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzEmbedEmptyComponent = /** @class */ (function () {
@@ -306,7 +303,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-empty.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzEmptyComponent = /** @class */ (function () {
@@ -439,7 +435,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-empty.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzEmptyModule = /** @class */ (function () {

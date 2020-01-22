@@ -3,7 +3,6 @@ import { Directive, ElementRef, Renderer2, Input, TemplateRef, ViewContainerRef,
 
 /**
  * @fileoverview added by tsickle
- * Generated from: classlist_add.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzClassListAddDirective {
@@ -69,7 +68,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: string_template_outlet.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStringTemplateOutletDirective {
@@ -268,7 +266,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: addon.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAddOnModule {
@@ -283,13 +280,11 @@ NzAddOnModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-core-addon.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

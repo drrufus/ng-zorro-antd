@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-skeleton.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSkeletonComponent = /** @class */ (function () {
@@ -428,7 +427,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-skeleton.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSkeletonModule = /** @class */ (function () {
@@ -446,7 +444,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-skeleton.type.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**

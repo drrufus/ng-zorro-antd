@@ -9,7 +9,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-table-cell.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var DateTableCellComponent = /** @class */ (function () {
@@ -44,7 +43,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-table.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -527,7 +525,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: month-table.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -730,7 +727,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzDateCellDirective = /** @class */ (function () {
@@ -780,7 +776,6 @@ var NzMonthFullCellDirective = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar-header.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCalendarHeaderComponent = /** @class */ (function () {
@@ -970,7 +965,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCalendarComponent = /** @class */ (function () {
@@ -1271,7 +1265,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCalendarModule = /** @class */ (function () {
@@ -1307,13 +1300,11 @@ var NzCalendarModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-calendar.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

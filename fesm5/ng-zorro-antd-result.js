@@ -6,7 +6,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/not-found.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResultNotFoundComponent = /** @class */ (function () {
@@ -26,7 +25,6 @@ var NzResultNotFoundComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/server-error.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResultServerErrorComponent = /** @class */ (function () {
@@ -46,7 +44,6 @@ var NzResultServerErrorComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/unauthorized.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResultUnauthorizedComponent = /** @class */ (function () {
@@ -66,7 +63,6 @@ var NzResultUnauthorizedComponent = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResultTitleDirective = /** @class */ (function () {
@@ -139,7 +135,6 @@ var NzResultExtraDirective = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -259,7 +254,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -287,13 +281,11 @@ var NzResultModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-result.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

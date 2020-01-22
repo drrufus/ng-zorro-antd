@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-alert.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -392,7 +391,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-alert.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAlertModule = /** @class */ (function () {

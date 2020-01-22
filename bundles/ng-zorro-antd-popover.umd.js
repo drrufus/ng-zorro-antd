@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popover.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopoverComponent = /** @class */ (function (_super) {
@@ -265,7 +264,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popover.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopoverDirective = /** @class */ (function (_super) {
@@ -322,7 +320,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popover.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopoverModule = /** @class */ (function () {

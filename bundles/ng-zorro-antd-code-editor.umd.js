@@ -203,14 +203,13 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-code-editor.definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @enum {string} */
     var NzCodeEditorLoadingStatus = {
-        UNLOAD: "unload",
-        LOADING: "loading",
-        LOADED: "LOADED",
+        UNLOAD: 'unload',
+        LOADING: 'loading',
+        LOADED: 'LOADED',
     };
     /**
      * @record
@@ -250,7 +249,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-code-editor.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -510,7 +508,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-code-editor.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCodeEditorComponent = /** @class */ (function () {
@@ -957,7 +954,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-code-editor.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCodeEditorModule = /** @class */ (function () {

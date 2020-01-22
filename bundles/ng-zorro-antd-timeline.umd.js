@@ -6,7 +6,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-timeline-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimelineItemComponent = /** @class */ (function () {
@@ -114,7 +113,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-timeline.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimelineComponent = /** @class */ (function () {
@@ -289,7 +287,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-timeline.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimelineModule = /** @class */ (function () {

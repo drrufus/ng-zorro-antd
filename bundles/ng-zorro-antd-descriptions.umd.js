@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-descriptions-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDescriptionsItemComponent = /** @class */ (function () {
@@ -264,7 +263,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-descriptions.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -563,7 +561,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-descriptions.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDescriptionsModule = /** @class */ (function () {
@@ -581,7 +578,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-descriptions-definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**

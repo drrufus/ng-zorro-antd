@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-time-picker.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -615,7 +614,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-time-value-accessor.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimeValueAccessorDirective = /** @class */ (function () {
@@ -754,7 +752,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: time-holder.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var TimeHolder = /** @class */ (function () {
@@ -1343,7 +1340,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-time-picker-panel.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2307,7 +2303,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-time-picker.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimePickerModule = /** @class */ (function () {

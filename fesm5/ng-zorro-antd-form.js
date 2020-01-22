@@ -12,7 +12,6 @@ import { startWith, takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-explain.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormExplainComponent = /** @class */ (function () {
@@ -53,7 +52,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -204,7 +202,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-control.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormControlComponent = /** @class */ (function (_super) {
@@ -535,7 +532,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-extra.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormExtraComponent = /** @class */ (function () {
@@ -575,7 +571,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-label.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormLabelComponent = /** @class */ (function (_super) {
@@ -685,7 +680,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-split.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormSplitComponent = /** @class */ (function () {
@@ -723,7 +717,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-text.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormTextComponent = /** @class */ (function () {
@@ -761,7 +754,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -909,7 +901,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFormModule = /** @class */ (function () {
@@ -945,13 +936,11 @@ var NzFormModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-form.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

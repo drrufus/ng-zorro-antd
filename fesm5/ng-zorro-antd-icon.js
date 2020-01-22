@@ -12,7 +12,6 @@ import { BarsOutline, CalendarOutline, CaretUpFill, CaretUpOutline, CaretDownFil
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -270,7 +269,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -342,6 +340,7 @@ var NzIconDirective = /** @class */ (function (_super) {
          * @deprecated 8.0.0 avoid exposing low layer API.
          */
         _this.spin = false;
+        _this.nzIconLabel = null;
         _this.el = _this.elementRef.nativeElement;
         _this.destroy$ = new Subject();
         return _this;
@@ -562,7 +561,12 @@ var NzIconDirective = /** @class */ (function (_super) {
     function (svg) {
         if (typeof this.type === 'string' && svg) {
             this.renderer.setAttribute(svg, 'data-icon', this.type);
-            this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+            if (this.nzIconLabel != null) {
+                this.renderer.setAttribute(svg, 'aria-label', this.nzIconLabel);
+            }
+            else {
+                this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+            }
         }
     };
     /**
@@ -703,7 +707,8 @@ var NzIconDirective = /** @class */ (function (_super) {
         nzIconfont: [{ type: Input }],
         spin: [{ type: Input }],
         iconfont: [{ type: Input }],
-        type: [{ type: Input }]
+        type: [{ type: Input }],
+        nzIconLabel: [{ type: Input }]
     };
     __decorate([
         InputBoolean(),
@@ -725,6 +730,8 @@ if (false) {
      * @type {?}
      */
     NzIconDirective.prototype.iconfont;
+    /** @type {?} */
+    NzIconDirective.prototype.nzIconLabel;
     /**
      * @type {?}
      * @private
@@ -760,7 +767,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzIconModule = /** @class */ (function () {
@@ -778,13 +784,11 @@ var NzIconModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-icon.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

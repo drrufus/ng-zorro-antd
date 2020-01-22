@@ -8,7 +8,6 @@ import { takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resizable-utils.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -21,7 +20,6 @@ function getEventWithPoint(event) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resizable.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResizableService = /** @class */ (function () {
@@ -156,7 +154,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resizable.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -665,7 +662,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resize-handle.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResizeHandleMouseDownEvent = /** @class */ (function () {
@@ -779,7 +775,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resize-handles.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -835,7 +830,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-resizable.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzResizableModule = /** @class */ (function () {
@@ -853,13 +847,11 @@ var NzResizableModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-resizable.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

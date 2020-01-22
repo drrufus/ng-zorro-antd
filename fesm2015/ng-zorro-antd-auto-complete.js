@@ -11,7 +11,6 @@ import { take, switchMap, filter, tap, delay, map, distinct } from 'rxjs/operato
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-optgroup.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAutocompleteOptgroupComponent {
@@ -43,7 +42,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-option.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzOptionSelectionChange {
@@ -215,7 +213,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -573,7 +570,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-trigger.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1101,7 +1097,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAutocompleteModule {
@@ -1126,13 +1121,11 @@ NzAutocompleteModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-auto-complete.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

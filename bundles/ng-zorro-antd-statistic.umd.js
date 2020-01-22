@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-statistic-definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -218,7 +217,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-statistic.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStatisticComponent = /** @class */ (function () {
@@ -265,7 +263,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-countdown.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCountdownComponent = /** @class */ (function (_super) {
@@ -449,7 +446,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-statistic-number.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStatisticNumberComponent = /** @class */ (function () {
@@ -526,7 +522,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-statistic.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStatisticModule = /** @class */ (function () {

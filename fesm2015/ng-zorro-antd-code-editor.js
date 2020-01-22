@@ -10,14 +10,13 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-code-editor.definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @enum {string} */
 const NzCodeEditorLoadingStatus = {
-    UNLOAD: "unload",
-    LOADING: "loading",
-    LOADED: "LOADED",
+    UNLOAD: 'unload',
+    LOADING: 'loading',
+    LOADED: 'LOADED',
 };
 /**
  * @record
@@ -57,7 +56,6 @@ function NZ_CODE_EDITOR_CONFIG_FACTORY() {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-code-editor.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -286,7 +284,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-code-editor.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCodeEditorComponent {
@@ -654,7 +651,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-code-editor.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCodeEditorModule {
@@ -669,13 +665,11 @@ NzCodeEditorModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-code-editor.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

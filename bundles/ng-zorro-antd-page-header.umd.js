@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-page-header-cells.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPageHeaderTitleDirective = /** @class */ (function () {
@@ -315,7 +314,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-page-header.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -423,7 +421,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-page-header.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */

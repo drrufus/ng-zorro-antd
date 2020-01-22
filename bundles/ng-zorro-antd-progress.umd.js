@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-progress-utils.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -294,7 +293,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-progress.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -720,7 +718,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-progress.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzProgressModule = /** @class */ (function () {
@@ -738,7 +735,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-progress.definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**

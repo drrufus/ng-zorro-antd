@@ -19,7 +19,6 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-th.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -501,7 +500,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-virtual-scroll.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzVirtualScrollDirective = /** @class */ (function () {
@@ -528,7 +526,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-table.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1158,7 +1155,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tbody.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTbodyDirective = /** @class */ (function () {
@@ -1187,7 +1183,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-td.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTdComponent = /** @class */ (function () {
@@ -1341,7 +1336,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-thead.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTheadComponent = /** @class */ (function () {
@@ -1472,7 +1466,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tr.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTrDirective = /** @class */ (function () {
@@ -1536,7 +1529,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-table.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTableModule = /** @class */ (function () {
@@ -1585,13 +1577,11 @@ var NzTableModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-table.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

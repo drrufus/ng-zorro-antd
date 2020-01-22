@@ -5,7 +5,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/not-found.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzResultNotFoundComponent {
@@ -284,7 +283,6 @@ NzResultNotFoundComponent.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/server-error.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzResultServerErrorComponent {
@@ -614,7 +612,6 @@ NzResultServerErrorComponent.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: partial/unauthorized.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzResultUnauthorizedComponent {
@@ -892,7 +889,6 @@ NzResultUnauthorizedComponent.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzResultTitleDirective {
@@ -950,7 +946,6 @@ NzResultExtraDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1065,7 +1060,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-result.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1090,13 +1084,11 @@ NzResultModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-result.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

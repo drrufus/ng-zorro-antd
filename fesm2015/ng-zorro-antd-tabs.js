@@ -12,7 +12,6 @@ import { takeUntil, finalize, startWith, filter } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tab-body.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabBodyComponent {
@@ -51,7 +50,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tab-label.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabLabelDirective {
@@ -119,7 +117,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tab-link.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -155,7 +152,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tab.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -172,7 +168,6 @@ NzTabDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tab.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabComponent {
@@ -288,7 +283,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tabs-ink-bar.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabsInkBarDirective {
@@ -420,7 +414,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tabs-nav.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -947,7 +940,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tabset.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1498,7 +1490,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tabs.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTabsModule {
@@ -1531,13 +1522,11 @@ NzTabsModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-tabs.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

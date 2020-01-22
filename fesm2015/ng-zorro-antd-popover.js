@@ -6,7 +6,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popover.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverComponent extends NzToolTipComponent {
@@ -73,7 +72,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popover.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverDirective extends NzTooltipBaseDirective {
@@ -135,7 +133,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popover.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopoverModule {
@@ -151,13 +148,11 @@ NzPopoverModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-popover.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

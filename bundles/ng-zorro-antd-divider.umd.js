@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-divider.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDividerComponent = /** @class */ (function () {
@@ -300,7 +299,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-divider.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDividerModule = /** @class */ (function () {

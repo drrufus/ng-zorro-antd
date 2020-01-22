@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: interface.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -357,7 +356,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-upload-btn.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzUploadBtnComponent = /** @class */ (function () {
@@ -982,7 +980,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-upload-list.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzUploadListComponent = /** @class */ (function () {
@@ -1334,7 +1331,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-upload.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzUploadComponent = /** @class */ (function () {
@@ -1987,7 +1983,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-upload.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzUploadModule = /** @class */ (function () {

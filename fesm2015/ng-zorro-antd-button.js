@@ -10,7 +10,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-button.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -331,7 +330,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-button-group.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzButtonGroupComponent {
@@ -421,7 +419,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-button.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzButtonModule {
@@ -436,13 +433,11 @@ NzButtonModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-button.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

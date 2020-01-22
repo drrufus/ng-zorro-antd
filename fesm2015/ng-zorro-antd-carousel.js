@@ -9,7 +9,6 @@ import { warnDeprecation, NzConfigService, NzDomEventService, NzDragService, Wit
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-carousel-content.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselContentDirective {
@@ -77,7 +76,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-carousel-definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -135,7 +133,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: strategies/base-strategy.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -280,7 +277,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: strategies/opacity-strategy.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
@@ -349,7 +345,6 @@ class NzCarouselOpacityStrategy extends NzCarouselBaseStrategy {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: strategies/transform-strategy.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselTransformStrategy extends NzCarouselBaseStrategy {
@@ -563,7 +558,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-carousel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1090,7 +1084,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-carousel.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCarouselModule {
@@ -1105,13 +1098,11 @@ NzCarouselModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-carousel.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

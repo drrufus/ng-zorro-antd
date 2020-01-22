@@ -14,7 +14,6 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -90,7 +89,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer-list.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferListComponent {
@@ -356,7 +354,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer-search.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferSearchComponent {
@@ -433,7 +430,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferComponent {
@@ -860,7 +856,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTransferModule {
@@ -884,13 +879,11 @@ NzTransferModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-transfer.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

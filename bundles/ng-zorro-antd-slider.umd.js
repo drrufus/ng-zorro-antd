@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -299,7 +298,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-error.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -318,7 +316,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSliderComponent = /** @class */ (function () {
@@ -1268,7 +1265,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-handle.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSliderHandleComponent = /** @class */ (function () {
@@ -1485,7 +1481,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-marks.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSliderMarksComponent = /** @class */ (function () {
@@ -1665,7 +1660,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-step.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSliderStepComponent = /** @class */ (function () {
@@ -1802,7 +1796,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider-track.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1903,7 +1896,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-slider.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSliderModule = /** @class */ (function () {

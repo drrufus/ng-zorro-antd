@@ -8,7 +8,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-step.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepComponent {
@@ -202,7 +201,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-steps.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepsComponent {
@@ -397,7 +395,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-steps.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzStepsModule {
@@ -412,13 +409,11 @@ NzStepsModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-steps.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

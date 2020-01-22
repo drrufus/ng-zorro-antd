@@ -12,7 +12,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-text-copy.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTextCopyComponent {
@@ -154,7 +153,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-text-edit.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTextEditComponent {
@@ -320,7 +318,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-typography.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -752,7 +749,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-typography.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTypographyModule {
@@ -775,13 +771,11 @@ NzTypographyModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-typography.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

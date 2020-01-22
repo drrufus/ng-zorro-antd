@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popconfirm.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopconfirmComponent = /** @class */ (function (_super) {
@@ -319,7 +318,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popconfirm.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopconfirmDirective = /** @class */ (function (_super) {
@@ -458,7 +456,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-popconfirm.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPopconfirmModule = /** @class */ (function () {

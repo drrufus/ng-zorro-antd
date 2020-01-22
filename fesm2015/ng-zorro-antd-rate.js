@@ -11,7 +11,6 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-rate.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -408,7 +407,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-rate-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRateItemComponent {
@@ -464,7 +462,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-rate.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRateModule {
@@ -479,13 +476,11 @@ NzRateModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-rate.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

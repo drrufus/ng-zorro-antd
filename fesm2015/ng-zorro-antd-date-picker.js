@@ -13,7 +13,6 @@ import { takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/calendar-footer.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarFooterComponent {
@@ -94,7 +93,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/calendar-header.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarHeaderComponent {
@@ -398,7 +396,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/calendar-input.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class CalendarInputComponent {
@@ -516,7 +513,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/ok-button.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class OkButtonComponent {
@@ -554,7 +550,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/time-picker-button.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TimePickerButtonComponent {
@@ -603,7 +598,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/calendar/today-button.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TodayButtonComponent {
@@ -692,7 +686,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/decade/decade-panel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -892,7 +885,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/month/month-panel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class MonthPanelComponent {
@@ -958,7 +950,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/util.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1067,7 +1058,6 @@ function isAllowedDate(value, disabledDate, disabledTime) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/popups/date-range-popup.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class DateRangePopupComponent {
@@ -1719,7 +1709,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/popups/inner-popup.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class InnerPopupComponent {
@@ -1822,7 +1811,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/year/year-panel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -2053,7 +2041,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: lib/lib-packer.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class LibPackerModule {
@@ -2092,7 +2079,6 @@ LibPackerModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPickerComponent {
@@ -2429,7 +2415,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: abstract-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -2747,7 +2732,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-range-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class DateRangePickerComponent extends AbstractPickerComponent {
@@ -2954,7 +2938,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: header-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3075,7 +3058,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-date-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDatePickerComponent extends DateRangePickerComponent {
@@ -3131,7 +3113,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-month-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMonthPickerComponent extends HeaderPickerComponent {
@@ -3193,7 +3174,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-range-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRangePickerComponent extends DateRangePickerComponent {
@@ -3249,7 +3229,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-week-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzWeekPickerComponent extends DateRangePickerComponent {
@@ -3305,7 +3284,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-year-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzYearPickerComponent extends HeaderPickerComponent {
@@ -3367,7 +3345,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-date-picker.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDatePickerModule {
@@ -3397,13 +3374,11 @@ NzDatePickerModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-date-picker.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

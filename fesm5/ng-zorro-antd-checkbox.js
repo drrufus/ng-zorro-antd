@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-checkbox-wrapper.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCheckboxWrapperComponent = /** @class */ (function () {
@@ -99,7 +98,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-checkbox.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCheckboxComponent = /** @class */ (function () {
@@ -423,7 +421,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-checkbox-group.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -620,7 +617,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-checkbox.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCheckboxModule = /** @class */ (function () {
@@ -638,13 +634,11 @@ var NzCheckboxModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-checkbox.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

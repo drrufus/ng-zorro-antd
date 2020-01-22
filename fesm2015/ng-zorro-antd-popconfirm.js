@@ -11,7 +11,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popconfirm.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmComponent extends NzToolTipComponent {
@@ -123,7 +122,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popconfirm.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmDirective extends NzTooltipBaseDirective {
@@ -258,7 +256,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-popconfirm.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPopconfirmModule {
@@ -284,13 +281,11 @@ NzPopconfirmModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-popconfirm.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

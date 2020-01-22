@@ -9,7 +9,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-table-cell.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class DateTableCellComponent {
@@ -43,7 +42,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-table.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -468,7 +466,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: month-table.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -641,7 +638,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzDateCellDirective {
@@ -679,7 +675,6 @@ NzMonthFullCellDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar-header.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarHeaderComponent {
@@ -836,7 +831,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarComponent {
@@ -1077,7 +1071,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-calendar.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzCalendarModule {
@@ -1110,13 +1103,11 @@ NzCalendarModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-calendar.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-rate.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -677,7 +676,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-rate-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzRateItemComponent = /** @class */ (function () {
@@ -742,7 +740,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-rate.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzRateModule = /** @class */ (function () {

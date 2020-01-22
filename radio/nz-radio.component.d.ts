@@ -25,6 +25,7 @@ export declare class NzRadioComponent implements ControlValueAccessor, AfterView
     nzValue: any;
     nzDisabled: boolean;
     nzAutoFocus: boolean;
+    nzLabelledById: string | null;
     updateAutoFocus(): void;
     onClick(event: MouseEvent): void;
     focus(): void;

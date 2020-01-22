@@ -12,7 +12,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-explain.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -63,7 +62,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -204,7 +202,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-control.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormControlComponent extends NzColDirective {
@@ -488,7 +485,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-extra.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -538,7 +534,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-label.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormLabelComponent extends NzColDirective {
@@ -639,7 +634,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-split.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormSplitComponent {
@@ -680,7 +674,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form-text.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormTextComponent {
@@ -721,7 +714,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -852,7 +844,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-form.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFormModule {
@@ -885,13 +876,11 @@ NzFormModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-form.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

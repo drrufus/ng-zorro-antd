@@ -13,7 +13,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuService = /** @class */ (function (_super) {
@@ -35,7 +34,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-submenu.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSubmenuService = /** @class */ (function () {
@@ -172,7 +170,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu-item.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuItemDirective = /** @class */ (function () {
@@ -535,7 +532,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu.resolver.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -556,7 +552,6 @@ function NzMenuServiceFactory(higherOrderService, menuService) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-submenu.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSubMenuComponent = /** @class */ (function () {
@@ -895,7 +890,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ɵ0 = NzMenuServiceFactory;
@@ -1140,7 +1134,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu-group.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuGroupComponent = /** @class */ (function () {
@@ -1183,7 +1176,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu-divider.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuDividerDirective = /** @class */ (function () {
@@ -1217,7 +1209,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-menu.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMenuModule = /** @class */ (function () {
@@ -1250,13 +1241,11 @@ var NzMenuModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-menu.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

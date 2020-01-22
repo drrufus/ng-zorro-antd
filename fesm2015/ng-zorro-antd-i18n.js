@@ -8,7 +8,6 @@ import fnsParse from 'date-fns/parse';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/zh_CN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -48,7 +47,6 @@ var Calendar = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/zh_CN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -65,7 +63,6 @@ const locale = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/zh_CN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -78,7 +75,6 @@ locale$1.lang.ok = '确 定';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/zh_CN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -105,7 +101,6 @@ var Pagination = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/zh_CN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var zh_CN = {
@@ -165,7 +160,6 @@ var zh_CN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-i18n.token.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -178,7 +172,6 @@ const NZ_DATE_LOCALE = new InjectionToken('nz-date-locale');
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-i18n.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nService {
@@ -332,7 +325,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-i18n.pipe.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nPipe {
@@ -370,7 +362,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-i18n.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzI18nModule {
@@ -384,7 +375,6 @@ NzI18nModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-config.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -414,7 +404,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-i18n.interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -579,7 +568,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: date-helper.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -772,7 +760,6 @@ DateHelperByDatePipe.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ar_EG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -812,7 +799,6 @@ var Calendar$1 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ar_EG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -829,7 +815,6 @@ const locale$2 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ar_EG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -845,7 +830,6 @@ const locale$3 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ar_EG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -872,7 +856,6 @@ var Pagination$1 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ar_EG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ar_EG = {
@@ -931,7 +914,6 @@ var ar_EG = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/bg_BG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -971,7 +953,6 @@ var Calendar$2 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/bg_BG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -988,7 +969,6 @@ const locale$4 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/bg_BG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1000,7 +980,6 @@ const locale$5 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/bg_BG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1027,7 +1006,6 @@ var Pagination$2 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/bg_BG.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var bg_BG = {
@@ -1070,7 +1048,6 @@ var bg_BG = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ca_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1110,7 +1087,6 @@ var Calendar$3 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ca_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1127,7 +1103,6 @@ const locale$6 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ca_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1139,7 +1114,6 @@ const locale$7 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ca_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1166,7 +1140,6 @@ var Pagination$3 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ca_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ca_ES = {
@@ -1225,7 +1198,6 @@ var ca_ES = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/cs_CZ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1265,7 +1237,6 @@ var Calendar$4 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/cs_CZ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1282,7 +1253,6 @@ const locale$8 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/cs_CZ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1294,7 +1264,6 @@ const locale$9 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/cs_CZ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1321,7 +1290,6 @@ var Pagination$4 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/cs_CZ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var cs_CZ = {
@@ -1362,7 +1330,6 @@ var cs_CZ = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/da_DK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1402,7 +1369,6 @@ var Calendar$5 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/da_DK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1419,7 +1385,6 @@ const locale$a = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/da_DK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1431,7 +1396,6 @@ const locale$b = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/da_DK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1458,7 +1422,6 @@ var Pagination$5 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/da_DK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var da_DK = {
@@ -1501,7 +1464,6 @@ var da_DK = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/de_DE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1541,7 +1503,6 @@ var Calendar$6 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/de_DE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1558,7 +1519,6 @@ const locale$c = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/de_DE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1570,7 +1530,6 @@ const locale$d = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/de_DE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1597,7 +1556,6 @@ var Pagination$6 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/de_DE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var de_DE = {
@@ -1657,7 +1615,6 @@ var de_DE = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/el_GR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1697,7 +1654,6 @@ var Calendar$7 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/el_GR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1714,7 +1670,6 @@ const locale$e = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/el_GR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1726,7 +1681,6 @@ const locale$f = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/el_GR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1753,7 +1707,6 @@ var Pagination$7 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/el_GR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var el_GR = {
@@ -1796,7 +1749,6 @@ var el_GR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/en_GB.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1836,7 +1788,6 @@ var Calendar$8 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/en_GB.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1853,7 +1804,6 @@ const locale$g = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/en_GB.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -1865,7 +1815,6 @@ const locale$h = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/en_GB.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1892,7 +1841,6 @@ var Pagination$8 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/en_GB.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var en_GB = {
@@ -1935,7 +1883,6 @@ var en_GB = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/en_US.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1976,7 +1923,6 @@ var Calendar$9 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/en_US.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1993,7 +1939,6 @@ const locale$i = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/en_US.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2005,7 +1950,6 @@ const locale$j = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/en_US.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2032,7 +1976,6 @@ var Pagination$9 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/en_US.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var en_US = {
@@ -2092,7 +2035,6 @@ var en_US = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/es_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2132,7 +2074,6 @@ var Calendar$a = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/es_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2149,7 +2090,6 @@ const locale$k = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/es_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2161,7 +2101,6 @@ const locale$l = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/es_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2188,7 +2127,6 @@ var Pagination$a = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/es_ES.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var es_ES = {
@@ -2247,7 +2185,6 @@ var es_ES = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/et_EE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2287,7 +2224,6 @@ var Calendar$b = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/et_EE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2304,7 +2240,6 @@ const locale$m = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/et_EE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // 统一合并为完整的 Locale
@@ -2316,7 +2251,6 @@ const locale$n = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/et_EE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2343,7 +2277,6 @@ var Pagination$b = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/et_EE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var et_EE = {
@@ -2386,7 +2319,6 @@ var et_EE = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/fa_IR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2426,7 +2358,6 @@ var Calendar$c = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/fa_IR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2443,7 +2374,6 @@ const locale$o = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/fa_IR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2455,7 +2385,6 @@ const locale$p = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/fa_IR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2482,7 +2411,6 @@ var Pagination$c = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/fa_IR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fa_IR = {
@@ -2525,7 +2453,6 @@ var fa_IR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/fi_FI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2565,7 +2492,6 @@ var Calendar$d = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/fi_FI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2582,7 +2508,6 @@ const locale$q = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/fi_FI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2594,7 +2519,6 @@ const locale$r = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/fi_FI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2621,7 +2545,6 @@ var Pagination$d = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/fi_FI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fi_FI = {
@@ -2665,7 +2588,6 @@ var fi_FI = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/fr_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2705,7 +2627,6 @@ var Calendar$e = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/fr_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2722,7 +2643,6 @@ const locale$s = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/fr_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2734,7 +2654,6 @@ const locale$t = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/fr_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2761,7 +2680,6 @@ var Pagination$e = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/fr_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fr_BE = {
@@ -2802,7 +2720,6 @@ var fr_BE = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/fr_FR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2842,7 +2759,6 @@ var Calendar$f = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/fr_FR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2859,7 +2775,6 @@ const locale$u = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/fr_FR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -2871,7 +2786,6 @@ const locale$v = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/fr_FR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2898,7 +2812,6 @@ var Pagination$f = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/fr_FR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var fr_FR = {
@@ -2947,7 +2860,6 @@ var fr_FR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/he_IL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2988,7 +2900,6 @@ var Calendar$g = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/he_IL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3005,7 +2916,6 @@ const locale$w = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/he_IL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3017,7 +2927,6 @@ const locale$x = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/he_IL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3044,7 +2953,6 @@ var Pagination$g = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/he_IL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var he_IL = {
@@ -3087,7 +2995,6 @@ var he_IL = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/hi_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3128,7 +3035,6 @@ var Calendar$h = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/hi_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3145,7 +3051,6 @@ const locale$y = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/hi_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3157,7 +3062,6 @@ const locale$z = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/hi_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3184,7 +3088,6 @@ var Pagination$h = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/hi_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var hi_IN = {
@@ -3235,7 +3138,6 @@ var hi_IN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/hr_HR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3276,7 +3178,6 @@ var Calendar$i = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/hr_HR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3293,7 +3194,6 @@ const locale$A = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/hr_HR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3305,7 +3205,6 @@ const locale$B = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/hr_HR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3332,7 +3231,6 @@ var Pagination$i = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/hr_HR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var hr_HR = {
@@ -3389,7 +3287,6 @@ var hr_HR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/hu_HU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3450,7 +3347,6 @@ var Calendar$j = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/hu_HU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3467,7 +3363,6 @@ const locale$C = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/hu_HU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3479,7 +3374,6 @@ const locale$D = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/hu_HU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3514,7 +3408,6 @@ var Pagination$j = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/hu_HU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var hu_HU = {
@@ -3558,7 +3451,6 @@ var hu_HU = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/id_ID.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3599,7 +3491,6 @@ var Calendar$k = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/id_ID.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3616,7 +3507,6 @@ const locale$E = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/id_ID.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3628,7 +3518,6 @@ const locale$F = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/id_ID.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3655,7 +3544,6 @@ var Pagination$k = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/id_ID.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var id_ID = {
@@ -3700,7 +3588,6 @@ var id_ID = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/is_IS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3740,7 +3627,6 @@ var Calendar$l = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/is_IS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3757,7 +3643,6 @@ const locale$G = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/is_IS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3769,7 +3654,6 @@ const locale$H = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/is_IS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3796,7 +3680,6 @@ var Pagination$l = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/is_IS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var is_IS = {
@@ -3839,7 +3722,6 @@ var is_IS = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/it_IT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3879,7 +3761,6 @@ var Calendar$m = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/it_IT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3896,7 +3777,6 @@ const locale$I = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/it_IT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -3908,7 +3788,6 @@ const locale$J = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/it_IT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -3935,7 +3814,6 @@ var Pagination$m = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/it_IT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var it_IT = {
@@ -3991,7 +3869,6 @@ var it_IT = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ja_JP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4030,7 +3907,6 @@ var Calendar$n = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ja_JP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4047,7 +3923,6 @@ const locale$K = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ja_JP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -4058,7 +3933,6 @@ const locale$L = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ja_JP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4085,7 +3959,6 @@ var Pagination$n = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ja_JP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ja_JP = {
@@ -4128,7 +4001,6 @@ var ja_JP = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/kn_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4169,7 +4041,6 @@ var Calendar$o = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/kn_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4186,7 +4057,6 @@ const locale$M = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/kn_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4198,7 +4068,6 @@ const locale$N = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/kn_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4225,7 +4094,6 @@ var Pagination$o = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/kn_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var kn_IN = {
@@ -4276,7 +4144,6 @@ var kn_IN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ko_KR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4316,7 +4183,6 @@ var Calendar$p = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ko_KR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4333,7 +4199,6 @@ const locale$O = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ko_KR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4345,7 +4210,6 @@ const locale$P = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ko_KR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4372,7 +4236,6 @@ var Pagination$p = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ko_KR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ko_KR = {
@@ -4415,7 +4278,6 @@ var ko_KR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ku_IQ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4455,7 +4317,6 @@ var Calendar$q = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ku_IQ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4472,7 +4333,6 @@ const locale$Q = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ku_IQ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4484,7 +4344,6 @@ const locale$R = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ku_IQ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4511,7 +4370,6 @@ var Pagination$q = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ku_IQ.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ku_IQ = {
@@ -4554,7 +4412,6 @@ var ku_IQ = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/lv_LV.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4594,7 +4451,6 @@ var Calendar$r = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/lv_LV.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4611,7 +4467,6 @@ const locale$S = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/lv_LV.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4623,7 +4478,6 @@ const locale$T = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/lv_LV.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4650,7 +4504,6 @@ var Pagination$r = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/lv_LV.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var lv_LV = {
@@ -4693,7 +4546,6 @@ var lv_LV = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/mn_MN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4734,7 +4586,6 @@ var Calendar$s = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/mn_MN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4751,7 +4602,6 @@ const locale$U = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/mn_MN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4763,7 +4613,6 @@ const locale$V = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/mn_MN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4790,7 +4639,6 @@ var Pagination$s = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/mn_MN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var mn_MN = {
@@ -4833,7 +4681,6 @@ var mn_MN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ms_MY.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4873,7 +4720,6 @@ var Calendar$t = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ms_MY.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4890,7 +4736,6 @@ const locale$W = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ms_MY.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -4902,7 +4747,6 @@ const locale$X = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ms_MY.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -4929,7 +4773,6 @@ var Pagination$t = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ms_MY.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ms_MY = {
@@ -4992,7 +4835,6 @@ var ms_MY = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/nb_NO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5032,7 +4874,6 @@ var Calendar$u = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/nb_NO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5049,7 +4890,6 @@ const locale$Y = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/nb_NO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5061,7 +4901,6 @@ const locale$Z = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/nb_NO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5087,7 +4926,6 @@ var Pagination$u = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/nb_NO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var nb_NO = {
@@ -5130,7 +4968,6 @@ var nb_NO = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ne_NP.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ne_NP = {
@@ -5174,7 +5011,6 @@ var ne_NP = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/nl_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5214,7 +5050,6 @@ var Calendar$v = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/nl_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5231,7 +5066,6 @@ const locale$_ = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/nl_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5243,7 +5077,6 @@ const locale$$ = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/nl_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5270,7 +5103,6 @@ var Pagination$v = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/nl_BE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var nl_BE = {
@@ -5313,7 +5145,6 @@ var nl_BE = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/nl_NL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5353,7 +5184,6 @@ var Calendar$w = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/nl_NL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5370,7 +5200,6 @@ const locale$10 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/nl_NL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5382,7 +5211,6 @@ const locale$11 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/nl_NL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5409,7 +5237,6 @@ var Pagination$w = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/nl_NL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var nl_NL = {
@@ -5452,7 +5279,6 @@ var nl_NL = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/pl_PL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5492,7 +5318,6 @@ var Calendar$x = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/pl_PL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5509,7 +5334,6 @@ const locale$12 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/pl_PL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5521,7 +5345,6 @@ const locale$13 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/pl_PL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5548,7 +5371,6 @@ var Pagination$x = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pl_PL.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pl_PL = {
@@ -5591,7 +5413,6 @@ var pl_PL = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/pt_BR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5631,7 +5452,6 @@ var Calendar$y = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/pt_BR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5648,7 +5468,6 @@ const locale$14 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/pt_BR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5660,7 +5479,6 @@ const locale$15 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/pt_BR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5687,7 +5505,6 @@ var Pagination$y = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pt_BR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pt_BR = {
@@ -5730,7 +5547,6 @@ var pt_BR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/pt_PT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5770,7 +5586,6 @@ var Calendar$z = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/pt_PT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5787,7 +5602,6 @@ const locale$16 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/pt_PT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5799,7 +5613,6 @@ const locale$17 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/pt_PT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5826,7 +5639,6 @@ var Pagination$z = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pt_PT.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var pt_PT = {
@@ -5870,7 +5682,6 @@ var pt_PT = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ro_RO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5911,7 +5722,6 @@ var Calendar$A = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ro_RO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5928,7 +5738,6 @@ const locale$18 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ro_RO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -5940,7 +5749,6 @@ const locale$19 = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ro_RO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -5967,7 +5775,6 @@ var Pagination$A = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ro_RO.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ro_RO = {
@@ -6029,7 +5836,6 @@ var ro_RO = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ru_RU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6069,7 +5875,6 @@ var Calendar$B = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ru_RU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6089,7 +5894,6 @@ const locale$1a = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ru_RU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -6100,7 +5904,6 @@ const locale$1b = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ru_RU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6127,7 +5930,6 @@ var Pagination$B = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ru_RU.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ru_RU = {
@@ -6187,7 +5989,6 @@ var ru_RU = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/sk_SK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6227,7 +6028,6 @@ var Calendar$C = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/sk_SK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6244,7 +6044,6 @@ const locale$1c = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/sk_SK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // 统一合并为完整的 Locale
@@ -6256,7 +6055,6 @@ const locale$1d = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/sk_SK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6283,7 +6081,6 @@ var Pagination$C = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/sk_SK.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sk_SK = {
@@ -6326,7 +6123,6 @@ var sk_SK = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/sl_SI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6366,7 +6162,6 @@ var Calendar$D = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/sl_SI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6383,7 +6178,6 @@ const locale$1e = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/sl_SI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -6424,7 +6218,6 @@ const locale$1f = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/sl_SI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6451,7 +6244,6 @@ var Pagination$D = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/sl_SI.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sl_SI = {
@@ -6494,7 +6286,6 @@ var sl_SI = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/sr_RS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6534,7 +6325,6 @@ var Calendar$E = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/sr_RS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6551,7 +6341,6 @@ const locale$1g = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/sr_RS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -6563,7 +6352,6 @@ const locale$1h = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/sr_RS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6589,7 +6377,6 @@ var Pagination$E = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/sr_RS.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sr_RS = {
@@ -6632,7 +6419,6 @@ var sr_RS = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/sv_SE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6672,7 +6458,6 @@ var Calendar$F = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/sv_SE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6689,7 +6474,6 @@ const locale$1i = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/sv_SE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -6700,7 +6484,6 @@ const locale$1j = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/sv_SE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6727,7 +6510,6 @@ var Pagination$F = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/sv_SE.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var sv_SE = {
@@ -6768,7 +6550,6 @@ var sv_SE = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/ta_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6809,7 +6590,6 @@ var Calendar$G = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/ta_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6826,7 +6606,6 @@ const locale$1k = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/ta_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -6838,7 +6617,6 @@ const locale$1l = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/ta_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6865,7 +6643,6 @@ var Pagination$G = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/ta_IN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var ta_IN = {
@@ -6928,7 +6705,6 @@ var ta_IN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/th_TH.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6968,7 +6744,6 @@ var Calendar$H = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/th_TH.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -6985,7 +6760,6 @@ const locale$1m = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/th_TH.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -6997,7 +6771,6 @@ const locale$1n = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/th_TH.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7024,7 +6797,6 @@ var Pagination$H = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/th_TH.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var th_TH = {
@@ -7067,7 +6839,6 @@ var th_TH = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/tr_TR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7107,7 +6878,6 @@ var Calendar$I = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/tr_TR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7124,7 +6894,6 @@ const locale$1o = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/tr_TR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -7136,7 +6905,6 @@ const locale$1p = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/tr_TR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7163,7 +6931,6 @@ var Pagination$I = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/tr_TR.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var tr_TR = {
@@ -7220,7 +6987,6 @@ var tr_TR = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/uk_UA.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7260,7 +7026,6 @@ var Calendar$J = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/uk_UA.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7277,7 +7042,6 @@ const locale$1q = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/uk_UA.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -7288,7 +7052,6 @@ const locale$1r = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/uk_UA.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7315,7 +7078,6 @@ var Pagination$J = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/uk_UA.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var uk_UA = {
@@ -7358,7 +7120,6 @@ var uk_UA = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/vi_VN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7399,7 +7160,6 @@ var Calendar$K = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/vi_VN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7416,7 +7176,6 @@ const locale$1s = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/vi_VN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // Merge into a locale object
@@ -7428,7 +7187,6 @@ const locale$1t = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/vi_VN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7455,7 +7213,6 @@ var Pagination$K = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/vi_VN.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var vi_VN = {
@@ -7498,7 +7255,6 @@ var vi_VN = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/calendar/zh_TW.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7537,7 +7293,6 @@ var Calendar$L = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/time-picker/zh_TW.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7554,7 +7309,6 @@ const locale$1u = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/date-picker/zh_TW.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -7566,7 +7320,6 @@ locale$1v.lang.ok = '確 定';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/pagination/zh_TW.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -7593,7 +7346,6 @@ var Pagination$L = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: languages/zh_TW.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var zh_TW = {
@@ -7652,13 +7404,11 @@ var zh_TW = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-i18n.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

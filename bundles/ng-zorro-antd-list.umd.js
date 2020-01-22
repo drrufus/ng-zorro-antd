@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: interface.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -240,7 +239,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-list-item-meta.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzListItemMetaComponent = /** @class */ (function () {
@@ -309,7 +307,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-list.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzListComponent = /** @class */ (function () {
@@ -490,7 +487,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-list-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzListItemComponent = /** @class */ (function () {
@@ -604,7 +600,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-list.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzListModule = /** @class */ (function () {

@@ -6,7 +6,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-page-header-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPageHeaderTitleDirective {
@@ -94,7 +93,6 @@ NzPageHeaderAvatarDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-page-header.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -206,7 +204,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-page-header.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -232,13 +229,11 @@ NzPageHeaderModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-page-header.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

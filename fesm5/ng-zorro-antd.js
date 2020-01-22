@@ -127,7 +127,6 @@ export { VERSION } from 'ng-zorro-antd/version';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NgZorroAntdModule = /** @class */ (function () {
@@ -225,7 +224,6 @@ var NgZorroAntdModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -8,7 +8,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-row.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRowDirective {
@@ -214,7 +213,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-col.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -417,7 +415,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-grid.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzGridModule {
@@ -432,13 +429,11 @@ NzGridModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-grid.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

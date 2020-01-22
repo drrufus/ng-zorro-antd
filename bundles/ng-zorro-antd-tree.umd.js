@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree-node.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeNodeComponent = /** @class */ (function () {
@@ -1114,7 +1113,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeService = /** @class */ (function (_super) {
@@ -1130,7 +1128,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1761,7 +1758,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeModule = /** @class */ (function () {

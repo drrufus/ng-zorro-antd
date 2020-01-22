@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: date-table-cell.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var DateTableCellComponent = /** @class */ (function () {
@@ -238,7 +237,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: date-table.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -721,7 +719,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: month-table.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -924,7 +921,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-calendar-cells.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDateCellDirective = /** @class */ (function () {
@@ -974,7 +970,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-calendar-header.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCalendarHeaderComponent = /** @class */ (function () {
@@ -1164,7 +1159,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-calendar.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCalendarComponent = /** @class */ (function () {
@@ -1465,7 +1459,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-calendar.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCalendarModule = /** @class */ (function () {

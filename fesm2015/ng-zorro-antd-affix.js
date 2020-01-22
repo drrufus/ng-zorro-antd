@@ -8,7 +8,6 @@ import { shallowEqual, getStyleAsText, NzConfigService, NzScrollService, WithCon
 
 /**
  * @fileoverview added by tsickle
- * Generated from: utils.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -28,7 +27,6 @@ function isTargetWindow(target) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-affix.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -449,7 +447,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-affix.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAffixModule {
@@ -465,13 +462,11 @@ NzAffixModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-affix.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

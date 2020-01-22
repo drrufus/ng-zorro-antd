@@ -10,7 +10,6 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -47,7 +46,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list-item-meta.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListItemMetaComponent {
@@ -115,7 +113,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListComponent {
@@ -285,7 +282,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListItemComponent {
@@ -393,7 +389,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzListModule {
@@ -408,13 +403,11 @@ NzListModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-list.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

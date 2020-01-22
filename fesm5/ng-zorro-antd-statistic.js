@@ -7,7 +7,6 @@ import { NzAddOnModule, NzPipesModule } from 'ng-zorro-antd/core';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-statistic-definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -22,7 +21,6 @@ var REFRESH_INTERVAL = 1000 / 30;
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-statistic.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzStatisticComponent = /** @class */ (function () {
@@ -69,7 +67,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-countdown.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCountdownComponent = /** @class */ (function (_super) {
@@ -253,7 +250,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-statistic-number.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzStatisticNumberComponent = /** @class */ (function () {
@@ -330,7 +326,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-statistic.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzStatisticModule = /** @class */ (function () {
@@ -348,13 +343,11 @@ var NzStatisticModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-statistic.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

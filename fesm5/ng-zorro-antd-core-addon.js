@@ -4,7 +4,6 @@ import { __values } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: classlist_add.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzClassListAddDirective = /** @class */ (function () {
@@ -72,7 +71,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: string_template_outlet.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzStringTemplateOutletDirective = /** @class */ (function () {
@@ -327,7 +325,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: addon.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAddOnModule = /** @class */ (function () {
@@ -345,13 +342,11 @@ var NzAddOnModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-core-addon.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -12,7 +12,6 @@ import { __decorate, __metadata } from 'tslib';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-text-copy.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTextCopyComponent = /** @class */ (function () {
@@ -164,7 +163,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-text-edit.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTextEditComponent = /** @class */ (function () {
@@ -354,7 +352,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-typography.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -827,7 +824,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-typography.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTypographyModule = /** @class */ (function () {
@@ -853,13 +849,11 @@ var NzTypographyModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-typography.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

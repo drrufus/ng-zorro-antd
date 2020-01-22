@@ -10,7 +10,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-content.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzContentComponent {
@@ -59,7 +58,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-footer.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzFooterComponent {
@@ -105,7 +103,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-header.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzHeaderComponent {
@@ -151,7 +148,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-layout.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzLayoutComponent {
@@ -207,7 +203,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-sider.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSiderComponent {
@@ -477,7 +472,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-layout.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzLayoutModule {
@@ -492,13 +486,11 @@ NzLayoutModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-layout.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

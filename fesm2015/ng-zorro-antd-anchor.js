@@ -9,7 +9,6 @@ import { NzAffixModule } from 'ng-zorro-antd/affix';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -389,7 +388,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor-link.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAnchorLinkComponent {
@@ -516,7 +514,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzAnchorModule {
@@ -532,13 +529,11 @@ NzAnchorModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-anchor.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message-base.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -367,7 +366,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message-config.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -409,7 +407,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message-container.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -613,7 +610,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message.service.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMessageServiceModule = /** @class */ (function () {
@@ -627,7 +623,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMessageService = /** @class */ (function (_super) {
@@ -738,7 +733,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMessageComponent = /** @class */ (function () {
@@ -956,7 +950,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMessageModule = /** @class */ (function () {
@@ -975,7 +968,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-message.definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**

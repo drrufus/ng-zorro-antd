@@ -6,7 +6,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: ng-zorro-antd.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NgZorroAntdModule = /** @class */ (function () {

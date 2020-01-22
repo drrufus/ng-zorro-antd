@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty-config.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // tslint:disable-next-line:no-any
@@ -24,7 +23,6 @@ const simpleEmptyImage = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBl
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -116,7 +114,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-embed-empty.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmbedEmptyComponent {
@@ -287,7 +284,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmptyComponent {
@@ -409,7 +405,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzEmptyModule {
@@ -424,13 +419,11 @@ NzEmptyModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-empty.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

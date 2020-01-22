@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-breadcrumb.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -435,7 +434,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-breadcrumb-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBreadCrumbItemComponent = /** @class */ (function () {
@@ -474,7 +472,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-breadcrumb.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBreadCrumbModule = /** @class */ (function () {

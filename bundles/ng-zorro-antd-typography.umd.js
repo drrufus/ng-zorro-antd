@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-text-copy.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTextCopyComponent = /** @class */ (function () {
@@ -355,7 +354,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-text-edit.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTextEditComponent = /** @class */ (function () {
@@ -545,7 +543,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-typography.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1018,7 +1015,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-typography.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTypographyModule = /** @class */ (function () {

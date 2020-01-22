@@ -1,6 +1,5 @@
 /**
  * @fileoverview added by tsickle
- * Generated from: types/shape.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**

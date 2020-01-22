@@ -7,7 +7,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-base.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -149,7 +148,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-config.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -191,7 +189,6 @@ const NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-container.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -344,7 +341,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.service.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageServiceModule {
@@ -355,7 +351,6 @@ NzMessageServiceModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageService extends NzMessageBaseService {
@@ -437,7 +432,6 @@ NzMessageService.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageComponent {
@@ -620,7 +614,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMessageModule {
@@ -636,7 +629,6 @@ NzMessageModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -689,13 +681,11 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-message.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

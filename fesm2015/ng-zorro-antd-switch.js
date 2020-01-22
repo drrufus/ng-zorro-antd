@@ -9,7 +9,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-switch.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -36,6 +35,7 @@ class NzSwitchComponent {
         this.nzLoading = false;
         this.nzDisabled = false;
         this.nzControl = false;
+        this.nzLabel = '';
     }
     /**
      * @param {?} e
@@ -153,7 +153,7 @@ NzSwitchComponent.decorators = [
                 selector: 'nz-switch',
                 exportAs: 'nzSwitch',
                 preserveWhitespaces: false,
-                template: "<button type=\"button\" #switchElement\r\n  nz-wave\r\n  class=\"ant-switch\"\r\n  [disabled]=\"nzDisabled\"\r\n  [class.ant-switch-checked]=\"checked\"\r\n  [class.ant-switch-loading]=\"nzLoading\"\r\n  [class.ant-switch-disabled]=\"nzDisabled\"\r\n  [class.ant-switch-small]=\"nzSize === 'small'\"\r\n  [nzWaveExtraNode]=\"true\"\r\n  (keydown)=\"onKeyDown($event)\">\r\n  <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n  <span class=\"ant-switch-inner\">\r\n    <span>\r\n      <ng-container *ngIf=\"checked\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"!checked\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n      </ng-container>\r\n    </span>\r\n  </span>\r\n</button>\r\n",
+                template: "<label>\r\n  <button type=\"button\" #switchElement nz-wave class=\"ant-switch\" [disabled]=\"nzDisabled\" [attr.aria-checked]=\"checked\"\r\n    [class.ant-switch-checked]=\"checked\" [class.ant-switch-loading]=\"nzLoading\" [class.ant-switch-disabled]=\"nzDisabled\"\r\n    [class.ant-switch-small]=\"nzSize === 'small'\" [nzWaveExtraNode]=\"true\" (keydown)=\"onKeyDown($event)\">\r\n    <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n    <span class=\"ant-switch-inner\">\r\n      <span>\r\n        <ng-container *ngIf=\"checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"!checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n      </span>\r\n    </span>\r\n  </button>\r\n  {{ nzLabel }}\r\n</label>",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 providers: [
@@ -189,7 +189,8 @@ NzSwitchComponent.propDecorators = {
     nzControl: [{ type: Input }],
     nzCheckedChildren: [{ type: Input }],
     nzUnCheckedChildren: [{ type: Input }],
-    nzSize: [{ type: Input }]
+    nzSize: [{ type: Input }],
+    nzLabel: [{ type: Input }]
 };
 __decorate([
     InputBoolean(),
@@ -232,6 +233,8 @@ if (false) {
     /** @type {?} */
     NzSwitchComponent.prototype.nzSize;
     /** @type {?} */
+    NzSwitchComponent.prototype.nzLabel;
+    /** @type {?} */
     NzSwitchComponent.prototype.nzConfigService;
     /**
      * @type {?}
@@ -247,7 +250,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-switch.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSwitchModule {
@@ -262,13 +264,11 @@ NzSwitchModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-switch.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

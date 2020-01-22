@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-icon.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -461,7 +460,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-icon.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -533,6 +531,7 @@
              * @deprecated 8.0.0 avoid exposing low layer API.
              */
             _this.spin = false;
+            _this.nzIconLabel = null;
             _this.el = _this.elementRef.nativeElement;
             _this.destroy$ = new rxjs.Subject();
             return _this;
@@ -753,7 +752,12 @@
         function (svg) {
             if (typeof this.type === 'string' && svg) {
                 this.renderer.setAttribute(svg, 'data-icon', this.type);
-                this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+                if (this.nzIconLabel != null) {
+                    this.renderer.setAttribute(svg, 'aria-label', this.nzIconLabel);
+                }
+                else {
+                    this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+                }
             }
         };
         /**
@@ -894,7 +898,8 @@
             nzIconfont: [{ type: core.Input }],
             spin: [{ type: core.Input }],
             iconfont: [{ type: core.Input }],
-            type: [{ type: core.Input }]
+            type: [{ type: core.Input }],
+            nzIconLabel: [{ type: core.Input }]
         };
         __decorate([
             core$1.InputBoolean(),
@@ -916,6 +921,8 @@
          * @type {?}
          */
         NzIconDirective.prototype.iconfont;
+        /** @type {?} */
+        NzIconDirective.prototype.nzIconLabel;
         /**
          * @type {?}
          * @private
@@ -951,7 +958,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-icon.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzIconModule = /** @class */ (function () {

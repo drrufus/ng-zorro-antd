@@ -9,7 +9,6 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree-node.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTreeNodeComponent = /** @class */ (function () {
@@ -920,7 +919,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTreeService = /** @class */ (function (_super) {
@@ -936,7 +934,6 @@ var NzTreeService = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1567,7 +1564,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTreeModule = /** @class */ (function () {
@@ -1585,13 +1581,11 @@ var NzTreeModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-tree.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

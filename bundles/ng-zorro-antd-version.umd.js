@@ -6,7 +6,6 @@
 
 	/**
 	 * @fileoverview added by tsickle
-	 * Generated from: version.ts
 	 * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
 	 */
 	/** @type {?} */

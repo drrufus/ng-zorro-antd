@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-autocomplete-optgroup.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAutocompleteOptgroupComponent = /** @class */ (function () {
@@ -237,7 +236,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-autocomplete-option.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOptionSelectionChange = /** @class */ (function () {
@@ -439,7 +437,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-autocomplete.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -846,7 +843,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-autocomplete-trigger.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1501,7 +1497,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-autocomplete.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAutocompleteModule = /** @class */ (function () {

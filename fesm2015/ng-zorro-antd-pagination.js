@@ -11,7 +11,6 @@ import { NzSelectModule } from 'ng-zorro-antd/select';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-pagination.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -355,7 +354,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-pagination.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzPaginationModule {
@@ -370,13 +368,11 @@ NzPaginationModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-pagination.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

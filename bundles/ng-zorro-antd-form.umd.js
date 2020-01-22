@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-explain.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormExplainComponent = /** @class */ (function () {
@@ -244,7 +243,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-item.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -395,7 +393,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-control.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormControlComponent = /** @class */ (function (_super) {
@@ -726,7 +723,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-extra.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormExtraComponent = /** @class */ (function () {
@@ -766,7 +762,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-label.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormLabelComponent = /** @class */ (function (_super) {
@@ -876,7 +871,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-split.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormSplitComponent = /** @class */ (function () {
@@ -914,7 +908,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form-text.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormTextComponent = /** @class */ (function () {
@@ -952,7 +945,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1100,7 +1092,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-form.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFormModule = /** @class */ (function () {

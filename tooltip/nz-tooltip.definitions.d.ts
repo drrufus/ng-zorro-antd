@@ -5,4 +5,4 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-export declare type NzTooltipTrigger = 'click' | 'focus' | 'hover' | null;
+export declare type NzTooltipTrigger = 'click' | 'focus' | 'hover' | 'combined' | null;

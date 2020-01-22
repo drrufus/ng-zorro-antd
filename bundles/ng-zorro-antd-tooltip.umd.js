@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tooltip.definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -216,7 +215,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: base/nz-tooltip-base.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -435,7 +433,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: base/nz-tooltip-base-legacy.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -582,7 +579,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tooltip.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzToolTipComponent = /** @class */ (function (_super) {
@@ -632,7 +628,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: base/nz-tooltip-base.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -888,48 +883,7 @@
             /** @type {?} */
             var trigger = this.isDynamicTooltip ? this.trigger : this.tooltip.nzTrigger;
             this.removeTriggerListeners();
-            if (trigger === 'hover') {
-                /** @type {?} */
-                var overlayElement_1;
-                this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseenter', (/**
-                 * @return {?}
-                 */
-                function () {
-                    _this.delayEnterLeave(true, true, _this.tooltip.nzMouseEnterDelay);
-                })));
-                this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseleave', (/**
-                 * @return {?}
-                 */
-                function () {
-                    _this.delayEnterLeave(true, false, _this.tooltip.nzMouseLeaveDelay);
-                    if (_this.tooltip.overlay.overlayRef && !overlayElement_1) {
-                        overlayElement_1 = _this.tooltip.overlay.overlayRef.overlayElement;
-                        _this.triggerUnlisteners.push(_this.renderer.listen(overlayElement_1, 'mouseenter', (/**
-                         * @return {?}
-                         */
-                        function () {
-                            _this.delayEnterLeave(false, true);
-                        })));
-                        _this.triggerUnlisteners.push(_this.renderer.listen(overlayElement_1, 'mouseleave', (/**
-                         * @return {?}
-                         */
-                        function () {
-                            _this.delayEnterLeave(false, false);
-                        })));
-                    }
-                })));
-            }
-            else if (trigger === 'focus') {
-                this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', (/**
-                 * @return {?}
-                 */
-                function () { return _this.show(); })));
-                this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', (/**
-                 * @return {?}
-                 */
-                function () { return _this.hide(); })));
-            }
-            else if (trigger === 'click') {
+            if (trigger === 'click') {
                 this.triggerUnlisteners.push(this.renderer.listen(el, 'click', (/**
                  * @param {?} e
                  * @return {?}
@@ -938,7 +892,51 @@
                     e.preventDefault();
                     _this.show();
                 })));
-            } // Else do nothing because user wants to control the visibility programmatically.
+            }
+            else {
+                if (trigger === 'hover' || trigger === 'combined') {
+                    /** @type {?} */
+                    var overlayElement_1;
+                    this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseenter', (/**
+                     * @return {?}
+                     */
+                    function () {
+                        _this.delayEnterLeave(true, true, _this.tooltip.nzMouseEnterDelay);
+                    })));
+                    this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseleave', (/**
+                     * @return {?}
+                     */
+                    function () {
+                        _this.delayEnterLeave(true, false, _this.tooltip.nzMouseLeaveDelay);
+                        if (_this.tooltip.overlay.overlayRef && !overlayElement_1) {
+                            overlayElement_1 = _this.tooltip.overlay.overlayRef.overlayElement;
+                            _this.triggerUnlisteners.push(_this.renderer.listen(overlayElement_1, 'mouseenter', (/**
+                             * @return {?}
+                             */
+                            function () {
+                                _this.delayEnterLeave(false, true);
+                            })));
+                            _this.triggerUnlisteners.push(_this.renderer.listen(overlayElement_1, 'mouseleave', (/**
+                             * @return {?}
+                             */
+                            function () {
+                                _this.delayEnterLeave(false, false);
+                            })));
+                        }
+                    })));
+                }
+                if (trigger === 'focus' || trigger === 'combined') {
+                    this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', (/**
+                     * @return {?}
+                     */
+                    function () { return _this.show(); })));
+                    this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', (/**
+                     * @return {?}
+                     */
+                    function () { return _this.hide(); })));
+                }
+            }
+            // Else do nothing because user wants to control the visibility programmatically.
         };
         /**
          * Sync changed properties to the component and trigger change detection in that component.
@@ -1216,7 +1214,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tooltip.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTooltipDirective = /** @class */ (function (_super) {
@@ -1273,7 +1270,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tooltip.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzToolTipModule = /** @class */ (function () {

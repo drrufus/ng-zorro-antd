@@ -14,7 +14,6 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader-definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -107,7 +106,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader-utils.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -134,7 +132,6 @@ function isParentOption(o) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader-li.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCascaderOptionComponent = /** @class */ (function () {
@@ -217,7 +214,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1005,7 +1001,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -2193,7 +2188,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-cascader.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCascaderModule = /** @class */ (function () {
@@ -2222,13 +2216,11 @@ var NzCascaderModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-cascader.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

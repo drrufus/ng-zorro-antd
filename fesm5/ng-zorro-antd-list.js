@@ -10,7 +10,6 @@ import { NzSpinModule } from 'ng-zorro-antd/spin';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -47,7 +46,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list-item-meta.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzListItemMetaComponent = /** @class */ (function () {
@@ -116,7 +114,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzListComponent = /** @class */ (function () {
@@ -297,7 +294,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzListItemComponent = /** @class */ (function () {
@@ -411,7 +407,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-list.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzListModule = /** @class */ (function () {
@@ -429,13 +424,11 @@ var NzListModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-list.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

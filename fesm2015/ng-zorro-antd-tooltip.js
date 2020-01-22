@@ -7,7 +7,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tooltip.definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -20,7 +19,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: base/nz-tooltip-base.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -197,7 +195,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: base/nz-tooltip-base-legacy.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -327,7 +324,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tooltip.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzToolTipComponent extends NzTooltipBaseComponentLegacy {
@@ -382,7 +378,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: base/nz-tooltip-base.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -587,48 +582,7 @@ class NzTooltipBaseDirective {
         /** @type {?} */
         const trigger = this.isDynamicTooltip ? this.trigger : this.tooltip.nzTrigger;
         this.removeTriggerListeners();
-        if (trigger === 'hover') {
-            /** @type {?} */
-            let overlayElement;
-            this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseenter', (/**
-             * @return {?}
-             */
-            () => {
-                this.delayEnterLeave(true, true, this.tooltip.nzMouseEnterDelay);
-            })));
-            this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseleave', (/**
-             * @return {?}
-             */
-            () => {
-                this.delayEnterLeave(true, false, this.tooltip.nzMouseLeaveDelay);
-                if (this.tooltip.overlay.overlayRef && !overlayElement) {
-                    overlayElement = this.tooltip.overlay.overlayRef.overlayElement;
-                    this.triggerUnlisteners.push(this.renderer.listen(overlayElement, 'mouseenter', (/**
-                     * @return {?}
-                     */
-                    () => {
-                        this.delayEnterLeave(false, true);
-                    })));
-                    this.triggerUnlisteners.push(this.renderer.listen(overlayElement, 'mouseleave', (/**
-                     * @return {?}
-                     */
-                    () => {
-                        this.delayEnterLeave(false, false);
-                    })));
-                }
-            })));
-        }
-        else if (trigger === 'focus') {
-            this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', (/**
-             * @return {?}
-             */
-            () => this.show())));
-            this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', (/**
-             * @return {?}
-             */
-            () => this.hide())));
-        }
-        else if (trigger === 'click') {
+        if (trigger === 'click') {
             this.triggerUnlisteners.push(this.renderer.listen(el, 'click', (/**
              * @param {?} e
              * @return {?}
@@ -637,7 +591,51 @@ class NzTooltipBaseDirective {
                 e.preventDefault();
                 this.show();
             })));
-        } // Else do nothing because user wants to control the visibility programmatically.
+        }
+        else {
+            if (trigger === 'hover' || trigger === 'combined') {
+                /** @type {?} */
+                let overlayElement;
+                this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseenter', (/**
+                 * @return {?}
+                 */
+                () => {
+                    this.delayEnterLeave(true, true, this.tooltip.nzMouseEnterDelay);
+                })));
+                this.triggerUnlisteners.push(this.renderer.listen(el, 'mouseleave', (/**
+                 * @return {?}
+                 */
+                () => {
+                    this.delayEnterLeave(true, false, this.tooltip.nzMouseLeaveDelay);
+                    if (this.tooltip.overlay.overlayRef && !overlayElement) {
+                        overlayElement = this.tooltip.overlay.overlayRef.overlayElement;
+                        this.triggerUnlisteners.push(this.renderer.listen(overlayElement, 'mouseenter', (/**
+                         * @return {?}
+                         */
+                        () => {
+                            this.delayEnterLeave(false, true);
+                        })));
+                        this.triggerUnlisteners.push(this.renderer.listen(overlayElement, 'mouseleave', (/**
+                         * @return {?}
+                         */
+                        () => {
+                            this.delayEnterLeave(false, false);
+                        })));
+                    }
+                })));
+            }
+            if (trigger === 'focus' || trigger === 'combined') {
+                this.triggerUnlisteners.push(this.renderer.listen(el, 'focus', (/**
+                 * @return {?}
+                 */
+                () => this.show())));
+                this.triggerUnlisteners.push(this.renderer.listen(el, 'blur', (/**
+                 * @return {?}
+                 */
+                () => this.hide())));
+            }
+        }
+        // Else do nothing because user wants to control the visibility programmatically.
     }
     /**
      * Sync changed properties to the component and trigger change detection in that component.
@@ -878,7 +876,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tooltip.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTooltipDirective extends NzTooltipBaseDirective {
@@ -940,7 +937,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tooltip.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzToolTipModule {
@@ -956,19 +952,16 @@ NzToolTipModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: base/public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-tooltip.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

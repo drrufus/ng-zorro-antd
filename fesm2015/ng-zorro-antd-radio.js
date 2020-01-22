@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-radio.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioComponent {
@@ -39,6 +38,7 @@ class NzRadioComponent {
         () => null);
         this.nzDisabled = false;
         this.nzAutoFocus = false;
+        this.nzLabelledById = null;
         this.renderer.addClass(elementRef.nativeElement, 'ant-radio-wrapper');
     }
     /**
@@ -159,7 +159,7 @@ NzRadioComponent.decorators = [
                 selector: '[nz-radio]',
                 exportAs: 'nzRadio',
                 preserveWhitespaces: false,
-                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\" [attr.name]=\"name\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span><ng-content></ng-content></span>",
+                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [
@@ -190,6 +190,7 @@ NzRadioComponent.propDecorators = {
     nzValue: [{ type: Input }],
     nzDisabled: [{ type: Input }],
     nzAutoFocus: [{ type: Input }],
+    nzLabelledById: [{ type: Input }],
     onClick: [{ type: HostListener, args: ['click', ['$event'],] }]
 };
 __decorate([
@@ -223,6 +224,8 @@ if (false) {
     NzRadioComponent.prototype.nzDisabled;
     /** @type {?} */
     NzRadioComponent.prototype.nzAutoFocus;
+    /** @type {?} */
+    NzRadioComponent.prototype.nzLabelledById;
     /**
      * @type {?}
      * @private
@@ -247,7 +250,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-radio-button.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioButtonComponent extends NzRadioComponent {
@@ -288,7 +290,7 @@ NzRadioButtonComponent.decorators = [
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 preserveWhitespaces: false,
-                template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\" [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\" [attr.name]=\"name\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span><ng-content></ng-content></span>",
+                template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\" [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\" [attr.name]=\"name\" [attr.aria-checked]=\"checked\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span><ng-content></ng-content></span>",
                 host: {
                     '[class.ant-radio-button-wrapper-checked]': 'checked',
                     '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled'
@@ -305,7 +307,6 @@ NzRadioButtonComponent.ctorParameters = () => [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-radio-group.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioGroupComponent {
@@ -544,7 +545,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-radio.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzRadioModule {
@@ -559,13 +559,11 @@ NzRadioModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-radio.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

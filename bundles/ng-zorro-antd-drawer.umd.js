@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer-ref.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -279,7 +278,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -912,7 +910,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer.service.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDrawerServiceModule = /** @class */ (function () {
@@ -926,7 +923,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDrawerModule = /** @class */ (function () {
@@ -953,7 +949,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1111,7 +1106,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-drawer-options.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-comment-cells.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCommentAvatarDirective = /** @class */ (function () {
@@ -340,7 +339,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-comment.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCommentComponent = /** @class */ (function () {
@@ -379,7 +377,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-comment.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */

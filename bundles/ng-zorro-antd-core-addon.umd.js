@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: classlist_add.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzClassListAddDirective = /** @class */ (function () {
@@ -271,7 +270,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: string_template_outlet.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStringTemplateOutletDirective = /** @class */ (function () {
@@ -526,7 +524,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: addon.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAddOnModule = /** @class */ (function () {

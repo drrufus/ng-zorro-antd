@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-anchor.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -635,7 +634,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-anchor-link.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAnchorLinkComponent = /** @class */ (function () {
@@ -769,7 +767,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-anchor.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAnchorModule = /** @class */ (function () {

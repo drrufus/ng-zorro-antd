@@ -9,7 +9,6 @@ import { startWith, takeUntil, switchMap, auditTime, finalize } from 'rxjs/opera
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-descriptions-item.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzDescriptionsItemComponent = /** @class */ (function () {
@@ -70,7 +69,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-descriptions.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -369,7 +367,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-descriptions.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzDescriptionsModule = /** @class */ (function () {
@@ -387,7 +384,6 @@ var NzDescriptionsModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-descriptions-definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -412,13 +408,11 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-descriptions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

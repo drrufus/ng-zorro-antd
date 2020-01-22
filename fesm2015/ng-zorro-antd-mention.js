@@ -11,7 +11,6 @@ import { getMentions, getCaretCoordinates, DEFAULT_MENTION_BOTTOM_POSITIONS, DEF
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-mention-suggestions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMentionSuggestionDirective {
@@ -25,7 +24,6 @@ NzMentionSuggestionDirective.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-mention.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzMentionService {
@@ -73,7 +71,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-mention-trigger.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -225,7 +222,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-mention.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -784,7 +780,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-mention.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -801,13 +796,11 @@ NzMentionModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-mention.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

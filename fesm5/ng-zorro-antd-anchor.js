@@ -9,7 +9,6 @@ import { NzAffixModule } from 'ng-zorro-antd/affix';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -441,7 +440,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor-link.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAnchorLinkComponent = /** @class */ (function () {
@@ -575,7 +573,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-anchor.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAnchorModule = /** @class */ (function () {
@@ -594,13 +591,11 @@ var NzAnchorModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-anchor.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

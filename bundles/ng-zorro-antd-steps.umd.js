@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-step.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStepComponent = /** @class */ (function () {
@@ -414,7 +413,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-steps.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStepsComponent = /** @class */ (function () {
@@ -640,7 +638,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-steps.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStepsModule = /** @class */ (function () {

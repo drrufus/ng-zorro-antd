@@ -14,7 +14,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-option.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOptionComponent = /** @class */ (function () {
@@ -83,7 +82,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-option-group.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOptionGroupComponent = /** @class */ (function () {
@@ -134,7 +132,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-option.pipe.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzFilterOptionPipe = /** @class */ (function () {
@@ -227,7 +224,6 @@ function defaultFilterOption(searchValue, option) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-select.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSelectService = /** @class */ (function () {
@@ -1053,7 +1049,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-option-li.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOptionLiComponent = /** @class */ (function () {
@@ -1180,7 +1175,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-option-container.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOptionContainerComponent = /** @class */ (function () {
@@ -1399,7 +1393,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-select-top-control.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSelectTopControlComponent = /** @class */ (function () {
@@ -1703,7 +1696,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-select.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSelectComponent = /** @class */ (function () {
@@ -2359,7 +2351,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-select-unselectable.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSelectUnselectableDirective = /** @class */ (function () {
@@ -2380,7 +2371,6 @@ var NzSelectUnselectableDirective = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-select.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzSelectModule = /** @class */ (function () {
@@ -2425,13 +2415,11 @@ var NzSelectModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-select.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

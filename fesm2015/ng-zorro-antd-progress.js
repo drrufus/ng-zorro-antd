@@ -8,7 +8,6 @@ import { takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-progress-utils.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -93,7 +92,6 @@ const handleLinearGradient = (/**
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-progress.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -479,7 +477,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-progress.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzProgressModule {
@@ -494,7 +491,6 @@ NzProgressModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-progress.definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -531,13 +527,11 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-progress.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

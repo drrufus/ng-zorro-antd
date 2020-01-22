@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tab-body.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTabBodyComponent = /** @class */ (function () {
@@ -243,7 +242,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tab-label.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTabLabelDirective = /** @class */ (function () {
@@ -320,7 +318,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tab-link.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -353,7 +350,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tab.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -373,7 +369,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tab.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTabComponent = /** @class */ (function () {
@@ -493,7 +488,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tabs-ink-bar.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTabsInkBarDirective = /** @class */ (function () {
@@ -646,7 +640,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tabs-nav.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1250,7 +1243,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tabset.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1872,7 +1864,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tabs.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTabsModule = /** @class */ (function () {

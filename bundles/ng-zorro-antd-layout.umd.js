@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-content.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzContentComponent = /** @class */ (function () {
@@ -245,7 +244,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-footer.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFooterComponent = /** @class */ (function () {
@@ -284,7 +282,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-header.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzHeaderComponent = /** @class */ (function () {
@@ -323,7 +320,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-layout.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzLayoutComponent = /** @class */ (function () {
@@ -382,7 +378,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-sider.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSiderComponent = /** @class */ (function () {
@@ -680,7 +675,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-layout.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzLayoutModule = /** @class */ (function () {

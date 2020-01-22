@@ -16,7 +16,6 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -170,7 +169,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-upload-btn.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadBtnComponent {
@@ -692,7 +690,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-upload-list.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadListComponent {
@@ -991,7 +988,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-upload.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadComponent {
@@ -1573,7 +1569,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-upload.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzUploadModule {
@@ -1588,13 +1583,11 @@ NzUploadModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-upload.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

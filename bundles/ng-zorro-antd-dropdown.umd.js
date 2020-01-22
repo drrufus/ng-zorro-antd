@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu-dropdown.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuDropdownService = /** @class */ (function (_super) {
@@ -225,7 +224,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown-context.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropdownContextComponent = /** @class */ (function () {
@@ -346,7 +344,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown-menu.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -495,7 +492,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropDownDirective = /** @class */ (function () {
@@ -1079,7 +1075,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1326,7 +1321,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown.service.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropdownServiceModule = /** @class */ (function () {
@@ -1340,7 +1334,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropdownService = /** @class */ (function () {
@@ -1435,7 +1428,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown-button.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ɵ0 = menuServiceFactory;
@@ -1515,7 +1507,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-context-menu.service.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzContextMenuServiceModule = /** @class */ (function () {
@@ -1529,7 +1520,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown-a.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropDownADirective = /** @class */ (function () {
@@ -1566,7 +1556,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-dropdown.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzDropDownModule = /** @class */ (function () {
@@ -1612,7 +1601,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-context-menu.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzContextMenuService = /** @class */ (function () {

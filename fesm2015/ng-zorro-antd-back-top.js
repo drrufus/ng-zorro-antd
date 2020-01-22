@@ -8,7 +8,6 @@ import { throttleTime, distinctUntilChanged } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-back-top.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -180,7 +179,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-back-top.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzBackTopModule {
@@ -196,13 +194,11 @@ NzBackTopModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-back-top.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

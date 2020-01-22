@@ -10,7 +10,6 @@ import { NzTooltipDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -103,7 +102,6 @@ function isConfigAObject(config) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-error.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -122,7 +120,6 @@ function getValueTypeNotMatchError() {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderComponent {
@@ -869,7 +866,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-handle.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderHandleComponent {
@@ -1060,7 +1056,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-marks.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderMarksComponent {
@@ -1213,7 +1208,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-step.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderStepComponent {
@@ -1330,7 +1324,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider-track.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1426,7 +1419,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-slider.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzSliderModule {
@@ -1453,13 +1445,11 @@ NzSliderModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-slider.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

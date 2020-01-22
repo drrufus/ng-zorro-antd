@@ -208,7 +208,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: addon/classlist_add.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzClassListAddDirective = /** @class */ (function () {
@@ -276,7 +275,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: addon/string_template_outlet.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzStringTemplateOutletDirective = /** @class */ (function () {
@@ -531,7 +529,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: addon/addon.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzAddOnModule = /** @class */ (function () {
@@ -549,13 +546,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: addon/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/animation-consts.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -634,7 +629,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/collapse.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -661,7 +655,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/fade.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -672,7 +665,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/help.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -701,7 +693,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/move.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -734,7 +725,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/notification.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -760,7 +750,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/slide.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -824,7 +813,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/zoom.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -881,13 +869,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: animation/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: environments/environment.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -904,7 +890,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: logger/logger.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1022,7 +1007,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/convert.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1146,7 +1130,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: no-animation/nz-no-animation.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1240,7 +1223,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: no-animation/nz-no-animation.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzNoAnimationModule = /** @class */ (function () {
@@ -1258,13 +1240,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: no-animation/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: overlay/nz-connected-overlay.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzConnectedOverlayDirective = /** @class */ (function () {
@@ -1294,7 +1274,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: overlay/nz-overlay.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOverlayModule = /** @class */ (function () {
@@ -1311,7 +1290,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: overlay/overlay-position.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1378,25 +1356,21 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: overlay/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: logger/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: logger/index.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: time/candy-date.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2027,7 +2001,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: time/time.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2050,13 +2023,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: time/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: polyfill/request-animation.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2145,13 +2116,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: polyfill/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: scroll/nz-scroll.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2358,13 +2327,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: scroll/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/update-host-class.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzUpdateHostClassService = /** @class */ (function () {
@@ -2450,7 +2417,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/nz-copy-to-clipboard.service.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCopyToClipboardServiceModule = /** @class */ (function () {
@@ -2464,7 +2430,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/nz-copy-to-clipboard.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCopyToClipboardService = /** @class */ (function () {
@@ -2541,7 +2506,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/nz-dom-event.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2691,7 +2655,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/nz-singleton.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2802,7 +2765,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/check.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -2921,7 +2883,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/dom.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3048,7 +3009,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/drag/nz-drag.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3248,19 +3208,16 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/drag/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: services/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/event-objects.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3389,7 +3346,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/dispatch-events.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3454,7 +3410,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/type-in-element.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3472,7 +3427,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/wrapped-error-message.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3496,7 +3450,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/fake-viewport-ruler.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3554,7 +3507,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/mock-ng-zone.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -3616,13 +3568,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: testing/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-base-node.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4307,7 +4257,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-base.definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4370,7 +4319,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/array.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4429,7 +4377,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/getMentions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4476,7 +4423,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/string.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4525,7 +4471,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/is-promise.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4546,7 +4491,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/number.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4596,7 +4540,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/scroll-into-view-if-needed.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4626,7 +4569,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/textarea-caret-position.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4824,7 +4766,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/style.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -4874,7 +4815,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/text-measure.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -5190,7 +5130,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/measure-scrollbar.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -5267,7 +5206,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/ensure-in-bounds.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -5288,7 +5226,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/tick.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -5306,19 +5243,16 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: util/index.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-base-util.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -5348,7 +5282,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-base.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeBaseService = /** @class */ (function () {
@@ -6446,7 +6379,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-service.resolver.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -6454,7 +6386,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/nz-tree-base.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeBase = /** @class */ (function () {
@@ -6638,26 +6569,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: tree/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/common-wrap.ts
-     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
-     */
-    /**
-     * @license
-     * Copyright Alibaba.com All Rights Reserved.
-     *
-     * Use of this source code is governed by an MIT-style license that can be
-     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
-     */
-
-    /**
-     * @fileoverview added by tsickle
-     * Generated from: types/direction.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6670,7 +6586,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/drop-down-position.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6683,7 +6598,18 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/indexable.ts
+     * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
+     */
+    /**
+     * @license
+     * Copyright Alibaba.com All Rights Reserved.
+     *
+     * Use of this source code is governed by an MIT-style license that can be
+     * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+     */
+
+    /**
+     * @fileoverview added by tsickle
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6700,7 +6626,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/ng-class.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6721,7 +6646,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/size.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6738,7 +6662,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/template.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6751,7 +6674,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/shape.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6764,7 +6686,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/compare-with.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -6777,13 +6698,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: types/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: wave/nz-wave-renderer.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzWaveRenderer = /** @class */ (function () {
@@ -7041,7 +6960,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: wave/nz-wave.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -7226,7 +7144,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: wave/nz-wave.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzWaveModule = /** @class */ (function () {
@@ -7244,13 +7161,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: wave/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: dropdown/nz-menu-base.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuBaseService = /** @class */ (function () {
@@ -7344,7 +7259,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: dropdown/nz-dropdown-service.resolver.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -7352,13 +7266,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: dropdown/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: responsive/nz-breakpoint.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -7370,12 +7282,12 @@
      */
     /** @enum {string} */
     var NzBreakpoint = {
-        xxl: "xxl",
-        xl: "xl",
-        lg: "lg",
-        md: "md",
-        sm: "sm",
-        xs: "xs",
+        xxl: 'xxl',
+        xl: 'xl',
+        lg: 'lg',
+        md: 'md',
+        sm: 'sm',
+        xs: 'xs',
     };
     /** @type {?} */
     var responsiveMap = {
@@ -7389,13 +7301,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: responsive/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: trans-button/nz-trans-button.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransButtonDirective = /** @class */ (function () {
@@ -7417,7 +7327,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: trans-button/nz-trans-button.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransButtonModule = /** @class */ (function () {
@@ -7435,13 +7344,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: trans-button/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: highlight/highlight.pipe.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     // Regular Expressions for parsing tags and attributes
@@ -7528,7 +7435,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: highlight/highlight.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzHighlightModule = /** @class */ (function () {
@@ -7546,13 +7452,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: highlight/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: config/config.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -8037,7 +7941,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: config/config.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -8188,13 +8091,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: config/public-api.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: pipe/nz-css-unit.pipe.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzToCssUnitPipe = /** @class */ (function () {
@@ -8226,13 +8127,11 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: time/index.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: pipe/nz-time-range.pipe.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTimeRangePipe = /** @class */ (function () {
@@ -8285,7 +8184,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: pipe/nz-pipe.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzPipesModule = /** @class */ (function () {

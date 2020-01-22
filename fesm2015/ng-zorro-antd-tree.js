@@ -9,7 +9,6 @@ import { NG_VALUE_ACCESSOR } from '@angular/forms';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree-node.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeNodeComponent {
@@ -760,7 +759,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeService extends NzTreeBaseService {
@@ -771,7 +769,6 @@ NzTreeService.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1312,7 +1309,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-tree.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTreeModule {
@@ -1327,13 +1323,11 @@ NzTreeModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-tree.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuService = /** @class */ (function (_super) {
@@ -225,7 +224,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-submenu.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSubmenuService = /** @class */ (function () {
@@ -362,7 +360,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu-item.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuItemDirective = /** @class */ (function () {
@@ -725,7 +722,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu.resolver.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -746,7 +742,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-submenu.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSubMenuComponent = /** @class */ (function () {
@@ -1085,7 +1080,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var ɵ0 = NzMenuServiceFactory;
@@ -1330,7 +1324,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu-group.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuGroupComponent = /** @class */ (function () {
@@ -1373,7 +1366,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu-divider.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuDividerDirective = /** @class */ (function () {
@@ -1407,7 +1399,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-menu.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzMenuModule = /** @class */ (function () {

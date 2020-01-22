@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-carousel-content.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCarouselContentDirective = /** @class */ (function () {
@@ -272,7 +271,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-carousel-definitions.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -330,7 +328,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: strategies/base-strategy.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -518,7 +515,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: strategies/opacity-strategy.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCarouselOpacityStrategy = /** @class */ (function (_super) {
@@ -607,7 +603,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: strategies/transform-strategy.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCarouselTransformStrategy = /** @class */ (function (_super) {
@@ -868,7 +863,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-carousel.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -1431,7 +1425,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-carousel.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzCarouselModule = /** @class */ (function () {

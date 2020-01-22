@@ -14,7 +14,6 @@ import { NzInputModule } from 'ng-zorro-antd/input';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: interface.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -90,7 +89,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer-list.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransferListComponent = /** @class */ (function () {
@@ -390,7 +388,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer-search.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransferSearchComponent = /** @class */ (function () {
@@ -474,7 +471,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransferComponent = /** @class */ (function () {
@@ -964,7 +960,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-transfer.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTransferModule = /** @class */ (function () {
@@ -991,13 +986,11 @@ var NzTransferModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-transfer.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

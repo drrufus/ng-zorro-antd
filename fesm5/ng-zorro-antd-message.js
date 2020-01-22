@@ -8,7 +8,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-base.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -172,7 +171,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-config.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -214,7 +212,6 @@ var NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER = {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message-container.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -418,7 +415,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.service.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageServiceModule = /** @class */ (function () {
@@ -432,7 +428,6 @@ var NzMessageServiceModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageService = /** @class */ (function (_super) {
@@ -543,7 +538,6 @@ var NzMessageService = /** @class */ (function (_super) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageComponent = /** @class */ (function () {
@@ -761,7 +755,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzMessageModule = /** @class */ (function () {
@@ -780,7 +773,6 @@ var NzMessageModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-message.definitions.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -833,13 +825,11 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-message.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree-select.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeSelectService = /** @class */ (function (_super) {
@@ -219,7 +218,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree-select.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -1077,7 +1075,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-tree-select.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTreeSelectModule = /** @class */ (function () {

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: partial/not-found.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzResultNotFoundComponent = /** @class */ (function () {
@@ -223,7 +222,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: partial/server-error.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzResultServerErrorComponent = /** @class */ (function () {
@@ -243,7 +241,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: partial/unauthorized.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzResultUnauthorizedComponent = /** @class */ (function () {
@@ -263,7 +260,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-result-cells.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzResultTitleDirective = /** @class */ (function () {
@@ -336,7 +332,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-result.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -456,7 +451,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-result.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */

@@ -12,7 +12,6 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer-ref.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -88,7 +87,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -721,7 +719,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer.service.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzDrawerServiceModule = /** @class */ (function () {
@@ -735,7 +732,6 @@ var NzDrawerServiceModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzDrawerModule = /** @class */ (function () {
@@ -762,7 +758,6 @@ var NzDrawerModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -920,7 +915,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-drawer-options.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -985,13 +979,11 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-drawer.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

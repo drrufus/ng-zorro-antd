@@ -6,7 +6,6 @@ import { CdkPortalOutlet, TemplatePortal } from '@angular/cdk/portal';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-comment-cells.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCommentAvatarDirective = /** @class */ (function () {
@@ -143,7 +142,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-comment.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzCommentComponent = /** @class */ (function () {
@@ -182,7 +180,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-comment.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -207,13 +204,11 @@ var NzCommentModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-comment.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

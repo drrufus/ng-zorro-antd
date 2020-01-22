@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-badge.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /** @type {?} */
@@ -357,7 +356,7 @@
                         encapsulation: core.ViewEncapsulation.None,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         animations: [core$1.zoomBadgeMotion],
-                        template: "<span #contentElement><ng-content></ng-content></span>\r\n<span class=\"ant-badge-status-dot ant-badge-status-{{nzStatus || presetColor}}\"\r\n      [style.background]=\"!presetColor && nzColor\"\r\n      *ngIf=\"nzStatus || nzColor\"\r\n      [ngStyle]=\"nzStyle\"></span>\r\n<span class=\"ant-badge-status-text\" *ngIf=\"nzStatus || nzColor\">{{ nzText }}</span>\r\n<ng-container *nzStringTemplateOutlet=\"nzCount\">\r\n  <sup class=\"ant-scroll-number\"\r\n       *ngIf=\"showSup && viewInit\"\r\n       [@.disabled]=\"notWrapper\"\r\n       [@zoomBadgeMotion]\r\n       [ngStyle]=\"nzStyle\"\r\n       [attr.title]=\"nzTitle || nzCount\"\r\n       [style.right.px]=\"nzOffset && nzOffset[0] ? -nzOffset[0] : null\"\r\n       [style.marginTop.px]=\"nzOffset && nzOffset[1] ? nzOffset[1] : null\"\r\n       [class.ant-badge-count]=\"!nzDot\"\r\n       [class.ant-badge-dot]=\"nzDot\"\r\n       [class.ant-badge-multiple-words]=\"countArray.length>=2\">\r\n    <ng-container *ngFor=\"let n of maxNumberArray;let i = index;\">\r\n      <span class=\"ant-scroll-number-only\"\r\n            *ngIf=\"count <= nzOverflowCount\"\r\n            [style.transform]=\"'translateY(' + (-countArray[i] * 100) + '%)'\">\r\n          <ng-container *ngIf=\"!nzDot && countArray[i] !== undefined\">\r\n            <p *ngFor=\"let p of countSingleArray\" [class.current]=\"p === countArray[i]\">{{ p }}</p>\r\n          </ng-container>\r\n      </span>\r\n    </ng-container>\r\n    <ng-container *ngIf=\"count > nzOverflowCount\">{{ nzOverflowCount }}+</ng-container>\r\n  </sup>\r\n</ng-container>",
+                        template: "<span #contentElement><ng-content></ng-content></span>\r\n<span class=\"ant-badge-status-dot ant-badge-status-{{nzStatus || presetColor}}\"\r\n      [style.background]=\"!presetColor && nzColor\"\r\n      *ngIf=\"nzStatus || nzColor\"\r\n      [ngStyle]=\"nzStyle\"></span>\r\n<span class=\"ant-badge-status-text\" *ngIf=\"nzStatus || nzColor\">{{ nzText }}</span>\r\n<ng-container *nzStringTemplateOutlet=\"nzCount\">\r\n  <sup class=\"ant-scroll-number\"\r\n       *ngIf=\"showSup && viewInit\"\r\n       [@.disabled]=\"notWrapper\"\r\n       [@zoomBadgeMotion]\r\n       [ngStyle]=\"nzStyle\"\r\n       [attr.title]=\"nzTitle || nzCount\"\r\n       [style.right.px]=\"nzOffset && nzOffset[0] ? -nzOffset[0] : null\"\r\n       [style.marginTop.px]=\"nzOffset && nzOffset[1] ? nzOffset[1] : null\"\r\n       [class.ant-badge-count]=\"!nzDot\"\r\n       [class.ant-badge-dot]=\"nzDot\"\r\n       [class.ant-badge-multiple-words]=\"countArray.length>=2\">\r\n    <ng-container *ngFor=\"let n of maxNumberArray;let i = index;\">\r\n      <span class=\"ant-scroll-number-only\"\r\n            *ngIf=\"count <= nzOverflowCount\"\r\n            [style.transform]=\"'translateY(' + (-countArray[i] * 100) + '%)'\">\r\n          <ng-container *ngIf=\"!nzDot && countArray[i] !== undefined\">\r\n            <p *ngFor=\"let p of countSingleArray\" [class.current]=\"p === countArray[i]\" [attr.aria-hidden]=\"p !== countArray[i]\">{{ p }}</p>\r\n          </ng-container>\r\n      </span>\r\n    </ng-container>\r\n    <ng-container *ngIf=\"count > nzOverflowCount\">{{ nzOverflowCount }}+</ng-container>\r\n  </sup>\r\n</ng-container>",
                         host: {
                             '[class.ant-badge-status]': 'nzStatus'
                         }
@@ -485,7 +484,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-badge.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzBadgeModule = /** @class */ (function () {

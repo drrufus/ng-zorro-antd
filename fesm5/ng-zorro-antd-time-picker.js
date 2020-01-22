@@ -11,7 +11,6 @@ import { takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -423,7 +422,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-value-accessor.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTimeValueAccessorDirective = /** @class */ (function () {
@@ -562,7 +560,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: time-holder.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var TimeHolder = /** @class */ (function () {
@@ -1151,7 +1148,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker-panel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -2115,7 +2111,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzTimePickerModule = /** @class */ (function () {
@@ -2133,13 +2128,11 @@ var NzTimePickerModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-time-picker.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

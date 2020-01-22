@@ -11,7 +11,6 @@ import { take, switchMap, filter, tap, delay, map, distinct } from 'rxjs/operato
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-optgroup.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAutocompleteOptgroupComponent = /** @class */ (function () {
@@ -45,7 +44,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-option.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzOptionSelectionChange = /** @class */ (function () {
@@ -247,7 +245,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -654,7 +651,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete-trigger.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -1309,7 +1305,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-autocomplete.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzAutocompleteModule = /** @class */ (function () {
@@ -1337,13 +1332,11 @@ var NzAutocompleteModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-auto-complete.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

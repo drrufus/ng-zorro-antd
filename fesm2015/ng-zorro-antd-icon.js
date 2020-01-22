@@ -12,7 +12,6 @@ import { BarsOutline, CalendarOutline, CaretUpFill, CaretUpOutline, CaretDownFil
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -243,7 +242,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -320,6 +318,7 @@ class NzIconDirective extends IconDirective {
          * @deprecated 8.0.0 avoid exposing low layer API.
          */
         this.spin = false;
+        this.nzIconLabel = null;
         this.el = this.elementRef.nativeElement;
         this.destroy$ = new Subject();
     }
@@ -479,7 +478,12 @@ class NzIconDirective extends IconDirective {
     setSVGData(svg) {
         if (typeof this.type === 'string' && svg) {
             this.renderer.setAttribute(svg, 'data-icon', this.type);
-            this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+            if (this.nzIconLabel != null) {
+                this.renderer.setAttribute(svg, 'aria-label', this.nzIconLabel);
+            }
+            else {
+                this.renderer.setAttribute(svg, 'aria-hidden', 'true');
+            }
         }
     }
     /**
@@ -603,7 +607,8 @@ NzIconDirective.propDecorators = {
     nzIconfont: [{ type: Input }],
     spin: [{ type: Input }],
     iconfont: [{ type: Input }],
-    type: [{ type: Input }]
+    type: [{ type: Input }],
+    nzIconLabel: [{ type: Input }]
 };
 __decorate([
     InputBoolean(),
@@ -623,6 +628,8 @@ if (false) {
      * @type {?}
      */
     NzIconDirective.prototype.iconfont;
+    /** @type {?} */
+    NzIconDirective.prototype.nzIconLabel;
     /**
      * @type {?}
      * @private
@@ -658,7 +665,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-icon.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzIconModule {
@@ -673,13 +679,11 @@ NzIconModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-icon.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

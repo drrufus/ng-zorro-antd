@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-input-number.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzInputNumberComponent = /** @class */ (function () {
@@ -959,7 +958,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-input-number.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzInputNumberModule = /** @class */ (function () {

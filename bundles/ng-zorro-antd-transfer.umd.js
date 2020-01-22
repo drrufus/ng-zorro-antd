@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: interface.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     /**
@@ -279,7 +278,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-transfer-list.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransferListComponent = /** @class */ (function () {
@@ -579,7 +577,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-transfer-search.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransferSearchComponent = /** @class */ (function () {
@@ -663,7 +660,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-transfer.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransferComponent = /** @class */ (function () {
@@ -1153,7 +1149,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-transfer.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzTransferModule = /** @class */ (function () {

@@ -203,7 +203,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-option.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOptionComponent = /** @class */ (function () {
@@ -272,7 +271,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-option-group.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOptionGroupComponent = /** @class */ (function () {
@@ -323,7 +321,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-option.pipe.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzFilterOptionPipe = /** @class */ (function () {
@@ -416,7 +413,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-select.service.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSelectService = /** @class */ (function () {
@@ -1242,7 +1238,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-option-li.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOptionLiComponent = /** @class */ (function () {
@@ -1369,7 +1364,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-option-container.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzOptionContainerComponent = /** @class */ (function () {
@@ -1588,7 +1582,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-select-top-control.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSelectTopControlComponent = /** @class */ (function () {
@@ -1892,7 +1885,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-select.component.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSelectComponent = /** @class */ (function () {
@@ -2548,7 +2540,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-select-unselectable.directive.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSelectUnselectableDirective = /** @class */ (function () {
@@ -2569,7 +2560,6 @@
 
     /**
      * @fileoverview added by tsickle
-     * Generated from: nz-select.module.ts
      * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
      */
     var NzSelectModule = /** @class */ (function () {

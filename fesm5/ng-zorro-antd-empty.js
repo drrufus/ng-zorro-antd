@@ -9,7 +9,6 @@ import { CommonModule } from '@angular/common';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty-config.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 // tslint:disable-next-line:no-any
@@ -24,7 +23,6 @@ var simpleEmptyImage = 'data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbm
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.service.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -124,7 +122,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-embed-empty.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzEmbedEmptyComponent = /** @class */ (function () {
@@ -309,7 +306,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzEmptyComponent = /** @class */ (function () {
@@ -442,7 +438,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-empty.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 var NzEmptyModule = /** @class */ (function () {
@@ -460,13 +455,11 @@ var NzEmptyModule = /** @class */ (function () {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-empty.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 

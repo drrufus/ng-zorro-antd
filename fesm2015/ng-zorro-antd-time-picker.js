@@ -11,7 +11,6 @@ import { takeUntil } from 'rxjs/operators';
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
@@ -376,7 +375,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-value-accessor.directive.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimeValueAccessorDirective {
@@ -491,7 +489,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: time-holder.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class TimeHolder {
@@ -920,7 +917,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker-panel.component.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /**
@@ -1735,7 +1731,6 @@ if (false) {
 
 /**
  * @fileoverview added by tsickle
- * Generated from: nz-time-picker.module.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 class NzTimePickerModule {
@@ -1750,13 +1745,11 @@ NzTimePickerModule.decorators = [
 
 /**
  * @fileoverview added by tsickle
- * Generated from: public-api.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
 /**
  * @fileoverview added by tsickle
- * Generated from: ng-zorro-antd-time-picker.ts
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 
