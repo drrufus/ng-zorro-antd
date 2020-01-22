@@ -6,6 +6,14 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
 import { FocusMonitor } from '@angular/cdk/a11y';
 import {
   forwardRef,
@@ -60,6 +68,7 @@ export class NzRadioComponent implements ControlValueAccessor, AfterViewInit, On
   @Input() nzValue: any;
   @Input() @InputBoolean() nzDisabled = false;
   @Input() @InputBoolean() nzAutoFocus = false;
+  @Input() nzLabelledById: string | null = null;
 
   updateAutoFocus(): void {
     if (this.inputElement) {

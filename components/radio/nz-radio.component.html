@@ -1,5 +1,8 @@
 <span class="ant-radio" [class.ant-radio-checked]="checked" [class.ant-radio-disabled]="nzDisabled">
-  <input #inputElement type="radio" class="ant-radio-input" [disabled]="nzDisabled" [checked]="checked" [attr.name]="name" [attr.aria-checked]="checked">
+  <input #inputElement type="radio" class="ant-radio-input" [disabled]="nzDisabled" [checked]="checked"
+    [attr.name]="name" [attr.aria-checked]="checked" [attr.aria-labelledby]="nzLabelledById">
   <span class="ant-radio-inner"></span>
 </span>
-<span><ng-content></ng-content></span>
+<span>
+  <ng-content></ng-content>
+</span>
