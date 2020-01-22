@@ -14,8 +14,6 @@
     class="ant-modal-wrap {{ nzWrapClassName }}"
     [style.zIndex]="nzZIndex"
     [style.visibility]="hidden ? 'hidden' : null"
-    tabindex="-1"
-    role="dialog"
   >
     <div #modalContainer
       class="ant-modal {{ nzClassName }}"
@@ -24,9 +22,9 @@
       [ngStyle]="nzStyle"
       [style.width]="nzWidth | nzToCssUnit"
       [style.transform-origin]="transformOrigin"
-      role="document"
+      role="region"
     >
-      <div class="ant-modal-content">
+      <div class="ant-modal-content" role="dialog" aria-modal="true">
         <button *ngIf="nzClosable" (click)="onClickCloseBtn()" class="ant-modal-close" [attr.aria-label]="nzCloseAriaLabel">
           <span class="ant-modal-close-x">
             <ng-container *nzStringTemplateOutlet="nzCloseIcon">
@@ -49,7 +47,9 @@
     <div class="ant-modal-title">
       <ng-container [ngSwitch]="true">
         <ng-container *ngSwitchCase="isTemplateRef(nzTitle)" [ngTemplateOutlet]="nzTitle"></ng-container>
-        <ng-container *ngSwitchCase="isNonEmptyString(nzTitle)"><h4 style="margin-bottom: 0;" [innerHTML]="nzTitle"></h4></ng-container>
+        <ng-container *ngSwitchCase="isNonEmptyString(nzTitle)">
+          <h4 style="margin-bottom: 0;" role="heading" [innerHTML]="nzTitle"></h4>
+        </ng-container>
       </ng-container>
     </div>
   </div>

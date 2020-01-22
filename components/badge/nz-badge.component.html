@@ -21,7 +21,7 @@
             *ngIf="count <= nzOverflowCount"
             [style.transform]="'translateY(' + (-countArray[i] * 100) + '%)'">
           <ng-container *ngIf="!nzDot && countArray[i] !== undefined">
-            <p *ngFor="let p of countSingleArray" [class.current]="p === countArray[i]">{{ p }}</p>
+            <p *ngFor="let p of countSingleArray" [class.current]="p === countArray[i]" [attr.aria-hidden]="p !== countArray[i]">{{ p }}</p>
           </ng-container>
       </span>
     </ng-container>
