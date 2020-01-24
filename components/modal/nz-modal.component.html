@@ -48,7 +48,7 @@
       <ng-container [ngSwitch]="true">
         <ng-container *ngSwitchCase="isTemplateRef(nzTitle)" [ngTemplateOutlet]="nzTitle"></ng-container>
         <ng-container *ngSwitchCase="isNonEmptyString(nzTitle)">
-          <h4 style="margin-bottom: 0;" role="heading" [innerHTML]="nzTitle"></h4>
+          <h4 style="margin-bottom: 0;" role="heading" [innerHTML]="nzTitle" class="modal-focusable-header" #focusableHeader tabindex="0"></h4>
         </ng-container>
       </ng-container>
     </div>

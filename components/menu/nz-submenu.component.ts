@@ -84,6 +84,7 @@ export class NzSubMenuComponent implements OnInit, OnDestroy, AfterContentInit, 
   @Input() nzIcon: string;
   @Input() @InputBoolean() nzOpen = false;
   @Input() @InputBoolean() nzDisabled = false;
+  @Input() nzTogglingLabel: string = 'Toggle';
   @Output() readonly nzOpenChange: EventEmitter<boolean> = new EventEmitter();
 
   @ViewChild(CdkConnectedOverlay, { static: true }) cdkConnectedOverlay: CdkConnectedOverlay;
