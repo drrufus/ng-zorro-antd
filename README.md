@@ -34,7 +34,8 @@ Below you can see the list of the most significant changes.
 
 #### Radio:
 + `aria-checked` attribute displaying current state.
-+ `nzLabelledById` attribute for an additional text label.
++ `nzLabelledById` attribute for a pointer to an element with a corresponding description.
++ Radio-group is wrapped in an additional `div` element with `role="radiogroup"` attribute.
 
 #### Menu:
 + Collapsing-icon of submenu-item is focusable by TAB key.
