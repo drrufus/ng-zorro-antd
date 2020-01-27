@@ -1,12 +1,16 @@
-<div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" class="ant-collapse-header" (click)="clickHeader()">
-  <ng-container *ngIf="nzShowArrow">
-    <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
-      <a href="javascript:" tabindex="0" class="ant-collapse-arrow-link">
-        <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
-      </a>
+<div class="ant-collapse-header">
+  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="display: inline;" (click)="clickHeader()">
+    <ng-container *ngIf="nzShowArrow">
+      <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
+        <a href="javascript:" tabindex="0" class="ant-collapse-arrow-link">
+          <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
+        </a>
+      </ng-container>
     </ng-container>
-  </ng-container>
-  <ng-container *nzStringTemplateOutlet="nzHeader">{{ nzHeader }}</ng-container>
+    <ng-container *nzStringTemplateOutlet="nzHeader">
+      {{ nzHeader }}
+    </ng-container>
+  </div>
   <div class="ant-collapse-extra" *ngIf="nzExtra">
     <ng-container *nzStringTemplateOutlet="nzExtra">{{ nzExtra }}</ng-container>
   </div>
