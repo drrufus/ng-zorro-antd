@@ -68,6 +68,7 @@ export declare class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     modalContainer: ElementRef;
     bodyContainer: ViewContainerRef;
     autoFocusButtonOk: ElementRef;
+    focusableHeader: ElementRef;
     modalFooter: NzModalFooterDirective;
     readonly afterOpen: Observable<void>;
     readonly afterClose: Observable<R>;

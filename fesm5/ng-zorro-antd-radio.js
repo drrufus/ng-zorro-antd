@@ -210,7 +210,8 @@ var NzRadioComponent = /** @class */ (function () {
                     ],
                     host: {
                         '[class.ant-radio-wrapper-checked]': 'checked',
-                        '[class.ant-radio-wrapper-disabled]': 'nzDisabled'
+                        '[class.ant-radio-wrapper-disabled]': 'nzDisabled',
+                        '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
                     }
                 }] }
     ];
@@ -323,10 +324,11 @@ var NzRadioButtonComponent = /** @class */ (function (_super) {
                     encapsulation: ViewEncapsulation.None,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     preserveWhitespaces: false,
-                    template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\" [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\" [attr.name]=\"name\" [attr.aria-checked]=\"checked\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span><ng-content></ng-content></span>",
+                    template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\"\r\n  [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
                     host: {
                         '[class.ant-radio-button-wrapper-checked]': 'checked',
-                        '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled'
+                        '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled',
+                        '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
                     }
                 }] }
     ];
@@ -358,6 +360,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
         function () { return null; });
         this.nzButtonStyle = 'outline';
         this.nzSize = 'default';
+        this.nzLabelledById = null;
         renderer.addClass(elementRef.nativeElement, 'ant-radio-group');
     }
     /**
@@ -385,6 +388,9 @@ var NzRadioGroupComponent = /** @class */ (function () {
                     if (_this.nzName) {
                         radio.name = _this.nzName;
                     }
+                    if (_this.nzLabelledById) {
+                        radio.nzLabelledById = _this.nzLabelledById;
+                    }
                     radio.markForCheck();
                 }));
             }));
@@ -398,9 +404,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
      */
     function () {
         var _this = this;
-        this.radios.changes
-            .pipe(startWith(null), takeUntil(this.destroy$))
-            .subscribe((/**
+        this.radios.changes.pipe(startWith(null), takeUntil(this.destroy$)).subscribe((/**
          * @return {?}
          */
         function () {
@@ -521,7 +525,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
                     selector: 'nz-radio-group',
                     exportAs: 'nzRadioGroup',
                     preserveWhitespaces: false,
-                    template: "<ng-content></ng-content>",
+                    template: "<div role=\"radiogroup\">\r\n    <ng-content></ng-content>\r\n</div>",
                     encapsulation: ViewEncapsulation.None,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     providers: [
@@ -551,11 +555,13 @@ var NzRadioGroupComponent = /** @class */ (function () {
         radios: [{ type: ContentChildren, args: [forwardRef((/**
                      * @return {?}
                      */
-                    function () { return NzRadioComponent; })), { descendants: true },] }],
+                    function () { return NzRadioComponent; })),
+                    { descendants: true },] }],
         nzDisabled: [{ type: Input }],
         nzButtonStyle: [{ type: Input }],
         nzSize: [{ type: Input }],
-        nzName: [{ type: Input }]
+        nzName: [{ type: Input }],
+        nzLabelledById: [{ type: Input }]
     };
     __decorate([
         InputBoolean(),
@@ -598,6 +604,8 @@ if (false) {
     NzRadioGroupComponent.prototype.nzSize;
     /** @type {?} */
     NzRadioGroupComponent.prototype.nzName;
+    /** @type {?} */
+    NzRadioGroupComponent.prototype.nzLabelledById;
     /**
      * @type {?}
      * @private

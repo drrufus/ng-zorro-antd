@@ -23,6 +23,7 @@ export declare class NzRadioGroupComponent implements AfterContentInit, ControlV
     nzButtonStyle: NzRadioButtonStyle;
     nzSize: NzSizeLDSType;
     nzName: string;
+    nzLabelledById: string | null;
     updateChildrenStatus(): void;
     constructor(cdr: ChangeDetectorRef, renderer: Renderer2, elementRef: ElementRef);
     ngAfterContentInit(): void;

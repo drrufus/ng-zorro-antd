@@ -404,7 +404,8 @@
                         ],
                         host: {
                             '[class.ant-radio-wrapper-checked]': 'checked',
-                            '[class.ant-radio-wrapper-disabled]': 'nzDisabled'
+                            '[class.ant-radio-wrapper-disabled]': 'nzDisabled',
+                            '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
                         }
                     }] }
         ];
@@ -517,10 +518,11 @@
                         encapsulation: core.ViewEncapsulation.None,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         preserveWhitespaces: false,
-                        template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\" [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\" [attr.name]=\"name\" [attr.aria-checked]=\"checked\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span><ng-content></ng-content></span>",
+                        template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\"\r\n  [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
                         host: {
                             '[class.ant-radio-button-wrapper-checked]': 'checked',
-                            '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled'
+                            '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled',
+                            '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
                         }
                     }] }
         ];
@@ -552,6 +554,7 @@
             function () { return null; });
             this.nzButtonStyle = 'outline';
             this.nzSize = 'default';
+            this.nzLabelledById = null;
             renderer.addClass(elementRef.nativeElement, 'ant-radio-group');
         }
         /**
@@ -579,6 +582,9 @@
                         if (_this.nzName) {
                             radio.name = _this.nzName;
                         }
+                        if (_this.nzLabelledById) {
+                            radio.nzLabelledById = _this.nzLabelledById;
+                        }
                         radio.markForCheck();
                     }));
                 }));
@@ -592,9 +598,7 @@
          */
         function () {
             var _this = this;
-            this.radios.changes
-                .pipe(operators.startWith(null), operators.takeUntil(this.destroy$))
-                .subscribe((/**
+            this.radios.changes.pipe(operators.startWith(null), operators.takeUntil(this.destroy$)).subscribe((/**
              * @return {?}
              */
             function () {
@@ -715,7 +719,7 @@
                         selector: 'nz-radio-group',
                         exportAs: 'nzRadioGroup',
                         preserveWhitespaces: false,
-                        template: "<ng-content></ng-content>",
+                        template: "<div role=\"radiogroup\">\r\n    <ng-content></ng-content>\r\n</div>",
                         encapsulation: core.ViewEncapsulation.None,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         providers: [
@@ -745,11 +749,13 @@
             radios: [{ type: core.ContentChildren, args: [core.forwardRef((/**
                          * @return {?}
                          */
-                        function () { return NzRadioComponent; })), { descendants: true },] }],
+                        function () { return NzRadioComponent; })),
+                        { descendants: true },] }],
             nzDisabled: [{ type: core.Input }],
             nzButtonStyle: [{ type: core.Input }],
             nzSize: [{ type: core.Input }],
-            nzName: [{ type: core.Input }]
+            nzName: [{ type: core.Input }],
+            nzLabelledById: [{ type: core.Input }]
         };
         __decorate([
             core$1.InputBoolean(),
@@ -792,6 +798,8 @@
         NzRadioGroupComponent.prototype.nzSize;
         /** @type {?} */
         NzRadioGroupComponent.prototype.nzName;
+        /** @type {?} */
+        NzRadioGroupComponent.prototype.nzLabelledById;
         /**
          * @type {?}
          * @private

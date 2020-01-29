@@ -25,6 +25,7 @@ export declare class NzSubMenuComponent implements OnInit, OnDestroy, AfterConte
     nzIcon: string;
     nzOpen: boolean;
     nzDisabled: boolean;
+    nzTogglingLabel: string;
     readonly nzOpenChange: EventEmitter<boolean>;
     cdkConnectedOverlay: CdkConnectedOverlay;
     cdkOverlayOrigin: ElementRef;
