@@ -5,7 +5,7 @@ This is a fork of '8.x' branch of an official NG-ZORRO repository.
 Below you can see the list of the most significant changes.
 
 #### Collapse panel:
-+ Collapsing-icon is focusable by TAB key and is wrapped in `<a>` element with class `ant-collapse-arrow-link`.
++ Header is focusable by TAB key and is wrapped in `<a>` element with class `ant-collapse-arrow-link`.
 
 #### Switch:
 + `nzLabel` attribute for an additional text label.

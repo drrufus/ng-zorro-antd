@@ -1,8 +1,8 @@
 <div class="ant-collapse-header">
-  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="display: inline;" (click)="clickHeader()">
+  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="display: inline;" (keyup.enter)="clickHeader()" (click)="clickHeader()" tabindex="0">
     <ng-container *ngIf="nzShowArrow">
       <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
-        <a href="javascript:" tabindex="0" class="ant-collapse-arrow-link">
+        <a class="ant-collapse-arrow-link" aria-hidden="true">
           <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
         </a>
       </ng-container>
