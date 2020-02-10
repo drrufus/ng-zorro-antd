@@ -213,12 +213,32 @@
             _this._prefix = 'ant-popover-placement';
             return _this;
         }
+        /**
+         * @return {?}
+         */
+        NzPopoverComponent.prototype.focusOnHeader = /**
+         * @return {?}
+         */
+        function () {
+            if (this.focusableHeader != null) {
+                this.focusableHeader.nativeElement.focus();
+            }
+        };
+        /**
+         * @return {?}
+         */
+        NzPopoverComponent.prototype.afterAppearing = /**
+         * @return {?}
+         */
+        function () {
+            this.focusOnHeader();
+        };
         NzPopoverComponent.decorators = [
             { type: core.Component, args: [{
                         selector: 'nz-popover',
                         exportAs: 'nzPopoverComponent',
                         animations: [core$1.zoomBigMotion],
-                        template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                        template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\" #focusableHeader tabindex=\"0\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.None,
                         providers: [
@@ -240,7 +260,8 @@
             nzTitle: [{ type: core.Input }],
             nzTitleTemplate: [{ type: core.ContentChild, args: ['neverUsedTemplate', { static: true },] }],
             nzContent: [{ type: core.Input }],
-            nzContentTemplate: [{ type: core.ContentChild, args: ['nzTemplate', { static: true },] }]
+            nzContentTemplate: [{ type: core.ContentChild, args: ['nzTemplate', { static: true },] }],
+            focusableHeader: [{ type: core.ViewChild, args: ['focusableHeader', { static: false },] }]
         };
         return NzPopoverComponent;
     }(tooltip.NzToolTipComponent));
@@ -258,6 +279,8 @@
         NzPopoverComponent.prototype.nzContent;
         /** @type {?} */
         NzPopoverComponent.prototype.nzContentTemplate;
+        /** @type {?} */
+        NzPopoverComponent.prototype.focusableHeader;
         /** @type {?} */
         NzPopoverComponent.prototype.noAnimation;
     }

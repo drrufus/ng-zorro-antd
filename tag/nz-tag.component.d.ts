@@ -10,7 +10,7 @@ import { ElementRef, EventEmitter, OnChanges, OnInit, Renderer2 } from '@angular
 import { NzUpdateHostClassService } from 'ng-zorro-antd/core';
 export declare class NzTagComponent implements OnInit, OnChanges {
     private renderer;
-    private elementRef;
+    elementRef: ElementRef;
     private nzUpdateHostClassService;
     presetColor: boolean;
     nzMode: 'default' | 'closeable' | 'checkable';

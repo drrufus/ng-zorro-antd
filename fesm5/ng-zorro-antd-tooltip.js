@@ -74,6 +74,7 @@ var NzTooltipBaseComponent = /** @class */ (function () {
             this.nzVisibleChange.emit(true);
             this.cdr.detectChanges();
         }
+        this.afterAppearing();
     };
     /**
      * @return {?}
@@ -134,6 +135,15 @@ var NzTooltipBaseComponent = /** @class */ (function () {
         this._placement = (/** @type {?} */ (getPlacementName(position)));
         this.setClassMap();
         this.cdr.detectChanges();
+    };
+    /**
+     * @return {?}
+     */
+    NzTooltipBaseComponent.prototype.afterAppearing = /**
+     * @return {?}
+     */
+    function () {
+        // may be overridden in concrete classes
     };
     /**
      * @return {?}

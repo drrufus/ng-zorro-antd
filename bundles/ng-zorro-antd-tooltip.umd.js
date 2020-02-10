@@ -269,6 +269,7 @@
                 this.nzVisibleChange.emit(true);
                 this.cdr.detectChanges();
             }
+            this.afterAppearing();
         };
         /**
          * @return {?}
@@ -329,6 +330,15 @@
             this._placement = (/** @type {?} */ (core$1.getPlacementName(position)));
             this.setClassMap();
             this.cdr.detectChanges();
+        };
+        /**
+         * @return {?}
+         */
+        NzTooltipBaseComponent.prototype.afterAppearing = /**
+         * @return {?}
+         */
+        function () {
+            // may be overridden in concrete classes
         };
         /**
          * @return {?}

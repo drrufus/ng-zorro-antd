@@ -66,6 +66,7 @@ class NzTooltipBaseComponent {
             this.nzVisibleChange.emit(true);
             this.cdr.detectChanges();
         }
+        this.afterAppearing();
     }
     /**
      * @return {?}
@@ -108,6 +109,12 @@ class NzTooltipBaseComponent {
         this._placement = (/** @type {?} */ (getPlacementName(position)));
         this.setClassMap();
         this.cdr.detectChanges();
+    }
+    /**
+     * @return {?}
+     */
+    afterAppearing() {
+        // may be overridden in concrete classes
     }
     /**
      * @return {?}

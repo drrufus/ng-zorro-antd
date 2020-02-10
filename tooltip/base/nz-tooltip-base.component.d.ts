@@ -47,6 +47,7 @@ export declare abstract class NzTooltipBaseComponent {
      */
     updatePosition(): void;
     onPositionChange(position: ConnectedOverlayPositionChange): void;
+    afterAppearing(): void;
     setClassMap(): void;
     setOverlayOrigin(origin: CdkOverlayOrigin): void;
     private isTitleEmpty;

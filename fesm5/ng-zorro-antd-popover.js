@@ -1,5 +1,5 @@
 import { __extends } from 'tslib';
-import { Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Host, Optional, Input, ContentChild, Directive, ElementRef, ViewContainerRef, ComponentFactoryResolver, Renderer2, NgModule } from '@angular/core';
+import { Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Host, Optional, Input, ContentChild, ViewChild, Directive, ElementRef, ViewContainerRef, ComponentFactoryResolver, Renderer2, NgModule } from '@angular/core';
 import { zoomBigMotion, NzNoAnimationDirective, NzAddOnModule, NzOverlayModule, NzNoAnimationModule } from 'ng-zorro-antd/core';
 import { NzTooltipBaseComponentLegacy, NzToolTipComponent, NzTooltipBaseDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { OverlayModule } from '@angular/cdk/overlay';
@@ -17,12 +17,32 @@ var NzPopoverComponent = /** @class */ (function (_super) {
         _this._prefix = 'ant-popover-placement';
         return _this;
     }
+    /**
+     * @return {?}
+     */
+    NzPopoverComponent.prototype.focusOnHeader = /**
+     * @return {?}
+     */
+    function () {
+        if (this.focusableHeader != null) {
+            this.focusableHeader.nativeElement.focus();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NzPopoverComponent.prototype.afterAppearing = /**
+     * @return {?}
+     */
+    function () {
+        this.focusOnHeader();
+    };
     NzPopoverComponent.decorators = [
         { type: Component, args: [{
                     selector: 'nz-popover',
                     exportAs: 'nzPopoverComponent',
                     animations: [zoomBigMotion],
-                    template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                    template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\" #focusableHeader tabindex=\"0\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.None,
                     providers: [
@@ -44,7 +64,8 @@ var NzPopoverComponent = /** @class */ (function (_super) {
         nzTitle: [{ type: Input }],
         nzTitleTemplate: [{ type: ContentChild, args: ['neverUsedTemplate', { static: true },] }],
         nzContent: [{ type: Input }],
-        nzContentTemplate: [{ type: ContentChild, args: ['nzTemplate', { static: true },] }]
+        nzContentTemplate: [{ type: ContentChild, args: ['nzTemplate', { static: true },] }],
+        focusableHeader: [{ type: ViewChild, args: ['focusableHeader', { static: false },] }]
     };
     return NzPopoverComponent;
 }(NzToolTipComponent));
@@ -62,6 +83,8 @@ if (false) {
     NzPopoverComponent.prototype.nzContent;
     /** @type {?} */
     NzPopoverComponent.prototype.nzContentTemplate;
+    /** @type {?} */
+    NzPopoverComponent.prototype.focusableHeader;
     /** @type {?} */
     NzPopoverComponent.prototype.noAnimation;
 }

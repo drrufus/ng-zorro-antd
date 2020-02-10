@@ -186,10 +186,7 @@ if (false) {
      * @private
      */
     NzTagComponent.prototype.renderer;
-    /**
-     * @type {?}
-     * @private
-     */
+    /** @type {?} */
     NzTagComponent.prototype.elementRef;
     /**
      * @type {?}
