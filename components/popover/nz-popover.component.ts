@@ -6,15 +6,25 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
 import {
   ChangeDetectionStrategy,
   ChangeDetectorRef,
   Component,
   ContentChild,
+  ElementRef,
   Host,
   Input,
   Optional,
   TemplateRef,
+  ViewChild,
   ViewEncapsulation
 } from '@angular/core';
 
@@ -55,7 +65,19 @@ export class NzPopoverComponent extends NzToolTipComponent {
   @Input() nzContent: NzTSType;
   @ContentChild('nzTemplate', { static: true }) nzContentTemplate: TemplateRef<void>;
 
+  @ViewChild('focusableHeader', { static: false }) focusableHeader: ElementRef;
+
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
     super(cdr, noAnimation);
+  }
+
+  focusOnHeader(): void {
+    if (this.focusableHeader != null) {
+      this.focusableHeader.nativeElement.focus();
+    }
+  }
+
+  afterAppearing(): void {
+    this.focusOnHeader();
   }
 }

@@ -96,7 +96,7 @@ export class NzTagComponent implements OnInit, OnChanges {
 
   constructor(
     private renderer: Renderer2,
-    private elementRef: ElementRef,
+    public elementRef: ElementRef,
     private nzUpdateHostClassService: NzUpdateHostClassService
   ) {}
 

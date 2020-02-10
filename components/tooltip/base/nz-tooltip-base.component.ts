@@ -74,6 +74,8 @@ export abstract class NzTooltipBaseComponent {
       this.nzVisibleChange.emit(true);
       this.cdr.detectChanges();
     }
+
+    this.afterAppearing();
   }
 
   hide(): void {
@@ -108,6 +110,10 @@ export abstract class NzTooltipBaseComponent {
     this._placement = getPlacementName(position)!;
     this.setClassMap();
     this.cdr.detectChanges();
+  }
+
+  afterAppearing(): void {
+    // may be overridden in concrete classes
   }
 
   setClassMap(): void {

@@ -13,7 +13,7 @@
     <i nz-icon nzType="right" class="anticon-right ant-dropdown-menu-submenu-arrow-icon"></i>
   </span>
   <ng-template #notDropdownTpl>
-    <i class="ant-menu-submenu-arrow" tabindex="0" (keyup.enter)="clickSubMenuTitle()" [attr.aria-label]="nzTogglingLabel"></i>
+    <i class="ant-menu-submenu-arrow" [tabindex]="nzDisabled ? -1 : 0" (keyup.enter)="clickSubMenuTitle()" [attr.aria-label]="nzTogglingLabel"></i>
   </ng-template>
 </div>
 <ul *ngIf="nzMenuService.mode === 'inline'"

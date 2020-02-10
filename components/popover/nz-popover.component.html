@@ -20,7 +20,7 @@
       <div class="ant-popover-arrow"></div>
       <div class="ant-popover-inner" role="tooltip">
         <div>
-          <div class="ant-popover-title" *ngIf="title">
+          <div class="ant-popover-title" *ngIf="title" #focusableHeader tabindex="0">
             <ng-container *nzStringTemplateOutlet="title">{{ title }}</ng-container>
           </div>
           <div class="ant-popover-inner-content">

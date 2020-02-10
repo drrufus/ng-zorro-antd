@@ -39,3 +39,6 @@ Below you can see the list of the most significant changes.
 
 #### Menu:
 + Collapsing-icon of submenu-item is focusable by TAB key.
+
+#### Popover:
++ Autofocusing on a header on opening
