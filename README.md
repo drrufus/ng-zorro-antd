@@ -41,6 +41,7 @@ Below you can see the list of the most significant changes.
 
 #### Menu:
 + Collapsing-icon of submenu-item is focusable by TAB key.
++ Collapsed content is not rendered (`*ngIf`-condition).
 
 #### Popover:
-+ Autofocusing on a header on opening
++ Autofocusing on a header on opening.

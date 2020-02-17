@@ -22,7 +22,7 @@
     [nzNoAnimation]="noAnimation?.nzNoAnimation"
     [ngClass]="nzMenuClassName"
     class="ant-menu ant-menu-inline ant-menu-sub">
-  <ng-template [ngTemplateOutlet]="subMenuTemplate"></ng-template>
+  <ng-template *ngIf="expandState != 'collapsed'" [ngTemplateOutlet]="subMenuTemplate"></ng-template>
 </ul>
 <ng-template cdkConnectedOverlay
              (positionChange)="onPositionChange($event)"
