@@ -17,7 +17,7 @@
 </div>
 <div class="ant-collapse-content" [class.ant-collapse-content-active]="nzActive"
   [@collapseMotion]="nzActive ? 'expanded' : 'hidden' ">
-  <div class="ant-collapse-content-box">
+  <div class="ant-collapse-content-box" [hidden]="!nzActive">
     <ng-content></ng-content>
   </div>
 </div>

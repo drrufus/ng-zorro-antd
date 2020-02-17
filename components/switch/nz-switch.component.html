@@ -1,7 +1,7 @@
 <label>
   <button type="button" #switchElement nz-wave class="ant-switch" [disabled]="nzDisabled" [attr.aria-checked]="checked"
     [class.ant-switch-checked]="checked" [class.ant-switch-loading]="nzLoading" [class.ant-switch-disabled]="nzDisabled"
-    [class.ant-switch-small]="nzSize === 'small'" [nzWaveExtraNode]="true" (keydown)="onKeyDown($event)">
+    [class.ant-switch-small]="nzSize === 'small'" [nzWaveExtraNode]="true" (keydown)="onKeyDown($event)" role="checkbox">
     <i *ngIf="nzLoading" nz-icon nzType="loading" class="ant-switch-loading-icon"></i>
     <span class="ant-switch-inner">
       <span>
