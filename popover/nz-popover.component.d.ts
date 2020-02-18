@@ -5,7 +5,14 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
-import { ChangeDetectorRef, TemplateRef, ElementRef } from '@angular/core';
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+import { ChangeDetectorRef, ElementRef, TemplateRef } from '@angular/core';
 import { NzNoAnimationDirective, NzTSType } from 'ng-zorro-antd/core';
 import { NzToolTipComponent } from 'ng-zorro-antd/tooltip';
 export declare class NzPopoverComponent extends NzToolTipComponent {

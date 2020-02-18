@@ -6,10 +6,12 @@ Below you can see the list of the most significant changes.
 
 #### Collapse panel:
 + Header is focusable by TAB key and is wrapped in `<a>` element with class `ant-collapse-arrow-link`.
++ All content is hidden when a panel is collapsed
 
 #### Switch:
 + `nzLabel` attribute for an additional text label.
 + `aria-checked` attribute displaying current state.
++ Marked with `role="checkbox"` attribute.
 
 #### Tooltip:
 + New trigger - `combined`. A tooltip with such trigger will be invoked both on hover and on focus.
@@ -39,3 +41,6 @@ Below you can see the list of the most significant changes.
 
 #### Menu:
 + Collapsing-icon of submenu-item is focusable by TAB key.
+
+#### Popover:
++ Autofocusing on a header on opening
