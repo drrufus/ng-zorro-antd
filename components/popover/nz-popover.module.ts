@@ -16,10 +16,12 @@ import { NzToolTipModule } from 'ng-zorro-antd/tooltip';
 import { NzPopoverComponent } from './nz-popover.component';
 import { NzPopoverDirective } from './nz-popover.directive';
 
+import { NzIconModule } from 'ng-zorro-antd/icon';
+
 @NgModule({
   entryComponents: [NzPopoverComponent],
   exports: [NzPopoverDirective, NzPopoverComponent],
   declarations: [NzPopoverDirective, NzPopoverComponent],
-  imports: [CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule, NzToolTipModule]
+  imports: [CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule, NzToolTipModule, NzIconModule]
 })
 export class NzPopoverModule {}

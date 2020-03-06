@@ -22,6 +22,11 @@
         <div>
           <div class="ant-popover-title" *ngIf="title" #focusableHeader tabindex="0">
             <ng-container *nzStringTemplateOutlet="title">{{ title }}</ng-container>
+            <button *ngIf="nzShowPopoverCloseButton" (click)="hide()" class="ant-modal-close popover-close-button" [attr.aria-label]="nzPopoverCloseButtonLabel">
+              <span class="ant-modal-close-x">
+                <i nz-icon nzType="close" nzTheme="outline" class="ant-modal-close-icon"></i>
+              </span>
+            </button>
           </div>
           <div class="ant-popover-inner-content">
             <ng-container *nzStringTemplateOutlet="content">{{ content }}</ng-container>

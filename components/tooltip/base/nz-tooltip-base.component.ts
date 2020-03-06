@@ -40,6 +40,7 @@ export abstract class NzTooltipBaseComponent {
   nzTrigger: NzTooltipTrigger;
   nzTitleTemplate: TemplateRef<void>;
   nzContentTemplate: TemplateRef<void>;
+  nzShowPopoverCloseButton: boolean;
 
   @Output() readonly nzVisibleChange = new EventEmitter<boolean>();
 

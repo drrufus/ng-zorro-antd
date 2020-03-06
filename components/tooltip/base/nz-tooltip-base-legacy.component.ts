@@ -74,6 +74,9 @@ export class NzTooltipBaseComponentLegacy extends NzTooltipBaseComponent impleme
 
   @Output() readonly nzVisibleChange = new EventEmitter<boolean>();
 
+  @Input() nzShowPopoverCloseButton: boolean = false;
+  @Input() nzPopoverCloseButtonLabel: string = 'close';
+
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
     super(cdr, noAnimation);
   }

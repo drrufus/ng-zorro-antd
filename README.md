@@ -45,3 +45,4 @@ Below you can see the list of the most significant changes.
 
 #### Popover:
 + Autofocusing on a header on opening.
++ `nzShowPopoverCloseButton` attribute for enabling a close-button (and `nzPopoverCloseButtonLabel` for setting `aria-label` attribute for it).

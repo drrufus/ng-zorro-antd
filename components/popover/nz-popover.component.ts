@@ -65,6 +65,9 @@ export class NzPopoverComponent extends NzToolTipComponent {
   @Input() nzContent: NzTSType;
   @ContentChild('nzTemplate', { static: true }) nzContentTemplate: TemplateRef<void>;
 
+  @Input() nzShowPopoverCloseButton: boolean = false;
+  @Input() nzPopoverCloseButtonLabel: string = 'close';
+
   @ViewChild('focusableHeader', { static: false }) focusableHeader: ElementRef;
 
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
