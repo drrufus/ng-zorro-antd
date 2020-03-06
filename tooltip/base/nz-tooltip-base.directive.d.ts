@@ -27,6 +27,8 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnIni
     specificContent?: NzTSType | null;
     specificTrigger?: NzTooltipTrigger;
     specificPlacement?: string;
+    showPopoverCloseButton?: boolean;
+    popoverCloseButtonLabel?: string;
     tooltipRef: ComponentRef<NzTooltipBaseComponent>;
     /**
      * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
@@ -53,6 +55,8 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnIni
     nzOverlayClassName: string;
     nzOverlayStyle: NgStyleInterface;
     nzVisible: boolean;
+    nzShowPopoverCloseButton: boolean;
+    nzPopoverCloseButtonLabel: string;
     /**
      * For create tooltip dynamically. This should be override for each different component.
      */

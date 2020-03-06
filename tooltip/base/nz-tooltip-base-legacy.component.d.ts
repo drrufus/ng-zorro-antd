@@ -36,6 +36,8 @@ export declare class NzTooltipBaseComponentLegacy extends NzTooltipBaseComponent
     nzVisible: boolean;
     nzTrigger: NzTooltipTrigger;
     readonly nzVisibleChange: EventEmitter<boolean>;
+    nzShowPopoverCloseButton: boolean;
+    nzPopoverCloseButtonLabel: string;
     constructor(cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective | undefined);
     ngOnChanges(): void;
 }

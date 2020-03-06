@@ -175,6 +175,8 @@ if (false) {
     /** @type {?} */
     NzTooltipBaseComponent.prototype.nzContentTemplate;
     /** @type {?} */
+    NzTooltipBaseComponent.prototype.nzShowPopoverCloseButton;
+    /** @type {?} */
     NzTooltipBaseComponent.prototype.nzVisibleChange;
     /** @type {?} */
     NzTooltipBaseComponent.prototype.overlay;
@@ -233,6 +235,8 @@ class NzTooltipBaseComponentLegacy extends NzTooltipBaseComponent {
         // second
         this.nzMouseLeaveDelay = 0.1; // second
         this.nzVisibleChange = new EventEmitter();
+        this.nzShowPopoverCloseButton = false;
+        this.nzPopoverCloseButtonLabel = 'close';
     }
     // second
     // TODO: placement logic should be removed into `NzTooltipBaseDirective` once this component is removed.
@@ -310,7 +314,9 @@ NzTooltipBaseComponentLegacy.propDecorators = {
     nzPlacement: [{ type: Input }],
     nzVisible: [{ type: Input }],
     nzTrigger: [{ type: Input }],
-    nzVisibleChange: [{ type: Output }]
+    nzVisibleChange: [{ type: Output }],
+    nzShowPopoverCloseButton: [{ type: Input }],
+    nzPopoverCloseButtonLabel: [{ type: Input }]
 };
 if (false) {
     /** @type {?} */
@@ -325,6 +331,10 @@ if (false) {
     NzTooltipBaseComponentLegacy.prototype.nzMouseLeaveDelay;
     /** @type {?} */
     NzTooltipBaseComponentLegacy.prototype.nzVisibleChange;
+    /** @type {?} */
+    NzTooltipBaseComponentLegacy.prototype.nzShowPopoverCloseButton;
+    /** @type {?} */
+    NzTooltipBaseComponentLegacy.prototype.nzPopoverCloseButtonLabel;
     /** @type {?} */
     NzTooltipBaseComponentLegacy.prototype.noAnimation;
 }
@@ -671,6 +681,8 @@ class NzTooltipBaseDirective {
             this.updateComponentValue('nzContent', this.content);
             this.updateComponentValue('nzPlacement', this.placement);
             this.updateComponentValue('nzTrigger', this.trigger);
+            this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
+            this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
         }
         else {
             /** @type {?} */
@@ -686,6 +698,12 @@ class NzTooltipBaseDirective {
             }
             if (c.specificPlacement || c.nzPlacement) {
                 this.updateComponentValue('nzPlacement', this.placement);
+            }
+            if (c.showCloseButton) {
+                this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
+            }
+            if (c.popoverCloseButtonLabel) {
+                this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
             }
         }
         this.tooltip.updateByDirective();
@@ -762,6 +780,8 @@ NzTooltipBaseDirective.propDecorators = {
     nzOverlayClassName: [{ type: Input }],
     nzOverlayStyle: [{ type: Input }],
     nzVisible: [{ type: Input }],
+    nzShowPopoverCloseButton: [{ type: Input }],
+    nzPopoverCloseButtonLabel: [{ type: Input }],
     nzVisibleChange: [{ type: Output }]
 };
 if (false) {
@@ -777,6 +797,10 @@ if (false) {
     NzTooltipBaseDirective.prototype.specificTrigger;
     /** @type {?} */
     NzTooltipBaseDirective.prototype.specificPlacement;
+    /** @type {?} */
+    NzTooltipBaseDirective.prototype.showPopoverCloseButton;
+    /** @type {?} */
+    NzTooltipBaseDirective.prototype.popoverCloseButtonLabel;
     /** @type {?} */
     NzTooltipBaseDirective.prototype.tooltipRef;
     /**
@@ -813,6 +837,10 @@ if (false) {
     NzTooltipBaseDirective.prototype.nzOverlayStyle;
     /** @type {?} */
     NzTooltipBaseDirective.prototype.nzVisible;
+    /** @type {?} */
+    NzTooltipBaseDirective.prototype.nzShowPopoverCloseButton;
+    /** @type {?} */
+    NzTooltipBaseDirective.prototype.nzPopoverCloseButtonLabel;
     /**
      * For create tooltip dynamically. This should be override for each different component.
      * @type {?}

@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/tooltip'), require('@angular/cdk/overlay'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/popover', ['exports', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/tooltip', '@angular/cdk/overlay', '@angular/common'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].popover = {}), global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].tooltip, global.ng.cdk.overlay, global.ng.common));
-}(this, (function (exports, core, core$1, tooltip, overlay, common) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/tooltip'), require('@angular/cdk/overlay'), require('@angular/common'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/popover', ['exports', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/tooltip', '@angular/cdk/overlay', '@angular/common', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].popover = {}), global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].tooltip, global.ng.cdk.overlay, global.ng.common, global['ng-zorro-antd'].icon));
+}(this, (function (exports, core, core$1, tooltip, overlay, common, icon) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -211,6 +211,8 @@
             var _this = _super.call(this, cdr, noAnimation) || this;
             _this.noAnimation = noAnimation;
             _this._prefix = 'ant-popover-placement';
+            _this.nzShowPopoverCloseButton = false;
+            _this.nzPopoverCloseButtonLabel = 'close';
             return _this;
         }
         /**
@@ -238,7 +240,7 @@
                         selector: 'nz-popover',
                         exportAs: 'nzPopoverComponent',
                         animations: [core$1.zoomBigMotion],
-                        template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\" #focusableHeader tabindex=\"0\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                        template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\" role=\"tooltip\">\r\n        <div>\r\n          <div class=\"ant-popover-title\" *ngIf=\"title\" #focusableHeader tabindex=\"0\">\r\n            <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n            <button *ngIf=\"nzShowPopoverCloseButton\" (click)=\"hide()\" class=\"ant-modal-close popover-close-button\" [attr.aria-label]=\"nzPopoverCloseButtonLabel\">\r\n              <span class=\"ant-modal-close-x\">\r\n                <i nz-icon nzType=\"close\" nzTheme=\"outline\" class=\"ant-modal-close-icon\"></i>\r\n              </span>\r\n            </button>\r\n          </div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <ng-container *nzStringTemplateOutlet=\"content\">{{ content }}</ng-container>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.None,
                         providers: [
@@ -261,6 +263,8 @@
             nzTitleTemplate: [{ type: core.ContentChild, args: ['neverUsedTemplate', { static: true },] }],
             nzContent: [{ type: core.Input }],
             nzContentTemplate: [{ type: core.ContentChild, args: ['nzTemplate', { static: true },] }],
+            nzShowPopoverCloseButton: [{ type: core.Input }],
+            nzPopoverCloseButtonLabel: [{ type: core.Input }],
             focusableHeader: [{ type: core.ViewChild, args: ['focusableHeader', { static: false },] }]
         };
         return NzPopoverComponent;
@@ -280,6 +284,10 @@
         /** @type {?} */
         NzPopoverComponent.prototype.nzContentTemplate;
         /** @type {?} */
+        NzPopoverComponent.prototype.nzShowPopoverCloseButton;
+        /** @type {?} */
+        NzPopoverComponent.prototype.nzPopoverCloseButtonLabel;
+        /** @type {?} */
         NzPopoverComponent.prototype.focusableHeader;
         /** @type {?} */
         NzPopoverComponent.prototype.noAnimation;
@@ -294,6 +302,8 @@
         function NzPopoverDirective(elementRef, hostView, resolver, renderer, tooltip, noAnimation) {
             var _this = _super.call(this, elementRef, hostView, resolver, renderer, tooltip, noAnimation) || this;
             _this.noAnimation = noAnimation;
+            _this.showPopoverCloseButton = false;
+            _this.popoverCloseButtonLabel = 'сlose';
             _this.componentFactory = _this.resolver.resolveComponentFactory(NzPopoverComponent);
             return _this;
         }
@@ -320,7 +330,9 @@
             specificContent: [{ type: core.Input, args: ['nzPopoverContent',] }],
             directiveNameTitle: [{ type: core.Input, args: ['nz-popover',] }],
             specificTrigger: [{ type: core.Input, args: ['nzPopoverTrigger',] }],
-            specificPlacement: [{ type: core.Input, args: ['nzPopoverPlacement',] }]
+            specificPlacement: [{ type: core.Input, args: ['nzPopoverPlacement',] }],
+            showPopoverCloseButton: [{ type: core.Input, args: ['nzShowPopoverCloseButton',] }],
+            popoverCloseButtonLabel: [{ type: core.Input, args: ['nzPopoverCloseButtonLabel',] }]
         };
         return NzPopoverDirective;
     }(tooltip.NzTooltipBaseDirective));
@@ -335,6 +347,10 @@
         NzPopoverDirective.prototype.specificTrigger;
         /** @type {?} */
         NzPopoverDirective.prototype.specificPlacement;
+        /** @type {?} */
+        NzPopoverDirective.prototype.showPopoverCloseButton;
+        /** @type {?} */
+        NzPopoverDirective.prototype.popoverCloseButtonLabel;
         /** @type {?} */
         NzPopoverDirective.prototype.componentFactory;
         /** @type {?} */
@@ -353,7 +369,7 @@
                         entryComponents: [NzPopoverComponent],
                         exports: [NzPopoverDirective, NzPopoverComponent],
                         declarations: [NzPopoverDirective, NzPopoverComponent],
-                        imports: [common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule]
+                        imports: [common.CommonModule, overlay.OverlayModule, core$1.NzAddOnModule, core$1.NzOverlayModule, core$1.NzNoAnimationModule, tooltip.NzToolTipModule, icon.NzIconModule]
                     },] }
         ];
         return NzPopoverModule;

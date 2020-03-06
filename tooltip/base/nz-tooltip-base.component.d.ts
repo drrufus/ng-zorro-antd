@@ -26,6 +26,7 @@ export declare abstract class NzTooltipBaseComponent {
     nzTrigger: NzTooltipTrigger;
     nzTitleTemplate: TemplateRef<void>;
     nzContentTemplate: TemplateRef<void>;
+    nzShowPopoverCloseButton: boolean;
     readonly nzVisibleChange: EventEmitter<boolean>;
     overlay: CdkConnectedOverlay;
     origin: CdkOverlayOrigin;

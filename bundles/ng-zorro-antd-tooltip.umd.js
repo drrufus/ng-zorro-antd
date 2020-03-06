@@ -416,6 +416,8 @@
         /** @type {?} */
         NzTooltipBaseComponent.prototype.nzContentTemplate;
         /** @type {?} */
+        NzTooltipBaseComponent.prototype.nzShowPopoverCloseButton;
+        /** @type {?} */
         NzTooltipBaseComponent.prototype.nzVisibleChange;
         /** @type {?} */
         NzTooltipBaseComponent.prototype.overlay;
@@ -471,6 +473,8 @@
             // second
             _this.nzMouseLeaveDelay = 0.1; // second
             _this.nzVisibleChange = new core.EventEmitter();
+            _this.nzShowPopoverCloseButton = false;
+            _this.nzPopoverCloseButtonLabel = 'close';
             return _this;
         }
         Object.defineProperty(NzTooltipBaseComponentLegacy.prototype, "nzPlacement", {
@@ -566,7 +570,9 @@
             nzPlacement: [{ type: core.Input }],
             nzVisible: [{ type: core.Input }],
             nzTrigger: [{ type: core.Input }],
-            nzVisibleChange: [{ type: core.Output }]
+            nzVisibleChange: [{ type: core.Output }],
+            nzShowPopoverCloseButton: [{ type: core.Input }],
+            nzPopoverCloseButtonLabel: [{ type: core.Input }]
         };
         return NzTooltipBaseComponentLegacy;
     }(NzTooltipBaseComponent));
@@ -583,6 +589,10 @@
         NzTooltipBaseComponentLegacy.prototype.nzMouseLeaveDelay;
         /** @type {?} */
         NzTooltipBaseComponentLegacy.prototype.nzVisibleChange;
+        /** @type {?} */
+        NzTooltipBaseComponentLegacy.prototype.nzShowPopoverCloseButton;
+        /** @type {?} */
+        NzTooltipBaseComponentLegacy.prototype.nzPopoverCloseButtonLabel;
         /** @type {?} */
         NzTooltipBaseComponentLegacy.prototype.noAnimation;
     }
@@ -985,6 +995,8 @@
                 this.updateComponentValue('nzContent', this.content);
                 this.updateComponentValue('nzPlacement', this.placement);
                 this.updateComponentValue('nzTrigger', this.trigger);
+                this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
+                this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
             }
             else {
                 /** @type {?} */
@@ -1000,6 +1012,12 @@
                 }
                 if (c.specificPlacement || c.nzPlacement) {
                     this.updateComponentValue('nzPlacement', this.placement);
+                }
+                if (c.showCloseButton) {
+                    this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
+                }
+                if (c.popoverCloseButtonLabel) {
+                    this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
                 }
             }
             this.tooltip.updateByDirective();
@@ -1101,6 +1119,8 @@
             nzOverlayClassName: [{ type: core.Input }],
             nzOverlayStyle: [{ type: core.Input }],
             nzVisible: [{ type: core.Input }],
+            nzShowPopoverCloseButton: [{ type: core.Input }],
+            nzPopoverCloseButtonLabel: [{ type: core.Input }],
             nzVisibleChange: [{ type: core.Output }]
         };
         return NzTooltipBaseDirective;
@@ -1118,6 +1138,10 @@
         NzTooltipBaseDirective.prototype.specificTrigger;
         /** @type {?} */
         NzTooltipBaseDirective.prototype.specificPlacement;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.showPopoverCloseButton;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.popoverCloseButtonLabel;
         /** @type {?} */
         NzTooltipBaseDirective.prototype.tooltipRef;
         /**
@@ -1154,6 +1178,10 @@
         NzTooltipBaseDirective.prototype.nzOverlayStyle;
         /** @type {?} */
         NzTooltipBaseDirective.prototype.nzVisible;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.nzShowPopoverCloseButton;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.nzPopoverCloseButtonLabel;
         /**
          * For create tooltip dynamically. This should be override for each different component.
          * @type {?}
