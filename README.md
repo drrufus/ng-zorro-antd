@@ -40,7 +40,7 @@ Below you can see the list of the most significant changes.
 + Radio-group is wrapped in an additional `div` element with `role="radiogroup"` attribute.
 
 #### Menu:
-+ Collapsing-icon of submenu-item is focusable by TAB key.
++ Submenu-item is focusable by TAB key.
 + Collapsed content is not rendered (`*ngIf`-condition).
 
 #### Popover:
