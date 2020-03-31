@@ -1,7 +1,6 @@
 <ng-container *ngIf="listOfNzTabComponent">
   <div nz-tabs-nav
     role="tablist"
-    tabindex="0"
     class="ant-tabs-bar"
     [class.ant-tabs-card-bar]="nzType === 'card'"
     [class.ant-tabs-top-bar]="nzTabPosition === 'top'"
@@ -22,11 +21,15 @@
     (nzOnNextClick)="nzOnNextClick.emit()"
     (nzOnPrevClick)="nzOnPrevClick.emit()">
     <div nz-tab-label
+      tabindex="0"
       role="tab"
+      [attr.aria-selected]="nzSelectedIndex == i"
+      [attr.aria-label]="tab.nzTitle"
       [style.margin-right.px]="nzTabBarGutter"
       [class.ant-tabs-tab-active]="(nzSelectedIndex == i) && !nzHideAll"
       [disabled]="tab.nzDisabled"
       (click)="clickLabel(i,tab.nzDisabled)"
+      (keyup.enter)="clickLabel(i,tab.nzDisabled)"
       *ngFor="let tab of listOfNzTabComponent; let i = index">
       <ng-container *nzStringTemplateOutlet="tab.nzTitle || tab.title">{{ tab.nzTitle }}</ng-container>
     </div>
