@@ -30,6 +30,10 @@
       [disabled]="tab.nzDisabled"
       (click)="clickLabel(i,tab.nzDisabled)"
       (keyup.enter)="clickLabel(i,tab.nzDisabled)"
+      (keydown.arrowright)="$event.preventDefault()"
+      (keydown.arrowleft)="$event.preventDefault()"
+      (keyup.arrowright)="moveRight($event)"
+      (keyup.arrowleft)="moveLeft($event)"
       *ngFor="let tab of listOfNzTabComponent; let i = index">
       <ng-container *nzStringTemplateOutlet="tab.nzTitle || tab.title">{{ tab.nzTitle }}</ng-container>
     </div>

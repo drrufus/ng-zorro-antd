@@ -133,6 +133,53 @@ export class NzTabSetComponent
     return this.nzAnimated === true || (this.nzAnimated as NzAnimatedInterface).tabPane === true;
   }
 
+  moveRight($event: KeyboardEvent): void {
+    $event.stopPropagation();
+    $event.preventDefault();
+
+    var index = this.nzSelectedIndex!;
+    let tabs = this.listOfNzTabComponent.toArray();
+    let count = tabs.length;
+
+    if (index == (count - 1)) {
+      return;
+    }
+
+    var tab: NzTabComponent | null = null;
+    while(index < (count - 1) && (!tab || tab!.nzDisabled)) {
+      index++;
+      tab = tabs[index];
+    }
+
+    if (tab) {
+      this.nzSelectedIndex = index;
+      tabs[index].nzClick.emit();
+    }
+  }
+
+  moveLeft($event: KeyboardEvent): void {
+    $event.stopPropagation();
+    $event.preventDefault();
+
+    var index = this.nzSelectedIndex!;
+    let tabs = this.listOfNzTabComponent.toArray();
+
+    if (index == 0) {
+      return;
+    }
+
+    var tab: NzTabComponent | null = null;
+    while(index > 0 && (!tab || tab!.nzDisabled)) {
+      index--;
+      tab = tabs[index];
+    }
+
+    if (tab) {
+      this.nzSelectedIndex = index;
+      tabs[index].nzClick.emit();
+    }
+  }
+
   setPosition(value: NzTabPosition): void {
     if (this.tabContent) {
       if (value === 'bottom') {
