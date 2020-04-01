@@ -87,7 +87,6 @@ class NzTooltipBaseComponent {
      * @return {?}
      */
     restoreFocus() {
-        console.log("an attempt to restore a focus");
         try {
             this.origin.elementRef.nativeElement.focus();
         }

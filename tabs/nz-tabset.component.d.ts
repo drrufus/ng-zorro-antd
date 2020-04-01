@@ -61,6 +61,8 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     nzSelectedIndex: number | null;
     readonly inkBarAnimated: boolean;
     readonly tabPaneAnimated: boolean;
+    moveRight($event: KeyboardEvent): void;
+    moveLeft($event: KeyboardEvent): void;
     setPosition(value: NzTabPosition): void;
     setClassMap(): void;
     clickLabel(index: number, disabled: boolean): void;
