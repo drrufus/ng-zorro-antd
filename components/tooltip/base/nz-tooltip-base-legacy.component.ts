@@ -76,6 +76,7 @@ export class NzTooltipBaseComponentLegacy extends NzTooltipBaseComponent impleme
 
   @Input() nzShowPopoverCloseButton: boolean = false;
   @Input() nzPopoverCloseButtonLabel: string = 'close';
+  @Input() nzPopoverForceRestoreFocus: boolean = false;
 
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
     super(cdr, noAnimation);

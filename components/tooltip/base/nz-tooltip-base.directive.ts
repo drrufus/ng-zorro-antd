@@ -49,6 +49,7 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
   showPopoverCloseButton?: boolean;
   popoverCloseButtonLabel?: string;
   tooltipRef: ComponentRef<NzTooltipBaseComponent>;
+  popoverForceRestoreFocus: boolean;
 
   /**
    * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
@@ -81,6 +82,7 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
   @Input() nzVisible: boolean;
   @Input() nzShowPopoverCloseButton: boolean;
   @Input() nzPopoverCloseButtonLabel: string;
+  @Input() nzPopoverForceRestoreFocus: boolean;
 
   /**
    * For create tooltip dynamically. This should be override for each different component.
@@ -331,6 +333,7 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
       this.updateComponentValue('nzTrigger', this.trigger);
       this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
       this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
+      this.updateComponentValue('nzPopoverForceRestoreFocus', this.popoverForceRestoreFocus);
     } else {
       const c = propertiesOrChanges as SimpleChanges;
       if (c.specificTitle || c.directiveNameTitle || c.nzTitle) {
@@ -350,6 +353,9 @@ export abstract class NzTooltipBaseDirective implements OnChanges, OnInit, OnDes
       }
       if (c.popoverCloseButtonLabel) {
         this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
+      }
+      if (c.popoverForceRestoreFocus) {
+        this.updateComponentValue('nzPopoverForceRestoreFocus', this.popoverForceRestoreFocus);
       }
     }
 

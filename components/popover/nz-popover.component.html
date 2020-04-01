@@ -20,14 +20,23 @@
       <div class="ant-popover-arrow"></div>
       <div class="ant-popover-inner" role="tooltip">
         <div>
-          <div class="ant-popover-title" *ngIf="title" #focusableHeader tabindex="0">
-            <ng-container *nzStringTemplateOutlet="title">{{ title }}</ng-container>
+          <div class="ant-popover-title" *ngIf="title">
+
+            <ng-container *ngIf="!simpleHeader">
+              <ng-container *nzStringTemplateOutlet="title">{{ title }}</ng-container>
+            </ng-container>
+            <ng-container *ngIf="simpleHeader">
+              <h4 style="margin: 0;" #focusableHeader tabindex="0">{{ title }}</h4>
+            </ng-container>
+
             <button *ngIf="nzShowPopoverCloseButton" (click)="hide()" class="ant-modal-close popover-close-button" [attr.aria-label]="nzPopoverCloseButtonLabel">
               <span class="ant-modal-close-x">
                 <i nz-icon nzType="close" nzTheme="outline" class="ant-modal-close-icon"></i>
               </span>
             </button>
+
           </div>
+          
           <div class="ant-popover-inner-content">
             <ng-container *nzStringTemplateOutlet="content">{{ content }}</ng-container>
           </div>

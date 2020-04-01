@@ -38,6 +38,7 @@ export class NzPopoverDirective extends NzTooltipBaseDirective {
   @Input('nzPopoverPlacement') specificPlacement: string;
   @Input('nzShowPopoverCloseButton') showPopoverCloseButton: boolean = false;
   @Input('nzPopoverCloseButtonLabel') popoverCloseButtonLabel: string = 'сlose';
+  @Input('nzPopoverForceRestoreFocus') popoverForceRestoreFocus: boolean = false;
 
   componentFactory: ComponentFactory<NzPopoverComponent> = this.resolver.resolveComponentFactory(NzPopoverComponent);
 

@@ -67,7 +67,12 @@ export class NzPopoverComponent extends NzToolTipComponent {
 
   @Input() nzShowPopoverCloseButton: boolean = false;
   @Input() nzPopoverCloseButtonLabel: string = 'close';
+  @Input() nzPopoverForceRestoreFocus: boolean = false;
 
+  get simpleHeader(): boolean {
+    return typeof(this.nzTitle) == 'string';
+  }
+  
   @ViewChild('focusableHeader', { static: false }) focusableHeader: ElementRef;
 
   constructor(cdr: ChangeDetectorRef, @Host() @Optional() public noAnimation?: NzNoAnimationDirective) {
@@ -75,7 +80,7 @@ export class NzPopoverComponent extends NzToolTipComponent {
   }
 
   focusOnHeader(): void {
-    if (this.focusableHeader != null) {
+    if (this.simpleHeader && this.focusableHeader != null) {
       this.focusableHeader.nativeElement.focus();
     }
   }

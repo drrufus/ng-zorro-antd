@@ -41,6 +41,7 @@ export abstract class NzTooltipBaseComponent {
   nzTitleTemplate: TemplateRef<void>;
   nzContentTemplate: TemplateRef<void>;
   nzShowPopoverCloseButton: boolean;
+  nzPopoverForceRestoreFocus: boolean = false;
 
   @Output() readonly nzVisibleChange = new EventEmitter<boolean>();
 
@@ -75,7 +76,7 @@ export abstract class NzTooltipBaseComponent {
       this.nzVisibleChange.emit(true);
       this.cdr.detectChanges();
     }
-
+    
     this.afterAppearing();
   }
 
@@ -87,6 +88,19 @@ export abstract class NzTooltipBaseComponent {
     this.nzVisible = false;
     this.nzVisibleChange.emit(false);
     this.cdr.detectChanges();
+
+    if (this.nzPopoverForceRestoreFocus) {
+      this.restoreFocus();
+    }
+  }
+
+  restoreFocus(): void {
+    try {
+      this.origin.elementRef.nativeElement.focus();
+    } catch(e) {
+      console.warn("Unable to restore a focus:");
+      console.warn(e);
+    }
   }
 
   updateByDirective(): void {
