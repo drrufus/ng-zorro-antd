@@ -225,6 +225,7 @@
         function NzTooltipBaseComponent(cdr, noAnimation) {
             this.cdr = cdr;
             this.noAnimation = noAnimation;
+            this.nzPopoverForceRestoreFocus = false;
             this.nzVisibleChange = new core.EventEmitter();
             this._classMap = {};
             this._hasBackdrop = false;
@@ -284,6 +285,25 @@
             this.nzVisible = false;
             this.nzVisibleChange.emit(false);
             this.cdr.detectChanges();
+            if (this.nzPopoverForceRestoreFocus) {
+                this.restoreFocus();
+            }
+        };
+        /**
+         * @return {?}
+         */
+        NzTooltipBaseComponent.prototype.restoreFocus = /**
+         * @return {?}
+         */
+        function () {
+            console.log("an attempt to restore a focus");
+            try {
+                this.origin.elementRef.nativeElement.focus();
+            }
+            catch (e) {
+                console.warn("Unable to restore a focus:");
+                console.warn(e);
+            }
         };
         /**
          * @return {?}
@@ -418,6 +438,8 @@
         /** @type {?} */
         NzTooltipBaseComponent.prototype.nzShowPopoverCloseButton;
         /** @type {?} */
+        NzTooltipBaseComponent.prototype.nzPopoverForceRestoreFocus;
+        /** @type {?} */
         NzTooltipBaseComponent.prototype.nzVisibleChange;
         /** @type {?} */
         NzTooltipBaseComponent.prototype.overlay;
@@ -475,6 +497,7 @@
             _this.nzVisibleChange = new core.EventEmitter();
             _this.nzShowPopoverCloseButton = false;
             _this.nzPopoverCloseButtonLabel = 'close';
+            _this.nzPopoverForceRestoreFocus = false;
             return _this;
         }
         Object.defineProperty(NzTooltipBaseComponentLegacy.prototype, "nzPlacement", {
@@ -572,7 +595,8 @@
             nzTrigger: [{ type: core.Input }],
             nzVisibleChange: [{ type: core.Output }],
             nzShowPopoverCloseButton: [{ type: core.Input }],
-            nzPopoverCloseButtonLabel: [{ type: core.Input }]
+            nzPopoverCloseButtonLabel: [{ type: core.Input }],
+            nzPopoverForceRestoreFocus: [{ type: core.Input }]
         };
         return NzTooltipBaseComponentLegacy;
     }(NzTooltipBaseComponent));
@@ -593,6 +617,8 @@
         NzTooltipBaseComponentLegacy.prototype.nzShowPopoverCloseButton;
         /** @type {?} */
         NzTooltipBaseComponentLegacy.prototype.nzPopoverCloseButtonLabel;
+        /** @type {?} */
+        NzTooltipBaseComponentLegacy.prototype.nzPopoverForceRestoreFocus;
         /** @type {?} */
         NzTooltipBaseComponentLegacy.prototype.noAnimation;
     }
@@ -997,6 +1023,7 @@
                 this.updateComponentValue('nzTrigger', this.trigger);
                 this.updateComponentValue('nzShowPopoverCloseButton', this.showPopoverCloseButton);
                 this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
+                this.updateComponentValue('nzPopoverForceRestoreFocus', this.popoverForceRestoreFocus);
             }
             else {
                 /** @type {?} */
@@ -1018,6 +1045,9 @@
                 }
                 if (c.popoverCloseButtonLabel) {
                     this.updateComponentValue('nzPopoverCloseButtonLabel', this.popoverCloseButtonLabel);
+                }
+                if (c.popoverForceRestoreFocus) {
+                    this.updateComponentValue('nzPopoverForceRestoreFocus', this.popoverForceRestoreFocus);
                 }
             }
             this.tooltip.updateByDirective();
@@ -1121,6 +1151,7 @@
             nzVisible: [{ type: core.Input }],
             nzShowPopoverCloseButton: [{ type: core.Input }],
             nzPopoverCloseButtonLabel: [{ type: core.Input }],
+            nzPopoverForceRestoreFocus: [{ type: core.Input }],
             nzVisibleChange: [{ type: core.Output }]
         };
         return NzTooltipBaseDirective;
@@ -1144,6 +1175,8 @@
         NzTooltipBaseDirective.prototype.popoverCloseButtonLabel;
         /** @type {?} */
         NzTooltipBaseDirective.prototype.tooltipRef;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.popoverForceRestoreFocus;
         /**
          * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
          * Please use a more specific API. Like `nzTooltipTitle`.
@@ -1182,6 +1215,8 @@
         NzTooltipBaseDirective.prototype.nzShowPopoverCloseButton;
         /** @type {?} */
         NzTooltipBaseDirective.prototype.nzPopoverCloseButtonLabel;
+        /** @type {?} */
+        NzTooltipBaseDirective.prototype.nzPopoverForceRestoreFocus;
         /**
          * For create tooltip dynamically. This should be override for each different component.
          * @type {?}

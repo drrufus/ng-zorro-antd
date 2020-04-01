@@ -27,6 +27,7 @@ export declare abstract class NzTooltipBaseComponent {
     nzTitleTemplate: TemplateRef<void>;
     nzContentTemplate: TemplateRef<void>;
     nzShowPopoverCloseButton: boolean;
+    nzPopoverForceRestoreFocus: boolean;
     readonly nzVisibleChange: EventEmitter<boolean>;
     overlay: CdkConnectedOverlay;
     origin: CdkOverlayOrigin;
@@ -42,6 +43,7 @@ export declare abstract class NzTooltipBaseComponent {
     constructor(cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective | undefined);
     show(): void;
     hide(): void;
+    restoreFocus(): void;
     updateByDirective(): void;
     /**
      * Force the component to update its position.

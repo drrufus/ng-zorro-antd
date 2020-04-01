@@ -30,6 +30,7 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnIni
     showPopoverCloseButton?: boolean;
     popoverCloseButtonLabel?: string;
     tooltipRef: ComponentRef<NzTooltipBaseComponent>;
+    popoverForceRestoreFocus: boolean;
     /**
      * @deprecated 9.0.0. This is deprecated and going to be removed in 9.0.0.
      * Please use a more specific API. Like `nzTooltipTitle`.
@@ -57,6 +58,7 @@ export declare abstract class NzTooltipBaseDirective implements OnChanges, OnIni
     nzVisible: boolean;
     nzShowPopoverCloseButton: boolean;
     nzPopoverCloseButtonLabel: string;
+    nzPopoverForceRestoreFocus: boolean;
     /**
      * For create tooltip dynamically. This should be override for each different component.
      */

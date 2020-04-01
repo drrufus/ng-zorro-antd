@@ -27,6 +27,8 @@ export declare class NzPopoverComponent extends NzToolTipComponent {
     nzContentTemplate: TemplateRef<void>;
     nzShowPopoverCloseButton: boolean;
     nzPopoverCloseButtonLabel: string;
+    nzPopoverForceRestoreFocus: boolean;
+    readonly simpleHeader: boolean;
     focusableHeader: ElementRef;
     constructor(cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective | undefined);
     focusOnHeader(): void;

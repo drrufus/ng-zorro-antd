@@ -5,6 +5,13 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { ChangeDetectorRef, ElementRef, EventEmitter, OnDestroy, OnInit, Renderer2, TemplateRef } from '@angular/core';
 import { NzConfigService } from 'ng-zorro-antd/core';
 import { NzCollapseComponent } from './nz-collapse.component';
@@ -17,6 +24,7 @@ export declare class NzCollapsePanelComponent implements OnInit, OnDestroy {
     nzShowArrow: boolean;
     nzExtra: string | TemplateRef<void>;
     nzHeader: string | TemplateRef<void>;
+    nzHeadingAriaLabel: string | null;
     nzExpandedIcon: string | TemplateRef<void>;
     nzRole: string;
     readonly nzActiveChange: EventEmitter<boolean>;

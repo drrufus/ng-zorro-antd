@@ -18,6 +18,7 @@ export declare class NzPopoverDirective extends NzTooltipBaseDirective {
     specificPlacement: string;
     showPopoverCloseButton: boolean;
     popoverCloseButtonLabel: string;
+    popoverForceRestoreFocus: boolean;
     componentFactory: ComponentFactory<NzPopoverComponent>;
     constructor(elementRef: ElementRef, hostView: ViewContainerRef, resolver: ComponentFactoryResolver, renderer: Renderer2, tooltip: NzPopoverComponent, noAnimation?: NzNoAnimationDirective | undefined);
 }
