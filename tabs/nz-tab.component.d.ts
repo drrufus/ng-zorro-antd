@@ -20,6 +20,7 @@ export declare class NzTabComponent implements OnChanges, OnDestroy {
     template: TemplateRef<void>;
     linkDirective: NzTabLinkDirective;
     nzTitle: string | TemplateRef<void>;
+    nzTitleAriaLabel: string | null;
     nzRouterIdentifier: string;
     nzForceRender: boolean;
     nzDisabled: boolean;
