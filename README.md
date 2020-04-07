@@ -52,3 +52,4 @@ Below you can see the list of the most significant changes.
 #### Tabs:
 + Tabs have a `tabindex` now.
 + Navigation with arrow keys.
++ `nzTitleAriaLabel` attribute for a tab.

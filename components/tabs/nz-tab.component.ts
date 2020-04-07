@@ -47,6 +47,7 @@ export class NzTabComponent implements OnChanges, OnDestroy {
   @ContentChild(NzTabDirective, { static: false, read: TemplateRef }) template: TemplateRef<void>;
   @ContentChild(NzTabLinkDirective, { static: false }) linkDirective: NzTabLinkDirective;
   @Input() nzTitle: string | TemplateRef<void>;
+  @Input() nzTitleAriaLabel: string | null = null;
   @Input() nzRouterIdentifier: string;
   @Input() @InputBoolean() nzForceRender = false;
   @Input() @InputBoolean() nzDisabled = false;
