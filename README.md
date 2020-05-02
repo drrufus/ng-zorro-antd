@@ -22,6 +22,7 @@ Below you can see the list of the most significant changes.
 
 #### Card:
 + Header is wrapped in `<h4>` element.
++ New `nzHeadingAriaLabel` attribute: if not null - a panel's header will be marked with `role="heading"` and `aria-label` with provided value.
 
 #### Modal:
 + Header is wrapped in `<h4>` element.
@@ -52,3 +53,4 @@ Below you can see the list of the most significant changes.
 #### Tabs:
 + Tabs have a `tabindex` now.
 + Navigation with arrow keys.
++ `nzTitleAriaLabel` attribute for a tab.
