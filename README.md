@@ -54,3 +54,6 @@ Below you can see the list of the most significant changes.
 + Tabs have a `tabindex` now.
 + Navigation with arrow keys.
 + `nzTitleAriaLabel` attribute for a tab.
+
+#### Table:
++ Styles fixes for <th> elements within <tbody>.

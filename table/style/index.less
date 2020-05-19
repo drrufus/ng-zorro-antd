@@ -219,9 +219,13 @@
     }
   }
 
-  &-tbody > tr > td {
+  &-tbody > tr > td,
+  &-tbody > tr > th {
     border-bottom: @border-width-base @border-style-base @border-color-split;
     transition: all 0.3s, border 0s;
+  }
+  &-tbody > tr:last-child > th {
+    border-bottom-width: 0;
   }
 
   &-thead > tr,
@@ -229,17 +233,20 @@
     transition: all 0.3s, height 0s;
     &.@{table-prefix-cls}-row-hover,
     &:hover {
-      &:not(.@{table-prefix-cls}-expanded-row):not(.@{table-prefix-cls}-row-selected) > td {
+      &:not(.@{table-prefix-cls}-expanded-row):not(.@{table-prefix-cls}-row-selected) > td,
+      &:not(.@{table-prefix-cls}-expanded-row):not(.@{table-prefix-cls}-row-selected) > th {
         background: @table-row-hover-bg;
       }
     }
-    &.@{table-prefix-cls}-row-selected > td {
+    &.@{table-prefix-cls}-row-selected > td,
+    &.@{table-prefix-cls}-row-selected > th {
       &.@{table-prefix-cls}-column-sort {
         background: @table-body-selected-sort-bg;
       }
     }
     &:hover {
-      &.@{table-prefix-cls}-row-selected > td {
+      &.@{table-prefix-cls}-row-selected > td,
+      &.@{table-prefix-cls}-row-selected > th {
         background: @table-selected-row-hover-bg;
         &.@{table-prefix-cls}-column-sort {
           background: @table-body-selected-sort-bg;
@@ -312,7 +319,8 @@
     border-radius: @border-radius-base;
   }
 
-  &-tbody > tr.@{table-prefix-cls}-row-selected td {
+  &-tbody > tr.@{table-prefix-cls}-row-selected td,
+  &-tbody > tr.@{table-prefix-cls}-row-selected th {
     color: @table-selected-row-color;
     background: @table-selected-row-bg;
   }
@@ -321,7 +329,8 @@
     background: @table-header-sort-bg;
   }
 
-  &-tbody > tr > td.@{table-prefix-cls}-column-sort {
+  &-tbody > tr > td.@{table-prefix-cls}-column-sort,
+  &-tbody > tr > th.@{table-prefix-cls}-column-sort {
     background: @table-body-sort-bg;
   }
 

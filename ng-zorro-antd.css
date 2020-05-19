@@ -18094,9 +18094,13 @@ span.ant-radio + * {
 .ant-table-thead > tr:not(:last-child) > th[colspan] {
   border-bottom: 0;
 }
-.ant-table-tbody > tr > td {
+.ant-table-tbody > tr > td,
+.ant-table-tbody > tr > th {
   border-bottom: 1px solid #e8e8e8;
   transition: all 0.3s, border 0s;
+}
+.ant-table-tbody > tr:last-child > th {
+  border-bottom-width: 0;
 }
 .ant-table-thead > tr,
 .ant-table-tbody > tr {
@@ -18105,19 +18109,29 @@ span.ant-radio + * {
 .ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
 .ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
 .ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
-.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td {
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > td,
+.ant-table-thead > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > th,
+.ant-table-tbody > tr.ant-table-row-hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > th,
+.ant-table-thead > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > th,
+.ant-table-tbody > tr:hover:not(.ant-table-expanded-row):not(.ant-table-row-selected) > th {
   background: #e6f7ff;
 }
 .ant-table-thead > tr.ant-table-row-selected > td.ant-table-column-sort,
-.ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort {
+.ant-table-tbody > tr.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-thead > tr.ant-table-row-selected > th.ant-table-column-sort,
+.ant-table-tbody > tr.ant-table-row-selected > th.ant-table-column-sort {
   background: #fafafa;
 }
 .ant-table-thead > tr:hover.ant-table-row-selected > td,
-.ant-table-tbody > tr:hover.ant-table-row-selected > td {
+.ant-table-tbody > tr:hover.ant-table-row-selected > td,
+.ant-table-thead > tr:hover.ant-table-row-selected > th,
+.ant-table-tbody > tr:hover.ant-table-row-selected > th {
   background: #fafafa;
 }
 .ant-table-thead > tr:hover.ant-table-row-selected > td.ant-table-column-sort,
-.ant-table-tbody > tr:hover.ant-table-row-selected > td.ant-table-column-sort {
+.ant-table-tbody > tr:hover.ant-table-row-selected > td.ant-table-column-sort,
+.ant-table-thead > tr:hover.ant-table-row-selected > th.ant-table-column-sort,
+.ant-table-tbody > tr:hover.ant-table-row-selected > th.ant-table-column-sort {
   background: #fafafa;
 }
 .ant-table-thead > tr:hover {
@@ -18171,14 +18185,16 @@ span.ant-radio + * {
   border-top: 1px solid #e8e8e8;
   border-radius: 4px;
 }
-.ant-table-tbody > tr.ant-table-row-selected td {
+.ant-table-tbody > tr.ant-table-row-selected td,
+.ant-table-tbody > tr.ant-table-row-selected th {
   color: inherit;
   background: #fafafa;
 }
 .ant-table-thead > tr > th.ant-table-column-sort {
   background: #f5f5f5;
 }
-.ant-table-tbody > tr > td.ant-table-column-sort {
+.ant-table-tbody > tr > td.ant-table-column-sort,
+.ant-table-tbody > tr > th.ant-table-column-sort {
   background: rgba(0, 0, 0, 0.01);
 }
 .ant-table-thead > tr > th,
