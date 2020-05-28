@@ -71,7 +71,7 @@ export class NzSwitchComponent implements ControlValueAccessor, AfterViewInit, O
   @Input() nzCheckedChildren: string | TemplateRef<void>;
   @Input() nzUnCheckedChildren: string | TemplateRef<void>;
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, 'default') nzSize: NzSizeDSType;
-  @Input() nzLabel: string = '';
+  @Input() nzLabel: string | null = null;
 
   hostClick(e: MouseEvent): void {
     e.preventDefault();
