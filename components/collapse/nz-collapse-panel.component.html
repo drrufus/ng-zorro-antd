@@ -1,7 +1,7 @@
 <div class="ant-collapse-header" style="display: flex; justify-content: space-between;" 
   [attr.role]="nzHeadingAriaLabel ? 'heading' : null" [attr.aria-label]="nzHeadingAriaLabel"
   [attr.aria-level]="nzHeadingAriaLabel ? 4 : null">
-  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()" (click)="clickHeader()" [tabindex]="nzDisabled ? -1 : 0">
+  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()" (keyup.Space)="clickHeader()" (click)="clickHeader()" [tabindex]="nzDisabled ? -1 : 0">
     <ng-container *ngIf="nzShowArrow">
       <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
         <a class="ant-collapse-arrow-link" aria-hidden="true">
