@@ -1352,7 +1352,7 @@ class NzModalComponent extends NzModalRef {
             this.previouslyFocusedElement.focus();
         }
         if (this.focusTrap) {
-            this.focusTrap.destroy();
+            //this.focusTrap.destroy();
         }
     }
 }
