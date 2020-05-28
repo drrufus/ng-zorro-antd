@@ -224,7 +224,7 @@
             this.nzLoading = false;
             this.nzDisabled = false;
             this.nzControl = false;
-            this.nzLabel = '';
+            this.nzLabel = null;
         }
         /**
          * @param {?} e
@@ -382,7 +382,7 @@
                         selector: 'nz-switch',
                         exportAs: 'nzSwitch',
                         preserveWhitespaces: false,
-                        template: "<label>\r\n  <button type=\"button\" #switchElement nz-wave class=\"ant-switch\" [disabled]=\"nzDisabled\" [attr.aria-checked]=\"checked\"\r\n    [class.ant-switch-checked]=\"checked\" [class.ant-switch-loading]=\"nzLoading\" [class.ant-switch-disabled]=\"nzDisabled\"\r\n    [class.ant-switch-small]=\"nzSize === 'small'\" [nzWaveExtraNode]=\"true\" (keydown)=\"onKeyDown($event)\" role=\"checkbox\">\r\n    <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n    <span class=\"ant-switch-inner\">\r\n      <span>\r\n        <ng-container *ngIf=\"checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"!checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n      </span>\r\n    </span>\r\n  </button>\r\n  {{ nzLabel }}\r\n</label>",
+                        template: "<label style=\"display: flex; flex-flow: row nowrap; align-items: center;\">\r\n  <button type=\"button\" #switchElement nz-wave class=\"ant-switch\" [disabled]=\"nzDisabled\" [attr.aria-checked]=\"checked\"\r\n    [class.ant-switch-checked]=\"checked\" [class.ant-switch-loading]=\"nzLoading\" [class.ant-switch-disabled]=\"nzDisabled\"\r\n    [class.ant-switch-small]=\"nzSize === 'small'\" [nzWaveExtraNode]=\"true\" (keydown)=\"onKeyDown($event)\" role=\"checkbox\">\r\n    <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n    <span class=\"ant-switch-inner\">\r\n      <span>\r\n        <ng-container *ngIf=\"checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"!checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n      </span>\r\n    </span>\r\n  </button>\r\n  <span style=\"margin-left: 6px;\" *ngIf=\"nzLabel\">{{ nzLabel }}</span>\r\n</label>",
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         encapsulation: core.ViewEncapsulation.None,
                         providers: [

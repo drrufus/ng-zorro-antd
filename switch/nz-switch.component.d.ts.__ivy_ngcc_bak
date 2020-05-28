@@ -30,7 +30,7 @@ export declare class NzSwitchComponent implements ControlValueAccessor, AfterVie
     nzCheckedChildren: string | TemplateRef<void>;
     nzUnCheckedChildren: string | TemplateRef<void>;
     nzSize: NzSizeDSType;
-    nzLabel: string;
+    nzLabel: string | null;
     hostClick(e: MouseEvent): void;
     updateValue(value: boolean): void;
     onKeyDown(e: KeyboardEvent): void;

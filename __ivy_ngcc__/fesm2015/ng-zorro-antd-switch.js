@@ -20,20 +20,20 @@ import * as ɵngcc4 from 'ng-zorro-antd/icon';
 
 const _c0 = ["switchElement"];
 function NzSwitchComponent_i_3_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 5);
+    ɵngcc0.ɵɵelement(0, "i", 7);
 } }
 function NzSwitchComponent_ng_container_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r4 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r5 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r4.nzCheckedChildren);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r5.nzCheckedChildren);
 } }
 function NzSwitchComponent_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzSwitchComponent_ng_container_6_ng_container_1_Template, 2, 1, "ng-container", 6);
+    ɵngcc0.ɵɵtemplate(1, NzSwitchComponent_ng_container_6_ng_container_1_Template, 2, 1, "ng-container", 8);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r2 = ɵngcc0.ɵɵnextContext();
@@ -45,18 +45,27 @@ function NzSwitchComponent_ng_container_7_ng_container_1_Template(rf, ctx) { if 
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r5 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r6 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r5.nzUnCheckedChildren);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r6.nzUnCheckedChildren);
 } }
 function NzSwitchComponent_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzSwitchComponent_ng_container_7_ng_container_1_Template, 2, 1, "ng-container", 6);
+    ɵngcc0.ɵɵtemplate(1, NzSwitchComponent_ng_container_7_ng_container_1_Template, 2, 1, "ng-container", 8);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r3 = ɵngcc0.ɵɵnextContext();
     ɵngcc0.ɵɵadvance(1);
     ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r3.nzUnCheckedChildren);
+} }
+function NzSwitchComponent_span_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 9);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    const ctx_r4 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r4.nzLabel);
 } }
 const NZ_CONFIG_COMPONENT_NAME = 'switch';
 class NzSwitchComponent {
@@ -81,7 +90,7 @@ class NzSwitchComponent {
         this.nzLoading = false;
         this.nzDisabled = false;
         this.nzControl = false;
-        this.nzLabel = '';
+        this.nzLabel = null;
     }
     /**
      * @param {?} e
@@ -210,19 +219,19 @@ NzSwitchComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzSwitchComponent,
                  */() => NzSwitchComponent)),
                 multi: true
             }
-        ])], decls: 9, vars: 15, consts: [["type", "button", "nz-wave", "", "role", "checkbox", 1, "ant-switch", 3, "disabled", "nzWaveExtraNode", "keydown"], ["switchElement", ""], ["nz-icon", "", "nzType", "loading", "class", "ant-switch-loading-icon", 4, "ngIf"], [1, "ant-switch-inner"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading", 1, "ant-switch-loading-icon"], [4, "nzStringTemplateOutlet"]], template: function NzSwitchComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "label");
-        ɵngcc0.ɵɵelementStart(1, "button", 0, 1);
+        ])], decls: 9, vars: 15, consts: [[2, "display", "flex", "flex-flow", "row nowrap", "align-items", "center"], ["type", "button", "nz-wave", "", "role", "checkbox", 1, "ant-switch", 3, "disabled", "nzWaveExtraNode", "keydown"], ["switchElement", ""], ["nz-icon", "", "nzType", "loading", "class", "ant-switch-loading-icon", 4, "ngIf"], [1, "ant-switch-inner"], [4, "ngIf"], ["style", "margin-left: 6px;", 4, "ngIf"], ["nz-icon", "", "nzType", "loading", 1, "ant-switch-loading-icon"], [4, "nzStringTemplateOutlet"], [2, "margin-left", "6px"]], template: function NzSwitchComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "label", 0);
+        ɵngcc0.ɵɵelementStart(1, "button", 1, 2);
         ɵngcc0.ɵɵlistener("keydown", function NzSwitchComponent_Template_button_keydown_1_listener($event) { return ctx.onKeyDown($event); });
-        ɵngcc0.ɵɵtemplate(3, NzSwitchComponent_i_3_Template, 1, 0, "i", 2);
-        ɵngcc0.ɵɵelementStart(4, "span", 3);
+        ɵngcc0.ɵɵtemplate(3, NzSwitchComponent_i_3_Template, 1, 0, "i", 3);
+        ɵngcc0.ɵɵelementStart(4, "span", 4);
         ɵngcc0.ɵɵelementStart(5, "span");
-        ɵngcc0.ɵɵtemplate(6, NzSwitchComponent_ng_container_6_Template, 2, 1, "ng-container", 4);
-        ɵngcc0.ɵɵtemplate(7, NzSwitchComponent_ng_container_7_Template, 2, 1, "ng-container", 4);
+        ɵngcc0.ɵɵtemplate(6, NzSwitchComponent_ng_container_6_Template, 2, 1, "ng-container", 5);
+        ɵngcc0.ɵɵtemplate(7, NzSwitchComponent_ng_container_7_Template, 2, 1, "ng-container", 5);
         ɵngcc0.ɵɵelementEnd();
         ɵngcc0.ɵɵelementEnd();
         ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtext(8);
+        ɵngcc0.ɵɵtemplate(8, NzSwitchComponent_span_8_Template, 2, 1, "span", 6);
         ɵngcc0.ɵɵelementEnd();
     } if (rf & 2) {
         ɵngcc0.ɵɵadvance(1);
@@ -236,7 +245,7 @@ NzSwitchComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzSwitchComponent,
         ɵngcc0.ɵɵadvance(1);
         ɵngcc0.ɵɵproperty("ngIf", !ctx.checked);
         ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵtextInterpolate1(" ", ctx.nzLabel, "\n");
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzLabel);
     } }, directives: [ɵngcc1.NzWaveDirective, ɵngcc3.NgIf, ɵngcc4.NzIconDirective, ɵngcc1.NzStringTemplateOutletDirective], styles: ["\n      nz-switch {\n        display: inline-block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzSwitchComponent.ctorParameters = () => [
@@ -276,7 +285,7 @@ __decorate([
                 selector: 'nz-switch',
                 exportAs: 'nzSwitch',
                 preserveWhitespaces: false,
-                template: "<label>\r\n  <button type=\"button\" #switchElement nz-wave class=\"ant-switch\" [disabled]=\"nzDisabled\" [attr.aria-checked]=\"checked\"\r\n    [class.ant-switch-checked]=\"checked\" [class.ant-switch-loading]=\"nzLoading\" [class.ant-switch-disabled]=\"nzDisabled\"\r\n    [class.ant-switch-small]=\"nzSize === 'small'\" [nzWaveExtraNode]=\"true\" (keydown)=\"onKeyDown($event)\" role=\"checkbox\">\r\n    <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n    <span class=\"ant-switch-inner\">\r\n      <span>\r\n        <ng-container *ngIf=\"checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"!checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n      </span>\r\n    </span>\r\n  </button>\r\n  {{ nzLabel }}\r\n</label>",
+                template: "<label style=\"display: flex; flex-flow: row nowrap; align-items: center;\">\r\n  <button type=\"button\" #switchElement nz-wave class=\"ant-switch\" [disabled]=\"nzDisabled\" [attr.aria-checked]=\"checked\"\r\n    [class.ant-switch-checked]=\"checked\" [class.ant-switch-loading]=\"nzLoading\" [class.ant-switch-disabled]=\"nzDisabled\"\r\n    [class.ant-switch-small]=\"nzSize === 'small'\" [nzWaveExtraNode]=\"true\" (keydown)=\"onKeyDown($event)\" role=\"checkbox\">\r\n    <i *ngIf=\"nzLoading\" nz-icon nzType=\"loading\" class=\"ant-switch-loading-icon\"></i>\r\n    <span class=\"ant-switch-inner\">\r\n      <span>\r\n        <ng-container *ngIf=\"checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzCheckedChildren\">{{ nzCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n        <ng-container *ngIf=\"!checked\">\r\n          <ng-container *nzStringTemplateOutlet=\"nzUnCheckedChildren\">{{ nzUnCheckedChildren }}</ng-container>\r\n        </ng-container>\r\n      </span>\r\n    </span>\r\n  </button>\r\n  <span style=\"margin-left: 6px;\" *ngIf=\"nzLabel\">{{ nzLabel }}</span>\r\n</label>",
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
                 providers: [
