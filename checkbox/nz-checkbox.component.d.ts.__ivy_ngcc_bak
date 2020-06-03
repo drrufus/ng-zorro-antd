@@ -25,6 +25,7 @@ export declare class NzCheckboxComponent implements OnInit, ControlValueAccessor
     nzDisabled: boolean;
     nzIndeterminate: boolean;
     nzChecked: boolean;
+    nzAriaLabel: string | null;
     hostClick(e: MouseEvent): void;
     innerCheckedChange(checked: boolean): void;
     updateAutoFocus(): void;

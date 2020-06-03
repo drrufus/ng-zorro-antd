@@ -122,6 +122,7 @@ var NzCheckboxComponent = /** @class */ (function () {
         this.nzDisabled = false;
         this.nzIndeterminate = false;
         this.nzChecked = false;
+        this.nzAriaLabel = null;
         renderer.addClass(elementRef.nativeElement, 'ant-checkbox-wrapper');
     }
     /**
@@ -313,7 +314,7 @@ var NzCheckboxComponent = /** @class */ (function () {
                     preserveWhitespaces: false,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     encapsulation: ViewEncapsulation.None,
-                    template: "<span class=\"ant-checkbox\"\r\n  [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\"\r\n  [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\" (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\"><ng-content></ng-content></span>",
+                    template: "<span class=\"ant-checkbox\"\r\n  [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\"\r\n  [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\" (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\" type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\"><ng-content></ng-content></span>",
                     providers: [
                         {
                             provide: NG_VALUE_ACCESSOR,
@@ -345,7 +346,8 @@ var NzCheckboxComponent = /** @class */ (function () {
         nzAutoFocus: [{ type: Input }],
         nzDisabled: [{ type: Input }],
         nzIndeterminate: [{ type: Input }],
-        nzChecked: [{ type: Input }]
+        nzChecked: [{ type: Input }],
+        nzAriaLabel: [{ type: Input }]
     };
     __decorate([
         InputBoolean(),
@@ -392,6 +394,8 @@ if (false) {
     NzCheckboxComponent.prototype.nzIndeterminate;
     /** @type {?} */
     NzCheckboxComponent.prototype.nzChecked;
+    /** @type {?} */
+    NzCheckboxComponent.prototype.nzAriaLabel;
     /**
      * @type {?}
      * @private
