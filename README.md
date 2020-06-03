@@ -59,3 +59,6 @@ Below you can see the list of the most significant changes.
 
 #### Table:
 + Styles fixes for <th> elements within <tbody>.
+
+#### Checkbox:
++ `nzAriaLabel` attribute.

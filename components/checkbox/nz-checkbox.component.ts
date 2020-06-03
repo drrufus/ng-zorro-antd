@@ -63,6 +63,7 @@ export class NzCheckboxComponent implements OnInit, ControlValueAccessor, OnChan
   @Input() @InputBoolean() nzDisabled = false;
   @Input() @InputBoolean() nzIndeterminate = false;
   @Input() @InputBoolean() nzChecked = false;
+  @Input() nzAriaLabel: string | null = null;
 
   hostClick(e: MouseEvent): void {
     e.preventDefault();
