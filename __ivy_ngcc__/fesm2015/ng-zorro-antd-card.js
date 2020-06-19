@@ -73,7 +73,7 @@ function NzCardComponent_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵattribute("role", ctx_r0.nzHeadingAriaLabel ? "heading" : null)("aria-label", ctx_r0.nzHeadingAriaLabel)("aria-level", ctx_r0.nzHeadingAriaLabel ? 4 : null);
+    ɵngcc0.ɵɵattribute("role", ctx_r0.nzHeadingAriaLabel ? "heading" : null)("aria-label", ctx_r0.nzHeadingAriaLabel)("aria-level", ctx_r0.nzHeadingAriaLabel ? ctx_r0.nzHeadingAriaLevel : null);
     ɵngcc0.ɵɵadvance(2);
     ɵngcc0.ɵɵproperty("ngIf", ctx_r0.nzTitle);
     ɵngcc0.ɵɵadvance(1);
@@ -252,6 +252,7 @@ class NzCardComponent {
         this.nzLoading = false;
         this.nzActions = [];
         this.nzHeadingAriaLabel = null;
+        this.nzHeadingAriaLevel = 4;
         renderer.addClass(elementRef.nativeElement, 'ant-card');
     }
 }
@@ -265,7 +266,7 @@ NzCardComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCardComponent, sel
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.grids = _t);
     } }, hostVars: 14, hostBindings: function NzCardComponent_HostBindings(rf, ctx) { if (rf & 2) {
         ɵngcc0.ɵɵclassProp("ant-card-loading", ctx.nzLoading)("ant-card-bordered", ctx.nzBordered)("ant-card-hoverable", ctx.nzHoverable)("ant-card-small", ctx.nzSize === "small")("ant-card-contain-grid", ctx.grids && ctx.grids.length)("ant-card-type-inner", ctx.nzType === "inner")("ant-card-contain-tabs", !!ctx.tab);
-    } }, inputs: { nzLoading: "nzLoading", nzActions: "nzActions", nzHeadingAriaLabel: "nzHeadingAriaLabel", nzBordered: "nzBordered", nzHoverable: "nzHoverable", nzBodyStyle: "nzBodyStyle", nzCover: "nzCover", nzType: "nzType", nzSize: "nzSize", nzTitle: "nzTitle", nzExtra: "nzExtra" }, exportAs: ["nzCard"], ngContentSelectors: _c0, decls: 6, vars: 6, consts: [["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [2, "margin-bottom", "0"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function NzCardComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzLoading: "nzLoading", nzActions: "nzActions", nzHeadingAriaLabel: "nzHeadingAriaLabel", nzHeadingAriaLevel: "nzHeadingAriaLevel", nzBordered: "nzBordered", nzHoverable: "nzHoverable", nzBodyStyle: "nzBodyStyle", nzCover: "nzCover", nzType: "nzType", nzSize: "nzSize", nzTitle: "nzTitle", nzExtra: "nzExtra" }, exportAs: ["nzCard"], ngContentSelectors: _c0, decls: 6, vars: 6, consts: [["class", "ant-card-head", 4, "ngIf"], ["class", "ant-card-cover", 4, "ngIf"], [1, "ant-card-body", 3, "ngStyle"], [4, "ngIf"], ["class", "ant-card-actions", 4, "ngIf"], [1, "ant-card-head"], [1, "ant-card-head-wrapper"], ["class", "ant-card-head-title", 4, "ngIf"], ["class", "ant-card-extra", 4, "ngIf"], [1, "ant-card-head-title"], [4, "nzStringTemplateOutlet"], [2, "margin-bottom", "0"], [1, "ant-card-extra"], [3, "ngTemplateOutlet"], [1, "ant-card-cover"], [1, "ant-card-actions"], [3, "width", 4, "ngFor", "ngForOf"]], template: function NzCardComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵtemplate(0, NzCardComponent_div_0_Template, 5, 6, "div", 0);
         ɵngcc0.ɵɵtemplate(1, NzCardComponent_div_1_Template, 2, 1, "div", 1);
@@ -305,6 +306,7 @@ NzCardComponent.propDecorators = {
     nzTitle: [{ type: Input }],
     nzExtra: [{ type: Input }],
     nzHeadingAriaLabel: [{ type: Input }],
+    nzHeadingAriaLevel: [{ type: Input }],
     tab: [{ type: ContentChild, args: [NzCardTabComponent, { static: false },] }],
     grids: [{ type: ContentChildren, args: [NzCardGridDirective,] }]
 };
@@ -357,7 +359,7 @@ __decorate([
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                template: "<div class=\"ant-card-head\" *ngIf=\"nzTitle || nzExtra || tab\" \r\n  [attr.role]=\"nzHeadingAriaLabel ? 'heading' : null\" \r\n  [attr.aria-label]=\"nzHeadingAriaLabel\"\r\n  [attr.aria-level]=\"nzHeadingAriaLabel ? 4 : null\">\r\n  <div class=\"ant-card-head-wrapper\">\r\n    <div class=\"ant-card-head-title\" *ngIf=\"nzTitle\">\r\n      <ng-container *nzStringTemplateOutlet=\"nzTitle\">\r\n        <h4 style=\"margin-bottom: 0;\">\r\n          {{ nzTitle }}\r\n        </h4>\r\n      </ng-container>\r\n    </div>\r\n    <div class=\"ant-card-extra\" *ngIf=\"nzExtra\">\r\n      <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <ng-container *ngIf=\"tab\">\r\n    <ng-template [ngTemplateOutlet]=\"tab.template\"></ng-template>\r\n  </ng-container>\r\n</div>\r\n<div class=\"ant-card-cover\" *ngIf=\"nzCover\">\r\n  <ng-template [ngTemplateOutlet]=\"nzCover\"></ng-template>\r\n</div>\r\n<div class=\"ant-card-body\" [ngStyle]=\"nzBodyStyle\">\r\n  <ng-container *ngIf=\"!nzLoading\">\r\n    <ng-content></ng-content>\r\n  </ng-container>\r\n  <nz-card-loading *ngIf=\"nzLoading\"></nz-card-loading>\r\n</div>\r\n<ul class=\"ant-card-actions\" *ngIf=\"nzActions.length\">\r\n  <li *ngFor=\"let action of nzActions\" [style.width.%]=\"100 / nzActions.length\">\r\n    <span><ng-template [ngTemplateOutlet]=\"action\"></ng-template></span>\r\n  </li>\r\n</ul>",
+                template: "<div class=\"ant-card-head\" *ngIf=\"nzTitle || nzExtra || tab\" \r\n  [attr.role]=\"nzHeadingAriaLabel ? 'heading' : null\" \r\n  [attr.aria-label]=\"nzHeadingAriaLabel\"\r\n  [attr.aria-level]=\"nzHeadingAriaLabel ? nzHeadingAriaLevel : null\">\r\n  <div class=\"ant-card-head-wrapper\">\r\n    <div class=\"ant-card-head-title\" *ngIf=\"nzTitle\">\r\n      <ng-container *nzStringTemplateOutlet=\"nzTitle\">\r\n        <h4 style=\"margin-bottom: 0;\">\r\n          {{ nzTitle }}\r\n        </h4>\r\n      </ng-container>\r\n    </div>\r\n    <div class=\"ant-card-extra\" *ngIf=\"nzExtra\">\r\n      <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <ng-container *ngIf=\"tab\">\r\n    <ng-template [ngTemplateOutlet]=\"tab.template\"></ng-template>\r\n  </ng-container>\r\n</div>\r\n<div class=\"ant-card-cover\" *ngIf=\"nzCover\">\r\n  <ng-template [ngTemplateOutlet]=\"nzCover\"></ng-template>\r\n</div>\r\n<div class=\"ant-card-body\" [ngStyle]=\"nzBodyStyle\">\r\n  <ng-container *ngIf=\"!nzLoading\">\r\n    <ng-content></ng-content>\r\n  </ng-container>\r\n  <nz-card-loading *ngIf=\"nzLoading\"></nz-card-loading>\r\n</div>\r\n<ul class=\"ant-card-actions\" *ngIf=\"nzActions.length\">\r\n  <li *ngFor=\"let action of nzActions\" [style.width.%]=\"100 / nzActions.length\">\r\n    <span><ng-template [ngTemplateOutlet]=\"action\"></ng-template></span>\r\n  </li>\r\n</ul>",
                 host: {
                     '[class.ant-card-loading]': 'nzLoading',
                     '[class.ant-card-bordered]': 'nzBordered',
@@ -378,6 +380,8 @@ __decorate([
         }], nzActions: [{
             type: Input
         }], nzHeadingAriaLabel: [{
+            type: Input
+        }], nzHeadingAriaLevel: [{
             type: Input
         }], nzBordered: [{
             type: Input
@@ -425,6 +429,8 @@ if (false) {
     NzCardComponent.prototype.nzExtra;
     /** @type {?} */
     NzCardComponent.prototype.nzHeadingAriaLabel;
+    /** @type {?} */
+    NzCardComponent.prototype.nzHeadingAriaLevel;
     /** @type {?} */
     NzCardComponent.prototype.tab;
     /** @type {?} */

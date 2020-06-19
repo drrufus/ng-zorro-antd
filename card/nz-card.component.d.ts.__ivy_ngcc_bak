@@ -31,6 +31,7 @@ export declare class NzCardComponent {
     nzTitle: string | TemplateRef<void>;
     nzExtra: string | TemplateRef<void>;
     nzHeadingAriaLabel: string | null;
+    nzHeadingAriaLevel: number;
     tab: NzCardTabComponent;
     grids: QueryList<NzCardGridDirective>;
     constructor(nzConfigService: NzConfigService, renderer: Renderer2, elementRef: ElementRef);

@@ -23,7 +23,7 @@ Below you can see the list of the most significant changes.
 
 #### Card:
 + Header is wrapped in `<h4>` element.
-+ New `nzHeadingAriaLabel` attribute: if not null - a panel's header will be marked with `role="heading"` and `aria-label` with provided value.
++ New `nzHeadingAriaLabel` attribute: if not null - a panel's header will be marked with `role="heading"` and `aria-label` with provided value (+ corresponding attribute `nzHeadingAriaLevel`).
 
 #### Modal:
 + Header is wrapped in `<h4>` element.
@@ -59,3 +59,6 @@ Below you can see the list of the most significant changes.
 
 #### Table:
 + Styles fixes for <th> elements within <tbody>.
+
+#### Checkbox:
++ `nzAriaLabel` attribute.
