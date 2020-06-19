@@ -1,7 +1,7 @@
 <div class="ant-card-head" *ngIf="nzTitle || nzExtra || tab" 
   [attr.role]="nzHeadingAriaLabel ? 'heading' : null" 
   [attr.aria-label]="nzHeadingAriaLabel"
-  [attr.aria-level]="nzHeadingAriaLabel ? 4 : null">
+  [attr.aria-level]="nzHeadingAriaLabel ? nzHeadingAriaLevel : null">
   <div class="ant-card-head-wrapper">
     <div class="ant-card-head-title" *ngIf="nzTitle">
       <ng-container *nzStringTemplateOutlet="nzTitle">

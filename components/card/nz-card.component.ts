@@ -68,6 +68,7 @@ export class NzCardComponent {
   @Input() nzTitle: string | TemplateRef<void>;
   @Input() nzExtra: string | TemplateRef<void>;
   @Input() nzHeadingAriaLabel: string | null = null;
+  @Input() nzHeadingAriaLevel: number = 4;
   @ContentChild(NzCardTabComponent, { static: false }) tab: NzCardTabComponent;
   @ContentChildren(NzCardGridDirective) grids: QueryList<NzCardGridDirective>;
 
