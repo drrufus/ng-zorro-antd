@@ -491,11 +491,13 @@ NzRadioGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioGroupCo
                  */() => NzRadioGroupComponent)),
                 multi: true
             }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2, decls: 2, vars: 0, consts: [["role", "radiogroup"]], template: function NzRadioGroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2, decls: 2, vars: 1, consts: [["role", "radiogroup"]], template: function NzRadioGroupComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵelementStart(0, "div", 0);
         ɵngcc0.ɵɵprojection(1);
         ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵattribute("aria-labelledby", ctx.nzLabelledById);
     } }, encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzRadioGroupComponent.ctorParameters = () => [
@@ -595,7 +597,7 @@ __decorate([
                 selector: 'nz-radio-group',
                 exportAs: 'nzRadioGroup',
                 preserveWhitespaces: false,
-                template: "<div role=\"radiogroup\">\r\n    <ng-content></ng-content>\r\n</div>",
+                template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [

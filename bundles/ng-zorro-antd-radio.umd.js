@@ -719,7 +719,7 @@
                         selector: 'nz-radio-group',
                         exportAs: 'nzRadioGroup',
                         preserveWhitespaces: false,
-                        template: "<div role=\"radiogroup\">\r\n    <ng-content></ng-content>\r\n</div>",
+                        template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                         encapsulation: core.ViewEncapsulation.None,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         providers: [

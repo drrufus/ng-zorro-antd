@@ -465,7 +465,7 @@ NzRadioGroupComponent.decorators = [
                 selector: 'nz-radio-group',
                 exportAs: 'nzRadioGroup',
                 preserveWhitespaces: false,
-                template: "<div role=\"radiogroup\">\r\n    <ng-content></ng-content>\r\n</div>",
+                template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [

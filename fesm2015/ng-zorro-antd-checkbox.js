@@ -119,6 +119,7 @@ class NzCheckboxComponent {
         this.nzIndeterminate = false;
         this.nzChecked = false;
         this.nzAriaLabel = null;
+        this.nzLabelledById = null;
         renderer.addClass(elementRef.nativeElement, 'ant-checkbox-wrapper');
     }
     /**
@@ -261,7 +262,7 @@ NzCheckboxComponent.decorators = [
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
+                template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
                 providers: [
                     {
                         provide: NG_VALUE_ACCESSOR,
@@ -294,7 +295,8 @@ NzCheckboxComponent.propDecorators = {
     nzDisabled: [{ type: Input }],
     nzIndeterminate: [{ type: Input }],
     nzChecked: [{ type: Input }],
-    nzAriaLabel: [{ type: Input }]
+    nzAriaLabel: [{ type: Input }],
+    nzLabelledById: [{ type: Input }]
 };
 __decorate([
     InputBoolean(),
@@ -341,6 +343,8 @@ if (false) {
     NzCheckboxComponent.prototype.nzChecked;
     /** @type {?} */
     NzCheckboxComponent.prototype.nzAriaLabel;
+    /** @type {?} */
+    NzCheckboxComponent.prototype.nzLabelledById;
     /**
      * @type {?}
      * @private

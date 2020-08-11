@@ -139,6 +139,7 @@ class NzCheckboxComponent {
         this.nzIndeterminate = false;
         this.nzChecked = false;
         this.nzAriaLabel = null;
+        this.nzLabelledById = null;
         renderer.addClass(elementRef.nativeElement, 'ant-checkbox-wrapper');
     }
     /**
@@ -284,7 +285,7 @@ NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxCompon
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.contentElement = _t.first);
     } }, hostBindings: function NzCheckboxComponent_HostBindings(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵlistener("click", function NzCheckboxComponent_click_HostBindingHandler($event) { return ctx.hostClick($event); });
-    } }, inputs: { nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzIndeterminate: "nzIndeterminate", nzChecked: "nzChecked", nzAriaLabel: "nzAriaLabel", nzValue: "nzValue" }, outputs: { nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzCheckbox"], features: [ɵngcc0.ɵɵProvidersFeature([
+    } }, inputs: { nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzIndeterminate: "nzIndeterminate", nzChecked: "nzChecked", nzAriaLabel: "nzAriaLabel", nzLabelledById: "nzLabelledById", nzValue: "nzValue" }, outputs: { nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzCheckbox"], features: [ɵngcc0.ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(( /**
@@ -292,7 +293,7 @@ NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxCompon
                  */() => NzCheckboxComponent)),
                 multi: true
             }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c3, ngContentSelectors: _c0, decls: 7, vars: 11, consts: [[1, "ant-checkbox"], ["type", "checkbox", 1, "ant-checkbox-input", 3, "checked", "ngModel", "disabled", "ngModelChange", "click"], ["inputElement", ""], [1, "ant-checkbox-inner"], [3, "cdkObserveContent"], ["contentElement", ""]], template: function NzCheckboxComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c3, ngContentSelectors: _c0, decls: 7, vars: 12, consts: [[1, "ant-checkbox"], ["type", "checkbox", 1, "ant-checkbox-input", 3, "checked", "ngModel", "disabled", "ngModelChange", "click"], ["inputElement", ""], [1, "ant-checkbox-inner"], [3, "cdkObserveContent"], ["contentElement", ""]], template: function NzCheckboxComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵelementStart(0, "span", 0);
         ɵngcc0.ɵɵelementStart(1, "input", 1, 2);
@@ -308,7 +309,7 @@ NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxCompon
         ɵngcc0.ɵɵclassProp("ant-checkbox-checked", ctx.nzChecked && !ctx.nzIndeterminate)("ant-checkbox-disabled", ctx.nzDisabled)("ant-checkbox-indeterminate", ctx.nzIndeterminate);
         ɵngcc0.ɵɵadvance(1);
         ɵngcc0.ɵɵproperty("checked", ctx.nzChecked)("ngModel", ctx.nzChecked)("disabled", ctx.nzDisabled);
-        ɵngcc0.ɵɵattribute("aria-label", ctx.nzAriaLabel)("aria-checked", ctx.nzIndeterminate ? "mixed" : ctx.nzChecked);
+        ɵngcc0.ɵɵattribute("aria-label", ctx.nzAriaLabel)("aria-checked", ctx.nzIndeterminate ? "mixed" : ctx.nzChecked)("aria-labelledby", ctx.nzLabelledById);
     } }, directives: [ɵngcc2.CheckboxControlValueAccessor, ɵngcc2.NgControlStatus, ɵngcc2.NgModel, ɵngcc3.CdkObserveContent], encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzCheckboxComponent.ctorParameters = () => [
@@ -327,7 +328,8 @@ NzCheckboxComponent.propDecorators = {
     nzDisabled: [{ type: Input }],
     nzIndeterminate: [{ type: Input }],
     nzChecked: [{ type: Input }],
-    nzAriaLabel: [{ type: Input }]
+    nzAriaLabel: [{ type: Input }],
+    nzLabelledById: [{ type: Input }]
 };
 __decorate([
     InputBoolean(),
@@ -374,6 +376,8 @@ if (false) {
     NzCheckboxComponent.prototype.nzChecked;
     /** @type {?} */
     NzCheckboxComponent.prototype.nzAriaLabel;
+    /** @type {?} */
+    NzCheckboxComponent.prototype.nzLabelledById;
     /**
      * @type {?}
      * @private
@@ -561,7 +565,7 @@ __decorate([
                 preserveWhitespaces: false,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 encapsulation: ViewEncapsulation.None,
-                template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
+                template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
                 providers: [
                     {
                         provide: NG_VALUE_ACCESSOR,
@@ -588,6 +592,8 @@ __decorate([
         }], nzChecked: [{
             type: Input
         }], nzAriaLabel: [{
+            type: Input
+        }], nzLabelledById: [{
             type: Input
         }], inputElement: [{
             type: ViewChild,
