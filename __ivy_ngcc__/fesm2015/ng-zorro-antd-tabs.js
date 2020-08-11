@@ -1,4 +1,4 @@
-import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input, Directive, ElementRef, Renderer2, Optional, Self, EventEmitter, ViewChild, ContentChild, TemplateRef, Output, NgZone, ChangeDetectorRef, ContentChildren, NgModule } from '@angular/core';
+import { Component, ViewEncapsulation, ChangeDetectionStrategy, Input, Directive, ElementRef, Renderer2, Optional, Self, EventEmitter, ViewChild, ContentChild, TemplateRef, Output, NgZone, ChangeDetectorRef, ContentChildren, ViewChildren, NgModule } from '@angular/core';
 import { __decorate, __metadata } from 'tslib';
 import { InputBoolean, pxToNumber, NzDomEventService, toNumber, PREFIX, NzUpdateHostClassService, NzConfigService, WithConfig, NzAddOnModule } from 'ng-zorro-antd/core';
 import { Subject, of, merge, Subscription } from 'rxjs';
@@ -60,7 +60,8 @@ function NzTabsNavComponent_div_0_Template(rf, ctx) { if (rf & 1) {
 } }
 const _c9 = ["*"];
 const _c10 = ["tabContent"];
-function NzTabSetComponent_ng_container_0_div_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+const _c11 = ["focusable"];
+function NzTabSetComponent_ng_container_0_div_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementContainerEnd();
@@ -70,10 +71,10 @@ function NzTabSetComponent_ng_container_0_div_2_ng_container_1_Template(rf, ctx)
     ɵngcc0.ɵɵtextInterpolate(tab_r4.nzTitle);
 } }
 function NzTabSetComponent_ng_container_0_div_2_Template(rf, ctx) { if (rf & 1) {
-    const _r9 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 6);
-    ɵngcc0.ɵɵlistener("click", function NzTabSetComponent_ng_container_0_div_2_Template_div_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r9); const i_r5 = ctx.index; const tab_r4 = ctx.$implicit; const ctx_r8 = ɵngcc0.ɵɵnextContext(2); return ctx_r8.clickLabel(i_r5, tab_r4.nzDisabled); })("keyup.enter", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_enter_0_listener() { ɵngcc0.ɵɵrestoreView(_r9); const i_r5 = ctx.index; const tab_r4 = ctx.$implicit; const ctx_r10 = ɵngcc0.ɵɵnextContext(2); return ctx_r10.clickLabel(i_r5, tab_r4.nzDisabled); })("keydown.arrowright", function NzTabSetComponent_ng_container_0_div_2_Template_div_keydown_arrowright_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r9); return $event.preventDefault(); })("keydown.arrowleft", function NzTabSetComponent_ng_container_0_div_2_Template_div_keydown_arrowleft_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r9); return $event.preventDefault(); })("keyup.arrowright", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_arrowright_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r9); const ctx_r13 = ɵngcc0.ɵɵnextContext(2); return ctx_r13.moveRight($event); })("keyup.arrowleft", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_arrowleft_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r9); const ctx_r14 = ɵngcc0.ɵɵnextContext(2); return ctx_r14.moveLeft($event); });
-    ɵngcc0.ɵɵtemplate(1, NzTabSetComponent_ng_container_0_div_2_ng_container_1_Template, 2, 1, "ng-container", 7);
+    const _r10 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "div", 6, 7);
+    ɵngcc0.ɵɵlistener("click", function NzTabSetComponent_ng_container_0_div_2_Template_div_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r10); const i_r5 = ctx.index; const tab_r4 = ctx.$implicit; const ctx_r9 = ɵngcc0.ɵɵnextContext(2); return ctx_r9.clickLabel(i_r5, tab_r4.nzDisabled); })("keyup.enter", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_enter_0_listener() { ɵngcc0.ɵɵrestoreView(_r10); const i_r5 = ctx.index; const tab_r4 = ctx.$implicit; const ctx_r11 = ɵngcc0.ɵɵnextContext(2); return ctx_r11.clickLabel(i_r5, tab_r4.nzDisabled); })("keydown.arrowright", function NzTabSetComponent_ng_container_0_div_2_Template_div_keydown_arrowright_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r10); return $event.preventDefault(); })("keydown.arrowleft", function NzTabSetComponent_ng_container_0_div_2_Template_div_keydown_arrowleft_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r10); return $event.preventDefault(); })("keyup.arrowright", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_arrowright_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r10); const ctx_r14 = ɵngcc0.ɵɵnextContext(2); return ctx_r14.moveRight($event); })("keyup.arrowleft", function NzTabSetComponent_ng_container_0_div_2_Template_div_keyup_arrowleft_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r10); const ctx_r15 = ɵngcc0.ɵɵnextContext(2); return ctx_r15.moveLeft($event); });
+    ɵngcc0.ɵɵtemplate(2, NzTabSetComponent_ng_container_0_div_2_ng_container_2_Template, 2, 1, "ng-container", 8);
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
     const tab_r4 = ctx.$implicit;
@@ -82,24 +83,24 @@ function NzTabSetComponent_ng_container_0_div_2_Template(rf, ctx) { if (rf & 1) 
     ɵngcc0.ɵɵstyleProp("margin-right", ctx_r1.nzTabBarGutter, "px");
     ɵngcc0.ɵɵclassProp("ant-tabs-tab-active", ctx_r1.nzSelectedIndex == i_r5 && !ctx_r1.nzHideAll);
     ɵngcc0.ɵɵproperty("disabled", tab_r4.nzDisabled);
-    ɵngcc0.ɵɵattribute("aria-selected", ctx_r1.nzSelectedIndex == i_r5)("aria-label", tab_r4.nzTitleAriaLabel);
-    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵattribute("tabindex", ctx_r1.nzSelectedIndex == i_r5 ? 0 : null)("aria-selected", ctx_r1.nzSelectedIndex == i_r5)("aria-label", tab_r4.nzTitleAriaLabel);
+    ɵngcc0.ɵɵadvance(2);
     ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", tab_r4.nzTitle || tab_r4.title);
 } }
 function NzTabSetComponent_ng_container_0_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "div", 8);
+    ɵngcc0.ɵɵelement(0, "div", 9);
 } if (rf & 2) {
-    const tab_r15 = ctx.$implicit;
-    const i_r16 = ctx.index;
+    const tab_r16 = ctx.$implicit;
+    const i_r17 = ctx.index;
     const ctx_r3 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("active", ctx_r3.nzSelectedIndex == i_r16 && !ctx_r3.nzHideAll)("forceRender", tab_r15.nzForceRender)("content", tab_r15.template || tab_r15.content);
+    ɵngcc0.ɵɵproperty("active", ctx_r3.nzSelectedIndex == i_r17 && !ctx_r3.nzHideAll)("forceRender", tab_r16.nzForceRender)("content", tab_r16.template || tab_r16.content);
 } }
 function NzTabSetComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-    const _r18 = ɵngcc0.ɵɵgetCurrentView();
+    const _r19 = ɵngcc0.ɵɵgetCurrentView();
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵelementStart(1, "div", 1);
-    ɵngcc0.ɵɵlistener("nzOnNextClick", function NzTabSetComponent_ng_container_0_Template_div_nzOnNextClick_1_listener() { ɵngcc0.ɵɵrestoreView(_r18); const ctx_r17 = ɵngcc0.ɵɵnextContext(); return ctx_r17.nzOnNextClick.emit(); })("nzOnPrevClick", function NzTabSetComponent_ng_container_0_Template_div_nzOnPrevClick_1_listener() { ɵngcc0.ɵɵrestoreView(_r18); const ctx_r19 = ɵngcc0.ɵɵnextContext(); return ctx_r19.nzOnPrevClick.emit(); });
-    ɵngcc0.ɵɵtemplate(2, NzTabSetComponent_ng_container_0_div_2_Template, 2, 8, "div", 2);
+    ɵngcc0.ɵɵlistener("nzOnNextClick", function NzTabSetComponent_ng_container_0_Template_div_nzOnNextClick_1_listener() { ɵngcc0.ɵɵrestoreView(_r19); const ctx_r18 = ɵngcc0.ɵɵnextContext(); return ctx_r18.nzOnNextClick.emit(); })("nzOnPrevClick", function NzTabSetComponent_ng_container_0_Template_div_nzOnPrevClick_1_listener() { ɵngcc0.ɵɵrestoreView(_r19); const ctx_r20 = ɵngcc0.ɵɵnextContext(); return ctx_r20.nzOnPrevClick.emit(); });
+    ɵngcc0.ɵɵtemplate(2, NzTabSetComponent_ng_container_0_div_2_Template, 3, 9, "div", 2);
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementStart(3, "div", 3, 4);
     ɵngcc0.ɵɵtemplate(5, NzTabSetComponent_ng_container_0_div_5_Template, 1, 3, "div", 5);
@@ -1195,6 +1196,14 @@ class NzTabSetComponent {
         if (tab) {
             this.nzSelectedIndex = index;
             tabs[index].nzClick.emit();
+            console.log('focusing on');
+            console.log(this._focusableDivs.toArray()[index]);
+            setTimeout((/**
+             * @return {?}
+             */
+            () => {
+                this._focusableDivs.toArray()[index].nativeElement.focus();
+            }), 500);
         }
     }
     /**
@@ -1220,6 +1229,14 @@ class NzTabSetComponent {
         if (tab) {
             this.nzSelectedIndex = index;
             tabs[index].nzClick.emit();
+            console.log('focusing on');
+            console.log(this._focusableDivs.toArray()[index]);
+            setTimeout((/**
+             * @return {?}
+             */
+            () => {
+                this._focusableDivs.toArray()[index].nativeElement.focus();
+            }), 500);
         }
     }
     /**
@@ -1520,11 +1537,13 @@ NzTabSetComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTabSetComponent,
     } }, viewQuery: function NzTabSetComponent_Query(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵviewQuery(NzTabsNavComponent, true);
         ɵngcc0.ɵɵviewQuery(_c10, true);
+        ɵngcc0.ɵɵviewQuery(_c11, true);
     } if (rf & 2) {
         var _t;
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzTabsNavComponent = _t.first);
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.tabContent = _t.first);
-    } }, inputs: { nzHideAll: "nzHideAll", nzTabPosition: "nzTabPosition", nzLinkRouter: "nzLinkRouter", nzLinkExact: "nzLinkExact", nzSelectedIndex: "nzSelectedIndex", nzAnimated: "nzAnimated", nzTabBarExtraContent: "nzTabBarExtraContent", nzShowPagination: "nzShowPagination", nzSize: "nzSize", nzTabBarGutter: "nzTabBarGutter", nzTabBarStyle: "nzTabBarStyle", nzType: "nzType" }, outputs: { nzOnNextClick: "nzOnNextClick", nzOnPrevClick: "nzOnPrevClick", nzSelectChange: "nzSelectChange", nzSelectedIndexChange: "nzSelectedIndexChange" }, exportAs: ["nzTabset"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [[4, "ngIf"], ["nz-tabs-nav", "", "role", "tablist", 1, "ant-tabs-bar", 3, "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "ngStyle", "nzHideBar", "nzTabBarExtraContent", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["nz-tab-label", "", "tabindex", "0", "role", "tab", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", "keyup.enter", "keydown.arrowright", "keydown.arrowleft", "keyup.arrowright", "keyup.arrowleft", 4, "ngFor", "ngForOf"], [1, "ant-tabs-content"], ["tabContent", ""], ["nz-tab-body", "", "class", "ant-tabs-tabpane", 3, "active", "forceRender", "content", 4, "ngFor", "ngForOf"], ["nz-tab-label", "", "tabindex", "0", "role", "tab", 3, "disabled", "click", "keyup.enter", "keydown.arrowright", "keydown.arrowleft", "keyup.arrowright", "keyup.arrowleft"], [4, "nzStringTemplateOutlet"], ["nz-tab-body", "", 1, "ant-tabs-tabpane", 3, "active", "forceRender", "content"]], template: function NzTabSetComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx._focusableDivs = _t);
+    } }, inputs: { nzHideAll: "nzHideAll", nzTabPosition: "nzTabPosition", nzLinkRouter: "nzLinkRouter", nzLinkExact: "nzLinkExact", nzSelectedIndex: "nzSelectedIndex", nzAnimated: "nzAnimated", nzTabBarExtraContent: "nzTabBarExtraContent", nzShowPagination: "nzShowPagination", nzSize: "nzSize", nzTabBarGutter: "nzTabBarGutter", nzTabBarStyle: "nzTabBarStyle", nzType: "nzType" }, outputs: { nzOnNextClick: "nzOnNextClick", nzOnPrevClick: "nzOnPrevClick", nzSelectChange: "nzSelectChange", nzSelectedIndexChange: "nzSelectedIndexChange" }, exportAs: ["nzTabset"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 1, vars: 1, consts: [[4, "ngIf"], ["nz-tabs-nav", "", "role", "tablist", 1, "ant-tabs-bar", 3, "nzType", "nzShowPagination", "nzPositionMode", "nzAnimated", "ngStyle", "nzHideBar", "nzTabBarExtraContent", "selectedIndex", "nzOnNextClick", "nzOnPrevClick"], ["nz-tab-label", "", "role", "tab", 3, "margin-right", "ant-tabs-tab-active", "disabled", "click", "keyup.enter", "keydown.arrowright", "keydown.arrowleft", "keyup.arrowright", "keyup.arrowleft", 4, "ngFor", "ngForOf"], [1, "ant-tabs-content"], ["tabContent", ""], ["nz-tab-body", "", "class", "ant-tabs-tabpane", 3, "active", "forceRender", "content", 4, "ngFor", "ngForOf"], ["nz-tab-label", "", "role", "tab", 3, "disabled", "click", "keyup.enter", "keydown.arrowright", "keydown.arrowleft", "keyup.arrowright", "keyup.arrowleft"], ["focusable", ""], [4, "nzStringTemplateOutlet"], ["nz-tab-body", "", 1, "ant-tabs-tabpane", 3, "active", "forceRender", "content"]], template: function NzTabSetComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵtemplate(0, NzTabSetComponent_ng_container_0_Template, 6, 42, "ng-container", 0);
     } if (rf & 2) {
         ɵngcc0.ɵɵproperty("ngIf", ctx.listOfNzTabComponent);
@@ -1542,6 +1561,7 @@ NzTabSetComponent.propDecorators = {
     listOfNzTabComponent: [{ type: ContentChildren, args: [NzTabComponent,] }],
     nzTabsNavComponent: [{ type: ViewChild, args: [NzTabsNavComponent, { static: false },] }],
     tabContent: [{ type: ViewChild, args: ['tabContent', { static: false },] }],
+    _focusableDivs: [{ type: ViewChildren, args: ["focusable",] }],
     nzTabBarExtraContent: [{ type: Input }],
     nzShowPagination: [{ type: Input }],
     nzAnimated: [{ type: Input }],
@@ -1751,7 +1771,7 @@ __decorate([
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [NzUpdateHostClassService],
-                template: "<ng-container *ngIf=\"listOfNzTabComponent\">\r\n  <div nz-tabs-nav\r\n    role=\"tablist\"\r\n    class=\"ant-tabs-bar\"\r\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\r\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\r\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\r\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\r\n    [nzType]=\"nzType\"\r\n    [nzShowPagination]=\"nzShowPagination\"\r\n    [nzPositionMode]=\"tabPositionMode\"\r\n    [nzAnimated]=\"inkBarAnimated\"\r\n    [ngStyle]=\"nzTabBarStyle\"\r\n    [nzHideBar]=\"nzHideAll\"\r\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\r\n    [selectedIndex]=\"nzSelectedIndex\"\r\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\r\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\r\n    <div nz-tab-label\r\n      tabindex=\"0\"\r\n      role=\"tab\"\r\n      [attr.aria-selected]=\"nzSelectedIndex == i\"\r\n      [attr.aria-label]=\"tab.nzTitleAriaLabel\"\r\n      [style.margin-right.px]=\"nzTabBarGutter\"\r\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [disabled]=\"tab.nzDisabled\"\r\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keyup.enter)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keydown.arrowright)=\"$event.preventDefault()\"\r\n      (keydown.arrowleft)=\"$event.preventDefault()\"\r\n      (keyup.arrowright)=\"moveRight($event)\"\r\n      (keyup.arrowleft)=\"moveLeft($event)\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\">\r\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle || tab.title\">{{ tab.nzTitle }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <div #tabContent\r\n    class=\"ant-tabs-content\"\r\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\r\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\r\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\r\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\r\n    <div nz-tab-body\r\n      class=\"ant-tabs-tabpane\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [forceRender]=\"tab.nzForceRender\"\r\n      [content]=\"tab.template || tab.content\">\r\n    </div>\r\n  </div>\r\n</ng-container>",
+                template: "<ng-container *ngIf=\"listOfNzTabComponent\">\r\n  <div nz-tabs-nav\r\n    role=\"tablist\"\r\n    class=\"ant-tabs-bar\"\r\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\r\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\r\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\r\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\r\n    [nzType]=\"nzType\"\r\n    [nzShowPagination]=\"nzShowPagination\"\r\n    [nzPositionMode]=\"tabPositionMode\"\r\n    [nzAnimated]=\"inkBarAnimated\"\r\n    [ngStyle]=\"nzTabBarStyle\"\r\n    [nzHideBar]=\"nzHideAll\"\r\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\r\n    [selectedIndex]=\"nzSelectedIndex\"\r\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\r\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\r\n    <div nz-tab-label\r\n      [attr.tabindex]=\"nzSelectedIndex == i ? 0 : null\"\r\n      role=\"tab\"\r\n      [attr.aria-selected]=\"nzSelectedIndex == i\"\r\n      [attr.aria-label]=\"tab.nzTitleAriaLabel\"\r\n      [style.margin-right.px]=\"nzTabBarGutter\"\r\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [disabled]=\"tab.nzDisabled\"\r\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keyup.enter)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keydown.arrowright)=\"$event.preventDefault()\"\r\n      (keydown.arrowleft)=\"$event.preventDefault()\"\r\n      (keyup.arrowright)=\"moveRight($event)\"\r\n      (keyup.arrowleft)=\"moveLeft($event)\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      #focusable>\r\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle || tab.title\">{{ tab.nzTitle }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <div #tabContent\r\n    class=\"ant-tabs-content\"\r\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\r\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\r\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\r\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\r\n    <div nz-tab-body\r\n      class=\"ant-tabs-tabpane\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [forceRender]=\"tab.nzForceRender\"\r\n      [content]=\"tab.template || tab.content\">\r\n    </div>\r\n  </div>\r\n</ng-container>",
                 styles: [`
       nz-tabset {
         display: block;
@@ -1789,6 +1809,9 @@ __decorate([
         }], tabContent: [{
             type: ViewChild,
             args: ['tabContent', { static: false }]
+        }], _focusableDivs: [{
+            type: ViewChildren,
+            args: ["focusable"]
         }], nzTabBarExtraContent: [{
             type: Input
         }], nzShowPagination: [{
@@ -1843,6 +1866,11 @@ if (false) {
     NzTabSetComponent.prototype.nzTabsNavComponent;
     /** @type {?} */
     NzTabSetComponent.prototype.tabContent;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTabSetComponent.prototype._focusableDivs;
     /** @type {?} */
     NzTabSetComponent.prototype.nzTabBarExtraContent;
     /** @type {?} */

@@ -41,6 +41,7 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     listOfNzTabComponent: QueryList<NzTabComponent>;
     nzTabsNavComponent: NzTabsNavComponent;
     tabContent: ElementRef;
+    private _focusableDivs;
     nzTabBarExtraContent: TemplateRef<void>;
     nzShowPagination: boolean;
     nzAnimated: NzAnimatedInterface | boolean;
