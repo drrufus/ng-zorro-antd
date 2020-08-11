@@ -3,7 +3,7 @@
   [attr.aria-level]="nzHeadingAriaLabel ? 4 : null">
   <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()"
     (keyup.Space)="clickHeader()" (click)="clickHeader()" [attr.tabindex]="nzDisabled ? null : 0"
-    [attr.aria-disabled]="nzDisabled">
+    [attr.aria-disabled]="nzDisabled" #focusable>
     <ng-container *ngIf="nzShowArrow">
       <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
         <a class="ant-collapse-arrow-link" aria-hidden="true">

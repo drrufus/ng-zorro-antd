@@ -27,7 +27,8 @@ import {
   Output,
   Renderer2,
   TemplateRef,
-  ViewEncapsulation
+  ViewEncapsulation,
+  ViewChild
 } from '@angular/core';
 
 import { collapseMotion, InputBoolean, NzConfigService, WithConfig } from 'ng-zorro-antd/core';
@@ -67,10 +68,17 @@ export class NzCollapsePanelComponent implements OnInit, OnDestroy {
   @Input() nzRole: string = 'tab';
   @Output() readonly nzActiveChange = new EventEmitter<boolean>();
 
+  @ViewChild("focusable", { static: false })
+  private _focusableHeader: ElementRef;
+
   clickHeader(): void {
     if (!this.nzDisabled) {
       this.nzCollapseComponent.click(this);
     }
+  }
+
+  focusOnHeader(): void {
+    this._focusableHeader.nativeElement.focus();
   }
 
   markForCheck(): void {

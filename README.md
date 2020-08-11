@@ -10,6 +10,7 @@ Below you can see the list of the most significant changes.
 + New `nzHeadingAriaLabel` attribute: if not null - a panel's header will be marked with `role="heading"` and `aria-label` with provided value.
 + Can be toggled by ENTER or SPACE key press.
 + `aria-disabled` attribute displaying current state.
++ New `focusOnHeader()` method.
 
 #### Switch:
 + `nzLabel` attribute for an additional text label.
