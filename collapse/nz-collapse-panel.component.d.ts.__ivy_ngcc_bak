@@ -28,7 +28,9 @@ export declare class NzCollapsePanelComponent implements OnInit, OnDestroy {
     nzExpandedIcon: string | TemplateRef<void>;
     nzRole: string;
     readonly nzActiveChange: EventEmitter<boolean>;
+    private _focusableHeader;
     clickHeader(): void;
+    focusOnHeader(): void;
     markForCheck(): void;
     constructor(nzConfigService: NzConfigService, cdr: ChangeDetectorRef, nzCollapseComponent: NzCollapseComponent, elementRef: ElementRef, renderer: Renderer2);
     ngOnInit(): void;
