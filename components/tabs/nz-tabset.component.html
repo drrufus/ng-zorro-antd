@@ -21,7 +21,7 @@
     (nzOnNextClick)="nzOnNextClick.emit()"
     (nzOnPrevClick)="nzOnPrevClick.emit()">
     <div nz-tab-label
-      tabindex="0"
+      [attr.tabindex]="nzSelectedIndex == i ? 0 : null"
       role="tab"
       [attr.aria-selected]="nzSelectedIndex == i"
       [attr.aria-label]="tab.nzTitleAriaLabel"
@@ -34,7 +34,8 @@
       (keydown.arrowleft)="$event.preventDefault()"
       (keyup.arrowright)="moveRight($event)"
       (keyup.arrowleft)="moveLeft($event)"
-      *ngFor="let tab of listOfNzTabComponent; let i = index">
+      *ngFor="let tab of listOfNzTabComponent; let i = index"
+      #focusable>
       <ng-container *nzStringTemplateOutlet="tab.nzTitle || tab.title">{{ tab.nzTitle }}</ng-container>
     </div>
   </div>

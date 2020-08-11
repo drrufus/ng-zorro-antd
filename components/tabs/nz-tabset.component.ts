@@ -29,7 +29,8 @@ import {
   SimpleChanges,
   TemplateRef,
   ViewChild,
-  ViewEncapsulation
+  ViewEncapsulation,
+  ViewChildren
 } from '@angular/core';
 import { NavigationEnd, Router, RouterLink, RouterLinkWithHref } from '@angular/router';
 import { merge, Subject, Subscription } from 'rxjs';
@@ -98,6 +99,9 @@ export class NzTabSetComponent
   @ViewChild(NzTabsNavComponent, { static: false }) nzTabsNavComponent: NzTabsNavComponent;
   @ViewChild('tabContent', { static: false }) tabContent: ElementRef;
 
+  @ViewChildren("focusable")
+  private _focusableDivs: QueryList<ElementRef>;
+
   @Input() nzTabBarExtraContent: TemplateRef<void>;
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, true) nzShowPagination: boolean;
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, true) nzAnimated: NzAnimatedInterface | boolean;
@@ -154,6 +158,9 @@ export class NzTabSetComponent
     if (tab) {
       this.nzSelectedIndex = index;
       tabs[index].nzClick.emit();
+      setTimeout(() => {
+        this._focusableDivs.toArray()[index].nativeElement.focus();
+      }, 500);
     }
   }
 
@@ -177,6 +184,9 @@ export class NzTabSetComponent
     if (tab) {
       this.nzSelectedIndex = index;
       tabs[index].nzClick.emit();
+      setTimeout(() => {
+        this._focusableDivs.toArray()[index].nativeElement.focus();
+      }, 500);
     }
   }
 

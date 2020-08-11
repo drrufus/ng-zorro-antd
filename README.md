@@ -55,8 +55,9 @@ Below you can see the list of the most significant changes.
 + `nzPopoverForceRestoreFocus` attribute for restoring a focus on an origin-element after popover hiding.
 
 #### Tabs:
-+ Tabs have a `tabindex` now.
++ `tabindex` attribute for selected tab.
 + Navigation with arrow keys.
++ Autofocusing after a navigation with arrow keys.
 + `nzTitleAriaLabel` attribute for a tab.
 
 #### Table:
