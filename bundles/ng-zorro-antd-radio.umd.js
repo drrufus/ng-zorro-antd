@@ -554,7 +554,7 @@
             function () { return null; });
             this.nzButtonStyle = 'outline';
             this.nzSize = 'default';
-            this.nzLabelledById = null;
+            this.nzGroupLabelledById = null;
             renderer.addClass(elementRef.nativeElement, 'ant-radio-group');
         }
         /**
@@ -582,9 +582,9 @@
                         if (_this.nzName) {
                             radio.name = _this.nzName;
                         }
-                        if (_this.nzLabelledById) {
-                            radio.nzLabelledById = _this.nzLabelledById;
-                        }
+                        /*if (this.nzGroupLabelledById) {
+                          radio.nzLabelledById = this.nzGroupLabelledById;
+                        }*/
                         radio.markForCheck();
                     }));
                 }));
@@ -719,7 +719,7 @@
                         selector: 'nz-radio-group',
                         exportAs: 'nzRadioGroup',
                         preserveWhitespaces: false,
-                        template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
+                        template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzGroupLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                         encapsulation: core.ViewEncapsulation.None,
                         changeDetection: core.ChangeDetectionStrategy.OnPush,
                         providers: [
@@ -755,7 +755,7 @@
             nzButtonStyle: [{ type: core.Input }],
             nzSize: [{ type: core.Input }],
             nzName: [{ type: core.Input }],
-            nzLabelledById: [{ type: core.Input }]
+            nzGroupLabelledById: [{ type: core.Input }]
         };
         __decorate([
             core$1.InputBoolean(),
@@ -799,7 +799,7 @@
         /** @type {?} */
         NzRadioGroupComponent.prototype.nzName;
         /** @type {?} */
-        NzRadioGroupComponent.prototype.nzLabelledById;
+        NzRadioGroupComponent.prototype.nzGroupLabelledById;
         /**
          * @type {?}
          * @private

@@ -1178,8 +1178,6 @@ var NzTabSetComponent = /** @class */ (function () {
         if (tab) {
             this.nzSelectedIndex = index;
             tabs[index].nzClick.emit();
-            console.log('focusing on');
-            console.log(this._focusableDivs.toArray()[index]);
             setTimeout((/**
              * @return {?}
              */
@@ -1216,8 +1214,6 @@ var NzTabSetComponent = /** @class */ (function () {
         if (tab) {
             this.nzSelectedIndex = index;
             tabs[index].nzClick.emit();
-            console.log('focusing on');
-            console.log(this._focusableDivs.toArray()[index]);
             setTimeout((/**
              * @return {?}
              */

@@ -360,7 +360,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
         function () { return null; });
         this.nzButtonStyle = 'outline';
         this.nzSize = 'default';
-        this.nzLabelledById = null;
+        this.nzGroupLabelledById = null;
         renderer.addClass(elementRef.nativeElement, 'ant-radio-group');
     }
     /**
@@ -388,9 +388,9 @@ var NzRadioGroupComponent = /** @class */ (function () {
                     if (_this.nzName) {
                         radio.name = _this.nzName;
                     }
-                    if (_this.nzLabelledById) {
-                        radio.nzLabelledById = _this.nzLabelledById;
-                    }
+                    /*if (this.nzGroupLabelledById) {
+                      radio.nzLabelledById = this.nzGroupLabelledById;
+                    }*/
                     radio.markForCheck();
                 }));
             }));
@@ -525,7 +525,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
                     selector: 'nz-radio-group',
                     exportAs: 'nzRadioGroup',
                     preserveWhitespaces: false,
-                    template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
+                    template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzGroupLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                     encapsulation: ViewEncapsulation.None,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     providers: [
@@ -561,7 +561,7 @@ var NzRadioGroupComponent = /** @class */ (function () {
         nzButtonStyle: [{ type: Input }],
         nzSize: [{ type: Input }],
         nzName: [{ type: Input }],
-        nzLabelledById: [{ type: Input }]
+        nzGroupLabelledById: [{ type: Input }]
     };
     __decorate([
         InputBoolean(),
@@ -605,7 +605,7 @@ if (false) {
     /** @type {?} */
     NzRadioGroupComponent.prototype.nzName;
     /** @type {?} */
-    NzRadioGroupComponent.prototype.nzLabelledById;
+    NzRadioGroupComponent.prototype.nzGroupLabelledById;
     /**
      * @type {?}
      * @private

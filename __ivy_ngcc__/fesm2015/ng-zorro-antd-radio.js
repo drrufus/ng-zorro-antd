@@ -345,7 +345,7 @@ class NzRadioGroupComponent {
         () => null);
         this.nzButtonStyle = 'outline';
         this.nzSize = 'default';
-        this.nzLabelledById = null;
+        this.nzGroupLabelledById = null;
         renderer.addClass(elementRef.nativeElement, 'ant-radio-group');
     }
     /**
@@ -369,9 +369,9 @@ class NzRadioGroupComponent {
                     if (this.nzName) {
                         radio.name = this.nzName;
                     }
-                    if (this.nzLabelledById) {
-                        radio.nzLabelledById = this.nzLabelledById;
-                    }
+                    /*if (this.nzGroupLabelledById) {
+                      radio.nzLabelledById = this.nzGroupLabelledById;
+                    }*/
                     radio.markForCheck();
                 }));
             }));
@@ -483,7 +483,7 @@ NzRadioGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioGroupCo
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.radios = _t);
     } }, hostVars: 6, hostBindings: function NzRadioGroupComponent_HostBindings(rf, ctx) { if (rf & 2) {
         ɵngcc0.ɵɵclassProp("ant-radio-group-large", ctx.nzSize === "large")("ant-radio-group-small", ctx.nzSize === "small")("ant-radio-group-solid", ctx.nzButtonStyle === "solid");
-    } }, inputs: { nzButtonStyle: "nzButtonStyle", nzSize: "nzSize", nzLabelledById: "nzLabelledById", nzDisabled: "nzDisabled", nzName: "nzName" }, exportAs: ["nzRadioGroup"], features: [ɵngcc0.ɵɵProvidersFeature([
+    } }, inputs: { nzButtonStyle: "nzButtonStyle", nzSize: "nzSize", nzGroupLabelledById: "nzGroupLabelledById", nzDisabled: "nzDisabled", nzName: "nzName" }, exportAs: ["nzRadioGroup"], features: [ɵngcc0.ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(( /**
@@ -497,7 +497,7 @@ NzRadioGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioGroupCo
         ɵngcc0.ɵɵprojection(1);
         ɵngcc0.ɵɵelementEnd();
     } if (rf & 2) {
-        ɵngcc0.ɵɵattribute("aria-labelledby", ctx.nzLabelledById);
+        ɵngcc0.ɵɵattribute("aria-labelledby", ctx.nzGroupLabelledById);
     } }, encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzRadioGroupComponent.ctorParameters = () => [
@@ -515,7 +515,7 @@ NzRadioGroupComponent.propDecorators = {
     nzButtonStyle: [{ type: Input }],
     nzSize: [{ type: Input }],
     nzName: [{ type: Input }],
-    nzLabelledById: [{ type: Input }]
+    nzGroupLabelledById: [{ type: Input }]
 };
 __decorate([
     InputBoolean(),
@@ -597,7 +597,7 @@ __decorate([
                 selector: 'nz-radio-group',
                 exportAs: 'nzRadioGroup',
                 preserveWhitespaces: false,
-                template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
+                template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzGroupLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [
@@ -619,7 +619,7 @@ __decorate([
             type: Input
         }], nzSize: [{
             type: Input
-        }], nzLabelledById: [{
+        }], nzGroupLabelledById: [{
             type: Input
         }], nzDisabled: [{
             type: Input
@@ -668,7 +668,7 @@ if (false) {
     /** @type {?} */
     NzRadioGroupComponent.prototype.nzName;
     /** @type {?} */
-    NzRadioGroupComponent.prototype.nzLabelledById;
+    NzRadioGroupComponent.prototype.nzGroupLabelledById;
     /**
      * @type {?}
      * @private
