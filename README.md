@@ -42,7 +42,7 @@ Below you can see the list of the most significant changes.
 
 #### Radio:
 + `aria-checked` attribute displaying current state.
-+ `nzLabelledById` attribute for a pointer to an element with a corresponding description.
++ `nzLabelledById`/`nzGroupLabelledById` attribute for a pointer to an element with a corresponding description.
 + Radio-group is wrapped in an additional `div` element with `role="radiogroup"` attribute.
 
 #### Menu:

@@ -69,7 +69,7 @@ export class NzRadioGroupComponent implements AfterContentInit, ControlValueAcce
   @Input() nzButtonStyle: NzRadioButtonStyle = 'outline';
   @Input() nzSize: NzSizeLDSType = 'default';
   @Input() nzName: string;
-  @Input() nzLabelledById: string | null = null;
+  @Input() nzGroupLabelledById: string | null = null;
 
   updateChildrenStatus(): void {
     if (this.radios) {
@@ -82,9 +82,9 @@ export class NzRadioGroupComponent implements AfterContentInit, ControlValueAcce
           if (this.nzName) {
             radio.name = this.nzName;
           }
-          if (this.nzLabelledById) {
-            radio.nzLabelledById = this.nzLabelledById;
-          }
+          /*if (this.nzGroupLabelledById) {
+            radio.nzLabelledById = this.nzGroupLabelledById;
+          }*/
           radio.markForCheck();
         });
       });
