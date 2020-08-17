@@ -70,6 +70,7 @@ export class NzRadioComponent implements ControlValueAccessor, AfterViewInit, On
   @Input() @InputBoolean() nzDisabled = false;
   @Input() @InputBoolean() nzAutoFocus = false;
   @Input() nzLabelledById: string | null = null;
+  @Input() nzTabIndex: number | null = null;
 
   updateAutoFocus(): void {
     if (this.inputElement) {
