@@ -39,6 +39,7 @@ class NzRadioComponent {
         this.nzDisabled = false;
         this.nzAutoFocus = false;
         this.nzLabelledById = null;
+        this.nzTabIndex = null;
         this.renderer.addClass(elementRef.nativeElement, 'ant-radio-wrapper');
     }
     /**
@@ -159,7 +160,7 @@ NzRadioComponent.decorators = [
                 selector: '[nz-radio]',
                 exportAs: 'nzRadio',
                 preserveWhitespaces: false,
-                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
+                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    [attr.tabindex]=\"nzTabIndex\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [
@@ -192,6 +193,7 @@ NzRadioComponent.propDecorators = {
     nzDisabled: [{ type: Input }],
     nzAutoFocus: [{ type: Input }],
     nzLabelledById: [{ type: Input }],
+    nzTabIndex: [{ type: Input }],
     onClick: [{ type: HostListener, args: ['click', ['$event'],] }]
 };
 __decorate([
@@ -227,6 +229,8 @@ if (false) {
     NzRadioComponent.prototype.nzAutoFocus;
     /** @type {?} */
     NzRadioComponent.prototype.nzLabelledById;
+    /** @type {?} */
+    NzRadioComponent.prototype.nzTabIndex;
     /**
      * @type {?}
      * @private

@@ -46,6 +46,7 @@ class NzRadioComponent {
         this.nzDisabled = false;
         this.nzAutoFocus = false;
         this.nzLabelledById = null;
+        this.nzTabIndex = null;
         this.renderer.addClass(elementRef.nativeElement, 'ant-radio-wrapper');
     }
     /**
@@ -171,7 +172,7 @@ NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, s
         ɵngcc0.ɵɵlistener("click", function NzRadioComponent_click_HostBindingHandler($event) { return ctx.onClick($event); });
     } if (rf & 2) {
         ɵngcc0.ɵɵclassProp("ant-radio-wrapper-checked", ctx.checked)("ant-radio-wrapper-disabled", ctx.nzDisabled)("ant-radio-wrapper-labelledBy", ctx.nzLabelledById);
-    } }, inputs: { nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzLabelledById: "nzLabelledById", nzValue: "nzValue" }, exportAs: ["nzRadio"], features: [ɵngcc0.ɵɵProvidersFeature([
+    } }, inputs: { nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzLabelledById: "nzLabelledById", nzTabIndex: "nzTabIndex", nzValue: "nzValue" }, exportAs: ["nzRadio"], features: [ɵngcc0.ɵɵProvidersFeature([
             {
                 provide: NG_VALUE_ACCESSOR,
                 useExisting: forwardRef(( /**
@@ -179,7 +180,7 @@ NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, s
                  */() => NzRadioComponent)),
                 multi: true
             }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c1, ngContentSelectors: _c2, decls: 6, vars: 9, consts: [[1, "ant-radio"], ["type", "radio", 1, "ant-radio-input", 3, "disabled", "checked"], ["inputElement", ""], [1, "ant-radio-inner"]], template: function NzRadioComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c1, ngContentSelectors: _c2, decls: 6, vars: 10, consts: [[1, "ant-radio"], ["type", "radio", 1, "ant-radio-input", 3, "disabled", "checked"], ["inputElement", ""], [1, "ant-radio-inner"]], template: function NzRadioComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵelementStart(0, "span", 0);
         ɵngcc0.ɵɵelement(1, "input", 1, 2);
@@ -192,7 +193,7 @@ NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, s
         ɵngcc0.ɵɵclassProp("ant-radio-checked", ctx.checked)("ant-radio-disabled", ctx.nzDisabled);
         ɵngcc0.ɵɵadvance(1);
         ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled)("checked", ctx.checked);
-        ɵngcc0.ɵɵattribute("name", ctx.name)("aria-checked", ctx.checked)("aria-labelledby", ctx.nzLabelledById);
+        ɵngcc0.ɵɵattribute("name", ctx.name)("aria-checked", ctx.checked)("aria-labelledby", ctx.nzLabelledById)("tabindex", ctx.nzTabIndex);
     } }, encapsulation: 2, changeDetection: 0 });
 /** @nocollapse */
 NzRadioComponent.ctorParameters = () => [
@@ -207,6 +208,7 @@ NzRadioComponent.propDecorators = {
     nzDisabled: [{ type: Input }],
     nzAutoFocus: [{ type: Input }],
     nzLabelledById: [{ type: Input }],
+    nzTabIndex: [{ type: Input }],
     onClick: [{ type: HostListener, args: ['click', ['$event'],] }]
 };
 __decorate([
@@ -242,6 +244,8 @@ if (false) {
     NzRadioComponent.prototype.nzAutoFocus;
     /** @type {?} */
     NzRadioComponent.prototype.nzLabelledById;
+    /** @type {?} */
+    NzRadioComponent.prototype.nzTabIndex;
     /**
      * @type {?}
      * @private
@@ -527,7 +531,7 @@ __decorate([
                 selector: '[nz-radio]',
                 exportAs: 'nzRadio',
                 preserveWhitespaces: false,
-                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
+                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    [attr.tabindex]=\"nzTabIndex\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
                 encapsulation: ViewEncapsulation.None,
                 changeDetection: ChangeDetectionStrategy.OnPush,
                 providers: [
@@ -550,6 +554,8 @@ __decorate([
         }], nzAutoFocus: [{
             type: Input
         }], nzLabelledById: [{
+            type: Input
+        }], nzTabIndex: [{
             type: Input
         }], onClick: [{
             type: HostListener,
