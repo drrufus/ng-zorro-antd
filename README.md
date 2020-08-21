@@ -60,6 +60,7 @@ Below you can see the list of the most significant changes.
 + Navigation with arrow keys.
 + Autofocusing after a navigation with arrow keys.
 + `nzTitleAriaLabel` attribute for a tab.
++ `nzPreselectionMode` for a tab-set. It's `false` by default, but when it's `true` - it will be necessary to click the space key to switch a tab when navigating with the arrow keys.
 
 #### Table:
 + Styles fixes for <th> elements within <tbody>.

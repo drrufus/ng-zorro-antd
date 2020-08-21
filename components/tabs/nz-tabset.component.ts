@@ -102,6 +102,9 @@ export class NzTabSetComponent
   @ViewChildren("focusable")
   private _focusableDivs: QueryList<ElementRef>;
 
+  @ViewChild(NzTabsNavComponent, { static: false })
+  private _nav: NzTabsNavComponent;
+
   @Input() nzTabBarExtraContent: TemplateRef<void>;
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, true) nzShowPagination: boolean;
   @Input() @WithConfig(NZ_CONFIG_COMPONENT_NAME, true) nzAnimated: NzAnimatedInterface | boolean;
@@ -114,6 +117,9 @@ export class NzTabSetComponent
 
   @Input() @InputBoolean() nzLinkRouter = false;
   @Input() @InputBoolean() nzLinkExact = true;
+
+  @Input() nzPreselectionMode: boolean = false;
+  preselectionIndex: number | null = null;
 
   @Output() readonly nzOnNextClick = new EventEmitter<void>();
   @Output() readonly nzOnPrevClick = new EventEmitter<void>();
@@ -141,26 +147,33 @@ export class NzTabSetComponent
     $event.stopPropagation();
     $event.preventDefault();
 
-    var index = this.nzSelectedIndex!;
-    let tabs = this.listOfNzTabComponent.toArray();
-    let count = tabs.length;
+    const selectedIndex = this.nzSelectedIndex!;
 
-    if (index == (count - 1)) {
+    let index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
+    const tabs = this.listOfNzTabComponent.toArray();
+    const count = tabs.length;
+
+    if (index === (count - 1)) {
       return;
     }
 
-    var tab: NzTabComponent | null = null;
-    while(index < (count - 1) && (!tab || tab!.nzDisabled)) {
+    let tab: NzTabComponent | null = null;
+    while (index < (count - 1) && (!tab || tab!.nzDisabled)) {
       index++;
       tab = tabs[index];
     }
 
     if (tab) {
-      this.nzSelectedIndex = index;
-      tabs[index].nzClick.emit();
-      setTimeout(() => {
-        this._focusableDivs.toArray()[index].nativeElement.focus();
-      }, 500);
+      if (this.nzPreselectionMode) {
+        this.preselectionIndex = index;
+        this._nav.scrollToLabel(index);
+      } else {
+        this.nzSelectedIndex = index;
+        tabs[index].nzClick.emit();
+        setTimeout(() => {
+          this._focusableDivs.toArray()[index].nativeElement.focus();
+        }, 500);
+      }
     }
   }
 
@@ -168,25 +181,32 @@ export class NzTabSetComponent
     $event.stopPropagation();
     $event.preventDefault();
 
-    var index = this.nzSelectedIndex!;
-    let tabs = this.listOfNzTabComponent.toArray();
+    const selectedIndex = this.nzSelectedIndex!;
 
-    if (index == 0) {
+    let index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
+    const tabs = this.listOfNzTabComponent.toArray();
+
+    if (index === 0) {
       return;
     }
 
-    var tab: NzTabComponent | null = null;
-    while(index > 0 && (!tab || tab!.nzDisabled)) {
+    let tab: NzTabComponent | null = null;
+    while (index > 0 && (!tab || tab!.nzDisabled)) {
       index--;
       tab = tabs[index];
     }
 
     if (tab) {
-      this.nzSelectedIndex = index;
-      tabs[index].nzClick.emit();
-      setTimeout(() => {
-        this._focusableDivs.toArray()[index].nativeElement.focus();
-      }, 500);
+      if (this.nzPreselectionMode) {
+        this._nav.scrollToLabel(index);
+        this.preselectionIndex = index;
+      } else {
+        this.nzSelectedIndex = index;
+        tabs[index].nzClick.emit();
+        setTimeout(() => {
+          this._focusableDivs.toArray()[index].nativeElement.focus();
+        }, 500);
+      }
     }
   }
 
@@ -222,10 +242,23 @@ export class NzTabSetComponent
   }
 
   clickLabel(index: number, disabled: boolean): void {
+    this.preselectionIndex = null;
     if (!disabled) {
       const tabs = this.listOfNzTabComponent.toArray();
       this.nzSelectedIndex = index;
       tabs[index].nzClick.emit();
+    }
+  }
+
+  clickPreselected(): void {
+    if (this.nzPreselectionMode && this.preselectionIndex != null) {
+      const tabs = this.listOfNzTabComponent.toArray();
+      const index = this.preselectionIndex;
+      this.nzSelectedIndex = index;
+      tabs[index].nzClick.emit();
+      setTimeout(() => {
+        this._focusableDivs.toArray()[index].nativeElement.focus();
+      }, 500);
     }
   }
 

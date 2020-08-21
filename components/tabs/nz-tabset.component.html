@@ -1,5 +1,6 @@
 <ng-container *ngIf="listOfNzTabComponent">
   <div nz-tabs-nav
+    #nav
     role="tablist"
     class="ant-tabs-bar"
     [class.ant-tabs-card-bar]="nzType === 'card'"
@@ -30,11 +31,14 @@
       [disabled]="tab.nzDisabled"
       (click)="clickLabel(i,tab.nzDisabled)"
       (keyup.enter)="clickLabel(i,tab.nzDisabled)"
+      (keyup.space)="clickPreselected(); $event.preventDefault()"
+      (keydown.space)="$event.preventDefault()"
       (keydown.arrowright)="$event.preventDefault()"
       (keydown.arrowleft)="$event.preventDefault()"
       (keyup.arrowright)="moveRight($event)"
       (keyup.arrowleft)="moveLeft($event)"
       *ngFor="let tab of listOfNzTabComponent; let i = index"
+      [class.ant-tabs-tab-preselected]="preselectionIndex == i"
       #focusable>
       <ng-container *nzStringTemplateOutlet="tab.nzTitle || tab.title">{{ tab.nzTitle }}</ng-container>
     </div>
