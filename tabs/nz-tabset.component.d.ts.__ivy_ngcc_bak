@@ -42,6 +42,7 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     nzTabsNavComponent: NzTabsNavComponent;
     tabContent: ElementRef;
     private _focusableDivs;
+    private _nav;
     nzTabBarExtraContent: TemplateRef<void>;
     nzShowPagination: boolean;
     nzAnimated: NzAnimatedInterface | boolean;
@@ -55,6 +56,8 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     nzType: NzTabType;
     nzLinkRouter: boolean;
     nzLinkExact: boolean;
+    nzPreselectionMode: boolean;
+    preselectionIndex: number | null;
     readonly nzOnNextClick: EventEmitter<void>;
     readonly nzOnPrevClick: EventEmitter<void>;
     readonly nzSelectChange: EventEmitter<NzTabChangeEvent>;
@@ -67,6 +70,7 @@ export declare class NzTabSetComponent implements AfterContentChecked, OnInit, A
     setPosition(value: NzTabPosition): void;
     setClassMap(): void;
     clickLabel(index: number, disabled: boolean): void;
+    clickPreselected(): void;
     createChangeEvent(index: number): NzTabChangeEvent;
     /** Clamps the given index to the bounds of 0 and the tabs length. */
     private clampTabIndex;

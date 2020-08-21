@@ -1106,6 +1106,8 @@ var NzTabSetComponent = /** @class */ (function () {
         this.nzTabPosition = 'top';
         this.nzLinkRouter = false;
         this.nzLinkExact = true;
+        this.nzPreselectionMode = false;
+        this.preselectionIndex = null;
         this.nzOnNextClick = new EventEmitter();
         this.nzOnPrevClick = new EventEmitter();
         this.nzSelectChange = new EventEmitter(true);
@@ -1161,12 +1163,14 @@ var NzTabSetComponent = /** @class */ (function () {
         $event.stopPropagation();
         $event.preventDefault();
         /** @type {?} */
-        var index = (/** @type {?} */ (this.nzSelectedIndex));
+        var selectedIndex = (/** @type {?} */ (this.nzSelectedIndex));
+        /** @type {?} */
+        var index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
         /** @type {?} */
         var tabs = this.listOfNzTabComponent.toArray();
         /** @type {?} */
         var count = tabs.length;
-        if (index == (count - 1)) {
+        if (index === (count - 1)) {
             return;
         }
         /** @type {?} */
@@ -1176,14 +1180,20 @@ var NzTabSetComponent = /** @class */ (function () {
             tab = tabs[index];
         }
         if (tab) {
-            this.nzSelectedIndex = index;
-            tabs[index].nzClick.emit();
-            setTimeout((/**
-             * @return {?}
-             */
-            function () {
-                _this._focusableDivs.toArray()[index].nativeElement.focus();
-            }), 500);
+            if (this.nzPreselectionMode) {
+                this.preselectionIndex = index;
+                this._nav.scrollToLabel(index);
+            }
+            else {
+                this.nzSelectedIndex = index;
+                tabs[index].nzClick.emit();
+                setTimeout((/**
+                 * @return {?}
+                 */
+                function () {
+                    _this._focusableDivs.toArray()[index].nativeElement.focus();
+                }), 500);
+            }
         }
     };
     /**
@@ -1199,10 +1209,12 @@ var NzTabSetComponent = /** @class */ (function () {
         $event.stopPropagation();
         $event.preventDefault();
         /** @type {?} */
-        var index = (/** @type {?} */ (this.nzSelectedIndex));
+        var selectedIndex = (/** @type {?} */ (this.nzSelectedIndex));
+        /** @type {?} */
+        var index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
         /** @type {?} */
         var tabs = this.listOfNzTabComponent.toArray();
-        if (index == 0) {
+        if (index === 0) {
             return;
         }
         /** @type {?} */
@@ -1212,14 +1224,20 @@ var NzTabSetComponent = /** @class */ (function () {
             tab = tabs[index];
         }
         if (tab) {
-            this.nzSelectedIndex = index;
-            tabs[index].nzClick.emit();
-            setTimeout((/**
-             * @return {?}
-             */
-            function () {
-                _this._focusableDivs.toArray()[index].nativeElement.focus();
-            }), 500);
+            if (this.nzPreselectionMode) {
+                this._nav.scrollToLabel(index);
+                this.preselectionIndex = index;
+            }
+            else {
+                this.nzSelectedIndex = index;
+                tabs[index].nzClick.emit();
+                setTimeout((/**
+                 * @return {?}
+                 */
+                function () {
+                    _this._focusableDivs.toArray()[index].nativeElement.focus();
+                }), 500);
+            }
         }
     };
     /**
@@ -1269,11 +1287,35 @@ var NzTabSetComponent = /** @class */ (function () {
      * @return {?}
      */
     function (index, disabled) {
+        this.preselectionIndex = null;
         if (!disabled) {
             /** @type {?} */
             var tabs = this.listOfNzTabComponent.toArray();
             this.nzSelectedIndex = index;
             tabs[index].nzClick.emit();
+        }
+    };
+    /**
+     * @return {?}
+     */
+    NzTabSetComponent.prototype.clickPreselected = /**
+     * @return {?}
+     */
+    function () {
+        var _this = this;
+        if (this.nzPreselectionMode && this.preselectionIndex != null) {
+            /** @type {?} */
+            var tabs = this.listOfNzTabComponent.toArray();
+            /** @type {?} */
+            var index_1 = this.preselectionIndex;
+            this.nzSelectedIndex = index_1;
+            tabs[index_1].nzClick.emit();
+            setTimeout((/**
+             * @return {?}
+             */
+            function () {
+                _this._focusableDivs.toArray()[index_1].nativeElement.focus();
+            }), 500);
         }
     };
     /**
@@ -1585,7 +1627,7 @@ var NzTabSetComponent = /** @class */ (function () {
                     encapsulation: ViewEncapsulation.None,
                     changeDetection: ChangeDetectionStrategy.OnPush,
                     providers: [NzUpdateHostClassService],
-                    template: "<ng-container *ngIf=\"listOfNzTabComponent\">\r\n  <div nz-tabs-nav\r\n    role=\"tablist\"\r\n    class=\"ant-tabs-bar\"\r\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\r\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\r\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\r\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\r\n    [nzType]=\"nzType\"\r\n    [nzShowPagination]=\"nzShowPagination\"\r\n    [nzPositionMode]=\"tabPositionMode\"\r\n    [nzAnimated]=\"inkBarAnimated\"\r\n    [ngStyle]=\"nzTabBarStyle\"\r\n    [nzHideBar]=\"nzHideAll\"\r\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\r\n    [selectedIndex]=\"nzSelectedIndex\"\r\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\r\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\r\n    <div nz-tab-label\r\n      [attr.tabindex]=\"nzSelectedIndex == i ? 0 : null\"\r\n      role=\"tab\"\r\n      [attr.aria-selected]=\"nzSelectedIndex == i\"\r\n      [attr.aria-label]=\"tab.nzTitleAriaLabel\"\r\n      [style.margin-right.px]=\"nzTabBarGutter\"\r\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [disabled]=\"tab.nzDisabled\"\r\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keyup.enter)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keydown.arrowright)=\"$event.preventDefault()\"\r\n      (keydown.arrowleft)=\"$event.preventDefault()\"\r\n      (keyup.arrowright)=\"moveRight($event)\"\r\n      (keyup.arrowleft)=\"moveLeft($event)\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      #focusable>\r\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle || tab.title\">{{ tab.nzTitle }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <div #tabContent\r\n    class=\"ant-tabs-content\"\r\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\r\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\r\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\r\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\r\n    <div nz-tab-body\r\n      class=\"ant-tabs-tabpane\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [forceRender]=\"tab.nzForceRender\"\r\n      [content]=\"tab.template || tab.content\">\r\n    </div>\r\n  </div>\r\n</ng-container>",
+                    template: "<ng-container *ngIf=\"listOfNzTabComponent\">\r\n  <div nz-tabs-nav\r\n    #nav\r\n    role=\"tablist\"\r\n    class=\"ant-tabs-bar\"\r\n    [class.ant-tabs-card-bar]=\"nzType === 'card'\"\r\n    [class.ant-tabs-top-bar]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-bar]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-bar]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-bar]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-small-bar]=\"nzSize === 'small'\"\r\n    [class.ant-tabs-default-bar]=\"nzSize === 'default'\"\r\n    [class.ant-tabs-large-bar]=\"nzSize === 'large'\"\r\n    [nzType]=\"nzType\"\r\n    [nzShowPagination]=\"nzShowPagination\"\r\n    [nzPositionMode]=\"tabPositionMode\"\r\n    [nzAnimated]=\"inkBarAnimated\"\r\n    [ngStyle]=\"nzTabBarStyle\"\r\n    [nzHideBar]=\"nzHideAll\"\r\n    [nzTabBarExtraContent]=\"nzTabBarExtraContent\"\r\n    [selectedIndex]=\"nzSelectedIndex\"\r\n    (nzOnNextClick)=\"nzOnNextClick.emit()\"\r\n    (nzOnPrevClick)=\"nzOnPrevClick.emit()\">\r\n    <div nz-tab-label\r\n      [attr.tabindex]=\"nzSelectedIndex == i ? 0 : null\"\r\n      role=\"tab\"\r\n      [attr.aria-selected]=\"nzSelectedIndex == i\"\r\n      [attr.aria-label]=\"tab.nzTitleAriaLabel\"\r\n      [style.margin-right.px]=\"nzTabBarGutter\"\r\n      [class.ant-tabs-tab-active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [disabled]=\"tab.nzDisabled\"\r\n      (click)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keyup.enter)=\"clickLabel(i,tab.nzDisabled)\"\r\n      (keyup.space)=\"clickPreselected(); $event.preventDefault()\"\r\n      (keydown.space)=\"$event.preventDefault()\"\r\n      (keydown.arrowright)=\"$event.preventDefault()\"\r\n      (keydown.arrowleft)=\"$event.preventDefault()\"\r\n      (keyup.arrowright)=\"moveRight($event)\"\r\n      (keyup.arrowleft)=\"moveLeft($event)\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      [class.ant-tabs-tab-preselected]=\"preselectionIndex == i\"\r\n      #focusable>\r\n      <ng-container *nzStringTemplateOutlet=\"tab.nzTitle || tab.title\">{{ tab.nzTitle }}</ng-container>\r\n    </div>\r\n  </div>\r\n  <div #tabContent\r\n    class=\"ant-tabs-content\"\r\n    [class.ant-tabs-top-content]=\"nzTabPosition === 'top'\"\r\n    [class.ant-tabs-bottom-content]=\"nzTabPosition === 'bottom'\"\r\n    [class.ant-tabs-left-content]=\"nzTabPosition === 'left'\"\r\n    [class.ant-tabs-right-content]=\"nzTabPosition === 'right'\"\r\n    [class.ant-tabs-content-animated]=\"tabPaneAnimated\"\r\n    [class.ant-tabs-card-content]=\"nzType === 'card'\"\r\n    [class.ant-tabs-content-no-animated]=\"!tabPaneAnimated\"\r\n    [style.margin-left.%]=\"(tabPositionMode === 'horizontal') && tabPaneAnimated && (-(nzSelectedIndex || 0 ) * 100)\">\r\n    <div nz-tab-body\r\n      class=\"ant-tabs-tabpane\"\r\n      *ngFor=\"let tab of listOfNzTabComponent; let i = index\"\r\n      [active]=\"(nzSelectedIndex == i) && !nzHideAll\"\r\n      [forceRender]=\"tab.nzForceRender\"\r\n      [content]=\"tab.template || tab.content\">\r\n    </div>\r\n  </div>\r\n</ng-container>",
                     styles: ["\n      nz-tabset {\n        display: block;\n      }\n    "]
                 }] }
     ];
@@ -1603,6 +1645,7 @@ var NzTabSetComponent = /** @class */ (function () {
         nzTabsNavComponent: [{ type: ViewChild, args: [NzTabsNavComponent, { static: false },] }],
         tabContent: [{ type: ViewChild, args: ['tabContent', { static: false },] }],
         _focusableDivs: [{ type: ViewChildren, args: ["focusable",] }],
+        _nav: [{ type: ViewChild, args: [NzTabsNavComponent, { static: false },] }],
         nzTabBarExtraContent: [{ type: Input }],
         nzShowPagination: [{ type: Input }],
         nzAnimated: [{ type: Input }],
@@ -1614,6 +1657,7 @@ var NzTabSetComponent = /** @class */ (function () {
         nzType: [{ type: Input }],
         nzLinkRouter: [{ type: Input }],
         nzLinkExact: [{ type: Input }],
+        nzPreselectionMode: [{ type: Input }],
         nzOnNextClick: [{ type: Output }],
         nzOnPrevClick: [{ type: Output }],
         nzSelectChange: [{ type: Output }],
@@ -1696,6 +1740,11 @@ if (false) {
      * @private
      */
     NzTabSetComponent.prototype._focusableDivs;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzTabSetComponent.prototype._nav;
     /** @type {?} */
     NzTabSetComponent.prototype.nzTabBarExtraContent;
     /** @type {?} */
@@ -1718,6 +1767,10 @@ if (false) {
     NzTabSetComponent.prototype.nzLinkRouter;
     /** @type {?} */
     NzTabSetComponent.prototype.nzLinkExact;
+    /** @type {?} */
+    NzTabSetComponent.prototype.nzPreselectionMode;
+    /** @type {?} */
+    NzTabSetComponent.prototype.preselectionIndex;
     /** @type {?} */
     NzTabSetComponent.prototype.nzOnNextClick;
     /** @type {?} */
