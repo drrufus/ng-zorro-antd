@@ -75,6 +75,7 @@ export declare class NzSelectComponent implements ControlValueAccessor, OnInit, 
     compareWith: (o1: any, o2: any) => boolean;
     nzOpen: boolean;
     nzDisabled: boolean;
+    nzAriaLabel: string | null;
     readonly nzSelectTopControlDOM: HTMLElement;
     updateAutoFocus(): void;
     focus(): void;
