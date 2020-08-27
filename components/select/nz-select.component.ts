@@ -181,6 +181,9 @@ export class NzSelectComponent implements ControlValueAccessor, OnInit, AfterVie
     }
   }
 
+  @Input()
+  nzAriaLabel: string | null = null;
+
   get nzDisabled(): boolean {
     return this._disabled;
   }

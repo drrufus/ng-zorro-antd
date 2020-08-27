@@ -21,7 +21,8 @@
   [class.ant-select-selection--multiple]="nzSelectService.isMultipleOrTags"
   (focus)="onFocus()"
   (blur)="onBlur()"
-  (keydown)="onKeyDown($event)">
+  (keydown)="onKeyDown($event)"
+  [attr.aria-label]="nzAriaLabel">
 </div>
 <ng-template
   cdkConnectedOverlay

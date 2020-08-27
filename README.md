@@ -69,3 +69,6 @@ Below you can see the list of the most significant changes.
 + `nzAriaLabel` attribute.
 + `aria-checked` attribute displaying current state.
 + `nzLabelledById` attribute for a pointer to an element with a corresponding description.
+
+### Select:
++ `nzAriaLabel` attribute.
