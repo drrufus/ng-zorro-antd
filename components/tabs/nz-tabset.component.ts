@@ -170,10 +170,10 @@ export class NzTabSetComponent
       } else {
         this.nzSelectedIndex = index;
         tabs[index].nzClick.emit();
-        setTimeout(() => {
-          this._focusableDivs.toArray()[index].nativeElement.focus();
-        }, 500);
       }
+      setTimeout(() => {
+        this._focusableDivs.toArray()[index].nativeElement.focus();
+      }, 100);
     }
   }
 
@@ -203,10 +203,10 @@ export class NzTabSetComponent
       } else {
         this.nzSelectedIndex = index;
         tabs[index].nzClick.emit();
-        setTimeout(() => {
-          this._focusableDivs.toArray()[index].nativeElement.focus();
-        }, 500);
       }
+      setTimeout(() => {
+        this._focusableDivs.toArray()[index].nativeElement.focus();
+      }, 100);
     }
   }
 

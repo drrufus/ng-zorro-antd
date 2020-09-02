@@ -22,7 +22,7 @@
     (nzOnNextClick)="nzOnNextClick.emit()"
     (nzOnPrevClick)="nzOnPrevClick.emit()">
     <div nz-tab-label
-      [attr.tabindex]="nzSelectedIndex == i ? 0 : null"
+      [attr.tabindex]="nzSelectedIndex == i ? 0 : -1"
       role="tab"
       [attr.aria-selected]="nzSelectedIndex == i"
       [attr.aria-label]="tab.nzTitleAriaLabel"
