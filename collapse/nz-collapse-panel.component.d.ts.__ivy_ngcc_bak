@@ -25,6 +25,7 @@ export declare class NzCollapsePanelComponent implements OnInit, OnDestroy {
     nzExtra: string | TemplateRef<void>;
     nzHeader: string | TemplateRef<void>;
     nzHeadingAriaLabel: string | null;
+    nzHeadingAriaLevel: number;
     nzExpandedIcon: string | TemplateRef<void>;
     nzRole: string;
     readonly nzActiveChange: EventEmitter<boolean>;

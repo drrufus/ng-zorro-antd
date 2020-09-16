@@ -8,6 +8,7 @@ Below you can see the list of the most significant changes.
 + Header is focusable by TAB key and is wrapped in `<a>` element with class `ant-collapse-arrow-link`.
 + All content is hidden when a panel is collapsed.
 + New `nzHeadingAriaLabel` attribute: if not null - a panel's header will be marked with `role="heading"` and `aria-label` with provided value.
++ New `nzHeadingAriaLevel` attribute (working when `nzHeadingAriaLabel` has been provided).
 + Can be toggled by ENTER or SPACE key press.
 + `aria-disabled` attribute displaying current state.
 + New `focusOnHeader()` method.
