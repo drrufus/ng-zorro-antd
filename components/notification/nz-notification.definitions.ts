@@ -25,6 +25,7 @@ export interface NzNotificationDataOptions<T = {}> extends NzMessageDataOptions 
 
   /** Anything user wants renderer into a template. */
   nzData?: T;
+  nzRole?: string; // aria-role
 }
 
 // Filled version of NzMessageData (includes more private properties)

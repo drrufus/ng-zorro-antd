@@ -22,7 +22,7 @@ Below you can see the list of the most significant changes.
 + New trigger - `combined`. A tooltip with such trigger will be invoked both on hover and on focus.
 
 #### Notifications:
-+ `role="alert"` attribute for notification's description.
++ New option `nzRole` for setting `role="alert"` attribute for notification's description.
 
 #### Card:
 + Header is wrapped in `<h4>` element.
