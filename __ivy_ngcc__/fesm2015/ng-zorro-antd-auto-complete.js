@@ -371,9 +371,9 @@ class NzAutocompleteComponent {
     setActiveItem(index) {
         /** @type {?} */
         const activeItem = this.options.toArray()[index];
+        this.activeItemIndex = index;
         if (activeItem && !activeItem.active) {
             this.activeItem = activeItem;
-            this.activeItemIndex = index;
             this.clearSelectedOptions(this.activeItem);
             this.activeItem.setActiveStyles();
             this.changeDetectorRef.markForCheck();
