@@ -15,13 +15,15 @@
        [style.marginTop.px]="nzOffset && nzOffset[1] ? nzOffset[1] : null"
        [class.ant-badge-count]="!nzDot"
        [class.ant-badge-dot]="nzDot"
-       [class.ant-badge-multiple-words]="countArray.length>=2">
+       [class.ant-badge-multiple-words]="countArray.length>=2"
+       [attr.aria-label]="nzTitle || nzCount">
     <ng-container *ngFor="let n of maxNumberArray;let i = index;">
       <span class="ant-scroll-number-only"
             *ngIf="count <= nzOverflowCount"
-            [style.transform]="'translateY(' + (-countArray[i] * 100) + '%)'">
+            [style.transform]="'translateY(' + (-countArray[i] * 100) + '%)'"
+            aria-hidden="true">
           <ng-container *ngIf="!nzDot && countArray[i] !== undefined">
-            <p *ngFor="let p of countSingleArray" [class.current]="p === countArray[i]" [attr.aria-hidden]="p !== countArray[i]">{{ p }}</p>
+            <p *ngFor="let p of countSingleArray" [class.current]="p === countArray[i]">{{ p }}</p>
           </ng-container>
       </span>
     </ng-container>

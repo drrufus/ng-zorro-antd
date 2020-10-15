@@ -39,7 +39,7 @@ Below you can see the list of the most significant changes.
 + Value of `aria-label` (optional) may be specified with `nzIconLabel` attribute.
 
 #### Badge:
-+ Inactive numbers of a counter are marked with `aria-hidden` attribute.
++ `aria-label` for a counter.
 
 #### Radio:
 + `aria-checked` attribute displaying current state.
