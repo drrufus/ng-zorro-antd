@@ -543,7 +543,7 @@ var NzDrawerComponent = /** @class */ (function (_super) {
             this.previouslyFocusedElement.focus();
         }
         if (this.focusTrap) {
-            this.focusTrap.destroy();
+            // this.focusTrap.destroy();
         }
     };
     NzDrawerComponent.decorators = [
