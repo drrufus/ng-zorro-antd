@@ -73,3 +73,6 @@ Below you can see the list of the most significant changes.
 
 ### Select:
 + `nzAriaLabel` attribute.
+
+### Drawer:
++ Destroying of a focus trap is blocked.

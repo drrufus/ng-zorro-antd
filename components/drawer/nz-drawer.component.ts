@@ -6,6 +6,14 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
+
 import { ESCAPE } from '@angular/cdk/keycodes';
 import { DOCUMENT } from '@angular/common';
 import {
@@ -329,7 +337,7 @@ export class NzDrawerComponent<T = any, R = any, D = any> extends NzDrawerRef<R>
       this.previouslyFocusedElement.focus();
     }
     if (this.focusTrap) {
-      this.focusTrap.destroy();
+      // this.focusTrap.destroy();
     }
   }
 }
