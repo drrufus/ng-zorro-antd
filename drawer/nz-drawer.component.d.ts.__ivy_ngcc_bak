@@ -53,7 +53,7 @@ export declare class NzDrawerComponent<T = any, R = any, D = any> extends NzDraw
     nzContentParams: D;
     overlayRef: OverlayRef | null;
     portal: TemplatePortal;
-    focusTrap: FocusTrap;
+    focusTrap: FocusTrap | null;
     isOpen: boolean;
     templateContext: {
         $implicit: D | undefined;

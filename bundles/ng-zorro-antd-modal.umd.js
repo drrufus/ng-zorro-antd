@@ -1454,7 +1454,8 @@
                 this.previouslyFocusedElement.focus();
             }
             if (this.focusTrap) {
-                //this.focusTrap.destroy();
+                this.focusTrap.destroy();
+                this.focusTrap = null;
             }
         };
         NzModalComponent.decorators = [
