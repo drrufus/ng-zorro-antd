@@ -100,7 +100,7 @@ export class NzDrawerComponent<T = any, R = any, D = any> extends NzDrawerRef<R>
   nzContentParams: D; // only service
   overlayRef: OverlayRef | null;
   portal: TemplatePortal;
-  focusTrap: FocusTrap;
+  focusTrap: FocusTrap | null;
   isOpen = false;
   templateContext: { $implicit: D | undefined; drawerRef: NzDrawerRef<R> } = {
     $implicit: undefined,
@@ -337,7 +337,8 @@ export class NzDrawerComponent<T = any, R = any, D = any> extends NzDrawerRef<R>
       this.previouslyFocusedElement.focus();
     }
     if (this.focusTrap) {
-      // this.focusTrap.destroy();
+      this.focusTrap.destroy();
+      this.focusTrap = null;
     }
   }
 }

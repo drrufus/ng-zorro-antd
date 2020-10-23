@@ -193,7 +193,7 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
   private container: HTMLElement | OverlayRef;
   private unsubscribe$ = new Subject<void>();
   private previouslyFocusedElement: HTMLElement;
-  private focusTrap: FocusTrap;
+  private focusTrap: FocusTrap | null;
   private scrollStrategy: BlockScrollStrategy;
   private overlayRef: OverlayRef;
   private dialogMouseDown = false;
@@ -589,7 +589,8 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
       this.previouslyFocusedElement.focus();
     }
     if (this.focusTrap) {
-      //this.focusTrap.destroy();
+      this.focusTrap.destroy();
+      this.focusTrap = null;
     }
   }
 }

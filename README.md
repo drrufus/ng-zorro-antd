@@ -33,7 +33,7 @@ Below you can see the list of the most significant changes.
 + `aria-modal="true"` attribute for a modal window.
 + `role="heading"` for a header.
 + Focusing on a header on a modal appearing. 
-+ Destroying of a focus trap is blocked.
++ Focus trap fix.
 
 #### Icon:
 + Value of `aria-label` (optional) may be specified with `nzIconLabel` attribute.
@@ -75,4 +75,4 @@ Below you can see the list of the most significant changes.
 + `nzAriaLabel` attribute.
 
 ### Drawer:
-+ Destroying of a focus trap is blocked.
++ Focus trap fix.
