@@ -1,19 +1,20 @@
-<div class="ant-collapse-header" style="display: flex; justify-content: space-between;"
-  [attr.role]="nzHeadingAriaLabel ? 'heading' : null" [attr.aria-label]="nzHeadingAriaLabel"
-  [attr.aria-level]="nzHeadingAriaLabel ? nzHeadingAriaLevel : null">
-  <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()"
-    (keyup.Space)="clickHeader()" (click)="clickHeader()" [attr.tabindex]="nzDisabled ? null : 0"
-    [attr.aria-disabled]="nzDisabled" #focusable>
-    <ng-container *ngIf="nzShowArrow">
-      <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
-        <a class="ant-collapse-arrow-link" aria-hidden="true">
-          <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
-        </a>
+<div class="ant-collapse-header" style="display: flex; justify-content: space-between;">
+  <div class="ant-collapse-title" [attr.role]="nzHeadingAriaLabel ? 'heading' : null" [attr.aria-label]="nzHeadingAriaLabel"
+       [attr.aria-level]="nzHeadingAriaLabel ? nzHeadingAriaLevel : null">
+    <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()"
+         (keyup.Space)="clickHeader()" (click)="clickHeader()" [attr.tabindex]="nzDisabled ? null : 0"
+         [attr.aria-disabled]="nzDisabled" #focusable>
+      <ng-container *ngIf="nzShowArrow">
+        <ng-container *nzStringTemplateOutlet="nzExpandedIcon">
+          <a class="ant-collapse-arrow-link" aria-hidden="true">
+            <i nz-icon [nzType]="nzExpandedIcon || 'right'" class="ant-collapse-arrow" [nzRotate]="nzActive ? 90 : 0"></i>
+          </a>
+        </ng-container>
       </ng-container>
-    </ng-container>
-    <ng-container *nzStringTemplateOutlet="nzHeader">
-      {{ nzHeader }}
-    </ng-container>
+      <ng-container *nzStringTemplateOutlet="nzHeader">
+        {{ nzHeader }}
+      </ng-container>
+    </div>
   </div>
   <div class="ant-collapse-extra" *ngIf="nzExtra">
     <ng-container *nzStringTemplateOutlet="nzExtra">{{ nzExtra }}</ng-container>

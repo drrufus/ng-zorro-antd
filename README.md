@@ -12,6 +12,7 @@ Below you can see the list of the most significant changes.
 + Can be toggled by ENTER or SPACE key press.
 + `aria-disabled` attribute displaying current state.
 + New `focusOnHeader()` method.
++ New div with class `ant-collapse-title` to bring the name of the collapse panel to the same nesting level as `ant-collapse-extra`.
 
 #### Switch:
 + `nzLabel` attribute for an additional text label.
@@ -32,7 +33,7 @@ Below you can see the list of the most significant changes.
 + Header is wrapped in `<h4>` element.
 + `aria-modal="true"` attribute for a modal window.
 + `role="heading"` for a header.
-+ Focusing on a header on a modal appearing. 
++ Focusing on a header on a modal appearing.
 + Focus trap fix.
 
 #### Icon:
