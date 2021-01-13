@@ -1,6 +1,8 @@
 <div class="ant-collapse-header" style="display: flex; justify-content: space-between;">
-  <div class="ant-collapse-title" [attr.role]="nzHeadingAriaLabel ? 'heading' : null" [attr.aria-label]="nzHeadingAriaLabel"
-       [attr.aria-level]="nzHeadingAriaLabel ? nzHeadingAriaLevel : null">
+  <!--  Invisible heading for the sake of "pure" heading for screen reader-->
+  <span [attr.role]="nzHeadingAriaLabel ? 'heading' : null" [attr.aria-level]="nzHeadingAriaLabel ? nzHeadingAriaLevel : null"
+        style="position:absolute; width: 1px; height: 1px; left: -1000px;">{{nzHeader}}</span>
+  <div class="ant-collapse-title" [attr.aria-label]="nzHeadingAriaLabel">
     <div [attr.role]="nzRole" [attr.aria-expanded]="nzActive" style="flex: 1;" (keyup.enter)="clickHeader()"
          (keyup.Space)="clickHeader()" (click)="clickHeader()" [attr.tabindex]="nzDisabled ? null : 0"
          [attr.aria-disabled]="nzDisabled" #focusable>
