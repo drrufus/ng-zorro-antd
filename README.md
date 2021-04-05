@@ -72,8 +72,11 @@ Below you can see the list of the most significant changes.
 + `aria-checked` attribute displaying current state.
 + `nzLabelledById` attribute for a pointer to an element with a corresponding description.
 
-### Select:
+#### Select:
 + `nzAriaLabel` attribute.
 
-### Drawer:
+#### Drawer:
 + Focus trap fix.
+
+#### Popconfirm:
++ Focus trap added.

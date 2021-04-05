@@ -1,7 +1,8 @@
 import { __decorate, __metadata } from 'tslib';
-import { EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Host, Optional, Input, Output, Directive, ElementRef, ViewContainerRef, ComponentFactoryResolver, Renderer2, NgModule } from '@angular/core';
+import { EventEmitter, Component, ChangeDetectionStrategy, ViewEncapsulation, ChangeDetectorRef, Host, Optional, Input, Output, ViewChild, Directive, ElementRef, ViewContainerRef, ComponentFactoryResolver, Renderer2, NgModule } from '@angular/core';
 import { zoomBigMotion, NzNoAnimationDirective, InputBoolean, NzAddOnModule, NzOverlayModule, NzNoAnimationModule } from 'ng-zorro-antd/core';
 import { NzToolTipComponent, NzTooltipBaseComponentLegacy, NzTooltipBaseDirective, NzToolTipModule } from 'ng-zorro-antd/tooltip';
+import { FocusTrapFactory } from '@angular/cdk/a11y';
 import { takeUntil } from 'rxjs/operators';
 import { OverlayModule } from '@angular/cdk/overlay';
 import { CommonModule } from '@angular/common';
@@ -14,46 +15,48 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from 'ng-zorro-antd/core';
-import * as ɵngcc2 from '@angular/cdk/overlay';
-import * as ɵngcc3 from '@angular/common';
-import * as ɵngcc4 from 'ng-zorro-antd/button';
-import * as ɵngcc5 from 'ng-zorro-antd/icon';
-import * as ɵngcc6 from 'ng-zorro-antd/i18n';
+import * as ɵngcc1 from '@angular/cdk/a11y';
+import * as ɵngcc2 from 'ng-zorro-antd/core';
+import * as ɵngcc3 from '@angular/cdk/overlay';
+import * as ɵngcc4 from '@angular/common';
+import * as ɵngcc5 from 'ng-zorro-antd/button';
+import * as ɵngcc6 from 'ng-zorro-antd/icon';
+import * as ɵngcc7 from 'ng-zorro-antd/i18n';
 
-function NzPopconfirmComponent_ng_template_1_ng_container_7_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+const _c0 = ["popoverContainer"];
+function NzPopconfirmComponent_ng_template_1_ng_container_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "i", 14);
+    ɵngcc0.ɵɵelement(1, "i", 16);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r7 = ɵngcc0.ɵɵnextContext(3);
+    const ctx_r9 = ɵngcc0.ɵɵnextContext(3);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzType", ctx_r7.nzIcon || "exclamation-circle");
+    ɵngcc0.ɵɵproperty("nzType", ctx_r9.nzIcon || "exclamation-circle");
 } }
-function NzPopconfirmComponent_ng_template_1_ng_container_7_Template(rf, ctx) { if (rf & 1) {
+function NzPopconfirmComponent_ng_template_1_ng_container_8_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzPopconfirmComponent_ng_template_1_ng_container_7_ng_container_1_Template, 2, 1, "ng-container", 8);
-    ɵngcc0.ɵɵelementStart(2, "div", 13);
+    ɵngcc0.ɵɵtemplate(1, NzPopconfirmComponent_ng_template_1_ng_container_8_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementStart(2, "div", 15);
     ɵngcc0.ɵɵtext(3);
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r2 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r3 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r2.nzIcon);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r3.nzIcon);
     ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r2.title);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r3.title);
 } }
-function NzPopconfirmComponent_ng_template_1_ng_container_10_Template(rf, ctx) { if (rf & 1) {
+function NzPopconfirmComponent_ng_template_1_ng_container_11_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r3 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r4 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r3.nzCancelText);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r4.nzCancelText);
 } }
-function NzPopconfirmComponent_ng_template_1_ng_container_11_Template(rf, ctx) { if (rf & 1) {
+function NzPopconfirmComponent_ng_template_1_ng_container_12_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵpipe(2, "nzI18n");
@@ -62,16 +65,16 @@ function NzPopconfirmComponent_ng_template_1_ng_container_11_Template(rf, ctx) {
     ɵngcc0.ɵɵadvance(1);
     ɵngcc0.ɵɵtextInterpolate(ɵngcc0.ɵɵpipeBind1(2, 1, "Modal.cancelText"));
 } }
-function NzPopconfirmComponent_ng_template_1_ng_container_13_Template(rf, ctx) { if (rf & 1) {
+function NzPopconfirmComponent_ng_template_1_ng_container_15_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r5 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r7 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r5.nzOkText);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r7.nzOkText);
 } }
-function NzPopconfirmComponent_ng_template_1_ng_container_14_Template(rf, ctx) { if (rf & 1) {
+function NzPopconfirmComponent_ng_template_1_ng_container_16_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵpipe(2, "nzI18n");
@@ -81,26 +84,26 @@ function NzPopconfirmComponent_ng_template_1_ng_container_14_Template(rf, ctx) {
     ɵngcc0.ɵɵtextInterpolate(ɵngcc0.ɵɵpipeBind1(2, 1, "Modal.okText"));
 } }
 function NzPopconfirmComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-    const _r9 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 2);
-    ɵngcc0.ɵɵelementStart(1, "div", 3);
-    ɵngcc0.ɵɵelement(2, "div", 4);
-    ɵngcc0.ɵɵelementStart(3, "div", 5);
-    ɵngcc0.ɵɵelementStart(4, "div");
-    ɵngcc0.ɵɵelementStart(5, "div", 6);
+    const _r11 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "div", 2, 3);
+    ɵngcc0.ɵɵelementStart(2, "div", 4);
+    ɵngcc0.ɵɵelement(3, "div", 5);
+    ɵngcc0.ɵɵelementStart(4, "div", 6);
+    ɵngcc0.ɵɵelementStart(5, "div");
     ɵngcc0.ɵɵelementStart(6, "div", 7);
-    ɵngcc0.ɵɵtemplate(7, NzPopconfirmComponent_ng_template_1_ng_container_7_Template, 4, 2, "ng-container", 8);
+    ɵngcc0.ɵɵelementStart(7, "div", 8);
+    ɵngcc0.ɵɵtemplate(8, NzPopconfirmComponent_ng_template_1_ng_container_8_Template, 4, 2, "ng-container", 9);
     ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementStart(8, "div", 9);
-    ɵngcc0.ɵɵelementStart(9, "button", 10);
-    ɵngcc0.ɵɵlistener("click", function NzPopconfirmComponent_ng_template_1_Template_button_click_9_listener() { ɵngcc0.ɵɵrestoreView(_r9); const ctx_r8 = ɵngcc0.ɵɵnextContext(); return ctx_r8.onCancel(); });
-    ɵngcc0.ɵɵtemplate(10, NzPopconfirmComponent_ng_template_1_ng_container_10_Template, 2, 1, "ng-container", 11);
-    ɵngcc0.ɵɵtemplate(11, NzPopconfirmComponent_ng_template_1_ng_container_11_Template, 3, 3, "ng-container", 11);
+    ɵngcc0.ɵɵelementStart(9, "div", 10);
+    ɵngcc0.ɵɵelementStart(10, "button", 11);
+    ɵngcc0.ɵɵlistener("click", function NzPopconfirmComponent_ng_template_1_Template_button_click_10_listener() { ɵngcc0.ɵɵrestoreView(_r11); const ctx_r10 = ɵngcc0.ɵɵnextContext(); return ctx_r10.onCancel(); });
+    ɵngcc0.ɵɵtemplate(11, NzPopconfirmComponent_ng_template_1_ng_container_11_Template, 2, 1, "ng-container", 12);
+    ɵngcc0.ɵɵtemplate(12, NzPopconfirmComponent_ng_template_1_ng_container_12_Template, 3, 3, "ng-container", 12);
     ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementStart(12, "button", 12);
-    ɵngcc0.ɵɵlistener("click", function NzPopconfirmComponent_ng_template_1_Template_button_click_12_listener() { ɵngcc0.ɵɵrestoreView(_r9); const ctx_r10 = ɵngcc0.ɵɵnextContext(); return ctx_r10.onConfirm(); });
-    ɵngcc0.ɵɵtemplate(13, NzPopconfirmComponent_ng_template_1_ng_container_13_Template, 2, 1, "ng-container", 11);
-    ɵngcc0.ɵɵtemplate(14, NzPopconfirmComponent_ng_template_1_ng_container_14_Template, 3, 3, "ng-container", 11);
+    ɵngcc0.ɵɵelementStart(13, "button", 13, 14);
+    ɵngcc0.ɵɵlistener("click", function NzPopconfirmComponent_ng_template_1_Template_button_click_13_listener() { ɵngcc0.ɵɵrestoreView(_r11); const ctx_r12 = ɵngcc0.ɵɵnextContext(); return ctx_r12.onConfirm(); });
+    ɵngcc0.ɵɵtemplate(15, NzPopconfirmComponent_ng_template_1_ng_container_15_Template, 2, 1, "ng-container", 12);
+    ɵngcc0.ɵɵtemplate(16, NzPopconfirmComponent_ng_template_1_ng_container_16_Template, 3, 3, "ng-container", 12);
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
@@ -111,7 +114,7 @@ function NzPopconfirmComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
 } if (rf & 2) {
     const ctx_r1 = ɵngcc0.ɵɵnextContext();
     ɵngcc0.ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.nzOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
-    ɵngcc0.ɵɵadvance(7);
+    ɵngcc0.ɵɵadvance(8);
     ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.title);
     ɵngcc0.ɵɵadvance(2);
     ɵngcc0.ɵɵproperty("nzSize", "small");
@@ -121,24 +124,27 @@ function NzPopconfirmComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵproperty("ngIf", !ctx_r1.nzCancelText);
     ɵngcc0.ɵɵadvance(1);
     ɵngcc0.ɵɵproperty("nzSize", "small")("nzType", ctx_r1.nzOkType);
-    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵadvance(2);
     ɵngcc0.ɵɵproperty("ngIf", ctx_r1.nzOkText);
     ɵngcc0.ɵɵadvance(1);
     ɵngcc0.ɵɵproperty("ngIf", !ctx_r1.nzOkText);
 } }
-const _c0 = ["*"];
+const _c1 = ["*"];
 class NzPopconfirmComponent extends NzToolTipComponent {
     /**
      * @param {?} cdr
+     * @param {?} focusTrapFactory
      * @param {?=} noAnimation
      */
-    constructor(cdr, noAnimation) {
+    constructor(cdr, focusTrapFactory, noAnimation) {
         super(cdr, noAnimation);
+        this.focusTrapFactory = focusTrapFactory;
         this.noAnimation = noAnimation;
         this.nzOkType = 'primary';
         this.nzCondition = false;
         this.nzOnCancel = new EventEmitter();
         this.nzOnConfirm = new EventEmitter();
+        this.focusTrap = null;
         this._prefix = 'ant-popover-placement';
         this._trigger = 'click';
         this._hasBackdrop = true;
@@ -148,7 +154,10 @@ class NzPopconfirmComponent extends NzToolTipComponent {
      */
     show() {
         if (!this.nzCondition) {
+            this.previouslyFocusedElement = (/** @type {?} */ (document.activeElement));
             super.show();
+            this.focusTrap = this.focusTrapFactory.create(this.popoverContainer.nativeElement);
+            this.focusTrap.focusFirstTabbableElementWhenReady();
         }
         else {
             this.onConfirm();
@@ -157,36 +166,50 @@ class NzPopconfirmComponent extends NzToolTipComponent {
     /**
      * @return {?}
      */
+    close() {
+        this.focusTrap && this.focusTrap.destroy();
+        super.hide();
+        this.previouslyFocusedElement && this.previouslyFocusedElement.focus();
+    }
+    /**
+     * @return {?}
+     */
     onCancel() {
         this.nzOnCancel.emit();
-        super.hide();
+        this.close();
     }
     /**
      * @return {?}
      */
     onConfirm() {
         this.nzOnConfirm.emit();
-        super.hide();
+        this.close();
     }
 }
-NzPopconfirmComponent.ɵfac = function NzPopconfirmComponent_Factory(t) { return new (t || NzPopconfirmComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
-NzPopconfirmComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzPopconfirmComponent, selectors: [["nz-popconfirm"]], inputs: { nzOkType: "nzOkType", nzCondition: "nzCondition", nzOkText: "nzOkText", nzCancelText: "nzCancelText", nzIcon: "nzIcon" }, outputs: { nzOnCancel: "nzOnCancel", nzOnConfirm: "nzOnConfirm" }, exportAs: ["nzPopconfirmComponent"], features: [ɵngcc0.ɵɵProvidersFeature([
+NzPopconfirmComponent.ɵfac = function NzPopconfirmComponent_Factory(t) { return new (t || NzPopconfirmComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusTrapFactory), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzNoAnimationDirective, 9)); };
+NzPopconfirmComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzPopconfirmComponent, selectors: [["nz-popconfirm"]], viewQuery: function NzPopconfirmComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.popoverContainer = _t.first);
+    } }, inputs: { nzOkType: "nzOkType", nzCondition: "nzCondition", nzOkText: "nzOkText", nzCancelText: "nzCancelText", nzIcon: "nzIcon" }, outputs: { nzOnCancel: "nzOnCancel", nzOnConfirm: "nzOnConfirm" }, exportAs: ["nzPopconfirmComponent"], features: [ɵngcc0.ɵɵProvidersFeature([
             {
                 provide: NzTooltipBaseComponentLegacy,
                 useExisting: NzPopconfirmComponent
             }
-        ]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c0, decls: 3, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-popover", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-popover-content"], [1, "ant-popover-arrow"], [1, "ant-popover-inner"], [1, "ant-popover-inner-content"], [1, "ant-popover-message"], [4, "nzStringTemplateOutlet"], [1, "ant-popover-buttons"], ["nz-button", "", 3, "nzSize", "click"], [4, "ngIf"], ["nz-button", "", 3, "nzSize", "nzType", "click"], [1, "ant-popover-message-title"], ["nz-icon", "", "nzTheme", "fill", 3, "nzType"]], template: function NzPopconfirmComponent_Template(rf, ctx) { if (rf & 1) {
+        ]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c1, decls: 3, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-popover", 3, "ngClass", "ngStyle", "nzNoAnimation"], ["popoverContainer", ""], [1, "ant-popover-content"], [1, "ant-popover-arrow"], [1, "ant-popover-inner"], [1, "ant-popover-inner-content"], [1, "ant-popover-message"], [4, "nzStringTemplateOutlet"], [1, "ant-popover-buttons"], ["nz-button", "", 3, "nzSize", "click"], [4, "ngIf"], ["nz-button", "", 3, "nzSize", "nzType", "click"], ["okBtn", ""], [1, "ant-popover-message-title"], ["nz-icon", "", "nzTheme", "fill", 3, "nzType"]], template: function NzPopconfirmComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵprojection(0);
-        ɵngcc0.ɵɵtemplate(1, NzPopconfirmComponent_ng_template_1_Template, 15, 13, "ng-template", 0, 1, ɵngcc0.ɵɵtemplateRefExtractor);
-        ɵngcc0.ɵɵlistener("backdropClick", function NzPopconfirmComponent_Template_ng_template_backdropClick_1_listener() { return ctx.hide(); })("detach", function NzPopconfirmComponent_Template_ng_template_detach_1_listener() { return ctx.hide(); })("positionChange", function NzPopconfirmComponent_Template_ng_template_positionChange_1_listener($event) { return ctx.onPositionChange($event); });
+        ɵngcc0.ɵɵtemplate(1, NzPopconfirmComponent_ng_template_1_Template, 17, 13, "ng-template", 0, 1, ɵngcc0.ɵɵtemplateRefExtractor);
+        ɵngcc0.ɵɵlistener("backdropClick", function NzPopconfirmComponent_Template_ng_template_backdropClick_1_listener() { return ctx.close(); })("detach", function NzPopconfirmComponent_Template_ng_template_detach_1_listener() { return ctx.close(); })("positionChange", function NzPopconfirmComponent_Template_ng_template_positionChange_1_listener($event) { return ctx.onPositionChange($event); });
     } if (rf & 2) {
         ɵngcc0.ɵɵadvance(1);
         ɵngcc0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayHasBackdrop", ctx._hasBackdrop)("cdkConnectedOverlayPositions", ctx._positions)("cdkConnectedOverlayOpen", ctx._visible);
-    } }, directives: [ɵngcc2.CdkConnectedOverlay, ɵngcc1.NzConnectedOverlayDirective, ɵngcc3.NgClass, ɵngcc3.NgStyle, ɵngcc1.NzNoAnimationDirective, ɵngcc1.NzStringTemplateOutletDirective, ɵngcc4.NzButtonComponent, ɵngcc3.NgIf, ɵngcc5.NzIconDirective], pipes: [ɵngcc6.NzI18nPipe], styles: ["\n      .ant-popover {\n        position: relative;\n      }\n    "], encapsulation: 2, data: { animation: [zoomBigMotion] }, changeDetection: 0 });
+    } }, directives: [ɵngcc3.CdkConnectedOverlay, ɵngcc2.NzConnectedOverlayDirective, ɵngcc4.NgClass, ɵngcc4.NgStyle, ɵngcc2.NzNoAnimationDirective, ɵngcc2.NzStringTemplateOutletDirective, ɵngcc5.NzButtonComponent, ɵngcc4.NgIf, ɵngcc6.NzIconDirective], pipes: [ɵngcc7.NzI18nPipe], styles: ["\n      .ant-popover {\n        position: relative;\n      }\n    "], encapsulation: 2, data: { animation: [zoomBigMotion] }, changeDetection: 0 });
 /** @nocollapse */
 NzPopconfirmComponent.ctorParameters = () => [
     { type: ChangeDetectorRef },
+    { type: FocusTrapFactory },
     { type: NzNoAnimationDirective, decorators: [{ type: Host }, { type: Optional }] }
 ];
 NzPopconfirmComponent.propDecorators = {
@@ -196,7 +219,8 @@ NzPopconfirmComponent.propDecorators = {
     nzCondition: [{ type: Input }],
     nzIcon: [{ type: Input }],
     nzOnCancel: [{ type: Output }],
-    nzOnConfirm: [{ type: Output }]
+    nzOnConfirm: [{ type: Output }],
+    popoverContainer: [{ type: ViewChild, args: ['popoverContainer', { static: false },] }]
 };
 __decorate([
     InputBoolean(),
@@ -218,11 +242,28 @@ if (false) {
     /** @type {?} */
     NzPopconfirmComponent.prototype.nzOnConfirm;
     /** @type {?} */
+    NzPopconfirmComponent.prototype.popoverContainer;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzPopconfirmComponent.prototype.focusTrap;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzPopconfirmComponent.prototype.previouslyFocusedElement;
+    /** @type {?} */
     NzPopconfirmComponent.prototype._prefix;
     /** @type {?} */
     NzPopconfirmComponent.prototype._trigger;
     /** @type {?} */
     NzPopconfirmComponent.prototype._hasBackdrop;
+    /**
+     * @type {?}
+     * @private
+     */
+    NzPopconfirmComponent.prototype.focusTrapFactory;
     /** @type {?} */
     NzPopconfirmComponent.prototype.noAnimation;
 }
@@ -285,7 +326,7 @@ class NzPopconfirmDirective extends NzTooltipBaseDirective {
         }));
     }
 }
-NzPopconfirmDirective.ɵfac = function NzPopconfirmDirective_Factory(t) { return new (t || NzPopconfirmDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ComponentFactoryResolver), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(NzPopconfirmComponent, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzPopconfirmDirective.ɵfac = function NzPopconfirmDirective_Factory(t) { return new (t || NzPopconfirmDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ComponentFactoryResolver), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(NzPopconfirmComponent, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzNoAnimationDirective, 9)); };
 NzPopconfirmDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPopconfirmDirective, selectors: [["", "nz-popconfirm", ""]], hostVars: 2, hostBindings: function NzPopconfirmDirective_HostBindings(rf, ctx) { if (rf & 2) {
         ɵngcc0.ɵɵclassProp("ant-popover-open", ctx.isTooltipComponentVisible);
     } }, inputs: { nzTrigger: "nzTrigger", specificTitle: ["nzPopconfirmTitle", "specificTitle"], directiveNameTitle: ["nz-popconfirm", "directiveNameTitle"], specificTrigger: ["nzPopconfirmTrigger", "specificTrigger"], specificPlacement: ["nzPopconfirmPlacement", "specificPlacement"], nzOkText: "nzOkText", nzOkType: "nzOkType", nzCancelText: "nzCancelText", nzIcon: "nzIcon", nzCondition: "nzCondition" }, outputs: { nzOnCancel: "nzOnCancel", nzOnConfirm: "nzOnConfirm" }, exportAs: ["nzPopconfirm"], features: [ɵngcc0.ɵɵInheritDefinitionFeature] });
@@ -325,7 +366,7 @@ __decorate([
                 exportAs: 'nzPopconfirmComponent',
                 preserveWhitespaces: false,
                 animations: [zoomBigMotion],
-                template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\">\r\n        <div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <div class=\"ant-popover-message\">\r\n              <ng-container *nzStringTemplateOutlet=\"title\">\r\n                <ng-container *nzStringTemplateOutlet=\"nzIcon\">\r\n                  <i nz-icon [nzType]=\"nzIcon || 'exclamation-circle'\" nzTheme=\"fill\"></i>\r\n                </ng-container>\r\n                <div class=\"ant-popover-message-title\">{{ title }}</div>\r\n              </ng-container>\r\n            </div>\r\n            <div class=\"ant-popover-buttons\">\r\n              <button nz-button [nzSize]=\"'small'\" (click)=\"onCancel()\">\r\n                <ng-container *ngIf=\"nzCancelText\">{{ nzCancelText }}</ng-container>\r\n                <ng-container *ngIf=\"!nzCancelText\">{{ 'Modal.cancelText' | nzI18n }}</ng-container>\r\n              </button>\r\n              <button nz-button [nzSize]=\"'small'\" [nzType]=\"nzOkType\" (click)=\"onConfirm()\">\r\n                <ng-container *ngIf=\"nzOkText\">{{ nzOkText }}</ng-container>\r\n                <ng-container *ngIf=\"!nzOkText\">{{ 'Modal.okText' | nzI18n }}</ng-container>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  (backdropClick)=\"close()\"\r\n  (detach)=\"close()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\">\r\n  <div class=\"ant-popover\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\"\r\n    #popoverContainer>\r\n    <div class=\"ant-popover-content\">\r\n      <div class=\"ant-popover-arrow\"></div>\r\n      <div class=\"ant-popover-inner\">\r\n        <div>\r\n          <div class=\"ant-popover-inner-content\">\r\n            <div class=\"ant-popover-message\">\r\n              <ng-container *nzStringTemplateOutlet=\"title\">\r\n                <ng-container *nzStringTemplateOutlet=\"nzIcon\">\r\n                  <i nz-icon [nzType]=\"nzIcon || 'exclamation-circle'\" nzTheme=\"fill\"></i>\r\n                </ng-container>\r\n                <div class=\"ant-popover-message-title\">{{ title }}</div>\r\n              </ng-container>\r\n            </div>\r\n            <div class=\"ant-popover-buttons\">\r\n              <button nz-button [nzSize]=\"'small'\" (click)=\"onCancel()\">\r\n                <ng-container *ngIf=\"nzCancelText\">{{ nzCancelText }}</ng-container>\r\n                <ng-container *ngIf=\"!nzCancelText\">{{ 'Modal.cancelText' | nzI18n }}</ng-container>\r\n              </button>\r\n              <button nz-button [nzSize]=\"'small'\" [nzType]=\"nzOkType\" (click)=\"onConfirm()\" #okBtn>\r\n                <ng-container *ngIf=\"nzOkText\">{{ nzOkText }}</ng-container>\r\n                <ng-container *ngIf=\"!nzOkText\">{{ 'Modal.okText' | nzI18n }}</ng-container>\r\n              </button>\r\n            </div>\r\n          </div>\r\n        </div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
                 providers: [
                     {
                         provide: NzTooltipBaseComponentLegacy,
@@ -338,7 +379,7 @@ __decorate([
       }
     `]
             }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.FocusTrapFactory }, { type: ɵngcc2.NzNoAnimationDirective, decorators: [{
                 type: Host
             }, {
                 type: Optional
@@ -356,6 +397,9 @@ __decorate([
             type: Input
         }], nzIcon: [{
             type: Input
+        }], popoverContainer: [{
+            type: ViewChild,
+            args: ['popoverContainer', { static: false }]
         }] }); })();
 /*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPopconfirmDirective, [{
         type: Directive,
@@ -368,7 +412,7 @@ __decorate([
             }]
     }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.ComponentFactoryResolver }, { type: ɵngcc0.Renderer2 }, { type: NzPopconfirmComponent, decorators: [{
                 type: Optional
-            }] }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+            }] }, { type: ɵngcc2.NzNoAnimationDirective, decorators: [{
                 type: Host
             }, {
                 type: Optional

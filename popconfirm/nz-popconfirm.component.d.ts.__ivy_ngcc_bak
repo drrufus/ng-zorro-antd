@@ -8,7 +8,10 @@
 import { ChangeDetectorRef, EventEmitter, TemplateRef } from '@angular/core';
 import { NzNoAnimationDirective } from 'ng-zorro-antd/core';
 import { NzTooltipTrigger, NzToolTipComponent } from 'ng-zorro-antd/tooltip';
+import { ElementRef } from '@angular/core';
+import { FocusTrapFactory } from '@angular/cdk/a11y';
 export declare class NzPopconfirmComponent extends NzToolTipComponent {
+    private focusTrapFactory;
     noAnimation?: NzNoAnimationDirective | undefined;
     nzOkText: string;
     nzOkType: string;
@@ -17,11 +20,15 @@ export declare class NzPopconfirmComponent extends NzToolTipComponent {
     nzIcon: string | TemplateRef<void>;
     readonly nzOnCancel: EventEmitter<void>;
     readonly nzOnConfirm: EventEmitter<void>;
+    popoverContainer: ElementRef;
+    private focusTrap;
+    private previouslyFocusedElement;
     _prefix: string;
     _trigger: NzTooltipTrigger;
     _hasBackdrop: boolean;
-    constructor(cdr: ChangeDetectorRef, noAnimation?: NzNoAnimationDirective | undefined);
+    constructor(cdr: ChangeDetectorRef, focusTrapFactory: FocusTrapFactory, noAnimation?: NzNoAnimationDirective | undefined);
     show(): void;
+    close(): void;
     onCancel(): void;
     onConfirm(): void;
 }
