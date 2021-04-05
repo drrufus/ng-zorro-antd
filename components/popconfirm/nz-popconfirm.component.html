@@ -5,8 +5,8 @@
   nzConnectedOverlay
   [cdkConnectedOverlayOrigin]="origin"
   [cdkConnectedOverlayHasBackdrop]="_hasBackdrop"
-  (backdropClick)="hide()"
-  (detach)="hide()"
+  (backdropClick)="close()"
+  (detach)="close()"
   (positionChange)="onPositionChange($event)"
   [cdkConnectedOverlayPositions]="_positions"
   [cdkConnectedOverlayOpen]="_visible">
@@ -15,7 +15,8 @@
     [ngStyle]="nzOverlayStyle"
     [@.disabled]="noAnimation?.nzNoAnimation"
     [nzNoAnimation]="noAnimation?.nzNoAnimation"
-    [@zoomBigMotion]="'active'">
+    [@zoomBigMotion]="'active'"
+    #popoverContainer>
     <div class="ant-popover-content">
       <div class="ant-popover-arrow"></div>
       <div class="ant-popover-inner">
