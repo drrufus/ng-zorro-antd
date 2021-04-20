@@ -31,7 +31,6 @@ import * as ɵngcc7 from 'ng-zorro-antd/button';
 const _c0 = ["modalContainer"];
 const _c1 = ["bodyContainer"];
 const _c2 = ["autoFocusButtonOk"];
-const _c3 = ["focusableHeader"];
 function NzModalComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵprojection(0);
 } }
@@ -101,7 +100,7 @@ function NzModalComponent_ng_template_11_div_0_ng_container_3_Template(rf, ctx) 
 } }
 function NzModalComponent_ng_template_11_div_0_ng_container_4_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "h4", 26, 27);
+    ɵngcc0.ɵɵelement(1, "h4", 26);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r20 = ɵngcc0.ɵɵnextContext(3);
@@ -113,7 +112,7 @@ function NzModalComponent_ng_template_11_div_0_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementStart(1, "div", 24);
     ɵngcc0.ɵɵelementContainerStart(2, 16);
     ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_11_div_0_ng_container_3_Template, 1, 1, "ng-container", 17);
-    ɵngcc0.ɵɵtemplate(4, NzModalComponent_ng_template_11_div_0_ng_container_4_Template, 3, 1, "ng-container", 25);
+    ɵngcc0.ɵɵtemplate(4, NzModalComponent_ng_template_11_div_0_ng_container_4_Template, 2, 1, "ng-container", 25);
     ɵngcc0.ɵɵelementContainerEnd();
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
@@ -129,17 +128,17 @@ function NzModalComponent_ng_template_11_div_0_Template(rf, ctx) { if (rf & 1) {
 function NzModalComponent_ng_template_11_ng_container_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
 } if (rf & 2) {
-    const ctx_r22 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r22.nzContent);
+    const ctx_r21 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r21.nzContent);
 } }
 function NzModalComponent_ng_template_11_ng_container_4_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "div", 29);
+    ɵngcc0.ɵɵelement(1, "div", 28);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r23 = ɵngcc0.ɵɵnextContext(3);
+    const ctx_r22 = ɵngcc0.ɵɵnextContext(3);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r23.nzContent, ɵngcc0.ɵɵsanitizeHtml);
+    ɵngcc0.ɵɵproperty("innerHTML", ctx_r22.nzContent, ɵngcc0.ɵɵsanitizeHtml);
 } }
 function NzModalComponent_ng_template_11_ng_container_4_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
@@ -152,7 +151,7 @@ function NzModalComponent_ng_template_11_ng_container_4_Template(rf, ctx) { if (
     ɵngcc0.ɵɵelementContainerStart(0, 16);
     ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_11_ng_container_4_ng_container_1_Template, 1, 1, "ng-container", 17);
     ɵngcc0.ɵɵtemplate(2, NzModalComponent_ng_template_11_ng_container_4_ng_container_2_Template, 2, 1, "ng-container", 25);
-    ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_11_ng_container_4_ng_container_3_Template, 1, 1, "ng-container", 28);
+    ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_11_ng_container_4_ng_container_3_Template, 1, 1, "ng-container", 27);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r17 = ɵngcc0.ɵɵnextContext(2);
@@ -165,83 +164,83 @@ function NzModalComponent_ng_template_11_ng_container_4_Template(rf, ctx) { if (
 function NzModalComponent_ng_template_11_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
 } if (rf & 2) {
-    const ctx_r25 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r25.nzFooter);
+    const ctx_r24 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r24.nzFooter);
 } }
 function NzModalComponent_ng_template_11_div_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "div", 29);
+    ɵngcc0.ɵɵelement(1, "div", 28);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    const ctx_r25 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("innerHTML", ctx_r25.nzFooter, ɵngcc0.ɵɵsanitizeHtml);
+} }
+function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template(rf, ctx) { if (rf & 1) {
+    const _r31 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 32);
+    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r31); const button_r29 = ctx.$implicit; const ctx_r30 = ɵngcc0.ɵɵnextContext(4); return ctx_r30.onButtonClick(button_r29); });
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    const button_r29 = ctx.$implicit;
+    const ctx_r28 = ɵngcc0.ɵɵnextContext(4);
+    ɵngcc0.ɵɵproperty("hidden", !ctx_r28.getButtonCallableProp(button_r29, "show"))("nzLoading", ctx_r28.getButtonCallableProp(button_r29, "loading"))("disabled", ctx_r28.getButtonCallableProp(button_r29, "disabled"))("nzType", button_r29.type)("nzShape", button_r29.shape)("nzSize", button_r29.size)("nzGhost", button_r29.ghost);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(button_r29.label);
+} }
+function NzModalComponent_ng_template_11_div_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template, 2, 8, "button", 31);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
     const ctx_r26 = ɵngcc0.ɵɵnextContext(3);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r26.nzFooter, ɵngcc0.ɵɵsanitizeHtml);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r26.nzFooter);
 } }
-function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template(rf, ctx) { if (rf & 1) {
-    const _r32 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "button", 33);
-    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r32); const button_r30 = ctx.$implicit; const ctx_r31 = ɵngcc0.ɵɵnextContext(4); return ctx_r31.onButtonClick(button_r30); });
+function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template(rf, ctx) { if (rf & 1) {
+    const _r35 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 35);
+    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r35); const ctx_r34 = ɵngcc0.ɵɵnextContext(4); return ctx_r34.onClickOkCancel("cancel"); });
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
-    const button_r30 = ctx.$implicit;
-    const ctx_r29 = ɵngcc0.ɵɵnextContext(4);
-    ɵngcc0.ɵɵproperty("hidden", !ctx_r29.getButtonCallableProp(button_r30, "show"))("nzLoading", ctx_r29.getButtonCallableProp(button_r30, "loading"))("disabled", ctx_r29.getButtonCallableProp(button_r30, "disabled"))("nzType", button_r30.type)("nzShape", button_r30.shape)("nzSize", button_r30.size)("nzGhost", button_r30.ghost);
+    const ctx_r32 = ɵngcc0.ɵɵnextContext(4);
+    ɵngcc0.ɵɵproperty("nzLoading", ctx_r32.nzCancelLoading)("disabled", ctx_r32.nzCancelDisabled);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(button_r30.label);
+    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r32.cancelText, " ");
 } }
-function NzModalComponent_ng_template_11_div_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_4_button_1_Template, 2, 8, "button", 32);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    const ctx_r27 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngForOf", ctx_r27.nzFooter);
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template(rf, ctx) { if (rf & 1) {
-    const _r36 = ɵngcc0.ɵɵgetCurrentView();
+function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template(rf, ctx) { if (rf & 1) {
+    const _r37 = ɵngcc0.ɵɵgetCurrentView();
     ɵngcc0.ɵɵelementStart(0, "button", 36);
-    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r36); const ctx_r35 = ɵngcc0.ɵɵnextContext(4); return ctx_r35.onClickOkCancel("cancel"); });
+    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r37); const ctx_r36 = ɵngcc0.ɵɵnextContext(4); return ctx_r36.onClickOkCancel("ok"); });
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
     const ctx_r33 = ɵngcc0.ɵɵnextContext(4);
-    ɵngcc0.ɵɵproperty("nzLoading", ctx_r33.nzCancelLoading)("disabled", ctx_r33.nzCancelDisabled);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r33.nzOkType)("nzLoading", ctx_r33.nzOkLoading)("disabled", ctx_r33.nzOkDisabled);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r33.cancelText, " ");
-} }
-function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template(rf, ctx) { if (rf & 1) {
-    const _r38 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "button", 37);
-    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r38); const ctx_r37 = ɵngcc0.ɵɵnextContext(4); return ctx_r37.onClickOkCancel("ok"); });
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    const ctx_r34 = ɵngcc0.ɵɵnextContext(4);
-    ɵngcc0.ɵɵproperty("nzType", ctx_r34.nzOkType)("nzLoading", ctx_r34.nzOkLoading)("disabled", ctx_r34.nzOkDisabled);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r34.okText, " ");
+    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r33.okText, " ");
 } }
 function NzModalComponent_ng_template_11_div_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template, 2, 3, "button", 34);
-    ɵngcc0.ɵɵtemplate(2, NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template, 2, 4, "button", 35);
+    ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_11_div_5_ng_container_5_button_1_Template, 2, 3, "button", 33);
+    ɵngcc0.ɵɵtemplate(2, NzModalComponent_ng_template_11_div_5_ng_container_5_button_2_Template, 2, 4, "button", 34);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r28 = ɵngcc0.ɵɵnextContext(3);
+    const ctx_r27 = ɵngcc0.ɵɵnextContext(3);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r28.nzCancelText !== null);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r27.nzCancelText !== null);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r28.nzOkText !== null);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r27.nzOkText !== null);
 } }
 function NzModalComponent_ng_template_11_div_5_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 30);
+    ɵngcc0.ɵɵelementStart(0, "div", 29);
     ɵngcc0.ɵɵelementContainerStart(1, 16);
     ɵngcc0.ɵɵtemplate(2, NzModalComponent_ng_template_11_div_5_ng_container_2_Template, 1, 1, "ng-container", 17);
     ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_11_div_5_ng_container_3_Template, 2, 1, "ng-container", 25);
     ɵngcc0.ɵɵtemplate(4, NzModalComponent_ng_template_11_div_5_ng_container_4_Template, 2, 1, "ng-container", 25);
-    ɵngcc0.ɵɵtemplate(5, NzModalComponent_ng_template_11_div_5_ng_container_5_Template, 3, 2, "ng-container", 31);
+    ɵngcc0.ɵɵtemplate(5, NzModalComponent_ng_template_11_div_5_ng_container_5_Template, 3, 2, "ng-container", 30);
     ɵngcc0.ɵɵelementContainerEnd();
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
@@ -276,32 +275,32 @@ function NzModalComponent_ng_template_11_Template(rf, ctx) { if (rf & 1) {
 function NzModalComponent_ng_template_13_ng_container_6_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
 } if (rf & 2) {
-    const ctx_r39 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r39.nzTitle);
+    const ctx_r38 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r38.nzTitle);
 } }
 function NzModalComponent_ng_template_13_ng_container_7_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "span", 29);
+    ɵngcc0.ɵɵelement(1, "span", 28);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r40 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r39 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r40.nzTitle, ɵngcc0.ɵɵsanitizeHtml);
+    ɵngcc0.ɵɵproperty("innerHTML", ctx_r39.nzTitle, ɵngcc0.ɵɵsanitizeHtml);
 } }
 function NzModalComponent_ng_template_13_ng_container_11_ng_container_1_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
 } if (rf & 2) {
-    const ctx_r45 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r45.nzContent);
+    const ctx_r44 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r44.nzContent);
 } }
 function NzModalComponent_ng_template_13_ng_container_11_ng_container_2_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "div", 29);
+    ɵngcc0.ɵɵelement(1, "div", 28);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r46 = ɵngcc0.ɵɵnextContext(3);
+    const ctx_r45 = ɵngcc0.ɵɵnextContext(3);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r46.nzContent, ɵngcc0.ɵɵsanitizeHtml);
+    ɵngcc0.ɵɵproperty("innerHTML", ctx_r45.nzContent, ɵngcc0.ɵɵsanitizeHtml);
 } }
 function NzModalComponent_ng_template_13_ng_container_11_ng_container_3_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementContainer(0, 18);
@@ -314,60 +313,60 @@ function NzModalComponent_ng_template_13_ng_container_11_Template(rf, ctx) { if 
     ɵngcc0.ɵɵelementContainerStart(0, 16);
     ɵngcc0.ɵɵtemplate(1, NzModalComponent_ng_template_13_ng_container_11_ng_container_1_Template, 1, 1, "ng-container", 17);
     ɵngcc0.ɵɵtemplate(2, NzModalComponent_ng_template_13_ng_container_11_ng_container_2_Template, 2, 1, "ng-container", 25);
-    ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_13_ng_container_11_ng_container_3_Template, 1, 1, "ng-container", 28);
+    ɵngcc0.ɵɵtemplate(3, NzModalComponent_ng_template_13_ng_container_11_ng_container_3_Template, 1, 1, "ng-container", 27);
     ɵngcc0.ɵɵelementContainerEnd();
 } if (rf & 2) {
-    const ctx_r42 = ɵngcc0.ɵɵnextContext(2);
+    const ctx_r41 = ɵngcc0.ɵɵnextContext(2);
     ɵngcc0.ɵɵproperty("ngSwitch", true);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", ctx_r42.isTemplateRef(ctx_r42.nzContent));
+    ɵngcc0.ɵɵproperty("ngSwitchCase", ctx_r41.isTemplateRef(ctx_r41.nzContent));
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", ctx_r42.isNonEmptyString(ctx_r42.nzContent));
+    ɵngcc0.ɵɵproperty("ngSwitchCase", ctx_r41.isNonEmptyString(ctx_r41.nzContent));
 } }
 function NzModalComponent_ng_template_13_button_13_Template(rf, ctx) { if (rf & 1) {
-    const _r49 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "button", 36);
-    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_13_button_13_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r49); const ctx_r48 = ɵngcc0.ɵɵnextContext(2); return ctx_r48.onClickOkCancel("cancel"); });
+    const _r48 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 35);
+    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_13_button_13_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r48); const ctx_r47 = ɵngcc0.ɵɵnextContext(2); return ctx_r47.onClickOkCancel("cancel"); });
     ɵngcc0.ɵɵtext(1);
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r43 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("nzLoading", ctx_r43.nzCancelLoading)("disabled", ctx_r43.nzCancelDisabled);
+    const ctx_r42 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵproperty("nzLoading", ctx_r42.nzCancelLoading)("disabled", ctx_r42.nzCancelDisabled);
     ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r43.cancelText, " ");
+    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r42.cancelText, " ");
 } }
 function NzModalComponent_ng_template_13_button_14_Template(rf, ctx) { if (rf & 1) {
-    const _r52 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "button", 37, 44);
-    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_13_button_14_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r52); const ctx_r51 = ɵngcc0.ɵɵnextContext(2); return ctx_r51.onClickOkCancel("ok"); });
+    const _r51 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "button", 36, 43);
+    ɵngcc0.ɵɵlistener("click", function NzModalComponent_ng_template_13_button_14_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r51); const ctx_r50 = ɵngcc0.ɵɵnextContext(2); return ctx_r50.onClickOkCancel("ok"); });
     ɵngcc0.ɵɵtext(2);
     ɵngcc0.ɵɵelementEnd();
 } if (rf & 2) {
-    const ctx_r44 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("nzType", ctx_r44.nzOkType)("nzLoading", ctx_r44.nzOkLoading)("disabled", ctx_r44.nzOkDisabled);
+    const ctx_r43 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r43.nzOkType)("nzLoading", ctx_r43.nzOkLoading)("disabled", ctx_r43.nzOkDisabled);
     ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r44.okText, " ");
+    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r43.okText, " ");
 } }
 function NzModalComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵelementStart(0, "div", 20);
-    ɵngcc0.ɵɵelementStart(1, "div", 38);
-    ɵngcc0.ɵɵelementStart(2, "div", 39);
-    ɵngcc0.ɵɵelement(3, "i", 40);
-    ɵngcc0.ɵɵelementStart(4, "span", 41);
+    ɵngcc0.ɵɵelementStart(1, "div", 37);
+    ɵngcc0.ɵɵelementStart(2, "div", 38);
+    ɵngcc0.ɵɵelement(3, "i", 39);
+    ɵngcc0.ɵɵelementStart(4, "span", 40);
     ɵngcc0.ɵɵelementContainerStart(5, 16);
     ɵngcc0.ɵɵtemplate(6, NzModalComponent_ng_template_13_ng_container_6_Template, 1, 1, "ng-container", 17);
     ɵngcc0.ɵɵtemplate(7, NzModalComponent_ng_template_13_ng_container_7_Template, 2, 1, "ng-container", 25);
     ɵngcc0.ɵɵelementContainerEnd();
     ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementStart(8, "div", 42);
+    ɵngcc0.ɵɵelementStart(8, "div", 41);
     ɵngcc0.ɵɵelementContainerStart(9, null, 21);
     ɵngcc0.ɵɵtemplate(11, NzModalComponent_ng_template_13_ng_container_11_Template, 4, 3, "ng-container", 8);
     ɵngcc0.ɵɵelementContainerEnd();
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementStart(12, "div", 43);
-    ɵngcc0.ɵɵtemplate(13, NzModalComponent_ng_template_13_button_13_Template, 2, 3, "button", 34);
-    ɵngcc0.ɵɵtemplate(14, NzModalComponent_ng_template_13_button_14_Template, 3, 4, "button", 35);
+    ɵngcc0.ɵɵelementStart(12, "div", 42);
+    ɵngcc0.ɵɵtemplate(13, NzModalComponent_ng_template_13_button_13_Template, 2, 3, "button", 33);
+    ɵngcc0.ɵɵtemplate(14, NzModalComponent_ng_template_13_button_14_Template, 3, 4, "button", 34);
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
     ɵngcc0.ɵɵelementEnd();
@@ -389,7 +388,7 @@ function NzModalComponent_ng_template_13_Template(rf, ctx) { if (rf & 1) {
     ɵngcc0.ɵɵadvance(1);
     ɵngcc0.ɵɵproperty("ngIf", ctx_r9.nzOkText !== null);
 } }
-const _c4 = ["*"];
+const _c3 = ["*"];
 function NzModalConfig() { }
 if (false) {
     /** @type {?|undefined} */
@@ -749,6 +748,7 @@ class NzModalComponent extends NzModalRef {
             warnDeprecation('`NZ_MODAL_CONFIG` has been deprecated and will be removed in 9.0.0. Please use global config instead.');
         }
     }
+    // Only aim to focus the ok button that needs to be auto focused
     /**
      * @param {?} value
      * @return {?}
@@ -1144,14 +1144,6 @@ class NzModalComponent extends NzModalRef {
             // Emit open/close event after animations over
             if (visible) {
                 this.nzAfterOpen.emit();
-                // An attempt to focus on a modal's header:
-                try {
-                    this.focusableHeader.nativeElement.focus();
-                    //(document.getElementsByClassName("modal-focusable-header")[0] as any).focus();
-                }
-                catch (e) {
-                    // Nothing to do
-                }
             }
             else {
                 this.nzAfterClose.emit(closeResult);
@@ -1367,14 +1359,12 @@ NzModalComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzModalComponent, s
         ɵngcc0.ɵɵstaticViewQuery(_c0, true);
         ɵngcc0.ɵɵviewQuery(_c1, true, ViewContainerRef);
         ɵngcc0.ɵɵviewQuery(_c2, true, ElementRef);
-        ɵngcc0.ɵɵviewQuery(_c3, true);
     } if (rf & 2) {
         var _t;
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.modalContainer = _t.first);
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.bodyContainer = _t.first);
         ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.autoFocusButtonOk = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.focusableHeader = _t.first);
-    } }, inputs: { nzVisible: "nzVisible", nzClosable: "nzClosable", nzOkLoading: "nzOkLoading", nzOkDisabled: "nzOkDisabled", nzCancelDisabled: "nzCancelDisabled", nzCancelLoading: "nzCancelLoading", nzKeyboard: "nzKeyboard", nzNoAnimation: "nzNoAnimation", nzGetContainer: "nzGetContainer", nzZIndex: "nzZIndex", nzWidth: "nzWidth", nzCloseIcon: "nzCloseIcon", nzOkType: "nzOkType", nzIconType: "nzIconType", nzModalType: "nzModalType", nzCloseAriaLabel: "nzCloseAriaLabel", nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel", nzFooter: "nzFooter", nzMask: "nzMask", nzMaskClosable: "nzMaskClosable", nzContent: "nzContent", nzComponentParams: "nzComponentParams", nzWrapClassName: "nzWrapClassName", nzClassName: "nzClassName", nzStyle: "nzStyle", nzTitle: "nzTitle", nzMaskStyle: "nzMaskStyle", nzBodyStyle: "nzBodyStyle", nzOkText: "nzOkText", nzCancelText: "nzCancelText" }, outputs: { nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel", nzAfterOpen: "nzAfterOpen", nzAfterClose: "nzAfterClose", nzVisibleChange: "nzVisibleChange" }, exportAs: ["nzModal"], features: [ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c4, decls: 15, vars: 22, consts: [["tplOriginContent", ""], [3, "nzNoAnimation"], ["class", "ant-modal-mask", 3, "ngClass", "ant-modal-mask-hidden", "ngStyle", "zIndex", 4, "ngIf"], [3, "click", "mouseup"], ["role", "region", 3, "ngClass", "ngStyle", "mousedown"], ["modalContainer", ""], ["role", "dialog", "aria-modal", "true", 1, "ant-modal-content"], ["class", "ant-modal-close", 3, "click", 4, "ngIf"], [3, "ngSwitch", 4, "ngIf"], ["tplContentDefault", ""], ["tplContentConfirm", ""], [1, "ant-modal-mask", 3, "ngClass", "ngStyle"], [1, "ant-modal-close", 3, "click"], [1, "ant-modal-close-x"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 1, "ant-modal-close-icon", 3, "nzType"], [3, "ngSwitch"], [3, "ngTemplateOutlet", 4, "ngSwitchCase"], [3, "ngTemplateOutlet"], ["class", "ant-modal-header", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["bodyContainer", ""], ["class", "ant-modal-footer", 4, "ngIf"], [1, "ant-modal-header"], [1, "ant-modal-title"], [4, "ngSwitchCase"], ["role", "heading", "tabindex", "0", 1, "modal-focusable-header", 2, "margin-bottom", "0", 3, "innerHTML"], ["focusableHeader", ""], [3, "ngTemplateOutlet", 4, "ngSwitchDefault"], [3, "innerHTML"], [1, "ant-modal-footer"], [4, "ngSwitchDefault"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click", 4, "ngFor", "ngForOf"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click"], ["nz-button", "", 3, "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzLoading", "disabled", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "nzType"], [1, "ant-modal-confirm-title"], [1, "ant-modal-confirm-content"], [1, "ant-modal-confirm-btns"], ["autoFocusButtonOk", ""]], template: function NzModalComponent_Template(rf, ctx) { if (rf & 1) {
+    } }, inputs: { nzVisible: "nzVisible", nzClosable: "nzClosable", nzOkLoading: "nzOkLoading", nzOkDisabled: "nzOkDisabled", nzCancelDisabled: "nzCancelDisabled", nzCancelLoading: "nzCancelLoading", nzKeyboard: "nzKeyboard", nzNoAnimation: "nzNoAnimation", nzGetContainer: "nzGetContainer", nzZIndex: "nzZIndex", nzWidth: "nzWidth", nzCloseIcon: "nzCloseIcon", nzOkType: "nzOkType", nzIconType: "nzIconType", nzModalType: "nzModalType", nzCloseAriaLabel: "nzCloseAriaLabel", nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel", nzFooter: "nzFooter", nzMask: "nzMask", nzMaskClosable: "nzMaskClosable", nzContent: "nzContent", nzComponentParams: "nzComponentParams", nzWrapClassName: "nzWrapClassName", nzClassName: "nzClassName", nzStyle: "nzStyle", nzTitle: "nzTitle", nzMaskStyle: "nzMaskStyle", nzBodyStyle: "nzBodyStyle", nzOkText: "nzOkText", nzCancelText: "nzCancelText" }, outputs: { nzOnOk: "nzOnOk", nzOnCancel: "nzOnCancel", nzAfterOpen: "nzAfterOpen", nzAfterClose: "nzAfterClose", nzVisibleChange: "nzVisibleChange" }, exportAs: ["nzModal"], features: [ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c3, decls: 15, vars: 22, consts: [["tplOriginContent", ""], [3, "nzNoAnimation"], ["class", "ant-modal-mask", 3, "ngClass", "ant-modal-mask-hidden", "ngStyle", "zIndex", 4, "ngIf"], [3, "click", "mouseup"], ["role", "region", 3, "ngClass", "ngStyle", "mousedown"], ["modalContainer", ""], ["role", "dialog", "aria-modal", "true", 1, "ant-modal-content"], ["class", "ant-modal-close", 3, "click", 4, "ngIf"], [3, "ngSwitch", 4, "ngIf"], ["tplContentDefault", ""], ["tplContentConfirm", ""], [1, "ant-modal-mask", 3, "ngClass", "ngStyle"], [1, "ant-modal-close", 3, "click"], [1, "ant-modal-close-x"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 1, "ant-modal-close-icon", 3, "nzType"], [3, "ngSwitch"], [3, "ngTemplateOutlet", 4, "ngSwitchCase"], [3, "ngTemplateOutlet"], ["class", "ant-modal-header", 4, "ngIf"], [1, "ant-modal-body", 3, "ngStyle"], ["bodyContainer", ""], ["class", "ant-modal-footer", 4, "ngIf"], [1, "ant-modal-header"], [1, "ant-modal-title"], [4, "ngSwitchCase"], ["role", "heading", "cdkFocusInitial", "", "tabindex", "0", 1, "modal-focusable-header", 2, "margin-bottom", "0", 3, "innerHTML"], [3, "ngTemplateOutlet", 4, "ngSwitchDefault"], [3, "innerHTML"], [1, "ant-modal-footer"], [4, "ngSwitchDefault"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click", 4, "ngFor", "ngForOf"], ["nz-button", "", 3, "hidden", "nzLoading", "disabled", "nzType", "nzShape", "nzSize", "nzGhost", "click"], ["nz-button", "", 3, "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click", 4, "ngIf"], ["nz-button", "", 3, "nzLoading", "disabled", "click"], ["nz-button", "", 3, "nzType", "nzLoading", "disabled", "click"], [1, "ant-modal-confirm-body-wrapper"], [1, "ant-modal-confirm-body"], ["nz-icon", "", 3, "nzType"], [1, "ant-modal-confirm-title"], [1, "ant-modal-confirm-content"], [1, "ant-modal-confirm-btns"], ["autoFocusButtonOk", ""]], template: function NzModalComponent_Template(rf, ctx) { if (rf & 1) {
         ɵngcc0.ɵɵprojectionDef();
         ɵngcc0.ɵɵtemplate(0, NzModalComponent_ng_template_0_Template, 1, 0, "ng-template", null, 0, ɵngcc0.ɵɵtemplateRefExtractor);
         ɵngcc0.ɵɵelementStart(2, "div", 1);
@@ -1463,7 +1453,6 @@ NzModalComponent.propDecorators = {
     modalContainer: [{ type: ViewChild, args: ['modalContainer', { static: true },] }],
     bodyContainer: [{ type: ViewChild, args: ['bodyContainer', { static: false, read: ViewContainerRef },] }],
     autoFocusButtonOk: [{ type: ViewChild, args: ['autoFocusButtonOk', { static: false, read: ElementRef },] }],
-    focusableHeader: [{ type: ViewChild, args: ['focusableHeader', { static: false },] }],
     modalFooter: [{ type: ContentChild, args: [NzModalFooterDirective, { static: false },] }]
 };
 __decorate([
@@ -1533,7 +1522,7 @@ __decorate([
         args: [{
                 selector: 'nz-modal',
                 exportAs: 'nzModal',
-                template: "<ng-template #tplOriginContent><ng-content></ng-content></ng-template> <!-- Compatible: the <ng-content> can appear only once -->\r\n\r\n<div [nzNoAnimation]=\"nzNoAnimation\">\r\n  <div *ngIf=\"mask\"\r\n    class=\"ant-modal-mask\"\r\n    [ngClass]=\"maskAnimationClassMap\"\r\n    [class.ant-modal-mask-hidden]=\"hidden\"\r\n    [ngStyle]=\"nzMaskStyle\"\r\n    [style.zIndex]=\"nzZIndex\"\r\n  ></div>\r\n  <div\r\n    (click)=\"onClickMask($event)\"\r\n    (mouseup)=\"onDialogUp()\"\r\n    class=\"ant-modal-wrap {{ nzWrapClassName }}\"\r\n    [style.zIndex]=\"nzZIndex\"\r\n    [style.visibility]=\"hidden ? 'hidden' : null\"\r\n  >\r\n    <div #modalContainer\r\n      class=\"ant-modal {{ nzClassName }}\"\r\n      (mousedown)=\"onMaskDialogDown()\"\r\n      [ngClass]=\"modalAnimationClassMap\"\r\n      [ngStyle]=\"nzStyle\"\r\n      [style.width]=\"nzWidth | nzToCssUnit\"\r\n      [style.transform-origin]=\"transformOrigin\"\r\n      role=\"region\"\r\n    >\r\n      <div class=\"ant-modal-content\" role=\"dialog\" aria-modal=\"true\">\r\n        <button *ngIf=\"nzClosable\" (click)=\"onClickCloseBtn()\" class=\"ant-modal-close\" [attr.aria-label]=\"nzCloseAriaLabel\">\r\n          <span class=\"ant-modal-close-x\">\r\n            <ng-container *nzStringTemplateOutlet=\"nzCloseIcon\">\r\n              <i nz-icon [nzType]=\"nzCloseIcon\" class=\"ant-modal-close-icon\"></i>\r\n            </ng-container>\r\n          </span>\r\n        </button>\r\n        <ng-container *ngIf=\"!hidden\" [ngSwitch]=\"true\">\r\n          <ng-container *ngSwitchCase=\"isModalType('default')\" [ngTemplateOutlet]=\"tplContentDefault\"></ng-container>\r\n          <ng-container *ngSwitchCase=\"isModalType('confirm')\" [ngTemplateOutlet]=\"tplContentConfirm\"></ng-container>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!-- [Predefined] Default Modal Content -->\r\n<ng-template #tplContentDefault>\r\n  <div *ngIf=\"nzTitle\" class=\"ant-modal-header\">\r\n    <div class=\"ant-modal-title\">\r\n      <ng-container [ngSwitch]=\"true\">\r\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\r\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\">\r\n          <h4 style=\"margin-bottom: 0;\" role=\"heading\" [innerHTML]=\"nzTitle\" class=\"modal-focusable-header\" #focusableHeader tabindex=\"0\"></h4>\r\n        </ng-container>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\r\n    <ng-container #bodyContainer>\r\n      <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\r\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\r\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\r\n        <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\r\n      </ng-container>\r\n    </ng-container>\r\n  </div>\r\n  <div *ngIf=\"nzFooter !== null\" class=\"ant-modal-footer\">\r\n    <ng-container [ngSwitch]=\"true\">\r\n      <ng-container *ngSwitchCase=\"isTemplateRef(nzFooter)\" [ngTemplateOutlet]=\"nzFooter\"></ng-container>\r\n      <ng-container *ngSwitchCase=\"isNonEmptyString(nzFooter)\"><div [innerHTML]=\"nzFooter\"></div></ng-container>\r\n      <ng-container *ngSwitchCase=\"isModalButtons(nzFooter)\">\r\n        <button *ngFor=\"let button of nzFooter\" nz-button\r\n          (click)=\"onButtonClick(button)\"\r\n          [hidden]=\"!getButtonCallableProp(button, 'show')\"\r\n          [nzLoading]=\"getButtonCallableProp(button, 'loading')\"\r\n          [disabled]=\"getButtonCallableProp(button, 'disabled')\"\r\n          [nzType]=\"button.type\"\r\n          [nzShape]=\"button.shape\"\r\n          [nzSize]=\"button.size\"\r\n          [nzGhost]=\"button.ghost\"\r\n        >{{ button.label }}</button>\r\n      </ng-container>\r\n      <ng-container *ngSwitchDefault>\r\n        <button *ngIf=\"nzCancelText!==null\" nz-button (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\" [disabled]=\"nzCancelDisabled\">\r\n          {{ cancelText }}\r\n        </button>\r\n        <button *ngIf=\"nzOkText!==null\" nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\" [disabled]=\"nzOkDisabled\">\r\n          {{ okText }}\r\n        </button>\r\n      </ng-container>\r\n    </ng-container>\r\n  </div>\r\n</ng-template>\r\n<!-- /[Predefined] Default Modal Content -->\r\n\r\n<!-- [Predefined] Confirm Modal Content -->\r\n<ng-template #tplContentConfirm>\r\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\r\n    <div class=\"ant-modal-confirm-body-wrapper\">\r\n      <div class=\"ant-modal-confirm-body\">\r\n        <i nz-icon [nzType]=\"nzIconType\"></i>\r\n        <span class=\"ant-modal-confirm-title\">\r\n          <ng-container [ngSwitch]=\"true\">\r\n            <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\r\n            <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><span [innerHTML]=\"nzTitle\"></span></ng-container>\r\n          </ng-container>\r\n        </span>\r\n        <div class=\"ant-modal-confirm-content\">\r\n          <ng-container #bodyContainer>\r\n            <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\r\n              <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\r\n              <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\r\n              <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\r\n            </ng-container>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n      <div class=\"ant-modal-confirm-btns\">\r\n        <button *ngIf=\"nzCancelText!==null\"\r\n          nz-button\r\n          (click)=\"onClickOkCancel('cancel')\"\r\n          [nzLoading]=\"nzCancelLoading\"\r\n          [disabled]=\"nzCancelDisabled\">\r\n          {{ cancelText }}\r\n        </button>\r\n        <button #autoFocusButtonOk\r\n          *ngIf=\"nzOkText!==null\"\r\n          nz-button\r\n          (click)=\"onClickOkCancel('ok')\"\r\n          [nzType]=\"nzOkType\"\r\n          [nzLoading]=\"nzOkLoading\"\r\n          [disabled]=\"nzOkDisabled\">\r\n          {{ okText }}\r\n        </button>\r\n      </div>\r\n    </div> <!-- /.ant-modal-confirm-body-wrapper -->\r\n  </div>\r\n</ng-template>\r\n<!-- /[Predefined] Confirm Modal Content -->\r\n",
+                template: "<ng-template #tplOriginContent><ng-content></ng-content></ng-template> <!-- Compatible: the <ng-content> can appear only once -->\r\n\r\n<div [nzNoAnimation]=\"nzNoAnimation\">\r\n  <div *ngIf=\"mask\"\r\n    class=\"ant-modal-mask\"\r\n    [ngClass]=\"maskAnimationClassMap\"\r\n    [class.ant-modal-mask-hidden]=\"hidden\"\r\n    [ngStyle]=\"nzMaskStyle\"\r\n    [style.zIndex]=\"nzZIndex\"\r\n  ></div>\r\n  <div\r\n    (click)=\"onClickMask($event)\"\r\n    (mouseup)=\"onDialogUp()\"\r\n    class=\"ant-modal-wrap {{ nzWrapClassName }}\"\r\n    [style.zIndex]=\"nzZIndex\"\r\n    [style.visibility]=\"hidden ? 'hidden' : null\"\r\n  >\r\n    <div #modalContainer\r\n      class=\"ant-modal {{ nzClassName }}\"\r\n      (mousedown)=\"onMaskDialogDown()\"\r\n      [ngClass]=\"modalAnimationClassMap\"\r\n      [ngStyle]=\"nzStyle\"\r\n      [style.width]=\"nzWidth | nzToCssUnit\"\r\n      [style.transform-origin]=\"transformOrigin\"\r\n      role=\"region\"\r\n    >\r\n      <div class=\"ant-modal-content\" role=\"dialog\" aria-modal=\"true\">\r\n        <button *ngIf=\"nzClosable\" (click)=\"onClickCloseBtn()\" class=\"ant-modal-close\" [attr.aria-label]=\"nzCloseAriaLabel\">\r\n          <span class=\"ant-modal-close-x\">\r\n            <ng-container *nzStringTemplateOutlet=\"nzCloseIcon\">\r\n              <i nz-icon [nzType]=\"nzCloseIcon\" class=\"ant-modal-close-icon\"></i>\r\n            </ng-container>\r\n          </span>\r\n        </button>\r\n        <ng-container *ngIf=\"!hidden\" [ngSwitch]=\"true\">\r\n          <ng-container *ngSwitchCase=\"isModalType('default')\" [ngTemplateOutlet]=\"tplContentDefault\"></ng-container>\r\n          <ng-container *ngSwitchCase=\"isModalType('confirm')\" [ngTemplateOutlet]=\"tplContentConfirm\"></ng-container>\r\n        </ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</div>\r\n\r\n<!-- [Predefined] Default Modal Content -->\r\n<ng-template #tplContentDefault>\r\n  <div *ngIf=\"nzTitle\" class=\"ant-modal-header\">\r\n    <div class=\"ant-modal-title\">\r\n      <ng-container [ngSwitch]=\"true\">\r\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\r\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\">\r\n          <h4 style=\"margin-bottom: 0;\" role=\"heading\" [innerHTML]=\"nzTitle\" class=\"modal-focusable-header\" cdkFocusInitial tabindex=\"0\"></h4>\r\n        </ng-container>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\r\n    <ng-container #bodyContainer>\r\n      <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\r\n        <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\r\n        <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\r\n        <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\r\n      </ng-container>\r\n    </ng-container>\r\n  </div>\r\n  <div *ngIf=\"nzFooter !== null\" class=\"ant-modal-footer\">\r\n    <ng-container [ngSwitch]=\"true\">\r\n      <ng-container *ngSwitchCase=\"isTemplateRef(nzFooter)\" [ngTemplateOutlet]=\"nzFooter\"></ng-container>\r\n      <ng-container *ngSwitchCase=\"isNonEmptyString(nzFooter)\"><div [innerHTML]=\"nzFooter\"></div></ng-container>\r\n      <ng-container *ngSwitchCase=\"isModalButtons(nzFooter)\">\r\n        <button *ngFor=\"let button of nzFooter\" nz-button\r\n          (click)=\"onButtonClick(button)\"\r\n          [hidden]=\"!getButtonCallableProp(button, 'show')\"\r\n          [nzLoading]=\"getButtonCallableProp(button, 'loading')\"\r\n          [disabled]=\"getButtonCallableProp(button, 'disabled')\"\r\n          [nzType]=\"button.type\"\r\n          [nzShape]=\"button.shape\"\r\n          [nzSize]=\"button.size\"\r\n          [nzGhost]=\"button.ghost\"\r\n        >{{ button.label }}</button>\r\n      </ng-container>\r\n      <ng-container *ngSwitchDefault>\r\n        <button *ngIf=\"nzCancelText!==null\" nz-button (click)=\"onClickOkCancel('cancel')\" [nzLoading]=\"nzCancelLoading\" [disabled]=\"nzCancelDisabled\">\r\n          {{ cancelText }}\r\n        </button>\r\n        <button *ngIf=\"nzOkText!==null\" nz-button [nzType]=\"nzOkType\" (click)=\"onClickOkCancel('ok')\" [nzLoading]=\"nzOkLoading\" [disabled]=\"nzOkDisabled\">\r\n          {{ okText }}\r\n        </button>\r\n      </ng-container>\r\n    </ng-container>\r\n  </div>\r\n</ng-template>\r\n<!-- /[Predefined] Default Modal Content -->\r\n\r\n<!-- [Predefined] Confirm Modal Content -->\r\n<ng-template #tplContentConfirm>\r\n  <div class=\"ant-modal-body\" [ngStyle]=\"nzBodyStyle\">\r\n    <div class=\"ant-modal-confirm-body-wrapper\">\r\n      <div class=\"ant-modal-confirm-body\">\r\n        <i nz-icon [nzType]=\"nzIconType\"></i>\r\n        <span class=\"ant-modal-confirm-title\">\r\n          <ng-container [ngSwitch]=\"true\">\r\n            <ng-container *ngSwitchCase=\"isTemplateRef(nzTitle)\" [ngTemplateOutlet]=\"nzTitle\"></ng-container>\r\n            <ng-container *ngSwitchCase=\"isNonEmptyString(nzTitle)\"><span [innerHTML]=\"nzTitle\"></span></ng-container>\r\n          </ng-container>\r\n        </span>\r\n        <div class=\"ant-modal-confirm-content\">\r\n          <ng-container #bodyContainer>\r\n            <ng-container *ngIf=\"!isComponent(nzContent)\" [ngSwitch]=\"true\">\r\n              <ng-container *ngSwitchCase=\"isTemplateRef(nzContent)\" [ngTemplateOutlet]=\"nzContent\"></ng-container>\r\n              <ng-container *ngSwitchCase=\"isNonEmptyString(nzContent)\"><div [innerHTML]=\"nzContent\"></div></ng-container>\r\n              <ng-container *ngSwitchDefault [ngTemplateOutlet]=\"tplOriginContent\"></ng-container>\r\n            </ng-container>\r\n          </ng-container>\r\n        </div>\r\n      </div>\r\n      <div class=\"ant-modal-confirm-btns\">\r\n        <button *ngIf=\"nzCancelText!==null\"\r\n          nz-button\r\n          (click)=\"onClickOkCancel('cancel')\"\r\n          [nzLoading]=\"nzCancelLoading\"\r\n          [disabled]=\"nzCancelDisabled\">\r\n          {{ cancelText }}\r\n        </button>\r\n        <button #autoFocusButtonOk\r\n          *ngIf=\"nzOkText!==null\"\r\n          nz-button\r\n          (click)=\"onClickOkCancel('ok')\"\r\n          [nzType]=\"nzOkType\"\r\n          [nzLoading]=\"nzOkLoading\"\r\n          [disabled]=\"nzOkDisabled\">\r\n          {{ okText }}\r\n        </button>\r\n      </div>\r\n    </div> <!-- /.ant-modal-confirm-body-wrapper -->\r\n  </div>\r\n</ng-template>\r\n<!-- /[Predefined] Confirm Modal Content -->\r\n",
                 // Using OnPush for modal caused footer can not to detect changes. we can fix it when 8.x.
                 changeDetection: ChangeDetectionStrategy.Default
             }]
@@ -1629,9 +1618,6 @@ __decorate([
         }], autoFocusButtonOk: [{
             type: ViewChild,
             args: ['autoFocusButtonOk', { static: false, read: ElementRef }]
-        }], focusableHeader: [{
-            type: ViewChild,
-            args: ['focusableHeader', { static: false }]
         }] }); })();
 if (false) {
     /** @type {?} */
@@ -1708,8 +1694,6 @@ if (false) {
     NzModalComponent.prototype.bodyContainer;
     /** @type {?} */
     NzModalComponent.prototype.autoFocusButtonOk;
-    /** @type {?} */
-    NzModalComponent.prototype.focusableHeader;
     /** @type {?} */
     NzModalComponent.prototype.locale;
     /** @type {?} */

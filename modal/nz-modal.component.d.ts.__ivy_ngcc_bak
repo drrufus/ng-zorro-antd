@@ -5,6 +5,13 @@
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+/**
+ * @license
+ * Copyright Alibaba.com All Rights Reserved.
+ *
+ * Use of this source code is governed by an MIT-style license that can be
+ * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
+ */
 import { FocusTrapFactory } from '@angular/cdk/a11y';
 import { Overlay, OverlayKeyboardDispatcher, OverlayRef } from '@angular/cdk/overlay';
 import { AfterViewInit, ChangeDetectorRef, ComponentFactoryResolver, ComponentRef, ElementRef, EventEmitter, OnChanges, OnDestroy, OnInit, SimpleChanges, TemplateRef, Type, ViewContainerRef } from '@angular/core';
@@ -68,7 +75,6 @@ export declare class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     modalContainer: ElementRef;
     bodyContainer: ViewContainerRef;
     autoFocusButtonOk: ElementRef;
-    focusableHeader: ElementRef;
     modalFooter: NzModalFooterDirective;
     readonly afterOpen: Observable<void>;
     readonly afterClose: Observable<R>;
