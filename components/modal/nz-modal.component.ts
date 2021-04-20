@@ -118,8 +118,6 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
   @ViewChild('bodyContainer', { static: false, read: ViewContainerRef }) bodyContainer: ViewContainerRef;
   @ViewChild('autoFocusButtonOk', { static: false, read: ElementRef }) autoFocusButtonOk: ElementRef; // Only aim to focus the ok button that needs to be auto focused
 
-  @ViewChild('focusableHeader', { static: false }) focusableHeader: ElementRef;
-
   @ContentChild(NzModalFooterDirective, { static: false })
   set modalFooter(value: NzModalFooterDirective) {
     if (value && value.templateRef) {
@@ -442,13 +440,6 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
       // Emit open/close event after animations over
       if (visible) {
         this.nzAfterOpen.emit();
-        // An attempt to focus on a modal's header:
-        try {
-          this.focusableHeader.nativeElement.focus();
-          //(document.getElementsByClassName("modal-focusable-header")[0] as any).focus();
-        } catch (e) {
-          // Nothing to do
-        }
       } else {
         this.nzAfterClose.emit(closeResult);
         this.restoreFocus();
