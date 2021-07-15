@@ -361,6 +361,7 @@ export class NzModalComponent<T = any, R = any> extends NzModalRef<T, R>
     }
   }
 
+  // call to this method removed to avoid closing modals without explicitly pressing close/cancel buttons
   onClickMask($event: MouseEvent): void {
     if (
       this.mask &&
