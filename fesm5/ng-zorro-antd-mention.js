@@ -13,15 +13,98 @@ import { getMentions, getCaretCoordinates, DEFAULT_MENTION_BOTTOM_POSITIONS, DEF
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from '@angular/cdk/overlay';
+import * as ɵngcc2 from '@angular/common';
+import * as ɵngcc3 from 'ng-zorro-antd/icon';
+
+function NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainer(0);
+} }
+var _c0 = function (a0) { return { $implicit: a0 }; };
+function NzMentionComponent_ng_template_1_li_1_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_ng_container_1_ng_container_1_Template, 1, 0, "ng-container", 7);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var suggestion_r4 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r6.suggestionTemplate)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c0, suggestion_r4));
+} }
+function NzMentionComponent_ng_template_1_li_1_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtext(0);
+} if (rf & 2) {
+    var suggestion_r4 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r8.nzValueWith(suggestion_r4));
+} }
+function NzMentionComponent_ng_template_1_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r13 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 4);
+    ɵngcc0.ɵɵlistener("mousedown", function NzMentionComponent_ng_template_1_li_1_Template_li_mousedown_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r13); return $event.preventDefault(); })("click", function NzMentionComponent_ng_template_1_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r13); var suggestion_r4 = ctx.$implicit; var ctx_r14 = ɵngcc0.ɵɵnextContext(2); return ctx_r14.selectSuggestion(suggestion_r4); });
+    ɵngcc0.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_ng_container_1_Template, 2, 4, "ng-container", 5);
+    ɵngcc0.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_1_ng_template_2_Template, 1, 1, "ng-template", null, 6, ɵngcc0.ɵɵtemplateRefExtractor);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var i_r5 = ctx.index;
+    var _r7 = ɵngcc0.ɵɵreference(3);
+    var ctx_r2 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassProp("focus", i_r5 === ctx_r2.activeIndex);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.suggestionTemplate)("ngIfElse", _r7);
+} }
+function NzMentionComponent_ng_template_1_li_2_span_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span");
+    ɵngcc0.ɵɵelement(1, "i", 10);
+    ɵngcc0.ɵɵelementEnd();
+} }
+function NzMentionComponent_ng_template_1_li_2_span_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span");
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r16 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r16.nzNotFoundContent);
+} }
+function NzMentionComponent_ng_template_1_li_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "li", 8);
+    ɵngcc0.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_2_span_1_Template, 2, 0, "span", 9);
+    ɵngcc0.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_2_span_2_Template, 2, 1, "span", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r3 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r3.nzLoading);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !ctx_r3.nzLoading);
+} }
+function NzMentionComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "ul", 1);
+    ɵngcc0.ɵɵtemplate(1, NzMentionComponent_ng_template_1_li_1_Template, 4, 4, "li", 2);
+    ɵngcc0.ɵɵtemplate(2, NzMentionComponent_ng_template_1_li_2_Template, 3, 2, "li", 3);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r1.filteredSuggestions);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.filteredSuggestions.length === 0);
+} }
+var _c1 = ["*"];
 var NzMentionSuggestionDirective = /** @class */ (function () {
     function NzMentionSuggestionDirective() {
     }
-    NzMentionSuggestionDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nzMentionSuggestion]',
-                    exportAs: 'nzMentionSuggestion'
-                },] }
-    ];
+NzMentionSuggestionDirective.ɵfac = function NzMentionSuggestionDirective_Factory(t) { return new (t || NzMentionSuggestionDirective)(); };
+NzMentionSuggestionDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMentionSuggestionDirective, selectors: [["", "nzMentionSuggestion", ""]], exportAs: ["nzMentionSuggestion"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionSuggestionDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nzMentionSuggestion]',
+                exportAs: 'nzMentionSuggestion'
+            }]
+    }], function () { return []; }, null); })();
     return NzMentionSuggestionDirective;
 }());
 
@@ -65,9 +148,11 @@ var NzMentionService = /** @class */ (function () {
     function () {
         this.triggerChange$.complete();
     };
-    NzMentionService.decorators = [
-        { type: Injectable }
-    ];
+NzMentionService.ɵfac = function NzMentionService_Factory(t) { return new (t || NzMentionService)(); };
+NzMentionService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzMentionService, factory: function (t) { return NzMentionService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionService, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
     return NzMentionService;
 }());
 if (false) {
@@ -212,26 +297,31 @@ var NzMentionTriggerDirective = /** @class */ (function () {
     function () {
         this.completeEvents();
     };
-    NzMentionTriggerDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
-                    exportAs: 'nzMentionTrigger',
-                    providers: [NZ_MENTION_TRIGGER_ACCESSOR],
-                    host: {
-                        autocomplete: 'off',
-                        '(focusin)': 'onFocusin.emit()',
-                        '(blur)': 'onBlur.emit()',
-                        '(input)': 'onInput.emit($event)',
-                        '(keydown)': 'onKeydown.emit($event)',
-                        '(click)': 'onClick.emit($event)'
-                    }
-                },] }
-    ];
     /** @nocollapse */
     NzMentionTriggerDirective.ctorParameters = function () { return [
         { type: ElementRef },
         { type: NzMentionService }
     ]; };
+NzMentionTriggerDirective.ɵfac = function NzMentionTriggerDirective_Factory(t) { return new (t || NzMentionTriggerDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(NzMentionService)); };
+NzMentionTriggerDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMentionTriggerDirective, selectors: [["input", "nzMentionTrigger", ""], ["textarea", "nzMentionTrigger", ""]], hostAttrs: ["autocomplete", "off"], hostBindings: function NzMentionTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("focusin", function NzMentionTriggerDirective_focusin_HostBindingHandler() { return ctx.onFocusin.emit(); })("blur", function NzMentionTriggerDirective_blur_HostBindingHandler() { return ctx.onBlur.emit(); })("input", function NzMentionTriggerDirective_input_HostBindingHandler($event) { return ctx.onInput.emit($event); })("keydown", function NzMentionTriggerDirective_keydown_HostBindingHandler($event) { return ctx.onKeydown.emit($event); })("click", function NzMentionTriggerDirective_click_HostBindingHandler($event) { return ctx.onClick.emit($event); });
+    } }, exportAs: ["nzMentionTrigger"], features: [ɵngcc0.ɵɵProvidersFeature([NZ_MENTION_TRIGGER_ACCESSOR])] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionTriggerDirective, [{
+        type: Directive,
+        args: [{
+                selector: 'input[nzMentionTrigger], textarea[nzMentionTrigger]',
+                exportAs: 'nzMentionTrigger',
+                providers: [NZ_MENTION_TRIGGER_ACCESSOR],
+                host: {
+                    autocomplete: 'off',
+                    '(focusin)': 'onFocusin.emit()',
+                    '(blur)': 'onBlur.emit()',
+                    '(input)': 'onInput.emit($event)',
+                    '(keydown)': 'onKeydown.emit($event)',
+                    '(click)': 'onClick.emit($event)'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: NzMentionService }]; }, null); })();
     return NzMentionTriggerDirective;
 }());
 if (false) {
@@ -773,17 +863,6 @@ var NzMentionComponent = /** @class */ (function () {
             .withPush(false);
         return this.positionStrategy;
     };
-    NzMentionComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-mention',
-                    exportAs: 'nzMention',
-                    template: "<ng-content></ng-content>\r\n<ng-template #suggestions>\r\n  <ul class=\"ant-mention-dropdown\">\r\n    <li class=\"ant-mention-dropdown-item\"\r\n        *ngFor=\"let suggestion of filteredSuggestions; let i = index\"\r\n        [class.focus]=\"i === activeIndex\"\r\n        (mousedown)=\"$event.preventDefault()\"\r\n        (click)=\"selectSuggestion(suggestion)\">\r\n      <ng-container *ngIf=\"suggestionTemplate else defaultSuggestion\">\r\n        <ng-container *ngTemplateOutlet=\"suggestionTemplate; context: {$implicit: suggestion}\"></ng-container>\r\n      </ng-container>\r\n      <ng-template #defaultSuggestion>{{ nzValueWith(suggestion) }}</ng-template>\r\n    </li>\r\n    <li class=\"ant-mention-dropdown-notfound ant-mention-dropdown-item\"\r\n        *ngIf=\"filteredSuggestions.length === 0\">\r\n      <span *ngIf=\"nzLoading\"><i nz-icon nzType=\"loading\"></i></span>\r\n      <span *ngIf=\"!nzLoading\">{{ nzNotFoundContent }}</span>\r\n    </li>\r\n  </ul>\r\n</ng-template>\r\n",
-                    preserveWhitespaces: false,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    providers: [NzMentionService],
-                    styles: ["\n      .ant-mention-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzMentionComponent.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [DOCUMENT,] }] },
@@ -808,6 +887,61 @@ var NzMentionComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzMentionComponent.prototype, "nzLoading", void 0);
+NzMentionComponent.ɵfac = function NzMentionComponent_Factory(t) { return new (t || NzMentionComponent)(ɵngcc0.ɵɵdirectiveInject(DOCUMENT, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.Overlay), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(NzMentionService)); };
+NzMentionComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzMentionComponent, selectors: [["nz-mention"]], contentQueries: function NzMentionComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzMentionSuggestionDirective, true, TemplateRef);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.suggestionChild = _t.first);
+    } }, viewQuery: function NzMentionComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(TemplateRef, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.suggestionsTemp = _t.first);
+    } }, inputs: { nzValueWith: "nzValueWith", nzPrefix: "nzPrefix", nzLoading: "nzLoading", nzNotFoundContent: "nzNotFoundContent", nzPlacement: "nzPlacement", nzSuggestions: "nzSuggestions" }, outputs: { nzOnSelect: "nzOnSelect", nzOnSearchChange: "nzOnSearchChange" }, exportAs: ["nzMention"], features: [ɵngcc0.ɵɵProvidersFeature([NzMentionService]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["suggestions", ""], [1, "ant-mention-dropdown"], ["class", "ant-mention-dropdown-item", 3, "focus", "mousedown", "click", 4, "ngFor", "ngForOf"], ["class", "ant-mention-dropdown-notfound ant-mention-dropdown-item", 4, "ngIf"], [1, "ant-mention-dropdown-item", 3, "mousedown", "click"], [4, "ngIf", "ngIfElse"], ["defaultSuggestion", ""], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-mention-dropdown-notfound", "ant-mention-dropdown-item"], [4, "ngIf"], ["nz-icon", "", "nzType", "loading"]], template: function NzMentionComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+        ɵngcc0.ɵɵtemplate(1, NzMentionComponent_ng_template_1_Template, 3, 2, "ng-template", null, 0, ɵngcc0.ɵɵtemplateRefExtractor);
+    } }, directives: [ɵngcc2.NgForOf, ɵngcc2.NgIf, ɵngcc2.NgTemplateOutlet, ɵngcc3.NzIconDirective], styles: [".ant-mention-dropdown[_ngcontent-%COMP%] {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }"], changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-mention',
+                exportAs: 'nzMention',
+                template: "<ng-content></ng-content>\r\n<ng-template #suggestions>\r\n  <ul class=\"ant-mention-dropdown\">\r\n    <li class=\"ant-mention-dropdown-item\"\r\n        *ngFor=\"let suggestion of filteredSuggestions; let i = index\"\r\n        [class.focus]=\"i === activeIndex\"\r\n        (mousedown)=\"$event.preventDefault()\"\r\n        (click)=\"selectSuggestion(suggestion)\">\r\n      <ng-container *ngIf=\"suggestionTemplate else defaultSuggestion\">\r\n        <ng-container *ngTemplateOutlet=\"suggestionTemplate; context: {$implicit: suggestion}\"></ng-container>\r\n      </ng-container>\r\n      <ng-template #defaultSuggestion>{{ nzValueWith(suggestion) }}</ng-template>\r\n    </li>\r\n    <li class=\"ant-mention-dropdown-notfound ant-mention-dropdown-item\"\r\n        *ngIf=\"filteredSuggestions.length === 0\">\r\n      <span *ngIf=\"nzLoading\"><i nz-icon nzType=\"loading\"></i></span>\r\n      <span *ngIf=\"!nzLoading\">{{ nzNotFoundContent }}</span>\r\n    </li>\r\n  </ul>\r\n</ng-template>\r\n",
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                providers: [NzMentionService],
+                styles: ["\n      .ant-mention-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [DOCUMENT]
+            }] }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.Overlay }, { type: ɵngcc0.ViewContainerRef }, { type: NzMentionService }]; }, { nzValueWith: [{
+            type: Input
+        }], nzPrefix: [{
+            type: Input
+        }], nzLoading: [{
+            type: Input
+        }], nzNotFoundContent: [{
+            type: Input
+        }], nzPlacement: [{
+            type: Input
+        }], nzSuggestions: [{
+            type: Input
+        }], nzOnSelect: [{
+            type: Output
+        }], nzOnSearchChange: [{
+            type: Output
+        }], suggestionChild: [{
+            type: ContentChild,
+            args: [NzMentionSuggestionDirective, { static: false, read: TemplateRef }]
+        }], suggestionsTemp: [{
+            type: ViewChild,
+            args: [TemplateRef, { static: false }]
+        }] }); })();
     return NzMentionComponent;
 }());
 if (false) {
@@ -915,13 +1049,21 @@ var COMPONENTS = [NzMentionComponent, NzMentionTriggerDirective, NzMentionSugges
 var NzMentionModule = /** @class */ (function () {
     function NzMentionModule() {
     }
-    NzMentionModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CommonModule, FormsModule, OverlayModule, NzIconModule],
-                    declarations: __spread(COMPONENTS),
-                    exports: __spread(COMPONENTS)
-                },] }
-    ];
+NzMentionModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzMentionModule });
+NzMentionModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzMentionModule_Factory(t) { return new (t || NzMentionModule)(); }, imports: [[CommonModule, FormsModule, OverlayModule, NzIconModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzMentionModule, { declarations: function () { return [NzMentionComponent,
+        NzMentionTriggerDirective,
+        NzMentionSuggestionDirective]; }, imports: function () { return [CommonModule, FormsModule, OverlayModule, NzIconModule]; }, exports: function () { return [NzMentionComponent,
+        NzMentionTriggerDirective,
+        NzMentionSuggestionDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionModule, [{
+        type: NgModule,
+        args: [{
+                imports: [CommonModule, FormsModule, OverlayModule, NzIconModule],
+                declarations: __spread(COMPONENTS),
+                exports: __spread(COMPONENTS)
+            }]
+    }], function () { return []; }, null); })();
     return NzMentionModule;
 }());
 
@@ -936,4 +1078,5 @@ var NzMentionModule = /** @class */ (function () {
  */
 
 export { NZ_MENTION_TRIGGER_ACCESSOR, NzMentionComponent, NzMentionModule, NzMentionService, NzMentionSuggestionDirective, NzMentionTriggerDirective };
+
 //# sourceMappingURL=ng-zorro-antd-mention.js.map

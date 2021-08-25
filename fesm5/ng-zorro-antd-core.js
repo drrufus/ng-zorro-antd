@@ -18,6 +18,8 @@ import { Platform, PlatformModule } from '@angular/cdk/platform';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from '@angular/cdk/overlay';
 var NzClassListAddDirective = /** @class */ (function () {
     function NzClassListAddDirective(elementRef, renderer) {
         this.elementRef = elementRef;
@@ -50,12 +52,6 @@ var NzClassListAddDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NzClassListAddDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nzClassListAdd]',
-                    exportAs: 'nzClassListAdd'
-                },] }
-    ];
     /** @nocollapse */
     NzClassListAddDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -64,6 +60,17 @@ var NzClassListAddDirective = /** @class */ (function () {
     NzClassListAddDirective.propDecorators = {
         nzClassListAdd: [{ type: Input }]
     };
+NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzClassListAddDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzClassListAddDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nzClassListAdd]',
+                exportAs: 'nzClassListAdd'
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzClassListAdd: [{
+            type: Input
+        }] }); })();
     return NzClassListAddDirective;
 }());
 if (false) {
@@ -283,12 +290,6 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
             }
         }
     };
-    NzStringTemplateOutletDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nzStringTemplateOutlet]',
-                    exportAs: 'nzStringTemplateOutlet'
-                },] }
-    ];
     /** @nocollapse */
     NzStringTemplateOutletDirective.ctorParameters = function () { return [
         { type: ViewContainerRef },
@@ -298,6 +299,19 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         nzStringTemplateOutletContext: [{ type: Input }],
         nzStringTemplateOutlet: [{ type: Input }]
     };
+NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.TemplateRef)); };
+NzStringTemplateOutletDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nzStringTemplateOutlet]',
+                exportAs: 'nzStringTemplateOutlet'
+            }]
+    }], function () { return [{ type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.TemplateRef }]; }, { nzStringTemplateOutletContext: [{
+            type: Input
+        }], nzStringTemplateOutlet: [{
+            type: Input
+        }] }); })();
     return NzStringTemplateOutletDirective;
 }());
 if (false) {
@@ -342,13 +356,19 @@ if (false) {
 var NzAddOnModule = /** @class */ (function () {
     function NzAddOnModule() {
     }
-    NzAddOnModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CommonModule],
-                    exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
-                    declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-                },] }
-    ];
+NzAddOnModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAddOnModule });
+NzAddOnModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAddOnModule, { declarations: function () { return [NzStringTemplateOutletDirective,
+        NzClassListAddDirective]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzStringTemplateOutletDirective,
+        NzClassListAddDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAddOnModule, [{
+        type: NgModule,
+        args: [{
+                imports: [CommonModule],
+                exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
+                declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
+            }]
+    }], function () { return []; }, null); })();
     return NzAddOnModule;
 }());
 
@@ -988,12 +1008,6 @@ var NzNoAnimationDirective = /** @class */ (function () {
             this.renderer.removeClass(element, DISABLED_CLASSNAME);
         }
     };
-    NzNoAnimationDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nzNoAnimation]',
-                    exportAs: 'nzNoAnimation'
-                },] }
-    ];
     /** @nocollapse */
     NzNoAnimationDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1007,6 +1021,22 @@ var NzNoAnimationDirective = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Boolean)
     ], NzNoAnimationDirective.prototype, "nzNoAnimation", void 0);
+NzNoAnimationDirective.ɵfac = function NzNoAnimationDirective_Factory(t) { return new (t || NzNoAnimationDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
+NzNoAnimationDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzNoAnimationDirective, selectors: [["", "nzNoAnimation", ""]], inputs: { nzNoAnimation: "nzNoAnimation" }, exportAs: ["nzNoAnimation"], features: [ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNoAnimationDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nzNoAnimation]',
+                exportAs: 'nzNoAnimation'
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: String, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [ANIMATION_MODULE_TYPE]
+            }] }]; }, { nzNoAnimation: [{
+            type: Input
+        }] }); })();
     return NzNoAnimationDirective;
 }());
 if (false) {
@@ -1036,13 +1066,17 @@ if (false) {
 var NzNoAnimationModule = /** @class */ (function () {
     function NzNoAnimationModule() {
     }
-    NzNoAnimationModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzNoAnimationDirective],
-                    exports: [NzNoAnimationDirective],
-                    imports: [CommonModule]
-                },] }
-    ];
+NzNoAnimationModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzNoAnimationModule });
+NzNoAnimationModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzNoAnimationModule_Factory(t) { return new (t || NzNoAnimationModule)(); }, imports: [[CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzNoAnimationModule, { declarations: function () { return [NzNoAnimationDirective]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzNoAnimationDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNoAnimationModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzNoAnimationDirective],
+                exports: [NzNoAnimationDirective],
+                imports: [CommonModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzNoAnimationModule;
 }());
 
@@ -1060,16 +1094,19 @@ var NzConnectedOverlayDirective = /** @class */ (function () {
         this.cdkConnectedOverlay = cdkConnectedOverlay;
         this.cdkConnectedOverlay.backdropClass = 'nz-overlay-transparent-backdrop';
     }
-    NzConnectedOverlayDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
-                    exportAs: 'nzConnectedOverlay'
-                },] }
-    ];
     /** @nocollapse */
     NzConnectedOverlayDirective.ctorParameters = function () { return [
         { type: CdkConnectedOverlay }
     ]; };
+NzConnectedOverlayDirective.ɵfac = function NzConnectedOverlayDirective_Factory(t) { return new (t || NzConnectedOverlayDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.CdkConnectedOverlay)); };
+NzConnectedOverlayDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzConnectedOverlayDirective, selectors: [["", "cdkConnectedOverlay", "", "nzConnectedOverlay", ""]], exportAs: ["nzConnectedOverlay"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzConnectedOverlayDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[cdkConnectedOverlay][nzConnectedOverlay]',
+                exportAs: 'nzConnectedOverlay'
+            }]
+    }], function () { return [{ type: ɵngcc1.CdkConnectedOverlay }]; }, null); })();
     return NzConnectedOverlayDirective;
 }());
 if (false) {
@@ -1087,12 +1124,16 @@ if (false) {
 var NzOverlayModule = /** @class */ (function () {
     function NzOverlayModule() {
     }
-    NzOverlayModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzConnectedOverlayDirective],
-                    exports: [NzConnectedOverlayDirective]
-                },] }
-    ];
+NzOverlayModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzOverlayModule });
+NzOverlayModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzOverlayModule_Factory(t) { return new (t || NzOverlayModule)(); } });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzOverlayModule, { declarations: [NzConnectedOverlayDirective], exports: [NzConnectedOverlayDirective] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzOverlayModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzConnectedOverlayDirective],
+                exports: [NzConnectedOverlayDirective]
+            }]
+    }], function () { return []; }, null); })();
     return NzOverlayModule;
 }());
 
@@ -2102,13 +2143,18 @@ var NzScrollService = /** @class */ (function () {
         });
         reqAnimFrame(frameFunc);
     };
-    NzScrollService.decorators = [
-        { type: Injectable }
-    ];
     /** @nocollapse */
     NzScrollService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
     ]; };
+NzScrollService.ɵfac = function NzScrollService_Factory(t) { return new (t || NzScrollService)(ɵngcc0.ɵɵinject(DOCUMENT)); };
+NzScrollService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzScrollService, factory: function (t) { return NzScrollService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzScrollService, [{
+        type: Injectable
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [DOCUMENT]
+            }] }]; }, null); })();
     return NzScrollService;
 }());
 if (false) {
@@ -2204,13 +2250,15 @@ var NzUpdateHostClassService = /** @class */ (function () {
             }
         }
     };
-    NzUpdateHostClassService.decorators = [
-        { type: Injectable }
-    ];
     /** @nocollapse */
     NzUpdateHostClassService.ctorParameters = function () { return [
         { type: RendererFactory2 }
     ]; };
+NzUpdateHostClassService.ɵfac = function NzUpdateHostClassService_Factory(t) { return new (t || NzUpdateHostClassService)(ɵngcc0.ɵɵinject(ɵngcc0.RendererFactory2)); };
+NzUpdateHostClassService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzUpdateHostClassService, factory: function (t) { return NzUpdateHostClassService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzUpdateHostClassService, [{
+        type: Injectable
+    }], function () { return [{ type: ɵngcc0.RendererFactory2 }]; }, null); })();
     return NzUpdateHostClassService;
 }());
 if (false) {
@@ -2230,9 +2278,11 @@ if (false) {
 var NzCopyToClipboardServiceModule = /** @class */ (function () {
     function NzCopyToClipboardServiceModule() {
     }
-    NzCopyToClipboardServiceModule.decorators = [
-        { type: NgModule }
-    ];
+NzCopyToClipboardServiceModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzCopyToClipboardServiceModule });
+NzCopyToClipboardServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzCopyToClipboardServiceModule_Factory(t) { return new (t || NzCopyToClipboardServiceModule)(); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCopyToClipboardServiceModule, [{
+        type: NgModule
+    }], function () { return []; }, null); })();
     return NzCopyToClipboardServiceModule;
 }());
 
@@ -2292,16 +2342,22 @@ var NzCopyToClipboardService = /** @class */ (function () {
             }
         }));
     };
-    NzCopyToClipboardService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: NzCopyToClipboardServiceModule
-                },] }
-    ];
     /** @nocollapse */
     NzCopyToClipboardService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Inject, args: [DOCUMENT,] }] }
     ]; };
     /** @nocollapse */ NzCopyToClipboardService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzCopyToClipboardService_Factory() { return new NzCopyToClipboardService(ɵɵinject(DOCUMENT)); }, token: NzCopyToClipboardService, providedIn: NzCopyToClipboardServiceModule });
+NzCopyToClipboardService.ɵfac = function NzCopyToClipboardService_Factory(t) { return new (t || NzCopyToClipboardService)(ɵngcc0.ɵɵinject(DOCUMENT)); };
+NzCopyToClipboardService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzCopyToClipboardService, factory: function (t) { return NzCopyToClipboardService.ɵfac(t); }, providedIn: NzCopyToClipboardServiceModule });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCopyToClipboardService, [{
+        type: Injectable,
+        args: [{
+                providedIn: NzCopyToClipboardServiceModule
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Inject,
+                args: [DOCUMENT]
+            }] }]; }, null); })();
     return NzCopyToClipboardService;
 }());
 if (false) {
@@ -2420,17 +2476,20 @@ var NzDomEventService = /** @class */ (function () {
             l.unsubscribe = undefined;
         }
     };
-    NzDomEventService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
     /** @nocollapse */
     NzDomEventService.ctorParameters = function () { return [
         { type: NgZone },
         { type: RendererFactory2 }
     ]; };
     /** @nocollapse */ NzDomEventService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDomEventService_Factory() { return new NzDomEventService(ɵɵinject(NgZone), ɵɵinject(RendererFactory2)); }, token: NzDomEventService, providedIn: "root" });
+NzDomEventService.ɵfac = function NzDomEventService_Factory(t) { return new (t || NzDomEventService)(ɵngcc0.ɵɵinject(ɵngcc0.NgZone), ɵngcc0.ɵɵinject(ɵngcc0.RendererFactory2)); };
+NzDomEventService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzDomEventService, factory: function (t) { return NzDomEventService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDomEventService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: ɵngcc0.NgZone }, { type: ɵngcc0.RendererFactory2 }]; }, null); })();
     return NzDomEventService;
 }());
 if (false) {
@@ -2551,12 +2610,15 @@ var NzSingletonService = /** @class */ (function () {
             target: target
         };
     };
-    NzSingletonService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
     /** @nocollapse */ NzSingletonService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzSingletonService_Factory() { return new NzSingletonService(); }, token: NzSingletonService, providedIn: "root" });
+NzSingletonService.ɵfac = function NzSingletonService_Factory(t) { return new (t || NzSingletonService)(); };
+NzSingletonService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzSingletonService, factory: function (t) { return NzSingletonService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzSingletonService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return []; }, null); })();
     return NzSingletonService;
 }());
 if (false) {
@@ -2974,16 +3036,19 @@ var NzDragService = /** @class */ (function () {
     function () {
         this.currentDraggingSequence = null;
     };
-    NzDragService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
     /** @nocollapse */
     NzDragService.ctorParameters = function () { return [
         { type: RendererFactory2 }
     ]; };
     /** @nocollapse */ NzDragService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDragService_Factory() { return new NzDragService(ɵɵinject(RendererFactory2)); }, token: NzDragService, providedIn: "root" });
+NzDragService.ɵfac = function NzDragService_Factory(t) { return new (t || NzDragService)(ɵngcc0.ɵɵinject(ɵngcc0.RendererFactory2)); };
+NzDragService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzDragService, factory: function (t) { return NzDragService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDragService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: ɵngcc0.RendererFactory2 }]; }, null); })();
     return NzDragService;
 }());
 if (false) {
@@ -3362,11 +3427,13 @@ var MockNgZone = /** @class */ (function (_super) {
     function () {
         this.onStable.emit(null);
     };
-    MockNgZone.decorators = [
-        { type: Injectable }
-    ];
     /** @nocollapse */
     MockNgZone.ctorParameters = function () { return []; };
+MockNgZone.ɵfac = function MockNgZone_Factory(t) { return new (t || MockNgZone)(); };
+MockNgZone.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: MockNgZone, factory: function (t) { return MockNgZone.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(MockNgZone, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
     return MockNgZone;
 }(NgZone));
 if (false) {
@@ -6153,9 +6220,11 @@ var NzTreeBaseService = /** @class */ (function () {
     function () {
         this.triggerEventChange$.complete();
     };
-    NzTreeBaseService.decorators = [
-        { type: Injectable }
-    ];
+NzTreeBaseService.ɵfac = function NzTreeBaseService_Factory(t) { return new (t || NzTreeBaseService)(); };
+NzTreeBaseService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzTreeBaseService, factory: function (t) { return NzTreeBaseService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTreeBaseService, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
     return NzTreeBaseService;
 }());
 if (false) {
@@ -6897,12 +6966,6 @@ var NzWaveDirective = /** @class */ (function () {
             this.waveRenderer.bindTriggerEvent();
         }
     };
-    NzWaveDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-wave]',
-                    exportAs: 'nzWave'
-                },] }
-    ];
     /** @nocollapse */
     NzWaveDirective.ctorParameters = function () { return [
         { type: NgZone },
@@ -6913,6 +6976,27 @@ var NzWaveDirective = /** @class */ (function () {
     NzWaveDirective.propDecorators = {
         nzWaveExtraNode: [{ type: Input }]
     };
+NzWaveDirective.ɵfac = function NzWaveDirective_Factory(t) { return new (t || NzWaveDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(NZ_WAVE_GLOBAL_CONFIG, 8), ɵngcc0.ɵɵdirectiveInject(ANIMATION_MODULE_TYPE, 8)); };
+NzWaveDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzWaveDirective, selectors: [["", "nz-wave", ""]], inputs: { nzWaveExtraNode: "nzWaveExtraNode" }, exportAs: ["nzWave"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzWaveDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-wave]',
+                exportAs: 'nzWave'
+            }]
+    }], function () { return [{ type: ɵngcc0.NgZone }, { type: ɵngcc0.ElementRef }, { type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_WAVE_GLOBAL_CONFIG]
+            }] }, { type: String, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [ANIMATION_MODULE_TYPE]
+            }] }]; }, { nzWaveExtraNode: [{
+            type: Input
+        }] }); })();
     return NzWaveDirective;
 }());
 if (false) {
@@ -6957,13 +7041,17 @@ if (false) {
 var NzWaveModule = /** @class */ (function () {
     function NzWaveModule() {
     }
-    NzWaveModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [PlatformModule],
-                    exports: [NzWaveDirective],
-                    declarations: [NzWaveDirective]
-                },] }
-    ];
+NzWaveModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzWaveModule });
+NzWaveModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzWaveModule_Factory(t) { return new (t || NzWaveModule)(); }, imports: [[PlatformModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzWaveModule, { declarations: function () { return [NzWaveDirective]; }, imports: function () { return [PlatformModule]; }, exports: function () { return [NzWaveDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzWaveModule, [{
+        type: NgModule,
+        args: [{
+                imports: [PlatformModule],
+                exports: [NzWaveDirective],
+                declarations: [NzWaveDirective]
+            }]
+    }], function () { return []; }, null); })();
     return NzWaveModule;
 }());
 
@@ -7039,9 +7127,11 @@ var NzMenuBaseService = /** @class */ (function () {
         this.inlineIndent = indent;
         this.inlineIndent$.next(indent);
     };
-    NzMenuBaseService.decorators = [
-        { type: Injectable }
-    ];
+NzMenuBaseService.ɵfac = function NzMenuBaseService_Factory(t) { return new (t || NzMenuBaseService)(); };
+NzMenuBaseService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzMenuBaseService, factory: function (t) { return NzMenuBaseService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuBaseService, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
     return NzMenuBaseService;
 }());
 if (false) {
@@ -7119,17 +7209,22 @@ var responsiveMap = {
 var NzTransButtonDirective = /** @class */ (function () {
     function NzTransButtonDirective() {
     }
-    NzTransButtonDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: 'button[nz-trans-button]',
-                    host: {
-                        '[style.border]': '"0"',
-                        '[style.background]': '"transparent"',
-                        '[style.padding]': '"0"',
-                        '[style.line-height]': '"inherit"'
-                    }
-                },] }
-    ];
+NzTransButtonDirective.ɵfac = function NzTransButtonDirective_Factory(t) { return new (t || NzTransButtonDirective)(); };
+NzTransButtonDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTransButtonDirective, selectors: [["button", "nz-trans-button", ""]], hostVars: 8, hostBindings: function NzTransButtonDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵstyleProp("border", "0")("background", "transparent", ɵngcc0.ɵɵdefaultStyleSanitizer)("padding", "0")("line-height", "inherit");
+    } } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransButtonDirective, [{
+        type: Directive,
+        args: [{
+                selector: 'button[nz-trans-button]',
+                host: {
+                    '[style.border]': '"0"',
+                    '[style.background]': '"transparent"',
+                    '[style.padding]': '"0"',
+                    '[style.line-height]': '"inherit"'
+                }
+            }]
+    }], function () { return []; }, null); })();
     return NzTransButtonDirective;
 }());
 
@@ -7140,13 +7235,17 @@ var NzTransButtonDirective = /** @class */ (function () {
 var NzTransButtonModule = /** @class */ (function () {
     function NzTransButtonModule() {
     }
-    NzTransButtonModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzTransButtonDirective],
-                    exports: [NzTransButtonDirective],
-                    imports: [CommonModule]
-                },] }
-    ];
+NzTransButtonModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTransButtonModule });
+NzTransButtonModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTransButtonModule_Factory(t) { return new (t || NzTransButtonModule)(); }, imports: [[CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTransButtonModule, { declarations: function () { return [NzTransButtonDirective]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzTransButtonDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransButtonModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzTransButtonDirective],
+                exports: [NzTransButtonDirective],
+                imports: [CommonModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzTransButtonModule;
 }());
 
@@ -7225,12 +7324,15 @@ var NzHighlightPipe = /** @class */ (function () {
             .replace(new RegExp(this.UNIQUE_WRAPPERS[0], 'g'), klass ? "<span class=\"" + klass + "\">" : '<span>')
             .replace(new RegExp(this.UNIQUE_WRAPPERS[1], 'g'), '</span>');
     };
-    NzHighlightPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: 'nzHighlight',
-                    pure: true
-                },] }
-    ];
+NzHighlightPipe.ɵfac = function NzHighlightPipe_Factory(t) { return new (t || NzHighlightPipe)(); };
+NzHighlightPipe.ɵpipe = ɵngcc0.ɵɵdefinePipe({ name: "nzHighlight", type: NzHighlightPipe, pure: true });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzHighlightPipe, [{
+        type: Pipe,
+        args: [{
+                name: 'nzHighlight',
+                pure: true
+            }]
+    }], function () { return []; }, null); })();
     return NzHighlightPipe;
 }());
 if (false) {
@@ -7248,13 +7350,17 @@ if (false) {
 var NzHighlightModule = /** @class */ (function () {
     function NzHighlightModule() {
     }
-    NzHighlightModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CommonModule],
-                    exports: [NzHighlightPipe],
-                    declarations: [NzHighlightPipe]
-                },] }
-    ];
+NzHighlightModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzHighlightModule });
+NzHighlightModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzHighlightModule_Factory(t) { return new (t || NzHighlightModule)(); }, imports: [[CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzHighlightModule, { declarations: function () { return [NzHighlightPipe]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzHighlightPipe]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzHighlightModule, [{
+        type: NgModule,
+        args: [{
+                imports: [CommonModule],
+                exports: [NzHighlightPipe],
+                declarations: [NzHighlightPipe]
+            }]
+    }], function () { return []; }, null); })();
     return NzHighlightModule;
 }());
 
@@ -7809,16 +7915,24 @@ var NzConfigService = /** @class */ (function () {
         this.config[componentName] = __assign({}, this.config[componentName], value);
         this.configUpdated$.next(componentName);
     };
-    NzConfigService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
     /** @nocollapse */
     NzConfigService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_CONFIG,] }] }
     ]; };
     /** @nocollapse */ NzConfigService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzConfigService_Factory() { return new NzConfigService(ɵɵinject(NZ_CONFIG, 8)); }, token: NzConfigService, providedIn: "root" });
+NzConfigService.ɵfac = function NzConfigService_Factory(t) { return new (t || NzConfigService)(ɵngcc0.ɵɵinject(NZ_CONFIG, 8)); };
+NzConfigService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzConfigService, factory: function (t) { return NzConfigService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzConfigService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_CONFIG]
+            }] }]; }, null); })();
     return NzConfigService;
 }());
 if (false) {
@@ -7925,11 +8039,14 @@ var NzToCssUnitPipe = /** @class */ (function () {
         var formatted = +value;
         return isNaN(formatted) ? "" + value : "" + formatted + defaultUnit;
     };
-    NzToCssUnitPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: 'nzToCssUnit'
-                },] }
-    ];
+NzToCssUnitPipe.ɵfac = function NzToCssUnitPipe_Factory(t) { return new (t || NzToCssUnitPipe)(); };
+NzToCssUnitPipe.ɵpipe = ɵngcc0.ɵɵdefinePipe({ name: "nzToCssUnit", type: NzToCssUnitPipe, pure: true });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzToCssUnitPipe, [{
+        type: Pipe,
+        args: [{
+                name: 'nzToCssUnit'
+            }]
+    }], function () { return []; }, null); })();
     return NzToCssUnitPipe;
 }());
 
@@ -7981,12 +8098,15 @@ var NzTimeRangePipe = /** @class */ (function () {
             return current;
         }), format);
     };
-    NzTimeRangePipe.decorators = [
-        { type: Pipe, args: [{
-                    name: 'nzTimeRange',
-                    pure: true
-                },] }
-    ];
+NzTimeRangePipe.ɵfac = function NzTimeRangePipe_Factory(t) { return new (t || NzTimeRangePipe)(); };
+NzTimeRangePipe.ɵpipe = ɵngcc0.ɵɵdefinePipe({ name: "nzTimeRange", type: NzTimeRangePipe, pure: true });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTimeRangePipe, [{
+        type: Pipe,
+        args: [{
+                name: 'nzTimeRange',
+                pure: true
+            }]
+    }], function () { return []; }, null); })();
     return NzTimeRangePipe;
 }());
 
@@ -7997,13 +8117,19 @@ var NzTimeRangePipe = /** @class */ (function () {
 var NzPipesModule = /** @class */ (function () {
     function NzPipesModule() {
     }
-    NzPipesModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CommonModule],
-                    exports: [NzTimeRangePipe, NzToCssUnitPipe],
-                    declarations: [NzTimeRangePipe, NzToCssUnitPipe]
-                },] }
-    ];
+NzPipesModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzPipesModule });
+NzPipesModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzPipesModule_Factory(t) { return new (t || NzPipesModule)(); }, imports: [[CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzPipesModule, { declarations: function () { return [NzTimeRangePipe,
+        NzToCssUnitPipe]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzTimeRangePipe,
+        NzToCssUnitPipe]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPipesModule, [{
+        type: NgModule,
+        args: [{
+                imports: [CommonModule],
+                exports: [NzTimeRangePipe, NzToCssUnitPipe],
+                declarations: [NzTimeRangePipe, NzToCssUnitPipe]
+            }]
+    }], function () { return []; }, null); })();
     return NzPipesModule;
 }());
 
@@ -8023,4 +8149,5 @@ var NzPipesModule = /** @class */ (function () {
  */
 
 export { AnimationCurves, AnimationDuration, CandyDate, DEFAULT_DROPDOWN_POSITIONS, DEFAULT_MENTION_BOTTOM_POSITIONS, DEFAULT_MENTION_TOP_POSITIONS, DEFAULT_SUBMENU_POSITIONS, DEFAULT_TOOLTIP_POSITIONS, FakeViewportRuler, InputBoolean, InputCssPixel, InputNumber, MockNgZone, NZ_CONFIG, NZ_WAVE_GLOBAL_CONFIG, NZ_WAVE_GLOBAL_CONFIG_FACTORY, NZ_WAVE_GLOBAL_DEFAULT_CONFIG, NzAddOnModule, NzBreakpoint, NzClassListAddDirective, NzConfigService, NzConnectedOverlayDirective, NzCopyToClipboardService, NzCopyToClipboardServiceModule, NzDomEventService, NzDragService, NzDropdownHigherOrderServiceToken, NzHighlightModule, NzHighlightPipe, NzMenuBaseService, NzNoAnimationDirective, NzNoAnimationModule, NzOverlayModule, NzPipesModule, NzScrollService, NzSingletonService, NzStringTemplateOutletDirective, NzTimeRangePipe, NzToCssUnitPipe, NzTransButtonDirective, NzTransButtonModule, NzTreeBase, NzTreeBaseService, NzTreeHigherOrderServiceToken, NzTreeNode, NzUpdateHostClassService, NzWaveDirective, NzWaveModule, NzWaveRenderer, POSITION_MAP, PREFIX, SCROLL_SERVICE_PROVIDER, SCROLL_SERVICE_PROVIDER_FACTORY, WithConfig, arraysEqual, cancelRequestAnimationFrame, collapseMotion, createDebugEle, createFakeEvent, createKeyboardEvent, createMouseEvent, createTouchEvent, dispatchEvent, dispatchFakeEvent, dispatchKeyboardEvent, dispatchMouseEvent, dispatchTouchEvent, ensureInBounds, ensureNumberInRange, fadeMotion, filterNotEmptyNode, findFirstNotEmptyNode, findLastNotEmptyNode, getCaretCoordinates, getElementOffset, getEventPosition, getMentions, getPercent, getPlacementName, getPrecision, getRegExp, getRepeatedElement, getStyleAsText, helpMotion, inNextTick, isComponent, isEmpty, isInteger, isNil, isNonEmptyString, isNotNil, isPromise, isStyleSupport, isTemplateRef, isTouchEvent, log, measure, measureScrollbar, moveUpMotion, notificationMotion, padEnd, padStart, properties, pxToNumber, reqAnimFrame, responsiveMap, reverseChildNodes, scrollIntoView, shallowCopyArray, shallowEqual, silentEvent, slideAlertMotion, slideMotion, sortRangeValue, timeUnits, toArray, toBoolean, toCssPixel, toNumber, treeCollapseMotion, typeInElement, valueFunctionProp, warn, warnDeprecation, wrappedErrorMessage, zoomBadgeMotion, zoomBigMotion, zoomMotion };
+
 //# sourceMappingURL=ng-zorro-antd-core.js.map

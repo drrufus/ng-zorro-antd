@@ -10,6 +10,39 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/cdk/platform';
+import * as ɵngcc3 from '@angular/common';
+import * as ɵngcc4 from 'ng-zorro-antd/icon';
+
+var _c0 = ["textEl"];
+function NzAvatarComponent_i_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 3);
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("nzType", !ctx_r0.oldAPIIcon && ctx_r0.nzIcon)("ngClass", ctx_r0.oldAPIIcon && ctx_r0.nzIcon);
+} }
+function NzAvatarComponent_img_1_Template(rf, ctx) { if (rf & 1) {
+    var _r4 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "img", 4);
+    ɵngcc0.ɵɵlistener("error", function NzAvatarComponent_img_1_Template_img_error_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r4); var ctx_r3 = ɵngcc0.ɵɵnextContext(); return ctx_r3.imgError($event); });
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("src", ctx_r1.nzSrc, ɵngcc0.ɵɵsanitizeUrl);
+    ɵngcc0.ɵɵattribute("srcset", ctx_r1.nzSrcSet, ɵngcc0.ɵɵsanitizeUrl)("alt", ctx_r1.nzAlt);
+} }
+function NzAvatarComponent_span_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 5, 6);
+    ɵngcc0.ɵɵtext(2);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("ngStyle", ctx_r2.textStyles);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r2.nzText);
+} }
 var NZ_CONFIG_COMPONENT_NAME = 'avatar';
 var NzAvatarComponent = /** @class */ (function () {
     function NzAvatarComponent(nzConfigService, elementRef, cd, updateHostClassService, renderer, platform) {
@@ -167,17 +200,6 @@ var NzAvatarComponent = /** @class */ (function () {
             this.renderer.setStyle(this.el, 'font-size', "calc(" + size + " / 2)");
         }
     };
-    NzAvatarComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-avatar',
-                    exportAs: 'nzAvatar',
-                    template: "<i nz-icon *ngIf=\"nzIcon && hasIcon\" [nzType]=\"!oldAPIIcon && nzIcon\" [ngClass]=\"oldAPIIcon && nzIcon\"></i>\r\n<img *ngIf=\"nzSrc && hasSrc\" [src]=\"nzSrc\" [attr.srcset]=\"nzSrcSet\" [attr.alt]=\"nzAlt\" (error)=\"imgError($event)\"/>\r\n<span class=\"ant-avatar-string\" #textEl [ngStyle]=\"textStyles\" *ngIf=\"nzText && hasText\">{{ nzText }}</span>\r\n",
-                    providers: [NzUpdateHostClassService],
-                    preserveWhitespaces: false,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None
-                }] }
-    ];
     /** @nocollapse */
     NzAvatarComponent.ctorParameters = function () { return [
         { type: NzConfigService },
@@ -206,6 +228,54 @@ var NzAvatarComponent = /** @class */ (function () {
         WithConfig(NZ_CONFIG_COMPONENT_NAME, 'default'),
         __metadata("design:type", Object)
     ], NzAvatarComponent.prototype, "nzSize", void 0);
+NzAvatarComponent.ɵfac = function NzAvatarComponent_Factory(t) { return new (t || NzAvatarComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.Platform)); };
+NzAvatarComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzAvatarComponent, selectors: [["nz-avatar"]], viewQuery: function NzAvatarComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.textEl = _t.first);
+    } }, inputs: { nzShape: "nzShape", nzSize: "nzSize", nzText: "nzText", nzSrc: "nzSrc", nzSrcSet: "nzSrcSet", nzAlt: "nzAlt", nzIcon: "nzIcon" }, outputs: { nzError: "nzError" }, exportAs: ["nzAvatar"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 3, vars: 3, consts: [["nz-icon", "", 3, "nzType", "ngClass", 4, "ngIf"], [3, "src", "error", 4, "ngIf"], ["class", "ant-avatar-string", 3, "ngStyle", 4, "ngIf"], ["nz-icon", "", 3, "nzType", "ngClass"], [3, "src", "error"], [1, "ant-avatar-string", 3, "ngStyle"], ["textEl", ""]], template: function NzAvatarComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵtemplate(0, NzAvatarComponent_i_0_Template, 1, 2, "i", 0);
+        ɵngcc0.ɵɵtemplate(1, NzAvatarComponent_img_1_Template, 1, 3, "img", 1);
+        ɵngcc0.ɵɵtemplate(2, NzAvatarComponent_span_2_Template, 3, 2, "span", 2);
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzIcon && ctx.hasIcon);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzSrc && ctx.hasSrc);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzText && ctx.hasText);
+    } }, directives: [ɵngcc3.NgIf, ɵngcc4.NzIconDirective, ɵngcc3.NgClass, ɵngcc3.NgStyle], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAvatarComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-avatar',
+                exportAs: 'nzAvatar',
+                template: "<i nz-icon *ngIf=\"nzIcon && hasIcon\" [nzType]=\"!oldAPIIcon && nzIcon\" [ngClass]=\"oldAPIIcon && nzIcon\"></i>\r\n<img *ngIf=\"nzSrc && hasSrc\" [src]=\"nzSrc\" [attr.srcset]=\"nzSrcSet\" [attr.alt]=\"nzAlt\" (error)=\"imgError($event)\"/>\r\n<span class=\"ant-avatar-string\" #textEl [ngStyle]=\"textStyles\" *ngIf=\"nzText && hasText\">{{ nzText }}</span>\r\n",
+                providers: [NzUpdateHostClassService],
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None
+            }]
+    }], function () { return [{ type: ɵngcc1.NzConfigService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc2.Platform }]; }, { nzError: [{
+            type: Output
+        }], nzShape: [{
+            type: Input
+        }], nzSize: [{
+            type: Input
+        }], nzText: [{
+            type: Input
+        }], nzSrc: [{
+            type: Input
+        }], nzSrcSet: [{
+            type: Input
+        }], nzAlt: [{
+            type: Input
+        }], nzIcon: [{
+            type: Input
+        }], textEl: [{
+            type: ViewChild,
+            args: ['textEl', { static: false }]
+        }] }); })();
     return NzAvatarComponent;
 }());
 if (false) {
@@ -288,13 +358,17 @@ if (false) {
 var NzAvatarModule = /** @class */ (function () {
     function NzAvatarModule() {
     }
-    NzAvatarModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzAvatarComponent],
-                    exports: [NzAvatarComponent],
-                    imports: [CommonModule, NzIconModule, PlatformModule]
-                },] }
-    ];
+NzAvatarModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAvatarModule });
+NzAvatarModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAvatarModule_Factory(t) { return new (t || NzAvatarModule)(); }, imports: [[CommonModule, NzIconModule, PlatformModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAvatarModule, { declarations: function () { return [NzAvatarComponent]; }, imports: function () { return [CommonModule, NzIconModule, PlatformModule]; }, exports: function () { return [NzAvatarComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAvatarModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzAvatarComponent],
+                exports: [NzAvatarComponent],
+                imports: [CommonModule, NzIconModule, PlatformModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzAvatarModule;
 }());
 
@@ -309,4 +383,5 @@ var NzAvatarModule = /** @class */ (function () {
  */
 
 export { NzAvatarComponent, NzAvatarModule };
+
 //# sourceMappingURL=ng-zorro-antd-avatar.js.map

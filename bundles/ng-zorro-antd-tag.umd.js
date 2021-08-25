@@ -1,8 +1,16 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('@angular/common'), require('@angular/forms'), require('ng-zorro-antd/icon')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/tag', ['exports', '@angular/core', 'ng-zorro-antd/core', '@angular/common', '@angular/forms', 'ng-zorro-antd/icon'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].tag = {}), global.ng.core, global['ng-zorro-antd'].core, global.ng.common, global.ng.forms, global['ng-zorro-antd'].icon));
-}(this, (function (exports, core, core$1, common, forms, icon) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/common'),require('ng-zorro-antd/icon'),require('@angular/forms'),exports, require('@angular/core'), require('ng-zorro-antd/core'), require('@angular/common'), require('@angular/forms'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/tag', ['@angular/core','ng-zorro-antd/core','@angular/common','ng-zorro-antd/icon','@angular/forms','exports', '@angular/core', 'ng-zorro-antd/core', '@angular/common', '@angular/forms', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.common,global.ngZorroAntd.icon,global.ng.forms,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].tag = {}), global.ng.core, global['ng-zorro-antd'].core, global.ng.common, global.ng.forms, global['ng-zorro-antd'].icon));
+}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, core, core$1, common, forms, icon) { 
+function NzTagComponent_i_1_Template(rf, ctx) { if (rf & 1) {
+    var _r2 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "i", 1);
+    ɵngcc0.ɵɵlistener("click", function NzTagComponent_i_1_Template_i_click_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r2); var ctx_r1 = ɵngcc0.ɵɵnextContext(); return ctx_r1.closeTag($event); });
+    ɵngcc0.ɵɵelementEnd();
+} }
+var _c0 = ["*"];
+'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -316,25 +324,6 @@
         function () {
             this.updateClassMap();
         };
-        NzTagComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-tag',
-                        exportAs: 'nzTag',
-                        preserveWhitespaces: false,
-                        providers: [core$1.NzUpdateHostClassService],
-                        animations: [core$1.fadeMotion],
-                        template: "<ng-content></ng-content>\r\n<i nz-icon nzType=\"close\" *ngIf=\"nzMode==='closeable'\" tabindex=\"-1\" (click)=\"closeTag($event)\"></i>\r\n",
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        encapsulation: core.ViewEncapsulation.None,
-                        host: {
-                            '[@fadeMotion]': '',
-                            '[@.disabled]': 'nzNoAnimation',
-                            '(@fadeMotion.done)': 'afterAnimation($event)',
-                            '(click)': 'updateCheckedStatus()',
-                            '[style.background-color]': 'presetColor? null : nzColor'
-                        }
-                    }] }
-        ];
         /** @nocollapse */
         NzTagComponent.ctorParameters = function () { return [
             { type: core.Renderer2 },
@@ -358,6 +347,55 @@
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzTagComponent.prototype, "nzNoAnimation", void 0);
+NzTagComponent.ɵfac = function NzTagComponent_Factory(t) { return new (t || NzTagComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService)); };
+NzTagComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTagComponent, selectors: [["nz-tag"]], hostVars: 4, hostBindings: function NzTagComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵcomponentHostSyntheticListener("@fadeMotion.done", function NzTagComponent_animation_fadeMotion_done_HostBindingHandler($event) { return ctx.afterAnimation($event); });
+        ɵngcc0.ɵɵlistener("click", function NzTagComponent_click_HostBindingHandler() { return ctx.updateCheckedStatus(); });
+    } if (rf & 2) {
+        ɵngcc0.ɵɵupdateSyntheticHostBinding("@fadeMotion", undefined)("@.disabled", ctx.nzNoAnimation);
+        ɵngcc0.ɵɵstyleProp("background-color", ctx.presetColor ? null : ctx.nzColor);
+    } }, inputs: { nzMode: "nzMode", nzChecked: "nzChecked", nzNoAnimation: "nzNoAnimation", nzColor: "nzColor" }, outputs: { nzAfterClose: "nzAfterClose", nzOnClose: "nzOnClose", nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzTag"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0, decls: 2, vars: 1, consts: [["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "close", "tabindex", "-1", 3, "click"]], template: function NzTagComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+        ɵngcc0.ɵɵtemplate(1, NzTagComponent_i_1_Template, 1, 0, "i", 0);
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzMode === "closeable");
+    } }, directives: [ɵngcc2.NgIf, ɵngcc3.NzIconDirective], encapsulation: 2, data: { animation: [core$1.fadeMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTagComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-tag',
+                exportAs: 'nzTag',
+                preserveWhitespaces: false,
+                providers: [core$1.NzUpdateHostClassService],
+                animations: [core$1.fadeMotion],
+                template: "<ng-content></ng-content>\r\n<i nz-icon nzType=\"close\" *ngIf=\"nzMode==='closeable'\" tabindex=\"-1\" (click)=\"closeTag($event)\"></i>\r\n",
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                encapsulation: core.ViewEncapsulation.None,
+                host: {
+                    '[@fadeMotion]': '',
+                    '[@.disabled]': 'nzNoAnimation',
+                    '(@fadeMotion.done)': 'afterAnimation($event)',
+                    '(click)': 'updateCheckedStatus()',
+                    '[style.background-color]': 'presetColor? null : nzColor'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzUpdateHostClassService }]; }, { nzMode: [{
+            type: core.Input
+        }], nzChecked: [{
+            type: core.Input
+        }], nzNoAnimation: [{
+            type: core.Input
+        }], nzAfterClose: [{
+            type: core.Output
+        }], nzOnClose: [{
+            type: core.Output
+        }], nzCheckedChange: [{
+            type: core.Output
+        }], nzColor: [{
+            type: core.Input
+        }] }); })();
         return NzTagComponent;
     }());
     if (false) {
@@ -398,13 +436,17 @@
     var NzTagModule = /** @class */ (function () {
         function NzTagModule() {
         }
-        NzTagModule.decorators = [
-            { type: core.NgModule, args: [{
-                        imports: [common.CommonModule, forms.FormsModule, icon.NzIconModule],
-                        declarations: [NzTagComponent],
-                        exports: [NzTagComponent]
-                    },] }
-        ];
+NzTagModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTagModule });
+NzTagModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTagModule_Factory(t) { return new (t || NzTagModule)(); }, imports: [[common.CommonModule, forms.FormsModule, icon.NzIconModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTagModule, { declarations: [NzTagComponent], imports: [ɵngcc2.CommonModule, ɵngcc4.FormsModule, ɵngcc3.NzIconModule], exports: [NzTagComponent] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTagModule, [{
+        type: core.NgModule,
+        args: [{
+                imports: [common.CommonModule, forms.FormsModule, icon.NzIconModule],
+                declarations: [NzTagComponent],
+                exports: [NzTagComponent]
+            }]
+    }], function () { return []; }, null); })();
         return NzTagModule;
     }());
 
@@ -414,4 +456,5 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
 //# sourceMappingURL=ng-zorro-antd-tag.umd.js.map

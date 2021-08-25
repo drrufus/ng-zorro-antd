@@ -11,6 +11,50 @@ import { warnDeprecation, NzConfigService, NzDomEventService, NzDragService, Wit
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/cdk/platform';
+import * as ɵngcc3 from '@angular/common';
+
+var _c0 = ["slickList"];
+var _c1 = ["slickTrack"];
+function NzCarouselComponent_ul_6_li_1_ng_template_1_Template(rf, ctx) { }
+var _c2 = function (a0) { return { $implicit: a0 }; };
+function NzCarouselComponent_ul_6_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r10 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 9);
+    ɵngcc0.ɵɵlistener("click", function NzCarouselComponent_ul_6_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r10); var i_r7 = ctx.index; var ctx_r9 = ɵngcc0.ɵɵnextContext(2); return ctx_r9.goTo(i_r7); });
+    ɵngcc0.ɵɵtemplate(1, NzCarouselComponent_ul_6_li_1_ng_template_1_Template, 0, 0, "ng-template", 10);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var content_r6 = ctx.$implicit;
+    var i_r7 = ctx.index;
+    var ctx_r5 = ɵngcc0.ɵɵnextContext(2);
+    var _r3 = ɵngcc0.ɵɵreference(8);
+    ɵngcc0.ɵɵclassProp("slick-active", content_r6.isActive);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r5.nzDotRender || _r3)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(4, _c2, i_r7));
+} }
+function NzCarouselComponent_ul_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "ul", 7);
+    ɵngcc0.ɵɵtemplate(1, NzCarouselComponent_ul_6_li_1_Template, 2, 6, "li", 8);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassProp("slick-dots-top", ctx_r2.nzDotPosition === "top")("slick-dots-bottom", ctx_r2.nzDotPosition === "bottom")("slick-dots-left", ctx_r2.nzDotPosition === "left")("slick-dots-right", ctx_r2.nzDotPosition === "right");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r2.carouselContents);
+} }
+function NzCarouselComponent_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "button");
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var index_r11 = ctx.$implicit;
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(index_r11 + 1);
+} }
+var _c3 = ["*"];
 var NzCarouselContentDirective = /** @class */ (function () {
     function NzCarouselContentDirective(elementRef, renderer) {
         this.elementRef = elementRef;
@@ -42,17 +86,20 @@ var NzCarouselContentDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
-    NzCarouselContentDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-carousel-content]',
-                    exportAs: 'nzCarouselContent'
-                },] }
-    ];
     /** @nocollapse */
     NzCarouselContentDirective.ctorParameters = function () { return [
         { type: ElementRef },
         { type: Renderer2 }
     ]; };
+NzCarouselContentDirective.ɵfac = function NzCarouselContentDirective_Factory(t) { return new (t || NzCarouselContentDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzCarouselContentDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzCarouselContentDirective, selectors: [["", "nz-carousel-content", ""]], exportAs: ["nzCarouselContent"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCarouselContentDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-carousel-content]',
+                exportAs: 'nzCarouselContent'
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
     return NzCarouselContentDirective;
 }());
 if (false) {
@@ -1043,20 +1090,6 @@ var NzCarouselComponent = /** @class */ (function () {
             this.strategy.withCarouselContents(this.carouselContents);
         }
     };
-    NzCarouselComponent.decorators = [
-        { type: Component, args: [{
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    selector: 'nz-carousel',
-                    exportAs: 'nzCarousel',
-                    preserveWhitespaces: false,
-                    template: "<div class=\"slick-initialized slick-slider\" [class.slick-vertical]=\"nzVertical\">\r\n  <div\r\n    #slickList\r\n    class=\"slick-list\"\r\n    tabindex=\"-1\"\r\n    (keydown)=\"onKeyDown($event)\"\r\n    (mousedown)=\"pointerDown($event)\"\r\n    (touchstart)=\"pointerDown($event)\"\r\n  >\r\n    <!-- Render carousel items. -->\r\n    <div class=\"slick-track\" #slickTrack>\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n  <!-- Render dots. -->\r\n  <ul\r\n    class=\"slick-dots\"\r\n    *ngIf=\"nzDots\"\r\n    [class.slick-dots-top]=\"nzDotPosition === 'top'\"\r\n    [class.slick-dots-bottom]=\"nzDotPosition === 'bottom'\"\r\n    [class.slick-dots-left]=\"nzDotPosition === 'left'\"\r\n    [class.slick-dots-right]=\"nzDotPosition === 'right'\"\r\n  >\r\n    <li\r\n      *ngFor=\"let content of carouselContents; let i = index\"\r\n      [class.slick-active]=\"content.isActive\"\r\n      (click)=\"goTo(i)\"\r\n    >\r\n      <ng-template [ngTemplateOutlet]=\"nzDotRender || renderDotTemplate\" [ngTemplateOutletContext]=\"{ $implicit: i }\">\r\n      </ng-template>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<ng-template #renderDotTemplate let-index>\r\n  <button>{{ index + 1 }}</button>\r\n</ng-template>\r\n",
-                    host: {
-                        '[class.ant-carousel-vertical]': 'vertical'
-                    },
-                    styles: ["\n      nz-carousel {\n        display: block;\n        position: relative;\n        overflow: hidden;\n        width: 100%;\n        height: 100%;\n      }\n\n      .slick-dots {\n        display: block;\n      }\n\n      .slick-track {\n        opacity: 1;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzCarouselComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1118,6 +1151,89 @@ var NzCarouselComponent = /** @class */ (function () {
         __metadata("design:type", String),
         __metadata("design:paramtypes", [String])
     ], NzCarouselComponent.prototype, "nzDotPosition", null);
+NzCarouselComponent.ɵfac = function NzCarouselComponent_Factory(t) { return new (t || NzCarouselComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzDomEventService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzDragService), ɵngcc0.ɵɵdirectiveInject(NZ_CAROUSEL_CUSTOM_STRATEGIES, 8)); };
+NzCarouselComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCarouselComponent, selectors: [["nz-carousel"]], contentQueries: function NzCarouselComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzCarouselContentDirective, false);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.carouselContents = _t);
+    } }, viewQuery: function NzCarouselComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c0, true);
+        ɵngcc0.ɵɵviewQuery(_c1, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.slickList = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.slickTrack = _t.first);
+    } }, hostVars: 2, hostBindings: function NzCarouselComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-carousel-vertical", ctx.vertical);
+    } }, inputs: { nzTransitionSpeed: "nzTransitionSpeed", nzVertical: "nzVertical", nzDotPosition: "nzDotPosition", nzDotRender: "nzDotRender", nzEffect: "nzEffect", nzEnableSwipe: "nzEnableSwipe", nzDots: "nzDots", nzAutoPlay: "nzAutoPlay", nzAutoPlaySpeed: "nzAutoPlaySpeed" }, outputs: { nzBeforeChange: "nzBeforeChange", nzAfterChange: "nzAfterChange" }, exportAs: ["nzCarousel"], features: [ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c3, decls: 9, vars: 3, consts: [[1, "slick-initialized", "slick-slider"], ["tabindex", "-1", 1, "slick-list", 3, "keydown", "mousedown", "touchstart"], ["slickList", ""], [1, "slick-track"], ["slickTrack", ""], ["class", "slick-dots", 3, "slick-dots-top", "slick-dots-bottom", "slick-dots-left", "slick-dots-right", 4, "ngIf"], ["renderDotTemplate", ""], [1, "slick-dots"], [3, "slick-active", "click", 4, "ngFor", "ngForOf"], [3, "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"]], template: function NzCarouselComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵelementStart(1, "div", 1, 2);
+        ɵngcc0.ɵɵlistener("keydown", function NzCarouselComponent_Template_div_keydown_1_listener($event) { return ctx.onKeyDown($event); })("mousedown", function NzCarouselComponent_Template_div_mousedown_1_listener($event) { return ctx.pointerDown($event); })("touchstart", function NzCarouselComponent_Template_div_touchstart_1_listener($event) { return ctx.pointerDown($event); });
+        ɵngcc0.ɵɵelementStart(3, "div", 3, 4);
+        ɵngcc0.ɵɵprojection(5);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(6, NzCarouselComponent_ul_6_Template, 2, 9, "ul", 5);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(7, NzCarouselComponent_ng_template_7_Template, 2, 1, "ng-template", null, 6, ɵngcc0.ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("slick-vertical", ctx.nzVertical);
+        ɵngcc0.ɵɵadvance(6);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzDots);
+    } }, directives: [ɵngcc3.NgIf, ɵngcc3.NgForOf, ɵngcc3.NgTemplateOutlet], styles: ["\n      nz-carousel {\n        display: block;\n        position: relative;\n        overflow: hidden;\n        width: 100%;\n        height: 100%;\n      }\n\n      .slick-dots {\n        display: block;\n      }\n\n      .slick-track {\n        opacity: 1;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCarouselComponent, [{
+        type: Component,
+        args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: 'nz-carousel',
+                exportAs: 'nzCarousel',
+                preserveWhitespaces: false,
+                template: "<div class=\"slick-initialized slick-slider\" [class.slick-vertical]=\"nzVertical\">\r\n  <div\r\n    #slickList\r\n    class=\"slick-list\"\r\n    tabindex=\"-1\"\r\n    (keydown)=\"onKeyDown($event)\"\r\n    (mousedown)=\"pointerDown($event)\"\r\n    (touchstart)=\"pointerDown($event)\"\r\n  >\r\n    <!-- Render carousel items. -->\r\n    <div class=\"slick-track\" #slickTrack>\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n  <!-- Render dots. -->\r\n  <ul\r\n    class=\"slick-dots\"\r\n    *ngIf=\"nzDots\"\r\n    [class.slick-dots-top]=\"nzDotPosition === 'top'\"\r\n    [class.slick-dots-bottom]=\"nzDotPosition === 'bottom'\"\r\n    [class.slick-dots-left]=\"nzDotPosition === 'left'\"\r\n    [class.slick-dots-right]=\"nzDotPosition === 'right'\"\r\n  >\r\n    <li\r\n      *ngFor=\"let content of carouselContents; let i = index\"\r\n      [class.slick-active]=\"content.isActive\"\r\n      (click)=\"goTo(i)\"\r\n    >\r\n      <ng-template [ngTemplateOutlet]=\"nzDotRender || renderDotTemplate\" [ngTemplateOutletContext]=\"{ $implicit: i }\">\r\n      </ng-template>\r\n    </li>\r\n  </ul>\r\n</div>\r\n\r\n<ng-template #renderDotTemplate let-index>\r\n  <button>{{ index + 1 }}</button>\r\n</ng-template>\r\n",
+                host: {
+                    '[class.ant-carousel-vertical]': 'vertical'
+                },
+                styles: ["\n      nz-carousel {\n        display: block;\n        position: relative;\n        overflow: hidden;\n        width: 100%;\n        height: 100%;\n      }\n\n      .slick-dots {\n        display: block;\n      }\n\n      .slick-track {\n        opacity: 1;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzConfigService }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc2.Platform }, { type: ɵngcc1.NzDomEventService }, { type: ɵngcc1.NzDragService }, { type: Array, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_CAROUSEL_CUSTOM_STRATEGIES]
+            }] }]; }, { nzTransitionSpeed: [{
+            type: Input
+        }], nzBeforeChange: [{
+            type: Output
+        }], nzAfterChange: [{
+            type: Output
+        }], nzVertical: [{
+            type: Input
+        }], nzDotPosition: [{
+            type: Input
+        }], carouselContents: [{
+            type: ContentChildren,
+            args: [NzCarouselContentDirective]
+        }], slickList: [{
+            type: ViewChild,
+            args: ['slickList', { static: false }]
+        }], slickTrack: [{
+            type: ViewChild,
+            args: ['slickTrack', { static: false }]
+        }], nzDotRender: [{
+            type: Input
+        }], nzEffect: [{
+            type: Input
+        }], nzEnableSwipe: [{
+            type: Input
+        }], nzDots: [{
+            type: Input
+        }], nzAutoPlay: [{
+            type: Input
+        }], nzAutoPlaySpeed: [{
+            type: Input
+        }] }); })();
     return NzCarouselComponent;
 }());
 if (false) {
@@ -1236,13 +1352,19 @@ if (false) {
 var NzCarouselModule = /** @class */ (function () {
     function NzCarouselModule() {
     }
-    NzCarouselModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzCarouselComponent, NzCarouselContentDirective],
-                    exports: [NzCarouselComponent, NzCarouselContentDirective],
-                    imports: [CommonModule, PlatformModule]
-                },] }
-    ];
+NzCarouselModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzCarouselModule });
+NzCarouselModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzCarouselModule_Factory(t) { return new (t || NzCarouselModule)(); }, imports: [[CommonModule, PlatformModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzCarouselModule, { declarations: function () { return [NzCarouselComponent,
+        NzCarouselContentDirective]; }, imports: function () { return [CommonModule, PlatformModule]; }, exports: function () { return [NzCarouselComponent,
+        NzCarouselContentDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCarouselModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzCarouselComponent, NzCarouselContentDirective],
+                exports: [NzCarouselComponent, NzCarouselContentDirective],
+                imports: [CommonModule, PlatformModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzCarouselModule;
 }());
 
@@ -1257,4 +1379,5 @@ var NzCarouselModule = /** @class */ (function () {
  */
 
 export { NZ_CAROUSEL_CUSTOM_STRATEGIES, NzCarouselBaseStrategy, NzCarouselComponent, NzCarouselContentDirective, NzCarouselModule };
+
 //# sourceMappingURL=ng-zorro-antd-carousel.js.map

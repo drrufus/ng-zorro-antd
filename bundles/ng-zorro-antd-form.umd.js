@@ -1,8 +1,137 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/layout'), require('@angular/cdk/platform'), require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core'), require('@angular/forms'), require('rxjs'), require('rxjs/operators')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/form', ['exports', '@angular/cdk/layout', '@angular/cdk/platform', '@angular/common', '@angular/core', 'ng-zorro-antd/grid', 'ng-zorro-antd/icon', 'ng-zorro-antd/core', '@angular/forms', 'rxjs', 'rxjs/operators'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].form = {}), global.ng.cdk.layout, global.ng.cdk.platform, global.ng.common, global.ng.core, global['ng-zorro-antd'].grid, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].core, global.ng.forms, global.rxjs, global.rxjs.operators));
-}(this, (function (exports, layout, platform, common, core, grid, icon, core$1, forms, rxjs, operators) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/cdk/layout'),require('@angular/cdk/platform'),require('ng-zorro-antd/grid'),require('@angular/common'),require('ng-zorro-antd/icon'),exports, require('@angular/cdk/layout'), require('@angular/cdk/platform'), require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/core'), require('@angular/forms'), require('rxjs'), require('rxjs/operators')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/form', ['@angular/core','ng-zorro-antd/core','@angular/cdk/layout','@angular/cdk/platform','ng-zorro-antd/grid','@angular/common','ng-zorro-antd/icon','exports', '@angular/cdk/layout', '@angular/cdk/platform', '@angular/common', '@angular/core', 'ng-zorro-antd/grid', 'ng-zorro-antd/icon', 'ng-zorro-antd/core', '@angular/forms', 'rxjs', 'rxjs/operators'], factory) :
+    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.cdk.layout,global.ng.cdk.platform,global.ngZorroAntd.grid,global.ng.common,global.ngZorroAntd.icon,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].form = {}), global.ng.cdk.layout, global.ng.cdk.platform, global.ng.common, global.ng.core, global['ng-zorro-antd'].grid, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].core, global.ng.forms, global.rxjs, global.rxjs.operators));
+}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,ɵngcc5,ɵngcc6,exports, layout, platform, common, core, grid, icon, core$1, forms, rxjs, operators) { 
+var _c0 = ["*"];
+function NzFormControlComponent_i_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 7);
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("nzType", ctx_r0.iconType);
+} }
+function NzFormControlComponent_div_5_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r9 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r9.nzSuccessTip);
+} }
+var _c1 = function (a0) { return { $implicit: a0 }; };
+function NzFormControlComponent_div_5_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_2_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r5 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r5.nzSuccessTip)("nzStringTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c1, ctx_r5.validateControl));
+} }
+function NzFormControlComponent_div_5_ng_container_3_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r10 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r10.nzWarningTip);
+} }
+function NzFormControlComponent_div_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_3_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r6.nzWarningTip)("nzStringTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c1, ctx_r6.validateControl));
+} }
+function NzFormControlComponent_div_5_ng_container_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r11 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r11.nzErrorTip);
+} }
+function NzFormControlComponent_div_5_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_4_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r7 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r7.nzErrorTip)("nzStringTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c1, ctx_r7.validateControl));
+} }
+function NzFormControlComponent_div_5_ng_container_5_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r12 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r12.nzValidatingTip);
+} }
+function NzFormControlComponent_div_5_ng_container_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzFormControlComponent_div_5_ng_container_5_ng_container_1_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r8.nzValidatingTip)("nzStringTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c1, ctx_r8.validateControl));
+} }
+function NzFormControlComponent_div_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", 8);
+    ɵngcc0.ɵɵelementStart(1, "div");
+    ɵngcc0.ɵɵtemplate(2, NzFormControlComponent_div_5_ng_container_2_Template, 2, 4, "ng-container", 5);
+    ɵngcc0.ɵɵtemplate(3, NzFormControlComponent_div_5_ng_container_3_Template, 2, 4, "ng-container", 5);
+    ɵngcc0.ɵɵtemplate(4, NzFormControlComponent_div_5_ng_container_4_Template, 2, 4, "ng-container", 5);
+    ɵngcc0.ɵɵtemplate(5, NzFormControlComponent_div_5_ng_container_5_Template, 2, 4, "ng-container", 5);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("@helpMotion", undefined);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.showSuccessTip);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.showWarningTip);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.showErrorTip);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.showValidatingTip);
+} }
+function NzFormControlComponent_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0, 1, ["*ngIf", "!hasTips"]);
+} }
+function NzFormControlComponent_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0, 2, ["*ngIf", "!nzExtra"]);
+} }
+function NzFormControlComponent_div_8_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r13 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r13.nzExtra);
+} }
+function NzFormControlComponent_div_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", 10);
+    ɵngcc0.ɵɵtemplate(1, NzFormControlComponent_div_8_ng_container_1_Template, 2, 1, "ng-container", 11);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r4 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r4.nzExtra);
+} }
+var _c2 = ["*", [["nz-form-explain"]], [["nz-form-extra"]]];
+var _c3 = ["*", "nz-form-explain", "nz-form-extra"];
+'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -212,23 +341,33 @@
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-explain');
             core$1.warnDeprecation("'nz-form-explain' is going to be removed in 9.0.0. Use [nzSuccessTip] | [nzWarningTip] | [nzErrorTip] | [nzValidatingTip] in nz-form-control instead. Read https://ng.ant.design/components/form/en");
         }
-        NzFormExplainComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-explain',
-                        exportAs: 'nzFormExplain',
-                        preserveWhitespaces: false,
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        animations: [core$1.helpMotion],
-                        template: "<div [@helpMotion]>\r\n  <ng-content></ng-content>\r\n</div>",
-                        styles: ["\n      nz-form-explain {\n        display: block;\n      }\n    "]
-                    }] }
-        ];
         /** @nocollapse */
         NzFormExplainComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
             { type: core.Renderer2 }
         ]; };
+NzFormExplainComponent.ɵfac = function NzFormExplainComponent_Factory(t) { return new (t || NzFormExplainComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzFormExplainComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormExplainComponent, selectors: [["nz-form-explain"]], exportAs: ["nzFormExplain"], ngContentSelectors: _c0, decls: 2, vars: 1, template: function NzFormExplainComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵelementStart(0, "div");
+        ɵngcc0.ɵɵprojection(1);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("@helpMotion", undefined);
+    } }, styles: ["\n      nz-form-explain {\n        display: block;\n      }\n    "], encapsulation: 2, data: { animation: [core$1.helpMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormExplainComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-explain',
+                exportAs: 'nzFormExplain',
+                preserveWhitespaces: false,
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                animations: [core$1.helpMotion],
+                template: "<div [@helpMotion]>\r\n  <ng-content></ng-content>\r\n</div>",
+                styles: ["\n      nz-form-explain {\n        display: block;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
         return NzFormExplainComponent;
     }());
     if (false) {
@@ -339,21 +478,6 @@
                 this.updateFlexStyle();
             }
         };
-        NzFormItemComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-item',
-                        exportAs: 'nzFormItem',
-                        preserveWhitespaces: false,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        encapsulation: core.ViewEncapsulation.None,
-                        providers: [core$1.NzUpdateHostClassService],
-                        template: "<ng-content></ng-content>",
-                        host: {
-                            '[class.ant-form-item-with-help]': 'withHelpClass'
-                        },
-                        styles: ["\n      nz-form-item {\n        display: block;\n      }\n    "]
-                    }] }
-        ];
         /** @nocollapse */
         NzFormItemComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -373,6 +497,39 @@
             core$1.InputBoolean(),
             __metadata("design:type", Boolean)
         ], NzFormItemComponent.prototype, "nzFlex", void 0);
+NzFormItemComponent.ɵfac = function NzFormItemComponent_Factory(t) { return new (t || NzFormItemComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.MediaMatcher), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzDomEventService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
+NzFormItemComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormItemComponent, selectors: [["nz-form-item"]], contentQueries: function NzFormItemComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzFormExplainComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzFormExplainComponent = _t);
+    } }, hostVars: 2, hostBindings: function NzFormItemComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-form-item-with-help", ctx.withHelpClass);
+    } }, inputs: { nzFlex: "nzFlex" }, exportAs: ["nzFormItem"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzFormItemComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+    } }, styles: ["\n      nz-form-item {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormItemComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-item',
+                exportAs: 'nzFormItem',
+                preserveWhitespaces: false,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                encapsulation: core.ViewEncapsulation.None,
+                providers: [core$1.NzUpdateHostClassService],
+                template: "<ng-content></ng-content>",
+                host: {
+                    '[class.ant-form-item-with-help]': 'withHelpClass'
+                },
+                styles: ["\n      nz-form-item {\n        display: block;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc2.MediaMatcher }, { type: ɵngcc0.NgZone }, { type: ɵngcc3.Platform }, { type: ɵngcc1.NzDomEventService }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzFlex: [{
+            type: core.Input
+        }], listOfNzFormExplainComponent: [{
+            type: core.ContentChildren,
+            args: [NzFormExplainComponent, { descendants: true }]
+        }] }); })();
         return NzFormItemComponent;
     }(grid.NzRowDirective));
     if (false) {
@@ -639,19 +796,6 @@
         function () {
             _super.prototype.ngAfterViewInit.call(this);
         };
-        NzFormControlComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-control',
-                        exportAs: 'nzFormControl',
-                        preserveWhitespaces: false,
-                        animations: [core$1.helpMotion],
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        providers: [core$1.NzUpdateHostClassService],
-                        template: "<div class=\"ant-form-item-control\" [ngClass]=\"controlClassMap\">\r\n  <span class=\"ant-form-item-children\">\r\n    <ng-content></ng-content>\r\n    <span class=\"ant-form-item-children-icon\">\r\n      <i *ngIf=\"nzHasFeedback && iconType\" nz-icon [nzType]=\"iconType\"></i>\r\n    </span>\r\n  </span>\r\n  <div class=\"ant-form-explain\" *ngIf=\"showSuccessTip || showWarningTip || showErrorTip || showValidatingTip\">\r\n    <div @helpMotion>\r\n      <ng-container *ngIf=\"showSuccessTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzSuccessTip;context:{$implicit:validateControl};\">{{ nzSuccessTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showWarningTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzWarningTip;context:{$implicit:validateControl};\">{{ nzWarningTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showErrorTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzErrorTip;context:{$implicit:validateControl};\">{{ nzErrorTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showValidatingTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzValidatingTip;context:{$implicit:validateControl};\">{{ nzValidatingTip }}</ng-container>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n  <ng-content *ngIf=\"!hasTips\" select=\"nz-form-explain\"></ng-content>\r\n  <ng-content *ngIf=\"!nzExtra\" select=\"nz-form-extra\"></ng-content>\r\n  <div class=\"ant-form-extra\" *ngIf=\"nzExtra\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\r\n  </div>\r\n</div>",
-                        styles: ["\n      nz-form-control {\n        display: block;\n      }\n      form .has-feedback .ant-input-suffix i {\n        margin-right: 18px;\n      }\n    "]
-                    }] }
-        ];
         /** @nocollapse */
         NzFormControlComponent.ctorParameters = function () { return [
             { type: core$1.NzUpdateHostClassService },
@@ -671,6 +815,78 @@
             nzHasFeedback: [{ type: core.Input }],
             nzValidateStatus: [{ type: core.Input }]
         };
+NzFormControlComponent.ɵfac = function NzFormControlComponent_Factory(t) { return new (t || NzFormControlComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(NzFormItemComponent, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.NzRowDirective, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzFormControlComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormControlComponent, selectors: [["nz-form-control"]], contentQueries: function NzFormControlComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, forms.NgControl, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.defaultValidateControl = _t.first);
+    } }, inputs: { nzHasFeedback: "nzHasFeedback", nzValidateStatus: "nzValidateStatus", nzSuccessTip: "nzSuccessTip", nzWarningTip: "nzWarningTip", nzErrorTip: "nzErrorTip", nzValidatingTip: "nzValidatingTip", nzExtra: "nzExtra" }, exportAs: ["nzFormControl"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c3, decls: 9, vars: 6, consts: [[1, "ant-form-item-control", 3, "ngClass"], [1, "ant-form-item-children"], [1, "ant-form-item-children-icon"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], ["class", "ant-form-explain", 4, "ngIf"], [4, "ngIf"], ["class", "ant-form-extra", 4, "ngIf"], ["nz-icon", "", 3, "nzType"], [1, "ant-form-explain"], [4, "nzStringTemplateOutlet", "nzStringTemplateOutletContext"], [1, "ant-form-extra"], [4, "nzStringTemplateOutlet"]], template: function NzFormControlComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef(_c2);
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵelementStart(1, "span", 1);
+        ɵngcc0.ɵɵprojection(2);
+        ɵngcc0.ɵɵelementStart(3, "span", 2);
+        ɵngcc0.ɵɵtemplate(4, NzFormControlComponent_i_4_Template, 1, 1, "i", 3);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(5, NzFormControlComponent_div_5_Template, 6, 5, "div", 4);
+        ɵngcc0.ɵɵtemplate(6, NzFormControlComponent_6_Template, 1, 0, undefined, 5);
+        ɵngcc0.ɵɵtemplate(7, NzFormControlComponent_7_Template, 1, 0, undefined, 5);
+        ɵngcc0.ɵɵtemplate(8, NzFormControlComponent_div_8_Template, 2, 1, "div", 6);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngClass", ctx.controlClassMap);
+        ɵngcc0.ɵɵadvance(4);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzHasFeedback && ctx.iconType);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.showSuccessTip || ctx.showWarningTip || ctx.showErrorTip || ctx.showValidatingTip);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", !ctx.hasTips);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzExtra);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzExtra);
+    } }, directives: [ɵngcc5.NgClass, ɵngcc5.NgIf, ɵngcc6.NzIconDirective, ɵngcc1.NzStringTemplateOutletDirective], styles: ["\n      nz-form-control {\n        display: block;\n      }\n      form .has-feedback .ant-input-suffix i {\n        margin-right: 18px;\n      }\n    "], encapsulation: 2, data: { animation: [core$1.helpMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormControlComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-control',
+                exportAs: 'nzFormControl',
+                preserveWhitespaces: false,
+                animations: [core$1.helpMotion],
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                providers: [core$1.NzUpdateHostClassService],
+                template: "<div class=\"ant-form-item-control\" [ngClass]=\"controlClassMap\">\r\n  <span class=\"ant-form-item-children\">\r\n    <ng-content></ng-content>\r\n    <span class=\"ant-form-item-children-icon\">\r\n      <i *ngIf=\"nzHasFeedback && iconType\" nz-icon [nzType]=\"iconType\"></i>\r\n    </span>\r\n  </span>\r\n  <div class=\"ant-form-explain\" *ngIf=\"showSuccessTip || showWarningTip || showErrorTip || showValidatingTip\">\r\n    <div @helpMotion>\r\n      <ng-container *ngIf=\"showSuccessTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzSuccessTip;context:{$implicit:validateControl};\">{{ nzSuccessTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showWarningTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzWarningTip;context:{$implicit:validateControl};\">{{ nzWarningTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showErrorTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzErrorTip;context:{$implicit:validateControl};\">{{ nzErrorTip }}</ng-container>\r\n      </ng-container>\r\n      <ng-container *ngIf=\"showValidatingTip\">\r\n        <ng-container *nzStringTemplateOutlet=\"nzValidatingTip;context:{$implicit:validateControl};\">{{ nzValidatingTip }}</ng-container>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n  <ng-content *ngIf=\"!hasTips\" select=\"nz-form-explain\"></ng-content>\r\n  <ng-content *ngIf=\"!nzExtra\" select=\"nz-form-extra\"></ng-content>\r\n  <div class=\"ant-form-extra\" *ngIf=\"nzExtra\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzExtra\">{{ nzExtra }}</ng-container>\r\n  </div>\r\n</div>",
+                styles: ["\n      nz-form-control {\n        display: block;\n      }\n      form .has-feedback .ant-input-suffix i {\n        margin-right: 18px;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ElementRef }, { type: NzFormItemComponent, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Host
+            }] }, { type: ɵngcc4.NzRowDirective, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Host
+            }] }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.Renderer2 }]; }, { nzHasFeedback: [{
+            type: core.Input
+        }], nzValidateStatus: [{
+            type: core.Input
+        }], defaultValidateControl: [{
+            type: core.ContentChild,
+            args: [forms.NgControl, { static: false }]
+        }], nzSuccessTip: [{
+            type: core.Input
+        }], nzWarningTip: [{
+            type: core.Input
+        }], nzErrorTip: [{
+            type: core.Input
+        }], nzValidatingTip: [{
+            type: core.Input
+        }], nzExtra: [{
+            type: core.Input
+        }] }); })();
         return NzFormControlComponent;
     }(grid.NzColDirective));
     if (false) {
@@ -732,22 +948,28 @@
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-extra');
             core$1.warnDeprecation("'nz-form-extra' is going to be removed in 9.0.0. Use [nzExtra] in nz-form-control instead. Read https://ng.ant.design/components/form/en");
         }
-        NzFormExtraComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-extra',
-                        exportAs: 'nzFormExtra',
-                        template: "<ng-content></ng-content>",
-                        preserveWhitespaces: false,
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        styles: ["\n      nz-form-extra {\n        display: block;\n      }\n    "]
-                    }] }
-        ];
         /** @nocollapse */
         NzFormExtraComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
             { type: core.Renderer2 }
         ]; };
+NzFormExtraComponent.ɵfac = function NzFormExtraComponent_Factory(t) { return new (t || NzFormExtraComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzFormExtraComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormExtraComponent, selectors: [["nz-form-extra"]], exportAs: ["nzFormExtra"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzFormExtraComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+    } }, styles: ["\n      nz-form-extra {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormExtraComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-extra',
+                exportAs: 'nzFormExtra',
+                template: "<ng-content></ng-content>",
+                preserveWhitespaces: false,
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                styles: ["\n      nz-form-extra {\n        display: block;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
         return NzFormExtraComponent;
     }());
     if (false) {
@@ -822,17 +1044,6 @@
         function () {
             _super.prototype.ngAfterViewInit.call(this);
         };
-        NzFormLabelComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-label',
-                        exportAs: 'nzFormLabel',
-                        providers: [core$1.NzUpdateHostClassService],
-                        preserveWhitespaces: false,
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        template: "<label [attr.for]=\"nzFor\"\r\n  [class.ant-form-item-no-colon]=\"noColon === 'default' ? defaultNoColon : nzNoColon\"\r\n  [class.ant-form-item-required]=\"nzRequired\">\r\n  <ng-content></ng-content>\r\n</label>"
-                    }] }
-        ];
         /** @nocollapse */
         NzFormLabelComponent.ctorParameters = function () { return [
             { type: core$1.NzUpdateHostClassService },
@@ -851,6 +1062,42 @@
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzFormLabelComponent.prototype, "nzRequired", void 0);
+NzFormLabelComponent.ɵfac = function NzFormLabelComponent_Factory(t) { return new (t || NzFormLabelComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(NzFormItemComponent, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.NzRowDirective, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
+NzFormLabelComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormLabelComponent, selectors: [["nz-form-label"]], inputs: { nzNoColon: "nzNoColon", nzFor: "nzFor", nzRequired: "nzRequired" }, exportAs: ["nzFormLabel"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c0, decls: 2, vars: 5, template: function NzFormLabelComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵelementStart(0, "label");
+        ɵngcc0.ɵɵprojection(1);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-form-item-no-colon", ctx.noColon === "default" ? ctx.defaultNoColon : ctx.nzNoColon)("ant-form-item-required", ctx.nzRequired);
+        ɵngcc0.ɵɵattribute("for", ctx.nzFor);
+    } }, encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormLabelComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-label',
+                exportAs: 'nzFormLabel',
+                providers: [core$1.NzUpdateHostClassService],
+                preserveWhitespaces: false,
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                template: "<label [attr.for]=\"nzFor\"\r\n  [class.ant-form-item-no-colon]=\"noColon === 'default' ? defaultNoColon : nzNoColon\"\r\n  [class.ant-form-item-required]=\"nzRequired\">\r\n  <ng-content></ng-content>\r\n</label>"
+            }]
+    }], function () { return [{ type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ElementRef }, { type: NzFormItemComponent, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Host
+            }] }, { type: ɵngcc4.NzRowDirective, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Host
+            }] }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzNoColon: [{
+            type: core.Input
+        }], nzFor: [{
+            type: core.Input
+        }], nzRequired: [{
+            type: core.Input
+        }] }); })();
         return NzFormLabelComponent;
     }(grid.NzColDirective));
     if (false) {
@@ -879,21 +1126,27 @@
             this.renderer = renderer;
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-split');
         }
-        NzFormSplitComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-split',
-                        exportAs: 'nzFormSplit',
-                        preserveWhitespaces: false,
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        template: "<ng-content></ng-content>"
-                    }] }
-        ];
         /** @nocollapse */
         NzFormSplitComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
             { type: core.Renderer2 }
         ]; };
+NzFormSplitComponent.ɵfac = function NzFormSplitComponent_Factory(t) { return new (t || NzFormSplitComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzFormSplitComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormSplitComponent, selectors: [["nz-form-split"]], exportAs: ["nzFormSplit"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzFormSplitComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+    } }, encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormSplitComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-split',
+                exportAs: 'nzFormSplit',
+                preserveWhitespaces: false,
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                template: "<ng-content></ng-content>"
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
         return NzFormSplitComponent;
     }());
     if (false) {
@@ -916,21 +1169,27 @@
             this.renderer = renderer;
             this.renderer.addClass(this.elementRef.nativeElement, 'ant-form-text');
         }
-        NzFormTextComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-form-text',
-                        exportAs: 'nzFormText',
-                        preserveWhitespaces: false,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        encapsulation: core.ViewEncapsulation.None,
-                        template: "<ng-content></ng-content>"
-                    }] }
-        ];
         /** @nocollapse */
         NzFormTextComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
             { type: core.Renderer2 }
         ]; };
+NzFormTextComponent.ɵfac = function NzFormTextComponent_Factory(t) { return new (t || NzFormTextComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzFormTextComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzFormTextComponent, selectors: [["nz-form-text"]], exportAs: ["nzFormText"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzFormTextComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+    } }, encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormTextComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-form-text',
+                exportAs: 'nzFormText',
+                preserveWhitespaces: false,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                encapsulation: core.ViewEncapsulation.None,
+                template: "<ng-content></ng-content>"
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
         return NzFormTextComponent;
     }());
     if (false) {
@@ -1037,13 +1296,6 @@
             this.destroy$.next();
             this.destroy$.complete();
         };
-        NzFormDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: '[nz-form]',
-                        exportAs: 'nzForm',
-                        providers: [core$1.NzUpdateHostClassService]
-                    },] }
-        ];
         /** @nocollapse */
         NzFormDirective.ctorParameters = function () { return [
             { type: core$1.NzConfigService },
@@ -1060,6 +1312,28 @@
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, false), core$1.InputBoolean(),
             __metadata("design:type", Boolean)
         ], NzFormDirective.prototype, "nzNoColon", void 0);
+NzFormDirective.ɵfac = function NzFormDirective_Factory(t) { return new (t || NzFormDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService)); };
+NzFormDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzFormDirective, selectors: [["", "nz-form", ""]], contentQueries: function NzFormDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzFormLabelComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzFormLabelComponent = _t);
+    } }, inputs: { nzLayout: "nzLayout", nzNoColon: "nzNoColon" }, exportAs: ["nzForm"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: '[nz-form]',
+                exportAs: 'nzForm',
+                providers: [core$1.NzUpdateHostClassService]
+            }]
+    }], function () { return [{ type: ɵngcc1.NzConfigService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc1.NzUpdateHostClassService }]; }, { nzLayout: [{
+            type: core.Input
+        }], nzNoColon: [{
+            type: core.Input
+        }], nzFormLabelComponent: [{
+            type: core.ContentChildren,
+            args: [NzFormLabelComponent, { descendants: true }]
+        }] }); })();
         return NzFormDirective;
     }());
     if (false) {
@@ -1097,31 +1371,49 @@
     var NzFormModule = /** @class */ (function () {
         function NzFormModule() {
         }
-        NzFormModule.decorators = [
-            { type: core.NgModule, args: [{
-                        declarations: [
-                            NzFormExtraComponent,
-                            NzFormLabelComponent,
-                            NzFormDirective,
-                            NzFormItemComponent,
-                            NzFormControlComponent,
-                            NzFormExplainComponent,
-                            NzFormTextComponent,
-                            NzFormSplitComponent
-                        ],
-                        exports: [
-                            NzFormExtraComponent,
-                            NzFormLabelComponent,
-                            NzFormDirective,
-                            NzFormItemComponent,
-                            NzFormControlComponent,
-                            NzFormExplainComponent,
-                            NzFormTextComponent,
-                            NzFormSplitComponent
-                        ],
-                        imports: [common.CommonModule, grid.NzGridModule, icon.NzIconModule, layout.LayoutModule, platform.PlatformModule, core$1.NzAddOnModule]
-                    },] }
-        ];
+NzFormModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzFormModule });
+NzFormModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzFormModule_Factory(t) { return new (t || NzFormModule)(); }, imports: [[common.CommonModule, grid.NzGridModule, icon.NzIconModule, layout.LayoutModule, platform.PlatformModule, core$1.NzAddOnModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzFormModule, { declarations: [NzFormExtraComponent,
+        NzFormLabelComponent,
+        NzFormDirective,
+        NzFormItemComponent,
+        NzFormControlComponent,
+        NzFormExplainComponent,
+        NzFormTextComponent,
+        NzFormSplitComponent], imports: [ɵngcc5.CommonModule, ɵngcc4.NzGridModule, ɵngcc6.NzIconModule, ɵngcc2.LayoutModule, ɵngcc3.PlatformModule, ɵngcc1.NzAddOnModule], exports: [NzFormExtraComponent,
+        NzFormLabelComponent,
+        NzFormDirective,
+        NzFormItemComponent,
+        NzFormControlComponent,
+        NzFormExplainComponent,
+        NzFormTextComponent,
+        NzFormSplitComponent] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzFormModule, [{
+        type: core.NgModule,
+        args: [{
+                declarations: [
+                    NzFormExtraComponent,
+                    NzFormLabelComponent,
+                    NzFormDirective,
+                    NzFormItemComponent,
+                    NzFormControlComponent,
+                    NzFormExplainComponent,
+                    NzFormTextComponent,
+                    NzFormSplitComponent
+                ],
+                exports: [
+                    NzFormExtraComponent,
+                    NzFormLabelComponent,
+                    NzFormDirective,
+                    NzFormItemComponent,
+                    NzFormControlComponent,
+                    NzFormExplainComponent,
+                    NzFormTextComponent,
+                    NzFormSplitComponent
+                ],
+                imports: [common.CommonModule, grid.NzGridModule, icon.NzIconModule, layout.LayoutModule, platform.PlatformModule, core$1.NzAddOnModule]
+            }]
+    }], function () { return []; }, null); })();
         return NzFormModule;
     }());
 
@@ -1138,4 +1430,5 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
 //# sourceMappingURL=ng-zorro-antd-form.umd.js.map

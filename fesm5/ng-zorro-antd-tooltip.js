@@ -26,6 +26,38 @@ import { CommonModule } from '@angular/common';
  * Tooltip component. Also the base component for legacy components.
  * @abstract
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/cdk/overlay';
+import * as ɵngcc3 from '@angular/common';
+
+var _c0 = ["overlay"];
+var _c1 = ["nzTemplate"];
+function NzToolTipComponent_ng_template_1_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r2.title);
+} }
+function NzToolTipComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", 2);
+    ɵngcc0.ɵɵelementStart(1, "div", 3);
+    ɵngcc0.ɵɵelement(2, "div", 4);
+    ɵngcc0.ɵɵelementStart(3, "div", 5);
+    ɵngcc0.ɵɵtemplate(4, NzToolTipComponent_ng_template_1_ng_container_4_Template, 2, 1, "ng-container", 6);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("ngClass", ctx_r1._classMap)("ngStyle", ctx_r1.nzOverlayStyle)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@zoomBigMotion", "active");
+    ɵngcc0.ɵɵadvance(4);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.title);
+} }
+var _c2 = ["*"];
 var NzTooltipBaseComponent = /** @class */ (function () {
     function NzTooltipBaseComponent(cdr, noAnimation) {
         this.cdr = cdr;
@@ -214,6 +246,9 @@ var NzTooltipBaseComponent = /** @class */ (function () {
     NzTooltipBaseComponent.propDecorators = {
         nzVisibleChange: [{ type: Output }]
     };
+NzTooltipBaseComponent.ɵfac = function NzTooltipBaseComponent_Factory(t) { ɵngcc0.ɵɵinvalidFactory(); };
+NzTooltipBaseComponent.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTooltipBaseComponent, outputs: { nzVisibleChange: "nzVisibleChange" } });
+
     return NzTooltipBaseComponent;
 }());
 if (false) {
@@ -402,6 +437,14 @@ var NzTooltipBaseComponentLegacy = /** @class */ (function (_super) {
         nzPopoverCloseButtonLabel: [{ type: Input }],
         nzPopoverForceRestoreFocus: [{ type: Input }]
     };
+NzTooltipBaseComponentLegacy.ɵfac = function NzTooltipBaseComponentLegacy_Factory(t) { return new (t || NzTooltipBaseComponentLegacy)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzTooltipBaseComponentLegacy.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTooltipBaseComponentLegacy, viewQuery: function NzTooltipBaseComponentLegacy_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.overlay = _t.first);
+    } }, inputs: { nzPlacement: "nzPlacement", nzVisible: "nzVisible", nzTrigger: "nzTrigger", nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzShowPopoverCloseButton: "nzShowPopoverCloseButton", nzPopoverCloseButtonLabel: "nzPopoverCloseButtonLabel", nzPopoverForceRestoreFocus: "nzPopoverForceRestoreFocus" }, outputs: { nzVisibleChange: "nzVisibleChange" }, features: [ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature] });
+
     return NzTooltipBaseComponentLegacy;
 }(NzTooltipBaseComponent));
 if (false) {
@@ -438,24 +481,6 @@ var NzToolTipComponent = /** @class */ (function (_super) {
         _this.noAnimation = noAnimation;
         return _this;
     }
-    NzToolTipComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-tooltip',
-                    exportAs: 'nzTooltipComponent',
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    animations: [zoomBigMotion],
-                    template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\">\r\n  <div\r\n    class=\"ant-tooltip\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-tooltip-content\">\r\n      <div class=\"ant-tooltip-arrow\"></div>\r\n      <div class=\"ant-tooltip-inner\">\r\n        <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
-                    preserveWhitespaces: false,
-                    providers: [
-                        {
-                            provide: NzTooltipBaseComponentLegacy,
-                            useExisting: NzToolTipComponent
-                        }
-                    ],
-                    styles: ["\n      .ant-tooltip {\n        position: relative;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzToolTipComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -465,6 +490,54 @@ var NzToolTipComponent = /** @class */ (function (_super) {
         nzTitle: [{ type: Input }],
         nzTitleTemplate: [{ type: ContentChild, args: ['nzTemplate', { static: true },] }]
     };
+NzToolTipComponent.ɵfac = function NzToolTipComponent_Factory(t) { return new (t || NzToolTipComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzToolTipComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzToolTipComponent, selectors: [["nz-tooltip"]], contentQueries: function NzToolTipComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵstaticContentQuery(dirIndex, _c1, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzTitleTemplate = _t.first);
+    } }, inputs: { nzTitle: "nzTitle" }, exportAs: ["nzTooltipComponent"], features: [ɵngcc0.ɵɵProvidersFeature([
+            {
+                provide: NzTooltipBaseComponentLegacy,
+                useExisting: NzToolTipComponent
+            }
+        ]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c2, decls: 3, vars: 4, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "backdropClick", "detach", "positionChange"], ["overlay", "cdkConnectedOverlay"], [1, "ant-tooltip", 3, "ngClass", "ngStyle", "nzNoAnimation"], [1, "ant-tooltip-content"], [1, "ant-tooltip-arrow"], [1, "ant-tooltip-inner"], [4, "nzStringTemplateOutlet"]], template: function NzToolTipComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+        ɵngcc0.ɵɵtemplate(1, NzToolTipComponent_ng_template_1_Template, 5, 6, "ng-template", 0, 1, ɵngcc0.ɵɵtemplateRefExtractor);
+        ɵngcc0.ɵɵlistener("backdropClick", function NzToolTipComponent_Template_ng_template_backdropClick_1_listener() { return ctx.hide(); })("detach", function NzToolTipComponent_Template_ng_template_detach_1_listener() { return ctx.hide(); })("positionChange", function NzToolTipComponent_Template_ng_template_positionChange_1_listener($event) { return ctx.onPositionChange($event); });
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx._visible)("cdkConnectedOverlayHasBackdrop", ctx._hasBackdrop)("cdkConnectedOverlayPositions", ctx._positions);
+    } }, directives: [ɵngcc2.CdkConnectedOverlay, ɵngcc1.NzConnectedOverlayDirective, ɵngcc3.NgClass, ɵngcc3.NgStyle, ɵngcc1.NzNoAnimationDirective, ɵngcc1.NzStringTemplateOutletDirective], styles: ["\n      .ant-tooltip {\n        position: relative;\n      }\n    "], encapsulation: 2, data: { animation: [zoomBigMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzToolTipComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-tooltip',
+                exportAs: 'nzTooltipComponent',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                animations: [zoomBigMotion],
+                template: "<ng-content></ng-content>\r\n<ng-template\r\n  #overlay=\"cdkConnectedOverlay\"\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayOpen]=\"_visible\"\r\n  [cdkConnectedOverlayHasBackdrop]=\"_hasBackdrop\"\r\n  [cdkConnectedOverlayPositions]=\"_positions\"\r\n  (backdropClick)=\"hide()\"\r\n  (detach)=\"hide()\"\r\n  (positionChange)=\"onPositionChange($event)\">\r\n  <div\r\n    class=\"ant-tooltip\"\r\n    [ngClass]=\"_classMap\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@zoomBigMotion]=\"'active'\">\r\n    <div class=\"ant-tooltip-content\">\r\n      <div class=\"ant-tooltip-arrow\"></div>\r\n      <div class=\"ant-tooltip-inner\">\r\n        <ng-container *nzStringTemplateOutlet=\"title\">{{ title }}</ng-container>\r\n      </div>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                preserveWhitespaces: false,
+                providers: [
+                    {
+                        provide: NzTooltipBaseComponentLegacy,
+                        useExisting: NzToolTipComponent
+                    }
+                ],
+                styles: ["\n      .ant-tooltip {\n        position: relative;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { nzTitle: [{
+            type: Input
+        }], nzTitleTemplate: [{
+            type: ContentChild,
+            args: ['nzTemplate', { static: true }]
+        }] }); })();
     return NzToolTipComponent;
 }(NzTooltipBaseComponentLegacy));
 if (false) {
@@ -958,6 +1031,9 @@ var NzTooltipBaseDirective = /** @class */ (function () {
         nzPopoverForceRestoreFocus: [{ type: Input }],
         nzVisibleChange: [{ type: Output }]
     };
+NzTooltipBaseDirective.ɵfac = function NzTooltipBaseDirective_Factory(t) { ɵngcc0.ɵɵinvalidFactory(); };
+NzTooltipBaseDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTooltipBaseDirective, inputs: { nzTrigger: "nzTrigger", nzPlacement: "nzPlacement", nzTitle: "nzTitle", nzContent: "nzContent", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzVisible: "nzVisible", nzShowPopoverCloseButton: "nzShowPopoverCloseButton", nzPopoverCloseButtonLabel: "nzPopoverCloseButtonLabel", nzPopoverForceRestoreFocus: "nzPopoverForceRestoreFocus" }, outputs: { nzVisibleChange: "nzVisibleChange" }, features: [ɵngcc0.ɵɵNgOnChangesFeature] });
+
     return NzTooltipBaseDirective;
 }());
 if (false) {
@@ -1100,15 +1176,6 @@ var NzTooltipDirective = /** @class */ (function (_super) {
         _this.componentFactory = _this.resolver.resolveComponentFactory(NzToolTipComponent);
         return _this;
     }
-    NzTooltipDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-tooltip]',
-                    exportAs: 'nzTooltip',
-                    host: {
-                        '[class.ant-tooltip-open]': 'isTooltipComponentVisible'
-                    }
-                },] }
-    ];
     /** @nocollapse */
     NzTooltipDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1124,6 +1191,38 @@ var NzTooltipDirective = /** @class */ (function (_super) {
         specificTrigger: [{ type: Input, args: ['nzTooltipTrigger',] }],
         specificPlacement: [{ type: Input, args: ['nzTooltipPlacement',] }]
     };
+NzTooltipDirective.ɵfac = function NzTooltipDirective_Factory(t) { return new (t || NzTooltipDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ComponentFactoryResolver), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(NzTooltipBaseComponentLegacy, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzTooltipDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTooltipDirective, selectors: [["", "nz-tooltip", ""]], hostVars: 2, hostBindings: function NzTooltipDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-tooltip-open", ctx.isTooltipComponentVisible);
+    } }, inputs: { specificTitle: ["nzTooltipTitle", "specificTitle"], directiveNameTitle: ["nz-tooltip", "directiveNameTitle"], specificTrigger: ["nzTooltipTrigger", "specificTrigger"], specificPlacement: ["nzTooltipPlacement", "specificPlacement"] }, exportAs: ["nzTooltip"], features: [ɵngcc0.ɵɵInheritDefinitionFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTooltipDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-tooltip]',
+                exportAs: 'nzTooltip',
+                host: {
+                    '[class.ant-tooltip-open]': 'isTooltipComponentVisible'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.ComponentFactoryResolver }, { type: ɵngcc0.Renderer2 }, { type: NzTooltipBaseComponentLegacy, decorators: [{
+                type: Optional
+            }] }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { specificTitle: [{
+            type: Input,
+            args: ['nzTooltipTitle']
+        }], directiveNameTitle: [{
+            type: Input,
+            args: ['nz-tooltip']
+        }], specificTrigger: [{
+            type: Input,
+            args: ['nzTooltipTrigger']
+        }], specificPlacement: [{
+            type: Input,
+            args: ['nzTooltipPlacement']
+        }] }); })();
     return NzTooltipDirective;
 }(NzTooltipBaseDirective));
 if (false) {
@@ -1152,14 +1251,20 @@ if (false) {
 var NzToolTipModule = /** @class */ (function () {
     function NzToolTipModule() {
     }
-    NzToolTipModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzToolTipComponent, NzTooltipDirective],
-                    exports: [NzToolTipComponent, NzTooltipDirective],
-                    imports: [CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule],
-                    entryComponents: [NzToolTipComponent]
-                },] }
-    ];
+NzToolTipModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzToolTipModule });
+NzToolTipModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzToolTipModule_Factory(t) { return new (t || NzToolTipModule)(); }, imports: [[CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzToolTipModule, { declarations: function () { return [NzToolTipComponent,
+        NzTooltipDirective]; }, imports: function () { return [CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule]; }, exports: function () { return [NzToolTipComponent,
+        NzTooltipDirective]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzToolTipModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzToolTipComponent, NzTooltipDirective],
+                exports: [NzToolTipComponent, NzTooltipDirective],
+                imports: [CommonModule, OverlayModule, NzAddOnModule, NzOverlayModule, NzNoAnimationModule],
+                entryComponents: [NzToolTipComponent]
+            }]
+    }], function () { return []; }, null); })();
     return NzToolTipModule;
 }());
 
@@ -1179,4 +1284,5 @@ var NzToolTipModule = /** @class */ (function () {
  */
 
 export { NzToolTipComponent, NzToolTipModule, NzTooltipBaseComponent, NzTooltipBaseComponentLegacy, NzTooltipBaseDirective, NzTooltipDirective };
+
 //# sourceMappingURL=ng-zorro-antd-tooltip.js.map

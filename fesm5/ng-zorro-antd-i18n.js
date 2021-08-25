@@ -18,6 +18,7 @@ import fnsParse from 'date-fns/parse';
  * Use of this source code is governed by an MIT-style license that can be
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
+import * as ɵngcc0 from '@angular/core';
 var Calendar = {
     today: '今天',
     now: '此刻',
@@ -353,17 +354,30 @@ var NzI18nService = /** @class */ (function () {
         }
         return index === depth ? res : null;
     };
-    NzI18nService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root'
-                },] }
-    ];
     /** @nocollapse */
     NzI18nService.ctorParameters = function () { return [
         { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_I18N,] }] },
         { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_DATE_LOCALE,] }] }
     ]; };
     /** @nocollapse */ NzI18nService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzI18nService_Factory() { return new NzI18nService(ɵɵinject(NZ_I18N, 8), ɵɵinject(NZ_DATE_LOCALE, 8)); }, token: NzI18nService, providedIn: "root" });
+NzI18nService.ɵfac = function NzI18nService_Factory(t) { return new (t || NzI18nService)(ɵngcc0.ɵɵinject(NZ_I18N, 8), ɵngcc0.ɵɵinject(NZ_DATE_LOCALE, 8)); };
+NzI18nService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzI18nService, factory: function (t) { return NzI18nService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_I18N]
+            }] }, { type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_DATE_LOCALE]
+            }] }]; }, null); })();
     return NzI18nService;
 }());
 if (false) {
@@ -405,15 +419,18 @@ var NzI18nPipe = /** @class */ (function () {
     function (path, keyValue) {
         return this._locale.translate(path, keyValue);
     };
-    NzI18nPipe.decorators = [
-        { type: Pipe, args: [{
-                    name: 'nzI18n'
-                },] }
-    ];
     /** @nocollapse */
     NzI18nPipe.ctorParameters = function () { return [
         { type: NzI18nService }
     ]; };
+NzI18nPipe.ɵfac = function NzI18nPipe_Factory(t) { return new (t || NzI18nPipe)(ɵngcc0.ɵɵdirectiveInject(NzI18nService)); };
+NzI18nPipe.ɵpipe = ɵngcc0.ɵɵdefinePipe({ name: "nzI18n", type: NzI18nPipe, pure: true });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nPipe, [{
+        type: Pipe,
+        args: [{
+                name: 'nzI18n'
+            }]
+    }], function () { return [{ type: NzI18nService }]; }, null); })();
     return NzI18nPipe;
 }());
 if (false) {
@@ -431,12 +448,16 @@ if (false) {
 var NzI18nModule = /** @class */ (function () {
     function NzI18nModule() {
     }
-    NzI18nModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzI18nPipe],
-                    exports: [NzI18nPipe]
-                },] }
-    ];
+NzI18nModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzI18nModule });
+NzI18nModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzI18nModule_Factory(t) { return new (t || NzI18nModule)(); } });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzI18nModule, { declarations: [NzI18nPipe], exports: [NzI18nPipe] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzI18nPipe],
+                exports: [NzI18nPipe]
+            }]
+    }], function () { return []; }, null); })();
     return NzI18nModule;
 }());
 
@@ -687,19 +708,32 @@ var DateHelperService = /** @class */ (function () {
         }
         return fnsParse("1970-01-01 " + text);
     };
-    DateHelperService.decorators = [
-        { type: Injectable, args: [{
-                    providedIn: 'root',
-                    useFactory: DATE_HELPER_SERVICE_FACTORY,
-                    deps: [Injector, [new Optional(), NZ_DATE_CONFIG]]
-                },] }
-    ];
     /** @nocollapse */
     DateHelperService.ctorParameters = function () { return [
         { type: NzI18nService },
         { type: undefined, decorators: [{ type: Optional }, { type: Inject, args: [NZ_DATE_CONFIG,] }] }
     ]; };
     /** @nocollapse */ DateHelperService.ngInjectableDef = ɵɵdefineInjectable({ factory: function DateHelperService_Factory() { return DATE_HELPER_SERVICE_FACTORY(ɵɵinject(INJECTOR), ɵɵinject(NZ_DATE_CONFIG, 8)); }, token: DateHelperService, providedIn: "root" });
+DateHelperService.ɵfac = function DateHelperService_Factory(t) { return new (t || DateHelperService)(ɵngcc0.ɵɵinject(NzI18nService), ɵngcc0.ɵɵinject(NZ_DATE_CONFIG, 8)); };
+DateHelperService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: DateHelperService, factory: function DateHelperService_Factory(t) { var r = null; if (t) {
+        r = new t();
+    }
+    else {
+        r = DATE_HELPER_SERVICE_FACTORY(ɵngcc0.ɵɵinject(Injector), ɵngcc0.ɵɵinject([new Optional(), NZ_DATE_CONFIG], 8));
+    } return r; }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(DateHelperService, [{
+        type: Injectable,
+        args: [{
+                providedIn: 'root',
+                useFactory: DATE_HELPER_SERVICE_FACTORY,
+                deps: [Injector, [new Optional(), NZ_DATE_CONFIG]]
+            }]
+    }], function () { return [{ type: NzI18nService }, { type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [NZ_DATE_CONFIG]
+            }] }]; }, null); })();
     return DateHelperService;
 }());
 if (false) {
@@ -7544,4 +7578,5 @@ var zh_TW = {
  */
 
 export { DATE_HELPER_SERVICE_FACTORY, DateHelperByDateFns, DateHelperByDatePipe, DateHelperService, NZ_DATE_CONFIG, NZ_DATE_LOCALE, NZ_I18N, NzI18nModule, NzI18nPipe, NzI18nService, ar_EG, bg_BG, ca_ES, cs_CZ, da_DK, de_DE, el_GR, en_GB, en_US, es_ES, et_EE, fa_IR, fi_FI, fr_BE, fr_FR, he_IL, hi_IN, hr_HR, hu_HU, id_ID, is_IS, it_IT, ja_JP, kn_IN, ko_KR, ku_IQ, lv_LV, mn_MN, ms_MY, nb_NO, ne_NP, nl_BE, nl_NL, pl_PL, pt_BR, pt_PT, ro_RO, ru_RU, sk_SK, sl_SI, sr_RS, sv_SE, ta_IN, th_TH, tr_TR, uk_UA, vi_VN, zh_CN, zh_TW };
+
 //# sourceMappingURL=ng-zorro-antd-i18n.js.map
