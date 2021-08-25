@@ -26,6 +26,7 @@
       role="tab"
       [attr.aria-selected]="nzSelectedIndex == i"
       [attr.aria-label]="tab.nzTitleAriaLabel"
+      [attr.aria-disabled]="tab.nzDisabled"
       [style.margin-right.px]="nzTabBarGutter"
       [class.ant-tabs-tab-active]="(nzSelectedIndex == i) && !nzHideAll"
       [disabled]="tab.nzDisabled"
