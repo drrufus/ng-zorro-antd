@@ -63,6 +63,9 @@ export class NzPopconfirmComponent extends NzToolTipComponent {
   private focusTrap: FocusTrap | null = null;
   private previouslyFocusedElement: HTMLElement | null;
 
+  @ViewChild('focusableTitle', { static: false })
+  private focusableTitle: ElementRef;
+
   _prefix = 'ant-popover-placement';
   _trigger: NzTooltipTrigger = 'click';
   _hasBackdrop = true;
@@ -70,7 +73,7 @@ export class NzPopconfirmComponent extends NzToolTipComponent {
   constructor(
     cdr: ChangeDetectorRef,
     private focusTrapFactory: FocusTrapFactory,
-    @Host() @Optional() public noAnimation?: NzNoAnimationDirective,
+    @Host() @Optional() public noAnimation?: NzNoAnimationDirective
   ) {
     super(cdr, noAnimation);
   }
@@ -81,6 +84,13 @@ export class NzPopconfirmComponent extends NzToolTipComponent {
       super.show();
       this.focusTrap = this.focusTrapFactory.create(this.popoverContainer.nativeElement);
       this.focusTrap.focusFirstTabbableElementWhenReady();
+
+      // focus on the title:
+      setTimeout(() => {
+        if (this.focusableTitle) {
+          this.focusableTitle.nativeElement.focus();
+        }
+      }, 200);
     } else {
       this.onConfirm();
     }

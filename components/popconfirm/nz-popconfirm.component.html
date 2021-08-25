@@ -27,7 +27,7 @@
                 <ng-container *nzStringTemplateOutlet="nzIcon">
                   <i nz-icon [nzType]="nzIcon || 'exclamation-circle'" nzTheme="fill"></i>
                 </ng-container>
-                <div class="ant-popover-message-title">{{ title }}</div>
+                <div class="ant-popover-message-title" #focusableTitle tabindex="-1">{{ title }}</div>
               </ng-container>
             </div>
             <div class="ant-popover-buttons">
