@@ -17,11 +17,6 @@ import { BarsOutline, CalendarOutline, CaretUpFill, CaretUpOutline, CaretDownFil
 /**
  * @record
  */
-import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from '@angular/platform-browser';
-import * as ɵngcc2 from 'ng-zorro-antd/core';
-import * as ɵngcc3 from '@angular/common/http';
-import * as ɵngcc4 from '@angular/cdk/platform';
 function NzIconfontOption() { }
 if (false) {
     /** @type {?} */
@@ -232,6 +227,11 @@ var NzIconService = /** @class */ (function (_super) {
     function () {
         return this.nzConfigService.getConfigForComponent('icon') || {};
     };
+    NzIconService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: 'root'
+                },] }
+    ];
     /** @nocollapse */
     NzIconService.ctorParameters = function () { return [
         { type: RendererFactory2 },
@@ -243,31 +243,6 @@ var NzIconService = /** @class */ (function (_super) {
         { type: String, decorators: [{ type: Optional }, { type: Inject, args: [NZ_ICON_DEFAULT_TWOTONE_COLOR,] }] }
     ]; };
     /** @nocollapse */ NzIconService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzIconService_Factory() { return new NzIconService(ɵɵinject(RendererFactory2), ɵɵinject(DomSanitizer), ɵɵinject(NzConfigService), ɵɵinject(HttpBackend, 8), ɵɵinject(DOCUMENT, 8), ɵɵinject(NZ_ICONS, 8), ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); }, token: NzIconService, providedIn: "root" });
-NzIconService.ɵfac = function NzIconService_Factory(t) { return new (t || NzIconService)(ɵngcc0.ɵɵinject(ɵngcc0.RendererFactory2), ɵngcc0.ɵɵinject(ɵngcc1.DomSanitizer), ɵngcc0.ɵɵinject(ɵngcc2.NzConfigService), ɵngcc0.ɵɵinject(ɵngcc3.HttpBackend, 8), ɵngcc0.ɵɵinject(DOCUMENT, 8), ɵngcc0.ɵɵinject(NZ_ICONS, 8), ɵngcc0.ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); };
-NzIconService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzIconService, factory: function (t) { return NzIconService.ɵfac(t); }, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconService, [{
-        type: Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: ɵngcc0.RendererFactory2 }, { type: ɵngcc1.DomSanitizer }, { type: ɵngcc2.NzConfigService }, { type: ɵngcc3.HttpBackend, decorators: [{
-                type: Optional
-            }] }, { type: undefined, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [DOCUMENT]
-            }] }, { type: Array, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_ICONS]
-            }] }, { type: String, decorators: [{
-                type: Optional
-            }, {
-                type: Inject,
-                args: [NZ_ICON_DEFAULT_TWOTONE_COLOR]
-            }] }]; }, null); })();
     return NzIconService;
 }(IconService));
 if (false) {
@@ -710,6 +685,12 @@ var NzIconDirective = /** @class */ (function (_super) {
             }
         }
     };
+    NzIconDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: 'i.anticon, [nz-icon]',
+                    exportAs: 'nzIcon'
+                },] }
+    ];
     /** @nocollapse */
     NzIconDirective.ctorParameters = function () { return [
         { type: NzIconService },
@@ -734,35 +715,6 @@ var NzIconDirective = /** @class */ (function (_super) {
         __metadata("design:type", Boolean),
         __metadata("design:paramtypes", [Boolean])
     ], NzIconDirective.prototype, "nzSpin", null);
-NzIconDirective.ɵfac = function NzIconDirective_Factory(t) { return new (t || NzIconDirective)(ɵngcc0.ɵɵdirectiveInject(NzIconService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.Platform)); };
-NzIconDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzIconDirective, selectors: [["i", 8, "anticon"], ["", "nz-icon", ""]], inputs: { nzSpin: "nzSpin", nzType: "nzType", nzTheme: "nzTheme", nzTwotoneColor: "nzTwotoneColor", nzIconfont: "nzIconfont", type: "type", nzRotate: "nzRotate", spin: "spin", iconfont: "iconfont", nzIconLabel: "nzIconLabel" }, exportAs: ["nzIcon"], features: [ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconDirective, [{
-        type: Directive,
-        args: [{
-                selector: 'i.anticon, [nz-icon]',
-                exportAs: 'nzIcon'
-            }]
-    }], function () { return [{ type: NzIconService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc4.Platform }]; }, { nzSpin: [{
-            type: Input
-        }], nzType: [{
-            type: Input
-        }], nzTheme: [{
-            type: Input
-        }], nzTwotoneColor: [{
-            type: Input
-        }], nzIconfont: [{
-            type: Input
-        }], type: [{
-            type: Input
-        }], nzRotate: [{
-            type: Input
-        }], spin: [{
-            type: Input
-        }], iconfont: [{
-            type: Input
-        }], nzIconLabel: [{
-            type: Input
-        }] }); })();
     return NzIconDirective;
 }(IconDirective));
 if (false) {
@@ -820,17 +772,13 @@ if (false) {
 var NzIconModule = /** @class */ (function () {
     function NzIconModule() {
     }
-NzIconModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzIconModule });
-NzIconModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzIconModule_Factory(t) { return new (t || NzIconModule)(); }, imports: [[PlatformModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzIconModule, { declarations: function () { return [NzIconDirective]; }, imports: function () { return [PlatformModule]; }, exports: function () { return [NzIconDirective]; } }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconModule, [{
-        type: NgModule,
-        args: [{
-                exports: [NzIconDirective],
-                declarations: [NzIconDirective],
-                imports: [PlatformModule]
-            }]
-    }], function () { return []; }, null); })();
+    NzIconModule.decorators = [
+        { type: NgModule, args: [{
+                    exports: [NzIconDirective],
+                    declarations: [NzIconDirective],
+                    imports: [PlatformModule]
+                },] }
+    ];
     return NzIconModule;
 }());
 
@@ -845,5 +793,4 @@ NzIconModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzIconModule
  */
 
 export { DEFAULT_TWOTONE_COLOR, NZ_ICONS, NZ_ICONS_USED_BY_ZORRO, NZ_ICON_DEFAULT_TWOTONE_COLOR, NzIconDirective, NzIconModule, NzIconService };
-
 //# sourceMappingURL=ng-zorro-antd-icon.js.map

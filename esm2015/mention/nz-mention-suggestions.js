@@ -10,16 +10,12 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { Directive } from '@angular/core';
-import * as ɵngcc0 from '@angular/core';
 export class NzMentionSuggestionDirective {
 }
-NzMentionSuggestionDirective.ɵfac = function NzMentionSuggestionDirective_Factory(t) { return new (t || NzMentionSuggestionDirective)(); };
-NzMentionSuggestionDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMentionSuggestionDirective, selectors: [["", "nzMentionSuggestion", ""]], exportAs: ["nzMentionSuggestion"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMentionSuggestionDirective, [{
-        type: Directive,
-        args: [{
+NzMentionSuggestionDirective.decorators = [
+    { type: Directive, args: [{
                 selector: '[nzMentionSuggestion]',
                 exportAs: 'nzMentionSuggestion'
-            }]
-    }], null, null); })();
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbWVudGlvbi1zdWdnZXN0aW9ucy5qcyIsInNvdXJjZXMiOlsibmc6L25nLXpvcnJvLWFudGQvbWVudGlvbi9uei1tZW50aW9uLXN1Z2dlc3Rpb25zLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7O0FBUUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7QUFNMUMsTUFBTSxPQUFPLDRCQUE0Qjs7O0NBQ3pDLHlEQUxDLFNBQVMsU0FBQyxrQkFDVCxRQUFRLEVBQUUsdUJBQXVCLGtCQUNqQyxRQUFRLEVBQUUscUJBQXFCO09BQ2hDOzs7Ozs7MEJBQ0kiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IERpcmVjdGl2ZSB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQERpcmVjdGl2ZSh7XHJcbiAgc2VsZWN0b3I6ICdbbnpNZW50aW9uU3VnZ2VzdGlvbl0nLFxyXG4gIGV4cG9ydEFzOiAnbnpNZW50aW9uU3VnZ2VzdGlvbidcclxufSlcclxuZXhwb3J0IGNsYXNzIE56TWVudGlvblN1Z2dlc3Rpb25EaXJlY3RpdmUge31cclxuIl19
+            },] }
+];
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotbWVudGlvbi1zdWdnZXN0aW9ucy5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvbWVudGlvbi8iLCJzb3VyY2VzIjpbIm56LW1lbnRpb24tc3VnZ2VzdGlvbnMudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFRQSxPQUFPLEVBQUUsU0FBUyxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBTTFDLE1BQU0sT0FBTyw0QkFBNEI7OztZQUp4QyxTQUFTLFNBQUM7Z0JBQ1QsUUFBUSxFQUFFLHVCQUF1QjtnQkFDakMsUUFBUSxFQUFFLHFCQUFxQjthQUNoQyIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuaW1wb3J0IHsgRGlyZWN0aXZlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5ARGlyZWN0aXZlKHtcclxuICBzZWxlY3RvcjogJ1tuek1lbnRpb25TdWdnZXN0aW9uXScsXHJcbiAgZXhwb3J0QXM6ICduek1lbnRpb25TdWdnZXN0aW9uJ1xyXG59KVxyXG5leHBvcnQgY2xhc3MgTnpNZW50aW9uU3VnZ2VzdGlvbkRpcmVjdGl2ZSB7fVxyXG4iXX0=

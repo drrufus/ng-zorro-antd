@@ -23,6 +23,7 @@ export declare class NzPopconfirmComponent extends NzToolTipComponent {
     popoverContainer: ElementRef;
     private focusTrap;
     private previouslyFocusedElement;
+    private focusableTitle;
     _prefix: string;
     _trigger: NzTooltipTrigger;
     _hasBackdrop: boolean;

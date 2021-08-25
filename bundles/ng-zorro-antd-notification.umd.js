@@ -1,68 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/common'),require('ng-zorro-antd/icon'),require('@angular/cdk/overlay'),exports, require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/message'), require('rxjs'), require('@angular/cdk/overlay'), require('@angular/common'), require('ng-zorro-antd/icon')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/notification', ['@angular/core','ng-zorro-antd/core','@angular/common','ng-zorro-antd/icon','@angular/cdk/overlay','exports', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/message', 'rxjs', '@angular/cdk/overlay', '@angular/common', 'ng-zorro-antd/icon'], factory) :
-    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.common,global.ngZorroAntd.icon,global.ng.cdk.overlay,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].notification = {}), global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].message, global.rxjs, global.ng.cdk.overlay, global.ng.common, global['ng-zorro-antd'].icon));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, core, core$1, message, rxjs, overlay, common, icon) { 
-function NzNotificationContainerComponent_nz_notification_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "nz-notification", 1);
-} if (rf & 2) {
-    var message_r1 = ctx.$implicit;
-    var i_r2 = ctx.index;
-    ɵngcc0.ɵɵproperty("nzMessage", message_r1)("nzIndex", i_r2);
-} }
-function NzNotificationComponent_div_1_i_4_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 15);
-} }
-function NzNotificationComponent_div_1_i_5_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 16);
-} }
-function NzNotificationComponent_div_1_i_6_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 17);
-} }
-function NzNotificationComponent_div_1_i_7_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 18);
-} }
-var _c0 = function (a0) { return { "ant-notification-notice-with-icon": a0 }; };
-function NzNotificationComponent_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 6);
-    ɵngcc0.ɵɵelementStart(1, "div", 7);
-    ɵngcc0.ɵɵelementStart(2, "div");
-    ɵngcc0.ɵɵelementContainerStart(3, 8);
-    ɵngcc0.ɵɵtemplate(4, NzNotificationComponent_div_1_i_4_Template, 1, 0, "i", 9);
-    ɵngcc0.ɵɵtemplate(5, NzNotificationComponent_div_1_i_5_Template, 1, 0, "i", 10);
-    ɵngcc0.ɵɵtemplate(6, NzNotificationComponent_div_1_i_6_Template, 1, 0, "i", 11);
-    ɵngcc0.ɵɵtemplate(7, NzNotificationComponent_div_1_i_7_Template, 1, 0, "i", 12);
-    ɵngcc0.ɵɵelementContainerEnd();
-    ɵngcc0.ɵɵelement(8, "div", 13);
-    ɵngcc0.ɵɵelement(9, "div", 14);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngClass", ɵngcc0.ɵɵpureFunction1(11, _c0, ctx_r0.nzMessage.type !== "blank"));
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵclassProp("ant-notification-notice-with-icon", ctx_r0.nzMessage.type !== "blank");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitch", ctx_r0.nzMessage.type);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "success");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "info");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "warning");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "error");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r0.nzMessage.title, ɵngcc0.ɵɵsanitizeHtml);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("innerHTML", ctx_r0.nzMessage.content, ɵngcc0.ɵɵsanitizeHtml);
-    ɵngcc0.ɵɵattribute("role", ctx_r0.nzMessage.options == null ? null : ctx_r0.nzMessage.options.nzRole);
-} }
-function NzNotificationComponent_ng_template_2_Template(rf, ctx) { }
-var _c1 = function (a0, a1) { return { $implicit: a0, data: a1 }; };
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/message'), require('rxjs'), require('@angular/cdk/overlay'), require('@angular/common'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/notification', ['exports', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/message', 'rxjs', '@angular/cdk/overlay', '@angular/common', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].notification = {}), global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].message, global.rxjs, global.ng.cdk.overlay, global.ng.common, global['ng-zorro-antd'].icon));
+}(this, (function (exports, core, core$1, message, rxjs, overlay, common, icon) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -421,6 +361,16 @@ var _c1 = function (a0, a1) { return { $implicit: a0, data: a1 }; };
             old.template = _new.template;
             old.type = _new.type;
         };
+        NzNotificationContainerComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-notification-container',
+                        exportAs: 'nzNotificationContainer',
+                        preserveWhitespaces: false,
+                        template: "<div\r\n  class=\"ant-notification ant-notification-{{config.nzPlacement}}\"\r\n  [style.top]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'topRight') ? top : null\"\r\n  [style.bottom]=\"(config.nzPlacement === 'bottomLeft' || config.nzPlacement === 'bottomRight') ? bottom : null\"\r\n  [style.right]=\"(config.nzPlacement === 'bottomRight' || config.nzPlacement === 'topRight') ? '0px' : null\"\r\n  [style.left]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'bottomLeft') ? '0px' : null\">\r\n  <nz-notification\r\n    *ngFor=\"let message of messages; let i = index\"\r\n    [nzMessage]=\"message\"\r\n    [nzIndex]=\"i\">\r\n  </nz-notification>\r\n</div>"
+                    }] }
+        ];
         /** @nocollapse */
         NzNotificationContainerComponent.ctorParameters = function () { return [
             { type: core.ChangeDetectorRef },
@@ -428,38 +378,6 @@ var _c1 = function (a0, a1) { return { $implicit: a0, data: a1 }; };
             { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_NOTIFICATION_DEFAULT_CONFIG,] }] },
             { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_NOTIFICATION_CONFIG,] }] }
         ]; };
-NzNotificationContainerComponent.ɵfac = function NzNotificationContainerComponent_Factory(t) { return new (t || NzNotificationContainerComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(NZ_NOTIFICATION_DEFAULT_CONFIG, 8), ɵngcc0.ɵɵdirectiveInject(NZ_NOTIFICATION_CONFIG, 8)); };
-NzNotificationContainerComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzNotificationContainerComponent, selectors: [["nz-notification-container"]], exportAs: ["nzNotificationContainer"], features: [ɵngcc0.ɵɵInheritDefinitionFeature], decls: 2, vars: 12, consts: [[3, "nzMessage", "nzIndex", 4, "ngFor", "ngForOf"], [3, "nzMessage", "nzIndex"]], template: function NzNotificationContainerComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "div");
-        ɵngcc0.ɵɵtemplate(1, NzNotificationContainerComponent_nz_notification_1_Template, 1, 2, "nz-notification", 0);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassMapInterpolate1("ant-notification ant-notification-", ctx.config.nzPlacement, "");
-        ɵngcc0.ɵɵstyleProp("top", ctx.config.nzPlacement === "topLeft" || ctx.config.nzPlacement === "topRight" ? ctx.top : null)("bottom", ctx.config.nzPlacement === "bottomLeft" || ctx.config.nzPlacement === "bottomRight" ? ctx.bottom : null)("right", ctx.config.nzPlacement === "bottomRight" || ctx.config.nzPlacement === "topRight" ? "0px" : null)("left", ctx.config.nzPlacement === "topLeft" || ctx.config.nzPlacement === "bottomLeft" ? "0px" : null);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngForOf", ctx.messages);
-    } }, directives: function () { return [ɵngcc2.NgForOf, NzNotificationComponent]; }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNotificationContainerComponent, [{
-        type: core.Component,
-        args: [{
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                selector: 'nz-notification-container',
-                exportAs: 'nzNotificationContainer',
-                preserveWhitespaces: false,
-                template: "<div\r\n  class=\"ant-notification ant-notification-{{config.nzPlacement}}\"\r\n  [style.top]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'topRight') ? top : null\"\r\n  [style.bottom]=\"(config.nzPlacement === 'bottomLeft' || config.nzPlacement === 'bottomRight') ? bottom : null\"\r\n  [style.right]=\"(config.nzPlacement === 'bottomRight' || config.nzPlacement === 'topRight') ? '0px' : null\"\r\n  [style.left]=\"(config.nzPlacement === 'topLeft' || config.nzPlacement === 'bottomLeft') ? '0px' : null\">\r\n  <nz-notification\r\n    *ngFor=\"let message of messages; let i = index\"\r\n    [nzMessage]=\"message\"\r\n    [nzIndex]=\"i\">\r\n  </nz-notification>\r\n</div>"
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzConfigService }, { type: undefined, decorators: [{
-                type: core.Optional
-            }, {
-                type: core.Inject,
-                args: [NZ_NOTIFICATION_DEFAULT_CONFIG]
-            }] }, { type: undefined, decorators: [{
-                type: core.Optional
-            }, {
-                type: core.Inject,
-                args: [NZ_NOTIFICATION_CONFIG]
-            }] }]; }, null); })();
         return NzNotificationContainerComponent;
     }(message.NzMessageContainerComponent));
     if (false) {
@@ -515,6 +433,16 @@ NzNotificationContainerComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzN
             enumerable: true,
             configurable: true
         });
+        NzNotificationComponent.decorators = [
+            { type: core.Component, args: [{
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-notification',
+                        exportAs: 'nzNotification',
+                        preserveWhitespaces: false,
+                        animations: [core$1.notificationMotion],
+                        template: "<div class=\"ant-notification-notice ant-notification-notice-closable\"\r\n  [ngStyle]=\"nzMessage.options?.nzStyle\"\r\n  [ngClass]=\"nzMessage.options?.nzClass\"\r\n  [@notificationMotion]=\"state\"\r\n  (mouseenter)=\"onEnter()\"\r\n  (mouseleave)=\"onLeave()\">\r\n  <div *ngIf=\"!nzMessage.template\" class=\"ant-notification-notice-content\">\r\n    <div class=\"ant-notification-notice-content\" [ngClass]=\"{ 'ant-notification-notice-with-icon': nzMessage.type !== 'blank' }\">\r\n      <div [class.ant-notification-notice-with-icon]=\"nzMessage.type !== 'blank'\">\r\n        <ng-container [ngSwitch]=\"nzMessage.type\">\r\n          <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-success\"></i>\r\n          <i *ngSwitchCase=\"'info'\" nz-icon nzType=\"info-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-info\"></i>\r\n          <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-warning\"></i>\r\n          <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-error\"></i>\r\n        </ng-container>\r\n        <div class=\"ant-notification-notice-message\" [innerHTML]=\"nzMessage.title\"></div>\r\n        <div class=\"ant-notification-notice-description\" [attr.role]=\"nzMessage.options?.nzRole\" [innerHTML]=\"nzMessage.content\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <ng-template\r\n    [ngIf]=\"nzMessage.template\"\r\n    [ngTemplateOutlet]=\"nzMessage.template\"\r\n    [ngTemplateOutletContext]=\"{ $implicit: this, data: nzMessage.options?.nzData }\">\r\n  </ng-template>\r\n  <a tabindex=\"0\" class=\"ant-notification-notice-close\" (click)=\"close()\">\r\n    <span class=\"ant-notification-notice-close-x\">\r\n      <i nz-icon nzType=\"close\" class=\"ant-notification-close-icon\"></i>\r\n    </span>\r\n  </a>\r\n</div>\r\n"
+                    }] }
+        ];
         /** @nocollapse */
         NzNotificationComponent.ctorParameters = function () { return [
             { type: NzNotificationContainerComponent },
@@ -523,39 +451,6 @@ NzNotificationContainerComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzN
         NzNotificationComponent.propDecorators = {
             nzMessage: [{ type: core.Input }]
         };
-NzNotificationComponent.ɵfac = function NzNotificationComponent_Factory(t) { return new (t || NzNotificationComponent)(ɵngcc0.ɵɵdirectiveInject(NzNotificationContainerComponent), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
-NzNotificationComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzNotificationComponent, selectors: [["nz-notification"]], inputs: { nzMessage: "nzMessage" }, exportAs: ["nzNotification"], features: [ɵngcc0.ɵɵInheritDefinitionFeature], decls: 6, vars: 10, consts: [[1, "ant-notification-notice", "ant-notification-notice-closable", 3, "ngStyle", "ngClass", "mouseenter", "mouseleave"], ["class", "ant-notification-notice-content", 4, "ngIf"], [3, "ngIf", "ngTemplateOutlet", "ngTemplateOutletContext"], ["tabindex", "0", 1, "ant-notification-notice-close", 3, "click"], [1, "ant-notification-notice-close-x"], ["nz-icon", "", "nzType", "close", 1, "ant-notification-close-icon"], [1, "ant-notification-notice-content"], [1, "ant-notification-notice-content", 3, "ngClass"], [3, "ngSwitch"], ["nz-icon", "", "nzType", "check-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-success", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "info-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-info", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "exclamation-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-warning", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "close-circle", "class", "ant-notification-notice-icon ant-notification-notice-icon-error", 4, "ngSwitchCase"], [1, "ant-notification-notice-message", 3, "innerHTML"], [1, "ant-notification-notice-description", 3, "innerHTML"], ["nz-icon", "", "nzType", "check-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-success"], ["nz-icon", "", "nzType", "info-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-info"], ["nz-icon", "", "nzType", "exclamation-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-warning"], ["nz-icon", "", "nzType", "close-circle", 1, "ant-notification-notice-icon", "ant-notification-notice-icon-error"]], template: function NzNotificationComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "div", 0);
-        ɵngcc0.ɵɵlistener("mouseenter", function NzNotificationComponent_Template_div_mouseenter_0_listener() { return ctx.onEnter(); })("mouseleave", function NzNotificationComponent_Template_div_mouseleave_0_listener() { return ctx.onLeave(); });
-        ɵngcc0.ɵɵtemplate(1, NzNotificationComponent_div_1_Template, 10, 13, "div", 1);
-        ɵngcc0.ɵɵtemplate(2, NzNotificationComponent_ng_template_2_Template, 0, 0, "ng-template", 2);
-        ɵngcc0.ɵɵelementStart(3, "a", 3);
-        ɵngcc0.ɵɵlistener("click", function NzNotificationComponent_Template_a_click_3_listener() { return ctx.close(); });
-        ɵngcc0.ɵɵelementStart(4, "span", 4);
-        ɵngcc0.ɵɵelement(5, "i", 5);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngStyle", ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzStyle)("ngClass", ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzClass)("@notificationMotion", ctx.state);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzMessage.template);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzMessage.template)("ngTemplateOutlet", ctx.nzMessage.template)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction2(7, _c1, ctx, ctx.nzMessage.options == null ? null : ctx.nzMessage.options.nzData));
-    } }, directives: [ɵngcc2.NgStyle, ɵngcc2.NgClass, ɵngcc2.NgIf, ɵngcc2.NgTemplateOutlet, ɵngcc3.NzIconDirective, ɵngcc2.NgSwitch, ɵngcc2.NgSwitchCase], encapsulation: 2, data: { animation: [core$1.notificationMotion] } });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNotificationComponent, [{
-        type: core.Component,
-        args: [{
-                encapsulation: core.ViewEncapsulation.None,
-                selector: 'nz-notification',
-                exportAs: 'nzNotification',
-                preserveWhitespaces: false,
-                animations: [core$1.notificationMotion],
-                template: "<div class=\"ant-notification-notice ant-notification-notice-closable\"\r\n  [ngStyle]=\"nzMessage.options?.nzStyle\"\r\n  [ngClass]=\"nzMessage.options?.nzClass\"\r\n  [@notificationMotion]=\"state\"\r\n  (mouseenter)=\"onEnter()\"\r\n  (mouseleave)=\"onLeave()\">\r\n  <div *ngIf=\"!nzMessage.template\" class=\"ant-notification-notice-content\">\r\n    <div class=\"ant-notification-notice-content\" [ngClass]=\"{ 'ant-notification-notice-with-icon': nzMessage.type !== 'blank' }\">\r\n      <div [class.ant-notification-notice-with-icon]=\"nzMessage.type !== 'blank'\">\r\n        <ng-container [ngSwitch]=\"nzMessage.type\">\r\n          <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-success\"></i>\r\n          <i *ngSwitchCase=\"'info'\" nz-icon nzType=\"info-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-info\"></i>\r\n          <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-warning\"></i>\r\n          <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\" class=\"ant-notification-notice-icon ant-notification-notice-icon-error\"></i>\r\n        </ng-container>\r\n        <div class=\"ant-notification-notice-message\" [innerHTML]=\"nzMessage.title\"></div>\r\n        <div class=\"ant-notification-notice-description\" [attr.role]=\"nzMessage.options?.nzRole\" [innerHTML]=\"nzMessage.content\"></div>\r\n      </div>\r\n    </div>\r\n  </div>\r\n  <ng-template\r\n    [ngIf]=\"nzMessage.template\"\r\n    [ngTemplateOutlet]=\"nzMessage.template\"\r\n    [ngTemplateOutletContext]=\"{ $implicit: this, data: nzMessage.options?.nzData }\">\r\n  </ng-template>\r\n  <a tabindex=\"0\" class=\"ant-notification-notice-close\" (click)=\"close()\">\r\n    <span class=\"ant-notification-notice-close-x\">\r\n      <i nz-icon nzType=\"close\" class=\"ant-notification-close-icon\"></i>\r\n    </span>\r\n  </a>\r\n</div>\r\n"
-            }]
-    }], function () { return [{ type: NzNotificationContainerComponent }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzMessage: [{
-            type: core.Input
-        }] }); })();
         return NzNotificationComponent;
     }(message.NzMessageComponent));
     if (false) {
@@ -580,11 +475,9 @@ NzNotificationComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzNotificati
     var NzNotificationServiceModule = /** @class */ (function () {
         function NzNotificationServiceModule() {
         }
-NzNotificationServiceModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzNotificationServiceModule });
-NzNotificationServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzNotificationServiceModule_Factory(t) { return new (t || NzNotificationServiceModule)(); } });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNotificationServiceModule, [{
-        type: core.NgModule
-    }], function () { return []; }, null); })();
+        NzNotificationServiceModule.decorators = [
+            { type: core.NgModule }
+        ];
         return NzNotificationServiceModule;
     }());
 
@@ -595,19 +488,14 @@ NzNotificationServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: functi
     var NzNotificationModule = /** @class */ (function () {
         function NzNotificationModule() {
         }
-NzNotificationModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzNotificationModule });
-NzNotificationModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzNotificationModule_Factory(t) { return new (t || NzNotificationModule)(); }, providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER], imports: [[common.CommonModule, overlay.OverlayModule, icon.NzIconModule, NzNotificationServiceModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzNotificationModule, { declarations: [NzNotificationComponent,
-        NzNotificationContainerComponent], imports: [ɵngcc2.CommonModule, ɵngcc4.OverlayModule, ɵngcc3.NzIconModule, NzNotificationServiceModule] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNotificationModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [common.CommonModule, overlay.OverlayModule, icon.NzIconModule, NzNotificationServiceModule],
-                declarations: [NzNotificationComponent, NzNotificationContainerComponent],
-                providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER],
-                entryComponents: [NzNotificationContainerComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzNotificationModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, overlay.OverlayModule, icon.NzIconModule, NzNotificationServiceModule],
+                        declarations: [NzNotificationComponent, NzNotificationContainerComponent],
+                        providers: [NZ_NOTIFICATION_DEFAULT_CONFIG_PROVIDER],
+                        entryComponents: [NzNotificationContainerComponent]
+                    },] }
+        ];
         return NzNotificationModule;
     }());
 
@@ -793,6 +681,11 @@ NzNotificationModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzNo
         function (template, options) {
             return (/** @type {?} */ (this.createMessage({ template: template }, options)));
         };
+        NzNotificationService.decorators = [
+            { type: core.Injectable, args: [{
+                        providedIn: NzNotificationServiceModule
+                    },] }
+        ];
         /** @nocollapse */
         NzNotificationService.ctorParameters = function () { return [
             { type: core$1.NzSingletonService },
@@ -802,14 +695,6 @@ NzNotificationModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzNo
             { type: core.ApplicationRef }
         ]; };
         /** @nocollapse */ NzNotificationService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzNotificationService_Factory() { return new NzNotificationService(core.ɵɵinject(core$1.NzSingletonService), core.ɵɵinject(overlay.Overlay), core.ɵɵinject(core.INJECTOR), core.ɵɵinject(core.ComponentFactoryResolver), core.ɵɵinject(core.ApplicationRef)); }, token: NzNotificationService, providedIn: NzNotificationServiceModule });
-NzNotificationService.ɵfac = function NzNotificationService_Factory(t) { return new (t || NzNotificationService)(ɵngcc0.ɵɵinject(ɵngcc1.NzSingletonService), ɵngcc0.ɵɵinject(ɵngcc4.Overlay), ɵngcc0.ɵɵinject(ɵngcc0.Injector), ɵngcc0.ɵɵinject(ɵngcc0.ComponentFactoryResolver), ɵngcc0.ɵɵinject(ɵngcc0.ApplicationRef)); };
-NzNotificationService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzNotificationService, factory: function (t) { return NzNotificationService.ɵfac(t); }, providedIn: NzNotificationServiceModule });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzNotificationService, [{
-        type: core.Injectable,
-        args: [{
-                providedIn: NzNotificationServiceModule
-            }]
-    }], function () { return [{ type: ɵngcc1.NzSingletonService }, { type: ɵngcc4.Overlay }, { type: ɵngcc0.Injector }, { type: ɵngcc0.ComponentFactoryResolver }, { type: ɵngcc0.ApplicationRef }]; }, null); })();
         return NzNotificationService;
     }(message.NzMessageBaseService));
 
@@ -825,5 +710,4 @@ NzNotificationService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzNotificat
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
 //# sourceMappingURL=ng-zorro-antd-notification.umd.js.map

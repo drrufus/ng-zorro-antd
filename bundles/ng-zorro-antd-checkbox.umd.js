@@ -1,28 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/cdk/a11y'),require('@angular/forms'),require('@angular/cdk/observers'),require('@angular/common'),exports, require('@angular/cdk/a11y'), require('@angular/core'), require('@angular/forms'), require('ng-zorro-antd/core'), require('@angular/cdk/observers'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/checkbox', ['@angular/core','@angular/cdk/a11y','@angular/forms','@angular/cdk/observers','@angular/common','exports', '@angular/cdk/a11y', '@angular/core', '@angular/forms', 'ng-zorro-antd/core', '@angular/cdk/observers', '@angular/common'], factory) :
-    (global = global || self, factory(global.ng.core,global.ng.cdk.a11y,global.ng.forms,global.ng.cdk.observers,global.ng.common,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].checkbox = {}), global.ng.cdk.a11y, global.ng.core, global.ng.forms, global['ng-zorro-antd'].core, global.ng.cdk.observers, global.ng.common));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, a11y, core, forms, core$1, observers, common) { 
-var _c0 = ["*"];
-var _c1 = ["inputElement"];
-var _c2 = ["contentElement"];
-var _c3 = ["nz-checkbox", ""];
-function NzCheckboxGroupComponent_label_0_Template(rf, ctx) { if (rf & 1) {
-    var _r3 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "label", 1);
-    ɵngcc0.ɵɵlistener("nzCheckedChange", function NzCheckboxGroupComponent_label_0_Template_label_nzCheckedChange_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r3); var option_r1 = ctx.$implicit; return option_r1.checked = $event; })("nzCheckedChange", function NzCheckboxGroupComponent_label_0_Template_label_nzCheckedChange_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r4 = ɵngcc0.ɵɵnextContext(); return ctx_r4.onOptionChange(); });
-    ɵngcc0.ɵɵelementStart(1, "span");
-    ɵngcc0.ɵɵtext(2);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var option_r1 = ctx.$implicit;
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("nzDisabled", option_r1.disabled || ctx_r0.nzDisabled)("nzChecked", option_r1.checked);
-    ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵtextInterpolate(option_r1.label);
-} }
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/a11y'), require('@angular/core'), require('@angular/forms'), require('ng-zorro-antd/core'), require('@angular/cdk/observers'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/checkbox', ['exports', '@angular/cdk/a11y', '@angular/core', '@angular/forms', 'ng-zorro-antd/core', '@angular/cdk/observers', '@angular/common'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].checkbox = {}), global.ng.cdk.a11y, global.ng.core, global.ng.forms, global['ng-zorro-antd'].core, global.ng.cdk.observers, global.ng.common));
+}(this, (function (exports, a11y, core, forms, core$1, observers, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -281,6 +261,16 @@ function NzCheckboxGroupComponent_label_0_Template(rf, ctx) { if (rf & 1) {
         function () {
             this.nzOnChange.emit(this.outputValue());
         };
+        NzCheckboxWrapperComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-checkbox-wrapper',
+                        exportAs: 'nzCheckboxWrapper',
+                        preserveWhitespaces: false,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        template: "<ng-content></ng-content>"
+                    }] }
+        ];
         /** @nocollapse */
         NzCheckboxWrapperComponent.ctorParameters = function () { return [
             { type: core.Renderer2 },
@@ -289,24 +279,6 @@ function NzCheckboxGroupComponent_label_0_Template(rf, ctx) { if (rf & 1) {
         NzCheckboxWrapperComponent.propDecorators = {
             nzOnChange: [{ type: core.Output }]
         };
-NzCheckboxWrapperComponent.ɵfac = function NzCheckboxWrapperComponent_Factory(t) { return new (t || NzCheckboxWrapperComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef)); };
-NzCheckboxWrapperComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxWrapperComponent, selectors: [["nz-checkbox-wrapper"]], outputs: { nzOnChange: "nzOnChange" }, exportAs: ["nzCheckboxWrapper"], ngContentSelectors: _c0, decls: 1, vars: 0, template: function NzCheckboxWrapperComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵprojection(0);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCheckboxWrapperComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-checkbox-wrapper',
-                exportAs: 'nzCheckboxWrapper',
-                preserveWhitespaces: false,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                template: "<ng-content></ng-content>"
-            }]
-    }], function () { return [{ type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ElementRef }]; }, { nzOnChange: [{
-            type: core.Output
-        }] }); })();
         return NzCheckboxWrapperComponent;
     }());
     if (false) {
@@ -531,6 +503,29 @@ NzCheckboxWrapperComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckbo
                 this.nzCheckboxWrapperComponent.removeCheckbox(this);
             }
         };
+        NzCheckboxComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: '[nz-checkbox]',
+                        exportAs: 'nzCheckbox',
+                        preserveWhitespaces: false,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzCheckboxComponent; })),
+                                multi: true
+                            }
+                        ],
+                        host: {
+                            '(click)': 'hostClick($event)'
+                        }
+                    }] }
+        ];
         /** @nocollapse */
         NzCheckboxComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -567,89 +562,6 @@ NzCheckboxWrapperComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckbo
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzCheckboxComponent.prototype, "nzChecked", void 0);
-NzCheckboxComponent.ɵfac = function NzCheckboxComponent_Factory(t) { return new (t || NzCheckboxComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(NzCheckboxWrapperComponent, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusMonitor)); };
-NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxComponent, selectors: [["", "nz-checkbox", ""]], viewQuery: function NzCheckboxComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵstaticViewQuery(_c1, true);
-        ɵngcc0.ɵɵviewQuery(_c2, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.inputElement = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.contentElement = _t.first);
-    } }, hostBindings: function NzCheckboxComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵlistener("click", function NzCheckboxComponent_click_HostBindingHandler($event) { return ctx.hostClick($event); });
-    } }, inputs: { nzAutoFocus: "nzAutoFocus", nzDisabled: "nzDisabled", nzIndeterminate: "nzIndeterminate", nzChecked: "nzChecked", nzAriaLabel: "nzAriaLabel", nzLabelledById: "nzLabelledById", nzValue: "nzValue" }, outputs: { nzCheckedChange: "nzCheckedChange" }, exportAs: ["nzCheckbox"], features: [ɵngcc0.ɵɵProvidersFeature([
-            {
-                provide: forms.NG_VALUE_ACCESSOR,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzCheckboxComponent; })),
-                multi: true
-            }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c3, ngContentSelectors: _c0, decls: 7, vars: 12, consts: [[1, "ant-checkbox"], ["type", "checkbox", 1, "ant-checkbox-input", 3, "checked", "ngModel", "disabled", "ngModelChange", "click"], ["inputElement", ""], [1, "ant-checkbox-inner"], [3, "cdkObserveContent"], ["contentElement", ""]], template: function NzCheckboxComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵelementStart(0, "span", 0);
-        ɵngcc0.ɵɵelementStart(1, "input", 1, 2);
-        ɵngcc0.ɵɵlistener("ngModelChange", function NzCheckboxComponent_Template_input_ngModelChange_1_listener($event) { return ctx.innerCheckedChange($event); })("click", function NzCheckboxComponent_Template_input_click_1_listener($event) { return $event.stopPropagation(); });
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelement(3, "span", 3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(4, "span", 4, 5);
-        ɵngcc0.ɵɵlistener("cdkObserveContent", function NzCheckboxComponent_Template_span_cdkObserveContent_4_listener() { return ctx.checkContent(); });
-        ɵngcc0.ɵɵprojection(6);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-checkbox-checked", ctx.nzChecked && !ctx.nzIndeterminate)("ant-checkbox-disabled", ctx.nzDisabled)("ant-checkbox-indeterminate", ctx.nzIndeterminate);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("checked", ctx.nzChecked)("ngModel", ctx.nzChecked)("disabled", ctx.nzDisabled);
-        ɵngcc0.ɵɵattribute("aria-label", ctx.nzAriaLabel)("aria-checked", ctx.nzIndeterminate ? "mixed" : ctx.nzChecked)("aria-labelledby", ctx.nzLabelledById);
-    } }, directives: [ɵngcc2.CheckboxControlValueAccessor, ɵngcc2.NgControlStatus, ɵngcc2.NgModel, ɵngcc3.CdkObserveContent], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCheckboxComponent, [{
-        type: core.Component,
-        args: [{
-                selector: '[nz-checkbox]',
-                exportAs: 'nzCheckbox',
-                preserveWhitespaces: false,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                template: "<span class=\"ant-checkbox\" [class.ant-checkbox-checked]=\"nzChecked && !nzIndeterminate\"\r\n  [class.ant-checkbox-disabled]=\"nzDisabled\" [class.ant-checkbox-indeterminate]=\"nzIndeterminate\">\r\n  <input #inputElement [checked]=\"nzChecked\" [ngModel]=\"nzChecked\" [disabled]=\"nzDisabled\"\r\n    (ngModelChange)=\"innerCheckedChange($event)\" (click)=\"$event.stopPropagation();\" [attr.aria-label]=\"nzAriaLabel\"\r\n    [attr.aria-checked]=\"nzIndeterminate ? 'mixed' : nzChecked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    type=\"checkbox\" class=\"ant-checkbox-input\">\r\n  <span class=\"ant-checkbox-inner\"></span>\r\n</span>\r\n<span #contentElement (cdkObserveContent)=\"checkContent()\">\r\n  <ng-content></ng-content>\r\n</span>",
-                providers: [
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzCheckboxComponent; })),
-                        multi: true
-                    }
-                ],
-                host: {
-                    '(click)': 'hostClick($event)'
-                }
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: NzCheckboxWrapperComponent, decorators: [{
-                type: core.Optional
-            }] }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.FocusMonitor }]; }, { nzCheckedChange: [{
-            type: core.Output
-        }], nzAutoFocus: [{
-            type: core.Input
-        }], nzDisabled: [{
-            type: core.Input
-        }], nzIndeterminate: [{
-            type: core.Input
-        }], nzChecked: [{
-            type: core.Input
-        }], nzAriaLabel: [{
-            type: core.Input
-        }], nzLabelledById: [{
-            type: core.Input
-        }], inputElement: [{
-            type: core.ViewChild,
-            args: ['inputElement', { static: true }]
-        }], contentElement: [{
-            type: core.ViewChild,
-            args: ['contentElement', { static: false }]
-        }], nzValue: [{
-            type: core.Input
-        }] }); })();
         return NzCheckboxComponent;
     }());
     if (false) {
@@ -845,6 +757,25 @@ NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxCompon
             this.nzDisabled = isDisabled;
             this.cdr.markForCheck();
         };
+        NzCheckboxGroupComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-checkbox-group',
+                        exportAs: 'nzCheckboxGroup',
+                        preserveWhitespaces: false,
+                        encapsulation: core.ViewEncapsulation.None,
+                        template: "<label nz-checkbox\r\n       class=\"ant-checkbox-group-item\"\r\n       *ngFor=\"let option of options; trackBy:trackByOption\"\r\n       [nzDisabled]=\"option.disabled || nzDisabled\"\r\n       [(nzChecked)]=\"option.checked\"\r\n       (nzCheckedChange)=\"onOptionChange()\">\r\n  <span>{{ option.label }}</span>\r\n</label>",
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzCheckboxGroupComponent; })),
+                                multi: true
+                            }
+                        ]
+                    }] }
+        ];
         /** @nocollapse */
         NzCheckboxGroupComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -859,41 +790,6 @@ NzCheckboxComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxCompon
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzCheckboxGroupComponent.prototype, "nzDisabled", void 0);
-NzCheckboxGroupComponent.ɵfac = function NzCheckboxGroupComponent_Factory(t) { return new (t || NzCheckboxGroupComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusMonitor), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzCheckboxGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxGroupComponent, selectors: [["nz-checkbox-group"]], inputs: { nzDisabled: "nzDisabled" }, exportAs: ["nzCheckboxGroup"], features: [ɵngcc0.ɵɵProvidersFeature([
-            {
-                provide: forms.NG_VALUE_ACCESSOR,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzCheckboxGroupComponent; })),
-                multi: true
-            }
-        ])], decls: 1, vars: 2, consts: [["nz-checkbox", "", "class", "ant-checkbox-group-item", 3, "nzDisabled", "nzChecked", "nzCheckedChange", 4, "ngFor", "ngForOf", "ngForTrackBy"], ["nz-checkbox", "", 1, "ant-checkbox-group-item", 3, "nzDisabled", "nzChecked", "nzCheckedChange"]], template: function NzCheckboxGroupComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵtemplate(0, NzCheckboxGroupComponent_label_0_Template, 3, 3, "label", 0);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngForOf", ctx.options)("ngForTrackBy", ctx.trackByOption);
-    } }, directives: [ɵngcc4.NgForOf, NzCheckboxComponent], encapsulation: 2 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCheckboxGroupComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-checkbox-group',
-                exportAs: 'nzCheckboxGroup',
-                preserveWhitespaces: false,
-                encapsulation: core.ViewEncapsulation.None,
-                template: "<label nz-checkbox\r\n       class=\"ant-checkbox-group-item\"\r\n       *ngFor=\"let option of options; trackBy:trackByOption\"\r\n       [nzDisabled]=\"option.disabled || nzDisabled\"\r\n       [(nzChecked)]=\"option.checked\"\r\n       (nzCheckedChange)=\"onOptionChange()\">\r\n  <span>{{ option.label }}</span>\r\n</label>",
-                providers: [
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzCheckboxGroupComponent; })),
-                        multi: true
-                    }
-                ]
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.FocusMonitor }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.Renderer2 }]; }, { nzDisabled: [{
-            type: core.Input
-        }] }); })();
         return NzCheckboxGroupComponent;
     }());
     if (false) {
@@ -929,21 +825,13 @@ NzCheckboxGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCheckboxG
     var NzCheckboxModule = /** @class */ (function () {
         function NzCheckboxModule() {
         }
-NzCheckboxModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzCheckboxModule });
-NzCheckboxModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzCheckboxModule_Factory(t) { return new (t || NzCheckboxModule)(); }, imports: [[common.CommonModule, forms.FormsModule, observers.ObserversModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzCheckboxModule, { declarations: [NzCheckboxComponent,
-        NzCheckboxGroupComponent,
-        NzCheckboxWrapperComponent], imports: [ɵngcc4.CommonModule, ɵngcc2.FormsModule, ɵngcc3.ObserversModule], exports: [NzCheckboxComponent,
-        NzCheckboxGroupComponent,
-        NzCheckboxWrapperComponent] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCheckboxModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [common.CommonModule, forms.FormsModule, observers.ObserversModule],
-                declarations: [NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxWrapperComponent],
-                exports: [NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxWrapperComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzCheckboxModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, forms.FormsModule, observers.ObserversModule],
+                        declarations: [NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxWrapperComponent],
+                        exports: [NzCheckboxComponent, NzCheckboxGroupComponent, NzCheckboxWrapperComponent]
+                    },] }
+        ];
         return NzCheckboxModule;
     }());
 
@@ -955,5 +843,4 @@ NzCheckboxModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzCheckb
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
 //# sourceMappingURL=ng-zorro-antd-checkbox.umd.js.map

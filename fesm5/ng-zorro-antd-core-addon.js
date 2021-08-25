@@ -6,7 +6,6 @@ import { __values } from 'tslib';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-import * as ɵngcc0 from '@angular/core';
 var NzClassListAddDirective = /** @class */ (function () {
     function NzClassListAddDirective(elementRef, renderer) {
         this.elementRef = elementRef;
@@ -39,6 +38,12 @@ var NzClassListAddDirective = /** @class */ (function () {
         enumerable: true,
         configurable: true
     });
+    NzClassListAddDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzClassListAdd]',
+                    exportAs: 'nzClassListAdd'
+                },] }
+    ];
     /** @nocollapse */
     NzClassListAddDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -47,17 +52,6 @@ var NzClassListAddDirective = /** @class */ (function () {
     NzClassListAddDirective.propDecorators = {
         nzClassListAdd: [{ type: Input }]
     };
-NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzClassListAddDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzClassListAddDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzClassListAdd]',
-                exportAs: 'nzClassListAdd'
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzClassListAdd: [{
-            type: Input
-        }] }); })();
     return NzClassListAddDirective;
 }());
 if (false) {
@@ -277,6 +271,12 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
             }
         }
     };
+    NzStringTemplateOutletDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nzStringTemplateOutlet]',
+                    exportAs: 'nzStringTemplateOutlet'
+                },] }
+    ];
     /** @nocollapse */
     NzStringTemplateOutletDirective.ctorParameters = function () { return [
         { type: ViewContainerRef },
@@ -286,19 +286,6 @@ var NzStringTemplateOutletDirective = /** @class */ (function () {
         nzStringTemplateOutletContext: [{ type: Input }],
         nzStringTemplateOutlet: [{ type: Input }]
     };
-NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.TemplateRef)); };
-NzStringTemplateOutletDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [ɵngcc0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nzStringTemplateOutlet]',
-                exportAs: 'nzStringTemplateOutlet'
-            }]
-    }], function () { return [{ type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.TemplateRef }]; }, { nzStringTemplateOutletContext: [{
-            type: Input
-        }], nzStringTemplateOutlet: [{
-            type: Input
-        }] }); })();
     return NzStringTemplateOutletDirective;
 }());
 if (false) {
@@ -343,19 +330,13 @@ if (false) {
 var NzAddOnModule = /** @class */ (function () {
     function NzAddOnModule() {
     }
-NzAddOnModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAddOnModule });
-NzAddOnModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[CommonModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAddOnModule, { declarations: function () { return [NzStringTemplateOutletDirective,
-        NzClassListAddDirective]; }, imports: function () { return [CommonModule]; }, exports: function () { return [NzStringTemplateOutletDirective,
-        NzClassListAddDirective]; } }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAddOnModule, [{
-        type: NgModule,
-        args: [{
-                imports: [CommonModule],
-                exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
-                declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-            }]
-    }], function () { return []; }, null); })();
+    NzAddOnModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [CommonModule],
+                    exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
+                    declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
+                },] }
+    ];
     return NzAddOnModule;
 }());
 
@@ -370,5 +351,4 @@ NzAddOnModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAddOnModu
  */
 
 export { NzAddOnModule, NzClassListAddDirective, NzStringTemplateOutletDirective };
-
 //# sourceMappingURL=ng-zorro-antd-core-addon.js.map

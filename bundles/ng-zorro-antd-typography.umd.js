@@ -1,124 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('ng-zorro-antd/i18n'),require('ng-zorro-antd/tooltip'),require('ng-zorro-antd/icon'),require('@angular/common'),require('ng-zorro-antd/input'),require('@angular/cdk/platform'),exports, require('@angular/cdk/platform'), require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input'), require('ng-zorro-antd/tooltip'), require('rxjs'), require('rxjs/operators')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/typography', ['@angular/core','ng-zorro-antd/core','ng-zorro-antd/i18n','ng-zorro-antd/tooltip','ng-zorro-antd/icon','@angular/common','ng-zorro-antd/input','@angular/cdk/platform','exports', '@angular/cdk/platform', '@angular/common', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/i18n', 'ng-zorro-antd/icon', 'ng-zorro-antd/input', 'ng-zorro-antd/tooltip', 'rxjs', 'rxjs/operators'], factory) :
-    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ngZorroAntd.i18n,global.ngZorroAntd.tooltip,global.ngZorroAntd.icon,global.ng.common,global.ngZorroAntd.input,global.ng.cdk.platform,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].typography = {}), global.ng.cdk.platform, global.ng.common, global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].i18n, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input, global['ng-zorro-antd'].tooltip, global.rxjs, global.rxjs.operators));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,ɵngcc5,ɵngcc6,ɵngcc7,exports, platform, common, core, core$1, i18n, icon, input, tooltip, rxjs, operators) { 
-var _c0 = ["textarea"];
-function NzTextEditComponent_button_0_Template(rf, ctx) { if (rf & 1) {
-    var _r3 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "button", 2);
-    ɵngcc0.ɵɵlistener("click", function NzTextEditComponent_button_0_Template_button_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r2 = ɵngcc0.ɵɵnextContext(); return ctx_r2.onClick(); });
-    ɵngcc0.ɵɵelement(1, "i", 3);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("nzTitle", ctx_r0.locale == null ? null : ctx_r0.locale.edit);
-} }
-function NzTextEditComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    var _r6 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelementStart(1, "textarea", 4, 5);
-    ɵngcc0.ɵɵlistener("input", function NzTextEditComponent_ng_container_1_Template_textarea_input_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r5 = ɵngcc0.ɵɵnextContext(); return ctx_r5.onInput($event); })("blur", function NzTextEditComponent_ng_container_1_Template_textarea_blur_1_listener() { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r7 = ɵngcc0.ɵɵnextContext(); return ctx_r7.confirm(); })("keydown.esc", function NzTextEditComponent_ng_container_1_Template_textarea_keydown_esc_1_listener() { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r8 = ɵngcc0.ɵɵnextContext(); return ctx_r8.onCancel(); })("keydown.enter", function NzTextEditComponent_ng_container_1_Template_textarea_keydown_enter_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r9 = ɵngcc0.ɵɵnextContext(); return ctx_r9.onEnter($event); });
-    ɵngcc0.ɵɵtext(3, "  ");
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementStart(4, "button", 6);
-    ɵngcc0.ɵɵlistener("click", function NzTextEditComponent_ng_container_1_Template_button_click_4_listener() { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r10 = ɵngcc0.ɵɵnextContext(); return ctx_r10.confirm(); });
-    ɵngcc0.ɵɵelement(5, "i", 7);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementContainerEnd();
-} }
-var _c1 = ["ellipsisContainer"];
-var _c2 = ["expandable"];
-var _c3 = ["contentTemplate"];
-function NzTypographyComponent_ng_template_0_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵprojection(0, 0, ["*ngIf", "!content"]);
-} }
-function NzTypographyComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵtemplate(0, NzTypographyComponent_ng_template_0_0_Template, 1, 0, undefined, 1);
-    ɵngcc0.ɵɵtext(1);
-} if (rf & 2) {
-    var content_r5 = ctx.content;
-    ɵngcc0.ɵɵproperty("ngIf", !content_r5);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", content_r5, "\n");
-} }
-function NzTypographyComponent_ng_container_2_ng_container_1_ng_template_1_Template(rf, ctx) { }
-var _c4 = function (a0) { return { content: a0 }; };
-function NzTypographyComponent_ng_container_2_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzTypographyComponent_ng_container_2_ng_container_1_ng_template_1_Template, 0, 0, "ng-template", 4);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r7 = ɵngcc0.ɵɵnextContext(2);
-    var _r0 = ɵngcc0.ɵɵreference(1);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r0)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c4, ctx_r7.nzContent));
-} }
-function NzTypographyComponent_ng_container_2_ng_container_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r11 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r11.ellipsisStr);
-} }
-function NzTypographyComponent_ng_container_2_ng_container_2_a_4_Template(rf, ctx) { if (rf & 1) {
-    var _r15 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "a", 7, 8);
-    ɵngcc0.ɵɵlistener("click", function NzTypographyComponent_ng_container_2_ng_container_2_a_4_Template_a_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r14 = ɵngcc0.ɵɵnextContext(3); return ctx_r14.onExpand(); });
-    ɵngcc0.ɵɵtext(2);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r12 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r12.locale == null ? null : ctx_r12.locale.expand);
-} }
-function NzTypographyComponent_ng_container_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "span", null, 5);
-    ɵngcc0.ɵɵtemplate(3, NzTypographyComponent_ng_container_2_ng_container_2_ng_container_3_Template, 2, 1, "ng-container", 1);
-    ɵngcc0.ɵɵtemplate(4, NzTypographyComponent_ng_container_2_ng_container_2_a_4_Template, 3, 1, "a", 6);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(3);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r8.isEllipsis);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r8.nzExpandable && ctx_r8.isEllipsis);
-} }
-function NzTypographyComponent_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzTypographyComponent_ng_container_2_ng_container_1_Template, 2, 4, "ng-container", 1);
-    ɵngcc0.ɵɵtemplate(2, NzTypographyComponent_ng_container_2_ng_container_2_Template, 5, 2, "ng-container", 1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r2 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.expanded || !ctx_r2.nzExpandable && ctx_r2.nzEllipsisRows === 1 || ctx_r2.canCssEllipsis);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.nzEllipsis && !ctx_r2.expanded && (ctx_r2.nzEllipsisRows > 1 || ctx_r2.nzExpandable));
-} }
-function NzTypographyComponent_nz_text_edit_3_Template(rf, ctx) { if (rf & 1) {
-    var _r17 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "nz-text-edit", 9);
-    ɵngcc0.ɵɵlistener("endEditing", function NzTypographyComponent_nz_text_edit_3_Template_nz_text_edit_endEditing_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r17); var ctx_r16 = ɵngcc0.ɵɵnextContext(); return ctx_r16.onEndEditing($event); })("startEditing", function NzTypographyComponent_nz_text_edit_3_Template_nz_text_edit_startEditing_0_listener() { ɵngcc0.ɵɵrestoreView(_r17); var ctx_r18 = ɵngcc0.ɵɵnextContext(); return ctx_r18.onStartEditing(); });
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r3 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("text", ctx_r3.nzContent);
-} }
-function NzTypographyComponent_nz_text_copy_4_Template(rf, ctx) { if (rf & 1) {
-    var _r20 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "nz-text-copy", 10);
-    ɵngcc0.ɵɵlistener("textCopy", function NzTypographyComponent_nz_text_copy_4_Template_nz_text_copy_textCopy_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r20); var ctx_r19 = ɵngcc0.ɵɵnextContext(); return ctx_r19.onTextCopy($event); });
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r4 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("text", ctx_r4.copyText);
-} }
-var _c5 = ["*"];
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input'), require('ng-zorro-antd/tooltip'), require('rxjs'), require('rxjs/operators')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/typography', ['exports', '@angular/cdk/platform', '@angular/common', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/i18n', 'ng-zorro-antd/icon', 'ng-zorro-antd/input', 'ng-zorro-antd/tooltip', 'rxjs', 'rxjs/operators'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].typography = {}), global.ng.cdk.platform, global.ng.common, global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].i18n, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input, global['ng-zorro-antd'].tooltip, global.rxjs, global.rxjs.operators));
+}(this, (function (exports, platform, common, core, core$1, i18n, icon, input, tooltip, rxjs, operators) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -405,6 +289,16 @@ var _c5 = ["*"];
                 _this.cdr.detectChanges();
             }), 3000);
         };
+        NzTextCopyComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-text-copy',
+                        exportAs: 'nzTextCopy',
+                        template: "<button\r\n  nz-tooltip\r\n  nz-trans-button\r\n  [nzTitle]=\"copied ? locale?.copied : locale?.copy\"\r\n  class=\"ant-typography-copy\"\r\n  [class.ant-typography-copy-success]=\"copied\"\r\n  (click)=\"onClick()\">\r\n  <i nz-icon [nzType]=\"copied ? 'check' : 'copy'\"></i>\r\n</button>\r\n\r\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false
+                    }] }
+        ];
         /** @nocollapse */
         NzTextCopyComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -416,33 +310,6 @@ var _c5 = ["*"];
             text: [{ type: core.Input }],
             textCopy: [{ type: core.Output }]
         };
-NzTextCopyComponent.ɵfac = function NzTextCopyComponent_Factory(t) { return new (t || NzTextCopyComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzCopyToClipboardService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzI18nService)); };
-NzTextCopyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextCopyComponent, selectors: [["nz-text-copy"]], inputs: { text: "text" }, outputs: { textCopy: "textCopy" }, exportAs: ["nzTextCopy"], decls: 2, vars: 4, consts: [["nz-tooltip", "", "nz-trans-button", "", 1, "ant-typography-copy", 3, "nzTitle", "click"], ["nz-icon", "", 3, "nzType"]], template: function NzTextCopyComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "button", 0);
-        ɵngcc0.ɵɵlistener("click", function NzTextCopyComponent_Template_button_click_0_listener() { return ctx.onClick(); });
-        ɵngcc0.ɵɵelement(1, "i", 1);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-typography-copy-success", ctx.copied);
-        ɵngcc0.ɵɵproperty("nzTitle", ctx.copied ? ctx.locale == null ? null : ctx.locale.copied : ctx.locale == null ? null : ctx.locale.copy);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("nzType", ctx.copied ? "check" : "copy");
-    } }, directives: [ɵngcc1.NzTransButtonDirective, ɵngcc3.NzTooltipDirective, ɵngcc4.NzIconDirective], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTextCopyComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-text-copy',
-                exportAs: 'nzTextCopy',
-                template: "<button\r\n  nz-tooltip\r\n  nz-trans-button\r\n  [nzTitle]=\"copied ? locale?.copied : locale?.copy\"\r\n  class=\"ant-typography-copy\"\r\n  [class.ant-typography-copy-success]=\"copied\"\r\n  (click)=\"onClick()\">\r\n  <i nz-icon [nzType]=\"copied ? 'check' : 'copy'\"></i>\r\n</button>\r\n\r\n",
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                preserveWhitespaces: false
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzCopyToClipboardService }, { type: ɵngcc2.NzI18nService }]; }, { textCopy: [{
-            type: core.Output
-        }], text: [{
-            type: core.Input
-        }] }); })();
         return NzTextCopyComponent;
     }());
     if (false) {
@@ -606,6 +473,16 @@ NzTextCopyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextCopyCompon
                 }
             }));
         };
+        NzTextEditComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-text-edit',
+                        exportAs: 'nzTextEdit',
+                        template: "<button\r\n  *ngIf=\"!editing\"\r\n  [nzTitle]=\"locale?.edit\"\r\n  nz-tooltip\r\n  nz-trans-button\r\n  class=\"ant-typography-edit\"\r\n  (click)=\"onClick()\">\r\n  <i nz-icon nzType=\"edit\"></i>\r\n</button>\r\n<ng-container *ngIf=\"editing\">\r\n  <textarea #textarea\r\n            nz-input\r\n            nzAutosize\r\n            (input)=\"onInput($event)\"\r\n            (blur)=\"confirm()\"\r\n            (keydown.esc)=\"onCancel()\"\r\n            (keydown.enter)=\"onEnter($event)\">\r\n  </textarea>\r\n  <button nz-trans-button class=\"ant-typography-edit-content-confirm\" (click)=\"confirm()\">\r\n    <i nz-icon nzType=\"enter\"></i>\r\n  </button>\r\n</ng-container>\r\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false
+                    }] }
+        ];
         /** @nocollapse */
         NzTextEditComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -619,45 +496,6 @@ NzTextCopyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextCopyCompon
             textarea: [{ type: core.ViewChild, args: ['textarea', { static: false },] }],
             autosizeDirective: [{ type: core.ViewChild, args: [input.NzAutosizeDirective, { static: false },] }]
         };
-NzTextEditComponent.ɵfac = function NzTextEditComponent_Factory(t) { return new (t || NzTextEditComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzI18nService)); };
-NzTextEditComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextEditComponent, selectors: [["nz-text-edit"]], viewQuery: function NzTextEditComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵviewQuery(_c0, true);
-        ɵngcc0.ɵɵviewQuery(input.NzAutosizeDirective, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.textarea = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.autosizeDirective = _t.first);
-    } }, inputs: { text: "text" }, outputs: { startEditing: "startEditing", endEditing: "endEditing" }, exportAs: ["nzTextEdit"], decls: 2, vars: 2, consts: [["nz-tooltip", "", "nz-trans-button", "", "class", "ant-typography-edit", 3, "nzTitle", "click", 4, "ngIf"], [4, "ngIf"], ["nz-tooltip", "", "nz-trans-button", "", 1, "ant-typography-edit", 3, "nzTitle", "click"], ["nz-icon", "", "nzType", "edit"], ["nz-input", "", "nzAutosize", "", 3, "input", "blur", "keydown.esc", "keydown.enter"], ["textarea", ""], ["nz-trans-button", "", 1, "ant-typography-edit-content-confirm", 3, "click"], ["nz-icon", "", "nzType", "enter"]], template: function NzTextEditComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵtemplate(0, NzTextEditComponent_button_0_Template, 2, 1, "button", 0);
-        ɵngcc0.ɵɵtemplate(1, NzTextEditComponent_ng_container_1_Template, 6, 0, "ng-container", 1);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.editing);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.editing);
-    } }, directives: [ɵngcc5.NgIf, ɵngcc1.NzTransButtonDirective, ɵngcc3.NzTooltipDirective, ɵngcc4.NzIconDirective, ɵngcc6.NzAutosizeDirective, ɵngcc6.NzInputDirective], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTextEditComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-text-edit',
-                exportAs: 'nzTextEdit',
-                template: "<button\r\n  *ngIf=\"!editing\"\r\n  [nzTitle]=\"locale?.edit\"\r\n  nz-tooltip\r\n  nz-trans-button\r\n  class=\"ant-typography-edit\"\r\n  (click)=\"onClick()\">\r\n  <i nz-icon nzType=\"edit\"></i>\r\n</button>\r\n<ng-container *ngIf=\"editing\">\r\n  <textarea #textarea\r\n            nz-input\r\n            nzAutosize\r\n            (input)=\"onInput($event)\"\r\n            (blur)=\"confirm()\"\r\n            (keydown.esc)=\"onCancel()\"\r\n            (keydown.enter)=\"onEnter($event)\">\r\n  </textarea>\r\n  <button nz-trans-button class=\"ant-typography-edit-content-confirm\" (click)=\"confirm()\">\r\n    <i nz-icon nzType=\"enter\"></i>\r\n  </button>\r\n</ng-container>\r\n",
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                preserveWhitespaces: false
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc2.NzI18nService }]; }, { startEditing: [{
-            type: core.Output
-        }], endEditing: [{
-            type: core.Output
-        }], text: [{
-            type: core.Input
-        }], textarea: [{
-            type: core.ViewChild,
-            args: ['textarea', { static: false }]
-        }], autosizeDirective: [{
-            type: core.ViewChild,
-            args: [input.NzAutosizeDirective, { static: false }]
-        }] }); })();
         return NzTextEditComponent;
     }());
     if (false) {
@@ -989,6 +827,28 @@ NzTextEditComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextEditCompon
             this.destroy$.complete();
             this.windowResizeSubscription.unsubscribe();
         };
+        NzTypographyComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: "\n  nz-typography,\n  [nz-typography],\n  p[nz-paragraph],\n  span[nz-text],\n  h1[nz-title], h2[nz-title], h3[nz-title], h4[nz-title]\n  ",
+                        exportAs: 'nzTypography',
+                        template: "<ng-template #contentTemplate let-content=\"content\">\r\n  <ng-content *ngIf=\"!content\"></ng-content>\r\n  {{content}}\r\n</ng-template>\r\n\r\n<ng-container *ngIf=\"!editing\">\r\n  <ng-container *ngIf=\"expanded || (!nzExpandable && nzEllipsisRows === 1) || canCssEllipsis\">\r\n    <ng-template [ngTemplateOutlet]=\"contentTemplate\" [ngTemplateOutletContext]=\"{ content: nzContent}\"></ng-template>\r\n  </ng-container>\r\n  <ng-container *ngIf=\"nzEllipsis && !expanded && (nzEllipsisRows > 1 || nzExpandable)\">\r\n    <span #ellipsisContainer></span>\r\n    <ng-container *ngIf=\"isEllipsis\">{{ellipsisStr}}</ng-container>\r\n    <a #expandable *ngIf=\"nzExpandable && isEllipsis\" class=\"ant-typography-expand\" (click)=\"onExpand()\">{{locale?.expand}}</a>\r\n  </ng-container>\r\n</ng-container>\r\n\r\n<nz-text-edit\r\n  *ngIf=\"nzEditable\"\r\n  [text]=\"nzContent\"\r\n  (endEditing)=\"onEndEditing($event)\"\r\n  (startEditing)=\"onStartEditing()\">\r\n</nz-text-edit>\r\n\r\n<nz-text-copy *ngIf=\"nzCopyable && !editing\" [text]=\"copyText\" (textCopy)=\"onTextCopy($event)\"></nz-text-copy>\r\n\r\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        preserveWhitespaces: false,
+                        host: {
+                            '[class.ant-typography]': '!editing',
+                            '[class.ant-typography-edit-content]': 'editing',
+                            '[class.ant-typography-secondary]': 'nzType === "secondary"',
+                            '[class.ant-typography-warning]': 'nzType === "warning"',
+                            '[class.ant-typography-danger]': 'nzType === "danger"',
+                            '[class.ant-typography-disabled]': 'nzDisabled',
+                            '[class.ant-typography-ellipsis]': 'nzEllipsis && !expanded',
+                            '[class.ant-typography-ellipsis-single-line]': 'canCssEllipsis && nzEllipsisRows === 1',
+                            '[class.ant-typography-ellipsis-multiple-line]': 'canCssEllipsis && nzEllipsisRows > 1',
+                            '[style.-webkit-line-clamp]': '(canCssEllipsis && nzEllipsisRows > 1) ? nzEllipsisRows : null'
+                        }
+                    }] }
+        ];
         /** @nocollapse */
         NzTypographyComponent.ctorParameters = function () { return [
             { type: core$1.NzConfigService },
@@ -1043,100 +903,6 @@ NzTextEditComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTextEditCompon
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, 1), core$1.InputNumber(),
             __metadata("design:type", Number)
         ], NzTypographyComponent.prototype, "nzEllipsisRows", void 0);
-NzTypographyComponent.ɵfac = function NzTypographyComponent_Factory(t) { return new (t || NzTypographyComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc7.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzI18nService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzDomEventService)); };
-NzTypographyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTypographyComponent, selectors: [["nz-typography"], ["", "nz-typography", ""], ["p", "nz-paragraph", ""], ["span", "nz-text", ""], ["h1", "nz-title", ""], ["h2", "nz-title", ""], ["h3", "nz-title", ""], ["h4", "nz-title", ""]], viewQuery: function NzTypographyComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵviewQuery(NzTextEditComponent, true);
-        ɵngcc0.ɵɵviewQuery(NzTextCopyComponent, true);
-        ɵngcc0.ɵɵviewQuery(_c1, true);
-        ɵngcc0.ɵɵviewQuery(_c2, true);
-        ɵngcc0.ɵɵviewQuery(_c3, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.textEditRef = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.textCopyRef = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.ellipsisContainer = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.expandableBtn = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.contentTemplate = _t.first);
-    } }, hostVars: 20, hostBindings: function NzTypographyComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵstyleProp("-webkit-line-clamp", ctx.canCssEllipsis && ctx.nzEllipsisRows > 1 ? ctx.nzEllipsisRows : null);
-        ɵngcc0.ɵɵclassProp("ant-typography", !ctx.editing)("ant-typography-edit-content", ctx.editing)("ant-typography-secondary", ctx.nzType === "secondary")("ant-typography-warning", ctx.nzType === "warning")("ant-typography-danger", ctx.nzType === "danger")("ant-typography-disabled", ctx.nzDisabled)("ant-typography-ellipsis", ctx.nzEllipsis && !ctx.expanded)("ant-typography-ellipsis-single-line", ctx.canCssEllipsis && ctx.nzEllipsisRows === 1)("ant-typography-ellipsis-multiple-line", ctx.canCssEllipsis && ctx.nzEllipsisRows > 1);
-    } }, inputs: { nzCopyable: "nzCopyable", nzEditable: "nzEditable", nzDisabled: "nzDisabled", nzExpandable: "nzExpandable", nzEllipsis: "nzEllipsis", nzContent: "nzContent", nzEllipsisRows: "nzEllipsisRows", nzType: "nzType", nzCopyText: "nzCopyText" }, outputs: { nzContentChange: "nzContentChange", nzCopy: "nzCopy", nzExpandChange: "nzExpandChange" }, exportAs: ["nzTypography"], features: [ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c5, decls: 5, vars: 3, consts: [["contentTemplate", ""], [4, "ngIf"], [3, "text", "endEditing", "startEditing", 4, "ngIf"], [3, "text", "textCopy", 4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["ellipsisContainer", ""], ["class", "ant-typography-expand", 3, "click", 4, "ngIf"], [1, "ant-typography-expand", 3, "click"], ["expandable", ""], [3, "text", "endEditing", "startEditing"], [3, "text", "textCopy"]], template: function NzTypographyComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵtemplate(0, NzTypographyComponent_ng_template_0_Template, 2, 2, "ng-template", null, 0, ɵngcc0.ɵɵtemplateRefExtractor);
-        ɵngcc0.ɵɵtemplate(2, NzTypographyComponent_ng_container_2_Template, 3, 2, "ng-container", 1);
-        ɵngcc0.ɵɵtemplate(3, NzTypographyComponent_nz_text_edit_3_Template, 1, 1, "nz-text-edit", 2);
-        ɵngcc0.ɵɵtemplate(4, NzTypographyComponent_nz_text_copy_4_Template, 1, 1, "nz-text-copy", 3);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.editing);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzEditable);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzCopyable && !ctx.editing);
-    } }, directives: [ɵngcc5.NgIf, ɵngcc5.NgTemplateOutlet, NzTextEditComponent,
-        NzTextCopyComponent], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTypographyComponent, [{
-        type: core.Component,
-        args: [{
-                selector: "\n  nz-typography,\n  [nz-typography],\n  p[nz-paragraph],\n  span[nz-text],\n  h1[nz-title], h2[nz-title], h3[nz-title], h4[nz-title]\n  ",
-                exportAs: 'nzTypography',
-                template: "<ng-template #contentTemplate let-content=\"content\">\r\n  <ng-content *ngIf=\"!content\"></ng-content>\r\n  {{content}}\r\n</ng-template>\r\n\r\n<ng-container *ngIf=\"!editing\">\r\n  <ng-container *ngIf=\"expanded || (!nzExpandable && nzEllipsisRows === 1) || canCssEllipsis\">\r\n    <ng-template [ngTemplateOutlet]=\"contentTemplate\" [ngTemplateOutletContext]=\"{ content: nzContent}\"></ng-template>\r\n  </ng-container>\r\n  <ng-container *ngIf=\"nzEllipsis && !expanded && (nzEllipsisRows > 1 || nzExpandable)\">\r\n    <span #ellipsisContainer></span>\r\n    <ng-container *ngIf=\"isEllipsis\">{{ellipsisStr}}</ng-container>\r\n    <a #expandable *ngIf=\"nzExpandable && isEllipsis\" class=\"ant-typography-expand\" (click)=\"onExpand()\">{{locale?.expand}}</a>\r\n  </ng-container>\r\n</ng-container>\r\n\r\n<nz-text-edit\r\n  *ngIf=\"nzEditable\"\r\n  [text]=\"nzContent\"\r\n  (endEditing)=\"onEndEditing($event)\"\r\n  (startEditing)=\"onStartEditing()\">\r\n</nz-text-edit>\r\n\r\n<nz-text-copy *ngIf=\"nzCopyable && !editing\" [text]=\"copyText\" (textCopy)=\"onTextCopy($event)\"></nz-text-copy>\r\n\r\n",
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                preserveWhitespaces: false,
-                host: {
-                    '[class.ant-typography]': '!editing',
-                    '[class.ant-typography-edit-content]': 'editing',
-                    '[class.ant-typography-secondary]': 'nzType === "secondary"',
-                    '[class.ant-typography-warning]': 'nzType === "warning"',
-                    '[class.ant-typography-danger]': 'nzType === "danger"',
-                    '[class.ant-typography-disabled]': 'nzDisabled',
-                    '[class.ant-typography-ellipsis]': 'nzEllipsis && !expanded',
-                    '[class.ant-typography-ellipsis-single-line]': 'canCssEllipsis && nzEllipsisRows === 1',
-                    '[class.ant-typography-ellipsis-multiple-line]': 'canCssEllipsis && nzEllipsisRows > 1',
-                    '[style.-webkit-line-clamp]': '(canCssEllipsis && nzEllipsisRows > 1) ? nzEllipsisRows : null'
-                }
-            }]
-    }], function () { return [{ type: ɵngcc1.NzConfigService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc7.Platform }, { type: ɵngcc2.NzI18nService }, { type: ɵngcc1.NzDomEventService }]; }, { nzCopyable: [{
-            type: core.Input
-        }], nzEditable: [{
-            type: core.Input
-        }], nzDisabled: [{
-            type: core.Input
-        }], nzExpandable: [{
-            type: core.Input
-        }], nzEllipsis: [{
-            type: core.Input
-        }], nzContentChange: [{
-            type: core.Output
-        }], nzCopy: [{
-            type: core.Output
-        }], nzExpandChange: [{
-            type: core.Output
-        }], nzContent: [{
-            type: core.Input
-        }], nzEllipsisRows: [{
-            type: core.Input
-        }], nzType: [{
-            type: core.Input
-        }], nzCopyText: [{
-            type: core.Input
-        }], textEditRef: [{
-            type: core.ViewChild,
-            args: [NzTextEditComponent, { static: false }]
-        }], textCopyRef: [{
-            type: core.ViewChild,
-            args: [NzTextCopyComponent, { static: false }]
-        }], ellipsisContainer: [{
-            type: core.ViewChild,
-            args: ['ellipsisContainer', { static: false }]
-        }], expandableBtn: [{
-            type: core.ViewChild,
-            args: ['expandable', { static: false }]
-        }], contentTemplate: [{
-            type: core.ViewChild,
-            args: ['contentTemplate', { static: false }]
-        }] }); })();
         return NzTypographyComponent;
     }());
     if (false) {
@@ -1254,37 +1020,21 @@ NzTypographyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTypographyCo
     var NzTypographyModule = /** @class */ (function () {
         function NzTypographyModule() {
         }
-NzTypographyModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTypographyModule });
-NzTypographyModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTypographyModule_Factory(t) { return new (t || NzTypographyModule)(); }, imports: [[
-            common.CommonModule,
-            icon.NzIconModule,
-            tooltip.NzToolTipModule,
-            input.NzInputModule,
-            i18n.NzI18nModule,
-            core$1.NzTransButtonModule,
-            core$1.NzCopyToClipboardServiceModule
-        ], ɵngcc7.PlatformModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTypographyModule, { declarations: [NzTypographyComponent,
-        NzTextCopyComponent,
-        NzTextEditComponent], imports: [ɵngcc5.CommonModule, ɵngcc4.NzIconModule, ɵngcc3.NzToolTipModule, ɵngcc6.NzInputModule, ɵngcc2.NzI18nModule, ɵngcc1.NzTransButtonModule, ɵngcc1.NzCopyToClipboardServiceModule], exports: [NzTypographyComponent,
-        NzTextCopyComponent,
-        NzTextEditComponent, ɵngcc7.PlatformModule] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTypographyModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [
-                    common.CommonModule,
-                    icon.NzIconModule,
-                    tooltip.NzToolTipModule,
-                    input.NzInputModule,
-                    i18n.NzI18nModule,
-                    core$1.NzTransButtonModule,
-                    core$1.NzCopyToClipboardServiceModule
-                ],
-                exports: [NzTypographyComponent, NzTextCopyComponent, NzTextEditComponent, platform.PlatformModule],
-                declarations: [NzTypographyComponent, NzTextCopyComponent, NzTextEditComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzTypographyModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [
+                            common.CommonModule,
+                            icon.NzIconModule,
+                            tooltip.NzToolTipModule,
+                            input.NzInputModule,
+                            i18n.NzI18nModule,
+                            core$1.NzTransButtonModule,
+                            core$1.NzCopyToClipboardServiceModule
+                        ],
+                        exports: [NzTypographyComponent, NzTextCopyComponent, NzTextEditComponent, platform.PlatformModule],
+                        declarations: [NzTypographyComponent, NzTextCopyComponent, NzTextEditComponent]
+                    },] }
+        ];
         return NzTypographyModule;
     }());
 
@@ -1296,5 +1046,4 @@ NzTypographyModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTypo
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
 //# sourceMappingURL=ng-zorro-antd-typography.umd.js.map
