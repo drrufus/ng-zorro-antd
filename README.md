@@ -82,3 +82,4 @@ Below you can see the list of the most significant changes.
 #### Popconfirm:
 + Focus trap added.
 + Autofocusing on a title.
++ `dialog` and `alert` role-attributes.
