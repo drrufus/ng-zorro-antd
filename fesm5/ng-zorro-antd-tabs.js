@@ -1170,7 +1170,12 @@ var NzTabSetComponent = /** @class */ (function () {
         var tabs = this.listOfNzTabComponent.toArray();
         /** @type {?} */
         var count = tabs.length;
-        if (index === (count - 1)) {
+        if (index === (count - 1) || tabs.filter((/**
+         * @param {?} tab
+         * @param {?} idx
+         * @return {?}
+         */
+        function (tab, idx) { return idx > index && !tab.nzDisabled; })).length === 0) {
             return;
         }
         /** @type {?} */
@@ -1214,7 +1219,12 @@ var NzTabSetComponent = /** @class */ (function () {
         var index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
         /** @type {?} */
         var tabs = this.listOfNzTabComponent.toArray();
-        if (index === 0) {
+        if (index === 0 || tabs.filter((/**
+         * @param {?} tab
+         * @param {?} idx
+         * @return {?}
+         */
+        function (tab, idx) { return idx < index && !tab.nzDisabled; })).length === 0) {
             return;
         }
         /** @type {?} */
