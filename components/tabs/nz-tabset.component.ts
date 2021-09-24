@@ -153,7 +153,7 @@ export class NzTabSetComponent
     const tabs = this.listOfNzTabComponent.toArray();
     const count = tabs.length;
 
-    if (index === (count - 1)) {
+    if (index === (count - 1) || tabs.filter((tab, idx) => idx > index && !tab.nzDisabled).length === 0) {
       return;
     }
 
@@ -186,7 +186,7 @@ export class NzTabSetComponent
     let index = (this.nzPreselectionMode && this.preselectionIndex != null) ? this.preselectionIndex : selectedIndex;
     const tabs = this.listOfNzTabComponent.toArray();
 
-    if (index === 0) {
+    if (index === 0 || tabs.filter((tab, idx) => idx < index && !tab.nzDisabled).length === 0) {
       return;
     }
 
