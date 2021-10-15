@@ -31,7 +31,7 @@ export declare class NzCollapsePanelComponent implements OnInit, OnDestroy {
     readonly nzActiveChange: EventEmitter<boolean>;
     private _focusableHeader;
     clickHeader(): void;
-    focusOnHeader(): void;
+    focusOnHeader(scrollTo?: boolean, scrollOptions?: ScrollIntoViewOptions): void;
     markForCheck(): void;
     constructor(nzConfigService: NzConfigService, cdr: ChangeDetectorRef, nzCollapseComponent: NzCollapseComponent, elementRef: ElementRef, renderer: Renderer2);
     ngOnInit(): void;

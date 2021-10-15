@@ -338,13 +338,22 @@
             }
         };
         /**
+         * @param {?=} scrollTo
+         * @param {?=} scrollOptions
          * @return {?}
          */
         NzCollapsePanelComponent.prototype.focusOnHeader = /**
+         * @param {?=} scrollTo
+         * @param {?=} scrollOptions
          * @return {?}
          */
-        function () {
+        function (scrollTo, scrollOptions) {
+            if (scrollTo === void 0) { scrollTo = false; }
+            if (scrollOptions === void 0) { scrollOptions = { behavior: 'smooth', block: 'center' }; }
             this._focusableHeader.nativeElement.focus();
+            if (scrollTo) {
+                this._focusableHeader.nativeElement.scrollIntoView(scrollOptions);
+            }
         };
         /**
          * @return {?}

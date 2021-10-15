@@ -188,10 +188,15 @@ class NzCollapsePanelComponent {
         }
     }
     /**
+     * @param {?=} scrollTo
+     * @param {?=} scrollOptions
      * @return {?}
      */
-    focusOnHeader() {
+    focusOnHeader(scrollTo = false, scrollOptions = { behavior: 'smooth', block: 'center' }) {
         this._focusableHeader.nativeElement.focus();
+        if (scrollTo) {
+            this._focusableHeader.nativeElement.scrollIntoView(scrollOptions);
+        }
     }
     /**
      * @return {?}
