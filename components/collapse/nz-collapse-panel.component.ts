@@ -78,8 +78,11 @@ export class NzCollapsePanelComponent implements OnInit, OnDestroy {
     }
   }
 
-  focusOnHeader(): void {
+  focusOnHeader(scrollTo: boolean = false, scrollOptions: ScrollIntoViewOptions = { behavior: 'smooth', block: 'center' }): void {
     this._focusableHeader.nativeElement.focus();
+    if (scrollTo) {
+      this._focusableHeader.nativeElement.scrollIntoView(scrollOptions);
+    }
   }
 
   markForCheck(): void {
