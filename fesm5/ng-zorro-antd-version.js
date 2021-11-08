@@ -18,6 +18,4 @@ var VERSION = new Version('8.5.2');
  */
 
 export { VERSION };
-
-
 //# sourceMappingURL=ng-zorro-antd-version.js.map

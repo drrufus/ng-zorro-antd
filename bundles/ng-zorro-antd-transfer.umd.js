@@ -1,167 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/common'),require('ng-zorro-antd/checkbox'),require('ng-zorro-antd/empty'),require('@angular/forms'),require('ng-zorro-antd/icon'),require('ng-zorro-antd/i18n'),require('ng-zorro-antd/button'),require('ng-zorro-antd/input'),exports, require('@angular/core'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('ng-zorro-antd/i18n'), require('@angular/common'), require('@angular/forms'), require('ng-zorro-antd/button'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/transfer', ['@angular/core','ng-zorro-antd/core','@angular/common','ng-zorro-antd/checkbox','ng-zorro-antd/empty','@angular/forms','ng-zorro-antd/icon','ng-zorro-antd/i18n','ng-zorro-antd/button','ng-zorro-antd/input','exports', '@angular/core', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', 'ng-zorro-antd/i18n', '@angular/common', '@angular/forms', 'ng-zorro-antd/button', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/empty', 'ng-zorro-antd/icon', 'ng-zorro-antd/input'], factory) :
-    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.common,global.ngZorroAntd.checkbox,global.ngZorroAntd.empty,global.ng.forms,global.ngZorroAntd.icon,global.ngZorroAntd.i18n,global.ngZorroAntd.button,global.ngZorroAntd.input,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].transfer = {}), global.ng.core, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global['ng-zorro-antd'].i18n, global.ng.common, global.ng.forms, global['ng-zorro-antd'].button, global['ng-zorro-antd'].checkbox, global['ng-zorro-antd'].empty, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,ɵngcc5,ɵngcc6,ɵngcc7,ɵngcc8,ɵngcc9,exports, core, core$1, rxjs, operators, i18n, common, forms, button, checkbox, empty, icon, input) { 
-function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var item_r10 = ɵngcc0.ɵɵnextContext(2).$implicit;
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(item_r10.title);
-} }
-function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_ng_template_3_Template(rf, ctx) { }
-var _c0 = function (a0) { return { "ant-transfer-list-content-item-disabled": a0 }; };
-var _c1 = function (a0) { return { $implicit: a0 }; };
-function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_Template(rf, ctx) { if (rf & 1) {
-    var _r18 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "li", 15);
-    ɵngcc0.ɵɵlistener("click", function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r18); var item_r10 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r16 = ɵngcc0.ɵɵnextContext(3); return ctx_r16.onItemSelect(item_r10); });
-    ɵngcc0.ɵɵelementStart(1, "label", 16);
-    ɵngcc0.ɵɵlistener("nzCheckedChange", function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_Template_label_nzCheckedChange_1_listener() { ɵngcc0.ɵɵrestoreView(_r18); var item_r10 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r19 = ɵngcc0.ɵɵnextContext(3); return ctx_r19.onItemSelect(item_r10); })("click", function NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_Template_label_click_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r18); return $event.stopPropagation(); });
-    ɵngcc0.ɵɵtemplate(2, NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_ng_container_2_Template, 2, 1, "ng-container", 7);
-    ɵngcc0.ɵɵtemplate(3, NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_ng_template_3_Template, 0, 0, "ng-template", 17, 18, ɵngcc0.ɵɵtemplateRefExtractor);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var _r13 = ɵngcc0.ɵɵreference(4);
-    var item_r10 = ɵngcc0.ɵɵnextContext().$implicit;
-    var ctx_r11 = ɵngcc0.ɵɵnextContext(3);
-    ɵngcc0.ɵɵproperty("ngClass", ɵngcc0.ɵɵpureFunction1(7, _c0, ctx_r11.disabled || item_r10.disabled));
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzChecked", item_r10.checked)("nzDisabled", ctx_r11.disabled || item_r10.disabled);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", !ctx_r11.render)("ngIfElse", _r13);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r11.render)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(9, _c1, item_r10));
-} }
-function NzTransferListComponent_ng_template_0_ul_0_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 13);
-    ɵngcc0.ɵɵtemplate(1, NzTransferListComponent_ng_template_0_ul_0_div_1_li_1_Template, 5, 11, "li", 14);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var item_r10 = ctx.$implicit;
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", !item_r10.hide);
-} }
-function NzTransferListComponent_ng_template_0_ul_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "ul", 11);
-    ɵngcc0.ɵɵtemplate(1, NzTransferListComponent_ng_template_0_ul_0_div_1_Template, 2, 1, "div", 12);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r7 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngForOf", ctx_r7.dataSource);
-} }
-function NzTransferListComponent_ng_template_0_div_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 19);
-    ɵngcc0.ɵɵelement(1, "nz-embed-empty", 20);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzComponentName", "transfer")("specificContent", ctx_r8.notFoundContent);
-} }
-function NzTransferListComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵtemplate(0, NzTransferListComponent_ng_template_0_ul_0_Template, 2, 1, "ul", 9);
-    ɵngcc0.ɵɵtemplate(1, NzTransferListComponent_ng_template_0_div_1_Template, 2, 2, "div", 10);
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.stat.shownCount > 0);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.stat.shownCount === 0);
-} }
-function NzTransferListComponent_label_3_Template(rf, ctx) { if (rf & 1) {
-    var _r24 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "label", 21);
-    ɵngcc0.ɵɵlistener("nzCheckedChange", function NzTransferListComponent_label_3_Template_label_nzCheckedChange_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r24); var ctx_r23 = ɵngcc0.ɵɵnextContext(); return ctx_r23.onItemSelectAll($event); });
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r2 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("nzChecked", ctx_r2.stat.checkAll)("nzIndeterminate", ctx_r2.stat.checkHalf)("nzDisabled", ctx_r2.stat.shownCount == 0 || ctx_r2.disabled);
-} }
-function NzTransferListComponent_span_7_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span", 22);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r3 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r3.titleText);
-} }
-function NzTransferListComponent_div_9_Template(rf, ctx) { if (rf & 1) {
-    var _r26 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 23);
-    ɵngcc0.ɵɵelementStart(1, "div", 24);
-    ɵngcc0.ɵɵlistener("valueChanged", function NzTransferListComponent_div_9_Template_div_valueChanged_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r26); var ctx_r25 = ɵngcc0.ɵɵnextContext(); return ctx_r25.handleFilter($event); })("valueClear", function NzTransferListComponent_div_9_Template_div_valueClear_1_listener() { ɵngcc0.ɵɵrestoreView(_r26); var ctx_r27 = ɵngcc0.ɵɵnextContext(); return ctx_r27.handleClear(); });
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r4 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("placeholder", ctx_r4.searchPlaceholder)("disabled", ctx_r4.disabled)("value", ctx_r4.filter);
-} }
-function NzTransferListComponent_ng_container_10_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainer(0);
-} }
-var _c2 = function (a0, a1, a2, a3, a4, a5) { return { $implicit: a0, direction: a1, disabled: a2, onItemSelectAll: a3, onItemSelect: a4, stat: a5 }; };
-function NzTransferListComponent_ng_container_10_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelementStart(1, "div", 25);
-    ɵngcc0.ɵɵtemplate(2, NzTransferListComponent_ng_container_10_ng_container_2_Template, 1, 0, "ng-container", 26);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r5 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r5.renderList)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction6(2, _c2, ctx_r5.dataSource, ctx_r5.direction, ctx_r5.disabled, ctx_r5.onItemSelectAll, ctx_r5.onItemSelect, ctx_r5.stat));
-} }
-function NzTransferListComponent_div_11_ng_template_1_Template(rf, ctx) { }
-function NzTransferListComponent_div_11_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 27);
-    ɵngcc0.ɵɵtemplate(1, NzTransferListComponent_div_11_ng_template_1_Template, 0, 0, "ng-template", 17);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r6 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r6.footer)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction1(2, _c1, ctx_r6.direction));
-} }
-var _c3 = function (a0) { return { "ant-transfer__nodata": a0 }; };
-var _c4 = ["nz-transfer-search", ""];
-function NzTransferSearchComponent_a_1_Template(rf, ctx) { if (rf & 1) {
-    var _r4 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "a", 3);
-    ɵngcc0.ɵɵlistener("click", function NzTransferSearchComponent_a_1_Template_a_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r4); var ctx_r3 = ɵngcc0.ɵɵnextContext(); return ctx_r3._clear(); });
-    ɵngcc0.ɵɵelement(1, "i", 4);
-    ɵngcc0.ɵɵelementEnd();
-} }
-function NzTransferSearchComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span", 5);
-    ɵngcc0.ɵɵelement(1, "i", 6);
-    ɵngcc0.ɵɵelementEnd();
-} }
-var _c5 = function (a0) { return { "ant-input-disabled": a0 }; };
-function NzTransferComponent_span_4_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span");
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r0.nzOperations[1]);
-} }
-function NzTransferComponent_span_7_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span");
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r1.nzOperations[0]);
-} }
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('ng-zorro-antd/i18n'), require('@angular/common'), require('@angular/forms'), require('ng-zorro-antd/button'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/transfer', ['exports', '@angular/core', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', 'ng-zorro-antd/i18n', '@angular/common', '@angular/forms', 'ng-zorro-antd/button', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/empty', 'ng-zorro-antd/icon', 'ng-zorro-antd/input'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].transfer = {}), global.ng.core, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global['ng-zorro-antd'].i18n, global.ng.common, global.ng.forms, global['ng-zorro-antd'].button, global['ng-zorro-antd'].checkbox, global['ng-zorro-antd'].empty, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input));
+}(this, (function (exports, core, core$1, rxjs, operators, i18n, common, forms, button, checkbox, empty, icon, input) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -633,6 +474,17 @@ function NzTransferComponent_span_7_Template(rf, ctx) { if (rf & 1) {
             this.updateCheckStatus();
             this.cdr.markForCheck();
         };
+        NzTransferListComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-transfer-list',
+                        exportAs: 'nzTransferList',
+                        preserveWhitespaces: false,
+                        providers: [core$1.NzUpdateHostClassService],
+                        template: "<ng-template #defaultRenderList>\r\n  <ul *ngIf=\"stat.shownCount > 0\" class=\"ant-transfer-list-content\">\r\n    <div class=\"LazyLoad\" *ngFor=\"let item of dataSource\">\r\n      <li *ngIf=\"!item.hide\" (click)=\"onItemSelect(item)\"\r\n        class=\"ant-transfer-list-content-item\" [ngClass]=\"{'ant-transfer-list-content-item-disabled': disabled || item.disabled}\">\r\n        <label nz-checkbox [nzChecked]=\"item.checked\" (nzCheckedChange)=\"onItemSelect(item)\"\r\n          (click)=\"$event.stopPropagation()\" [nzDisabled]=\"disabled || item.disabled\">\r\n          <ng-container *ngIf=\"!render; else renderContainer\">{{ item.title }}</ng-container>\r\n          <ng-template #renderContainer [ngTemplateOutlet]=\"render\" [ngTemplateOutletContext]=\"{ $implicit: item }\"></ng-template>\r\n        </label>\r\n      </li>\r\n    </div>\r\n  </ul>\r\n  <div *ngIf=\"stat.shownCount === 0\" class=\"ant-transfer-list-body-not-found\">\r\n    <nz-embed-empty [nzComponentName]=\"'transfer'\" [specificContent]=\"notFoundContent\"></nz-embed-empty>\r\n  </div>\r\n</ng-template>\r\n<div class=\"ant-transfer-list-header\">\r\n  <label *ngIf=\"showSelectAll\" nz-checkbox [nzChecked]=\"stat.checkAll\" (nzCheckedChange)=\"onItemSelectAll($event)\"\r\n    [nzIndeterminate]=\"stat.checkHalf\" [nzDisabled]=\"stat.shownCount == 0 || disabled\">\r\n  </label>\r\n  <span class=\"ant-transfer-list-header-selected\">\r\n    <span>{{ (stat.checkCount > 0 ? stat.checkCount + '/' : '') + stat.shownCount }} {{ dataSource.length > 1 ? itemsUnit : itemUnit }}</span>\r\n    <span *ngIf=\"titleText\" class=\"ant-transfer-list-header-title\">{{ titleText }}</span>\r\n  </span>\r\n</div>\r\n<div class=\"{{showSearch ? 'ant-transfer-list-body ant-transfer-list-body-with-search' : 'ant-transfer-list-body'}}\"\r\n  [ngClass]=\"{'ant-transfer__nodata': stat.shownCount === 0}\">\r\n  <div *ngIf=\"showSearch\" class=\"ant-transfer-list-body-search-wrapper\">\r\n    <div nz-transfer-search\r\n      (valueChanged)=\"handleFilter($event)\"\r\n      (valueClear)=\"handleClear()\"\r\n      [placeholder]=\"searchPlaceholder\"\r\n      [disabled]=\"disabled\"\r\n      [value]=\"filter\"></div>\r\n  </div>\r\n  <ng-container *ngIf=\"renderList else defaultRenderList\">\r\n    <div class=\"ant-transfer-list-body-customize-wrapper\">\r\n      <ng-container *ngTemplateOutlet=\"renderList; context: {\r\n        $implicit: dataSource,\r\n        direction: direction,\r\n        disabled: disabled,\r\n        onItemSelectAll: onItemSelectAll,\r\n        onItemSelect: onItemSelect,\r\n        stat: stat\r\n      }\"></ng-container>\r\n    </div>\r\n  </ng-container>\r\n</div>\r\n<div *ngIf=\"footer\" class=\"ant-transfer-list-footer\">\r\n  <ng-template [ngTemplateOutlet]=\"footer\" [ngTemplateOutletContext]=\"{ $implicit: direction }\"></ng-template>\r\n</div>",
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush
+                    }] }
+        ];
         /** @nocollapse */
         NzTransferListComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -659,89 +511,6 @@ function NzTransferComponent_span_7_Template(rf, ctx) { if (rf & 1) {
             handleSelect: [{ type: core.Output }],
             filterChange: [{ type: core.Output }]
         };
-NzTransferListComponent.ɵfac = function NzTransferListComponent_Factory(t) { return new (t || NzTransferListComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
-NzTransferListComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferListComponent, selectors: [["nz-transfer-list"]], inputs: { direction: "direction", titleText: "titleText", showSelectAll: "showSelectAll", dataSource: "dataSource", itemUnit: "itemUnit", itemsUnit: "itemsUnit", filter: "filter", disabled: "disabled", showSearch: "showSearch", searchPlaceholder: "searchPlaceholder", notFoundContent: "notFoundContent", filterOption: "filterOption", renderList: "renderList", render: "render", footer: "footer" }, outputs: { handleSelectAll: "handleSelectAll", handleSelect: "handleSelect", filterChange: "filterChange" }, exportAs: ["nzTransferList"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 12, vars: 14, consts: [["defaultRenderList", ""], [1, "ant-transfer-list-header"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange", 4, "ngIf"], [1, "ant-transfer-list-header-selected"], ["class", "ant-transfer-list-header-title", 4, "ngIf"], [3, "ngClass"], ["class", "ant-transfer-list-body-search-wrapper", 4, "ngIf"], [4, "ngIf", "ngIfElse"], ["class", "ant-transfer-list-footer", 4, "ngIf"], ["class", "ant-transfer-list-content", 4, "ngIf"], ["class", "ant-transfer-list-body-not-found", 4, "ngIf"], [1, "ant-transfer-list-content"], ["class", "LazyLoad", 4, "ngFor", "ngForOf"], [1, "LazyLoad"], ["class", "ant-transfer-list-content-item", 3, "ngClass", "click", 4, "ngIf"], [1, "ant-transfer-list-content-item", 3, "ngClass", "click"], ["nz-checkbox", "", 3, "nzChecked", "nzDisabled", "nzCheckedChange", "click"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["renderContainer", ""], [1, "ant-transfer-list-body-not-found"], [3, "nzComponentName", "specificContent"], ["nz-checkbox", "", 3, "nzChecked", "nzIndeterminate", "nzDisabled", "nzCheckedChange"], [1, "ant-transfer-list-header-title"], [1, "ant-transfer-list-body-search-wrapper"], ["nz-transfer-search", "", 3, "placeholder", "disabled", "value", "valueChanged", "valueClear"], [1, "ant-transfer-list-body-customize-wrapper"], [4, "ngTemplateOutlet", "ngTemplateOutletContext"], [1, "ant-transfer-list-footer"]], template: function NzTransferListComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵtemplate(0, NzTransferListComponent_ng_template_0_Template, 2, 2, "ng-template", null, 0, ɵngcc0.ɵɵtemplateRefExtractor);
-        ɵngcc0.ɵɵelementStart(2, "div", 1);
-        ɵngcc0.ɵɵtemplate(3, NzTransferListComponent_label_3_Template, 1, 3, "label", 2);
-        ɵngcc0.ɵɵelementStart(4, "span", 3);
-        ɵngcc0.ɵɵelementStart(5, "span");
-        ɵngcc0.ɵɵtext(6);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtemplate(7, NzTransferListComponent_span_7_Template, 2, 1, "span", 4);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(8, "div", 5);
-        ɵngcc0.ɵɵtemplate(9, NzTransferListComponent_div_9_Template, 2, 3, "div", 6);
-        ɵngcc0.ɵɵtemplate(10, NzTransferListComponent_ng_container_10_Template, 3, 9, "ng-container", 7);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtemplate(11, NzTransferListComponent_div_11_Template, 2, 4, "div", 8);
-    } if (rf & 2) {
-        var _r0 = ɵngcc0.ɵɵreference(1);
-        ɵngcc0.ɵɵadvance(3);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.showSelectAll);
-        ɵngcc0.ɵɵadvance(3);
-        ɵngcc0.ɵɵtextInterpolate2("", (ctx.stat.checkCount > 0 ? ctx.stat.checkCount + "/" : "") + ctx.stat.shownCount, " ", ctx.dataSource.length > 1 ? ctx.itemsUnit : ctx.itemUnit, "");
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.titleText);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵclassMap(ctx.showSearch ? "ant-transfer-list-body ant-transfer-list-body-with-search" : "ant-transfer-list-body");
-        ɵngcc0.ɵɵproperty("ngClass", ɵngcc0.ɵɵpureFunction1(12, _c3, ctx.stat.shownCount === 0));
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.showSearch);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.renderList)("ngIfElse", _r0);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.footer);
-    } }, directives: function () { return [ɵngcc2.NgIf, ɵngcc2.NgClass, ɵngcc2.NgForOf, ɵngcc3.NzCheckboxComponent, ɵngcc2.NgTemplateOutlet, ɵngcc4.NzEmbedEmptyComponent, NzTransferSearchComponent]; }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransferListComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-transfer-list',
-                exportAs: 'nzTransferList',
-                preserveWhitespaces: false,
-                providers: [core$1.NzUpdateHostClassService],
-                template: "<ng-template #defaultRenderList>\r\n  <ul *ngIf=\"stat.shownCount > 0\" class=\"ant-transfer-list-content\">\r\n    <div class=\"LazyLoad\" *ngFor=\"let item of dataSource\">\r\n      <li *ngIf=\"!item.hide\" (click)=\"onItemSelect(item)\"\r\n        class=\"ant-transfer-list-content-item\" [ngClass]=\"{'ant-transfer-list-content-item-disabled': disabled || item.disabled}\">\r\n        <label nz-checkbox [nzChecked]=\"item.checked\" (nzCheckedChange)=\"onItemSelect(item)\"\r\n          (click)=\"$event.stopPropagation()\" [nzDisabled]=\"disabled || item.disabled\">\r\n          <ng-container *ngIf=\"!render; else renderContainer\">{{ item.title }}</ng-container>\r\n          <ng-template #renderContainer [ngTemplateOutlet]=\"render\" [ngTemplateOutletContext]=\"{ $implicit: item }\"></ng-template>\r\n        </label>\r\n      </li>\r\n    </div>\r\n  </ul>\r\n  <div *ngIf=\"stat.shownCount === 0\" class=\"ant-transfer-list-body-not-found\">\r\n    <nz-embed-empty [nzComponentName]=\"'transfer'\" [specificContent]=\"notFoundContent\"></nz-embed-empty>\r\n  </div>\r\n</ng-template>\r\n<div class=\"ant-transfer-list-header\">\r\n  <label *ngIf=\"showSelectAll\" nz-checkbox [nzChecked]=\"stat.checkAll\" (nzCheckedChange)=\"onItemSelectAll($event)\"\r\n    [nzIndeterminate]=\"stat.checkHalf\" [nzDisabled]=\"stat.shownCount == 0 || disabled\">\r\n  </label>\r\n  <span class=\"ant-transfer-list-header-selected\">\r\n    <span>{{ (stat.checkCount > 0 ? stat.checkCount + '/' : '') + stat.shownCount }} {{ dataSource.length > 1 ? itemsUnit : itemUnit }}</span>\r\n    <span *ngIf=\"titleText\" class=\"ant-transfer-list-header-title\">{{ titleText }}</span>\r\n  </span>\r\n</div>\r\n<div class=\"{{showSearch ? 'ant-transfer-list-body ant-transfer-list-body-with-search' : 'ant-transfer-list-body'}}\"\r\n  [ngClass]=\"{'ant-transfer__nodata': stat.shownCount === 0}\">\r\n  <div *ngIf=\"showSearch\" class=\"ant-transfer-list-body-search-wrapper\">\r\n    <div nz-transfer-search\r\n      (valueChanged)=\"handleFilter($event)\"\r\n      (valueClear)=\"handleClear()\"\r\n      [placeholder]=\"searchPlaceholder\"\r\n      [disabled]=\"disabled\"\r\n      [value]=\"filter\"></div>\r\n  </div>\r\n  <ng-container *ngIf=\"renderList else defaultRenderList\">\r\n    <div class=\"ant-transfer-list-body-customize-wrapper\">\r\n      <ng-container *ngTemplateOutlet=\"renderList; context: {\r\n        $implicit: dataSource,\r\n        direction: direction,\r\n        disabled: disabled,\r\n        onItemSelectAll: onItemSelectAll,\r\n        onItemSelect: onItemSelect,\r\n        stat: stat\r\n      }\"></ng-container>\r\n    </div>\r\n  </ng-container>\r\n</div>\r\n<div *ngIf=\"footer\" class=\"ant-transfer-list-footer\">\r\n  <ng-template [ngTemplateOutlet]=\"footer\" [ngTemplateOutletContext]=\"{ $implicit: direction }\"></ng-template>\r\n</div>",
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ChangeDetectorRef }]; }, { direction: [{
-            type: core.Input
-        }], titleText: [{
-            type: core.Input
-        }], showSelectAll: [{
-            type: core.Input
-        }], dataSource: [{
-            type: core.Input
-        }], itemUnit: [{
-            type: core.Input
-        }], itemsUnit: [{
-            type: core.Input
-        }], filter: [{
-            type: core.Input
-        }], handleSelectAll: [{
-            type: core.Output
-        }], handleSelect: [{
-            type: core.Output
-        }], filterChange: [{
-            type: core.Output
-        }], disabled: [{
-            type: core.Input
-        }], showSearch: [{
-            type: core.Input
-        }], searchPlaceholder: [{
-            type: core.Input
-        }], notFoundContent: [{
-            type: core.Input
-        }], filterOption: [{
-            type: core.Input
-        }], renderList: [{
-            type: core.Input
-        }], render: [{
-            type: core.Input
-        }], footer: [{
-            type: core.Input
-        }] }); })();
         return NzTransferListComponent;
     }());
     if (false) {
@@ -848,6 +617,16 @@ NzTransferListComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferLi
         function () {
             this.cdr.detectChanges();
         };
+        NzTransferSearchComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: '[nz-transfer-search]',
+                        exportAs: 'nzTransferSearch',
+                        preserveWhitespaces: false,
+                        template: "<input [(ngModel)]=\"value\" (ngModelChange)=\"_handle()\" [disabled]=\"disabled\" [placeholder]=\"placeholder\"\r\n  class=\"ant-input ant-transfer-list-search\" [ngClass]=\"{'ant-input-disabled': disabled}\">\r\n<a *ngIf=\"value && value.length > 0; else def\" class=\"ant-transfer-list-search-action\" (click)=\"_clear()\">\r\n  <i nz-icon nzType=\"close-circle\"></i>\r\n</a>\r\n<ng-template #def>\r\n  <span class=\"ant-transfer-list-search-action\"><i nz-icon nzType=\"search\"></i></span>\r\n</ng-template>",
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush
+                    }] }
+        ];
         /** @nocollapse */
         NzTransferSearchComponent.ctorParameters = function () { return [
             { type: core.ChangeDetectorRef }
@@ -859,40 +638,6 @@ NzTransferListComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferLi
             valueChanged: [{ type: core.Output }],
             valueClear: [{ type: core.Output }]
         };
-NzTransferSearchComponent.ɵfac = function NzTransferSearchComponent_Factory(t) { return new (t || NzTransferSearchComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
-NzTransferSearchComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferSearchComponent, selectors: [["", "nz-transfer-search", ""]], inputs: { value: "value", placeholder: "placeholder", disabled: "disabled" }, outputs: { valueChanged: "valueChanged", valueClear: "valueClear" }, exportAs: ["nzTransferSearch"], features: [ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c4, decls: 4, vars: 8, consts: [[1, "ant-input", "ant-transfer-list-search", 3, "ngModel", "disabled", "placeholder", "ngClass", "ngModelChange"], ["class", "ant-transfer-list-search-action", 3, "click", 4, "ngIf", "ngIfElse"], ["def", ""], [1, "ant-transfer-list-search-action", 3, "click"], ["nz-icon", "", "nzType", "close-circle"], [1, "ant-transfer-list-search-action"], ["nz-icon", "", "nzType", "search"]], template: function NzTransferSearchComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "input", 0);
-        ɵngcc0.ɵɵlistener("ngModelChange", function NzTransferSearchComponent_Template_input_ngModelChange_0_listener($event) { return ctx.value = $event; })("ngModelChange", function NzTransferSearchComponent_Template_input_ngModelChange_0_listener() { return ctx._handle(); });
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtemplate(1, NzTransferSearchComponent_a_1_Template, 2, 0, "a", 1);
-        ɵngcc0.ɵɵtemplate(2, NzTransferSearchComponent_ng_template_2_Template, 2, 0, "ng-template", null, 2, ɵngcc0.ɵɵtemplateRefExtractor);
-    } if (rf & 2) {
-        var _r1 = ɵngcc0.ɵɵreference(3);
-        ɵngcc0.ɵɵproperty("ngModel", ctx.value)("disabled", ctx.disabled)("placeholder", ctx.placeholder)("ngClass", ɵngcc0.ɵɵpureFunction1(6, _c5, ctx.disabled));
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.value && ctx.value.length > 0)("ngIfElse", _r1);
-    } }, directives: [ɵngcc5.DefaultValueAccessor, ɵngcc5.NgControlStatus, ɵngcc5.NgModel, ɵngcc2.NgClass, ɵngcc2.NgIf, ɵngcc6.NzIconDirective], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransferSearchComponent, [{
-        type: core.Component,
-        args: [{
-                selector: '[nz-transfer-search]',
-                exportAs: 'nzTransferSearch',
-                preserveWhitespaces: false,
-                template: "<input [(ngModel)]=\"value\" (ngModelChange)=\"_handle()\" [disabled]=\"disabled\" [placeholder]=\"placeholder\"\r\n  class=\"ant-input ant-transfer-list-search\" [ngClass]=\"{'ant-input-disabled': disabled}\">\r\n<a *ngIf=\"value && value.length > 0; else def\" class=\"ant-transfer-list-search-action\" (click)=\"_clear()\">\r\n  <i nz-icon nzType=\"close-circle\"></i>\r\n</a>\r\n<ng-template #def>\r\n  <span class=\"ant-transfer-list-search-action\"><i nz-icon nzType=\"search\"></i></span>\r\n</ng-template>",
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }]; }, { valueChanged: [{
-            type: core.Output
-        }], valueClear: [{
-            type: core.Output
-        }], value: [{
-            type: core.Input
-        }], placeholder: [{
-            type: core.Input
-        }], disabled: [{
-            type: core.Input
-        }] }); })();
         return NzTransferSearchComponent;
     }());
     if (false) {
@@ -1247,6 +992,20 @@ NzTransferSearchComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransfer
             this.unsubscribe$.next();
             this.unsubscribe$.complete();
         };
+        NzTransferComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-transfer',
+                        exportAs: 'nzTransfer',
+                        preserveWhitespaces: false,
+                        template: "<nz-transfer-list class=\"ant-transfer-list\" [ngStyle]=\"nzListStyle\" data-direction=\"left\"\r\n  [titleText]=\"nzTitles[0]\"\r\n  [showSelectAll]=\"nzShowSelectAll\"\r\n  [dataSource]=\"leftDataSource\"\r\n  [filter]=\"leftFilter\"\r\n  [filterOption]=\"nzFilterOption\"\r\n  (filterChange)=\"handleFilterChange($event)\"\r\n  [renderList]=\"nzRenderList[0]\"\r\n  [render]=\"nzRender\"\r\n  [disabled]=\"nzDisabled\"\r\n  [showSearch]=\"nzShowSearch\"\r\n  [searchPlaceholder]=\"nzSearchPlaceholder || locale.searchPlaceholder\"\r\n  [notFoundContent]=\"nzNotFoundContent\"\r\n  [itemUnit]=\"nzItemUnit || locale.itemUnit\"\r\n  [itemsUnit]=\"nzItemsUnit || locale.itemsUnit\"\r\n  [footer]=\"nzFooter\"\r\n  (handleSelect)=\"handleLeftSelect($event)\"\r\n  (handleSelectAll)=\"handleLeftSelectAll($event)\">\r\n</nz-transfer-list>\r\n<div class=\"ant-transfer-operation\">\r\n  <button nz-button (click)=\"moveToLeft()\" [disabled]=\"nzDisabled || !leftActive\" [nzType]=\"'primary'\" [nzSize]=\"'small'\">\r\n    <i nz-icon nzType=\"left\"></i><span *ngIf=\"nzOperations[1]\">{{ nzOperations[1] }}</span>\r\n  </button>\r\n  <button nz-button (click)=\"moveToRight()\" [disabled]=\"nzDisabled || !rightActive\" [nzType]=\"'primary'\" [nzSize]=\"'small'\">\r\n    <i nz-icon nzType=\"right\"></i><span *ngIf=\"nzOperations[0]\">{{ nzOperations[0] }}</span>\r\n  </button>\r\n</div>\r\n<nz-transfer-list class=\"ant-transfer-list\" [ngStyle]=\"nzListStyle\" data-direction=\"right\"\r\n  [titleText]=\"nzTitles[1]\"\r\n  [showSelectAll]=\"nzShowSelectAll\"\r\n  [dataSource]=\"rightDataSource\"\r\n  [filter]=\"rightFilter\"\r\n  [filterOption]=\"nzFilterOption\"\r\n  (filterChange)=\"handleFilterChange($event)\"\r\n  [renderList]=\"nzRenderList[1]\"\r\n  [render]=\"nzRender\"\r\n  [disabled]=\"nzDisabled\"\r\n  [showSearch]=\"nzShowSearch\"\r\n  [searchPlaceholder]=\"nzSearchPlaceholder || locale.searchPlaceholder\"\r\n  [notFoundContent]=\"nzNotFoundContent\"\r\n  [itemUnit]=\"nzItemUnit || locale.itemUnit\"\r\n  [itemsUnit]=\"nzItemsUnit || locale.itemsUnit\"\r\n  [footer]=\"nzFooter\"\r\n  (handleSelect)=\"handleRightSelect($event)\"\r\n  (handleSelectAll)=\"handleRightSelectAll($event)\">\r\n</nz-transfer-list>\r\n",
+                        host: {
+                            '[class.ant-transfer-disabled]': 'nzDisabled'
+                        },
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        providers: [core$1.NzUpdateHostClassService]
+                    }] }
+        ];
         /** @nocollapse */
         NzTransferComponent.ctorParameters = function () { return [
             { type: core.ChangeDetectorRef },
@@ -1289,102 +1048,6 @@ NzTransferSearchComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransfer
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzTransferComponent.prototype, "nzShowSearch", void 0);
-NzTransferComponent.ɵfac = function NzTransferComponent_Factory(t) { return new (t || NzTransferComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc7.NzI18nService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzTransferComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferComponent, selectors: [["nz-transfer"]], viewQuery: function NzTransferComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵviewQuery(NzTransferListComponent, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.lists = _t);
-    } }, hostVars: 2, hostBindings: function NzTransferComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-transfer-disabled", ctx.nzDisabled);
-    } }, inputs: { nzDisabled: "nzDisabled", nzDataSource: "nzDataSource", nzTitles: "nzTitles", nzOperations: "nzOperations", nzShowSelectAll: "nzShowSelectAll", nzCanMove: "nzCanMove", nzRenderList: "nzRenderList", nzShowSearch: "nzShowSearch", nzListStyle: "nzListStyle", nzItemUnit: "nzItemUnit", nzItemsUnit: "nzItemsUnit", nzRender: "nzRender", nzFooter: "nzFooter", nzFilterOption: "nzFilterOption", nzSearchPlaceholder: "nzSearchPlaceholder", nzNotFoundContent: "nzNotFoundContent" }, outputs: { nzChange: "nzChange", nzSearchChange: "nzSearchChange", nzSelectChange: "nzSelectChange" }, exportAs: ["nzTransfer"], features: [ɵngcc0.ɵɵProvidersFeature([core$1.NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 9, vars: 38, consts: [["data-direction", "left", 1, "ant-transfer-list", 3, "ngStyle", "titleText", "showSelectAll", "dataSource", "filter", "filterOption", "renderList", "render", "disabled", "showSearch", "searchPlaceholder", "notFoundContent", "itemUnit", "itemsUnit", "footer", "filterChange", "handleSelect", "handleSelectAll"], [1, "ant-transfer-operation"], ["nz-button", "", 3, "disabled", "nzType", "nzSize", "click"], ["nz-icon", "", "nzType", "left"], [4, "ngIf"], ["nz-icon", "", "nzType", "right"], ["data-direction", "right", 1, "ant-transfer-list", 3, "ngStyle", "titleText", "showSelectAll", "dataSource", "filter", "filterOption", "renderList", "render", "disabled", "showSearch", "searchPlaceholder", "notFoundContent", "itemUnit", "itemsUnit", "footer", "filterChange", "handleSelect", "handleSelectAll"]], template: function NzTransferComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "nz-transfer-list", 0);
-        ɵngcc0.ɵɵlistener("filterChange", function NzTransferComponent_Template_nz_transfer_list_filterChange_0_listener($event) { return ctx.handleFilterChange($event); })("handleSelect", function NzTransferComponent_Template_nz_transfer_list_handleSelect_0_listener($event) { return ctx.handleLeftSelect($event); })("handleSelectAll", function NzTransferComponent_Template_nz_transfer_list_handleSelectAll_0_listener($event) { return ctx.handleLeftSelectAll($event); });
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(1, "div", 1);
-        ɵngcc0.ɵɵelementStart(2, "button", 2);
-        ɵngcc0.ɵɵlistener("click", function NzTransferComponent_Template_button_click_2_listener() { return ctx.moveToLeft(); });
-        ɵngcc0.ɵɵelement(3, "i", 3);
-        ɵngcc0.ɵɵtemplate(4, NzTransferComponent_span_4_Template, 2, 1, "span", 4);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(5, "button", 2);
-        ɵngcc0.ɵɵlistener("click", function NzTransferComponent_Template_button_click_5_listener() { return ctx.moveToRight(); });
-        ɵngcc0.ɵɵelement(6, "i", 5);
-        ɵngcc0.ɵɵtemplate(7, NzTransferComponent_span_7_Template, 2, 1, "span", 4);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(8, "nz-transfer-list", 6);
-        ɵngcc0.ɵɵlistener("filterChange", function NzTransferComponent_Template_nz_transfer_list_filterChange_8_listener($event) { return ctx.handleFilterChange($event); })("handleSelect", function NzTransferComponent_Template_nz_transfer_list_handleSelect_8_listener($event) { return ctx.handleRightSelect($event); })("handleSelectAll", function NzTransferComponent_Template_nz_transfer_list_handleSelectAll_8_listener($event) { return ctx.handleRightSelectAll($event); });
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngStyle", ctx.nzListStyle)("titleText", ctx.nzTitles[0])("showSelectAll", ctx.nzShowSelectAll)("dataSource", ctx.leftDataSource)("filter", ctx.leftFilter)("filterOption", ctx.nzFilterOption)("renderList", ctx.nzRenderList[0])("render", ctx.nzRender)("disabled", ctx.nzDisabled)("showSearch", ctx.nzShowSearch)("searchPlaceholder", ctx.nzSearchPlaceholder || ctx.locale.searchPlaceholder)("notFoundContent", ctx.nzNotFoundContent)("itemUnit", ctx.nzItemUnit || ctx.locale.itemUnit)("itemsUnit", ctx.nzItemsUnit || ctx.locale.itemsUnit)("footer", ctx.nzFooter);
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled || !ctx.leftActive)("nzType", "primary")("nzSize", "small");
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzOperations[1]);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled || !ctx.rightActive)("nzType", "primary")("nzSize", "small");
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzOperations[0]);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngStyle", ctx.nzListStyle)("titleText", ctx.nzTitles[1])("showSelectAll", ctx.nzShowSelectAll)("dataSource", ctx.rightDataSource)("filter", ctx.rightFilter)("filterOption", ctx.nzFilterOption)("renderList", ctx.nzRenderList[1])("render", ctx.nzRender)("disabled", ctx.nzDisabled)("showSearch", ctx.nzShowSearch)("searchPlaceholder", ctx.nzSearchPlaceholder || ctx.locale.searchPlaceholder)("notFoundContent", ctx.nzNotFoundContent)("itemUnit", ctx.nzItemUnit || ctx.locale.itemUnit)("itemsUnit", ctx.nzItemsUnit || ctx.locale.itemsUnit)("footer", ctx.nzFooter);
-    } }, directives: [NzTransferListComponent, ɵngcc2.NgStyle, ɵngcc8.NzButtonComponent, ɵngcc6.NzIconDirective, ɵngcc2.NgIf], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransferComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-transfer',
-                exportAs: 'nzTransfer',
-                preserveWhitespaces: false,
-                template: "<nz-transfer-list class=\"ant-transfer-list\" [ngStyle]=\"nzListStyle\" data-direction=\"left\"\r\n  [titleText]=\"nzTitles[0]\"\r\n  [showSelectAll]=\"nzShowSelectAll\"\r\n  [dataSource]=\"leftDataSource\"\r\n  [filter]=\"leftFilter\"\r\n  [filterOption]=\"nzFilterOption\"\r\n  (filterChange)=\"handleFilterChange($event)\"\r\n  [renderList]=\"nzRenderList[0]\"\r\n  [render]=\"nzRender\"\r\n  [disabled]=\"nzDisabled\"\r\n  [showSearch]=\"nzShowSearch\"\r\n  [searchPlaceholder]=\"nzSearchPlaceholder || locale.searchPlaceholder\"\r\n  [notFoundContent]=\"nzNotFoundContent\"\r\n  [itemUnit]=\"nzItemUnit || locale.itemUnit\"\r\n  [itemsUnit]=\"nzItemsUnit || locale.itemsUnit\"\r\n  [footer]=\"nzFooter\"\r\n  (handleSelect)=\"handleLeftSelect($event)\"\r\n  (handleSelectAll)=\"handleLeftSelectAll($event)\">\r\n</nz-transfer-list>\r\n<div class=\"ant-transfer-operation\">\r\n  <button nz-button (click)=\"moveToLeft()\" [disabled]=\"nzDisabled || !leftActive\" [nzType]=\"'primary'\" [nzSize]=\"'small'\">\r\n    <i nz-icon nzType=\"left\"></i><span *ngIf=\"nzOperations[1]\">{{ nzOperations[1] }}</span>\r\n  </button>\r\n  <button nz-button (click)=\"moveToRight()\" [disabled]=\"nzDisabled || !rightActive\" [nzType]=\"'primary'\" [nzSize]=\"'small'\">\r\n    <i nz-icon nzType=\"right\"></i><span *ngIf=\"nzOperations[0]\">{{ nzOperations[0] }}</span>\r\n  </button>\r\n</div>\r\n<nz-transfer-list class=\"ant-transfer-list\" [ngStyle]=\"nzListStyle\" data-direction=\"right\"\r\n  [titleText]=\"nzTitles[1]\"\r\n  [showSelectAll]=\"nzShowSelectAll\"\r\n  [dataSource]=\"rightDataSource\"\r\n  [filter]=\"rightFilter\"\r\n  [filterOption]=\"nzFilterOption\"\r\n  (filterChange)=\"handleFilterChange($event)\"\r\n  [renderList]=\"nzRenderList[1]\"\r\n  [render]=\"nzRender\"\r\n  [disabled]=\"nzDisabled\"\r\n  [showSearch]=\"nzShowSearch\"\r\n  [searchPlaceholder]=\"nzSearchPlaceholder || locale.searchPlaceholder\"\r\n  [notFoundContent]=\"nzNotFoundContent\"\r\n  [itemUnit]=\"nzItemUnit || locale.itemUnit\"\r\n  [itemsUnit]=\"nzItemsUnit || locale.itemsUnit\"\r\n  [footer]=\"nzFooter\"\r\n  (handleSelect)=\"handleRightSelect($event)\"\r\n  (handleSelectAll)=\"handleRightSelectAll($event)\">\r\n</nz-transfer-list>\r\n",
-                host: {
-                    '[class.ant-transfer-disabled]': 'nzDisabled'
-                },
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                providers: [core$1.NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc7.NzI18nService }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzDisabled: [{
-            type: core.Input
-        }], nzDataSource: [{
-            type: core.Input
-        }], nzTitles: [{
-            type: core.Input
-        }], nzOperations: [{
-            type: core.Input
-        }], nzShowSelectAll: [{
-            type: core.Input
-        }], nzCanMove: [{
-            type: core.Input
-        }], nzRenderList: [{
-            type: core.Input
-        }], nzShowSearch: [{
-            type: core.Input
-        }], nzChange: [{
-            type: core.Output
-        }], nzSearchChange: [{
-            type: core.Output
-        }], nzSelectChange: [{
-            type: core.Output
-        }], lists: [{
-            type: core.ViewChildren,
-            args: [NzTransferListComponent]
-        }], nzListStyle: [{
-            type: core.Input
-        }], nzItemUnit: [{
-            type: core.Input
-        }], nzItemsUnit: [{
-            type: core.Input
-        }], nzRender: [{
-            type: core.Input
-        }], nzFooter: [{
-            type: core.Input
-        }], nzFilterOption: [{
-            type: core.Input
-        }], nzSearchPlaceholder: [{
-            type: core.Input
-        }], nzNotFoundContent: [{
-            type: core.Input
-        }] }); })();
         return NzTransferComponent;
     }());
     if (false) {
@@ -1491,37 +1154,22 @@ NzTransferComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTransferCompon
     var NzTransferModule = /** @class */ (function () {
         function NzTransferModule() {
         }
-NzTransferModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTransferModule });
-NzTransferModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTransferModule_Factory(t) { return new (t || NzTransferModule)(); }, imports: [[
-            common.CommonModule,
-            forms.FormsModule,
-            checkbox.NzCheckboxModule,
-            button.NzButtonModule,
-            input.NzInputModule,
-            i18n.NzI18nModule,
-            icon.NzIconModule,
-            empty.NzEmptyModule
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTransferModule, { declarations: [NzTransferComponent,
-        NzTransferListComponent,
-        NzTransferSearchComponent], imports: [ɵngcc2.CommonModule, ɵngcc5.FormsModule, ɵngcc3.NzCheckboxModule, ɵngcc8.NzButtonModule, ɵngcc9.NzInputModule, ɵngcc7.NzI18nModule, ɵngcc6.NzIconModule, ɵngcc4.NzEmptyModule], exports: [NzTransferComponent] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTransferModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [
-                    common.CommonModule,
-                    forms.FormsModule,
-                    checkbox.NzCheckboxModule,
-                    button.NzButtonModule,
-                    input.NzInputModule,
-                    i18n.NzI18nModule,
-                    icon.NzIconModule,
-                    empty.NzEmptyModule
-                ],
-                declarations: [NzTransferComponent, NzTransferListComponent, NzTransferSearchComponent],
-                exports: [NzTransferComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzTransferModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [
+                            common.CommonModule,
+                            forms.FormsModule,
+                            checkbox.NzCheckboxModule,
+                            button.NzButtonModule,
+                            input.NzInputModule,
+                            i18n.NzI18nModule,
+                            icon.NzIconModule,
+                            empty.NzEmptyModule
+                        ],
+                        declarations: [NzTransferComponent, NzTransferListComponent, NzTransferSearchComponent],
+                        exports: [NzTransferComponent]
+                    },] }
+        ];
         return NzTransferModule;
     }());
 
@@ -1533,6 +1181,4 @@ NzTransferModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTransf
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd-transfer.umd.js.map

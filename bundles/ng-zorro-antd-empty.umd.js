@@ -1,102 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/platform-browser'),require('@angular/common'),require('@angular/cdk/portal'),require('ng-zorro-antd/i18n'),exports, require('@angular/cdk/portal'), require('@angular/core'), require('@angular/platform-browser'), require('rxjs'), require('ng-zorro-antd/core'), require('rxjs/operators'), require('ng-zorro-antd/i18n'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/empty', ['@angular/core','ng-zorro-antd/core','@angular/platform-browser','@angular/common','@angular/cdk/portal','ng-zorro-antd/i18n','exports', '@angular/cdk/portal', '@angular/core', '@angular/platform-browser', 'rxjs', 'ng-zorro-antd/core', 'rxjs/operators', 'ng-zorro-antd/i18n', '@angular/common'], factory) :
-    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.platformBrowser,global.ng.common,global.ng.cdk.portal,global.ngZorroAntd.i18n,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].empty = {}), global.ng.cdk.portal, global.ng.core, global.ng.platformBrowser, global.rxjs, global['ng-zorro-antd'].core, global.rxjs.operators, global['ng-zorro-antd'].i18n, global.ng.common));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,ɵngcc5,exports, portal, core, platformBrowser, rxjs, core$1, operators, i18n, common) { 
-function NzEmbedEmptyComponent_ng_container_0_nz_empty_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "nz-empty", 6);
-} if (rf & 2) {
-    var ctx_r2 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("nzNotFoundImage", ctx_r2.defaultSvg);
-} }
-function NzEmbedEmptyComponent_ng_container_0_nz_empty_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "nz-empty", 7);
-} if (rf & 2) {
-    var ctx_r3 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("nzNotFoundImage", ctx_r3.defaultSvg);
-} }
-function NzEmbedEmptyComponent_ng_container_0_nz_empty_3_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "nz-empty");
-} }
-function NzEmbedEmptyComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0, 2);
-    ɵngcc0.ɵɵtemplate(1, NzEmbedEmptyComponent_ng_container_0_nz_empty_1_Template, 1, 1, "nz-empty", 3);
-    ɵngcc0.ɵɵtemplate(2, NzEmbedEmptyComponent_ng_container_0_nz_empty_2_Template, 1, 1, "nz-empty", 4);
-    ɵngcc0.ɵɵtemplate(3, NzEmbedEmptyComponent_ng_container_0_nz_empty_3_Template, 1, 0, "nz-empty", 5);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("ngSwitch", ctx_r0.size);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "normal");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngSwitchCase", "small");
-} }
-function NzEmbedEmptyComponent_ng_container_1_1_ng_template_0_Template(rf, ctx) { }
-function NzEmbedEmptyComponent_ng_container_1_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵtemplate(0, NzEmbedEmptyComponent_ng_container_1_1_ng_template_0_Template, 0, 0, "ng-template", 8);
-} if (rf & 2) {
-    var ctx_r5 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("cdkPortalOutlet", ctx_r5.contentPortal);
-} }
-function NzEmbedEmptyComponent_ng_container_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r6.content, " ");
-} }
-function NzEmbedEmptyComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtemplate(1, NzEmbedEmptyComponent_ng_container_1_1_Template, 1, 1, undefined, 1);
-    ɵngcc0.ɵɵtemplate(2, NzEmbedEmptyComponent_ng_container_1_ng_container_2_Template, 2, 1, "ng-container", 1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.contentType !== "string");
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r1.contentType === "string");
-} }
-function NzEmptyComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "img", 4);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("src", ctx_r0.nzNotFoundImage || ctx_r0.defaultSvg, ɵngcc0.ɵɵsanitizeUrl)("alt", ctx_r0.isContentString ? ctx_r0.nzNotFoundContent : "empty");
-} }
-function NzEmptyComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r1.shouldRenderContent ? ctx_r1.nzNotFoundContent : ctx_r1.locale["description"], " ");
-} }
-function NzEmptyComponent_div_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r3 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate1(" ", ctx_r3.nzNotFoundFooter, " ");
-} }
-function NzEmptyComponent_div_4_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "div", 5);
-    ɵngcc0.ɵɵtemplate(1, NzEmptyComponent_div_4_ng_container_1_Template, 2, 1, "ng-container", 1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r2 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r2.nzNotFoundFooter);
-} }
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/portal'), require('@angular/core'), require('@angular/platform-browser'), require('rxjs'), require('ng-zorro-antd/core'), require('rxjs/operators'), require('ng-zorro-antd/i18n'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/empty', ['exports', '@angular/cdk/portal', '@angular/core', '@angular/platform-browser', 'rxjs', 'ng-zorro-antd/core', 'rxjs/operators', 'ng-zorro-antd/i18n', '@angular/common'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].empty = {}), global.ng.cdk.portal, global.ng.core, global.ng.platformBrowser, global.rxjs, global['ng-zorro-antd'].core, global.rxjs.operators, global['ng-zorro-antd'].i18n, global.ng.common));
+}(this, (function (exports, portal, core, platformBrowser, rxjs, core$1, operators, i18n, common) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -183,25 +89,17 @@ function NzEmptyComponent_div_4_Template(rf, ctx) { if (rf & 1) {
             return ((this.nzConfigService.getConfigForComponent('empty') || {}).nzDefaultEmptyContent ||
                 this.legacyDefaultEmptyContent);
         };
+        NzEmptyService.decorators = [
+            { type: core.Injectable, args: [{
+                        providedIn: 'root'
+                    },] }
+        ];
         /** @nocollapse */
         NzEmptyService.ctorParameters = function () { return [
             { type: core$1.NzConfigService },
             { type: core.Type, decorators: [{ type: core.Inject, args: [NZ_DEFAULT_EMPTY_CONTENT,] }, { type: core.Optional }] }
         ]; };
         /** @nocollapse */ NzEmptyService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzEmptyService_Factory() { return new NzEmptyService(core.ɵɵinject(core$1.NzConfigService), core.ɵɵinject(NZ_DEFAULT_EMPTY_CONTENT, 8)); }, token: NzEmptyService, providedIn: "root" });
-NzEmptyService.ɵfac = function NzEmptyService_Factory(t) { return new (t || NzEmptyService)(ɵngcc0.ɵɵinject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵinject(NZ_DEFAULT_EMPTY_CONTENT, 8)); };
-NzEmptyService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzEmptyService, factory: function (t) { return NzEmptyService.ɵfac(t); }, providedIn: 'root' });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzEmptyService, [{
-        type: core.Injectable,
-        args: [{
-                providedIn: 'root'
-            }]
-    }], function () { return [{ type: ɵngcc1.NzConfigService }, { type: ɵngcc0.Type, decorators: [{
-                type: core.Inject,
-                args: [NZ_DEFAULT_EMPTY_CONTENT]
-            }, {
-                type: core.Optional
-            }] }]; }, null); })();
         return NzEmptyService;
     }());
     if (false) {
@@ -339,6 +237,15 @@ NzEmptyService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzEmptyService, fa
             }
             this.cdr.markForCheck();
         };
+        NzEmbedEmptyComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-embed-empty',
+                        exportAs: 'nzEmbedEmpty',
+                        template: "<ng-container *ngIf=\"!content && specificContent !== null\" [ngSwitch]=\"size\">\r\n  <nz-empty *ngSwitchCase=\"'normal'\" class=\"ant-empty-normal\" [nzNotFoundImage]=\"defaultSvg\"></nz-empty>\r\n  <nz-empty *ngSwitchCase=\"'small'\" class=\"ant-empty-small\" [nzNotFoundImage]=\"defaultSvg\"></nz-empty>\r\n  <nz-empty *ngSwitchDefault></nz-empty>\r\n</ng-container>\r\n<ng-container *ngIf=\"content\">\r\n  <ng-template *ngIf=\"contentType !== 'string'\" [cdkPortalOutlet]=\"contentPortal\"></ng-template>\r\n  <ng-container *ngIf=\"contentType === 'string'\">\r\n    {{ content }}\r\n  </ng-container>\r\n</ng-container>\r\n"
+                    }] }
+        ];
         /** @nocollapse */
         NzEmbedEmptyComponent.ctorParameters = function () { return [
             { type: NzEmptyService },
@@ -351,29 +258,6 @@ NzEmptyService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzEmptyService, fa
             nzComponentName: [{ type: core.Input }],
             specificContent: [{ type: core.Input }]
         };
-NzEmbedEmptyComponent.ɵfac = function NzEmbedEmptyComponent_Factory(t) { return new (t || NzEmbedEmptyComponent)(ɵngcc0.ɵɵdirectiveInject(NzEmptyService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.DomSanitizer), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Injector)); };
-NzEmbedEmptyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzEmbedEmptyComponent, selectors: [["nz-embed-empty"]], inputs: { nzComponentName: "nzComponentName", specificContent: "specificContent" }, exportAs: ["nzEmbedEmpty"], features: [ɵngcc0.ɵɵNgOnChangesFeature], decls: 2, vars: 2, consts: [[3, "ngSwitch", 4, "ngIf"], [4, "ngIf"], [3, "ngSwitch"], ["class", "ant-empty-normal", 3, "nzNotFoundImage", 4, "ngSwitchCase"], ["class", "ant-empty-small", 3, "nzNotFoundImage", 4, "ngSwitchCase"], [4, "ngSwitchDefault"], [1, "ant-empty-normal", 3, "nzNotFoundImage"], [1, "ant-empty-small", 3, "nzNotFoundImage"], [3, "cdkPortalOutlet"]], template: function NzEmbedEmptyComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵtemplate(0, NzEmbedEmptyComponent_ng_container_0_Template, 4, 3, "ng-container", 0);
-        ɵngcc0.ɵɵtemplate(1, NzEmbedEmptyComponent_ng_container_1_Template, 3, 2, "ng-container", 1);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.content && ctx.specificContent !== null);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.content);
-    } }, directives: function () { return [ɵngcc3.NgIf, ɵngcc3.NgSwitch, ɵngcc3.NgSwitchCase, ɵngcc3.NgSwitchDefault, NzEmptyComponent, ɵngcc4.CdkPortalOutlet]; }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzEmbedEmptyComponent, [{
-        type: core.Component,
-        args: [{
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                selector: 'nz-embed-empty',
-                exportAs: 'nzEmbedEmpty',
-                template: "<ng-container *ngIf=\"!content && specificContent !== null\" [ngSwitch]=\"size\">\r\n  <nz-empty *ngSwitchCase=\"'normal'\" class=\"ant-empty-normal\" [nzNotFoundImage]=\"defaultSvg\"></nz-empty>\r\n  <nz-empty *ngSwitchCase=\"'small'\" class=\"ant-empty-small\" [nzNotFoundImage]=\"defaultSvg\"></nz-empty>\r\n  <nz-empty *ngSwitchDefault></nz-empty>\r\n</ng-container>\r\n<ng-container *ngIf=\"content\">\r\n  <ng-template *ngIf=\"contentType !== 'string'\" [cdkPortalOutlet]=\"contentPortal\"></ng-template>\r\n  <ng-container *ngIf=\"contentType === 'string'\">\r\n    {{ content }}\r\n  </ng-container>\r\n</ng-container>\r\n"
-            }]
-    }], function () { return [{ type: NzEmptyService }, { type: ɵngcc2.DomSanitizer }, { type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.Injector }]; }, { nzComponentName: [{
-            type: core.Input
-        }], specificContent: [{
-            type: core.Input
-        }] }); })();
         return NzEmbedEmptyComponent;
     }());
     if (false) {
@@ -488,6 +372,19 @@ NzEmbedEmptyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzEmbedEmptyCo
             this.destroy$.next();
             this.destroy$.complete();
         };
+        NzEmptyComponent.decorators = [
+            { type: core.Component, args: [{
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        selector: 'nz-empty',
+                        exportAs: 'nzEmpty',
+                        template: "<div class=\"ant-empty-image\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundImage\">\r\n    <img [src]=\"nzNotFoundImage || defaultSvg\" [alt]=\"isContentString ? nzNotFoundContent : 'empty'\">\r\n  </ng-container>\r\n</div>\r\n<p class=\"ant-empty-description\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundContent\">\r\n    {{ shouldRenderContent ? nzNotFoundContent : locale['description'] }}\r\n  </ng-container>\r\n</p>\r\n<div class=\"ant-empty-footer\" *ngIf=\"nzNotFoundFooter\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundFooter\">\r\n    {{ nzNotFoundFooter }}\r\n  </ng-container>\r\n</div>\r\n",
+                        host: {
+                            class: 'ant-empty'
+                        },
+                        styles: ['nz-empty { display: block; }']
+                    }] }
+        ];
         /** @nocollapse */
         NzEmptyComponent.ctorParameters = function () { return [
             { type: platformBrowser.DomSanitizer },
@@ -499,43 +396,6 @@ NzEmbedEmptyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzEmbedEmptyCo
             nzNotFoundContent: [{ type: core.Input }],
             nzNotFoundFooter: [{ type: core.Input }]
         };
-NzEmptyComponent.ɵfac = function NzEmptyComponent_Factory(t) { return new (t || NzEmptyComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc2.DomSanitizer), ɵngcc0.ɵɵdirectiveInject(ɵngcc5.NzI18nService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
-NzEmptyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzEmptyComponent, selectors: [["nz-empty"]], hostAttrs: [1, "ant-empty"], inputs: { nzNotFoundImage: "nzNotFoundImage", nzNotFoundContent: "nzNotFoundContent", nzNotFoundFooter: "nzNotFoundFooter" }, exportAs: ["nzEmpty"], features: [ɵngcc0.ɵɵNgOnChangesFeature], decls: 5, vars: 3, consts: [[1, "ant-empty-image"], [4, "nzStringTemplateOutlet"], [1, "ant-empty-description"], ["class", "ant-empty-footer", 4, "ngIf"], [3, "src", "alt"], [1, "ant-empty-footer"]], template: function NzEmptyComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵelementStart(0, "div", 0);
-        ɵngcc0.ɵɵtemplate(1, NzEmptyComponent_ng_container_1_Template, 2, 2, "ng-container", 1);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(2, "p", 2);
-        ɵngcc0.ɵɵtemplate(3, NzEmptyComponent_ng_container_3_Template, 2, 1, "ng-container", 1);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtemplate(4, NzEmptyComponent_div_4_Template, 2, 1, "div", 3);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzNotFoundImage);
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzNotFoundContent);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzNotFoundFooter);
-    } }, directives: [ɵngcc1.NzStringTemplateOutletDirective, ɵngcc3.NgIf], styles: ["nz-empty { display: block; }"], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzEmptyComponent, [{
-        type: core.Component,
-        args: [{
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                selector: 'nz-empty',
-                exportAs: 'nzEmpty',
-                template: "<div class=\"ant-empty-image\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundImage\">\r\n    <img [src]=\"nzNotFoundImage || defaultSvg\" [alt]=\"isContentString ? nzNotFoundContent : 'empty'\">\r\n  </ng-container>\r\n</div>\r\n<p class=\"ant-empty-description\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundContent\">\r\n    {{ shouldRenderContent ? nzNotFoundContent : locale['description'] }}\r\n  </ng-container>\r\n</p>\r\n<div class=\"ant-empty-footer\" *ngIf=\"nzNotFoundFooter\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzNotFoundFooter\">\r\n    {{ nzNotFoundFooter }}\r\n  </ng-container>\r\n</div>\r\n",
-                host: {
-                    class: 'ant-empty'
-                },
-                styles: ['nz-empty { display: block; }']
-            }]
-    }], function () { return [{ type: ɵngcc2.DomSanitizer }, { type: ɵngcc5.NzI18nService }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzNotFoundImage: [{
-            type: core.Input
-        }], nzNotFoundContent: [{
-            type: core.Input
-        }], nzNotFoundFooter: [{
-            type: core.Input
-        }] }); })();
         return NzEmptyComponent;
     }());
     if (false) {
@@ -580,19 +440,13 @@ NzEmptyComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzEmptyComponent, s
     var NzEmptyModule = /** @class */ (function () {
         function NzEmptyModule() {
         }
-NzEmptyModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzEmptyModule });
-NzEmptyModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzEmptyModule_Factory(t) { return new (t || NzEmptyModule)(); }, imports: [[common.CommonModule, portal.PortalModule, core$1.NzAddOnModule, i18n.NzI18nModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzEmptyModule, { declarations: [NzEmptyComponent,
-        NzEmbedEmptyComponent], imports: [ɵngcc3.CommonModule, ɵngcc4.PortalModule, ɵngcc1.NzAddOnModule, ɵngcc5.NzI18nModule], exports: [NzEmptyComponent,
-        NzEmbedEmptyComponent] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzEmptyModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [common.CommonModule, portal.PortalModule, core$1.NzAddOnModule, i18n.NzI18nModule],
-                declarations: [NzEmptyComponent, NzEmbedEmptyComponent],
-                exports: [NzEmptyComponent, NzEmbedEmptyComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzEmptyModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, portal.PortalModule, core$1.NzAddOnModule, i18n.NzI18nModule],
+                        declarations: [NzEmptyComponent, NzEmbedEmptyComponent],
+                        exports: [NzEmptyComponent, NzEmbedEmptyComponent]
+                    },] }
+        ];
         return NzEmptyModule;
     }());
 
@@ -608,6 +462,4 @@ NzEmptyModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzEmptyModu
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd-empty.umd.js.map

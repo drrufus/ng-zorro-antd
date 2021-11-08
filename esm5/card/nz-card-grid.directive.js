@@ -12,12 +12,20 @@ import * as tslib_1 from "tslib";
  */
 import { Directive, ElementRef, Input, Renderer2 } from '@angular/core';
 import { InputBoolean } from 'ng-zorro-antd/core';
-import * as ɵngcc0 from '@angular/core';
 var NzCardGridDirective = /** @class */ (function () {
     function NzCardGridDirective(elementRef, renderer) {
         this.nzHoverable = true;
         renderer.addClass(elementRef.nativeElement, 'ant-card-grid');
     }
+    NzCardGridDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-card-grid]',
+                    exportAs: 'nzCardGrid',
+                    host: {
+                        '[class.ant-card-hoverable]': 'nzHoverable'
+                    }
+                },] }
+    ];
     /** @nocollapse */
     NzCardGridDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -30,22 +38,6 @@ var NzCardGridDirective = /** @class */ (function () {
         InputBoolean(),
         tslib_1.__metadata("design:type", Boolean)
     ], NzCardGridDirective.prototype, "nzHoverable", void 0);
-NzCardGridDirective.ɵfac = function NzCardGridDirective_Factory(t) { return new (t || NzCardGridDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzCardGridDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzCardGridDirective, selectors: [["", "nz-card-grid", ""]], hostVars: 2, hostBindings: function NzCardGridDirective_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-card-hoverable", ctx.nzHoverable);
-    } }, inputs: { nzHoverable: "nzHoverable" }, exportAs: ["nzCardGrid"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCardGridDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-card-grid]',
-                exportAs: 'nzCardGrid',
-                host: {
-                    '[class.ant-card-hoverable]': 'nzHoverable'
-                }
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzHoverable: [{
-            type: Input
-        }] }); })();
     return NzCardGridDirective;
 }());
 export { NzCardGridDirective };
@@ -53,4 +45,4 @@ if (false) {
     /** @type {?} */
     NzCardGridDirective.prototype.nzHoverable;
 }
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotY2FyZC1ncmlkLmRpcmVjdGl2ZS5qcyIsInNvdXJjZXMiOlsibmc6L25nLXpvcnJvLWFudGQvY2FyZC9uei1jYXJkLWdyaWQuZGlyZWN0aXZlLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiI7Ozs7Ozs7Ozs7OztBQVFBLE9BQU8sRUFBRSxTQUFTLEVBQUUsVUFBVSxFQUFFLEtBQUssRUFBRSxTQUFTLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDeEUsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLG9CQUFvQixDQUFDOztBQUVsRDtJQVNFLDZCQUFZLFVBQXNCLEVBQUUsUUFBbUI7UUFEOUIsZ0JBQVcsR0FBWSxJQUFJLENBQUM7UUFFbkQsUUFBUSxDQUFDLFFBQVEsQ0FBQyxVQUFVLENBQUMsYUFBYSxFQUFFLGVBQWUsQ0FBQyxDQUFDO0lBQy9ELENBQUMsQUFKTTs7Z0NBUFIsU0FBUyxTQUFDO1FBQ1QsUUFBUSxFQUFFLEZBSlEsVUFBVTtJQUlGLHNCQUMxQixWQUxxQyxTQUFTO01BS3RDLEVBQUU7VUFBWSxzQkFDdEIsSUFBSSxFQUFFO3FCQUNKLFNBSUQsS0FBSzs7R0FKd0IsRUFBRSxhQUFhLGRBSXBCO2VBSHhCLFBBR1MsWUFBWSxFQUFFO1NBRnpCOzREQUVzRDs7Ozs7Ozs7Ozs7Ozs7OztvQkFDdkQ7SUFHQSwwQkFBQztDQUFBLEFBWkQsSUFZQztTQUxZLG1CQUFtQjs7O0lBQzlCLDBDQUFxRCIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuaW1wb3J0IHsgRGlyZWN0aXZlLCBFbGVtZW50UmVmLCBJbnB1dCwgUmVuZGVyZXIyIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IElucHV0Qm9vbGVhbiB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XHJcblxyXG5ARGlyZWN0aXZlKHtcclxuICBzZWxlY3RvcjogJ1tuei1jYXJkLWdyaWRdJyxcclxuICBleHBvcnRBczogJ256Q2FyZEdyaWQnLFxyXG4gIGhvc3Q6IHtcclxuICAgICdbY2xhc3MuYW50LWNhcmQtaG92ZXJhYmxlXSc6ICduekhvdmVyYWJsZSdcclxuICB9XHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBOekNhcmRHcmlkRGlyZWN0aXZlIHtcclxuICBASW5wdXQoKSBASW5wdXRCb29sZWFuKCkgbnpIb3ZlcmFibGU6IGJvb2xlYW4gPSB0cnVlO1xyXG4gIGNvbnN0cnVjdG9yKGVsZW1lbnRSZWY6IEVsZW1lbnRSZWYsIHJlbmRlcmVyOiBSZW5kZXJlcjIpIHtcclxuICAgIHJlbmRlcmVyLmFkZENsYXNzKGVsZW1lbnRSZWYubmF0aXZlRWxlbWVudCwgJ2FudC1jYXJkLWdyaWQnKTtcclxuICB9XHJcbn1cclxuIl19
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotY2FyZC1ncmlkLmRpcmVjdGl2ZS5qcyIsInNvdXJjZVJvb3QiOiJuZzovL25nLXpvcnJvLWFudGQvY2FyZC8iLCJzb3VyY2VzIjpbIm56LWNhcmQtZ3JpZC5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7O0FBUUEsT0FBTyxFQUFFLFNBQVMsRUFBRSxVQUFVLEVBQUUsS0FBSyxFQUFFLFNBQVMsRUFBRSxNQUFNLGVBQWUsQ0FBQztBQUN4RSxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFFbEQ7SUFTRSw2QkFBWSxVQUFzQixFQUFFLFFBQW1CO1FBRDlCLGdCQUFXLEdBQVksSUFBSSxDQUFDO1FBRW5ELFFBQVEsQ0FBQyxRQUFRLENBQUMsVUFBVSxDQUFDLGFBQWEsRUFBRSxlQUFlLENBQUMsQ0FBQztJQUMvRCxDQUFDOztnQkFYRixTQUFTLFNBQUM7b0JBQ1QsUUFBUSxFQUFFLGdCQUFnQjtvQkFDMUIsUUFBUSxFQUFFLFlBQVk7b0JBQ3RCLElBQUksRUFBRTt3QkFDSiw0QkFBNEIsRUFBRSxhQUFhO3FCQUM1QztpQkFDRjs7OztnQkFUbUIsVUFBVTtnQkFBUyxTQUFTOzs7OEJBVzdDLEtBQUs7O0lBQW1CO1FBQWYsWUFBWSxFQUFFOzs0REFBNkI7SUFJdkQsMEJBQUM7Q0FBQSxBQVpELElBWUM7U0FMWSxtQkFBbUI7OztJQUM5QiwwQ0FBcUQiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuXHJcbmltcG9ydCB7IERpcmVjdGl2ZSwgRWxlbWVudFJlZiwgSW5wdXQsIFJlbmRlcmVyMiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5pbXBvcnQgeyBJbnB1dEJvb2xlYW4gfSBmcm9tICduZy16b3Jyby1hbnRkL2NvcmUnO1xyXG5cclxuQERpcmVjdGl2ZSh7XHJcbiAgc2VsZWN0b3I6ICdbbnotY2FyZC1ncmlkXScsXHJcbiAgZXhwb3J0QXM6ICduekNhcmRHcmlkJyxcclxuICBob3N0OiB7XHJcbiAgICAnW2NsYXNzLmFudC1jYXJkLWhvdmVyYWJsZV0nOiAnbnpIb3ZlcmFibGUnXHJcbiAgfVxyXG59KVxyXG5leHBvcnQgY2xhc3MgTnpDYXJkR3JpZERpcmVjdGl2ZSB7XHJcbiAgQElucHV0KCkgQElucHV0Qm9vbGVhbigpIG56SG92ZXJhYmxlOiBib29sZWFuID0gdHJ1ZTtcclxuICBjb25zdHJ1Y3RvcihlbGVtZW50UmVmOiBFbGVtZW50UmVmLCByZW5kZXJlcjogUmVuZGVyZXIyKSB7XHJcbiAgICByZW5kZXJlci5hZGRDbGFzcyhlbGVtZW50UmVmLm5hdGl2ZUVsZW1lbnQsICdhbnQtY2FyZC1ncmlkJyk7XHJcbiAgfVxyXG59XHJcbiJdfQ==

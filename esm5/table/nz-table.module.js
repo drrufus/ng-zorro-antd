@@ -31,114 +31,48 @@ import { NzThComponent } from './nz-th.component';
 import { NzTheadComponent } from './nz-thead.component';
 import { NzTrDirective } from './nz-tr.directive';
 import { NzVirtualScrollDirective } from './nz-virtual-scroll.directive';
-import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from 'ng-zorro-antd/menu';
-import * as ɵngcc2 from '@angular/forms';
-import * as ɵngcc3 from 'ng-zorro-antd/core';
-import * as ɵngcc4 from 'ng-zorro-antd/radio';
-import * as ɵngcc5 from 'ng-zorro-antd/checkbox';
-import * as ɵngcc6 from 'ng-zorro-antd/dropdown';
-import * as ɵngcc7 from '@angular/common';
-import * as ɵngcc8 from 'ng-zorro-antd/pagination';
-import * as ɵngcc9 from 'ng-zorro-antd/spin';
-import * as ɵngcc10 from 'ng-zorro-antd/icon';
-import * as ɵngcc11 from 'ng-zorro-antd/empty';
-import * as ɵngcc12 from '@angular/cdk/bidi';
-import * as ɵngcc13 from '@angular/cdk/scrolling';
-import * as ɵngcc14 from 'ng-zorro-antd/i18n';
 var NzTableModule = /** @class */ (function () {
     function NzTableModule() {
     }
-NzTableModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTableModule });
-NzTableModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTableModule_Factory(t) { return new (t || NzTableModule)(); }, imports: [[
-            NzMenuModule,
-            FormsModule,
-            NzAddOnModule,
-            NzRadioModule,
-            NzCheckboxModule,
-            NzDropDownModule,
-            CommonModule,
-            PlatformModule,
-            NzPaginationModule,
-            NzSpinModule,
-            NzI18nModule,
-            NzIconModule,
-            NzEmptyModule,
-            ScrollingModule
-        ]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTableModule, { declarations: function () { return [NzTableComponent,
-        NzThComponent,
-        NzTdComponent,
-        NzTheadComponent,
-        NzTbodyDirective,
-        NzTrDirective,
-        NzVirtualScrollDirective]; }, imports: function () { return [NzMenuModule,
-        FormsModule,
-        NzAddOnModule,
-        NzRadioModule,
-        NzCheckboxModule,
-        NzDropDownModule,
-        CommonModule,
-        PlatformModule,
-        NzPaginationModule,
-        NzSpinModule,
-        NzI18nModule,
-        NzIconModule,
-        NzEmptyModule,
-        ScrollingModule]; }, exports: function () { return [NzTableComponent,
-        NzThComponent,
-        NzTdComponent,
-        NzTheadComponent,
-        NzTbodyDirective,
-        NzTrDirective,
-        NzVirtualScrollDirective]; } }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTableModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [
-                    NzTableComponent,
-                    NzThComponent,
-                    NzTdComponent,
-                    NzTheadComponent,
-                    NzTbodyDirective,
-                    NzTrDirective,
-                    NzVirtualScrollDirective
-                ],
-                exports: [
-                    NzTableComponent,
-                    NzThComponent,
-                    NzTdComponent,
-                    NzTheadComponent,
-                    NzTbodyDirective,
-                    NzTrDirective,
-                    NzVirtualScrollDirective
-                ],
-                imports: [
-                    NzMenuModule,
-                    FormsModule,
-                    NzAddOnModule,
-                    NzRadioModule,
-                    NzCheckboxModule,
-                    NzDropDownModule,
-                    CommonModule,
-                    PlatformModule,
-                    NzPaginationModule,
-                    NzSpinModule,
-                    NzI18nModule,
-                    NzIconModule,
-                    NzEmptyModule,
-                    ScrollingModule
-                ]
-            }]
-    }], function () { return []; }, null); })();
-ɵngcc0.ɵɵsetComponentScope(NzTableComponent, [ɵngcc1.NzMenuDirective, ɵngcc1.NzMenuItemDirective, ɵngcc1.NzSubMenuComponent, ɵngcc1.NzMenuDividerDirective, ɵngcc1.NzMenuGroupComponent, ɵngcc2.ɵangular_packages_forms_forms_y, ɵngcc2.NgSelectOption, ɵngcc2.ɵangular_packages_forms_forms_x, ɵngcc2.DefaultValueAccessor, ɵngcc2.NumberValueAccessor, ɵngcc2.RangeValueAccessor, ɵngcc2.CheckboxControlValueAccessor, ɵngcc2.SelectControlValueAccessor, ɵngcc2.SelectMultipleControlValueAccessor, ɵngcc2.RadioControlValueAccessor, ɵngcc2.NgControlStatus, ɵngcc2.NgControlStatusGroup, ɵngcc2.RequiredValidator, ɵngcc2.MinLengthValidator, ɵngcc2.MaxLengthValidator, ɵngcc2.PatternValidator, ɵngcc2.CheckboxRequiredValidator, ɵngcc2.EmailValidator, ɵngcc2.NgModel, ɵngcc2.NgModelGroup, ɵngcc2.NgForm, ɵngcc3.NzStringTemplateOutletDirective, ɵngcc3.NzClassListAddDirective, ɵngcc4.NzRadioComponent, ɵngcc4.NzRadioButtonComponent, ɵngcc4.NzRadioGroupComponent, ɵngcc5.NzCheckboxComponent, ɵngcc5.NzCheckboxGroupComponent, ɵngcc5.NzCheckboxWrapperComponent, ɵngcc6.NzDropDownComponent, ɵngcc6.NzDropDownButtonComponent, ɵngcc6.NzDropDownDirective, ɵngcc6.NzDropDownADirective, ɵngcc6.NzDropdownMenuComponent, ɵngcc7.NgClass, ɵngcc7.NgComponentOutlet, ɵngcc7.NgForOf, ɵngcc7.NgIf, ɵngcc7.NgTemplateOutlet, ɵngcc7.NgStyle, ɵngcc7.NgSwitch, ɵngcc7.NgSwitchCase, ɵngcc7.NgSwitchDefault, ɵngcc7.NgPlural, ɵngcc7.NgPluralCase, ɵngcc8.NzPaginationComponent, ɵngcc9.NzSpinComponent, ɵngcc10.NzIconDirective, ɵngcc11.NzEmptyComponent, ɵngcc11.NzEmbedEmptyComponent, ɵngcc12.Dir, ɵngcc13.CdkFixedSizeVirtualScroll, ɵngcc13.CdkScrollable, ɵngcc13.CdkVirtualForOf, ɵngcc13.CdkVirtualScrollViewport, NzTableComponent,
-    NzThComponent,
-    NzTdComponent,
-    NzTheadComponent,
-    NzTbodyDirective,
-    NzTrDirective,
-    NzVirtualScrollDirective], [ɵngcc7.AsyncPipe, ɵngcc7.UpperCasePipe, ɵngcc7.LowerCasePipe, ɵngcc7.JsonPipe, ɵngcc7.SlicePipe, ɵngcc7.DecimalPipe, ɵngcc7.PercentPipe, ɵngcc7.TitleCasePipe, ɵngcc7.CurrencyPipe, ɵngcc7.DatePipe, ɵngcc7.I18nPluralPipe, ɵngcc7.I18nSelectPipe, ɵngcc7.KeyValuePipe, ɵngcc14.NzI18nPipe]);
+    NzTableModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [
+                        NzTableComponent,
+                        NzThComponent,
+                        NzTdComponent,
+                        NzTheadComponent,
+                        NzTbodyDirective,
+                        NzTrDirective,
+                        NzVirtualScrollDirective
+                    ],
+                    exports: [
+                        NzTableComponent,
+                        NzThComponent,
+                        NzTdComponent,
+                        NzTheadComponent,
+                        NzTbodyDirective,
+                        NzTrDirective,
+                        NzVirtualScrollDirective
+                    ],
+                    imports: [
+                        NzMenuModule,
+                        FormsModule,
+                        NzAddOnModule,
+                        NzRadioModule,
+                        NzCheckboxModule,
+                        NzDropDownModule,
+                        CommonModule,
+                        PlatformModule,
+                        NzPaginationModule,
+                        NzSpinModule,
+                        NzI18nModule,
+                        NzIconModule,
+                        NzEmptyModule,
+                        ScrollingModule
+                    ]
+                },] }
+    ];
     return NzTableModule;
 }());
 export { NzTableModule };
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdGFibGUubW9kdWxlLmpzIiwic291cmNlcyI6WyJuZzovbmctem9ycm8tYW50ZC90YWJsZS9uei10YWJsZS5tb2R1bGUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFPQSxPQUFPLEVBQUUsY0FBYyxFQUFFLE1BQU0sdUJBQXVCLENBQUM7QUFDdkQsT0FBTyxFQUFFLGVBQWUsRUFBRSxNQUFNLHdCQUF3QixDQUFDO0FBQ3pELE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxpQkFBaUIsQ0FBQztBQUMvQyxPQUFPLEVBQUUsUUFBUSxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBQ3pDLE9BQU8sRUFBRSxXQUFXLEVBQUUsTUFBTSxnQkFBZ0IsQ0FBQztBQUM3QyxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSx3QkFBd0IsQ0FBQztBQUMxRCxPQUFPLEVBQUUsYUFBYSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFDbkQsT0FBTyxFQUFFLGdCQUFnQixFQUFFLE1BQU0sd0JBQXdCLENBQUM7QUFDMUQsT0FBTyxFQUFFLGFBQWEsRUFBRSxNQUFNLHFCQUFxQixDQUFDO0FBQ3BELE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUNsRCxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFDbEQsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLG9CQUFvQixDQUFDO0FBQ2xELE9BQU8sRUFBRSxrQkFBa0IsRUFBRSxNQUFNLDBCQUEwQixDQUFDO0FBQzlELE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxxQkFBcUIsQ0FBQztBQUNwRCxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFFbEQsT0FBTyxFQUFFLGdCQUFnQixFQUFFLE1BQU0sc0JBQXNCLENBQUM7QUFDeEQsT0FBTyxFQUFFLGdCQUFnQixFQUFFLE1BQU0sc0JBQXNCLENBQUM7QUFDeEQsT0FBTyxFQUFFLGFBQWEsRUFBRSxNQUFNLG1CQUFtQixDQUFDO0FBQ2xELE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxtQkFBbUIsQ0FBQztBQUNsRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUN4RCxPQUFPLEVBQUUsYUFBYSxFQUFFLE1BQU0sbUJBQW1CLENBQUM7QUFDbEQsT0FBTyxFQUFFLHdCQUF3QixFQUFFLE1BQU0sK0JBQStCLENBQUM7Ozs7Ozs7Ozs7Ozs7Ozs7QUFFekU7SUFBQTtJQW9DNEIsQ0FBQztpREFwQzVCLFFBQVEsU0FBQztpQkFDUixZQUFZLEVBQUUsMEJBQ1osZ0JBQWdCLDBCQUNoQixhQUFhLDBCQUNiO1NBQWE7U0FDYjtBQUFnQiwwQkFDaEI7ZUFBZ0I7Y0FDaEIsYUFBYTt1QkFDYjtpQkFBd0I7YUFDekI7T0FDRCxPQUFPLEVBQUU7VUFDUDtBQUFnQjtBQUNoQixhQUFhO2FBQ2IsYUFBYTt5QkFDYjthQUFnQjt3QkFDaEIsZ0JBQWdCLDBCQUNoQixhQUFhLDBCQUNiLHdCQUF3QixzQkFDekI7VUFDRCxPQUFPLEVBQUU7c0JBQ1A7V0FBWTtXQUNaLFdBQVc7c0JBQ1g7WUFBYSwwQkFDYixhQUFhLDBCQUNiO1VBQWdCO2VBQ2hCO1FBQWdCO1dBQ2hCLFlBQVk7dUJBQ1o7V0FBYztlQUNkO1NBQWtCO09BQ2xCLFlBQVk7O0NBQ1osWUFBWTtpQkFDWjtNQUFZLDBCQUNaLGFBQWEsMEJBQ2I7UUFBZTtPQUNoQjtFQUNGOzs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7Ozs7OzZUQUNRO0lBQW1CLG9CQUFDO0NBQUEsQUFwQzdCLElBb0M2QjtTQUFoQixhQUFhIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcbmltcG9ydCB7IFBsYXRmb3JtTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY2RrL3BsYXRmb3JtJztcclxuaW1wb3J0IHsgU2Nyb2xsaW5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY2RrL3Njcm9sbGluZyc7XHJcbmltcG9ydCB7IENvbW1vbk1vZHVsZSB9IGZyb20gJ0Bhbmd1bGFyL2NvbW1vbic7XHJcbmltcG9ydCB7IE5nTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcbmltcG9ydCB7IEZvcm1zTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvZm9ybXMnO1xyXG5pbXBvcnQgeyBOekNoZWNrYm94TW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9jaGVja2JveCc7XHJcbmltcG9ydCB7IE56QWRkT25Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2NvcmUnO1xyXG5pbXBvcnQgeyBOekRyb3BEb3duTW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9kcm9wZG93bic7XHJcbmltcG9ydCB7IE56RW1wdHlNb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2VtcHR5JztcclxuaW1wb3J0IHsgTnpJMThuTW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9pMThuJztcclxuaW1wb3J0IHsgTnpJY29uTW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9pY29uJztcclxuaW1wb3J0IHsgTnpNZW51TW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9tZW51JztcclxuaW1wb3J0IHsgTnpQYWdpbmF0aW9uTW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9wYWdpbmF0aW9uJztcclxuaW1wb3J0IHsgTnpSYWRpb01vZHVsZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvcmFkaW8nO1xyXG5pbXBvcnQgeyBOelNwaW5Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL3NwaW4nO1xyXG5cclxuaW1wb3J0IHsgTnpUYWJsZUNvbXBvbmVudCB9IGZyb20gJy4vbnotdGFibGUuY29tcG9uZW50JztcclxuaW1wb3J0IHsgTnpUYm9keURpcmVjdGl2ZSB9IGZyb20gJy4vbnotdGJvZHkuZGlyZWN0aXZlJztcclxuaW1wb3J0IHsgTnpUZENvbXBvbmVudCB9IGZyb20gJy4vbnotdGQuY29tcG9uZW50JztcclxuaW1wb3J0IHsgTnpUaENvbXBvbmVudCB9IGZyb20gJy4vbnotdGguY29tcG9uZW50JztcclxuaW1wb3J0IHsgTnpUaGVhZENvbXBvbmVudCB9IGZyb20gJy4vbnotdGhlYWQuY29tcG9uZW50JztcclxuaW1wb3J0IHsgTnpUckRpcmVjdGl2ZSB9IGZyb20gJy4vbnotdHIuZGlyZWN0aXZlJztcclxuaW1wb3J0IHsgTnpWaXJ0dWFsU2Nyb2xsRGlyZWN0aXZlIH0gZnJvbSAnLi9uei12aXJ0dWFsLXNjcm9sbC5kaXJlY3RpdmUnO1xyXG5cclxuQE5nTW9kdWxlKHtcclxuICBkZWNsYXJhdGlvbnM6IFtcclxuICAgIE56VGFibGVDb21wb25lbnQsXHJcbiAgICBOelRoQ29tcG9uZW50LFxyXG4gICAgTnpUZENvbXBvbmVudCxcclxuICAgIE56VGhlYWRDb21wb25lbnQsXHJcbiAgICBOelRib2R5RGlyZWN0aXZlLFxyXG4gICAgTnpUckRpcmVjdGl2ZSxcclxuICAgIE56VmlydHVhbFNjcm9sbERpcmVjdGl2ZVxyXG4gIF0sXHJcbiAgZXhwb3J0czogW1xyXG4gICAgTnpUYWJsZUNvbXBvbmVudCxcclxuICAgIE56VGhDb21wb25lbnQsXHJcbiAgICBOelRkQ29tcG9uZW50LFxyXG4gICAgTnpUaGVhZENvbXBvbmVudCxcclxuICAgIE56VGJvZHlEaXJlY3RpdmUsXHJcbiAgICBOelRyRGlyZWN0aXZlLFxyXG4gICAgTnpWaXJ0dWFsU2Nyb2xsRGlyZWN0aXZlXHJcbiAgXSxcclxuICBpbXBvcnRzOiBbXHJcbiAgICBOek1lbnVNb2R1bGUsXHJcbiAgICBGb3Jtc01vZHVsZSxcclxuICAgIE56QWRkT25Nb2R1bGUsXHJcbiAgICBOelJhZGlvTW9kdWxlLFxyXG4gICAgTnpDaGVja2JveE1vZHVsZSxcclxuICAgIE56RHJvcERvd25Nb2R1bGUsXHJcbiAgICBDb21tb25Nb2R1bGUsXHJcbiAgICBQbGF0Zm9ybU1vZHVsZSxcclxuICAgIE56UGFnaW5hdGlvbk1vZHVsZSxcclxuICAgIE56U3Bpbk1vZHVsZSxcclxuICAgIE56STE4bk1vZHVsZSxcclxuICAgIE56SWNvbk1vZHVsZSxcclxuICAgIE56RW1wdHlNb2R1bGUsXHJcbiAgICBTY3JvbGxpbmdNb2R1bGVcclxuICBdXHJcbn0pXHJcbmV4cG9ydCBjbGFzcyBOelRhYmxlTW9kdWxlIHt9XHJcbiJdfQ==
+//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdGFibGUubW9kdWxlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC90YWJsZS8iLCJzb3VyY2VzIjpbIm56LXRhYmxlLm1vZHVsZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQU9BLE9BQU8sRUFBRSxjQUFjLEVBQUUsTUFBTSx1QkFBdUIsQ0FBQztBQUN2RCxPQUFPLEVBQUUsZUFBZSxFQUFFLE1BQU0sd0JBQXdCLENBQUM7QUFDekQsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLGlCQUFpQixDQUFDO0FBQy9DLE9BQU8sRUFBRSxRQUFRLEVBQUUsTUFBTSxlQUFlLENBQUM7QUFDekMsT0FBTyxFQUFFLFdBQVcsRUFBRSxNQUFNLGdCQUFnQixDQUFDO0FBQzdDLE9BQU8sRUFBRSxnQkFBZ0IsRUFBRSxNQUFNLHdCQUF3QixDQUFDO0FBQzFELE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUNuRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSx3QkFBd0IsQ0FBQztBQUMxRCxPQUFPLEVBQUUsYUFBYSxFQUFFLE1BQU0scUJBQXFCLENBQUM7QUFDcEQsT0FBTyxFQUFFLFlBQVksRUFBRSxNQUFNLG9CQUFvQixDQUFDO0FBQ2xELE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUNsRCxPQUFPLEVBQUUsWUFBWSxFQUFFLE1BQU0sb0JBQW9CLENBQUM7QUFDbEQsT0FBTyxFQUFFLGtCQUFrQixFQUFFLE1BQU0sMEJBQTBCLENBQUM7QUFDOUQsT0FBTyxFQUFFLGFBQWEsRUFBRSxNQUFNLHFCQUFxQixDQUFDO0FBQ3BELE9BQU8sRUFBRSxZQUFZLEVBQUUsTUFBTSxvQkFBb0IsQ0FBQztBQUVsRCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUN4RCxPQUFPLEVBQUUsZ0JBQWdCLEVBQUUsTUFBTSxzQkFBc0IsQ0FBQztBQUN4RCxPQUFPLEVBQUUsYUFBYSxFQUFFLE1BQU0sbUJBQW1CLENBQUM7QUFDbEQsT0FBTyxFQUFFLGFBQWEsRUFBRSxNQUFNLG1CQUFtQixDQUFDO0FBQ2xELE9BQU8sRUFBRSxnQkFBZ0IsRUFBRSxNQUFNLHNCQUFzQixDQUFDO0FBQ3hELE9BQU8sRUFBRSxhQUFhLEVBQUUsTUFBTSxtQkFBbUIsQ0FBQztBQUNsRCxPQUFPLEVBQUUsd0JBQXdCLEVBQUUsTUFBTSwrQkFBK0IsQ0FBQztBQUV6RTtJQUFBO0lBb0M0QixDQUFDOztnQkFwQzVCLFFBQVEsU0FBQztvQkFDUixZQUFZLEVBQUU7d0JBQ1osZ0JBQWdCO3dCQUNoQixhQUFhO3dCQUNiLGFBQWE7d0JBQ2IsZ0JBQWdCO3dCQUNoQixnQkFBZ0I7d0JBQ2hCLGFBQWE7d0JBQ2Isd0JBQXdCO3FCQUN6QjtvQkFDRCxPQUFPLEVBQUU7d0JBQ1AsZ0JBQWdCO3dCQUNoQixhQUFhO3dCQUNiLGFBQWE7d0JBQ2IsZ0JBQWdCO3dCQUNoQixnQkFBZ0I7d0JBQ2hCLGFBQWE7d0JBQ2Isd0JBQXdCO3FCQUN6QjtvQkFDRCxPQUFPLEVBQUU7d0JBQ1AsWUFBWTt3QkFDWixXQUFXO3dCQUNYLGFBQWE7d0JBQ2IsYUFBYTt3QkFDYixnQkFBZ0I7d0JBQ2hCLGdCQUFnQjt3QkFDaEIsWUFBWTt3QkFDWixjQUFjO3dCQUNkLGtCQUFrQjt3QkFDbEIsWUFBWTt3QkFDWixZQUFZO3dCQUNaLFlBQVk7d0JBQ1osYUFBYTt3QkFDYixlQUFlO3FCQUNoQjtpQkFDRjs7SUFDMkIsb0JBQUM7Q0FBQSxBQXBDN0IsSUFvQzZCO1NBQWhCLGFBQWEiLCJzb3VyY2VzQ29udGVudCI6WyIvKipcclxuICogQGxpY2Vuc2VcclxuICogQ29weXJpZ2h0IEFsaWJhYmEuY29tIEFsbCBSaWdodHMgUmVzZXJ2ZWQuXHJcbiAqXHJcbiAqIFVzZSBvZiB0aGlzIHNvdXJjZSBjb2RlIGlzIGdvdmVybmVkIGJ5IGFuIE1JVC1zdHlsZSBsaWNlbnNlIHRoYXQgY2FuIGJlXHJcbiAqIGZvdW5kIGluIHRoZSBMSUNFTlNFIGZpbGUgYXQgaHR0cHM6Ly9naXRodWIuY29tL05HLVpPUlJPL25nLXpvcnJvLWFudGQvYmxvYi9tYXN0ZXIvTElDRU5TRVxyXG4gKi9cclxuaW1wb3J0IHsgUGxhdGZvcm1Nb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jZGsvcGxhdGZvcm0nO1xyXG5pbXBvcnQgeyBTY3JvbGxpbmdNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jZGsvc2Nyb2xsaW5nJztcclxuaW1wb3J0IHsgQ29tbW9uTW9kdWxlIH0gZnJvbSAnQGFuZ3VsYXIvY29tbW9uJztcclxuaW1wb3J0IHsgTmdNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9jb3JlJztcclxuaW1wb3J0IHsgRm9ybXNNb2R1bGUgfSBmcm9tICdAYW5ndWxhci9mb3Jtcyc7XHJcbmltcG9ydCB7IE56Q2hlY2tib3hNb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2NoZWNrYm94JztcclxuaW1wb3J0IHsgTnpBZGRPbk1vZHVsZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvY29yZSc7XHJcbmltcG9ydCB7IE56RHJvcERvd25Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2Ryb3Bkb3duJztcclxuaW1wb3J0IHsgTnpFbXB0eU1vZHVsZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvZW1wdHknO1xyXG5pbXBvcnQgeyBOekkxOG5Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2kxOG4nO1xyXG5pbXBvcnQgeyBOekljb25Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL2ljb24nO1xyXG5pbXBvcnQgeyBOek1lbnVNb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL21lbnUnO1xyXG5pbXBvcnQgeyBOelBhZ2luYXRpb25Nb2R1bGUgfSBmcm9tICduZy16b3Jyby1hbnRkL3BhZ2luYXRpb24nO1xyXG5pbXBvcnQgeyBOelJhZGlvTW9kdWxlIH0gZnJvbSAnbmctem9ycm8tYW50ZC9yYWRpbyc7XHJcbmltcG9ydCB7IE56U3Bpbk1vZHVsZSB9IGZyb20gJ25nLXpvcnJvLWFudGQvc3Bpbic7XHJcblxyXG5pbXBvcnQgeyBOelRhYmxlQ29tcG9uZW50IH0gZnJvbSAnLi9uei10YWJsZS5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBOelRib2R5RGlyZWN0aXZlIH0gZnJvbSAnLi9uei10Ym9keS5kaXJlY3RpdmUnO1xyXG5pbXBvcnQgeyBOelRkQ29tcG9uZW50IH0gZnJvbSAnLi9uei10ZC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBOelRoQ29tcG9uZW50IH0gZnJvbSAnLi9uei10aC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBOelRoZWFkQ29tcG9uZW50IH0gZnJvbSAnLi9uei10aGVhZC5jb21wb25lbnQnO1xyXG5pbXBvcnQgeyBOelRyRGlyZWN0aXZlIH0gZnJvbSAnLi9uei10ci5kaXJlY3RpdmUnO1xyXG5pbXBvcnQgeyBOelZpcnR1YWxTY3JvbGxEaXJlY3RpdmUgfSBmcm9tICcuL256LXZpcnR1YWwtc2Nyb2xsLmRpcmVjdGl2ZSc7XHJcblxyXG5ATmdNb2R1bGUoe1xyXG4gIGRlY2xhcmF0aW9uczogW1xyXG4gICAgTnpUYWJsZUNvbXBvbmVudCxcclxuICAgIE56VGhDb21wb25lbnQsXHJcbiAgICBOelRkQ29tcG9uZW50LFxyXG4gICAgTnpUaGVhZENvbXBvbmVudCxcclxuICAgIE56VGJvZHlEaXJlY3RpdmUsXHJcbiAgICBOelRyRGlyZWN0aXZlLFxyXG4gICAgTnpWaXJ0dWFsU2Nyb2xsRGlyZWN0aXZlXHJcbiAgXSxcclxuICBleHBvcnRzOiBbXHJcbiAgICBOelRhYmxlQ29tcG9uZW50LFxyXG4gICAgTnpUaENvbXBvbmVudCxcclxuICAgIE56VGRDb21wb25lbnQsXHJcbiAgICBOelRoZWFkQ29tcG9uZW50LFxyXG4gICAgTnpUYm9keURpcmVjdGl2ZSxcclxuICAgIE56VHJEaXJlY3RpdmUsXHJcbiAgICBOelZpcnR1YWxTY3JvbGxEaXJlY3RpdmVcclxuICBdLFxyXG4gIGltcG9ydHM6IFtcclxuICAgIE56TWVudU1vZHVsZSxcclxuICAgIEZvcm1zTW9kdWxlLFxyXG4gICAgTnpBZGRPbk1vZHVsZSxcclxuICAgIE56UmFkaW9Nb2R1bGUsXHJcbiAgICBOekNoZWNrYm94TW9kdWxlLFxyXG4gICAgTnpEcm9wRG93bk1vZHVsZSxcclxuICAgIENvbW1vbk1vZHVsZSxcclxuICAgIFBsYXRmb3JtTW9kdWxlLFxyXG4gICAgTnpQYWdpbmF0aW9uTW9kdWxlLFxyXG4gICAgTnpTcGluTW9kdWxlLFxyXG4gICAgTnpJMThuTW9kdWxlLFxyXG4gICAgTnpJY29uTW9kdWxlLFxyXG4gICAgTnpFbXB0eU1vZHVsZSxcclxuICAgIFNjcm9sbGluZ01vZHVsZVxyXG4gIF1cclxufSlcclxuZXhwb3J0IGNsYXNzIE56VGFibGVNb2R1bGUge31cclxuIl19

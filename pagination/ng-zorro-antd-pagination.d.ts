@@ -2,5 +2,3 @@
  * Generated bundle index. Do not edit.
  */
 export * from './public-api';
-
-//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibmctem9ycm8tYW50ZC1wYWdpbmF0aW9uLmQudHMiLCJzb3VyY2VzIjpbIm5nLXpvcnJvLWFudGQtcGFnaW5hdGlvbi5kLnRzIl0sIm5hbWVzIjpbXSwibWFwcGluZ3MiOiJBQUFBIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEdlbmVyYXRlZCBidW5kbGUgaW5kZXguIERvIG5vdCBlZGl0LlxyXG4gKi9cclxuZXhwb3J0ICogZnJvbSAnLi9wdWJsaWMtYXBpJztcclxuIl19

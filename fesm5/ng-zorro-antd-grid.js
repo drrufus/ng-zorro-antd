@@ -11,10 +11,6 @@ import { CommonModule } from '@angular/common';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from 'ng-zorro-antd/core';
-import * as ɵngcc2 from '@angular/cdk/layout';
-import * as ɵngcc3 from '@angular/cdk/platform';
 var NzRowDirective = /** @class */ (function () {
     function NzRowDirective(elementRef, renderer, nzUpdateHostClassService, mediaMatcher, ngZone, platform, nzDomEventService) {
         this.elementRef = elementRef;
@@ -164,6 +160,13 @@ var NzRowDirective = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
+    NzRowDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-row],nz-row',
+                    exportAs: 'nzRow',
+                    providers: [NzUpdateHostClassService]
+                },] }
+    ];
     /** @nocollapse */
     NzRowDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -180,24 +183,6 @@ var NzRowDirective = /** @class */ (function () {
         nzJustify: [{ type: Input }],
         nzGutter: [{ type: Input }]
     };
-NzRowDirective.ɵfac = function NzRowDirective_Factory(t) { return new (t || NzRowDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.MediaMatcher), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzDomEventService)); };
-NzRowDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzRowDirective, selectors: [["", "nz-row", ""], ["nz-row"]], inputs: { nzAlign: "nzAlign", nzJustify: "nzJustify", nzType: "nzType", nzGutter: "nzGutter" }, exportAs: ["nzRow"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzRowDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-row],nz-row',
-                exportAs: 'nzRow',
-                providers: [NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc2.MediaMatcher }, { type: ɵngcc0.NgZone }, { type: ɵngcc3.Platform }, { type: ɵngcc1.NzDomEventService }]; }, { nzAlign: [{
-            type: Input
-        }], nzJustify: [{
-            type: Input
-        }], nzType: [{
-            type: Input
-        }], nzGutter: [{
-            type: Input
-        }] }); })();
     return NzRowDirective;
 }());
 if (false) {
@@ -386,6 +371,13 @@ var NzColDirective = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
+    NzColDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-col],nz-col',
+                    exportAs: 'nzCol',
+                    providers: [NzUpdateHostClassService]
+                },] }
+    ];
     /** @nocollapse */
     NzColDirective.ctorParameters = function () { return [
         { type: NzUpdateHostClassService },
@@ -406,42 +398,6 @@ var NzColDirective = /** @class */ (function () {
         nzXl: [{ type: Input }],
         nzXXl: [{ type: Input }]
     };
-NzColDirective.ɵfac = function NzColDirective_Factory(t) { return new (t || NzColDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(NzRowDirective, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzColDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzColDirective, selectors: [["", "nz-col", ""], ["nz-col"]], inputs: { nzSpan: "nzSpan", nzOrder: "nzOrder", nzOffset: "nzOffset", nzPush: "nzPush", nzPull: "nzPull", nzXs: "nzXs", nzSm: "nzSm", nzMd: "nzMd", nzLg: "nzLg", nzXl: "nzXl", nzXXl: "nzXXl" }, exportAs: ["nzCol"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzColDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-col],nz-col',
-                exportAs: 'nzCol',
-                providers: [NzUpdateHostClassService]
-            }]
-    }], function () { return [{ type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ElementRef }, { type: NzRowDirective, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: ɵngcc0.Renderer2 }]; }, { nzSpan: [{
-            type: Input
-        }], nzOrder: [{
-            type: Input
-        }], nzOffset: [{
-            type: Input
-        }], nzPush: [{
-            type: Input
-        }], nzPull: [{
-            type: Input
-        }], nzXs: [{
-            type: Input
-        }], nzSm: [{
-            type: Input
-        }], nzMd: [{
-            type: Input
-        }], nzLg: [{
-            type: Input
-        }], nzXl: [{
-            type: Input
-        }], nzXXl: [{
-            type: Input
-        }] }); })();
     return NzColDirective;
 }());
 if (false) {
@@ -505,19 +461,13 @@ if (false) {
 var NzGridModule = /** @class */ (function () {
     function NzGridModule() {
     }
-NzGridModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzGridModule });
-NzGridModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzGridModule_Factory(t) { return new (t || NzGridModule)(); }, imports: [[CommonModule, LayoutModule, PlatformModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzGridModule, { declarations: function () { return [NzColDirective,
-        NzRowDirective]; }, imports: function () { return [CommonModule, LayoutModule, PlatformModule]; }, exports: function () { return [NzColDirective,
-        NzRowDirective]; } }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzGridModule, [{
-        type: NgModule,
-        args: [{
-                declarations: [NzColDirective, NzRowDirective],
-                exports: [NzColDirective, NzRowDirective],
-                imports: [CommonModule, LayoutModule, PlatformModule]
-            }]
-    }], function () { return []; }, null); })();
+    NzGridModule.decorators = [
+        { type: NgModule, args: [{
+                    declarations: [NzColDirective, NzRowDirective],
+                    exports: [NzColDirective, NzRowDirective],
+                    imports: [CommonModule, LayoutModule, PlatformModule]
+                },] }
+    ];
     return NzGridModule;
 }());
 
@@ -532,6 +482,4 @@ NzGridModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzGridModule
  */
 
 export { NzColDirective, NzGridModule, NzRowDirective };
-
-
 //# sourceMappingURL=ng-zorro-antd-grid.js.map

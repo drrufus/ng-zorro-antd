@@ -16,6 +16,4 @@
 	Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd-version.umd.js.map

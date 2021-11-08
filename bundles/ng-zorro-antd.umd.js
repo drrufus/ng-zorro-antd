@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/affix'),require('ng-zorro-antd/alert'),require('ng-zorro-antd/anchor'),require('ng-zorro-antd/auto-complete'),require('ng-zorro-antd/avatar'),require('ng-zorro-antd/back-top'),require('ng-zorro-antd/badge'),require('ng-zorro-antd/button'),require('ng-zorro-antd/breadcrumb'),require('ng-zorro-antd/calendar'),require('ng-zorro-antd/card'),require('ng-zorro-antd/carousel'),require('ng-zorro-antd/cascader'),require('ng-zorro-antd/checkbox'),require('ng-zorro-antd/collapse'),require('ng-zorro-antd/comment'),require('ng-zorro-antd/date-picker'),require('ng-zorro-antd/descriptions'),require('ng-zorro-antd/divider'),require('ng-zorro-antd/drawer'),require('ng-zorro-antd/dropdown'),require('ng-zorro-antd/empty'),require('ng-zorro-antd/form'),require('ng-zorro-antd/grid'),require('ng-zorro-antd/i18n'),require('ng-zorro-antd/icon'),require('ng-zorro-antd/input'),require('ng-zorro-antd/input-number'),require('ng-zorro-antd/layout'),require('ng-zorro-antd/list'),require('ng-zorro-antd/mention'),require('ng-zorro-antd/menu'),require('ng-zorro-antd/message'),require('ng-zorro-antd/modal'),require('ng-zorro-antd/core'),require('ng-zorro-antd/notification'),require('ng-zorro-antd/page-header'),require('ng-zorro-antd/pagination'),require('ng-zorro-antd/popconfirm'),require('ng-zorro-antd/popover'),require('ng-zorro-antd/progress'),require('ng-zorro-antd/radio'),require('ng-zorro-antd/rate'),require('ng-zorro-antd/result'),require('ng-zorro-antd/select'),require('ng-zorro-antd/skeleton'),require('ng-zorro-antd/slider'),require('ng-zorro-antd/spin'),require('ng-zorro-antd/statistic'),require('ng-zorro-antd/steps'),require('ng-zorro-antd/switch'),require('ng-zorro-antd/table'),require('ng-zorro-antd/tabs'),require('ng-zorro-antd/tag'),require('ng-zorro-antd/time-picker'),require('ng-zorro-antd/timeline'),require('ng-zorro-antd/tooltip'),require('ng-zorro-antd/transfer'),require('ng-zorro-antd/tree'),require('ng-zorro-antd/tree-select'),require('ng-zorro-antd/typography'),require('ng-zorro-antd/upload'),exports, require('@angular/core'), require('ng-zorro-antd/affix'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/anchor'), require('ng-zorro-antd/auto-complete'), require('ng-zorro-antd/avatar'), require('ng-zorro-antd/back-top'), require('ng-zorro-antd/badge'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/button'), require('ng-zorro-antd/calendar'), require('ng-zorro-antd/card'), require('ng-zorro-antd/carousel'), require('ng-zorro-antd/cascader'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/collapse'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/core'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/descriptions'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/drawer'), require('ng-zorro-antd/dropdown'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/form'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input'), require('ng-zorro-antd/input-number'), require('ng-zorro-antd/layout'), require('ng-zorro-antd/list'), require('ng-zorro-antd/mention'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('ng-zorro-antd/notification'), require('ng-zorro-antd/page-header'), require('ng-zorro-antd/pagination'), require('ng-zorro-antd/popconfirm'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/radio'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/result'), require('ng-zorro-antd/select'), require('ng-zorro-antd/skeleton'), require('ng-zorro-antd/slider'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/statistic'), require('ng-zorro-antd/steps'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/table'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/transfer'), require('ng-zorro-antd/tree'), require('ng-zorro-antd/tree-select'), require('ng-zorro-antd/typography'), require('ng-zorro-antd/upload'), require('ng-zorro-antd/version')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd', ['@angular/core','ng-zorro-antd/affix','ng-zorro-antd/alert','ng-zorro-antd/anchor','ng-zorro-antd/auto-complete','ng-zorro-antd/avatar','ng-zorro-antd/back-top','ng-zorro-antd/badge','ng-zorro-antd/button','ng-zorro-antd/breadcrumb','ng-zorro-antd/calendar','ng-zorro-antd/card','ng-zorro-antd/carousel','ng-zorro-antd/cascader','ng-zorro-antd/checkbox','ng-zorro-antd/collapse','ng-zorro-antd/comment','ng-zorro-antd/date-picker','ng-zorro-antd/descriptions','ng-zorro-antd/divider','ng-zorro-antd/drawer','ng-zorro-antd/dropdown','ng-zorro-antd/empty','ng-zorro-antd/form','ng-zorro-antd/grid','ng-zorro-antd/i18n','ng-zorro-antd/icon','ng-zorro-antd/input','ng-zorro-antd/input-number','ng-zorro-antd/layout','ng-zorro-antd/list','ng-zorro-antd/mention','ng-zorro-antd/menu','ng-zorro-antd/message','ng-zorro-antd/modal','ng-zorro-antd/core','ng-zorro-antd/notification','ng-zorro-antd/page-header','ng-zorro-antd/pagination','ng-zorro-antd/popconfirm','ng-zorro-antd/popover','ng-zorro-antd/progress','ng-zorro-antd/radio','ng-zorro-antd/rate','ng-zorro-antd/result','ng-zorro-antd/select','ng-zorro-antd/skeleton','ng-zorro-antd/slider','ng-zorro-antd/spin','ng-zorro-antd/statistic','ng-zorro-antd/steps','ng-zorro-antd/switch','ng-zorro-antd/table','ng-zorro-antd/tabs','ng-zorro-antd/tag','ng-zorro-antd/time-picker','ng-zorro-antd/timeline','ng-zorro-antd/tooltip','ng-zorro-antd/transfer','ng-zorro-antd/tree','ng-zorro-antd/tree-select','ng-zorro-antd/typography','ng-zorro-antd/upload','exports', '@angular/core', 'ng-zorro-antd/affix', 'ng-zorro-antd/alert', 'ng-zorro-antd/anchor', 'ng-zorro-antd/auto-complete', 'ng-zorro-antd/avatar', 'ng-zorro-antd/back-top', 'ng-zorro-antd/badge', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/button', 'ng-zorro-antd/calendar', 'ng-zorro-antd/card', 'ng-zorro-antd/carousel', 'ng-zorro-antd/cascader', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/collapse', 'ng-zorro-antd/comment', 'ng-zorro-antd/core', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/descriptions', 'ng-zorro-antd/divider', 'ng-zorro-antd/drawer', 'ng-zorro-antd/dropdown', 'ng-zorro-antd/empty', 'ng-zorro-antd/form', 'ng-zorro-antd/grid', 'ng-zorro-antd/i18n', 'ng-zorro-antd/icon', 'ng-zorro-antd/input', 'ng-zorro-antd/input-number', 'ng-zorro-antd/layout', 'ng-zorro-antd/list', 'ng-zorro-antd/mention', 'ng-zorro-antd/menu', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'ng-zorro-antd/notification', 'ng-zorro-antd/page-header', 'ng-zorro-antd/pagination', 'ng-zorro-antd/popconfirm', 'ng-zorro-antd/popover', 'ng-zorro-antd/progress', 'ng-zorro-antd/radio', 'ng-zorro-antd/rate', 'ng-zorro-antd/result', 'ng-zorro-antd/select', 'ng-zorro-antd/skeleton', 'ng-zorro-antd/slider', 'ng-zorro-antd/spin', 'ng-zorro-antd/statistic', 'ng-zorro-antd/steps', 'ng-zorro-antd/switch', 'ng-zorro-antd/table', 'ng-zorro-antd/tabs', 'ng-zorro-antd/tag', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/transfer', 'ng-zorro-antd/tree', 'ng-zorro-antd/tree-select', 'ng-zorro-antd/typography', 'ng-zorro-antd/upload', 'ng-zorro-antd/version'], factory) :
-    (global = global || self, factory(global.ng.core,global.ngZorroAntd.affix,global.ngZorroAntd.alert,global.ngZorroAntd.anchor,global.ngZorroAntd.autoComplete,global.ngZorroAntd.avatar,global.ngZorroAntd.backTop,global.ngZorroAntd.badge,global.ngZorroAntd.button,global.ngZorroAntd.breadcrumb,global.ngZorroAntd.calendar,global.ngZorroAntd.card,global.ngZorroAntd.carousel,global.ngZorroAntd.cascader,global.ngZorroAntd.checkbox,global.ngZorroAntd.collapse,global.ngZorroAntd.comment,global.ngZorroAntd.datePicker,global.ngZorroAntd.descriptions,global.ngZorroAntd.divider,global.ngZorroAntd.drawer,global.ngZorroAntd.dropdown,global.ngZorroAntd.empty,global.ngZorroAntd.form,global.ngZorroAntd.grid,global.ngZorroAntd.i18n,global.ngZorroAntd.icon,global.ngZorroAntd.input,global.ngZorroAntd.inputNumber,global.ngZorroAntd.layout,global.ngZorroAntd.list,global.ngZorroAntd.mention,global.ngZorroAntd.menu,global.ngZorroAntd.message,global.ngZorroAntd.modal,global.ngZorroAntd.core,global.ngZorroAntd.notification,global.ngZorroAntd.pageHeader,global.ngZorroAntd.pagination,global.ngZorroAntd.popconfirm,global.ngZorroAntd.popover,global.ngZorroAntd.progress,global.ngZorroAntd.radio,global.ngZorroAntd.rate,global.ngZorroAntd.result,global.ngZorroAntd.select,global.ngZorroAntd.skeleton,global.ngZorroAntd.slider,global.ngZorroAntd.spin,global.ngZorroAntd.statistic,global.ngZorroAntd.steps,global.ngZorroAntd.switch,global.ngZorroAntd.table,global.ngZorroAntd.tabs,global.ngZorroAntd.tag,global.ngZorroAntd.timePicker,global.ngZorroAntd.timeline,global.ngZorroAntd.tooltip,global.ngZorroAntd.transfer,global.ngZorroAntd.tree,global.ngZorroAntd.treeSelect,global.ngZorroAntd.typography,global.ngZorroAntd.upload,global['ng-zorro-antd'] = {}, global.ng.core, global['ng-zorro-antd'].affix, global['ng-zorro-antd'].alert, global['ng-zorro-antd'].anchor, global['ng-zorro-antd']['auto-complete'], global['ng-zorro-antd'].avatar, global['ng-zorro-antd']['back-top'], global['ng-zorro-antd'].badge, global['ng-zorro-antd'].breadcrumb, global['ng-zorro-antd'].button, global['ng-zorro-antd'].calendar, global['ng-zorro-antd'].card, global['ng-zorro-antd'].carousel, global['ng-zorro-antd'].cascader, global['ng-zorro-antd'].checkbox, global['ng-zorro-antd'].collapse, global['ng-zorro-antd'].comment, global['ng-zorro-antd'].core, global['ng-zorro-antd']['date-picker'], global['ng-zorro-antd'].descriptions, global['ng-zorro-antd'].divider, global['ng-zorro-antd'].drawer, global['ng-zorro-antd'].dropdown, global['ng-zorro-antd'].empty, global['ng-zorro-antd'].form, global['ng-zorro-antd'].grid, global['ng-zorro-antd'].i18n, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input, global['ng-zorro-antd']['input-number'], global['ng-zorro-antd'].layout, global['ng-zorro-antd'].list, global['ng-zorro-antd'].mention, global['ng-zorro-antd'].menu, global['ng-zorro-antd'].message, global['ng-zorro-antd'].modal, global['ng-zorro-antd'].notification, global['ng-zorro-antd']['page-header'], global['ng-zorro-antd'].pagination, global['ng-zorro-antd'].popconfirm, global['ng-zorro-antd'].popover, global['ng-zorro-antd'].progress, global['ng-zorro-antd'].radio, global['ng-zorro-antd'].rate, global['ng-zorro-antd'].result, global['ng-zorro-antd'].select, global['ng-zorro-antd'].skeleton, global['ng-zorro-antd'].slider, global['ng-zorro-antd'].spin, global['ng-zorro-antd'].statistic, global['ng-zorro-antd'].steps, global['ng-zorro-antd'].switch, global['ng-zorro-antd'].table, global['ng-zorro-antd'].tabs, global['ng-zorro-antd'].tag, global['ng-zorro-antd']['time-picker'], global['ng-zorro-antd'].timeline, global['ng-zorro-antd'].tooltip, global['ng-zorro-antd'].transfer, global['ng-zorro-antd'].tree, global['ng-zorro-antd']['tree-select'], global['ng-zorro-antd'].typography, global['ng-zorro-antd'].upload, global['ng-zorro-antd'].version));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,ɵngcc5,ɵngcc6,ɵngcc7,ɵngcc8,ɵngcc9,ɵngcc10,ɵngcc11,ɵngcc12,ɵngcc13,ɵngcc14,ɵngcc15,ɵngcc16,ɵngcc17,ɵngcc18,ɵngcc19,ɵngcc20,ɵngcc21,ɵngcc22,ɵngcc23,ɵngcc24,ɵngcc25,ɵngcc26,ɵngcc27,ɵngcc28,ɵngcc29,ɵngcc30,ɵngcc31,ɵngcc32,ɵngcc33,ɵngcc34,ɵngcc35,ɵngcc36,ɵngcc37,ɵngcc38,ɵngcc39,ɵngcc40,ɵngcc41,ɵngcc42,ɵngcc43,ɵngcc44,ɵngcc45,ɵngcc46,ɵngcc47,ɵngcc48,ɵngcc49,ɵngcc50,ɵngcc51,ɵngcc52,ɵngcc53,ɵngcc54,ɵngcc55,ɵngcc56,ɵngcc57,ɵngcc58,ɵngcc59,ɵngcc60,ɵngcc61,ɵngcc62,exports, core, affix, alert, anchor, autoComplete, avatar, backTop, badge, breadcrumb, button, calendar, card, carousel, cascader, checkbox, collapse, comment, core$1, datePicker, descriptions, divider, drawer, dropdown, empty, form, grid, i18n, icon, input, inputNumber, layout, list, mention, menu, message, modal, notification, pageHeader, pagination, popconfirm, popover, progress, radio, rate, result, select, skeleton, slider, spin, statistic, steps, _switch, table, tabs, tag, timePicker, timeline, tooltip, transfer, tree, treeSelect, typography, upload, version) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/affix'), require('ng-zorro-antd/alert'), require('ng-zorro-antd/anchor'), require('ng-zorro-antd/auto-complete'), require('ng-zorro-antd/avatar'), require('ng-zorro-antd/back-top'), require('ng-zorro-antd/badge'), require('ng-zorro-antd/breadcrumb'), require('ng-zorro-antd/button'), require('ng-zorro-antd/calendar'), require('ng-zorro-antd/card'), require('ng-zorro-antd/carousel'), require('ng-zorro-antd/cascader'), require('ng-zorro-antd/checkbox'), require('ng-zorro-antd/collapse'), require('ng-zorro-antd/comment'), require('ng-zorro-antd/core'), require('ng-zorro-antd/date-picker'), require('ng-zorro-antd/descriptions'), require('ng-zorro-antd/divider'), require('ng-zorro-antd/drawer'), require('ng-zorro-antd/dropdown'), require('ng-zorro-antd/empty'), require('ng-zorro-antd/form'), require('ng-zorro-antd/grid'), require('ng-zorro-antd/i18n'), require('ng-zorro-antd/icon'), require('ng-zorro-antd/input'), require('ng-zorro-antd/input-number'), require('ng-zorro-antd/layout'), require('ng-zorro-antd/list'), require('ng-zorro-antd/mention'), require('ng-zorro-antd/menu'), require('ng-zorro-antd/message'), require('ng-zorro-antd/modal'), require('ng-zorro-antd/notification'), require('ng-zorro-antd/page-header'), require('ng-zorro-antd/pagination'), require('ng-zorro-antd/popconfirm'), require('ng-zorro-antd/popover'), require('ng-zorro-antd/progress'), require('ng-zorro-antd/radio'), require('ng-zorro-antd/rate'), require('ng-zorro-antd/result'), require('ng-zorro-antd/select'), require('ng-zorro-antd/skeleton'), require('ng-zorro-antd/slider'), require('ng-zorro-antd/spin'), require('ng-zorro-antd/statistic'), require('ng-zorro-antd/steps'), require('ng-zorro-antd/switch'), require('ng-zorro-antd/table'), require('ng-zorro-antd/tabs'), require('ng-zorro-antd/tag'), require('ng-zorro-antd/time-picker'), require('ng-zorro-antd/timeline'), require('ng-zorro-antd/tooltip'), require('ng-zorro-antd/transfer'), require('ng-zorro-antd/tree'), require('ng-zorro-antd/tree-select'), require('ng-zorro-antd/typography'), require('ng-zorro-antd/upload'), require('ng-zorro-antd/version')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd', ['exports', '@angular/core', 'ng-zorro-antd/affix', 'ng-zorro-antd/alert', 'ng-zorro-antd/anchor', 'ng-zorro-antd/auto-complete', 'ng-zorro-antd/avatar', 'ng-zorro-antd/back-top', 'ng-zorro-antd/badge', 'ng-zorro-antd/breadcrumb', 'ng-zorro-antd/button', 'ng-zorro-antd/calendar', 'ng-zorro-antd/card', 'ng-zorro-antd/carousel', 'ng-zorro-antd/cascader', 'ng-zorro-antd/checkbox', 'ng-zorro-antd/collapse', 'ng-zorro-antd/comment', 'ng-zorro-antd/core', 'ng-zorro-antd/date-picker', 'ng-zorro-antd/descriptions', 'ng-zorro-antd/divider', 'ng-zorro-antd/drawer', 'ng-zorro-antd/dropdown', 'ng-zorro-antd/empty', 'ng-zorro-antd/form', 'ng-zorro-antd/grid', 'ng-zorro-antd/i18n', 'ng-zorro-antd/icon', 'ng-zorro-antd/input', 'ng-zorro-antd/input-number', 'ng-zorro-antd/layout', 'ng-zorro-antd/list', 'ng-zorro-antd/mention', 'ng-zorro-antd/menu', 'ng-zorro-antd/message', 'ng-zorro-antd/modal', 'ng-zorro-antd/notification', 'ng-zorro-antd/page-header', 'ng-zorro-antd/pagination', 'ng-zorro-antd/popconfirm', 'ng-zorro-antd/popover', 'ng-zorro-antd/progress', 'ng-zorro-antd/radio', 'ng-zorro-antd/rate', 'ng-zorro-antd/result', 'ng-zorro-antd/select', 'ng-zorro-antd/skeleton', 'ng-zorro-antd/slider', 'ng-zorro-antd/spin', 'ng-zorro-antd/statistic', 'ng-zorro-antd/steps', 'ng-zorro-antd/switch', 'ng-zorro-antd/table', 'ng-zorro-antd/tabs', 'ng-zorro-antd/tag', 'ng-zorro-antd/time-picker', 'ng-zorro-antd/timeline', 'ng-zorro-antd/tooltip', 'ng-zorro-antd/transfer', 'ng-zorro-antd/tree', 'ng-zorro-antd/tree-select', 'ng-zorro-antd/typography', 'ng-zorro-antd/upload', 'ng-zorro-antd/version'], factory) :
+    (global = global || self, factory(global['ng-zorro-antd'] = {}, global.ng.core, global['ng-zorro-antd'].affix, global['ng-zorro-antd'].alert, global['ng-zorro-antd'].anchor, global['ng-zorro-antd']['auto-complete'], global['ng-zorro-antd'].avatar, global['ng-zorro-antd']['back-top'], global['ng-zorro-antd'].badge, global['ng-zorro-antd'].breadcrumb, global['ng-zorro-antd'].button, global['ng-zorro-antd'].calendar, global['ng-zorro-antd'].card, global['ng-zorro-antd'].carousel, global['ng-zorro-antd'].cascader, global['ng-zorro-antd'].checkbox, global['ng-zorro-antd'].collapse, global['ng-zorro-antd'].comment, global['ng-zorro-antd'].core, global['ng-zorro-antd']['date-picker'], global['ng-zorro-antd'].descriptions, global['ng-zorro-antd'].divider, global['ng-zorro-antd'].drawer, global['ng-zorro-antd'].dropdown, global['ng-zorro-antd'].empty, global['ng-zorro-antd'].form, global['ng-zorro-antd'].grid, global['ng-zorro-antd'].i18n, global['ng-zorro-antd'].icon, global['ng-zorro-antd'].input, global['ng-zorro-antd']['input-number'], global['ng-zorro-antd'].layout, global['ng-zorro-antd'].list, global['ng-zorro-antd'].mention, global['ng-zorro-antd'].menu, global['ng-zorro-antd'].message, global['ng-zorro-antd'].modal, global['ng-zorro-antd'].notification, global['ng-zorro-antd']['page-header'], global['ng-zorro-antd'].pagination, global['ng-zorro-antd'].popconfirm, global['ng-zorro-antd'].popover, global['ng-zorro-antd'].progress, global['ng-zorro-antd'].radio, global['ng-zorro-antd'].rate, global['ng-zorro-antd'].result, global['ng-zorro-antd'].select, global['ng-zorro-antd'].skeleton, global['ng-zorro-antd'].slider, global['ng-zorro-antd'].spin, global['ng-zorro-antd'].statistic, global['ng-zorro-antd'].steps, global['ng-zorro-antd'].switch, global['ng-zorro-antd'].table, global['ng-zorro-antd'].tabs, global['ng-zorro-antd'].tag, global['ng-zorro-antd']['time-picker'], global['ng-zorro-antd'].timeline, global['ng-zorro-antd'].tooltip, global['ng-zorro-antd'].transfer, global['ng-zorro-antd'].tree, global['ng-zorro-antd']['tree-select'], global['ng-zorro-antd'].typography, global['ng-zorro-antd'].upload, global['ng-zorro-antd'].version));
+}(this, (function (exports, core, affix, alert, anchor, autoComplete, avatar, backTop, badge, breadcrumb, button, calendar, card, carousel, cascader, checkbox, collapse, comment, core$1, datePicker, descriptions, divider, drawer, dropdown, empty, form, grid, i18n, icon, input, inputNumber, layout, list, mention, menu, message, modal, notification, pageHeader, pagination, popconfirm, popover, progress, radio, rate, result, select, skeleton, slider, spin, statistic, steps, _switch, table, tabs, tag, timePicker, timeline, tooltip, transfer, tree, treeSelect, typography, upload, version) { 'use strict';
 
     /**
      * @fileoverview added by tsickle
@@ -28,80 +28,76 @@
                 ngModule: NgZorroAntdModule
             };
         };
-NgZorroAntdModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NgZorroAntdModule });
-NgZorroAntdModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NgZorroAntdModule_Factory(t) { return new (t || NgZorroAntdModule)(); }, imports: [ɵngcc1.NzAffixModule, ɵngcc2.NzAlertModule, ɵngcc3.NzAnchorModule, ɵngcc4.NzAutocompleteModule, ɵngcc5.NzAvatarModule, ɵngcc6.NzBackTopModule, ɵngcc7.NzBadgeModule, ɵngcc8.NzButtonModule, ɵngcc9.NzBreadCrumbModule, ɵngcc10.NzCalendarModule, ɵngcc11.NzCardModule, ɵngcc12.NzCarouselModule, ɵngcc13.NzCascaderModule, ɵngcc14.NzCheckboxModule, ɵngcc15.NzCollapseModule, ɵngcc16.NzCommentModule, ɵngcc17.NzDatePickerModule, ɵngcc18.NzDescriptionsModule, ɵngcc19.NzDividerModule, ɵngcc20.NzDrawerModule, ɵngcc21.NzDropDownModule, ɵngcc22.NzEmptyModule, ɵngcc23.NzFormModule, ɵngcc24.NzGridModule, ɵngcc25.NzI18nModule, ɵngcc26.NzIconModule, ɵngcc27.NzInputModule, ɵngcc28.NzInputNumberModule, ɵngcc29.NzLayoutModule, ɵngcc30.NzListModule, ɵngcc31.NzMentionModule, ɵngcc32.NzMenuModule, ɵngcc33.NzMessageModule, ɵngcc34.NzModalModule, ɵngcc35.NzNoAnimationModule, ɵngcc36.NzNotificationModule, ɵngcc37.NzPageHeaderModule, ɵngcc38.NzPaginationModule, ɵngcc39.NzPopconfirmModule, ɵngcc40.NzPopoverModule, ɵngcc41.NzProgressModule, ɵngcc42.NzRadioModule, ɵngcc43.NzRateModule, ɵngcc44.NzResultModule, ɵngcc45.NzSelectModule, ɵngcc46.NzSkeletonModule, ɵngcc47.NzSliderModule, ɵngcc48.NzSpinModule, ɵngcc49.NzStatisticModule, ɵngcc50.NzStepsModule, ɵngcc51.NzSwitchModule, ɵngcc52.NzTableModule, ɵngcc53.NzTabsModule, ɵngcc54.NzTagModule, ɵngcc55.NzTimePickerModule, ɵngcc56.NzTimelineModule, ɵngcc57.NzToolTipModule, ɵngcc35.NzTransButtonModule, ɵngcc58.NzTransferModule, ɵngcc59.NzTreeModule, ɵngcc60.NzTreeSelectModule, ɵngcc61.NzTypographyModule, ɵngcc62.NzUploadModule, ɵngcc35.NzWaveModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NgZorroAntdModule, { exports: [ɵngcc1.NzAffixModule, ɵngcc2.NzAlertModule, ɵngcc3.NzAnchorModule, ɵngcc4.NzAutocompleteModule, ɵngcc5.NzAvatarModule, ɵngcc6.NzBackTopModule, ɵngcc7.NzBadgeModule, ɵngcc8.NzButtonModule, ɵngcc9.NzBreadCrumbModule, ɵngcc10.NzCalendarModule, ɵngcc11.NzCardModule, ɵngcc12.NzCarouselModule, ɵngcc13.NzCascaderModule, ɵngcc14.NzCheckboxModule, ɵngcc15.NzCollapseModule, ɵngcc16.NzCommentModule, ɵngcc17.NzDatePickerModule, ɵngcc18.NzDescriptionsModule, ɵngcc19.NzDividerModule, ɵngcc20.NzDrawerModule, ɵngcc21.NzDropDownModule, ɵngcc22.NzEmptyModule, ɵngcc23.NzFormModule, ɵngcc24.NzGridModule, ɵngcc25.NzI18nModule, ɵngcc26.NzIconModule, ɵngcc27.NzInputModule, ɵngcc28.NzInputNumberModule, ɵngcc29.NzLayoutModule, ɵngcc30.NzListModule, ɵngcc31.NzMentionModule, ɵngcc32.NzMenuModule, ɵngcc33.NzMessageModule, ɵngcc34.NzModalModule, ɵngcc35.NzNoAnimationModule, ɵngcc36.NzNotificationModule, ɵngcc37.NzPageHeaderModule, ɵngcc38.NzPaginationModule, ɵngcc39.NzPopconfirmModule, ɵngcc40.NzPopoverModule, ɵngcc41.NzProgressModule, ɵngcc42.NzRadioModule, ɵngcc43.NzRateModule, ɵngcc44.NzResultModule, ɵngcc45.NzSelectModule, ɵngcc46.NzSkeletonModule, ɵngcc47.NzSliderModule, ɵngcc48.NzSpinModule, ɵngcc49.NzStatisticModule, ɵngcc50.NzStepsModule, ɵngcc51.NzSwitchModule, ɵngcc52.NzTableModule, ɵngcc53.NzTabsModule, ɵngcc54.NzTagModule, ɵngcc55.NzTimePickerModule, ɵngcc56.NzTimelineModule, ɵngcc57.NzToolTipModule, ɵngcc35.NzTransButtonModule, ɵngcc58.NzTransferModule, ɵngcc59.NzTreeModule, ɵngcc60.NzTreeSelectModule, ɵngcc61.NzTypographyModule, ɵngcc62.NzUploadModule, ɵngcc35.NzWaveModule] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NgZorroAntdModule, [{
-        type: core.NgModule,
-        args: [{
-                exports: [
-                    affix.NzAffixModule,
-                    alert.NzAlertModule,
-                    anchor.NzAnchorModule,
-                    autoComplete.NzAutocompleteModule,
-                    avatar.NzAvatarModule,
-                    backTop.NzBackTopModule,
-                    badge.NzBadgeModule,
-                    button.NzButtonModule,
-                    breadcrumb.NzBreadCrumbModule,
-                    calendar.NzCalendarModule,
-                    card.NzCardModule,
-                    carousel.NzCarouselModule,
-                    cascader.NzCascaderModule,
-                    checkbox.NzCheckboxModule,
-                    collapse.NzCollapseModule,
-                    comment.NzCommentModule,
-                    datePicker.NzDatePickerModule,
-                    descriptions.NzDescriptionsModule,
-                    divider.NzDividerModule,
-                    drawer.NzDrawerModule,
-                    dropdown.NzDropDownModule,
-                    empty.NzEmptyModule,
-                    form.NzFormModule,
-                    grid.NzGridModule,
-                    i18n.NzI18nModule,
-                    icon.NzIconModule,
-                    input.NzInputModule,
-                    inputNumber.NzInputNumberModule,
-                    layout.NzLayoutModule,
-                    list.NzListModule,
-                    mention.NzMentionModule,
-                    menu.NzMenuModule,
-                    message.NzMessageModule,
-                    modal.NzModalModule,
-                    core$1.NzNoAnimationModule,
-                    notification.NzNotificationModule,
-                    pageHeader.NzPageHeaderModule,
-                    pagination.NzPaginationModule,
-                    popconfirm.NzPopconfirmModule,
-                    popover.NzPopoverModule,
-                    progress.NzProgressModule,
-                    radio.NzRadioModule,
-                    rate.NzRateModule,
-                    result.NzResultModule,
-                    select.NzSelectModule,
-                    skeleton.NzSkeletonModule,
-                    slider.NzSliderModule,
-                    spin.NzSpinModule,
-                    statistic.NzStatisticModule,
-                    steps.NzStepsModule,
-                    _switch.NzSwitchModule,
-                    table.NzTableModule,
-                    tabs.NzTabsModule,
-                    tag.NzTagModule,
-                    timePicker.NzTimePickerModule,
-                    timeline.NzTimelineModule,
-                    tooltip.NzToolTipModule,
-                    core$1.NzTransButtonModule,
-                    transfer.NzTransferModule,
-                    tree.NzTreeModule,
-                    treeSelect.NzTreeSelectModule,
-                    typography.NzTypographyModule,
-                    upload.NzUploadModule,
-                    core$1.NzWaveModule
-                ]
-            }]
-    }], function () { return []; }, null); })();
+        NgZorroAntdModule.decorators = [
+            { type: core.NgModule, args: [{
+                        exports: [
+                            affix.NzAffixModule,
+                            alert.NzAlertModule,
+                            anchor.NzAnchorModule,
+                            autoComplete.NzAutocompleteModule,
+                            avatar.NzAvatarModule,
+                            backTop.NzBackTopModule,
+                            badge.NzBadgeModule,
+                            button.NzButtonModule,
+                            breadcrumb.NzBreadCrumbModule,
+                            calendar.NzCalendarModule,
+                            card.NzCardModule,
+                            carousel.NzCarouselModule,
+                            cascader.NzCascaderModule,
+                            checkbox.NzCheckboxModule,
+                            collapse.NzCollapseModule,
+                            comment.NzCommentModule,
+                            datePicker.NzDatePickerModule,
+                            descriptions.NzDescriptionsModule,
+                            divider.NzDividerModule,
+                            drawer.NzDrawerModule,
+                            dropdown.NzDropDownModule,
+                            empty.NzEmptyModule,
+                            form.NzFormModule,
+                            grid.NzGridModule,
+                            i18n.NzI18nModule,
+                            icon.NzIconModule,
+                            input.NzInputModule,
+                            inputNumber.NzInputNumberModule,
+                            layout.NzLayoutModule,
+                            list.NzListModule,
+                            mention.NzMentionModule,
+                            menu.NzMenuModule,
+                            message.NzMessageModule,
+                            modal.NzModalModule,
+                            core$1.NzNoAnimationModule,
+                            notification.NzNotificationModule,
+                            pageHeader.NzPageHeaderModule,
+                            pagination.NzPaginationModule,
+                            popconfirm.NzPopconfirmModule,
+                            popover.NzPopoverModule,
+                            progress.NzProgressModule,
+                            radio.NzRadioModule,
+                            rate.NzRateModule,
+                            result.NzResultModule,
+                            select.NzSelectModule,
+                            skeleton.NzSkeletonModule,
+                            slider.NzSliderModule,
+                            spin.NzSpinModule,
+                            statistic.NzStatisticModule,
+                            steps.NzStepsModule,
+                            _switch.NzSwitchModule,
+                            table.NzTableModule,
+                            tabs.NzTabsModule,
+                            tag.NzTagModule,
+                            timePicker.NzTimePickerModule,
+                            timeline.NzTimelineModule,
+                            tooltip.NzToolTipModule,
+                            core$1.NzTransButtonModule,
+                            transfer.NzTransferModule,
+                            tree.NzTreeModule,
+                            treeSelect.NzTreeSelectModule,
+                            typography.NzTypographyModule,
+                            upload.NzUploadModule,
+                            core$1.NzWaveModule
+                        ]
+                    },] }
+        ];
         return NgZorroAntdModule;
     }());
 
@@ -3194,6 +3190,4 @@ NgZorroAntdModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NgZorro
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd.umd.js.map

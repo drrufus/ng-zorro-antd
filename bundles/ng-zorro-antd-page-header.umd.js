@@ -1,81 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/common'),require('ng-zorro-antd/core'),require('ng-zorro-antd/icon'),exports, require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/icon')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/page-header', ['@angular/core','@angular/common','ng-zorro-antd/core','ng-zorro-antd/icon','exports', '@angular/common', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/icon'], factory) :
-    (global = global || self, factory(global.ng.core,global.ng.common,global.ngZorroAntd.core,global.ngZorroAntd.icon,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd']['page-header'] = {}), global.ng.common, global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].icon));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,exports, common, core, core$1, icon) { 
-function NzPageHeaderComponent_div_2_i_2_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelement(0, "i", 9);
-} if (rf & 2) {
-    var ctx_r5 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("nzType", ctx_r5.nzBackIcon ? ctx_r5.nzBackIcon : "arrow-left");
-} }
-function NzPageHeaderComponent_div_2_ng_container_3_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainer(0, 10);
-} if (rf & 2) {
-    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r6.nzBackIcon);
-} }
-function NzPageHeaderComponent_div_2_Template(rf, ctx) { if (rf & 1) {
-    var _r8 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 5);
-    ɵngcc0.ɵɵlistener("click", function NzPageHeaderComponent_div_2_Template_div_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r8); var ctx_r7 = ɵngcc0.ɵɵnextContext(); return ctx_r7.onBack(); });
-    ɵngcc0.ɵɵelementStart(1, "div", 6);
-    ɵngcc0.ɵɵtemplate(2, NzPageHeaderComponent_div_2_i_2_Template, 1, 1, "i", 7);
-    ɵngcc0.ɵɵtemplate(3, NzPageHeaderComponent_div_2_ng_container_3_Template, 1, 1, "ng-container", 8);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(2);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.isStringBackIcon);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.isTemplateRefBackIcon);
-} }
-function NzPageHeaderComponent_span_4_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r9 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r9.nzTitle);
-} }
-function NzPageHeaderComponent_span_4_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span", 11);
-    ɵngcc0.ɵɵtemplate(1, NzPageHeaderComponent_span_4_ng_container_1_Template, 2, 1, "ng-container", 12);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r1.nzTitle);
-} }
-function NzPageHeaderComponent_5_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵprojection(0, 6, ["*ngIf", "!nzTitle"]);
-} }
-function NzPageHeaderComponent_span_6_ng_container_1_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵtext(1);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r10 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵtextInterpolate(ctx_r10.nzSubtitle);
-} }
-function NzPageHeaderComponent_span_6_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementStart(0, "span", 13);
-    ɵngcc0.ɵɵtemplate(1, NzPageHeaderComponent_span_6_ng_container_1_Template, 2, 1, "ng-container", 12);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r3 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r3.nzSubtitle);
-} }
-function NzPageHeaderComponent_7_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵprojection(0, 7, ["*ngIf", "!nzSubtitle"]);
-} }
-var _c0 = [[["nz-breadcrumb", "nz-page-header-breadcrumb", ""]], [["nz-avatar", "nz-page-header-avatar", ""]], [["nz-page-header-tags"], ["", "nz-page-header-tags", ""]], [["nz-page-header-extra"], ["", "nz-page-header-extra", ""]], [["nz-page-header-content"], ["", "nz-page-header-content", ""]], [["nz-page-header-footer"], ["", "nz-page-header-footer", ""]], [["nz-page-header-title"], ["", "nz-page-header-title", ""]], [["nz-page-header-subtitle"], ["", "nz-page-header-subtitle", ""]]];
-var _c1 = ["nz-breadcrumb[nz-page-header-breadcrumb]", "nz-avatar[nz-page-header-avatar]", "nz-page-header-tags, [nz-page-header-tags]", "nz-page-header-extra, [nz-page-header-extra]", "nz-page-header-content, [nz-page-header-content]", "nz-page-header-footer, [nz-page-header-footer]", "nz-page-header-title, [nz-page-header-title]", "nz-page-header-subtitle, [nz-page-header-subtitle]"];
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common'), require('@angular/core'), require('ng-zorro-antd/core'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/page-header', ['exports', '@angular/common', '@angular/core', 'ng-zorro-antd/core', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd']['page-header'] = {}), global.ng.common, global.ng.core, global['ng-zorro-antd'].core, global['ng-zorro-antd'].icon));
+}(this, (function (exports, common, core, core$1, icon) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -281,131 +208,107 @@ var _c1 = ["nz-breadcrumb[nz-page-header-breadcrumb]", "nz-avatar[nz-page-header
     var NzPageHeaderTitleDirective = /** @class */ (function () {
         function NzPageHeaderTitleDirective() {
         }
-NzPageHeaderTitleDirective.ɵfac = function NzPageHeaderTitleDirective_Factory(t) { return new (t || NzPageHeaderTitleDirective)(); };
-NzPageHeaderTitleDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderTitleDirective, selectors: [["nz-page-header-title"], ["", "nz-page-header-title", ""]], hostAttrs: [1, "ant-page-header-heading-title"], exportAs: ["nzPageHeaderTitle"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderTitleDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-title, [nz-page-header-title]',
-                exportAs: 'nzPageHeaderTitle',
-                host: {
-                    class: 'ant-page-header-heading-title'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderTitleDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-title, [nz-page-header-title]',
+                        exportAs: 'nzPageHeaderTitle',
+                        host: {
+                            class: 'ant-page-header-heading-title'
+                        }
+                    },] }
+        ];
         return NzPageHeaderTitleDirective;
     }());
     var NzPageHeaderSubtitleDirective = /** @class */ (function () {
         function NzPageHeaderSubtitleDirective() {
         }
-NzPageHeaderSubtitleDirective.ɵfac = function NzPageHeaderSubtitleDirective_Factory(t) { return new (t || NzPageHeaderSubtitleDirective)(); };
-NzPageHeaderSubtitleDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderSubtitleDirective, selectors: [["nz-page-header-subtitle"], ["", "nz-page-header-subtitle", ""]], hostAttrs: [1, "ant-page-header-heading-sub-title"], exportAs: ["nzPageHeaderSubtitle"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderSubtitleDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-subtitle, [nz-page-header-subtitle]',
-                exportAs: 'nzPageHeaderSubtitle',
-                host: {
-                    class: 'ant-page-header-heading-sub-title'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderSubtitleDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-subtitle, [nz-page-header-subtitle]',
+                        exportAs: 'nzPageHeaderSubtitle',
+                        host: {
+                            class: 'ant-page-header-heading-sub-title'
+                        }
+                    },] }
+        ];
         return NzPageHeaderSubtitleDirective;
     }());
     var NzPageHeaderContentDirective = /** @class */ (function () {
         function NzPageHeaderContentDirective() {
         }
-NzPageHeaderContentDirective.ɵfac = function NzPageHeaderContentDirective_Factory(t) { return new (t || NzPageHeaderContentDirective)(); };
-NzPageHeaderContentDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderContentDirective, selectors: [["nz-page-header-content"], ["", "nz-page-header-content", ""]], hostAttrs: [1, "ant-page-header-content"], exportAs: ["nzPageHeaderContent"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderContentDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-content, [nz-page-header-content]',
-                exportAs: 'nzPageHeaderContent',
-                host: {
-                    class: 'ant-page-header-content'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderContentDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-content, [nz-page-header-content]',
+                        exportAs: 'nzPageHeaderContent',
+                        host: {
+                            class: 'ant-page-header-content'
+                        }
+                    },] }
+        ];
         return NzPageHeaderContentDirective;
     }());
     var NzPageHeaderTagDirective = /** @class */ (function () {
         function NzPageHeaderTagDirective() {
         }
-NzPageHeaderTagDirective.ɵfac = function NzPageHeaderTagDirective_Factory(t) { return new (t || NzPageHeaderTagDirective)(); };
-NzPageHeaderTagDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderTagDirective, selectors: [["nz-page-header-tags"], ["", "nz-page-header-tags", ""]], hostAttrs: [1, "ant-page-header-heading-tags"], exportAs: ["nzPageHeaderTags"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderTagDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-tags, [nz-page-header-tags]',
-                exportAs: 'nzPageHeaderTags',
-                host: {
-                    class: 'ant-page-header-heading-tags'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderTagDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-tags, [nz-page-header-tags]',
+                        exportAs: 'nzPageHeaderTags',
+                        host: {
+                            class: 'ant-page-header-heading-tags'
+                        }
+                    },] }
+        ];
         return NzPageHeaderTagDirective;
     }());
     var NzPageHeaderExtraDirective = /** @class */ (function () {
         function NzPageHeaderExtraDirective() {
         }
-NzPageHeaderExtraDirective.ɵfac = function NzPageHeaderExtraDirective_Factory(t) { return new (t || NzPageHeaderExtraDirective)(); };
-NzPageHeaderExtraDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderExtraDirective, selectors: [["nz-page-header-extra"], ["", "nz-page-header-extra", ""]], hostAttrs: [1, "ant-page-header-heading-extra"], exportAs: ["nzPageHeaderExtra"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderExtraDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-extra, [nz-page-header-extra]',
-                exportAs: 'nzPageHeaderExtra',
-                host: {
-                    class: 'ant-page-header-heading-extra'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderExtraDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-extra, [nz-page-header-extra]',
+                        exportAs: 'nzPageHeaderExtra',
+                        host: {
+                            class: 'ant-page-header-heading-extra'
+                        }
+                    },] }
+        ];
         return NzPageHeaderExtraDirective;
     }());
     var NzPageHeaderFooterDirective = /** @class */ (function () {
         function NzPageHeaderFooterDirective() {
         }
-NzPageHeaderFooterDirective.ɵfac = function NzPageHeaderFooterDirective_Factory(t) { return new (t || NzPageHeaderFooterDirective)(); };
-NzPageHeaderFooterDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderFooterDirective, selectors: [["nz-page-header-footer"], ["", "nz-page-header-footer", ""]], hostAttrs: [1, "ant-page-header-footer"], exportAs: ["nzPageHeaderFooter"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderFooterDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-page-header-footer, [nz-page-header-footer]',
-                exportAs: 'nzPageHeaderFooter',
-                host: {
-                    class: 'ant-page-header-footer'
-                }
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderFooterDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-page-header-footer, [nz-page-header-footer]',
+                        exportAs: 'nzPageHeaderFooter',
+                        host: {
+                            class: 'ant-page-header-footer'
+                        }
+                    },] }
+        ];
         return NzPageHeaderFooterDirective;
     }());
     var NzPageHeaderBreadcrumbDirective = /** @class */ (function () {
         function NzPageHeaderBreadcrumbDirective() {
         }
-NzPageHeaderBreadcrumbDirective.ɵfac = function NzPageHeaderBreadcrumbDirective_Factory(t) { return new (t || NzPageHeaderBreadcrumbDirective)(); };
-NzPageHeaderBreadcrumbDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderBreadcrumbDirective, selectors: [["nz-breadcrumb", "nz-page-header-breadcrumb", ""]], exportAs: ["nzPageHeaderBreadcrumb"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderBreadcrumbDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-breadcrumb[nz-page-header-breadcrumb]',
-                exportAs: 'nzPageHeaderBreadcrumb'
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderBreadcrumbDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-breadcrumb[nz-page-header-breadcrumb]',
+                        exportAs: 'nzPageHeaderBreadcrumb'
+                    },] }
+        ];
         return NzPageHeaderBreadcrumbDirective;
     }());
     var NzPageHeaderAvatarDirective = /** @class */ (function () {
         function NzPageHeaderAvatarDirective() {
         }
-NzPageHeaderAvatarDirective.ɵfac = function NzPageHeaderAvatarDirective_Factory(t) { return new (t || NzPageHeaderAvatarDirective)(); };
-NzPageHeaderAvatarDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHeaderAvatarDirective, selectors: [["nz-avatar", "nz-page-header-avatar", ""]], exportAs: ["nzPageHeaderAvatar"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderAvatarDirective, [{
-        type: core.Directive,
-        args: [{
-                selector: 'nz-avatar[nz-page-header-avatar]',
-                exportAs: 'nzPageHeaderAvatar'
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderAvatarDirective.decorators = [
+            { type: core.Directive, args: [{
+                        selector: 'nz-avatar[nz-page-header-avatar]',
+                        exportAs: 'nzPageHeaderAvatar'
+                    },] }
+        ];
         return NzPageHeaderAvatarDirective;
     }());
 
@@ -452,6 +355,22 @@ NzPageHeaderAvatarDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHe
                 this.location.back();
             }
         };
+        NzPageHeaderComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-page-header',
+                        exportAs: 'nzPageHeader',
+                        template: "<ng-content select=\"nz-breadcrumb[nz-page-header-breadcrumb]\"></ng-content>\r\n\r\n<div class=\"ant-page-header-heading\">\r\n  <!--back-->\r\n  <div *ngIf=\"nzBackIcon !== null\" (click)=\"onBack()\" class=\"ant-page-header-back\">\r\n    <div role=\"button\" tabindex=\"0\" class=\"ant-page-header-back-button\">\r\n      <i *ngIf=\"isStringBackIcon\" nz-icon [nzType]=\"nzBackIcon ? nzBackIcon : 'arrow-left'\" nzTheme=\"outline\"></i>\r\n      <ng-container *ngIf=\"isTemplateRefBackIcon\" [ngTemplateOutlet]=\"nzBackIcon\"></ng-container>\r\n    </div>\r\n  </div>\r\n  <!--avatar-->\r\n  <ng-content select=\"nz-avatar[nz-page-header-avatar]\"></ng-content>\r\n  <!--title-->\r\n  <span class=\"ant-page-header-heading-title\" *ngIf=\"nzTitle\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\r\n  </span>\r\n  <ng-content *ngIf=\"!nzTitle\" select=\"nz-page-header-title, [nz-page-header-title]\"></ng-content>\r\n  <!--subtitle-->\r\n  <span class=\"ant-page-header-heading-sub-title\" *ngIf=\"nzSubtitle\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzSubtitle\">{{ nzSubtitle }}</ng-container>\r\n  </span>\r\n  <ng-content *ngIf=\"!nzSubtitle\" select=\"nz-page-header-subtitle, [nz-page-header-subtitle]\"></ng-content>\r\n  <ng-content select=\"nz-page-header-tags, [nz-page-header-tags]\"></ng-content>\r\n  <ng-content select=\"nz-page-header-extra, [nz-page-header-extra]\"></ng-content>\r\n</div>\r\n\r\n<ng-content select=\"nz-page-header-content, [nz-page-header-content]\"></ng-content>\r\n<ng-content select=\"nz-page-header-footer, [nz-page-header-footer]\"></ng-content>\r\n",
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        encapsulation: core.ViewEncapsulation.None,
+                        host: {
+                            class: 'ant-page-header',
+                            '[class.has-footer]': 'nzPageHeaderFooter',
+                            '[class.ant-page-header-ghost]': 'nzGhost',
+                            '[class.has-breadcrumb]': 'nzPageHeaderBreadcrumb'
+                        },
+                        styles: ["nz-page-header,nz-page-header-content,nz-page-header-footer{display:block}", "\n      .ant-page-header-back-button {\n        border: 0px;\n        background: transparent;\n        padding: 0px;\n        line-height: inherit;\n        display: inline-block;\n      }\n    "]
+                    }] }
+        ];
         /** @nocollapse */
         NzPageHeaderComponent.ctorParameters = function () { return [
             { type: common.Location },
@@ -470,76 +389,6 @@ NzPageHeaderAvatarDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzPageHe
             core$1.WithConfig(NZ_CONFIG_COMPONENT_NAME, true),
             __metadata("design:type", Boolean)
         ], NzPageHeaderComponent.prototype, "nzGhost", void 0);
-NzPageHeaderComponent.ɵfac = function NzPageHeaderComponent_Factory(t) { return new (t || NzPageHeaderComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.Location), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzConfigService)); };
-NzPageHeaderComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzPageHeaderComponent, selectors: [["nz-page-header"]], contentQueries: function NzPageHeaderComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵngcc0.ɵɵcontentQuery(dirIndex, NzPageHeaderFooterDirective, true);
-        ɵngcc0.ɵɵcontentQuery(dirIndex, NzPageHeaderBreadcrumbDirective, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzPageHeaderFooter = _t.first);
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzPageHeaderBreadcrumb = _t.first);
-    } }, hostAttrs: [1, "ant-page-header"], hostVars: 6, hostBindings: function NzPageHeaderComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("has-footer", ctx.nzPageHeaderFooter)("ant-page-header-ghost", ctx.nzGhost)("has-breadcrumb", ctx.nzPageHeaderBreadcrumb);
-    } }, inputs: { nzBackIcon: "nzBackIcon", nzTitle: "nzTitle", nzSubtitle: "nzSubtitle", nzGhost: "nzGhost" }, outputs: { nzBack: "nzBack" }, exportAs: ["nzPageHeader"], features: [ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1, decls: 12, vars: 5, consts: [[1, "ant-page-header-heading"], ["class", "ant-page-header-back", 3, "click", 4, "ngIf"], ["class", "ant-page-header-heading-title", 4, "ngIf"], [4, "ngIf"], ["class", "ant-page-header-heading-sub-title", 4, "ngIf"], [1, "ant-page-header-back", 3, "click"], ["role", "button", "tabindex", "0", 1, "ant-page-header-back-button"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType", 4, "ngIf"], [3, "ngTemplateOutlet", 4, "ngIf"], ["nz-icon", "", "nzTheme", "outline", 3, "nzType"], [3, "ngTemplateOutlet"], [1, "ant-page-header-heading-title"], [4, "nzStringTemplateOutlet"], [1, "ant-page-header-heading-sub-title"]], template: function NzPageHeaderComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef(_c0);
-        ɵngcc0.ɵɵprojection(0);
-        ɵngcc0.ɵɵelementStart(1, "div", 0);
-        ɵngcc0.ɵɵtemplate(2, NzPageHeaderComponent_div_2_Template, 4, 2, "div", 1);
-        ɵngcc0.ɵɵprojection(3, 1);
-        ɵngcc0.ɵɵtemplate(4, NzPageHeaderComponent_span_4_Template, 2, 1, "span", 2);
-        ɵngcc0.ɵɵtemplate(5, NzPageHeaderComponent_5_Template, 1, 0, undefined, 3);
-        ɵngcc0.ɵɵtemplate(6, NzPageHeaderComponent_span_6_Template, 2, 1, "span", 4);
-        ɵngcc0.ɵɵtemplate(7, NzPageHeaderComponent_7_Template, 1, 0, undefined, 3);
-        ɵngcc0.ɵɵprojection(8, 2);
-        ɵngcc0.ɵɵprojection(9, 3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵprojection(10, 4);
-        ɵngcc0.ɵɵprojection(11, 5);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzBackIcon !== null);
-        ɵngcc0.ɵɵadvance(2);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzTitle);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzTitle);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", ctx.nzSubtitle);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzSubtitle);
-    } }, directives: [ɵngcc1.NgIf, ɵngcc3.NzIconDirective, ɵngcc1.NgTemplateOutlet, ɵngcc2.NzStringTemplateOutletDirective], styles: ["nz-page-header,nz-page-header-content,nz-page-header-footer{display:block}", "\n      .ant-page-header-back-button {\n        border: 0px;\n        background: transparent;\n        padding: 0px;\n        line-height: inherit;\n        display: inline-block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-page-header',
-                exportAs: 'nzPageHeader',
-                template: "<ng-content select=\"nz-breadcrumb[nz-page-header-breadcrumb]\"></ng-content>\r\n\r\n<div class=\"ant-page-header-heading\">\r\n  <!--back-->\r\n  <div *ngIf=\"nzBackIcon !== null\" (click)=\"onBack()\" class=\"ant-page-header-back\">\r\n    <div role=\"button\" tabindex=\"0\" class=\"ant-page-header-back-button\">\r\n      <i *ngIf=\"isStringBackIcon\" nz-icon [nzType]=\"nzBackIcon ? nzBackIcon : 'arrow-left'\" nzTheme=\"outline\"></i>\r\n      <ng-container *ngIf=\"isTemplateRefBackIcon\" [ngTemplateOutlet]=\"nzBackIcon\"></ng-container>\r\n    </div>\r\n  </div>\r\n  <!--avatar-->\r\n  <ng-content select=\"nz-avatar[nz-page-header-avatar]\"></ng-content>\r\n  <!--title-->\r\n  <span class=\"ant-page-header-heading-title\" *ngIf=\"nzTitle\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\r\n  </span>\r\n  <ng-content *ngIf=\"!nzTitle\" select=\"nz-page-header-title, [nz-page-header-title]\"></ng-content>\r\n  <!--subtitle-->\r\n  <span class=\"ant-page-header-heading-sub-title\" *ngIf=\"nzSubtitle\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzSubtitle\">{{ nzSubtitle }}</ng-container>\r\n  </span>\r\n  <ng-content *ngIf=\"!nzSubtitle\" select=\"nz-page-header-subtitle, [nz-page-header-subtitle]\"></ng-content>\r\n  <ng-content select=\"nz-page-header-tags, [nz-page-header-tags]\"></ng-content>\r\n  <ng-content select=\"nz-page-header-extra, [nz-page-header-extra]\"></ng-content>\r\n</div>\r\n\r\n<ng-content select=\"nz-page-header-content, [nz-page-header-content]\"></ng-content>\r\n<ng-content select=\"nz-page-header-footer, [nz-page-header-footer]\"></ng-content>\r\n",
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                encapsulation: core.ViewEncapsulation.None,
-                host: {
-                    class: 'ant-page-header',
-                    '[class.has-footer]': 'nzPageHeaderFooter',
-                    '[class.ant-page-header-ghost]': 'nzGhost',
-                    '[class.has-breadcrumb]': 'nzPageHeaderBreadcrumb'
-                },
-                styles: ["nz-page-header,nz-page-header-content,nz-page-header-footer{display:block}", "\n      .ant-page-header-back-button {\n        border: 0px;\n        background: transparent;\n        padding: 0px;\n        line-height: inherit;\n        display: inline-block;\n      }\n    "]
-            }]
-    }], function () { return [{ type: ɵngcc1.Location }, { type: ɵngcc2.NzConfigService }]; }, { nzBackIcon: [{
-            type: core.Input
-        }], nzBack: [{
-            type: core.Output
-        }], nzTitle: [{
-            type: core.Input
-        }], nzSubtitle: [{
-            type: core.Input
-        }], nzGhost: [{
-            type: core.Input
-        }], nzPageHeaderFooter: [{
-            type: core.ContentChild,
-            args: [NzPageHeaderFooterDirective, { static: false }]
-        }], nzPageHeaderBreadcrumb: [{
-            type: core.ContentChild,
-            args: [NzPageHeaderBreadcrumbDirective, { static: false }]
-        }] }); })();
         return NzPageHeaderComponent;
     }());
     if (false) {
@@ -588,33 +437,13 @@ NzPageHeaderComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzPageHeaderCo
     var NzPageHeaderModule = /** @class */ (function () {
         function NzPageHeaderModule() {
         }
-NzPageHeaderModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzPageHeaderModule });
-NzPageHeaderModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzPageHeaderModule_Factory(t) { return new (t || NzPageHeaderModule)(); }, imports: [[common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzPageHeaderModule, { declarations: [NzPageHeaderComponent,
-        NzPageHeaderTitleDirective,
-        NzPageHeaderSubtitleDirective,
-        NzPageHeaderContentDirective,
-        NzPageHeaderTagDirective,
-        NzPageHeaderExtraDirective,
-        NzPageHeaderFooterDirective,
-        NzPageHeaderBreadcrumbDirective,
-        NzPageHeaderAvatarDirective], imports: [ɵngcc1.CommonModule, ɵngcc2.NzAddOnModule, ɵngcc3.NzIconModule], exports: [NzPageHeaderComponent,
-        NzPageHeaderTitleDirective,
-        NzPageHeaderSubtitleDirective,
-        NzPageHeaderContentDirective,
-        NzPageHeaderTagDirective,
-        NzPageHeaderExtraDirective,
-        NzPageHeaderFooterDirective,
-        NzPageHeaderBreadcrumbDirective,
-        NzPageHeaderAvatarDirective] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzPageHeaderModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule],
-                exports: [NzPageHeaderComponent, NzPageHeaderCells],
-                declarations: [NzPageHeaderComponent, NzPageHeaderCells]
-            }]
-    }], function () { return []; }, null); })();
+        NzPageHeaderModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, core$1.NzAddOnModule, icon.NzIconModule],
+                        exports: [NzPageHeaderComponent, NzPageHeaderCells],
+                        declarations: [NzPageHeaderComponent, NzPageHeaderCells]
+                    },] }
+        ];
         return NzPageHeaderModule;
     }());
 
@@ -632,6 +461,4 @@ NzPageHeaderModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzPage
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd-page-header.umd.js.map

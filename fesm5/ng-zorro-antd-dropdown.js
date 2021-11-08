@@ -17,91 +17,6 @@ import { NzMenuModule } from 'ng-zorro-antd/menu';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
-import * as ɵngcc0 from '@angular/core';
-import * as ɵngcc1 from '@angular/common';
-import * as ɵngcc2 from 'ng-zorro-antd/core';
-import * as ɵngcc3 from '@angular/cdk/overlay';
-import * as ɵngcc4 from '@angular/cdk/platform';
-import * as ɵngcc5 from 'ng-zorro-antd/button';
-import * as ɵngcc6 from 'ng-zorro-antd/icon';
-
-function NzDropdownContextComponent_div_0_ng_template_1_Template(rf, ctx) { }
-function NzDropdownContextComponent_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r3 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 1);
-    ɵngcc0.ɵɵlistener("@slideMotion.done", function NzDropdownContextComponent_div_0_Template_div_animation_slideMotion_done_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r2 = ɵngcc0.ɵɵnextContext(); return ctx_r2.afterAnimation(); });
-    ɵngcc0.ɵɵtemplate(1, NzDropdownContextComponent_div_0_ng_template_1_Template, 0, 0, "ng-template", 2);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("@slideMotion", ctx_r0.dropDownPosition);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r0.templateRef);
-} }
-function NzDropdownMenuComponent_ng_template_0_div_0_Template(rf, ctx) { if (rf & 1) {
-    var _r3 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 1);
-    ɵngcc0.ɵɵlistener("mouseenter", function NzDropdownMenuComponent_ng_template_0_div_0_Template_div_mouseenter_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r2 = ɵngcc0.ɵɵnextContext(2); return ctx_r2.setVisibleStateWhen(true, "hover"); })("mouseleave", function NzDropdownMenuComponent_ng_template_0_div_0_Template_div_mouseleave_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r4 = ɵngcc0.ɵɵnextContext(2); return ctx_r4.setVisibleStateWhen(false, "hover"); });
-    ɵngcc0.ɵɵelementStart(1, "div");
-    ɵngcc0.ɵɵprojection(2);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext(2);
-    ɵngcc0.ɵɵclassMap("ant-dropdown nz-dropdown ant-dropdown-placement-" + ctx_r1.nzPlacement);
-    ɵngcc0.ɵɵproperty("ngClass", ctx_r1.nzOverlayClassName)("ngStyle", ctx_r1.nzOverlayStyle)("@slideMotion", ctx_r1.dropDownPosition)("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵclassProp("ant-table-filter-dropdown", ctx_r1.nzTableFilter);
-} }
-function NzDropdownMenuComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵtemplate(0, NzDropdownMenuComponent_ng_template_0_div_0_Template, 3, 10, "div", 0);
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.open);
-} }
-var _c0 = ["*"];
-function NzDropDownComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
-    var _r2 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 1);
-    ɵngcc0.ɵɵlistener("mouseenter", function NzDropDownComponent_ng_template_1_Template_div_mouseenter_0_listener() { ɵngcc0.ɵɵrestoreView(_r2); var ctx_r1 = ɵngcc0.ɵɵnextContext(); return ctx_r1.setVisibleStateWhen(true, "hover"); })("mouseleave", function NzDropDownComponent_ng_template_1_Template_div_mouseleave_0_listener() { ɵngcc0.ɵɵrestoreView(_r2); var ctx_r3 = ɵngcc0.ɵɵnextContext(); return ctx_r3.setVisibleStateWhen(false, "hover"); });
-    ɵngcc0.ɵɵelementStart(1, "div");
-    ɵngcc0.ɵɵprojection(2, 1);
-    ɵngcc0.ɵɵprojection(3, 2);
-    ɵngcc0.ɵɵelementEnd();
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵclassMap("ant-dropdown ant-dropdown-placement-" + ctx_r0.nzPlacement);
-    ɵngcc0.ɵɵstyleProp("min-width", ctx_r0.triggerWidth, "px");
-    ɵngcc0.ɵɵproperty("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle)("@slideMotion", ctx_r0.dropDownPosition)("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation);
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵclassProp("ant-table-filter-dropdown", ctx_r0.nzTableFilter);
-} }
-var _c1 = [[["", "nz-dropdown", ""]], [["", "nz-menu", ""]], "*"];
-var _c2 = ["[nz-dropdown]", "[nz-menu]", "*"];
-function NzDropDownButtonComponent_ng_container_5_Template(rf, ctx) { if (rf & 1) {
-    ɵngcc0.ɵɵelementContainerStart(0);
-    ɵngcc0.ɵɵelement(1, "i", 5);
-    ɵngcc0.ɵɵelementContainerEnd();
-} if (rf & 2) {
-    var ctx_r0 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵadvance(1);
-    ɵngcc0.ɵɵproperty("nzType", ctx_r0.nzIcon);
-} }
-function NzDropDownButtonComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
-    var _r3 = ɵngcc0.ɵɵgetCurrentView();
-    ɵngcc0.ɵɵelementStart(0, "div", 6);
-    ɵngcc0.ɵɵlistener("mouseenter", function NzDropDownButtonComponent_ng_template_6_Template_div_mouseenter_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r2 = ɵngcc0.ɵɵnextContext(); return ctx_r2.setVisibleStateWhen(true, "hover"); })("mouseleave", function NzDropDownButtonComponent_ng_template_6_Template_div_mouseleave_0_listener() { ɵngcc0.ɵɵrestoreView(_r3); var ctx_r4 = ɵngcc0.ɵɵnextContext(); return ctx_r4.setVisibleStateWhen(false, "hover"); });
-    ɵngcc0.ɵɵprojection(1, 1);
-    ɵngcc0.ɵɵelementEnd();
-} if (rf & 2) {
-    var ctx_r1 = ɵngcc0.ɵɵnextContext();
-    ɵngcc0.ɵɵclassMap("ant-dropdown ant-dropdown-placement-" + ctx_r1.nzPlacement);
-    ɵngcc0.ɵɵstyleProp("min-width", ctx_r1.triggerWidth, "px");
-    ɵngcc0.ɵɵproperty("@.disabled", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r1.noAnimation == null ? null : ctx_r1.noAnimation.nzNoAnimation)("@slideMotion", ctx_r1.dropDownPosition);
-} }
-var _c3 = ["*", [["", "nz-menu", ""]]];
-var _c4 = ["*", "[nz-menu]"];
 var NzMenuDropdownService = /** @class */ (function (_super) {
     __extends(NzMenuDropdownService, _super);
     function NzMenuDropdownService() {
@@ -109,12 +24,9 @@ var NzMenuDropdownService = /** @class */ (function (_super) {
         _this.isInDropDown = true;
         return _this;
     }
-NzMenuDropdownService.ɵfac = function NzMenuDropdownService_Factory(t) { return ɵNzMenuDropdownService_BaseFactory(t || NzMenuDropdownService); };
-NzMenuDropdownService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzMenuDropdownService, factory: function (t) { return NzMenuDropdownService.ɵfac(t); } });
-var ɵNzMenuDropdownService_BaseFactory = ɵngcc0.ɵɵgetInheritedFactory(NzMenuDropdownService);
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuDropdownService, [{
-        type: Injectable
-    }], null, null); })();
+    NzMenuDropdownService.decorators = [
+        { type: Injectable }
+    ];
     return NzMenuDropdownService;
 }(NzMenuBaseService));
 if (false) {
@@ -199,30 +111,23 @@ var NzDropdownContextComponent = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
+    NzDropdownContextComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-dropdown-context',
+                    exportAs: 'nzDropdownContext',
+                    animations: [slideMotion],
+                    preserveWhitespaces: false,
+                    template: "<div *ngIf=\"open\"\r\n  class=\"ant-dropdown ant-dropdown-placement-bottomLeft\"\r\n  [@slideMotion]=\"dropDownPosition\"\r\n  (@slideMotion.done)=\"afterAnimation()\">\r\n  <ng-template [ngTemplateOutlet]=\"templateRef\"></ng-template>\r\n</div>",
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    providers: [NzMenuDropdownService],
+                    styles: ["\n      nz-dropdown-context {\n        display: block;\n      }\n\n      .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+                }] }
+    ];
     /** @nocollapse */
     NzDropdownContextComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef }
     ]; };
-NzDropdownContextComponent.ɵfac = function NzDropdownContextComponent_Factory(t) { return new (t || NzDropdownContextComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
-NzDropdownContextComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzDropdownContextComponent, selectors: [["nz-dropdown-context"]], exportAs: ["nzDropdownContext"], features: [ɵngcc0.ɵɵProvidersFeature([NzMenuDropdownService])], decls: 1, vars: 1, consts: [["class", "ant-dropdown ant-dropdown-placement-bottomLeft", 4, "ngIf"], [1, "ant-dropdown", "ant-dropdown-placement-bottomLeft"], [3, "ngTemplateOutlet"]], template: function NzDropdownContextComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵtemplate(0, NzDropdownContextComponent_div_0_Template, 2, 2, "div", 0);
-    } if (rf & 2) {
-        ɵngcc0.ɵɵproperty("ngIf", ctx.open);
-    } }, directives: [ɵngcc1.NgIf, ɵngcc1.NgTemplateOutlet], styles: ["\n      nz-dropdown-context {\n        display: block;\n      }\n\n      .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropdownContextComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-dropdown-context',
-                exportAs: 'nzDropdownContext',
-                animations: [slideMotion],
-                preserveWhitespaces: false,
-                template: "<div *ngIf=\"open\"\r\n  class=\"ant-dropdown ant-dropdown-placement-bottomLeft\"\r\n  [@slideMotion]=\"dropDownPosition\"\r\n  (@slideMotion.done)=\"afterAnimation()\">\r\n  <ng-template [ngTemplateOutlet]=\"templateRef\"></ng-template>\r\n</div>",
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                providers: [NzMenuDropdownService],
-                styles: ["\n      nz-dropdown-context {\n        display: block;\n      }\n\n      .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }]; }, null); })();
     return NzDropdownContextComponent;
 }());
 if (false) {
@@ -319,6 +224,26 @@ var NzDropdownMenuComponent = /** @class */ (function () {
     function () {
         this.renderer.removeChild(this.renderer.parentNode(this.elementRef.nativeElement), this.elementRef.nativeElement);
     };
+    NzDropdownMenuComponent.decorators = [
+        { type: Component, args: [{
+                    selector: "nz-dropdown-menu",
+                    template: "<ng-template>\r\n  <div *ngIf=\"open\" class=\"{{'ant-dropdown nz-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n       [ngClass]=\"nzOverlayClassName\"\r\n       [ngStyle]=\"nzOverlayStyle\"\r\n       [@slideMotion]=\"dropDownPosition\"\r\n       [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n       [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n       (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n       (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <div [class.ant-table-filter-dropdown]=\"nzTableFilter\">\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                    exportAs: "nzDropdownMenu",
+                    animations: [slideMotion],
+                    providers: [
+                        NzMenuDropdownService,
+                        {
+                            provide: NzDropdownHigherOrderServiceToken,
+                            useFactory: dropdownMenuServiceFactory,
+                            deps: [[new Self(), Injector]]
+                        }
+                    ],
+                    preserveWhitespaces: false,
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    styles: ["\n      :root .ant-dropdown.nz-dropdown {\n        top: 0;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+                }] }
+    ];
     /** @nocollapse */
     NzDropdownMenuComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -331,51 +256,6 @@ var NzDropdownMenuComponent = /** @class */ (function () {
     NzDropdownMenuComponent.propDecorators = {
         templateRef: [{ type: ViewChild, args: [TemplateRef, { static: true },] }]
     };
-NzDropdownMenuComponent.ɵfac = function NzDropdownMenuComponent_Factory(t) { return new (t || NzDropdownMenuComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(NzMenuDropdownService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzNoAnimationDirective, 9)); };
-NzDropdownMenuComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzDropdownMenuComponent, selectors: [["nz-dropdown-menu"]], viewQuery: function NzDropdownMenuComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵstaticViewQuery(TemplateRef, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.templateRef = _t.first);
-    } }, exportAs: ["nzDropdownMenu"], features: [ɵngcc0.ɵɵProvidersFeature([
-            NzMenuDropdownService,
-            {
-                provide: NzDropdownHigherOrderServiceToken,
-                useFactory: dropdownMenuServiceFactory,
-                deps: [[new Self(), Injector]]
-            }
-        ])], ngContentSelectors: _c0, decls: 1, vars: 0, consts: [[3, "class", "ngClass", "ngStyle", "nzNoAnimation", "mouseenter", "mouseleave", 4, "ngIf"], [3, "ngClass", "ngStyle", "nzNoAnimation", "mouseenter", "mouseleave"]], template: function NzDropdownMenuComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵtemplate(0, NzDropdownMenuComponent_ng_template_0_Template, 1, 1, "ng-template");
-    } }, directives: [ɵngcc1.NgIf, ɵngcc1.NgClass, ɵngcc1.NgStyle, ɵngcc2.NzNoAnimationDirective], styles: ["\n      :root .ant-dropdown.nz-dropdown {\n        top: 0;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropdownMenuComponent, [{
-        type: Component,
-        args: [{
-                selector: "nz-dropdown-menu",
-                template: "<ng-template>\r\n  <div *ngIf=\"open\" class=\"{{'ant-dropdown nz-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n       [ngClass]=\"nzOverlayClassName\"\r\n       [ngStyle]=\"nzOverlayStyle\"\r\n       [@slideMotion]=\"dropDownPosition\"\r\n       [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n       [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n       (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n       (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <div [class.ant-table-filter-dropdown]=\"nzTableFilter\">\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n</ng-template>",
-                exportAs: "nzDropdownMenu",
-                animations: [slideMotion],
-                providers: [
-                    NzMenuDropdownService,
-                    {
-                        provide: NzDropdownHigherOrderServiceToken,
-                        useFactory: dropdownMenuServiceFactory,
-                        deps: [[new Self(), Injector]]
-                    }
-                ],
-                preserveWhitespaces: false,
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                styles: ["\n      :root .ant-dropdown.nz-dropdown {\n        top: 0;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ViewContainerRef }, { type: NzMenuDropdownService }, { type: ɵngcc2.NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, { templateRef: [{
-            type: ViewChild,
-            args: [TemplateRef, { static: true }]
-        }] }); })();
     return NzDropdownMenuComponent;
 }());
 if (false) {
@@ -840,6 +720,12 @@ var NzDropDownDirective = /** @class */ (function () {
             this.updateDisabledState();
         }
     };
+    NzDropDownDirective.decorators = [
+        { type: Directive, args: [{
+                    selector: '[nz-dropdown]',
+                    exportAs: 'nzDropdown'
+                },] }
+    ];
     /** @nocollapse */
     NzDropDownDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -884,45 +770,6 @@ var NzDropDownDirective = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzDropDownDirective.prototype, "nzTableFilter", void 0);
-NzDropDownDirective.ɵfac = function NzDropDownDirective_Factory(t) { return new (t || NzDropDownDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.Overlay), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc5.NzButtonComponent, 9), ɵngcc0.ɵɵdirectiveInject(ɵngcc5.NzButtonGroupComponent, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef)); };
-NzDropDownDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzDropDownDirective, selectors: [["", "nz-dropdown", ""]], inputs: { nzTrigger: "nzTrigger", nzBackdrop: "nzBackdrop", nzClickHide: "nzClickHide", nzDisabled: "nzDisabled", nzVisible: "nzVisible", nzTableFilter: "nzTableFilter", nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzPlacement: "nzPlacement", nzDropdownMenu: "nzDropdownMenu", nzMatchWidthElement: "nzMatchWidthElement" }, outputs: { nzVisibleChange: "nzVisibleChange" }, exportAs: ["nzDropdown"], features: [ɵngcc0.ɵɵNgOnChangesFeature] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropDownDirective, [{
-        type: Directive,
-        args: [{
-                selector: '[nz-dropdown]',
-                exportAs: 'nzDropdown'
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc3.Overlay }, { type: ɵngcc4.Platform }, { type: ɵngcc5.NzButtonComponent, decorators: [{
-                type: Optional
-            }, {
-                type: Host
-            }] }, { type: ɵngcc5.NzButtonGroupComponent, decorators: [{
-                type: Optional
-            }] }, { type: ɵngcc0.ViewContainerRef }]; }, { nzTrigger: [{
-            type: Input
-        }], nzBackdrop: [{
-            type: Input
-        }], nzClickHide: [{
-            type: Input
-        }], nzDisabled: [{
-            type: Input
-        }], nzVisible: [{
-            type: Input
-        }], nzTableFilter: [{
-            type: Input
-        }], nzOverlayClassName: [{
-            type: Input
-        }], nzOverlayStyle: [{
-            type: Input
-        }], nzPlacement: [{
-            type: Input
-        }], nzVisibleChange: [{
-            type: Output
-        }], nzDropdownMenu: [{
-            type: Input
-        }], nzMatchWidthElement: [{
-            type: Input
-        }] }); })();
     return NzDropDownDirective;
 }());
 if (false) {
@@ -1180,6 +1027,26 @@ var NzDropDownComponent = /** @class */ (function () {
             this.positions = __spread([POSITION_MAP[this.nzPlacement]], this.positions);
         }
     };
+    NzDropDownComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-dropdown',
+                    exportAs: 'nzDropdown',
+                    preserveWhitespaces: false,
+                    providers: [
+                        NzMenuDropdownService,
+                        {
+                            provide: NzDropdownHigherOrderServiceToken,
+                            useFactory: menuServiceFactory,
+                            deps: [[new Self(), Injector]]
+                        }
+                    ],
+                    animations: [slideMotion],
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    template: "<ng-content select=\"[nz-dropdown]\"></ng-content>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayHasBackdrop]=\"nzTrigger === 'click'\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  [cdkConnectedOverlayOrigin]=\"nzDropDownDirective\"\r\n  [cdkConnectedOverlayMinWidth]=\"triggerWidth\"\r\n  [cdkConnectedOverlayOpen]=\"nzVisible\"\r\n  (backdropClick)=\"setVisibleStateWhen(false)\"\r\n  (detach)=\"setVisibleStateWhen(false)\"\r\n  (positionChange)=\"onPositionChange($event)\">\r\n  <div class=\"{{'ant-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n    [ngClass]=\"nzOverlayClassName\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [style.minWidth.px]=\"triggerWidth\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <div [class.ant-table-filter-dropdown]=\"nzTableFilter\">\r\n      <ng-content select=\"[nz-menu]\"></ng-content>\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n</ng-template>",
+                    styles: ["\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+                }] }
+    ];
     /** @nocollapse */
     NzDropDownComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -1214,74 +1081,6 @@ var NzDropDownComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzDropDownComponent.prototype, "nzTableFilter", void 0);
-NzDropDownComponent.ɵfac = function NzDropDownComponent_Factory(t) { return new (t || NzDropDownComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(NzMenuDropdownService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzNoAnimationDirective, 9)); };
-NzDropDownComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzDropDownComponent, selectors: [["nz-dropdown"]], contentQueries: function NzDropDownComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵngcc0.ɵɵcontentQuery(dirIndex, NzDropDownDirective, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzDropDownDirective = _t.first);
-    } }, inputs: { nzTrigger: "nzTrigger", nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzPlacement: "nzPlacement", nzClickHide: "nzClickHide", nzDisabled: "nzDisabled", nzVisible: "nzVisible", nzTableFilter: "nzTableFilter" }, outputs: { nzVisibleChange: "nzVisibleChange" }, exportAs: ["nzDropdown"], features: [ɵngcc0.ɵɵProvidersFeature([
-            NzMenuDropdownService,
-            {
-                provide: NzDropdownHigherOrderServiceToken,
-                useFactory: menuServiceFactory,
-                deps: [[new Self(), Injector]]
-            }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2, decls: 2, vars: 5, consts: [["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], [3, "ngClass", "ngStyle", "nzNoAnimation", "mouseenter", "mouseleave"]], template: function NzDropDownComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef(_c1);
-        ɵngcc0.ɵɵprojection(0);
-        ɵngcc0.ɵɵtemplate(1, NzDropDownComponent_ng_template_1_Template, 4, 12, "ng-template", 0);
-        ɵngcc0.ɵɵlistener("backdropClick", function NzDropDownComponent_Template_ng_template_backdropClick_1_listener() { return ctx.setVisibleStateWhen(false); })("detach", function NzDropDownComponent_Template_ng_template_detach_1_listener() { return ctx.setVisibleStateWhen(false); })("positionChange", function NzDropDownComponent_Template_ng_template_positionChange_1_listener($event) { return ctx.onPositionChange($event); });
-    } if (rf & 2) {
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("cdkConnectedOverlayHasBackdrop", ctx.nzTrigger === "click")("cdkConnectedOverlayPositions", ctx.positions)("cdkConnectedOverlayOrigin", ctx.nzDropDownDirective)("cdkConnectedOverlayMinWidth", ctx.triggerWidth)("cdkConnectedOverlayOpen", ctx.nzVisible);
-    } }, directives: [ɵngcc3.CdkConnectedOverlay, ɵngcc2.NzConnectedOverlayDirective, ɵngcc1.NgClass, ɵngcc1.NgStyle, ɵngcc2.NzNoAnimationDirective], styles: ["\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropDownComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-dropdown',
-                exportAs: 'nzDropdown',
-                preserveWhitespaces: false,
-                providers: [
-                    NzMenuDropdownService,
-                    {
-                        provide: NzDropdownHigherOrderServiceToken,
-                        useFactory: menuServiceFactory,
-                        deps: [[new Self(), Injector]]
-                    }
-                ],
-                animations: [slideMotion],
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                template: "<ng-content select=\"[nz-dropdown]\"></ng-content>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayHasBackdrop]=\"nzTrigger === 'click'\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  [cdkConnectedOverlayOrigin]=\"nzDropDownDirective\"\r\n  [cdkConnectedOverlayMinWidth]=\"triggerWidth\"\r\n  [cdkConnectedOverlayOpen]=\"nzVisible\"\r\n  (backdropClick)=\"setVisibleStateWhen(false)\"\r\n  (detach)=\"setVisibleStateWhen(false)\"\r\n  (positionChange)=\"onPositionChange($event)\">\r\n  <div class=\"{{'ant-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n    [ngClass]=\"nzOverlayClassName\"\r\n    [ngStyle]=\"nzOverlayStyle\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [style.minWidth.px]=\"triggerWidth\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <div [class.ant-table-filter-dropdown]=\"nzTableFilter\">\r\n      <ng-content select=\"[nz-menu]\"></ng-content>\r\n      <ng-content></ng-content>\r\n    </div>\r\n  </div>\r\n</ng-template>",
-                styles: ["\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: NzMenuDropdownService }, { type: ɵngcc2.NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, { nzTrigger: [{
-            type: Input
-        }], nzOverlayClassName: [{
-            type: Input
-        }], nzOverlayStyle: [{
-            type: Input
-        }], nzPlacement: [{
-            type: Input
-        }], nzClickHide: [{
-            type: Input
-        }], nzDisabled: [{
-            type: Input
-        }], nzVisible: [{
-            type: Input
-        }], nzTableFilter: [{
-            type: Input
-        }], nzVisibleChange: [{
-            type: Output
-        }], nzDropDownDirective: [{
-            type: ContentChild,
-            args: [NzDropDownDirective, { static: false }]
-        }] }); })();
     return NzDropDownComponent;
 }());
 if (false) {
@@ -1339,11 +1138,9 @@ if (false) {
 var NzDropdownServiceModule = /** @class */ (function () {
     function NzDropdownServiceModule() {
     }
-NzDropdownServiceModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzDropdownServiceModule });
-NzDropdownServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzDropdownServiceModule_Factory(t) { return new (t || NzDropdownServiceModule)(); } });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropdownServiceModule, [{
-        type: NgModule
-    }], function () { return []; }, null); })();
+    NzDropdownServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzDropdownServiceModule;
 }());
 
@@ -1416,19 +1213,16 @@ var NzDropdownService = /** @class */ (function () {
             this.overlayRef = null;
         }
     };
+    NzDropdownService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzDropdownServiceModule
+                },] }
+    ];
     /** @nocollapse */
     NzDropdownService.ctorParameters = function () { return [
         { type: Overlay }
     ]; };
     /** @nocollapse */ NzDropdownService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzDropdownService_Factory() { return new NzDropdownService(ɵɵinject(Overlay)); }, token: NzDropdownService, providedIn: NzDropdownServiceModule });
-NzDropdownService.ɵfac = function NzDropdownService_Factory(t) { return new (t || NzDropdownService)(ɵngcc0.ɵɵinject(ɵngcc3.Overlay)); };
-NzDropdownService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzDropdownService, factory: function (t) { return NzDropdownService.ɵfac(t); }, providedIn: NzDropdownServiceModule });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropdownService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzDropdownServiceModule
-            }]
-    }], function () { return [{ type: ɵngcc3.Overlay }]; }, null); })();
     return NzDropdownService;
 }());
 if (false) {
@@ -1473,6 +1267,26 @@ var NzDropDownButtonComponent = /** @class */ (function (_super) {
     function () {
         this.startSubscribe(this.visible$);
     };
+    NzDropDownButtonComponent.decorators = [
+        { type: Component, args: [{
+                    selector: 'nz-dropdown-button',
+                    exportAs: 'nzDropdownButton',
+                    preserveWhitespaces: false,
+                    animations: [slideMotion],
+                    encapsulation: ViewEncapsulation.None,
+                    changeDetection: ChangeDetectionStrategy.OnPush,
+                    providers: [
+                        NzMenuDropdownService,
+                        {
+                            provide: NzDropdownHigherOrderServiceToken,
+                            useFactory: ɵ0,
+                            deps: [[new Self(), Injector]]
+                        }
+                    ],
+                    template: "<div class=\"ant-btn-group ant-dropdown-button\" nz-dropdown>\r\n  <button nz-button\r\n    type=\"button\"\r\n    [disabled]=\"nzDisabled\"\r\n    [nzType]=\"nzType\"\r\n    [nzSize]=\"nzSize\"\r\n    (click)=\"nzClick.emit($event)\">\r\n    <span><ng-content></ng-content></span>\r\n  </button>\r\n  <button nz-button\r\n    type=\"button\"\r\n    class=\"ant-dropdown-trigger\"\r\n    [nzType]=\"nzType\"\r\n    [nzSize]=\"nzSize\"\r\n    [disabled]=\"nzDisabled\"\r\n    (click)=\"setVisibleStateWhen(true,'click')\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzIcon\"><i nz-icon [nzType]=\"nzIcon\"></i></ng-container>\r\n  </button>\r\n</div>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayHasBackdrop]=\"nzTrigger === 'click'\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  [cdkConnectedOverlayOrigin]=\"nzDropDownDirective\"\r\n  (backdropClick)=\"setVisibleStateWhen(false)\"\r\n  (detach)=\"setVisibleStateWhen(false)\"\r\n  [cdkConnectedOverlayMinWidth]=\"triggerWidth\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayOpen]=\"nzVisible\">\r\n  <div class=\"{{'ant-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\"\r\n    [style.minWidth.px]=\"triggerWidth\">\r\n    <ng-content select=\"[nz-menu]\"></ng-content>\r\n  </div>\r\n</ng-template>",
+                    styles: ["\n      nz-dropdown-button {\n        position: relative;\n        display: inline-block;\n      }\n\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+                }] }
+    ];
     /** @nocollapse */
     NzDropDownButtonComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -1486,81 +1300,6 @@ var NzDropDownButtonComponent = /** @class */ (function (_super) {
         nzClick: [{ type: Output }],
         nzDropDownDirective: [{ type: ViewChild, args: [NzDropDownDirective, { static: true },] }]
     };
-NzDropDownButtonComponent.ɵfac = function NzDropDownButtonComponent_Factory(t) { return new (t || NzDropDownButtonComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(NzMenuDropdownService), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzNoAnimationDirective, 9)); };
-NzDropDownButtonComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzDropDownButtonComponent, selectors: [["nz-dropdown-button"]], viewQuery: function NzDropDownButtonComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵstaticViewQuery(NzDropDownDirective, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzDropDownDirective = _t.first);
-    } }, inputs: { nzSize: "nzSize", nzType: "nzType", nzIcon: "nzIcon" }, outputs: { nzClick: "nzClick" }, exportAs: ["nzDropdownButton"], features: [ɵngcc0.ɵɵProvidersFeature([
-            NzMenuDropdownService,
-            {
-                provide: NzDropdownHigherOrderServiceToken,
-                useFactory: ɵ0,
-                deps: [[new Self(), Injector]]
-            }
-        ]), ɵngcc0.ɵɵInheritDefinitionFeature], ngContentSelectors: _c4, decls: 7, vars: 12, consts: [["nz-dropdown", "", 1, "ant-btn-group", "ant-dropdown-button"], ["nz-button", "", "type", "button", 3, "disabled", "nzType", "nzSize", "click"], ["nz-button", "", "type", "button", 1, "ant-dropdown-trigger", 3, "nzType", "nzSize", "disabled", "click", "mouseenter", "mouseleave"], [4, "nzStringTemplateOutlet"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", 3, "cdkConnectedOverlayHasBackdrop", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayMinWidth", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], ["nz-icon", "", 3, "nzType"], [3, "nzNoAnimation", "mouseenter", "mouseleave"]], template: function NzDropDownButtonComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef(_c3);
-        ɵngcc0.ɵɵelementStart(0, "div", 0);
-        ɵngcc0.ɵɵelementStart(1, "button", 1);
-        ɵngcc0.ɵɵlistener("click", function NzDropDownButtonComponent_Template_button_click_1_listener($event) { return ctx.nzClick.emit($event); });
-        ɵngcc0.ɵɵelementStart(2, "span");
-        ɵngcc0.ɵɵprojection(3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(4, "button", 2);
-        ɵngcc0.ɵɵlistener("click", function NzDropDownButtonComponent_Template_button_click_4_listener() { return ctx.setVisibleStateWhen(true, "click"); })("mouseenter", function NzDropDownButtonComponent_Template_button_mouseenter_4_listener() { return ctx.setVisibleStateWhen(true, "hover"); })("mouseleave", function NzDropDownButtonComponent_Template_button_mouseleave_4_listener() { return ctx.setVisibleStateWhen(false, "hover"); });
-        ɵngcc0.ɵɵtemplate(5, NzDropDownButtonComponent_ng_container_5_Template, 2, 1, "ng-container", 3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵtemplate(6, NzDropDownButtonComponent_ng_template_6_Template, 2, 8, "ng-template", 4);
-        ɵngcc0.ɵɵlistener("backdropClick", function NzDropDownButtonComponent_Template_ng_template_backdropClick_6_listener() { return ctx.setVisibleStateWhen(false); })("detach", function NzDropDownButtonComponent_Template_ng_template_detach_6_listener() { return ctx.setVisibleStateWhen(false); })("positionChange", function NzDropDownButtonComponent_Template_ng_template_positionChange_6_listener($event) { return ctx.onPositionChange($event); });
-    } if (rf & 2) {
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled)("nzType", ctx.nzType)("nzSize", ctx.nzSize);
-        ɵngcc0.ɵɵadvance(3);
-        ɵngcc0.ɵɵproperty("nzType", ctx.nzType)("nzSize", ctx.nzSize)("disabled", ctx.nzDisabled);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzIcon);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("cdkConnectedOverlayHasBackdrop", ctx.nzTrigger === "click")("cdkConnectedOverlayPositions", ctx.positions)("cdkConnectedOverlayOrigin", ctx.nzDropDownDirective)("cdkConnectedOverlayMinWidth", ctx.triggerWidth)("cdkConnectedOverlayOpen", ctx.nzVisible);
-    } }, directives: [NzDropDownDirective, ɵngcc5.NzButtonComponent, ɵngcc2.NzStringTemplateOutletDirective, ɵngcc3.CdkConnectedOverlay, ɵngcc2.NzConnectedOverlayDirective, ɵngcc6.NzIconDirective, ɵngcc2.NzNoAnimationDirective], styles: ["\n      nz-dropdown-button {\n        position: relative;\n        display: inline-block;\n      }\n\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropDownButtonComponent, [{
-        type: Component,
-        args: [{
-                selector: 'nz-dropdown-button',
-                exportAs: 'nzDropdownButton',
-                preserveWhitespaces: false,
-                animations: [slideMotion],
-                encapsulation: ViewEncapsulation.None,
-                changeDetection: ChangeDetectionStrategy.OnPush,
-                providers: [
-                    NzMenuDropdownService,
-                    {
-                        provide: NzDropdownHigherOrderServiceToken,
-                        useFactory: ɵ0,
-                        deps: [[new Self(), Injector]]
-                    }
-                ],
-                template: "<div class=\"ant-btn-group ant-dropdown-button\" nz-dropdown>\r\n  <button nz-button\r\n    type=\"button\"\r\n    [disabled]=\"nzDisabled\"\r\n    [nzType]=\"nzType\"\r\n    [nzSize]=\"nzSize\"\r\n    (click)=\"nzClick.emit($event)\">\r\n    <span><ng-content></ng-content></span>\r\n  </button>\r\n  <button nz-button\r\n    type=\"button\"\r\n    class=\"ant-dropdown-trigger\"\r\n    [nzType]=\"nzType\"\r\n    [nzSize]=\"nzSize\"\r\n    [disabled]=\"nzDisabled\"\r\n    (click)=\"setVisibleStateWhen(true,'click')\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\">\r\n    <ng-container *nzStringTemplateOutlet=\"nzIcon\"><i nz-icon [nzType]=\"nzIcon\"></i></ng-container>\r\n  </button>\r\n</div>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  [cdkConnectedOverlayHasBackdrop]=\"nzTrigger === 'click'\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  [cdkConnectedOverlayOrigin]=\"nzDropDownDirective\"\r\n  (backdropClick)=\"setVisibleStateWhen(false)\"\r\n  (detach)=\"setVisibleStateWhen(false)\"\r\n  [cdkConnectedOverlayMinWidth]=\"triggerWidth\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayOpen]=\"nzVisible\">\r\n  <div class=\"{{'ant-dropdown ant-dropdown-placement-'+nzPlacement}}\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    (mouseenter)=\"setVisibleStateWhen(true,'hover')\"\r\n    (mouseleave)=\"setVisibleStateWhen(false,'hover')\"\r\n    [style.minWidth.px]=\"triggerWidth\">\r\n    <ng-content select=\"[nz-menu]\"></ng-content>\r\n  </div>\r\n</ng-template>",
-                styles: ["\n      nz-dropdown-button {\n        position: relative;\n        display: inline-block;\n      }\n\n      :root .ant-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: NzMenuDropdownService }, { type: ɵngcc2.NzNoAnimationDirective, decorators: [{
-                type: Host
-            }, {
-                type: Optional
-            }] }]; }, { nzSize: [{
-            type: Input
-        }], nzType: [{
-            type: Input
-        }], nzIcon: [{
-            type: Input
-        }], nzClick: [{
-            type: Output
-        }], nzDropDownDirective: [{
-            type: ViewChild,
-            args: [NzDropDownDirective, { static: true }]
-        }] }); })();
     return NzDropDownButtonComponent;
 }(NzDropDownComponent));
 if (false) {
@@ -1585,11 +1324,9 @@ if (false) {
 var NzContextMenuServiceModule = /** @class */ (function () {
     function NzContextMenuServiceModule() {
     }
-NzContextMenuServiceModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzContextMenuServiceModule });
-NzContextMenuServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzContextMenuServiceModule_Factory(t) { return new (t || NzContextMenuServiceModule)(); } });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzContextMenuServiceModule, [{
-        type: NgModule
-    }], function () { return []; }, null); })();
+    NzContextMenuServiceModule.decorators = [
+        { type: NgModule }
+    ];
     return NzContextMenuServiceModule;
 }());
 
@@ -1603,20 +1340,17 @@ var NzDropDownADirective = /** @class */ (function () {
         this.renderer = renderer;
         this.renderer.addClass(this.elementRef.nativeElement, 'ant-dropdown-link');
     }
+    NzDropDownADirective.decorators = [
+        { type: Directive, args: [{
+                    selector: 'a[nz-dropdown]',
+                    exportAs: 'nzDropdown'
+                },] }
+    ];
     /** @nocollapse */
     NzDropDownADirective.ctorParameters = function () { return [
         { type: ElementRef },
         { type: Renderer2 }
     ]; };
-NzDropDownADirective.ɵfac = function NzDropDownADirective_Factory(t) { return new (t || NzDropDownADirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
-NzDropDownADirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzDropDownADirective, selectors: [["a", "nz-dropdown", ""]], exportAs: ["nzDropdown"] });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropDownADirective, [{
-        type: Directive,
-        args: [{
-                selector: 'a[nz-dropdown]',
-                exportAs: 'nzDropdown'
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
     return NzDropDownADirective;
 }());
 if (false) {
@@ -1639,80 +1373,41 @@ if (false) {
 var NzDropDownModule = /** @class */ (function () {
     function NzDropDownModule() {
     }
-NzDropDownModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzDropDownModule });
-NzDropDownModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzDropDownModule_Factory(t) { return new (t || NzDropDownModule)(); }, imports: [[
-            CommonModule,
-            OverlayModule,
-            FormsModule,
-            NzButtonModule,
-            NzMenuModule,
-            NzIconModule,
-            PlatformModule,
-            NzNoAnimationModule,
-            NzOverlayModule,
-            NzDropdownServiceModule,
-            NzContextMenuServiceModule,
-            NzAddOnModule
-        ],
-        NzMenuModule] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzDropDownModule, { declarations: function () { return [NzDropDownComponent,
-        NzDropDownButtonComponent,
-        NzDropDownDirective,
-        NzDropDownADirective,
-        NzDropdownContextComponent,
-        NzDropdownMenuComponent]; }, imports: function () { return [CommonModule,
-        OverlayModule,
-        FormsModule,
-        NzButtonModule,
-        NzMenuModule,
-        NzIconModule,
-        PlatformModule,
-        NzNoAnimationModule,
-        NzOverlayModule,
-        NzDropdownServiceModule,
-        NzContextMenuServiceModule,
-        NzAddOnModule]; }, exports: function () { return [NzMenuModule,
-        NzDropDownComponent,
-        NzDropDownButtonComponent,
-        NzDropDownDirective,
-        NzDropDownADirective,
-        NzDropdownMenuComponent]; } }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzDropDownModule, [{
-        type: NgModule,
-        args: [{
-                imports: [
-                    CommonModule,
-                    OverlayModule,
-                    FormsModule,
-                    NzButtonModule,
-                    NzMenuModule,
-                    NzIconModule,
-                    PlatformModule,
-                    NzNoAnimationModule,
-                    NzOverlayModule,
-                    NzDropdownServiceModule,
-                    NzContextMenuServiceModule,
-                    NzAddOnModule
-                ],
-                entryComponents: [NzDropdownContextComponent, NzDropdownMenuComponent],
-                declarations: [
-                    NzDropDownComponent,
-                    NzDropDownButtonComponent,
-                    NzDropDownDirective,
-                    NzDropDownADirective,
-                    NzDropdownContextComponent,
-                    NzDropdownMenuComponent
-                ],
-                exports: [
-                    NzMenuModule,
-                    NzDropDownComponent,
-                    NzDropDownButtonComponent,
-                    NzDropDownDirective,
-                    NzDropDownADirective,
-                    NzDropdownMenuComponent
-                ]
-            }]
-    }], function () { return []; }, null); })();
+    NzDropDownModule.decorators = [
+        { type: NgModule, args: [{
+                    imports: [
+                        CommonModule,
+                        OverlayModule,
+                        FormsModule,
+                        NzButtonModule,
+                        NzMenuModule,
+                        NzIconModule,
+                        PlatformModule,
+                        NzNoAnimationModule,
+                        NzOverlayModule,
+                        NzDropdownServiceModule,
+                        NzContextMenuServiceModule,
+                        NzAddOnModule
+                    ],
+                    entryComponents: [NzDropdownContextComponent, NzDropdownMenuComponent],
+                    declarations: [
+                        NzDropDownComponent,
+                        NzDropDownButtonComponent,
+                        NzDropDownDirective,
+                        NzDropDownADirective,
+                        NzDropdownContextComponent,
+                        NzDropdownMenuComponent
+                    ],
+                    exports: [
+                        NzMenuModule,
+                        NzDropDownComponent,
+                        NzDropDownButtonComponent,
+                        NzDropDownDirective,
+                        NzDropDownADirective,
+                        NzDropdownMenuComponent
+                    ]
+                },] }
+    ];
     return NzDropDownModule;
 }());
 
@@ -1928,19 +1623,16 @@ var NzContextMenuService = /** @class */ (function () {
     function (overlayRef, $event) {
         overlayRef.updatePositionStrategy(this.generatePositionStrategy($event));
     };
+    NzContextMenuService.decorators = [
+        { type: Injectable, args: [{
+                    providedIn: NzContextMenuServiceModule
+                },] }
+    ];
     /** @nocollapse */
     NzContextMenuService.ctorParameters = function () { return [
         { type: Overlay }
     ]; };
     /** @nocollapse */ NzContextMenuService.ngInjectableDef = ɵɵdefineInjectable({ factory: function NzContextMenuService_Factory() { return new NzContextMenuService(ɵɵinject(Overlay)); }, token: NzContextMenuService, providedIn: NzContextMenuServiceModule });
-NzContextMenuService.ɵfac = function NzContextMenuService_Factory(t) { return new (t || NzContextMenuService)(ɵngcc0.ɵɵinject(ɵngcc3.Overlay)); };
-NzContextMenuService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzContextMenuService, factory: function (t) { return NzContextMenuService.ɵfac(t); }, providedIn: NzContextMenuServiceModule });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzContextMenuService, [{
-        type: Injectable,
-        args: [{
-                providedIn: NzContextMenuServiceModule
-            }]
-    }], function () { return [{ type: ɵngcc3.Overlay }]; }, null); })();
     return NzContextMenuService;
 }());
 if (false) {
@@ -1987,6 +1679,4 @@ if (false) {
  */
 
 export { NzContextMenuService, NzContextMenuServiceModule, NzDropDownADirective, NzDropDownButtonComponent, NzDropDownComponent, NzDropDownDirective, NzDropDownModule, NzDropdownContextComponent, NzDropdownMenuComponent, NzDropdownService, NzDropdownServiceModule, NzMenuDropdownService, dropdownMenuServiceFactory, menuServiceFactory };
-
-
 //# sourceMappingURL=ng-zorro-antd-dropdown.js.map

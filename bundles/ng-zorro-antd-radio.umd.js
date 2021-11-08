@@ -1,13 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/cdk/a11y'),require('@angular/common'),require('@angular/forms'),exports, require('@angular/core'), require('@angular/cdk/a11y'), require('@angular/forms'), require('rxjs'), require('ng-zorro-antd/core'), require('rxjs/operators'), require('@angular/common')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/radio', ['@angular/core','@angular/cdk/a11y','@angular/common','@angular/forms','exports', '@angular/core', '@angular/cdk/a11y', '@angular/forms', 'rxjs', 'ng-zorro-antd/core', 'rxjs/operators', '@angular/common'], factory) :
-    (global = global || self, factory(global.ng.core,global.ng.cdk.a11y,global.ng.common,global.ng.forms,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].radio = {}), global.ng.core, global.ng.cdk.a11y, global.ng.forms, global.rxjs, global['ng-zorro-antd'].core, global.rxjs.operators, global.ng.common));
-}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,exports, core, a11y, forms, rxjs, core$1, operators, common) { 
-var _c0 = ["inputElement"];
-var _c1 = ["nz-radio", ""];
-var _c2 = ["*"];
-var _c3 = ["nz-radio-button", ""];
-'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('@angular/cdk/a11y'), require('@angular/forms'), require('rxjs'), require('ng-zorro-antd/core'), require('rxjs/operators'), require('@angular/common')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/radio', ['exports', '@angular/core', '@angular/cdk/a11y', '@angular/forms', 'rxjs', 'ng-zorro-antd/core', 'rxjs/operators', '@angular/common'], factory) :
+    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].radio = {}), global.ng.core, global.ng.cdk.a11y, global.ng.forms, global.rxjs, global['ng-zorro-antd'].core, global.rxjs.operators, global.ng.common));
+}(this, (function (exports, core, a11y, forms, rxjs, core$1, operators, common) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -390,6 +385,31 @@ var _c3 = ["nz-radio-button", ""];
         function () {
             this.focusMonitor.stopMonitoring(this.elementRef);
         };
+        NzRadioComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: '[nz-radio]',
+                        exportAs: 'nzRadio',
+                        preserveWhitespaces: false,
+                        template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    [attr.tabindex]=\"nzTabIndex\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzRadioComponent; })),
+                                multi: true
+                            }
+                        ],
+                        host: {
+                            '[class.ant-radio-wrapper-checked]': 'checked',
+                            '[class.ant-radio-wrapper-disabled]': 'nzDisabled',
+                            '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
+                        }
+                    }] }
+        ];
         /** @nocollapse */
         NzRadioComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -414,80 +434,6 @@ var _c3 = ["nz-radio-button", ""];
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzRadioComponent.prototype, "nzAutoFocus", void 0);
-NzRadioComponent.ɵfac = function NzRadioComponent_Factory(t) { return new (t || NzRadioComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusMonitor)); };
-NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, selectors: [["", "nz-radio", ""]], viewQuery: function NzRadioComponent_Query(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵviewQuery(_c0, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.inputElement = _t.first);
-    } }, hostVars: 6, hostBindings: function NzRadioComponent_HostBindings(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵlistener("click", function NzRadioComponent_click_HostBindingHandler($event) { return ctx.onClick($event); });
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-radio-wrapper-checked", ctx.checked)("ant-radio-wrapper-disabled", ctx.nzDisabled)("ant-radio-wrapper-labelledBy", ctx.nzLabelledById);
-    } }, inputs: { nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzLabelledById: "nzLabelledById", nzTabIndex: "nzTabIndex", nzValue: "nzValue" }, exportAs: ["nzRadio"], features: [ɵngcc0.ɵɵProvidersFeature([
-            {
-                provide: forms.NG_VALUE_ACCESSOR,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzRadioComponent; })),
-                multi: true
-            }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c1, ngContentSelectors: _c2, decls: 6, vars: 10, consts: [[1, "ant-radio"], ["type", "radio", 1, "ant-radio-input", 3, "disabled", "checked"], ["inputElement", ""], [1, "ant-radio-inner"]], template: function NzRadioComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵelementStart(0, "span", 0);
-        ɵngcc0.ɵɵelement(1, "input", 1, 2);
-        ɵngcc0.ɵɵelement(3, "span", 3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(4, "span");
-        ɵngcc0.ɵɵprojection(5);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-radio-checked", ctx.checked)("ant-radio-disabled", ctx.nzDisabled);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled)("checked", ctx.checked);
-        ɵngcc0.ɵɵattribute("name", ctx.name)("aria-checked", ctx.checked)("aria-labelledby", ctx.nzLabelledById)("tabindex", ctx.nzTabIndex);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzRadioComponent, [{
-        type: core.Component,
-        args: [{
-                selector: '[nz-radio]',
-                exportAs: 'nzRadio',
-                preserveWhitespaces: false,
-                template: "<span class=\"ant-radio\" [class.ant-radio-checked]=\"checked\" [class.ant-radio-disabled]=\"nzDisabled\">\r\n  <input #inputElement type=\"radio\" class=\"ant-radio-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\"\r\n    [attr.tabindex]=\"nzTabIndex\">\r\n  <span class=\"ant-radio-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                providers: [
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzRadioComponent; })),
-                        multi: true
-                    }
-                ],
-                host: {
-                    '[class.ant-radio-wrapper-checked]': 'checked',
-                    '[class.ant-radio-wrapper-disabled]': 'nzDisabled',
-                    '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
-                }
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.FocusMonitor }]; }, { nzDisabled: [{
-            type: core.Input
-        }], nzAutoFocus: [{
-            type: core.Input
-        }], nzLabelledById: [{
-            type: core.Input
-        }], nzTabIndex: [{
-            type: core.Input
-        }], onClick: [{
-            type: core.HostListener,
-            args: ['click', ['$event']]
-        }], inputElement: [{
-            type: core.ViewChild,
-            args: ['inputElement', { static: false }]
-        }], nzValue: [{
-            type: core.Input
-        }] }); })();
         return NzRadioComponent;
     }());
     if (false) {
@@ -552,6 +498,38 @@ NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, s
             renderer.addClass(elementRef.nativeElement, 'ant-radio-button-wrapper');
             return _this;
         }
+        NzRadioButtonComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: '[nz-radio-button]',
+                        exportAs: 'nzRadioButton',
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzRadioComponent; })),
+                                multi: true
+                            },
+                            {
+                                provide: NzRadioComponent,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzRadioButtonComponent; }))
+                            }
+                        ],
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        preserveWhitespaces: false,
+                        template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\"\r\n  [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
+                        host: {
+                            '[class.ant-radio-button-wrapper-checked]': 'checked',
+                            '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled',
+                            '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
+                        }
+                    }] }
+        ];
         /** @nocollapse */
         NzRadioButtonComponent.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -559,69 +537,6 @@ NzRadioComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioComponent, s
             { type: core.ChangeDetectorRef },
             { type: a11y.FocusMonitor }
         ]; };
-NzRadioButtonComponent.ɵfac = function NzRadioButtonComponent_Factory(t) { return new (t || NzRadioButtonComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusMonitor)); };
-NzRadioButtonComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioButtonComponent, selectors: [["", "nz-radio-button", ""]], hostVars: 6, hostBindings: function NzRadioButtonComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-radio-button-wrapper-checked", ctx.checked)("ant-radio-button-wrapper-disabled", ctx.nzDisabled)("ant-radio-wrapper-labelledBy", ctx.nzLabelledById);
-    } }, exportAs: ["nzRadioButton"], features: [ɵngcc0.ɵɵProvidersFeature([
-            {
-                provide: forms.NG_VALUE_ACCESSOR,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzRadioComponent; })),
-                multi: true
-            },
-            {
-                provide: NzRadioComponent,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzRadioButtonComponent; }))
-            }
-        ]), ɵngcc0.ɵɵInheritDefinitionFeature], attrs: _c3, ngContentSelectors: _c2, decls: 6, vars: 9, consts: [[1, "ant-radio-button"], ["type", "radio", 1, "ant-radio-button-input", 3, "disabled", "checked"], ["inputElement", ""], [1, "ant-radio-button-inner"]], template: function NzRadioButtonComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵelementStart(0, "span", 0);
-        ɵngcc0.ɵɵelement(1, "input", 1, 2);
-        ɵngcc0.ɵɵelement(3, "span", 3);
-        ɵngcc0.ɵɵelementEnd();
-        ɵngcc0.ɵɵelementStart(4, "span");
-        ɵngcc0.ɵɵprojection(5);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-radio-button-checked", ctx.checked)("ant-radio-button-disabled", ctx.nzDisabled);
-        ɵngcc0.ɵɵadvance(1);
-        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled)("checked", ctx.checked);
-        ɵngcc0.ɵɵattribute("name", ctx.name)("aria-checked", ctx.checked)("aria-labelledby", ctx.nzLabelledById);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzRadioButtonComponent, [{
-        type: core.Component,
-        args: [{
-                selector: '[nz-radio-button]',
-                exportAs: 'nzRadioButton',
-                providers: [
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzRadioComponent; })),
-                        multi: true
-                    },
-                    {
-                        provide: NzRadioComponent,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzRadioButtonComponent; }))
-                    }
-                ],
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                preserveWhitespaces: false,
-                template: "<span class=\"ant-radio-button\" [class.ant-radio-button-checked]=\"checked\"\r\n  [class.ant-radio-button-disabled]=\"nzDisabled\">\r\n  <input type=\"radio\" #inputElement class=\"ant-radio-button-input\" [disabled]=\"nzDisabled\" [checked]=\"checked\"\r\n    [attr.name]=\"name\" [attr.aria-checked]=\"checked\" [attr.aria-labelledby]=\"nzLabelledById\">\r\n  <span class=\"ant-radio-button-inner\"></span>\r\n</span>\r\n<span>\r\n  <ng-content></ng-content>\r\n</span>",
-                host: {
-                    '[class.ant-radio-button-wrapper-checked]': 'checked',
-                    '[class.ant-radio-button-wrapper-disabled]': 'nzDisabled',
-                    '[class.ant-radio-wrapper-labelledBy]': 'nzLabelledById'
-                }
-            }]
-    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.FocusMonitor }]; }, null); })();
         return NzRadioButtonComponent;
     }(NzRadioComponent));
 
@@ -803,6 +718,31 @@ NzRadioButtonComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioButton
             this.nzDisabled = isDisabled;
             this.cdr.markForCheck();
         };
+        NzRadioGroupComponent.decorators = [
+            { type: core.Component, args: [{
+                        selector: 'nz-radio-group',
+                        exportAs: 'nzRadioGroup',
+                        preserveWhitespaces: false,
+                        template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzGroupLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
+                        encapsulation: core.ViewEncapsulation.None,
+                        changeDetection: core.ChangeDetectionStrategy.OnPush,
+                        providers: [
+                            {
+                                provide: forms.NG_VALUE_ACCESSOR,
+                                useExisting: core.forwardRef((/**
+                                 * @return {?}
+                                 */
+                                function () { return NzRadioGroupComponent; })),
+                                multi: true
+                            }
+                        ],
+                        host: {
+                            '[class.ant-radio-group-large]': "nzSize === 'large'",
+                            '[class.ant-radio-group-small]': "nzSize === 'small'",
+                            '[class.ant-radio-group-solid]': "nzButtonStyle === 'solid'"
+                        }
+                    }] }
+        ];
         /** @nocollapse */
         NzRadioGroupComponent.ctorParameters = function () { return [
             { type: core.ChangeDetectorRef },
@@ -825,71 +765,6 @@ NzRadioButtonComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioButton
             core$1.InputBoolean(),
             __metadata("design:type", Boolean)
         ], NzRadioGroupComponent.prototype, "nzDisabled", void 0);
-NzRadioGroupComponent.ɵfac = function NzRadioGroupComponent_Factory(t) { return new (t || NzRadioGroupComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef)); };
-NzRadioGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioGroupComponent, selectors: [["nz-radio-group"]], contentQueries: function NzRadioGroupComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
-        ɵngcc0.ɵɵcontentQuery(dirIndex, NzRadioComponent, true);
-    } if (rf & 2) {
-        var _t;
-        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.radios = _t);
-    } }, hostVars: 6, hostBindings: function NzRadioGroupComponent_HostBindings(rf, ctx) { if (rf & 2) {
-        ɵngcc0.ɵɵclassProp("ant-radio-group-large", ctx.nzSize === "large")("ant-radio-group-small", ctx.nzSize === "small")("ant-radio-group-solid", ctx.nzButtonStyle === "solid");
-    } }, inputs: { nzButtonStyle: "nzButtonStyle", nzSize: "nzSize", nzGroupLabelledById: "nzGroupLabelledById", nzDisabled: "nzDisabled", nzName: "nzName" }, exportAs: ["nzRadioGroup"], features: [ɵngcc0.ɵɵProvidersFeature([
-            {
-                provide: forms.NG_VALUE_ACCESSOR,
-                useExisting: core.forwardRef(( /**
-                 * @return {?}
-                 */function () { return NzRadioGroupComponent; })),
-                multi: true
-            }
-        ]), ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c2, decls: 2, vars: 1, consts: [["role", "radiogroup"]], template: function NzRadioGroupComponent_Template(rf, ctx) { if (rf & 1) {
-        ɵngcc0.ɵɵprojectionDef();
-        ɵngcc0.ɵɵelementStart(0, "div", 0);
-        ɵngcc0.ɵɵprojection(1);
-        ɵngcc0.ɵɵelementEnd();
-    } if (rf & 2) {
-        ɵngcc0.ɵɵattribute("aria-labelledby", ctx.nzGroupLabelledById);
-    } }, encapsulation: 2, changeDetection: 0 });
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzRadioGroupComponent, [{
-        type: core.Component,
-        args: [{
-                selector: 'nz-radio-group',
-                exportAs: 'nzRadioGroup',
-                preserveWhitespaces: false,
-                template: "<div role=\"radiogroup\" [attr.aria-labelledby]=\"nzGroupLabelledById\">\r\n    <ng-content></ng-content>\r\n</div>",
-                encapsulation: core.ViewEncapsulation.None,
-                changeDetection: core.ChangeDetectionStrategy.OnPush,
-                providers: [
-                    {
-                        provide: forms.NG_VALUE_ACCESSOR,
-                        useExisting: core.forwardRef(( /**
-                         * @return {?}
-                         */function () { return NzRadioGroupComponent; })),
-                        multi: true
-                    }
-                ],
-                host: {
-                    '[class.ant-radio-group-large]': "nzSize === 'large'",
-                    '[class.ant-radio-group-small]': "nzSize === 'small'",
-                    '[class.ant-radio-group-solid]': "nzButtonStyle === 'solid'"
-                }
-            }]
-    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ElementRef }]; }, { nzButtonStyle: [{
-            type: core.Input
-        }], nzSize: [{
-            type: core.Input
-        }], nzGroupLabelledById: [{
-            type: core.Input
-        }], nzDisabled: [{
-            type: core.Input
-        }], radios: [{
-            type: core.ContentChildren,
-            args: [core.forwardRef(( /**
-                             * @return {?}
-                             */function () { return NzRadioComponent; })),
-                { descendants: true }]
-        }], nzName: [{
-            type: core.Input
-        }] }); })();
         return NzRadioGroupComponent;
     }());
     if (false) {
@@ -943,21 +818,13 @@ NzRadioGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzRadioGroupCo
     var NzRadioModule = /** @class */ (function () {
         function NzRadioModule() {
         }
-NzRadioModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzRadioModule });
-NzRadioModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzRadioModule_Factory(t) { return new (t || NzRadioModule)(); }, imports: [[common.CommonModule, forms.FormsModule]] });
-(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzRadioModule, { declarations: [NzRadioComponent,
-        NzRadioButtonComponent,
-        NzRadioGroupComponent], imports: [ɵngcc2.CommonModule, ɵngcc3.FormsModule], exports: [NzRadioComponent,
-        NzRadioButtonComponent,
-        NzRadioGroupComponent] }); })();
-/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzRadioModule, [{
-        type: core.NgModule,
-        args: [{
-                imports: [common.CommonModule, forms.FormsModule],
-                exports: [NzRadioComponent, NzRadioButtonComponent, NzRadioGroupComponent],
-                declarations: [NzRadioComponent, NzRadioButtonComponent, NzRadioGroupComponent]
-            }]
-    }], function () { return []; }, null); })();
+        NzRadioModule.decorators = [
+            { type: core.NgModule, args: [{
+                        imports: [common.CommonModule, forms.FormsModule],
+                        exports: [NzRadioComponent, NzRadioButtonComponent, NzRadioGroupComponent],
+                        declarations: [NzRadioComponent, NzRadioButtonComponent, NzRadioGroupComponent]
+                    },] }
+        ];
         return NzRadioModule;
     }());
 
@@ -969,6 +836,4 @@ NzRadioModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzRadioModu
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
-
-
 //# sourceMappingURL=ng-zorro-antd-radio.umd.js.map
