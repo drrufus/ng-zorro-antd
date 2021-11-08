@@ -13,28 +13,105 @@ import { take, switchMap, filter, tap, delay, map, distinct } from 'rxjs/operato
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/common';
+import * as ɵngcc3 from '@angular/cdk/overlay';
+
+function NzAutocompleteOptgroupComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r0.nzLabel);
+} }
+var _c0 = [[["nz-auto-option"]]];
+var _c1 = ["nz-auto-option"];
+var _c2 = ["*"];
+var _c3 = ["panel"];
+var _c4 = ["content"];
+function NzAutocompleteComponent_ng_template_0_4_ng_template_0_Template(rf, ctx) { }
+function NzAutocompleteComponent_ng_template_0_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzAutocompleteComponent_ng_template_0_4_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzAutocompleteComponent_ng_template_0_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0);
+} }
+function NzAutocompleteComponent_ng_template_0_ng_template_7_nz_auto_option_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "nz-auto-option", 8);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var option_r9 = ctx.$implicit;
+    ɵngcc0.ɵɵproperty("nzValue", option_r9);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(option_r9);
+} }
+function NzAutocompleteComponent_ng_template_0_ng_template_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzAutocompleteComponent_ng_template_0_ng_template_7_nz_auto_option_0_Template, 2, 2, "nz-auto-option", 7);
+} if (rf & 2) {
+    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r6.nzDataSource);
+} }
+function NzAutocompleteComponent_ng_template_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", 0, 1);
+    ɵngcc0.ɵɵelementStart(2, "div", 2);
+    ɵngcc0.ɵɵelementStart(3, "ul", 3);
+    ɵngcc0.ɵɵtemplate(4, NzAutocompleteComponent_ng_template_0_4_Template, 1, 0, undefined, 4);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵtemplate(5, NzAutocompleteComponent_ng_template_0_ng_template_5_Template, 1, 0, "ng-template", null, 5, ɵngcc0.ɵɵtemplateRefExtractor);
+    ɵngcc0.ɵɵtemplate(7, NzAutocompleteComponent_ng_template_0_ng_template_7_Template, 1, 1, "ng-template", null, 6, ɵngcc0.ɵɵtemplateRefExtractor);
+} if (rf & 2) {
+    var _r3 = ɵngcc0.ɵɵreference(6);
+    var _r5 = ɵngcc0.ɵɵreference(8);
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassProp("ant-select-dropdown-hidden", !ctx_r0.showPanel);
+    ɵngcc0.ɵɵproperty("@.disabled", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r0.noAnimation == null ? null : ctx_r0.noAnimation.nzNoAnimation)("@slideMotion", ctx_r0.dropDownPosition)("ngClass", ctx_r0.nzOverlayClassName)("ngStyle", ctx_r0.nzOverlayStyle);
+    ɵngcc0.ɵɵadvance(4);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r0.nzDataSource ? _r5 : _r3);
+} }
 var NzAutocompleteOptgroupComponent = /** @class */ (function () {
     function NzAutocompleteOptgroupComponent() {
     }
-    NzAutocompleteOptgroupComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-auto-optgroup',
-                    exportAs: 'nzAutoOptgroup',
-                    preserveWhitespaces: false,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    template: "<div class=\"ant-select-dropdown-menu-item-group-title\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzLabel\">{{nzLabel}}</ng-container>\r\n</div>\r\n<ul class=\"ant-select-dropdown-menu-item-group-list\">\r\n  <ng-content select=\"nz-auto-option\"></ng-content>\r\n</ul>\r\n",
-                    host: {
-                        role: 'group',
-                        class: 'ant-select-dropdown-menu-item-group'
-                    }
-                }] }
-    ];
     /** @nocollapse */
     NzAutocompleteOptgroupComponent.ctorParameters = function () { return []; };
     NzAutocompleteOptgroupComponent.propDecorators = {
         nzLabel: [{ type: Input }]
     };
+NzAutocompleteOptgroupComponent.ɵfac = function NzAutocompleteOptgroupComponent_Factory(t) { return new (t || NzAutocompleteOptgroupComponent)(); };
+NzAutocompleteOptgroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzAutocompleteOptgroupComponent, selectors: [["nz-auto-optgroup"]], hostAttrs: ["role", "group", 1, "ant-select-dropdown-menu-item-group"], inputs: { nzLabel: "nzLabel" }, exportAs: ["nzAutoOptgroup"], ngContentSelectors: _c1, decls: 4, vars: 1, consts: [[1, "ant-select-dropdown-menu-item-group-title"], [4, "nzStringTemplateOutlet"], [1, "ant-select-dropdown-menu-item-group-list"]], template: function NzAutocompleteOptgroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef(_c0);
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵtemplate(1, NzAutocompleteOptgroupComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(2, "ul", 2);
+        ɵngcc0.ɵɵprojection(3);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzLabel);
+    } }, directives: [ɵngcc1.NzStringTemplateOutletDirective], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutocompleteOptgroupComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-auto-optgroup',
+                exportAs: 'nzAutoOptgroup',
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                template: "<div class=\"ant-select-dropdown-menu-item-group-title\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzLabel\">{{nzLabel}}</ng-container>\r\n</div>\r\n<ul class=\"ant-select-dropdown-menu-item-group-list\">\r\n  <ng-content select=\"nz-auto-option\"></ng-content>\r\n</ul>\r\n",
+                host: {
+                    role: 'group',
+                    class: 'ant-select-dropdown-menu-item-group'
+                }
+            }]
+    }], function () { return []; }, { nzLabel: [{
+            type: Input
+        }] }); })();
     return NzAutocompleteOptgroupComponent;
 }());
 if (false) {
@@ -180,27 +257,6 @@ var NzAutocompleteOptionComponent = /** @class */ (function () {
         if (isUserInput === void 0) { isUserInput = false; }
         this.selectionChange.emit(new NzOptionSelectionChange(this, isUserInput));
     };
-    NzAutocompleteOptionComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-auto-option',
-                    exportAs: 'nzAutoOption',
-                    preserveWhitespaces: false,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    template: "<ng-content></ng-content>",
-                    host: {
-                        role: 'menuitem',
-                        class: 'ant-select-dropdown-menu-item',
-                        '[class.ant-select-dropdown-menu-item-selected]': 'selected',
-                        '[class.ant-select-dropdown-menu-item-active]': 'active',
-                        '[class.ant-select-dropdown-menu-item-disabled]': 'nzDisabled',
-                        '[attr.aria-selected]': 'selected.toString()',
-                        '[attr.aria-disabled]': 'nzDisabled.toString()',
-                        '(click)': 'selectViaInteraction()',
-                        '(mousedown)': '$event.preventDefault()'
-                    }
-                }] }
-    ];
     /** @nocollapse */
     NzAutocompleteOptionComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -216,6 +272,46 @@ var NzAutocompleteOptionComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzAutocompleteOptionComponent.prototype, "nzDisabled", void 0);
+NzAutocompleteOptionComponent.ɵfac = function NzAutocompleteOptionComponent_Factory(t) { return new (t || NzAutocompleteOptionComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef)); };
+NzAutocompleteOptionComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzAutocompleteOptionComponent, selectors: [["nz-auto-option"]], hostAttrs: ["role", "menuitem", 1, "ant-select-dropdown-menu-item"], hostVars: 8, hostBindings: function NzAutocompleteOptionComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("click", function NzAutocompleteOptionComponent_click_HostBindingHandler() { return ctx.selectViaInteraction(); })("mousedown", function NzAutocompleteOptionComponent_mousedown_HostBindingHandler($event) { return $event.preventDefault(); });
+    } if (rf & 2) {
+        ɵngcc0.ɵɵattribute("aria-selected", ctx.selected.toString())("aria-disabled", ctx.nzDisabled.toString());
+        ɵngcc0.ɵɵclassProp("ant-select-dropdown-menu-item-selected", ctx.selected)("ant-select-dropdown-menu-item-active", ctx.active)("ant-select-dropdown-menu-item-disabled", ctx.nzDisabled);
+    } }, inputs: { nzDisabled: "nzDisabled", nzValue: "nzValue", nzLabel: "nzLabel" }, outputs: { selectionChange: "selectionChange" }, exportAs: ["nzAutoOption"], ngContentSelectors: _c2, decls: 1, vars: 0, template: function NzAutocompleteOptionComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵprojection(0);
+    } }, encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutocompleteOptionComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-auto-option',
+                exportAs: 'nzAutoOption',
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                template: "<ng-content></ng-content>",
+                host: {
+                    role: 'menuitem',
+                    class: 'ant-select-dropdown-menu-item',
+                    '[class.ant-select-dropdown-menu-item-selected]': 'selected',
+                    '[class.ant-select-dropdown-menu-item-active]': 'active',
+                    '[class.ant-select-dropdown-menu-item-disabled]': 'nzDisabled',
+                    '[attr.aria-selected]': 'selected.toString()',
+                    '[attr.aria-disabled]': 'nzDisabled.toString()',
+                    '(click)': 'selectViaInteraction()',
+                    '(mousedown)': '$event.preventDefault()'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.ElementRef }]; }, { nzDisabled: [{
+            type: Input
+        }], selectionChange: [{
+            type: Output
+        }], nzValue: [{
+            type: Input
+        }], nzLabel: [{
+            type: Input
+        }] }); })();
     return NzAutocompleteOptionComponent;
 }());
 if (false) {
@@ -528,18 +624,6 @@ var NzAutocompleteComponent = /** @class */ (function () {
             _this.selectionChange.emit(event.source);
         }));
     };
-    NzAutocompleteComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-autocomplete',
-                    exportAs: 'nzAutocomplete',
-                    preserveWhitespaces: false,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    template: "<ng-template>\r\n  <div class=\"ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft\"\r\n    #panel\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    [class.ant-select-dropdown-hidden]=\"!showPanel\"\r\n    [ngClass]=\"nzOverlayClassName\"\r\n    [ngStyle]=\"nzOverlayStyle\">\r\n    <div style=\"overflow: auto;\">\r\n      <ul class=\"ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical\"\r\n        role=\"menu\"\r\n        aria-activedescendant>\r\n        <ng-template *ngTemplateOutlet=\"nzDataSource ? optionsTemplate : contentTemplate\"></ng-template>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n  <ng-template #contentTemplate>\r\n    <ng-content></ng-content>\r\n  </ng-template>\r\n  <ng-template #optionsTemplate>\r\n    <nz-auto-option *ngFor=\"let option of nzDataSource\" [nzValue]=\"option\">{{option}}</nz-auto-option>\r\n  </ng-template>\r\n</ng-template>",
-                    animations: [slideMotion],
-                    styles: ["\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzAutocompleteComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -569,6 +653,75 @@ var NzAutocompleteComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzAutocompleteComponent.prototype, "nzBackfill", void 0);
+NzAutocompleteComponent.ɵfac = function NzAutocompleteComponent_Factory(t) { return new (t || NzAutocompleteComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzAutocompleteComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzAutocompleteComponent, selectors: [["nz-autocomplete"]], contentQueries: function NzAutocompleteComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzAutocompleteOptionComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.fromContentOptions = _t);
+    } }, viewQuery: function NzAutocompleteComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(TemplateRef, true);
+        ɵngcc0.ɵɵviewQuery(_c3, true);
+        ɵngcc0.ɵɵviewQuery(_c4, true);
+        ɵngcc0.ɵɵviewQuery(NzAutocompleteOptionComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.template = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.panel = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.content = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.fromDataSourceOptions = _t);
+    } }, inputs: { nzOverlayClassName: "nzOverlayClassName", nzOverlayStyle: "nzOverlayStyle", nzDefaultActiveFirstOption: "nzDefaultActiveFirstOption", nzBackfill: "nzBackfill", compareWith: "compareWith", nzWidth: "nzWidth", nzDataSource: "nzDataSource" }, outputs: { selectionChange: "selectionChange" }, exportAs: ["nzAutocomplete"], ngContentSelectors: _c2, decls: 1, vars: 0, consts: [[1, "ant-select-dropdown", "ant-select-dropdown--single", "ant-select-dropdown-placement-bottomLeft", 3, "nzNoAnimation", "ngClass", "ngStyle"], ["panel", ""], [2, "overflow", "auto"], ["role", "menu", "aria-activedescendant", "", 1, "ant-select-dropdown-menu", "ant-select-dropdown-menu-root", "ant-select-dropdown-menu-vertical"], [4, "ngTemplateOutlet"], ["contentTemplate", ""], ["optionsTemplate", ""], [3, "nzValue", 4, "ngFor", "ngForOf"], [3, "nzValue"]], template: function NzAutocompleteComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵtemplate(0, NzAutocompleteComponent_ng_template_0_Template, 9, 8, "ng-template");
+    } }, directives: [ɵngcc1.NzNoAnimationDirective, ɵngcc2.NgClass, ɵngcc2.NgStyle, ɵngcc2.NgTemplateOutlet, ɵngcc2.NgForOf, NzAutocompleteOptionComponent], styles: ["\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutocompleteComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-autocomplete',
+                exportAs: 'nzAutocomplete',
+                preserveWhitespaces: false,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                template: "<ng-template>\r\n  <div class=\"ant-select-dropdown ant-select-dropdown--single ant-select-dropdown-placement-bottomLeft\"\r\n    #panel\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    [class.ant-select-dropdown-hidden]=\"!showPanel\"\r\n    [ngClass]=\"nzOverlayClassName\"\r\n    [ngStyle]=\"nzOverlayStyle\">\r\n    <div style=\"overflow: auto;\">\r\n      <ul class=\"ant-select-dropdown-menu  ant-select-dropdown-menu-root ant-select-dropdown-menu-vertical\"\r\n        role=\"menu\"\r\n        aria-activedescendant>\r\n        <ng-template *ngTemplateOutlet=\"nzDataSource ? optionsTemplate : contentTemplate\"></ng-template>\r\n      </ul>\r\n    </div>\r\n  </div>\r\n  <ng-template #contentTemplate>\r\n    <ng-content></ng-content>\r\n  </ng-template>\r\n  <ng-template #optionsTemplate>\r\n    <nz-auto-option *ngFor=\"let option of nzDataSource\" [nzValue]=\"option\">{{option}}</nz-auto-option>\r\n  </ng-template>\r\n</ng-template>",
+                animations: [slideMotion],
+                styles: ["\n      .ant-select-dropdown {\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n        margin-top: 4px;\n        margin-bottom: 4px;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.NgZone }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { nzOverlayClassName: [{
+            type: Input
+        }], nzOverlayStyle: [{
+            type: Input
+        }], nzDefaultActiveFirstOption: [{
+            type: Input
+        }], nzBackfill: [{
+            type: Input
+        }], compareWith: [{
+            type: Input
+        }], selectionChange: [{
+            type: Output
+        }], nzWidth: [{
+            type: Input
+        }], nzDataSource: [{
+            type: Input
+        }], fromContentOptions: [{
+            type: ContentChildren,
+            args: [NzAutocompleteOptionComponent, { descendants: true }]
+        }], fromDataSourceOptions: [{
+            type: ViewChildren,
+            args: [NzAutocompleteOptionComponent]
+        }], template: [{
+            type: ViewChild,
+            args: [TemplateRef, { static: false }]
+        }], panel: [{
+            type: ViewChild,
+            args: ['panel', { static: false }]
+        }], content: [{
+            type: ViewChild,
+            args: ['content', { static: false }]
+        }] }); })();
     return NzAutocompleteComponent;
 }());
 if (false) {
@@ -1196,21 +1349,6 @@ var NzAutocompleteTriggerDirective = /** @class */ (function () {
         var element = this.elementRef.nativeElement;
         return !element.readOnly && !element.disabled;
     };
-    NzAutocompleteTriggerDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: "input[nzAutocomplete], textarea[nzAutocomplete]",
-                    exportAs: 'nzAutocompleteTrigger',
-                    providers: [NZ_AUTOCOMPLETE_VALUE_ACCESSOR],
-                    host: {
-                        autocomplete: 'off',
-                        'aria-autocomplete': 'list',
-                        '(focusin)': 'handleFocus()',
-                        '(blur)': 'handleBlur()',
-                        '(input)': 'handleInput($event)',
-                        '(keydown)': 'handleKeydown($event)'
-                    }
-                },] }
-    ];
     /** @nocollapse */
     NzAutocompleteTriggerDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1222,6 +1360,33 @@ var NzAutocompleteTriggerDirective = /** @class */ (function () {
     NzAutocompleteTriggerDirective.propDecorators = {
         nzAutocomplete: [{ type: Input }]
     };
+NzAutocompleteTriggerDirective.ɵfac = function NzAutocompleteTriggerDirective_Factory(t) { return new (t || NzAutocompleteTriggerDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.Overlay), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(DOCUMENT, 8)); };
+NzAutocompleteTriggerDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzAutocompleteTriggerDirective, selectors: [["input", "nzAutocomplete", ""], ["textarea", "nzAutocomplete", ""]], hostAttrs: ["autocomplete", "off", "aria-autocomplete", "list"], hostBindings: function NzAutocompleteTriggerDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("focusin", function NzAutocompleteTriggerDirective_focusin_HostBindingHandler() { return ctx.handleFocus(); })("blur", function NzAutocompleteTriggerDirective_blur_HostBindingHandler() { return ctx.handleBlur(); })("input", function NzAutocompleteTriggerDirective_input_HostBindingHandler($event) { return ctx.handleInput($event); })("keydown", function NzAutocompleteTriggerDirective_keydown_HostBindingHandler($event) { return ctx.handleKeydown($event); });
+    } }, inputs: { nzAutocomplete: "nzAutocomplete" }, exportAs: ["nzAutocompleteTrigger"], features: [ɵngcc0.ɵɵProvidersFeature([NZ_AUTOCOMPLETE_VALUE_ACCESSOR])] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutocompleteTriggerDirective, [{
+        type: Directive,
+        args: [{
+                selector: "input[nzAutocomplete], textarea[nzAutocomplete]",
+                exportAs: 'nzAutocompleteTrigger',
+                providers: [NZ_AUTOCOMPLETE_VALUE_ACCESSOR],
+                host: {
+                    autocomplete: 'off',
+                    'aria-autocomplete': 'list',
+                    '(focusin)': 'handleFocus()',
+                    '(blur)': 'handleBlur()',
+                    '(input)': 'handleInput($event)',
+                    '(keydown)': 'handleKeydown($event)'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc3.Overlay }, { type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.NgZone }, { type: undefined, decorators: [{
+                type: Optional
+            }, {
+                type: Inject,
+                args: [DOCUMENT]
+            }] }]; }, { nzAutocomplete: [{
+            type: Input
+        }] }); })();
     return NzAutocompleteTriggerDirective;
 }());
 if (false) {
@@ -1310,23 +1475,33 @@ if (false) {
 var NzAutocompleteModule = /** @class */ (function () {
     function NzAutocompleteModule() {
     }
-    NzAutocompleteModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [
-                        NzAutocompleteComponent,
-                        NzAutocompleteOptionComponent,
-                        NzAutocompleteTriggerDirective,
-                        NzAutocompleteOptgroupComponent
-                    ],
-                    exports: [
-                        NzAutocompleteComponent,
-                        NzAutocompleteOptionComponent,
-                        NzAutocompleteTriggerDirective,
-                        NzAutocompleteOptgroupComponent
-                    ],
-                    imports: [CommonModule, OverlayModule, FormsModule, NzAddOnModule, NzNoAnimationModule]
-                },] }
-    ];
+NzAutocompleteModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAutocompleteModule });
+NzAutocompleteModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAutocompleteModule_Factory(t) { return new (t || NzAutocompleteModule)(); }, imports: [[CommonModule, OverlayModule, FormsModule, NzAddOnModule, NzNoAnimationModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAutocompleteModule, { declarations: function () { return [NzAutocompleteComponent,
+        NzAutocompleteOptionComponent,
+        NzAutocompleteTriggerDirective,
+        NzAutocompleteOptgroupComponent]; }, imports: function () { return [CommonModule, OverlayModule, FormsModule, NzAddOnModule, NzNoAnimationModule]; }, exports: function () { return [NzAutocompleteComponent,
+        NzAutocompleteOptionComponent,
+        NzAutocompleteTriggerDirective,
+        NzAutocompleteOptgroupComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutocompleteModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [
+                    NzAutocompleteComponent,
+                    NzAutocompleteOptionComponent,
+                    NzAutocompleteTriggerDirective,
+                    NzAutocompleteOptgroupComponent
+                ],
+                exports: [
+                    NzAutocompleteComponent,
+                    NzAutocompleteOptionComponent,
+                    NzAutocompleteTriggerDirective,
+                    NzAutocompleteOptgroupComponent
+                ],
+                imports: [CommonModule, OverlayModule, FormsModule, NzAddOnModule, NzNoAnimationModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzAutocompleteModule;
 }());
 
@@ -1341,4 +1516,6 @@ var NzAutocompleteModule = /** @class */ (function () {
  */
 
 export { NZ_AUTOCOMPLETE_VALUE_ACCESSOR, NzAutocompleteComponent, NzAutocompleteModule, NzAutocompleteOptgroupComponent, NzAutocompleteOptionComponent, NzAutocompleteTriggerDirective, NzOptionSelectionChange, getNzAutocompleteMissingPanelError };
+
+
 //# sourceMappingURL=ng-zorro-antd-auto-complete.js.map

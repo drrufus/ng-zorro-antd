@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/common'), require('@angular/core')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/core/addon', ['exports', '@angular/common', '@angular/core'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].core = global['ng-zorro-antd'].core || {}, global['ng-zorro-antd'].core.addon = {}), global.ng.common, global.ng.core));
-}(this, (function (exports, common, core) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/common'),exports, require('@angular/common'), require('@angular/core')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/core/addon', ['@angular/core','@angular/common','exports', '@angular/common', '@angular/core'], factory) :
+    (global = global || self, factory(global.ng.core,global.ng.common,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].core = global['ng-zorro-antd'].core || {}, global['ng-zorro-antd'].core.addon = {}), global.ng.common, global.ng.core));
+}(this, (function (ɵngcc0,ɵngcc1,exports, common, core) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -237,12 +237,6 @@
             enumerable: true,
             configurable: true
         });
-        NzClassListAddDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: '[nzClassListAdd]',
-                        exportAs: 'nzClassListAdd'
-                    },] }
-        ];
         /** @nocollapse */
         NzClassListAddDirective.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -251,6 +245,17 @@
         NzClassListAddDirective.propDecorators = {
             nzClassListAdd: [{ type: core.Input }]
         };
+NzClassListAddDirective.ɵfac = function NzClassListAddDirective_Factory(t) { return new (t || NzClassListAddDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzClassListAddDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzClassListAddDirective, selectors: [["", "nzClassListAdd", ""]], inputs: { nzClassListAdd: "nzClassListAdd" }, exportAs: ["nzClassListAdd"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzClassListAddDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: '[nzClassListAdd]',
+                exportAs: 'nzClassListAdd'
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzClassListAdd: [{
+            type: core.Input
+        }] }); })();
         return NzClassListAddDirective;
     }());
     if (false) {
@@ -470,12 +475,6 @@
                 }
             }
         };
-        NzStringTemplateOutletDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: '[nzStringTemplateOutlet]',
-                        exportAs: 'nzStringTemplateOutlet'
-                    },] }
-        ];
         /** @nocollapse */
         NzStringTemplateOutletDirective.ctorParameters = function () { return [
             { type: core.ViewContainerRef },
@@ -485,6 +484,19 @@
             nzStringTemplateOutletContext: [{ type: core.Input }],
             nzStringTemplateOutlet: [{ type: core.Input }]
         };
+NzStringTemplateOutletDirective.ɵfac = function NzStringTemplateOutletDirective_Factory(t) { return new (t || NzStringTemplateOutletDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ViewContainerRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.TemplateRef)); };
+NzStringTemplateOutletDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzStringTemplateOutletDirective, selectors: [["", "nzStringTemplateOutlet", ""]], inputs: { nzStringTemplateOutletContext: "nzStringTemplateOutletContext", nzStringTemplateOutlet: "nzStringTemplateOutlet" }, exportAs: ["nzStringTemplateOutlet"], features: [ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzStringTemplateOutletDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: '[nzStringTemplateOutlet]',
+                exportAs: 'nzStringTemplateOutlet'
+            }]
+    }], function () { return [{ type: ɵngcc0.ViewContainerRef }, { type: ɵngcc0.TemplateRef }]; }, { nzStringTemplateOutletContext: [{
+            type: core.Input
+        }], nzStringTemplateOutlet: [{
+            type: core.Input
+        }] }); })();
         return NzStringTemplateOutletDirective;
     }());
     if (false) {
@@ -529,13 +541,19 @@
     var NzAddOnModule = /** @class */ (function () {
         function NzAddOnModule() {
         }
-        NzAddOnModule.decorators = [
-            { type: core.NgModule, args: [{
-                        imports: [common.CommonModule],
-                        exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
-                        declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
-                    },] }
-        ];
+NzAddOnModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAddOnModule });
+NzAddOnModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAddOnModule_Factory(t) { return new (t || NzAddOnModule)(); }, imports: [[common.CommonModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAddOnModule, { declarations: [NzStringTemplateOutletDirective,
+        NzClassListAddDirective], imports: [ɵngcc1.CommonModule], exports: [NzStringTemplateOutletDirective,
+        NzClassListAddDirective] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAddOnModule, [{
+        type: core.NgModule,
+        args: [{
+                imports: [common.CommonModule],
+                exports: [NzStringTemplateOutletDirective, NzClassListAddDirective],
+                declarations: [NzStringTemplateOutletDirective, NzClassListAddDirective]
+            }]
+    }], function () { return []; }, null); })();
         return NzAddOnModule;
     }());
 
@@ -546,4 +564,6 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+
 //# sourceMappingURL=ng-zorro-antd-core-addon.umd.js.map

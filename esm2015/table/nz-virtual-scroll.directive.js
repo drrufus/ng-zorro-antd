@@ -10,6 +10,7 @@
  * found in the LICENSE file at https://github.com/NG-ZORRO/ng-zorro-antd/blob/master/LICENSE
  */
 import { Directive, TemplateRef } from '@angular/core';
+import * as ɵngcc0 from '@angular/core';
 export class NzVirtualScrollDirective {
     /* tslint:disable-next-line:no-any */
     /**
@@ -19,18 +20,21 @@ export class NzVirtualScrollDirective {
         this.templateRef = templateRef;
     }
 }
-NzVirtualScrollDirective.decorators = [
-    { type: Directive, args: [{
-                selector: '[nz-virtual-scroll]',
-                exportAs: 'nzVirtualScroll'
-            },] }
-];
+NzVirtualScrollDirective.ɵfac = function NzVirtualScrollDirective_Factory(t) { return new (t || NzVirtualScrollDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.TemplateRef)); };
+NzVirtualScrollDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzVirtualScrollDirective, selectors: [["", "nz-virtual-scroll", ""]], exportAs: ["nzVirtualScroll"] });
 /** @nocollapse */
 NzVirtualScrollDirective.ctorParameters = () => [
     { type: TemplateRef }
 ];
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzVirtualScrollDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-virtual-scroll]',
+                exportAs: 'nzVirtualScroll'
+            }]
+    }], function () { return [{ type: ɵngcc0.TemplateRef }]; }, null); })();
 if (false) {
     /** @type {?} */
     NzVirtualScrollDirective.prototype.templateRef;
 }
-//# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdmlydHVhbC1zY3JvbGwuZGlyZWN0aXZlLmpzIiwic291cmNlUm9vdCI6Im5nOi8vbmctem9ycm8tYW50ZC90YWJsZS8iLCJzb3VyY2VzIjpbIm56LXZpcnR1YWwtc2Nyb2xsLmRpcmVjdGl2ZS50cyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiOzs7Ozs7Ozs7OztBQVFBLE9BQU8sRUFBRSxTQUFTLEVBQUUsV0FBVyxFQUFFLE1BQU0sZUFBZSxDQUFDO0FBTXZELE1BQU0sT0FBTyx3QkFBd0I7Ozs7O0lBRW5DLFlBQW1CLFdBQTJEO1FBQTNELGdCQUFXLEdBQVgsV0FBVyxDQUFnRDtJQUFHLENBQUM7OztZQU5uRixTQUFTLFNBQUM7Z0JBQ1QsUUFBUSxFQUFFLHFCQUFxQjtnQkFDL0IsUUFBUSxFQUFFLGlCQUFpQjthQUM1Qjs7OztZQUxtQixXQUFXOzs7O0lBUWpCLCtDQUFrRSIsInNvdXJjZXNDb250ZW50IjpbIi8qKlxyXG4gKiBAbGljZW5zZVxyXG4gKiBDb3B5cmlnaHQgQWxpYmFiYS5jb20gQWxsIFJpZ2h0cyBSZXNlcnZlZC5cclxuICpcclxuICogVXNlIG9mIHRoaXMgc291cmNlIGNvZGUgaXMgZ292ZXJuZWQgYnkgYW4gTUlULXN0eWxlIGxpY2Vuc2UgdGhhdCBjYW4gYmVcclxuICogZm91bmQgaW4gdGhlIExJQ0VOU0UgZmlsZSBhdCBodHRwczovL2dpdGh1Yi5jb20vTkctWk9SUk8vbmctem9ycm8tYW50ZC9ibG9iL21hc3Rlci9MSUNFTlNFXHJcbiAqL1xyXG5cclxuaW1wb3J0IHsgRGlyZWN0aXZlLCBUZW1wbGF0ZVJlZiB9IGZyb20gJ0Bhbmd1bGFyL2NvcmUnO1xyXG5cclxuQERpcmVjdGl2ZSh7XHJcbiAgc2VsZWN0b3I6ICdbbnotdmlydHVhbC1zY3JvbGxdJyxcclxuICBleHBvcnRBczogJ256VmlydHVhbFNjcm9sbCdcclxufSlcclxuZXhwb3J0IGNsYXNzIE56VmlydHVhbFNjcm9sbERpcmVjdGl2ZSB7XHJcbiAgLyogdHNsaW50OmRpc2FibGUtbmV4dC1saW5lOm5vLWFueSAqL1xyXG4gIGNvbnN0cnVjdG9yKHB1YmxpYyB0ZW1wbGF0ZVJlZjogVGVtcGxhdGVSZWY8eyAkaW1wbGljaXQ6IGFueTsgaW5kZXg6IG51bWJlciB9Pikge31cclxufVxyXG4iXX0=
+//# sourceMappingURL=data:application/json;charset=utf-8;base64,eyJ2ZXJzaW9uIjozLCJmaWxlIjoibnotdmlydHVhbC1zY3JvbGwuZGlyZWN0aXZlLmpzIiwic291cmNlcyI6WyJuZzovbmctem9ycm8tYW50ZC90YWJsZS9uei12aXJ0dWFsLXNjcm9sbC5kaXJlY3RpdmUudHMiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6Ijs7Ozs7Ozs7Ozs7QUFRQSxPQUFPLEVBQUUsU0FBUyxFQUFFLFdBQVcsRUFBRSxNQUFNLGVBQWUsQ0FBQzs7QUFNdkQsTUFBTSxPQUFPLHdCQUF3Qjs7Ozs7SUFFbkMsWUFBbUIsV0FBMkQ7UUFBM0QsZ0JBQVcsR0FBWCxXQUFXLENBQWdEO0lBQUcsQ0FBQzs7O0NBQ25GLHFEQVBBLFNBQVMsU0FBQyxrQkFDVCxRQUFRLEVBQUUscUJBQXFCLGtCQUMvQixRQUFRLEVBQUUsaUJBQWlCLEVBRXhCO1dBREo7O1lBTG1CLFdBQVc7Ozs7Ozs7OzRFQUFLOzs7SUFRdEIsK0NBQWtFIiwic291cmNlc0NvbnRlbnQiOlsiLyoqXHJcbiAqIEBsaWNlbnNlXHJcbiAqIENvcHlyaWdodCBBbGliYWJhLmNvbSBBbGwgUmlnaHRzIFJlc2VydmVkLlxyXG4gKlxyXG4gKiBVc2Ugb2YgdGhpcyBzb3VyY2UgY29kZSBpcyBnb3Zlcm5lZCBieSBhbiBNSVQtc3R5bGUgbGljZW5zZSB0aGF0IGNhbiBiZVxyXG4gKiBmb3VuZCBpbiB0aGUgTElDRU5TRSBmaWxlIGF0IGh0dHBzOi8vZ2l0aHViLmNvbS9ORy1aT1JSTy9uZy16b3Jyby1hbnRkL2Jsb2IvbWFzdGVyL0xJQ0VOU0VcclxuICovXHJcblxyXG5pbXBvcnQgeyBEaXJlY3RpdmUsIFRlbXBsYXRlUmVmIH0gZnJvbSAnQGFuZ3VsYXIvY29yZSc7XHJcblxyXG5ARGlyZWN0aXZlKHtcclxuICBzZWxlY3RvcjogJ1tuei12aXJ0dWFsLXNjcm9sbF0nLFxyXG4gIGV4cG9ydEFzOiAnbnpWaXJ0dWFsU2Nyb2xsJ1xyXG59KVxyXG5leHBvcnQgY2xhc3MgTnpWaXJ0dWFsU2Nyb2xsRGlyZWN0aXZlIHtcclxuICAvKiB0c2xpbnQ6ZGlzYWJsZS1uZXh0LWxpbmU6bm8tYW55ICovXHJcbiAgY29uc3RydWN0b3IocHVibGljIHRlbXBsYXRlUmVmOiBUZW1wbGF0ZVJlZjx7ICRpbXBsaWNpdDogYW55OyBpbmRleDogbnVtYmVyIH0+KSB7fVxyXG59XHJcbiJdfQ==

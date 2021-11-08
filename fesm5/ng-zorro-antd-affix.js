@@ -21,6 +21,12 @@ import { shallowEqual, getStyleAsText, NzConfigService, NzScrollService, WithCon
  * @param {?} target
  * @return {?}
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/cdk/platform';
+
+var _c0 = ["fixedEl"];
+var _c1 = ["*"];
 function isTargetWindow(target) {
     return typeof window !== 'undefined' && target === window;
 }
@@ -385,16 +391,6 @@ var NzAffixComponent = /** @class */ (function () {
             this.syncPlaceholderStyle(e);
         }
     };
-    NzAffixComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-affix',
-                    exportAs: 'nzAffix',
-                    template: "<div #fixedEl>\r\n  <ng-content></ng-content>\r\n</div>\r\n",
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    styles: ["\n      nz-affix {\n        display: block;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzAffixComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -421,6 +417,43 @@ var NzAffixComponent = /** @class */ (function () {
         InputNumber(),
         __metadata("design:type", Object)
     ], NzAffixComponent.prototype, "nzOffsetBottom", void 0);
+NzAffixComponent.ɵfac = function NzAffixComponent_Factory(t) { return new (t || NzAffixComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(DOCUMENT), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzScrollService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.Platform)); };
+NzAffixComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzAffixComponent, selectors: [["nz-affix"]], viewQuery: function NzAffixComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵstaticViewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.fixedEl = _t.first);
+    } }, inputs: { nzTarget: "nzTarget", nzOffsetTop: "nzOffsetTop", nzOffsetBottom: "nzOffsetBottom" }, outputs: { nzChange: "nzChange" }, exportAs: ["nzAffix"], features: [ɵngcc0.ɵɵNgOnChangesFeature], ngContentSelectors: _c1, decls: 3, vars: 0, consts: [["fixedEl", ""]], template: function NzAffixComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵelementStart(0, "div", null, 0);
+        ɵngcc0.ɵɵprojection(2);
+        ɵngcc0.ɵɵelementEnd();
+    } }, styles: ["\n      nz-affix {\n        display: block;\n      }\n    "], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAffixComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-affix',
+                exportAs: 'nzAffix',
+                template: "<div #fixedEl>\r\n  <ng-content></ng-content>\r\n</div>\r\n",
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                styles: ["\n      nz-affix {\n        display: block;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: undefined, decorators: [{
+                type: Inject,
+                args: [DOCUMENT]
+            }] }, { type: ɵngcc1.NzConfigService }, { type: ɵngcc1.NzScrollService }, { type: ɵngcc0.NgZone }, { type: ɵngcc2.Platform }]; }, { nzChange: [{
+            type: Output
+        }], fixedEl: [{
+            type: ViewChild,
+            args: ['fixedEl', { static: true }]
+        }], nzTarget: [{
+            type: Input
+        }], nzOffsetTop: [{
+            type: Input
+        }], nzOffsetBottom: [{
+            type: Input
+        }] }); })();
     return NzAffixComponent;
 }());
 if (false) {
@@ -493,14 +526,18 @@ if (false) {
 var NzAffixModule = /** @class */ (function () {
     function NzAffixModule() {
     }
-    NzAffixModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzAffixComponent],
-                    exports: [NzAffixComponent],
-                    imports: [CommonModule, PlatformModule],
-                    providers: [SCROLL_SERVICE_PROVIDER]
-                },] }
-    ];
+NzAffixModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzAffixModule });
+NzAffixModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzAffixModule_Factory(t) { return new (t || NzAffixModule)(); }, providers: [SCROLL_SERVICE_PROVIDER], imports: [[CommonModule, PlatformModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzAffixModule, { declarations: function () { return [NzAffixComponent]; }, imports: function () { return [CommonModule, PlatformModule]; }, exports: function () { return [NzAffixComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAffixModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzAffixComponent],
+                exports: [NzAffixComponent],
+                imports: [CommonModule, PlatformModule],
+                providers: [SCROLL_SERVICE_PROVIDER]
+            }]
+    }], function () { return []; }, null); })();
     return NzAffixModule;
 }());
 
@@ -515,4 +552,6 @@ var NzAffixModule = /** @class */ (function () {
  */
 
 export { NzAffixComponent, NzAffixModule };
+
+
 //# sourceMappingURL=ng-zorro-antd-affix.js.map

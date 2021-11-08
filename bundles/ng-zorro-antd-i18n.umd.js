@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('rxjs'), require('ng-zorro-antd/core'), require('@angular/common'), require('date-fns/format'), require('date-fns/get_iso_week'), require('date-fns/parse')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/i18n', ['exports', '@angular/core', 'rxjs', 'ng-zorro-antd/core', '@angular/common', 'date-fns/format', 'date-fns/get_iso_week', 'date-fns/parse'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].i18n = {}), global.ng.core, global.rxjs, global['ng-zorro-antd'].core, global.ng.common, global.fnsFormat, global.fnsGetISOWeek, global.fnsParse));
-}(this, (function (exports, core, rxjs, core$1, common, fnsFormat, fnsGetISOWeek, fnsParse) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),exports, require('@angular/core'), require('rxjs'), require('ng-zorro-antd/core'), require('@angular/common'), require('date-fns/format'), require('date-fns/get_iso_week'), require('date-fns/parse')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/i18n', ['@angular/core','exports', '@angular/core', 'rxjs', 'ng-zorro-antd/core', '@angular/common', 'date-fns/format', 'date-fns/get_iso_week', 'date-fns/parse'], factory) :
+    (global = global || self, factory(global.ng.core,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].i18n = {}), global.ng.core, global.rxjs, global['ng-zorro-antd'].core, global.ng.common, global.fnsFormat, global.fnsGetISOWeek, global.fnsParse));
+}(this, (function (ɵngcc0,exports, core, rxjs, core$1, common, fnsFormat, fnsGetISOWeek, fnsParse) { 'use strict';
 
     fnsFormat = fnsFormat && fnsFormat.hasOwnProperty('default') ? fnsFormat['default'] : fnsFormat;
     fnsGetISOWeek = fnsGetISOWeek && fnsGetISOWeek.hasOwnProperty('default') ? fnsGetISOWeek['default'] : fnsGetISOWeek;
@@ -551,17 +551,30 @@
             }
             return index === depth ? res : null;
         };
-        NzI18nService.decorators = [
-            { type: core.Injectable, args: [{
-                        providedIn: 'root'
-                    },] }
-        ];
         /** @nocollapse */
         NzI18nService.ctorParameters = function () { return [
             { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_I18N,] }] },
             { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_DATE_LOCALE,] }] }
         ]; };
         /** @nocollapse */ NzI18nService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzI18nService_Factory() { return new NzI18nService(core.ɵɵinject(NZ_I18N, 8), core.ɵɵinject(NZ_DATE_LOCALE, 8)); }, token: NzI18nService, providedIn: "root" });
+NzI18nService.ɵfac = function NzI18nService_Factory(t) { return new (t || NzI18nService)(ɵngcc0.ɵɵinject(NZ_I18N, 8), ɵngcc0.ɵɵinject(NZ_DATE_LOCALE, 8)); };
+NzI18nService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzI18nService, factory: function (t) { return NzI18nService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nService, [{
+        type: core.Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: undefined, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [NZ_I18N]
+            }] }, { type: undefined, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [NZ_DATE_LOCALE]
+            }] }]; }, null); })();
         return NzI18nService;
     }());
     if (false) {
@@ -603,15 +616,18 @@
         function (path, keyValue) {
             return this._locale.translate(path, keyValue);
         };
-        NzI18nPipe.decorators = [
-            { type: core.Pipe, args: [{
-                        name: 'nzI18n'
-                    },] }
-        ];
         /** @nocollapse */
         NzI18nPipe.ctorParameters = function () { return [
             { type: NzI18nService }
         ]; };
+NzI18nPipe.ɵfac = function NzI18nPipe_Factory(t) { return new (t || NzI18nPipe)(ɵngcc0.ɵɵdirectiveInject(NzI18nService)); };
+NzI18nPipe.ɵpipe = ɵngcc0.ɵɵdefinePipe({ name: "nzI18n", type: NzI18nPipe, pure: true });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nPipe, [{
+        type: core.Pipe,
+        args: [{
+                name: 'nzI18n'
+            }]
+    }], function () { return [{ type: NzI18nService }]; }, null); })();
         return NzI18nPipe;
     }());
     if (false) {
@@ -629,12 +645,16 @@
     var NzI18nModule = /** @class */ (function () {
         function NzI18nModule() {
         }
-        NzI18nModule.decorators = [
-            { type: core.NgModule, args: [{
-                        declarations: [NzI18nPipe],
-                        exports: [NzI18nPipe]
-                    },] }
-        ];
+NzI18nModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzI18nModule });
+NzI18nModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzI18nModule_Factory(t) { return new (t || NzI18nModule)(); } });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzI18nModule, { declarations: [NzI18nPipe], exports: [NzI18nPipe] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzI18nModule, [{
+        type: core.NgModule,
+        args: [{
+                declarations: [NzI18nPipe],
+                exports: [NzI18nPipe]
+            }]
+    }], function () { return []; }, null); })();
         return NzI18nModule;
     }());
 
@@ -885,19 +905,32 @@
             }
             return fnsParse("1970-01-01 " + text);
         };
-        DateHelperService.decorators = [
-            { type: core.Injectable, args: [{
-                        providedIn: 'root',
-                        useFactory: DATE_HELPER_SERVICE_FACTORY,
-                        deps: [core.Injector, [new core.Optional(), NZ_DATE_CONFIG]]
-                    },] }
-        ];
         /** @nocollapse */
         DateHelperService.ctorParameters = function () { return [
             { type: NzI18nService },
             { type: undefined, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_DATE_CONFIG,] }] }
         ]; };
         /** @nocollapse */ DateHelperService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function DateHelperService_Factory() { return DATE_HELPER_SERVICE_FACTORY(core.ɵɵinject(core.INJECTOR), core.ɵɵinject(NZ_DATE_CONFIG, 8)); }, token: DateHelperService, providedIn: "root" });
+DateHelperService.ɵfac = function DateHelperService_Factory(t) { return new (t || DateHelperService)(ɵngcc0.ɵɵinject(NzI18nService), ɵngcc0.ɵɵinject(NZ_DATE_CONFIG, 8)); };
+DateHelperService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: DateHelperService, factory: function DateHelperService_Factory(t) { var r = null; if (t) {
+        r = new t();
+    }
+    else {
+        r = DATE_HELPER_SERVICE_FACTORY(ɵngcc0.ɵɵinject(core.Injector), ɵngcc0.ɵɵinject([new core.Optional(), NZ_DATE_CONFIG]));
+    } return r; }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(DateHelperService, [{
+        type: core.Injectable,
+        args: [{
+                providedIn: 'root',
+                useFactory: DATE_HELPER_SERVICE_FACTORY,
+                deps: [core.Injector, [new core.Optional(), NZ_DATE_CONFIG]]
+            }]
+    }], function () { return [{ type: NzI18nService }, { type: undefined, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [NZ_DATE_CONFIG]
+            }] }]; }, null); })();
         return DateHelperService;
     }());
     if (false) {
@@ -7794,4 +7827,6 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+
 //# sourceMappingURL=ng-zorro-antd-i18n.umd.js.map

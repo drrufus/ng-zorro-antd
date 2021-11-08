@@ -1,8 +1,40 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('ng-zorro-antd/core'), require('@angular/cdk/overlay'), require('@angular/core'), require('rxjs'), require('@angular/common'), require('ng-zorro-antd/icon')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/message', ['exports', 'ng-zorro-antd/core', '@angular/cdk/overlay', '@angular/core', 'rxjs', '@angular/common', 'ng-zorro-antd/icon'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].message = {}), global['ng-zorro-antd'].core, global.ng.cdk.overlay, global.ng.core, global.rxjs, global.ng.common, global['ng-zorro-antd'].icon));
-}(this, (function (exports, core, overlay, core$1, rxjs, common, icon) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('ng-zorro-antd/core'),require('@angular/common'),require('@angular/cdk/overlay'),require('ng-zorro-antd/icon'),exports, require('ng-zorro-antd/core'), require('@angular/cdk/overlay'), require('@angular/core'), require('rxjs'), require('@angular/common'), require('ng-zorro-antd/icon')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/message', ['@angular/core','ng-zorro-antd/core','@angular/common','@angular/cdk/overlay','ng-zorro-antd/icon','exports', 'ng-zorro-antd/core', '@angular/cdk/overlay', '@angular/core', 'rxjs', '@angular/common', 'ng-zorro-antd/icon'], factory) :
+    (global = global || self, factory(global.ng.core,global.ngZorroAntd.core,global.ng.common,global.ng.cdk.overlay,global.ngZorroAntd.icon,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].message = {}), global['ng-zorro-antd'].core, global.ng.cdk.overlay, global.ng.core, global.rxjs, global.ng.common, global['ng-zorro-antd'].icon));
+}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, core, overlay, core$1, rxjs, common, icon) { 
+function NzMessageContainerComponent_nz_message_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "nz-message", 2);
+} if (rf & 2) {
+    var message_r1 = ctx.$implicit;
+    var i_r2 = ctx.index;
+    ɵngcc0.ɵɵproperty("nzMessage", message_r1)("nzIndex", i_r2);
+} }
+function NzMessageComponent_i_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 10);
+} }
+function NzMessageComponent_i_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 11);
+} }
+function NzMessageComponent_i_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 12);
+} }
+function NzMessageComponent_i_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 13);
+} }
+function NzMessageComponent_i_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 14);
+} }
+function NzMessageComponent_ng_container_9_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵelement(1, "span", 15);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r5 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("innerHTML", ctx_r5.nzMessage.content, ɵngcc0.ɵɵsanitizeHtml);
+} }
+'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -570,16 +602,6 @@
             };
             return __assign({}, defaultOptions, options);
         };
-        NzMessageContainerComponent.decorators = [
-            { type: core$1.Component, args: [{
-                        changeDetection: core$1.ChangeDetectionStrategy.OnPush,
-                        encapsulation: core$1.ViewEncapsulation.None,
-                        selector: 'nz-message-container',
-                        exportAs: 'nzMessageContainer',
-                        preserveWhitespaces: false,
-                        template: "<div class=\"ant-message\" [style.top]=\"top\">\r\n  <nz-message *ngFor=\"let message of messages; let i = index\" [nzMessage]=\"message\" [nzIndex]=\"i\"></nz-message>\r\n</div>"
-                    }] }
-        ];
         /** @nocollapse */
         NzMessageContainerComponent.ctorParameters = function () { return [
             { type: core$1.ChangeDetectorRef },
@@ -587,6 +609,37 @@
             { type: undefined, decorators: [{ type: core$1.Optional }, { type: core$1.Inject, args: [NZ_MESSAGE_DEFAULT_CONFIG,] }] },
             { type: undefined, decorators: [{ type: core$1.Optional }, { type: core$1.Inject, args: [NZ_MESSAGE_CONFIG,] }] }
         ]; };
+NzMessageContainerComponent.ɵfac = function NzMessageContainerComponent_Factory(t) { return new (t || NzMessageContainerComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(NZ_MESSAGE_DEFAULT_CONFIG, 8), ɵngcc0.ɵɵdirectiveInject(NZ_MESSAGE_CONFIG, 8)); };
+NzMessageContainerComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzMessageContainerComponent, selectors: [["nz-message-container"]], exportAs: ["nzMessageContainer"], decls: 2, vars: 3, consts: [[1, "ant-message"], [3, "nzMessage", "nzIndex", 4, "ngFor", "ngForOf"], [3, "nzMessage", "nzIndex"]], template: function NzMessageContainerComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵtemplate(1, NzMessageContainerComponent_nz_message_1_Template, 1, 2, "nz-message", 1);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵstyleProp("top", ctx.top);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngForOf", ctx.messages);
+    } }, directives: function () { return [ɵngcc2.NgForOf, NzMessageComponent]; }, encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMessageContainerComponent, [{
+        type: core$1.Component,
+        args: [{
+                changeDetection: core$1.ChangeDetectionStrategy.OnPush,
+                encapsulation: core$1.ViewEncapsulation.None,
+                selector: 'nz-message-container',
+                exportAs: 'nzMessageContainer',
+                preserveWhitespaces: false,
+                template: "<div class=\"ant-message\" [style.top]=\"top\">\r\n  <nz-message *ngFor=\"let message of messages; let i = index\" [nzMessage]=\"message\" [nzIndex]=\"i\"></nz-message>\r\n</div>"
+            }]
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.NzConfigService }, { type: undefined, decorators: [{
+                type: core$1.Optional
+            }, {
+                type: core$1.Inject,
+                args: [NZ_MESSAGE_DEFAULT_CONFIG]
+            }] }, { type: undefined, decorators: [{
+                type: core$1.Optional
+            }, {
+                type: core$1.Inject,
+                args: [NZ_MESSAGE_CONFIG]
+            }] }]; }, null); })();
         return NzMessageContainerComponent;
     }());
     if (false) {
@@ -615,9 +668,11 @@
     var NzMessageServiceModule = /** @class */ (function () {
         function NzMessageServiceModule() {
         }
-        NzMessageServiceModule.decorators = [
-            { type: core$1.NgModule }
-        ];
+NzMessageServiceModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzMessageServiceModule });
+NzMessageServiceModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzMessageServiceModule_Factory(t) { return new (t || NzMessageServiceModule)(); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMessageServiceModule, [{
+        type: core$1.NgModule
+    }], function () { return []; }, null); })();
         return NzMessageServiceModule;
     }());
 
@@ -714,11 +769,6 @@
         function (type, content, options) {
             return this.createMessage({ type: type, content: content }, options);
         };
-        NzMessageService.decorators = [
-            { type: core$1.Injectable, args: [{
-                        providedIn: NzMessageServiceModule
-                    },] }
-        ];
         /** @nocollapse */
         NzMessageService.ctorParameters = function () { return [
             { type: core.NzSingletonService },
@@ -728,6 +778,14 @@
             { type: core$1.ApplicationRef }
         ]; };
         /** @nocollapse */ NzMessageService.ngInjectableDef = core$1.ɵɵdefineInjectable({ factory: function NzMessageService_Factory() { return new NzMessageService(core$1.ɵɵinject(core.NzSingletonService), core$1.ɵɵinject(overlay.Overlay), core$1.ɵɵinject(core$1.INJECTOR), core$1.ɵɵinject(core$1.ComponentFactoryResolver), core$1.ɵɵinject(core$1.ApplicationRef)); }, token: NzMessageService, providedIn: NzMessageServiceModule });
+NzMessageService.ɵfac = function NzMessageService_Factory(t) { return new (t || NzMessageService)(ɵngcc0.ɵɵinject(ɵngcc1.NzSingletonService), ɵngcc0.ɵɵinject(ɵngcc3.Overlay), ɵngcc0.ɵɵinject(ɵngcc0.Injector), ɵngcc0.ɵɵinject(ɵngcc0.ComponentFactoryResolver), ɵngcc0.ɵɵinject(ɵngcc0.ApplicationRef)); };
+NzMessageService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzMessageService, factory: function (t) { return NzMessageService.ɵfac(t); }, providedIn: NzMessageServiceModule });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMessageService, [{
+        type: core$1.Injectable,
+        args: [{
+                providedIn: NzMessageServiceModule
+            }]
+    }], function () { return [{ type: ɵngcc1.NzSingletonService }, { type: ɵngcc3.Overlay }, { type: ɵngcc0.Injector }, { type: ɵngcc0.ComponentFactoryResolver }, { type: ɵngcc0.ApplicationRef }]; }, null); })();
         return NzMessageService;
     }(NzMessageBaseService));
 
@@ -884,17 +942,6 @@
                 this._eraseTimer = null;
             }
         };
-        NzMessageComponent.decorators = [
-            { type: core$1.Component, args: [{
-                        changeDetection: core$1.ChangeDetectionStrategy.OnPush,
-                        encapsulation: core$1.ViewEncapsulation.None,
-                        selector: 'nz-message',
-                        exportAs: 'nzMessage',
-                        preserveWhitespaces: false,
-                        animations: [core.moveUpMotion],
-                        template: "<div class=\"ant-message-notice\"\r\n  [@moveUpMotion]=\"nzMessage.state\"\r\n  (mouseenter)=\"onEnter()\"\r\n  (mouseleave)=\"onLeave()\">\r\n  <div class=\"ant-message-notice-content\">\r\n    <div class=\"ant-message-custom-content\" [ngClass]=\"'ant-message-' + nzMessage.type\">\r\n      <ng-container [ngSwitch]=\"nzMessage.type\">\r\n        <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\"></i>\r\n        <i *ngSwitchCase=\"'info'\"  nz-icon nzType=\"info-circle\"></i>\r\n        <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\"></i>\r\n        <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\"></i>\r\n        <i *ngSwitchCase=\"'loading'\" nz-icon nzType=\"loading\"></i>\r\n      </ng-container>\r\n      <ng-container *nzStringTemplateOutlet=\"nzMessage.content\">\r\n        <span [innerHTML]=\"nzMessage.content\"></span>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
-                    }] }
-        ];
         /** @nocollapse */
         NzMessageComponent.ctorParameters = function () { return [
             { type: NzMessageContainerComponent },
@@ -904,6 +951,58 @@
             nzMessage: [{ type: core$1.Input }],
             nzIndex: [{ type: core$1.Input }]
         };
+NzMessageComponent.ɵfac = function NzMessageComponent_Factory(t) { return new (t || NzMessageComponent)(ɵngcc0.ɵɵdirectiveInject(NzMessageContainerComponent), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
+NzMessageComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzMessageComponent, selectors: [["nz-message"]], inputs: { nzMessage: "nzMessage", nzIndex: "nzIndex" }, exportAs: ["nzMessage"], decls: 10, vars: 9, consts: [[1, "ant-message-notice", 3, "mouseenter", "mouseleave"], [1, "ant-message-notice-content"], [1, "ant-message-custom-content", 3, "ngClass"], [3, "ngSwitch"], ["nz-icon", "", "nzType", "check-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "info-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "exclamation-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "close-circle", 4, "ngSwitchCase"], ["nz-icon", "", "nzType", "loading", 4, "ngSwitchCase"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", "nzType", "check-circle"], ["nz-icon", "", "nzType", "info-circle"], ["nz-icon", "", "nzType", "exclamation-circle"], ["nz-icon", "", "nzType", "close-circle"], ["nz-icon", "", "nzType", "loading"], [3, "innerHTML"]], template: function NzMessageComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵlistener("mouseenter", function NzMessageComponent_Template_div_mouseenter_0_listener() { return ctx.onEnter(); })("mouseleave", function NzMessageComponent_Template_div_mouseleave_0_listener() { return ctx.onLeave(); });
+        ɵngcc0.ɵɵelementStart(1, "div", 1);
+        ɵngcc0.ɵɵelementStart(2, "div", 2);
+        ɵngcc0.ɵɵelementContainerStart(3, 3);
+        ɵngcc0.ɵɵtemplate(4, NzMessageComponent_i_4_Template, 1, 0, "i", 4);
+        ɵngcc0.ɵɵtemplate(5, NzMessageComponent_i_5_Template, 1, 0, "i", 5);
+        ɵngcc0.ɵɵtemplate(6, NzMessageComponent_i_6_Template, 1, 0, "i", 6);
+        ɵngcc0.ɵɵtemplate(7, NzMessageComponent_i_7_Template, 1, 0, "i", 7);
+        ɵngcc0.ɵɵtemplate(8, NzMessageComponent_i_8_Template, 1, 0, "i", 8);
+        ɵngcc0.ɵɵelementContainerEnd();
+        ɵngcc0.ɵɵtemplate(9, NzMessageComponent_ng_container_9_Template, 2, 1, "ng-container", 9);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("@moveUpMotion", ctx.nzMessage.state);
+        ɵngcc0.ɵɵadvance(2);
+        ɵngcc0.ɵɵproperty("ngClass", "ant-message-" + ctx.nzMessage.type);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitch", ctx.nzMessage.type);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitchCase", "success");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitchCase", "info");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitchCase", "warning");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitchCase", "error");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngSwitchCase", "loading");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzMessage.content);
+    } }, directives: [ɵngcc2.NgClass, ɵngcc2.NgSwitch, ɵngcc2.NgSwitchCase, ɵngcc1.NzStringTemplateOutletDirective, ɵngcc4.NzIconDirective], encapsulation: 2, data: { animation: [core.moveUpMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMessageComponent, [{
+        type: core$1.Component,
+        args: [{
+                changeDetection: core$1.ChangeDetectionStrategy.OnPush,
+                encapsulation: core$1.ViewEncapsulation.None,
+                selector: 'nz-message',
+                exportAs: 'nzMessage',
+                preserveWhitespaces: false,
+                animations: [core.moveUpMotion],
+                template: "<div class=\"ant-message-notice\"\r\n  [@moveUpMotion]=\"nzMessage.state\"\r\n  (mouseenter)=\"onEnter()\"\r\n  (mouseleave)=\"onLeave()\">\r\n  <div class=\"ant-message-notice-content\">\r\n    <div class=\"ant-message-custom-content\" [ngClass]=\"'ant-message-' + nzMessage.type\">\r\n      <ng-container [ngSwitch]=\"nzMessage.type\">\r\n        <i *ngSwitchCase=\"'success'\" nz-icon nzType=\"check-circle\"></i>\r\n        <i *ngSwitchCase=\"'info'\"  nz-icon nzType=\"info-circle\"></i>\r\n        <i *ngSwitchCase=\"'warning'\" nz-icon nzType=\"exclamation-circle\"></i>\r\n        <i *ngSwitchCase=\"'error'\" nz-icon nzType=\"close-circle\"></i>\r\n        <i *ngSwitchCase=\"'loading'\" nz-icon nzType=\"loading\"></i>\r\n      </ng-container>\r\n      <ng-container *nzStringTemplateOutlet=\"nzMessage.content\">\r\n        <span [innerHTML]=\"nzMessage.content\"></span>\r\n      </ng-container>\r\n    </div>\r\n  </div>\r\n</div>\r\n"
+            }]
+    }], function () { return [{ type: NzMessageContainerComponent }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzMessage: [{
+            type: core$1.Input
+        }], nzIndex: [{
+            type: core$1.Input
+        }] }); })();
         return NzMessageComponent;
     }());
     if (false) {
@@ -955,14 +1054,19 @@
     var NzMessageModule = /** @class */ (function () {
         function NzMessageModule() {
         }
-        NzMessageModule.decorators = [
-            { type: core$1.NgModule, args: [{
-                        imports: [common.CommonModule, overlay.OverlayModule, icon.NzIconModule, core.NzAddOnModule, NzMessageServiceModule],
-                        declarations: [NzMessageContainerComponent, NzMessageComponent],
-                        providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER],
-                        entryComponents: [NzMessageContainerComponent]
-                    },] }
-        ];
+NzMessageModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzMessageModule });
+NzMessageModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzMessageModule_Factory(t) { return new (t || NzMessageModule)(); }, providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER], imports: [[common.CommonModule, overlay.OverlayModule, icon.NzIconModule, core.NzAddOnModule, NzMessageServiceModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzMessageModule, { declarations: [NzMessageContainerComponent,
+        NzMessageComponent], imports: [ɵngcc2.CommonModule, ɵngcc3.OverlayModule, ɵngcc4.NzIconModule, ɵngcc1.NzAddOnModule, NzMessageServiceModule] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMessageModule, [{
+        type: core$1.NgModule,
+        args: [{
+                imports: [common.CommonModule, overlay.OverlayModule, icon.NzIconModule, core.NzAddOnModule, NzMessageServiceModule],
+                declarations: [NzMessageContainerComponent, NzMessageComponent],
+                providers: [NZ_MESSAGE_DEFAULT_CONFIG_PROVIDER],
+                entryComponents: [NzMessageContainerComponent]
+            }]
+    }], function () { return []; }, null); })();
         return NzMessageModule;
     }());
 
@@ -1031,4 +1135,6 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+
 //# sourceMappingURL=ng-zorro-antd-message.umd.js.map

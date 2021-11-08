@@ -7,6 +7,7 @@ import { NzIconModule, NZ_ICONS } from 'ng-zorro-antd/icon';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
+import * as ɵngcc0 from '@angular/core';
 var antDesignIcons = (/** @type {?} */ (AllIcons));
 var ɵ0 = /**
  * @param {?} key
@@ -27,17 +28,26 @@ var ɵ1 = icons;
 var NzIconTestModule = /** @class */ (function () {
     function NzIconTestModule() {
     }
-    NzIconTestModule.decorators = [
-        { type: NgModule, args: [{
-                    exports: [NzIconModule],
-                    providers: [
-                        {
-                            provide: NZ_ICONS,
-                            useValue: ɵ1
-                        }
-                    ]
-                },] }
-    ];
+NzIconTestModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzIconTestModule });
+NzIconTestModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzIconTestModule_Factory(t) { return new (t || NzIconTestModule)(); }, providers: [
+        {
+            provide: NZ_ICONS,
+            useValue: ɵ1
+        }
+    ], imports: [NzIconModule] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzIconTestModule, { exports: function () { return [NzIconModule]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconTestModule, [{
+        type: NgModule,
+        args: [{
+                exports: [NzIconModule],
+                providers: [
+                    {
+                        provide: NZ_ICONS,
+                        useValue: ɵ1
+                    }
+                ]
+            }]
+    }], function () { return []; }, null); })();
     return NzIconTestModule;
 }());
 
@@ -52,4 +62,6 @@ var NzIconTestModule = /** @class */ (function () {
  */
 
 export { NzIconTestModule };
+
+
 //# sourceMappingURL=ng-zorro-antd-icon-testing.js.map

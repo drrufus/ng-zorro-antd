@@ -1,28 +1,40 @@
 {
-  "name": "ng-zorro-antd",
-  "version": "8.5.2",
-  "license": "MIT",
-  "description": "An enterprise-class UI components based on Ant Design and Angular",
-  "schematics": "./schematics/collection.json",
-  "ng-update": {
-    "migrations": "./schematics/migration.json",
-    "packageGroup": [
-      "ng-zorro-antd"
+  "__processed_by_ivy_ngcc__": {
+    "es2015": "9.1.3",
+    "esm2015": "9.1.3",
+    "esm5": "9.1.3",
+    "fesm2015": "9.1.3",
+    "fesm5": "9.1.3",
+    "main": "9.1.3",
+    "module": "9.1.3",
+    "typings": "9.1.3"
+  },
+  "_args": [
+    [
+      "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+      "C:\\Users\\vfedoren\\Documents\\GIT\\care-ui"
     ]
-  },
-  "keywords": [
-    "ant",
-    "design",
-    "angular",
-    "ui",
-    "framework",
-    "frontend"
   ],
-  "homepage": "https://ng.ant.design",
-  "repository": {
+  "_from": "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+  "_id": "ng-zorro-antd@git+https://github.com/drrufus/ng-zorro-antd.git#5e7dbc8c22bfbe1e7ebf9d98ec4d5b2574a72066",
+  "_inBundle": false,
+  "_integrity": "",
+  "_location": "/ng-zorro-antd",
+  "_phantomChildren": {},
+  "_requested": {
     "type": "git",
-    "url": "https://github.com/NG-ZORRO/ng-zorro-antd"
+    "raw": "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+    "rawSpec": "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+    "saveSpec": "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+    "fetchSpec": "https://github.com/drrufus/ng-zorro-antd.git",
+    "gitCommittish": "publish"
   },
+  "_requiredBy": [
+    "/"
+  ],
+  "_resolved": "git+https://github.com/drrufus/ng-zorro-antd.git#5e7dbc8c22bfbe1e7ebf9d98ec4d5b2574a72066",
+  "_spec": "git+https://github.com/drrufus/ng-zorro-antd.git#publish",
+  "_where": "C:\\Users\\vfedoren\\Documents\\GIT\\care-ui",
   "bugs": {
     "url": "https://github.com/NG-ZORRO/ng-zorro-antd/issues"
   },
@@ -32,6 +44,34 @@
     "date-fns": "^1.30.1",
     "tslib": "^1.9.0"
   },
+  "description": "An enterprise-class UI components based on Ant Design and Angular",
+  "es2015": "fesm2015/ng-zorro-antd.js",
+  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ng-zorro-antd.js",
+  "esm2015": "esm2015/ng-zorro-antd.js",
+  "esm5": "esm5/ng-zorro-antd.js",
+  "fesm2015": "fesm2015/ng-zorro-antd.js",
+  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ng-zorro-antd.js",
+  "fesm5": "fesm5/ng-zorro-antd.js",
+  "homepage": "https://ng.ant.design",
+  "keywords": [
+    "ant",
+    "design",
+    "angular",
+    "ui",
+    "framework",
+    "frontend"
+  ],
+  "license": "MIT",
+  "main": "bundles/ng-zorro-antd.umd.js",
+  "metadata": "ng-zorro-antd.metadata.json",
+  "module": "fesm5/ng-zorro-antd.js",
+  "name": "ng-zorro-antd",
+  "ng-update": {
+    "migrations": "./schematics/migration.json",
+    "packageGroup": [
+      "ng-zorro-antd"
+    ]
+  },
   "peerDependencies": {
     "@angular/animations": "^8.0.0",
     "@angular/common": "^8.0.0",
@@ -40,24 +80,15 @@
     "@angular/router": "^8.0.0",
     "rxjs": "^6.4.0"
   },
-  "main": "bundles/ng-zorro-antd.umd.js",
-  "module": "fesm5/ng-zorro-antd.js",
-  "es2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ng-zorro-antd.js",
-  "es2015": "fesm2015/ng-zorro-antd.js",
-  "esm5": "esm5/ng-zorro-antd.js",
-  "esm2015": "esm2015/ng-zorro-antd.js",
-  "fesm5": "fesm5/ng-zorro-antd.js",
-  "fesm2015_ivy_ngcc": "__ivy_ngcc__/fesm2015/ng-zorro-antd.js",
-  "fesm2015": "fesm2015/ng-zorro-antd.js",
-  "typings": "ng-zorro-antd.d.ts",
-  "metadata": "ng-zorro-antd.metadata.json",
-  "sideEffects": false,
-  "__processed_by_ivy_ngcc__": {
-    "es2015": "9.1.3",
-    "fesm2015": "9.1.3",
-    "typings": "9.1.3"
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NG-ZORRO/ng-zorro-antd.git"
   },
+  "schematics": "./schematics/collection.json",
   "scripts": {
     "prepublishOnly": "node --eval \"console.error('ERROR: Trying to publish a package that has been compiled by NGCC. This is not allowed.\\nPlease delete and rebuild the package, without compiling with NGCC, before attempting to publish.\\nNote that NGCC may have been run by importing this package into another project that is being built with Ivy enabled.\\n')\" && exit 1"
-  }
+  },
+  "sideEffects": false,
+  "typings": "ng-zorro-antd.d.ts",
+  "version": "8.5.2"
 }

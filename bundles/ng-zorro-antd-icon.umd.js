@@ -1,8 +1,8 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/cdk/platform'), require('@angular/core'), require('@ant-design/icons-angular'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('@angular/common/http'), require('@angular/platform-browser'), require('@ant-design/icons-angular/icons')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/icon', ['exports', '@angular/cdk/platform', '@angular/core', '@ant-design/icons-angular', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', '@angular/common', '@angular/common/http', '@angular/platform-browser', '@ant-design/icons-angular/icons'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].icon = {}), global.ng.cdk.platform, global.ng.core, global.iconsAngular, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global.ng.common, global.ng.common.http, global.ng.platformBrowser, global.icons));
-}(this, (function (exports, platform, core, iconsAngular, core$1, rxjs, operators, common, http, platformBrowser, icons) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/platform-browser'),require('ng-zorro-antd/core'),require('@angular/common/http'),require('@angular/cdk/platform'),exports, require('@angular/cdk/platform'), require('@angular/core'), require('@ant-design/icons-angular'), require('ng-zorro-antd/core'), require('rxjs'), require('rxjs/operators'), require('@angular/common'), require('@angular/common/http'), require('@angular/platform-browser'), require('@ant-design/icons-angular/icons')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/icon', ['@angular/core','@angular/platform-browser','ng-zorro-antd/core','@angular/common/http','@angular/cdk/platform','exports', '@angular/cdk/platform', '@angular/core', '@ant-design/icons-angular', 'ng-zorro-antd/core', 'rxjs', 'rxjs/operators', '@angular/common', '@angular/common/http', '@angular/platform-browser', '@ant-design/icons-angular/icons'], factory) :
+    (global = global || self, factory(global.ng.core,global.ng.platformBrowser,global.ngZorroAntd.core,global.ng.common.http,global.ng.cdk.platform,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].icon = {}), global.ng.cdk.platform, global.ng.core, global.iconsAngular, global['ng-zorro-antd'].core, global.rxjs, global.rxjs.operators, global.ng.common, global.ng.common.http, global.ng.platformBrowser, global.icons));
+}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, platform, core, iconsAngular, core$1, rxjs, operators, common, http, platformBrowser, icons) { 'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -418,11 +418,6 @@
         function () {
             return this.nzConfigService.getConfigForComponent('icon') || {};
         };
-        NzIconService.decorators = [
-            { type: core.Injectable, args: [{
-                        providedIn: 'root'
-                    },] }
-        ];
         /** @nocollapse */
         NzIconService.ctorParameters = function () { return [
             { type: core.RendererFactory2 },
@@ -434,6 +429,31 @@
             { type: String, decorators: [{ type: core.Optional }, { type: core.Inject, args: [NZ_ICON_DEFAULT_TWOTONE_COLOR,] }] }
         ]; };
         /** @nocollapse */ NzIconService.ngInjectableDef = core.ɵɵdefineInjectable({ factory: function NzIconService_Factory() { return new NzIconService(core.ɵɵinject(core.RendererFactory2), core.ɵɵinject(platformBrowser.DomSanitizer), core.ɵɵinject(core$1.NzConfigService), core.ɵɵinject(http.HttpBackend, 8), core.ɵɵinject(common.DOCUMENT, 8), core.ɵɵinject(NZ_ICONS, 8), core.ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); }, token: NzIconService, providedIn: "root" });
+NzIconService.ɵfac = function NzIconService_Factory(t) { return new (t || NzIconService)(ɵngcc0.ɵɵinject(ɵngcc0.RendererFactory2), ɵngcc0.ɵɵinject(ɵngcc1.DomSanitizer), ɵngcc0.ɵɵinject(ɵngcc2.NzConfigService), ɵngcc0.ɵɵinject(ɵngcc3.HttpBackend, 8), ɵngcc0.ɵɵinject(common.DOCUMENT, 8), ɵngcc0.ɵɵinject(NZ_ICONS, 8), ɵngcc0.ɵɵinject(NZ_ICON_DEFAULT_TWOTONE_COLOR, 8)); };
+NzIconService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzIconService, factory: function (t) { return NzIconService.ɵfac(t); }, providedIn: 'root' });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconService, [{
+        type: core.Injectable,
+        args: [{
+                providedIn: 'root'
+            }]
+    }], function () { return [{ type: ɵngcc0.RendererFactory2 }, { type: ɵngcc1.DomSanitizer }, { type: ɵngcc2.NzConfigService }, { type: ɵngcc3.HttpBackend, decorators: [{
+                type: core.Optional
+            }] }, { type: undefined, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [common.DOCUMENT]
+            }] }, { type: Array, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [NZ_ICONS]
+            }] }, { type: String, decorators: [{
+                type: core.Optional
+            }, {
+                type: core.Inject,
+                args: [NZ_ICON_DEFAULT_TWOTONE_COLOR]
+            }] }]; }, null); })();
         return NzIconService;
     }(iconsAngular.IconService));
     if (false) {
@@ -876,12 +896,6 @@
                 }
             }
         };
-        NzIconDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: 'i.anticon, [nz-icon]',
-                        exportAs: 'nzIcon'
-                    },] }
-        ];
         /** @nocollapse */
         NzIconDirective.ctorParameters = function () { return [
             { type: NzIconService },
@@ -906,6 +920,35 @@
             __metadata("design:type", Boolean),
             __metadata("design:paramtypes", [Boolean])
         ], NzIconDirective.prototype, "nzSpin", null);
+NzIconDirective.ɵfac = function NzIconDirective_Factory(t) { return new (t || NzIconDirective)(ɵngcc0.ɵɵdirectiveInject(NzIconService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.Platform)); };
+NzIconDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzIconDirective, selectors: [["i", 8, "anticon"], ["", "nz-icon", ""]], inputs: { nzSpin: "nzSpin", nzType: "nzType", nzTheme: "nzTheme", nzTwotoneColor: "nzTwotoneColor", nzIconfont: "nzIconfont", type: "type", nzRotate: "nzRotate", spin: "spin", iconfont: "iconfont", nzIconLabel: "nzIconLabel" }, exportAs: ["nzIcon"], features: [ɵngcc0.ɵɵInheritDefinitionFeature, ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: 'i.anticon, [nz-icon]',
+                exportAs: 'nzIcon'
+            }]
+    }], function () { return [{ type: NzIconService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc4.Platform }]; }, { nzSpin: [{
+            type: core.Input
+        }], nzType: [{
+            type: core.Input
+        }], nzTheme: [{
+            type: core.Input
+        }], nzTwotoneColor: [{
+            type: core.Input
+        }], nzIconfont: [{
+            type: core.Input
+        }], type: [{
+            type: core.Input
+        }], nzRotate: [{
+            type: core.Input
+        }], spin: [{
+            type: core.Input
+        }], iconfont: [{
+            type: core.Input
+        }], nzIconLabel: [{
+            type: core.Input
+        }] }); })();
         return NzIconDirective;
     }(iconsAngular.IconDirective));
     if (false) {
@@ -963,13 +1006,17 @@
     var NzIconModule = /** @class */ (function () {
         function NzIconModule() {
         }
-        NzIconModule.decorators = [
-            { type: core.NgModule, args: [{
-                        exports: [NzIconDirective],
-                        declarations: [NzIconDirective],
-                        imports: [platform.PlatformModule]
-                    },] }
-        ];
+NzIconModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzIconModule });
+NzIconModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzIconModule_Factory(t) { return new (t || NzIconModule)(); }, imports: [[platform.PlatformModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzIconModule, { declarations: [NzIconDirective], imports: [ɵngcc4.PlatformModule], exports: [NzIconDirective] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzIconModule, [{
+        type: core.NgModule,
+        args: [{
+                exports: [NzIconDirective],
+                declarations: [NzIconDirective],
+                imports: [platform.PlatformModule]
+            }]
+    }], function () { return []; }, null); })();
         return NzIconModule;
     }());
 
@@ -984,4 +1031,6 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
+
 //# sourceMappingURL=ng-zorro-antd-icon.umd.js.map
