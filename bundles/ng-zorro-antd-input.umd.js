@@ -1,8 +1,213 @@
 (function (global, factory) {
-    typeof exports === 'object' && typeof module !== 'undefined' ? factory(exports, require('@angular/core'), require('ng-zorro-antd/core'), require('@angular/common'), require('ng-zorro-antd/icon'), require('@angular/cdk/platform'), require('rxjs'), require('rxjs/operators')) :
-    typeof define === 'function' && define.amd ? define('ng-zorro-antd/input', ['exports', '@angular/core', 'ng-zorro-antd/core', '@angular/common', 'ng-zorro-antd/icon', '@angular/cdk/platform', 'rxjs', 'rxjs/operators'], factory) :
-    (global = global || self, factory((global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].input = {}), global.ng.core, global['ng-zorro-antd'].core, global.ng.common, global['ng-zorro-antd'].icon, global.ng.cdk.platform, global.rxjs, global.rxjs.operators));
-}(this, (function (exports, core, core$1, common, icon, platform, rxjs, operators) { 'use strict';
+    typeof exports === 'object' && typeof module !== 'undefined' ? factory(require('@angular/core'),require('@angular/common'),require('ng-zorro-antd/core'),require('ng-zorro-antd/icon'),require('@angular/cdk/platform'),exports, require('@angular/core'), require('ng-zorro-antd/core'), require('@angular/common'), require('ng-zorro-antd/icon'), require('@angular/cdk/platform'), require('rxjs'), require('rxjs/operators')) :
+    typeof define === 'function' && define.amd ? define('ng-zorro-antd/input', ['@angular/core','@angular/common','ng-zorro-antd/core','ng-zorro-antd/icon','@angular/cdk/platform','exports', '@angular/core', 'ng-zorro-antd/core', '@angular/common', 'ng-zorro-antd/icon', '@angular/cdk/platform', 'rxjs', 'rxjs/operators'], factory) :
+    (global = global || self, factory(global.ng.core,global.ng.common,global.ngZorroAntd.core,global.ngZorroAntd.icon,global.ng.cdk.platform,(global['ng-zorro-antd'] = global['ng-zorro-antd'] || {}, global['ng-zorro-antd'].input = {}), global.ng.core, global['ng-zorro-antd'].core, global.ng.common, global['ng-zorro-antd'].icon, global.ng.cdk.platform, global.rxjs, global.rxjs.operators));
+}(this, (function (ɵngcc0,ɵngcc1,ɵngcc2,ɵngcc3,ɵngcc4,exports, core, core$1, common, icon, platform, rxjs, operators) { 
+function NzInputGroupComponent_span_0_span_1_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 10);
+} if (rf & 2) {
+    var ctx_r11 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r11.nzAddOnBeforeIcon);
+} }
+function NzInputGroupComponent_span_0_span_1_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r12 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r12.nzAddOnBefore);
+} }
+function NzInputGroupComponent_span_0_span_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 7);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_span_0_span_1_i_1_Template, 1, 1, "i", 8);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_span_0_span_1_ng_container_2_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r7 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r7.nzAddOnBeforeIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r7.nzAddOnBefore);
+} }
+function NzInputGroupComponent_span_0_ng_container_2_1_ng_template_0_Template(rf, ctx) { }
+function NzInputGroupComponent_span_0_ng_container_2_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_span_0_ng_container_2_1_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzInputGroupComponent_span_0_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_span_0_ng_container_2_1_Template, 1, 0, undefined, 11);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    ɵngcc0.ɵɵnextContext(2);
+    var _r5 = ɵngcc0.ɵɵreference(6);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r5);
+} }
+function NzInputGroupComponent_span_0_span_3_1_ng_template_0_Template(rf, ctx) { }
+function NzInputGroupComponent_span_0_span_3_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_span_0_span_3_1_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzInputGroupComponent_span_0_span_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 12);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_span_0_span_3_1_Template, 1, 0, undefined, 11);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r9 = ɵngcc0.ɵɵnextContext(2);
+    var _r2 = ɵngcc0.ɵɵreference(3);
+    ɵngcc0.ɵɵclassProp("ant-input-affix-wrapper-sm", ctx_r9.isSmall)("ant-input-affix-wrapper-lg", ctx_r9.isLarge);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r2);
+} }
+function NzInputGroupComponent_span_0_span_4_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 10);
+} if (rf & 2) {
+    var ctx_r17 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r17.nzAddOnAfterIcon);
+} }
+function NzInputGroupComponent_span_0_span_4_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r18 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r18.nzAddOnAfter);
+} }
+function NzInputGroupComponent_span_0_span_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 7);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_span_0_span_4_i_1_Template, 1, 1, "i", 8);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_span_0_span_4_ng_container_2_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r10 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r10.nzAddOnAfterIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r10.nzAddOnAfter);
+} }
+function NzInputGroupComponent_span_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 4);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_span_0_span_1_Template, 3, 2, "span", 5);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_span_0_ng_container_2_Template, 2, 1, "ng-container", 1);
+    ɵngcc0.ɵɵtemplate(3, NzInputGroupComponent_span_0_span_3_Template, 2, 5, "span", 6);
+    ɵngcc0.ɵɵtemplate(4, NzInputGroupComponent_span_0_span_4_Template, 3, 2, "span", 5);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.nzAddOnBefore || ctx_r0.nzAddOnBeforeIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !ctx_r0.isAffix);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.isAffix);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r0.nzAddOnAfter || ctx_r0.nzAddOnAfterIcon);
+} }
+function NzInputGroupComponent_ng_container_1_1_ng_template_0_Template(rf, ctx) { }
+function NzInputGroupComponent_ng_container_1_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_ng_container_1_1_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzInputGroupComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_container_1_1_Template, 1, 0, undefined, 11);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    ɵngcc0.ɵɵnextContext();
+    var _r2 = ɵngcc0.ɵɵreference(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r2);
+} }
+function NzInputGroupComponent_ng_template_2_span_0_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 17);
+} if (rf & 2) {
+    var ctx_r24 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r24.nzPrefixIcon);
+} }
+function NzInputGroupComponent_ng_template_2_span_0_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r25 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r25.nzPrefix);
+} }
+function NzInputGroupComponent_ng_template_2_span_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 15);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_template_2_span_0_i_1_Template, 1, 1, "i", 16);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_ng_template_2_span_0_ng_container_2_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r21 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r21.nzPrefixIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r21.nzPrefix);
+} }
+function NzInputGroupComponent_ng_template_2_1_ng_template_0_Template(rf, ctx) { }
+function NzInputGroupComponent_ng_template_2_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_ng_template_2_1_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzInputGroupComponent_ng_template_2_span_2_i_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 10);
+} if (rf & 2) {
+    var ctx_r27 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r27.nzSuffixIcon);
+} }
+function NzInputGroupComponent_ng_template_2_span_2_ng_container_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r28 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r28.nzSuffix);
+} }
+function NzInputGroupComponent_ng_template_2_span_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 18);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_template_2_span_2_i_1_Template, 1, 1, "i", 8);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_ng_template_2_span_2_ng_container_2_Template, 2, 1, "ng-container", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r23 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r23.nzSuffixIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx_r23.nzSuffix);
+} }
+function NzInputGroupComponent_ng_template_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_ng_template_2_span_0_Template, 3, 2, "span", 13);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_template_2_1_Template, 1, 0, undefined, 11);
+    ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_ng_template_2_span_2_Template, 3, 2, "span", 14);
+} if (rf & 2) {
+    var ctx_r3 = ɵngcc0.ɵɵnextContext();
+    var _r5 = ɵngcc0.ɵɵreference(6);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r3.nzPrefix || ctx_r3.nzPrefixIcon);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r5);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r3.nzSuffix || ctx_r3.nzSuffixIcon);
+} }
+function NzInputGroupComponent_ng_container_4_1_ng_template_0_Template(rf, ctx) { }
+function NzInputGroupComponent_ng_container_4_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_ng_container_4_1_ng_template_0_Template, 0, 0, "ng-template");
+} }
+function NzInputGroupComponent_ng_container_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_container_4_1_Template, 1, 0, undefined, 11);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    ɵngcc0.ɵɵnextContext();
+    var _r5 = ɵngcc0.ɵɵreference(6);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r5);
+} }
+function NzInputGroupComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0);
+} }
+var _c0 = ["*"];
+'use strict';
 
     /*! *****************************************************************************
     Copyright (c) Microsoft Corporation. All rights reserved.
@@ -211,17 +416,6 @@
             this.disabled = false;
             renderer.addClass(elementRef.nativeElement, 'ant-input');
         }
-        NzInputDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: '[nz-input]',
-                        exportAs: 'nzInput',
-                        host: {
-                            '[class.ant-input-disabled]': 'disabled',
-                            '[class.ant-input-lg]': "nzSize === 'large'",
-                            '[class.ant-input-sm]': "nzSize === 'small'"
-                        }
-                    },] }
-        ];
         /** @nocollapse */
         NzInputDirective.ctorParameters = function () { return [
             { type: core.Renderer2 },
@@ -235,6 +429,26 @@
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzInputDirective.prototype, "disabled", void 0);
+NzInputDirective.ɵfac = function NzInputDirective_Factory(t) { return new (t || NzInputDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef)); };
+NzInputDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzInputDirective, selectors: [["", "nz-input", ""]], hostVars: 6, hostBindings: function NzInputDirective_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-input-disabled", ctx.disabled)("ant-input-lg", ctx.nzSize === "large")("ant-input-sm", ctx.nzSize === "small");
+    } }, inputs: { nzSize: "nzSize", disabled: "disabled" }, exportAs: ["nzInput"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzInputDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: '[nz-input]',
+                exportAs: 'nzInput',
+                host: {
+                    '[class.ant-input-disabled]': 'disabled',
+                    '[class.ant-input-lg]': "nzSize === 'large'",
+                    '[class.ant-input-sm]': "nzSize === 'small'"
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ElementRef }]; }, { nzSize: [{
+            type: core.Input
+        }], disabled: [{
+            type: core.Input
+        }] }); })();
         return NzInputDirective;
     }());
     if (false) {
@@ -437,32 +651,6 @@
         function () {
             this.updateChildrenInputSize();
         };
-        NzInputGroupComponent.decorators = [
-            { type: core.Component, args: [{
-                        selector: 'nz-input-group',
-                        exportAs: 'nzInputGroup',
-                        preserveWhitespaces: false,
-                        encapsulation: core.ViewEncapsulation.None,
-                        changeDetection: core.ChangeDetectionStrategy.OnPush,
-                        template: "<span class=\"ant-input-wrapper ant-input-group\" *ngIf=\"isAddOn\">\r\n  <span class=\"ant-input-group-addon\" *ngIf=\"nzAddOnBefore || nzAddOnBeforeIcon\">\r\n    <i nz-icon [nzType]=\"nzAddOnBeforeIcon\" *ngIf=\"nzAddOnBeforeIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzAddOnBefore\">{{ nzAddOnBefore }}</ng-container>\r\n  </span>\r\n  <ng-container *ngIf=\"!isAffix\">\r\n    <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n  </ng-container>\r\n  <span class=\"ant-input-affix-wrapper\" [class.ant-input-affix-wrapper-sm]=\"isSmall\" [class.ant-input-affix-wrapper-lg]=\"isLarge\" *ngIf=\"isAffix\">\r\n    <ng-template *ngTemplateOutlet=\"affixTemplate\"></ng-template>\r\n  </span>\r\n  <span class=\"ant-input-group-addon\" *ngIf=\"nzAddOnAfter || nzAddOnAfterIcon\">\r\n    <i nz-icon [nzType]=\"nzAddOnAfterIcon\" *ngIf=\"nzAddOnAfterIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzAddOnAfter\">{{ nzAddOnAfter }}</ng-container>\r\n  </span>\r\n</span>\r\n<ng-container *ngIf=\"isAffix && !isAddOn\">\r\n  <ng-template *ngTemplateOutlet=\"affixTemplate\"></ng-template>\r\n</ng-container>\r\n<ng-template #affixTemplate>\r\n  <span class=\"ant-input-prefix\" *ngIf=\"nzPrefix || nzPrefixIcon\">\r\n    <!-- TODO: should have a class to set its color, cc: antd-->\r\n    <i nz-icon [nzType]=\"nzPrefixIcon\" *ngIf=\"nzPrefixIcon\" style=\"color: rgba(0, 0, 0, 0.25)\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzPrefix\">{{ nzPrefix }}</ng-container>\r\n  </span>\r\n  <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n  <span class=\"ant-input-suffix\" *ngIf=\"nzSuffix || nzSuffixIcon\">\r\n    <i nz-icon [nzType]=\"nzSuffixIcon\" *ngIf=\"nzSuffixIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzSuffix\">{{ nzSuffix }}</ng-container>\r\n  </span>\r\n</ng-template>\r\n<ng-container *ngIf=\"isGroup\">\r\n  <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n</ng-container>\r\n<ng-template #contentTemplate>\r\n  <ng-content></ng-content>\r\n</ng-template>\r\n",
-                        host: {
-                            '[class.ant-input-group-compact]': 'nzCompact',
-                            '[class.ant-input-search-enter-button]': 'nzSearch',
-                            '[class.ant-input-search]': 'nzSearch',
-                            '[class.ant-input-search-sm]': 'isSmallSearch',
-                            '[class.ant-input-affix-wrapper]': 'isAffixWrapper',
-                            '[class.ant-input-group-wrapper]': 'isAddOn',
-                            '[class.ant-input-group]': 'isGroup',
-                            '[class.ant-input-group-lg]': 'isLargeGroup',
-                            '[class.ant-input-group-wrapper-lg]': 'isLargeGroupWrapper',
-                            '[class.ant-input-affix-wrapper-lg]': 'isLargeAffix',
-                            '[class.ant-input-search-lg]': 'isLargeSearch',
-                            '[class.ant-input-group-sm]': 'isSmallGroup',
-                            '[class.ant-input-affix-wrapper-sm]': 'isSmallAffix',
-                            '[class.ant-input-group-wrapper-sm]': 'isSmallGroupWrapper'
-                        }
-                    }] }
-        ];
         NzInputGroupComponent.propDecorators = {
             listOfNzInputDirective: [{ type: core.ContentChildren, args: [NzInputDirective,] }],
             nzAddOnBeforeIcon: [{ type: core.Input }],
@@ -485,6 +673,80 @@
             core$1.InputBoolean(),
             __metadata("design:type", Object)
         ], NzInputGroupComponent.prototype, "nzCompact", void 0);
+NzInputGroupComponent.ɵfac = function NzInputGroupComponent_Factory(t) { return new (t || NzInputGroupComponent)(); };
+NzInputGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzInputGroupComponent, selectors: [["nz-input-group"]], contentQueries: function NzInputGroupComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzInputDirective, false);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzInputDirective = _t);
+    } }, hostVars: 28, hostBindings: function NzInputGroupComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-input-group-compact", ctx.nzCompact)("ant-input-search-enter-button", ctx.nzSearch)("ant-input-search", ctx.nzSearch)("ant-input-search-sm", ctx.isSmallSearch)("ant-input-affix-wrapper", ctx.isAffixWrapper)("ant-input-group-wrapper", ctx.isAddOn)("ant-input-group", ctx.isGroup)("ant-input-group-lg", ctx.isLargeGroup)("ant-input-group-wrapper-lg", ctx.isLargeGroupWrapper)("ant-input-affix-wrapper-lg", ctx.isLargeAffix)("ant-input-search-lg", ctx.isLargeSearch)("ant-input-group-sm", ctx.isSmallGroup)("ant-input-affix-wrapper-sm", ctx.isSmallAffix)("ant-input-group-wrapper-sm", ctx.isSmallGroupWrapper);
+    } }, inputs: { nzSearch: "nzSearch", nzCompact: "nzCompact", nzSize: "nzSize", nzAddOnBeforeIcon: "nzAddOnBeforeIcon", nzAddOnAfterIcon: "nzAddOnAfterIcon", nzPrefixIcon: "nzPrefixIcon", nzSuffixIcon: "nzSuffixIcon", nzAddOnBefore: "nzAddOnBefore", nzAddOnAfter: "nzAddOnAfter", nzPrefix: "nzPrefix", nzSuffix: "nzSuffix" }, exportAs: ["nzInputGroup"], ngContentSelectors: _c0, decls: 7, vars: 3, consts: [["class", "ant-input-wrapper ant-input-group", 4, "ngIf"], [4, "ngIf"], ["affixTemplate", ""], ["contentTemplate", ""], [1, "ant-input-wrapper", "ant-input-group"], ["class", "ant-input-group-addon", 4, "ngIf"], ["class", "ant-input-affix-wrapper", 3, "ant-input-affix-wrapper-sm", "ant-input-affix-wrapper-lg", 4, "ngIf"], [1, "ant-input-group-addon"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], ["nz-icon", "", 3, "nzType"], [4, "ngTemplateOutlet"], [1, "ant-input-affix-wrapper"], ["class", "ant-input-prefix", 4, "ngIf"], ["class", "ant-input-suffix", 4, "ngIf"], [1, "ant-input-prefix"], ["nz-icon", "", "style", "color: rgba(0, 0, 0, 0.25)", 3, "nzType", 4, "ngIf"], ["nz-icon", "", 2, "color", "rgba(0, 0, 0, 0.25)", 3, "nzType"], [1, "ant-input-suffix"]], template: function NzInputGroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵtemplate(0, NzInputGroupComponent_span_0_Template, 5, 4, "span", 0);
+        ɵngcc0.ɵɵtemplate(1, NzInputGroupComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+        ɵngcc0.ɵɵtemplate(2, NzInputGroupComponent_ng_template_2_Template, 3, 3, "ng-template", null, 2, ɵngcc0.ɵɵtemplateRefExtractor);
+        ɵngcc0.ɵɵtemplate(4, NzInputGroupComponent_ng_container_4_Template, 2, 1, "ng-container", 1);
+        ɵngcc0.ɵɵtemplate(5, NzInputGroupComponent_ng_template_5_Template, 1, 0, "ng-template", null, 3, ɵngcc0.ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("ngIf", ctx.isAddOn);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.isAffix && !ctx.isAddOn);
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.isGroup);
+    } }, directives: [ɵngcc1.NgIf, ɵngcc2.NzStringTemplateOutletDirective, ɵngcc3.NzIconDirective, ɵngcc1.NgTemplateOutlet], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzInputGroupComponent, [{
+        type: core.Component,
+        args: [{
+                selector: 'nz-input-group',
+                exportAs: 'nzInputGroup',
+                preserveWhitespaces: false,
+                encapsulation: core.ViewEncapsulation.None,
+                changeDetection: core.ChangeDetectionStrategy.OnPush,
+                template: "<span class=\"ant-input-wrapper ant-input-group\" *ngIf=\"isAddOn\">\r\n  <span class=\"ant-input-group-addon\" *ngIf=\"nzAddOnBefore || nzAddOnBeforeIcon\">\r\n    <i nz-icon [nzType]=\"nzAddOnBeforeIcon\" *ngIf=\"nzAddOnBeforeIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzAddOnBefore\">{{ nzAddOnBefore }}</ng-container>\r\n  </span>\r\n  <ng-container *ngIf=\"!isAffix\">\r\n    <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n  </ng-container>\r\n  <span class=\"ant-input-affix-wrapper\" [class.ant-input-affix-wrapper-sm]=\"isSmall\" [class.ant-input-affix-wrapper-lg]=\"isLarge\" *ngIf=\"isAffix\">\r\n    <ng-template *ngTemplateOutlet=\"affixTemplate\"></ng-template>\r\n  </span>\r\n  <span class=\"ant-input-group-addon\" *ngIf=\"nzAddOnAfter || nzAddOnAfterIcon\">\r\n    <i nz-icon [nzType]=\"nzAddOnAfterIcon\" *ngIf=\"nzAddOnAfterIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzAddOnAfter\">{{ nzAddOnAfter }}</ng-container>\r\n  </span>\r\n</span>\r\n<ng-container *ngIf=\"isAffix && !isAddOn\">\r\n  <ng-template *ngTemplateOutlet=\"affixTemplate\"></ng-template>\r\n</ng-container>\r\n<ng-template #affixTemplate>\r\n  <span class=\"ant-input-prefix\" *ngIf=\"nzPrefix || nzPrefixIcon\">\r\n    <!-- TODO: should have a class to set its color, cc: antd-->\r\n    <i nz-icon [nzType]=\"nzPrefixIcon\" *ngIf=\"nzPrefixIcon\" style=\"color: rgba(0, 0, 0, 0.25)\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzPrefix\">{{ nzPrefix }}</ng-container>\r\n  </span>\r\n  <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n  <span class=\"ant-input-suffix\" *ngIf=\"nzSuffix || nzSuffixIcon\">\r\n    <i nz-icon [nzType]=\"nzSuffixIcon\" *ngIf=\"nzSuffixIcon\"></i>\r\n    <ng-container *nzStringTemplateOutlet=\"nzSuffix\">{{ nzSuffix }}</ng-container>\r\n  </span>\r\n</ng-template>\r\n<ng-container *ngIf=\"isGroup\">\r\n  <ng-template *ngTemplateOutlet=\"contentTemplate\"></ng-template>\r\n</ng-container>\r\n<ng-template #contentTemplate>\r\n  <ng-content></ng-content>\r\n</ng-template>\r\n",
+                host: {
+                    '[class.ant-input-group-compact]': 'nzCompact',
+                    '[class.ant-input-search-enter-button]': 'nzSearch',
+                    '[class.ant-input-search]': 'nzSearch',
+                    '[class.ant-input-search-sm]': 'isSmallSearch',
+                    '[class.ant-input-affix-wrapper]': 'isAffixWrapper',
+                    '[class.ant-input-group-wrapper]': 'isAddOn',
+                    '[class.ant-input-group]': 'isGroup',
+                    '[class.ant-input-group-lg]': 'isLargeGroup',
+                    '[class.ant-input-group-wrapper-lg]': 'isLargeGroupWrapper',
+                    '[class.ant-input-affix-wrapper-lg]': 'isLargeAffix',
+                    '[class.ant-input-search-lg]': 'isLargeSearch',
+                    '[class.ant-input-group-sm]': 'isSmallGroup',
+                    '[class.ant-input-affix-wrapper-sm]': 'isSmallAffix',
+                    '[class.ant-input-group-wrapper-sm]': 'isSmallGroupWrapper'
+                }
+            }]
+    }], function () { return []; }, { nzSearch: [{
+            type: core.Input
+        }], nzCompact: [{
+            type: core.Input
+        }], nzSize: [{
+            type: core.Input
+        }], listOfNzInputDirective: [{
+            type: core.ContentChildren,
+            args: [NzInputDirective]
+        }], nzAddOnBeforeIcon: [{
+            type: core.Input
+        }], nzAddOnAfterIcon: [{
+            type: core.Input
+        }], nzPrefixIcon: [{
+            type: core.Input
+        }], nzSuffixIcon: [{
+            type: core.Input
+        }], nzAddOnBefore: [{
+            type: core.Input
+        }], nzAddOnAfter: [{
+            type: core.Input
+        }], nzPrefix: [{
+            type: core.Input
+        }], nzSuffix: [{
+            type: core.Input
+        }] }); })();
         return NzInputGroupComponent;
     }());
     if (false) {
@@ -760,18 +1022,6 @@
                 this.resizeToFitContent();
             }
         };
-        NzAutosizeDirective.decorators = [
-            { type: core.Directive, args: [{
-                        selector: 'textarea[nzAutosize]',
-                        exportAs: 'nzAutosize',
-                        host: {
-                            // Textarea elements that have the directive applied should have a single row by default.
-                            // Browsers normally show two rows by default and therefore this limits the minRows binding.
-                            rows: '1',
-                            '(input)': 'noopInputHandler()'
-                        }
-                    },] }
-        ];
         /** @nocollapse */
         NzAutosizeDirective.ctorParameters = function () { return [
             { type: core.ElementRef },
@@ -782,6 +1032,25 @@
         NzAutosizeDirective.propDecorators = {
             nzAutosize: [{ type: core.Input }]
         };
+NzAutosizeDirective.ɵfac = function NzAutosizeDirective_Factory(t) { return new (t || NzAutosizeDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.NgZone), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.NzDomEventService)); };
+NzAutosizeDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzAutosizeDirective, selectors: [["textarea", "nzAutosize", ""]], hostAttrs: ["rows", "1"], hostBindings: function NzAutosizeDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("input", function NzAutosizeDirective_input_HostBindingHandler() { return ctx.noopInputHandler(); });
+    } }, inputs: { nzAutosize: "nzAutosize" }, exportAs: ["nzAutosize"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzAutosizeDirective, [{
+        type: core.Directive,
+        args: [{
+                selector: 'textarea[nzAutosize]',
+                exportAs: 'nzAutosize',
+                host: {
+                    // Textarea elements that have the directive applied should have a single row by default.
+                    // Browsers normally show two rows by default and therefore this limits the minRows binding.
+                    rows: '1',
+                    '(input)': 'noopInputHandler()'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.NgZone }, { type: ɵngcc4.Platform }, { type: ɵngcc2.NzDomEventService }]; }, { nzAutosize: [{
+            type: core.Input
+        }] }); })();
         return NzAutosizeDirective;
     }());
     if (false) {
@@ -859,13 +1128,21 @@
     var NzInputModule = /** @class */ (function () {
         function NzInputModule() {
         }
-        NzInputModule.decorators = [
-            { type: core.NgModule, args: [{
-                        declarations: [NzInputDirective, NzInputGroupComponent, NzAutosizeDirective],
-                        exports: [NzInputDirective, NzInputGroupComponent, NzAutosizeDirective],
-                        imports: [common.CommonModule, icon.NzIconModule, platform.PlatformModule, core$1.NzAddOnModule]
-                    },] }
-        ];
+NzInputModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzInputModule });
+NzInputModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzInputModule_Factory(t) { return new (t || NzInputModule)(); }, imports: [[common.CommonModule, icon.NzIconModule, platform.PlatformModule, core$1.NzAddOnModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzInputModule, { declarations: [NzInputDirective,
+        NzInputGroupComponent,
+        NzAutosizeDirective], imports: [ɵngcc1.CommonModule, ɵngcc3.NzIconModule, ɵngcc4.PlatformModule, ɵngcc2.NzAddOnModule], exports: [NzInputDirective,
+        NzInputGroupComponent,
+        NzAutosizeDirective] }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzInputModule, [{
+        type: core.NgModule,
+        args: [{
+                declarations: [NzInputDirective, NzInputGroupComponent, NzAutosizeDirective],
+                exports: [NzInputDirective, NzInputGroupComponent, NzAutosizeDirective],
+                imports: [common.CommonModule, icon.NzIconModule, platform.PlatformModule, core$1.NzAddOnModule]
+            }]
+    }], function () { return []; }, null); })();
         return NzInputModule;
     }());
 
@@ -878,4 +1155,5 @@
     Object.defineProperty(exports, '__esModule', { value: true });
 
 })));
+
 //# sourceMappingURL=ng-zorro-antd-input.umd.js.map

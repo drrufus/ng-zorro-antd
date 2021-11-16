@@ -11,6 +11,12 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from '@angular/cdk/a11y';
+import * as ɵngcc2 from 'ng-zorro-antd/icon';
+import * as ɵngcc3 from '@angular/forms';
+
+var _c0 = ["inputElement"];
 var NzInputNumberComponent = /** @class */ (function () {
     function NzInputNumberComponent(elementRef, renderer, cdr, focusMonitor) {
         this.elementRef = elementRef;
@@ -625,31 +631,6 @@ var NzInputNumberComponent = /** @class */ (function () {
     function () {
         this.focusMonitor.stopMonitoring(this.elementRef);
     };
-    NzInputNumberComponent.decorators = [
-        { type: Component, args: [{
-                    selector: 'nz-input-number',
-                    exportAs: 'nzInputNumber',
-                    template: "<div class=\"ant-input-number-handler-wrap\">\r\n  <span unselectable=\"unselectable\"\r\n        class=\"ant-input-number-handler ant-input-number-handler-up\"\r\n        (mousedown)=\"up($event)\"\r\n        (mouseup)=\"stop()\"\r\n        (mouseleave)=\"stop()\"\r\n        [class.ant-input-number-handler-up-disabled]=\"disabledUp\">\r\n    <i nz-icon nzType=\"up\" class=\"ant-input-number-handler-up-inner\"></i>\r\n  </span>\r\n  <span unselectable=\"unselectable\"\r\n        class=\"ant-input-number-handler ant-input-number-handler-down\"\r\n        (mousedown)=\"down($event)\"\r\n        (mouseup)=\"stop()\"\r\n        (mouseleave)=\"stop()\"\r\n        [class.ant-input-number-handler-down-disabled]=\"disabledDown\">\r\n    <i nz-icon nzType=\"down\" class=\"ant-input-number-handler-down-inner\"></i>\r\n  </span>\r\n</div>\r\n<div class=\"ant-input-number-input-wrap\">\r\n  <input #inputElement\r\n         autocomplete=\"off\"\r\n         class=\"ant-input-number-input\"\r\n         [attr.id]=\"nzId\"\r\n         [disabled]=\"nzDisabled\"\r\n         [attr.min]=\"nzMin\"\r\n         [attr.max]=\"nzMax\"\r\n         [placeholder]=\"nzPlaceHolder\"\r\n         [attr.step]=\"nzStep\"\r\n         (keydown)=\"onKeyDown($event)\"\r\n         (keyup)=\"onKeyUp()\"\r\n         [ngModel]=\"displayValue\"\r\n         (ngModelChange)=\"onModelChange($event)\">\r\n</div>\r\n",
-                    providers: [
-                        {
-                            provide: NG_VALUE_ACCESSOR,
-                            useExisting: forwardRef((/**
-                             * @return {?}
-                             */
-                            function () { return NzInputNumberComponent; })),
-                            multi: true
-                        }
-                    ],
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    host: {
-                        '[class.ant-input-number-focused]': 'isFocused',
-                        '[class.ant-input-number-lg]': "nzSize === 'large'",
-                        '[class.ant-input-number-sm]': "nzSize === 'small'",
-                        '[class.ant-input-number-disabled]': 'nzDisabled'
-                    }
-                }] }
-    ];
     /** @nocollapse */
     NzInputNumberComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -681,6 +662,101 @@ var NzInputNumberComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzInputNumberComponent.prototype, "nzAutoFocus", void 0);
+NzInputNumberComponent.ɵfac = function NzInputNumberComponent_Factory(t) { return new (t || NzInputNumberComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.FocusMonitor)); };
+NzInputNumberComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzInputNumberComponent, selectors: [["nz-input-number"]], viewQuery: function NzInputNumberComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵstaticViewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.inputElement = _t.first);
+    } }, hostVars: 8, hostBindings: function NzInputNumberComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵclassProp("ant-input-number-focused", ctx.isFocused)("ant-input-number-lg", ctx.nzSize === "large")("ant-input-number-sm", ctx.nzSize === "small")("ant-input-number-disabled", ctx.nzDisabled);
+    } }, inputs: { nzSize: "nzSize", nzMin: "nzMin", nzMax: "nzMax", nzParser: "nzParser", nzPlaceHolder: "nzPlaceHolder", nzStep: "nzStep", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzFormatter: "nzFormatter", nzPrecision: "nzPrecision", nzId: "nzId" }, outputs: { nzBlur: "nzBlur", nzFocus: "nzFocus" }, exportAs: ["nzInputNumber"], features: [ɵngcc0.ɵɵProvidersFeature([
+            {
+                provide: NG_VALUE_ACCESSOR,
+                useExisting: forwardRef(( /**
+                 * @return {?}
+                 */function () { return NzInputNumberComponent; })),
+                multi: true
+            }
+        ]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 8, vars: 11, consts: [[1, "ant-input-number-handler-wrap"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-up", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "up", 1, "ant-input-number-handler-up-inner"], ["unselectable", "unselectable", 1, "ant-input-number-handler", "ant-input-number-handler-down", 3, "mousedown", "mouseup", "mouseleave"], ["nz-icon", "", "nzType", "down", 1, "ant-input-number-handler-down-inner"], [1, "ant-input-number-input-wrap"], ["autocomplete", "off", 1, "ant-input-number-input", 3, "disabled", "placeholder", "ngModel", "keydown", "keyup", "ngModelChange"], ["inputElement", ""]], template: function NzInputNumberComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵelementStart(1, "span", 1);
+        ɵngcc0.ɵɵlistener("mousedown", function NzInputNumberComponent_Template_span_mousedown_1_listener($event) { return ctx.up($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_1_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_1_listener() { return ctx.stop(); });
+        ɵngcc0.ɵɵelement(2, "i", 2);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(3, "span", 3);
+        ɵngcc0.ɵɵlistener("mousedown", function NzInputNumberComponent_Template_span_mousedown_3_listener($event) { return ctx.down($event); })("mouseup", function NzInputNumberComponent_Template_span_mouseup_3_listener() { return ctx.stop(); })("mouseleave", function NzInputNumberComponent_Template_span_mouseleave_3_listener() { return ctx.stop(); });
+        ɵngcc0.ɵɵelement(4, "i", 4);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(5, "div", 5);
+        ɵngcc0.ɵɵelementStart(6, "input", 6, 7);
+        ɵngcc0.ɵɵlistener("keydown", function NzInputNumberComponent_Template_input_keydown_6_listener($event) { return ctx.onKeyDown($event); })("keyup", function NzInputNumberComponent_Template_input_keyup_6_listener() { return ctx.onKeyUp(); })("ngModelChange", function NzInputNumberComponent_Template_input_ngModelChange_6_listener($event) { return ctx.onModelChange($event); });
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵclassProp("ant-input-number-handler-up-disabled", ctx.disabledUp);
+        ɵngcc0.ɵɵadvance(2);
+        ɵngcc0.ɵɵclassProp("ant-input-number-handler-down-disabled", ctx.disabledDown);
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("disabled", ctx.nzDisabled)("placeholder", ctx.nzPlaceHolder)("ngModel", ctx.displayValue);
+        ɵngcc0.ɵɵattribute("id", ctx.nzId)("min", ctx.nzMin)("max", ctx.nzMax)("step", ctx.nzStep);
+    } }, directives: [ɵngcc2.NzIconDirective, ɵngcc3.DefaultValueAccessor, ɵngcc3.NgControlStatus, ɵngcc3.NgModel], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzInputNumberComponent, [{
+        type: Component,
+        args: [{
+                selector: 'nz-input-number',
+                exportAs: 'nzInputNumber',
+                template: "<div class=\"ant-input-number-handler-wrap\">\r\n  <span unselectable=\"unselectable\"\r\n        class=\"ant-input-number-handler ant-input-number-handler-up\"\r\n        (mousedown)=\"up($event)\"\r\n        (mouseup)=\"stop()\"\r\n        (mouseleave)=\"stop()\"\r\n        [class.ant-input-number-handler-up-disabled]=\"disabledUp\">\r\n    <i nz-icon nzType=\"up\" class=\"ant-input-number-handler-up-inner\"></i>\r\n  </span>\r\n  <span unselectable=\"unselectable\"\r\n        class=\"ant-input-number-handler ant-input-number-handler-down\"\r\n        (mousedown)=\"down($event)\"\r\n        (mouseup)=\"stop()\"\r\n        (mouseleave)=\"stop()\"\r\n        [class.ant-input-number-handler-down-disabled]=\"disabledDown\">\r\n    <i nz-icon nzType=\"down\" class=\"ant-input-number-handler-down-inner\"></i>\r\n  </span>\r\n</div>\r\n<div class=\"ant-input-number-input-wrap\">\r\n  <input #inputElement\r\n         autocomplete=\"off\"\r\n         class=\"ant-input-number-input\"\r\n         [attr.id]=\"nzId\"\r\n         [disabled]=\"nzDisabled\"\r\n         [attr.min]=\"nzMin\"\r\n         [attr.max]=\"nzMax\"\r\n         [placeholder]=\"nzPlaceHolder\"\r\n         [attr.step]=\"nzStep\"\r\n         (keydown)=\"onKeyDown($event)\"\r\n         (keyup)=\"onKeyUp()\"\r\n         [ngModel]=\"displayValue\"\r\n         (ngModelChange)=\"onModelChange($event)\">\r\n</div>\r\n",
+                providers: [
+                    {
+                        provide: NG_VALUE_ACCESSOR,
+                        useExisting: forwardRef(( /**
+                         * @return {?}
+                         */function () { return NzInputNumberComponent; })),
+                        multi: true
+                    }
+                ],
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                host: {
+                    '[class.ant-input-number-focused]': 'isFocused',
+                    '[class.ant-input-number-lg]': "nzSize === 'large'",
+                    '[class.ant-input-number-sm]': "nzSize === 'small'",
+                    '[class.ant-input-number-disabled]': 'nzDisabled'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc1.FocusMonitor }]; }, { nzBlur: [{
+            type: Output
+        }], nzFocus: [{
+            type: Output
+        }], nzSize: [{
+            type: Input
+        }], nzMin: [{
+            type: Input
+        }], nzMax: [{
+            type: Input
+        }], nzParser: [{
+            type: Input
+        }], nzPlaceHolder: [{
+            type: Input
+        }], nzStep: [{
+            type: Input
+        }], nzDisabled: [{
+            type: Input
+        }], nzAutoFocus: [{
+            type: Input
+        }], nzFormatter: [{
+            type: Input
+        }], inputElement: [{
+            type: ViewChild,
+            args: ['inputElement', { static: true }]
+        }], nzPrecision: [{
+            type: Input
+        }], nzId: [{
+            type: Input
+        }] }); })();
     return NzInputNumberComponent;
 }());
 if (false) {
@@ -769,13 +845,17 @@ if (false) {
 var NzInputNumberModule = /** @class */ (function () {
     function NzInputNumberModule() {
     }
-    NzInputNumberModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [CommonModule, FormsModule, NzIconModule],
-                    declarations: [NzInputNumberComponent],
-                    exports: [NzInputNumberComponent]
-                },] }
-    ];
+NzInputNumberModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzInputNumberModule });
+NzInputNumberModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzInputNumberModule_Factory(t) { return new (t || NzInputNumberModule)(); }, imports: [[CommonModule, FormsModule, NzIconModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzInputNumberModule, { declarations: function () { return [NzInputNumberComponent]; }, imports: function () { return [CommonModule, FormsModule, NzIconModule]; }, exports: function () { return [NzInputNumberComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzInputNumberModule, [{
+        type: NgModule,
+        args: [{
+                imports: [CommonModule, FormsModule, NzIconModule],
+                declarations: [NzInputNumberComponent],
+                exports: [NzInputNumberComponent]
+            }]
+    }], function () { return []; }, null); })();
     return NzInputNumberModule;
 }());
 
@@ -790,4 +870,5 @@ var NzInputNumberModule = /** @class */ (function () {
  */
 
 export { NzInputNumberComponent, NzInputNumberModule };
+
 //# sourceMappingURL=ng-zorro-antd-input-number.js.map

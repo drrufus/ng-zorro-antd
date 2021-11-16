@@ -15,6 +15,101 @@ import { NzIconModule } from 'ng-zorro-antd/icon';
  * @fileoverview added by tsickle
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/router';
+import * as ɵngcc3 from '@angular/cdk/platform';
+import * as ɵngcc4 from '@angular/cdk/overlay';
+import * as ɵngcc5 from '@angular/common';
+import * as ɵngcc6 from 'ng-zorro-antd/icon';
+
+var _c0 = ["nz-submenu", ""];
+function NzSubMenuComponent_i_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 10);
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("nzType", ctx_r1.nzIcon);
+} }
+function NzSubMenuComponent_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵelementStart(1, "span");
+    ɵngcc0.ɵɵtext(2);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r2.nzTitle);
+} }
+function NzSubMenuComponent_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0, 0, ["*ngIf", "!nzTitle"]);
+} }
+function NzSubMenuComponent_span_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 11);
+    ɵngcc0.ɵɵelement(1, "i", 12);
+    ɵngcc0.ɵɵelementEnd();
+} }
+function NzSubMenuComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 13);
+} }
+function NzSubMenuComponent_ul_8_1_ng_template_0_Template(rf, ctx) { }
+function NzSubMenuComponent_ul_8_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzSubMenuComponent_ul_8_1_ng_template_0_Template, 0, 0, "ng-template", 15);
+} if (rf & 2) {
+    ɵngcc0.ɵɵnextContext(2);
+    var _r9 = ɵngcc0.ɵɵreference(11);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r9);
+} }
+function NzSubMenuComponent_ul_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "ul", 14);
+    ɵngcc0.ɵɵtemplate(1, NzSubMenuComponent_ul_8_1_Template, 1, 1, undefined, 4);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r7 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("@collapseMotion", ctx_r7.expandState)("@.disabled", ctx_r7.noAnimation == null ? null : ctx_r7.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r7.noAnimation == null ? null : ctx_r7.noAnimation.nzNoAnimation)("ngClass", ctx_r7.nzMenuClassName);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r7.expandState != "collapsed");
+} }
+function NzSubMenuComponent_ng_template_9_ng_template_2_Template(rf, ctx) { }
+function NzSubMenuComponent_ng_template_9_Template(rf, ctx) { if (rf & 1) {
+    var _r15 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "div", 16);
+    ɵngcc0.ɵɵlistener("mouseleave", function NzSubMenuComponent_ng_template_9_Template_div_mouseleave_0_listener() { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r14 = ɵngcc0.ɵɵnextContext(); return ctx_r14.setMouseEnterState(false); })("mouseenter", function NzSubMenuComponent_ng_template_9_Template_div_mouseenter_0_listener() { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r16 = ɵngcc0.ɵɵnextContext(); return ctx_r16.setMouseEnterState(true); });
+    ɵngcc0.ɵɵelementStart(1, "ul", 17);
+    ɵngcc0.ɵɵtemplate(2, NzSubMenuComponent_ng_template_9_ng_template_2_Template, 0, 0, "ng-template", 15);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r8 = ɵngcc0.ɵɵnextContext();
+    var _r9 = ɵngcc0.ɵɵreference(11);
+    ɵngcc0.ɵɵclassProp("ant-menu-light", ctx_r8.nzMenuService.theme === "light")("ant-menu-dark", ctx_r8.nzMenuService.theme === "dark")("ant-menu-submenu-placement-bottomLeft", ctx_r8.nzSubmenuService.mode === "horizontal")("ant-menu-submenu-placement-rightTop", ctx_r8.nzSubmenuService.mode === "vertical" && ctx_r8.placement === "rightTop")("ant-menu-submenu-placement-leftTop", ctx_r8.nzSubmenuService.mode === "vertical" && ctx_r8.placement === "leftTop");
+    ɵngcc0.ɵɵproperty("@slideMotion", ctx_r8.expandState)("@zoomBigMotion", ctx_r8.expandState)("@.disabled", ctx_r8.noAnimation == null ? null : ctx_r8.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r8.noAnimation == null ? null : ctx_r8.noAnimation.nzNoAnimation);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵclassProp("ant-dropdown-menu", ctx_r8.nzMenuService.isInDropDown)("ant-menu", !ctx_r8.nzMenuService.isInDropDown)("ant-dropdown-menu-vertical", ctx_r8.nzMenuService.isInDropDown)("ant-menu-vertical", !ctx_r8.nzMenuService.isInDropDown)("ant-dropdown-menu-sub", ctx_r8.nzMenuService.isInDropDown)("ant-menu-sub", !ctx_r8.nzMenuService.isInDropDown);
+    ɵngcc0.ɵɵproperty("ngClass", ctx_r8.nzMenuClassName);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", _r9);
+} }
+function NzSubMenuComponent_ng_template_10_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0, 1);
+} }
+var _c1 = [[["", "title", ""]], "*"];
+var _c2 = ["[title]", "*"];
+var _c3 = ["nz-menu-group", ""];
+function NzMenuGroupComponent_ng_container_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r0.nzTitle);
+} }
+function NzMenuGroupComponent_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵprojection(0, 1, ["*ngIf", "!nzTitle"]);
+} }
+var _c4 = ["*", [["", "title", ""]]];
+var _c5 = ["*", "[title]"];
 var NzMenuService = /** @class */ (function (_super) {
     __extends(NzMenuService, _super);
     function NzMenuService() {
@@ -22,9 +117,12 @@ var NzMenuService = /** @class */ (function (_super) {
         _this.isInDropDown = false;
         return _this;
     }
-    NzMenuService.decorators = [
-        { type: Injectable }
-    ];
+NzMenuService.ɵfac = function NzMenuService_Factory(t) { return ɵNzMenuService_BaseFactory(t || NzMenuService); };
+NzMenuService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzMenuService, factory: function (t) { return NzMenuService.ɵfac(t); } });
+var ɵNzMenuService_BaseFactory = ɵngcc0.ɵɵgetInheritedFactory(NzMenuService);
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuService, [{
+        type: Injectable
+    }], null, null); })();
     return NzMenuService;
 }(NzMenuBaseService));
 if (false) {
@@ -130,14 +228,20 @@ var NzSubmenuService = /** @class */ (function () {
             this.mouseEnterLeave$.next(value);
         }
     };
-    NzSubmenuService.decorators = [
-        { type: Injectable }
-    ];
     /** @nocollapse */
     NzSubmenuService.ctorParameters = function () { return [
         { type: NzSubmenuService, decorators: [{ type: SkipSelf }, { type: Optional }] },
         { type: NzMenuService }
     ]; };
+NzSubmenuService.ɵfac = function NzSubmenuService_Factory(t) { return new (t || NzSubmenuService)(ɵngcc0.ɵɵinject(NzSubmenuService, 12), ɵngcc0.ɵɵinject(NzMenuService)); };
+NzSubmenuService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzSubmenuService, factory: function (t) { return NzSubmenuService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzSubmenuService, [{
+        type: Injectable
+    }], function () { return [{ type: NzSubmenuService, decorators: [{
+                type: SkipSelf
+            }, {
+                type: Optional
+            }] }, { type: NzMenuService }]; }, null); })();
     return NzSubmenuService;
 }());
 if (false) {
@@ -408,16 +512,6 @@ var NzMenuItemDirective = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzMenuItemDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-menu-item]',
-                    exportAs: 'nzMenuItem',
-                    providers: [NzUpdateHostClassService],
-                    host: {
-                        '(click)': 'clickMenuItem($event)'
-                    }
-                },] }
-    ];
     /** @nocollapse */
     NzMenuItemDirective.ctorParameters = function () { return [
         { type: NzUpdateHostClassService },
@@ -454,6 +548,52 @@ var NzMenuItemDirective = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzMenuItemDirective.prototype, "nzMatchRouter", void 0);
+NzMenuItemDirective.ɵfac = function NzMenuItemDirective_Factory(t) { return new (t || NzMenuItemDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzMenuBaseService), ɵngcc0.ɵɵdirectiveInject(NzSubmenuService, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.RouterLink, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.RouterLinkWithHref, 8), ɵngcc0.ɵɵdirectiveInject(ɵngcc2.Router, 8)); };
+NzMenuItemDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMenuItemDirective, selectors: [["", "nz-menu-item", ""]], contentQueries: function NzMenuItemDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, RouterLink, true);
+        ɵngcc0.ɵɵcontentQuery(dirIndex, RouterLinkWithHref, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfRouterLink = _t);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfRouterLinkWithHref = _t);
+    } }, hostBindings: function NzMenuItemDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("click", function NzMenuItemDirective_click_HostBindingHandler($event) { return ctx.clickMenuItem($event); });
+    } }, inputs: { nzDisabled: "nzDisabled", nzSelected: "nzSelected", nzMatchRouterExact: "nzMatchRouterExact", nzMatchRouter: "nzMatchRouter", nzPaddingLeft: "nzPaddingLeft" }, exportAs: ["nzMenuItem"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuItemDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-menu-item]',
+                exportAs: 'nzMenuItem',
+                providers: [NzUpdateHostClassService],
+                host: {
+                    '(click)': 'clickMenuItem($event)'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc1.NzMenuBaseService }, { type: NzSubmenuService, decorators: [{
+                type: Optional
+            }] }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc0.ElementRef }, { type: ɵngcc2.RouterLink, decorators: [{
+                type: Optional
+            }] }, { type: ɵngcc2.RouterLinkWithHref, decorators: [{
+                type: Optional
+            }] }, { type: ɵngcc2.Router, decorators: [{
+                type: Optional
+            }] }]; }, { nzDisabled: [{
+            type: Input
+        }], nzSelected: [{
+            type: Input
+        }], nzMatchRouterExact: [{
+            type: Input
+        }], nzMatchRouter: [{
+            type: Input
+        }], nzPaddingLeft: [{
+            type: Input
+        }], listOfRouterLink: [{
+            type: ContentChildren,
+            args: [RouterLink, { descendants: true }]
+        }], listOfRouterLinkWithHref: [{
+            type: ContentChildren,
+            args: [RouterLinkWithHref, { descendants: true }]
+        }] }); })();
     return NzMenuItemDirective;
 }());
 if (false) {
@@ -769,19 +909,6 @@ var NzSubMenuComponent = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzSubMenuComponent.decorators = [
-        { type: Component, args: [{
-                    selector: '[nz-submenu]',
-                    exportAs: 'nzSubmenu',
-                    providers: [NzSubmenuService, NzUpdateHostClassService],
-                    animations: [collapseMotion, zoomBigMotion, slideMotion],
-                    encapsulation: ViewEncapsulation.None,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    preserveWhitespaces: false,
-                    template: "<div cdkOverlayOrigin\r\n     #origin=\"cdkOverlayOrigin\"\r\n     [class.ant-dropdown-menu-submenu-title]=\"nzMenuService.isInDropDown\"\r\n     [class.ant-menu-submenu-title]=\"!nzMenuService.isInDropDown\"\r\n     [style.paddingLeft.px]=\"nzMenuService.mode === 'inline'? (nzPaddingLeft ? nzPaddingLeft : nzSubmenuService.level * nzMenuService.inlineIndent) : null\"\r\n     (mouseenter)=\"setMouseEnterState(true)\"\r\n     (mouseleave)=\"setMouseEnterState(false)\"\r\n     (click)=\"clickSubMenuTitle()\"\r\n     [tabindex]=\"nzDisabled ? -1 : 0\"\r\n     (keyup.enter)=\"clickSubMenuTitle()\"\r\n     [attr.aria-label]=\"nzTogglingLabel\"\r\n     [attr.aria-disabled]=\"nzDisabled\"\r\n     [attr.aria-expanded]=\"nzOpen\"\r\n     role=\"button\">\r\n  <i nz-icon [nzType]=\"nzIcon\" *ngIf=\"nzIcon\"></i>\r\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\"><span>{{ nzTitle }}</span></ng-container>\r\n  <ng-content select=\"[title]\" *ngIf=\"!nzTitle\"></ng-content>\r\n  <span *ngIf=\"nzMenuService.isInDropDown; else notDropdownTpl\" class=\"ant-dropdown-menu-submenu-arrow\">\r\n    <i nz-icon nzType=\"right\" class=\"anticon-right ant-dropdown-menu-submenu-arrow-icon\"></i>\r\n  </span>\r\n  <ng-template #notDropdownTpl>\r\n    <i class=\"ant-menu-submenu-arrow\"></i>\r\n  </ng-template>\r\n</div>\r\n<ul *ngIf=\"nzMenuService.mode === 'inline'\"\r\n    [@collapseMotion]=\"expandState\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [ngClass]=\"nzMenuClassName\"\r\n    class=\"ant-menu ant-menu-inline ant-menu-sub\">\r\n  <ng-template *ngIf=\"expandState != 'collapsed'\" [ngTemplateOutlet]=\"subMenuTemplate\"></ng-template>\r\n</ul>\r\n<ng-template cdkConnectedOverlay\r\n             (positionChange)=\"onPositionChange($event)\"\r\n             [cdkConnectedOverlayPositions]=\"overlayPositions\"\r\n             [cdkConnectedOverlayOrigin]=\"origin\"\r\n             [cdkConnectedOverlayWidth]=\"triggerWidth\"\r\n             [cdkConnectedOverlayOpen]=\"nzOpen && nzMenuService.mode !== 'inline'\">\r\n  <div class=\"ant-menu-submenu ant-menu-submenu-popup\"\r\n       [@slideMotion]=\"expandState\"\r\n       [@zoomBigMotion]=\"expandState\"\r\n       [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n       [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n       [class.ant-menu-light]=\"nzMenuService.theme === 'light'\"\r\n       [class.ant-menu-dark]=\"nzMenuService.theme === 'dark'\"\r\n       [class.ant-menu-submenu-placement-bottomLeft]=\"nzSubmenuService.mode === 'horizontal'\"\r\n       [class.ant-menu-submenu-placement-rightTop]=\"nzSubmenuService.mode === 'vertical' && placement === 'rightTop'\"\r\n       [class.ant-menu-submenu-placement-leftTop]=\"nzSubmenuService.mode === 'vertical' && placement === 'leftTop'\"\r\n       (mouseleave)=\"setMouseEnterState(false)\"\r\n       (mouseenter)=\"setMouseEnterState(true)\">\r\n    <ul [class.ant-dropdown-menu]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu]=\"!nzMenuService.isInDropDown\"\r\n        [class.ant-dropdown-menu-vertical]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu-vertical]=\"!nzMenuService.isInDropDown\"\r\n        [class.ant-dropdown-menu-sub]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu-sub]=\"!nzMenuService.isInDropDown\"\r\n        [ngClass]=\"nzMenuClassName\">\r\n      <ng-template [ngTemplateOutlet]=\"subMenuTemplate\"></ng-template>\r\n    </ul>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #subMenuTemplate>\r\n  <ng-content></ng-content>\r\n</ng-template>\r\n",
-                    styles: ["\n      :root .ant-menu-submenu.ant-menu-submenu-placement-bottomLeft {\n        top: 6px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-rightTop {\n        left: 4px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-leftTop {\n        right: 4px;\n        position: relative;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzSubMenuComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -814,6 +941,101 @@ var NzSubMenuComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzSubMenuComponent.prototype, "nzDisabled", void 0);
+NzSubMenuComponent.ɵfac = function NzSubMenuComponent_Factory(t) { return new (t || NzSubMenuComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzMenuBaseService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(NzSubmenuService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.Platform), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzNoAnimationDirective, 9)); };
+NzSubMenuComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzSubMenuComponent, selectors: [["", "nz-submenu", ""]], contentQueries: function NzSubMenuComponent_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzSubMenuComponent, true);
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzMenuItemDirective, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzSubMenuComponent = _t);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
+    } }, viewQuery: function NzSubMenuComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵstaticViewQuery(CdkConnectedOverlay, true);
+        ɵngcc0.ɵɵstaticViewQuery(CdkOverlayOrigin, true, ElementRef);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.cdkConnectedOverlay = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.cdkOverlayOrigin = _t.first);
+    } }, inputs: { nzOpen: "nzOpen", nzDisabled: "nzDisabled", nzTogglingLabel: "nzTogglingLabel", nzMenuClassName: "nzMenuClassName", nzPaddingLeft: "nzPaddingLeft", nzTitle: "nzTitle", nzIcon: "nzIcon" }, outputs: { nzOpenChange: "nzOpenChange" }, exportAs: ["nzSubmenu"], features: [ɵngcc0.ɵɵProvidersFeature([NzSubmenuService, NzUpdateHostClassService]), ɵngcc0.ɵɵNgOnChangesFeature], attrs: _c0, ngContentSelectors: _c2, decls: 12, vars: 20, consts: [["cdkOverlayOrigin", "", "role", "button", 3, "tabindex", "mouseenter", "mouseleave", "click", "keyup.enter"], ["origin", "cdkOverlayOrigin"], ["nz-icon", "", 3, "nzType", 4, "ngIf"], [4, "nzStringTemplateOutlet"], [4, "ngIf"], ["class", "ant-dropdown-menu-submenu-arrow", 4, "ngIf", "ngIfElse"], ["notDropdownTpl", ""], ["class", "ant-menu ant-menu-inline ant-menu-sub", 3, "nzNoAnimation", "ngClass", 4, "ngIf"], ["cdkConnectedOverlay", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayWidth", "cdkConnectedOverlayOpen", "positionChange"], ["subMenuTemplate", ""], ["nz-icon", "", 3, "nzType"], [1, "ant-dropdown-menu-submenu-arrow"], ["nz-icon", "", "nzType", "right", 1, "anticon-right", "ant-dropdown-menu-submenu-arrow-icon"], [1, "ant-menu-submenu-arrow"], [1, "ant-menu", "ant-menu-inline", "ant-menu-sub", 3, "nzNoAnimation", "ngClass"], [3, "ngTemplateOutlet"], [1, "ant-menu-submenu", "ant-menu-submenu-popup", 3, "nzNoAnimation", "mouseleave", "mouseenter"], [3, "ngClass"]], template: function NzSubMenuComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef(_c1);
+        ɵngcc0.ɵɵelementStart(0, "div", 0, 1);
+        ɵngcc0.ɵɵlistener("mouseenter", function NzSubMenuComponent_Template_div_mouseenter_0_listener() { return ctx.setMouseEnterState(true); })("mouseleave", function NzSubMenuComponent_Template_div_mouseleave_0_listener() { return ctx.setMouseEnterState(false); })("click", function NzSubMenuComponent_Template_div_click_0_listener() { return ctx.clickSubMenuTitle(); })("keyup.enter", function NzSubMenuComponent_Template_div_keyup_enter_0_listener() { return ctx.clickSubMenuTitle(); });
+        ɵngcc0.ɵɵtemplate(2, NzSubMenuComponent_i_2_Template, 1, 1, "i", 2);
+        ɵngcc0.ɵɵtemplate(3, NzSubMenuComponent_ng_container_3_Template, 3, 1, "ng-container", 3);
+        ɵngcc0.ɵɵtemplate(4, NzSubMenuComponent_4_Template, 1, 0, undefined, 4);
+        ɵngcc0.ɵɵtemplate(5, NzSubMenuComponent_span_5_Template, 2, 0, "span", 5);
+        ɵngcc0.ɵɵtemplate(6, NzSubMenuComponent_ng_template_6_Template, 1, 0, "ng-template", null, 6, ɵngcc0.ɵɵtemplateRefExtractor);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(8, NzSubMenuComponent_ul_8_Template, 2, 5, "ul", 7);
+        ɵngcc0.ɵɵtemplate(9, NzSubMenuComponent_ng_template_9_Template, 3, 28, "ng-template", 8);
+        ɵngcc0.ɵɵlistener("positionChange", function NzSubMenuComponent_Template_ng_template_positionChange_9_listener($event) { return ctx.onPositionChange($event); });
+        ɵngcc0.ɵɵtemplate(10, NzSubMenuComponent_ng_template_10_Template, 1, 0, "ng-template", null, 9, ɵngcc0.ɵɵtemplateRefExtractor);
+    } if (rf & 2) {
+        var _r0 = ɵngcc0.ɵɵreference(1);
+        var _r5 = ɵngcc0.ɵɵreference(7);
+        ɵngcc0.ɵɵstyleProp("padding-left", ctx.nzMenuService.mode === "inline" ? ctx.nzPaddingLeft ? ctx.nzPaddingLeft : ctx.nzSubmenuService.level * ctx.nzMenuService.inlineIndent : null, "px");
+        ɵngcc0.ɵɵclassProp("ant-dropdown-menu-submenu-title", ctx.nzMenuService.isInDropDown)("ant-menu-submenu-title", !ctx.nzMenuService.isInDropDown);
+        ɵngcc0.ɵɵproperty("tabindex", ctx.nzDisabled ? 0 - 1 : 0);
+        ɵngcc0.ɵɵattribute("aria-label", ctx.nzTogglingLabel)("aria-disabled", ctx.nzDisabled)("aria-expanded", ctx.nzOpen);
+        ɵngcc0.ɵɵadvance(2);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzIcon);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzTitle);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzTitle);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzMenuService.isInDropDown)("ngIfElse", _r5);
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzMenuService.mode === "inline");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", _r0)("cdkConnectedOverlayWidth", ctx.triggerWidth)("cdkConnectedOverlayOpen", ctx.nzOpen && ctx.nzMenuService.mode !== "inline");
+    } }, directives: [ɵngcc4.CdkOverlayOrigin, ɵngcc5.NgIf, ɵngcc1.NzStringTemplateOutletDirective, ɵngcc4.CdkConnectedOverlay, ɵngcc6.NzIconDirective, ɵngcc1.NzNoAnimationDirective, ɵngcc5.NgClass, ɵngcc5.NgTemplateOutlet], styles: ["\n      :root .ant-menu-submenu.ant-menu-submenu-placement-bottomLeft {\n        top: 6px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-rightTop {\n        left: 4px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-leftTop {\n        right: 4px;\n        position: relative;\n      }\n    "], encapsulation: 2, data: { animation: [collapseMotion, zoomBigMotion, slideMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzSubMenuComponent, [{
+        type: Component,
+        args: [{
+                selector: '[nz-submenu]',
+                exportAs: 'nzSubmenu',
+                providers: [NzSubmenuService, NzUpdateHostClassService],
+                animations: [collapseMotion, zoomBigMotion, slideMotion],
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                preserveWhitespaces: false,
+                template: "<div cdkOverlayOrigin\r\n     #origin=\"cdkOverlayOrigin\"\r\n     [class.ant-dropdown-menu-submenu-title]=\"nzMenuService.isInDropDown\"\r\n     [class.ant-menu-submenu-title]=\"!nzMenuService.isInDropDown\"\r\n     [style.paddingLeft.px]=\"nzMenuService.mode === 'inline'? (nzPaddingLeft ? nzPaddingLeft : nzSubmenuService.level * nzMenuService.inlineIndent) : null\"\r\n     (mouseenter)=\"setMouseEnterState(true)\"\r\n     (mouseleave)=\"setMouseEnterState(false)\"\r\n     (click)=\"clickSubMenuTitle()\"\r\n     [tabindex]=\"nzDisabled ? -1 : 0\"\r\n     (keyup.enter)=\"clickSubMenuTitle()\"\r\n     [attr.aria-label]=\"nzTogglingLabel\"\r\n     [attr.aria-disabled]=\"nzDisabled\"\r\n     [attr.aria-expanded]=\"nzOpen\"\r\n     role=\"button\">\r\n  <i nz-icon [nzType]=\"nzIcon\" *ngIf=\"nzIcon\"></i>\r\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\"><span>{{ nzTitle }}</span></ng-container>\r\n  <ng-content select=\"[title]\" *ngIf=\"!nzTitle\"></ng-content>\r\n  <span *ngIf=\"nzMenuService.isInDropDown; else notDropdownTpl\" class=\"ant-dropdown-menu-submenu-arrow\">\r\n    <i nz-icon nzType=\"right\" class=\"anticon-right ant-dropdown-menu-submenu-arrow-icon\"></i>\r\n  </span>\r\n  <ng-template #notDropdownTpl>\r\n    <i class=\"ant-menu-submenu-arrow\"></i>\r\n  </ng-template>\r\n</div>\r\n<ul *ngIf=\"nzMenuService.mode === 'inline'\"\r\n    [@collapseMotion]=\"expandState\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [ngClass]=\"nzMenuClassName\"\r\n    class=\"ant-menu ant-menu-inline ant-menu-sub\">\r\n  <ng-template *ngIf=\"expandState != 'collapsed'\" [ngTemplateOutlet]=\"subMenuTemplate\"></ng-template>\r\n</ul>\r\n<ng-template cdkConnectedOverlay\r\n             (positionChange)=\"onPositionChange($event)\"\r\n             [cdkConnectedOverlayPositions]=\"overlayPositions\"\r\n             [cdkConnectedOverlayOrigin]=\"origin\"\r\n             [cdkConnectedOverlayWidth]=\"triggerWidth\"\r\n             [cdkConnectedOverlayOpen]=\"nzOpen && nzMenuService.mode !== 'inline'\">\r\n  <div class=\"ant-menu-submenu ant-menu-submenu-popup\"\r\n       [@slideMotion]=\"expandState\"\r\n       [@zoomBigMotion]=\"expandState\"\r\n       [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n       [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n       [class.ant-menu-light]=\"nzMenuService.theme === 'light'\"\r\n       [class.ant-menu-dark]=\"nzMenuService.theme === 'dark'\"\r\n       [class.ant-menu-submenu-placement-bottomLeft]=\"nzSubmenuService.mode === 'horizontal'\"\r\n       [class.ant-menu-submenu-placement-rightTop]=\"nzSubmenuService.mode === 'vertical' && placement === 'rightTop'\"\r\n       [class.ant-menu-submenu-placement-leftTop]=\"nzSubmenuService.mode === 'vertical' && placement === 'leftTop'\"\r\n       (mouseleave)=\"setMouseEnterState(false)\"\r\n       (mouseenter)=\"setMouseEnterState(true)\">\r\n    <ul [class.ant-dropdown-menu]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu]=\"!nzMenuService.isInDropDown\"\r\n        [class.ant-dropdown-menu-vertical]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu-vertical]=\"!nzMenuService.isInDropDown\"\r\n        [class.ant-dropdown-menu-sub]=\"nzMenuService.isInDropDown\"\r\n        [class.ant-menu-sub]=\"!nzMenuService.isInDropDown\"\r\n        [ngClass]=\"nzMenuClassName\">\r\n      <ng-template [ngTemplateOutlet]=\"subMenuTemplate\"></ng-template>\r\n    </ul>\r\n  </div>\r\n</ng-template>\r\n\r\n<ng-template #subMenuTemplate>\r\n  <ng-content></ng-content>\r\n</ng-template>\r\n",
+                styles: ["\n      :root .ant-menu-submenu.ant-menu-submenu-placement-bottomLeft {\n        top: 6px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-rightTop {\n        left: 4px;\n        position: relative;\n      }\n\n      :root .ant-menu-submenu.ant-menu-submenu-placement-leftTop {\n        right: 4px;\n        position: relative;\n      }\n    "]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzMenuBaseService }, { type: ɵngcc0.ChangeDetectorRef }, { type: NzSubmenuService }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc3.Platform }, { type: ɵngcc1.NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { nzOpen: [{
+            type: Input
+        }], nzDisabled: [{
+            type: Input
+        }], nzTogglingLabel: [{
+            type: Input
+        }], nzOpenChange: [{
+            type: Output
+        }], nzMenuClassName: [{
+            type: Input
+        }], nzPaddingLeft: [{
+            type: Input
+        }], nzTitle: [{
+            type: Input
+        }], nzIcon: [{
+            type: Input
+        }], cdkConnectedOverlay: [{
+            type: ViewChild,
+            args: [CdkConnectedOverlay, { static: true }]
+        }], cdkOverlayOrigin: [{
+            type: ViewChild,
+            args: [CdkOverlayOrigin, { static: true, read: ElementRef }]
+        }], listOfNzSubMenuComponent: [{
+            type: ContentChildren,
+            args: [NzSubMenuComponent, { descendants: true }]
+        }], listOfNzMenuItemDirective: [{
+            type: ContentChildren,
+            args: [NzMenuItemDirective, { descendants: true }]
+        }] }); })();
     return NzSubMenuComponent;
 }());
 if (false) {
@@ -1042,21 +1264,6 @@ var NzMenuDirective = /** @class */ (function () {
         this.destroy$.next();
         this.destroy$.complete();
     };
-    NzMenuDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-menu]',
-                    exportAs: 'nzMenu',
-                    providers: [
-                        NzUpdateHostClassService,
-                        NzMenuService,
-                        {
-                            provide: NzMenuBaseService,
-                            useFactory: ɵ0,
-                            deps: [[new SkipSelf(), new Optional(), NzDropdownHigherOrderServiceToken], NzMenuService]
-                        }
-                    ]
-                },] }
-    ];
     /** @nocollapse */
     NzMenuDirective.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1086,6 +1293,59 @@ var NzMenuDirective = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzMenuDirective.prototype, "nzSelectable", void 0);
+NzMenuDirective.ɵfac = function NzMenuDirective_Factory(t) { return new (t || NzMenuDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzMenuBaseService), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService)); };
+NzMenuDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMenuDirective, selectors: [["", "nz-menu", ""]], contentQueries: function NzMenuDirective_ContentQueries(rf, ctx, dirIndex) { if (rf & 1) {
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzMenuItemDirective, true);
+        ɵngcc0.ɵɵcontentQuery(dirIndex, NzSubMenuComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzMenuItemDirective = _t);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.listOfNzSubMenuComponent = _t);
+    } }, inputs: { nzInlineIndent: "nzInlineIndent", nzTheme: "nzTheme", nzMode: "nzMode", nzInDropDown: "nzInDropDown", nzInlineCollapsed: "nzInlineCollapsed", nzSelectable: "nzSelectable" }, outputs: { nzClick: "nzClick" }, exportAs: ["nzMenu"], features: [ɵngcc0.ɵɵProvidersFeature([
+            NzUpdateHostClassService,
+            NzMenuService,
+            {
+                provide: NzMenuBaseService,
+                useFactory: ɵ0,
+                deps: [[new SkipSelf(), new Optional(), NzDropdownHigherOrderServiceToken], NzMenuService]
+            }
+        ]), ɵngcc0.ɵɵNgOnChangesFeature] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-menu]',
+                exportAs: 'nzMenu',
+                providers: [
+                    NzUpdateHostClassService,
+                    NzMenuService,
+                    {
+                        provide: NzMenuBaseService,
+                        useFactory: ɵ0,
+                        deps: [[new SkipSelf(), new Optional(), NzDropdownHigherOrderServiceToken], NzMenuService]
+                    }
+                ]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzMenuBaseService }, { type: ɵngcc1.NzUpdateHostClassService }]; }, { nzInlineIndent: [{
+            type: Input
+        }], nzTheme: [{
+            type: Input
+        }], nzMode: [{
+            type: Input
+        }], nzInDropDown: [{
+            type: Input
+        }], nzInlineCollapsed: [{
+            type: Input
+        }], nzSelectable: [{
+            type: Input
+        }], nzClick: [{
+            type: Output
+        }], listOfNzMenuItemDirective: [{
+            type: ContentChildren,
+            args: [NzMenuItemDirective, { descendants: true }]
+        }], listOfNzSubMenuComponent: [{
+            type: ContentChildren,
+            args: [NzSubMenuComponent, { descendants: true }]
+        }] }); })();
     return NzMenuDirective;
 }());
 if (false) {
@@ -1146,16 +1406,6 @@ var NzMenuGroupComponent = /** @class */ (function () {
         this.renderer = renderer;
         this.renderer.addClass(elementRef.nativeElement, 'ant-menu-item-group');
     }
-    NzMenuGroupComponent.decorators = [
-        { type: Component, args: [{
-                    selector: '[nz-menu-group]',
-                    exportAs: 'nzMenuGroup',
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    template: "<div class=\"ant-menu-item-group-title\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\r\n  <ng-content select=\"[title]\" *ngIf=\"!nzTitle\"></ng-content>\r\n</div>\r\n<ul class=\"ant-menu-item-group-list\">\r\n  <ng-content></ng-content>\r\n</ul>",
-                    preserveWhitespaces: false
-                }] }
-    ];
     /** @nocollapse */
     NzMenuGroupComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1164,6 +1414,35 @@ var NzMenuGroupComponent = /** @class */ (function () {
     NzMenuGroupComponent.propDecorators = {
         nzTitle: [{ type: Input }]
     };
+NzMenuGroupComponent.ɵfac = function NzMenuGroupComponent_Factory(t) { return new (t || NzMenuGroupComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzMenuGroupComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzMenuGroupComponent, selectors: [["", "nz-menu-group", ""]], inputs: { nzTitle: "nzTitle" }, exportAs: ["nzMenuGroup"], attrs: _c3, ngContentSelectors: _c5, decls: 5, vars: 2, consts: [[1, "ant-menu-item-group-title"], [4, "nzStringTemplateOutlet"], [4, "ngIf"], [1, "ant-menu-item-group-list"]], template: function NzMenuGroupComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef(_c4);
+        ɵngcc0.ɵɵelementStart(0, "div", 0);
+        ɵngcc0.ɵɵtemplate(1, NzMenuGroupComponent_ng_container_1_Template, 2, 1, "ng-container", 1);
+        ɵngcc0.ɵɵtemplate(2, NzMenuGroupComponent_2_Template, 1, 0, undefined, 2);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(3, "ul", 3);
+        ɵngcc0.ɵɵprojection(4);
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("nzStringTemplateOutlet", ctx.nzTitle);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", !ctx.nzTitle);
+    } }, directives: [ɵngcc1.NzStringTemplateOutletDirective, ɵngcc5.NgIf], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuGroupComponent, [{
+        type: Component,
+        args: [{
+                selector: '[nz-menu-group]',
+                exportAs: 'nzMenuGroup',
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                template: "<div class=\"ant-menu-item-group-title\">\r\n  <ng-container *nzStringTemplateOutlet=\"nzTitle\">{{ nzTitle }}</ng-container>\r\n  <ng-content select=\"[title]\" *ngIf=\"!nzTitle\"></ng-content>\r\n</div>\r\n<ul class=\"ant-menu-item-group-list\">\r\n  <ng-content></ng-content>\r\n</ul>",
+                preserveWhitespaces: false
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { nzTitle: [{
+            type: Input
+        }] }); })();
     return NzMenuGroupComponent;
 }());
 if (false) {
@@ -1188,17 +1467,20 @@ var NzMenuDividerDirective = /** @class */ (function () {
         this.renderer = renderer;
         this.renderer.addClass(elementRef.nativeElement, 'ant-dropdown-menu-item-divider');
     }
-    NzMenuDividerDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: '[nz-menu-divider]',
-                    exportAs: 'nzMenuDivider'
-                },] }
-    ];
     /** @nocollapse */
     NzMenuDividerDirective.ctorParameters = function () { return [
         { type: ElementRef },
         { type: Renderer2 }
     ]; };
+NzMenuDividerDirective.ɵfac = function NzMenuDividerDirective_Factory(t) { return new (t || NzMenuDividerDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzMenuDividerDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzMenuDividerDirective, selectors: [["", "nz-menu-divider", ""]], exportAs: ["nzMenuDivider"] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuDividerDirective, [{
+        type: Directive,
+        args: [{
+                selector: '[nz-menu-divider]',
+                exportAs: 'nzMenuDivider'
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, null); })();
     return NzMenuDividerDirective;
 }());
 if (false) {
@@ -1218,28 +1500,56 @@ if (false) {
 var NzMenuModule = /** @class */ (function () {
     function NzMenuModule() {
     }
-    NzMenuModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [
-                        CommonModule,
-                        FormsModule,
-                        PlatformModule,
-                        NzButtonModule,
-                        OverlayModule,
-                        NzIconModule,
-                        NzNoAnimationModule,
-                        NzAddOnModule
-                    ],
-                    declarations: [
-                        NzMenuDirective,
-                        NzMenuItemDirective,
-                        NzSubMenuComponent,
-                        NzMenuDividerDirective,
-                        NzMenuGroupComponent
-                    ],
-                    exports: [NzMenuDirective, NzMenuItemDirective, NzSubMenuComponent, NzMenuDividerDirective, NzMenuGroupComponent]
-                },] }
-    ];
+NzMenuModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzMenuModule });
+NzMenuModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzMenuModule_Factory(t) { return new (t || NzMenuModule)(); }, imports: [[
+            CommonModule,
+            FormsModule,
+            PlatformModule,
+            NzButtonModule,
+            OverlayModule,
+            NzIconModule,
+            NzNoAnimationModule,
+            NzAddOnModule
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzMenuModule, { declarations: function () { return [NzMenuDirective,
+        NzMenuItemDirective,
+        NzSubMenuComponent,
+        NzMenuDividerDirective,
+        NzMenuGroupComponent]; }, imports: function () { return [CommonModule,
+        FormsModule,
+        PlatformModule,
+        NzButtonModule,
+        OverlayModule,
+        NzIconModule,
+        NzNoAnimationModule,
+        NzAddOnModule]; }, exports: function () { return [NzMenuDirective,
+        NzMenuItemDirective,
+        NzSubMenuComponent,
+        NzMenuDividerDirective,
+        NzMenuGroupComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzMenuModule, [{
+        type: NgModule,
+        args: [{
+                imports: [
+                    CommonModule,
+                    FormsModule,
+                    PlatformModule,
+                    NzButtonModule,
+                    OverlayModule,
+                    NzIconModule,
+                    NzNoAnimationModule,
+                    NzAddOnModule
+                ],
+                declarations: [
+                    NzMenuDirective,
+                    NzMenuItemDirective,
+                    NzSubMenuComponent,
+                    NzMenuDividerDirective,
+                    NzMenuGroupComponent
+                ],
+                exports: [NzMenuDirective, NzMenuItemDirective, NzSubMenuComponent, NzMenuDividerDirective, NzMenuGroupComponent]
+            }]
+    }], function () { return []; }, null); })();
     return NzMenuModule;
 }());
 
@@ -1254,4 +1564,5 @@ var NzMenuModule = /** @class */ (function () {
  */
 
 export { NzMenuDirective, NzMenuDividerDirective, NzMenuGroupComponent, NzMenuItemDirective, NzMenuModule, NzMenuService, NzMenuServiceFactory, NzSubMenuComponent, NzSubmenuService };
+
 //# sourceMappingURL=ng-zorro-antd-menu.js.map

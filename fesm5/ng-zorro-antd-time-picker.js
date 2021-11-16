@@ -14,6 +14,191 @@ import { takeUntil } from 'rxjs/operators';
  * @suppress {checkTypes,constantProperty,extraRequire,missingOverride,missingReturn,unusedPrivateMembers,uselessCode} checked by tsc
  */
 /** @type {?} */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from 'ng-zorro-antd/core';
+import * as ɵngcc2 from '@angular/forms';
+import * as ɵngcc3 from 'ng-zorro-antd/icon';
+import * as ɵngcc4 from '@angular/common';
+import * as ɵngcc5 from '@angular/cdk/overlay';
+import * as ɵngcc6 from 'ng-zorro-antd/i18n';
+
+var _c0 = ["inputElement"];
+function NzTimePickerComponent_i_5_Template(rf, ctx) { if (rf & 1) {
+    var _r4 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "i", 6);
+    ɵngcc0.ɵɵlistener("click", function NzTimePickerComponent_i_5_Template_i_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r4); var ctx_r3 = ɵngcc0.ɵɵnextContext(); return ctx_r3.onClickClearBtn(); });
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵattribute("aria-label", ctx_r1.nzClearText)("title", ctx_r1.nzClearText);
+} }
+function NzTimePickerComponent_ng_template_6_Template(rf, ctx) { if (rf & 1) {
+    var _r6 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "nz-time-picker-panel", 7);
+    ɵngcc0.ɵɵlistener("ngModelChange", function NzTimePickerComponent_ng_template_6_Template_nz_time_picker_panel_ngModelChange_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r6); var ctx_r5 = ɵngcc0.ɵɵnextContext(); return ctx_r5.value = $event; });
+    ɵngcc0.ɵɵpipe(1, "nzI18n");
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("ngClass", ctx_r2.nzPopupClassName)("@slideMotion", "bottom")("format", ctx_r2.nzFormat)("nzHourStep", ctx_r2.nzHourStep)("nzMinuteStep", ctx_r2.nzMinuteStep)("nzSecondStep", ctx_r2.nzSecondStep)("nzDisabledHours", ctx_r2.nzDisabledHours)("nzDisabledMinutes", ctx_r2.nzDisabledMinutes)("nzDisabledSeconds", ctx_r2.nzDisabledSeconds)("nzPlaceHolder", ctx_r2.nzPlaceHolder || ɵngcc0.ɵɵpipeBind1(1, 18, "TimePicker.placeholder"))("nzHideDisabledOptions", ctx_r2.nzHideDisabledOptions)("nzUse12Hours", ctx_r2.nzUse12Hours)("nzDefaultOpenValue", ctx_r2.nzDefaultOpenValue)("nzAddOn", ctx_r2.nzAddOn)("opened", ctx_r2.nzOpen)("nzClearText", ctx_r2.nzClearText)("nzAllowEmpty", ctx_r2.nzAllowEmpty)("ngModel", ctx_r2.value);
+} }
+var _c1 = ["hourListElement"];
+var _c2 = ["minuteListElement"];
+var _c3 = ["secondListElement"];
+var _c4 = ["use12HoursListElement"];
+function NzTimePickerPanelComponent_div_5_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r11 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 5);
+    ɵngcc0.ɵɵlistener("click", function NzTimePickerPanelComponent_div_5_ng_container_3_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r11); var hour_r7 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r9 = ɵngcc0.ɵɵnextContext(2); return ctx_r9.selectHour(hour_r7); });
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵpipe(2, "number");
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var hour_r7 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassMapInterpolate2("\n                ", ctx_r8.isSelectedHour(hour_r7) ? ctx_r8.prefixCls + "-select-option-selected" : "", "\n                ", hour_r7.disabled ? ctx_r8.prefixCls + "-select-option-disabled" : "", "\n              ");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate1(" ", ɵngcc0.ɵɵpipeBind2(2, 5, hour_r7.index, "2.0-0"), " ");
+} }
+function NzTimePickerPanelComponent_div_5_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzTimePickerPanelComponent_div_5_ng_container_3_li_1_Template, 3, 8, "li", 4);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var hour_r7 = ctx.$implicit;
+    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !(ctx_r6.nzHideDisabledOptions && hour_r7.disabled));
+} }
+function NzTimePickerPanelComponent_div_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", null, 2);
+    ɵngcc0.ɵɵelementStart(2, "ul");
+    ɵngcc0.ɵɵtemplate(3, NzTimePickerPanelComponent_div_5_ng_container_3_Template, 2, 1, "ng-container", 3);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassMapInterpolate1("", ctx_r0.prefixCls, "-select");
+    ɵngcc0.ɵɵadvance(3);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r0.hourRange);
+} }
+function NzTimePickerPanelComponent_div_6_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r19 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 5);
+    ɵngcc0.ɵɵlistener("click", function NzTimePickerPanelComponent_div_6_ng_container_3_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r19); var minute_r15 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r17 = ɵngcc0.ɵɵnextContext(2); return ctx_r17.selectMinute(minute_r15); });
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵpipe(2, "number");
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var minute_r15 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r16 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassMapInterpolate2("\n                ", ctx_r16.isSelectedMinute(minute_r15) ? ctx_r16.prefixCls + "-select-option-selected" : "", "\n                ", minute_r15.disabled ? ctx_r16.prefixCls + "-select-option-disabled" : "", "\n              ");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate1(" ", ɵngcc0.ɵɵpipeBind2(2, 5, minute_r15.index, "2.0-0"), " ");
+} }
+function NzTimePickerPanelComponent_div_6_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzTimePickerPanelComponent_div_6_ng_container_3_li_1_Template, 3, 8, "li", 4);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var minute_r15 = ctx.$implicit;
+    var ctx_r14 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !(ctx_r14.nzHideDisabledOptions && minute_r15.disabled));
+} }
+function NzTimePickerPanelComponent_div_6_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", null, 6);
+    ɵngcc0.ɵɵelementStart(2, "ul");
+    ɵngcc0.ɵɵtemplate(3, NzTimePickerPanelComponent_div_6_ng_container_3_Template, 2, 1, "ng-container", 3);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r1 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassMapInterpolate1("", ctx_r1.prefixCls, "-select");
+    ɵngcc0.ɵɵadvance(3);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r1.minuteRange);
+} }
+function NzTimePickerPanelComponent_div_7_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r27 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 5);
+    ɵngcc0.ɵɵlistener("click", function NzTimePickerPanelComponent_div_7_ng_container_3_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r27); var second_r23 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r25 = ɵngcc0.ɵɵnextContext(2); return ctx_r25.selectSecond(second_r23); });
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵpipe(2, "number");
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var second_r23 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r24 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassMapInterpolate2("\n                ", ctx_r24.isSelectedSecond(second_r23) ? ctx_r24.prefixCls + "-select-option-selected" : "", "\n                ", second_r23.disabled ? ctx_r24.prefixCls + "-select-option-disabled" : "", "\n              ");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate1(" ", ɵngcc0.ɵɵpipeBind2(2, 5, second_r23.index, "2.0-0"), " ");
+} }
+function NzTimePickerPanelComponent_div_7_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzTimePickerPanelComponent_div_7_ng_container_3_li_1_Template, 3, 8, "li", 4);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var second_r23 = ctx.$implicit;
+    var ctx_r22 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !(ctx_r22.nzHideDisabledOptions && second_r23.disabled));
+} }
+function NzTimePickerPanelComponent_div_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", null, 7);
+    ɵngcc0.ɵɵelementStart(2, "ul");
+    ɵngcc0.ɵɵtemplate(3, NzTimePickerPanelComponent_div_7_ng_container_3_Template, 2, 1, "ng-container", 3);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassMapInterpolate1("", ctx_r2.prefixCls, "-select");
+    ɵngcc0.ɵɵadvance(3);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r2.secondRange);
+} }
+function NzTimePickerPanelComponent_div_8_ng_container_3_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r35 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 5);
+    ɵngcc0.ɵɵlistener("click", function NzTimePickerPanelComponent_div_8_ng_container_3_li_1_Template_li_click_0_listener() { ɵngcc0.ɵɵrestoreView(_r35); var range_r31 = ɵngcc0.ɵɵnextContext().$implicit; var ctx_r33 = ɵngcc0.ɵɵnextContext(2); return ctx_r33.select12Hours(range_r31); });
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var range_r31 = ɵngcc0.ɵɵnextContext().$implicit;
+    var ctx_r32 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassMapInterpolate1("\n                ", ctx_r32.isSelected12Hours(range_r31) ? ctx_r32.prefixCls + "-select-option-selected" : "", "\n              ");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate1(" ", range_r31.value, " ");
+} }
+function NzTimePickerPanelComponent_div_8_ng_container_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzTimePickerPanelComponent_div_8_ng_container_3_li_1_Template, 2, 4, "li", 4);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r30 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !ctx_r30.nzHideDisabledOptions);
+} }
+function NzTimePickerPanelComponent_div_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div", null, 8);
+    ɵngcc0.ɵɵelementStart(2, "ul");
+    ɵngcc0.ɵɵtemplate(3, NzTimePickerPanelComponent_div_8_ng_container_3_Template, 2, 1, "ng-container", 3);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r3 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassMapInterpolate1("", ctx_r3.prefixCls, "-select");
+    ɵngcc0.ɵɵadvance(3);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r3.use12HoursRange);
+} }
+function NzTimePickerPanelComponent_div_9_ng_template_1_Template(rf, ctx) { }
+function NzTimePickerPanelComponent_div_9_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "div");
+    ɵngcc0.ɵɵtemplate(1, NzTimePickerPanelComponent_div_9_ng_template_1_Template, 0, 0, "ng-template", 9);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r4 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵclassMapInterpolate1("", ctx_r4.prefixCls, "-addon");
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r4.nzAddOn);
+} }
 var NZ_CONFIG_COMPONENT_NAME = 'timePicker';
 var NzTimePickerComponent = /** @class */ (function () {
     function NzTimePickerComponent(nzConfigService, element, renderer, updateCls, cdr) {
@@ -247,17 +432,6 @@ var NzTimePickerComponent = /** @class */ (function () {
         this.nzDisabled = isDisabled;
         this.cdr.markForCheck();
     };
-    NzTimePickerComponent.decorators = [
-        { type: Component, args: [{
-                    encapsulation: ViewEncapsulation.None,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    selector: 'nz-time-picker',
-                    exportAs: 'nzTimePicker',
-                    template: "<input\r\n  #inputElement\r\n  nzType=\"text\"\r\n  [nzTime]=\"nzFormat\"\r\n  class=\"ant-time-picker-input\"\r\n  [placeholder]=\"nzPlaceHolder || ('TimePicker.placeholder' | nzI18n)\"\r\n  [(ngModel)]=\"value\"\r\n  readonly=\"readonly\"\r\n  (click)=\"open()\">\r\n<span class=\"ant-time-picker-icon\">\r\n  <i nz-icon nzType=\"clock-circle\"></i>\r\n</span>\r\n<i\r\n  *ngIf=\"nzAllowEmpty && value\"\r\n  nz-icon\r\n  nzType=\"close-circle\"\r\n  nzTheme=\"fill\"\r\n  class=\"anticon anticon-close-circle ant-time-picker-clear\"\r\n  tabindex=\"-1\"\r\n  [attr.aria-label]=\"nzClearText\"\r\n  [attr.title]=\"nzClearText\"\r\n  (click)=\"onClickClearBtn()\"\r\n></i>\r\n\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  cdkConnectedOverlayHasBackdrop\r\n  [cdkConnectedOverlayPositions]=\"overlayPositions\"\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayOpen]=\"nzOpen\"\r\n  [cdkConnectedOverlayOffsetY]=\"-2\"\r\n  (detach)=\"close()\"\r\n  (backdropClick)=\"close()\">\r\n  <nz-time-picker-panel\r\n    [ngClass]=\"nzPopupClassName\"\r\n    [@slideMotion]=\"'bottom'\"\r\n    [format]=\"nzFormat\"\r\n    [nzHourStep]=\"nzHourStep\"\r\n    [nzMinuteStep]=\"nzMinuteStep\"\r\n    [nzSecondStep]=\"nzSecondStep\"\r\n    [nzDisabledHours]=\"nzDisabledHours\"\r\n    [nzDisabledMinutes]=\"nzDisabledMinutes\"\r\n    [nzDisabledSeconds]=\"nzDisabledSeconds\"\r\n    [nzPlaceHolder]=\"nzPlaceHolder || ('TimePicker.placeholder' | nzI18n)\"\r\n    [nzHideDisabledOptions]=\"nzHideDisabledOptions\"\r\n    [nzUse12Hours]=\"nzUse12Hours\"\r\n    [nzDefaultOpenValue]=\"nzDefaultOpenValue\"\r\n    [nzAddOn]=\"nzAddOn\"\r\n    [opened]=\"nzOpen\"\r\n    [nzClearText]=\"nzClearText\"\r\n    [nzAllowEmpty]=\"nzAllowEmpty\"\r\n    [(ngModel)]=\"value\">\r\n  </nz-time-picker-panel>\r\n</ng-template>\r\n\r\n",
-                    animations: [slideMotion],
-                    providers: [NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerComponent, multi: true }]
-                }] }
-    ];
     /** @nocollapse */
     NzTimePickerComponent.ctorParameters = function () { return [
         { type: NzConfigService },
@@ -333,6 +507,85 @@ var NzTimePickerComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzTimePickerComponent.prototype, "nzAutoFocus", void 0);
+NzTimePickerComponent.ɵfac = function NzTimePickerComponent_Factory(t) { return new (t || NzTimePickerComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
+NzTimePickerComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTimePickerComponent, selectors: [["nz-time-picker"]], viewQuery: function NzTimePickerComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵstaticViewQuery(_c0, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.inputRef = _t.first);
+    } }, inputs: { nzSize: "nzSize", nzPlaceHolder: "nzPlaceHolder", nzDefaultOpenValue: "nzDefaultOpenValue", nzOpen: "nzOpen", nzHideDisabledOptions: "nzHideDisabledOptions", nzDisabled: "nzDisabled", nzAutoFocus: "nzAutoFocus", nzFormat: "nzFormat", nzHourStep: "nzHourStep", nzMinuteStep: "nzMinuteStep", nzSecondStep: "nzSecondStep", nzClearText: "nzClearText", nzPopupClassName: "nzPopupClassName", nzAddOn: "nzAddOn", nzDisabledHours: "nzDisabledHours", nzDisabledMinutes: "nzDisabledMinutes", nzDisabledSeconds: "nzDisabledSeconds", nzUse12Hours: "nzUse12Hours", nzAllowEmpty: "nzAllowEmpty" }, outputs: { nzOpenChange: "nzOpenChange" }, exportAs: ["nzTimePicker"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerComponent, multi: true }]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 7, vars: 10, consts: [["nzType", "text", "readonly", "readonly", 1, "ant-time-picker-input", 3, "nzTime", "placeholder", "ngModel", "ngModelChange", "click"], ["inputElement", ""], [1, "ant-time-picker-icon"], ["nz-icon", "", "nzType", "clock-circle"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill", "class", "anticon anticon-close-circle ant-time-picker-clear", "tabindex", "-1", 3, "click", 4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", "cdkConnectedOverlayHasBackdrop", "", 3, "cdkConnectedOverlayPositions", "cdkConnectedOverlayOrigin", "cdkConnectedOverlayOpen", "cdkConnectedOverlayOffsetY", "detach", "backdropClick"], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill", "tabindex", "-1", 1, "anticon", "anticon-close-circle", "ant-time-picker-clear", 3, "click"], [3, "ngClass", "format", "nzHourStep", "nzMinuteStep", "nzSecondStep", "nzDisabledHours", "nzDisabledMinutes", "nzDisabledSeconds", "nzPlaceHolder", "nzHideDisabledOptions", "nzUse12Hours", "nzDefaultOpenValue", "nzAddOn", "opened", "nzClearText", "nzAllowEmpty", "ngModel", "ngModelChange"]], template: function NzTimePickerComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "input", 0, 1);
+        ɵngcc0.ɵɵlistener("ngModelChange", function NzTimePickerComponent_Template_input_ngModelChange_0_listener($event) { return ctx.value = $event; })("click", function NzTimePickerComponent_Template_input_click_0_listener() { return ctx.open(); });
+        ɵngcc0.ɵɵpipe(2, "nzI18n");
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(3, "span", 2);
+        ɵngcc0.ɵɵelement(4, "i", 3);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(5, NzTimePickerComponent_i_5_Template, 1, 2, "i", 4);
+        ɵngcc0.ɵɵtemplate(6, NzTimePickerComponent_ng_template_6_Template, 2, 20, "ng-template", 5);
+        ɵngcc0.ɵɵlistener("detach", function NzTimePickerComponent_Template_ng_template_detach_6_listener() { return ctx.close(); })("backdropClick", function NzTimePickerComponent_Template_ng_template_backdropClick_6_listener() { return ctx.close(); });
+    } if (rf & 2) {
+        ɵngcc0.ɵɵproperty("nzTime", ctx.nzFormat)("placeholder", ctx.nzPlaceHolder || ɵngcc0.ɵɵpipeBind1(2, 8, "TimePicker.placeholder"))("ngModel", ctx.value);
+        ɵngcc0.ɵɵadvance(5);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzAllowEmpty && ctx.value);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("cdkConnectedOverlayPositions", ctx.overlayPositions)("cdkConnectedOverlayOrigin", ctx.origin)("cdkConnectedOverlayOpen", ctx.nzOpen)("cdkConnectedOverlayOffsetY", 0 - 2);
+    } }, directives: function () { return [NzTimeValueAccessorDirective, ɵngcc2.DefaultValueAccessor, ɵngcc2.NgControlStatus, ɵngcc2.NgModel, ɵngcc3.NzIconDirective, ɵngcc4.NgIf, ɵngcc5.CdkConnectedOverlay, ɵngcc1.NzConnectedOverlayDirective, NzTimePickerPanelComponent, ɵngcc4.NgClass]; }, pipes: function () { return [ɵngcc6.NzI18nPipe]; }, encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTimePickerComponent, [{
+        type: Component,
+        args: [{
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                selector: 'nz-time-picker',
+                exportAs: 'nzTimePicker',
+                template: "<input\r\n  #inputElement\r\n  nzType=\"text\"\r\n  [nzTime]=\"nzFormat\"\r\n  class=\"ant-time-picker-input\"\r\n  [placeholder]=\"nzPlaceHolder || ('TimePicker.placeholder' | nzI18n)\"\r\n  [(ngModel)]=\"value\"\r\n  readonly=\"readonly\"\r\n  (click)=\"open()\">\r\n<span class=\"ant-time-picker-icon\">\r\n  <i nz-icon nzType=\"clock-circle\"></i>\r\n</span>\r\n<i\r\n  *ngIf=\"nzAllowEmpty && value\"\r\n  nz-icon\r\n  nzType=\"close-circle\"\r\n  nzTheme=\"fill\"\r\n  class=\"anticon anticon-close-circle ant-time-picker-clear\"\r\n  tabindex=\"-1\"\r\n  [attr.aria-label]=\"nzClearText\"\r\n  [attr.title]=\"nzClearText\"\r\n  (click)=\"onClickClearBtn()\"\r\n></i>\r\n\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  cdkConnectedOverlayHasBackdrop\r\n  [cdkConnectedOverlayPositions]=\"overlayPositions\"\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayOpen]=\"nzOpen\"\r\n  [cdkConnectedOverlayOffsetY]=\"-2\"\r\n  (detach)=\"close()\"\r\n  (backdropClick)=\"close()\">\r\n  <nz-time-picker-panel\r\n    [ngClass]=\"nzPopupClassName\"\r\n    [@slideMotion]=\"'bottom'\"\r\n    [format]=\"nzFormat\"\r\n    [nzHourStep]=\"nzHourStep\"\r\n    [nzMinuteStep]=\"nzMinuteStep\"\r\n    [nzSecondStep]=\"nzSecondStep\"\r\n    [nzDisabledHours]=\"nzDisabledHours\"\r\n    [nzDisabledMinutes]=\"nzDisabledMinutes\"\r\n    [nzDisabledSeconds]=\"nzDisabledSeconds\"\r\n    [nzPlaceHolder]=\"nzPlaceHolder || ('TimePicker.placeholder' | nzI18n)\"\r\n    [nzHideDisabledOptions]=\"nzHideDisabledOptions\"\r\n    [nzUse12Hours]=\"nzUse12Hours\"\r\n    [nzDefaultOpenValue]=\"nzDefaultOpenValue\"\r\n    [nzAddOn]=\"nzAddOn\"\r\n    [opened]=\"nzOpen\"\r\n    [nzClearText]=\"nzClearText\"\r\n    [nzAllowEmpty]=\"nzAllowEmpty\"\r\n    [(ngModel)]=\"value\">\r\n  </nz-time-picker-panel>\r\n</ng-template>\r\n\r\n",
+                animations: [slideMotion],
+                providers: [NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerComponent, multi: true }]
+            }]
+    }], function () { return [{ type: ɵngcc1.NzConfigService }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzSize: [{
+            type: Input
+        }], nzPlaceHolder: [{
+            type: Input
+        }], nzDefaultOpenValue: [{
+            type: Input
+        }], nzOpen: [{
+            type: Input
+        }], nzOpenChange: [{
+            type: Output
+        }], nzHideDisabledOptions: [{
+            type: Input
+        }], nzDisabled: [{
+            type: Input
+        }], nzAutoFocus: [{
+            type: Input
+        }], nzFormat: [{
+            type: Input
+        }], inputRef: [{
+            type: ViewChild,
+            args: ['inputElement', { static: true }]
+        }], nzHourStep: [{
+            type: Input
+        }], nzMinuteStep: [{
+            type: Input
+        }], nzSecondStep: [{
+            type: Input
+        }], nzClearText: [{
+            type: Input
+        }], nzPopupClassName: [{
+            type: Input
+        }], nzAddOn: [{
+            type: Input
+        }], nzDisabledHours: [{
+            type: Input
+        }], nzDisabledMinutes: [{
+            type: Input
+        }], nzDisabledSeconds: [{
+            type: Input
+        }], nzUse12Hours: [{
+            type: Input
+        }], nzAllowEmpty: [{
+            type: Input
+        }] }); })();
     return NzTimePickerComponent;
 }());
 if (false) {
@@ -514,13 +767,6 @@ var NzTimeValueAccessorDirective = /** @class */ (function () {
     function (fn) {
         this._onTouch = fn;
     };
-    NzTimeValueAccessorDirective.decorators = [
-        { type: Directive, args: [{
-                    selector: 'input[nzTime]',
-                    exportAs: 'nzTime',
-                    providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: NzTimeValueAccessorDirective, multi: true }]
-                },] }
-    ];
     /** @nocollapse */
     NzTimeValueAccessorDirective.ctorParameters = function () { return [
         { type: DateHelperService },
@@ -531,6 +777,26 @@ var NzTimeValueAccessorDirective = /** @class */ (function () {
         keyup: [{ type: HostListener, args: ['keyup',] }],
         blur: [{ type: HostListener, args: ['blur',] }]
     };
+NzTimeValueAccessorDirective.ɵfac = function NzTimeValueAccessorDirective_Factory(t) { return new (t || NzTimeValueAccessorDirective)(ɵngcc0.ɵɵdirectiveInject(ɵngcc6.DateHelperService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef)); };
+NzTimeValueAccessorDirective.ɵdir = ɵngcc0.ɵɵdefineDirective({ type: NzTimeValueAccessorDirective, selectors: [["input", "nzTime", ""]], hostBindings: function NzTimeValueAccessorDirective_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("keyup", function NzTimeValueAccessorDirective_keyup_HostBindingHandler() { return ctx.keyup(); })("blur", function NzTimeValueAccessorDirective_blur_HostBindingHandler() { return ctx.blur(); });
+    } }, inputs: { nzTime: "nzTime" }, exportAs: ["nzTime"], features: [ɵngcc0.ɵɵProvidersFeature([{ provide: NG_VALUE_ACCESSOR, useExisting: NzTimeValueAccessorDirective, multi: true }])] });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTimeValueAccessorDirective, [{
+        type: Directive,
+        args: [{
+                selector: 'input[nzTime]',
+                exportAs: 'nzTime',
+                providers: [{ provide: NG_VALUE_ACCESSOR, useExisting: NzTimeValueAccessorDirective, multi: true }]
+            }]
+    }], function () { return [{ type: ɵngcc6.DateHelperService }, { type: ɵngcc0.ElementRef }]; }, { keyup: [{
+            type: HostListener,
+            args: ['keyup']
+        }], blur: [{
+            type: HostListener,
+            args: ['blur']
+        }], nzTime: [{
+            type: Input
+        }] }); })();
     return NzTimeValueAccessorDirective;
 }());
 if (false) {
@@ -1945,16 +2211,6 @@ var NzTimePickerPanelComponent = /** @class */ (function () {
     function (fn) {
         this.onTouch = fn;
     };
-    NzTimePickerPanelComponent.decorators = [
-        { type: Component, args: [{
-                    encapsulation: ViewEncapsulation.None,
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    selector: 'nz-time-picker-panel',
-                    exportAs: 'nzTimePickerPanel',
-                    template: "<div class=\"{{ nzInDatePicker ? prefixCls + '-panel' : '' }}\">\r\n  <div\r\n    class=\"{{ prefixCls }}-inner {{ nzInDatePicker ? prefixCls + '-column-' + enabledColumns : '' }}\"\r\n    [style.width.px]=\"nzInDatePicker ? null : enabledColumns * 56\">\r\n    <div class=\"{{ prefixCls }}-input-wrap\">\r\n      <input\r\n        type=\"text\"\r\n        class=\"{{ prefixCls }}-input\"\r\n        [placeholder]=\"nzPlaceHolder\"\r\n        [nzTime]=\"format\"\r\n        [(ngModel)]=\"time.value\"\r\n        (blur)=\"time.changed()\">\r\n    </div>\r\n    <div class=\"{{ prefixCls }}-combobox\">\r\n      <div\r\n        *ngIf=\"hourEnabled\"\r\n        #hourListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let hour of hourRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && hour.disabled)\"\r\n              (click)=\"selectHour(hour)\"\r\n              class=\"\r\n                {{ isSelectedHour(hour) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ hour.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ hour.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"minuteEnabled\"\r\n        #minuteListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let minute of minuteRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && minute.disabled)\"\r\n              (click)=\"selectMinute(minute)\"\r\n              class=\"\r\n                {{ isSelectedMinute(minute) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ minute.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ minute.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"secondEnabled\"\r\n        #secondListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let second of secondRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && second.disabled)\"\r\n              (click)=\"selectSecond(second)\"\r\n              class=\"\r\n                {{ isSelectedSecond(second) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ second.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ second.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"nzUse12Hours\"\r\n        #use12HoursListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let range of use12HoursRange \">\r\n            <li\r\n              *ngIf=\"!nzHideDisabledOptions\"\r\n              (click)=\"select12Hours(range)\"\r\n              class=\"\r\n                {{ isSelected12Hours(range) ? prefixCls + '-select-option-selected' : '' }}\r\n              \"\r\n            >\r\n              {{ range.value }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"{{ prefixCls }}-addon\" *ngIf=\"nzAddOn\">\r\n      <ng-template [ngTemplateOutlet]=\"nzAddOn\"></ng-template>\r\n    </div>\r\n  </div>\r\n</div>",
-                    providers: [NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerPanelComponent, multi: true }]
-                }] }
-    ];
     /** @nocollapse */
     NzTimePickerPanelComponent.ctorParameters = function () { return [
         { type: ElementRef },
@@ -1988,6 +2244,118 @@ var NzTimePickerPanelComponent = /** @class */ (function () {
         InputBoolean(),
         __metadata("design:type", Object)
     ], NzTimePickerPanelComponent.prototype, "nzUse12Hours", void 0);
+NzTimePickerPanelComponent.ɵfac = function NzTimePickerPanelComponent_Factory(t) { return new (t || NzTimePickerPanelComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc1.NzUpdateHostClassService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef)); };
+NzTimePickerPanelComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzTimePickerPanelComponent, selectors: [["nz-time-picker-panel"]], viewQuery: function NzTimePickerPanelComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(NzTimeValueAccessorDirective, true);
+        ɵngcc0.ɵɵviewQuery(_c1, true);
+        ɵngcc0.ɵɵviewQuery(_c2, true);
+        ɵngcc0.ɵɵviewQuery(_c3, true);
+        ɵngcc0.ɵɵviewQuery(_c4, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.nzTimeValueAccessorDirective = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.hourListElement = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.minuteListElement = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.secondListElement = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.use12HoursListElement = _t.first);
+    } }, inputs: { nzInDatePicker: "nzInDatePicker", nzHideDisabledOptions: "nzHideDisabledOptions", nzUse12Hours: "nzUse12Hours", opened: "opened", nzDefaultOpenValue: "nzDefaultOpenValue", nzAllowEmpty: "nzAllowEmpty", nzDisabledHours: "nzDisabledHours", nzDisabledMinutes: "nzDisabledMinutes", nzDisabledSeconds: "nzDisabledSeconds", format: "format", nzHourStep: "nzHourStep", nzMinuteStep: "nzMinuteStep", nzSecondStep: "nzSecondStep", nzAddOn: "nzAddOn", nzClearText: "nzClearText", nzPlaceHolder: "nzPlaceHolder" }, exportAs: ["nzTimePickerPanel"], features: [ɵngcc0.ɵɵProvidersFeature([NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerPanelComponent, multi: true }]), ɵngcc0.ɵɵNgOnChangesFeature], decls: 10, vars: 26, consts: [["type", "text", 3, "placeholder", "nzTime", "ngModel", "ngModelChange", "blur"], [3, "class", 4, "ngIf"], ["hourListElement", ""], [4, "ngFor", "ngForOf"], [3, "class", "click", 4, "ngIf"], [3, "click"], ["minuteListElement", ""], ["secondListElement", ""], ["use12HoursListElement", ""], [3, "ngTemplateOutlet"]], template: function NzTimePickerPanelComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵelementStart(0, "div");
+        ɵngcc0.ɵɵelementStart(1, "div");
+        ɵngcc0.ɵɵelementStart(2, "div");
+        ɵngcc0.ɵɵelementStart(3, "input", 0);
+        ɵngcc0.ɵɵlistener("ngModelChange", function NzTimePickerPanelComponent_Template_input_ngModelChange_3_listener($event) { return ctx.time.value = $event; })("blur", function NzTimePickerPanelComponent_Template_input_blur_3_listener() { return ctx.time.changed(); });
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementStart(4, "div");
+        ɵngcc0.ɵɵtemplate(5, NzTimePickerPanelComponent_div_5_Template, 4, 4, "div", 1);
+        ɵngcc0.ɵɵtemplate(6, NzTimePickerPanelComponent_div_6_Template, 4, 4, "div", 1);
+        ɵngcc0.ɵɵtemplate(7, NzTimePickerPanelComponent_div_7_Template, 4, 4, "div", 1);
+        ɵngcc0.ɵɵtemplate(8, NzTimePickerPanelComponent_div_8_Template, 4, 4, "div", 1);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(9, NzTimePickerPanelComponent_div_9_Template, 2, 4, "div", 1);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵelementEnd();
+    } if (rf & 2) {
+        ɵngcc0.ɵɵclassMap(ctx.nzInDatePicker ? ctx.prefixCls + "-panel" : "");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵclassMapInterpolate2("", ctx.prefixCls, "-inner ", ctx.nzInDatePicker ? ctx.prefixCls + "-column-" + ctx.enabledColumns : "", "");
+        ɵngcc0.ɵɵstyleProp("width", ctx.nzInDatePicker ? null : ctx.enabledColumns * 56, "px");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-input-wrap");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-input");
+        ɵngcc0.ɵɵproperty("placeholder", ctx.nzPlaceHolder)("nzTime", ctx.format)("ngModel", ctx.time.value);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵclassMapInterpolate1("", ctx.prefixCls, "-combobox");
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.hourEnabled);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.minuteEnabled);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.secondEnabled);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzUse12Hours);
+        ɵngcc0.ɵɵadvance(1);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzAddOn);
+    } }, directives: [NzTimeValueAccessorDirective, ɵngcc2.DefaultValueAccessor, ɵngcc2.NgControlStatus, ɵngcc2.NgModel, ɵngcc4.NgIf, ɵngcc4.NgForOf, ɵngcc4.NgTemplateOutlet], pipes: [ɵngcc4.DecimalPipe], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTimePickerPanelComponent, [{
+        type: Component,
+        args: [{
+                encapsulation: ViewEncapsulation.None,
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                selector: 'nz-time-picker-panel',
+                exportAs: 'nzTimePickerPanel',
+                template: "<div class=\"{{ nzInDatePicker ? prefixCls + '-panel' : '' }}\">\r\n  <div\r\n    class=\"{{ prefixCls }}-inner {{ nzInDatePicker ? prefixCls + '-column-' + enabledColumns : '' }}\"\r\n    [style.width.px]=\"nzInDatePicker ? null : enabledColumns * 56\">\r\n    <div class=\"{{ prefixCls }}-input-wrap\">\r\n      <input\r\n        type=\"text\"\r\n        class=\"{{ prefixCls }}-input\"\r\n        [placeholder]=\"nzPlaceHolder\"\r\n        [nzTime]=\"format\"\r\n        [(ngModel)]=\"time.value\"\r\n        (blur)=\"time.changed()\">\r\n    </div>\r\n    <div class=\"{{ prefixCls }}-combobox\">\r\n      <div\r\n        *ngIf=\"hourEnabled\"\r\n        #hourListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let hour of hourRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && hour.disabled)\"\r\n              (click)=\"selectHour(hour)\"\r\n              class=\"\r\n                {{ isSelectedHour(hour) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ hour.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ hour.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"minuteEnabled\"\r\n        #minuteListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let minute of minuteRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && minute.disabled)\"\r\n              (click)=\"selectMinute(minute)\"\r\n              class=\"\r\n                {{ isSelectedMinute(minute) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ minute.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ minute.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"secondEnabled\"\r\n        #secondListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let second of secondRange\">\r\n            <li\r\n              *ngIf=\"!(nzHideDisabledOptions && second.disabled)\"\r\n              (click)=\"selectSecond(second)\"\r\n              class=\"\r\n                {{ isSelectedSecond(second) ? prefixCls + '-select-option-selected' : '' }}\r\n                {{ second.disabled ? prefixCls + '-select-option-disabled' : '' }}\r\n              \"\r\n            >\r\n              {{ second.index | number:'2.0-0' }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n      <div\r\n        *ngIf=\"nzUse12Hours\"\r\n        #use12HoursListElement\r\n        class=\"{{ prefixCls }}-select\">\r\n        <ul>\r\n          <ng-container *ngFor=\"let range of use12HoursRange \">\r\n            <li\r\n              *ngIf=\"!nzHideDisabledOptions\"\r\n              (click)=\"select12Hours(range)\"\r\n              class=\"\r\n                {{ isSelected12Hours(range) ? prefixCls + '-select-option-selected' : '' }}\r\n              \"\r\n            >\r\n              {{ range.value }}\r\n            </li>\r\n          </ng-container>\r\n        </ul>\r\n      </div>\r\n    </div>\r\n    <div class=\"{{ prefixCls }}-addon\" *ngIf=\"nzAddOn\">\r\n      <ng-template [ngTemplateOutlet]=\"nzAddOn\"></ng-template>\r\n    </div>\r\n  </div>\r\n</div>",
+                providers: [NzUpdateHostClassService, { provide: NG_VALUE_ACCESSOR, useExisting: NzTimePickerPanelComponent, multi: true }]
+            }]
+    }], function () { return [{ type: ɵngcc0.ElementRef }, { type: ɵngcc1.NzUpdateHostClassService }, { type: ɵngcc0.ChangeDetectorRef }]; }, { nzInDatePicker: [{
+            type: Input
+        }], nzHideDisabledOptions: [{
+            type: Input
+        }], nzUse12Hours: [{
+            type: Input
+        }], opened: [{
+            type: Input
+        }], nzDefaultOpenValue: [{
+            type: Input
+        }], nzAllowEmpty: [{
+            type: Input
+        }], nzDisabledHours: [{
+            type: Input
+        }], nzDisabledMinutes: [{
+            type: Input
+        }], nzDisabledSeconds: [{
+            type: Input
+        }], format: [{
+            type: Input
+        }], nzHourStep: [{
+            type: Input
+        }], nzMinuteStep: [{
+            type: Input
+        }], nzSecondStep: [{
+            type: Input
+        }], nzTimeValueAccessorDirective: [{
+            type: ViewChild,
+            args: [NzTimeValueAccessorDirective, { static: false }]
+        }], hourListElement: [{
+            type: ViewChild,
+            args: ['hourListElement', { static: false }]
+        }], minuteListElement: [{
+            type: ViewChild,
+            args: ['minuteListElement', { static: false }]
+        }], secondListElement: [{
+            type: ViewChild,
+            args: ['secondListElement', { static: false }]
+        }], use12HoursListElement: [{
+            type: ViewChild,
+            args: ['use12HoursListElement', { static: false }]
+        }], nzAddOn: [{
+            type: Input
+        }], nzClearText: [{
+            type: Input
+        }], nzPlaceHolder: [{
+            type: Input
+        }] }); })();
     return NzTimePickerPanelComponent;
 }());
 if (false) {
@@ -2116,13 +2484,20 @@ if (false) {
 var NzTimePickerModule = /** @class */ (function () {
     function NzTimePickerModule() {
     }
-    NzTimePickerModule.decorators = [
-        { type: NgModule, args: [{
-                    declarations: [NzTimePickerComponent, NzTimePickerPanelComponent, NzTimeValueAccessorDirective],
-                    exports: [NzTimePickerPanelComponent, NzTimePickerComponent],
-                    imports: [CommonModule, FormsModule, NzI18nModule, OverlayModule, NzIconModule, NzOverlayModule]
-                },] }
-    ];
+NzTimePickerModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzTimePickerModule });
+NzTimePickerModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzTimePickerModule_Factory(t) { return new (t || NzTimePickerModule)(); }, imports: [[CommonModule, FormsModule, NzI18nModule, OverlayModule, NzIconModule, NzOverlayModule]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzTimePickerModule, { declarations: function () { return [NzTimePickerComponent,
+        NzTimePickerPanelComponent,
+        NzTimeValueAccessorDirective]; }, imports: function () { return [CommonModule, FormsModule, NzI18nModule, OverlayModule, NzIconModule, NzOverlayModule]; }, exports: function () { return [NzTimePickerPanelComponent,
+        NzTimePickerComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzTimePickerModule, [{
+        type: NgModule,
+        args: [{
+                declarations: [NzTimePickerComponent, NzTimePickerPanelComponent, NzTimeValueAccessorDirective],
+                exports: [NzTimePickerPanelComponent, NzTimePickerComponent],
+                imports: [CommonModule, FormsModule, NzI18nModule, OverlayModule, NzIconModule, NzOverlayModule]
+            }]
+    }], function () { return []; }, null); })();
     return NzTimePickerModule;
 }());
 
@@ -2137,4 +2512,5 @@ var NzTimePickerModule = /** @class */ (function () {
  */
 
 export { NzTimePickerComponent, NzTimePickerModule, NzTimePickerPanelComponent, NzTimeValueAccessorDirective };
+
 //# sourceMappingURL=ng-zorro-antd-time-picker.js.map

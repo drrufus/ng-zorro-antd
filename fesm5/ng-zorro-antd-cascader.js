@@ -27,6 +27,164 @@ import { NzInputModule } from 'ng-zorro-antd/input';
  * @deprecated Use the prefixed version.
  * @record
  */
+import * as ɵngcc0 from '@angular/core';
+import * as ɵngcc1 from '@angular/common';
+import * as ɵngcc2 from 'ng-zorro-antd/icon';
+import * as ɵngcc3 from 'ng-zorro-antd/core';
+import * as ɵngcc4 from 'ng-zorro-antd/i18n';
+import * as ɵngcc5 from '@angular/cdk/overlay';
+import * as ɵngcc6 from '@angular/forms';
+import * as ɵngcc7 from 'ng-zorro-antd/input';
+import * as ɵngcc8 from 'ng-zorro-antd/empty';
+
+var _c0 = ["nz-cascader-option", ""];
+function NzCascaderOptionComponent_ng_container_0_ng_template_1_Template(rf, ctx) { }
+var _c1 = function (a0, a1) { return { $implicit: a0, index: a1 }; };
+function NzCascaderOptionComponent_ng_container_0_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtemplate(1, NzCascaderOptionComponent_ng_container_0_ng_template_1_Template, 0, 0, "ng-template", 3);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r0 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r0.optionTemplate)("ngTemplateOutletContext", ɵngcc0.ɵɵpureFunction2(2, _c1, ctx_r0.option, ctx_r0.columnIndex));
+} }
+function NzCascaderOptionComponent_ng_template_1_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "span", 4);
+    ɵngcc0.ɵɵpipe(1, "nzHighlight");
+} if (rf & 2) {
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("innerHTML", ɵngcc0.ɵɵpipeBind4(1, 1, ctx_r2.optionLabel, ctx_r2.highlightText, "g", "ant-cascader-menu-item-keyword"), ɵngcc0.ɵɵsanitizeHtml);
+} }
+function NzCascaderOptionComponent_span_3_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "span", 5);
+    ɵngcc0.ɵɵelement(1, "i", 6);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r3 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzType", ctx_r3.option.loading ? "loading" : "right");
+} }
+var _c2 = ["input"];
+var _c3 = ["menu"];
+function NzCascaderComponent_div_3_i_3_Template(rf, ctx) { if (rf & 1) {
+    var _r12 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "i", 12);
+    ɵngcc0.ɵɵlistener("click", function NzCascaderComponent_div_3_i_3_Template_i_click_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r12); var ctx_r11 = ɵngcc0.ɵɵnextContext(2); return ctx_r11.clearSelection($event); });
+    ɵngcc0.ɵɵelementEnd();
+} }
+function NzCascaderComponent_div_3_i_4_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 13);
+} if (rf & 2) {
+    var ctx_r6 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassProp("ant-cascader-picker-arrow-expand", ctx_r6.menuVisible);
+} }
+function NzCascaderComponent_div_3_i_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelement(0, "i", 14);
+} }
+function NzCascaderComponent_div_3_ng_container_7_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementContainerStart(0);
+    ɵngcc0.ɵɵtext(1);
+    ɵngcc0.ɵɵelementContainerEnd();
+} if (rf & 2) {
+    var ctx_r8 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵtextInterpolate(ctx_r8.labelRenderText);
+} }
+function NzCascaderComponent_div_3_ng_template_8_ng_template_0_Template(rf, ctx) { }
+function NzCascaderComponent_div_3_ng_template_8_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzCascaderComponent_div_3_ng_template_8_ng_template_0_Template, 0, 0, "ng-template", 15);
+} if (rf & 2) {
+    var ctx_r10 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵproperty("ngTemplateOutlet", ctx_r10.nzLabelRender)("ngTemplateOutletContext", ctx_r10.labelRenderContext);
+} }
+function NzCascaderComponent_div_3_Template(rf, ctx) { if (rf & 1) {
+    var _r15 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "div");
+    ɵngcc0.ɵɵelementStart(1, "input", 4, 5);
+    ɵngcc0.ɵɵlistener("ngModelChange", function NzCascaderComponent_div_3_Template_input_ngModelChange_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r14 = ɵngcc0.ɵɵnextContext(); return ctx_r14.inputValue = $event; })("blur", function NzCascaderComponent_div_3_Template_input_blur_1_listener() { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r16 = ɵngcc0.ɵɵnextContext(); return ctx_r16.handleInputBlur(); })("focus", function NzCascaderComponent_div_3_Template_input_focus_1_listener() { ɵngcc0.ɵɵrestoreView(_r15); var ctx_r17 = ɵngcc0.ɵɵnextContext(); return ctx_r17.handleInputFocus(); })("change", function NzCascaderComponent_div_3_Template_input_change_1_listener($event) { ɵngcc0.ɵɵrestoreView(_r15); return $event.stopPropagation(); });
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵtemplate(3, NzCascaderComponent_div_3_i_3_Template, 1, 0, "i", 6);
+    ɵngcc0.ɵɵtemplate(4, NzCascaderComponent_div_3_i_4_Template, 1, 2, "i", 7);
+    ɵngcc0.ɵɵtemplate(5, NzCascaderComponent_div_3_i_5_Template, 1, 0, "i", 8);
+    ɵngcc0.ɵɵelementStart(6, "span", 9);
+    ɵngcc0.ɵɵtemplate(7, NzCascaderComponent_div_3_ng_container_7_Template, 2, 1, "ng-container", 10);
+    ɵngcc0.ɵɵtemplate(8, NzCascaderComponent_div_3_ng_template_8_Template, 1, 2, "ng-template", null, 11, ɵngcc0.ɵɵtemplateRefExtractor);
+    ɵngcc0.ɵɵelementEnd();
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var _r9 = ɵngcc0.ɵɵreference(9);
+    var ctx_r2 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵclassProp("ant-cascader-input-disabled", ctx_r2.nzDisabled)("ant-cascader-input-lg", ctx_r2.nzSize === "large")("ant-cascader-input-sm", ctx_r2.nzSize === "small");
+    ɵngcc0.ɵɵproperty("readonly", !ctx_r2.nzShowSearch)("disabled", ctx_r2.nzDisabled)("nzSize", ctx_r2.nzSize)("ngModel", ctx_r2.inputValue);
+    ɵngcc0.ɵɵattribute("autoComplete", "off")("placeholder", ctx_r2.showPlaceholder ? ctx_r2.nzPlaceHolder || (ctx_r2.locale == null ? null : ctx_r2.locale.placeholder) : null)("autofocus", ctx_r2.nzAutoFocus ? "autofocus" : null);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.clearIconVisible);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.nzShowArrow && !ctx_r2.isLoading);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r2.isLoading);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵclassProp("ant-cascader-show-search", !!ctx_r2.nzShowSearch)("ant-focusd", !!ctx_r2.nzShowSearch && ctx_r2.isFocused && !ctx_r2.inputValue);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", !ctx_r2.isLabelRenderTemplate)("ngIfElse", _r9);
+} }
+function NzCascaderComponent_ng_template_5_div_0_ul_2_li_1_Template(rf, ctx) { if (rf & 1) {
+    var _r29 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "li", 23);
+    ɵngcc0.ɵɵlistener("mouseenter", function NzCascaderComponent_ng_template_5_div_0_ul_2_li_1_Template_li_mouseenter_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r29); var option_r26 = ctx.$implicit; var i_r23 = ɵngcc0.ɵɵnextContext().index; var ctx_r27 = ɵngcc0.ɵɵnextContext(3); return ctx_r27.onOptionMouseEnter(option_r26, i_r23, $event); })("mouseleave", function NzCascaderComponent_ng_template_5_div_0_ul_2_li_1_Template_li_mouseleave_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r29); var option_r26 = ctx.$implicit; var i_r23 = ɵngcc0.ɵɵnextContext().index; var ctx_r30 = ɵngcc0.ɵɵnextContext(3); return ctx_r30.onOptionMouseLeave(option_r26, i_r23, $event); })("click", function NzCascaderComponent_ng_template_5_div_0_ul_2_li_1_Template_li_click_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r29); var option_r26 = ctx.$implicit; var i_r23 = ɵngcc0.ɵɵnextContext().index; var ctx_r32 = ɵngcc0.ɵɵnextContext(3); return ctx_r32.onOptionClick(option_r26, i_r23, $event); });
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var option_r26 = ctx.$implicit;
+    var i_r23 = ɵngcc0.ɵɵnextContext().index;
+    var ctx_r24 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵproperty("columnIndex", i_r23)("nzLabelProperty", ctx_r24.nzLabelProperty)("optionTemplate", ctx_r24.nzOptionRender)("activated", ctx_r24.isOptionActivated(option_r26, i_r23))("highlightText", ctx_r24.inSearchingMode ? ctx_r24.inputValue : "")("option", option_r26);
+} }
+function NzCascaderComponent_ng_template_5_div_0_ul_2_li_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "li", 24);
+    ɵngcc0.ɵɵelement(1, "nz-embed-empty", 25);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r25 = ɵngcc0.ɵɵnextContext(4);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("nzComponentName", "cascader")("specificContent", ctx_r25.nzNotFoundContent);
+} }
+function NzCascaderComponent_ng_template_5_div_0_ul_2_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵelementStart(0, "ul", 20);
+    ɵngcc0.ɵɵtemplate(1, NzCascaderComponent_ng_template_5_div_0_ul_2_li_1_Template, 1, 6, "li", 21);
+    ɵngcc0.ɵɵtemplate(2, NzCascaderComponent_ng_template_5_div_0_ul_2_li_2_Template, 2, 2, "li", 22);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var options_r22 = ctx.$implicit;
+    var ctx_r21 = ɵngcc0.ɵɵnextContext(3);
+    ɵngcc0.ɵɵstyleProp("height", ctx_r21.inSearchingMode && !ctx_r21.cascaderService.columns[0].length ? "auto" : "")("width", ctx_r21.dropdownWidthStyle);
+    ɵngcc0.ɵɵproperty("ngClass", ctx_r21.menuColumnCls);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngForOf", options_r22);
+    ɵngcc0.ɵɵadvance(1);
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r21.inSearchingMode && !ctx_r21.cascaderService.columns[0].length);
+} }
+function NzCascaderComponent_ng_template_5_div_0_Template(rf, ctx) { if (rf & 1) {
+    var _r36 = ɵngcc0.ɵɵgetCurrentView();
+    ɵngcc0.ɵɵelementStart(0, "div", 17, 18);
+    ɵngcc0.ɵɵlistener("mouseleave", function NzCascaderComponent_ng_template_5_div_0_Template_div_mouseleave_0_listener($event) { ɵngcc0.ɵɵrestoreView(_r36); var ctx_r35 = ɵngcc0.ɵɵnextContext(2); return ctx_r35.onTriggerMouseLeave($event); });
+    ɵngcc0.ɵɵtemplate(2, NzCascaderComponent_ng_template_5_div_0_ul_2_Template, 3, 7, "ul", 19);
+    ɵngcc0.ɵɵelementEnd();
+} if (rf & 2) {
+    var ctx_r19 = ɵngcc0.ɵɵnextContext(2);
+    ɵngcc0.ɵɵclassProp("ant-cascader-menus-hidden", !ctx_r19.menuVisible);
+    ɵngcc0.ɵɵproperty("ngClass", ctx_r19.menuCls)("ngStyle", ctx_r19.nzMenuStyle)("@.disabled", ctx_r19.noAnimation == null ? null : ctx_r19.noAnimation.nzNoAnimation)("nzNoAnimation", ctx_r19.noAnimation == null ? null : ctx_r19.noAnimation.nzNoAnimation)("@slideMotion", ctx_r19.dropDownPosition);
+    ɵngcc0.ɵɵadvance(2);
+    ɵngcc0.ɵɵproperty("ngForOf", ctx_r19.cascaderService.columns);
+} }
+function NzCascaderComponent_ng_template_5_Template(rf, ctx) { if (rf & 1) {
+    ɵngcc0.ɵɵtemplate(0, NzCascaderComponent_ng_template_5_div_0_Template, 3, 8, "div", 16);
+} if (rf & 2) {
+    var ctx_r3 = ɵngcc0.ɵɵnextContext();
+    ɵngcc0.ɵɵproperty("ngIf", ctx_r3.nzOptions && ctx_r3.nzOptions.length || ctx_r3.inSearchingMode);
+} }
+var _c4 = ["*"];
 function CascaderOption() { }
 if (false) {
     /** @type {?|undefined} */
@@ -161,21 +319,6 @@ var NzCascaderOptionComponent = /** @class */ (function () {
     function () {
         this.cdr.markForCheck();
     };
-    NzCascaderOptionComponent.decorators = [
-        { type: Component, args: [{
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    selector: '[nz-cascader-option]',
-                    exportAs: 'nzCascaderOption',
-                    template: "<ng-container *ngIf=\"optionTemplate; else defaultOptionTemplate\">\r\n  <ng-template [ngTemplateOutlet]=\"optionTemplate\"\r\n               [ngTemplateOutletContext]=\"{ $implicit: option, index: columnIndex }\"></ng-template>\r\n</ng-container>\r\n<ng-template #defaultOptionTemplate>\r\n  <span [innerHTML]=\"optionLabel | nzHighlight: highlightText: 'g': 'ant-cascader-menu-item-keyword'\"></span>\r\n</ng-template>\r\n<span *ngIf=\"!option.isLeaf || option.children?.length || option.loading\"\r\n      class=\"ant-cascader-menu-item-expand-icon\">\r\n  <i nz-icon\r\n     [nzType]=\"option.loading ? 'loading' : 'right'\"></i>\r\n</span>\r\n",
-                    host: {
-                        '[attr.title]': 'option.title || optionLabel',
-                        '[class.ant-cascader-menu-item-active]': 'activated',
-                        '[class.ant-cascader-menu-item-expand]': '!option.isLeaf',
-                        '[class.ant-cascader-menu-item-disabled]': 'option.disabled'
-                    }
-                }] }
-    ];
     /** @nocollapse */
     NzCascaderOptionComponent.ctorParameters = function () { return [
         { type: ChangeDetectorRef },
@@ -190,6 +333,48 @@ var NzCascaderOptionComponent = /** @class */ (function () {
         nzLabelProperty: [{ type: Input }],
         columnIndex: [{ type: Input }]
     };
+NzCascaderOptionComponent.ɵfac = function NzCascaderOptionComponent_Factory(t) { return new (t || NzCascaderOptionComponent)(ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2)); };
+NzCascaderOptionComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCascaderOptionComponent, selectors: [["", "nz-cascader-option", ""]], hostVars: 7, hostBindings: function NzCascaderOptionComponent_HostBindings(rf, ctx) { if (rf & 2) {
+        ɵngcc0.ɵɵattribute("title", ctx.option.title || ctx.optionLabel);
+        ɵngcc0.ɵɵclassProp("ant-cascader-menu-item-active", ctx.activated)("ant-cascader-menu-item-expand", !ctx.option.isLeaf)("ant-cascader-menu-item-disabled", ctx.option.disabled);
+    } }, inputs: { optionTemplate: "optionTemplate", activated: "activated", nzLabelProperty: "nzLabelProperty", option: "option", highlightText: "highlightText", columnIndex: "columnIndex" }, exportAs: ["nzCascaderOption"], attrs: _c0, decls: 4, vars: 3, consts: [[4, "ngIf", "ngIfElse"], ["defaultOptionTemplate", ""], ["class", "ant-cascader-menu-item-expand-icon", 4, "ngIf"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], [3, "innerHTML"], [1, "ant-cascader-menu-item-expand-icon"], ["nz-icon", "", 3, "nzType"]], template: function NzCascaderOptionComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵtemplate(0, NzCascaderOptionComponent_ng_container_0_Template, 2, 5, "ng-container", 0);
+        ɵngcc0.ɵɵtemplate(1, NzCascaderOptionComponent_ng_template_1_Template, 2, 6, "ng-template", null, 1, ɵngcc0.ɵɵtemplateRefExtractor);
+        ɵngcc0.ɵɵtemplate(3, NzCascaderOptionComponent_span_3_Template, 2, 1, "span", 2);
+    } if (rf & 2) {
+        var _r1 = ɵngcc0.ɵɵreference(2);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.optionTemplate)("ngIfElse", _r1);
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("ngIf", !ctx.option.isLeaf || (ctx.option.children == null ? null : ctx.option.children.length) || ctx.option.loading);
+    } }, directives: [ɵngcc1.NgIf, ɵngcc1.NgTemplateOutlet, ɵngcc2.NzIconDirective], pipes: [ɵngcc3.NzHighlightPipe], encapsulation: 2, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCascaderOptionComponent, [{
+        type: Component,
+        args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: '[nz-cascader-option]',
+                exportAs: 'nzCascaderOption',
+                template: "<ng-container *ngIf=\"optionTemplate; else defaultOptionTemplate\">\r\n  <ng-template [ngTemplateOutlet]=\"optionTemplate\"\r\n               [ngTemplateOutletContext]=\"{ $implicit: option, index: columnIndex }\"></ng-template>\r\n</ng-container>\r\n<ng-template #defaultOptionTemplate>\r\n  <span [innerHTML]=\"optionLabel | nzHighlight: highlightText: 'g': 'ant-cascader-menu-item-keyword'\"></span>\r\n</ng-template>\r\n<span *ngIf=\"!option.isLeaf || option.children?.length || option.loading\"\r\n      class=\"ant-cascader-menu-item-expand-icon\">\r\n  <i nz-icon\r\n     [nzType]=\"option.loading ? 'loading' : 'right'\"></i>\r\n</span>\r\n",
+                host: {
+                    '[attr.title]': 'option.title || optionLabel',
+                    '[class.ant-cascader-menu-item-active]': 'activated',
+                    '[class.ant-cascader-menu-item-expand]': '!option.isLeaf',
+                    '[class.ant-cascader-menu-item-disabled]': 'option.disabled'
+                }
+            }]
+    }], function () { return [{ type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }]; }, { optionTemplate: [{
+            type: Input
+        }], activated: [{
+            type: Input
+        }], nzLabelProperty: [{
+            type: Input
+        }], option: [{
+            type: Input
+        }], highlightText: [{
+            type: Input
+        }], columnIndex: [{
+            type: Input
+        }] }); })();
     return NzCascaderOptionComponent;
 }());
 if (false) {
@@ -932,9 +1117,11 @@ var NzCascaderService = /** @class */ (function () {
          */
         function (o) { return _this.getOptionValue(o); }));
     };
-    NzCascaderService.decorators = [
-        { type: Injectable }
-    ];
+NzCascaderService.ɵfac = function NzCascaderService_Factory(t) { return new (t || NzCascaderService)(); };
+NzCascaderService.ɵprov = ɵngcc0.ɵɵdefineInjectable({ token: NzCascaderService, factory: function (t) { return NzCascaderService.ɵfac(t); } });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCascaderService, [{
+        type: Injectable
+    }], function () { return []; }, null); })();
     return NzCascaderService;
 }());
 if (false) {
@@ -1943,38 +2130,6 @@ var NzCascaderComponent = /** @class */ (function () {
         this.locale = this.i18nService.getLocaleData('global');
         this.cdr.markForCheck();
     };
-    NzCascaderComponent.decorators = [
-        { type: Component, args: [{
-                    changeDetection: ChangeDetectionStrategy.OnPush,
-                    encapsulation: ViewEncapsulation.None,
-                    selector: 'nz-cascader, [nz-cascader]',
-                    exportAs: 'nzCascader',
-                    preserveWhitespaces: false,
-                    template: "<div\r\n  cdkOverlayOrigin\r\n  #origin=\"cdkOverlayOrigin\"\r\n  #trigger>\r\n  <div *ngIf=\"nzShowInput\">\r\n    <input\r\n      #input\r\n      nz-input\r\n      class=\"ant-cascader-input\"\r\n      [class.ant-cascader-input-disabled]=\"nzDisabled\"\r\n      [class.ant-cascader-input-lg]=\"nzSize === 'large'\"\r\n      [class.ant-cascader-input-sm]=\"nzSize === 'small'\"\r\n      [attr.autoComplete]=\"'off'\"\r\n      [attr.placeholder]=\"showPlaceholder ? (nzPlaceHolder || locale?.placeholder ) : null\"\r\n      [attr.autofocus]=\"nzAutoFocus ? 'autofocus' : null\"\r\n      [readonly]=\"!nzShowSearch\"\r\n      [disabled]=\"nzDisabled\"\r\n      [nzSize]=\"nzSize\"\r\n      [(ngModel)]=\"inputValue\"\r\n      (blur)=\"handleInputBlur()\"\r\n      (focus)=\"handleInputFocus()\"\r\n      (change)=\"$event.stopPropagation()\">\r\n    <i *ngIf=\"clearIconVisible\"\r\n      nz-icon\r\n      nzType=\"close-circle\"\r\n      nzTheme=\"fill\"\r\n      class=\"ant-cascader-picker-clear\"\r\n      (click)=\"clearSelection($event)\"></i>\r\n    <i *ngIf=\"nzShowArrow && !isLoading\"\r\n      nz-icon\r\n      nzType=\"down\"\r\n      class=\"ant-cascader-picker-arrow\"\r\n      [class.ant-cascader-picker-arrow-expand]=\"menuVisible\">\r\n    </i>\r\n    <i *ngIf=\"isLoading\" nz-icon nzType=\"loading\" class=\"ant-cascader-picker-arrow\"></i>\r\n    <span\r\n      class=\"ant-cascader-picker-label\"\r\n      [class.ant-cascader-show-search]=\"!!nzShowSearch\"\r\n      [class.ant-focusd]=\"!!nzShowSearch && isFocused && !inputValue\">\r\n      <ng-container *ngIf=\"!isLabelRenderTemplate; else labelTemplate\">{{ labelRenderText }}</ng-container>\r\n      <ng-template #labelTemplate>\r\n        <ng-template [ngTemplateOutlet]=\"nzLabelRender\" [ngTemplateOutletContext]=\"labelRenderContext\"></ng-template>\r\n      </ng-template>\r\n    </span>\r\n  </div>\r\n  <ng-content></ng-content>\r\n</div>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  cdkConnectedOverlayHasBackdrop\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  (backdropClick)=\"closeMenu()\"\r\n  (detach)=\"closeMenu()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayOpen]=\"menuVisible\">\r\n  <div\r\n    #menu\r\n    class=\"ant-cascader-menus\"\r\n    *ngIf=\"nzOptions && nzOptions.length || inSearchingMode\"\r\n    [class.ant-cascader-menus-hidden]=\"!menuVisible\"\r\n    [ngClass]=\"menuCls\"\r\n    [ngStyle]=\"nzMenuStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    (mouseleave)=\"onTriggerMouseLeave($event)\">\r\n    <ul *ngFor=\"let options of cascaderService.columns; let i = index;\" class=\"ant-cascader-menu\"\r\n      [ngClass]=\"menuColumnCls\"\r\n      [style.height]=\"inSearchingMode && !cascaderService.columns[0].length ? 'auto': ''\"\r\n      [style.width]=\"dropdownWidthStyle\">\r\n      <li\r\n        nz-cascader-option\r\n        *ngFor=\"let option of options\"\r\n        [columnIndex]=\"i\"\r\n        [nzLabelProperty]=\"nzLabelProperty\"\r\n        [optionTemplate]=\"nzOptionRender\"\r\n        [activated]=\"isOptionActivated(option, i)\"\r\n        [highlightText]=\"inSearchingMode ? inputValue : ''\"\r\n        [option]=\"option\"\r\n        (mouseenter)=\"onOptionMouseEnter(option, i, $event)\"\r\n        (mouseleave)=\"onOptionMouseLeave(option, i, $event)\"\r\n        (click)=\"onOptionClick(option, i, $event)\">\r\n      </li>\r\n      <li *ngIf=\"inSearchingMode && !cascaderService.columns[0].length\"\r\n        class=\"ant-cascader-menu-item ant-cascader-menu-item-expanded ant-cascader-menu-item-disabled\">\r\n        <nz-embed-empty [nzComponentName]=\"'cascader'\" [specificContent]=\"nzNotFoundContent\"></nz-embed-empty>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</ng-template>\r\n",
-                    animations: [slideMotion],
-                    providers: [
-                        {
-                            provide: NG_VALUE_ACCESSOR,
-                            useExisting: forwardRef((/**
-                             * @return {?}
-                             */
-                            function () { return NzCascaderComponent; })),
-                            multi: true
-                        },
-                        NzCascaderService
-                    ],
-                    host: {
-                        '[attr.tabIndex]': '"0"',
-                        '[class.ant-cascader-lg]': 'nzSize === "large"',
-                        '[class.ant-cascader-sm]': 'nzSize === "small"',
-                        '[class.ant-cascader-picker-disabled]': 'nzDisabled',
-                        '[class.ant-cascader-picker-open]': 'menuVisible',
-                        '[class.ant-cascader-picker-with-value]': '!!inputValue',
-                        '[class.ant-cascader-focused]': 'isFocused'
-                    },
-                    styles: ["\n      .ant-cascader-menus {\n        margin-top: 4px;\n        margin-bottom: 4px;\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n      }\n    "]
-                }] }
-    ];
     /** @nocollapse */
     NzCascaderComponent.ctorParameters = function () { return [
         { type: NzCascaderService },
@@ -2051,6 +2206,163 @@ var NzCascaderComponent = /** @class */ (function () {
         WithConfig(NZ_CONFIG_COMPONENT_NAME, 'default'),
         __metadata("design:type", String)
     ], NzCascaderComponent.prototype, "nzSize", void 0);
+NzCascaderComponent.ɵfac = function NzCascaderComponent_Factory(t) { return new (t || NzCascaderComponent)(ɵngcc0.ɵɵdirectiveInject(NzCascaderService), ɵngcc0.ɵɵdirectiveInject(ɵngcc4.NzI18nService), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.NzConfigService), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ChangeDetectorRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.ElementRef), ɵngcc0.ɵɵdirectiveInject(ɵngcc0.Renderer2), ɵngcc0.ɵɵdirectiveInject(ɵngcc3.NzNoAnimationDirective, 9)); };
+NzCascaderComponent.ɵcmp = ɵngcc0.ɵɵdefineComponent({ type: NzCascaderComponent, selectors: [["nz-cascader"], ["", "nz-cascader", ""]], viewQuery: function NzCascaderComponent_Query(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵviewQuery(_c2, true);
+        ɵngcc0.ɵɵviewQuery(_c3, true);
+        ɵngcc0.ɵɵviewQuery(CdkConnectedOverlay, true);
+        ɵngcc0.ɵɵviewQuery(NzCascaderOptionComponent, true);
+    } if (rf & 2) {
+        var _t;
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.input = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.menu = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.overlay = _t.first);
+        ɵngcc0.ɵɵqueryRefresh(_t = ɵngcc0.ɵɵloadQuery()) && (ctx.cascaderItems = _t);
+    } }, hostVars: 13, hostBindings: function NzCascaderComponent_HostBindings(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵlistener("keydown", function NzCascaderComponent_keydown_HostBindingHandler($event) { return ctx.onKeyDown($event); })("click", function NzCascaderComponent_click_HostBindingHandler() { return ctx.onTriggerClick(); })("mouseenter", function NzCascaderComponent_mouseenter_HostBindingHandler() { return ctx.onTriggerMouseEnter(); })("mouseleave", function NzCascaderComponent_mouseleave_HostBindingHandler($event) { return ctx.onTriggerMouseLeave($event); });
+    } if (rf & 2) {
+        ɵngcc0.ɵɵattribute("tabIndex", "0");
+        ɵngcc0.ɵɵclassProp("ant-cascader-lg", ctx.nzSize === "large")("ant-cascader-sm", ctx.nzSize === "small")("ant-cascader-picker-disabled", ctx.nzDisabled)("ant-cascader-picker-open", ctx.menuVisible)("ant-cascader-picker-with-value", !!ctx.inputValue)("ant-cascader-focused", ctx.isFocused);
+    } }, inputs: { nzOptionRender: "nzOptionRender", nzShowInput: "nzShowInput", nzShowArrow: "nzShowArrow", nzAllowClear: "nzAllowClear", nzAutoFocus: "nzAutoFocus", nzChangeOnSelect: "nzChangeOnSelect", nzDisabled: "nzDisabled", nzExpandTrigger: "nzExpandTrigger", nzValueProperty: "nzValueProperty", nzLabelProperty: "nzLabelProperty", nzMouseEnterDelay: "nzMouseEnterDelay", nzMouseLeaveDelay: "nzMouseLeaveDelay", nzTriggerAction: "nzTriggerAction", nzOptions: "nzOptions", nzColumnClassName: "nzColumnClassName", nzLabelRender: "nzLabelRender", nzNotFoundContent: "nzNotFoundContent", nzSize: "nzSize", nzShowSearch: "nzShowSearch", nzPlaceHolder: "nzPlaceHolder", nzMenuClassName: "nzMenuClassName", nzMenuStyle: "nzMenuStyle", nzChangeOn: "nzChangeOn", nzLoadData: "nzLoadData" }, outputs: { nzVisibleChange: "nzVisibleChange", nzSelectionChange: "nzSelectionChange", nzSelect: "nzSelect", nzClear: "nzClear" }, exportAs: ["nzCascader"], features: [ɵngcc0.ɵɵProvidersFeature([
+            {
+                provide: NG_VALUE_ACCESSOR,
+                useExisting: forwardRef(( /**
+                 * @return {?}
+                 */function () { return NzCascaderComponent; })),
+                multi: true
+            },
+            NzCascaderService
+        ])], ngContentSelectors: _c4, decls: 6, vars: 4, consts: [["cdkOverlayOrigin", ""], ["origin", "cdkOverlayOrigin", "trigger", ""], [4, "ngIf"], ["cdkConnectedOverlay", "", "nzConnectedOverlay", "", "cdkConnectedOverlayHasBackdrop", "", 3, "cdkConnectedOverlayOrigin", "cdkConnectedOverlayPositions", "cdkConnectedOverlayOpen", "backdropClick", "detach", "positionChange"], ["nz-input", "", 1, "ant-cascader-input", 3, "readonly", "disabled", "nzSize", "ngModel", "ngModelChange", "blur", "focus", "change"], ["input", ""], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill", "class", "ant-cascader-picker-clear", 3, "click", 4, "ngIf"], ["nz-icon", "", "nzType", "down", "class", "ant-cascader-picker-arrow", 3, "ant-cascader-picker-arrow-expand", 4, "ngIf"], ["nz-icon", "", "nzType", "loading", "class", "ant-cascader-picker-arrow", 4, "ngIf"], [1, "ant-cascader-picker-label"], [4, "ngIf", "ngIfElse"], ["labelTemplate", ""], ["nz-icon", "", "nzType", "close-circle", "nzTheme", "fill", 1, "ant-cascader-picker-clear", 3, "click"], ["nz-icon", "", "nzType", "down", 1, "ant-cascader-picker-arrow"], ["nz-icon", "", "nzType", "loading", 1, "ant-cascader-picker-arrow"], [3, "ngTemplateOutlet", "ngTemplateOutletContext"], ["class", "ant-cascader-menus", 3, "ant-cascader-menus-hidden", "ngClass", "ngStyle", "nzNoAnimation", "mouseleave", 4, "ngIf"], [1, "ant-cascader-menus", 3, "ngClass", "ngStyle", "nzNoAnimation", "mouseleave"], ["menu", ""], ["class", "ant-cascader-menu", 3, "ngClass", "height", "width", 4, "ngFor", "ngForOf"], [1, "ant-cascader-menu", 3, "ngClass"], ["nz-cascader-option", "", 3, "columnIndex", "nzLabelProperty", "optionTemplate", "activated", "highlightText", "option", "mouseenter", "mouseleave", "click", 4, "ngFor", "ngForOf"], ["class", "ant-cascader-menu-item ant-cascader-menu-item-expanded ant-cascader-menu-item-disabled", 4, "ngIf"], ["nz-cascader-option", "", 3, "columnIndex", "nzLabelProperty", "optionTemplate", "activated", "highlightText", "option", "mouseenter", "mouseleave", "click"], [1, "ant-cascader-menu-item", "ant-cascader-menu-item-expanded", "ant-cascader-menu-item-disabled"], [3, "nzComponentName", "specificContent"]], template: function NzCascaderComponent_Template(rf, ctx) { if (rf & 1) {
+        ɵngcc0.ɵɵprojectionDef();
+        ɵngcc0.ɵɵelementStart(0, "div", 0, 1);
+        ɵngcc0.ɵɵtemplate(3, NzCascaderComponent_div_3_Template, 10, 22, "div", 2);
+        ɵngcc0.ɵɵprojection(4);
+        ɵngcc0.ɵɵelementEnd();
+        ɵngcc0.ɵɵtemplate(5, NzCascaderComponent_ng_template_5_Template, 1, 1, "ng-template", 3);
+        ɵngcc0.ɵɵlistener("backdropClick", function NzCascaderComponent_Template_ng_template_backdropClick_5_listener() { return ctx.closeMenu(); })("detach", function NzCascaderComponent_Template_ng_template_detach_5_listener() { return ctx.closeMenu(); })("positionChange", function NzCascaderComponent_Template_ng_template_positionChange_5_listener($event) { return ctx.onPositionChange($event); });
+    } if (rf & 2) {
+        var _r0 = ɵngcc0.ɵɵreference(1);
+        ɵngcc0.ɵɵadvance(3);
+        ɵngcc0.ɵɵproperty("ngIf", ctx.nzShowInput);
+        ɵngcc0.ɵɵadvance(2);
+        ɵngcc0.ɵɵproperty("cdkConnectedOverlayOrigin", _r0)("cdkConnectedOverlayPositions", ctx.positions)("cdkConnectedOverlayOpen", ctx.menuVisible);
+    } }, directives: [ɵngcc5.CdkOverlayOrigin, ɵngcc1.NgIf, ɵngcc5.CdkConnectedOverlay, ɵngcc3.NzConnectedOverlayDirective, ɵngcc6.DefaultValueAccessor, ɵngcc7.NzInputDirective, ɵngcc6.NgControlStatus, ɵngcc6.NgModel, ɵngcc2.NzIconDirective, ɵngcc1.NgTemplateOutlet, ɵngcc1.NgClass, ɵngcc1.NgStyle, ɵngcc3.NzNoAnimationDirective, ɵngcc1.NgForOf, NzCascaderOptionComponent, ɵngcc8.NzEmbedEmptyComponent], styles: ["\n      .ant-cascader-menus {\n        margin-top: 4px;\n        margin-bottom: 4px;\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n      }\n    "], encapsulation: 2, data: { animation: [slideMotion] }, changeDetection: 0 });
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCascaderComponent, [{
+        type: Component,
+        args: [{
+                changeDetection: ChangeDetectionStrategy.OnPush,
+                encapsulation: ViewEncapsulation.None,
+                selector: 'nz-cascader, [nz-cascader]',
+                exportAs: 'nzCascader',
+                preserveWhitespaces: false,
+                template: "<div\r\n  cdkOverlayOrigin\r\n  #origin=\"cdkOverlayOrigin\"\r\n  #trigger>\r\n  <div *ngIf=\"nzShowInput\">\r\n    <input\r\n      #input\r\n      nz-input\r\n      class=\"ant-cascader-input\"\r\n      [class.ant-cascader-input-disabled]=\"nzDisabled\"\r\n      [class.ant-cascader-input-lg]=\"nzSize === 'large'\"\r\n      [class.ant-cascader-input-sm]=\"nzSize === 'small'\"\r\n      [attr.autoComplete]=\"'off'\"\r\n      [attr.placeholder]=\"showPlaceholder ? (nzPlaceHolder || locale?.placeholder ) : null\"\r\n      [attr.autofocus]=\"nzAutoFocus ? 'autofocus' : null\"\r\n      [readonly]=\"!nzShowSearch\"\r\n      [disabled]=\"nzDisabled\"\r\n      [nzSize]=\"nzSize\"\r\n      [(ngModel)]=\"inputValue\"\r\n      (blur)=\"handleInputBlur()\"\r\n      (focus)=\"handleInputFocus()\"\r\n      (change)=\"$event.stopPropagation()\">\r\n    <i *ngIf=\"clearIconVisible\"\r\n      nz-icon\r\n      nzType=\"close-circle\"\r\n      nzTheme=\"fill\"\r\n      class=\"ant-cascader-picker-clear\"\r\n      (click)=\"clearSelection($event)\"></i>\r\n    <i *ngIf=\"nzShowArrow && !isLoading\"\r\n      nz-icon\r\n      nzType=\"down\"\r\n      class=\"ant-cascader-picker-arrow\"\r\n      [class.ant-cascader-picker-arrow-expand]=\"menuVisible\">\r\n    </i>\r\n    <i *ngIf=\"isLoading\" nz-icon nzType=\"loading\" class=\"ant-cascader-picker-arrow\"></i>\r\n    <span\r\n      class=\"ant-cascader-picker-label\"\r\n      [class.ant-cascader-show-search]=\"!!nzShowSearch\"\r\n      [class.ant-focusd]=\"!!nzShowSearch && isFocused && !inputValue\">\r\n      <ng-container *ngIf=\"!isLabelRenderTemplate; else labelTemplate\">{{ labelRenderText }}</ng-container>\r\n      <ng-template #labelTemplate>\r\n        <ng-template [ngTemplateOutlet]=\"nzLabelRender\" [ngTemplateOutletContext]=\"labelRenderContext\"></ng-template>\r\n      </ng-template>\r\n    </span>\r\n  </div>\r\n  <ng-content></ng-content>\r\n</div>\r\n<ng-template\r\n  cdkConnectedOverlay\r\n  nzConnectedOverlay\r\n  cdkConnectedOverlayHasBackdrop\r\n  [cdkConnectedOverlayOrigin]=\"origin\"\r\n  [cdkConnectedOverlayPositions]=\"positions\"\r\n  (backdropClick)=\"closeMenu()\"\r\n  (detach)=\"closeMenu()\"\r\n  (positionChange)=\"onPositionChange($event)\"\r\n  [cdkConnectedOverlayOpen]=\"menuVisible\">\r\n  <div\r\n    #menu\r\n    class=\"ant-cascader-menus\"\r\n    *ngIf=\"nzOptions && nzOptions.length || inSearchingMode\"\r\n    [class.ant-cascader-menus-hidden]=\"!menuVisible\"\r\n    [ngClass]=\"menuCls\"\r\n    [ngStyle]=\"nzMenuStyle\"\r\n    [@.disabled]=\"noAnimation?.nzNoAnimation\"\r\n    [nzNoAnimation]=\"noAnimation?.nzNoAnimation\"\r\n    [@slideMotion]=\"dropDownPosition\"\r\n    (mouseleave)=\"onTriggerMouseLeave($event)\">\r\n    <ul *ngFor=\"let options of cascaderService.columns; let i = index;\" class=\"ant-cascader-menu\"\r\n      [ngClass]=\"menuColumnCls\"\r\n      [style.height]=\"inSearchingMode && !cascaderService.columns[0].length ? 'auto': ''\"\r\n      [style.width]=\"dropdownWidthStyle\">\r\n      <li\r\n        nz-cascader-option\r\n        *ngFor=\"let option of options\"\r\n        [columnIndex]=\"i\"\r\n        [nzLabelProperty]=\"nzLabelProperty\"\r\n        [optionTemplate]=\"nzOptionRender\"\r\n        [activated]=\"isOptionActivated(option, i)\"\r\n        [highlightText]=\"inSearchingMode ? inputValue : ''\"\r\n        [option]=\"option\"\r\n        (mouseenter)=\"onOptionMouseEnter(option, i, $event)\"\r\n        (mouseleave)=\"onOptionMouseLeave(option, i, $event)\"\r\n        (click)=\"onOptionClick(option, i, $event)\">\r\n      </li>\r\n      <li *ngIf=\"inSearchingMode && !cascaderService.columns[0].length\"\r\n        class=\"ant-cascader-menu-item ant-cascader-menu-item-expanded ant-cascader-menu-item-disabled\">\r\n        <nz-embed-empty [nzComponentName]=\"'cascader'\" [specificContent]=\"nzNotFoundContent\"></nz-embed-empty>\r\n      </li>\r\n    </ul>\r\n  </div>\r\n</ng-template>\r\n",
+                animations: [slideMotion],
+                providers: [
+                    {
+                        provide: NG_VALUE_ACCESSOR,
+                        useExisting: forwardRef(( /**
+                         * @return {?}
+                         */function () { return NzCascaderComponent; })),
+                        multi: true
+                    },
+                    NzCascaderService
+                ],
+                host: {
+                    '[attr.tabIndex]': '"0"',
+                    '[class.ant-cascader-lg]': 'nzSize === "large"',
+                    '[class.ant-cascader-sm]': 'nzSize === "small"',
+                    '[class.ant-cascader-picker-disabled]': 'nzDisabled',
+                    '[class.ant-cascader-picker-open]': 'menuVisible',
+                    '[class.ant-cascader-picker-with-value]': '!!inputValue',
+                    '[class.ant-cascader-focused]': 'isFocused'
+                },
+                styles: ["\n      .ant-cascader-menus {\n        margin-top: 4px;\n        margin-bottom: 4px;\n        top: 100%;\n        left: 0;\n        position: relative;\n        width: 100%;\n      }\n    "]
+            }]
+    }], function () { return [{ type: NzCascaderService }, { type: ɵngcc4.NzI18nService }, { type: ɵngcc3.NzConfigService }, { type: ɵngcc0.ChangeDetectorRef }, { type: ɵngcc0.ElementRef }, { type: ɵngcc0.Renderer2 }, { type: ɵngcc3.NzNoAnimationDirective, decorators: [{
+                type: Host
+            }, {
+                type: Optional
+            }] }]; }, { nzOptionRender: [{
+            type: Input
+        }], nzShowInput: [{
+            type: Input
+        }], nzShowArrow: [{
+            type: Input
+        }], nzAllowClear: [{
+            type: Input
+        }], nzAutoFocus: [{
+            type: Input
+        }], nzChangeOnSelect: [{
+            type: Input
+        }], nzDisabled: [{
+            type: Input
+        }], nzExpandTrigger: [{
+            type: Input
+        }], nzValueProperty: [{
+            type: Input
+        }], nzLabelProperty: [{
+            type: Input
+        }], nzMouseEnterDelay: [{
+            type: Input
+        }], nzMouseLeaveDelay: [{
+            type: Input
+        }], nzTriggerAction: [{
+            type: Input
+        }], nzVisibleChange: [{
+            type: Output
+        }], nzSelectionChange: [{
+            type: Output
+        }], nzSelect: [{
+            type: Output
+        }], nzClear: [{
+            type: Output
+        }], nzOptions: [{
+            type: Input
+        }], onKeyDown: [{
+            type: HostListener,
+            args: ['keydown', ['$event']]
+        }], onTriggerClick: [{
+            type: HostListener,
+            args: ['click']
+        }], onTriggerMouseEnter: [{
+            type: HostListener,
+            args: ['mouseenter']
+        }], onTriggerMouseLeave: [{
+            type: HostListener,
+            args: ['mouseleave', ['$event']]
+        }], input: [{
+            type: ViewChild,
+            args: ['input', { static: false }]
+        }], menu: [{
+            type: ViewChild,
+            args: ['menu', { static: false }]
+        }], overlay: [{
+            type: ViewChild,
+            args: [CdkConnectedOverlay, { static: false }]
+        }], cascaderItems: [{
+            type: ViewChildren,
+            args: [NzCascaderOptionComponent]
+        }], nzColumnClassName: [{
+            type: Input
+        }], nzLabelRender: [{
+            type: Input
+        }], nzNotFoundContent: [{
+            type: Input
+        }], nzSize: [{
+            type: Input
+        }], nzShowSearch: [{
+            type: Input
+        }], nzPlaceHolder: [{
+            type: Input
+        }], nzMenuClassName: [{
+            type: Input
+        }], nzMenuStyle: [{
+            type: Input
+        }], nzChangeOn: [{
+            type: Input
+        }], nzLoadData: [{
+            type: Input
+        }] }); })();
     return NzCascaderComponent;
 }());
 if (false) {
@@ -2193,24 +2505,49 @@ if (false) {
 var NzCascaderModule = /** @class */ (function () {
     function NzCascaderModule() {
     }
-    NzCascaderModule.decorators = [
-        { type: NgModule, args: [{
-                    imports: [
-                        CommonModule,
-                        FormsModule,
-                        OverlayModule,
-                        NzAddOnModule,
-                        NzEmptyModule,
-                        NzHighlightModule,
-                        NzIconModule,
-                        NzInputModule,
-                        NzNoAnimationModule,
-                        NzOverlayModule
-                    ],
-                    declarations: [NzCascaderComponent, NzCascaderOptionComponent],
-                    exports: [NzCascaderComponent]
-                },] }
-    ];
+NzCascaderModule.ɵmod = ɵngcc0.ɵɵdefineNgModule({ type: NzCascaderModule });
+NzCascaderModule.ɵinj = ɵngcc0.ɵɵdefineInjector({ factory: function NzCascaderModule_Factory(t) { return new (t || NzCascaderModule)(); }, imports: [[
+            CommonModule,
+            FormsModule,
+            OverlayModule,
+            NzAddOnModule,
+            NzEmptyModule,
+            NzHighlightModule,
+            NzIconModule,
+            NzInputModule,
+            NzNoAnimationModule,
+            NzOverlayModule
+        ]] });
+(function () { (typeof ngJitMode === "undefined" || ngJitMode) && ɵngcc0.ɵɵsetNgModuleScope(NzCascaderModule, { declarations: function () { return [NzCascaderComponent,
+        NzCascaderOptionComponent]; }, imports: function () { return [CommonModule,
+        FormsModule,
+        OverlayModule,
+        NzAddOnModule,
+        NzEmptyModule,
+        NzHighlightModule,
+        NzIconModule,
+        NzInputModule,
+        NzNoAnimationModule,
+        NzOverlayModule]; }, exports: function () { return [NzCascaderComponent]; } }); })();
+/*@__PURE__*/ (function () { ɵngcc0.ɵsetClassMetadata(NzCascaderModule, [{
+        type: NgModule,
+        args: [{
+                imports: [
+                    CommonModule,
+                    FormsModule,
+                    OverlayModule,
+                    NzAddOnModule,
+                    NzEmptyModule,
+                    NzHighlightModule,
+                    NzIconModule,
+                    NzInputModule,
+                    NzNoAnimationModule,
+                    NzOverlayModule
+                ],
+                declarations: [NzCascaderComponent, NzCascaderOptionComponent],
+                exports: [NzCascaderComponent]
+            }]
+    }], function () { return []; }, null); })();
     return NzCascaderModule;
 }());
 
@@ -2225,4 +2562,5 @@ var NzCascaderModule = /** @class */ (function () {
  */
 
 export { NzCascaderComponent, NzCascaderModule, NzCascaderOptionComponent, NzCascaderService, isChildOption, isParentOption, isShowSearchObject };
+
 //# sourceMappingURL=ng-zorro-antd-cascader.js.map
